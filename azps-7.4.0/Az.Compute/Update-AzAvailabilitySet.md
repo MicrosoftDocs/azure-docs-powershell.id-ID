@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzAvailabilitySet.md
-ms.openlocfilehash: 333cfc4fa9a92ae2b3c8c6be618efe390b190ecf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99d19f20a9a62036354531702b0ca50af8711df0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230535"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631342"
 ---
 # Update-AzAvailabilitySet
 
 ## SYNOPSIS
-Memperbarui kumpulan ketersediaan.
+Memperbarui set ketersediaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzAvailabilitySet [-AvailabilitySet] <PSAvailabilitySet> [[-Sku] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzAvailabilitySet** memperbarui kumpulan ketersediaan.
+Cmdlet **Update-AzAvailabilitySet** memperbarui set ketersediaan.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Cmdlet **Update-AzAvailabilitySet** memperbarui kumpulan ketersediaan.
 Get-AzAvailabilitySet -ResourceGroupName 'ResourceGroup01' -Name 'AvSet01' | Update-AzAvailabilitySet -Managed;
 ```
 
-Perintah ini memperbarui kumpulan ketersediaan bernama 'AvSet01' dalam grup sumber daya bernama 'ResourceGroup01' menjadi kumpulan ketersediaan terkelola.
+Perintah ini memperbarui set ketersediaan bernama 'AvSet01' di grup sumber daya bernama 'ResourceGroup01' ke set ketersediaan terkelola.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilitySet
-Menentukan objek kumpulan ketersediaan yang akan diperbarui.
+Menentukan objek set ketersediaan yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSAvailabilitySet
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan kumpulan ketersediaan ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan set ketersediaan ini.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash.
+Pasangan kunci-nilai dalam bentuk tabel hash.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -129,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

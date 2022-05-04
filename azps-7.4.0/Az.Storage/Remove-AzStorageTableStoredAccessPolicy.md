@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: 536d09c856b0c504d582a60d85e1073bba16efaa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f22ebb717183683cc549d52fba190c8979024a8d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647230"
 ---
 # Remove-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan akses yang disimpan dari tabel penyimpanan Azure.
+Menghapus kebijakan akses tersimpan dari tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Remove-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageTableStoredAccessPolicy** menghapus kebijakan akses yang disimpan dari tabel penyimpanan Azure.
+Cmdlet **Remove-AzStorageTableStoredAccessPolicy** menghapus kebijakan akses tersimpan dari tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kebijakan akses yang disimpan dari tabel penyimpanan
+### Contoh 1: Menghapus kebijakan akses tersimpan dari tabel penyimpanan
 ```
 PS C:\>Remove-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy05"
 ```
@@ -40,7 +43,7 @@ Perintah ini menghapus kebijakan bernama Policy05 dari tabel penyimpanan bernama
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Table
+### -Tabel
 Menentukan nama tabel Azure.
 
 ```yaml
@@ -117,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

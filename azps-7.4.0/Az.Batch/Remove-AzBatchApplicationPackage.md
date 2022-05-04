@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplicationPackage.md
-ms.openlocfilehash: c99af9ec8dc599758b1567bcabcc0f0089a43ffd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7f582490f3929885fb7b25207cf8114f10c8ee91
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750618"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647086"
 ---
 # Remove-AzBatchApplicationPackage
 
 ## SYNOPSIS
-Menghapus catatan paket aplikasi dan file biner.
+Menghapus rekaman paket aplikasi dan file biner.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Remove-AzBatchApplicationPackage -AccountName "ContosoBatch" -ResourceGroupName 
 ```
 
 Perintah ini menghapus aplikasi Litware versi 1.0 dari akun ContosoBatchGroup.
-Perintah menghapus catatan paket dan blob yang berisi file biner kemasan.
+Perintah menghapus rekaman paket dan blob yang berisi file biner paket.
 
 ## PARAMETERS
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -131,16 +134,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
+[Get-AzBatchApplication](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchAplikasi](./New-AzBatchApplication.md)
+[New-AzBatchApplication](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
+[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
 
-[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
+[Set-AzBatchApplication](./Set-AzBatchApplication.md)
 
 

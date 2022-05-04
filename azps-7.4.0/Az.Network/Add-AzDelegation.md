@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
-ms.openlocfilehash: b4cacecc37e6c076e4cedef8da499f6a5d917210
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2052d79def91b316bba99d730875756f41f18767
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282717"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682032"
 ---
 # Add-AzDelegation
 
 ## SYNOPSIS
 Menambahkan delegasi ke subnet.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ $subnet = Add-AzDelegation -Name "myDelegation" -ServiceName "Microsoft.Sql/serv
 Set-AzVirtualNetwork $vnet
 ```
 
-Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua mengisolasi subnet minat - yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka dalam subnet ini. Perintah terakhir mengirim subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
+Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua mengisolasi subnet yang menarik - yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh khusus ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka di subnet ini. Perintah akhir mengirimkan subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama delegasi
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

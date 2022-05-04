@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleScope.md
-ms.openlocfilehash: e59eb39853b4814fbd8ecd34129044aeff85e163
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a98e9d687a92cf8ffc984d8d1296cd189dc39c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116253"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647158"
 ---
 # Get-AzSynapseRoleScope
 
 ## SYNOPSIS
-Mendapatkan lingkup peran Analitik Synapse.
+Mendapatkan cakupan peran Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapserolescope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseRoleScope -WorkspaceObject <PSSynapseWorkspace> [-ResourceId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseRoleScope** mendapatkan Lingkup Peran Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseRoleScope** mendapatkan Cakupan Peran Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzSynapseRoleScope** mendapatkan Lingkup Peran Analitik Azure Synap
 Get-AzSynapseRoleScope -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan semua lingkup peran di bawah ruang kerja.
+Perintah ini mendapatkan semua cakupan peran di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseRoleScope
 ```
 
-Perintah ini mendapatkan semua lingkup peran di bawah ruang kerja melalui saluran.
+Perintah ini mendapatkan semua cakupan peran di bawah ruang kerja melalui alur.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslProfilePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslProfilePolicy.md
-ms.openlocfilehash: 2102221d8d249b24f6ac757d0be2da88056802da
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 01aa04155fed004fc72b0e457c910bc6a1db15b9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314217"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705000"
 ---
 # Get-AzApplicationGatewaySslProfilePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan SSL profil SSL gateway aplikasi.
+Mendapatkan kebijakan SSL dari profil SSL gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslprofilepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $SslProfile  = Get-AzApplicationGatewaySslProfile -Name "SslProfile01" -Applicat
 $sslpolicy = Get-AzApplicationGatewaySslProfilePolicy -SslProfile $SslProfile
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama SslProfile01 untuk $AppGw dan menyimpannya $SslProfile variabel. Perintah terakhir mendapatkan kebijakan SSL dari $SslProfile profil SSL dan menyimpannya dalam variabel $sslpolicy.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama SslProfile01 untuk $AppGw dan menyimpannya $SslProfile variabel. Perintah terakhir mendapatkan kebijakan SSL dari profil SSL $SslProfile dan menyimpannya dalam variabel $sslpolicy.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

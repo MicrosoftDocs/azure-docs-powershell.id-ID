@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
-ms.openlocfilehash: 7ea667c31e51add4e7ba63afde6c8b44803c067a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f4b1dcede0ff450fe5dcee6005c5879e62dfb5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995941"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610250"
 ---
 # Get-AzSqlDatabaseReplicationLink
 
 ## SYNOPSIS
 Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasereplicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ Get-AzSqlDatabaseReplicationLink [-DatabaseName] <String> -PartnerResourceGroupN
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlDatabaseReplicationLink** menggantikan cmdlet **Get-AzSqlDatabaseCopy** .
-Ini mendapatkan semua tautan geo-replikasi antara Azure SQL Database yang ditentukan dan grup sumber daya atau AzureSQL Server.
+Ini mendapatkan semua tautan replikasi geografis antara Azure SQL Database yang ditentukan dan grup sumber daya atau AzureSQL Server.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server. (autogenerasi)
+Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server database untuk mengambil tautan.
+Menentukan nama SQL Server untuk database yang akan diambil tautannya.
 
 ```yaml
 Type: System.String
@@ -133,8 +136,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

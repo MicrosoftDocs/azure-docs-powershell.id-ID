@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssNetworkInterfaceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssNetworkInterfaceConfiguration.md
-ms.openlocfilehash: 962029c1436bb565e220e94eacdde45545e6cd2e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ee0f58a13caa8fc1bf170a55a5c0d4f40bb4d95
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128349"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633320"
 ---
 # Add-AzVmssNetworkInterfaceConfiguration
 
 ## SYNOPSIS
 Menambahkan konfigurasi antarmuka jaringan ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssnetworkinterfaceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Add-AzVmssNetworkInterfaceConfiguration [-VirtualMachineScaleSet] <PSVirtualMach
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssNetworkInterfaceConfiguration** menambahkan konfigurasi antarmuka jaringan ke Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet **Add-AzVmssNetworkInterfaceConfiguration** menambahkan konfigurasi antarmuka jaringan ke Virtual Machine Scale Set (VMSS).
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAcceleratedNetworking
-Menentukan apakah antarmuka jaringan dipercepat diaktifkan oleh jaringan.
+Menentukan apakah antarmuka jaringan diaktifkan jaringan yang dipercepat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya mesin virtual.
+Menentukan ID Sumber Daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi antarmuka jaringan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Menunjukkan apakah antarmuka jaringan yang dibuat dari konfigurasi antarmuka jaringan akan menjadi pusat informasi jaringan utama (NIC) mesin virtual.
+Menunjukkan apakah antarmuka jaringan yang dibuat dari konfigurasi antarmuka jaringan akan menjadi pusat informasi jaringan utama (NIC) komputer virtual.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -VirtualMachineScaleSet
 Menentukan objek VMSS.
-Anda dapat menggunakan cmdlet [New-AzVmsConfig](./New-AzVmssConfig.md) untuk membuat objek.
+Anda dapat menggunakan cmdlet [New-AzVmssConfig](./New-AzVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -208,8 +211,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

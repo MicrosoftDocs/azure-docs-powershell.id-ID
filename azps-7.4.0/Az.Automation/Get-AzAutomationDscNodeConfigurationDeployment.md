@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
-ms.openlocfilehash: 2cc32d2e453a0490e781be382d3f38c89b1f3797
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b67bb6f9d43f93de0545e0299f93e064688c5b29
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751356"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592740"
 ---
 # Get-AzAutomationDscNodeConfigurationDeployment
 
 ## SYNOPSIS
-Mendapatkan penyebaran konfigurasi Node DSC dalam Otomatisasi.
+Mendapatkan penyebaran konfigurasi Simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzAutomationDscNodeConfigurationDeployment -JobId <Guid> [-ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
+Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penyebaran konfigurasi simpul
+### Contoh 1: Mendapatkan penyebaran konfigurasi simpul
 ```
 PS C:\> $deployment = Get-AzAutomationDscNodeConfigurationDeployment `
                          -JobId 35b14eb4-52b7-4a1d-ad62-8e9f84adc657 `
@@ -64,12 +67,12 @@ WebServer2 Pending
 WebServer3 Compliant
 ```
 
-Perintah di atas menyebarkan konfigurasi node DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap.
+Perintah di atas menyebarkan konfigurasi simpul DSC bernama "Config01.Node1" ke array dua dimensi yang diberikan dari Nama Simpul. Penyebaran terjadi secara bertahap.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
+Menentukan nama akun Automation yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan id Pekerjaan dari pekerjaan penyebaran yang sudah ada.
+Menentukan id Pekerjaan dari pekerjaan penyebaran yang ada.
 
 ```yaml
 Type: System.Guid
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini mengkompilasi konfigurasi.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

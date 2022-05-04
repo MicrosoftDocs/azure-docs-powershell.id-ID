@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Datadog/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
-ms.openlocfilehash: 8090ba34b65879072cdf7c1d29946303a4c55c8d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bedc497f8dfac0715694829b0ee6bf793aaea193
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317655"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646672"
 ---
 # New-AzDatadogFilteringTagObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk FilteringTag
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Perintah ini Membuat objek dalam memori untuk FilteringTag.
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan valid untuk tag pemfilteran.
+Tindakan yang valid untuk tag pemfilteran.
 Pengecualian lebih diprioritaskan daripada penyertaan.
 
 ```yaml
@@ -53,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama (juga dikenal sebagai kunci) tag.
+### -Name
+Nama (juga dikenal sebagai kunci) dari tag.
 
 ```yaml
 Type: System.String
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai tag.
+### -Nilai
+Nilai dari tag.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

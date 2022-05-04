@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
-ms.openlocfilehash: 6c83f50b372139501fd1aaa49cf5c24e6a104064
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b6d129dfcbc0a25836f10766cb42032388b60de2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319905"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611438"
 ---
 # New-AzAutomationConnection
 
 ## SYNOPSIS
-Membuat koneksi Otomatisasi.
+Membuat koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> New-AzAutomationConnection -Name "Connection12" -ConnectionTypeName Azur
 ```
 
 Perintah pertama menetapkan tabel hash nilai bidang ke variabel $FieldValue.
-Perintah kedua membuat koneksi Azure bernama Connection12 di akun Otomatisasi bernama AutomationAccount01.
+Perintah kedua membuat koneksi Azure bernama Connection12 di akun Automation bernama AutomationAccount01.
 Perintah menggunakan nilai bidang koneksi dalam $FieldValues.
 
 ### Contoh 2: Membuat koneksi untuk ConnectionTypeName=AzureServicePrincipal
@@ -51,7 +54,7 @@ PS C:\> $RunAsAccountConnectionFieldValues = @{"ApplicationId" = $ApplicationId;
 PS C:\> New-AzAutomationConnection -Name "Connection13" -ConnectionTypeName AzureServicePrincipal -ConnectionFieldValues $RunAsAccountConnectionFieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah membuat koneksi Azure bernama Connection13 di akun Otomatisasi bernama AutomationAccount01 menggunakan $RunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureServicePrincipal.
+Perintah membuat koneksi Azure bernama Connection13 di akun Automation bernama AutomationAccount01 menggunakan $RunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureServicePrincipal.
 ConnectionTypeName=AzureServicePrincipal ini terutama digunakan untuk Akun Azure Run As.
 
 ### Contoh 3: Membuat koneksi untuk ConnectionTypeName=AzureClassicCertificate
@@ -63,13 +66,13 @@ PS C:\> $ClassicRunAsAccountConnectionFieldValues = @{"SubscriptionName" = $Subs
 PS C:\> New-AzAutomationConnection -Name "Connection14" -ConnectionTypeName AzureClassicCertificate  -ConnectionFieldValues $ClassicRunAsAccountConnectionFieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah membuat koneksi Azure bernama Connection14 di akun Otomatisasi bernama AutomationAccount01 menggunakan $ClassicRunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureClassicCertificate.
-ConnectionTypeName=AzureClassicCertificate ini terutama digunakan untuk Akun Azure Classic Run As.
+Perintah membuat koneksi Azure bernama Connection14 di akun Automation bernama AutomationAccount01 menggunakan $ClassicRunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureClassicCertificate.
+ConnectionTypeName=AzureClassicCertificate ini terutama digunakan untuk Akun Jalankan Sebagai Klasik Azure.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini membuat koneksi.
+Menentukan nama akun Automation tempat cmdlet ini membuat koneksi.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 
 ### -ConnectionFieldValues
 Menentukan tabel hash yang berisi pasangan kunci/nilai.
-Kunci mewakili bidang koneksi untuk tipe koneksi yang ditentukan.
+Kunci mewakili bidang koneksi untuk jenis koneksi yang ditentukan.
 Nilai mewakili nilai tertentu dari setiap bidang koneksi untuk instans koneksi.
 
 ```yaml
@@ -145,8 +148,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk sambungan tersebut.
+### -Name
+Menentukan nama untuk koneksi.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

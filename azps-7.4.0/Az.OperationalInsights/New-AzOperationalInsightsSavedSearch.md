@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 2dc2ceeb8e9be427e2c4bac8525aa2a6f39fbaa2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 42989e45563d3312eb3060cbc5d4dae16a51f33b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675874"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644046"
 ---
 # New-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Membuat pencarian tersimpan baru dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-WorkspaceNa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian tersimpan baru dengan parameter tertentu untuk ruang kerja.
+Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian tersimpan baru dengan parameter yang ditentukan untuk ruang kerja.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Cmdlet **New-AzOperationalInsightsSavedSearch** membuat pencarian tersimpan baru
 New-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId" -DisplayName "ContosoSavedSearchDisplayName" -Category "ContosoSavedSearchCategory" -Query "*" -Version $Version -Force
 ```
 
-Perintah ini membuat pencarian baru yang disimpan.
+Perintah ini membuat pencarian tersimpan baru.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan pencarian yang disimpan.
+Menentukan nama tampilan pencarian tersimpan.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionParameter
-Parameter fungsi opsional jika kueri berfungsi sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat, silakan lihat https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
+Parameter fungsi opsional jika kueri berfungsi sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh lebih lanjut dan sintaks yang tepat, silakan lihat https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
-Menentukan ekspresi kueri untuk pencarian yang disimpan.
+### -Kueri
+Menentukan ekspresi kueri untuk pencarian tersimpan.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -SavedSearchId
-Menentukan ID pencarian yang disimpan.
+Menentukan ID pencarian tersimpan.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag pencarian yang disimpan.
+Tag pencarian tersimpan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -206,7 +209,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -221,8 +224,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

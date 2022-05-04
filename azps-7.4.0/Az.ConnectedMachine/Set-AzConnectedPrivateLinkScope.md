@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedPrivateLinkScope.md
-ms.openlocfilehash: e3c520858c061f9324004dcda37469705a35be51
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 771784ead10c72460a6dfc0aacad03f5c87713af
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230085"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591283"
 ---
 # Set-AzConnectedPrivateLinkScope
 
 ## SYNOPSIS
 Membuat (atau memperbarui) Azure Arc PrivateLinkScope.
 Catatan: Anda tidak dapat menentukan nilai yang berbeda untuk InstrumentationKey atau AppId dalam operasi Put.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/set-azconnectedprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzConnectedPrivateLinkScope -ResourceGroupName <String> -ScopeName <String> 
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update
+### Pembaruan
 ```
 Set-AzConnectedPrivateLinkScope -ResourceGroupName <String> -ScopeName <String>
  -Parameter <IHybridComputePrivateLinkScope> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -40,7 +43,7 @@ Catatan: Anda tidak dapat menentukan nilai yang berbeda untuk InstrumentationKey
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur lingkup tautan privat dalam langganan menurut nama
+### Contoh 1: Mengatur cakupan tautan privat dalam langganan berdasarkan nama
 ```powershell
 Set-AzConnectedPrivateLinkScope -ResourceGroupName $resourceGroupName -ScopeName $scopeName -PublicNetworkAccess "Disabled" -Tag $tags -Location $location
 ```
@@ -51,7 +54,7 @@ Name         Location    PublicNetworkAccess ProvisioningState Tag
 name         eastus2euap Disabled            Succeeded         Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.PrivateLinkScopesRes…
 ```
 
-Memperbarui PublicNetworkAccess ke "Disable" dan tag ke $tags
+Memperbarui PublicNetworkAccess ke "Nonaktifkan" dan tag ke $tags
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Parameter
 Definisi Azure Arc PrivateLinkScope.
-Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IHybridComputePrivateLinkScope
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Menunjukkan apakah mesin yang terkait dengan lingkup tautan privat juga dapat menggunakan titik akhir layanan Azure Arc publik.
+Menunjukkan apakah komputer yang terkait dengan cakupan tautan privat juga dapat menggunakan titik akhir layanan Azure Arc publik.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Support.PublicNetworkAccessType
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -232,13 +235,13 @@ PARAMETER <IHybridComputePrivateLinkScope>: Definisi Azure Arc PrivateLinkScope.
   - `Location <String>`: Lokasi sumber daya
   - `[Tag <IPrivateLinkScopesResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[PublicNetworkAccess <PublicNetworkAccessType?>]`: Menunjukkan apakah mesin yang terkait dengan lingkup tautan privat juga dapat menggunakan titik akhir layanan Azure Arc publik.
-  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
+  - `[PublicNetworkAccess <PublicNetworkAccessType?>]`: Menunjukkan apakah komputer yang terkait dengan cakupan tautan privat juga dapat menggunakan titik akhir layanan Azure Arc publik.
+  - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
-  - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS
 

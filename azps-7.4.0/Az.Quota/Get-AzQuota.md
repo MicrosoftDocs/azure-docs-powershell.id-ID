@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
-ms.openlocfilehash: 5c6989b866732b9f35145a83cd64807ef64a7f11
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e41001d6b365aed75e8d0907fd97a980b29a7078
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277299"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701276"
 ---
 # Get-AzQuota
 
 ## SYNOPSIS
 Dapatkan batas kuota sumber daya.
 Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota baru yang dapat dikirimkan dengan permintaan PUT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota
 Get-AzQuota -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzQuota -ResourceName <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -41,7 +44,7 @@ Respons dapat digunakan untuk menentukan sisa kuota untuk menghitung batas kuota
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan batas kuota lingkup
+### Contoh 1: Mencantumkan batas kuota cakupan
 ```powershell
 Get-AzQuota -Scope "subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Network/locations/eastus"
 ```
@@ -57,9 +60,9 @@ CustomIpPrefixes                                                      Count
 PublicIpPrefixes                                                      Count
 ```
 
-Perintah ini mencantumkan batas kuota lingkup.
+Perintah ini mencantumkan batas kuota cakupan.
 
-### Contoh 2: Dapatkan batas kuota sumber daya
+### Contoh 2: Mendapatkan batas kuota sumber daya
 ```powershell
 Get-AzQuota -Scope "subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Network/locations/eastus" -ResourceName "MinPublicIpInterNetworkPrefixLength"
 ```
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceName
 Nama sumber daya untuk penyedia sumber daya tertentu.
-Misalnya:
+Contohnya:
 - Nama SKU untuk Microsoft.Compute
 - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
@@ -123,11 +126,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Target URI sumber daya Azure.
-Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi List GET.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+### -Cakupan
+URI sumber daya Azure target.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
+`{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -165,7 +168,7 @@ INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
   - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: Target URI sumber daya Azure. Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi List GET. Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/` Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

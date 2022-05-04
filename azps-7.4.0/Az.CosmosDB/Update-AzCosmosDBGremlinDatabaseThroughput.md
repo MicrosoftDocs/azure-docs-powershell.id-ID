@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabaseThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabaseThroughput.md
-ms.openlocfilehash: d0b921ccb947f918b1804b56a78e1005c253fa76
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c9e6de0bfda3d6708431fe414862a0a761f6d8dd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003861"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662094"
 ---
 # Update-AzCosmosDBGremlinDatabaseThroughput
 
 ## SYNOPSIS
-Memperbarui nilai throughput Database Gremlin CosmosDB.
+Memperbarui nilai throughput database CosmosDB Gremlin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlindatabasethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzCosmosDBGremlinDatabaseThroughput [-Name <String>] -InputObject <PSGrem
 ```
 
 ## DESCRIPTION
-Memperbarui nilai throughput Database Gremlin CosmosDB.
+Memperbarui nilai throughput database CosmosDB Gremlin.
 
 ## EXAMPLES
 
@@ -120,7 +123,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput Database Gremlin (RU/s).
+Throughput Database Gremlin (RU/dtk).
 Nilai defaultnya adalah 400.
 
 ```yaml
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

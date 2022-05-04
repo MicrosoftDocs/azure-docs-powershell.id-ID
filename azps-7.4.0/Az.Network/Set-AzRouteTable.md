@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
-ms.openlocfilehash: 9411877fc69c0c2da35ce1fbf889cc8e104a8da7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b3b85dce332bac8b7530922bfc46094409628a1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279783"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647734"
 ---
-# Set-AzRouteTable
+# New-AzRouteTable
 
 ## SYNOPSIS
 Memperbarui tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Set-AzRouteTable** memperbarui tabel rute.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke tabel rute
+### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke dalamnya
 ```powershell
 Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Add-AzRouteConfig -Name "Route07" -AddressPrefix 10.2.0.0/16 -NextHopType "VnetLocal" | Set-AzRouteTable
 ```
@@ -78,11 +81,11 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzRouteTable.
-Perintah melewati tabel tersebut ke cmdlet Add-AzRouteConfig menggunakan operator pipeline.
-**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasil ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet Get-AzRouteTable.
+Perintah meneruskan tabel tersebut ke cmdlet Add-AzRouteConfig dengan menggunakan operator alur.
+**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasilnya ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
-### Contoh 2: Modifikasi tabel rute
+### Contoh 2: Mengubah tabel rute
 
 ```powershell
 $rt = Get-AzRouteTable -ResourceGroupName "rgName" -Name "rtName"
@@ -108,7 +111,7 @@ Perintah keenam menampilkan nilai DisableBgpRoutePropagation.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang mewakili status tempat tabel rute harus diatur.
+Menentukan objek tabel rute yang mewakili status tabel rute yang harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -152,8 +155,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -197,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzRouteConfig](./Add-AzRouteConfig.md)
+[New-AzRouteConfig](./Add-AzRouteConfig.md)
 
 [Get-AzRouteTable](./Get-AzRouteTable.md)
 

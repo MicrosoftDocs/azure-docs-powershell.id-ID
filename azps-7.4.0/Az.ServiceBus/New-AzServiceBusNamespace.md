@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
-ms.openlocfilehash: 7909c21b99c5d59d24b1e68762733343510c4146
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62f6721e106b8dfd65fd7b796cdc5f6b5b497466
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800586"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595886"
 ---
 # New-AzServiceBusNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Bus Layanan baru.
+Membuat namespace Bus Layanan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzServiceBusNamespace [-ResourceGroupName] <String> [-Location] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusNamespace** membuat ruang nama Bus Layanan baru. Setelah dibuat, manifes sumber daya ruang nama tidak dapat berubah. Operasi ini idempotent.
+Cmdlet **New-AzServiceBusNamespace** membuat namespace Bus Layanan baru. Setelah dibuat, manifes sumber daya namespace tidak dapat diubah. Operasi ini idempotensi.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ UpdatedAt          : 1/20/2017 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
+Membuat namespace Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
 ### Contoh 2 - ZoneRedundant dan DisableLocalAuth
 ```powershell
@@ -69,9 +72,9 @@ UpdatedAt          : 9/27/2021 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
+Membuat namespace Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
-### Contoh 3 - Membuat ruang nama dengan enkripsi identitas yang ditetapkan pengguna diaktifkan
+### Contoh 3 - Membuat namespace dengan enkripsi identitas yang ditetapkan pengguna diaktifkan
 ```powershell
 $config1 = New-AzServiceBusEncryptionConfig -KeyName key1 -KeyVaultUri https://myvaultname.vault.azure.net -UserAssignedIdentity /subscriptions/{subscriptionId}/resourceGroups/{resourcegroup}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/MSIName
 
@@ -114,9 +117,9 @@ EncryptionConfigs  : {{ KeyName: key1,
                      }}
 ```
 
-Membuat ruang nama Bus Layanan baru dengan UserAssigned Encryption Enabled. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
+Membuat namespace Bus Layanan baru dengan UserAssigned Encryption Diaktifkan. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
 
-### Contoh 4 - Buat ruang nama dengan identitas sistem yang ditetapkan diaktifkan.
+### Contoh 4 - Buat namespace layanan dengan identitas yang ditetapkan sistem diaktifkan.
 ```powershell
 New-AzServiceBusNamespace -ResourceGroupName Default-ServiceBus-WestUS -Name SB-Example1 -Location WestUS2 -SkuName "Premium" -IdentityType SystemAssigned
 ```
@@ -140,7 +143,7 @@ IdentityId         :
 EncryptionConfigs  :
 ```
 
-Membuat ruang nama Bus Layanan baru dengan identitas SystemAssigned diaktifkan. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
+Membuat namespace Bus Layanan baru dengan identitas SystemAssigned diaktifkan. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
 
 ## PARAMETERS
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama Bus Layanan
+mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionConfig
-Properti Key
+Properti Kunci
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSEncryptionConfigAttributes[]
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas
+Jenis identitas
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Ruang Nama ServiceBus
+Lokasi Namespace ServiceBus
 
 ```yaml
 Type: System.String
@@ -235,8 +238,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama ServiceBus
+### -Name
+Nama Namespace ServiceBus
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Bus Layanan unit throughput ruang nama premium, nilai yang diperbolehkan 1 atau 2 atau 4
+Unit throughput namespace premium Bus Layanan, nilai yang diizinkan 1 atau 2 atau 4
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku Ruang Nama
+Nama Sku Namespace
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-mengaktifkan atau menonaktifkan Zona Berlebihan untuk ruang nama
+mengaktifkan atau menonaktifkan Zona Redundan untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,8 +329,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

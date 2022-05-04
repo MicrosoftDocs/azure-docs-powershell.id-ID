@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTable.md
-ms.openlocfilehash: 6fc81cccea0d3a84afe52ba4933eac799e72eb66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85048ba2966dbf677f7d573b43bfeafbb308b03f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679446"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636092"
 ---
 # Get-AzExpressRouteCrossConnectionRouteTable
 
 ## SYNOPSIS
 Mendapatkan tabel rute dari koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzExpressRouteCrossConnectionRouteTable -ExpressRouteCrossConnection <PSExpr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCrossConnectionRouteTable** mengambil tabel rute mendetail dari sirkuit ExpressRoute. Tabel rute akan memperlihatkan semua rute atau dapat difilter untuk memperlihatkan rute untuk tipe peering tertentu. Anda dapat menggunakan tabel rute untuk memvalidasi konfigurasi peering dan konektivitas Anda.
+Cmdlet **Get-AzExpressRouteCrossConnectionRouteTable** mengambil tabel rute terperinci dari sirkuit ExpressRoute. Tabel rute akan menampilkan semua rute atau dapat difilter untuk menampilkan rute untuk jenis peering tertentu. Anda dapat menggunakan tabel rute untuk memvalidasi konfigurasi dan konektivitas peering Anda.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Get-AzExpressRouteCrossConnectionRouteTable -ResourceGroupName $RG -ExpressRoute
 ## PARAMETERS
 
 ### -CrossConnectionName
-Nama Express Route Cross Connection
+Nama Koneksi Lintas Rute Ekspres
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-The Express Route Cross Connection
+Koneksi Lintas Rute Ekspres
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

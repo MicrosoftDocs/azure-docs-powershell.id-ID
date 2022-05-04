@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPool.md
-ms.openlocfilehash: 9fb82406a085981a4e7dee018eb208aadd5a927a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a607bf26d9d6e2c1d66ce652b12f34489da5960a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269811"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610052"
 ---
 # New-AzSynapseKustoPool
 
 ## SYNOPSIS
 Membuat atau memperbarui kumpulan Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah di atas membuat kumpulan Kusto baru bernama "testnewkustopool" di ruang
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurge
-Nilai boolean yang menunjukkan jika operasi pembersihan diaktifkan.
+Nilai boolean yang menunjukkan apakah operasi pembersihan diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableStreamingIngest
-Nilai boolean yang menunjukkan jika penyetelan streaming diaktifkan.
+Nilai boolean yang menunjukkan apakah penyerapan streaming diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,9 +111,9 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag Kusto Pool.
+ETag dari kumpulan Kusto.
 Hilangkan nilai ini untuk selalu menimpa Kumpulan Kusto saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk mengizinkan Kusto Pool baru dibuat, tetapi untuk mencegah pembaruan Kusto Pool yang sudah ada.
-Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
+Atur ke '*' untuk mengizinkan kumpulan Kusto baru dibuat, tetapi untuk mencegah pembaruan Kumpulan Kusto yang ada.
+Nilai lain akan menghasilkan respons 412 Pra-kondisi Gagal.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan Kusto.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMaximum
-Jumlah instans maksimum yang diperbolehkan.
+Jumlah instans maksimum yang diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMinimum
-Jumlah instans minimum yang diperbolehkan.
+Jumlah instans minimum yang diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -291,7 +294,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skusize
+### -SkuSize
 Ukuran SKU.
 
 ```yaml
@@ -336,7 +339,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -351,8 +354,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

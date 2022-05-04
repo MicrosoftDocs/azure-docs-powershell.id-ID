@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
-ms.openlocfilehash: 658b565f5057bf81058a6dd02f3c40e9e24f79d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 125bb39618a2f031c33c6a8c9df0ee8b6b0560f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679356"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627114"
 ---
 # Get-AzNetworkInterface
 
 ## SYNOPSIS
 Mendapatkan antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Cmdlet **Get-AzNetworkInterface** mendapatkan antarmuka jaringan Azure atau daft
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua antarmuka jaringan
+### Contoh 1: Mendapatkan semua antarmuka jaringan
 ```powershell
 Get-AzNetworkInterface
 ```
@@ -125,7 +128,7 @@ MacAddress                  :
 
 Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini.
 
-### Contoh 2: Dapatkan semua antarmuka jaringan dengan status penyediaan tertentu
+### Contoh 2: Mendapatkan semua antarmuka jaringan dengan status provisi tertentu
 ```powershell
 Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" | Where-Object {$_.ProvisioningState -eq 'Succeeded'}
 ```
@@ -283,7 +286,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama antarmuka jaringan yang didapat cmdlet ini.
 
 ```yaml
@@ -338,7 +341,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari antarmuka jaringan.
+Id Azure Resource Manager dari antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineIndex
-Menentukan indeks mesin virtual dari kumpulan skala mesin virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
+Menentukan indeks komputer virtual dari set skala komputer virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSetName
-Menentukan nama kumpulan skala mesin virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
+Menentukan nama set skala komputer virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

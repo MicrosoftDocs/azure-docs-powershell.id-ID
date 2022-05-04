@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibleChildResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibleChildResource.md
-ms.openlocfilehash: 814129326ef2a3119378d0fab833ef05fc872974
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 27be2e8f3b191634deb8eb113906594c1acfa09e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275517"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681654"
 ---
 # Get-AzRoleEligibleChildResource
 
 ## SYNOPSIS
-Dapatkan sumber daya anak dari sumber daya di mana pengguna memiliki akses yang memenuhi syarat
+Mendapatkan sumber daya anak dari sumber daya tempat pengguna memiliki akses yang memenuhi syarat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroleeligiblechildresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzRoleEligibleChildResource -InputObject <IAuthorizationIdentity> [-Filter <
 ```
 
 ## DESCRIPTION
-Dapatkan sumber daya anak dari sumber daya di mana pengguna memiliki akses yang memenuhi syarat
+Mendapatkan sumber daya anak dari sumber daya tempat pengguna memiliki akses yang memenuhi syarat
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua sumber daya turunan
+### Contoh 1: Mencantumkan semua sumber daya anak
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/"
 PS C:\> Get-AzRoleEligibleChildResource -Scope $scope                              
@@ -49,9 +52,9 @@ AnujRG2                                            resourcegroup
 asghodke-rg                                        resourcegroup
 ```
 
-Dapatkan semua sumber daya turunan sumber daya `scope` tempat pengguna panggilan memiliki tugas yang memenuhi syarat.
+Dapatkan semua sumber daya anak dari sumber daya `scope` tempat pengguna panggilan memiliki penetapan yang memenuhi syarat.
 
-### Contoh 2: Daftar semua sumber daya turunan yang difilter menurut tipe sumber daya
+### Contoh 2: Mencantumkan semua sumber daya anak yang difilter menurut jenis sumber daya
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/"
 PS C:\> $filter = "resoureType eq 'resourcegroup'"
@@ -65,7 +68,7 @@ AnujRG2                                            resourcegroup
 asghodke-rg                                        resourcegroup
 ```
 
-Anda dapat memfilter menurut langganan, resourceGroup, atau tipe sumber daya apa pun.
+Anda dapat memfilter berdasarkan langganan, resourceGroups, atau jenis sumber daya apa pun.
 
 ## PARAMETERS
 
@@ -85,9 +88,9 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan pada operasi.
-Gunakan $filter=resourceType+eq+'Subscription' untuk memfilter sumber daya tipe saja = 'Langganan'.
-Gunakan $filter=resourceType+eq+'subscription'+or+resourceType+eq+'resourcegroup' untuk memfilter sumber daya tipe = 'Langganan' atau 'ResourceGroup'
+Filter yang akan diterapkan pada operasi.
+Gunakan $filter=resourceType+eq+'Subscription' untuk memfilter hanya pada sumber daya jenis = 'Langganan'.
+Gunakan $filter=resourceType+eq+'subscription'+or+resourceType+eq+'resourcegroup' untuk memfilter sumber daya jenis = 'Langganan' atau 'ResourceGroup'
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup kebijakan manajemen peran.
+### -Cakupan
+Cakupan kebijakan manajemen peran.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -155,12 +158,12 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
-  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran yang akan dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleEligibilityScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) dari jadwal kelayakan peran yang akan didapatkan.
+  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
-  - `[RoleManagementPolicyName <String>]`: Nama (guid) kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Lingkup kebijakan manajemen peran.
+  - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
+  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
 
 ## RELATED LINKS

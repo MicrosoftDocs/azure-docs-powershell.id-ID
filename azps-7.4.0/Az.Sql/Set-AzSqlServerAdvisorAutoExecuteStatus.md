@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 05851ae333a0c0a04b4b83574de1e2bb5b48587a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f0cea0c721dafb96f6dea79e600bd250e2773286
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933265"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647446"
 ---
 # Set-AzSqlServerAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
-Memperbarui status eksekusi otomatis Penasihat Server Azure SQL.
+Memperbarui status eksekusi otomatis Azure SQL Server Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserveradvisorautoexecutestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Set-AzSqlServerAdvisorAutoExecuteStatus** mengatur properti eksekusi ot
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan eksekusi otomatis untuk Penasihat
+### Contoh 1: Mengaktifkan eksekusi otomatis untuk Advisor
 ```powershell
 Set-AzSqlServerAdvisorAutoExecuteStatus -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex" -AutoExecuteStatus Enabled
 ```
@@ -48,12 +51,12 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mengaktifkan status eksekusi otomatis penasihat bernama CreateIndex.
+Perintah ini memungkinkan status eksekusi otomatis Advisor bernama CreateIndex.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang mana cmdlet ini memperbarui status eksekusi otomatis.
+Menentukan nama advisor tempat cmdlet ini memperbarui status eksekusi otomatis.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept wildcard characters: False
 ### -AutoExecuteStatus
 Menentukan nilai di mana cmdlet ini memperbarui status eksekusi otomatis.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan
-- Tamu penyandang cacat
+- Aktif
+- Nonaktifkan
 - Default
 
 ```yaml
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -177,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlServerAdvisorModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor
 
 ## RELATED LINKS
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
-ms.openlocfilehash: 799871ebf8a306f2c3e8acaeea31edc8f3f5b1a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5555f86c87cbfa3663738f7defd1a4dcbdcdf746
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128439"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633986"
 ---
 # New-AzCommunicationServiceKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses CommunicationService.
-PrimaryKey dan SecondaryKey tidak dapat diregenerasi pada saat yang sama.
+PrimaryKey dan SecondaryKey tidak dapat diregenerasi secara bersamaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.communication/new-azcommunicationservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ New-AzCommunicationServiceKey -CommunicationServiceName <String> -ResourceGroupN
  [<CommonParameters>]
 ```
 
-### Regenerasi
+### Buat ulang
 ```
 New-AzCommunicationServiceKey -CommunicationServiceName <String> -ResourceGroupName <String>
  -Parameter <IRegenerateKeyParameters> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
-### RegenerasiViaIdentitas
+### RegenerateViaIdentity
 ```
 New-AzCommunicationServiceKey -InputObject <ICommunicationIdentity> -Parameter <IRegenerateKeyParameters>
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -48,11 +51,11 @@ New-AzCommunicationServiceKey -InputObject <ICommunicationIdentity> [-KeyType <K
 
 ## DESCRIPTION
 Meregenerasi kunci akses CommunicationService.
-PrimaryKey dan SecondaryKey tidak dapat diregenerasi pada saat yang sama.
+PrimaryKey dan SecondaryKey tidak dapat diregenerasi secara bersamaan.
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kunci Utama menggunakan hashtable IRegenerateKeyParameters
+### Contoh 1: Meregenerasi kunci Primer menggunakan hashtable IRegenerateKeyParameters
 ```powershell
 New-AzCommunicationServiceKey -CommunicationServiceName ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1 -Parameter @{KeyType="Primary"}
 ```
@@ -63,7 +66,7 @@ PrimaryConnectionString              PrimaryKey
 endpoint=<example-primary-endpoint>  <example-primarykey>
 ```
 
-Tidak valid kunci Utama sebelumnya, regenerasi kunci baru dan mengembalikannya.
+Membatalkan kunci Primer sebelumnya, meregenerasi kunci baru dan mengembalikannya.
 
 ### Contoh 2: Meregenerasi kunci Sekunder menggunakan KeyType
 ```powershell
@@ -76,7 +79,7 @@ SecondaryConnectionString               SecondaryKey
 endpoint=<example-secondary-endpoint>   <example-secondarykey>
 ```
 
-Tidak valid kunci Sekunder sebelumnya, regenerasi kunci baru dan kembalikan.
+Membatalkan kunci Sekunder sebelumnya, meregenerasi kunci baru dan mengembalikannya.
 
 ## PARAMETERS
 
@@ -126,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-KeyType untuk diregenerasi.
-Harus berupa 'primary' atau 'secondary'(case-insensitive).
+KeyType yang akan diregenerasi.
+Harus berupa 'primer' atau 'sekunder'(tidak peka huruf besar/kecil).
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Support.KeyType
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter menguraikan permintaan untuk meregenerasi kunci akses Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Parameter menjelaskan permintaan untuk meregenerasi kunci akses Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.Api20200820.IRegenerateKeyParameters
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -243,11 +246,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 PARAMETER <IRegenerateKeyParameters>: Parameter menjelaskan permintaan untuk meregenerasi kunci akses
-  - `[KeyType <KeyType?>]`: KeyType untuk diregenerasi. Harus berupa 'primary' atau 'secondary'(case-insensitive).
+  - `[KeyType <KeyType?>]`: KeyType yang akan diregenerasi. Harus berupa 'primer' atau 'sekunder'(tidak peka huruf besar/kecil).
 
 ## RELATED LINKS
 

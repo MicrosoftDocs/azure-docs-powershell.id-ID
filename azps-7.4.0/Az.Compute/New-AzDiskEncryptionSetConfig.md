@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
-ms.openlocfilehash: ba568ada7198972b1270295ce3a93e00f8becf65
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d554dd35203efae16ffb18555b79dec2019375c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686988"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682752"
 ---
 # New-AzDiskEncryptionSetConfig
 
 ## SYNOPSIS
-Membuat objek kumpulan enkripsi disk yang dapat dikonfigurasi.
+Membuat objek set enkripsi disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskencryptionsetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzDiskEncryptionSetConfig [-Location] <String> [[-Tag] <Hashtable>] [[-Ident
 ```
 
 ## DESCRIPTION
-Membuat objek kumpulan enkripsi disk yang dapat dikonfigurasi.
+Membuat objek set enkripsi disk yang dapat dikonfigurasi.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ $config = New-AzDiskEncryptionSetConfig -Location 'westcentralus' -KeyUrl "https
 $config | New-AzDiskEncryptionSet -ResourceGroupName 'rg1' -Name 'enc1'
 ```
 
-Membuat kumpulan enkripsi disk menggunakan kunci aktif yang diberikan dalam kubah kunci.
+Membuat set enkripsi disk menggunakan kunci aktif yang diberikan di brankas kunci.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionType
-Gunakan ini untuk mengatur tipe enkripsi kumpulan enkripsi disk. Nilai yang tersedia adalah: 'EncryptionAtRestWithPlatformKey', 'EncryptionAtRestWithCustomerKey'.
+Gunakan ini untuk mengatur jenis enkripsi set enkripsi disk. Nilai yang tersedia adalah: 'EncryptionAtRestWithPlatformKey', 'EncryptionAtRestWithCustomerKey'.
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas Terkelola yang digunakan oleh DiskEncryptionSet. Hanya SystemAssigned yang didukung.
+Jenis Identitas Terkelola yang digunakan oleh DiskEncryptionSet. Hanya SystemAssigned yang didukung.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUrl
-Url menunjuk ke kunci aktif di KeyVault
+Url yang menunjuk ke kunci aktif di KeyVault
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -RotationToLatestKeyVersionEnabled
-Dapatkan atau setel bendera ini ke true untuk mengaktifkan pembaruan otomatis enkripsi disk ini
+Mendapatkan atau mengatur bendera ini ke true untuk mengaktifkan pembaruan otomatis enkripsi disk ini
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Id sumber daya keyVault yang berisi kunci aktif.
+Id sumber daya KeyVault yang berisi kunci aktif.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -161,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

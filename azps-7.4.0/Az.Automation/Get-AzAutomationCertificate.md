@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCertificate.md
-ms.openlocfilehash: 81c0262838b4a38fcfed1ffaef4f4108dcbd3995
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 81efd2b83c3ebdb36526d41797ae908f96e01a4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751392"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592866"
 ---
 # Get-AzAutomationCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat Otomatisasi.
+Mendapatkan sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,9 +47,9 @@ Tentukan nama sertifikat untuk mendapatkan sertifikat tertentu.
 PS C:\>Get-AzAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua sertifikat dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua sertifikat di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan sertifikat
+### Contoh 2: Mendapatkan sertifikat
 ```
 PS C:\>Get-AzAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17" -Name "ContosoCertificate"
 ```
@@ -56,7 +59,7 @@ Perintah ini mendapatkan metadata untuk sertifikat bernama ContosoCertificate.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengambil sertifikat.
+Menentukan nama akun Automation tempat cmdlet ini mengambil sertifikat.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat yang akan diambil.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan sertifikat Otomatisasi.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan sertifikat Automation.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

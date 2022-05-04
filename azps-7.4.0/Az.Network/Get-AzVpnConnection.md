@@ -5,20 +5,23 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnConnection.md
-ms.openlocfilehash: 777a1dfb372e84f84e762d0ab84cf043946b1f18
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5edbe165ac0787688c827c714b2caa79cc24b95
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313857"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585200"
 ---
 # Get-AzVpnConnection
 
 ## SYNOPSIS
-Mendapatkan koneksi vpn menurut nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
+Mendapatkan koneksi vpn berdasarkan nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
 
 >[!NOTE]
-> Perintah Powershell ini ditujukan untuk pelanggan yang hanya menggunakan VPN Gateway situs-ke-situs Virtual WAN. 
+> Perintah Powershell ini hanya untuk pelanggan yang menggunakan VPN Gateway Situs-ke-situs Virtual WAN. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzVpnConnection -ParentResourceId <String> [-Name <String>] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan koneksi vpn menurut nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
+Mendapatkan koneksi vpn berdasarkan nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
 
 ## EXAMPLES
 
@@ -96,11 +99,11 @@ RoutingConfiguration      : {
                             }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan VpnSite di US Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection.
 
-Lalu ia mendapatkan koneksi menggunakan nama koneksi.
+Kemudian mendapatkan koneksi menggunakan nama koneksi.
 
 ### Contoh 2
 
@@ -170,7 +173,7 @@ RoutingConfiguration      : {
                             }
 ```
 
-Cmdlet ini mendapatkan semua koneksi yang dimulai dengan "test".
+Cmdlet ini mendapatkan semua koneksi yang dimulai dengan "uji".
 
 ## PARAMETERS
 
@@ -189,7 +192,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-VpnGateway induk untuk sambungan ini.
+VpnGateway induk untuk koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari induk VpnGateway untuk koneksi ini.
+Id sumber daya vpnGateway induk untuk koneksi ini.
 
 ```yaml
 Type: System.String
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
-ms.openlocfilehash: 84c08e436c24def13f6660a8719e5948dfeb41d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 677228214da268b4102c25a67fdb59fa1d69cdf2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879210"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681008"
 ---
 # Reset-AzAttestationPolicy
 
 ## SYNOPSIS
-Mengatur ulang kebijakan dari penyewa di Azure Attestationn.}
+Mereset kebijakan dari penyewa di Azure Attestationn.}
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/reset-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Reset-AzAttestationPolicy [-ResourceId] <String> -Tee <String> [-Policy <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Reset-AzAttestationPolicy mengatur ulang kebijakan pengesahan yang ditentukan pengguna dari penyewa dalam Azure Attestation.
+Cmdlet Reset-AzAttestationPolicy mengatur ulang kebijakan pengesahan yang ditentukan pengguna dari penyewa di Azure Attestation.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet Reset-AzAttestationPolicy mengatur ulang kebijakan pengesahan yang ditent
 Reset-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave
 ```
 
-Mengatur ulang kebijakan ke default untuk *pshtest* Penyedia Pengesahan untuk tipe Tee *SgxEnclave*.
+Reset kebijakan ke default untuk *pshtest* Penyedia Pengesahan untuk jenis Tee *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ $resetJwt = Get-Content -Path .\reset.policy.txt.signed.txt
 Reset-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave -Policy $resetJwt
 ```
 
-Jika *pshtest* Penyedia Pengesahan dikonfigurasi untuk menggunakan model kepercayaan terisolasi, atur ulang kebijakan ke default untuk tipe Tee *SgxEnclave* dengan menyertakan kebijakan yang ditandatangani.
+Jika *pshtest* Penyedia Pengesahan dikonfigurasi untuk menggunakan model kepercayaan terisolasi, atur ulang kebijakan ke default untuk jenis Tee *SgxEnclave* dengan menyertakan kebijakan yang ditandatangani.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penyewa.
 Cmdlet ini mengatur ulang kebijakan pengesahan untuk penyewa yang ditentukan parameter ini.
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan Token Web JSON yang menjelaskan dokumen kebijakan untuk direset.
+Menentukan JSON Web Token yang menjelaskan dokumen kebijakan yang akan direset.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan RESOURCEID penyedia atestation.
+Menentukan ResourceID dari penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tee
-Menentukan tipe Lingkungan Eksekusi Tepercaya.
+Menentukan jenis Lingkungan Eksekusi Tepercaya.
 Kami mendukung empat jenis lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
 
 ```yaml
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

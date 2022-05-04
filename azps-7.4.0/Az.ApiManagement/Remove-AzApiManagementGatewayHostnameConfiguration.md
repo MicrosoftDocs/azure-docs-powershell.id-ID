@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGatewayHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGatewayHostnameConfiguration.md
-ms.openlocfilehash: 93ee7c23bec1df96dd7d867ff18c319e99af8cbb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: de70b8daa758d7a671f7d8248eb92dc775f7f624
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067563"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663048"
 ---
 # Remove-AzApiManagementGatewayHostnameConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi nama host dari Gateway yang sudah ada.
+Menghapus konfigurasi nama host dari Gateway yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementgatewayhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzApiManagementGatewayHostnameConfiguration -ResourceId <String> [-PassTh
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementGatewayHostnameConfiguration** menghapus konfigurasi nama host dari Gateway yang sudah ada.
+Cmdlet **Remove-AzApiManagementGatewayHostnameConfiguration** menghapus konfigurasi nama host dari Gateway yang ada.
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Remove-AzApiManagementGatewayHostnameConfiguration -Context $apimContext -GatewayId "g0001" -GatewayHostnameConfigurationId "h0001"
 ```
 
-Perintah ini menghapus konfigurasi nama host gateway yang sudah ada dan tidak meminta konfirmasi kepada pengguna.
+Perintah ini menghapus konfigurasi nama host gateway yang ada dan tidak meminta konfirmasi kepada pengguna.
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayHostnameConfigurationId
-Pengidentifikasi konfigurasi nama host gateway yang sudah ada.
+Pengidentifikasi konfigurasi nama host gateway yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementGatewayHostnameConfiguration. Parameter ini diperlukan.
+Instans PsApiManagementGatewayHostnameConfiguration. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGatewayHostnameConfiguration
@@ -132,9 +135,9 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menulis true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true jika operasi berhasil.
 Parameter ini bersifat opsional.
-Nilai default adalah false.
+Nilai defaultnya adalah salah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

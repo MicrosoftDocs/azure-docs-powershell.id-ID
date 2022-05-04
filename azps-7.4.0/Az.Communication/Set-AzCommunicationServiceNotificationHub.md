@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
-ms.openlocfilehash: b7294f02d5b95d4f91df442ba5927c35e01741a4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 684d38ca3bbf51d794751b34d0d18aaed3c95035
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143290025"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633932"
 ---
 # Set-AzCommunicationServiceNotificationHub
 
 ## SYNOPSIS
-Menautkan Hub Pemberitahuan Azure ke layanan komunikasi ini.
+Menautkan Azure Notification Hub ke layanan komunikasi ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.communication/set-azcommunicationservicenotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,16 +37,16 @@ Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -Re
 ```
 
 ## DESCRIPTION
-Menautkan Hub Pemberitahuan Azure ke layanan komunikasi ini.
+Menautkan Azure Notification Hub ke layanan komunikasi ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menyediakan detail Hub Pemberitahuan secara interaktif
+### Contoh 1: Berikan detail Notification Hub secara interaktif
 ```powershell
 Set-AzCommunicationServiceNotificationHub -CommunicationServiceName ContosoAcsResource2 -ResourceGroupName ContosoResourceProvider1 -ConnectionString "<notificationhub-connectionstring>" -NotificationHubResourceId "<notificationhub-resourceid>"
 ```
 
-Hub pemberitahuan tertaut memungkinkan sumber daya ACS untuk mengirim pemberitahuan untuk kejadian tertentu.
+Hub pemberitahuan tertaut memungkinkan sumber daya ACS mengirim pemberitahuan untuk peristiwa tertentu.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkNotificationHubParameter
-Deskripsi Hub Pemberitahuan Azure untuk menautkan ke layanan komunikasi Untuk membangun, lihat bagian CATATAN untuk properti LINKNOTIFICATIONHUBPARAMETER dan membuat tabel hash.
+Deskripsi Azure Notification Hub untuk menautkan ke layanan komunikasi Untuk membangun, lihat bagian CATATAN untuk properti LINKNOTIFICATIONHUBPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.Api20200820.ILinkNotificationHubParameters
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,7 +207,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LINKNOTIFICATIONHUBPARAMETER <ILinkNotificationHubParameters>: Deskripsi Hub Pemberitahuan Azure untuk menautkan ke layanan komunikasi
+LINKNOTIFICATIONHUBPARAMETER <ILinkNotificationHubParameters>: Deskripsi Azure Notification Hub untuk ditautkan ke layanan komunikasi
   - `ConnectionString <String>`: String koneksi untuk hub pemberitahuan
   - `ResourceId <String>`: ID sumber daya hub pemberitahuan
 

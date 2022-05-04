@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewScanRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewScanRuleset.md
-ms.openlocfilehash: ae9629abfa6d1a5e5aaf1e95d7da86b0ee7c1d79
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d8aa2e0a8a75f38eec2d77c5c28549f82a609f23
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868770"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684572"
 ---
 # Remove-AzPurviewScanRuleset
 
 ## SYNOPSIS
 Menghapus set aturan pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewscanruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

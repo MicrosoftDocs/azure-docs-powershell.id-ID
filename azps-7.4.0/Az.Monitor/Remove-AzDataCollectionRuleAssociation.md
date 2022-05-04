@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: f7b07223043767bc2d019632c1382f6c48bece50
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3a0577fcb6484c35a3fab2d2ce4f4d7ca4af03fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680652"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705126"
 ---
 # Remove-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
-Menghapus kaitan aturan pengumpulan data.
+Menghapus asosiasi aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,11 +59,11 @@ Remove-AzDataCollectionRuleAssociation
 ## DESCRIPTION
 Cmdlet **Remove-AzDataCollectionRuleAssociation** menghapus asosiasi aturan pengumpulan data (DCRA).
 
-Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki hubungan dengan beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan sekumpulan DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya ke mesin virtual tempatnya diterapkan. Berikut adalah [artikel "Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+Untuk menerapkan DCR ke komputer virtual, Anda membuat asosiasi untuk komputer virtual. Komputer virtual mungkin memiliki asosiasi ke beberapa DCR, dan DCR mungkin memiliki beberapa komputer virtual yang terkait dengannya. Ini memungkinkan Anda untuk mendefinisikan satu set DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya untuk komputer virtual yang menerapkannya. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aturan pengumpulan data yang terkait dengan parameter nama dan ID sumber daya target (mesin virtual terkait)
+### Contoh 1: Menghapus asosiasi aturan pengumpulan data dengan parameter nama dan ID sumber daya target (komputer virtual terkait)
 ```powershell
 Remove-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id -AssociationName $assocName
 ```
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

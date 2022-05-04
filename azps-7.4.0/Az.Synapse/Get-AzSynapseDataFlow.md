@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataFlow.md
-ms.openlocfilehash: 31797165e4adb6e39273b810d966f33c1e2023ce
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf4d66ac335f1cc55b9568057d15777287afa6b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993979"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643342"
 ---
 # Get-AzSynapseDataFlow
 
 ## SYNOPSIS
-Mendapatkan informasi tentang alur data di ruang kerja.
+Mendapatkan informasi tentang aliran data di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsedataflow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Get-AzSynapseDataFlow -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzSynapseDataFlow** mendapatkan informasi tentang aliran data di ruang kerja.
-Jika Anda menentukan nama alur data, cmdlet ini akan mendapatkan informasi tentang alur data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini akan mendapatkan informasi tentang semua alur data dalam ruang kerja.
+Jika Anda menentukan nama aliran data, cmdlet ini mendapatkan informasi tentang aliran data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua aliran data di ruang kerja.
 
 ## EXAMPLES
 
@@ -43,14 +46,14 @@ Jika Anda tidak menentukan nama, cmdlet ini akan mendapatkan informasi tentang s
 Get-AzSynapseDataFlow -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua alur data di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua aliran data di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseDataFlow -WorkspaceName ContosoWorkspace -Name ContosoDataFlow
 ```
 
-Perintah ini mendapatkan informasi tentang alur data bernama ContosoDataFlow di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang aliran data bernama ContosoDataFlow di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama alur data.
+### -Name
+Nama aliran data.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: f21d0fc1af146c0ae43c5553d0d57a6f89e46f8e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc3b222ed2b03b3fc4da6e7135ce52f5c974ab41
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287811"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596480"
 ---
 # Get-AzIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
-Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terkandung dalam Azure IoT Hub Device Provisioning Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningservicecertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIoTDeviceProvisioningServiceCertificate [-ResourceId] <String> [-Certifica
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
+Untuk penjelasan terperinci tentang sertifikat CA di Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpGcA=
 ```
 
-Tampilkan detail tentang "mycertificate" dalam layanan penyediaan perangkat Azure IoT Hub.
+Tampilkan detail tentang "mycertificate" dalam layanan provisi perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +77,7 @@ myresourcegroup     myiotdps    mycert1         Unverified 12/04/2027 13:12
 myresourcegroup     myiotdps    mycert2         Unverified 12/04/2027 13:12
 ```
 
-Cantumkan semua sertifikat dalam "myiotdps" menggunakan pipeline.
+Cantumkan semua sertifikat di "myiotdps" menggunakan alur.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverInitiateMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverInitiateMove.md
-ms.openlocfilehash: c67d9331fe2907a40abde5af31c1a922ea10dc44
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 154911107ee31af84ac56aff1ce31c38eaddb369
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117009"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661194"
 ---
 # Invoke-AzResourceMoverInitiateMove
 
 ## SYNOPSIS
 Memindahkan kumpulan sumber daya yang disertakan dalam isi permintaan.
-Operasi pemindahan dipicu setelah moveResources berada dalam perpindahanState 'MovePending' atau 'MoveFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke CommitPending.
-Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
+Operasi pemindahan dipicu setelah moveResources berada di moveState 'MovePending' atau 'MoveFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke CommitPending.
+Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverinitiatemove) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +32,12 @@ Invoke-AzResourceMoverInitiateMove -MoveCollectionName <String> -ResourceGroupNa
 
 ## DESCRIPTION
 Memindahkan kumpulan sumber daya yang disertakan dalam isi permintaan.
-Operasi pemindahan dipicu setelah moveResources berada dalam perpindahanState 'MovePending' atau 'MoveFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke CommitPending.
-Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
+Operasi pemindahan dipicu setelah moveResources berada di moveState 'MovePending' atau 'MoveFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke CommitPending.
+Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
-### Contoh 1: Validasi dependensi sebelum Memulai Pemindahan untuk sumber daya.
+### Contoh 1: Memvalidasi dependensi sebelum Memulai Pemindahan untuk sumber daya.
 ```powershell
 Invoke-AzResourceMoverInitiateMove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('psdemorm-vnet') -MoveResourceInputType "MoveResourceId" -ValidateOnly
 ```
@@ -56,7 +59,7 @@ Status         : Succeeded
 
 Validasi dependensi sebelum Memulai Pemindahan untuk sumber daya.
 
-### Contoh 2: Memulai Pemindahan untuk kumpulan sumber daya dalam koleksi Pindahkan menggunakan "Nama MoveResource" sebagai input.
+### Contoh 2: Memulai Pemindahan untuk kumpulan sumber daya dalam kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input.
 ```powershell
 Invoke-AzResourceMoverInitiateMove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('psdemorm-vnet') -MoveResourceInputType "MoveResourceId" 
 ```
@@ -76,9 +79,9 @@ Status         : Succeeded
 
 ```
 
-Mulai Pindahkan untuk kumpulan sumber daya dalam koleksi Pindahkan menggunakan "Nama MoveResource" sebagai input.
+Mulai Pindahkan untuk kumpulan sumber daya dalam kumpulan Pindahkan menggunakan "Nama MoveResource" sebagai input.
 
-### Contoh 3: Memulai Pemindahan untuk kumpulan sumber daya dalam Koleksi Pemindahan menggunakan "SourceARMID" sebagai input.
+### Contoh 3: Memulai Pemindahan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "SourceARMID" sebagai input.
 ```powershell
 Invoke-AzResourceMoverInitiateMove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/PSDemoRM/providers/Microsoft.Network/networkSecurityGroups/PSDemoVM-nsg') -MoveResourceInputType "MoveResourceSourceId"
 ```
@@ -98,12 +101,12 @@ Status         : Succeeded
 
 ```
 
-Mulai Pindahkan untuk kumpulan sumber daya dalam kumpulan Pindahkan menggunakan "SourceARMID" sebagai input.
+Mulai Pindahkan untuk kumpulan sumber daya dalam kumpulan Pemindahan menggunakan "SourceARMID" sebagai input.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveCollectionName
-Nama Pindahkan Koleksi.
+Nama Kumpulan Pemindahan.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar id sumber daya, secara default id sumber daya menerima id sumber daya pindah kecuali tipe input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar Id sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResourceInputType
-Menentukan tipe input pemindahan sumber daya.
+Menentukan jenis input sumber daya pemindahan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Support.MoveResourceInputType
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidateOnly
-Mendapatkan atau mengatur nilai yang mengindikasikan apakah operasi hanya perlu menjalankan prasyarat.
+Mendapatkan atau menetapkan nilai yang menunjukkan apakah operasi hanya perlu menjalankan prasyarat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,8 +240,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetwork.md
-ms.openlocfilehash: 373cfadea6d5f0bfbfe975d8880e25dfa0ad1ec9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9b7138d5c001e99e5fa016345907cd44d49e4db
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277191"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722088"
 ---
 # Get-AzRecoveryServicesAsrNetwork
 
 ## SYNOPSIS
-Mendapatkan informasi tentang jaringan yang dikelola oleh Site Recovery untuk kubah saat ini.
+Mendapatkan informasi tentang jaringan yang dikelola oleh Site Recovery untuk vault saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzRecoveryServicesAsrNetwork** mendapatkan informasi tentang jaring
 $Networks = Get-AzRecoveryServicesAsrNetwork -Fabric $Fabric
 ```
 
-Mendapatkan semua jaringan yang diketahui dalam kain yang ditentukan.
+Mendapatkan semua jaringan yang diketahui dalam fabric yang ditentukan.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Objek kain ASR
+Objek fabric ASR
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama objek ASR jaringan yang mudah dikenali.
+Nama objek ASR jaringan yang mudah diingat.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama objek ASR jaringan.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

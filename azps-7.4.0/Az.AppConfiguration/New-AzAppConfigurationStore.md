@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
-ms.openlocfilehash: fae36fa7d7cdd0fed9a63ab59abc119389cb9a74
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a1a613c0d609780a127b0e80104903bd5762fd8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687852"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645411"
 ---
 # New-AzAppConfigurationStore
 
 ## SYNOPSIS
 Membuat penyimpanan konfigurasi dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ eastus   appconfig-test03 Microsoft.AppConfiguration/configurationStores
 
 Perintah ini membuat penyimpanan konfigurasi aplikasi.
 
-### Contoh 2: Membuat konfigurasi aplikasi dengan IdentityType yang diatur ke "UserAssigned"
+### Contoh 2: Membuat konfigurasi aplikasi dengan IdentityType diatur ke "UserAssigned"
 ```powershell
 $assignedIdentity = New-AzUserAssignedIdentity -ResourceGroupName azpwsh-manual-test -Name assignedIdentity
 New-AzAppConfigurationStore -Name appconfig-test10 -ResourceGroupName azpwsh-manual-test -Location eastus -Sku standard -IdentityType "UserAssigned" -UserAssignedIdentity $assignedIdentity.Id
@@ -57,10 +60,10 @@ Location Name             Type
 eastus   appconfig-test03 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini membuat konfigurasi aplikasi dan menetapkan identitas terkelola yang ditetapkan pengguna padanya.
+Perintah ini membuat konfigurasi aplikasi dan menetapkan identitas terkelola yang ditetapkan pengguna ke dalamnya.
 Lihat contoh `Update-AzAppConfigurationStore` langkah-langkah berikut untuk mengaktifkan CMK (kunci terkelola cusomer).
 
-### Contoh 3: Membuat konfigurasi aplikasi dengan IdentityType yang diatur ke "SystemAssigned" 
+### Contoh 3: Membuat konfigurasi aplikasi dengan IdentityType diatur ke "SystemAssigned" 
 ```powershell
 New-AzAppConfigurationStore -Name appconfig-test11 -ResourceGroupName azpwsh-manual-test -Location eastus -Sku standard -IdentityType "SystemAssigned"
 ```
@@ -74,7 +77,7 @@ eastus   appconfig-test11 Microsoft.AppConfiguration/configurationStores
 Perintah ini membuat konfigurasi aplikasi dan mengaktifkan identitas terkelola yang ditetapkan sistem yang terkait dengan sumber daya.
 Lihat contoh `Update-AzAppConfigurationStore` langkah-langkah berikut untuk mengaktifkan CMK (kunci terkelola cusomer).
 
-### Contoh 4: Membuat konfigurasi aplikasi dengan IdentityType yang diatur ke "SystemAssigned, UserAssigned"
+### Contoh 4: Membuat konfigurasi aplikasi dengan IdentityType diatur ke "SystemAssigned, UserAssigned"
 ```powershell
 $assignedIdentity = New-AzUserAssignedIdentity -ResourceGroupName azpwsh-manual-test -Name assignedIdentity
 New-AzAppConfigurationStore -Name appconfig-test10 -ResourceGroupName azpwsh-manual-test -Location eastus -Sku standard -IdentityType "SystemAssigned, UserAssigned" -UserAssignedIdentity $assignedIdentity.Id
@@ -92,7 +95,7 @@ Lihat contoh `Update-AzAppConfigurationStore` langkah-langkah berikut untuk meng
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyIdentifier
-URI kunci kubah kunci yang digunakan untuk mengenkripsi data.
+URI kunci brankas kunci yang digunakan untuk mengenkripsi data.
 
 ```yaml
 Type: System.String
@@ -137,9 +140,9 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas terkelola yang digunakan.
-Tipe 'SystemAssignedAndUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
-Tipe 'Tidak Ada' akan menghapus identitas apa pun.
+Jenis identitas terkelola yang digunakan.
+Jenis 'SystemAssignedAndUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
+Jenis 'Tidak Ada' akan menghapus identitas apa pun.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Support.IdentityType
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultIdentityClientId
-Id klien identitas yang akan digunakan untuk mengakses kubah kunci.
+Id klien identitas yang akan digunakan untuk mengakses brankas kunci.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyimpanan konfigurasi.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Izin kontrol untuk lalu lintas pesawat data yang berasal dari jaringan publik saat titik akhir privat diaktifkan.
+Izin kontrol untuk lalu lintas sarana data yang berasal dari jaringan publik saat titik akhir privat diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Support.PublicNetworkAccess
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama SKU bursa konfigurasi.
+Nama SKU penyimpanan konfigurasi.
 
 ```yaml
 Type: System.String
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 
 ### -UserAssignedIdentity
 Daftar identitas yang ditetapkan pengguna yang terkait dengan sumber daya.
-Kunci kamus identitas yang ditetapkan pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+Kunci kamus identitas yang ditetapkan pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
 
 ```yaml
 Type: System.String[]
@@ -305,8 +308,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

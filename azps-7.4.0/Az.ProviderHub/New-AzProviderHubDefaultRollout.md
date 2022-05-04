@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: bd7f4748e303f767d17ac3b714eb3ed6e18163eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c36bbf2d23c8c8a9af2aa31fa4bac8e32c8ead3e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278145"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635732"
 ---
 # New-AzProviderHubDefaultRollout
 
 ## SYNOPSIS
 Membuat atau memperbarui detail peluncuran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 

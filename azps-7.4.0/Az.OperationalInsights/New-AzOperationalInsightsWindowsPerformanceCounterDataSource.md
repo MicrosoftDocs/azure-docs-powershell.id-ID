@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
-ms.openlocfilehash: fd24a093958fd8e4acf4b7e33ef87d692e784e66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7585c793e353f91ba6d6b481b70f2709c528fbf9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312075"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644028"
 ---
 # New-AzOperationalInsightsWindowsPerformanceCounterDataSource
 
 ## SYNOPSIS
-Menambahkan sumber data penghitung kinerja Windows untuk komputer tersambung yang menjalankan sistem operasi Windows.
+Menambahkan sumber data penghitung kinerja Windows untuk komputer yang terhubung yang menjalankan sistem operasi Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowsperformancecounterdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzOperationalInsightsWindowsPerformanceCounterDataSource [-Workspace] <PSWor
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzOperationalInsightsWindowsPerformanceCounterDataSource** menambahkan sumber data penghitung kinerja Windows untuk komputer tersambung yang menjalankan sistem operasi Windows.
+**Cmdlet New-AzOperationalInsightsWindowsPerformanceCounterDataSource** menambahkan sumber data penghitung kinerja Windows untuk komputer yang terhubung yang menjalankan sistem operasi Windows.
 
 ## EXAMPLES
 ### Contoh 1
@@ -52,7 +55,7 @@ ResourceId        : /subscriptions/xxxx-xxxx-xxxx-xxxx-xxxx/resourceGroups/testr
 Kind              : WindowsPerformanceCounter
 Properties        : {"objectName":"object","instanceName":"*","intervalSeconds":15,"counterName":"counters","collectorType":"Default"}
 ```
-Tambahkan sumber data penghitung kinerja Windows untuk komputer tersambung yang menjalankan sistem operasi Windows.
+Tambahkan sumber data penghitung kinerja Windows untuk komputer yang terhubung yang menjalankan sistem operasi Windows.
 ## PARAMETERS
 
 ### -CounterName
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk sumber data.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLegacyCollector
-Gunakan kolektor warisan atau kolektor default.
+Gunakan pengumpul warisan atau pengumpul default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -220,8 +223,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

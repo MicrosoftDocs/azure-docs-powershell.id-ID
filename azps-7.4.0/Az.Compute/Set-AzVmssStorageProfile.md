@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
-ms.openlocfilehash: c604968e7566be647dc0c0b69e1a87ddf0cf4824
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c29d260363d94f68543d8318d1f6e4228a74ae28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005193"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596876"
 ---
 # Set-AzVmssStorageProfile
 
 ## SYNOPSIS
 Mengatur properti profil penyimpanan untuk VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssstorageprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzVmssStorageProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Virtual Machine Scale Set (VMSS).
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskPlacement
-Menentukan penempatan disk ephemeral untuk disk sistem operasi. Properti ini dapat digunakan oleh pengguna dalam permintaan untuk memilih lokasi yaitu cache disk atau ruang disk sumber daya untuk penyediaan disk OS Ephemeral. Untuk informasi selengkapnya tentang persyaratan ukuran disk OS Ephemeral, silakan merujuk persyaratan ukuran disk OS Ephemeral untuk Windows VM di https://docs.microsoft.com/azure/virtual-machines/windows/ephemeral-os-disks#size-requirements dan Linux VM di https://docs.microsoft.com/azure/virtual-machines/linux/ephemeral-os-disks#size-requirements. Parameter ini hanya dapat digunakan jika parameter DiffDiskSetting diatur ke 'Lokal'.
+Menentukan penempatan disk ephemeral untuk disk sistem operasi. Properti ini dapat digunakan oleh pengguna dalam permintaan untuk memilih lokasi yaitu disk cache atau ruang disk sumber daya untuk provisi disk OS Ephemeral. Untuk informasi selengkapnya tentang persyaratan ukuran disk OS Ephemeral, silakan lihat persyaratan ukuran disk OS Ephemeral untuk VM Windows di https://docs.microsoft.com/azure/virtual-machines/windows/ephemeral-os-disks#size-requirements dan Linux VM di https://docs.microsoft.com/azure/virtual-machines/linux/ephemeral-os-disks#size-requirements. Parameter ini hanya dapat digunakan jika parameter DiffDiskSetting diatur ke 'Lokal'.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskSetting
-Menentukan setelan diska yang berbeda untuk disk sistem operasi.
+Menentukan pengaturan disk yang berbeda untuk disk sistem operasi.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
+Menentukan ID sumber daya set enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -Gambar
 Menentukan URI blob untuk gambar pengguna.
-VMSS membuat disk sistem operasi dalam wadah gambar pengguna yang sama.
+VMSS membuat disk sistem operasi dalam kontainer gambar pengguna yang sama.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Menentukan tipe penawaran virtual machine image (VMImage).
+Menentukan jenis penawaran gambar komputer virtual (VMImage).
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
 ```yaml
@@ -185,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ImageReferencesku
-Menentukan VMImage SKU.
+### -ImageReferenceSku
+Menentukan SKU VMImage.
 Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceVersion
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru alih-alih versi tertentu.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan diska terkelola.
+Menentukan disk terkelola.
 
 ```yaml
 Type: System.String
@@ -233,11 +236,11 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCaching
-Menentukan mode cache disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan mode penembolokan disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
-Jika Anda mengubah nilai cache, cmdlet akan memulai ulang mesin virtual.
-Pengaturan ini mempengaruhi konsistensi dan kinerja disk.
+Jika Anda mengubah nilai penembolokan, cmdlet akan memulai ulang komputer virtual.
+Pengaturan ini memengaruhi konsistensi dan performa disk.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.CachingTypes]
@@ -253,11 +256,11 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCreateOption
-Menentukan cara cmdlet ini membuat mesin virtual VMSS.
+Menentukan bagaimana cmdlet ini membuat komputer virtual VMSS.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Lampirkan : Nilai ini digunakan saat Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
-- FromImage : Nilai ini digunakan saat Anda menggunakan gambar untuk membuat mesin virtual VMSS.
-Jika menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
+- Lampirkan : Nilai ini digunakan saat Anda menggunakan disk khusus untuk membuat komputer virtual VMSS. 
+- FromImage : Nilai ini digunakan saat Anda menggunakan gambar untuk membuat komputer virtual VMSS.
+Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
 
 ```yaml
 Type: System.String
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskOsType
-Menentukan tipe sistem operasi pada diska.
+Menentukan jenis sistem operasi pada disk.
 Ini hanya diperlukan untuk skenario gambar pengguna dan bukan untuk gambar platform.
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 
 ### -VirtualMachineScaleSet
 Menentukan objek VMSS.
-Untuk mendapatkan objek, gunakan objek New-AzVmssConfig.
+Untuk mendapatkan objek , gunakan objek New-AzVmssConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -349,8 +352,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -390,7 +393,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String[]
 

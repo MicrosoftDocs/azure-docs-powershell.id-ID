@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualApplianceSite.md
-ms.openlocfilehash: 107b63ad0caa237eb674a6a2539114a92f3bacfc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2a347f46912137e15611cfe80e020b90bad0537c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742266"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684876"
 ---
 # Remove-AzVirtualApplianceSite
 
 ## SYNOPSIS
-Hapus situs peralatan virtual dari sumber daya Peralatan Virtual Jaringan.
+Hapus situs appliance virtual dari sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzVirtualApplianceSite -VirtualApplianceSite <PSVirtualApplianceSite> [-F
 ```
 
 ## DESCRIPTION
-Perintah Remove-AzVirtualApplianceSite menghapus situs Peralatan Virtual dari sumber daya Peralatan Virtual Jaringan.
+Perintah Remove-AzVirtualApplianceSite menghapus situs Virtual Appliance dari sumber daya Network Virtual Appliance.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Perintah Remove-AzVirtualApplianceSite menghapus situs Peralatan Virtual dari su
 Remove-AzVirtualApplianceSite -Name testsite -ResourceGroupName testrg -NetworkVirtualApplianceId $nva.Id
 ```
 
-Hapus sumber daya situs Alat Virtual. 
+Menghapus sumber daya situs Virtual Appliance. 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkVirtualApplianceId
-ID sumber daya dari Network Virtual Appliance yang terkait dengan situs ini.
+ID sumber daya Network Virtual Appliance yang terkait dengan situs ini.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualApplianceSite
-Objek situs alat virtual.
+Objek situs appliance virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
@@ -187,8 +190,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,13 +222,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
+### Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
 
 ## OUTPUTS
 

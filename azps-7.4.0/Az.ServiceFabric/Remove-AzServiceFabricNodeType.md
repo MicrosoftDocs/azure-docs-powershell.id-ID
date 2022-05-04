@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNodeType.md
-ms.openlocfilehash: 4f87f6183481bf4f37869e4b370317b9e20a851e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 071ab76779bfa3fe4675391af1264380af295a0f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934291"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703452"
 ---
 # Remove-AzServiceFabricNodeType
 
 ## SYNOPSIS
-Hapus tipe node lengkap dari kluster.
+Menghapus jenis node lengkap dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricnodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzServiceFabricNodeType [-ResourceGroupName] <String> [-Name] <String> -N
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricNodeType** untuk menghapus semua node dari tipe node tertentu dan tipe node dari kluster. Perintah ini tidak dapat digunakan untuk menghapus tipe simpul utama.
+Gunakan **Remove-AzServiceFabricNodeType** untuk menghapus semua node dari jenis node tertentu dan jenis node dari kluster. Perintah ini tidak dapat digunakan untuk menghapus tipe simpul utama.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Nama tipe simpul
+Nama jenis node
 
 ```yaml
 Type: System.String
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

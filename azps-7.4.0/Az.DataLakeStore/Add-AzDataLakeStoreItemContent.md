@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreItemContent.md
-ms.openlocfilehash: c8713260d178138366a5511f3a42074ba5bfa4ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eadea61f9caf52f8d6ed7fcd2f5fda0b4e4278ea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809640"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682356"
 ---
 # Add-AzDataLakeStoreItemContent
 
 ## SYNOPSIS
-Menambahkan konten ke item di Penyimpanan Data Lake.
+Menambahkan konten ke item di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestoreitemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Add-AzDataLakeStoreItemContent** menambahkan konten ke item di Azure Da
 Add-AzDataLakeStoreItemContent -AccountName "ContosoADLS" -Path /abc/myFile.txt -Value "My content here"
 ```
 
-Perintah ini menambahkan konten ke myFile.txt file.
+Perintah ini menambahkan isi ke file myFile.txt.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -72,11 +75,11 @@ Accept wildcard characters: False
 ### -Pengodean
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diketahui
+- Tidak dikenal
 - String
 - Unicode
 - Byte
-- BigEndianUnicode
+- Kode BigEndianUnicode
 - UTF8
 - UTF7
 - Ascii
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake item untuk diubah, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item yang akan diubah, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -111,8 +114,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
-Menentukan konten untuk ditambahkan ke item.
+### -Nilai
+Menentukan isi yang akan ditambahkan ke item.
 
 ```yaml
 Type: System.Object
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

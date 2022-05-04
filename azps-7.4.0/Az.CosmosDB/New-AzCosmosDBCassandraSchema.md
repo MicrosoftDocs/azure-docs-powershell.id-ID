@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraSchema.md
-ms.openlocfilehash: 59b7c9e8bad68075e6224438cfe0ac8ea2662755
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c36e93bb5ae78a87d30e7e073a6ed4b744b0d11
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126621"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631666"
 ---
 # New-AzCosmosDBCassandraSchema
 
 ## SYNOPSIS
-Membuat CosmosDB Cassandra Schema baru.
+Membuat Skema CosmosDB Cassandra baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandraschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBCassandraSchema [-Column <PSColumn[]>] [-PartitionKey <String[]>] 
 ```
 
 ## DESCRIPTION
-**New-AzCosmosDBCassandraSchema** menciptakan CosmosDB Cassandra Schema baru.
+**New-AzCosmosDBCassandraSchema** membuat Skema CosmosDB Cassandra baru.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Column
+### -Kolom
 Objek PSColumn.
 
 ```yaml
@@ -103,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

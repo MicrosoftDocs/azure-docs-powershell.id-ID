@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiskEncryptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiskEncryptionStatus.md
-ms.openlocfilehash: 76f8695a027bd77a6d7e85b422d23ba28965e1fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a633f26459b7a448cffaafd72b01aaf740d514df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809892"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574850"
 ---
 # Get-AzVMDiskEncryptionStatus
 
 ## SYNOPSIS
-Mendapatkan status enkripsi mesin virtual.
+Mendapatkan status enkripsi komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdiskencryptionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,18 +30,18 @@ Get-AzVMDiskEncryptionStatus [-ResourceGroupName] <String> [-VMName] <String> [[
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDiskEncryptionStatus** mendapatkan status enkripsi mesin virtual.
+Cmdlet **Get-AzVMDiskEncryptionStatus** mendapatkan status enkripsi komputer virtual.
 Ini menampilkan status enkripsi sistem operasi dan volume data.
-Selain status enkripsi, URL rahasia enkripsi juga menampilkan URL rahasia enkripsi, URL kunci enkripsi kunci, ID sumber daya **KeyVaults** tempat kunci enkripsi dan kunci enkripsi kunci untuk volume sistem operasi ada.
+Selain status enkripsi, ia juga menampilkan URL rahasia enkripsi, URL kunci enkripsi kunci, ID sumber daya **KeyVaults** tempat kunci enkripsi dan kunci enkripsi kunci untuk volume sistem operasi ada.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status enkripsi mesin virtual
+### Contoh 1: Mendapatkan status enkripsi komputer virtual
 ```powershell
 Get-AzVmDiskEncryptionStatus -ResourceGroupName "MyResourceGroup001" -VMName "VM001"
 ```
 
-Perintah ini mendapatkan status enkripsi mesin virtual bernama VM001.
+Perintah ini mendapatkan status enkripsi komputer virtual bernama VM001.
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionPublisherName
-Nama penerbit ekstensi. Tentukan parameter ini hanya untuk menimpa nilai default "Microsoft.Azure.Security".
+Nama penerbit ekstensi. Tentukan parameter ini hanya untuk mengambil alih nilai default "Microsoft.Azure.Security".
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk Windows VM dan "AzureDiskEncryptionForLinux" untuk VM Linux.
+Jenis ekstensi. Tentukan parameter ini untuk mengambil alih nilai default "AzureDiskEncryption" untuk VM Windows dan "AzureDiskEncryptionForLinux" untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

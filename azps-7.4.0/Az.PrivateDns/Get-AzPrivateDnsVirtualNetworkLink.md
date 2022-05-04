@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 294ba3b11a6fe570dbaa8c29d4e55e2a4a5bb176
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02c16778b04287a42e552572ac8da033f68b5a8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664162"
 ---
 # Get-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
-Mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Pribadi tertentu.
+Mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Privat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/get-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Get-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateDnsVirtualNetworkLink** mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Pribadi tertentu dari grup sumber daya yang ditentukan.
-Jika Anda menentukan parameter *Nama* , sebuah objek **PSPrivateDnsVirtualNetworkLink** dikembalikan.
-Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua link yang terkait dengan zona dalam grup sumber daya yang ditentukan akan dikembalikan.
+Cmdlet **Get-AzPrivateDnsVirtualNetworkLink** mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Privat tertentu dari grup sumber daya yang ditentukan.
+Jika Anda menentukan parameter *Nama* , satu objek **PSPrivateDnsVirtualNetworkLink** dikembalikan.
+Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua tautan yang terkait dengan zona dalam grup sumber daya yang ditentukan akan dikembalikan.
 Anda dapat menggunakan objek **PSPrivateDnsVirtualNetworkLink** untuk memperbarui tautan.
 
 ## EXAMPLES
@@ -56,7 +59,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan tautan jaringan virtual mylink yang terkait dengan zona DNS Pribadi bernama myzone.com dari grup sumber daya tertentu, lalu menyimpannya dalam variabel $Link.
+Contoh ini mendapatkan tautan jaringan virtual mylink yang terkait dengan zona DNS Privat bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Link.
 
 ### Contoh 2: Dapatkan semua tautan yang terkait dengan zona dalam grup sumber daya.
 ```powershell
@@ -93,7 +96,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan semua tautan jaringan virtual yang terkait dengan zona DNS Pribadi "myzone.com" dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Links.
+Contoh ini mendapatkan semua tautan jaringan virtual yang terkait dengan zona DNS Privat "myzone.com" dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Links.
 
 ## PARAMETERS
 
@@ -112,9 +115,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama tautan jaringan virtual untuk didapatkan.
-Jika Anda tidak menentukan nilai untuk parameter *Nama* , cmdlet ini mendapatkan semua link yang terkait dengan zona DNS Pribadi tertentu dalam grup sumber daya yang ditentukan.
+### -Name
+Menentukan nama tautan jaringan virtual yang akan didapatkan.
+Jika Anda tidak menentukan nilai untuk parameter *Nama* , cmdlet ini mendapatkan semua tautan yang terkait dengan zona DNS Privat yang ditentukan dalam grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tautan jaringan virtual untuk didapatkan.
+Menentukan nama grup sumber daya yang berisi tautan jaringan virtual yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -160,11 +163,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

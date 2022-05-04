@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayConnectionHealth.md
-ms.openlocfilehash: 687471e7657f6570f205722839aca01b4da54569
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 587bc65fc76f46cee426ba3124bdfd1195330099
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679176"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612176"
 ---
 # Get-AzP2sVpnGatewayConnectionHealth
 
 ## SYNOPSIS
-Mendapatkan titik agregat saat ini ke informasi kesehatan koneksi situs dari P2SVpnGateway.
+Mendapatkan informasi kesehatan koneksi titik ke situs yang diagregasi saat ini dari P2SVpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewayconnectionhealth) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzP2sVpnGatewayConnectionHealth -ResourceId <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzP2sVpnGatewayConnectionHealth** memungkinkan Anda untuk mendapatkan kesehatan agregat saat ini dari titik ke koneksi situs dari P2SVpnGateway. Kesehatan agregat memperlihatkan jumlah titik ke klien situs yang tersambung ke P2SVpnGateway, total ingress dan byte keluar yang ditransfer melalui P2SVpnGateway dan mengalokasikan alamat ip untuk titik tersambung ke klien situs.
+Cmdlet **Get-AzP2sVpnGatewayConnectionHealth** memungkinkan Anda mendapatkan kesehatan agregat koneksi titik ke situs saat ini dari P2SVpnGateway. Kesehatan agregat menunjukkan jumlah klien titik ke situs yang terhubung ke P2SVpnGateway, total byte masuk dan keluar yang ditransfer melalui P2SVpnGateway dan alamat ip yang dialokasikan untuk klien titik terhubung ke situs.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet **Get-AzP2sVpnGatewayConnectionHealth** memungkinkan Anda untuk mendapatkan kesehatan agregat saat ini dari titik ke koneksi situs dari P2SVpnGateway. Perintah di atas memungkinkan kesehatan output memperlihatkan jumlah poin ke klien situs yang tersambung ke P2SVpnGateway adalah 2. Total ingress dan egress byte yang ditransfer melalui P2SVpnGateway masing-masing adalah 100 dan 200. Alamat ip yang dialokasikan untuk titik tersambung ke klien situs adalah "192.168.2.1", "192.168.2.2".
+Cmdlet **Get-AzP2sVpnGatewayConnectionHealth** memungkinkan Anda mendapatkan kesehatan agregat koneksi titik ke situs saat ini dari P2SVpnGateway. Perintah di atas memungkinkan kesehatan output menunjukkan bahwa jumlah klien titik ke situs yang terhubung ke P2SVpnGateway adalah 2. Total byte masuk dan keluar yang ditransfer melalui P2SVpnGateway masing-masing adalah 100 dan 200. Alamat ip yang dialokasikan untuk klien titik terhubung ke situs adalah "192.168.2.1", "192.168.2.2".
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway vpn p2s yang akan diubah
+Objek gateway vpn p2s yang akan dimodifikasi
 
 ```yaml
 Type: PSP2SVpnGateway
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway untuk diubah.
+ID sumber daya Azure dari P2SVpnGateway yang akan dimodifikasi.
 
 ```yaml
 Type: String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

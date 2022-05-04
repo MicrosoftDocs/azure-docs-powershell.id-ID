@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
-ms.openlocfilehash: f882310cadef979e26f1b7a24f966591dc80ee73
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b96d45fce3cd4ce4278c941101cd427305bec32a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808884"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701690"
 ---
 # Get-AzEventHubConsumerGroup
 
 ## SYNOPSIS
-Mendapatkan detail grup konsumen Hub Acara tertentu, atau mendapatkan daftar grup konsumen di Hub Acara.
+Mendapatkan detail grup konsumen Azure Event Hubs tertentu, atau mendapatkan daftar grup konsumen di Pusat Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,9 +28,9 @@ Get-AzEventHubConsumerGroup [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubConsumerGroup mendapatkan detail grup konsumen Hub Kejadian tertentu, atau daftar grup konsumen di Hub Acara tertentu.
-Jika nama grup konsumen disediakan, detail detail grup konsumen tunggal akan dikembalikan.
-Jika nama grup konsumen tidak disediakan, daftar grup konsumen dalam Hub Kejadian tertentu akan dikembalikan.
+Cmdlet Get-AzEventHubConsumerGroup mendapatkan detail grup konsumen Azure Event Hubs tertentu, atau daftar grup konsumen di Pusat Aktivitas tertentu.
+Jika nama grup konsumen disediakan, detail satu detail grup konsumen akan dikembalikan.
+Jika nama grup konsumen tidak disediakan, daftar grup konsumen di Pusat Aktivitas yang ditentukan akan dikembalikan.
 
 ## EXAMPLES
 
@@ -36,14 +39,14 @@ Jika nama grup konsumen tidak disediakan, daftar grup konsumen dalam Hub Kejadia
 Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
-Mendapatkan grup \`konsumen MyConsumerGroupName\` di Hub \`Kejadian MyEventHubName\`, yang ada di ruang \`nama MyNamespaceName\` dengan grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan grup \`konsumen MyConsumerGroupName\` di Event Hub \`MyEventHubName\`, yang ada di namespace \`MyNamespaceName\` dengan grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mendapatkan daftar grup konsumen di Hub \`Kejadian MyEventHubName\`, yang ada di ruang \`nama MyNamespaceName\` dengan grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan daftar grup konsumen di Event Hub \`MyEventHubName\`, yang ada di namespace \`MyNamespaceName\` dengan grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -92,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Grup Konsumen
+### -Name
+Nama ConsumerGroup
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

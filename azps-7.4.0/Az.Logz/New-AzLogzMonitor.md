@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
-ms.openlocfilehash: a0c7316e282f131a3974032aeb20835465e125eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7daa93504a3fc016d34a28561dd2837e72bf4e14
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284337"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702780"
 ---
 # New-AzLogzMonitor
 
 ## SYNOPSIS
 Membuat sumber daya monitor.
 Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### -MarketplaceSubscriptionStatus
 Bendera yang menentukan Status Langganan Marketplace sumber daya.
-Jika pembayaran tidak dilakukan pada waktunya, sumber daya akan masuk dalam status Ditangguhkan.
+Jika pembayaran tidak dilakukan tepat waktu, sumber daya akan masuk dalam status Ditangguhkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.MarketplaceSubscriptionStatus
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -PlanBillingCycle
 siklus penagihan yang berbeda seperti BULANAN/MINGGUAN.
-ini bisa berupa enum
+ini bisa menjadi enum
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 
 ### -PlanUsageType
 jenis penggunaan yang berbeda seperti PAYG/COMMITTED.
-ini bisa berupa enum
+ini bisa menjadi enum
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

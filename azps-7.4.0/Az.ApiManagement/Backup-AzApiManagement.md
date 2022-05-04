@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
-ms.openlocfilehash: fd645686f757d7b6c08e84399511880e68588b82
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c3ee81effca9c618c6639209ddba0646e3c27e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752346"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611654"
 ---
 # Backup-AzApiManagement
 
 ## SYNOPSIS
 Mencadangkan layanan API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/backup-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Backup-AzApiManagement -ResourceGroupName <String> -Name <String> -StorageContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzApiManagement** mencadangkan instans layanan API Management Azure.
+Cmdlet **Backup-AzApiManagement** mencadangkan instans layanan Azure API Management.
 Cmdlet ini menyimpan cadangan sebagai blob Azure Storage.
 
 ## EXAMPLES
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penyebaran API Management yang dicadangkan cmdlet ini.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana penyebaran API Management ada.
+Menentukan nama grup sumber daya tempat penyebaran API Management ada.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -TargetBlobName
 Menentukan nama blob untuk cadangan.
-Jika blob tidak ada, cmdlet ini akan membuatnya.
+Jika blob tidak ada, cmdlet ini membuatnya.
 Cmdlet ini menghasilkan nilai default berdasarkan pola berikut: {Name}-{yyyy-MM-dd-HH-mm}.apimbackup
 
 ```yaml
@@ -137,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetContainerName
-Menentukan nama wadah blob untuk cadangan.
-Jika wadah tidak ada, cmdlet ini akan membuatnya.
+Menentukan nama kontainer blob untuk cadangan.
+Jika kontainer tidak ada, cmdlet ini membuatnya.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -173,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
+[Remove-AzApiManagement](./Remove-AzApiManagement.md)
 
 [Restore-AzApiManagement](./Restore-AzApiManagement.md)
 

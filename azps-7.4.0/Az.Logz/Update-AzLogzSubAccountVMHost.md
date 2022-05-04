@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
-ms.openlocfilehash: 3d665f2e1df5154f5adecfb3582e8d3d1844349b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3e4280cd484bb8494dcab03d1cb138ed5b61aa0e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681786"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702642"
 ---
 # Update-AzLogzSubAccountVMHost
 
 ## SYNOPSIS
-Mengirim permintaan untuk memperbarui pengumpulan ketika agen Logz.io telah diinstal di VM untuk monitor tertentu.
+Mengirim permintaan untuk memperbarui koleksi ketika agen Logz.io telah diinstal pada VM untuk monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/update-azlogzsubaccountvmhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Update-AzLogzSubAccountVMHost -MonitorName <String> -Name <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Mengirim permintaan untuk memperbarui pengumpulan ketika agen Logz.io telah diinstal di VM untuk monitor tertentu.
+Mengirim permintaan untuk memperbarui koleksi ketika agen Logz.io telah diinstal pada VM untuk monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mengirim permintaan untuk memperbarui koleksi ketika agen Logz.io telah diinstal di VM untuk monitor sub akun logz
+### Contoh 1: Mengirim permintaan untuk memperbarui koleksi saat agen Logz.io telah diinstal pada VM untuk monitor sub akun logz
 ```powershell
 $vmResource = New-AzLogzVMResourcesObject -AgentVersion '1.0' -Id '/SUBSCRIPTIONS/CE37D538-DFA3-49C3-B3CD-149B4B7DB48A/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1'
 Update-AzLogzSubAccountVMHost -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01 -VMResource $vmResource -State 'Install'
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Sub Akun
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Menentukan status operasi - instal/ hapus.
+### -State
+Menentukan status operasi - instal/hapus.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.VMHostUpdateStates
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -VMResource
 Permintaan daftar operasi pembaruan host vm.
-Untuk membangun, lihat bagian CATATAN untuk properti VMRESOURCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti VMRESOURCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMResources[]
@@ -153,8 +156,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -203,7 +206,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 VMRESOURCE <IVMResources[]>: Permintaan operasi pembaruan host vm daftar.
-  - `[AgentVersion <String>]`: Versi agen Logz yang diinstal di VM.
+  - `[AgentVersion <String>]`: Versi agen Logz yang diinstal pada VM.
   - `[Id <String>]`: Permintaan daftar operasi pembaruan host vm.
 
 ## RELATED LINKS

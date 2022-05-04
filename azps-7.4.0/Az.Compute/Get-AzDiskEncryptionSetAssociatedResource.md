@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSetAssociatedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSetAssociatedResource.md
-ms.openlocfilehash: a938ea03ff65048716e168c6ab930e06f200d37e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 20e419908c8c5ff628b3efded2119b49f1a30e51
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172395"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637046"
 ---
 # Get-AzDiskEncryptionSetAssociatedResource
 
 ## SYNOPSIS
 Mendapatkan daftar sumber daya yang terkait dengan kumpulan enkripsi disk yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdiskencryptionsetassociatedresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzDiskEncryptionSetAssociatedResource [-ResourceGroupName] <String> [-DiskEn
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDiskEncryptionSetAssociatedResource** mendapatkan daftar sumber daya yang terkait dengan kumpulan enkripsi disk yang ditentukan.
+Cmdlet **Get-AzDiskEncryptionSetAssociatedResource** mendapatkan daftar sumber daya yang terkait dengan set enkripsi disk yang ditentukan.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Get-AzDiskEncryptionSetAssociatedResource -ResourceGroupName $RGname -DiskEncryp
 /subscriptions/xxxxx-xxx-xx/resourceGroups/exampleResourceGroup/providers/Microsoft.Compute/disks/exmapleDisk02
 ```
 
-Cmdlet mengambil dua sumber daya, 'exampleDisk01' dan 'exampleDisk02', yang terkait dengan Kumpulan Enkripsi Disk yang disediakan
+Cmdlet mengambil dua sumber daya, 'exampleDisk01' dan 'exampleDisk02', yang terkait dengan Set Enkripsi Disk yang disediakan
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetName
-Nama kumpulan enkripsi disk.
+Nama set enkripsi disk.
 
 ```yaml
 Type: String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceMsiScanObject.md
-ms.openlocfilehash: a136cd6041a81182f66ee1953a0a955704f9b92b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7696dccd007972eb83af95d8cc6d61f4e5603959
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117909"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612014"
 ---
 # New-AzPurviewAzureSynapseWorkspaceMsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSynapseWorkspaceMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresynapseworkspacemsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.ScanAuthorizationType

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
-ms.openlocfilehash: e23fec88a19c209ef7fad5eec6aed6a0efa211dd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c7a53162a2ffade7b00c8a5b70919e8559a0b78
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586136"
 ---
 # Sync-AzAnalysisServicesInstance
 
 ## SYNOPSIS
 
-Menyinkronkan database tertentu pada contoh server Analysis Services yang ditentukan ke semua contoh skala kueri dalam lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+Menyinkronkan database tertentu pada instans server Analysis Services yang ditentukan ke semua instans skala kueri di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/sync-azanalysisservicesinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Sync-AzAnalysisServicesInstance [-Database] <String> [-Instance] <String> [-Pass
 
 ## DESCRIPTION
 
-Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database tertentu pada contoh server Analysis Services tertentu ke semua contoh skala kueri dalam Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database tertentu pada instans server Analysis Services yang ditentukan ke semua instans penyempitan skala kueri di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 
 ### -Instance
 
-Nama contoh server Analysis Services untuk memulai ulang
+Nama instans server Analysis Services untuk memulai ulang
 
 ```yaml
 Type: System.String
@@ -89,8 +92,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

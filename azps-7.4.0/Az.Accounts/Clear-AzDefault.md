@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/clear-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzDefault.md
-ms.openlocfilehash: 20b9fa30de91b7f12e4f54c74b1ecb843ba2ab5a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ac37999f09cfd379a395ccf9c1d447a6949a02a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142689022"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631863"
 ---
 # Clear-AzDefault
 
 ## SYNOPSIS
-Menghapus default yang diatur oleh pengguna dalam konteks saat ini.
+Menghapus default yang ditetapkan oleh pengguna dalam konteks saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/clear-azdefault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Clear-AzDefault [-ResourceGroup] [-PassThru] [-Force] [-Scope <ContextModificati
 ```
 
 ## DESCRIPTION
-Cmdlet Clear-AzDefault menghapus default yang diatur oleh pengguna bergantung pada parameter sakelar yang ditentukan oleh pengguna.
+Cmdlet Clear-AzDefault menghapus default yang ditetapkan oleh pengguna tergantung pada parameter sakelar yang ditentukan oleh pengguna.
 
 ## EXAMPLES
 
@@ -34,14 +37,14 @@ Cmdlet Clear-AzDefault menghapus default yang diatur oleh pengguna bergantung pa
 Clear-AzDefault
 ```
 
-Perintah ini menghapus semua default yang diatur oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus semua default yang ditetapkan oleh pengguna dalam konteks saat ini.
 
 ### Contoh 2
 ```powershell
 Clear-AzDefault -ResourceGroup
 ```
 
-Perintah ini menghapus grup sumber daya default yang diatur oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus grup sumber daya default yang ditetapkan oleh pengguna dalam konteks saat ini.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Hapus semua default jika tidak ada default yang ditentukan
 
 ```yaml
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
+### -Cakupan
+Menentukan cakupan perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -121,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Set-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
-ms.openlocfilehash: 360a2944ca31bb2896c1022f10e2982ab276fc01
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ca5dc1b1af39c0b3930f047ecd88d8b9db2c507f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737748"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595778"
 ---
 # Set-AzSqlDatabaseAudit
 
 ## SYNOPSIS
-Mengubah pengaturan pengauditan untuk Azure SQL Database.
+Mengubah pengaturan audit untuk Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaseaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,63 +44,63 @@ Set-AzSqlDatabaseAudit [-AuditActionGroup <AuditActionGroups[]>] [-AuditAction <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseAudit** mengubah pengaturan pengauditan Azure SQL Database.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
-Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga bisa menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
+Cmdlet **Set-AzSqlDatabaseAudit** mengubah pengaturan audit Azure SQL Database.
+Untuk menggunakan cmdlet , gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Saat penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga dapat menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan kebijakan pengaudungan penyimpanan blob dari Azure SQL Database
+### Contoh 1: Aktifkan kebijakan audit penyimpanan blob dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -BlobStorageTargetState Enabled  -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage"
 ```
 
-### Contoh 2: Menonaktifkan kebijakan pengaudungan penyimpanan blob dari Azure SQL Database
+### Contoh 2: Menonaktifkan kebijakan audit penyimpanan blob dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -BlobStorageTargetState Disabled
 ```
 
-### Contoh 3: Aktifkan kebijakan pengaudatan penyimpanan blob Azure SQL Database dengan pemfilteran menggunakan predikat T-SQL
+### Contoh 3: Aktifkan kebijakan audit penyimpanan blob Azure SQL Database dengan pemfilteran menggunakan predikat T-SQL
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -PredicateExpression "schema_name <> 'sys''" -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage"
 ```
 
-### Contoh 4: Menghapus pemfilteran dari kebijakan pengauditan Azure SQL Database
+### Contoh 4: Menghapus pemfilteran dari kebijakan audit Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -PredicateExpression ""
 ```
 
-### Contoh 5: Aktifkan kebijakan audit hub kejadian dari Azure SQL Database
+### Contoh 5: Mengaktifkan kebijakan audit pusat aktivitas dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId"
 ```
 
-### Contoh 6: Menonaktifkan kebijakan audit hub acara dari Azure SQL Database
+### Contoh 6: Menonaktifkan kebijakan audit hub peristiwa dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -EventHubTargetState Disabled
 ```
 
-### Contoh 7: Aktifkan kebijakan audit analitik log dari Azure SQL Database
+### Contoh 7: Mengaktifkan kebijakan audit analitik log dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 8: Menonaktifkan kebijakan pengaudungan analitik log dari Azure SQL Database
+### Contoh 8: Menonaktifkan kebijakan audit analitik log dari Azure SQL Database
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 9: Disable, through pipeline, the log analytics auditing policy of analitik Azure SQL Database
+### Contoh 9: Menonaktifkan, melalui alur, kebijakan audit analitik log dari Azure SQL Database
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Set-AzSqlDatabaseAudit -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 10: Menonaktifkan pengiriman catatan audit dari Azure SQL Database ke penyimpanan blob, dan memungkinkan pengiriman ke analitik log.
+### Contoh 10: Nonaktifkan pengiriman catatan audit Azure SQL Database ke penyimpanan blob, dan aktifkan pengirimannya ke analitik log.
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2" -BlobStorageTargetState Disabled
 ```
 
-### Contoh 11: Mengaktifkan pengiriman catatan audit dari Azure SQL Database ke penyimpanan blob, hub kejadian, dan analitik log.
+### Contoh 11: Aktifkan pengiriman catatan audit Azure SQL Database ke penyimpanan blob, hub peristiwa, dan analitik log.
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
@@ -105,17 +108,17 @@ Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server0
 ## PARAMETERS
 
 ### -AuditAction
-Kumpulan tindakan audit.  
+Serangkaian tindakan audit.  
 Tindakan yang didukung untuk mengaudit adalah:  
-PILIH  
+SELECT  
 UPDATE  
-MEMASUKKAN  
-MENGHAPUS  
+INSERT  
+HAPUS  
 MENJALANKAN  
 MENERIMA  
-REFERENSI  
-Formulir umum untuk menetapkan tindakan yang akan diaudit adalah: [tindakan] ON [object] BY [principal] Perhatikan bahwa [objek] dalam format di atas dapat merujuk ke objek seperti tabel, tampilan, atau prosedur yang disimpan, atau seluruh database atau skema. Untuk kasus terakhir, database formulir::[dbname] dan SCHEMA::[schemaname] digunakan secara berurutan.
-Misalnya:  
+REFERENCES  
+Bentuk umum untuk menentukan tindakan yang akan diaudit adalah: [tindakan] ON [object] BY [principal] Perhatikan bahwa [objek] dalam format di atas dapat merujuk ke objek seperti tabel, tampilan, atau prosedur tersimpan, atau seluruh database atau skema. Untuk kasus terakhir, formulir DATABASE::[dbname] dan SCHEMA::[schemaname] masing-masing digunakan.
+Contohnya:  
 SELECT di dbo.myTable menurut publik  
 SELECT on DATABASE::myDatabase by public  
 SELECT on SCHEMA::mySchema by public  
@@ -134,12 +137,12 @@ Accept wildcard characters: False
 ```
 
 ### -AuditActionGroup
-Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi berikut ini - ini akan mengaudit semua kueri dan prosedur yang disimpan yang dijalankan terhadap database, serta proses masuk yang berhasil dan gagal:  
+Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi berikut - ini akan mengaudit semua kueri dan prosedur tersimpan yang dijalankan terhadap database, serta login yang berhasil dan gagal:  
   
 "BATCH_COMPLETED_GROUP",  
 "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP",  
 "FAILED_DATABASE_AUTHENTICATION_GROUP"  
-Kombinasi di atas ini juga merupakan kumpulan yang dikonfigurasi secara default. Grup ini mencakup semua pernyataan SQL dan prosedur yang disimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default. Grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobStorageTargetState
-Menunjukkan apakah penyimpanan blob adalah tujuan untuk catatan audit.
+Menunjukkan apakah penyimpanan blob adalah tujuan untuk rekaman audit.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-SQL Database nama.
+nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleResourceId
-Id sumber daya untuk aturan otorisasi hub kejadian
+Id sumber daya untuk aturan otorisasi hub peristiwa
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubName
-Nama hub acara. Jika tidak ada yang ditentukan saat menyediakan EventHubAuthorizationRuleResourceId, hub kejadian default akan dipilih.
+Nama event hub. Jika tidak ada yang ditentukan saat menyediakan EventHubAuthorizationRuleResourceId, hub peristiwa default akan dipilih.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubTargetState
-Menunjukkan apakah hub kejadian merupakan tujuan untuk catatan audit.
+Menunjukkan apakah hub peristiwa adalah tujuan untuk rekaman audit.
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogAnalyticsTargetState
-Menunjukkan apakah analitik log adalah tujuan untuk catatan audit.
+Menunjukkan apakah analitik log adalah tujuan untuk rekaman audit.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan apakah akan membuat output kebijakan audit di akhir eksekusi cmdlet
+Menentukan apakah akan menghasilkan kebijakan audit pada akhir eksekusi cmdlet
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -PredicateExpression
-Predikat T-SQL (klausul WHERE) digunakan untuk memfilter log audit.
+Predikat T-SQL (klausa WHERE) yang digunakan untuk memfilter log audit.
 
 ```yaml
 Type: System.String
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Jumlah hari penyimpanan untuk log audit.
+Jumlah hari retensi untuk log audit.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceResourceId
-ID ruang kerja (ID sumber daya ruang kerja Analitik Log) untuk ruang kerja Analitik Log yang ingin Anda kirimi Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2
+ID ruang kerja (ID sumber daya ruang kerja Analitik Log) untuk ruang kerja Log Analytics tempat Anda ingin mengirim Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2
 
 ```yaml
 Type: System.String
@@ -399,8 +402,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -444,7 +447,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseAuditModel
 

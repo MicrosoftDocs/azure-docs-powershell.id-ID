@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 0308760a8b77ebff11496bca385cfb7aa0677807
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ea92b6e2a887aa68e2ae487f4f0fef97ba19d82c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067149"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586100"
 ---
 # Remove-AzAutomationDscConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi DSC dari Otomatisasi.
+Menghapus konfigurasi DSC dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Cmdlet **Remove-AzAutomationDscConfiguration** menghapus konfigurasi APS Desired
 
 ### Contoh 1
 
-Menghapus konfigurasi DSC dari Otomatisasi. (autogenerasi)
+Menghapus konfigurasi DSC dari Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -43,7 +46,7 @@ Remove-AzAutomationDscConfiguration -AutomationAccountName 'AutomationAccount01'
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dihapus cmdlet ini.
+Menentukan nama akun Automation yang berisi konfigurasi DSC yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi DSC yang dihapus cmdlet ini.
 
 ```yaml
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan konfigurasi DSC.
+Menentukan nama grup sumber daya yang cmdlet ini mendapatkan konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

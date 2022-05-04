@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDiagnosticSetting.md
-ms.openlocfilehash: ade516544b1983e3fc845bb15d534ec1f177b8d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 76b79f9c4a70f0ad7cb6290e4e09120fe6bab71e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283419"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704244"
 ---
 # Remove-AzDiagnosticSetting
 
 ## SYNOPSIS
 Menghapus pengaturan diagnostik untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

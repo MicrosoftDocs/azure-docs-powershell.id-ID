@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
-ms.openlocfilehash: 5718bc3fb0fe987b859558c4adab918fe3ec5cce
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b308f1272e29b38462c63ed674751f6f37b413f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737550"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643542"
 ---
 # Set-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Memperbarui langkah pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticjobstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Set-AzSqlElasticJobStep [-ResourceId] <String> [-RemoveOutput] [-TargetGroupName
  [<CommonParameters>]
 ```
 
-### WithAddOutputUsingParentResourceId
+### DenganAddOutputUsingParentResourceId
 ```
 Set-AzSqlElasticJobStep [-ResourceId] <String> -OutputDatabaseResourceId <String>
  [-OutputCredentialName <String>] [-OutputTableName <String>] [-OutputSchemaName <String>]
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitialRetryIntervalSeconds
-Interval interval awal coba detik
+Interval percobaan ulang awal detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumRetryIntervalSeconds
-Interval pengulangan maksimum detik
+Interval percobaan kembali maksimum detik
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -269,7 +272,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama langkah
 
 ```yaml
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryIntervalBackoffMultiplier
-Perkalian backoff interval coba lagi
+Pengali backoff interval coba lagi
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeoutSeconds
-Waktu habis detik
+Detik batas waktu
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -494,8 +497,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -526,7 +529,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

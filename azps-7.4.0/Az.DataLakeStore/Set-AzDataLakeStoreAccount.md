@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 01d9c6f6ec330d11dbf59e3e20c99b636726e504
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 145ec33754d91b4115e04f89c77fbac7ea9f3c0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685224"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592218"
 ---
 # Set-AzDataLakeStoreAccount
 
 ## SYNOPSIS
-Mengubah akun Data Lake Store.
+Memodifikasi akun Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Cmdlet **Set-AzDataLakeStoreAccount** memodifikasi akun Data Lake Store.
 Set-AzDataLakeStoreAccount -Name "ContosoADL" -Tag @{"stage"="production"}
 ```
 
-Perintah ini menambahkan tag tertentu ke akun Data Lake Store bernama ContosoADL.
+Perintah ini menambahkan tag yang ditentukan ke akun Data Lake Store bernama ContosoADL.
 
 ### Contoh 2
 
-Mengubah akun Data Lake Store. (autogenerasi)
+Memodifikasi akun Data Lake Store. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -51,7 +54,7 @@ Set-AzDataLakeStoreAccount -FirewallState Enabled -Name 'ContosoADL'
 ## PARAMETERS
 
 ### -AllowAzureIpState
-Secara opsional izinkan/blok Azure asal IP melalui firewall.
+Secara opsional izinkan/blokir IP asal Azure melalui firewall.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.FirewallAllowAzureIpsState]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallState
-Secara opsional mengaktifkan atau menonaktifkan aturan firewall yang sudah ada.
+Aktifkan atau nonaktifkan aturan firewall yang ada secara opsional.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState]
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Jika tipe enkripsi ditetapkan pengguna, pengguna dapat memutar versi kunci mereka dengan parameter ini.
+Jika jenis enkripsi ditetapkan Pengguna, pengguna dapat memutar versi kunci mereka dengan parameter ini.
 
 ```yaml
 Type: System.String
@@ -128,8 +131,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Penyimpanan Data Lake.
+### -Name
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Penyimpanan Data Lake untuk diubah.
+Menentukan nama grup sumber daya yang berisi akun Data Lake Store untuk dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan tag sebagai pasangan nilai kunci.
+Menentukan tag sebagai pasangan kunci-nilai.
 Anda dapat menggunakan tag untuk mengidentifikasi akun Data Lake Store dari sumber daya Azure lainnya.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIdProviderState
-Aktifkan atau nonaktifkan penyedia ID tepercaya yang sudah ada.
+Secara opsional mengaktifkan atau menonaktifkan penyedia ID tepercaya yang ada.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallAllowAzureIpsState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 

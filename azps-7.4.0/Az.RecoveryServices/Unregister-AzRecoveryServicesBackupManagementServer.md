@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: f330b940432cf780700a11485f64d54b4fccb6ad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 604780a11d0269abb46992841377ed80bcee36cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868194"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683148"
 ---
 # Unregister-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
-Membatalkan pendaftaran server SCDPM atau Server cadangan dari kubah.
+Membatalkan pendaftaran server SCDPM atau Server cadangan dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupmanagementserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,25 +30,25 @@ Unregister-AzRecoveryServicesBackupManagementServer [-AzureRmBackupManagementSer
 ```
 
 ## DESCRIPTION
-Cmdlet **Unregister-AzRecoveryServicesBackupManagementServer** membatalkan pendaftaran server System Center Data Protection Manager (SCDPM) atau server Azure Backup dari kubah.
-Cmdlet ini menghapus referensi ke server yang tidak terdaftar dari kubah.
-Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus semua data yang diproteksi yang terkait dengan wadah tersebut.
-Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Unregister-AzRecoveryServicesBackupManagementServer** membatalkan pendaftaran server System Center Data Protection Manager (SCDPM) atau server Azure Backup dari vault.
+Cmdlet ini menghapus referensi ke server yang tidak terdaftar dari vault.
+Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data terlindungi yang terkait dengan kontainer tersebut.
+Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Batalkan pendaftaran server SCDPM dari kubah
+### Contoh 1: Membatalkan pendaftaran server SCDPM dari vault
 ```powershell
 $BMS = Get-AzRecoveryServicesBackupManagementServer -Name "dpmserver01.contoso.com"
 Unregister-AzRecoveryServicesBackupManagementServer -AzBackupManagementServer $BMS
 ```
 
-Perintah pertama mendapatkan server manajemen Cadangan bernama dpmserver01.contoso.com, lalu menyimpannya dalam variabel $BMS.
-Perintah kedua membatalkan pendaftaran server SCDPM dari kubah.
+Perintah pertama mendapatkan server manajemen Backup bernama dpmserver01.contoso.com, lalu menyimpannya dalam variabel $BMS.
+Perintah kedua membatalkan pendaftaran server SCDPM dari vault.
 
 ### Contoh 2
 
-Membatalkan pendaftaran server SCDPM atau Server cadangan dari kubah. (autogenerasi)
+Membatalkan pendaftaran server SCDPM atau Server cadangan dari vault. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Kembalikan Server Manajemen Cadangan untuk dihapus.
+Kembalikan Server Manajemen Cadangan yang akan dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

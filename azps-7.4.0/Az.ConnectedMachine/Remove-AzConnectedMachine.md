@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedMachine.md
-ms.openlocfilehash: c2a9e0ad3cacea73c8b13cf2c4fa0fc0809df515
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 72645047f9314bc901b722dc612d0f4818580967
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004851"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644730"
 ---
 # Remove-AzConnectedMachine
 
 ## SYNOPSIS
-Operasi untuk menghapus identitas mesin hibrid di Azure.
+Operasi untuk menghapus identitas komputer hibrid di Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/remove-azconnectedmachine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,23 +35,23 @@ Remove-AzConnectedMachine -InputObject <IConnectedMachineIdentity> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Operasi untuk menghapus identitas mesin hibrid di Azure.
+Operasi untuk menghapus identitas komputer hibrid di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus mesin yang tersambung
+### Contoh 1: Menghapus komputer yang terhubung
 ```powershell
 Remove-AzConnectedMachine -Name myMachine -ResourceGroupName myRG
 ```
 
-Menghapus mesin yang tersambung.
+Menghapus komputer yang tersambung.
 
-### Contoh 2: Hapus mesin yang tersambung melalui saluran
+### Contoh 2: Menghapus komputer yang terhubung melalui alur
 ```powershell
 Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines | Remove-AzConnectedMachine
 ```
 
-Menghapus semua mesin dalam `contoso-connected-machines` grup sumber daya.
+Menghapus semua komputer dalam `contoso-connected-machines` grup sumber daya.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
@@ -82,7 +85,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama mesin hibrid.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -143,8 +146,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,14 +198,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
-  - `[ExtensionName <String>]`: Nama ekstensi mesin.
+  - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya target.
-  - `[MachineName <String>]`: Nama mesin hibrid.
+  - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya PrivateLinkScope Azure Arc.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

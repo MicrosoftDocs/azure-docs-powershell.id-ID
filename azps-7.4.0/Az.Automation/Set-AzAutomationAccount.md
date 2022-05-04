@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
-ms.openlocfilehash: e29ac7bb7a2b01f4517c44f720eff08ffff26292
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d8fee083e7beef98293d9fba400cda2e2bf3d792
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662382"
 ---
 # Set-AzAutomationAccount
 
 ## SYNOPSIS
-Mengubah akun Otomatisasi.
+Memodifikasi akun Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,31 +39,31 @@ Set-AzAutomationAccount [-ResourceGroupName] <String> [-Name] <String> [-Plan <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationAccount** mengubah akun Azure Automation.
-Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzAutomationAccount.
+Cmdlet **Set-AzAutomationAccount** memodifikasi akun Azure Automation.
+Untuk informasi selengkapnya tentang akun Automation, lihat cmdlet New-AzAutomationAccount.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur tag untuk akun Otomatisasi
+### Contoh 1: Mengatur tag untuk akun Automation
 ```
 PS C:\>$Tags = @{"tag01"="value01";"tag02"="value02"}
 PS C:\> Set-AzAutomationAccount -Name "AutomationAccount01" -ResourceGroupName "ResourceGroup01" -Tags $Tags
 ```
 
 Perintah pertama menetapkan dua pasangan kunci/nilai ke variabel $Tags.
-Perintah kedua mengatur tag di $Tags untuk akun Otomatisasi bernama AutomationAccount01.
+Perintah kedua mengatur tag di $Tags untuk akun Automation bernama AutomationAccount01.
 
-### Contoh 2: Mengubah rencana untuk akun Otomatisasi
+### Contoh 2: Mengubah paket untuk akun Automation
 ```
 PS C:\>Set-AzAutomationAccount -Name "AutomationAccount01" -ResourceGroupName "ResourceGroup01" -Plan Basic
 ```
 
-Perintah ini mengubah rencana menjadi Dasar untuk akun Otomatisasi bernama AutomationAccount01.
+Perintah ini mengubah paket menjadi Dasar untuk akun Automation bernama AutomationAccount01.
 
 ## PARAMETERS
 
 ### -AssignSystemIdentity
-Buat dan tetapkan Identitas Sistem baru untuk Akun Otomatisasi ini untuk digunakan dengan layanan lain seperti Azure KeyVault.
+Buat dan tetapkan Identitas Sistem baru untuk Akun Automation ini untuk digunakan dengan layanan lain seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignUserIdentity
-Menentukan daftar identitas yang ditetapkan pengguna yang terkait dengan akun otomatisasi. Referensi identitas yang ditetapkan pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan daftar identitas yang ditetapkan pengguna yang terkait dengan akun otomatisasi. Referensi identitas yang ditetapkan pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomationServicesEncryption
-Tentukan apakah atur Kunci Enkripsi Akun OtomatisasiSource ke Microsoft.AutomationServices atau tidak.
+Tentukan apakah mengatur Automation Account Encryption KeySource ke Microsoft.AutomationServices atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisablePublicNetworkAccess
-Apakah akan menonaktifkan lalu lintas di titik akhir non-ARM (Webhook/Agen) dari internet publik dan mengizinkan akses hanya melalui jaringan pribadi.
+Apakah akan menonaktifkan lalu lintas pada titik akhir non-ARM (Webhook/Agent) dari internet publik dan hanya mengizinkan akses melalui jaringan privat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Enkripsi Akun Otomatisasi KeyVault KeyName
+Enkripsi Akun Automation KeyVault KeyName
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultEncryption
-Tentukan apakah atur kunci enkripsi Akun OtomatisSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion dan KeyVaultUri, Automation Account Encryption KeySource juga akan diatur ke Microsoft.KeyVault apakah parameter ini diatur atau tidak.
+Tentukan apakah mengatur kunci enkripsi Akun AutomationSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion, dan KeyVaultUri, Automation Account Encryption KeySource juga akan diatur ke Microsoft.KeyVault apakah parameter ini diatur atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Enkripsi Akun Otomatisasi KeyVault KeyVaultUri
+Enkripsi Akun Automation KeyVault KeyVaultUri
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Enkripsi Akun Otomatisasi KeyVault KeyVersion
+Enkripsi Akun Automation KeyVault KeyVersion
 
 ```yaml
 Type: System.String
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Otomatisasi yang diubah cmdlet ini.
+### -Name
+Menentukan nama akun Automation yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan rencana untuk akun Otomatisasi.
+Menentukan paket untuk akun Automation.
 Nilai yang valid adalah:
 - Dasar
 - Gratis
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Otomatisasi yang diubah cmdlet ini.
+Menentukan nama grup sumber daya yang berisi akun Automation yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserIdentityEncryption
-Identitas yang Ditetapkan Pengguna yang terkait dengan akun yang akan digunakan untuk enkripsi. Referensi identitas yang ditetapkan pengguna akan berupa ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Identitas yang Ditetapkan Pengguna yang terkait dengan akun yang akan digunakan untuk enkripsi. Referensi identitas yang ditetapkan pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
-ms.openlocfilehash: eb61d3ae0e56887e6e04bc16fe003226d0f2ed94
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: db510fc0b343bc4a0b78aa460baddf2838654e1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671292"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611780"
 ---
 # Get-AzStorageAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,14 +33,14 @@ Cmdlet **Get-AzStorageAccountKey** mendapatkan kunci akses untuk akun Azure Stor
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akses untuk akun Storage
+### Contoh 1: Mendapatkan kunci akses untuk akun Storage
 ```
 PS C:\>Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
 Perintah ini mendapatkan kunci untuk akun Azure Storage yang ditentukan.
 
-### Contoh 2: Dapatkan kunci akses tertentu untuk akun Storage
+### Contoh 2: Mendapatkan kunci akses tertentu untuk akun Storage
 ```
 This command gets a specific key for a Storage account. This command works for Azure PowerShell version 1.4, and later versions.
 PS C:\>(Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount")| Where-Object {$_.KeyName -eq "key1"}
@@ -71,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -ListKerbKey
-Mencantumkan kunci Kerberos (jika direktori aktif diaktifkan) untuk akun penyimpanan tertentu.
-Kunci Kerberos dihasilkan per akun penyimpanan untuk Azure Files autentikasi berbasis identitas baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Kunci Kerberos tidak menyediakan izin akses untuk melakukan kontrol atau operasi pembacaan atau penulisan bidang data terhadap akun penyimpanan.
+Mencantumkan kunci Kerberos (jika direktori aktif diaktifkan) untuk akun penyimpanan yang ditentukan.
+Kunci Kerberos dihasilkan per akun penyimpanan untuk autentikasi berbasis identitas Azure Files baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Kunci Kerberos tidak menyediakan izin akses untuk melakukan operasi baca atau tulis sarana data atau kontrol apa pun terhadap akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Storage tempat cmdlet ini mendapatkan kunci.
+### -Name
+Menentukan nama akun Storage yang cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

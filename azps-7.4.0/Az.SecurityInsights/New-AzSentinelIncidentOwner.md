@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentOwner.md
-ms.openlocfilehash: 45798591ac73e1c11176a2790a299e8674032b4b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dbbd75da86e59c55e94835aab74288008a4426a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309051"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591822"
 ---
 # New-AzSentinelIncidentOwner
 
 ## SYNOPSIS
 Buat objek Pemilik Insiden untuk memperbarui pemilik insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincidentowner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ $Incident.Owner = $owner
 $Incident | Set-AzSentinelIncident
 ```
 
-Contoh ini membuat **IncidentOwner** dan memperbarui Insiden untuk pemilik baru.
+Contoh ini membuat **IncidentOwner** dan memperbarui Insiden kepada pemilik baru.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Pemilik Insiden - Nama Utama Pengguna
+Pemilik Insiden - Nama Prinsipal Pengguna
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,11 +150,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncident

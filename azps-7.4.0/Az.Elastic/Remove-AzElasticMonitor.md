@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Remove-AzElasticMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Remove-AzElasticMonitor.md
-ms.openlocfilehash: a0121b24a110e66568d5d247076be391a402cd1d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3584c509e04f130a8a9328c655b2e699371bb31d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941815"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636236"
 ---
 # Remove-AzElasticMonitor
 
 ## SYNOPSIS
 Menghapus sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/remove-azelasticmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,17 +46,17 @@ Remove-AzElasticMonitor -ResourceGroupName azure-elastic-test -Name elastic-pwsh
 
 Perintah ini menghapus sumber daya monitor.
 
-### Contoh 2: Menghapus sumber daya monitor menurut saluran
+### Contoh 2: Menghapus sumber daya monitor menurut alur
 ```powershell
 Get-AzElasticMonitor -ResourceGroupName azure-elastic-test -Name elastic-pwsh03 | Remove-AzElasticMonitor
 ```
 
-Perintah ini menghapus sumber daya monitor menurut saluran.
+Perintah ini menghapus sumber daya monitor menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,8 +100,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis berada.
+Nama grup sumber daya tempat sumber daya Elastic berada.
 
 ```yaml
 Type: System.String
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -173,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -227,9 +230,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IElasticIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastis berada.
-  - `[RuleSetName <String>]`: Nama sumber daya Kumpulan Aturan Tag
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastic berada.
+  - `[RuleSetName <String>]`: Nama sumber daya Seperangkat Aturan Tag
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

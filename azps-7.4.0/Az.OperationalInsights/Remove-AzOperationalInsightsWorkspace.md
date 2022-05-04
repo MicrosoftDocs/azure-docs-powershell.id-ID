@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: e5369525be9e4dc90f6b2a4b21c98f57f778e7ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09446b2be18ac8ef91d27c2f6c7ee9b44d28b11a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060813"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704730"
 ---
 # Remove-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Menghapus ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Remove-AzOperationalInsightsWorkspace [-ResourceGroupName] <String> [-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzOperationalInsightsWorkspace** menghapus ruang kerja yang sudah ada.
-Jika ruang kerja ini ditautkan ke akun yang sudah ada melalui parameter *CustomerId* pada saat pembuatan akun asli tidak dihapus di portal Insights Operasional.
+Cmdlet **Remove-AzOperationalInsightsWorkspace** menghapus ruang kerja yang ada.
+Jika ruang kerja ini ditautkan ke akun yang ada melalui parameter *CustomerId* pada waktu pembuatan akun asli tidak dihapus di portal Insights Operasional.
 
 ## EXAMPLES
 
@@ -38,21 +41,21 @@ Remove-AzOperationalInsightsWorkspace -ResourceGroupName "ContosResourceGroup" -
 
 Perintah ini menghapus ruang kerja bernama MyWorkspace dari grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Menghapus ruang kerja dengan menggunakan saluran dan tanpa konfirmasi
+### Contoh 2: Menghapus ruang kerja dengan menggunakan alur dan tanpa konfirmasi
 ```powershell
 Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosResourceGroup" -Name "MyWorkspace" | Remove-AzOperationalInsightsWorkspace -Force
 ```
 
-Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu mengirimkannya ke cmdlet **Remove-AzOperationalInsightsWorkspace** menggunakan operator pipeline untuk menghapusnya.
+Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu meneruskannya ke cmdlet **Remove-AzOperationalInsightsWorkspace** dengan menggunakan operator alur untuk menghapusnya.
 Karena parameter *Paksa* ditentukan, perintah tidak meminta Anda sebelum menghapus ruang kerja.
 
-### Contoh 3: Paksa hapus ruang kerja (tidak dapat dipulihkan)
+### Contoh 3: Hapus paksa ruang kerja (tidak dapat dipulihkan)
 ```powershell
 $workspace = New-AzOperationalInsightsWorkspace -ResourceGroupName $rgname -Name $wsname -Location $wslocation
 $workspace | Remove-AzOperationalInsightsWorkspace -ForceDelete
 ```
 
-Menghapus paksa ruang kerja.
+Hapus paksa ruang kerja.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

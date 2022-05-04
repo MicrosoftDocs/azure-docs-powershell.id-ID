@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: 8a1b84f9195ad1750584e4a1532e867600fbb521
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a055c9ed253eb4169725c4215261b2829e77963d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119745"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704190"
 ---
 # Remove-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
-hapus lingkup tautan privat
+menghapus cakupan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzInsightsPrivateLinkScope -InputObject <PSMonitorPrivateLinkScope>
 ```
 
 ## DESCRIPTION
-hapus lingkup tautan privat
+menghapus cakupan tautan privat
 
 ## EXAMPLES
 
@@ -47,21 +50,21 @@ hapus lingkup tautan privat
 Remove-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name"
 ```
 
-hapus lingkup tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
+hapus cakupan tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
 
 ### Contoh 2
 ```powershell
 Remove-AzInsightsPrivateLinkScope -ResourceId "/subscriptions/{subscriptionId}/resourceGroups/rg_name/providers/Microsoft.Insights/privateLinkScopes/scope_name"
 ```
 
-hapus lingkup tautan privat dengan Id sumber daya
+menghapus cakupan tautan privat dengan Id sumber daya
 
 ### Contoh 3
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name" | Remove-AzInsightsPrivateLinkScope
 ```
 
-hapus lingkup tautan privat dengan objek lingkup link privat input
+menghapus cakupan tautan privat dengan objek cakupan tautan privat input
 
 ## PARAMETERS
 
@@ -95,8 +98,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Lingkup Private Link
+### -Name
+Nama Cakupan Private Link
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya
+ID sumber daya
 
 ```yaml
 Type: System.String
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

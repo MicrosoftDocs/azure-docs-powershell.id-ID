@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
-ms.openlocfilehash: 6e3861caa79bc9e912e803d01a7eeae5a7164594
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e294a49b4129c111b4555afeac65aefb1f25eb0f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877968"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627834"
 ---
 # Get-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
 Mendapatkan instans peran dari layanan cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

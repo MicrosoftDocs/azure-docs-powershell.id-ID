@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIndexingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIndexingPolicy.md
-ms.openlocfilehash: 876bd575c4401f3900a2b24ce68521201859d914
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b486b7ddae07996b2d004009b7e6d09b13a8b8a0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126405"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586280"
 ---
 # New-AzCosmosDBSqlIndexingPolicy
 
 ## SYNOPSIS
 Membuat objek CosmosDB Sql IndexingPolicy baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlindexingpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzCosmosDBSqlIndexingPolicy [-IncludedPath <PSIncludedPath[]>] [-SpatialSpec
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCosmosDBSqlIndexingPolicy** menciptakan objek baru tipe PSSqlIndexingPolicy.
+Cmdlet **New-AzCosmosDBSqlIndexingPolicy** membuat objek baru jenis PSSqlIndexingPolicy.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompositePath
-Array objek tipe Microsoft.Azure.Commands.CosmosDB.PSCompositePath
+Array objek jenis Microsoft.Azure.Commands.CosmosDB.PSCompositePath
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCompositePath[][]
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedPath
-Array string yang berisi includedPath (Menentukan jalur dalam dokumen JSON yang akan disertakan dalam elemen Azure Cosmos DB service.).
+Array string yang berisi includedPath (Menentukan jalur dalam dokumen JSON yang akan disertakan dalam elemen layanan Azure Cosmos DB.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSIncludedPath[]
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -IndexingMode
 menunjukkan mode pengindeksan.
-Nilai yang memungkinkan termasuk: 'Konsisten', 'Malas', 'Tidak Ada'
+Nilai yang mungkin termasuk: 'Konsisten', 'Malas', 'Tidak Ada'
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpatialSpec
-Array objek tipe Microsoft.Azure.Commands.CosmosDB.PSSpatialSpec
+Array objek jenis Microsoft.Azure.Commands.CosmosDB.PSSpatialSpec
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSpatialSpec[]
@@ -161,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

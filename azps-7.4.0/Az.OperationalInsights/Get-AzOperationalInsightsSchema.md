@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSchema.md
-ms.openlocfilehash: f519b12f45a67247b25439a797f384cf193e8e87
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 46d961155263453a4e8d580b385d82e38e4825ef
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676080"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646222"
 ---
 # Get-AzOperationalInsightsSchema
 
 ## SYNOPSIS
 Mengembalikan skema yang terkait dengan ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzOperationalInsightsSchema [-ResourceGroupName] <String> [-WorkspaceName] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsSchema** mengembalikan skema yang terkait dengan ruang kerja tertentu dalam grup sumber daya tersebut.
+Cmdlet **Get-AzOperationalInsightsSchema** mengembalikan skema yang terkait dengan ruang kerja yang ditentukan dalam grup sumber daya tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan skema untuk ruang kerja
+### Contoh 1: Mendapatkan skema untuk ruang kerja
 ```powershell
 Get-AzOperationalInsightsSchema -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
@@ -69,7 +72,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

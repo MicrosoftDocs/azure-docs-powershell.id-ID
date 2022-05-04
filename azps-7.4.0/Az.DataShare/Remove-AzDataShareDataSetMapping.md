@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareDataSetMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareDataSetMapping.md
-ms.openlocfilehash: 77b2b96deb9d392361fd736446b47d370462b080
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 982e9c7f196f2ebbaec0d03494da75362db6fa35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317835"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642966"
 ---
 # Remove-AzDataShareDataSetMapping
 
 ## SYNOPSIS
-Menghapus pemetaan kumpulan data
+Menghapus pemetaan himpunan data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatasharedatasetmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzDataShareDataSetMapping -InputObject <PSDataShareDataSetMapping> [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataShareDataSetMapping** menghapus pemetaan kumpulan data.
+Cmdlet **Remove-AzDataShareDataSetMapping** menghapus pemetaan himpunan data.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Are you sure you want to remove dataset mapping "DSM"?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Perintah ini menghapus kumpulan data bernama DSM dari wikiAds berbagi langganan. 
+Perintah ini menghapus himpunan data bernama DSM dari wikiAds sharesubscription. 
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pemetaan kumpulan data azure
+Objek pemetaan himpunan data azure
 
 
 ```yaml
@@ -103,8 +106,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pemetaan kumpulan data Azure
+### -Name
+Nama pemetaan himpunan data Azure
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya pemetaan kumpulan data azure
+Id sumber daya pemetaan himpunan data azure
 
 ```yaml
 Type: System.String
@@ -178,8 +181,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

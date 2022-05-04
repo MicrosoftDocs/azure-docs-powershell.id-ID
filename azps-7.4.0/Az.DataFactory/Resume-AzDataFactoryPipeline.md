@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/resu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
-ms.openlocfilehash: ab3d941ade4218496c8ac78c3a4420e9ec0094bb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 571a2858cf52f73e562a8681eb77a5b01a3b9fed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682392"
 ---
 # Resume-AzDataFactoryPipeline
 
 ## SYNOPSIS
-Melanjutkan saluran yang ditangguhkan di Pabrik Data.
+Melanjutkan alur yang ditangguhkan di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/resume-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Resume-AzDataFactoryPipeline [-Name] <String> [-DataFactory] <PSDataFactory>
 ```
 
 ## DESCRIPTION
-Cmdlet **Resume-AzDataFactoryPipeline** melanjutkan saluran yang ditangguhkan dalam Azure Data Factory.
+Cmdlet **Resume-AzDataFactoryPipeline** melanjutkan alur yang ditangguhkan di Azure Data Factory.
 
 ## EXAMPLES
 
-### Contoh 1: Melanjutkan pipeline
+### Contoh 1: Melanjutkan alur
 ```powershell
 Resume-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF"
 ```
@@ -49,13 +52,13 @@ Are you sure you want to resume pipeline 'DPWikisample' in data factory 'WikiADF
 True
 ```
 
-Perintah ini melanjutkan pipeline bernama DPWikisample di pabrik data bernama WikiADF.
-Gunakan **cmdlet Suspend-AzDataFactoryPipeline** untuk menangguhkan saluran.
+Perintah ini melanjutkan alur bernama DPWikisample di pabrik data bernama WikiADF.
+Gunakan **cmdlet Suspend-AzDataFactoryPipeline** untuk menangguhkan alur.
 Perintah mengembalikan nilai $True.
 
 ### Contoh 2
 
-Melanjutkan saluran yang ditangguhkan di Pabrik Data. (autogenerasi)
+Melanjutkan alur yang ditangguhkan di Data Factory. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Resume-AzDataFactoryPipeline -DataFactory $DataFactory -Name 'DPWikisample'
@@ -65,7 +68,7 @@ Resume-AzDataFactoryPipeline -DataFactory $DataFactory -Name 'DPWikisample'
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini melanjutkan pipeline milik pabrik data yang ditentukan parameter ini.
+Cmdlet ini melanjutkan alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini melanjutkan pipeline milik pabrik data yang ditentukan parameter ini.
+Cmdlet ini melanjutkan alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama saluran yang akan dilanjutkan.
+### -Name
+Menentukan nama alur yang akan dilanjutkan.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini melanjutkan pipeline yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini melanjutkan alur yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -186,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
@@ -194,10 +197,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzDataFactoryPipeline](./New-AzDataFactoryPipeline.md)
 
-[Hapus-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
+[Remove-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 
-[Suspend-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
+[Suspensi-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
 
 

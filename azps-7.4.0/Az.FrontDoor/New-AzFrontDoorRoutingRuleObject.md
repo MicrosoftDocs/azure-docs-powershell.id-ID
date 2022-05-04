@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
-ms.openlocfilehash: b74db096f724b8bc81e7282970e350eef65513d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4466a690741c2391d1c68d93318265a9f02d2c03
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683820"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604608"
 ---
 # New-AzFrontDoorRoutingRuleObject
 
 ## SYNOPSIS
-Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorroutingruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ New-AzFrontDoorRoutingRuleObject -ResourceGroupName <String> -FrontDoorName <Str
 ```
 
 ## DESCRIPTION
-Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Front Door
 
 ## EXAMPLES
 
-### Contoh 1: Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan dengan aturan penerusan
+### Contoh 1: Membuat PSRoutingRuleObject untuk pembuatan Front Door dengan aturan penerusan
 ```powershell
 New-AzFrontDoorRoutingRuleObject -Name $routingRuleName -FrontDoorName $frontDoorName -ResourceGroupName $rgname -FrontendEndpointName "frontendEndpoint1" -BackendPoolName "backendPool1" 
 ```
@@ -62,7 +65,7 @@ Name                         : {routingRuleName}
 Type                         :
 ```
 
-### Contoh 2: Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan dengan aturan pengalihan
+### Contoh 2: Membuat PSRoutingRuleObject untuk pembuatan Front Door dengan aturan pengalihan
 ```powershell
 $customHost = "www.contoso.com"
 $customPath = "/images/contoso.png"
@@ -85,12 +88,12 @@ Name                         : {routingRuleName}
 Type                         :
 ```
 
-Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Front Door
 
 ## PARAMETERS
 
 ### -AcceptedProtocol
-Skema protokol agar cocok dengan aturan ini.
+Skema protokol yang cocok untuk aturan ini.
 Nilai defaultnya adalah {Https, Http}
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolName
-Id sumber daya BackendPool yang dirutekan aturan ini
+Id sumber daya backendPool yang dirutekan aturan ini
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomFragment
-Fragmen untuk ditambahkan ke URL pengalihan. Fragmen adalah bagian dari URL yang muncul setelah #. Jangan sertakan kesalahan #.
+Fragmen untuk ditambahkan ke URL pengalihan. Fragmen adalah bagian dari URL yang muncul setelah #. Jangan sertakan #.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomHost
-Host untuk mengalihkan. Biarkan kosong untuk menggunakan host masuk sebagai host tujuan.
+Host untuk dialihkan. Biarkan kosong untuk menggunakan host masuk sebagai host tujuan.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomQueryString
-Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Mengatur nilai ini akan menggantikan string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus berada di <key>=<value> Format. Yang pertama? dan & akan ditambahkan secara otomatis, jadi jangan sertakan di bagian depan, tetapi pisahkan beberapa string kueri dengan &.
+Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus ada di <key>=<value> format. Yang pertama? dan & akan ditambahkan secara otomatis sehingga jangan sertakan di depan, tetapi lakukan beberapa string kueri terpisah dengan &.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicCompression
-Apakah mengaktifkan pemadatan dinamis untuk konten singgahan saat cache diaktifkan.
+Apakah mengaktifkan pemadatan dinamis untuk konten yang di-cache saat penembolokan diaktifkan.
 Nilai default diaktifkan
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCaching
-Apakah akan mengaktifkan cache untuk rute ini. Nilai default adalah false
+Apakah akan mengaktifkan penembolokan untuk rute ini. Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Boolean
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan tempat aturan perutean ini berada.
+Nama Front Door tempat aturan perutean ini berada.
 
 ```yaml
 Type: System.String
@@ -306,7 +309,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama RoutingRule.
 
 ```yaml
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -PatternToMatch
-Pola rute aturan, Tidak Boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur. Nilai defaultnya adalah /*
+Pola rute aturan, Tidak boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur. Nilai defaultnya adalah /*
 
 ```yaml
 Type: System.String[]
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan aturan akan digunakan saat mengalihkan lalu lintas. Nilai Default Dipindahkan
+Jenis pengalihan yang akan digunakan aturan saat mengalihkan lalu lintas. Nilai Default Dipindahkan
 
 ```yaml
 Type: System.String
@@ -413,11 +416,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

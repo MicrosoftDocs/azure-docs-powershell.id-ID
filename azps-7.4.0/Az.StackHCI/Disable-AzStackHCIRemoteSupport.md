@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIRemoteSupport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIRemoteSupport.md
-ms.openlocfilehash: 59ccc37071cde2c4644e1a0f3d53157932e41d69
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9d11c1008be13eefa7a98735deed4dab1b9d8fcb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798552"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632078"
 ---
 # Disable-AzStackHCIRemoteSupport
 
 ## SYNOPSIS
 Menonaktifkan Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/disable-azstackhciremotesupport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Disable-AzStackHCIRemoteSupport [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Nonaktifkan Dukungan Jarak Jauh mencabut semua tingkat akses yang sebelumnya telah diberikan. Sesi dukungan apa pun yang sudah ada akan dihentikan, dan sesi baru tidak dapat lagi dibuat.
+Nonaktifkan Dukungan Jarak Jauh mencabut semua tingkat akses yang sebelumnya diberikan. Setiap sesi dukungan yang ada akan dihentikan, dan sesi baru tidak dapat lagi dibuat.
 
 ## EXAMPLES
 
@@ -35,8 +38,8 @@ Disable-AzStackHCIRemoteSupport
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -51,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

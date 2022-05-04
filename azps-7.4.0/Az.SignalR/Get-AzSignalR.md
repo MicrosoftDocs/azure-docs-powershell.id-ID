@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
-ms.openlocfilehash: 8cd346f64358c93ab147858b1c620843e9a52d14
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8fda104923c590fb20ac9d254e04a6a826a719c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671706"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643686"
 ---
 # Get-AzSignalR
 
 ## SYNOPSIS
 Dapatkan layanan SignalR tertentu atau semua layanan SignalR dalam grup sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Dapatkan layanan SignalR tertentu atau semua layanan SignalR dalam grup sumber d
 
 ## EXAMPLES
 
-### Dapatkan semua layanan SignalR dalam langganan
+### Mendapatkan semua layanan SignalR dalam langganan
 ```powershell
 Get-AzSignalR
 ```
@@ -65,7 +68,7 @@ mysignalr1.service.signalr.net                     eastus         5002       500
 mysignalr2.service.signalr.net                     eastus         5002       5001       Succeeded         1.0
 ```
 
-### Dapatkan layanan SignalR tertentu
+### Mendapatkan layanan SignalR tertentu
 ```powershell
 Get-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1
 ```
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan Signalr.
+ID sumber daya layanan SignalR.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -1,17 +1,17 @@
 ---
 description: Pelajari cara menjalankan cmdlet Azure PowerShell secara paralel atau sebagai tugas latar belakang, menggunakan -AsJob dan Start-Job.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menjalankan cmdlet Azure PowerShell di Pekerjaan PowerShell
-ms.openlocfilehash: 4751d388e05f542c7ba821faf71b2bb873472414
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15a8d59249bcc711f7167fba211c1cb2d05588c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294307"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663640"
 ---
 # <a name="run-azure-powershell-cmdlets-in-powershell-jobs"></a>Menjalankan cmdlet Azure PowerShell di Pekerjaan PowerShell
 

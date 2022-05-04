@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Remove-AzConnectedNetworkVendorSkuPreview.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Remove-AzConnectedNetworkVendorSkuPreview.md
-ms.openlocfilehash: cfabc6e6855fc3773cbf88c85a6bbbab559e00bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 97e30b9b802edfaeda5b586be7e964b6974093f6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686502"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627588"
 ---
 # Remove-AzConnectedNetworkVendorSkuPreview
 
 ## SYNOPSIS
 Menghapus informasi pratinjau sku vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/remove-azconnectednetworkvendorskupreview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,12 +56,12 @@ PS C:\> Remove-AzConnectedNetworkVendorSkuPreview -InputObject $sku
 ```
 
 Membuat identitas dengan skuname mySku1, nama vendor myVendor dan langganan pratinjau.
-Menghapus informasi pratinjau menggunakan identitas tertentu.
+Menghapus informasi pratinjau menggunakan identitas yang diberikan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama vendor sku.
+Nama sku vendor.
 
 ```yaml
 Type: System.String
@@ -192,8 +195,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -246,11 +249,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[DeviceName <String>]`: Nama sumber daya perangkat.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+  - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
   - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

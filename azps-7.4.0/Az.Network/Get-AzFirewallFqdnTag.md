@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
-ms.openlocfilehash: fb1bc98056ecb001a462bde9a15f9024876912f3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fbd1acce530ab3ed86389a40ff60e8076f5f9a8a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681888"
 ---
 # Get-AzFirewallFqdnTag
 
 ## SYNOPSIS
-Dapatkan Azure Firewall Fqdn Tag yang tersedia.
+Mendapatkan Azure Firewall Tag Fqdn yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallfqdntag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Get-AzFirewallFqdnTag [-DefaultProfile <IAzureContextContainer>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFirewallFqdnTag** mendapatkan daftar Tag FQDN yang dapat digunakan untuk Azure Firewall Aturan Aplikasi
+Cmdlet **Get-AzFirewallFqdnTag** mendapatkan daftar Tag FQDN yang dapat digunakan untuk Aturan Aplikasi Azure Firewall
 
 ## EXAMPLES
 
-### 1: Ambil semua Tag FQDN yang tersedia
+### 1: Mengambil semua Tag FQDN yang tersedia
 ```powershell
 Get-AzFirewallFqdnTag
 ```
 
 Contoh ini mengambil semua Tag FQDN yang tersedia.
 
-### 2: Menggunakan Tag FQDN pertama yang tersedia dalam Aturan Aplikasi
+### 2: Gunakan Tag FQDN pertama yang tersedia dalam Aturan Aplikasi
 ```powershell
 $fqdnTags = Get-AzFirewallFqdnTag
 New-AzFirewallApplicationRule -Name AR -SourceAddress * -FqdnTag $fqdnTags[0].FqdnTagName
@@ -62,11 +65,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

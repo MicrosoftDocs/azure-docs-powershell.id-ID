@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMExtension.md
-ms.openlocfilehash: cb7ded1f73e30440d4b32db4bd3307796c80e3ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 259399cb0bc648beb3b3b5d506a47496409480d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739188"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597308"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMExtension
 
 ## SYNOPSIS
-Tambahkan ekstensi vm ke tipe simpul.
+Tambahkan ekstensi vm ke jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzServiceFabricManagedNodeTypeVMExtension [-ResourceGroupName] <String> [-Cl
 ```
 
 ## DESCRIPTION
-Tambahkan ekstensi vm ke tipe simpul. Ini akan menambahkan ekstensi ke sumber daya Kumpulan Skala Mesin Virtual yang mendasar.
+Tambahkan ekstensi vm ke jenis node. Ini akan menambahkan ekstensi ke sumber daya Virtual Machine Scale Set yang mendasar.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ $clusterName = "testCluster"
 Add-AzServiceFabricManagedNodeTypeVMExtension -ResourceGroupName $rgName -ClusterName $clusterName -NodeTypeName $NodeTypeName -Name $ExtName -Publisher $Publisher -Type $ExtType -TypeHandlerVersion $ExtVer -AutoUpgradeMinorVersion -Verbose
 ```
 
-Perintah ini menambahkan ekstensi ke tipe simpul.
+Perintah ini menambahkan ekstensi ke jenis node.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ $protectedSettings = @{"testProgectedSetting" = $protectedSetting };
 Add-AzServiceFabricManagedNodeTypeVMExtension -ResourceGroupName $rgName -ClusterName $clusterName -NodeTypeName $NodeTypeName -Name KeyVaultForWindows -Publisher Microsoft.Azure.KeyVault -Type KeyVaultForWindows -TypeHandlerVersion 1.0 -Settings $settings -ProtectedSettings $protectedSettings  -AutoUpgradeMinorVersion -Verbose
 ```
 
-Perintah ini menambahkan ekstensi dengan pengaturan dan pengaturan yang diproteksi ke tipe simpul.
+Perintah ini menambahkan ekstensi dengan pengaturan dan pengaturan yang dilindungi ke jenis node.
 
 ### Contoh 3
 ```powershell
@@ -73,12 +76,12 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Add-AzServiceFabricManagedNodeTypeVMExtension $ExtName -Publisher $Publisher -Type $ExtType -TypeHandlerVersion $ExtVer -AutoUpgradeMinorVersion -Verbose
 ```
 
-Perintah ini menambahkan ekstensi ke tipe simpul, dengan pipa.
+Perintah ini menambahkan ekstensi ke jenis node, dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 
 ### -AutoUpgradeMinorVersion
 Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penyebaran.
-Namun, setelah disebarkan, ekstensi tidak akan memutakhirkan versi minor kecuali jika dieploy ulang, bahkan dengan properti ini diatur ke true.
+Setelah disebarkan, bagaimanapun, ekstensi tidak akan meningkatkan versi kecil kecuali dipekerjakan kembali, bahkan jika properti ini diatur ke true.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdateTag
-Jika nilai disediakan dan berbeda dari nilai sebelumnya, penanganan ekstensi akan dipaksa untuk diperbarui meskipun konfigurasi ekstensi belum berubah.
+Jika nilai disediakan dan berbeda dari nilai sebelumnya, handler ekstensi akan dipaksa untuk memperbarui meskipun konfigurasi ekstensi belum berubah.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya Tipe Simpul
+Sumber daya Jenis Simpul
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -168,7 +171,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama ekstensi.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeTypeName
-Tentukan nama tipe simpul.
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectedSetting
-Ekstensi dapat berisi baik ProtectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang diproteksi sama sekali.
+Ekstensi dapat berisi protectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang dilindungi sama sekali.
 
 ```yaml
 Type: System.Object
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionAfterExtension
-Pengumpulan nama ekstensi yang perlu disediakan ekstensi ini.
+Kumpulan nama ekstensi setelah itu ekstensi ini perlu disediakan.
 
 ```yaml
 Type: System.String[]
@@ -229,8 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Nama penerbit penanganan ekstensi.
-Ini bisa menggunakan cmdlet Get-AzVMImagePublisher untuk mendapatkan penerbit.
+Nama penerbit handler ekstensi.
+Ini dapat menggunakan cmdlet Get-AzVMImagePublisher untuk mendapatkan penerbit.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengaturan
-Json memformat pengaturan publik untuk ekstensi tersebut.
+Pengaturan publik berformat Json untuk ekstensi.
 
 ```yaml
 Type: System.Object
@@ -274,9 +277,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe ekstensi; contohnya adalah "CustomScriptExtension".
-Anda dapat menggunakan cmdlet Get-AzVMExtensionImageType untuk mendapatkan tipe ekstensi.
+### -Type
+Menentukan jenis ekstensi; contohnya adalah "CustomScriptExtension".
+Anda dapat menggunakan cmdlet Get-AzVMExtensionImageType untuk mendapatkan jenis ekstensi.
 
 ```yaml
 Type: System.String
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi penanganan skrip.
+Menentukan versi handler skrip.
 
 ```yaml
 Type: System.String
@@ -305,8 +308,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

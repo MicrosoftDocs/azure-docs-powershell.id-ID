@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
-ms.openlocfilehash: 6ca7c1761c9f527058ba4e0355c206b0cb3a111a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 513dbf1bf11ea119cb107511b79c198b611a4c77
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932707"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647302"
 ---
 # Get-AzDataLakeGen2ChildItem
 
 ## SYNOPSIS
-Mencantumkan sub direktori dan file dari akar direktori atau filesystem.
+Mencantumkan sub direktori dan file dari akar direktori atau sistem file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2childitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzDataLakeGen2ChildItem [-FileSystem] <String> [[-Path] <String>] [-FetchPro
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataLakeGen2ChildItem** mencantumkan sub direktori dan file dalam direktori atau Filesystem di akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ dir2                 True                         2020-03-23 09:28:36Z rwxr-x---
 
 Perintah ini mencantumkan sub item langsung dari Filesystem
 
-### Contoh 2: Daftar secara rekurtif dari direktori, dan ambil Properti/ACL
+### Contoh 2: Mencantumkan secara rekursif dari direktori, dan mengambil Properti/ACL
 ```
 PS C:\>Get-AzDataLakeGen2ChildItem -FileSystem "filesystem1" -Path "dir1/" -Recurse -FetchProperty
 
@@ -60,7 +63,7 @@ dir1/testfile_1K_0   False        1024            2020-03-23 09:29:21Z rw-r-----
 
 Perintah ini mencantumkan sub item langsung dari Filesystem
 
-### Contoh 3: Mencantumkan item secara rekurtif dari Filesystem dalam beberapa kumpulan
+### Contoh 3: Mencantumkan item secara rekursif dari Filesystem dalam beberapa batch
 ```
 PS C:\> $MaxReturn = 1000
 PS C:\> $FileSystemName = "filesystem1"
@@ -77,18 +80,18 @@ PS C:\> do
 PS C:\> Echo "Total $Total items in Filesystem $FileSystemName"
 ```
 
-Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencantumkan item secara berulang dari Filesystem dalam beberapa kumpulan.
-*MaxCount* kecil dapat membatasi item yang dikembalikan dari satu requst, dapat membantu operasi mengurangi waktu, dan membatasi penggunaan memori Powershell.
+Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencantumkan item secara rekursif dari Filesystem dalam beberapa batch.
+*MaxCount* kecil dapat membatasi item yang dikembalikan dari satu requst, dapat membantu kesalahan waktu operasi habis, dan membatasi penggunaan memori Powershell.
 Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While** yang menggunakan cmdlet **Get-AzDataLakeGen2ChildItem** untuk mencantumkan item.
 Pernyataan ini mencakup token kelanjutan yang disimpan dalam variabel $Token.
-$Token mengubah nilai saat pengulangan berjalan.
-Perintah terakhir menggunakan perintah **Gema** untuk menampilkan total.
+$Token mengubah nilai saat perulangan berjalan.
+Perintah akhir menggunakan perintah **Echo** untuk menampilkan total.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Jumlah maksimal dari blob yang dapat kembali.
+Jumlah maksimum blob yang dapat kembali.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputUserPrincipalName
-Jika speicify parameter ini, nilai identitas pengguna yang dikembalikan dalam bidang pemilik dan grup dari setiap entri daftar akan diubah dari ID Objek Azure Active Directory menjadi Nama Pokok Pengguna. Jika tidak mempopulerkan parameter ini, nilai akan dikembalikan sebagai ID Objek Azure Active Directory. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama yang bersahabat yang unik.
+Jika speicify parameter ini, nilai identitas pengguna yang dikembalikan di bidang pemilik dan grup dari setiap entri daftar akan diubah dari ID Objek Azure Active Directory menjadi Nama Prinsipal Pengguna. Jika tidak meluaskan parameter ini, nilai akan dikembalikan sebagai ID Objek Azure Active Directory. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama bersahabat yang unik.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus diambil.
+Jalur dalam Filesystem yang ditentukan yang harus diambil.
 Harus berupa direktori, dalam format 'directory1/directory2/'.
 
 ```yaml
@@ -223,8 +226,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Berulang
-Menunjukkan apakah akan mendapatkan Item Anak secara rekurtif.
+### -Recurse
+Menunjukkan apakah akan secara rekursif mendapatkan Item Anak.
 Defaultnya adalah false.
 
 ```yaml
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

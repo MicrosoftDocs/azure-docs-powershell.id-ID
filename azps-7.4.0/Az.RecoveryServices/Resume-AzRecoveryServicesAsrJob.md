@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 4d3994ef7ac05fb55b0304d99d47f8e37b1fd65d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cee0dfba3d0851f9c64081d2dfea5cd3e5274d86
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059877"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704658"
 ---
 # Resume-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Melanjutkan pekerjaan Azure Site Recovery yang ditangguhkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/resume-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet **Resume-AzRecoveryServicesAsrJob** melanjutkan pekerjaan Azure Site Reco
 $currentJob = Resume-AzRecoveryServicesAsrJob -Job $Job
 ```
 
-Lanjutkan pekerjaan yang ditentukan jika berada dalam status menunggu atau ditangguhkan dan mengembalikan objek pekerjaan ASR yang diperbarui yang terkait dengan pekerjaan ASR.
+Lanjutkan pekerjaan yang ditentukan jika dalam status menunggu atau ditangguhkan dan kembalikan objek pekerjaan ASR yang diperbarui yang sesuai dengan pekerjaan ASR.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek Pekerjaan ASR yang terkait dengan pekerjaan yang akan dilanjutkan.
+Objek input ke cmdlet: Objek Pekerjaan ASR yang sesuai dengan pekerjaan yang akan dilanjutkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
@@ -91,8 +94,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan tugas ASR menurut nama.
+### -Name
+Tentukan pekerjaan ASR berdasarkan nama.
 
 ```yaml
 Type: System.String
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

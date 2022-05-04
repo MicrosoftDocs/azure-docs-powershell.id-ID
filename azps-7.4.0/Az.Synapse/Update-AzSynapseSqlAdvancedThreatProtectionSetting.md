@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: d3c27982df8cc61a838f6944add988180c3bdf29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7b704daccc288168551058a8a982920085d60fe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142862686"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597128"
 ---
 # Update-AzSynapseSqlAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Memperbarui pengaturan perlindungan ancaman tingkat lanjut di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesqladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzSynapseSqlAdvancedThreatProtectionSetting -ResourceId <String> [-Notifi
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlAdvancedThreatProtectionSetting memperbarui** pengaturan perlindungan ancaman tingkat lanjut di Ruang Kerja Analitik Azure Synapse. Untuk mengaktifkan proteksi ancaman tingkat lanjut di ruang kerja, pengaturan audit harus diaktifkan di ruang kerja tersebut.
+**Cmdlet Update-AzSynapseSqlAdvancedThreatProtectionSetting memperbarui** pengaturan perlindungan ancaman tingkat lanjut pada Ruang Kerja analitik Azure Synapse. Untuk mengaktifkan perlindungan ancaman tingkat lanjut di ruang kerja, pengaturan audit harus diaktifkan di ruang kerja tersebut.
 
 ## EXAMPLES
 
@@ -53,12 +56,12 @@ Cmdlet **Update-AzSynapseSqlAdvancedThreatProtectionSetting memperbarui** pengat
 Update-AzSynapseSqlAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -NotificationRecipientsEmail "admin01@contoso.com;secadmin@contoso.com" -EmailAdmin $False -ExcludedDetectionType "Sql_Injection_Vulnerability","SQL_Injection" -StorageAccountName "mystorageAccount"
 ```
 
-Perintah ini memperbarui pengaturan proteksi ancaman tingkat lanjut untuk ruang kerja bernama ContosoWorkspace.
+Perintah ini memperbarui pengaturan perlindungan ancaman tingkat lanjut untuk ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAdmin
-Menentukan apakah akan menjadi administrator email.
+Menentukan apakah akan mengirim email kepada administrator.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Tipe deteksi untuk dikecualikan.
+Jenis deteksi untuk dikecualikan.
 
 ```yaml
 Type: System.String[]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Jumlah hari penyimpanan untuk log audit.
+Jumlah hari retensi untuk log audit.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -207,7 +210,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -222,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

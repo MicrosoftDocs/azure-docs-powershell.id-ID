@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultCertificate.md
-ms.openlocfilehash: b1c00e4f1c06a93a63f9d9b05b627d07e11cbded
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 64f81866b1e61459c2f2042c4bec3bd6d5627c7b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682992"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594196"
 ---
-# Backup-AzKeyVaultCertificate
+# Cadangan-SertifikatAzKeyVault
 
 ## SYNOPSIS
-Mencadangkan sertifikat dalam kubah kunci.
+Mencadangkan sertifikat dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,19 +35,19 @@ Backup-AzKeyVaultCertificate [-InputObject] <PSKeyVaultCertificateIdentityItem> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzKeyVaultCertificate** mencadangkan sertifikat tertentu dalam kubah kunci dengan mengunduhnya dan menyimpannya dalam file.
+Cmdlet **Backup-AzKeyVaultCertificate** mencadangkan sertifikat tertentu dalam brankas kunci dengan mengunduhnya dan menyimpannya dalam file.
 Jika sertifikat memiliki beberapa versi, semua versinya akan disertakan dalam cadangan.
-Karena konten yang diunduh dienkripsi, konten tidak dapat digunakan di luar Azure Key Vault.
-Anda dapat memulihkan sertifikat yang dicadangkan ke kubah kunci apa pun dalam langganan tempatnya dicadangkan, selama kubah berada dalam geografi Azure yang sama.
+Karena konten yang diunduh dienkripsi, konten tersebut tidak dapat digunakan di luar Azure Key Vault.
+Anda dapat memulihkan sertifikat yang dicadangkan ke brankas kunci apa pun dalam langganan tempat sertifikat dicadangkan, selama vault berada dalam geografi Azure yang sama.
 Alasan umum untuk menggunakan cmdlet ini adalah: 
-- Anda ingin menyimpan salinan sertifikat offline jika Anda secara tidak sengaja menghapus sertifikat asli dari kubah.
+- Anda ingin menyimpan salinan sertifikat offline jika Anda secara tidak sengaja menghapus yang asli dari vault.
  
-- Anda membuat sertifikat menggunakan Key Vault dan sekarang ingin mengkloning objek ke kawasan Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang didistribusikan.
-Gunakan cmdlet **Backup-AzKeyVaultCertificate** untuk mengambil sertifikat dalam format terenkripsi lalu gunakan cmdlet **Restore-AzKeyVaultCertificate** dan tentukan kubah kunci di kawasan kedua.
+- Anda membuat sertifikat menggunakan Key Vault dan sekarang ingin mengkloning objek ke wilayah Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua instans aplikasi terdistribusi Anda.
+Gunakan cmdlet **Backup-AzKeyVaultCertificate** untuk mengambil sertifikat dalam format terenkripsi lalu gunakan cmdlet **Restore-AzKeyVaultCertificate** dan tentukan brankas kunci di wilayah kedua.
 
 ## EXAMPLES
 
-### Contoh 1: Mencadangkan sertifikat dengan nama file yang dihasilkan secara otomatis
+### Contoh 1: Mencadangkan sertifikat dengan nama file yang dibuat secara otomatis
 ```powershell
 Backup-AzKeyVaultCertificate -VaultName 'mykeyvault' -Name 'mycert'
 ```
@@ -53,7 +56,7 @@ Backup-AzKeyVaultCertificate -VaultName 'mykeyvault' -Name 'mycert'
 C:\Users\username\mykeyvault-mycert-1527029447.01191
 ```
 
-Perintah ini mengambil sertifikat bernama MyCert dari kubah kunci bernama MyKeyVault dan menyimpan cadangan sertifikat tersebut ke file yang secara otomatis dinamai untuk Anda, dan menampilkan nama file.
+Perintah ini mengambil sertifikat bernama MyCert dari brankas kunci bernama MyKeyVault dan menyimpan cadangan sertifikat tersebut ke file yang secara otomatis dinamai untuk Anda, dan menampilkan nama file.
 
 ### Contoh 2: Mencadangkan sertifikat ke nama file tertentu
 ```powershell
@@ -64,9 +67,9 @@ Backup-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyCert' -OutputFile 'C:\Back
 C:\Backup.blob
 ```
 
-Perintah ini mengambil sertifikat bernama MyCert dari kubah kunci bernama MyKeyVault dan menyimpan cadangan sertifikat tersebut ke file bernama Backup.blob.
+Perintah ini mengambil sertifikat bernama MyCert dari brankas kunci bernama MyKeyVault dan menyimpan cadangan sertifikat tersebut ke file bernama Backup.blob.
 
-### Contoh 3: Cadangkan sertifikat yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
+### Contoh 3: Cadangkan sertifikat yang diambil sebelumnya ke nama file tertentu, menimpa file tujuan tanpa meminta.
 ```powershell
 $cert = Get-AzKeyVaultCertificate -VaultName 'MyKeyVault' -Name 'MyCert'
 Backup-AzKeyVaultCertificate -Certificate $cert -OutputFile 'C:\Backup.blob' -Force
@@ -76,7 +79,7 @@ Backup-AzKeyVaultCertificate -Certificate $cert -OutputFile 'C:\Backup.blob' -Fo
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan sertifikat bernama $cert. Nama dalam kubah bernama $cert. VaultName ke file bernama Backup.blob, menimpa file secara diam-diam jika sudah ada.
+Perintah ini membuat cadangan sertifikat bernama $cert. Nama dalam vault bernama $cert. VaultName ke file bernama Backup.blob, secara diam-diam menimpa file jika sudah ada.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Timpa file yang diberikan jika ada
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Rahasia untuk dicadangkan, disalurkan dari output panggilan pengambilan.
+Rahasia yang akan dicadangkan, disalurkan dari output panggilan pengambilan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIdentityItem
@@ -125,9 +128,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama rahasia.
-Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih dan nama rahasia.
+Cmdlet membangun FQDN rahasia dari nama vault, lingkungan dan nama rahasia yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-Berkas output.
+File output.
 File output untuk menyimpan cadangan sertifikat.
 Jika tidak ditentukan, nama file default akan dihasilkan.
 
@@ -159,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

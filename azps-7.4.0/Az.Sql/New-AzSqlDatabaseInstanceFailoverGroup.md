@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 4b44a1116b841ee63c529fafca6ba4f5e2d00aaf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c20556d59935e6e20e6a6bc2a3cefb9d6b66216
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933571"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682932"
 ---
-# New-AzSqlDatabaseInstanceFailoverGroup
+# Baru-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Perintah ini membuat Grup Failover Instans Azure SQL Database baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,9 +31,9 @@ New-AzSqlDatabaseInstanceFailoverGroup [-Name] <String> [-PartnerResourceGroupNa
 ```
 
 ## DESCRIPTION
-Membuat Grup Failover Instans Azure SQL Database baru di antara wilayah tertentu dengan pasangan Instans Terkelola yang dicatat.
+Membuat Grup Failover Instans Azure SQL Database baru antara wilayah yang ditentukan dengan pasangan Instans Terkelola yang disebutkan.
 
-Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke wilayah utama dan sekunder grup Failover. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
+Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke wilayah utama dan sekunder dari Grup Failover. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
 
 Selama pratinjau fitur Grup Failover Instans, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -84,7 +87,7 @@ Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Manua
 
 ### Contoh 3
 
-Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (autogenerasi)
+Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -94,7 +97,7 @@ New-AzSqlDatabaseInstanceFailoverGroup -FailoverPolicy Automatic -GracePeriodWit
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary
-Apakah pemadaman di server sekunder harus memicu failover otomatis titik akhir baca-saja.
+Apakah pemadaman pada server sekunder harus memicu failover otomatis dari titik akhir baca-saja.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover Grup Failover Instans.
+Kebijakan failover dari Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika terjadi pemadaman pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
+Interval sebelum failover otomatis dimulai jika pemadaman terjadi pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
 
 ```yaml
 Type: System.Int32
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Grup failover Azure SQL Database untuk dibuat.
+### -Name
+Nama Grup Failover Azure SQL Database yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerManagedInstanceName
-Nama Instans Terkelola di kawasan mitra yang akan ditambahkan ke Grup Failover Instans.
+Nama Instans Terkelola di wilayah mitra yang akan ditambahkan ke Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerRegion
-Nama wilayah mitra grup Failover Instans.
+Nama wilayah mitra Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -273,8 +276,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

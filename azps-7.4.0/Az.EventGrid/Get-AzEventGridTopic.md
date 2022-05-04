@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopic.md
-ms.openlocfilehash: 49950de95206388f2baa9778de4f40630c98b178
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: de8df50784f358d3491e77a41e7c62204a073805
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286893"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646528"
 ---
 # Get-AzEventGridTopic
 
 ## SYNOPSIS
-Mendapatkan detail topik Kisi Acara, atau mendapatkan daftar semua topik Kisi Acara dalam langganan Azure saat ini.
+Mendapatkan detail topik Event Grid, atau mendapatkan daftar semua topik Event Grid di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,11 +46,11 @@ Get-AzEventGridTopic [-NextLink <String>] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventGridTopic mendapatkan detail Topik Kisi Acara tertentu, atau daftar semua topik Kisi Acara dalam langganan Azure saat ini.
-Jika nama topik disediakan, detail dari satu Topik Kisi Acara dikembalikan.
-Jika nama topik tidak disediakan, daftar topik akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika Nilai teratas tidak ditentukan atau $null, daftar akan berisi semua item topik. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
-Jika topik lainnya masih tersedia, nilai di NextLink harus digunakan dalam panggilan berikutnya untuk mendapatkan halaman topik berikutnya.
-Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData menggunakan properti Name saja. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
+Cmdlet Get-AzEventGridTopic mendapatkan detail Topik Event Grid tertentu, atau daftar semua topik Event Grid di langganan Azure saat ini.
+Jika nama topik disediakan, detail satu Topik Event Grid dikembalikan.
+Jika nama topik tidak disediakan, daftar topik dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item topik. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
+Jika lebih banyak topik masih tersedia, nilai di NextLink harus digunakan dalam panggilan berikutnya untuk mendapatkan halaman topik berikutnya.
+Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData menggunakan properti Nama saja. Operasi yang didukung meliputi: CONTAINS, eq (untuk equal), ne (untuk not equal), AND, OR dan NOT.
 
 ## EXAMPLES
 
@@ -56,21 +59,21 @@ Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil
 Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1
 ```
 
-Mendapatkan detail topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan detail topik \`Event Grid Topic1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 Get-AzEventGridTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/topics/Topic1"
 ```
 
-Mendapatkan detail topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan detail topik \`Event Grid Topic1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 3
 ```powershell
 Get-AzEventGridTopic -ResourceGroup MyResourceGroupName
 ```
 
-Cantumkan semua topik Kisi Kejadian dalam grup \`sumber daya MyResourceGroupName\` tanpa pagination.
+Cantumkan semua topik Event Grid dalam grup \`sumber daya MyResourceGroupName\` tanpa pagination.
 
 ### Contoh 4
 ```powershell
@@ -79,14 +82,14 @@ $result = Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Top 10 -OData
 Get-AzEventGridTopic $result.NextLink
 ```
 
-Cantumkan 10 topik Kisi Kejadian pertama (jika ada) dalam grup \`sumber daya MyResourceGroupName\` yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridTopic dan menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
+Cantumkan 10 topik Event Grid pertama (jika ada) dalam grup \`sumber daya MyResourceGroupName\` yang memenuhi kueri $odataFilter. Jika lebih banyak hasil tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik berikutnya, pengguna diharapkan untuk memanggil kembali Get-AzEventGridTopic dan menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ### Contoh 5
 ```powershell
 Get-AzEventGridTopic
 ```
 
-Cantumkan semua topik Kisi Acara dalam langganan tanpa paginasi.
+Cantumkan semua topik Event Grid dalam langganan tanpa penomoran halaman.
 
 ### Contoh 6
 ```powershell
@@ -95,7 +98,7 @@ $result = Get-AzEventGridTopic -Top 10 -ODataQuery $odataFilter
 Get-AzEventGridTopic $result.NextLink
 ```
 
-Cantumkan 10 topik Kisi Kejadian pertama (jika ada) dalam langganan yang memenuhi kueri $odataFilter. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik berikutnya, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridTopic dan menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
+Cantumkan 10 topik Event Grid pertama (jika ada) dalam langganan yang memenuhi kueri $odataFilter. Jika lebih banyak hasil tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik berikutnya, pengguna diharapkan untuk memanggil kembali Get-AzEventGridTopic dan menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Topik EventGrid.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextLink
-Tautan untuk halaman sumber daya berikutnya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet pertama Get-AzEventGrid ketika lebih banyak sumber daya masih tersedia untuk dikueri.
+Tautan untuk halaman sumber daya berikutnya yang akan diperoleh. Nilai ini diperoleh dengan panggilan cmdlet Get-AzEventGrid pertama ketika lebih banyak sumber daya masih tersedia untuk dikueri.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ODataQuery
-Kueri OData digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk sama dengan), ne (untuk tidak sama dengan), AND, OR dan NOT.
+Kueri OData yang digunakan untuk memfilter hasil daftar. Pemfilteran saat ini hanya diperbolehkan pada properti Nama. Operasi yang didukung meliputi: CONTAINS, eq (untuk equal), ne (untuk not equal), AND, OR dan NOT.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
+Pengidentifikasi Sumber Daya yang mewakili Topik Event Grid.
 
 ```yaml
 Type: System.String
@@ -201,8 +204,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah sumber daya maksimum yang akan diperoleh. Nilai valid adalah antara 1 dan 100. Jika nilai teratas ditentukan dan hasil lainnya masih tersedia, hasilnya akan berisi link ke halaman berikutnya yang akan dikueri di NextLink. Jika nilai Teratas tidak ditentukan, daftar lengkap sumber daya akan dikembalikan sekaligus.
+### -Atas
+Jumlah maksimum sumber daya yang akan diperoleh. Nilai yang valid adalah antara 1 dan 100. Jika nilai teratas ditentukan dan lebih banyak hasil masih tersedia, hasilnya akan berisi tautan ke halaman berikutnya yang akan dikueri di NextLink. Jika nilai Teratas tidak ditentukan, daftar lengkap sumber daya akan dikembalikan sekaligus.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

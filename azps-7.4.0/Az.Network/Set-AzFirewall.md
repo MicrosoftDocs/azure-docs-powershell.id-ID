@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewall.md
-ms.openlocfilehash: a9dba932e82ee0a11b750b1c37c9f9c8bda7719e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45802db3fe199838c270ad011c0242924543be26
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804294"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635984"
 ---
 # Set-AzFirewall
 
 ## SYNOPSIS
 Menyimpan Firewall yang dimodifikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ $ruleCollection.Priority = 101
 Set-AzFirewall -AzureFirewall $azFw
 ```
 
-Contoh ini memperbarui prioritas kumpulan aturan yang sudah ada dari Azure Firewall.
-Dengan asumsi Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas pengumpulan aturan tersebut dan memperbarui Azure Firewall sesudahnya. Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak terlihat di server.
+Contoh ini memperbarui prioritas kumpulan aturan yang ada dari Azure Firewall.
+Dengan asumsi Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas kumpulan aturan tersebut dan memperbarui Azure Firewall setelahnya. Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak tercermin di server.
 
 ### 2: Membuat Azure Firewall dan mengatur kumpulan aturan aplikasi nanti
 ```powershell
@@ -52,19 +55,19 @@ $azFw.ApplicationRuleCollections = $RuleCollection
 $azFw | Set-AzFirewall
 ```
 
-Dalam contoh ini, Firewall dibuat terlebih dahulu tanpa kumpulan aturan aplikasi apa pun. Setelah itu Aturan Aplikasi dan Kumpulan Aturan Aplikasi dibuat, maka objek Firewall diubah dalam memori, tanpa memengaruhi konfigurasi nyata di awan. Agar perubahan terlihat di awan, Set-AzFirewall harus dipanggil.
+Dalam contoh ini, Firewall dibuat terlebih dahulu tanpa kumpulan aturan aplikasi apa pun. Setelah itu Aturan Aplikasi dan Kumpulan Aturan Aplikasi dibuat, maka objek Firewall dimodifikasi dalam memori, tanpa memengaruhi konfigurasi nyata di cloud. Agar perubahan tercermin di cloud, Set-AzFirewall harus dipanggil.
 
-### 3: Memperbarui mode operasi Threat Intel Azure Firewall
+### 3: Memperbarui mode operasi Intel Ancaman Azure Firewall
 ```powershell
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $azFw.ThreatIntelMode = "Deny"
 Set-AzFirewall -Firewall $azFw
 ```
 
-Contoh ini memperbarui mode operasi Threat Intel Azure Firewall "AzureFirewall" dalam grup sumber daya "rg".
-Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak terlihat di server.
+Contoh ini memperbarui mode operasi Intel Ancaman Azure Firewall "AzureFirewall" dalam grup sumber daya "rg".
+Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak tercermin di server.
 
-### 4: Deallocate dan alokasikan Firewall
+### 4: Batalkan alokasi dan alokasikan Firewall
 ```powershell
 $firewall=Get-AzFirewall -ResourceGroupName rgName -Name azFw
 $firewall.Deallocate()
@@ -75,11 +78,11 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName rgName -Name publicIpName
 $firewall.Allocate($vnet, $pip)
 $firewall | Set-AzFirewall
 ```
-Contoh ini mengambil Firewall, mengalokasi firewall, dan menyimpannya. Perintah Deallocate menghapus layanan yang berjalan tetapi mempertahankan konfigurasi firewall. Agar perubahan terlihat di awan, Set-AzFirewall harus dipanggil.
+Contoh ini mengambil Firewall, membatalkan alokasi firewall, dan menyimpannya. Perintah Batalkan alokasi menghapus layanan yang sedang berjalan tetapi mempertahankan konfigurasi firewall. Agar perubahan tercermin di cloud, Set-AzFirewall harus dipanggil.
 Jika pengguna ingin memulai layanan lagi, metode Alokasikan harus dipanggil pada firewall.
-VNet dan IP Publik baru harus berada dalam grup sumber daya yang sama dengan Firewall. Sekali lagi, agar perubahan terlihat di awan, Set-AzFirewall harus dipanggil.
+VNet dan IP Publik baru harus berada dalam grup sumber daya yang sama dengan Firewall. Sekali lagi, agar perubahan tercermin di cloud, Set-AzFirewall harus dipanggil.
 
-### 5: Alokasikan dengan alamat IP publik manajemen untuk skenario terowongan paksa
+### 5: Alokasikan dengan alamat IP publik manajemen untuk skenario penerowongan paksa
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceGroupName rgName -Name anotherVNetName
 $pip = Get-AzPublicIpAddress -ResourceGroupName rgName -Name publicIpName
@@ -87,7 +90,7 @@ $mgmtPip = Get-AzPublicIpAddress -ResourceGroupName rgName -Name MgmtPublicIpNam
 $firewall.Allocate($vnet, $pip, $mgmtPip)
 $firewall | Set-AzFirewall
 ```
-Contoh ini mengalokasikan firewall dengan alamat IP publik manajemen dan subnet untuk skenario terowongan paksa. VNet harus berisi subnet yang disebut "AzureFirewallManagementSubnet".
+Contoh ini mengalokasikan firewall dengan alamat IP publik manajemen dan subnet untuk skenario penerowongan paksa. VNet harus berisi subnet yang disebut "AzureFirewallManagementSubnet".
 
 ### 6: Menambahkan alamat IP Publik ke Azure Firewall
 ```powershell
@@ -98,7 +101,7 @@ $azFw.AddPublicIpAddress($pip)
 $azFw | Set-AzFirewall
 ```
 
-Dalam contoh ini, Alamat IP Publik "azFwPublicIp1" sebagaimana dilampirkan ke Firewall.
+Dalam contoh ini, Alamat IP Publik "azFwPublicIp1" seperti yang dilampirkan ke Firewall.
 
 ### 7: Menghapus alamat IP Publik dari Azure Firewall
 ```powershell
@@ -109,7 +112,7 @@ $azFw.RemovePublicIpAddress($pip)
 $azFw | Set-AzFirewall
 ```
 
-Dalam contoh ini, Alamat IP Publik "azFwPublicIp1" sebagai dilepas dari Firewall.
+Dalam contoh ini, Alamat IP Publik "azFwPublicIp1" seperti yang dicopot dari Firewall.
 
 ### 8: Mengubah alamat IP publik manajemen pada Azure Firewall
 ```powershell
@@ -134,7 +137,7 @@ $azFw | Set-AzFirewall
 
 Dalam contoh ini, konfigurasi Proksi DNS dan Server DNS dilampirkan ke Firewall.
 
-### 10: Memperbarui tujuan aturan yang sudah ada dalam kumpulan aturan aplikasi Firewall
+### 10: Memperbarui tujuan aturan yang ada dalam kumpulan aturan aplikasi Firewall
 ```powershell
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $ruleCollection = $azFw.GetNetworkRuleCollectionByName("ruleCollectionName")
@@ -143,7 +146,7 @@ $rule.DestinationAddresses = "10.10.10.10"
 Set-AzFirewall -AzureFirewall $azFw
 ```
 
-Contoh ini memperbarui tujuan aturan yang sudah ada dalam kumpulan aturan Azure Firewall. Hal ini memungkinkan Anda memperbarui aturan secara otomatis ketika alamat IP berubah secara dinamis.
+Contoh ini memperbarui tujuan aturan yang ada dalam kumpulan aturan Azure Firewall. Ini memungkinkan Anda untuk secara otomatis memperbarui aturan Anda ketika alamat IP berubah secara dinamis.
 
 ### 11: Izinkan FTP Aktif pada Azure Firewall
 ```powershell
@@ -153,9 +156,9 @@ $azFw.AllowActiveFTP = $true
 $azFw | Set-AzFirewall
 ```
 
-Dalam contoh ini, Active FTP diperbolehkan di Firewall.
+Dalam contoh ini, FTP Aktif diizinkan pada Firewall.
 
-### 12: Deallocate dan alokasikan Firewall dari Virtual Hub
+### 12: Batalkan alokasi dan alokasikan Firewall dari Hub Virtual
 ```powershell
 $firewall=Get-AzFirewall -ResourceGroupName rgName -Name azFw
 $firewall.Deallocate()
@@ -165,13 +168,13 @@ $Hub = Get-AzVirtualHub -ResourceGroupName "testRG" -Name "westushub"
 $firewall.Allocate($Hub.Id)
 $firewall | Set-AzFirewall
 ```
-Contoh ini mengambil Firewall Hub, mengalokasi firewall hub, dan menyimpannya. Perintah Deallocate menghapus referensi ke hub virtual tetapi mempertahankan konfigurasi firewall. Agar perubahan terlihat di awan, Set-AzFirewall harus dipanggil.
-Metode Alokasikan menetapkan referensi hub virtual ke firewall. Sekali lagi, agar perubahan terlihat di awan, Set-AzFirewall harus dipanggil.
+Contoh ini mengambil Firewall Hub, membatalkan alokasi firewall hub, dan menyimpannya. Perintah Batalkan alokasi menghapus referensi ke hub virtual tetapi mempertahankan konfigurasi firewall. Agar perubahan tercermin di cloud, Set-AzFirewall harus dipanggil.
+Metode Alokasikan menetapkan referensi hub virtual ke firewall. Sekali lagi, agar perubahan tercermin di cloud, Set-AzFirewall harus dipanggil.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,8 +218,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -264,4 +267,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzFirewall](./New-AzFirewall.md)
 
-[Hapus-AzFirewall](./Remove-AzFirewall.md)
+[Remove-AzFirewall](./Remove-AzFirewall.md)

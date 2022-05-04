@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
-ms.openlocfilehash: 81a80af1a4d0da9b29c1e9eb2728f3dd25b32b9a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 826f3b37bc9fba3e57add080d67393b207950ed3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879152"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592578"
 ---
 # Get-AzAutomationRunbook
 
 ## SYNOPSIS
-Dapatkan runbook.
+Mendapatkan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Get-AzAutomationRunbook [-Name] <String> [-ResourceGroupName] <String> [-Automat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationRunbook** mendapatkan Azure Automation runbook.
+Cmdlet **Get-AzAutomationRunbook** mendapatkan runbook Azure Automation.
 Untuk mendapatkan runbook tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua runbook
+### Contoh 1: Mendapatkan semua runbook
 ```
 PS C:\>Get-AzAutomationRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```
@@ -48,7 +51,7 @@ Perintah ini mendapatkan semua runbook di akun Azure Automation bernama Contoso1
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan runbook.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan runbook.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama runbook yang didapat cmdlet ini.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

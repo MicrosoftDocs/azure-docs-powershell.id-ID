@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointResourceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointResourceUsage.md
-ms.openlocfilehash: 41168ddca5dce13e7def2c9d2bc4df331f5c5b30
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 224c0b8a69d65ca03994aa77d3f45742679db6f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810954"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684120"
 ---
 # Get-AzCdnEndpointResourceUsage
 
 ## SYNOPSIS
-Mendapatkan penggunaan sumber daya titik akhir CDN.
+Mendapatkan penggunaan sumber daya dari titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnendpointresourceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ origingroup           count            2    10
 originsPerOriginGroup count            2    10
 ```
 
-Contoh ini memperlihatkan batas sumber daya dan penggunaan titik akhir saat ini dengan nama 'titik akhir1' di bawah profil 'profil1'.
+Contoh ini menunjukkan batas sumber daya dan penggunaan titik akhir saat ini dengan nama 'titik akhir1' di bawah profil 'profile1'.
 
 ## PARAMETERS
 
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

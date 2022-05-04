@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKqlScript.md
-ms.openlocfilehash: c2182102f1c4082c5b4e6ebf0651a096f825c9f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a8f7265477698fef0acb5b6c2eb4cc70c5ed8700
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170577"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700898"
 ---
 # Get-AzSynapseKqlScript
 
 ## SYNOPSIS
-Mendapatkan informasi tentang skrip KQL dalam ruang kerja.
+Mendapatkan informasi tentang skrip KQL di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseKqlScript -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseKqlScript** mendapatkan informasi tentang skrip KQL dalam ruang kerja. Jika Anda menentukan nama skrip KQL, cmdlet akan mendapatkan informasi tentang skrip KQL tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua skrip KQL dalam ruang kerja.
+Cmdlet **Get-AzSynapseKqlScript** mendapatkan informasi tentang skrip KQL di ruang kerja. Jika Anda menentukan nama skrip KQL, cmdlet mendapatkan informasi tentang skrip KQL tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua skrip KQL di ruang kerja.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseKqlScript -Name ContosoKqlScript
 ```
 
-Mendapatkan satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 KQL nama skrip.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: PSSynapseWorkspace
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
-ms.openlocfilehash: dc56a4c5c8f91a5690eac282d0a5aceab0ec4291
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6782f899a32f77798123d42cb26de583eb862ab4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808776"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610966"
 ---
 # New-AzFunctionApp
 
 ## SYNOPSIS
 Membuat aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/new-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Membuat aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat aplikasi fungsi PowerShell pemakaian di AS Tengah.
+### Contoh 1: Membuat aplikasi fungsi PowerShell konsumsi di AS Tengah.
 ```powershell
 New-AzFunctionApp -Name MyUniqueFunctionAppName `
                   -ResourceGroupName MyResourceGroupName `
@@ -62,7 +65,7 @@ New-AzFunctionApp -Name MyUniqueFunctionAppName `
                   -Runtime PowerShell
 ```
 
-Perintah ini membuat aplikasi fungsi PowerShell yang dapat digunakan di AS Tengah.
+Perintah ini membuat aplikasi fungsi PowerShell konsumsi di AS Tengah.
 
 ### Contoh 2: Buat aplikasi fungsi PowerShell yang akan dihosting dalam paket layanan.
 ```powershell
@@ -75,7 +78,7 @@ New-AzFunctionApp -Name MyUniqueFunctionAppName `
 
 Perintah ini membuat aplikasi fungsi PowerShell yang akan dihosting dalam paket layanan.
 
-### Contoh 3: Membuat aplikasi fungsi menggunakan gambar ACR pribadi.
+### Contoh 3: Membuat aplikasi fungsi menggunakan gambar ACR privat.
 ```powershell
 New-AzFunctionApp -Name MyUniqueFunctionAppName `
                   -ResourceGroupName MyResourceGroupName `
@@ -84,12 +87,12 @@ New-AzFunctionApp -Name MyUniqueFunctionAppName `
                   -DockerImageName myacr.azurecr.io/myimage:tag
 ```
 
-Perintah ini membuat aplikasi fungsi menggunakan gambar ACR pribadi.
+Perintah ini membuat aplikasi fungsi menggunakan gambar ACR privat.
 
 ## PARAMETERS
 
 ### -ApplicationInsightsKey
-Kunci instrumentasi Insights Aplikasi yang akan ditambahkan.
+Kunci instrumentasi App Insights yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationInsightsName
-Nama proyek Insights Aplikasi yang sudah ada untuk ditambahkan ke aplikasi fungsi.
+Nama proyek App Insights yang ada untuk ditambahkan ke aplikasi fungsi.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -DockerImageName
-Linux saja.
+Hanya Linux.
 Nama gambar kontainer dari Docker Registry, misalnya publisher/image-name:tag.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -DockerRegistryCredential
 Nama pengguna dan kata sandi registri kontainer.
-Diperlukan untuk registri pribadi.
+Diperlukan untuk registri privat.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionsVersion
-Versi Fungsi.
+Versi Functions.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -IdentityID
 Menentukan daftar identitas pengguna yang terkait dengan aplikasi fungsi.
-Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Menentukan tipe identitas yang digunakan untuk aplikasi fungsi.
+Menentukan jenis identitas yang digunakan untuk aplikasi fungsi.
 Nilai yang dapat diterima untuk parameter ini adalah: - SystemAssigned - UserAssigned
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk paket pemakaian.
+Lokasi untuk paket konsumsi.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi fungsi.
 
 ```yaml
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -Runtime
-Fungsi runtime.
+Runtime fungsi.
 
 ```yaml
 Type: System.String
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuntimeVersion
-Fungsi runtime.
+Runtime fungsi.
 
 ```yaml
 Type: System.String
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -439,8 +442,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -471,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

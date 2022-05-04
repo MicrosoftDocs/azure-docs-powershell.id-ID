@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 0c8ea8949da9bca70e66443bd20ce9f837f608bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9801ec2394f096e413f1c9eec907aa114213ba70
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870012"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681762"
 ---
 # Set-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Memperbarui pencarian tersimpan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet **Set-AzOperationalInsightsSavedSearch** memperbarui pencarian tersimpan 
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur pencarian yang disimpan dengan properti yang diperbarui
+### Contoh 1: Mengatur pencarian tersimpan dengan properti yang diperbarui
 ```powershell
 Set-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId" -DisplayName "ContosoSavedSearchDisplayName" -Category "ContosoSavedSearchCategory" -Query "Type=Event" -Version $Version -ETag "ContosoSavedSearchEtag"
 ```
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionParameter
-Parameter fungsi opsional jika kueri berfungsi sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat, silakan lihat https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
+Parameter fungsi opsional jika kueri berfungsi sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh lebih lanjut dan sintaks yang tepat, silakan lihat https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Menentukan nama kueri.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -SavedSearchId
-Menentukan ID pencarian yang disimpan.
+Menentukan ID pencarian tersimpan.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag pencarian yang disimpan.
+Tag pencarian tersimpan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -204,7 +207,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

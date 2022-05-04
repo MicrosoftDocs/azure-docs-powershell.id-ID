@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
-ms.openlocfilehash: 26e3c990a0e9c9b64c55481ccab272abf6786901
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43b43f535eb13a4086274a46a71f3384a35adcee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272745"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635552"
 ---
 # Get-AzSqlElasticJob
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet Get-AzSqlElasticJob mendapatkan satu atau beberapa pekerjaan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pekerjaan
+### Contoh 1: Mendapatkan pekerjaan
 ```powershell
 $agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
 $agent | Get-AzSqlElasticJob -Name job1
@@ -58,7 +61,7 @@ Mendapatkan pekerjaan
 
 ### Contoh 2
 
-Mendapatkan satu atau beberapa pekerjaan. (autogenerasi)
+Mendapatkan satu atau beberapa pekerjaan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

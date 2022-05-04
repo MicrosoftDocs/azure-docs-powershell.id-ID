@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageDefinition.md
-ms.openlocfilehash: 5b3792deba5d34ca9cd893d6a22255e8a6bb2002
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74d35163cca72f0a6372143844aef40404b91ee5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005013"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645251"
 ---
 # Update-AzGalleryImageDefinition
 
 ## SYNOPSIS
 Memperbarui definisi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azgalleryimagedefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,12 +73,12 @@ $endOfLifeDate = "2024-08-02T00:00:00+00:00"
 Update-AzGalleryImageDefinition -ResourceGroupName $resourceGroupName -GalleryName $galleryName -Name $galleryImageDefinitionName -Description $description -EndOfLifeDate $endOfLifeDate -MinimumMemory $minMemory -MaximumMemory $maxMemory -MinimumVCPU $minVCPU -MaximumVCPU $maxVCPU
 ```
 
-Memperbarui pengaturan konfigurasi definisi gambar galeri yang disarankan
+Memperbarui pengaturan konfigurasi definisi gambar galeri yang direkomendasikan
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi sumber daya definisi gambar galeri. 
+Deskripsi sumber daya Definisi gambar galeri. 
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisallowedDiskType
-Tipe disk yang tidak diperbolehkan.
+Jenis disk yang tidak diizinkan.
 
 ```yaml
 Type: System.String[]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndOfLifeDate
-Tanggal berakhirnya masa pakai galeri Definisi Gambar
+Tanggal akhir masa pakai galeri Definisi Gambar
 
 ```yaml
 Type: System.DateTime
@@ -254,7 +257,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi gambar galeri.
 
 ```yaml
@@ -389,8 +392,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscription.md
-ms.openlocfilehash: 620a10dcc43348304c10837c4019a6c6b22aab90
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f5d6b4481e6d5caabd9890b2cad46b5bdad780d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752184"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663515"
 ---
 # Get-AzApiManagementSubscription
 
 ## SYNOPSIS
 Mendapatkan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Kunci tidak akan disertakan ke dalam detail hasil. Untuk mendapatkan kunci, guna
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua langganan
+### Contoh 1: Mendapatkan semua langganan
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscription -Context $apimContext
@@ -70,13 +73,13 @@ Get-AzApiManagementSubscription -Context $apimContext
 
 Perintah ini mendapatkan semua langganan.
 
-### Contoh 2: Dapatkan langganan dengan ID tertentu
+### Contoh 2: Mendapatkan langganan dengan ID tertentu
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscription -Context $apimContext -SubscriptionId "0123456789"
 ```
 
-Perintah ini mendapatkan langganan menurut ID.
+Perintah ini mendapatkan langganan berdasarkan ID.
 
 ### Contoh 3: Mendapatkan semua langganan untuk pengguna
 ```powershell
@@ -86,7 +89,7 @@ Get-AzApiManagementSubscription -Context $apimContext -UserId "777"
 
 Perintah ini mendapatkan langganan pengguna.
 
-### Contoh 4: Dapatkan semua langganan untuk produk
+### Contoh 4: Mendapatkan semua langganan untuk produk
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscription -Context $apimContext -ProductId "999"
@@ -94,7 +97,7 @@ Get-AzApiManagementSubscription -Context $apimContext -ProductId "999"
 
 Perintah ini mendapatkan semua langganan untuk produk.
 
-### Contoh 5: Dapatkan semua langganan untuk Lingkup
+### Contoh 5: Mendapatkan semua langganan untuk Cakupan
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscription -Context $apimContext -Scope "/apis"
@@ -122,9 +125,9 @@ ResourceGroupName : Api-Default-East-US
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan semua langganan yang dikonfigurasi untuk lingkup api global
+Perintah ini mendapatkan semua langganan yang dikonfigurasi untuk cakupan api global
 
-### Contoh 6: Dapatkan semua langganan untuk lingkup produk dan pengguna
+### Contoh 6: Mendapatkan semua langganan untuk cakupan produk dan pengguna
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscription -Context $apimContext -ProductId 59b872f28a82740f547e6270 -UserId 1
@@ -152,11 +155,11 @@ ResourceGroupName : Api-Default-East-US
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan semua langganan yang dikonfigurasi untuk lingkup api global
+Perintah ini mendapatkan semua langganan yang dikonfigurasi untuk cakupan api global
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -214,8 +217,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Pengidentifikasi lingkup. Lingkup Langganan, baik itu Lingkup Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau lingkup Global /.
+### -Cakupan
+Pengidentifikasi cakupan. Cakupan Langganan, apakah itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Menentukan pengidentifikasi langganan.
-Jika ditentukan, cmdlet ini akan menemukan langganan oleh pengidentifikasi.
+Jika ditentukan, cmdlet ini menemukan langganan oleh pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

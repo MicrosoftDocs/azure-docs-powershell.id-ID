@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
-ms.openlocfilehash: 30e23b5f20418144fd221a675c00ceda830e7a66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1725b23e86664d0a0f48caa3cdca154c1394353c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286641"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682086"
 ---
 # Set-AzEventHubCluster
 
 ## SYNOPSIS
 Memperbarui Tag untuk Kluster yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzEventHubCluster [-InputObject] <PSEventHubClusterAttributes> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubCluster memperbarui tag dari kluster tertentu
+Cmdlet Set-AzEventHubCluster memperbarui tag dari kluster yang diberikan
 
 ## EXAMPLES
 
@@ -59,12 +62,12 @@ Sku       : Microsoft.Azure.Commands.EventHub.Models.PSEventHubsClusterSkuAttrib
 Tags      : {[ClusterTag3, Tag3], [ClusterTag4, Tag4]}
 ```
 
-Memperbarui tag dari kluster tertentu. 
+Memperbarui tag kluster yang diberikan. 
 
 ## PARAMETERS
 
 ### -Kapasitas
-Cluster Capacity (CU), curerntrly, allowed value = 1
+Kapasitas Kluster (CU), curerntrly, nilai yang diizinkan = 1
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -123,7 +126,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kluster
 
 ```yaml
@@ -183,8 +186,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 5d378f702511e9bc832b7fd5b60978696890ec21
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1e7f43704852347e26c3967dd651eeb2aa9afe9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740610"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703704"
 ---
 # Backup-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
-Memulai cadangan untuk item Cadangan.
+Memulai pencadangan untuk item Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/backup-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Backup-AzRecoveryServicesBackupItem -Item <ItemBase> [-ExpiryDateTimeUTC <DateTi
 
 ## DESCRIPTION
 
-Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc item cadangan Azure yang dilindungi. Menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah mengaktifkan proteksi atau memulai pencadangan jika cadangan terjadwal gagal. Cmdlet ini juga dapat digunakan untuk penyimpanan kustom dengan atau tanpa tanggal kedaluwarsa - merujuk teks bantuan parameter untuk detail selengkapnya. 
+Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc item cadangan Azure yang dilindungi. Dengan menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah Mengaktifkan perlindungan atau memulai pencadangan jika pencadangan terjadwal gagal. Cmdlet ini juga dapat digunakan untuk retensi kustom dengan atau tanpa tanggal kedaluwarsa - lihat teks bantuan parameter untuk detail selengkapnya. 
 
 ## EXAMPLES
 
-### Contoh 1: Memulai cadangan untuk item Cadangan
+### Contoh 1: Memulai pencadangan untuk item Cadangan
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -49,13 +52,13 @@ Operation        Status               StartTime            EndTime              
 pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM      cf4b3ef5-2fac-4c8e-a215-d2eba4124f27
 ```
 
-Perintah pertama mendapatkan kontainer Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam variabel $NamedContainer.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam variabel $Item.
-Perintah terakhir memicu pekerjaan cadangan untuk item Cadangan dalam $Item.
+Perintah pertama mendapatkan kontainer Cadangan jenis AzureVM bernama pstestv2vm1, lalu menyimpannya dalam variabel $NamedContainer.
+Perintah kedua mendapatkan item Cadangan yang sesuai dengan kontainer di $NamedContainer, lalu menyimpannya dalam variabel $Item.
+Perintah terakhir memicu pekerjaan pencadangan untuk item Cadangan di $Item.
 
 ### Contoh 2
 
-Memulai cadangan untuk item Cadangan. (autogenerasi)
+Memulai pencadangan untuk item Cadangan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -66,7 +69,7 @@ Backup-AzRecoveryServicesBackupItem -ExpiryDateTimeUTC <DateTime> -Item $Item -V
 
 ### -BackupType
 
-Tipe pencadangan yang akan dilakukan
+Jenis pencadangan yang akan dilakukan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupType
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 
 ### -EnableCompression
 
-Jika mengaktifkan pemadatan diperlukan
+Jika mengaktifkan kompresi diperlukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -ExpiryDateTimeUTC
 
-Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang diberikan memerlukan nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk tipe cadangan penuh Salin saja), item cadangan AFS.
+Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang diberikan, dibutuhkan nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk jenis pencadangan penuh salin saja), item cadangan AFS.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -Item
 
-Menentukan item Cadangan di mana cmdlet ini memulai operasi pencadangan.
+Menentukan item Cadangan yang cmdletnya memulai operasi pencadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -161,9 +164,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

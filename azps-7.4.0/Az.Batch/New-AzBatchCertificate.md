@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
-ms.openlocfilehash: 41747f6ace2b3760524fa2a9a1e1c03fbd4f37b8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 058afd276a0ec0140b5c810f01ce5d7c7a8e9c47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129195"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591408"
 ---
 # New-AzBatchCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat ke akun Batch tertentu.
+Menambahkan sertifikat ke akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **New-AzBatchCertificate** menambahkan sertifikat ke akun Azure Batch yan
 New-AzBatchCertificate -FilePath "E:\Certificates\MyCert.cer" -BatchContext $Context
 ```
 
-Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan menggunakan file E:\Certificates\MyCert.cer.
+Perintah ini menambahkan sertifikat ke akun Batch yang ditentukan dengan menggunakan file E:\Certificates\MyCert.cer.
 
 ### Contoh 2: Menambahkan sertifikat dari data mentah
 ```powershell
@@ -51,13 +54,13 @@ New-AzBatchCertificate -RawData $RawData -Password "Password1234" -BatchContext 
 ```
 
 Perintah pertama membaca data dari file bernama MyCert.pfx ke dalam variabel $RawData.
-Perintah kedua menambahkan sertifikat ke akun Batch tertentu menggunakan data mentah yang disimpan di $RawData.
+Perintah kedua menambahkan sertifikat ke akun Batch yang ditentukan menggunakan data mentah yang disimpan di $RawData.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Menentukan kata sandi untuk mengakses kunci privat sertifikat.
 Anda harus menentukan parameter ini jika Anda menentukan sertifikat dalam format .pfx.
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -170,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
 
-[Hapus-AzBatchCertificate](./Remove-AzBatchCertificate.md)
+[Remove-AzBatchCertificate](./Remove-AzBatchCertificate.md)
 
 [Cmdlet Azure Batch](/powershell/module/Az.Batch/)

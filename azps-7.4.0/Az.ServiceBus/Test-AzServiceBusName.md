@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
-ms.openlocfilehash: 30145a5b3fc7cdb91ed1ed9ef234ddfab604e4aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7a259cae0f5a20007034470d97333b5160cbad4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739170"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681672"
 ---
 # Test-AzServiceBusName
 
 ## SYNOPSIS
-Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan 
+Memeriksa Ketersediaan Nama NameSpace atau Alias yang diberikan (Nama Konfigurasi DR) 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/test-azservicebusname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,14 +43,14 @@ Cmdlet **Test-AzServiceBusName** Memeriksa Ketersediaan Nama NameSpace atau Alia
 Test-AzServiceBusName -Namespace MyNameSpaceName
 ```
 
-Mengembalikan status ketersediaan nama ruang nama 'MyNameSpaceName' sebagai True
+Mengembalikan status ketersediaan nama namespace 'MyNameSpaceName' sebagai True
 
 ### Contoh 2
 ```powershell
 Test-AzServiceBusName -Namespace MyNameSpaceName
 ```
 
-Mengembalikan status ketersediaan nama ruang nama 'MyNameSpaceName' sebagai False dengan Alasan
+Mengembalikan status ketersediaan nama namespace 'MyNameSpaceName' sebagai False dengan Alasan
 
 ### Contoh 3
 ```powershell
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama Servicebus
+Nama Namespace Servicebus
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

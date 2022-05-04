@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
-ms.openlocfilehash: da60ea53e39e21759a53674f9236d61fefbf2045
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60dcdb0f556bdd4c40a27f3a9792dfcd63e123fe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738684"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643650"
 ---
 # Get-AzSqlDatabaseExpanded
 
 ## SYNOPSIS
-Mendapatkan database dan nilai propertinya yang diperluas.
+Mendapatkan database dan nilai properti yang diperluas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseexpanded) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,17 +29,17 @@ Get-AzSqlDatabaseExpanded [-ServerName] <String> [[-DatabaseName] <String>] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseExpanded** mendapatkan database dan nilai properti yang diperluas.
+Cmdlet **Get-AzSqlDatabaseExpanded** mendapatkan database dan nilai propertinya yang diperluas.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan objek database yang memiliki informasi konsultan tingkat layanan
+### Contoh 1: Mendapatkan objek database yang memiliki informasi penasihat tingkat layanan
 ```powershell
 Get-AzSqlDatabaseExpanded -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi konsultan tingkat layanan.
+Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi advisor tingkat layanan.
 
 ### Contoh 2: Mencantumkan objek database menggunakan pemfilteran
 ```powershell
@@ -107,8 +110,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Measure-AzAlertStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Measure-AzAlertStatistic.md
-ms.openlocfilehash: 5e474a4eb1b162bf6b11a034db7aaaaf205bf225
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63bf81990de0e47acdac7fe99d50b8e550163aa0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234369"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660510"
 ---
 # Measure-AzAlertStatistic
 
 ## SYNOPSIS
-Dapatkan Informasi Ringkasan Peringatan
+Mendapatkan Informasi Ringkasan Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/measure-azalertstatistic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Measure-AzAlertStatistic -GroupBy <String> [-TargetResourceId <String>] [-Monito
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### RangkumanFilter
+### SummaryFilter
 ```
 Measure-AzAlertStatistic -GroupBy <String> [-TargetResourceType <String>] [-TargetResourceGroup <String>]
  [-MonitorService <String>] [-MonitorCondition <String>] [-Severity <String>] [-State <String>]
@@ -36,7 +39,7 @@ Measure-AzAlertStatistic -GroupBy <String> [-TargetResourceType <String>] [-Targ
 ```
 
 ## DESCRIPTION
-Cmdlet **Measure-AzAlertStatistic** mendapatkan detail ringkasan peringatan.
+**Cmdlet Measure-AzAlertStatistic** mendapatkan detail ringkasan pemberitahuan.
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Cmdlet **Measure-AzAlertStatistic** mendapatkan detail ringkasan peringatan.
 Measure-AzAlertStatistic -GroupBy "severity,alertstate" -State "Active"
 ```
 
-Ringkas penghitungan pemberitahuan yang dikelompokkan menurut tingkat keparahan dan status yang difilter menurut Status aktif.
+Meringkas jumlah pemberitahuan yang dikelompokkan menurut tingkat keparahan dan status yang difilter menurut Status aktif.
 
 ## PARAMETERS
 
 ### -AlertRuleId
-Filter pada Id Aturan Peringatan
+Filter pada Id Aturan Pemberitahuan
 
 ```yaml
 Type: System.String
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomTimeRange
-Format yang didukung - \<start-time\>/\<end-time\> di mana waktu berada dalam format ISO-8601
+Format yang didukung - \<start-time\>/\<end-time\> di mana waktu dalam format ISO-8601
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeSmartGroupsCount
-Sertakan Jumlah GrupPintar
+Sertakan Jumlah SmartGroups
 
 ```yaml
 Type: System.Boolean
@@ -154,7 +157,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keparahan
+### -Tingkat keparahan
 Filter pada Tingkat Keparahan pemberitahuan
 
 ```yaml
@@ -169,7 +172,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Filter pada Status pemberitahuan
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroup
-Filter pada Nama grup Sumber Daya dari sumber daya target pemberitahuan.
+Filter pada Nama grup sumber daya dari sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Filter pada Id Sumber Daya sumber daya sumber daya pemberitahuan.
+Filter pada Id Sumber Daya dari sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceType
-Filter pada Tipe sumber daya sumber daya target pemberitahuan.
+Filter pada jenis Sumber Daya dari sumber daya target pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeRange
-Nilai rentang waktu yang didukung - 1h, 1d, 7d, 30d (Defaultnya adalah 1d)
+Nilai rentang waktu yang didukung - 1 jam, 1d, 7d, 30d (Defaultnya adalah 1d)
 
 ```yaml
 Type: System.String
@@ -245,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

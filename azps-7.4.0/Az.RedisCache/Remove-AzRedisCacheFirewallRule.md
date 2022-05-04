@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheFirewallRule.md
-ms.openlocfilehash: af34e56f6311b438f4fd4fb1a6a0da5a22580903
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 75e269e6eb41168fa2c88d4d514decf55549c7e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059751"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704604"
 ---
 # Remove-AzRedisCacheFirewallRule
 
 ## SYNOPSIS
-Menghapus aturan firewall dari Singgahan Redis.
+Menghapus aturan firewall dari Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Remove-AzRedisCacheFirewallRule -InputObject <PSRedisFirewallRule> [-PassThru]
 ```
 
 ## DESCRIPTION
-Menghapus aturan firewall dari Singgahan Redis.
+Menghapus aturan firewall dari Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus aturan firewall tunggal
+### Contoh 1: Menghapus satu aturan firewall
 ```powershell
 Remove-AzRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone" -PassThru
 ```
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek tipe PSRedisFirewallRule
+objek jenis PSRedisFirewallRule
 
 ```yaml
 Type: Microsoft.Azure.Commands.RedisCache.Models.PSRedisFirewallRule
@@ -79,8 +82,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama singgahan redis.
+### -Name
+Nama cache redis.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana singgahan ada.
+Nama grup sumber daya tempat cache ada.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,6 +198,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)

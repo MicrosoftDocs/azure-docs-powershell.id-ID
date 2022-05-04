@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceServerTrustCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceServerTrustCertificate.md
-ms.openlocfilehash: c25805b5d8cfab28f550e0358df3603c7d15346c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 624c8fec9544da0d2a2d02bd8178859d733258bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995779"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663946"
 ---
 # Get-AzSqlInstanceServerTrustCertificate
 
 ## SYNOPSIS
 Mengembalikan informasi tentang sertifikat kepercayaan server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceservertrustcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSqlInstanceServerTrustCertificate [-ResourceId] <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-**Get-AzSqlInstanceServerTrustCertificate** cmdlet mengembalikan informasi tentang satu atau beberapa contoh sertifikat kepercayaan server pada Azure SQL Managed Instance. Tentukan nama sertifikat untuk melihat informasi untuk sertifikat tersebut saja.
+**Cmdlet Get-AzSqlInstanceServerTrustCertificate** mengembalikan informasi tentang satu atau beberapa contoh sertifikat kepercayaan server pada Azure SQL Managed Instance. Tentukan nama sertifikat untuk melihat informasi untuk sertifikat tersebut saja.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ PublicKey         : 0x5D014B47F6AF7D0469A853C84180445C146015D5098F09AC673A49281E
 
 Perintah ini mendapatkan informasi tentang semua sertifikat kepercayaan server dalam instans "ManagedInstance01".
 
-### Contoh 2: Dapatkan informasi tentang sertifikat kepercayaan server di Azure SQL Managed Instance
+### Contoh 2: Mendapatkan informasi tentang sertifikat kepercayaan server di Azure SQL Managed Instance
 ```powershell
 PS C:\> Get-AzSqlInstanceServerTrustCertificate -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Certificate01"
 ResourceGroupName : ResourceGroup01
@@ -84,7 +87,7 @@ PublicKey         : 0x1C8E3F85BCD8A2C1D082CE42D7A1E8112651A906B15F5F244134142C53
 
 Perintah ini mendapatkan informasi tentang sertifikat kepercayaan server "Certificate01" pada instans "ManagedInstance01" dan grup sumber daya "ResourceGroup01".
 
-### Contoh 3: Dapatkan semua sertifikat kepercayaan server di Azure SQL Managed Instance menggunakan objek Instans
+### Contoh 3: Mendapatkan semua sertifikat kepercayaan server di Azure SQL Managed Instance menggunakan objek Instans
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -Name "ManagedInstance01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Get-AzSqlInstanceServerTrustCertificate -InstanceObject $instance
@@ -130,7 +133,7 @@ PublicKey         : 0x5D014B47F6AF7D0469A853C84180445C146015D5098F09AC673A49281E
 
 Perintah ini mendapatkan informasi tentang semua sertifikat kepercayaan server dalam instans "ManagedInstance01".
 
-### Contoh 5: Dapatkan sertifikat kepercayaan server menggunakan pengidentifikasi sumber dayanya
+### Contoh 5: Mendapatkan sertifikat kepercayaan server menggunakan pengidentifikasi sumber dayanya
 
 ```powershell
 PS C:\> Get-AzSqlInstanceServerTrustCertificate -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance01/serverTrustCertificates/Certificate01"
@@ -145,7 +148,7 @@ PublicKey         : 0x1C8E3F85BCD8A2C1D082CE42D7A1E8112651A906B15F5F244134142C53
 
 Perintah ini mendapatkan informasi tentang sertifikat kepercayaan server bernama "Certificate01".
 
-### Contoh 6: Dapatkan semua sertifikat kepercayaan server untuk Instans Terkelola dengan memipakan objek instans
+### Contoh 6: Mendapatkan semua sertifikat kepercayaan server untuk Instans Terkelola dengan memilah objek instans
 
 ```powershell
 PS C:\> Get-AzSqlInstance -Name "ManagedInstance01" -ResourceGroupName "ResourceGroup01" | Get-AzSqlInstanceServerTrustCertificate
@@ -168,7 +171,7 @@ PublicKey         : 0x5D014B47F6AF7D0469A853C84180445C146015D5098F09AC673A49281E
 
 Perintah ini mendapatkan informasi tentang semua sertifikat kepercayaan server dalam instans "ManagedInstance01".
 
-### Contoh 7: Dapatkan sertifikat kepercayaan server tertentu untuk instans dengan mempipa objek instans dan menentukan nama sertifikat
+### Contoh 7: Dapatkan sertifikat kepercayaan server tertentu untuk instans dengan menyalurkan objek instans dan menentukan nama sertifikat
 ```powershell
 PS C:\> Get-AzSqlInstance -Name "ManagedInstance01" -ResourceGroupName "ResourceGroup01" | Get-AzSqlInstanceServerTrustCertificate -Name "Certificate01"
 ResourceGroupName : ResourceGroup01
@@ -182,7 +185,7 @@ PublicKey         : 0x1C8E3F85BCD8A2C1D082CE42D7A1E8112651A906B15F5F244134142C53
 
 Perintah ini mendapatkan informasi tentang sertifikat kepercayaan server bernama "Certificate01" pada instans "ManagedInstance01" dan grup sumber daya "ResourceGroup01".
 
-### Contoh 8: Dapatkan informasi tentang sertifikat kepercayaan server menggunakan parameter posisi
+### Contoh 8: Mendapatkan informasi tentang sertifikat kepercayaan server menggunakan parameter posisi
 ```powershell
 PS C:\> Get-AzSqlInstanceServerTrustCertificate "ResourceGroup01" "ManagedInstance01" "Certificate01"
 ResourceGroupName : ResourceGroup01
@@ -258,7 +261,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sertifikat.
 
 ```yaml
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

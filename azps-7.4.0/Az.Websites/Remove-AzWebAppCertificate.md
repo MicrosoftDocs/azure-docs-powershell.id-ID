@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppCertificate.md
-ms.openlocfilehash: 245855ccb8c862d1118b10e0bf375c72cd527c99
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b566dbcd12c9715f6cbc3fd4f22f4c37e0536753
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115047"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586854"
 ---
 # Remove-AzWebAppCertificate
 
 ## SYNOPSIS
-Menghapus sertifikat terkelola layanan Aplikasi untuk Azure Web App. 
+Menghapus sertifikat terkelola app service untuk Azure Web App. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzWebAppCertificate [-ResourceGroupName] <String> [-ThumbPrint] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzWebAppCertificate** Menghapus Sertifikat yang Dikelola Azure App Service
+Cmdlet **Remove-AzWebAppCertificate** Menghapus Sertifikat terkelola Azure App Service
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Remove-AzWebAppCertificate** Menghapus Sertifikat yang Dikelola Azure A
 Remove-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
 
-Perintah ini menghapus sertifikat App Service Dikelola untuk aplikasi web tertentu.
+Perintah ini menghapus sertifikat terkelola App Service untuk aplikasi web yang diberikan.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbPrint
-Sidik jari sertifikat yang sudah ada di ruang web.
+Thumbprint sertifikat yang sudah ada di ruang web.
 
 ```yaml
 Type: System.String
@@ -83,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

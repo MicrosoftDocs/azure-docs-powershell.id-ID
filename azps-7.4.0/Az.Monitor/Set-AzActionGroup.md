@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
-ms.openlocfilehash: 973c9c3850c64bdd78adafdc0be4ee001992d2d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60be7e0e038d7c1da3986976d86a4f0312ce1ded
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283329"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684948"
 ---
 # Set-AzActionGroup
 
 ## SYNOPSIS
-Membuat grup tindakan baru atau memperbarui yang sudah ada.
+Membuat baru atau memperbarui grup tindakan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -273,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.IDictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.IDictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 

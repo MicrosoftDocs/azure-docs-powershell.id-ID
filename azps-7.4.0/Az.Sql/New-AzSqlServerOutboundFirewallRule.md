@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerOutboundFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerOutboundFirewallRule.md
-ms.openlocfilehash: 7ee69f64125dbeecd4c0babe5b40256f964f1149
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc6f50ad9998b234bf2d84a89ce0926f0dce80cb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307179"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647464"
 ---
 # New-AzSqlServerOutboundFirewallRule
 
 ## SYNOPSIS
-Menambahkan FQDN yang diperbolehkan ke daftar aturan firewall keluar dan membuat aturan firewall keluar baru untuk server Azure SQL Database.
+Menambahkan FQDN yang diizinkan ke daftar aturan firewall keluar dan membuat aturan firewall keluar baru untuk server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserveroutboundfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzSqlServerOutboundFirewallRule [-AllowedFQDN] <String> [-ServerName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlServerOutboundFirewallRule** menambahkan FQDN yang diperbolehkan ke daftar aturan firewall keluar dan membuat aturan firewall keluar baru untuk server Azure SQL Database.
+Cmdlet **New-AzSqlServerOutboundFirewallRule** menambahkan FQDN yang diizinkan ke daftar aturan firewall keluar dan membuat aturan firewall keluar baru untuk server Azure SQL Database.
 
 ## EXAMPLES
 
@@ -41,12 +44,12 @@ ServerName        : Server01
 AllowedFQDN       : OutboundFirewallRule01
 ```
 
-Perintah ini membuat FQDN baru yang diperbolehkan bernama OutboundFirewallRule01 dalam daftar aturan firewall keluar di server bernama Server01.
+Perintah ini membuat FQDN baru yang diizinkan bernama OutboundFirewallRule01 dalam daftar aturan firewall keluar di server bernama Server01.
 
 ## PARAMETERS
 
-### -AllowedfQDN
-Menentukan nama domain yang diperbolehkan sepenuhnya memenuhi syarat (FQDN) dalam daftar aturan firewall keluar.
+### -AllowedFQDN
+Menentukan nama domain yang sepenuhnya memenuhi syarat (FQDN) yang diizinkan dalam daftar aturan firewall keluar.
 
 ```yaml
 Type: System.String
@@ -106,8 +109,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

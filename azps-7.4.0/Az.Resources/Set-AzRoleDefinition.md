@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleDefinition.md
-ms.openlocfilehash: c615f09e30da6c03695d4383118f4038742dc011
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f30ed17556bee054b0eead1c5881f7f49a82b8f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935263"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635678"
 ---
 # Set-AzRoleDefinition
 
 ## SYNOPSIS
-Mengubah peran kustom di Azure RBAC.
+Memodifikasi peran kustom di Azure RBAC.
 Berikan definisi peran yang dimodifikasi baik sebagai file JSON atau sebagai PSRoleDefinition.
 Pertama, gunakan perintah Get-AzRoleDefinition untuk mengambil peran kustom yang ingin Anda ubah.
-Lalu, ubah properti yang ingin Anda ubah.
+Kemudian, ubah properti yang ingin Anda ubah.
 Terakhir, simpan definisi peran menggunakan perintah ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Set-AzRoleDefinition -Role <PSRoleDefinition> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzRoleDefinition memperbarui peran kustom yang sudah ada di Azure Role-Based Access Control.
+Cmdlet Set-AzRoleDefinition memperbarui peran kustom yang ada di Azure Role-Based Access Control.
 Berikan definisi peran yang diperbarui sebagai input ke perintah sebagai file JSON atau objek PSRoleDefinition.
-Definisi peran untuk peran kustom yang diperbarui HARUS berisi Id dan semua properti peran lain yang diperlukan meskipun tidak diperbarui: NamaPajangan, Deskripsi, Tindakan, AssignableScopes.
+Definisi peran untuk peran kustom yang diperbarui HARUS berisi Id dan semua properti peran lain yang diperlukan meskipun tidak diperbarui: DisplayName, Description, Actions, AssignableScopes.
 NotActions, DataActions, NotDataActions bersifat opsional.
-Berikut adalah contoh definisi peran yang diperbarui untuk Set-AzRoleDefinition { "Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e", "Nama": "Peran Diperbarui", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang mesin virtual", "Tindakan": \[ "*/baca", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxx"\] }
+Berikut ini adalah contoh json definisi peran yang diperbarui untuk Set-AzRoleDefinition { "Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e", "Name": "Updated Role", "Description": "Can monitor all resources and start and restart virtual machines", "Actions": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxx"\] }
 
 ## EXAMPLES
 
@@ -76,8 +79,8 @@ Accept wildcard characters: False
 
 ### -InputFile
 Nama file yang berisi definisi peran json tunggal yang akan diperbarui.
-Hanya menyertakan properti yang akan diperbarui dalam JSON.
-Properti Id Diperlukan.
+Hanya sertakan properti yang akan diperbarui di JSON.
+Properti id Diperlukan.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -118,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 

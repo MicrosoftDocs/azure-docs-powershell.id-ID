@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLink.md
-ms.openlocfilehash: f0b1b02bf43b3081e8e231ad6aa31aee234a7ed3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70828eb52c2f2b88a3c172e6e43acc482a185d71
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938431"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593998"
 ---
 # New-AzVpnSiteLink
 
 ## SYNOPSIS
 Membuat objek Azure VpnSiteLink.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsitelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +53,11 @@ $vpnSiteLink = New-AzVpnSiteLink -Name "testVpnSiteLink1" -IpAddress "15.25.35.4
 $vpnSite = New-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite" -Location "West US" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink)
 ```
 
-Di atas akan membuat grup sumber daya, Virtual WAN dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, dan VpnSite dengan 1 VpnSiteLinks di US Barat dalam grup sumber daya "testRG" di Azure.
 
 ### Contoh 2
 
-Membuat objek Azure VpnSiteLink. (autogenerasi)
+Membuat objek Azure VpnSiteLink. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fqdn
-Fqdn Hop Berikutnya.
+Fqdn Lompatan Berikutnya.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddress
-Hop Berikutnya IpAddress.
+Lompatan Berikutnya IpAddress.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama
 
 ```yaml
@@ -184,11 +187,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -198,4 +201,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Situs Baru-AzVpnSite](./New-AzVpnSite.md)
+[New-AzVpnSite](./New-AzVpnSite.md)

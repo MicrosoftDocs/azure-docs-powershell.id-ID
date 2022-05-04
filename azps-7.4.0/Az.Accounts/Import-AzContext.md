@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
-ms.openlocfilehash: 73a4189cc34337d822338667997a167e36536f8c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87304b05169ca960377f0587fede7c5e5349051d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688878"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627942"
 ---
 # Import-AzContext
 
 ## SYNOPSIS
 Memuat informasi autentikasi Azure dari file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/import-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Import-AzContext [-AzureContext] <AzureRmProfile> [-Scope <ContextModificationSc
 
 ## DESCRIPTION
 Cmdlet Import-AzContext memuat informasi autentikasi dari file untuk mengatur lingkungan dan konteks Azure.
-Cmdlet yang Anda jalankan dalam sesi saat ini menggunakan informasi ini untuk mengautentikasi permintaan ke Azure Resource Manager.
+Cmdlet yang Anda jalankan di sesi saat ini menggunakan informasi ini untuk mengautentikasi permintaan ke Azure Resource Manager.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini mengimpor konteks dari PSAzureProfile yang diteruskan ke cmdlet.
+Contoh ini mengimpor konteks dari PSAzureProfile yang diteruskan ke cmdlet .
 
 ### Contoh 2: Mengimpor konteks dari file JSON
 ```powershell
@@ -61,7 +64,7 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini memilih konteks dari file JSON yang diteruskan ke cmdlet. File JSON ini dapat dibuat dari Save-AzContext.
+Contoh ini memilih konteks dari file JSON yang diteruskan ke cmdlet . File JSON ini dapat dibuat dari Save-AzContext.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke informasi konteks yang disimpan menggunakan Save-AzContext.
+Menentukan jalur ke informasi konteks yang disimpan dengan menggunakan Save-AzContext.
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
+### -Cakupan
+Menentukan cakupan perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -126,8 +129,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

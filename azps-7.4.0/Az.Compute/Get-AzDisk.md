@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
-ms.openlocfilehash: 375baff9b74b8e26761ad560e5e265bb83224a92
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b0f3c4e5ffc7a1f24d2ef761ac4cb09d0bbee48e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231417"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637082"
 ---
 # Get-AzDisk
 
 ## SYNOPSIS
-Mendapatkan properti disk terkelola.
+Mendapatkan properti disk Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDisk [[-ResourceGroupName] <String>] [[-DiskName] <String>] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDisk** mendapatkan properti disk yang dikelola.
+Cmdlet **Get-AzDisk** mendapatkan properti dari disk Terkelola.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti disk bernama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini mendapatkan properti disk bernama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```powershell
@@ -196,7 +199,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua disk di bawah nama langganan yang dimulai dengan win1_OsDisk.
+Perintah ini mendapatkan properti semua disk dengan nama langganan yang dimulai dengan win1_OsDisk.
 
 ## PARAMETERS
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskName
-Menentukan nama diska.
+Menentukan nama disk.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

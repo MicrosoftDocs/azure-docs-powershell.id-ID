@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
-ms.openlocfilehash: b285297109e596f0e8a02ae26f22dc19dbacc42b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d929bbb30afaea316f86a073b9e14272141bf752
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805320"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664468"
 ---
 # New-AzFirewallPolicySqlSetting
 
 ## SYNOPSIS
-Membuat Pengaturan SQL baru untuk Kebijakan Firewall Azure
+Membuat Pengaturan SQL baru untuk Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicysqlsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallPolicySqlSetting [-AllowSqlRedirect] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicySqlSetting** membuat Objek Pengaturan SQL untuk Kebijakan Firewall Azure
+Cmdlet **New-AzFirewallPolicySqlSetting** membuat Objek Pengaturan SQL untuk Kebijakan Azure Firewall
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Contoh ini membuat objek pengaturan SQL dengan pengaturan izinkan pengalihan sql
 
 ### -AllowSqlRedirect
 Izinkan lalu lintas mode pengalihan server SQL.
-Secara default, jenis lalu lintas ini tidak diperbolehkan.
+Secara default jenis lalu lintas ini tidak diizinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

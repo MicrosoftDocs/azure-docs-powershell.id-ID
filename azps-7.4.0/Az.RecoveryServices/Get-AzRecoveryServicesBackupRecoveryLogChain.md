@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
-ms.openlocfilehash: faea62b3dbd7bdb1ee477955203e1375804cb627
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e37784fab8b450a99ccc490e8dd1bcc199a3e73a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802602"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702318"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
 ## SYNOPSIS
-Perintah ini mencantumkan titik mulai dan titik akhir rantai log yang tidak terpotong dari item cadangan yang diberikan. Gunakan untuk menentukan apakah point-in-time, tempat pengguna ingin memulihkan DB, valid atau tidak.
+Perintah ini mencantumkan titik awal dan akhir dari rantai log yang tidak terganggu dari item cadangan yang diberikan. Gunakan untuk menentukan apakah titik waktu, di mana pengguna ingin DB dipulihkan, valid atau tidak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,13 +51,13 @@ $RP = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadType MSSQL
 
 Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $StartDate.
 Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $EndDate.
-Perintah ketiga mendapatkan wadah cadangan AzureWorkload, dan menyimpannya dalam variabel $Container.
-Perintah keempat mendapatkan item cadangan, lalu membagikannya di seluruh cmdlet piped sebagai objek item cadangan.
-Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item dalam $BackupItem, lalu menyimpannya dalam variabel $RP.
+Perintah ketiga mendapatkan kontainer cadangan AzureWorkload, dan menyimpannya dalam variabel $Container.
+Perintah keempat mendapatkan item cadangan, lalu membagikannya di seluruh cmdlet yang disalurkan sebagai objek item cadangan.
+Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item di $BackupItem, lalu menyimpannya dalam variabel $RP.
 
 ### Contoh 2
 
-Perintah ini mencantumkan titik mulai dan titik akhir rantai log yang tidak terpotong dari item cadangan yang diberikan. (autogenerasi)
+Perintah ini mencantumkan titik awal dan akhir dari rantai log yang tidak terganggu dari item cadangan yang diberikan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Waktu akhir rentang Waktu yang titik pemulihannya perlu didapatkan
+Waktu akhir rentang Waktu yang titik pemulihannya perlu diambil
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Objek Item Terproteksi yang titik pemulihannya perlu didapatkan
+Objek Item Terproteksi yang titik pemulihannya perlu diambil
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Waktu mulai rentang Waktu yang titik pemulihannya perlu didapatkan
+Waktu mulai rentang Waktu yang titik pemulihannya perlu diambil
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSecondaryRegion
-Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
+Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

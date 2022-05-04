@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
-ms.openlocfilehash: 1156abd5edfdd1c1e68d34de361ef2e757e8cf4b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba690c10da86615acec02c500e8f8973a8a1e724
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143305919"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663820"
 ---
 # Unregister-AzStackHCI
 
 ## SYNOPSIS
 Unregister-AzStackHCI menghapus sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
-Informasi terdaftar yang tersedia di kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang diteruskan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Unregister-AzStackHCI [[-SubscriptionId] <String>] [[-ResourceName] <String>] [[
 
 ## DESCRIPTION
 Unregister-AzStackHCI menghapus sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
-Informasi terdaftar yang tersedia di kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang diteruskan.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Unregister-AzStackHCI
 Result: Success
 ```
 
-Memanggil di salah satu simpul kluster
+Memanggil pada salah satu node kluster
 
 ### CONTOH 2
 ```powershell
@@ -76,7 +79,7 @@ Unregister-AzStackHCI -SubscriptionId "12a0f531-56cb-4340-9501-257726d741fd" -Re
 Result: Success
 ```
 
-Invoking dengan semua parameter
+Memanggil dengan semua parameter
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Menentukan salah satu simpul kluster di kluster lokal yang sedang didaftarkan ke Azure.
+Menentukan salah satu node kluster di kluster lokal yang sedang didaftarkan ke Azure.
 
 ```yaml
 Type: System.String
@@ -127,9 +130,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan kredensial untuk ComputerName.
-Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini yang menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOnlyAzureArcServer
-Menentukan parameter ini ke $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan registrasi Azure Stack HCI tidak akan diubah.
+Menentukan parameter ini untuk $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran Azure Stack HCI tidak akan diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menentukan bahwa unregistration harus dilanjutkan meskipun kami tidak dapat menghapus ekstensi Arc pada simpul.
+### -Force
+Menentukan bahwa pembatasan registrasi harus berlanjut meskipun kami tidak dapat menghapus ekstensi Arc pada simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 
 ### -GraphAccessToken
 Menentukan token akses Graph.
-Menentukan hal ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-Menentukan Kawasan tempat sumber daya dibuat di Azure.
+### -Wilayah
+Menentukan Wilayah tempat sumber daya dibuat di Azure.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Azure Resource Group.
+Menentukan nama Grup Sumber Daya Azure.
 Jika tidak ditentukan \<LocalClusterName\>-rg akan digunakan sebagai nama grup sumber daya.
 
 ```yaml
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseDeviceAuthentication
-Gunakan autentikasi kode perangkat, bukan perintah browser interaktif.
+Gunakan autentikasi kode perangkat alih-alih perintah browser interaktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,8 +301,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

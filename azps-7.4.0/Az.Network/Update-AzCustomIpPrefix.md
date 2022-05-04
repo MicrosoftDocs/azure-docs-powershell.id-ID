@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
-ms.openlocfilehash: 6c9e3677145fed298c237d16d91c3378f388af28
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d17cdeb0cbf63053783d978ab5ba5df50f48f92c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804024"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664182"
 ---
 # Update-AzCustomIpPrefix
 
 ## SYNOPSIS
 Memperbarui CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azcustomipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,37 +42,37 @@ Update-AzCustomIpPrefix -ResourceId <String> [-Commission] [-Decomission] [-Prov
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzCustomIpPrefix** memungkinkan pengguna untuk menyediakan, menugaskan, membatalkan atau menonaktifkan CustomIpPrefix mereka, atau mengedit tag atau Cidr sumber daya.
+Cmdlet **Update-AzCustomIpPrefix** memungkinkan pengguna untuk menyediakan, menugaskan, mencabut akses, atau menonaktifkan CustomIpPrefix mereka, atau mengedit tag atau Cidr sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1 : Commission the CustomIpPrefix
+### Contoh 1 : Komisi CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Commission
 ```
 
-Perintah di atas akan memulai proses commissioning CustomIpPrefix.
+Perintah di atas akan memulai proses komisi customIpPrefix.
 
-### Contoh 2 : Penolakan CustomIpPrefix
+### Contoh 2 : Menonaktifkan CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Decommission
 ```
 
-Perintah di atas akan memulai proses penghapusan komisi CustomIpPrefix.
+Perintah di atas akan memulai proses de-commissioning customIpPrefix.
 
-### Contoh 3 : Provision the CustomIpPrefix
+### Contoh 3 : Provisikan CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Provision
 ```
 
-Perintah di atas akan memulai proses penyediaan CustomIpPrefix.
+Perintah di atas akan memulai proses provisi CustomIpPrefix.
 
-### Contoh 4 : Deprovision the CustomIpPrefix
+### Contoh 4 : Deprovisi CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Deprovision
 ```
 
-Perintah di atas akan memulai proses deprovisioning CustomIpPrefix.
+Perintah di atas akan memulai proses deprovisi CustomIpPrefix.
 
 ### Contoh 5 : Memperbarui tag untuk CustomIpPrefix
 ```powershell
@@ -83,12 +86,12 @@ Perintah di atas akan memperbarui tag untuk CustomIpPrefix.
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Cidr $cidr
 ```
 
-Perintah di atas akan memperbarui cidr untuk CustomIpPrefix. Ini hanya akan berfungsi ketika sumber daya berada dalam status validasifail.
+Perintah di atas akan memperbarui cidr untuk CustomIpPrefix. Ini hanya akan berfungsi ketika sumber daya dalam status validasifail.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Komisi
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dekomisi
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Provision
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deprovision
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-CustomIpPrefix untuk diatur.
+CustomIpPrefix yang akan diatur.
 
 ```yaml
 Type: PSCustomIpPrefix
@@ -192,7 +195,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cidr
-CIDR untuk diperbarui.
+CIDR yang akan diperbarui.
 
 ```yaml
 Type: String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -279,8 +282,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

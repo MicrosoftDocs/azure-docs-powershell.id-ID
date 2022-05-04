@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallExclusionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallExclusionConfig.md
-ms.openlocfilehash: 440df435624cc419c2137e3232990edaa966c2ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 42d60f2be9435779b354af99d19938f0d88484f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805536"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704964"
 ---
 # New-AzApplicationGatewayFirewallExclusionConfig
 
 ## SYNOPSIS
 Membuat daftar aturan pengecualian baru untuk waf gateway aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallexclusionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Ketika variabel adalah koleksi, beroperasi pada pemilih untuk menentukan elemen mana dalam pengumpulan pengecualian ini berlaku.
+Ketika variabel adalah koleksi, operasikan pada pemilih untuk menentukan elemen mana dalam koleksi tempat pengecualian ini berlaku.
 
 ```yaml
 Type: System.String
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Selector
-Ketika variabel adalah kumpulan, operator yang digunakan untuk menentukan elemen mana dalam kumpulan pengecualian ini berlaku.
+### -Pemilih
+Ketika variabel adalah koleksi, operator digunakan untuk menentukan elemen mana dalam koleksi tempat pengecualian ini berlaku.
 
 ```yaml
 Type: System.String
@@ -99,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

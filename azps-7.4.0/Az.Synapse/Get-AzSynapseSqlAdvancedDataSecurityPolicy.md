@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedDataSecurityPolicy.md
-ms.openlocfilehash: 89b76b56b3f230ce101ce3da98d7a7259e11a506
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: af13346acc32a7aeebb2001225da4aca7cbd9b06
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270099"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597218"
 ---
 # Get-AzSynapseSqlAdvancedDataSecurityPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan Keamanan Data Tingkat Lanjut dari ruang kerja.
+Mendapatkan kebijakan Advanced Data Security dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqladvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlAdvancedDataSecurityPolicy -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlAdvancedDataSecurityPolicy** mengambil kebijakan Keamanan Data Tingkat Lanjut dari ruang kerja.
+**Cmdlet Get-AzSynapseSqlAdvancedDataSecurityPolicy** mengambil kebijakan Advanced Data Security dari ruang kerja.
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Cmdlet **Get-AzSynapseSqlAdvancedDataSecurityPolicy** mengambil kebijakan Keaman
 Get-AzSynapseSqlAdvancedDataSecurityPolicy -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan Keamanan Data Tingkat Lanjut di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan Advanced Data Security di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseWorkspace -Name ContosoWorkspace | Get-AzSynapseSqlAdvancedDataSecurityPolicy
 ```
 
-Perintah ini mendapatkan Keamanan Data Tingkat Lanjut di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan Advanced Data Security di ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

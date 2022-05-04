@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsights.md
-ms.openlocfilehash: 9fcf2d73c41449c3161129a04a536af38f1153f4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51841bccf658088a1c7a8ec02c1d9d31bad06d47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129699"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611546"
 ---
 # New-AzApplicationInsights
 
 ## SYNOPSIS
-Membuat sumber daya wawasan aplikasi baru
+Membuat sumber daya application insights baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsights) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzApplicationInsights [-ResourceGroupName] <String> [-Name] <String> [-Locat
 ```
 
 ## DESCRIPTION
-Membuat sumber daya wawasan aplikasi baru
+Membuat sumber daya application insights baru
 
 ## EXAMPLES
 
-### Contoh 1 Membuat sumber daya wawasan aplikasi baru
+### Contoh 1 Membuat sumber daya application insights baru
 ```powershell
 New-AzApplicationInsights -Kind java -ResourceGroupName testgroup -Name test1027 -location eastus
 ```
@@ -59,7 +62,7 @@ PublicNetworkAccessForQuery     : Enabled
 PrivateLinkScopedResources      :
 ```
 
-Tambahkan sumber daya wawasan aplikasi baru bernama "test" dalam grup sumber daya "testgroup" dengan jenis "java"
+Tambahkan sumber daya application insights baru bernama "test" di grup sumber daya "testgroup" dengan jenis "java"
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Sumber Daya Insights Aplikasi.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses aplikasi Insights penyerapan. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses penyerapan Insights Aplikasi. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForQuery
-Tipe akses jaringan untuk mengakses kueri Insights Aplikasi. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses kueri Insights Aplikasi. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Penyimpanan Dalam Hari, 90 secara default.
+Retensi Dalam Hari, 90 secara default.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -199,8 +202,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,11 +233,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCredential.md
-ms.openlocfilehash: 09f412411d765cb37a7c0033798211be1ae8b370
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5c8e11ed611aac9d2049d46642116b1db667f813
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687672"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592920"
 ---
 # Get-AzAutomationCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial Otomatisasi.
+Mendapatkan kredensial Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,24 +43,24 @@ Untuk tujuan keamanan, cmdlet ini tidak mengembalikan kata sandi kredensial.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kredensial
+### Contoh 1: Mendapatkan semua kredensial
 ```
 PS C:\>Get-AzAutomationCredential -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua kredensial di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua kredensial di akun Automation bernama Contoso17.
 
 ### Contoh 2: Mendapatkan kredensial
 ```
 PS C:\>Get-AzAutomationCredential -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17" -Name "ContosoCredential"
 ```
 
-Perintah ini mendapatkan metadata untuk kredensial bernama ContosoCredential dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk kredensial bernama ContosoCredential di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengambil kredensial.
+Menentukan nama akun Automation tempat cmdlet ini mengambil kredensial.
 
 ```yaml
 Type: System.String
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kredensial untuk diambil.
+### -Name
+Menentukan nama kredensial yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

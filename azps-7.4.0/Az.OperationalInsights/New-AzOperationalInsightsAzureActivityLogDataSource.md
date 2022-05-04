@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
-ms.openlocfilehash: a63430a088fd20d60a3d7a57001f55ccb9b3842f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 745b14061c134774adc4d652b5e9dfea011a921a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312165"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684696"
 ---
 # New-AzOperationalInsightsAzureActivityLogDataSource
 
 ## SYNOPSIS
 Kumpulkan log Aktivitas Azure dari langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsazureactivitylogdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,12 +56,12 @@ Kind              : AzureActivityLog
 Properties        : {"linkedResourceId":"/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/providers/microsoft.insights/eventtypes/management","backfillStartTime":"0001-01-01T00:00:00+00:00"}
 ```
 
-Perintah ini memungkinkan Analitik Log mengumpulkan log aktivitas Azure dari langganan tertentu.
+Perintah ini memungkinkan Analitik Log untuk mengumpulkan log aktivitas Azure dari langganan tertentu.
 
 ## PARAMETERS
 
 ### -BackfillStartTime
-Anda bisa memilih untuk mengisi ulang log dari seminggu yang lalu.
+Anda dapat memilih untuk mengisi ulang log dari seminggu yang lalu.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -139,7 +142,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
 Parameter Sets: ByWorkspaceObject
@@ -152,7 +155,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 ```yaml
 Type: System.String
 Parameter Sets: ByWorkspaceName
@@ -165,8 +168,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

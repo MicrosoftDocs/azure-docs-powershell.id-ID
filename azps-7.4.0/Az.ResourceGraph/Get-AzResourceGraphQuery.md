@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
-ms.openlocfilehash: 08f1e40fc3e0f5efb927854fa2d790d35f2e2bcd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9511ad8eef163c872e3258d9dbe905acbdce1fb8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275967"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595994"
 ---
 # Get-AzResourceGraphQuery
 
 ## SYNOPSIS
 Dapatkan kueri grafik tunggal dengan resourceName-nya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/get-azresourcegraphquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzResourceGraphQuery -ResourceGroupName <String> [-SubscriptionId <String[]>
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzResourceGraphQuery -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -55,7 +58,7 @@ Location Name            Type
 
 Perintah ini mendapatkan semua kueri grafik sumber daya di bawah grup sumber daya.
 
-### Contoh 2: Mendapatkan kueri grafik sumber daya menurut nama
+### Contoh 2: Mendapatkan kueri grafik sumber daya berdasarkan nama
 ```powershell
 Get-AzResourceGraphQuery -ResourceGroupName azure-rg-test -Name SharedQuery-t01
 ```
@@ -80,7 +83,7 @@ Location Name            Type
 global   SharedQuery-t01 microsoft.resourcegraph/queries
 ```
 
-Perintah ini mendapatkan kueri grafik sumber daya menurut objek.
+Perintah ini mendapatkan kueri grafik sumber daya berdasarkan objek.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ### -InputObject
 Parameter Identitas
 
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceGraph.Models.IResourceGraphIdentity
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya Kueri Grafik.
+### -Name
+Nama sumber daya Graph Query.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,7 +187,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IResourceGraphIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[ResourceName <String>]`: Nama sumber daya Kueri Grafik.
+  - `[ResourceName <String>]`: Nama sumber daya kueri Graph.
   - `[SubscriptionId <String>]`: Id langganan Azure.
 
 ## RELATED LINKS

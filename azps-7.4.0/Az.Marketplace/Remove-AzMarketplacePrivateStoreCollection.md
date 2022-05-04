@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: 55a24186290edd02a757306fa87fb2cadd7ef997
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec62f729219d02dbc0daf4600bc241e043c2ba08
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940626"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610700"
 ---
 # Remove-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
-Menghapus koleksi dari bursa pribadi tertentu.
+Menghapus koleksi dari penyimpanan privat yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/remove-azmarketplaceprivatestorecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,16 +35,16 @@ Remove-AzMarketplacePrivateStoreCollection -InputObject <IMarketplaceIdentity> [
 ```
 
 ## DESCRIPTION
-Menghapus koleksi dari bursa pribadi tertentu.
+Menghapus koleksi dari penyimpanan privat yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus koleksi bursa pribadi
+### Contoh 1: Menghapus koleksi penyimpanan privat
 ```powershell
 Remove-AzMarketplacePrivateStoreCollection -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a -CollectionId fdb889a1-cf3e-49f0-95b8-2bb012fa01f1
 ```
 
-Perintah ini menghapus koleksi bursa pribadi
+Perintah ini menghapus koleksi penyimpanan privat
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -175,8 +178,8 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

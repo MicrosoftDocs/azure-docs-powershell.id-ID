@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscConfiguration.md
-ms.openlocfilehash: c3b45df2dd30c2a644c88773c92cc9f34a90c9d9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4bf3e73ac34a52f835facc2c8c5d91855b981943
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233217"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592992"
 ---
 # Export-AzAutomationDscConfiguration
 
 ## SYNOPSIS
-Mengekspor konfigurasi DSC dari Otomatisasi ke file lokal.
+Mengekspor konfigurasi DSC dari Automation ke file lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Export-AzAutomationDscConfiguration -Name <String> [-Slot <String>] [-OutputFold
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzAutomationDscConfiguration mengekspor** konfigurasi APS Desired State Configuration (DSC) dari Azure Automation ke file lokal.
+Cmdlet **Export-AzAutomationDscConfiguration** mengekspor konfigurasi APS Desired State Configuration (DSC) dari Azure Automation ke file lokal.
 File yang diekspor memiliki ekstensi nama file .ps1.
 
 ## EXAMPLES
@@ -37,12 +40,12 @@ File yang diekspor memiliki ekstensi nama file .ps1.
 PS C:\>Export-AzAutomationDscConfiguration -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Name "Configuration01" -Slot Published -OutputFolder "C:\Users\PattiFuller\Desktop"
 ```
 
-Perintah ini mengekspor versi konfigurasi DSC yang diterbitkan dalam Otomatisasi ke folder tertentu, yaitu desktop.
+Perintah ini mengekspor versi konfigurasi DSC yang diterbitkan di Automation ke folder yang ditentukan, yang merupakan desktop.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi DSC yang diekspor cmdlet ini.
+Menentukan nama akun Automation yang berisi DSC yang diekspor cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -71,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan file lokal yang sudah ada dengan file baru yang memiliki nama yang sama.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan file lokal yang ada dengan file baru yang memiliki nama yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi DSC yang diekspor cmdlet ini.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengekspor konfigurasi DSC.
+Menentukan nama grup sumber daya yang cmdlet ini mengekspor konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -132,10 +135,10 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan versi konfigurasi DSC yang diekspor cmdlet ini.
+Menentukan versi konfigurasi DSC mana yang diekspor cmdlet ini.
 Nilai yang valid adalah: 
-- Draft
-- Diterbitkan Nilai default diterbitkan.
+- Draf
+- Diterbitkan Nilai defaultnya Diterbitkan.
 
 ```yaml
 Type: System.String
@@ -150,8 +153,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

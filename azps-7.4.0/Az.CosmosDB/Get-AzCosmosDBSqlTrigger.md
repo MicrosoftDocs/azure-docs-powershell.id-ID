@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlTrigger.md
-ms.openlocfilehash: 257ce9b355042254a9fded8c6e32d54af5f926c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ca9bd22d10a97451629647ab1b6dd2bacd5cca5e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064665"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594798"
 ---
 # Get-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
-Mendapatkan CosmosDB Sql Trigger.
+Mendapatkan Pemicu CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqltrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlTrigger [-Name <String>] -ParentObject <PSSqlContainerGetResult
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlTrigger** mendapatkan daftar semua Pemicu CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, DatabaseName dan ContainerName tertentu dan mendapatkan Satu Pemicu CosmosDB Sql untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan TriggerName.
+Cmdlet **Get-AzCosmosDBSqlTrigger** mendapatkan daftar semua Pemicu CosmosDB Sql yang ada untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu dan mendapatkan satu Pemicu CosmosDB Sql untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan TriggerName tertentu.
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -155,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

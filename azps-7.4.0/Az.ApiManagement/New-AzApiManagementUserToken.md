@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
-ms.openlocfilehash: 95cc2392d9ec416d01186cbae649d1a4ad09fe44
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c44aca397b88a85b1353fea0877a861a60c1620a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944641"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684210"
 ---
 # New-AzApiManagementUserToken
 
 ## SYNOPSIS
 Menghasilkan Token Akses Bersama untuk Pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementusertoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ UserId      TokenExpiry         KeyType UserToken
 integration 5/3/2019 2:02:34 PM Primary integration&201905031402&zOwopJChWAA6oaqGHMyf7Ol9wUCPcrtdmBmff8c2lcmZk9Y...
 ```
 
-Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Utama yang valid selama 8 jam.
+Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Primer yang berlaku selama 8 jam.
 
 ### Contoh 2
 
-Menghasilkan Token Akses Bersama untuk Pengguna. (autogenerasi)
+Menghasilkan Token Akses Bersama untuk Pengguna. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -57,8 +60,8 @@ New-AzApiManagementUserToken -Context <PsApiManagementContext> -Expiry <DateTime
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Kunci Pengguna untuk digunakan saat menghasilkan Token.
+Kunci Pengguna untuk digunakan saat membuat Token.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-Pengidentifikasi pengguna yang sudah ada.
+Pengidentifikasi pengguna yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccount.md
-ms.openlocfilehash: 2c851d9ce9890bed75db1db0730745ab1be9b955
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 143f5f8fd2519d72724e18c21c9d1085d8ae4d91
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810234"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634328"
 ---
 # Remove-AzCognitiveServicesAccount
 
 ## SYNOPSIS
 Menghapus akun Cognitive Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/remove-azcognitiveservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah hanya memperlihatkan akun yang dihapus dalam output.
+Menentukan apakah hanya menampilkan akun yang dihapus dalam output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Akun Layanan Kognitif.
+Lokasi Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun yang akan dihapus.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat akun Layanan Kognitif ditetapkan.
+Menentukan nama grup sumber daya tempat akun Cognitive Services ditetapkan.
 
 ```yaml
 Type: System.String
@@ -137,8 +140,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

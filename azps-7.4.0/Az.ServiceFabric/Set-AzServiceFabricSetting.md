@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricSetting.md
-ms.openlocfilehash: d76e6a43f293ad4f80dc5831b032150b55be6508
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f3de105566eb20656c5c17454774ccd990d28d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671742"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684516"
 ---
 # Set-AzServiceFabricSetting
 
 ## SYNOPSIS
 Tambahkan atau perbarui satu atau beberapa pengaturan Service Fabric ke kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String> -Secti
  -Value <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### KumpulanSettings
+### BatchSettings
 ```
 Set-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String>
  -SettingsSectionDescription <PSSettingsSectionDescription[]> [-DefaultProfile <IAzureContextContainer>]
@@ -62,7 +65,7 @@ $fabricSettings = @(
 Set-AzServiceFabricSetting -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -SettingsSectionDescription $fabricSettings -Verbose
 ```
 
-Perintah ini akan memicu peningkatan untuk mengatur beberapa pengaturan kain menggunakan parameter SettingsSectionDescription.
+Perintah ini akan memicu peningkatan untuk mengatur beberapa pengaturan fabric menggunakan parameter SettingsSectionDescription.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Nama parameter pengaturan kain
+Nama parameter pengaturan fabric
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Bagian
-Nama bagian pengaturan kain
+Nama bagian pengaturan fabric
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingsSectionDescription
-Array pengaturan kain
+Array pengaturan fabric
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSSettingsSectionDescription[]
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai parameter pengaturan kain
+### -Nilai
+Nilai parameter pengaturan fabric
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
