@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeviceParent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeviceParent.md
-ms.openlocfilehash: e8a419a26e6ed8b436815bdf298f3dfd04d90f86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02e5e0c76c1290569fb1545a6ecd05603f08da52
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285597"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699836"
 ---
 # Set-AzIotHubDeviceParent
 
 ## SYNOPSIS
-Atur perangkat induk perangkat yang ditentukan.
+Atur perangkat induk dari perangkat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdeviceparent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzIotHubDeviceParent [-ResourceId] <String> [-DeviceId] <String> [-ParentDev
 ```
 
 ## DESCRIPTION
-Atur perangkat induk perangkat non-edge yang ditentukan.
+Atur perangkat induk dari perangkat non-edge yang ditentukan.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menimpa perangkat induk perangkat non-edge.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationConnectionType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationConnectionType.md
-ms.openlocfilehash: 168c6447dc0a14770981395306bfa07ddb10a97c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c0ced04ca58ab012ad2c08673ff172c5ac817f97
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812016"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668230"
 ---
 # Remove-AzAutomationConnectionType
 
 ## SYNOPSIS
-Menghapus tipe koneksi Otomatisasi.
+Menghapus jenis koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationconnectiontype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,26 +30,26 @@ Remove-AzAutomationConnectionType [-Name] <String> [-Force] [-ResourceGroupName]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAutomationConnectionType** menghapus tipe koneksi dari Azure Automation.
+Cmdlet **Remove-AzAutomationConnectionType** menghapus jenis koneksi dari Azure Automation.
 Semua koneksi yang terkait dengan tipe koneksi yang Anda hapus menjadi tidak dapat digunakan.
 Hapus, kecuali Anda membuat tipe koneksi baru yang memenuhi kriteria berikut: 
-- Tipe memiliki nama yang sama dengan tipe koneksi asli. 
-- Tipe memiliki definisi bidang yang sama dengan tipe koneksi asli.
-Ini bisa memiliki bidang tambahan.
+- Jenis ini memiliki nama yang sama dengan jenis koneksi asli. 
+- Jenis memiliki definisi bidang yang sama dengan jenis koneksi asli.
+Ini dapat memiliki bidang tambahan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tipe koneksi
+### Contoh 1: Menghapus jenis koneksi
 ```
 PS C:\>Remove-AzAutomationConnectionType -AutomationAccountName "Contoso17" -Name "ContosoConnectionType" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghapus tipe koneksi bernama ContosoConnectionType di akun Otomatisasi bernama Contoso17.
+Perintah ini menghapus jenis koneksi bernama ContosoConnectionType di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menghapus tipe koneksi.
+Menentukan nama akun Automation yang cmdlet ini menghapus jenis koneksi.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama tipe koneksi Otomatisasi yang dihapus cmdlet ini.
+### -Name
+Menentukan nama tipe koneksi Automation yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini menghapus tipe koneksi Otomatisasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menghapus jenis koneksi Automation.
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
-ms.openlocfilehash: aeed17601ee76d4e390ba4f713ac8f541fde98e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d6b25697b8f82f850fc84d799989aabbba426dc2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700232"
 ---
 # Remove-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Hapus perangkat non edge sebagai anak dari perangkat edge yang ditentukan.
+Hapus perangkat non edge sebagai turunan dari perangkat edge tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzIotHubDeviceChildren [-ResourceId] <String> [-DeviceId] <String> [-Chil
 ```
 
 ## DESCRIPTION
-Hapus semua perangkat non-edge atau yang disebutkan sebagai perangkat tepi yang ditentukan anak-anak.
+Hapus semua atau perangkat non-edge yang disebutkan sebagai perangkat edge yang ditentukan anak-anak.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Remove-AzIotHubDeviceChildren -ResourceGroupName "myresourcegroup" -IotHubName "
 True
 ```
 
-Hapus perangkat yang disebutkan sebagai anak dari perangkat tertentu.
+Hapus perangkat yang disebutkan sebagai turunan dari perangkat tertentu.
 
 ### Contoh 2
 ```powershell
@@ -63,12 +66,12 @@ Remove-AzIotHubDeviceChildren -ResourceGroupName "myresourcegroup" -IotHubName "
 True
 ```
 
-Hapus semua perangkat non-tepi sebagai perangkat tepi yang ditentukan anak-anak.
+Hapus semua perangkat non-edge sebagai perangkat edge yang ditentukan anak-anak.
 
 ## PARAMETERS
 
 ### -Anak-anak
-Daftar perangkat anak (dipisahkan koma) hanya menyertakan perangkat non-edge.
+Daftar perangkat anak (dipisahkan koma) hanya mencakup perangkat non-edge.
 
 ```yaml
 Type: System.String[]
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

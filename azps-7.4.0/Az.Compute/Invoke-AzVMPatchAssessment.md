@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMPatchAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMPatchAssessment.md
-ms.openlocfilehash: d0dd55e3bf8a8721611b540319cba5273d84b49c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 84aae7553324cb803e5009873a93b0f7d8b733da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005927"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623244"
 ---
 # Invoke-AzVMPatchAssessment
 
 ## SYNOPSIS
-Menilai status patch mesin virtual.
+Menilai status patch komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmpatchassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Invoke-AzVMPatchAssessment [-VM] <PSVirtualMachine> [-AsJob] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Menilai status patch VM dan melaporkan semua patch terdeteksi yang tersedia untuk penginstalan.
+Menilai status patch VM dan melaporkan semua patch yang terdeteksi yang tersedia untuk penginstalan.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Invoke-AzVmPatchAssessment -ResourceGroupName "myRG" -VMName "myVM"
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya untuk mesin virtual Anda.
+ID sumber daya untuk komputer virtual Anda.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Objek Mesin Virtual PowerShell
+Objek Komputer Virtual PowerShell
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Nama Mesin Virtual
+Nama Komputer Virtual
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

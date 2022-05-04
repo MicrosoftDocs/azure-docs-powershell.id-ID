@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
-ms.openlocfilehash: 9e55f69296fed79079e714b7ec23f0fe9a10d761
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e90327154453c1b2efa18123977965a8e8d3cd3a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671580"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676798"
 ---
 # Remove-AzWebPubSubHub
 
 ## SYNOPSIS
 Menghapus pengaturan hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/remove-azwebpubsubhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzWebPubSubHub -Name testHub -ResourceGroupName psdemo -ResourceName psde
 
 
 
-### Contoh 2: Hapus pengaturan hub melalui identitas.
+### Contoh 2: Menghapus pengaturan hub melalui identitas.
 ```powershell
 $hubIdentity = @{HubName = 'testHub'
 ResourceGroupName='psdemo'
@@ -53,13 +56,13 @@ SubscriptionId = $(Get-AzContext).Subscription.Id}
 $hubIdentity | Remove-AzWebPubSubHub
 ```
 
-Contoh pertama membangun tabel hash yang berdiri untuk identitas hub.
-Kemudian melewati identitas melalui pipa ke `Remove-AzWebPubSubHub` cmdlet.
+Contoh pertama-tama membuat tabel hash yang berdiri untuk identitas hub.
+Kemudian meneruskan identitas melalui alur ke `Remove-AzWebPubSubHub` cmdlet.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama hub.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -180,8 +183,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -195,8 +198,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -249,12 +252,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
+  - `[Location <String>]`: wilayah
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ResourceName <String>]`: Nama sumber daya.
-  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan pribadi bersama
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan privat bersama
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

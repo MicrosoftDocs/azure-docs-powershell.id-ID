@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: b916c88e656d3370a6b08e898e35eca56bd7edfb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23cb19a6618bceb921f0094fa2f1f85df35aa051
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864180"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658710"
 ---
 # Remove-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menghapus tag penahanan legal dari wadah blob Storage
+Menghapus tag penahanan legal dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,36 +42,36 @@ Remove-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag legal hold dari wadah blob Storage
+**Cmdlet Remove-AzRmStorageContainerLegalHold** menghapus tag penahanan legal dari kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Hapus tag penahanan legal dari wadah blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun Storage dan nama kontainer
 ```
 PS C:\>Remove-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1
 ```
 
-Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
 
-### Contoh 2: Menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer
+### Contoh 2: Menghapus tag penahanan legal dari kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1,tag2
 ```
 
-Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini menghapus tag penahanan legal dari kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Hapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline
+### Contoh 3: Menghapus tag penahanan legal dari semua kontainer blob Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainerLegalHold -Tag  tag1
 ```
 
-Perintah ini menghapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline.
+Perintah ini menghapus tag penahanan legal dari semua kontainer blob Storage di akun Storage dengan alur.
 
 ## PARAMETERS
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container LegalHold Tags
+Tag LegalHold Kontainer
 
 ```yaml
 Type: System.String[]
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

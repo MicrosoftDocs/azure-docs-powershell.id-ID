@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateRunAsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateRunAsAccount.md
-ms.openlocfilehash: 6bafafaf2af7688b8ca34d7c838095a996f7f861
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23a73cdb3b736a9111281e64361942cd509e49e4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283797"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596318"
 ---
 # Get-AzMigrateRunAsAccount
 
 ## SYNOPSIS
-Metode untuk dijalankan sebagai akun.
+Metode untuk menjalankan sebagai akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigraterunasaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,14 +28,14 @@ Get-AzMigrateRunAsAccount -ResourceGroupName <String> -SiteName <String> [-Subsc
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMigrateRunAsAccount -AccountName <String> -ResourceGroupName <String> -SiteName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Metode untuk dijalankan sebagai akun.
+Metode untuk menjalankan sebagai akun.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Name                                 Type
 b090bef3-b733-5e34-bc8f-eb6f2701432a Microsoft.OffAzure/VMwareSites/runasaccounts
 ```
 
-Daftar semua berjalan sebagai akun di situs.
+Mencantumkan semua akun yang dijalankan sebagai di situs.
 
 ### Contoh 2: Dapatkan
 ```powershell
@@ -60,7 +63,7 @@ Name                                 Type
 b090bef3-b733-5e34-bc8f-eb6f2701432a Microsoft.OffAzure/VMwareSites/runasaccounts
 ```
 
-Dapatkan Jalankan sebagai akun berdasarkan nama.
+Dapatkan Akun Jalankan sebagai berdasarkan nama.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
-ms.openlocfilehash: b83d68e8b1f7aaa2864bdc9679fc68aaa9a3d8aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13a26058fb895ca8ea9e8a4fc0b175846a48ac9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121689"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652720"
 ---
 # Invoke-AzIotHubDeviceMethod
 
 ## SYNOPSIS
-Memanggil metode langsung pada perangkat.
+Panggil metode langsung pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubdevicemethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzIotHubDeviceMethod [-ResourceId] <String> [-DeviceId] <String> -Name <S
 ```
 
 ## DESCRIPTION
-Memanggil metode langsung pada perangkat. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi selengkapnya.
+Panggil metode langsung pada perangkat. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama metode yang akan dipangkatkan pada perangkat ini.
+### -Name
+Nama metode yang akan dipanggil pada perangkat ini.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Muatan untuk metode yang akan dipangkatkan pada perangkat ini.
+Payload untuk metode yang akan dipanggil pada perangkat ini.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
-ms.openlocfilehash: b0f6d53c150a86c605d9b54ebf2462b5a9834b32
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17587c23372ed29196cfa765303c940e2fc8822d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068175"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639259"
 ---
 # Get-AzAdvisorRecommendation
 
 ## SYNOPSIS
 Mendapatkan daftar rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzAdvisorRecommendation [-ResourceId] <String> [-Category <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar rekomendasi Azure Advisor. Dapat difilter menurut Kategori, ResourceId, Nama dll.
+Mendapatkan daftar rekomendasi Azure Advisor. Dapat difilter menurut Kategori, ResourceId, Nama, dll.
 
 ## EXAMPLES
 
@@ -82,7 +85,7 @@ SuppressionIds       : {}
 Name                 : {recommendation_id}
 Type                 : Microsoft.Advisor/recommendations
 ```
-Mendapatkan daftar semua rekomendasi yang difilter menurut kategori Kinerja.
+Mendapatkan daftar semua rekomendasi yang difilter menurut kategori Performa.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama ResourceGroup rekomendasi
+Nama ResourceGroup dari rekomendasi
 
 ```yaml
 Type: String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId dari rekomendasi
+ResourceId rekomendasi
 
 ```yaml
 Type: String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

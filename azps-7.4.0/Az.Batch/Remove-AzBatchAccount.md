@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchAccount.md
-ms.openlocfilehash: 008dce8b3957e0c860690dfdc3691154e8af06ea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f77dd8be98d895651f3bf9bb760e8aa3e7cac46c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811620"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598568"
 ---
 # Remove-AzBatchAccount
 
 ## SYNOPSIS
 Menghapus akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzBatchAccount [-AccountName] <String> [[-ResourceGroupName] <String>] [-
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchAccount** menghapus akun Azure Batch.
-Cmdlet ini meminta Anda sebelum menghapus akun, kecuali Anda menentukan parameter *Force* .
+Cmdlet ini meminta Anda sebelum menghapus akun, kecuali Anda menentukan parameter *Paksa* .
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

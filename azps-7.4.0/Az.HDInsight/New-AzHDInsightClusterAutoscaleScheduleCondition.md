@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleScheduleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleScheduleCondition.md
-ms.openlocfilehash: d4ade7597ca3f58b258e932d96a7c18fb86459b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec78f705f04ebbf12a62d161087bf0c5bf704f81
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316143"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664630"
 ---
 # New-AzHDInsightClusterAutoscaleScheduleCondition
 
 ## SYNOPSIS
-Membuat kondisi skala otomatis berbasis jadwal.
+Membuat kondisi skala otomatis berbasis Jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterautoscaleschedulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzHDInsightClusterAutoscaleScheduleCondition -Time <DateTime> -WorkerNodeCou
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzHDInsightClusterAutoscaleScheduleCondition** menciptakan kondisi skala otomatis berbasis jadwal.
+Cmdlet **New-AzHDInsightClusterAutoscaleScheduleCondition** membuat kondisi skala otomatis berbasis Jadwal.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ New-AzHDInsightClusterAutoscaleScheduleCondition -Time <DateTime> -WorkerNodeCou
 New-AzHDInsightClusterAutoscaleScheduleCondition -Time 09:00 -WorkerNodeCount 5 -Day Monday,Wednesday
 ```
 
-Perintah ini menciptakan kondisi di mana skala otomatis kluster menjadi 5 node pekerja pada pukul 09:00 setiap Senin, Rabu.
+Perintah ini membuat kondisi di mana skala otomatis kluster menjadi 5 simpul pekerja pada pukul 09:00 setiap hari Senin, Rabu.
 
 ### Contoh 2: Aktifkan skala otomatis berbasis jadwal kluster dengan kondisi skala otomatis.
 ```powershell
@@ -48,12 +51,12 @@ $clusterName="MyCluster"
 Set-AzHDInsightClusterAutoscaleConfiguration -ResourceGroupName $clusterResourceGroup -ClusterName $clusterName -Schedule -TimeZone "Pacific Standard Time" -Condition $condition
 ```
 
-Perintah ini menciptakan kondisi di mana skala otomatis kluster menjadi 5 node pekerja pada pukul 09:00 setiap Senin, Rabu.
+Perintah ini membuat kondisi di mana skala otomatis kluster menjadi 5 simpul pekerja pada pukul 09:00 setiap hari Senin, Rabu.
 
 ## PARAMETERS
 
 ### -Hari
-Mendapatkan atau mengatur hari-hari kondisi jadwal Skala Otomatis.
+Mendapatkan atau mengatur hari kondisi jadwal Autoscale.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightDaysOfWeek[]
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu
-Mendapatkan atau mengatur waktu kondisi jadwal Skala Otomatis.
+Mendapatkan atau mengatur waktu kondisi jadwal Autoscale.
 
 ```yaml
 Type: System.DateTime
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkerNodeCount
-Mendapatkan atau mengatur jumlah jadwal workernode dari kondisi jadwal Autoscale.
+Mendapatkan atau mengatur jumlah simpul pekerja jadwal kondisi jadwal Autoscale.
 
 ```yaml
 Type: System.Int32
@@ -114,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
-ms.openlocfilehash: 29086744930d0f6ee40da894b10b3a3b51ec5cc9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f94dd66afdda40380990fa66393dec0701c4dba8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808650"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617216"
 ---
 # Get-AzHDInsightJob
 
 ## SYNOPSIS
 Mendapatkan daftar pekerjaan dari kluster dan mencantumkannya dalam urutan kronologis terbalik, atau mengambil pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Get-AzHDInsightJob [-ClusterName] <String> [-HttpCredential] <PSCredential> [[-J
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightJob** mendapatkan pekerjaan terbaru untuk cluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
+Cmdlet **Get-AzHDInsightJob** mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
 Dapatkan pekerjaan tertentu dengan menyediakan parameter *JobId* .
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pekerjaan terbaru untuk kluster Azure HDInsight yang ditentukan
+### Contoh 1: Mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight tertentu
 ```powershell
 # Cluster info
 $clusterName = "your-hadoop-001"
@@ -145,11 +148,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

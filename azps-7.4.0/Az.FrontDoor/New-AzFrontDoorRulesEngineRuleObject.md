@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
-ms.openlocfilehash: f4b8a1aa8eb7ec6f37ec1f431467834d1cebd86f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b28e3da4fb9f5a2f21a03a77fb35eb815c6133c2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683784"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601214"
 ---
 # New-AzFrontDoorRulesEngineRuleObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzFrontDoorRulesEngineRuleObject -Name <String> -Priority <Int32> -Action <P
 Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
 
 Gunakan cmdlet "New-AzFrontDoorRulesEngineActionObject" untuk membuat objek PSRulesEngineAction untuk masuk ke parameter "-Action".
-Gunakan cmdlet "New-AzFrontDoorRulesEngineMatchConditionObject" untuk membuat objek PSRulesEngineMatchCondition untuk masuk ke parameter "-MatchCondition".
+Gunakan cmdlet "New-AzFrontDoorRulesEngineMatchConditionObject" untuk membuat objek PSRulesEngineMatchCondition untuk diteruskan ke parameter "-MatchCondition".
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ NegateCondition          : False
 Transforms               : {Lowercase, Uppercase}
 ```
 
-Buat objek PSRulesEngineRule baru dan demonstrasikan cara melihat subfield.
+Buat objek PSRulesEngineRule baru dan tunjukkan cara melihat subbidang.
 
 ### Contoh 2
 ```powershell
@@ -76,12 +79,12 @@ At line:1 char:81
 + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.Azure.Commands.FrontDoor.Cmdlets.NewFrontDoorRulesEngineRuleObject
 ```
 
-Mengharapkan output ketika melewati dalam nilai prioritas yang tidak valid.
+Mengharapkan output saat meneruskan nilai prioritas yang tidak valid.
 
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan untuk dilakukan atas permintaan dan respons jika semua kondisi kecocokan terpenuhi.
+Tindakan yang harus dilakukan pada permintaan dan respons jika semua kondisi kecocokan terpenuhi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineAction
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchCondition
-Daftar kondisi kecocokan yang harus dipenuhi agar tindakan aturan ini berjalan. Tidak memiliki kondisi yang cocok berarti tindakan akan selalu berjalan.
+Daftar kondisi kecocokan yang harus dipenuhi agar tindakan aturan ini berjalan. Tidak memiliki kondisi kecocokan berarti tindakan akan selalu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineMatchCondition[]
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -MatchProcessingBehavior
 Jika aturan ini cocok jika mesin aturan terus menjalankan aturan yang tersisa atau berhenti.
-Nilai yang memungkinkan adalah Lanjutkan dan Hentikan.
+Nilai yang mungkin adalah Lanjutkan dan Hentikan.
 Jika tidak ada, default ke Lanjutkan.
 
 ```yaml
@@ -143,8 +146,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama untuk merujuk ke aturan tertentu ini.
+### -Name
+Nama untuk merujuk ke aturan khusus ini.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -Prioritas
 Prioritas yang ditetapkan untuk aturan ini.
-Tidak bisa negatif.
+Tidak boleh negatif.
 
 ```yaml
 Type: System.Int32
@@ -175,11 +178,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

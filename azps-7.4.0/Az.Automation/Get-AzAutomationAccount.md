@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationAccount.md
-ms.openlocfilehash: f5fdd3dddb656122fe9105eb2355f335a90de671
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1442fe4b95720c003fa53afac035de5cd68d7bdf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233235"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680936"
 ---
 # Get-AzAutomationAccount
 
 ## SYNOPSIS
-Mendapatkan akun Otomatisasi dalam grup sumber daya.
+Mendapatkan akun Automation dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Get-AzAutomationAccount [-ResourceGroupName] <String> [-Name] <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzAutomationAccount** mendapatkan akun Azure Automation dalam grup sumber daya.
-Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzAutomationAccount.
+Untuk informasi selengkapnya tentang akun Automation, lihat cmdlet New-AzAutomationAccount.
 
 ## EXAMPLES
 
@@ -43,14 +46,14 @@ Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzAutoma
 PS C:\>Get-AzAutomationAccount -ResourceGroupName "ResourceGroup03"
 ```
 
-Perintah ini mendapatkan semua akun Otomatisasi dalam grup sumber daya bernama ResourceGroup03.
+Perintah ini mendapatkan semua akun Automation dalam grup sumber daya bernama ResourceGroup03.
 
-### Contoh 2: Dapatkan akun
+### Contoh 2: Mendapatkan akun
 ```
 PS C:\>Get-AzAutomationAccount -ResourceGroupName "ResourceGroup03" -Name "ContosoAutomationAccount"
 ```
 
-Perintah ini mendapatkan akun Otomatisasi bernama ContosoAutomationAccount dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan akun Automation bernama ContosoAutomationAccount di grup sumber daya bernama ContosoResourceGroup.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Otomatisasi yang didapat cmdlet ini.
+### -Name
+Menentukan nama akun Automation yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan akun Otomatisasi.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan akun Automation.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

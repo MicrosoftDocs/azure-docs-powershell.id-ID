@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
-ms.openlocfilehash: aba4afdcf5b223c9ef430da4bb6b9b70c69310a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa4fe78521da31795d95de2f5685bcc34e0b060f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063339"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649480"
 ---
 # Start-AzDataMigrationService
 
 ## SYNOPSIS
-Memulai contoh Azure Database Migration Service dalam status berhenti. 
+Memulai instans Azure Database Migration Service dalam status berhenti. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/start-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzDataMigrationService memulai contoh Azure Database Migration Service dalam keadaan berhenti. 
+Cmdlet Start-AzDataMigrationService memulai instans Azure Database Migration Service dalam status berhenti. 
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Cmdlet Start-AzDataMigrationService memulai contoh Azure Database Migration Serv
 Start-AzDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService
 ```
 
-Contoh di atas memulai instans Azure Database Migration Service bernama Layanan Uji dalam status berhenti berdasarkan nama layanan yang dilewatkan sebagai input
+Contoh di atas memulai instans Azure Database Migration Service bernama Test Service dalam status berhenti berdasarkan nama layanan yang diteruskan sebagai input
 
 ### Contoh 2
 ```powershell
 Start-AzDataMigrationService -InputObject $TestService
 ```
 
-Contoh di atas memulai contoh Azure Database Migration Service berdasarkan PSDataMigrationService yang dilewatkan sebagai parameter input
+Contoh di atas memulai instans Azure Database Migration Service berdasarkan PSDataMigrationService yang diteruskan sebagai parameter input
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataMigrationService Object.
+Objek PSDataMigrationService.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -88,7 +91,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama Database Migration Service.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

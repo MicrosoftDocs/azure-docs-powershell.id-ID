@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
-ms.openlocfilehash: 1d5748ba972e2fe2f95f40732b63c02a0226396e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 57412e28f4290cfbeeeca3615c3042bfac7d217a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120519"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597974"
 ---
 # Get-AzMapsAccountKey
 
 ## SYNOPSIS
 Dapatkan kunci untuk digunakan dengan API Peta.
-Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke PETA API REST.
-Hanya satu kunci yang diperlukan dalam satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
+Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke REST API Peta.
+Hanya satu kunci yang diperlukan pada satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapsaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Get-AzMapsAccountKey -Name <String> -ResourceGroupName <String> [-SubscriptionId
 
 ## DESCRIPTION
 Dapatkan kunci untuk digunakan dengan API Peta.
-Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke PETA API REST.
-Hanya satu kunci yang diperlukan dalam satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
+Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke REST API Peta.
+Hanya satu kunci yang diperlukan pada satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
 
 ## EXAMPLES
 
@@ -44,9 +47,9 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 AZPcJC8OCNCpqRsnj1NB3Ngl-qQncBP5IT21jts_2b0 2021-05-20T05:59:16.2028276Z 3l_cups4uVp7LB90G861PB_ddEFJFOdt0beX1U8ROO4 2021-05-20T05:59:16.2028276Z
 ```
 
-Perintah ini mendapatkan kunci untuk digunakan dengan API Peta.
-Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke PETA API REST.
-Hanya satu kunci yang diperlukan dalam satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
+Perintah ini mendapatkan kunci yang akan digunakan dengan API Peta.
+Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke REST API Peta.
+Hanya satu kunci yang diperlukan pada satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Akun Peta.
 
 ```yaml
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

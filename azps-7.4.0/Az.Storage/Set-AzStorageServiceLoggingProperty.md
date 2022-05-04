@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceLoggingProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceLoggingProperty.md
-ms.openlocfilehash: adb9f737efa1eaa972446eb0df92b57677097e96
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7078c6878e1013a7f6e46822a141b9af3833c112
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635246"
 ---
 # Set-AzStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Mengubah pembuatan log untuk layanan Azure Storage.
+Memodifikasi pengelogan untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageserviceloggingproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Set-AzStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Versio
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageServiceLoggingProperty** memodifikasi pembuatan log untuk layanan Azure Storage.
+Cmdlet **Set-AzStorageServiceLoggingProperty** memodifikasi pengelogan untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah properti pembuatan log untuk layanan Blob
+### Contoh 1: Mengubah properti pengelogan untuk Blob service
 ```
 C:\PS>Set-AzStorageServiceLoggingProperty -ServiceType Blob -LoggingOperations Read,Write -PassThru -RetentionDays 10 -Version 1.0
 ```
 
-Perintah ini mengubah pembuatan log versi 1.0 untuk penyimpanan blob untuk menyertakan operasi baca dan tulis.
-Azure Storage pembuatan log layanan mempertahankan entri selama 10 hari.
-Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti pembuatan log yang diubah.
+Perintah ini memodifikasi pengelogan versi 1.0 untuk penyimpanan blob untuk menyertakan operasi baca dan tulis.
+Azure Storage pengelogan layanan mempertahankan entri selama 10 hari.
+Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti pengelogan yang dimodifikasi.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -77,10 +80,10 @@ Accept wildcard characters: False
 Menentukan array operasi layanan Azure Storage.
 Azure Storage layanan mencatat operasi yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
-- Membaca
-- Menulis
-- Menghapus
+- Tidak ada
+- Baca
+- Tulis
+- Hapus
 - Semua
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan properti pembuatan log yang diperbarui.
+Menunjukkan bahwa cmdlet ini mengembalikan properti pengelogan yang diperbarui.
 Jika Anda tidak menentukan parameter ini, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionDays
-Menentukan jumlah hari layanan Azure Storage mempertahankan informasi yang dicatat.
+Menentukan jumlah hari layanan Azure Storage menyimpan informasi yang dicatat.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -128,12 +131,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan penyimpanan.
-Cmdlet ini mengubah properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
+Menentukan jenis layanan penyimpanan.
+Cmdlet ini memodifikasi properti pengelogan untuk jenis layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan 
-- Meja
-- Antrian
+- Blob 
+- Tabel
+- Antrean
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi pembuatan log layanan Azure Storage.
+Menentukan versi pengelogan layanan Azure Storage.
 Nilai defaultnya adalah 1,0.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

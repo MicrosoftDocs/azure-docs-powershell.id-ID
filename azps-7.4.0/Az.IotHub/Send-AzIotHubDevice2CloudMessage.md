@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/send-azio
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
-ms.openlocfilehash: 521e3f3103c7d1d00710eb0bf3596aadc6b720c4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 828b01d3ea06d51df70967ae135d7a1223cf49c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226935"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699980"
 ---
 # Send-AzIotHubDevice2CloudMessage
 
 ## SYNOPSIS
-Mengirim pesan perangkat ke awan.
+Mengirim pesan perangkat ke cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/send-aziothubdevice2cloudmessage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,14 +53,14 @@ Perintah ini mendukung pengiriman pesan dengan properti aplikasi dan sistem.
 Send-AzIotHubDevice2CloudMessage -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Message "Ping from PS"
 ```
 
-Mengirim perangkat ke pesan awan menggunakan tipe transportasi default.
+Mengirim perangkat ke pesan cloud menggunakan jenis transportasi default.
 
 ### Contoh 2
 ```powershell
 Send-AzIotHubDevice2CloudMessage -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Message "Ping from PS" -TransportType Mqtt
 ```
 
-Mengirim perangkat mqtt ke pesan awan.
+Mengirim perangkat mqtt ke pesan cloud.
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportType
-Tipe transportasi untuk digunakan.
+Jenis transportasi yang akan digunakan.
 Defaultnya adalah Amqp.
 
 ```yaml
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

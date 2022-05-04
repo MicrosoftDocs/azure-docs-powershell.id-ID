@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountDeployment.md
-ms.openlocfilehash: bcb4748b2cfd825df07a7406d7af7ae180f9ebfe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 68f5cc7d1e7994473b82c861fe6a05b0fea079ee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128467"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634256"
 ---
 # Remove-AzCognitiveServicesAccountDeployment
 
 ## SYNOPSIS
 Menghapus Penyebaran dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/remove-azcognitiveservicesaccountdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Menghapus Penyebaran dari akun Cognitive Services
 ## PARAMETERS
 
 ### -AccountName
-Nama Akun Layanan Kognitif.
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -112,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

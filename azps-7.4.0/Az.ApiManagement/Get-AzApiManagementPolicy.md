@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
-ms.openlocfilehash: 5d92116e94bd48b3c549c0628fbb7a124757c701
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: efcdfc8df4632a334c7dd62ccdeab52e4d05e493
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067833"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623496"
 ---
 # Get-AzApiManagementPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan lingkup yang ditentukan.
+Mendapatkan kebijakan cakupan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ Get-AzApiManagementPolicy -Context <PsApiManagementContext> [-Format <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementPolicy** mendapatkan kebijakan lingkup yang ditentukan.
+Cmdlet **Get-AzApiManagementPolicy** mendapatkan kebijakan cakupan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan tingkat penyewa
+### Contoh 1: Mendapatkan kebijakan tingkat penyewa
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -SaveAs "C:\contoso\policies\tenantpolicy.xml"
@@ -60,31 +63,31 @@ Get-AzApiManagementPolicy -Context $apimContext -SaveAs "C:\contoso\policies\ten
 
 Perintah ini mendapatkan kebijakan tingkat penyewa dan menyimpannya ke file bernama tenantpolicy.xml.
 
-### Contoh 2: Dapatkan kebijakan lingkup produk
+### Contoh 2: Mendapatkan kebijakan cakupan produk
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini mendapatkan kebijakan lingkup produk
+Perintah ini mendapatkan kebijakan cakupan produk
 
-### Contoh 3: Dapatkan kebijakan lingkup API
+### Contoh 3: Mendapatkan kebijakan cakupan API
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 ```
 
-Perintah ini mendapatkan kebijakan lingkup API.
+Perintah ini mendapatkan kebijakan cakupan API.
 
-### Contoh 4: Dapatkan kebijakan lingkup operasi
+### Contoh 4: Mendapatkan kebijakan cakupan operasi
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
 ```
 
-Perintah ini mendapatkan kebijakan lingkup operasi.
+Perintah ini mendapatkan kebijakan cakupan operasi.
 
-### Contoh 5: Dapatkan kebijakan lingkup Penyewa dalam format RawXml
+### Contoh 5: Mendapatkan kebijakan cakupan Penyewa dalam format RawXml
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementPolicy -Context $apimContext -Format rawxml
@@ -122,13 +125,13 @@ Get-AzApiManagementPolicy -Context $apimContext -Format rawxml
 </policies>
 ```
 
-Perintah ini mendapatkan kebijakan lingkup penyewa dalam format escaped Non-Xml.
+Perintah ini mendapatkan kebijakan cakupan penyewa dalam format escape Non-Xml.
 
 ## PARAMETERS
 
 ### -ApiId
-Menentukan pengidentifikasi API yang sudah ada.
-Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup API.
+Menentukan pengidentifikasi API yang ada.
+Jika Anda menentukan parameter ini, cmdlet mengembalikan kebijakan cakupan API.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh **PsApiManagementContext**.
+### -Context
+Menentukan **instans PsApiManagementContext**.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -187,7 +190,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -219,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-Menentukan pengidentifikasi operasi API yang sudah ada.
-Jika Anda menentukan parameter ini dengan *ApiId* , cmdlet mengembalikan kebijakan lingkup operasi.
+Menentukan pengidentifikasi operasi API yang ada.
+Jika Anda menentukan parameter ini dengan *ApiId* , cmdlet mengembalikan kebijakan cakupan operasi.
 
 ```yaml
 Type: System.String
@@ -235,8 +238,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan pengidentifikasi produk yang sudah ada.
-Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan lingkup produk.
+Menentukan pengidentifikasi produk yang ada.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan cakupan produk.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -SaveAs
 Menentukan jalur file untuk menyimpan hasilnya.
-Jika Anda tidak menentukan parameter ini, hasilnya akan disalurkan sebagai sengatan.
+Jika Anda tidak menentukan parameter ini, hasilnya disalurkan sebagai sengatan.
 
 ```yaml
 Type: System.String
@@ -266,8 +269,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

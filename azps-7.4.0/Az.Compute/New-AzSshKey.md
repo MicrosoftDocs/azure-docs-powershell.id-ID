@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azss
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSshKey.md
-ms.openlocfilehash: f75255d889a0612e1159b7c70c990e32e6018fc4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a9ec1ef8ad2b3614647464e882ff8311261e1e1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231075"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623226"
 ---
 # New-AzSshKey
 
 ## SYNOPSIS
-Membuat sumber daya Kunci Publik SSH.
+Membuat sumber daya Kunci Umum SSH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSshKey -ResourceGroupName <String> -Name <String> [-PublicKey <String>]
 ```
 
 ## DESCRIPTION
-Membuat sumber daya Kunci Publik SSH.
+Membuat sumber daya Kunci Umum SSH.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Membuat sumber daya Kunci Publik SSH.
 New-AzSshKey -ResourceGroupName "testRG" -Name "sshkey1" -PublicKey $publicKey
 ```
 
-Membuat sumber daya Kunci SSH dengan kunci publik yang disediakan. 
+Membuat sumber daya Kunci SSH dengan menyediakan kunci umum. 
 
 ### Contoh 2
 ```powershell
@@ -60,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama sumber daya Kunci Publik Ssh untuk didapatkan.
+### -Name
+Menentukan nama sumber daya Kunci Umum Ssh yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: True
 ```
 
 ### -PublicKey
-Nilai Kunci Publik.
+Nilai Kunci Umum.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

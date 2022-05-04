@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerRecommendedAction.md
-ms.openlocfilehash: e859fbdbdfb2a777b73e3bded177b7bbb4e61138
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 813cfe545b32f99000623c6d544e1db13a4cc6b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307467"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639690"
 ---
 # Get-AzSqlServerRecommendedAction
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Server Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverrecommendedaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzSqlServerRecommendedAction [-RecommendedActionName <String>] -ServerName <
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzSqlServerRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Server Advisor.
+Cmdlet **Get-AzSqlServerRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Server Advisor.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar semua tindakan yang direkomendasikan untuk Penasihat tertentu
+### Contoh 1: Mendapatkan daftar semua tindakan yang direkomendasikan untuk Advisor tertentu
 ```powershell
 Get-AzSqlServerRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex"
 ```
@@ -124,9 +127,9 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan untuk penasihat SQL Server bernama CreateIndex yang tersedia untuk server bernama wi-runner-australia-east.
+Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan untuk SQL Server Advisor bernama CreateIndex yang tersedia untuk server bernama wi-runner-australia-east.
 
-### Contoh 2: Dapatkan satu tindakan yang direkomendasikan untuk Penasihat
+### Contoh 2: Mendapatkan satu tindakan yang direkomendasikan untuk Advisor
 ```powershell
 Get-AzSqlServerRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex" -RecommendedActionName 
 IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893
@@ -163,12 +166,12 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 dari Penasihat bernama CreateIndex.
+Perintah ini mendapatkan tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 dari Advisor bernama CreateIndex.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang meminta tindakan cmdlet ini.
+Menentukan nama advisor yang cmdlet ini meminta tindakan.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActionName
-Menentukan nama tindakan yang disarankan yang didapat cmdlet ini.
+Menentukan nama tindakan yang direkomendasikan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya server yang memuat server ini.
+Menentukan nama grup sumber daya server yang berisi server ini.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server tempat Penasihat berada.
+Menentukan nama server tempat Advisor berada.
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -254,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlServerRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat, rekomendasi
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

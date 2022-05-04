@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: 15ef2e289e3d4ecf031ef8f43e9db9948b171742
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dba9e4f49084f181d9c4ec6efda07fe0780d982d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171675"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623190"
 ---
 # Set-AzVMPlan
 
 ## SYNOPSIS
-Mengatur informasi rencana Marketplace di mesin virtual.
+Mengatur informasi paket Marketplace pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Set-AzVMPlan [-VM] <PSVirtualMachine> [-Name] <String> [[-Product] <String>] [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMPlan** mengatur informasi rencana Marketplace Azure untuk mesin virtual.
-Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan dengan menggunakan portal Azure.
+Cmdlet **Set-AzVMPlan** mengatur informasi rencana Marketplace Azure untuk komputer virtual.
+Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses terprogram harus diaktifkan atau komputer virtual harus disebarkan dengan menggunakan portal Azure.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama gambar dari Marketplace.
 Ini adalah nilai yang sama yang dikembalikan oleh cmdlet Get-AzVMImageSku.
 Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Marketplace Azure dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan penerbit gambar.
-Anda bisa menemukan informasi ini dengan menggunakan cmdlet Get-AzVMImagePublisher.
+Anda dapat menemukan informasi ini dengan menggunakan cmdlet Get-AzVMImagePublisher.
 
 ```yaml
 Type: System.String
@@ -125,9 +128,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual untuk mengatur rencana Marketplace.
-Anda dapat menggunakan cmdlet Get-AzVM untuk mendapatkan objek mesin virtual.
-Anda dapat menggunakan cmdlet New-AzVMConfig untuk membuat objek mesin virtual.
+Menentukan objek komputer virtual untuk mengatur paket Marketplace.
+Anda dapat menggunakan cmdlet Get-AzVM untuk mendapatkan objek komputer virtual.
+Anda dapat menggunakan cmdlet New-AzVMConfig untuk membuat objek komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -158,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 

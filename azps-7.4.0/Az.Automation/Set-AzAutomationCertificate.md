@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
-ms.openlocfilehash: 10499f38d1ea191efd3f21ffbf8780b9095e038c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05a544efbbca4d64e2dbc8235d393721ea292710
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750924"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639223"
 ---
 # Set-AzAutomationCertificate
 
 ## SYNOPSIS
-Mengubah konfigurasi sertifikat Otomatisasi.
+Memodifikasi konfigurasi sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzAutomationCertificate [-Name] <String> [-Description <String>] [-Password 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationCertificate** mengubah konfigurasi sertifikat dalam Azure Automation.
+Cmdlet **Set-AzAutomationCertificate** memodifikasi konfigurasi sertifikat dalam Azure Automation.
 
 ## EXAMPLES
 
@@ -37,16 +40,16 @@ PS C:\>$Password = ConvertTo-SecureString -String "Password" -AsPlainText -Force
 PS C:\> Set-AzAutomationCertificate -AutomationAccountName "Contos17" -Name "ContosoCertificate" -Path "./cert.pfx" -Password $Password -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
+Perintah pertama mengonversi kata sandi teks biasa menjadi string aman dengan menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam variabel $Password.
-Perintah kedua mengubah sertifikat bernama ContosoCertificate.
-Perintah menggunakan kata sandi yang disimpan di $Password.
+Perintah kedua memodifikasi sertifikat bernama ContosoCertificate.
+Perintah menggunakan kata sandi yang disimpan dalam $Password.
 Perintah menentukan nama akun dan jalur file yang diunggahnya.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah sertifikat.
+Menentukan nama akun Automation yang cmdlet ini memodifikasi sertifikat.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dapat diekspor
-Menentukan apakah sertifikat bisa diekspor.
+Menentukan apakah sertifikat dapat diekspor.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat yang diubah cmdlet ini.
 
 ```yaml
@@ -120,8 +123,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Password
-Menentukan kata sandi untuk berkas sertifikat.
+### -Kata sandi
+Menentukan kata sandi untuk file sertifikat.
 
 ```yaml
 Type: System.Security.SecureString
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah sertifikat.
+Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi sertifikat.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

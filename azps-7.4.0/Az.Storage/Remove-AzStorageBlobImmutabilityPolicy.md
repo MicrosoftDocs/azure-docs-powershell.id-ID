@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlobImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlobImmutabilityPolicy.md
-ms.openlocfilehash: 60598ab090785576264972febfff155428ad0d9e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91d17d26f6553b0957573226020c68e23499319f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670752"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635282"
 ---
 # Remove-AzStorageBlobImmutabilityPolicy
 
 ## SYNOPSIS
 Menghapus ImmutabilityPolicy dari blob Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageblobimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ Remove-AzStorageBlobImmutabilityPolicy -BlobBaseClient <BlobBaseClient> [-TagCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageBlobImmutabilityPolicy** menghapus kebijakan kekebalan Storage blob.
+Cmdlet **Remove-AzStorageBlobImmutabilityPolicy** menghapus kebijakan kekekalan blob Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kebijakan keabadian blob Storage.
+### Contoh 1: Menghapus kebijakan kekekalan blob Storage.
 ```
 PS C:\> $blob = Remove-AzStorageBlobImmutabilityPolicy -Container $containerName -Blob $blobname  
 
@@ -58,7 +61,7 @@ ExpiresOn PolicyMode
 --------- ----------
 ```
 
-Perintah ini menghapus ImmutabilityPolicy dari blob Storage, lalu memperlihatkan hasilnya.
+Perintah ini menghapus ImmutabilityPolicy dari blob Storage, lalu menampilkan hasilnya.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

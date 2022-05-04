@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
-ms.openlocfilehash: 3e4e1cba3d6bdbf3dc3d6201dd0e328d62104232
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d292a46fd1bddd7163d9e207628435a27191cf05
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665170"
 ---
 # Set-AzCdnOriginGroup
 
 ## SYNOPSIS
 Memperbarui grup asal CDN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzCdnOriginGroup -CdnOriginGroup <PSOriginGroup> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Set-AzCdnOriginGroup akan memperbarui grup asal yang ditentukan dalam titik akhir tertentu. 
+Set-AzCdnOriginGroup akan memperbarui grup asal yang ditentukan dalam titik akhir yang diberikan. 
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Set-AzCdnOriginGroup akan memperbarui grup asal yang ditentukan dalam titik akhi
 Set-AzCdnOriginGroup -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -OriginGroupName $originGroupName -OriginId $originIds -ProbeIntervalInSeconds $probeInterval
 ```
 
-Cmdlet ini akan memperbarui properti ProbeIntervalInSeconds dalam grup origin. 
+Cmdlet ini akan memperbarui properti ProbeIntervalInSeconds di grup asal. 
 
 ## PARAMETERS
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeProtocol
-Protokol untuk digunakan untuk pemeriksaan kesehatan.
+Protokol yang digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -213,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

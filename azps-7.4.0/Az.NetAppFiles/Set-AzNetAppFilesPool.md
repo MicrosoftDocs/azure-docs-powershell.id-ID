@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesPool.md
-ms.openlocfilehash: d5aa0cdda9b194c4167aef1c04c2d01605e8c894
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b14faf9f4b3cd0f6135ca8df22ee5385c9ef940b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680076"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652468"
 ---
 # Set-AzNetAppFilesPool
 
 ## SYNOPSIS
-Memperbarui Kumpulan Kapasitas Azure NetApp Files (ANF) dengan kumpulan data baru. 
+Memperbarui Kumpulan Kapasitas Azure NetApp Files (ANF) dengan himpunan data baru. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzNetAppFilesPool -Name <String> -PoolSize <Int64> -ServiceLevel <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzNetFilesPool** mengubah Sebuah Capacity Pool ANF.
+Cmdlet **Set-AzNetAppFilesPool** memodifikasi Kumpulan Kapasitas ANF.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Akun untuk objek pool baru
+Akun untuk objek kumpulan baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoolAccess
-Jika diaktifkan (true) kumpulan dapat berisi volume keren yang diaktifkan Access.
+Jika diaktifkan (benar) kumpulan dapat berisi volume yang diaktifkan Akses dingin.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan ANF
 
 ```yaml
@@ -160,8 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -QosType
-Jenis qos kolam renang.
-Nilai yang memungkinkan termasuk: 'Otomatis', 'Manual'
+Jenis qos dari kumpulan.
+Nilai yang mungkin termasuk: 'Otomatis', 'Manual'
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceLevel
-Tingkat layanan kolam renang ANF. Nilai yang mungkin "Standar", "Premium", "Ultra"
+Tingkat layanan kumpulan ANF. Kemungkinan nilai "Standar", "Premium", "Ultra"
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya
+Hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -235,8 +238,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

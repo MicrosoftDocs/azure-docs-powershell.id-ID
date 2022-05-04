@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOperation.md
-ms.openlocfilehash: 11b52fa3251fc35236785a7370f2f518186d71d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c7695065294eab006017ce4a538810af0f0fe0c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640842"
 ---
 # New-AzApiManagementOperation
 
 ## SYNOPSIS
 Membuat operasi manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan dilampirkan ke revisi api aktif saat ini.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan dilampirkan ke revisi api yang saat ini aktif.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Method
+### -Metode
 Menentukan metode HTTP dari operasi manajemen API baru.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tampilan operasi manajemen API baru.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Request
+### -Permintaan
 Menentukan detail operasi manajemen API.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameters
-Menentukan array parameter yang ditentukan dalam *UrlTemplate* parameter.
+Menentukan array parameter yang ditentukan dalam parameter *UrlTemplate*.
 Jika Anda tidak menentukan parameter ini, nilai default akan dihasilkan berdasarkan *UrlTemplate*.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

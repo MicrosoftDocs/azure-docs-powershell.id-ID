@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubEdgeModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubEdgeModule.md
-ms.openlocfilehash: df57e06ae7be8568c20423a17a11df67176b99f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd814051aaac9437c44f9c5a92c8af5614012588
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315495"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699800"
 ---
 # Set-AzIotHubEdgeModule
 
 ## SYNOPSIS
-Atur modul tepi pada perangkat tepi tunggal.
+Atur modul edge pada satu perangkat edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubedgemodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzIotHubEdgeModule [-ResourceId] <String> -DeviceId <String> -ModulesContent
 
 ## DESCRIPTION
 Menerapkan konten konfigurasi modul yang disediakan ke perangkat edge yang ditentukan.
-Catatan: Setelah eksekusi, perintah akan menghasilkan kumpulan modul yang diterapkan ke perangkat.
+Catatan: Setelah eksekusi, perintah akan menghasilkan pengumpulan modul yang diterapkan ke perangkat.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-Id Perangkat Target Edge.
+Id Perangkat Azure Target Edge.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

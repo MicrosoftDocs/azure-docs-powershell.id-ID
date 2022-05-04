@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlContainer.md
-ms.openlocfilehash: 7dd9e7a962b4d0e16d430af414a9eb787bcc6948
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7b909073e1f4eb510624f4ebb90cb4b79f4be459
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229347"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640518"
 ---
 # Update-AzCosmosDBSqlContainer
 
 ## SYNOPSIS
-Memperbarui CosmosDB Sql Container. Melakukan operasi patch sisi klien dengan membaca Kontainer yang sudah ada.
+Memperbarui Kontainer Sql CosmosDB. Melakukan operasi patch sisi klien dengan membaca Kontainer yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Update-AzCosmosDBSqlContainer [-Name <String>] [-IndexingPolicy <PSSqlIndexingPo
 ```
 
 ## DESCRIPTION
-Memperbarui CosmosDB Sql Container. Melakukan operasi patch sisi klien dengan membaca Kontainer yang sudah ada.
+Memperbarui Kontainer Sql CosmosDB. Melakukan operasi patch sisi klien dengan membaca Kontainer yang ada.
 
 ## EXAMPLES
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicy
-ConflictResolutionPolicy Object tipe PSSqlConflictResolutionPolicy, ketika disediakan ini diatur sebagai ConflictResolutionPolicy kontainer.
+Objek ConflictResolutionPolicy jenis PSSqlConflictResolutionPolicy, ketika disediakan ini ditetapkan sebagai ConflictResolutionPolicy kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlConflictResolutionPolicy
@@ -136,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyMode
-Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
+Dapat memiliki nilai: LastWriterWins, Custom, Manual.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter akan diabaikan.
 
 ```yaml
 Type: System.String
@@ -152,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyPath
-Untuk disediakan ketika tipenya adalah LastWriterWins.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
+Untuk disediakan ketika jenisnya adalah LastWriterWins.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter akan diabaikan.
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyProcedure
-Untuk disediakan saat tipenya adalah kustom.
-Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter tersebut diabaikan.
+Untuk disediakan ketika jenisnya adalah kustom.
+Jika disediakan bersama dengan parameter ConflictResolutionPolicy, parameter akan diabaikan.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -IndexingPolicy
-Objek Kebijakan Pengindeksan tipe Microsoft.Azure.Commands.CosmosDB.PSSqlIndexingPolicy.
+Objek Kebijakan Pengindeksan jenis Microsoft.Azure.Commands.CosmosDB.PSSqlIndexingPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlIndexingPolicy
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -243,7 +246,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontainer.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetResults
@@ -274,8 +277,8 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyKind
-Jenis algoritma yang digunakan untuk partisi.
-Nilai yang memungkinkan termasuk: 'Hash', 'Rentang'
+Jenis algoritma yang digunakan untuk pemartisian.
+Nilai yang mungkin termasuk: 'Hash', 'Range'
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyPath
-Jalur Kunci Partisi, mis., '/address/zipcode'.
+Jalur Kunci Partisi, misalnya, '/address/zipcode'.
 
 ```yaml
 Type: System.String[]
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput wadah SQL (RU/s).
+Throughput kontainer SQL (RU/dtk).
 Nilai defaultnya adalah 400.
 
 ```yaml
@@ -351,8 +354,8 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Ttl default dalam detik.
-Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
+Ttl default dalam hitungan detik.
+Jika nilai hilang atau diatur ke - 1, item tidak kedaluwarsa.
 Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueKeyPolicy
-Objek UniqueKeyPolicy tipe Microsoft.Azure.Commands.CosmosDB.PSSqlUniqueKeyPolicy.
+Objek UniqueKeyPolicy jenis Microsoft.Azure.Commands.CosmosDB.PSSqlUniqueKeyPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUniqueKeyPolicy
@@ -382,8 +385,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

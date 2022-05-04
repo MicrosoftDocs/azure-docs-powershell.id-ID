@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
-ms.openlocfilehash: 9118243f7a49f1e61f46e3bff28406026f2c8ac5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9d5ff812b77f66a0669c6838f0ca6112326e22b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064791"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640608"
 ---
 # Update-AzContainerRegistryManifest
 
 ## SYNOPSIS
-Perbarui manifes ACR. 
+Memperbarui manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,8 +37,8 @@ Update-AzContainerRegistryManifest -RepositoryName <String> -Tag <String> [-Dele
 ```
 
 ## DESCRIPTION
-Perbarui manifes ACR.
-Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true`
+Memperbarui manifes ACR.
+Untuk menggunakan cmdlet ini, silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true`
 Pertama.
 
 ## EXAMPLES
@@ -51,7 +54,7 @@ Registry                    ImageName Attributes
 registry.azurecr.io alpine    Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase
 ```
 
-Memperbarui atribut untuk manifest sha256:185518070891758909c9f839cf4ca393ee977ac378609f700f60a771a2dfe321 di bawah registri.
+Memperbarui atribut untuk manifes sha256:185518070891758909c9f839cf4ca393ee977ac378609f700f60a771a2dfe321 di bawah registri.
 
 ### Contoh 2
 ```powershell
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListEnabled
-Daftar diaktifkan.
+Daftar aktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Manifest
+### -Manifes
 Referensi manifes.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-nama Azure Container Registry.
+Nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama Penyimpanan.
+Nama Repositori.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteEnabled
-Aktifkan penulisan.
+Aktifkan tulis.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -203,8 +206,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteConnection.md
-ms.openlocfilehash: d54517942fc1521536f750d5d1dd4bbf4ec91ace
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ac542dd3d59eaa9f23f3e1bf61bed0b323d3a49
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679428"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650740"
 ---
 # Get-AzExpressRouteConnection
 
 ## SYNOPSIS
-Mendapatkan koneksi ExpressRoute berdasarkan nama atau mencantumkan semua koneksi ExpressRoute yang tersambung ke ExpressRouteGateway.
+Mendapatkan koneksi ExpressRoute berdasarkan nama atau mencantumkan semua koneksi ExpressRoute yang terhubung ke ExpressRouteGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzExpressRouteConnection -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan koneksi ExpressRoute berdasarkan nama atau mencantumkan semua koneksi ExpressRoute yang tersambung ke ExpressRouteGateway.
+Mendapatkan koneksi ExpressRoute berdasarkan nama atau mencantumkan semua koneksi ExpressRoute yang terhubung ke ExpressRouteGateway.
 
 ## EXAMPLES
 
@@ -85,11 +88,11 @@ RoutingConfiguration               : {
                                      }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan ExpressRouteSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan ExpressRouteSite di US Barat di grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Setelah gateway dibuat, gateway tersambung ke sirkuit ExpressRoute lokal menggunakan perintah New-AzExpressRouteConnection.
 
-Lalu ia mendapatkan koneksi menggunakan nama koneksi.
+Kemudian mendapatkan koneksi menggunakan nama koneksi.
 
 ### Contoh 2
 
@@ -149,7 +152,7 @@ RoutingConfiguration               : {
                                      }
 ```
 
-Perintah ini akan mendapatkan semua Connections di ExpressRoute "testExpressRoutegw" yang dimulai dengan "test"
+Perintah ini akan mendapatkan semua Koneksi di ExpressRoute "testExpressRoutegw" yang dimulai dengan "uji"
 
 ## PARAMETERS
 
@@ -198,7 +201,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: True
 ```
 
 ### -ParentResourceId
-Id sumber daya dari induk ExpressRouteGateway untuk koneksi ini.
+Id sumber daya expressRouteGateway induk untuk koneksi ini.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

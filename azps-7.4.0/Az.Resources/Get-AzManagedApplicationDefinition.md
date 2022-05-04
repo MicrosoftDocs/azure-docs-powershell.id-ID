@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplicationDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplicationDefinition.md
-ms.openlocfilehash: 1d18fe46ef448027b13e12c5814b2e06bf1358e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0f5d09262fa2bd35dfcd4ef23d4fb9c53004b932
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599018"
 ---
 # Get-AzManagedApplicationDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi aplikasi terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagedapplicationdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,14 +39,14 @@ Cmdlet **Get-AzManagedApplicationDefinition** mendapatkan definisi aplikasi terk
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua definisi aplikasi yang dikelola di bawah grup sumber daya
+### Contoh 1: Mendapatkan semua definisi aplikasi terkelola di bawah grup sumber daya
 ```powershell
 Get-AzManagedApplicationDefinition -ResourceGroupName "MyRG"
 ```
 
 Perintah ini mendapatkan definisi aplikasi terkelola di bawah grup sumber daya "MyRG"
 
-### Contoh 2: Dapatkan definisi aplikasi terkelola
+### Contoh 2: Mendapatkan definisi aplikasi terkelola
 ```powershell
 Get-AzManagedApplicationDefinition -ResourceGroupName "MyRG" -Name "myManagedAppDef"
 ```
@@ -53,8 +56,8 @@ Perintah ini mendapatkan definisi aplikasi terkelola "myManagedAppDef" di bawah 
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama definisi aplikasi yang dikelola.
+### -Name
+Nama definisi aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

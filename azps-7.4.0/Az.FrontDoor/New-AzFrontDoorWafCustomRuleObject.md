@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafCustomRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafCustomRuleObject.md
-ms.openlocfilehash: bebe1fc6e14370f99d09f000c749a2237a05adea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 39b663ac4b054a0b501ae83d058d8f1d415cac4d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683766"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601196"
 ---
 # New-AzFrontDoorWafCustomRuleObject
 
 ## SYNOPSIS
-Buat Objek CustomRule untuk pembuatan kebijakan WAF
+Membuat Objek CustomRule untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafcustomruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorWafCustomRuleObject -Name <String> -RuleType <String> -MatchCondi
 ```
 
 ## DESCRIPTION
-Buat Objek CustomRule untuk pembuatan kebijakan WAF
+Membuat Objek CustomRule untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Membuat Objek CustomRule
 ## PARAMETERS
 
 ### -Tindakan
-Tipe Tindakan.
+Jenis Tindakan.
 Nilai yang mungkin termasuk: 'Izinkan', 'Blokir', 'Log'
 
 ```yaml
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Status Diaktifkan. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'.
+Status Diaktifkan. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -RateLimitThreshold
-Ambang batas tarif
+Ambang batas laju
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -RuleType
-Tipe aturan.
-Nilai yang memungkinkan termasuk: 'MatchRule', 'RateLimitRule'
+Jenis aturan.
+Nilai yang mungkin termasuk: 'MatchRule', 'RateLimitRule'
 
 ```yaml
 Type: System.String
@@ -183,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

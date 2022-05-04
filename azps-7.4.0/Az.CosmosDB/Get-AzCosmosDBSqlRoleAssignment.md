@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: 8befa29fd12d700aaa2599a7d6c1e2e865160e75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf6f1d42ebf99c97cb7080f8edd52a38f646fecb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686196"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595024"
 ---
 # Get-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
-Mendapatkan Tugas Peran CosmosDB Sql.
+Mendapatkan Penetapan Peran CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlRoleAssignment [-Id <String>] -ParentObject <PSDatabaseAccountG
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzCosmosDBSqlRoleAssignment mendapatkan daftar semua Tugas Peran CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Tugas Peran CosmosDB Sql untuk ResourceGroupName, AccountName, Id. Id tertentu dapat sepenuhnya memenuhi syarat atau hanya Guid.
+Cmdlet Get-AzCosmosDBSqlRoleAssignment mendapatkan daftar semua Penetapan Peran CosmosDB Sql yang ada untuk ResourceGroupName, AccountName, dan mendapatkan satu CosmosDB Sql Role Assignment untuk ResourceGroupName, AccountName, Id. Id tertentu dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
 
@@ -126,11 +129,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlRoleAssignmentGetResults

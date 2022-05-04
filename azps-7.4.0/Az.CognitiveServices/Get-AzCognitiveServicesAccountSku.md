@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountSku.md
-ms.openlocfilehash: 95908c79565ddd304e9809f077c74ce75bf91e77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a2338b444c6860f1f56cdf4b6f1e6a6308a88968
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006489"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634688"
 ---
 # Get-AzCognitiveServicesAccountSku
 
 ## SYNOPSIS
 Mendapatkan SKU yang tersedia untuk akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzCognitiveServicesAccountSku [-Type <String>] [-Location <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCognitiveServicesAccountSku** mendapatkan SKU yang tersedia untuk akun Cognitive Services.
-SKU adalah paket tingkat untuk sebuah akun.
-Ini menentukan harga, batas panggilan, dan tarif untuk akun tersebut.
-F0 SKU adalah tingkat gratis.
-Tingkat berbayar mencakup S0, S1, S2, dan seterusnya.
+Cmdlet **Get-AzCognitiveServicesAccountSku mendapatkan SKU** yang tersedia untuk akun Cognitive Services.
+SKU adalah paket tingkat untuk akun.
+Ini mendefinisikan harga, batas panggilan, dan tarif untuk akun.
+SKU F0 adalah tingkat gratis.
+Tingkat berbayar termasuk S0, S1, S2, dan sebagainya.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Akun Layanan Kognitif.
+Lokasi Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -78,8 +81,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe Akun Layanan Kognitif.
+### -Type
+Jenis Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

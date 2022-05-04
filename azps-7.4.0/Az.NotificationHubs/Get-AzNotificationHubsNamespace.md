@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespace.md
-ms.openlocfilehash: 92de3d2c45bd44acee64bda0fe3676c6a3a212c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b8b25cd5566fae475959a870f36a476c39a420c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803898"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616604"
 ---
 # Get-AzNotificationHubsNamespace
 
 ## SYNOPSIS
-Mendapatkan informasi tentang ruang nama hub pemberitahuan.
+Mendapatkan informasi tentang namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,37 +29,37 @@ Get-AzNotificationHubsNamespace [[-ResourceGroup] <String>] [[-Namespace] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNotificationHubsNamespace** mendapatkan informasi tentang ruang nama hub pemberitahuan.
-Cmdlet ini menyediakan opsi untuk mendapatkan informasi untuk semua ruang nama Anda, informasi tentang ruang nama yang ditetapkan ke grup sumber daya tertentu; atau untuk mengembalikan informasi tentang ruang nama tertentu.
-Ruang nama adalah wadah logis yang membantu Anda menata dan mengelola hub pemberitahuan.
-Anda harus memiliki setidaknya satu ruang nama hub pemberitahuan: semua hub pemberitahuan harus ditetapkan ke ruang nama.
-Ruang nama tunggal dapat menampung beberapa hub yang berarti Anda mungkin hanya memerlukan satu ruang nama di organisasi Anda.
-Namun, Anda juga bisa memiliki beberapa ruang nama untuk menata hub Anda dengan lebih baik, atau untuk memberikan izin individu tertentu untuk mengelola subset hub yang dipilih.
-Cmdlet **Get-AzNotificationHubsNamespace** mengembalikan informasi dasar tentang ruang nama itu sendiri.
-Untuk mendapatkan informasi tentang aturan otorisasi yang terkait dengan ruang nama, gunakan Get-AzNotificationHubsNamespaceAuthorizationRules.
+**Cmdlet Get-AzNotificationHubsNamespace** mendapatkan informasi tentang namespace hub pemberitahuan.
+Cmdlet ini memberi Anda opsi untuk mendapatkan informasi untuk semua namespace Anda, informasi tentang namespace yang ditetapkan ke grup sumber daya tertentu; atau untuk mengembalikan informasi tentang namespace tertentu.
+Namespace adalah kontainer logis yang membantu Anda mengatur dan mengelola hub pemberitahuan Anda.
+Anda harus memiliki setidaknya satu namespace hub pemberitahuan: semua hub pemberitahuan harus ditetapkan ke namespace layanan.
+Satu namespace layanan dapat menampung beberapa hub yang berarti Anda mungkin hanya memerlukan satu namespace layanan di organisasi Anda.
+Namun, Anda juga dapat memiliki beberapa namespace untuk mengatur hub Anda dengan lebih baik, atau untuk memberikan izin individu tertentu untuk mengelola subset hub yang dipilih.
+Cmdlet **Get-AzNotificationHubsNamespace** mengembalikan informasi dasar tentang namespace itu sendiri.
+Untuk mendapatkan informasi tentang aturan otorisasi yang terkait dengan namespace, gunakan Get-AzNotificationHubsNamespaceAuthorizationRules.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk semua ruang nama hub pemberitahuan
+### Contoh 1: Mendapatkan informasi untuk semua namespace hub pemberitahuan
 ```powershell
 Get-AzNotificationHubsNamespace
 ```
 
-Perintah ini mengembalikan informasi untuk semua ruang nama hub pemberitahuan Anda.
+Perintah ini mengembalikan informasi untuk semua namespace hub pemberitahuan Anda.
 
-### Contoh 2: Mendapatkan informasi untuk ruang nama hub pemberitahuan tunggal
+### Contoh 2: Mendapatkan informasi untuk namespace hub pemberitahuan tunggal
 ```powershell
 Get-AzNotificationHubsNamespace -Namespace "ContosoNamespace"
 ```
 
-Perintah ini mendapatkan informasi untuk ruang nama hub pemberitahuan tunggal: ContosoNamespace.
+Perintah ini mendapatkan informasi untuk namespace hub pemberitahuan tunggal: ContosoNamespace.
 
-### Contoh 3: Mendapatkan informasi untuk semua hub pemberitahuan yang ditetapkan ke ruang nama tertentu
+### Contoh 3: Mendapatkan informasi untuk semua hub pemberitahuan yang ditetapkan ke namespace tertentu
 ```powershell
 Get-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini mendapatkan informasi untuk semua ruang nama hub pemberitahuan yang ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini mendapatkan informasi untuk semua namespace hub pemberitahuan yang ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ## PARAMETERS
 
@@ -76,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan nama unik untuk ruang nama.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan nama unik untuk namespace layanan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -92,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Menentukan grup sumber daya tempat namespace ditetapkan.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

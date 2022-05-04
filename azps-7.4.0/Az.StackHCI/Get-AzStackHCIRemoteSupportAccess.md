@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportAccess.md
-ms.openlocfilehash: 1eff9634c0e9045871519fc7215b6fff0729e1d2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 322e919b9bb7e29db8a79aef208307b51992d039
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671418"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666718"
 ---
 # Get-AzStackHCIRemoteSupportAccess
 
 ## SYNOPSIS
 Mendapatkan Akses Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/get-azstackhciremotesupportaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeExpired
-Menunjukkan apakah akan menyertakan entri yang kedaluwarsa sebelumnya.
+Menunjukkan apakah akan menyertakan entri kedaluwarsa sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

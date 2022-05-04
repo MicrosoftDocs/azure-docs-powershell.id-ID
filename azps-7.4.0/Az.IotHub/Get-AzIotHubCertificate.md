@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
-ms.openlocfilehash: 3f9b97dff152311257a51c42ca432941378b9b3d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9badf5e621776d268cc8ddc70d848e579c22c173
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122013"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622020"
 ---
 # Get-AzIotHubCertificate
 
 ## SYNOPSIS
-Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Azure IoT Hub. 
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terkandung dalam Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubCertificate [-ResourceId] <String> [-CertificateName <String>]
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
+Untuk penjelasan terperinci tentang sertifikat CA di Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

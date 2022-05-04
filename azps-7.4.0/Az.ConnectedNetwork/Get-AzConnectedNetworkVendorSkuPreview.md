@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorSkuPreview.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorSkuPreview.md
-ms.openlocfilehash: 2cf2ea9395032ead26fabc77d0f8417ecd7029e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5333a8756e18e8b74a85fb09bb31ab64fd242c25
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876924"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676114"
 ---
 # Get-AzConnectedNetworkVendorSkuPreview
 
 ## SYNOPSIS
 Mendapatkan informasi pratinjau sku vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkvendorskupreview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedNetworkVendorSkuPreview -SkuName <String> -VendorName <String> [-
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzConnectedNetworkVendorSkuPreview -PreviewSubscription <String> -SkuName <String> -VendorName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -60,7 +63,7 @@ Type                         : microsoft.hybridnetwork/vendors/vendorskus/previe
 
 ```
 
-Mendapatkan informasi pratinjau vendor sku mySku dengan myVendor vendor untuk langganan yang ditentukan.
+Mendapatkan informasi pratinjau sku vendor mySku dengan vendor myVendor untuk langganan yang ditentukan.
 
 ### Contoh 2: Get-AzConnectedNetworkVendorSkuPreview melalui Identitas
 ```powershell
@@ -81,7 +84,7 @@ Type                         : microsoft.hybridnetwork/vendors/vendorskus/previe
 
 ```
 
-Membuat identitas dengan SkuName mySku, VendorName myVendor, pratinjau id langganan dan langganan. Mendapatkan informasi pratinjau sku vendor ini menggunakan identitas ini.
+Membuat identitas dengan SkuName mySku, VendorName myVendor, langganan pratinjau, dan id langganan. Mendapatkan informasi pratinjau sku vendor ini menggunakan identitas ini.
 
 ## PARAMETERS
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama vendor sku.
+Nama sku vendor.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -198,11 +201,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[DeviceName <String>]`: Nama sumber daya perangkat.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+  - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
   - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

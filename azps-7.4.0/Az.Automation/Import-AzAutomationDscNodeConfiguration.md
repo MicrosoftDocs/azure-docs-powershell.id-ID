@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: 4cce413c4e251a1af45d73cfed3564969e0b7c2d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ff8e6d21e040c3eb2e3dd6df83694dcd5520ea0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751194"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622794"
 ---
 # Import-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
-Mengimpor dokumen MOF sebagai konfigurasi simpul DSC dalam Otomatisasi.
+Mengimpor dokumen MOF sebagai konfigurasi simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationdscnodeconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,28 +35,28 @@ Tentukan jalur file .mof.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor konfigurasi simpul DSC ke Dalam Otomatisasi
+### Contoh 1: Mengimpor konfigurasi simpul DSC ke Automation
 ```
 PS C:\>Import-AzAutomationDscNodeConfiguration -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -ConfigurationName "ContosoConfiguration" -Path "C:\DSC\webserver.mof" -Force
 ```
 
 Perintah ini mengimpor konfigurasi simpul DSC dari file bernama webserver.mof ke akun Automation bernama Contoso17, di bawah konfigurasi DSC ContosoConfiguration.
 Perintah menentukan parameter *Paksa* .
-Jika ada konfigurasi node DSC bernama ContosoConfiguration.webserver, perintah ini akan menggantikannya.
+Jika ada konfigurasi simpul DSC yang sudah ada bernama ContosoConfiguration.webserver, perintah ini menggantikannya.
 
-### Contoh 2: Impor konfigurasi node DSC ke Dalam Otomatisasi dan buat versi build baru dan tidak menimpa NodeConfiguration yang sudah ada.
+### Contoh 2: Impor konfigurasi simpul DSC ke Automation dan buat versi build baru dan tidak timpa NodeConfiguration yang ada.
 ```
 PS C:\>Import-AzAutomationDscNodeConfiguration -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -ConfigurationName "ContosoConfiguration" -Path "C:\DSC\webserver.mof" -IncrementNodeConfigurationBuild
 ```
 
 Perintah ini mengimpor konfigurasi simpul DSC dari file bernama webserver.mof ke akun Automation bernama Contoso17, di bawah konfigurasi DSC ContosoConfiguration.
 Perintah menentukan parameter *Paksa* .
-Jika ada konfigurasi node DSC yang sudah ada bernama ContosoConfiguration.webserver, perintah ini menambahkan versi build baru dengan nama ContosoConfiguration[2].webserver.
+Jika ada konfigurasi simpul DSC yang sudah ada bernama ContosoConfiguration.webserver, perintah ini menambahkan versi build baru dengan nama ContosoConfiguration[2].webserver.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor konfigurasi simpul DSC.
+Menentukan nama akun Automation tempat cmdlet ini mengimpor konfigurasi simpul DSC.
 
 ```yaml
 Type: System.String
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi DSC dalam Otomatisasi untuk digunakan sebagai ruang nama dan wadah bagi konfigurasi simpul untuk diimpor.
+Menentukan nama konfigurasi DSC di Automation untuk digunakan sebagai namespace layanan dan kontainer untuk diimpor oleh konfigurasi simpul.
 
 ```yaml
 Type: System.String
@@ -97,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan konfigurasi simpul DSC yang sudah ada dalam Otomatisasi.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan konfigurasi simpul DSC yang ada di Automation.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncrementNodeConfigurationBuild
-Membuat versi build Konfigurasi Node baru.
+Membuat versi build Konfigurasi Simpul baru.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengimpor konfigurasi simpul DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini mengimpor konfigurasi simpul DSC.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

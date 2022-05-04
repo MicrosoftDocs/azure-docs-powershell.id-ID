@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/jo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Join-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Join-AzDataLakeStoreItem.md
-ms.openlocfilehash: 933f831084ad900e73129dc012e37a0c07a654b7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3e2d47a73b913ee7efd8029bd3383f74650fa74
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063783"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683580"
 ---
 # Join-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Menggabungkan satu atau beberapa file untuk membuat satu file di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/join-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ Cmdlet **Join-AzDataLakeStoreItem** menggabungkan satu atau beberapa file untuk 
 Join-AzDataLakeStoreItem -AccountName "ContosoADL" -Paths "/MyFiles/File01.txt","/MyFiles/File02.txt" -Destination "/MyFiles/CombinedFile.txt"
 ```
 
-Perintah ini menggabungkan File01.txt dan File02.txt untuk membuat file CombinedFile.txt.
+Perintah ini menggabungkan File01.txt dan File02.txt untuk membuat CombinedFile.txt file.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
-Menentukan jalur Penyimpanan Data Lake untuk item yang digabungkan, dimulai dengan direktori akar (/).
+### -Destination
+Menentukan jalur Data Lake Store untuk item yang digabungkan, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan array jalur Penyimpanan Data Lake dari file yang akan digabungkan, dimulai dengan direktori akar (/).
+Menentukan array jalur Data Lake Store dari file yang akan digabungkan, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance[]
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

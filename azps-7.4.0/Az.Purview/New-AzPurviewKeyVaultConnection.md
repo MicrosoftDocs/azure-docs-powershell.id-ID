@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewKeyVaultConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewKeyVaultConnection.md
-ms.openlocfilehash: 6125a2b9ad4641e8e3cd9bd0905fbb45cb96f316
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 413feabf0f0760072c6d9c2f8ba8090edbafc7c8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740826"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596138"
 ---
 # New-AzPurviewKeyVaultConnection
 
 ## SYNOPSIS
 Membuat instans koneksi brankas kunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewkeyvaultconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Buat koneksi brankas kunci bernama 'KeyVaultConnection2' di Purview.
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IAzureKeyVault
@@ -157,7 +160,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ISI <IAzureKeyVault>: .
+TUBUH <IAzureKeyVault>: .
   - `[BaseUrl <String>]`: 
   - `[Description <String>]`: 
 

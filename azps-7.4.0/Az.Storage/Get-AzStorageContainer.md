@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
-ms.openlocfilehash: b6497d67b1041da6038b2e5cbf4550b182de1a86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1eeff8b51c9d9468897322c7bc4efb308c08820f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864486"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668626"
 ---
 # Get-AzStorageContainer
 
 ## SYNOPSIS
-Mencantumkan wadah penyimpanan.
+Mencantumkan kontainer penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,25 +40,25 @@ Get-AzStorageContainer -Prefix <String> [-MaxCount <Int32>] [-ContinuationToken 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageContainer** mencantumkan wadah penyimpanan yang terkait dengan akun penyimpanan di Azure.
+Cmdlet **Get-AzStorageContainer** mencantumkan kontainer penyimpanan yang terkait dengan akun penyimpanan di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan wadah Azure Storage menurut nama
+### Contoh 1: Dapatkan kontainer Azure Storage berdasarkan nama
 ```
 PS C:\>Get-AzStorageContainer -Name container*
 ```
 
-Contoh ini menggunakan karakter wildcard untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
+Contoh ini menggunakan karakter kartubebas untuk mengembalikan daftar semua kontainer dengan nama yang dimulai dengan kontainer.
 
-### Contoh 2: Dapatkan kontainer Azure Storage menurut prefiks nama kontainer
+### Contoh 2: Dapatkan kontainer Azure Storage menurut awalan nama kontainer
 ```
 PS C:\>Get-AzStorageContainer -Prefix "container"
 ```
 
-Contoh ini menggunakan parameter *Prefiks* untuk mengembalikan daftar semua kontainer dengan nama yang dimulai dengan kontainer.
+Contoh ini menggunakan parameter *Awalan* untuk mengembalikan daftar semua kontainer dengan nama yang dimulai dengan kontainer.
 
-### Contoh 3: Wadah Azure Storage daftar, sertakan wadah yang dihapus
+### Contoh 3: Mencantumkan kontainer Azure Storage, sertakan kontainer yang dihapus
 ```
 PS C:\> $containers =  Get-AzStorageContainer -IncludeDeleted -Context $ctx 
 
@@ -85,15 +88,15 @@ ETag                           : "0x8D850D167059285"
 Metadata                       : {}
 ```
 
-Contoh ini mencantumkan semua wadah akun penyimpanan, termasuk wadah yang dihapus.
-Lalu perlihatkan properti kontainer yang dihapus, termasuk : DeletedOn, RemainingRetentionDays.
-Kontainer yang dihapus hanya akan ada setelah softdelete Container yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
+Contoh ini mencantumkan semua kontainer akun penyimpanan, termasuk kontainer yang dihapus.
+Kemudian tampilkan properti kontainer yang dihapus, termasuk : DeletedOn, RemainingRetentionDays.
+Kontainer yang dihapus hanya akan ada setelah softdelete Kontainer yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -109,9 +112,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -127,10 +130,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda bisa menggunakan cmdlet New-AzStorageContext.
-Izin kontainer tidak akan diambil ketika Anda menggunakan konteks penyimpanan yang dibuat dari SAS Token, karena izin kontainer kueri memerlukan izin kunci akun Storage.
+Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext.
+Izin kontainer tidak akan diambil saat Anda menggunakan konteks penyimpanan yang dibuat dari Token SAS, karena izin kontainer kueri memerlukan izin kunci akun Storage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDeleted
-Sertakan wadah yang dihapus, secara default wadah daftar tidak akan menyertakan kontainer yang dihapus
+Menyertakan kontainer yang dihapus, secara default, kontainer daftar tidak akan menyertakan kontainer yang dihapus
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,10 +207,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama wadah.
-Jika nama wadah kosong, cmdlet mencantumkan semua wadah.
-Jika tidak, daftar semua wadah yang cocok dengan nama yang ditentukan atau pola nama reguler.
+### -Name
+Menentukan nama kontainer.
+Jika nama kontainer kosong, cmdlet mencantumkan semua kontainer.
+Jika tidak, ini mencantumkan semua kontainer yang cocok dengan nama yang ditentukan atau pola nama reguler.
 
 ```yaml
 Type: System.String
@@ -221,9 +224,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Prefiks
-Menentukan prefiks yang digunakan dalam nama wadah atau wadah yang ingin Anda dapatkan.
-Anda dapat menggunakan ini untuk menemukan semua wadah yang dimulai dengan string yang sama, seperti "saya" atau "uji".
+### -Awalan
+Menentukan awalan yang digunakan dalam nama kontainer atau kontainer yang ingin Anda dapatkan.
+Anda dapat menggunakan ini untuk menemukan semua kontainer yang dimulai dengan string yang sama, seperti "my" atau "test".
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

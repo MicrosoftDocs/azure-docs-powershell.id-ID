@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTopology.md
-ms.openlocfilehash: f65cec3b2cff5425e152d4eff60b3fcf53c2c4dc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb502b6fd2feee312df98704224352754ce990bb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274419"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667078"
 ---
 # Get-AzSecurityTopology
 
 ## SYNOPSIS
 Mendapatkan daftar Topologi Keamanan pada langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritytopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzSecurityTopology -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Topologi keamanan secara otomatis ditemukan oleh Azure Security Center, gunakan cmdlet ini untuk melihat topologi keamanan.
+Topologi Keamanan secara otomatis ditemukan oleh Azure Security Center, gunakan cmdlet ini untuk melihat topologi keamanan.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ CalculatedDateTime: 03-Jun-20 3:03:48 PM
 TopologyResources:  /subscriptions/3eeab341-f466-499c-a8be-85427e154baf7612f869/resourceGroups/myService1/providers/Microsoft.Compute/virtualMachines/myvm
 ```
 
-Dapatkan topologi keamanan tertentu
+Mendapatkan topologi keamanan tertentu
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

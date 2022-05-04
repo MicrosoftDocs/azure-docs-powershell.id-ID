@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageAccountHierarchicalNamespaceUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageAccountHierarchicalNamespaceUpgrade.md
-ms.openlocfilehash: b6a4a8c70bbf0e2d17e51f430310631ff307a540
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3b7ffba57ca73afbc7c222874aaee951e9971fb5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670428"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635174"
 ---
 # Stop-AzStorageAccountHierarchicalNamespaceUpgrade
 
 ## SYNOPSIS
-Membatalkan tugas pemutakhiran HierarkiNamespace yang sedang berlangsung di akun penyimpanan.
+Membatalkan tugas peningkatan HierarchicalNamespace yang sedang berlangsung di akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/stop-azstorageaccounthierarchicalnamespaceupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,23 +35,23 @@ Stop-AzStorageAccountHierarchicalNamespaceUpgrade -InputObject <PSStorageAccount
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzStorageAccountHierarchicalNamespaceUpgrade** dapat membatalkan pemutakhiran berkelanjutan untuk mengaktifkan tugas HierarchicalNamespace pada akun penyimpanan.
+Cmdlet **Stop-AzStorageAccountHierarchicalNamespaceUpgrade** dapat membatalkan peningkatan yang sedang berlangsung untuk mengaktifkan tugas HierarchicalNamespace pada akun penyimpanan.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan tugas pemutakhiran HierarkisNamespace pada akun stroage
+### Contoh 1: Membatalkan tugas peningkatan HierarchicalNamespace pada akun stroage
 ```
 PS C:\> Stop-AzStorageAccountHierarchicalNamespaceUpgrade -ResourceGroupName $rgname -Name $accountName -Force -PassThru
 True
 ```
 
-Perintah ini membatalkan tugas pemutakhiran HierarchicalNamespace yang sedang berlangsung di akun penyimpanan.
-Tugas dapat dijalankan dengan cmdlet 'Invoke-AzStorageAccountHierarchicalNamespaceUpgrade' dengan '-RequestType Upgrade'.
+Perintah ini membatalkan tugas peningkatan HierarchicalNamespace yang sedang berlangsung pada akun penyimpanan.
+Tugas dapat dipanggil dengan cmdlet 'Invoke-AzStorageAccountHierarchicalNamespaceUpgrade' dengan '-RequestType Upgrade'.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk Failover Akun
+### -Force
+Paksa untuk Failover Akun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -107,7 +110,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Storage Nama Akun.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menampilkan akun penyimpanan.
+Tampilkan akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

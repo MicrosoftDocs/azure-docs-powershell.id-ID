@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: fdd9eb5aed39ee8c196417a2f8f7e60bc3dad374
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0023faabc6b44ef20c38399cb6cf9fcd70fbdce8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234099"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623478"
 ---
 # Get-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Dapatkan penyedia Koneksi OpenID.
+Mendapatkan penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ ClientSecret tidak akan disertakan ke dalam detail hasil. Untuk mendapatkan raha
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua penyedia
+### Contoh 1: Mendapatkan semua penyedia
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOpenIdConnectProvider -Context $apimContext
@@ -52,7 +55,7 @@ Get-AzApiManagementOpenIdConnectProvider -Context $apimContext
 
 Perintah ini mendapatkan semua penyedia Koneksi OpenID untuk konteks yang ditentukan.
 
-### Contoh 2: Dapatkan penyedia dengan menggunakan ID
+### Contoh 2: Mendapatkan penyedia dengan menggunakan ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvider01"
@@ -60,7 +63,7 @@ Get-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectPro
 
 Perintah ini mendapatkan penyedia yang memiliki ID OICProvider01.
 
-### Contoh 3: Dapatkan penyedia dengan menggunakan nama
+### Contoh 3: Mendapatkan penyedia dengan menggunakan nama
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOpenIdConnectProvider -Context $apimContext -Name "Contoso OpenID Connect Provider"
@@ -70,7 +73,7 @@ Perintah ini mendapatkan penyedia bernama Contoso OpenID Koneksi Provider.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyedia yang mudah dikenali.
+### -Name
+Menentukan nama penyedia yang mudah diingat.
 Jika Anda menentukan nama, cmdlet ini akan mendapatkan penyedia tersebut.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

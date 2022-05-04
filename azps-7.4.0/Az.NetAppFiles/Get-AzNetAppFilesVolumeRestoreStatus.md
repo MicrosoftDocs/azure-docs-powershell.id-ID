@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
-ms.openlocfilehash: f8814b34a3bcb9d5dfe551cc5dc1962af676f34d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bffc5683baf14981c156735a845f423c8d122ee0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640112"
 ---
 # Get-AzNetAppFilesVolumeRestoreStatus
 
 ## SYNOPSIS
-Dapatkan status pemulihan volume
+Mendapatkan status pemulihan volume
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumerestorestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume untuk mendapatkan status Pulihkan untuk
+Objek volume untuk mendapatkan status Pemulihan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama volume ANF
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool yang berisi volume untuk mengembalikan status pemulihan untuk
+Objek kumpulan yang berisi volume untuk mengembalikan status pemulihan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

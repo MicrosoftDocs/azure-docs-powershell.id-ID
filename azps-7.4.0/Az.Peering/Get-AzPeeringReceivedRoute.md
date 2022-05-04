@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
-ms.openlocfilehash: 599d84cd379b05bf0fe6ade6e3b01199fd775de3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: daef54327acf5a3cf1d7a0c48c02e0d8a597e566
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311913"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669148"
 ---
 # Get-AzPeeringReceivedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang diterima untuk Peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringreceivedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzPeeringReceivedRoute [-ResourceId] <String> [-Prefix <String>] [-AsPath <S
 ```
 
 ## DESCRIPTION
-Daftar rute yang diterima dari Peering
+Mencantumkan rute yang diterima dari Peering
 
 ## EXAMPLES
 
-### Daftar 100 rute teratas yang diterima untuk peering
+### Mencantumkan 100 rute teratas yang diterima untuk peering
 ```powershell
 Get-AzPeeringReceivedRoute -ResourceGroupName $resourceGroupName -Name $peeringName
 ```
@@ -99,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -129,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefiks
-Filter menurut prefiks.
+### -Awalan
+Filter menurut awalan.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPKIValidationState
-Filter menurut status validasi RPKI.
+Filter berdasarkan status validasi RPKI.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

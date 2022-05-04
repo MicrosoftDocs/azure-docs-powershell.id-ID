@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareAccount.md
-ms.openlocfilehash: 0fe4432aaa35e41c323149ad669e924edf1f9dc0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: de11ef92511b2f48d246b15dd3c9033621cd2dae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288207"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682194"
 ---
 # Get-AzDataShareAccount
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Akun DataShare
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatashareaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,9 +39,9 @@ Get-AzDataShareAccount -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareAccount** mendapatkan informasi tentang akun datashare dalam grup sumber daya / langganan Azure.
-Jika Anda menentukan nama akun, cmdlet ini akan mendapatkan informasi tentang akun datshare tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua akun berbagi data dalam grup langganan / sumber daya Azure.
+Cmdlet **Get-AzDataShareAccount** mendapatkan informasi tentang akun datashare dalam grup langganan/sumber daya Azure.
+Jika Anda menentukan nama akun, cmdlet ini mendapatkan informasi tentang akun datshare tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua akun datashare dalam grup langganan/sumber daya Azure.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ Type                    : Microsoft.DataShare/accounts
 Id                      : /subscriptions/4834da9b-787a-44f6-ae81-60707ab8c957/resourceGroups/ADS/providers/Microsoft.DataShare/accounts/WikiADS
 ```
 
-Perintah ini menampilkan informasi tentang semua akun berbagi data dalam langganan Azure.
+Perintah ini menampilkan informasi tentang semua akun datashare dalam langganan Azure.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun berbagi data Azure.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure.
+Nama grup sumber daya akun berbagi data azure.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 7daa3da604f39938e6d5c6169e7a4bd4052504d3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 50ff5a435b21fdc4bbe92043f92a700a411bffb4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057573"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635336"
 ---
 # Remove-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Menghapus ImmutabilityPolicy wadah blob Storage dengan kebijakan yang tidak terkunci
+Menghapus ImmutabilityPolicy dari kontainer blob Storage dengan kebijakan yang tidak terkunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,47 +48,47 @@ Remove-AzRmStorageContainerImmutabilityPolicy [-InputObject] <PSImmutabilityPoli
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy wadah blob Storage dengan kebijakan yang tidak terkunci.
+Cmdlet **Remove-AzRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy dari kontainer blob Storage dengan kebijakan yang tidak terkunci.
 
 ## EXAMPLES
 
-### Contoh 1: Remove unlocked ImmutabilityPolicy of a Storage blob container with Storage account name and container name
+### Contoh 1: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Remove unlocked ImmutabilityPolicy of a Storage blob container, with Storage account object
+### Contoh 2: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek akun Storage
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari wadah blob Storage, dengan objek akun Storage. 
+Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek akun Storage. 
 
-### Contoh 3: Remove unlocked ImmutabilityPolicy of a Storage blob container, with container object
+### Contoh 3: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek kontainer
 ```
 PS C:\>$containerObject = Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -Name "myContainer"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -Container $containerObject
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari wadah blob Storage dengan objek kontainer Storage.
+Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan objek kontainer Storage.
 
-### Contoh 4: Remove unlocked ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
+### Contoh 4: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek ImmutabilityPolicy
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Remove-AzRmStorageContainerImmutabilityPolicy
 ```
 
-Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari wadah blob Storage, dengan objek ImmutabilityPolicy.
+Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek ImmutabilityPolicy.
 
 ## PARAMETERS
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Etag kebijakan keabadian.
+Kebijakan imutabilitas etag.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek ImmutabilityPolicy yang Tidak Terkunci untuk Dihapus
+Objek ImmutabilityPolicy tidak terkunci untuk Dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSImmutabilityPolicy
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -204,8 +207,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

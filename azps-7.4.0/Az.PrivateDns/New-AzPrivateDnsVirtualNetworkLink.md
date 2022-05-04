@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/New-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 17cf934a399204cbe3c6e07a950a8f4ea6dc9b49
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9d55cbfba84f976e5b1284dba7f4a255b3be37c4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311553"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599234"
 ---
 # New-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
-Membuat tautan jaringan virtual DNS pribadi baru.
+Membuat link jaringan virtual DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ New-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateDnsVirtualNetworkLink** membuat tautan jaringan virtual Sistem Nama Domain (DNS) pribadi baru dalam grup sumber daya dan zona pribadi yang ditentukan. Anda harus menentukan nama tautan unik untuk parameter *Nama* atau cmdlet akan mengembalikan kesalahan. Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Cmdlet **New-AzPrivateDnsVirtualNetworkLink** membuat tautan jaringan virtual Sistem Nama Domain (DNS) privat baru di grup sumber daya dan zona privat yang ditentukan. Anda harus menentukan nama tautan unik untuk parameter *Nama* atau cmdlet akan mengembalikan kesalahan. Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tautan jaringan virtual DNS Pribadi
+### Contoh 1: Membuat tautan jaringan virtual DNS Privat
 ```powershell
 $Link = New-AzPrivateDnsVirtualNetworkLink -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Name "mylink" -VirtualNetworkId "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MyResourceGroup/providers/Microsoft.Network/virtualNetworks/MyVirtualNetwork" -EnableRegistration
 ```
@@ -67,7 +70,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Perintah ini membuat tautan jaringan virtual baru yang terkait dengan zona DNS pribadi bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang telah dibuat dalam grup sumber daya) dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Link.
+Perintah ini membuat tautan jaringan virtual baru yang terkait dengan zona DNS privat bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang telah dibuat dalam grup sumber daya) dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Link.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRegistration
-Alihkan parameter yang menyatakan apakah tautan diaktifkan atau tidak.
+Beralih parameter yang mewakili apakah tautan diaktifkan atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama tautan jaringan virtual untuk dibuat.
+### -Name
+Menentukan nama tautan jaringan virtual yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkId
-Id sumber daya dari jaringan virtual yang terkait dengan tautan.
+Id sumber daya jaringan virtual yang terkait dengan tautan.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan. Menunjukkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,11 +240,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

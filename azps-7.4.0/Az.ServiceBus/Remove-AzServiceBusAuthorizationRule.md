@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 1beb3c892034b0120aa19dd1244633b4fb4e9666
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8a41afa9b7ddd55f247d202c4d7f2d8742f8b5c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273951"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702228"
 ---
 # Remove-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Menghapus aturan otorisasi ruang nama Bus Layanan atau antrean atau topik dari grup sumber daya tertentu.
+Menghapus aturan otorisasi namespace Bus Layanan atau antrean atau topik dari grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] 
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AntreanAuthorizationRuleSet
+### QueueAuthorizationRuleSet
 ```
 Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String>
  [-Name] <String> [[-InputObject] <PSSharedAccessAuthorizationRuleAttributes>] [-Force] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TopikAuthorizationRuleSet
+### TopicAuthorizationRuleSet
 ```
 Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String>
  [-Name] <String> [[-InputObject] <PSSharedAccessAuthorizationRuleAttributes>] [-Force] [-PassThru]
@@ -41,7 +44,7 @@ Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi ruang nama Bus Layanan atau antrean atau topik untuk grup sumber daya tertentu.
+Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi namespace layanan atau antrean atau topik Bus Layanan untuk grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,21 +53,21 @@ Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi ruang
 Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-Menghapus aturan `SBAuthoRule1` otorisasi ruang `SB-Example1` nama dari grup sumber daya tertentu.
+Menghapus aturan `SBAuthoRule1` otorisasi namespace `SB-Example1` layanan dari grup sumber daya yang ditentukan.
 
 ### Contoh 2
 ```powershell
 Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1
 ```
 
-Menghapus aturan `SBAuthoRule1` otorisasi antrean `SBQueue` dari grup sumber daya tertentu.
+Menghapus aturan `SBAuthoRule1` otorisasi antrean `SBQueue` dari grup sumber daya yang ditentukan.
 
 ### Contoh 3
 ```powershell
 Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
 
-Menghapus aturan `SBAuthoRule1` otorisasi topik `SBTopic` dari grup sumber daya tertentu.
+Menghapus aturan `SBAuthoRule1` otorisasi topik `SBTopic` dari grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -204,8 +207,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

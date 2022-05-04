@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Import-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Import-AzRedisEnterpriseCache.md
-ms.openlocfilehash: f7663522b0ab556060f7e90b0b685cfeb6fe5c9f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ae5904784a8c5ab5d02ee7dc53d941bc10abc190
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276525"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676888"
 ---
 # Import-AzRedisEnterpriseCache
 
 ## SYNOPSIS
 Mengimpor file database ke database target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/import-azredisenterprisecache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Mengimpor file database ke database target.
 Import-AzRedisEnterpriseCache -Name "MyCache" -ResourceGroupName "MyGroup" -SasUri "https://mystorageaccount.blob.core.windows.net/mycontainer/myfilename?sp=signedPermissions&se=signedExpiry&sv=signedVersion&sr=signedResource&sig=signature;mystoragekey"
 ```
 
-Perintah ini mengimpor data dari file database ke dalam database singgahan Redis Enterprise bernama MyCache.
+Perintah ini mengimpor data dari file database ke dalam database cache Redis Enterprise bernama MyCache.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasUri
-SAS URI untuk target blob untuk diimpor dari
+SAS URI untuk blob target yang akan diimpor
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

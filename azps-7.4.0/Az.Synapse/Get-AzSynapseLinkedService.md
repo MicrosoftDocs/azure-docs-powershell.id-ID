@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseLinkedService.md
-ms.openlocfilehash: 3e6d8151493be1963191b955e70e61a83d748e52
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5cd62c36b0744b9d2bf724d247d225902b5cb1b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863370"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621084"
 ---
 # Get-AzSynapseLinkedService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan tertaut di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapselinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Get-AzSynapseLinkedService -WorkspaceObject <PSSynapseWorkspace> [-Name <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzSynapseLinkedService** mendapatkan informasi tentang layanan tertaut di ruang kerja.
-Jika Anda menentukan nama layanan yang ditautkan, cmdlet ini akan mendapatkan informasi tentang layanan tertaut tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua layanan yang ditautkan dalam ruang kerja.
+Jika Anda menentukan nama layanan tertaut, cmdlet ini mendapatkan informasi tentang layanan tertaut tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua layanan tertaut di ruang kerja.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseLinkedService -Name ContosoLinkedService
 ```
 
-Perintah ini mendapatkan informasi tentang layanan tertaut bernama ContosoLinkedService di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang layanan tertaut bernama ContosoLinkedService di ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama layanan yang ditautkan.
+### -Name
+Nama layanan tertaut.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

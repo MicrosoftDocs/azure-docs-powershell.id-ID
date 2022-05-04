@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restart
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
-ms.openlocfilehash: e171054401898f3880a871e3a49d285fbd840473
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e804f4db2ae60fbbc3a99636cc01e3582314f6c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992179"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616317"
 ---
 # Restart-AzWebApp
 
 ## SYNOPSIS
 Memulai ulang Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restart-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Restart-AzWebApp [-WebApp] <PSSite> [-DefaultProfile <IAzureContextContainer>] [
 
 ## DESCRIPTION
 Cmdlet **Restart-AzWebApp** berhenti lalu memulai Azure Web App.
-Jika Web App berada dalam status berhenti, gunakan cmdlet Start-AzWebApp.
+Jika Aplikasi Web dalam status berhenti, gunakan cmdlet Start-AzWebApp.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai ulang Aplikasi Web
+### Contoh 1: Menghidupkan ulang Aplikasi Web
 ```powershell
 Restart-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -107,17 +110,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## NOTES
 
@@ -127,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Hapus-AzWebApp](./Remove-AzWebApp.md)
+[Remove-AzWebApp](./Remove-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

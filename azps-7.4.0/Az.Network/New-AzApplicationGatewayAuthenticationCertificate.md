@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAuthenticationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAuthenticationCertificate.md
-ms.openlocfilehash: 1d4e7635034c7d5e675efccb9a637c1a464e8ed2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6883f9c56995a2af0e84eda58c767b784803c94
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997345"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594016"
 ---
 # New-AzApplicationGatewayAuthenticationCertificate
 
 ## SYNOPSIS
 Membuat sertifikat autentikasi untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayauthenticationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk sertifikat autentikasi.
 
 ```yaml
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -116,18 +119,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAuthenticationCertificate
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

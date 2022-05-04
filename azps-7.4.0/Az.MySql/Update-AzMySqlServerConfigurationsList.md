@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServerConfigurationsList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServerConfigurationsList.md
-ms.openlocfilehash: 6265a8d7f5bdce17d63e202e8c2d57e8612b2c6d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63572c84b744e754d3a43249bdcc721a57025505
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806742"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665908"
 ---
 # Update-AzMySqlServerConfigurationsList
 
 ## SYNOPSIS
 Memperbarui daftar konfigurasi di server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlserverconfigurationslist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ Memperbarui daftar konfigurasi di server tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui daftar konfigurasi MySQL menurut nama
+### Contoh 1: Memperbarui daftar konfigurasi MySQL menurut nama
 ```powershell
 Update-AzMySqlServerConfigurationsList -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
 
-Perbarui daftar konfigurasi MySQL menurut nama.
+Perbarui daftar konfigurasi MySQL berdasarkan nama.
 
-### Contoh 2: Perbarui daftar konfigurasi MySQL menurut identitas
+### Contoh 2: Memperbarui daftar konfigurasi MySQL menurut identitas
 ```powershell
 Get-AzMySqlServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test | Update-AzMySqlServerConfigurationsList
 ```
@@ -54,7 +57,7 @@ Perbarui daftar konfigurasi MySQL menurut ID.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -159,9 +162,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Daftar konfigurasi server.
-Untuk membangun, lihat bagian CATATAN untuk properti VALUE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti VALUE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IConfiguration[]
@@ -175,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

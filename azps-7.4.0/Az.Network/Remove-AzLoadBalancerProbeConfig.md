@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 48ffd3661ed423f31e342bde63f574afac00bb75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5334b9e4d32c2ab779166cf2fb6afa6b3c6d8ed2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280413"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615488"
 ---
 # Remove-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi probe dari load balancer.
+Menghapus konfigurasi pemeriksaan dari load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Remove-AzLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerProbeConfig** menghapus konfigurasi probe dari load balancer.
+Cmdlet **Remove-AzLoadBalancerProbeConfig** menghapus konfigurasi pemeriksaan dari load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi probe dari load balancer
+### Contoh 1: Menghapus konfigurasi pemeriksaan dari load balancer
 ```powershell
 $loadbalancer = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 Remove-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $loadbalancer
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang beban yang berisi konfigurasi probe yang dihapus cmdlet ini.
+Menentukan load balancer yang berisi konfigurasi pemeriksaan yang dihapus cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -71,8 +74,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi probe yang dihapus cmdlet ini.
+### -Name
+Menentukan nama konfigurasi pemeriksaan yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,11 +134,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
+[Tambahkan-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
-[Get-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
+[Dapatkan-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
 
 [New-AzLoadBalancerProbeConfig](./New-AzLoadBalancerProbeConfig.md)
 

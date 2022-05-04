@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
-ms.openlocfilehash: 481c686989d8020f03c026a5ca09abae40021e00
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a21f8d78a878144279e81e7f0b0a194a713aaf84
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109543"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676438"
 ---
 # Remove-AzADGroupMember
 
@@ -19,6 +19,8 @@ Menghapus anggota dari grup Pengguna, kontak, dan grup yang merupakan anggota gr
 Metode HTTP: GET (didukung untuk semua grup), POST (didukung untuk grup keamanan dan grup keamanan yang mendukung email), DELETE (hanya didukung untuk grup keamanan) Baca-saja.
 Dapat diubah ke null.
 Mendukung $expand.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -277,7 +279,7 @@ GROUPOBJECT <MicrosoftGraphGroup>: Objek grup target, dapat digunakan sebagai in
   - `[PreferredLanguage <String>]`: Bahasa pilihan untuk grup Microsoft 365. Harus mengikuti Kode ISO 639-1; misalnya 'en-US'. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[SecurityEnabled <Boolean?>]`: Menentukan apakah grup tersebut adalah grup keamanan. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, in).
   - `[SecurityIdentifier <String>]`: Pengidentifikasi keamanan grup, digunakan dalam skenario Windows. Dikembalikan secara default.
-  - `[Theme <String>]`: Menentukan tema warna grup Microsoft 365. Nilai yang mungkin adalah Teal, Ungu, Hijau, Biru, Merah Muda, Oranye atau Merah. Dikembalikan secara default.
+  - `[Theme <String>]`: Menentukan tema warna grup Microsoft 365. Nilai yang mungkin adalah Teal, Purple, Green, Blue, Pink, Orange atau Red. Dikembalikan secara default.
   - `[Visibility <String>]`: Menentukan kebijakan gabungan grup dan visibilitas konten grup untuk grup. Nilai yang mungkin adalah: Privat, Publik, atau Hiddenmembership. Hiddenmembership hanya dapat diatur untuk grup Microsoft 365, saat grup dibuat. Ini tidak dapat diperbarui nanti. Nilai visibilitas lainnya dapat diperbarui setelah pembuatan grup. Jika nilai visibilitas tidak ditentukan selama pembuatan grup di Microsoft Graph, grup keamanan dibuat sebagai Privat secara default dan grup Microsoft 365 adalah Publik. Lihat opsi visibilitas grup untuk mempelajari selengkapnya. Dikembalikan secara default.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori

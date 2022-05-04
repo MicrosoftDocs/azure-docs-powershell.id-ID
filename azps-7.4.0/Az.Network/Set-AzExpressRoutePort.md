@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePort.md
-ms.openlocfilehash: a895417572923dbfbaf1543c4c892b68f7cd2691
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00ea5c1dbcbf66757c0d889ba78d7e010b068ed8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804312"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702339"
 ---
 # Set-AzExpressRoutePort
 
 ## SYNOPSIS
 Memodifikasi ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azexpressrouteport) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Undo-AzCognitiveServicesAccountRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Undo-AzCognitiveServicesAccountRemoval.md
-ms.openlocfilehash: 1f28e5776644a10ef2bbb8d91d1f117500e21cfe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fcc7e669a4d502b9577942ce949d8b6fefeafe88
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877806"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634202"
 ---
 # Undo-AzCognitiveServicesAccountRemoval
 
 ## SYNOPSIS
 Memulihkan akun yang dihapus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/undo-azcognitiveservicesaccountremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Undo-AzCognitiveServicesAccountRemoval [-Location] <String> [-ResourceGroupName]
 ```
 
 ## DESCRIPTION
-Cmdlet **Undo-AzCognitiveServicesAccountRemoval** memulihkan akun Cognitive Services yang dihapus dengan lembut.
+Cmdlet **Undo-AzCognitiveServicesAccountRemoval** memulihkan akun Cognitive Services yang dihapus sementara.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Undo-AzCognitiveServicesAccountRemoval** memulihkan akun Cognitive Serv
 Undo-AzCognitiveServicesAccountRemoval -Location "Central US EUAP" -ResourceGroupName "ResourceGroupName" -Name "ResourceName"
 ```
 
-Pulihkan akun Cognitive Services yang dihapus dengan lembut. Akun dibuat di "Central US EUAP", grup sumber daya dan nama sumber daya adalah "ResourceGroupName" dan "ResourceName". Jika grup sumber daya telah dihapus, Anda dapat membuat grup sumber daya baru dengan nama yang sama sebelum menjalankan `Undo-AzCognitiveServicesAccountRemoval`
+Pulihkan akun Cognitive Services yang dihapus sementara. Akun dibuat di "EUAP US Tengah", grup sumber daya dan nama sumber dayanya adalah "ResourceGroupName" dan "ResourceName". Jika grup sumber daya telah dihapus, Anda dapat membuat grup sumber daya baru dengan nama yang sama sebelum menjalankan `Undo-AzCognitiveServicesAccountRemoval`
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Akun Layanan Kognitif.
+Lokasi Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -83,8 +86,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -163,4 +166,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzCognitiveServicesAccount](./New-AzCognitiveServicesAccount.md)
 
-[Hapus-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)
+[Remove-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)

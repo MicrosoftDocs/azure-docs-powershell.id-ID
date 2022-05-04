@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
-ms.openlocfilehash: bb5a6ccc57826775e1a9339257ba6d839b357502
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aaca03389d1d8c690b7e6147b2cdf587de9e43d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739674"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665638"
 ---
 # Set-AzResource
 
 ## SYNOPSIS
 Mengubah sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Set-AzResource [-Kind <String>] [-Properties <PSObject>] [-Plan <Hashtable>] [-S
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByTenantLevel
+### OlehTenantLevel
 ```
 Set-AzResource [-Kind <String>] [-Properties <PSObject>] [-Plan <Hashtable>] [-Sku <Hashtable>]
  [-Tag <Hashtable>] [-UsePatchSemantics] [-AsJob] -ResourceName <String> -ResourceType <String>
@@ -55,12 +58,12 @@ Set-AzResource [-Kind <String>] [-Properties <PSObject>] [-Plan <Hashtable>] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzResource** mengubah sumber daya Azure yang sudah ada.
-Tentukan sumber daya untuk diubah menurut nama dan tipe atau menurut ID.
+Cmdlet **Set-AzResource** memodifikasi sumber daya Azure yang ada.
+Tentukan sumber daya untuk dimodifikasi menurut nama dan jenis atau menurut ID.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi sumber daya
+### Contoh 1: Mengubah sumber daya
 ```powershell
 $Resource = Get-AzResource -ResourceType Microsoft.Web/sites -ResourceGroupName ResourceGroup11 -ResourceName ContosoSite
 $Resource.Properties.Enabled = "False"
@@ -68,10 +71,10 @@ $Resource | Set-AzResource -Force
 ```
 
 Perintah pertama mendapatkan sumber daya bernama ContosoSite dengan menggunakan cmdlet Get-AzResource, lalu menyimpannya dalam variabel $Resource.
-Perintah kedua mengubah properti $Resource.
+Perintah kedua memodifikasi properti $Resource.
 Perintah akhir memperbarui sumber daya agar sesuai dengan $Resource.
 
-### Contoh 2: Memodifikasi semua sumber daya dalam grup sumber daya tertentu
+### Contoh 2: Mengubah semua sumber daya dalam grup sumber daya tertentu
 ```powershell
 $Resource = Get-AzResource -ResourceGroupName testrg
 $Resource | ForEach-Object { $_.Tags.Add("testkey", "testval") }
@@ -101,16 +104,16 @@ Properties        : @{key=value}
 Sku               : @{name=A0}
 ```
 
-Perintah pertama mendapatkan sumber daya dalam grup sumber daya testrg, lalu menyimpannya dalam variabel $Resource.
+Perintah pertama mendapatkan sumber daya dalam grup sumber daya testrg, lalu menyimpannya di variabel $Resource.
 
-Perintah kedua terulang pada setiap sumber daya dalam grup sumber daya dan menambahkan tag baru ke sumber daya.
+Perintah kedua mengiterasi setiap sumber daya ini dalam grup sumber daya dan menambahkan tag baru ke dalamnya.
 
 Perintah terakhir memperbarui setiap sumber daya ini.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi untuk sumber daya.
-Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
+Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceType
-Menentukan tipe sumber daya untuk sumber daya ekstensi.
-Misalnya, jika sumber daya ekstensi adalah database yang menentukan hal berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya untuk sumber daya ekstensi.
+Misalnya, jika sumber daya ekstensi adalah database, tentukan hal berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Representasi objek sumber daya untuk diperbarui.
+Representasi objek dari sumber daya yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSResource
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan properti rencana sumber daya, sebagai tabel hash, untuk sumber daya.
+Menentukan properti paket sumber daya, sebagai tabel hash, untuk sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini mengubah sumber daya.
+Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -340,8 +343,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya.
-Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya.
+Misalnya, untuk database, jenis sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -386,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi di tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,8 +418,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -471,6 +474,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Move-AzResource](./Move-AzResource.md)
 
-[New-AzResource](./New-AzResource.md)
+[Baru-AzResource](./New-AzResource.md)
 
-[Hapus-AzResource](./Remove-AzResource.md)
+[Remove-AzResource](./Remove-AzResource.md)

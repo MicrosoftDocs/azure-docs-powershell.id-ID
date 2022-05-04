@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
-ms.openlocfilehash: 7a346dfbff2388ca7b37f6f7b0b6bbb03ea49126
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9bb70fdbba3f4e338118f823dd936d107175859b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752022"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676330"
 ---
 # New-AzApiManagementNamedValue
 
 ## SYNOPSIS
 Membuat Nilai Bernama baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApiManagementNamedValue -Context <PsApiManagementContext> [-NamedValueId <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementNamedValue** membuat Azure API Management **Nilai Bernama**.
+Cmdlet **New-AzApiManagementNamedValue** membuat **Nilai Bernama** API Management Azure.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ New-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property11" -
 ```
 
 Perintah pertama menetapkan dua nilai ke variabel $Tags.
-Perintah kedua membuat nilai bernama dan menetapkan string dalam $Tags sebagai tag pada properti.
+Perintah kedua membuat nilai bernama dan menetapkan string dalam $Tags sebagai tag pada properti .
 
 ### Contoh 2: Membuat nilai bernama yang memiliki nilai rahasia
 ```powershell
@@ -48,7 +51,7 @@ New-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property12" -
 
 Perintah ini membuat **Nilai Bernama** yang memiliki nilai yang dienkripsi.
 
-### Contoh 3 : Membuat keyVault Bernamavalue
+### Contoh 3 : Membuat keyVault Namedvalue
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 $keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -56,12 +59,12 @@ $keyVaultNamedValue = New-AzApiManagementNamedValue -Context $context -NamedValu
 ```
 
 Perintah pertama membuat keyvault.
-Perintah kedua membuat nilai bernama menggunakan secret dari keyvault ini.
+Perintah kedua membuat nilai bernama menggunakan rahasia dari keyvault ini.
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVault
-KeyVault digunakan untuk mengambil data Bernamavalue. Parameter ini diperlukan jika Nilai tidak ditentukan.
+KeyVault digunakan untuk mengambil data Namedvalue. Parameter ini diperlukan jika Nilai tidak ditentukan.
 Lihat New-AzApiManagementKeyVaultObject untuk detailnya.
 
 ```yaml
@@ -107,10 +110,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama nilai bernama.
 Panjang maksimum adalah 100 karakter.
-Ini mungkin hanya berisi huruf, digit, titik, garis putus-putus, dan karakter garis bawah.
+Ini hanya boleh berisi huruf, digit, titik, tanda hubung, dan karakter garis bawah.
 Parameter ini diperlukan.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NameValueId
+### -NamedValueId
 Pengidentifikasi nilai bernama baru.
 Parameter ini bersifat opsional.
 Jika tidak ditentukan akan dihasilkan.
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan apakah nilai adalah rahasia dan harus dienkripsi atau tidak.
+Menentukan apakah nilainya adalah rahasia dan harus dienkripsi atau tidak.
 Parameter ini bersifat opsional.
 Nilai Default adalah false.
 
@@ -175,11 +178,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai nilai bernama.
 Dapat berisi ekspresi kebijakan.
 Panjang maksimum adalah 1000 karakter.
-Spasi mungkin tidak kosong atau hanya terdiri dari spasi kosong.
+Ini mungkin tidak kosong atau hanya terdiri dari spasi kosong.
 Parameter ini diperlukan.
 
 ```yaml
@@ -194,8 +197,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

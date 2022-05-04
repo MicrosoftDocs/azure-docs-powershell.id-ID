@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHub.md
-ms.openlocfilehash: 5975031c3c43e0e16d8df944597385c328a6f9d7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6a51de8a00c754401572ed40d27145ed5c03bf2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315567"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699962"
 ---
 # Set-AzIotHub
 
 ## SYNOPSIS
 Memperbarui properti IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,12 +84,12 @@ Perbarui sku ke S1 dan unit ke 5 untuk IotHub bernama "myiothub"
 Set-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubRetentionTimeInDays 4
 ```
 
-Perbarui waktu penyimpanan telemetri dalam hari ke 4 untuk IotHub bernama "myiothub"
+Perbarui waktu retensi telemetri dalam hari ke 4 untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
 ### -CloudToDevice
-Properti untuk antrean perintah awan ke perangkat. 
+Properti untuk antrean perintah cloud ke perangkat. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSCloudToDeviceProperties
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubRetentionTimeInDays
-Waktu penyimpanan dalam hari. 
+Waktu retensi dalam hari. 
 
 ```yaml
 Type: System.Int64
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadContainerName
-Nama wadah tempat mengunggah file.
+Nama kontainer tempat mengunggah file.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadNotificationTtl
-Waktu untuk nilai langsung untuk pesan dalam antrean pemberitahuan unggahan file. 
+Nilai waktu hidup untuk pesan dalam antrean pemberitahuan unggahan file. 
 
 ```yaml
 Type: System.TimeSpan
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadSasUriTtl
-Waktu untuk hidup untuk SAS Uri yang dihasilkan untuk unggahan file. 
+Waktu hidup untuk Uri SAS yang dihasilkan untuk pengunggahan file. 
 
 ```yaml
 Type: System.TimeSpan
@@ -235,7 +238,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -326,8 +329,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/send-fe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Send-Feedback.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Send-Feedback.md
-ms.openlocfilehash: 4a062f715012ee35a3b7dc80a334a29649572a6d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ad910a1ad58722fd15e53e8c7a9193017628faed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752634"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634958"
 ---
-# Send-Feedback
+# Kirim-Tanggapan
 
 ## SYNOPSIS
-Mengirim umpan balik ke tim Azure PowerShell melalui sekumpulan perintah yang dipandu.
+Mengirim umpan balik ke tim Azure PowerShell melalui serangkaian perintah terpandu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/send-feedback) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

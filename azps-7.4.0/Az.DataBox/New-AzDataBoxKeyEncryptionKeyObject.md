@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
-ms.openlocfilehash: 3a5a70b32af2f1e0d73fb71bc4730e96ed9a0432
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab3bebb3232677ab5cb02784ff8fe3dd1df9c009
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125811"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676042"
 ---
 # New-AzDataBoxKeyEncryptionKeyObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk KeyEncryptionKey.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxkeyencryptionkeyobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Membuat objek dalam memori untuk KeyEncryptionKey
 
 ### -IdentityProperty
 Properti identitas terkelola yang digunakan untuk enkripsi kunci.
-Untuk membangun, lihat bagian CATATAN untuk properti IDENTITYPROPERTY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti IDENTITYPROPERTY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IIdentityProperties
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -KekType
-Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.
+Jenis kunci enkripsi yang digunakan untuk enkripsi kunci.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Support.KekType
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 
 ### -KekUrl
 Kunci enkripsi kunci.
-Diperlukan jika Pelanggan mengelola KekType.
+Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -KekVaultResourceId
-Id sumber daya kek vault. Diperlukan jika Pelanggan mengelola KekType.
+Id sumber daya kek vault. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

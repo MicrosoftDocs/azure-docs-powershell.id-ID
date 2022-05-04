@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2DataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2DataFlow.md
-ms.openlocfilehash: f07a00c81c7a883ae98b1da51fd0ab961ac0fa64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e81e580d96a9e6d79efca6658d2725dca7c657c2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676006"
 ---
 # Remove-AzDataFactoryV2DataFlow
 
 ## SYNOPSIS
-Menghapus aliran data dari Pabrik Data.
+Menghapus aliran data dari Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryv2dataflow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Are you sure you want to remove data flow 'dataflow5' in data factory 'WikiADF'?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Perintah ini menghapus alur data bernama alur data5 dari pabrik data bernama WikiADF.
+Perintah ini menghapus aliran data bernama dataflow5 dari pabrik data bernama WikiADF.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek alur data.
+Objek aliran data.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset
@@ -118,8 +121,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama alur data.
+### -Name
+Nama aliran data.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional.
+Jika ditentukan akan menulis true jika operasi berhasil. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,8 +181,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -225,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

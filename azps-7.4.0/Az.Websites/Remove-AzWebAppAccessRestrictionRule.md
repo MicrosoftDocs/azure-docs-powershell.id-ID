@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppAccessRestrictionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppAccessRestrictionRule.md
-ms.openlocfilehash: e18605025273855ada65d83302be7cc1972158ca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7d07f4d5eb0020a46521ba64592a72b048e9ab99
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115083"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682878"
 ---
 # Remove-AzWebAppAccessRestrictionRule
 
 ## SYNOPSIS
 Menghapus aturan Pembatasan Akses dari Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappaccessrestrictionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Remove-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -We
 
 Perintah ini menghapus aturan pembatasan akses IpRule dari Azure Web App bernama ContosoSite yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
-### Contoh 2: Menghapus Aturan Pembatasan Akses Tag Layanan Web App
+### Contoh 2: Menghapus Aturan Pembatasan Akses Aplikasi Web Tag Layanan
 ```powershell
 Remove-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" -ServiceTag AzureFrontDoor.Backend
 ```
@@ -47,7 +50,7 @@ Perintah ini menghapus aturan pembatasan akses dengan ServiceTag sama dengan Azu
 ## PARAMETERS
 
 ### -Tindakan
-Aturan Izinkan atau Tolak.
+Izinkan atau Tolak aturan.
 
 ```yaml
 Type: System.String
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Rentang Alamat Ip v4 atau v6 CIDR. Misalnya: 192.168.0.0/24
+Alamat IP rentang CIDR v4 atau v6. Misalnya: 192.168.0.0/24
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Aturan Pembatasan Akses
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek konfigurasi batasan akses.
+Mengembalikan objek konfigurasi pembatasan akses.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetScmSite
-Aturan ditujukan untuk Situs utama atau situs Scm.
+Aturan ditujukan untuk situs Utama atau situs Scm.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama Virtual Network (harus berada dalam grup sumber daya yang sama dengan Web App).
+Nama Virtual Network (harus berada dalam grup sumber daya yang sama dengan Aplikasi Web).
 
 ```yaml
 Type: System.String
@@ -242,8 +245,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

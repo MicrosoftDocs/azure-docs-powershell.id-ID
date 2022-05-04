@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
-ms.openlocfilehash: ab19dcca468f25e754bcb8065ff8678fa7ef91a7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1b7898fdfb9b1413972d294183530f5055e6baae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056025"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649822"
 ---
 # New-AzAppServicePlan
 
 ## SYNOPSIS
 Membuat rencana Azure App Service di lokasi Geo tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Cmdlet **New-AzAppServicePlan** membuat rencana Azure App Service di lokasi Geo 
 New-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -Location "West US" -Tier "Basic" -NumberofWorkers 2 -WorkerSize "Small"
 ```
 
-Perintah ini membuat rencana App Service bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Geo location West US.
+Perintah ini membuat paket App Service bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Lokasi geografis US Barat.
 Perintah menentukan Tingkat Dasar dan mengalokasikan dua pekerja kecil.
 
 ## PARAMETERS
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Tentukan ini, rencana App Service akan menjalankan Kontainer Linux
+Tentukan ini, paket App Service akan menjalankan Kontainer Linux
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Rencana App Service
+### -Name
+Nama Paket App Service
 
 ```yaml
 Type: System.String
@@ -216,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Persitescaling
-Apakah mengaktifkan atau tidak mengaktifkan Penskalakan Per Situs
+### -PersiteScaling
+Apakah akan mengaktifkan Penskalakan Per Situs atau tidak
 
 ```yaml
 Type: System.Boolean
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag adalah pasangan nama/nilai yang memungkinkan Anda mengkategorikan sumber daya
+Tag adalah pasangan nama/nilai yang memungkinkan Anda mengategorikan sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Tier
+Tingkat
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

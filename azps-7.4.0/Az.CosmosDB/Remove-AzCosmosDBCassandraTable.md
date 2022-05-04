@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: 78d7e7cf60a5cd61b8c65936da659a900a90de2a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e55e691db397639b2b9c516bd51dcda713b6e2da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943291"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666340"
 ---
 # Remove-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
 Menghapus Tabel CosmosDB Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Remove-AzCosmosDBCassandraTable -InputObject <PSCassandraTableGetResults> [-Pass
 Remove-AzCosmosDBCassandraTable -ResourceGroupName {resourceGroup} -AccountName {account} -KeyspaceName {keyspace} -Name {tableName}
 ```
 
-Cmdlet mengembalikan objek type bool(when -PassThru is passed) yang true, jika penghapusan berhasil.
+Cmdlet mengembalikan objek jenis bool(ketika -PassThru diteruskan) yang benar, jika penghapusan berhasil.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Tabel Cassandra.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Untuk diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
+Output benar jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

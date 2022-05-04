@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
-ms.openlocfilehash: 0341198e8196a1afa0a2725c19fc30acb45000d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 88475d4ceb2e6739862a7548b11b324b2a511392
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227961"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622560"
 ---
 # Get-AzDatadogMonitor
 
 ## SYNOPSIS
-Dapatkan properti sumber daya monitor tertentu.
+Mendapatkan properti sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan properti sumber daya monitor tertentu.
 Get-AzDatadogMonitor [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDatadogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Get-AzDatadogMonitor -ResourceGroupName <String> [-SubscriptionId <String[]>] [-
 ```
 
 ## DESCRIPTION
-Dapatkan properti sumber daya monitor tertentu.
+Mendapatkan properti sumber daya monitor tertentu.
 
 ## EXAMPLES
 
@@ -57,9 +60,9 @@ Location    Name         Type
 eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
-Perintah ini mencantumkan semua sumber daya monitor di bawah langganan.
+Perintah ini mencantumkan semua sumber daya pemantauan di bawah langganan.
 
-### Contoh 2: Daftar sumber daya monitor di bawah grup sumber daya
+### Contoh 2: Mencantumkan sumber daya pemantauan di bawah grup sumber daya
 ```powershell
 Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog
 ```
@@ -70,7 +73,7 @@ Location    Name         Type
 eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
-Perintah ini mencantumkan semua sumber daya monitor di bawah grup sumber daya.
+Perintah ini mencantumkan semua sumber daya pemantauan di bawah grup sumber daya.
 
 ### Contoh 3: Mendapatkan properti sumber daya monitor tertentu
 ```powershell
@@ -85,7 +88,7 @@ eastus2euap Datadog microsoft.Datadog/monitors
 
 Perintah ini mendapatkan properti sumber daya monitor tertentu.
 
-### Contoh 4: Mendapatkan properti sumber daya monitor tertentu menurut pipeline
+### Contoh 4: Mendapatkan properti sumber daya monitor tertentu menurut alur
 ```powershell
 Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Get-AzDatadogMonitor
 ```
@@ -96,7 +99,7 @@ Location    Name         Type
 eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
-Perintah ini mendapatkan properti sumber daya monitor tertentu menurut saluran.
+Perintah ini mendapatkan properti sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -130,8 +133,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -200,8 +203,8 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RuleSetName <String>]`: Nama kumpulan aturan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

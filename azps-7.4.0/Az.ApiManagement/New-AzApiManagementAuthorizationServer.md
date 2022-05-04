@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 9686bacd794a3298b879f45fcb1f987b026a71dc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d69e068f92a15cf8abfb4cbb298a71832e4891be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234027"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648238"
 ---
 # New-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Membuat server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Perintah ini membuat server otorisasi.
 
 ### Contoh 2
 
-Membuat server otorisasi. (autogenerasi)
+Membuat server otorisasi. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationEndpointUrl
-Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan hibah otorisasi.
+Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan pemberian otorisasi.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Tubuh.
+psdx_paramvalues Dasar dan Isi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -168,7 +171,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DefaultScope
-Menentukan lingkup default untuk server otorisasi.
+### -Cakupan Default
+Menentukan cakupan default untuk server otorisasi.
 
 ```yaml
 Type: System.String
@@ -229,9 +232,9 @@ Accept wildcard characters: False
 ```
 
 ### -GrantTypes
-Menentukan array tipe hibah.
+Menentukan array jenis hibah.
 psdx_paramvalues
-- Kode Otorisasi
+- AuthorizationCode
 - ClientCredentials 
 - Implisit 
 - ResourceOwnerPassword
@@ -249,8 +252,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama server otorisasi untuk dibuat.
+### -Name
+Menentukan nama server otorisasi yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerId
-Menentukan ID server otorisasi untuk dibuat.
+Menentukan ID server otorisasi yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportState
-Menunjukkan apakah akan mendukung parameter *Negara Bagian* .
+Menunjukkan apakah akan mendukung parameter *Status* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenBodyParameters
-Menentukan parameter isi tambahan menggunakan format **aplikasi/x-www-form-urlencoded** .
+Menentukan parameter isi tambahan menggunakan format **application/x-www-form-urlencoded** .
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan URL titik akhir token yang digunakan oleh klien untuk mendapatkan token akses dengan imbalan menyajikan hibah otorisasi atau token refresh.
+Menentukan URL titik akhir token yang digunakan oleh klien untuk mendapatkan token akses dengan imbalan menyajikan pemberian otorisasi atau token refresh.
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

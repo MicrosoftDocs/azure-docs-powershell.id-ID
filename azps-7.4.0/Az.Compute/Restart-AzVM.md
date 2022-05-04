@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVM.md
-ms.openlocfilehash: 9fcb209dd2a520a0e61438cd1954a139b729996c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8531f643004677956f28d54ad759d6290d110746
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289647"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598316"
 ---
 # Restart-AzVM
 
 ## SYNOPSIS
-Memulai ulang mesin virtual Azure.
+Memulai ulang komputer virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/restart-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Restart-AzVM [-ResourceGroupName] <String> [-Name] <String> [-PerformMaintenance
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mulai UlangIdParameterSetName
+### RestartIdParameterSetName
 ```
 Restart-AzVM [-Id] <String> [-AsJob] [-NoWait] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -45,21 +48,21 @@ Restart-AzVM [-Id] <String> [-PerformMaintenance] [-AsJob] [-NoWait] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzVM** memulai ulang mesin virtual Azure.
+Cmdlet **Restart-AzVM** memulai ulang komputer virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai ulang mesin virtual
+### Contoh 1: Menghidupkan ulang komputer virtual
 ```powershell
 Restart-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 ```
 
-Perintah ini memulai ulang mesin virtual bernama VirtualMachine07 di ResourceGroup11.
+Perintah ini memulai ulang komputer virtual bernama VirtualMachine07 di ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID mesin virtual.
+ID komputer virtual.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama mesin virtual.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformMaintenance
-Untuk melakukan pemeliharaan mesin virtual.
+Untuk melakukan pemeliharaan komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -212,16 +215,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
-[AzVM baru](./New-AzVM.md)
+[New-AzVM](./New-AzVM.md)
 
-[Hapus-AzVM](./Remove-AzVM.md)
+[Remove-AzVM](./Remove-AzVM.md)
 
 [Start-AzVM](./Start-AzVM.md)
 
 [Stop-AzVM](./Stop-AzVM.md)
 
-[Perbarui-AzVM](./Update-AzVM.md)
+[Update-AzVM](./Update-AzVM.md)
 
 

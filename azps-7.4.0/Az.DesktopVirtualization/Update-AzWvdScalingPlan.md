@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
-ms.openlocfilehash: 2642bd55a203182fc415c1ccbfc5dd0e7a5cc9c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6d914d9220b894c00128ef4a4dbe8cabea9ccc81
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748764"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701743"
 ---
 # Update-AzWvdScalingPlan
 
 ## SYNOPSIS
-Perbarui paket penskalakan.
+Memperbarui paket penskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdscalingplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Update-AzWvdScalingPlan -InputObject <IDesktopVirtualizationIdentity> [-Descript
 ```
 
 ## DESCRIPTION
-Perbarui paket penskalakan.
+Memperbarui paket penskalakan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Windows Paket Skala Desktop Virtual menurut nama
+### Contoh 1: Memperbarui Windows Virtual Desktop Scaling Plan berdasarkan nama
 ```powershell
 Update-AzWvdScalingPlan `
             -ResourceGroupName ResourceGroupName `
@@ -91,7 +94,7 @@ Location      Name         Type
 westcentralus scalingPlan1 Microsoft.DesktopVirtualization/scalingplans
 ```
 
-Perintah ini memperbarui Windows Paket Penskalhan Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini memperbarui Windows Virtual Desktop Scaling Plan dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExclusionTag
-Tag pengecualian untuk paket penskalaan.
+Tag pengecualian untuk rencana penskalaan.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama paket penskalaan yang mudah dikenali.
+Nama paket penskalaan yang mudah digunakan.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -HostPoolReference
 Daftar definisi ScalingHostPoolReference.
-Untuk membangun, lihat bagian CATATAN untuk properti HOSTPOOLREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti HOSTPOOLREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IScalingHostPoolReference[]
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostPoolType
-Tipe HostPool untuk desktop.
+Jenis HostPool untuk desktop.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.HostPoolType
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -201,8 +204,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama paket penskalaan.
+### -Name
+Nama rencana penskalaan.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 
 ### -Jadwal
 Daftar definisi ScalingSchedule.
-Untuk membangun, lihat bagian CATATAN untuk properti SCHEDULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IScalingSchedule[]
@@ -293,8 +296,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -345,8 +348,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 HOSTPOOLREFERENCE <IScalingHostPoolReference[]>: Daftar definisi ScalingHostPoolReference.
-  - `[HostPoolArmPath <String>]`: Jalur lengan hostpool yang dirujuk.
-  - `[ScalingPlanEnabled <Boolean?>]`: Apakah paket penskalaan diaktifkan untuk hostpool ini.
+  - `[HostPoolArmPath <String>]`: Jalur arm dari hostpool yang dirujuk.
+  - `[ScalingPlanEnabled <Boolean?>]`: Apakah rencana penskalaan diaktifkan untuk hostpool ini.
 
 INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
@@ -354,33 +357,33 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
-JADWAL <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
-  - `[DaysOfWeek <String[]>]`: Kumpulan hari dalam seminggu di mana jadwal ini aktif.
+SCHEDULE <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
+  - `[DaysOfWeek <String[]>]`: Set hari dalam seminggu di mana jadwal ini aktif.
   - `[Name <String>]`: Nama jadwal penskalaan.
-  - `[OffPeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma keseimbangan beban untuk periode off-peak.
-  - `[OffPeakStartTime <DateTime?>]`: Waktu mulai untuk periode off-peak.
+  - `[OffPeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode di luar puncak.
+  - `[OffPeakStartTime <DateTime?>]`: Waktu mulai untuk periode di luar puncak.
   - `[PeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode puncak.
   - `[PeakStartTime <DateTime?>]`: Waktu mulai untuk periode puncak.
-  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode ramp down.
-  - `[RampDownForceLogoffUser <Boolean?>]`: Jika pengguna harus keluar secara paksa dari host.
-  - `[RampDownLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode ramp down.
-  - `[RampDownMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode ramp down.
-  - `[RampDownNotificationMessage <String>]`: Pesan pemberitahuan untuk pengguna selama periode ramp down.
-  - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode ramp down.
-  - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan menghentikan host selama periode ramp down.
-  - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu untuk menghentikan host selama periode ramp down.
-  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode peningkatan.
-  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma load balancing untuk periode ramp up.
-  - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode naik.
-  - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode ramp up.
+  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang kapasitas untuk periode penurunan.
+  - `[RampDownForceLogoffUser <Boolean?>]`: Haruskah pengguna dicatat secara paksa dari host.
+  - `[RampDownLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode penurunan.
+  - `[RampDownMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode penurunan.
+  - `[RampDownNotificationMessage <String>]`: Pesan pemberitahuan untuk pengguna selama periode penurunan.
+  - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode penurunan.
+  - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan harus menghentikan host selama periode penurunan.
+  - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu menghentikan host selama periode penurunan.
+  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang kapasitas untuk periode peningkatan.
+  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode peningkatan ramp.
+  - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode peningkatan.
+  - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode peningkatan.
 
 ## RELATED LINKS
 

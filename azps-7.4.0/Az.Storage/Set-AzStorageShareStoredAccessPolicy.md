@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: c9605a7d56eb47b00cbaf35edeb96ccd570ea0ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e16f7c2a9ebfe7d7f0c438f1bf54d95bd868e795
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116559"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597236"
 ---
 # Set-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan akses yang disimpan pada berbagi Storage.
+Memperbarui kebijakan akses tersimpan pada berbagi Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragesharestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Set-AzStorageShareStoredAccessPolicy [-ShareName] <String> [-Policy] <String> [-
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzStorageShareStoredAccessPolicy** memperbarui kebijakan akses yang disimpan di bagian Azure Storage.
+Cmdlet **Set-AzStorageShareStoredAccessPolicy** memperbarui kebijakan akses tersimpan pada berbagi Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kebijakan akses yang disimpan dalam berbagi Storage
+### Contoh 1: Memperbarui kebijakan akses tersimpan di berbagi Storage
 ```
 PS C:\>Set-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare" -Policy "GeneralPolicy" -Permission "rwdl"
 ```
@@ -43,8 +46,8 @@ Perintah ini memperbarui kebijakan akses tersimpan yang memiliki izin penuh dala
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -60,9 +63,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoExpiryTime
-Menunjukkan bahwa cmdlet ini menghapus properti **ExpiryTime** dalam kebijakan akses yang disimpan.
+Menunjukkan bahwa cmdlet ini menghapus properti **ExpiryTime** dalam kebijakan akses tersimpan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Menunjukkan bahwa cmdlet ini menghapus properti **StartTime** dalam kebijakan akses yang disimpan.
+Menunjukkan bahwa cmdlet ini menghapus properti **StartTime** dalam kebijakan akses tersimpan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses berbagi atau file di bawahnya.
-Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
+Menentukan izin dalam kebijakan akses tersimpan untuk mengakses berbagi atau file di bawahnya.
+Penting untuk dicatat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan nama untuk kebijakan akses yang disimpan.
+Menentukan nama untuk kebijakan akses tersimpan.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -230,8 +233,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -8,7 +8,7 @@ metadata:
   ms.topic: landing-page
   author: mikefrobbins
   ms.author: mirobb
-  ms.date: 04/05/2022
+  ms.date: 05/02/2022
   ms.prod: azure-powershell
 landingContent:
   - title: Tentang Azure PowerShell
@@ -45,7 +45,7 @@ landingContent:
         links:
           - text: Catatan rilis
             url: release-notes-azureps.md
-          - text: Perubahan mencolok di Az 7.0.0
+          - text: Melanggar perubahan di Az 7.0.0
             url: migrate-az-7.0.0.md
           - text: Penyelesaian perintah cerdas
             url: az-predictor.md
@@ -54,12 +54,12 @@ landingContent:
       - linkListType: reference
         links:
           - text: Referensi Cmdlet
-            url: /powershell/module/?view=azps-7.4.0
+            url: /powershell/module/?view=azps-7.5.0
   - title: Identitas dan Autentikasi
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Azure AD perubahan Migrasi Graph Microsoft
+          - text: Azure AD perubahan Microsoft Graph Migration
             url: azps-msgraph-migration-changes.md
       - linkListType: how-to-guide
         links:

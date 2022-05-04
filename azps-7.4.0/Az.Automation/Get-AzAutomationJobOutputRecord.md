@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutputRecord.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutputRecord.md
-ms.openlocfilehash: ce55e163208cfd88007341672750a33bcf0f997e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cc4be181d9c44e0f6db0836d3445c4ee3a944299
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233091"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680702"
 ---
 # Get-AzAutomationJobOutputRecord
 
 ## SYNOPSIS
-Mendapatkan output penuh dari rekaman output pekerjaan Otomatisasi.
+Mendapatkan output lengkap dari rekaman output pekerjaan Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationjoboutputrecord) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,24 +29,24 @@ Get-AzAutomationJobOutputRecord [-JobId] <Guid> [-Id] <String> [-ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationJobOutputRecord** mendapatkan output penuh dari catatan output pekerjaan Otomatisasi.
-Meskipun cmdlet **Get-AzAutomationJobOutput** mencantumkan satu atau beberapa rekaman output pekerjaan, cmdlet Get-AzAutomationJobOutput hanya mengembalikan ringkasan, sebagai string, dari nilai rekaman output apa pun.
-Ini tidak mengembalikan nilai penuh dari nilai output rekaman output dalam tipe aslinya.
-Selain itu, ringkasan memiliki panjang maksimum, yang mungkin melebihi nilai penuh output cmdlet ini.
+Cmdlet **Get-AzAutomationJobOutputRecord** mendapatkan output penuh dari rekaman output pekerjaan Automation.
+Meskipun cmdlet **Get-AzAutomationJobOutput** mencantumkan satu atau beberapa rekaman output pekerjaan, cmdlet ini hanya mengembalikan ringkasan, sebagai string, dari nilai rekaman output apa pun.
+Ini tidak mengembalikan nilai penuh dari nilai output rekaman output dalam jenis aslinya.
+Selain itu, ringkasan memiliki panjang maksimum, yang nilai lengkapnya mungkin melebihi output cmdlet ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan output penuh dari pekerjaan Automation
+### Contoh 1: Mendapatkan output lengkap dari pekerjaan Automation
 ```
 PS C:\>Get-AzAutomationJobOutput -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01" -Stream "Any" | Get-AzAutomationJobOutputRecord
 ```
 
-Perintah ini mendapatkan output penuh dari pekerjaan yang memiliki ID pekerjaan yang ditentukan.
+Perintah ini mendapatkan output lengkap dari pekerjaan yang memiliki ID pekerjaan yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan catatan output pekerjaan.
+Menentukan nama akun Automation yang cmdlet ini mendapatkan catatan output pekerjaan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID rekaman output pekerjaan untuk cmdlet ini untuk diambil.
+Menentukan ID rekaman output pekerjaan untuk diambil cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan di mana cmdlet ini mendapatkan catatan output.
+Menentukan ID pekerjaan di mana cmdlet ini mendapatkan rekaman output.
 
 ```yaml
 Type: System.Guid
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan catatan output pekerjaan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan catatan output pekerjaan.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssBootDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssBootDiagnostic.md
-ms.openlocfilehash: d625fe98f4ae18378466db8d7960b306ca1ea8e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4644cf4f4cfcd5e5617951436cc720272a98a2d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686682"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595204"
 ---
 # Set-AzVmssBootDiagnostic
 
 ## SYNOPSIS
-Mengatur skala mesin virtual mengatur profil diagnostik boot.
+Mengatur profil diagnostik boot set skala komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssbootdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzVmssBootDiagnostic [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[
 ```
 
 ## DESCRIPTION
-Mengatur skala mesin virtual mengatur profil diagnostik boot.
+Mengatur profil diagnostik boot set skala komputer virtual.
 
 ## EXAMPLES
 
@@ -55,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Apakah diagnostik boot harus diaktifkan pada kumpulan skala mesin virtual.
+### -Diaktifkan
+Apakah diagnostik boot harus diaktifkan pada set skala komputer virtual.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageUri
-URI dari akun penyimpanan yang digunakan untuk menempatkan output dan cuplikan layar konsol.
+URI akun penyimpanan yang digunakan untuk menempatkan output konsol dan cuplikan layar.
 
 ```yaml
 Type: System.String
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

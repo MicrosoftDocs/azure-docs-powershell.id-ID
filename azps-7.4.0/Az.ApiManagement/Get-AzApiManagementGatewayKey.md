@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayKey.md
-ms.openlocfilehash: 0031d207ad339f8fdcbfc9d3db57a72f9aefc644
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4afcdadb152a3df9e7ea73eb75c7cb2352dea51c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752274"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593297"
 ---
 # Get-AzApiManagementGatewayKey
 
 ## SYNOPSIS
 Mendapatkan kunci Gateway yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgatewaykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApiManagementGatewayKey -Context <PsApiManagementContext> -GatewayId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementGatewayKey** mendapatkan kunci Gateway yang sudah ada
+Cmdlet **Get-AzApiManagementGatewayKey** mendapatkan kunci Gateway yang ada
 
 ## EXAMPLES
 
@@ -39,8 +42,8 @@ Perintah ini mendapatkan kunci untuk gateway "0123456789".
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

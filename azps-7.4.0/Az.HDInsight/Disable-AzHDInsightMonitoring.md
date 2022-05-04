@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightMonitoring.md
-ms.openlocfilehash: ab315f2a436c7985533ba51356a7adc3484c121e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ed55bef250c3d7aca46772faf3be27324cacf536
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808740"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683526"
 ---
 # Disable-AzHDInsightMonitoring
 
 ## SYNOPSIS
-Menonaktifkan integrasi log Azure Monitor Klasik pada klaster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan yang ditentukan selama aktifkan.
+Menonaktifkan integrasi log Azure Monitor Klasik pada kluster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan yang ditentukan selama pengaktifan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/disable-azhdinsightmonitoring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzHDInsightMonitoring -Name testcluster
 True
 ```
 
-Pemantauan akan dinonaktifkan pada klaster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan.
+Pemantauan akan dinonaktifkan pada kluster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan.
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ Disable-AzHDInsightMonitoring -Name testcluster -ResourceGroupName testrg
 True
 ```
 
-Pemantauan akan dinonaktifkan pada klaster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan.
+Pemantauan akan dinonaktifkan pada kluster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster untuk menonaktifkan Pemantauan.
 
 ```yaml
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

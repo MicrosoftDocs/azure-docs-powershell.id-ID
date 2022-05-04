@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: 915c4defc23d92966e2b9682a0faa9421e286f1d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9513fdfb3a1c607b654b59c98e2fc8f281fc452d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232119"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595293"
 ---
 # New-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
 Membuat grup asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Membuat grup asal.
 ## PARAMETERS
 
 ### -AdditionalLatencyInMillisecond
-Latensi tambahan dalam milidetik untuk probe jatuh ke dalam ember latensi terendah.
+Latensi tambahan dalam milidetik untuk pemeriksaan jatuh ke dalam wadah latensi terendah.
 
 ```yaml
 Type: Int32
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup asal Pintu Depan Azure.
+Nama grup asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeProtocol
-Protokol untuk digunakan untuk pemeriksaan kesehatan.
+Protokol yang digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficRestorationTimeToHealedOrNewEndpointsInMinutes
-Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
+Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat sehat atau titik akhir baru ditambahkan.
 
 ```yaml
 Type: Int32
@@ -221,8 +224,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -253,11 +256,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

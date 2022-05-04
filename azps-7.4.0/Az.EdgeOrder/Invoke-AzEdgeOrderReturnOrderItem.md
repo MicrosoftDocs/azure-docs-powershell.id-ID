@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
-ms.openlocfilehash: 4ddaeaec12c26c2e1e9da956d6e5cd0b4e043769
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60f133e0546a58945a34a6ac767cc913fa1ee3ef
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638864"
 ---
 # Invoke-AzEdgeOrderReturnOrderItem
 
 ## SYNOPSIS
 Mengembalikan item pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/invoke-azedgeorderreturnorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Mengembalikan item pesanan.
 
 ## EXAMPLES
 
-### Contoh 1: Command untuk memulai orderItem return
+### Contoh 1: Perintah untuk memulai pengembalian orderItem
 ```powershell
 Invoke-AzEdgeOrderReturnOrderItem -OrderItemName "OrderItem-211115074927900249117427" -ResourceGroupName "resourceGroupName" -ReturnReason "Test Order Return" -SubscriptionId "SubscriptionId"
 ```
@@ -50,7 +53,7 @@ Memanggil pengembalian orderItem
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressContactDetail
-Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSCONTACTDETAIL dan membuat tabel hash.
+Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSCONTACTDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressShippingAddress
-Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSSHIPPINGADDRESS dan membuat tabel hash.
+Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSSHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnReason
-Kembalikan Alasan.
+Alasan Pengembalian.
 
 ```yaml
 Type: System.String
@@ -245,8 +248,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -299,30 +302,30 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[OrderItemName <String>]`: Nama item pesanan
   - `[OrderName <String>]`: Nama pesanan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 RETURNADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
-  - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+  - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
 RETURNADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
-  - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
   - `[City <String>]`: Nama Kota.
   - `[CompanyName <String>]`: Nama perusahaan.
   - `[PostalCode <String>]`: Kode pos.
   - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-  - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
-  - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-  - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
+  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
+  - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
 ## RELATED LINKS
 

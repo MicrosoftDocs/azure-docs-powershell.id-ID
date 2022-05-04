@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAuthenticationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAuthenticationCertificate.md
-ms.openlocfilehash: f3002e0a11f3238ad822f93797f47377b0c05d92
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff3eb5e6c30e93c3ce382acab201af42b6483815
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280629"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652234"
 ---
 # Remove-AzApplicationGatewayAuthenticationCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat autentikasi dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayauthenticationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
