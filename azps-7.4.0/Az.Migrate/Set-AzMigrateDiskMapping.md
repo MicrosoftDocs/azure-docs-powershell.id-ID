@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/set-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateDiskMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateDiskMapping.md
-ms.openlocfilehash: 786f56b0bb716e678416e8a883d2622a0eba871f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b109407b9349ae931c6b4538df2c5c0507b8f20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873054"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677410"
 ---
 # Set-AzMigrateDiskMapping
 
 ## SYNOPSIS
-Pembaruan pemetaan disk
+Memperbarui pemetaan disk
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/set-azmigratediskmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Set-AzMigrateDiskMapping -DiskID <String> -DiskName <String> [<CommonParameters>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzMigrateDiskMapping memperbarui pemetaan disk sumber yang terpasang ke server untuk dimigrasikan
+Cmdlet Set-AzMigrateDiskMapping memperbarui pemetaan disk sumber yang terpasang pada server yang akan dimigrasikan
 
 ## EXAMPLES
 
@@ -39,12 +42,12 @@ DiskId                               TargetDiskName
 6000C294-1217-dec3-bc18-81f117220424 ContosoDisk_1
 ```
 
-Dapatkan objek disk untuk menyediakan input untuk Set-AzMigrateServerReplication
+Mendapatkan objek disk untuk memberikan input untuk Set-AzMigrateServerReplication
 
 ## PARAMETERS
 
-### -DISKID
-Menentukan ID diska diska yang terpasang ke server yang ditemukan untuk dimigrasikan.
+### -DiskID
+Menentukan ID disk yang terpasang pada server yang ditemukan yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskName
-Menentukan nama disk yang dikelola untuk dibuat.
+Menentukan nama disk terkelola yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

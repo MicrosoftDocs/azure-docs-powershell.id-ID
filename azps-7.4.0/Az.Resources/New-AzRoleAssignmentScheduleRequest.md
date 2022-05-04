@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignmentScheduleRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignmentScheduleRequest.md
-ms.openlocfilehash: 538e5f2ab8c8bdfa6b976687d20437641ee6dda6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e6d4ce4643f5134e253ab3d70e100576b9580b6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867420"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722070"
 ---
 # New-AzRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
 Membuat permintaan jadwal penetapan peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroleassignmentschedulerequest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Name                                 Type                                       
 12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca Microsoft.Authorization/roleAssignmentScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authori…
 ```
 
-Membuat permintaan untuk menyediakan penetapan `roleDefinition` aktif untuk `scope``principal`
+Membuat permintaan untuk menyediakan penetapan `roleDefinition` aktif pada `scope` untuk yang ditentukan `principal`
 
 ### Contoh 2: Menghapus permintaan jadwal penetapan peran sebagai Admin
 ```powershell
@@ -60,7 +63,7 @@ Name                                 Type                                       
 13f8978c-5d8d-4fbf-b4b6-2f43eeb43eca Microsoft.Authorization/roleAssignmentScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authori…
 ```
 
-Membuat permintaan untuk menghapus penetapan `roleDefinition` aktif untuk `scope` tugas yang ditentukan `principal`
+Membuat permintaan untuk menghapus penetapan `roleDefinition` aktif pada `scope` untuk yang ditentukan `principal`
 
 ### Contoh 3: Mengaktifkan permintaan jadwal penetapan peran baru sebagai pengguna
 ```powershell
@@ -74,7 +77,7 @@ Name                                 Type                                       
 12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca Microsoft.Authorization/roleAssignmentScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authori…
 ```
 
-Membuat permintaan untuk mengaktifkan penetapan `roleDefinition` `scope` yang memenuhi syarat untuk `principal`
+Membuat permintaan untuk mengaktifkan penugasan `roleDefinition` yang memenuhi syarat pada `scope` untuk yang ditentukan `principal`
 
 ### Contoh 4: Menonaktifkan permintaan jadwal penetapan peran sebagai pengguna
 ```powershell
@@ -88,13 +91,13 @@ Name                                 Type                                       
 12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca Microsoft.Authorization/roleAssignmentScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authori…
 ```
 
-Membuat permintaan untuk menonaktifkan penetapan `roleDefinition` yang memenuhi syarat untuk `scope` tugas yang ditentukan `principal`
+Membuat permintaan untuk menonaktifkan penugasan `roleDefinition` yang memenuhi syarat pada `scope` untuk yang ditentukan `principal`
 
 ## PARAMETERS
 
 ### -Kondisi
 Kondisi pada penetapan peran.
-Ini membatasi sumber daya tempat sumber daya dapat ditetapkan.
+Ini membatasi sumber daya yang dapat ditetapkan.
 misalnya: @Resource[Microsoft.Storage /storageAccounts/blobServices/containers:ContainerName] StringEqualsIgnoreCase 'foo_storage_container'
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDuration
-Durasi jadwal penetapan peran di Rentang Waktu.
+Durasi jadwal penetapan peran di TimeSpan.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationEndDateTime
-Tanggal Berakhir dari jadwal penetapan peran.
+Tanggal Selesai dari jadwal penetapan peran.
 
 ```yaml
 Type: System.DateTime
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationType
-Tipe jadwal penetapan peran kedaluwarsa
+Jenis kedaluwarsa jadwal penetapan peran
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Support.Type
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedRoleEligibilityScheduleId
-Id jadwal kelayakan peran tertaut - untuk mengaktifkan kelayakan.
+Id jadwal kelayakan peran yang ditautkan - untuk mengaktifkan kelayakan.
 
 ```yaml
 Type: System.String
@@ -215,9 +218,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penetapan peran yang akan dibuat.
-Ini bisa berupa GUID apa pun yang valid.
+Ini bisa menjadi GUID yang valid.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Id utama.
+ID utama.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestType
-Tipe permintaan jadwal penetapan peran.
+Jenis permintaan jadwal penetapan peran.
 Misalnya: SelfActivate, AdminAssign dll
 
 ```yaml
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleInfoStartDateTime
-Mulai TanggalWaktu jadwal penetapan peran.
+Mulai DateTime dari jadwal penetapan peran.
 
 ```yaml
 Type: System.DateTime
@@ -292,9 +295,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup permintaan jadwal penetapan peran untuk dibuat.
-Lingkup dapat berupa instans sumber daya REST apa pun.
+### -Cakupan
+Cakupan permintaan jadwal penetapan peran untuk dibuat.
+Cakupannya dapat berupa instans sumber daya REST apa pun.
 Misalnya, gunakan '/providers/Microsoft.Subscription/subscriptions/{subscription-id}/' untuk langganan, '/providers/Microsoft.Subscription/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' untuk grup sumber daya, dan '/providers/Microsoft.Subscription/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' untuk sumber daya.
 
 ```yaml
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetRoleAssignmentScheduleId
-Id jadwal penetapan peran yang dihasilkan atau id jadwal penetapan peran sedang diperbarui
+Id jadwal penetapan peran yang dihasilkan atau id jadwal penetapan peran yang sedang diperbarui
 
 ```yaml
 Type: System.String
@@ -369,8 +372,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -401,7 +404,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

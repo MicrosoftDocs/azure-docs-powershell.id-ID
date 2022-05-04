@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
-ms.openlocfilehash: d1bd6bd71936d963e7409d558ed56da053e74f3c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9eaae5aa651d0432ebc1b1bd1f970618c409da9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316611"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689462"
 ---
 # New-AzEdgeOrderItem
 
 ## SYNOPSIS
 Membuat item pesanan.
-Item pesanan yang sudah ada tidak dapat diperbarui dengan api ini dan harus diperbarui dengan API Item pesanan pembaruan.
+Item pesanan yang ada tidak dapat diperbarui dengan api ini dan sebaliknya harus diperbarui dengan API Perbarui item pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzEdgeOrderItem -Name <String> -ResourceGroupName <String> -ForwardAddressCo
 
 ## DESCRIPTION
 Membuat item pesanan.
-Item pesanan yang sudah ada tidak dapat diperbarui dengan api ini dan harus diperbarui dengan API Item pesanan pembaruan.
+Item pesanan yang ada tidak dapat diperbarui dengan api ini dan sebaliknya harus diperbarui dengan API Perbarui item pesanan.
 
 ## EXAMPLES
 
@@ -95,12 +98,12 @@ Location Name                  Type
 eastus   OrderItemNameWithPref Microsoft.EdgeOrder/orderItems
 ```
 
-Membuat orderItem baru dengan preferensi yang diatur untuk sumber daya transportasi, enkripsi, dan manajemen
+Membuat orderItem baru dengan preferensi yang ditetapkan untuk transportasi, enkripsi, dan sumber daya manajemen
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardShippingAddress
-Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDSHIPPINGADDRESS dan membuat tabel hash.
+Detail pengiriman untuk alamat Untuk dibangun, lihat bagian CATATAN untuk properti FORWARDSHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -174,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama item pesanan
 
 ```yaml
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 
 ### -OrderItemDetail
 Mewakili detail item pesanan.
-Untuk membangun, lihat bagian CATATAN untuk properti ORDERITEMDETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti ORDERITEMDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IOrderItemDetails
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -281,8 +284,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -334,40 +337,40 @@ FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
-  - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+  - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
 FORWARDSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
-  - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
   - `[City <String>]`: Nama Kota.
   - `[CompanyName <String>]`: Nama perusahaan.
   - `[PostalCode <String>]`: Kode pos.
   - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-  - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
-  - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-  - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
+  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
+  - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
 ORDERITEMDETAIL <IOrderItemDetails>: Mewakili detail item pesanan.
-  - `OrderItemType <OrderItemType>`: Tipe item pesanan.
+  - `OrderItemType <OrderItemType>`: Jenis item pesanan.
   - `ProductDetail <IProductDetails>`: Pengidentifikasi unik untuk konfigurasi.
-    - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang mengidentifikasi produk secara unik
-      - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang mengidentifikasi konfigurasi secara unik
-      - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang mengidentifikasi keluarga produk secara unik
-      - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi baris produk secara unik
-      - `[ProductName <String>]`: Mewakili nama produk yang mengidentifikasi produk secara unik
+    - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang secara unik mengidentifikasi produk
+      - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang secara unik mengidentifikasi konfigurasi
+      - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang secara unik mengidentifikasi keluarga produk
+      - `[ProductLineName <String>]`: Mewakili nama baris produk yang secara unik mengidentifikasi lini produk
+      - `[ProductName <String>]`: Mewakili nama produk yang secara unik mengidentifikasi produk
   - `[NotificationEmailList <String[]>]`: Daftar email pemberitahuan tambahan
   - `[Preference <IPreferences>]`: Preferensi pemberitahuan pelanggan
     - `[EncryptionPreference <IEncryptionPreferences>]`: Preferensi yang terkait dengan Enkripsi.
-      - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Diwajibkan untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
+      - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
     - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi yang terkait dengan sumber daya Manajemen.
       - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
     - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan.
       - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
       - `StageName <NotificationStageName>`: Nama panggung.
     - `[TransportPreference <ITransportPreferences>]`: Preferensi yang terkait dengan logistik pengiriman pesanan.
-      - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
+      - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
 ## RELATED LINKS
 

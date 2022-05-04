@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/start-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
-ms.openlocfilehash: 29b8de41be243a69175c13454132497ac6e0ad1a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 44619577fcaa89b26b7b2fa62020da76d7410923
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696836"
 ---
 # Start-AzHDInsightJob
 
 ## SYNOPSIS
 Memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/start-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Start-AzHDInsightJob [-ClusterName] <String> [-JobDefinition] <AzureHDInsightJob
 
 ## DESCRIPTION
 Cmdlet **Start-AzHDInsightJob** memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
-Ini bisa berupa pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Hive, atau pekerjaan Babi.
+Ini bisa menjadi pekerjaan MapReduce, pekerjaan Streaming MapReduce, pekerjaan Apache Hive, atau pekerjaan Pig.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini memulai pekerjaan di kluster bernama your-hadoop-001.
+Perintah ini memulai pekerjaan pada kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobDefinition
-Menentukan pekerjaan untuk memulai di kluster Azure HDInsight.
+Menentukan pekerjaan untuk memulai pada kluster Azure HDInsight.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJobDefinition
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

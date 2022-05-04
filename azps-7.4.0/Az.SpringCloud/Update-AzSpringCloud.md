@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloud.md
-ms.openlocfilehash: db8820c78b97cfe20541c87951539f09308f7058
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3d3a242c2bd9e488b196088ed3f5ea974f35cb1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865872"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721800"
 ---
 # Update-AzSpringCloud
 
 ## SYNOPSIS
-Operasi untuk memperbarui Layanan keluar.
+Operasi untuk memperbarui Layanan yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/update-azspringcloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Update-AzSpringCloud -InputObject <ISpringCloudIdentity> [-GitPropertyUri <Strin
 ```
 
 ## DESCRIPTION
-Operasi untuk memperbarui Layanan keluar.
+Operasi untuk memperbarui Layanan yang keluar.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Spring Cloud Service menurut nama.
+### Contoh 1: Perbarui Spring Cloud Service berdasarkan nama.
 ```powershell
 Update-AzSpringCloud -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service
 ```
@@ -90,9 +93,9 @@ Trace                                            : Microsoft.Azure.PowerShell.Cm
 TraceError                                       : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.Error
 ```
 
-Perbarui Layanan Awan Musim Semi berdasarkan nama.
+Perbarui Spring Cloud Service berdasarkan nama.
 
-### Contoh 2: Update Spring Cloud Service from pipe.
+### Contoh 2: Perbarui Spring Cloud Service dari pipa.
 ```powershell
 Get-AzSpringCloud -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service | Update-AzSpringCloud
 ```
@@ -143,12 +146,12 @@ Trace                                            : Microsoft.Azure.PowerShell.Cm
 TraceError                                       : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.Error
 ```
 
-Perbarui Layanan Cloud Musim Semi dari pipa.
+Perbarui Spring Cloud Service dari pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitPropertyUri
-URI dari repository
+URI repositori
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -222,7 +225,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Layanan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -299,8 +302,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -TraceEnabled
-Menunjukkan apakah mengaktifkan fungsionalitas penelusuran
+Menunjukkan apakah mengaktifkan fungsionalitas pelacakan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -359,8 +362,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -412,15 +415,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
-  - `[BindingName <String>]`: Nama sumber daya Pengikat.
+  - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.
   - `[DeploymentName <String>]`: Nama sumber daya Penyebaran.
   - `[DomainName <String>]`: Nama sumber daya domain kustom.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[Location <String>]`: wilayah
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ServiceName <String>]`: Nama sumber daya Layanan.
-  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 2d2397270100f6bd26df8d95b47429ef3e73d178
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83e5b605c065925c006425806a87aa2f9ed2c604
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721710"
 ---
 # Get-AzSynapseKustoPoolAttachedDatabaseConfiguration
 
 ## SYNOPSIS
-Mengembalikan konfigurasi database yang dilampirkan.
+Mengembalikan konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSynapseKustoPoolAttachedDatabaseConfiguration -KustoPoolName <String> -Res
  -WorkspaceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzSynapseKustoPoolAttachedDatabaseConfiguration -AttachedDatabaseConfigurationName <String>
  -KustoPoolName <String> -ResourceGroupName <String> -WorkspaceName <String> [-SubscriptionId <String[]>]
@@ -39,7 +42,7 @@ Get-AzSynapseKustoPoolAttachedDatabaseConfiguration -InputObject <ISynapseIdenti
 ```
 
 ## DESCRIPTION
-Mengembalikan konfigurasi database yang dilampirkan.
+Mengembalikan konfigurasi database terlampir.
 
 ## EXAMPLES
 
@@ -54,9 +57,9 @@ Name                                               Type                         
 testws/testfollowerkustopool/followerconfiguration Microsoft.Synapse/workspaces/kustoPools/AttachedDatabaseConfigurations East US 2
 ```
 
-Perintah di atas mencantumkan semua AttachedDatabaseConfigurations dalam kusto pool "testfollowerkustopool".
+Perintah di atas mencantumkan semua AttachedDatabaseConfigurations di kumpulan kusto "testfollowerkustopool".
 
-### Contoh 2: Dapatkan AttachedDatabaseConfiguration tertentu dalam kumpulan kusto
+### Contoh 2: Mendapatkan AttachedDatabaseConfiguration tertentu di kumpulan kusto
 ```powershell
 Get-AzSynapseKustoPoolAttachedDatabaseConfiguration -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testfollowerkustopool -Name followerconfiguration
 ```
@@ -67,12 +70,12 @@ Name                                               Type                         
 testws/testfollowerkustopool/followerconfiguration Microsoft.Synapse/workspaces/kustoPools/AttachedDatabaseConfigurations East US 2
 ```
 
-Perintah di atas mengembalikan AttachedDatabaseConfigurations bernama "followerconfiguration" dalam kluster "testfollowerkustopool".
+Perintah di atas mengembalikan AttachedDatabaseConfigurations bernama "followerconfiguration" di kluster "testfollowerkustopool".
 
 ## PARAMETERS
 
 ### -AttachedDatabaseConfigurationName
-Nama konfigurasi database yang dilampirkan.
+Nama konfigurasi database terlampir.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -198,14 +201,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

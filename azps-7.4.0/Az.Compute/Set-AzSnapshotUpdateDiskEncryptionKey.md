@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
-ms.openlocfilehash: 0bba1d62a25cdcadf649cfa0e18da746c68699e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c1707afc24184b4aa38bd8d1a9a586b3ba95c724
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289557"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685434"
 ---
 # Set-AzSnapshotUpdateDiskEncryptionKey
 
 ## SYNOPSIS
-Mengatur properti kunci enkripsi disk pada objek pembaruan snapshot.
+Mengatur properti kunci enkripsi disk pada objek pembaruan rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azsnapshotupdatediskencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzSnapshotUpdateDiskEncryptionKey [-SnapshotUpdate] <PSSnapshotUpdate> [[-Se
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzSnapshotUpdateDiskEncryptionKey** mengatur properti kunci enkripsi disk pada objek pembaruan snapshot.
+**Cmdlet Set-AzSnapshotUpdateDiskEncryptionKey** mengatur properti kunci enkripsi disk pada objek pembaruan rekam jepret.
 
 ## EXAMPLES
 
@@ -42,9 +45,9 @@ $snapshotupdateconfig = Set-AzSnapshotUpdateKeyEncryptionKey -SnapshotUpdate $sn
 Update-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -SnapshotUpdate $snapshotupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS.  Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi.
-Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek pembaruan snapshot.
-Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan rekam jepret kosong lokal dengan ukuran 10GB dalam jenis akun penyimpanan Premium_LRS.  Ini juga mengatur jenis OS Windows dan mengaktifkan pengaturan enkripsi.
+Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan rekam jepret.
+Perintah terakhir mengambil objek pembaruan rekam jepret dan memperbarui rekam jepret yang ada dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sekretaris
+### -SecretUrl
 Menentukan Url rahasia.
 
 ```yaml
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotUpdate
-Menentukan objek pembaruan snapshot lokal.
+Menentukan objek pembaruan rekam jepret lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshotUpdate
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Menentukan ID kubah sumber.
+Menentukan ID vault sumber.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGateway.md
-ms.openlocfilehash: 43af1a15637c8aef63ec6548eb0336bcac720fd5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c28aa2e595f2e95b8a9f0ab64f06edb61afb7e70
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280287"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720758"
 ---
 # Remove-AzVpnGateway
 
 ## SYNOPSIS
 Cmdlet Remove-AzVpnGateway menghapus gateway VPN Azure. Ini adalah gateway khusus untuk konektivitas yang ditentukan perangkat lunak Azure Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,8 +55,8 @@ New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $vi
 Remove-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
-Tindakan ini akan menghapus VpnGateway dan semua VpnConnections yang terlampir di dalamnya.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
+Ini akan menghapus VpnGateway dan semua VpnConnections yang terpasang padanya.
 
 ### Contoh 2
 
@@ -65,9 +68,9 @@ New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $vi
 Get-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" | Remove-AzVpnGateway-Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Penghapusan ini terjadi menggunakan perpipaan powershell, yang menggunakan objek VpnGateway yang dikembalikan oleh perintah Get-AzVpnGateway.
-Untuk menyembunyikan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
-Tindakan ini akan menghapus VpnGateway dan semua VpnConnections yang terlampir di dalamnya.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pipa powershell, yang menggunakan objek VpnGateway yang dikembalikan oleh perintah Get-AzVpnGateway.
+Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
+Ini akan menghapus VpnGateway dan semua VpnConnections yang terpasang padanya.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama vpnGateway.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk vpnGateway dihapus.
+ID sumber daya Azure untuk vpnGateway yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

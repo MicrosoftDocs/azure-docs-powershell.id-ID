@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpAllocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpAllocation.md
-ms.openlocfilehash: abb42cf82dac018de686d76e7767641d5b9f6ecc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab45944b564abebeca50eacda2623120e4a8e117
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313713"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707950"
 ---
 # New-AzIpAllocation
 
 ## SYNOPSIS
 Membuat Azure IpAllocation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipallocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzIpAllocation -ResourceName 'TestIpAllocation'  -ResourceGroupName 'TestRes
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
+### -Force
+Jangan meminta konfirmasi jika Anda ingin mengambil alih sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAllocationTag
-Tag alokasi alokasi IP
+Tag alokasi alokasi alokasi IP
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAllocationType
-Tipe alokasi IP
+Jenis alokasi IP
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Prefiks
-Prefiks alokasi IP
+### -Awalan
+Awalan alokasi IP
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixLength
-Panjang prefiks alokasi IP
+Panjang awalan alokasi IP
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixType
-Tipe prefiks alokasi IP
+Jenis awalan alokasi IP
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -240,8 +243,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

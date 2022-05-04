@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
-ms.openlocfilehash: c899467c43cbe3ce7dd9924f0ae4968020788d72
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ecb92b33624b08a70ea6d3d0d08e8cf01aaafa58
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283527"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714226"
 ---
 # New-AzAutoscaleProfile
 
 ## SYNOPSIS
 Membuat profil Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscaleprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzAutoscaleProfile -Name <String> -DefaultCapacity <String> -MaximumCapacity
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### CreateWithFixedDateScheduling
+### Penjadwalan CreateWithFixedDateScheduling
 ```
 New-AzAutoscaleProfile -Name <String> -DefaultCapacity <String> -MaximumCapacity <String>
  -MinimumCapacity <String> -StartTimeWindow <DateTime> -EndTimeWindow <DateTime> -TimeWindowTimeZone <String>
@@ -49,7 +52,7 @@ New-AzAutoscaleProfile -Name <String> -DefaultCapacity <String> -MaximumCapacity
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutoscaleProfile** membuat profil Skala Otomatis.
+Cmdlet **New-AzAutoscaleProfile** membuat profil Autoscale.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
 ```
 
 Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam variabel $Rule.
-Perintah kedua membuat profil bernama Profile01 dengan tanggal tetap menggunakan aturan dalam $Rule.
+Perintah kedua membuat profil bernama Profile01 dengan tanggal tetap menggunakan aturan di $Rule.
 
 ### Contoh 2: Membuat profil dengan jadwal
 ```powershell
@@ -117,7 +120,7 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Dua perintah pertama membuat aturan, dan menyimpannya masing-masing dalam variabel $Rule 1 dan $Rule 2.
+Dua perintah pertama membuat aturan, dan menyimpannya dalam variabel masing-masing $Rule 1 dan $Rule 2.
 Perintah ketiga membuat profil bernama ProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya dalam variabel $Profile 1.
 Perintah akhir membuat profil bernama SecondProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya dalam variabel $Profile 2.
 
@@ -178,7 +181,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -MaksimumKapasitas
+### -MaximumCapacity
 Menentukan kapasitas maksimum.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama profil yang akan dibuat.
 
 ```yaml
@@ -226,8 +229,8 @@ Accept wildcard characters: False
 ### -RecurrenceFrequency
 Menentukan frekuensi pengulangan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
-- Kedua
+- Tidak ada
+- Detik
 - Menit
 - Jam
 - Hari
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aturan
-Menentukan daftar aturan untuk ditambahkan ke profil.
+Menentukan daftar aturan yang akan ditambahkan ke profil.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleHour
-Menentukan jam yang dijadwalkan.
+Menentukan jam terjadwal.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.Nullable`1[System.Int32]]
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -364,7 +367,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Generic.List1`1[[System.Nullable`[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 

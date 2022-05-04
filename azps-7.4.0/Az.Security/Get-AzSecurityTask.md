@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTask.md
-ms.openlocfilehash: 3d7920fd9656c487a053767ce5a4c0120d8a931c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1139fcb0298c8854669a78ebb24dc16b3c83cb7d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691996"
 ---
 # Get-AzSecurityTask
 
 ## SYNOPSIS
-Mendapatkan tugas keamanan yang Azure Security Center sarankan Anda lakukan untuk memperkuat postur keamanan Anda.
+Mendapatkan tugas keamanan yang Azure Security Center merekomendasikan Anda untuk melakukan untuk memperkuat postur keamanan Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritytask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Get-AzSecurityTask -ResourceId <String> [-DefaultProfile <IAzureContextContainer
 
 ## DESCRIPTION
 Azure Security Center memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
-Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang Azure Security Center rekomendasikan untuk Anda lakukan.
+Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang Azure Security Center merekomendasikan Anda untuk melakukannya.
 
 ## EXAMPLES
 
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

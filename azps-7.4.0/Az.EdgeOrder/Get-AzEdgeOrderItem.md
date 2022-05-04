@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderItem.md
-ms.openlocfilehash: abc09b8f81c89656f4c285d37138d6b6f658c807
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e4fefc8335fb7ca33257ee78668613cc3ac9f6d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941833"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702894"
 ---
 # Get-AzEdgeOrderItem
 
 ## SYNOPSIS
 Mendapatkan item pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEdgeOrderItem [-SubscriptionId <String[]>] [-Expand <String>] [-Filter <St
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzEdgeOrderItem -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Expand <String>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -86,9 +89,9 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-$expand didukung pada detail perangkat, detail pengiriman ke depan, dan parameter detail pengiriman terbalik.
+$expand didukung pada detail perangkat, detail pengiriman maju, dan parameter detail pengiriman terbalik.
 Masing-masing dapat disediakan sebagai daftar yang dipisahkan koma.
-Detail Perangkat untuk item pesanan menyediakan detail tentang perangkat produk, detail Pengiriman Maju dan Terbalik masing-masing menyediakan detail pengiriman maju dan terbalik.
+Detail Perangkat untuk item pesanan memberikan detail tentang perangkat produk, detail Pengiriman Maju dan Terbalik masing-masing memberikan detail pengiriman maju dan terbalik.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-$filter didukung untuk memfilter berdasarkan id pesanan. Filter hanya mendukung operasi yang sama dengan.
+$filter didukung untuk memfilter berdasarkan id pesanan. Filter hanya mendukung operasi yang sama.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama item pesanan
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

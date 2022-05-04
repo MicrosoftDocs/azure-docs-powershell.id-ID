@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/new-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
-ms.openlocfilehash: 60288ffeefaee92324e26b6463a992a645542580
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e91c2cb26ef05175109baf751196858d38aa4168
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681444"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715052"
 ---
 # New-AzMediaServiceStorageConfig
 
 ## SYNOPSIS
 Buat konfigurasi akun penyimpanan untuk cmdlet layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/new-azmediaservicestorageconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ $StorageAccount = New-AzStorageAccount -ResourceGroupName $ResourceGroupName -Na
 New-AzMediaServiceStorageConfig -StorageAccountId $StorageAccount.Id -IsPrimary
 ```
 
-Perintah pertama membuat objek akun penyimpanan menggunakan cmdlet **New-AzStorageAccount** .
-Perintah menamai akun penyimpanan ini Storage1 dan tipenya dinamai Standard_GRS dan menyimpan hasilnya dalam variabel bernama $StorageAccount.
+Perintah pertama membuat objek akun penyimpanan dengan menggunakan cmdlet **New-AzStorageAccount** .
+Perintah menamai akun penyimpanan ini Storage1 dan jenisnya diberi nama Standard_GRS dan menyimpan hasilnya dalam variabel bernama $StorageAccount.
 Perintah kedua membuat objek konfigurasi penyimpanan sebagai akun penyimpanan utama yang terkait dengan layanan media menggunakan informasi ID akun penyimpanan yang disimpan dalam variabel $StorageAccount.
 
 ## PARAMETERS
@@ -88,8 +91,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

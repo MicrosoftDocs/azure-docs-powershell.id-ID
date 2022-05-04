@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADUser.md
-ms.openlocfilehash: d0d60eae6c8110ed4c6d5c868d2c0ef3d3b84490
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e3cc65b89f49c96def8c3a7cad6a0049aea52fb3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186835"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697088"
 ---
 # Remove-AzADUser
 
 ## SYNOPSIS
 Menghapus entitas dari pengguna.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

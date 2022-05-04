@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
-ms.openlocfilehash: ead64ef21d95956d1cece2093df696c80969bbe6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9f2988c57df59706b81cc02ce5e5ee531f28cdf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691046"
 ---
 # Get-AzFrontDoorFrontendEndpoint
 
 ## SYNOPSIS
-Dapatkan pintu depan titik akhir.
+Dapatkan titik akhir frontend front door.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorfrontendendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzFrontDoorFrontendEndpoint -ResourceId <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFrontDoorFrontendpoint** mendapatkan semua titik akhir frontend yang ada di sumber daya Pintu Depan saat ini yang cocok dengan informasi yang disediakan.
+Cmdlet **Get-AzFrontDoorFrontendEndpoint** mendapatkan semua titik akhir frontend yang ada di sumber daya Front Door saat ini yang cocok dengan informasi yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua titik akhir frontend di Pintu Depan "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1".
+### Contoh 1: Dapatkan semua titik akhir frontend di Front Door "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1".
 ```powershell
 Get-AzFrontDoorFrontendEndpoint -ResourceGroupName "rg1" -FrontDoorName "frontdoor1"
 ```
@@ -87,9 +90,9 @@ Name                             : frontendpointname1-custom-xyz
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Dapatkan semua titik akhir frontend di Pintu Depan "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1".
+Dapatkan semua titik akhir frontend di Front Door "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1".
 
-### Contoh 2: Dapatkan titik akhir frontend dengan nama "frontdoor1-azurefd-net" di Pintu Depan "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1"
+### Contoh 2: Dapatkan titik akhir frontend dengan nama "frontdoor1-azurefd-net" di Front Door "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1"
 ```powershell
 Get-AzFrontDoorFrontendEndpoint -ResourceGroupName "rg1" -FrontDoorName "frontdoor1" -Name "frontdoor1-azurefd-net"
 ```
@@ -115,7 +118,7 @@ Name                             : frontdoor1-azurefd-net
 Type                             : Microsoft.Network/frontdoors/frontendendpoints
 ```
 
-Dapatkan titik akhir frontend dengan nama "frontdoor1-azurefd-net" di Pintu Depan "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1"
+Dapatkan titik akhir frontend dengan nama "frontdoor1-azurefd-net" di Front Door "frontdoor1" yang merupakan bagian dari grup sumber daya "rg1"
 
 ## PARAMETERS
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan.
+Nama Front Door.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama titik akhir frontend.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Dari Pintu Depan
+Id Sumber Daya Front Door
 
 ```yaml
 Type: System.String
@@ -210,11 +213,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

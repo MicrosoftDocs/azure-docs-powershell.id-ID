@@ -6,19 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
-ms.openlocfilehash: 5ffbc8aa68d549161e5899d8002b1efbe67d4eae
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d54c301183f45b16d3c4fd16350fd6172976a6b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867312"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733096"
 ---
 # Remove-AzRoleAssignment
 
 ## SYNOPSIS
-Menghapus penetapan peran untuk pokok tertentu yang ditetapkan ke peran tertentu pada lingkup tertentu.
+Menghapus penetapan peran ke prinsipal yang ditentukan yang ditetapkan ke peran tertentu pada cakupan tertentu.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /users/{id}
 - GET /servicePrincipals/{id}
@@ -26,7 +26,10 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
 
-Harap perhatikan bahwa cmdlet ini akan ditandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini memiliki hak istimewa yang tidak cukup untuk mendapatkan tipe objek.
+Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Remove-AzRoleAssignment -ObjectId <String> -ResourceGroupName <String> -RoleDefi
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### LingkupWithObjectIdParameterSet
+### ScopeWithObjectIdParameterSet
 ```
 Remove-AzRoleAssignment -ObjectId <String> [-Scope <String>] -RoleDefinitionName <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -74,7 +77,7 @@ Remove-AzRoleAssignment -SignInName <String> -ResourceGroupName <String> -RoleDe
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### LingkupWithSignInNameParameterSet
+### ScopeWithSignInNameParameterSet
 ```
 Remove-AzRoleAssignment -SignInName <String> [-Scope <String>] -RoleDefinitionName <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -93,7 +96,7 @@ Remove-AzRoleAssignment -ServicePrincipalName <String> -ResourceGroupName <Strin
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### LingkupWithSPNParameterSet
+### ScopeWithSPNParameterSet
 ```
 Remove-AzRoleAssignment -ServicePrincipalName <String> [-Scope <String>] -RoleDefinitionName <String>
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -106,17 +109,17 @@ Remove-AzRoleAssignment [-PassThru] [-InputObject] <PSRoleAssignment>
 ```
 
 ## DESCRIPTION
-Gunakan commandlet Remove-AzRoleAssignment untuk mencabut akses ke setiap prinsipal pada lingkup tertentu dan peran tertentu.
-Objek penugasan yaitu pokok harus ditentukan.
-Prinsipal dapat berupa pengguna (menggunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (menggunakan parameter ObjectId untuk mengidentifikasi grup) atau prinsipal layanan (gunakan parameter ServicePrincipalName atau ObjectId untuk mengidentifikasi ServicePrincipal.
-Peran yang ditetapkan prinsipal ke MUST ditentukan menggunakan parameter RoleDefinitionName.
-Lingkup tugas dapat ditentukan dan jika tidak ditentukan, default ke lingkup langganan yaitu akan mencoba menghapus tugas ke pokok dan peran tertentu pada lingkup langganan.
-Lingkup tugas dapat ditentukan menggunakan salah satu parameter berikut.
-J.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
+Gunakan commandlet Remove-AzRoleAssignment untuk mencabut akses ke perwakilan mana pun pada cakupan tertentu dan peran yang diberikan.
+Objek penugasan yaitu pokok HARUS ditentukan.
+Prinsipal dapat menjadi pengguna (gunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (gunakan parameter ObjectId untuk mengidentifikasi grup) atau perwakilan layanan (gunakan parameter ServicePrincipalName atau ObjectId untuk mengidentifikasi ServicePrincipal.
+Peran yang ditetapkan prinsipal ke HARUS ditentukan menggunakan parameter RoleDefinitionName.
+Cakupan penugasan DAPAT ditentukan dan jika tidak ditentukan, default ke cakupan langganan yaitu akan mencoba menghapus tugas ke prinsipal dan peran yang ditentukan pada cakupan langganan.
+Cakupan penugasan dapat ditentukan menggunakan salah satu parameter berikut.
+a.
+Cakupan - Ini adalah cakupan yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
-C.
-ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu di bawah langganan.
+c.
+ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu di bawah langganan.
 
 ## EXAMPLES
 
@@ -133,7 +136,7 @@ Remove-AzRoleAssignment -ObjectId 36f81fc3-b00f-48cd-8218-3879f51ff39f -RoleDefi
 ```
 
 Menghapus penetapan peran ke prinsipal grup yang diidentifikasi oleh ObjectId dan ditetapkan ke peran Pembaca.
-Default menggunakan langganan saat ini sebagai lingkup untuk menemukan tugas yang akan dihapus.
+Default menggunakan langganan saat ini sebagai cakupan untuk menemukan tugas yang akan dihapus.
 
 ### Contoh 3
 ```powershell
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Tugas Peran.
+Objek Penetapan Peran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Azure AD ObjectId pengguna, grup, atau prinsipal layanan.
+Azure AD ObjectId pengguna, grup, atau perwakilan layanan.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResource
-Sumber daya induk dalam hierarki(sumber daya yang ditentukan menggunakan parameter ResourceName), jika ada.
-Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Sumber daya induk dalam hierarki (sumber daya yang ditentukan menggunakan parameter ResourceName), jika ada.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -223,8 +226,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya tempat peran ditetapkan.
-Mencoba menghapus tugas pada lingkup grup sumber daya tertentu.
-Ketika digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Mencoba menghapus penugasan pada cakupan grup sumber daya yang ditentukan.
+Saat digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah membuat cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ### -ResourceName
 Nama sumber daya.
 Misalnya storageaccountprod.
-Harus digunakan bersama dengan ResourceGroupName, ResourceType dan (opsional)parameter ParentResource, untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya dan menghapus tugas pada lingkup tersebut.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan (opsional) ParentResource, untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya dan menghapus penugasan pada cakupan tersebut.
 
 ```yaml
 Type: System.String
@@ -256,9 +259,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
-Misalnya Microsoft.Network/virtualNetworks.
-Harus digunakan bersama dengan ResourceGroupName, ResourceName dan (opsional)parameter ParentResource untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya dan menghapus tugas pada lingkup sumber daya tersebut.
+Jenis sumber daya.
+Misalnya, Microsoft.Network/virtualNetworks.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional)ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya dan menghapus penugasan di cakupan sumber daya tersebut.
 
 ```yaml
 Type: System.String
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama peran RBAC yang tugasnya perlu dihapus yaitu Pembaca, Kontributor, administrator Virtual Network, dll.
+Nama peran RBAC yang tugasnya perlu dihapus yaitu Pembaca, Kontributor, Virtual Network Administrator, dll.
 
 ```yaml
 Type: System.String
@@ -302,11 +305,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup penetapan peran yang akan dihapus.
+### -Cakupan
+Cakupan penetapan peran yang akan dihapus.
 Dalam format URI relatif.
 Misalnya "/subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG".
-Jika tidak ditentukan, akan mencoba menghapus peran pada tingkat langganan.
+Jika tidak ditentukan, akan mencoba menghapus peran di tingkat langganan.
 Jika ditentukan, seharusnya dimulai dengan "/subscriptions/{id}".
 
 ```yaml
@@ -351,8 +354,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -395,7 +398,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsn.md
-ms.openlocfilehash: 99810c3356b035cebb3a0e6a8a2af097d506b99a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7c4853f5f955832cedeb3b8f29e782ef1ed847d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060723"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722160"
 ---
 # New-AzPeerAsn
 
 ## SYNOPSIS
 Membuat ASN Peer baru 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeerasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactDetail
-Alamat Email yang digunakan untuk menghubungi jika masalah muncul biasanya pusat operasi jaringan
+Alamat Email yang digunakan untuk menghubungi jika masalah muncul biasanya Pusat Operasi Jaringan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSContactDetail[]
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

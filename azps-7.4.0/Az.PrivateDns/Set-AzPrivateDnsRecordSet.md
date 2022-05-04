@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 2065ac7bf2f77431aa1ab5446130d2ff7df6add9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3809fea9bc4ffe3f9a528aa60f1c47750097c695
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803520"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715556"
 ---
 # Set-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
-Memperbarui/Mengatur kumpulan catatan dalam zona DNS Pribadi.
+Memperbarui/Mengatur kumpulan catatan di zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzPrivateDnsRecordSet -RecordSet <PSPrivateDnsRecordSet> [-Overwrite]
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzPrivateDnsRecordSet memperbarui kumpulan catatan di layanan DNS Pribadi Azure dari objek RecordSet lokal. Anda dapat melewati objek RecordSet sebagai parameter atau menggunakan operator pipeline. Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Kumpulan catatan tidak diperbarui jika telah diubah dalam DNS Pribadi Azure sejak objek RecordSet lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda bisa menyembunyikan perilaku ini menggunakan parameter Timpa, yang memperbarui kumpulan catatan terlepas dari perubahan bersamaan.
+Cmdlet Set-AzPrivateDnsRecordSet memperbarui kumpulan catatan di layanan DNS Privat Azure dari objek RecordSet lokal. Anda dapat meneruskan objek RecordSet sebagai parameter atau dengan menggunakan operator alur. Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Kumpulan catatan tidak diperbarui jika telah diubah di Azure Private DNS sejak objek RecordSet lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini menggunakan parameter Timpa, yang memperbarui kumpulan catatan terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua dan ketiga adalah operasi off-line untuk menambahkan dua rekaman A ke kumpulan catatan. Perintah terakhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk melakukan pembaruan.
+Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua dan ketiga adalah operasi off-line untuk menambahkan dua rekaman A ke kumpulan catatan. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menerapkan pembaruan.
 
 ### Contoh 2: Memperbarui catatan SOA
 ```powershell
@@ -78,7 +81,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua memperbarui catatan SOA yang ditentukan dalam $RecordSet. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menyebarkan pembaruan dalam $RecordSet.
+Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua memperbarui rekaman SOA yang ditentukan di $RecordSet. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menyebarluaskan pembaruan dalam $RecordSet.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Jangan gunakan bidang ETag parameter RecordSet untuk pemeriksaan konkurensi optimis.
+Jangan gunakan bidang ETag dari parameter RecordSet untuk pemeriksaan konkurensi optimis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +130,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
-ms.openlocfilehash: d52d477efe6c2e13bca6808d378c50a67e1a1ff4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ce18f76fc611c810d3e9bc6e3b6bc595a7832efd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227421"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712156"
 ---
 # Add-AzHDInsightSecurityProfile
 
 ## SYNOPSIS
 Menambahkan profil keamanan ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightsecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Add-AzHDInsightSecurityProfile [-Config] <AzureHDInsightConfig> -DomainResourceI
 ```
 
 ## DESCRIPTION
-Profil keamanan digunakan untuk membuat kluster yang aman dengan melakukan kerberisasi.
-Profil keamanan berisi konfigurasi yang terkait dengan penggabung kluster ke Domain Direktori Aktif.
+Profil keamanan digunakan untuk membuat kluster aman dengan kerberisasinya.
+Profil keamanan berisi konfigurasi terkait bergabung dengan kluster ke Domain Direktori Aktif.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ Perintah ini menambahkan nilai profil keamanan ke kluster bernama your-hadoop-00
 ## PARAMETERS
 
 ### -ClusterUsersGroupDN
-Nama yang dibedakan dari grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
+Nama terhormat grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
 
 ```yaml
 Type: System.String[]
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationalUnitDN
-Nama yang dibedakan dari unit organisasi di direktori Aktif tempat akun pengguna dan komputer akan dibuat
+Nama khusus unit organisasi di direktori Aktif tempat akun pengguna dan komputer akan dibuat
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

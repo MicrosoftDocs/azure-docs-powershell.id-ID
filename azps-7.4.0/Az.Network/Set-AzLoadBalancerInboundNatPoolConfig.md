@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerInboundNatPoolConfig.md
-ms.openlocfilehash: 2bbaccf68bf5b71d0aeef7293b4099ecfea6c511
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a84c5aa037e8c0720233868961f098d1550abe89
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676818"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689030"
 ---
 # Set-AzLoadBalancerInboundNatPoolConfig
 
 ## SYNOPSIS
-Mengatur konfigurasi kumpulan NAT masuk untuk penyeimbang beban.
+Mengatur konfigurasi kumpulan NAT masuk untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancerinboundnatpoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Set-AzLoadBalancerInboundNatPoolConfig -LoadBalancer <PSLoadBalancer> -Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerInboundNatPoolConfig** mengatur konfigurasi kumpulan NAT masuk untuk penyeimbang muatan.
+Cmdlet **Set-AzLoadBalancerInboundNatPoolConfig** menetapkan konfigurasi kumpulan NAT masuk untuk load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Set
+### Contoh 1: Atur
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 $feIpConfig = Get-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -LoadBalancer $slb
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengonfigurasi titik akhir mesin virtual untuk kemampuan IP mengambang yang diperlukan untuk mengonfigurasi SQL Grup Ketersediaan AlwaysOn. Pengaturan ini diperlukan ketika menggunakan Grup Ketersediaan AlwaysOn SQL di server SQL. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
+Mengonfigurasi titik akhir komputer virtual untuk kemampuan IP mengambang yang diperlukan untuk mengonfigurasi Grup Ketersediaan SQL AlwaysOn. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di server SQL. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau penghentian koneksi yang tidak terduga. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu habis untuk koneksi diam TCP. Nilai dapat diatur antara 4 dan 30 menit. Nilai defaultnya adalah 4 menit. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
+Batas waktu untuk koneksi diam TCP. Nilainya dapat diatur antara 4 dan 30 menit. Nilai defaultnya adalah 4 menit. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Int32
@@ -190,7 +193,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -216,8 +219,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

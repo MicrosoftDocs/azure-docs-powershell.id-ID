@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertState.md
-ms.openlocfilehash: bcd5e0072b6706a537be7edaddce7bf0a67fbba2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc604d28bc56fde1c9bf6632b3483285605d6f2c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143321041"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691422"
 ---
 # Update-AzAlertState
 
 ## SYNOPSIS
-Status pemberitahuan pembaruan
+Memperbarui status pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/update-azalertstate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzAlertState -State <String> -InputObject <PSAlert> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-**Cmdlet Update-AzAlertState** memperbarui status peringatan.
+**Cmdlet Update-AzAlertState** memperbarui status pemberitahuan.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Cmdlet ini memperbarui status pemberitahuan menjadi Ditutup.
 ## PARAMETERS
 
 ### -AlertId
-Pengidentifikasi Unik Peringatan / ResourceId pemberitahuan.
+Pengidentifikasi Unik Pemberitahuan / ResourceId pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Input objek dari pipeline.
+Masukkan objek dari alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSAlert
@@ -90,8 +93,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Status Peringatan Diperbarui
+### -State
+Status Pemberitahuan Yang Diperbarui
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -137,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

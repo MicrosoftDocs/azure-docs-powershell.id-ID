@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 306e051824ca7531fac8e5929b780ea0a697ff13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1cbd79ca4952f7ec6ffeaaf8f9bbb83896832ac3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941347"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714315"
 ---
 # Remove-AzEventHubConsumerGroup
 
 ## SYNOPSIS
-Menghapus grup konsumen Hub Kejadian tertentu.
+Menghapus grup konsumen Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzEventHubConsumerGroup [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen tertentu dari Hub Acara tertentu.
+Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen yang ditentukan dari Event Hub yang diberikan.
 
 ## EXAMPLES
 
@@ -48,26 +51,26 @@ Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen tert
 Remove-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyConsumerGroupName
 ```
 
-Menghapus grup konsumen MyConsumerGroupName\` dari Hub \`Kejadian MyEventHubName\`, yang dilingkupkan ke \`ruang nama MyNamespaceName\`.\`
+Menghapus grup \`konsumen MyConsumerGroupName\` dari Pusat \`Aktivitas MyEventHubName\`, yang dicakup ke \`namespace layanan MyNamespaceName\` .
 
-### Contoh 2: InputObject - Using Variable
+### Contoh 2: InputObject - Menggunakan Variabel
 ```powershell
 $inputobject = Get-AzEventHubConsumerGroup <params>
 Remove-AzEventHubConsumerGroup -InputObject $inputobject
 ```
 
-### Contoh 3: InputObject - Using Piping
+### Contoh 3: InputObject - Menggunakan Piping
 ```powershell
 Get-AzEventHubConsumerGroup <params> | Remove-AzEventHubConsumerGroup
 ```
 
-### Contoh 4: ResourceId Using Variable
+### Contoh 4: ResourceId Menggunakan Variabel
 ```powershell
 $resourceid = Get-AzEventHubConsumerGroup <params>
 Remove-AzEventHubConsumerGroup -ResourceId $resourceid.Id
 ```
 
-### Contoh 5: ResourceId Using string
+### Contoh 5: ResourceId Menggunakan string
 ```powershell
 Remove-AzEventHubConsumerGroup -ResourceId "/subscriptions/xxx-xxxx-xxxxx-xxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.EventHub/namespaces/NamespaceName/eventhubs/EventHubName/consumergroups/ConsumerGroupName"
 ```
@@ -75,7 +78,7 @@ Remove-AzEventHubConsumerGroup -ResourceId "/subscriptions/xxx-xxxx-xxxxx-xxxxx/
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Grup Konsumen
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -209,8 +212,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

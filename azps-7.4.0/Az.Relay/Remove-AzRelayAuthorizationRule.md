@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
-ms.openlocfilehash: a3c0a4d646b5849576a6ff190d69fca3f1a01a4b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1225b46b6bfac8698099f489e007e4c32c4aaf4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740124"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715484"
 ---
 # Remove-AzRelayAuthorizationRule
 
 ## SYNOPSIS
-Menghapus aturan otorisasi HibridConnection dari entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Menghapus aturan otorisasi HybridConnection dari entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/remove-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Remove-AzRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRelayAuthorizationRule** menghapus aturan otorisasi entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Cmdlet **Remove-AzRelayAuthorizationRule** menghapus aturan otorisasi entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
@@ -49,21 +52,21 @@ Cmdlet **Remove-AzRelayAuthorizationRule** menghapus aturan otorisasi entitas Re
 Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 ```
 
-Menghapus aturan `AuthoRule1` otorisasi ruang `TestNameSpace-Relay1`nama .
+Menghapus aturan `AuthoRule1` otorisasi namespace `TestNameSpace-Relay1`.
 
 ### Contoh 2
 ```powershell
 Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWcfRelay -Name AuthoRule1
 ```
 
-Menghapus aturan `AuthoRule1` otorisasi WcfRelay `TestWcfRelay` dari ruang `TestNameSpace-Relay1`nama .
+Menghapus aturan `AuthoRule1` otorisasi WcfRelay `TestWcfRelay` dari namespace `TestNameSpace-Relay1`.
 
 ### Contoh 3
 ```powershell
 Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -HybridConnection TestHybridConnection -Name AuthoRule1
 ```
 
-Menghapus aturan `AuthoRule1` otorisasi HibridConnection `TestHybridConnection` dari ruang `TestNameSpace-Relay1`nama .
+Menghapus aturan `AuthoRule1` otorisasi HybridConnection `TestHybridConnection` dari namespace `TestNameSpace-Relay1`.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -199,8 +202,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

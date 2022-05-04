@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/new-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
-ms.openlocfilehash: cacc416389d11813af9003b8e1b44a344bfbd5a4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 86fc80abe98fdc707ddabd3a401ffed268e9a68b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673056"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716384"
 ---
 # New-AzSearchAdminKey
 
 ## SYNOPSIS
 Meregenerasi kunci admin layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/new-azsearchadminkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Primary                          Secondary
 85B3813D11904B591BE8A196C2C743A1 CEF791D5BAC2E6C0B232C56702F21E87
 ```
 
-Contoh meregenerasi Kunci utama layanan Azure Cognitive Search.
+Contoh meregenerasi Kunci primer dari layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Azure Cognitive Search Id Sumber Daya Layanan.
+Id Sumber Daya Layanan Azure Cognitive Search.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

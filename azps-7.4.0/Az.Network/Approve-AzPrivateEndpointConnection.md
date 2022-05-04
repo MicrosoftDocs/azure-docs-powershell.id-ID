@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/approve-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Approve-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Approve-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 8f0415a0194cca83c5608d5410f964e0248967fe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7b16601e620f809a30b8b9c492c7b71e67bde7c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806346"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721064"
 ---
 # Approve-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Menyetujui koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/approve-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan privat.
+Jenis sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari koneksi titik akhir privat.
+Id azure resource manager dari koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -167,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Tolak-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
+[Deny-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
 
 [Get-AzPrivateEndpointConnection](./Get-AzPrivateEndpointConnection.md)
 

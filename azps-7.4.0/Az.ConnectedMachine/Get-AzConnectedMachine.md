@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
-ms.openlocfilehash: 054eb0ef28feb2bb090d8d26d691918dddb65125
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 49d73a10ce726ee39eabab6c4b15a1e8fa36ae66
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230229"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689660"
 ---
 # Get-AzConnectedMachine
 
 ## SYNOPSIS
-Mengambil informasi tentang tampilan model atau tampilan instans mesin hibrid.
+Mengambil informasi tentang tampilan model atau tampilan instans komputer hibrid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mengambil informasi tentang tampilan model atau tampilan instans mesin hibrid.
 Get-AzConnectedMachine [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzConnectedMachine -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-Expand <InstanceViewTypes>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -37,11 +40,11 @@ Get-AzConnectedMachine -ResourceGroupName <String> [-SubscriptionId <String[]>] 
 ```
 
 ## DESCRIPTION
-Mengambil informasi tentang tampilan model atau tampilan instans mesin hibrid.
+Mengambil informasi tentang tampilan model atau tampilan instans komputer hibrid.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua mesin yang tersambung dalam langganan
+### Contoh 1: Mencantumkan semua komputer yang terhubung dalam langganan
 ```powershell
 Get-AzConnectedMachine -SubscriptionId 67379433-5e19-4702-b39a-c0a03ca8d20c
 ```
@@ -56,10 +59,10 @@ winwestus2_3   westus2  windows  Connected  Succeeded
 
 ```
 
-Mencantumkan semua mesin yang tersambung dalam langganan.
+Mencantumkan semua komputer yang tersambung dalam langganan.
 Jika langganan tidak ditentukan, langganan akan menggunakan langganan dari konteks Azure PowerShell Anda saat ini.
 
-### Contoh 2: Mencantumkan semua mesin yang tersambung dalam grup sumber daya
+### Contoh 2: Mencantumkan semua komputer yang terhubung dalam grup sumber daya
 ```powershell
 Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines
 ```
@@ -71,9 +74,9 @@ winwestus2_2   westus2  windows  Connected  Succeeded
 winwestus2_3   westus2  windows  Connected  Succeeded
 ```
 
-Mencantumkan semua mesin yang tersambung dalam grup sumber daya.
+Mencantumkan semua komputer yang terhubung dalam grup sumber daya.
 
-### Contoh 3: Dapatkan mesin tersambung dalam grup sumber daya menurut nama
+### Contoh 3: Mendapatkan komputer yang terhubung dalam grup sumber daya menurut nama
 ```powershell
 Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines -Name winwestus2_1
 ```
@@ -84,7 +87,7 @@ Name           Location OSName   Status     ProvisioningState
 winwestus2_1   westus2  windows  Connected  Succeeded
 ```
 
-Dapatkan mesin tersambung dalam grup sumber daya menurut nama.
+Dapatkan komputer yang tersambung dalam grup sumber daya berdasarkan nama.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama mesin hibrid.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

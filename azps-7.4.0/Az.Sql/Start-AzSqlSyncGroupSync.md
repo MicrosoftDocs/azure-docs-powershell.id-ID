@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/start-azsqls
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
-ms.openlocfilehash: d8e9a80d2e6da9e5aa4ee5e781972be6d6993655
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f09d8773fcf2b1d3ea5402d6db6d555fd6152950
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271701"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716294"
 ---
 # Start-AzSqlSyncGroupSync
 
 ## SYNOPSIS
 Memulai sinkronisasi grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqlsyncgroupsync) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Start-AzSqlSyncGroupSync** memulai sinkronisasi grup sinkronisasi.
 Start-AzSqlSyncGroupSync -SyncGroupName mysg [-ServerName] mysrv [-DatabaseName] mydb [-ResourceGroupName] myrg
 ```
 
-Perintah ini memulai putaran sinkronisasi untuk mysg grup sinkronisasi.
+Perintah ini memulai putaran sinkronisasi untuk grup sinkronisasi mysg.
 
 ## PARAMETERS
 
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

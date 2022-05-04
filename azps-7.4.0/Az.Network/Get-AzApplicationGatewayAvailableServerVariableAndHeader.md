@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
-ms.openlocfilehash: 33e1fed449a0184b8d3e3b7c1c4a3dd9c3ee3ef7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5460b92ac06cc79bf6c8d662317ffd8a2e6eddc6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997705"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732272"
 ---
 # Get-AzApplicationGatewayAvailableServerVariableAndHeader
 
 ## SYNOPSIS
-Dapatkan variabel server yang didukung serta header permintaan dan respons yang tersedia.
+Dapatkan variabel server yang didukung dan header permintaan dan respons yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailableservervariableandheader) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewayAvailableServerVariableAndHeader [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzApplicationGatewayAvailableServerVariableAndHeader** mendapatkan variabel server yang didukung serta header permintaan dan respons yang tersedia. Parameter dapat digunakan untuk mendapatkan variabel atau daftar header.
+Cmdlet **Get-AzApplicationGatewayAvailableServerVariableAndHeader** mendapatkan variabel server yang didukung dan header permintaan dan respons yang tersedia. Parameter dapat digunakan untuk mendapatkan variabel atau daftar header.
 
 ## EXAMPLES
 
@@ -127,17 +130,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableServerVariableAndRequestHeaderResult
 
 ## NOTES
-**List-AzApplicationGatewayAvailableServerVariableAndHeader** adalah alias untuk cmdlet **Get-AzApplicationGatewayAvailableServerVariableAndHeader** .
+**List-AzApplicationGatewayAvailableServerVariableAndHeader** adalah alias untuk **cmdlet Get-AzApplicationGatewayAvailableServerVariableAndHeader** .
 
 ## RELATED LINKS

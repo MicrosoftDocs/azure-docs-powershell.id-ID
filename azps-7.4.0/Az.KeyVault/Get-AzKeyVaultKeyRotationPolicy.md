@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKeyRotationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKeyRotationPolicy.md
-ms.openlocfilehash: aca0b8a625f7e9b6a3b8695a245d34392abf5918
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3db129155b709351283e6a60a07619cc30b71dba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747270"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736714"
 ---
 # Get-AzKeyVaultKeyRotationPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan rotasi kunci untuk kunci yang ditentukan dalam Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultkeyrotationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzKeyVaultKeyRotationPolicy [-InputObject] <PSKeyVaultKeyIdentityItem>
 ```
 
 ## DESCRIPTION
-Cmdlet ini memerlukan kunci/mendapatkan izin. Mengembalikan kebijakan rotasi kunci untuk kunci yang ditentukan.
+Cmdlet ini memerlukan izin kunci/dapatkan. Ini mengembalikan kebijakan rotasi kunci untuk kunci yang ditentukan.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ CreatedOn       :
 UpdatedOn       :
 ```
 
-Cmdlet ini mendapatkan kebijakan rotasi kunci untuk uji-kv.
+Cmdlet ini mendapatkan kebijakan rotasi kunci untuk test-kv.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kunci.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
+Nama vault.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

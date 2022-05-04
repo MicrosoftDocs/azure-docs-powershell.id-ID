@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppContainerPSSession.md
-ms.openlocfilehash: 2c8e29c75ca38198554fe14c36f5202170177f8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a71490c239d98540fa1138ff1015bcef34a11b2d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731264"
 ---
 # New-AzWebAppContainerPSSession
 
 ## SYNOPSIS
-New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappcontainerpssession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzWebAppContainerPSSession [-Force] [-WebApp] <PSSite> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ $s = New-AzWebAppContainerPSSession -ResourceGroupName "Default-Web-WestUS" -Nam
 Invoke-Command -Session $s -ScriptBlock{Get-Process}
 ```
 
-Ini akan membuat Sesi PowerShell jarak jauh baru ke aplikasi kontainer windows ContosoASP dan memperlihatkan proses yang berjalan di kontainer ContosoASP
+Ini akan membuat Sesi PowerShell jarak jauh baru ke dalam aplikasi kontainer windows ContosoASP dan menunjukkan proses yang berjalan pada kontainer ContosoASP
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Buat sesi PowerShell tanpa meminta konfirmasi.
 
 ```yaml
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi web.
 
 ```yaml
@@ -136,8 +139,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,13 +170,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

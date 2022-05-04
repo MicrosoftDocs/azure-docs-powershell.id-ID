@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlManagedInstance.md
-ms.openlocfilehash: 36f41a6dce55f41a9307ea1a86b8ebc244d4c783
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ac12c8f3aabbbf1eacc06b5a90b641252e03a6a1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063477"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691244"
 ---
 # New-AzDataMigrationToSqlManagedInstance
 
 ## SYNOPSIS
 Buat migrasi database baru ke SQL Managed Instance tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtosqlmanagedinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -176,7 +179,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 .
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationOperationId
-Id melacak operasi migrasi saat ini.
+ID melacak operasi migrasi saat ini.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationService
-Id Sumber Daya Layanan Migrasi.
+ID Sumber Daya dari Layanan Migrasi.
 
 ```yaml
 Type: System.String
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -465,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Id Sumber Daya dari akun penyimpanan yang menyalin cadangan.
+ID Sumber Daya dari akun penyimpanan yang menyalin cadangan.
 
 ```yaml
 Type: System.String

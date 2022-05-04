@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: 9938beb22aa63094d974a058ab3427cf2e83d520
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 541032b599ec335b709c14030cfa1f1dd20400dc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119097"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738784"
 ---
 # New-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Membuat konfigurasi direktori aktif Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesactivedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $pwd_secure_string = Read-Host "Enter a Password" -AsSecureString
 New-AzNetAppFilesActiveDirectory -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAccount" -Name "MyADName" -Username "AdUserName -Password $pwd_secure_string -Domain "AdDomain" -Dns "192.0.2.2" -SmbServerName "AdSmbServerName"
 ```
 
-Perintah ini mendapatkan kata sandi AD dari promt ke dalam konfigurasi Direktori Aktif baru untuk akun ANF "MyAnfAccount".
+Perintah ini mendapatkan kata sandi AD dari promt ke dalam membuat konfigurasi Direktori Aktif baru untuk akun ANF "MyAnfAccount".
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Akun untuk objek Kebijakan Cadangan yang baru
+Akun untuk objek Kebijakan Pencadangan baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Administrator
-Pengguna Domain untuk ditambahkan ke grup Direktori Aktif Administrator Bawaan. Daftar nama pengguna unik tanpa penentu domain.
+Pengguna Domain yang akan ditambahkan ke grup Direktori Aktif Administrator Bawaan. Daftar nama pengguna unik tanpa penentu domain.
 
 ```yaml
 Type: System.String[]
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdName
-Nama mesin direktori aktif.
+Nama komputer direktori aktif.
 Parameter opsional ini hanya digunakan saat membuat volume kerberos
 
 ```yaml
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Backupoperator
+### -BackupOperator
 Pengguna yang akan ditambahkan ke grup direktori aktif Operator Cadangan Bawaan.
 Daftar nama pengguna unik tanpa penentu domain
 
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dns
-Daftar dipisahkan koma alamat IP server DNS (hanya IPv4) untuk domain Direktori Aktif
+Daftar alamat IP server DNS yang dipisahkan koma (hanya IPv4) untuk domain Direktori Aktif
 
 ```yaml
 Type: System.String[]
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptDCConnection
-Jika diaktifkan, Lalu lintas antara server SMB ke Pengontrol Domain (DC) akan dienkripsi.
+Jika diaktifkan, Lalu lintas antara server SMB ke Pengendali Domain (DC) akan dienkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -KdcIP
-alamat IP server kdc untuk mesin direktori aktif.
+alamat IP server kdc untuk komputer direktori aktif.
 Parameter opsional ini hanya digunakan saat membuat volume kerberos.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapOverTLS
-Ketika LDAP melalui SSL/TLS diaktifkan, menentukan apakah lalu lintas LDAP perlu diamankan melalui TLS atau tidak.
+Ketika LDAP melalui SSL/TLS diaktifkan, tentukan apakah lalu lintas LDAP perlu diamankan melalui TLS atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,8 +285,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
-Kata sandi teks biasa administrator domain Direktori Aktif, nilai disematkan dalam respons
+### -Kata sandi
+Kata sandi teks biasa administrator domain Direktori Aktif, nilai ditutupi dalam respons
 
 ```yaml
 Type: System.Security.SecureString
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk berbagi yang tersedia secara berkelanjutan untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif yang akan diberikan Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang terus tersedia untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerRootCACertificate
-Ketika LDAP melalui SSL/TLS diaktifkan, klien LDAP harus memiliki sertifikat CA Layanan Sertifikat Direktori Aktif base64 yang dikodekan sendiri, parameter opsional ini hanya digunakan untuk protokol ganda dengan volume pemetaan pengguna LDAP.
+Ketika LDAP melalui SSL/TLS diaktifkan, klien LDAP diharuskan memiliki sertifikat CA akar Layanan Sertifikat Direktori Aktif yang dikodekan base64, parameter opsional ini hanya digunakan untuk protokol ganda dengan volume pemetaan pengguna LDAP.
 
 ```yaml
 Type: System.String
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Situs
-Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengontrol Domain
+Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengendali Domain ke
 
 ```yaml
 Type: System.String
@@ -358,8 +361,8 @@ Accept wildcard characters: False
 ```
 
 ### -SmbServerName
-Nama NetBIOS server SMB.
-Nama ini akan didaftarkan sebagai akun komputer dalam AD dan digunakan untuk memasang volume
+Nama NetBIOS dari server SMB.
+Nama ini akan didaftarkan sebagai akun komputer di AD dan digunakan untuk memasang volume
 
 ```yaml
 Type: System.String
@@ -388,8 +391,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStoreKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStoreKey.md
-ms.openlocfilehash: aae867100f6b7ea0382aa83e08dc69ff70aec546
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 288dc030875e62091c8002e39fb35795e21ba89a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879336"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689966"
 ---
 # Get-AzAppConfigurationStoreKey
 
 ## SYNOPSIS
-Mencantumkan kunci akses untuk penyimpanan konfigurasi tertentu.
+Mencantumkan kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstorekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzAppConfigurationStoreKey -Name <String> -ResourceGroupName <String> [-Subs
 ```
 
 ## DESCRIPTION
-Mencantumkan kunci akses untuk penyimpanan konfigurasi tertentu.
+Mencantumkan kunci akses untuk penyimpanan konfigurasi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua kunci bursa dari toko konfigurasi aplikasi
+### Contoh 1: Mencantumkan semua kunci penyimpanan penyimpanan konfigurasi aplikasi
 ```powershell
 Get-AzAppConfigurationStoreKey -Name appconfig-test01 -ResourceGroupName azpwsh-manual-test
 ```
@@ -43,7 +46,7 @@ Endpoint=https://appconfig-test01.azconfig.io;Id=Sl1p-l0-s0:jVozhIOYoXZ9k5pCjWa2
 Endpoint=https://appconfig-test01.azconfig.io;Id=htND-l0-s0:GN83PmhOFYlAlcXHN2/6;Secret=n2tp5evU2F4Z1QkctG2TgZkgMxojEkod3KTEaEgcSMQ= 5/7/2020 9:09:27 AM Secondary Read Only True     n2tp5evU2F4Z1QkctG2TgZkgMxojEkod3KTEaEgc...
 ```
 
-Perintah ini mencantumkan semua kunci bursa penyimpanan konfigurasi aplikasi.
+Perintah ini mencantumkan semua kunci penyimpanan penyimpanan konfigurasi aplikasi.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyimpanan konfigurasi.
 
 ```yaml
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

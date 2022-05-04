@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
-ms.openlocfilehash: 534e8c0f625172ad8a6e160a39a00c29e39358e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ac2403dd2895d00fe58d762a2b4cc541c6d65da5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123057"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702912"
 ---
 # Get-AzEdgeOrderConfiguration
 
 ## SYNOPSIS
-Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu dalam langganan.
+Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu di bawah langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEdgeOrderConfiguration -ConfigurationFilter <IConfigurationFilters[]> [-Su
 ```
 
 ## DESCRIPTION
-Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu dalam langganan.
+Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu di bawah langganan.
 
 ## EXAMPLES
 
@@ -70,8 +73,8 @@ Pastikan Anda menjalankan registerProvider di Microsoft.EdgeOrder sebelum menjal
 ## PARAMETERS
 
 ### -ConfigurationFilter
-Berisi detail tentang informasi hierarki produk dan properti yang dapat difilter.
-Untuk membuat, lihat bagian CATATAN untuk properti CONFIGURATIONFILTER dan membuat tabel hash.
+Menyimpan detail tentang informasi hierarki produk dan properti yang dapat difilter.
+Untuk membuat, lihat bagian CATATAN untuk properti CONFIGURATIONFILTER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IConfigurationFilters[]
@@ -115,8 +118,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -164,18 +167,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONFIGURATIONFILTER <IConfigurationFilters[]>: Berisi detail tentang informasi hierarki produk dan properti yang dapat difilter.
+CONFIGURATIONFILTER <IConfigurationFilters[]>: Menyimpan detail tentang informasi hierarki produk dan properti yang dapat difilter.
   - `HierarchyInformation <IHierarchyInformation>`: Informasi hierarki produk
-    - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang mengidentifikasi konfigurasi secara unik
-    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang mengidentifikasi keluarga produk secara unik
-    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi baris produk secara unik
-    - `[ProductName <String>]`: Mewakili nama produk yang mengidentifikasi produk secara unik
+    - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang secara unik mengidentifikasi konfigurasi
+    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang secara unik mengidentifikasi keluarga produk
+    - `[ProductLineName <String>]`: Mewakili nama baris produk yang secara unik mengidentifikasi lini produk
+    - `[ProductName <String>]`: Mewakili nama produk yang secara unik mengidentifikasi produk
   - `[FilterableProperty <IFilterableProperty[]>]`: Filter khusus untuk produk
     - `SupportedValue <String[]>`: Nilai yang akan difilter.
     - `Type <SupportedFilterTypes>`: Jenis filter produk.
 
-CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan menyampaikan detail langganan secara eksplisit
-  - `QuotaId <String>`: ID kuota langganan
+CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
+  - `QuotaId <String>`: ID Kuota langganan
   - `[LocationPlacementId <String>]`: Id penempatan lokasi langganan
   - `[RegisteredFeature <ICustomerSubscriptionRegisteredFeatures[]>]`: Daftar bendera fitur terdaftar untuk langganan
     - `[Name <String>]`: Nama fitur terdaftar langganan

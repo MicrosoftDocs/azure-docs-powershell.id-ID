@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azof
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
-ms.openlocfilehash: 7426ffccd392226130dc855dad00b9d321296f8e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3ba8ea3c3cfecf5b9d2e533f599d3eb441bb688
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280989"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732038"
 ---
 # New-AzOffice365PolicyProperty
 
 ## SYNOPSIS
 Tentukan kebijakan breakout lalu lintas Office 365 baru yang akan digunakan dengan situs Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azoffice365policyproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,12 +37,12 @@ Perintah New-AzOffice365PolicyProperties menentukan kebijakan breakout Office 36
 $o365Policy = New-AzOffice365PolicyProperty -Allow -Optimize 
 ```
 
-Buat Office 365 objek kebijakan perincian lalu lintas yang akan digunakan dengan perintah situs Appliance Virtual.
+Buat Office 365 objek kebijakan pemecahan lalu lintas yang akan digunakan dengan perintah situs Appliance Virtual.
 
 ## PARAMETERS
 
 ### -Izinkan
-Breakout izinkan lalu lintas kategori.
+Perincian lalu lintas kategori izinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Default
-Terobosan lalu lintas kategori default.
+Memecah lalu lintas kategori default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Optimalkan
-Breakout mengoptimalkan lalu lintas kategori.
+Perincian lalu lintas kategori pengoptimalan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

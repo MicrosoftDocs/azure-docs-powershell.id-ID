@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
-ms.openlocfilehash: 90f8a90b6d75ec291788df6d4f05ecf7ec1e884c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4f7f5eab29b29599763905244ed319fe92ead0a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192270"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720668"
 ---
 # Remove-AzADSpCredential
 
 ## SYNOPSIS
 Menghapus kredensial kunci atau kredensial kata sandi untuk perwakilan layanan.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -259,7 +261,7 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[DeletedDateTime <DateTime?>]`: 
       - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-    - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+    - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
     - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
     - `[Description <String>]`: Deskripsi untuk kebijakan ini.
     - `[DeletedDateTime <DateTime?>]`: 
@@ -269,13 +271,13 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[PermissionId <String>]`: Pengidentifikasi unik (id) untuk izin yang didelegasikan yang tercantum dalam koleksi servicePrincipal yang diterbitkan. Diperlukan untuk membuat. Tidak mendukung $filter.
     - `[PermissionName <String>]`: Nilai klaim (nilai) untuk izin yang didelegasikan yang tercantum dalam kumpulan servicePrincipal yang diterbitkan. Tidak mendukung $filter.
   - `[Description <String>]`: Bidang teks gratis untuk memberikan deskripsi internal yang dihadapi pengguna akhir dari perwakilan layanan. Portal pengguna akhir seperti MyApps akan menampilkan deskripsi aplikasi di bidang ini. Ukuran maksimum yang diizinkan adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, startsWith) dan $search.
-  - `[DisabledByMicrosoftStatus <String>]`: Menentukan apakah Microsoft telah menonaktifkan aplikasi terdaftar. Nilai yang mungkin adalah: null (nilai default), NotDisabled, dan DisabledDueToViolationOfServicesAgreement (alasannya mungkin termasuk aktivitas yang mencurigakan, kasar, atau berbahaya, atau pelanggaran Perjanjian Layanan Microsoft).  Mendukung $filter (eq, ne, NOT).
-  - `[Endpoint <IMicrosoftGraphEndpoint[]>]`: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan penyewa tertentu SharePoint titik akhir yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
+  - `[DisabledByMicrosoftStatus <String>]`: Menentukan apakah Microsoft telah menonaktifkan aplikasi terdaftar. Nilai yang mungkin adalah: null (nilai default), NotDisabled, dan DisabledDueToViolationOfServicesAgreement (alasannya mungkin termasuk aktivitas yang mencurigakan, melecehkan, atau berbahaya, atau pelanggaran Perjanjian Layanan Microsoft).  Mendukung $filter (eq, ne, NOT).
+  - `[Endpoint <IMicrosoftGraphEndpoint[]>]`: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan titik akhir SharePoint spesifik penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
   - `[HomeRealmDiscoveryPolicy <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]`: HomeRealmDiscoveryPolicies yang ditetapkan untuk perwakilan layanan ini. Mendukung $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+    - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
     - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
     - `[Description <String>]`: Deskripsi untuk kebijakan ini.
     - `[DeletedDateTime <DateTime?>]`: 
@@ -283,23 +285,23 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
   - `[Homepage <String>]`: Halaman beranda atau halaman arahan aplikasi.
   - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-    - `[MarketingUrl <String>]`: Tautan ke halaman pemasaran aplikasi. Misalnya, https://www.contoso.com/app/marketing
-    - `[PrivacyStatementUrl <String>]`: Tautan ke pernyataan privasi aplikasi. Misalnya, https://www.contoso.com/app/privacy
-    - `[SupportUrl <String>]`: Tautan ke halaman dukungan aplikasi. Misalnya, https://www.contoso.com/app/support
-    - `[TermsOfServiceUrl <String>]`: Tautkan ke pernyataan ketentuan layanan aplikasi. Misalnya, https://www.contoso.com/app/termsofservice
+    - `[MarketingUrl <String>]`: Tautkan ke halaman pemasaran aplikasi. Misalnya, https://www.contoso.com/app/marketing
+    - `[PrivacyStatementUrl <String>]`: Tautkan ke pernyataan privasi aplikasi. Misalnya, https://www.contoso.com/app/privacy
+    - `[SupportUrl <String>]`: Tautkan ke halaman dukungan aplikasi. Misalnya, https://www.contoso.com/app/support
+    - `[TermsOfServiceUrl <String>]`: Tautkan ke ketentuan pernyataan layanan aplikasi. Misalnya, https://www.contoso.com/app/termsofservice
   - `[KeyCredentials <IMicrosoftGraphKeyCredential[]>]`: Pengumpulan kredensial utama yang terkait dengan perwakilan layanan. Tidak dapat diubah ke null. Mendukung $filter (eq, NOT, ge, le).
     - `[CustomKeyIdentifier <Byte[]>]`: Pengidentifikasi kunci kustom
     - `[DisplayName <String>]`: Nama yang mudah diingat untuk kunci. Opsional.
-    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu kedaluwarsa kredensial. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
-    - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus menjadi nilai dasar 64 yang dikodekan.
+    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu kedaluwarsa kredensial. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
+    - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus berupa nilai dasar 64 yang dikodekan.
     - `[KeyId <String>]`: Pengidentifikasi unik (GUID) untuk kunci.
-    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
+    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
     - `[Type <String>]`: Jenis kredensial kunci; misalnya, 'Simetris'.
     - `[Usage <String>]`: String yang menjelaskan tujuan kunci dapat digunakan; misalnya, 'Verifikasi'.
   - `[LoginUrl <String>]`: Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi. Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Azure AD Aplikasi Saya. Jika kosong, Azure AD melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses menyeluruh berbasis SAML. Pengguna meluncurkan aplikasi dari Microsoft 365, Azure AD Aplikasi Saya, atau URL SSO Azure AD.
   - `[LogoutUrl <String>]`: Menentukan URL yang akan digunakan oleh layanan otorisasi Microsoft untuk keluar dari pengguna menggunakan OpenId Koneksi protokol keluar saluran depan, saluran belakang, atau SAML.
   - `[Note <String>]`: Bidang teks gratis untuk mengambil informasi tentang perwakilan layanan, biasanya digunakan untuk tujuan operasional. Ukuran maksimum yang diizinkan adalah 1024 karakter.
-  - `[NotificationEmailAddress <String[]>]`: Menentukan daftar alamat email tempat Azure AD mengirim pemberitahuan saat sertifikat aktif mendekati tanggal kedaluwarsa. Ini hanya untuk sertifikat yang digunakan untuk menandatangani token SAML yang dikeluarkan untuk aplikasi galeri Azure AD.
+  - `[NotificationEmailAddress <String[]>]`: Menentukan daftar alamat email tempat Azure AD mengirim pemberitahuan saat sertifikat aktif mendekati tanggal kedaluwarsa. Ini hanya untuk sertifikat yang digunakan untuk menandatangani token SAML yang dikeluarkan untuk aplikasi Azure AD Gallery.
   - `[Oauth2PermissionScope <IMicrosoftGraphPermissionScope[]>]`: Izin yang didelegasikan yang diekspos oleh aplikasi. Untuk informasi selengkapnya, lihat properti oauth2PermissionScopes pada properti api entitas aplikasi. Tidak dapat diubah ke null.
     - `[AdminConsentDescription <String>]`: Deskripsi izin yang didelegasikan, dimaksudkan untuk dibaca oleh administrator yang memberikan izin atas nama semua pengguna. Teks ini muncul dalam pengalaman persetujuan admin di seluruh penyewa.
     - `[AdminConsentDisplayName <String>]`: Judul izin, dimaksudkan untuk dibaca oleh administrator yang memberikan izin atas nama semua pengguna.

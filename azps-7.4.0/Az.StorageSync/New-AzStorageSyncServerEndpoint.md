@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 31d17faed45d166f99c8e7cb125a14a684422cbb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e2d67cb9ec29e6c0e0212fbcb8af60e574d98b92
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994303"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716204"
 ---
 # New-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
-Perintah ini membuat titik akhir server baru di server terdaftar. Ini memungkinkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+Perintah ini membuat titik akhir server baru pada server terdaftar. Ini memungkinkan jalur yang ditentukan pada server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ New-AzStorageSyncServerEndpoint [-ParentResourceId] <String> -Name <String> -Ser
 ```
 
 ## DESCRIPTION
-Perintah ini membuat titik akhir server baru di server terdaftar. Ini memungkinkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika sudah ada file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file sebenarnya sama dalam folder yang sama seperti di titik akhir lainnya. Ruang nama akan menggabungkan dan rekonsiliasi membantu mencegah file yang berkonflik. Jika ada file di titik akhir server lain seringkali lebih baik untuk memulai dengan lokasi kosong di server ini, sehingga file dari awan turun ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata ruang nama akan disinkronkan terlebih dahulu, lalu aliran data setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi di luar pesanan unduhan, file tersebut akan ditarik kembali dengan prioritas untuk memenuhi permintaan akses. Anda dapat menggunakan tingkat cloud secara opsional di titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache kumpulan file lengkap dari awan. Jika tingkat cloud digunakan, unduhan konten file akan berhenti pada titik yang ditentukan oleh kebijakan tingkat awan yang bisa Anda atur.
+Perintah ini membuat titik akhir server baru pada server terdaftar. Ini memungkinkan jalur yang ditentukan pada server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika sudah ada file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file sebenarnya sama di folder yang sama seperti pada titik akhir lainnya. Namespace akan menggabungkan dan rekonsiliasi membantu mencegah file konflik. Jika ada file di titik akhir server lain, sering kali lebih baik untuk memulai dengan lokasi kosong di server ini, sehingga file dari cloud turun ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata namespace akan disinkronkan terlebih dahulu, lalu aliran data setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi di luar urutan unduhan, file tersebut akan dipanggil kembali dengan prioritas untuk memenuhi permintaan akses. Anda dapat secara opsional menggunakan penjenjangan cloud pada titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache dari kumpulan file lengkap dari cloud. Jika tingkatan cloud digunakan, unduhan konten file akan berhenti pada titik yang ditentukan oleh kebijakan penjenjangan cloud yang dapat Anda tetapkan.
 
 ## EXAMPLES
 
@@ -55,12 +58,12 @@ $RegisteredServer = Get-AzStorageSyncServer -ResourceGroupName "myResourceGroup"
 New-AzStorageSyncServerEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myServerEndpointName" -ServerResourceId $RegisteredServer.ResourceId -ServerLocalPath "myServerLocalPath" -CloudTiering -TierFilesOlderThanDays "myTierFilesOlderThanDays"
 ```
 
-Perintah ini membuat titik akhir server baru di server terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara ini merupakan bagian dari topologi titik akhir dan metadata file serta konten lainnya akan segera mulai disinkronkan di antara semua lokasi yang dirujuk sebagai titik akhir dalam grup sinkronisasi.
+Perintah ini membuat titik akhir server baru pada server terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara itu adalah bagian dari topologi titik akhir lainnya dan metadata file dan konten akan segera mulai disinkronkan antara semua lokasi yang dirujuk sebagai titik akhir dalam grup sinkronisasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudTiering
-Parameter Tingkat Cloud
+Parameter Penjenjangan Cloud
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ServerEndpoint.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-SyncGroup Object, biasanya melewati parameter.
+Objek SyncGroup, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Sinkronkan Id Sumber Daya Induk Grup
+Id Sumber Daya Induk SyncGroup
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronkan.
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -TierFilesOlderThanDays
-Tier Files Older Than Days Parameter
+File Tingkat yang Lebih Lama Dari Hari Parameter
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeFreeSpacePercent
-Parameter Persen Ruang Bebas Volume
+Parameter Persen Ruang Kosong Volume
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -302,8 +305,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
-ms.openlocfilehash: 710b6d9e9ba97bd2e7f5f6b5d9b7cee2bc67c0f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b38fa1bfc947020563e44365baa1ce63dd8be11
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314739"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730814"
 ---
 # New-AzScheduledQueryRuleSource
 
 ## SYNOPSIS
-Membuat objek dari tipe Sumber
+Membuat objek jenis Sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulesource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ New-AzScheduledQueryRuleSource -Query <String> [-AuthorizedResource <String[]>] 
 ```
 
 ## DESCRIPTION
-Membuat objek dari tipe Sumber.
-Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log
+Membuat objek berjenis Sumber.
+Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize Aggregate
 
 ### Contoh 2
 
-Membuat objek dari tipe Sumber. (autogenerasi)
+Membuat objek berjenis Sumber. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzScheduledQueryRuleSource -DataSourceId <String> -Query 'Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)'
@@ -48,7 +51,7 @@ New-AzScheduledQueryRuleSource -DataSourceId <String> -Query 'Heartbeat | summar
 ## PARAMETERS
 
 ### -AuthorizedResource
-Daftar sumber daya resmi untuk pemberitahuan ini
+Daftar sumber daya yang diotorisasi untuk pemberitahuan ini
 
 ```yaml
 Type: System.String[]
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri pemberitahuan
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryType
-Tipe Kueri - nilai yang saat ini didukung : ResultCount
+Jenis Kueri - nilai yang saat ini didukung : ResultCount
 
 ```yaml
 Type: System.String
@@ -123,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 184b4bb34635d23fdf9cf795c032ebc74eca0c54
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8714280f05b630d4d480410b31692d76503eb807
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314541"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689228"
 ---
 # Get-AzMySqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Mendapatkan informasi tentang database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverdatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMySqlFlexibleServerDatabase -ResourceGroupName <String> -ServerName <Strin
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMySqlFlexibleServerDatabase -Name <String> -ResourceGroupName <String> -ServerName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan informasi tentang database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan database MySql menurut nama sumber daya
+### Contoh 1: Mendapatkan database MySql berdasarkan nama sumber daya
 ```powershell
 Get-AzMySqlFlexibleServerDatabase -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -Name flexibleserverdb
 ```
@@ -55,7 +58,7 @@ flexibleserverdb utf8     utf8_general_ci
 
 Cmdlet ini mendapatkan server MySql berdasarkan nama sumber daya.
 
-### Contoh 2: Dapatkan database MySql menurut identitas
+### Contoh 2: Mendapatkan database MySql menurut identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/flexibleServers/mysql-test"
 Get-AzMySqlFlexibleServerDatabase -InputObject $ID
@@ -73,7 +76,7 @@ sys                utf8    utf8_general_ci
 
 Cmdlet ini mendapatkan server MySql berdasarkan identitas.
 
-### Contoh 3: Mencantumkan semua database MySql di server tertentu
+### Contoh 3: Mencantumkan semua database MySql di server yang ditentukan
 ```powershell
 Get-AzMySqlFlexibleServerDatabase -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -88,7 +91,7 @@ performance_schema utf8    utf8_general_ci
 sys                utf8    utf8_general_ci
 ```
 
-Cmdlet ini mencantumkan semua server MySql dalam server yang ditentukan.
+Cmdlet ini mencantumkan semua server MySql di server yang ditentukan.
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -210,7 +213,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

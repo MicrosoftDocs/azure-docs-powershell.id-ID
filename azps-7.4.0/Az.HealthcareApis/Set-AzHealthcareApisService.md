@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
-ms.openlocfilehash: e1e29a50cf87513bb097776932e9cc550962cdfa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c5c9d367ff9fb173087b722e56725b240f4ac161
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001143"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736858"
 ---
 # Set-AzHealthcareApisService
 
 ## SYNOPSIS
-Memperbarui layanan kesehatanapis fhir yang sudah ada.
+Memperbarui layanan kesehatanApis fhir yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/set-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ Set-AzHealthcareApisService -InputObject <PSHealthcareApisService> [-AsJob]
 ```
 
 ## DESCRIPTION
-Memperbarui layanan kesehatanapis fhir yang sudah ada.
+Memperbarui layanan kesehatanApis fhir yang ada.
 
 ## EXAMPLES
 
-### Contoh 1 : Memperbarui layanan perawatan kesehatan yang sudah ada bernama MyService dalam grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500.
+### Contoh 1 : Memperbarui layanan healthcareapis yang ada bernama MyService di grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500.
 
 ```powershell
 Set-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup -CosmosOfferThroughput 500
@@ -81,7 +84,7 @@ ResourceType            : Microsoft.HealthcareApis/services
 SmartProxyEnabled       : False
 ```
 
-### Contoh 2: Memperbarui layanan perawatan kesehatan yang sudah ada bernama MyService dalam grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500 dan key vault key uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
+### Contoh 2: Memperbarui layanan healthcareapis yang ada bernama MyService di grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500 dan uri kunci brankas kunci "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
 
 ```powershell
 $ResourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MyResourceGroup/providers/Microsoft.HealthcareApis/services/MyService"
@@ -114,7 +117,7 @@ SmartProxyEnabled       : False
 ## PARAMETERS
 
 ### -AccessPolicyObjectId
-Daftar ID Objek Kebijakan Access.
+Daftar ID Objek Kebijakan Akses.
 
 ```yaml
 Type: System.String[]
@@ -207,8 +210,8 @@ Accept wildcard characters: False
 
 ### -CorsMaxAge
 HealthcareApis FhirService Cors Max Age.
-Tentukan berapa lama hasil dari permintaan bisa disinggahkan dalam detik.
-Contoh: 600 mean 10 minutes.
+Tentukan berapa lama hasil dari permintaan dapat di-cache dalam hitung detik.
+Contoh: 600 berarti 10 menit.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -CorsOrigin
-HealthcareApis FhirService Daftar Asal Usul Kors.
+HealthcareApis FhirService Daftar Asal Cors.
 Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs apa pun.
 
 ```yaml
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableCorsCredential
-HealthcareApis FhirService CorsCredentials Not Allowed.
+HealthcareApis FhirService CorsCredentials Tidak Diizinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableManagedIdentity
-Menonaktifkan Identitas Terkelola.
+Nonaktifkan Identitas Terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportStorageAccountName
-HealthcareApis Fhir Service Export Storage Account Name.
+Nama Akun Storage Ekspor Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.String
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Layanan KesehatanApis fhir disalurkan dari Get-AzHealthcareApisFhirService.
+Layanan HealthcareApis fhir disalurkan dari Get-AzHealthcareApisFhirService.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HealthcareApis.Models.PSHealthcareApisService
@@ -404,7 +407,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Layanan HealthcareApis.
 
 ```yaml
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Tipe akses jaringan untuk layanan Fhir. Umumnya `Enabled` atau `Disabled`.
+Jenis akses jaringan untuk layanan Fhir. Umumnya `Enabled` atau `Disabled`.
 
 ```yaml
 Type: System.String
@@ -480,8 +483,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -512,7 +515,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

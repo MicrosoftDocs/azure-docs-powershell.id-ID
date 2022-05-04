@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
-ms.openlocfilehash: 4f8bf368264fde13441001cc7c9cdce070580155
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 106431db086879c172eb067364e5be28261e0f7c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119943"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714944"
 ---
 # New-AzDiagnosticDetailSetting
 
 ## SYNOPSIS
-Buat Objek PSDiagnosticDetailSetting, tipe bisa berupa metrik atau log
+Membuat Objek PSDiagnosticDetailSetting, jenisnya bisa berupa metrik atau log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdiagnosticdetailsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzDiagnosticDetailSetting -Metric [-RetentionInDays <Int32>] [-RetentionEnab
 ```
 
 ## DESCRIPTION
-Membuat objek PSMetricSettings atau PSLogSettings. Anda bisa mendapatkan kategori dengan menggunakan `Get-AzDiagnosticSettingCategory`.
+Buat objek PSMetricSettings atau PSLogSettings. Anda bisa mendapatkan kategori dengan menggunakan `Get-AzDiagnosticSettingCategory`.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Category Enabled RetentionPolicy               CategoryType
 Audit       True …                                     Logs
 ```
 
-Membuat objek PSLogSettings.
+Buat objek PSLogSettings.
 
 ## PARAMETERS
 
@@ -99,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Mengaktifkan pengaturan
+### -Diaktifkan
+Aktifkan pengaturan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionEnabled
-Aktifkan kebijakan Penyimpanan
+Mengaktifkan kebijakan Retensi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Pengaturan TimeGrain untuk metrik
+TimeGrain untuk pengaturan metrik
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

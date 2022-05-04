@@ -6,26 +6,29 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
-ms.openlocfilehash: 31bb04d3400f48bad6e3321d5397cd659a49b5ad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c047205548449ebfd0eb4c7b2fbb0a13eacaabd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801648"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714710"
 ---
 # New-AzRoleAssignment
 
 ## SYNOPSIS
-Menetapkan peran RBAC tertentu ke prinsipal yang ditentukan, pada lingkup yang ditentukan.
+Menetapkan peran RBAC yang ditentukan ke prinsipal yang ditentukan, pada cakupan yang ditentukan.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /users/{id}
 - GET /servicePrincipals/{id}
 - GET /groups/{id}
 - GET /directoryObjects/{id}
 
-Harap perhatikan bahwa cmdlet ini akan ditandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini memiliki hak istimewa yang tidak cukup untuk mendapatkan tipe objek.
+Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ New-AzRoleAssignment -SignInName <String> -ResourceGroupName <String> -ResourceN
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupWithSignInNameParameterSet
+### ScopeWithSignInNameParameterSet
 ```
 New-AzRoleAssignment -SignInName <String> [-Scope <String>] -RoleDefinitionName <String>
  [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
@@ -95,7 +98,7 @@ New-AzRoleAssignment -ApplicationId <String> -ResourceGroupName <String> -Resour
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupWithSPNParameterSet
+### ScopeWithSPNParameterSet
 ```
 New-AzRoleAssignment -ApplicationId <String> [-Scope <String>] -RoleDefinitionName <String>
  [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
@@ -110,20 +113,20 @@ New-AzRoleAssignment -InputFile <String> [-AllowDelegation] [-DefaultProfile <IA
 
 ## DESCRIPTION
 Gunakan perintah New-AzRoleAssignment untuk memberikan akses.
-Akses diberikan dengan menetapkan peran RBAC yang sesuai untuk mereka pada lingkup yang tepat.
-Untuk memberikan akses ke seluruh langganan, tetapkan peran pada lingkup langganan.
-Untuk memberikan akses ke grup sumber daya tertentu dalam langganan, tetapkan peran di lingkup grup sumber daya.
-Subjek tugas harus ditentukan.
-Untuk menentukan pengguna, gunakan SignInName atau parameter ObjectId Azure AD.
-Untuk menentukan grup keamanan, gunakan parameter ObjectId Azure AD.
+Akses diberikan dengan menetapkan peran RBAC yang sesuai kepada mereka pada cakupan yang tepat.
+Untuk memberikan akses ke seluruh langganan, tetapkan peran di cakupan langganan.
+Untuk memberikan akses ke grup sumber daya tertentu dalam langganan, tetapkan peran di cakupan grup sumber daya.
+Subjek penugasan harus ditentukan.
+Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
+Untuk menentukan grup keamanan, gunakan parameter objectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau ObjectId.
 Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
-Lingkup akses yang diberikan mungkin ditentukan.
-Ini secara default ke langganan yang dipilih. Lingkup tugas dapat ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
-ResourceGroupName - untuk memberikan akses ke grup sumber daya tertentu.
-C.
-ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - untuk menentukan sumber daya tertentu dalam grup sumber daya untuk memberikan akses ke.
+Cakupan di mana akses diberikan dapat ditentukan.
+Ini default ke langganan yang dipilih. Cakupan penugasan dapat ditentukan menggunakan salah satu kombinasi parameter berikut.
+Cakupan - Ini adalah cakupan yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
+ResourceGroupName - untuk memberikan akses ke grup sumber daya yang ditentukan.
+c.
+ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - untuk menentukan sumber daya tertentu dalam grup sumber daya untuk diberikan akses.
 
 ## EXAMPLES
 
@@ -132,7 +135,7 @@ ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - un
 New-AzRoleAssignment -ResourceGroupName rg1 -SignInName allen.young@live.com -RoleDefinitionName Reader -AllowDelegation
 ```
 
-Memberikan akses peran Pembaca kepada pengguna di lingkup grup sumber daya dengan Penetapan Peran yang tersedia untuk delegasi
+Memberikan akses peran Pembaca kepada pengguna di cakupan grup sumber daya dengan Penetapan Peran yang tersedia untuk delegasi
 
 ### Contoh 2
 ```powershell
@@ -159,7 +162,7 @@ Memberikan akses ke pengguna di sumber daya (situs web)
 New-AzRoleAssignment -ObjectId 5ac84765-1c8c-4994-94b2-629461bd191b -RoleDefinitionName "Virtual Machine Contributor" -ResourceName Devices-Engineering-ProjectRND -ResourceType Microsoft.Network/virtualNetworks/subnets -ParentResource virtualNetworks/VNET-EASTUS-01 -ResourceGroupName Network
 ```
 
-Memberikan akses ke grup di sumber daya bertumpuk (subnet)
+Memberikan akses ke grup di sumber daya berlapis (subnet)
 
 ### Contoh 5
 ```powershell
@@ -167,7 +170,7 @@ $servicePrincipal = New-AzADServicePrincipal -DisplayName "testServiceprincipal"
 New-AzRoleAssignment -RoleDefinitionName "Reader" -ApplicationId $servicePrincipal.ApplicationId
 ```
 
-Memberikan akses pembaca ke prinsipal layanan
+Memberikan akses pembaca ke perwakilan layanan
 
 ## PARAMETERS
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-ID Aplikasi dari ServicePrincipal
+ID Aplikasi servicePrincipal
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kondisi
-Kondisi yang akan diterapkan ke Penetapan Peran.
+Kondisi yang akan diterapkan ke RoleAssignment.
 
 ```yaml
 Type: System.String
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Jalur ke penetapan peran json
+Jalur ke json penetapan peran
 
 ```yaml
 Type: System.String
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Azure AD Objectid pengguna, grup, atau prinsipal layanan.
+Azure AD Objectid pengguna, grup, atau perwakilan layanan.
 
 ```yaml
 Type: System.String
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectType
-Untuk digunakan dengan ObjectId. Menentukan tipe objek asignee
+Untuk digunakan dengan ObjectId. Menentukan jenis objek asignee
 
 ```yaml
 Type: System.String
@@ -307,8 +310,8 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResource
-Sumber daya induk dalam hierarki(sumber daya yang ditentukan menggunakan parameter ResourceName).
-Seharusnya hanya digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Sumber daya induk dalam hierarki (sumber daya yang ditentukan menggunakan parameter ResourceName).
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -324,8 +327,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Membuat tugas yang efektif pada grup sumber daya yang ditentukan.
-Ketika digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Membuat penugasan yang efektif di grup sumber daya yang ditentukan.
+Saat digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah membuat cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ### -ResourceName
 Nama sumber daya.
 Misalnya storageaccountprod.
-Seharusnya hanya digunakan bersama dengan ResourceGroupName, ResourceType dan (opsional)parameter ParentResource untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan (opsional)ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -357,9 +360,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 Misalnya Microsoft.Network/virtualNetworks.
-Seharusnya hanya digunakan bersama dengan ResourceGroupName, ResourceName, dan (opsional)parameter ParentResource untuk menyusun lingkup hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional) ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id dari peran RBAC yang perlu ditetapkan ke prinsipal.
+Id peran RBAC yang perlu ditetapkan ke prinsipal.
 
 ```yaml
 Type: System.Guid
@@ -389,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama peran RBAC yang perlu ditetapkan ke prinsipal yaitu Pembaca, Kontributor, Administrator Virtual Network, dll.
+Nama peran RBAC yang perlu ditetapkan ke prinsipal yaitu Pembaca, Kontributor, Virtual Network Administrator, dll.
 
 ```yaml
 Type: System.String
@@ -403,11 +406,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup penetapan peran.
+### -Cakupan
+Cakupan penetapan peran.
 Dalam format URI relatif.
 Misalnya "/subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG".
-Jika tidak ditentukan, akan membuat penetapan peran pada tingkat langganan.
+Jika tidak ditentukan, akan membuat penetapan peran di tingkat langganan.
 Jika ditentukan, seharusnya dimulai dengan "/subscriptions/{id}".
 
 ```yaml
@@ -450,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -463,12 +466,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 
 [Get-AzRoleAssignment](./Get-AzRoleAssignment.md)
 
-[Hapus-AzRoleAssignment](./Remove-AzRoleAssignment.md)
+[Remove-AzRoleAssignment](./Remove-AzRoleAssignment.md)
 
 [Get-AzRoleDefinition](./Get-AzRoleDefinition.md)

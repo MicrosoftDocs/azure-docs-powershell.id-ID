@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
-ms.openlocfilehash: 1a35275eec981355a067c536f8163159171673f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: acca36103dd7ac771238907e36d37790112ccbe7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747882"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721315"
 ---
 # Update-AzFunctionApp
 
 ## SYNOPSIS
 Memperbarui aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/update-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 

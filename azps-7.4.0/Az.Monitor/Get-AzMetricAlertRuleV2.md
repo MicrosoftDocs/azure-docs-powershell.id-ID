@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricAlertRuleV2.md
-ms.openlocfilehash: 108dc5a16cb91dfcd074d4d649a5211712d8757f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8fa1da7497d41d19a57ca178e7dc913c8c6e61c9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689300"
 ---
 # Get-AzMetricAlertRuleV2
 
 ## SYNOPSIS
-Mendapatkan aturan peringatan metrik V2 (non-klasik)
+Mendapatkan aturan pemberitahuan metrik V2 (non-klasik)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetricalertrulev2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Get-AzMetricAlertRuleV2 -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzMetricAlertRuleV2** mendapatkan aturan peringatan metrik menurut namanya atau URI, atau semua aturan pemberitahuan metrik dari grup sumber daya atau langganan tertentu.
+Cmdlet **Get-AzMetricAlertRuleV2** mendapatkan aturan pemberitahuan metrik berdasarkan namanya atau URI, atau semua aturan pemberitahuan metrik dari grup sumber daya atau langganan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua aturan pemberitahuan metrik dalam langganan saat ini
+### Contoh 1: Mendapatkan semua aturan pemberitahuan metrik dalam langganan saat ini
 ```powershell
 Get-AzMetricAlertRuleV2
 ```
@@ -121,7 +124,7 @@ Tags                 : {}
 
 Perintah ini mendapatkan semua aturan pemberitahuan metrik dalam grup sumber daya bernama metricAlertsRG.
 
-### Contoh 3: Dapatkan aturan pemberitahuan metrik menurut nama
+### Contoh 3: Mendapatkan aturan pemberitahuan metrik berdasarkan nama
 
 ```powershell
 Get-AzMetricAlertRuleV2 -ResourceGroupName metricAlertsRG -Name PS3182019
@@ -149,9 +152,9 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini mendapatkan aturan pemberitahuan metrik bernama PS3182019 dalam grup sumber daya bernama metricAlertsRG.
+Perintah ini mendapatkan aturan pemberitahuan metrik bernama PS3182019 di grup sumber daya bernama metricAlertsRG.
 
-### Contoh 4: Mendapatkan aturan pemberitahuan metrik menurut ATURAN
+### Contoh 4: Mendapatkan aturan pemberitahuan metrik menurut ruleID
 
 ```powershell
 Get-AzMetricAlertRuleV2 -ResourceId /subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/SampleResourceGroup/providers/Microsoft.Insights/metricAlerts/MyMetricAlertRule
@@ -179,7 +182,7 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini mendapatkan aturan pemberitahuan metrik dengan ID sumber daya tertentu.
+Perintah ini mendapatkan aturan pemberitahuan metrik dengan ID sumber daya yang diberikan.
 
 ## PARAMETERS
 
@@ -198,7 +201,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan pemberitahuan metrik
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Aturan Id aturan pemberitahuan metrik
+Id Aturan aturan pemberitahuan metrik
 
 ```yaml
 Type: System.String
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

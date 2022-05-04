@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricService.md
-ms.openlocfilehash: 6d707d0c0a172b3e3e48492716f16b0ffcb283bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 873c41e6211b64a821ff956dc8de522485839f98
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866286"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721998"
 ---
 # New-AzServiceFabricService
 
 ## SYNOPSIS
-Buat layanan baru layanan fabric service di bawah aplikasi dan kluster yang ditentukan.
+Buat layanan service fabric baru di bawah aplikasi dan kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ New-AzServiceFabricService [-ResourceGroupName] <String> [-ClusterName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini memungkinkan untuk membuat layanan tanpa status atau status di bawah aplikasi yang ditentukan. Layanan harus keluar dalam manifes aplikasi dan tipenya harus sama dengan yang ada di manifes. Nama aplikasi harus berupa prefiks nama layanan.
+Cmdlet ini memungkinkan untuk membuat layanan stateless atau stateful di bawah aplikasi yang ditentukan. Layanan harus keluar dalam manifes aplikasi dan jenisnya harus sama dengan yang ada dalam manifes. Nama aplikasi harus merupakan awalan dari nama layanan.
 
 ## EXAMPLES
 
@@ -84,7 +87,7 @@ $serviceTypeName = "testStateless"
 New-AzServiceFabricService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateless -InstanceCount -1 -PartitionSchemaSingleton -Verbose
 ```
 
-Contoh ini akan membuat layanan tanpa status baru "testApp~testService1" dengan hitungan instans -1 (di semua node).
+Contoh ini akan membuat layanan stateless baru "testApp~testService1" dengan jumlah instans -1 (pada semua simpul).
 
 ### Contoh 2
 ```powershell
@@ -96,7 +99,7 @@ $serviceTypeName = "testStatefulType"
 New-AzServiceFabricService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateful -TargetReplicaSetSize 3 MinReplicaSetSize 5
 ```
 
-Contoh ini akan membuat layanan status baru "testApp~testService2" dengan target 5 node.
+Contoh ini akan membuat layanan stateful baru "testApp~testService2" dengan target 5 simpul.
 
 ## PARAMETERS
 
@@ -131,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMoveCost
-Tentukan biaya default untuk perpindahan.
-Biaya yang lebih tinggi memperkecil kemungkinan cluster Resource Manager akan memindahkan replika ketika mencoba menyeimbangkan kluster
+Tentukan biaya default untuk pemindahan.
+Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.MoveCostEnum
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Menentukan hitungan instans untuk layanan
+Tentukan jumlah instans untuk layanan
 
 ```yaml
 Type: System.Int32
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinReplicaSetSize
-Menentukan ukuran kumpulan replika min untuk layanan
+Tentukan ukuran set replika min untuk layanan
 
 ```yaml
 Type: System.Int32
@@ -192,7 +195,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama layanan.
 
 ```yaml
@@ -209,8 +212,8 @@ Accept wildcard characters: False
 
 ### -PartitionSchemeNamed
 Menunjukkan bahwa layanan menggunakan skema partisi bernama.
-Layanan yang menggunakan model ini biasanya memiliki data yang dapat di-bucket, dalam rangkaian terikat.
-Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama adalah kawasan, kode pos, grup pelanggan, atau batas bisnis lainnya.
+Layanan yang menggunakan model ini biasanya memiliki data yang dapat di-bucket, dalam set terikat.
+Beberapa contoh umum bidang data yang digunakan sebagai kunci partisi bernama adalah wilayah, kode pos, grup pelanggan, atau batas bisnis lainnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 
 ### -PartitionSchemeSingleton
 Menunjukkan bahwa layanan menggunakan skema partisi singleton.
-Partisi singleton biasanya digunakan ketika layanan tidak memerlukan perutean tambahan.
+Partisi database tunggal biasanya digunakan ketika layanan tidak memerlukan perutean tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandByReplicaKeepDuration
-Tentukan durasi replika stand by untuk layanan
+Tentukan durasi replika siaga untuk layanan
 
 ```yaml
 Type: System.TimeSpan
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Stateful
-Gunakan untuk layanan bernegara
+Gunakan untuk layanan stateful
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -332,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Stateless
-Gunakan untuk layanan tanpa status
+Gunakan untuk layanan stateless
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetReplicaSetSize
-Menentukan ukuran rangkaian replika target untuk layanan
+Tentukan ukuran set replika target untuk layanan
 
 ```yaml
 Type: System.Int32
@@ -361,8 +364,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tentukan nama tipe layanan aplikasi, harus ada dalam manifes aplikasi.
+### -Type
+Tentukan nama jenis layanan aplikasi, harus ada dalam manifes aplikasi.
 
 ```yaml
 Type: System.String
@@ -376,8 +379,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -408,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

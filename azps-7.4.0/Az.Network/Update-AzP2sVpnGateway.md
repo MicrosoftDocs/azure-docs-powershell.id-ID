@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzP2sVpnGateway.md
-ms.openlocfilehash: 63b09c213d2f57229f78f495557020b6b715a18c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 947146ddba7fd161668f4aa3ff3289ddce7841a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142937747"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730454"
 ---
 # Update-AzP2sVpnGateway
 
 ## SYNOPSIS
-Perbarui P2SVpnGateway yang sudah ada di bawah VirtualHub untuk mengarahkan ke konektivitas situs.
+Perbarui P2SVpnGateway yang ada di bawah VirtualHub untuk konektivitas titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Update-AzP2sVpnGateway -ResourceId <String> [-VpnClientAddressPool <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru atau VpnServerConfiguration atau perubahan VpnGatewayScaleUnit baru.
+Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang ada di bawah VirtualHub dengan VpnClientAddressPool baru atau VpnServerConfiguration baru atau perubahan VpnGatewayScaleUnit.
 
 ## EXAMPLES
 
@@ -157,11 +160,11 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru. Ketika klien Point to site terhubung dengan P2SVpnGateway ini, salah satu alamat ip dari VpnClientAddressPool ini dialokasikan untuk klien tersebut.
+Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang ada di bawah VirtualHub dengan VpnClientAddressPool baru. Ketika klien Point to site terhubung dengan P2SVpnGateway ini, salah satu alamat ip dari VpnClientAddressPool ini dialokasikan untuk klien tersebut.
 
 ### Contoh 2
 
-Perbarui P2SVpnGateway yang sudah ada di bawah VirtualHub untuk mengarahkan ke konektivitas situs. (autogenerasi)
+Perbarui P2SVpnGateway yang ada di bawah VirtualHub untuk konektivitas titik ke situs. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -173,7 +176,7 @@ Update-AzP2sVpnGateway -AsJob -Name 00000000-0000-0000-0000-00000000000000000-we
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableInternetSecurityFlag
-Menonaktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
+Nonaktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway vpn p2s yang akan diubah
+Objek gateway vpn p2s yang akan dimodifikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
@@ -262,7 +265,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway vpn P2S.
 
 ```yaml
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway untuk diubah.
+ID sumber daya Azure dari P2SVpnGateway yang akan dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingConfiguration
-Merutekan konfigurasi untuk koneksi ini
+Konfigurasi perutean untuk koneksi ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRoutingConfiguration
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfiguration
-VpnServerConfiguration untuk dilampirkan ke P2SVpnGateway ini.
+VpnServerConfiguration yang akan dilampirkan ke P2SVpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
@@ -397,8 +400,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -413,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -444,4 +447,4 @@ System.String Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
 ## RELATED LINKS
 
-[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)
+[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
