@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/convertt
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/ConvertTo-AzVMManagedDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/ConvertTo-AzVMManagedDisk.md
-ms.openlocfilehash: 81b9dadfb4e91fbdd22b720bed629ee2e62551a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e22cd4f0b7f3c5105201e599c3f179a3d20b9ad7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637460"
 ---
 # ConvertTo-AzVMManagedDisk
 
 ## SYNOPSIS
-Mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk terkelola.
+Mengonversi komputer virtual dengan disk berbasis blob ke komputer virtual dengan disk terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/convertto-azvmmanageddisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ ConvertTo-AzVMManagedDisk [-ResourceGroupName] <String> [-VMName] <String> [-AsJ
 ```
 
 ## DESCRIPTION
-Cmdlet **ConvertTo-AzVMManagedDisk** mengonversi mesin virtual dengan disk berbasis blob ke mesin virtual dengan disk yang dikelola.
-Mesin virtual harus berhenti ditangani sebelum memanggil operasi ini.
+Cmdlet **ConvertTo-AzVMManagedDisk** mengonversi komputer virtual dengan disk berbasis blob ke komputer virtual dengan disk terkelola.
+Komputer virtual harus dihentikan alokasinya sebelum memanggil operasi ini.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Mesin virtual harus berhenti ditangani sebelum memanggil operasi ini.
 ConvertTo-AzVMManagedDisk -ResourceGroupName 'ResourceGroup01' -VMName 'VM01'
 ```
 
-Perintah ini mengonversi disk berbasis blob dari mesin virtual bernama 'VM01' dalam grup sumber daya 'ResourceGroup01' ke disk yang dikelola.
+Perintah ini mengonversi disk berbasis blob dari komputer virtual bernama 'VM01' di grup sumber daya 'ResourceGroup01' ke disk terkelola.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

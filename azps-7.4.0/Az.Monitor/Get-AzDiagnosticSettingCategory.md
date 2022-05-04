@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSettingCategory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSettingCategory.md
-ms.openlocfilehash: 2fb24d344bf8c6d45fe9928f0a224e669738796a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74f463d587a25b032c8c61d14d136c9153736e06
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940123"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665944"
 ---
 # Get-AzDiagnosticSettingCategory
 
 ## SYNOPSIS
-Dapatkan atau cantumkan kategori pengaturan diagnostik yang didukung untuk sumber daya Azure.
+Mendapatkan atau mencantumkan kategori pengaturan diagnostik yang didukung untuk sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdiagnosticsettingcategory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDiagnosticSettingCategory -TargetResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan kategori pengaturan diagnostik yang didukung untuk sumber daya Azure.
+Mendapatkan atau mencantumkan kategori pengaturan diagnostik yang didukung untuk sumber daya Azure.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kategori pengaturan diagnostik
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

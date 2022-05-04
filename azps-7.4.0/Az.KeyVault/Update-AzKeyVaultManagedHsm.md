@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: 4ba6b59f3d5b3ea3287172c0eafcc4584347b2bb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a7ce63ddbd4b789f2e001282c4f05df31306511
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747018"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655688"
 ---
 # Update-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
-Perbarui status HSM yang dikelola Azure.
+Memperbarui status HSM terkelola Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzKeyVaultManagedHsm -ResourceId <String> [-EnablePurgeProtection] [-Tag 
 ```
 
 ## DESCRIPTION
-Cmdlet ini memperbarui status HSM yang dikelola Azure.
+Cmdlet ini memperbarui status HSM terkelola Azure.
 
 ## EXAMPLES
 
@@ -71,16 +74,16 @@ Tags                                :
                                       testKey     testValued
 ```
 
-Memperbarui tag untuk Hsm yang dikelola bernama `$hsmName` dalam grup `$resourceGroupName`sumber daya .
+Memperbarui tag untuk Hsm terkelola bernama `$hsmName` dalam grup `$resourceGroupName`sumber daya .
 
-### Contoh 2: Memperbarui Hsm terkelola menggunakan piping
+### Contoh 2: Memperbarui Hsm terkelola menggunakan pipa
 ```powershell
 Get-AzKeyVaultManagedHsm -Name $hsmName -ResourceGroupName $resourceGroupName | Update-AzKeyVaultManagedHsm -Tag @{testKey="testValue"}
 ```
 
-Memperbarui tag untuk Hsm yang dikelola menggunakan sintaks perpipaan.
+Memperbarui tag untuk Hsm terkelola menggunakan sintaks piping.
 
-### Contoh 3: Aktifkan proteksi pembersihan untuk Hsm terkelola 
+### Contoh 3: Mengaktifkan perlindungan penghapusan menyeluruh untuk Hsm terkelola 
 ```powershell
 PS C:\> Update-AzKeyVaultManagedHsm -Name $hsmName -ResourceGroupName $resourceGroupName -EnablePurgeProtection | fl
 ```
@@ -102,7 +105,7 @@ Status Message                      : The Managed HSM is provisioned and ready t
 Tags                                :
 ```
 
-Memungkinkan perlindungan pembersihan untuk Hsm terkelola yang dinamai `$hsmName` dalam grup `$resourceGroupName`sumber daya .
+Memungkinkan perlindungan penghapusan menyeluruh untuk Hsm terkelola bernama `$hsmName` dalam grup `$resourceGroupName`sumber daya .
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurgeProtection
-menentukan apakah perlindungan terhadap pembersihan diaktifkan untuk kumpulan HSM yang dikelola ini. Pengaturan ini hanya efektif jika penghapusan lunak juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat dikembalikan.
+menentukan apakah perlindungan terhadap pembersihan diaktifkan untuk kumpulan HSM terkelola ini. Pengaturan ini hanya efektif jika penghapusan sementara juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek HSM yang dikelola.
+Objek HSM terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
@@ -151,8 +154,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama HSM yang dikelola.
+### -Name
+Nama HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya dari HSM yang dikelola.
+ID sumber daya HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -228,8 +231,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

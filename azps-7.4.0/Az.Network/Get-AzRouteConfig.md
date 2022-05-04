@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
-ms.openlocfilehash: 258dabf15b1e7ee1572352c0dcb8473b3509e05f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 912a5d5b0ded9352ae5b13d7bb2cb6d802b465cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679140"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675682"
 ---
 # Get-AzRouteConfig
 
 ## SYNOPSIS
-Mendapatkan rute dari meja rute.
+Mendapatkan rute dari tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Get-AzRouteConfig -RouteTable <PSRouteTable> [-Name <String>] [-DefaultProfile <
 
 ## DESCRIPTION
 Cmdlet **Get-AzRouteConfig** mendapatkan rute dari tabel rute Azure.
-Anda dapat menentukan rute menurut nama.
+Anda dapat menentukan rute berdasarkan nama.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tabel rute
+### Contoh 1: Mendapatkan tabel rute
 ```powershell
 Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Get-AzRouteConfig -Name "Route07"
 ```
@@ -46,9 +49,9 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet **Get-AzRouteTable** .
-Perintah melewati tabel tersebut ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan rute bernama Route07 di tabel rute bernama RouteTable01.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable** .
+Perintah meneruskan tabel tersebut ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet saat ini mendapatkan rute bernama Route07 dalam tabel rute bernama RouteTable01.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama rute yang didapat cmdlet ini.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -112,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzRouteConfig](./Add-AzRouteConfig.md)
+[New-AzRouteConfig](./Add-AzRouteConfig.md)
 
 [Get-AzRouteTable](./Get-AzRouteTable.md)
 

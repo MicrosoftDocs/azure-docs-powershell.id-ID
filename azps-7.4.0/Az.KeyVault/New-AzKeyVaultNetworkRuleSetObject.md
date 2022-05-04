@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultNetworkRuleSetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultNetworkRuleSetObject.md
-ms.openlocfilehash: 64d2e15591402b0c03a15590c1530823cf279317
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 42c2130b546aad3ac641f891edd5a210de522867
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226827"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664648"
 ---
 # New-AzKeyVaultNetworkRuleSetObject
 
 ## SYNOPSIS
-Membuat objek yang mewakili pengaturan aturan jaringan.
+Buat objek yang mewakili pengaturan aturan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultnetworkrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzKeyVaultNetworkRuleSetObject [-DefaultAction <PSKeyVaultNetworkRuleDefault
 ```
 
 ## DESCRIPTION
-Buat objek yang mewakili pengaturan aturan jaringan yang bisa digunakan saat membuat kubah.
+Buat objek yang mewakili pengaturan aturan jaringan yang dapat digunakan saat membuat vault.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ $ruleSet = New-AzKeyVaultNetworkRuleSetObject -DefaultAction Allow -Bypass Azure
 New-AzKeyVault -ResourceGroupName "myRg" -VaultName "myVault" -NetworkRuleSet $ruleSet
 ```
 
-Membuat kubah baru dan menentukan aturan jaringan untuk memperbolehkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
+Membuat vault baru dan menentukan aturan jaringan untuk memungkinkan akses ke alamat IP yang ditentukan dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Menentukan aksi default aturan jaringan.
+Menentukan tindakan default aturan jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleDefaultActionEnum
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan virtual aturan jaringan yang diizinkan.
 
 ```yaml
 Type: System.String[]
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

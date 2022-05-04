@@ -1,17 +1,17 @@
 ---
 description: Cara menggunakan Azure PowerShell yang diinstal sebelumnya di citra Docker.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menggunakan Azure PowerShell di Docker
-ms.openlocfilehash: 351e6d3da218c2f94bf7aba1646c9d8865be5176
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bf97419a4f8644d95ea80acbacc3398d9d382fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116323"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679262"
 ---
 # <a name="using-azure-powershell-in-docker"></a>Menggunakan Azure PowerShell di Docker
 

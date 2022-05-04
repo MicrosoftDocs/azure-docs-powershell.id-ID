@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject.md
-ms.openlocfilehash: 36f8ba2aaf6f261c120e01e3c5389814db0f4b5d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab2cc4239ffefd5f9e4781faad5b28239b3e5ffe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801000"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668950"
 ---
 # New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject
 
 ## SYNOPSIS
-Membuat aturan peringatan kustom ambang batas baru untuk grup keamanan perangkat (Keamanan IoT)
+Membuat aturan pemberitahuan kustom ambang batas baru untuk grup keamanan perangkat (IoT Security)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygroupthresholdcustomalertruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject -MinThreshold <Int32> -M
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject membuat daftar baru aturan peringatan kustom ambang batas untuk grup keamanan perangkat dalam solusi keamanan IoT.
+Cmdlet New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject membuat daftar baru aturan pemberitahuan kustom ambang batas untuk grup keamanan perangkat dalam solusi keamanan IoT.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ MinThreshold: 0
 MaxThreshold: 10
 ```
 
-Membuat aturan pemberitahuan kustom ambang batas baru dari tipe "SomeRuleType" dengan nilai semut yang diaktifkan status untuk ambang batas minimum dan maksimum
+Buat aturan pemberitahuan kustom ambang batas baru dari jenis "SomeRuleType" dengan nilai semut yang diaktifkan status untuk ambang minimum dan maksimum
 
 ## PARAMETERS
 
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Aturan diaktifkan.
+### -Diaktifkan
+Apakah aturan diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinThreshold
-Ambang batas minimum.
+Ambang minimum.
 
 ```yaml
 Type: System.Int32
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan.
+### -Type
+Jenis aturan.
 
 ```yaml
 Type: System.String
@@ -123,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

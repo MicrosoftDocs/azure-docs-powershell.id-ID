@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
-ms.openlocfilehash: 49898af474bfa9fbab9655c9c8359f7593ec2b59
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e37c32294630795929e2e2c2350a299fd52fed3a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320985"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676384"
 ---
 # Add-AzAnalysisServicesAccount
 
 ## SYNOPSIS
-Menambahkan akun terautentikasi untuk digunakan untuk permintaan cmdlet server Azure Analysis Services.
+Menambahkan akun terautentikasi yang akan digunakan untuk permintaan cmdlet server Azure Analysis Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/add-azanalysisservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzAnalysisServicesAccount [-RolloutEnvironment] <String> [-ServicePrincipal]
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzAnalysisServicesAccount digunakan untuk masuk ke contoh server Azure Analysis Services
+Cmdlet Add-AzAnalysisServicesAccount digunakan untuk masuk ke instans server Azure Analysis Services
 
 ## EXAMPLES
 
@@ -60,15 +63,15 @@ $ApplicationCredential = Get-Credential
 Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -Credential $ApplicationCredential -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
 
-Perintah pertama mendapatkan kredensial utama layanan aplikasi, lalu menyimpannya dalam variabel $ApplicationCredential.
-Perintah kedua menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh variabel $ApplicationCredential dan TenantId ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+Perintah pertama mendapatkan kredensial perwakilan layanan aplikasi, lalu menyimpannya dalam variabel $ApplicationCredential.
+Perintah kedua menambahkan akun perwakilan layanan aplikasi yang ditentukan oleh variabel $ApplicationCredential dan TenantId ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
 ### Contoh 3
 ```powershell
 Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -ApplicationId "yyyy-yyyy-yyyy-yyyy" -CertificateThumbprint 'zzzzzzzzzzzzzzzz' -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
 
-Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh ApplicationId, TenantId, dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+Contoh ini akan menambahkan akun perwakilan layanan aplikasi yang ditentukan oleh ApplicationId, TenantId, dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Hash Sertifikat (Sidik Jari)
+Hash Sertifikat (Thumbprint)
 
 ```yaml
 Type: System.String
@@ -102,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
-Kredensial masuk
+### -Credential
+Info masuk masuk
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipal
-Menunjukkan bahwa akun ini mengautentikasi dengan menyediakan kredensial utama layanan.
+Menunjukkan bahwa akun ini mengautentikasi dengan memberikan kredensial perwakilan layanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Nama penyewa atau ID
+Nama atau ID penyewa
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,11 +221,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

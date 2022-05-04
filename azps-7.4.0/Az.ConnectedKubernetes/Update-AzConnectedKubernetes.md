@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
-ms.openlocfilehash: c7d5b37a99cd6b25ba95918404293d99b3dc41fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3669226c3e937012224936020b45a54af2b3895d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065169"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653170"
 ---
 # Update-AzConnectedKubernetes
 
 ## SYNOPSIS
-API untuk memperbarui properti tertentu dari sumber daya kluster tersambung
+API untuk memperbarui properti tertentu dari sumber daya kluster yang terhubung
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/update-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Update-AzConnectedKubernetes -InputObject <IConnectedKubernetesIdentity> [-Tag <
 ```
 
 ## DESCRIPTION
-API untuk memperbarui properti tertentu dari sumber daya kluster tersambung
+API untuk memperbarui properti tertentu dari sumber daya kluster yang terhubung
 
 ## EXAMPLES
 
-### Contoh 1: Update a connected kubernetes
+### Contoh 1: Memperbarui kubernetes yang terhubung
 ```powershell
 Update-AzConnectedKubernetes -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -Tag @{'key'='1'}
 ```
@@ -49,7 +52,7 @@ eastus   azps_test_cluster azps_test_group
 
 Perintah ini memperbarui kubernetes yang terhubung.
 
-### Contoh 2: Update a connected kubernetes by object
+### Contoh 2: Memperbarui kubernetes yang terhubung menurut objek
 ```powershell
 Get-AzConnectedKubernetes -ClusterName azps_test_cluster -ResourceGroupName azps_test_group | Update-AzConnectedKubernetes -Tag @{'key'='2'}
 ```
@@ -60,12 +63,12 @@ Location Name              ResourceGroupName
 eastus   azps_test_cluster azps_test_group
 ```
 
-Perintah ini memperbarui kubernetes yang terhubung menurut objek.
+Perintah ini memperbarui kubernetes yang terhubung berdasarkan objek.
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kubernetes yang dinamai get.
+Nama kluster Kubernetes tempat get dipanggil.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -155,8 +158,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -207,9 +210,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster Kubernetes yang dinamai get.
+  - `[ClusterName <String>]`: Nama kluster Kubernetes yang dipanggil.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

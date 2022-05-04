@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
-ms.openlocfilehash: ab1e142a440c5c6354fa0235b2c641c10238922b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f7c738d178311b90195a98f7f3053f6324522be1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943867"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645126"
 ---
 # Get-AzCosmosDBMongoDBRestorableResource
 
 ## SYNOPSIS
 Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorableresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzCosmosDBMongoDBRestorableResource -Location <String> -DatabaseAccountInsta
 ## DESCRIPTION
 Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
 Daftar ini berguna untuk mengetahui sumber daya apa yang ada di akun sumber pada waktu tertentu. Ini akan memberi pengguna indikasi tentang apa yang diharapkan jika akun dipulihkan ke waktu tertentu.
-Pengguna juga dapat menggunakan daftar ini dan menyediakan subset sumber daya yang dapat dipulihkan jika pengguna hanya ingin memulihkan database/kumpulan tertentu.
+Pengguna juga dapat menggunakan daftar ini dan menyediakan subset sumber daya yang dapat dipulihkan jika pengguna hanya ingin memulihkan database/koleksi tertentu.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Akun Database CosmosDB yang Dapat Disempurnakan
+Objek Akun Database yang Dapat Di memulihkan CosmosDB
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableDatabaseAccountGetResult
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreTimestampInUtc
-Cap waktu tempat akun sumber harus dipulihkan.
+Tanda waktu tempat akun sumber harus dipulihkan.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -149,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

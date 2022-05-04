@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/new-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbFirewallRule.md
-ms.openlocfilehash: 2bbeae6ace876effe1ec1dead1eb875754ad4884
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3c5f82008c5aa8bbf24b637f37ed34d2747865b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655166"
 ---
 # New-AzMariaDbFirewallRule
 
 ## SYNOPSIS
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/new-azmariadbfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzMariaDbFirewallRule -ResourceGroupName <String> -ServerName <String> -Clie
 ```
 
 ## DESCRIPTION
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ ClientIPAddress_2020-08-11_18-19-27 0.0.0.1        0.0.0.1
 
 Cmdlet ini membuat Aturan Firewall MariaDB menggunakan -ClientIPAddress.
 
-### Contoh 3: Membuat Aturan Firewall MariaDB baru untuk memperbolehkan semua IP
+### Contoh 3: Buat Aturan Firewall MariaDB baru untuk mengizinkan semua IP
 ```powershell
 New-AzMariaDbFirewallRule -ResourceGroupName mariadb-test-qu5ov0 -ServerName mariadb-asd-01 -AllowAll
 ```
@@ -87,7 +90,7 @@ Cmdlet ini membuat Aturan Firewall MariaDB baru untuk mengizinkan semua IP.
 ## PARAMETERS
 
 ### -AllowAll
-Sajikan untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
+Hadir untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal aturan firewall server.
-Harus berupa format IPv4.
+Klien menentukan IP tunggal dari aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus berupa format IPv4.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -163,10 +166,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall server.
 Jika tidak ditentukan, defaultnya tidak ditentukan.
-Jika AllowAll ada, nama defaultnya AllowAll_yyyy-MM-dd_HH-mm-ss.
+Jika AllowAll ada, nama defaultnya adalah AllowAll_yyyy-MM-dd_HH-mm-ss.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -227,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartIPAddress
-Alamat IP mulai aturan firewall server.
-Harus berupa format IPv4.
+Alamat IP awal aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -257,8 +260,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

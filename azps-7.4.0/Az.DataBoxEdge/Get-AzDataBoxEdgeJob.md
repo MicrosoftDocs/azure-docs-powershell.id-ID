@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeJob.md
-ms.openlocfilehash: b458416ff95a37e7a8936d7815a46c6858191932
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe0070e6f50af88c72fc4ee50b6bad3382d7b73c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288765"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646780"
 ---
 # Get-AzDataBoxEdgeJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan yang dijadwalkan pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgejob) untuk informasi terbaru.
 
 ## SYNTAX
 

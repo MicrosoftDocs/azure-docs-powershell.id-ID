@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedAlert.md
-ms.openlocfilehash: 327ede1829ecca7bda4c85a0081c55e3b4d96718
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 03523e08fe59856a60b1892d0a4038728c1f0e4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866916"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635588"
 ---
 # Get-AzIotSecurityAnalyticsAggregatedAlert
 
 ## SYNOPSIS
-Dapatkan pemberitahuan agregat keamanan IoT
+Mendapatkan pemberitahuan agregat keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecurityanalyticsaggregatedalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Get-AzIotSecurityAnalyticsAggregatedAlert -ResourceGroupName <String> -SolutionN
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecurityAnalyticsAggregatedAlert mengembalikan satu atau beberapa pemberitahuan agregat di perangkat hub iot.
-Nama pemberitahuan agregat adalah kombinasi dari tipe pemberitahuan dan tanggal peringatan yang memalukan, dipisahkan oleh '/'.
+Cmdlet Get-AzIotSecurityAnalyticsAggregatedAlert mengembalikan satu atau beberapa pemberitahuan agregat di perangkat iot hub.
+Nama pemberitahuan agregat adalah kombinasi dari jenis pemberitahuan dan tanggal agregat pemberitahuan, dipisahkan oleh '/'.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ TopDevicesList: [
               ]
 ```
 
-Dapatkan pemberitahuan agregat "IoT_Bruteforce_Fail/2019-02-02" (nama yang digabungkan dari tipe peringatan dan tanggal agregatnya) dalam solusi "MySolution" dan grup sumber daya "MyResourceGroup"
+Dapatkan pemberitahuan agregat "IoT_Bruteforce_Fail/2019-02-02" (nama yang digabungkan dari jenis pemberitahuan dan tanggal agregatnya) dalam solusi "MySolution" dan grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -148,11 +151,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

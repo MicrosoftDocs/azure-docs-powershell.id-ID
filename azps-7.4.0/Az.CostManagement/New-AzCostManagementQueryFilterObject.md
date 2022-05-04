@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
-ms.openlocfilehash: 12ae43996d5855ba7ce769352bd5d03a93c108cc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4bc1fada3c5a52ae8edc76d2edba480d4c6d642c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875664"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596822"
 ---
 # New-AzCostManagementQueryFilterObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk Filter Kueri
+Membuat objek dalam memori untuk QueryFilter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementqueryfilterobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCostManagementQueryFilterObject [-And <IQueryFilter[]>] [-Dimensions <IQue
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk Filter Kueri
+Membuat objek dalam memori untuk QueryFilter
 
 ## EXAMPLES
 
@@ -49,9 +52,9 @@ perintah ini membuat objek filter kueri untuk ekspor manajemen biaya.
 ## PARAMETERS
 
 ### -Dan
-Ekspresi "AND" logika.
+Ekspresi "AND" logis.
 Harus memiliki setidaknya 2 item.
-Untuk membangun, lihat bagian CATATAN untuk properti AND dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti AND dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryFilter[]
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 
 ### -Dimensi
 Memiliki ekspresi perbandingan untuk dimensi.
-Untuk membangun, lihat bagian CATATAN untuk properti DIMENSI dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DIMENSIONS dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryComparisonExpression
@@ -82,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tidak
-Ekspresi logika "NOT".
-Untuk membangun, lihat bagian CATATAN untuk properti NOT dan membuat tabel hash.
+Ekspresi "NOT" logis.
+Untuk membuat, lihat bagian CATATAN untuk properti NOT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryFilter
@@ -98,9 +101,9 @@ Accept wildcard characters: False
 ```
 
 ### -Atau
-Ekspresi "OR" logika.
+Ekspresi "OR" logis.
 Harus memiliki setidaknya 2 item.
-Untuk membangun, lihat bagian CATATAN untuk properti OR dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti OR dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryFilter[]
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Memiliki ekspresi perbandingan untuk tag.
-Untuk membangun, lihat bagian CATATAN untuk properti TAG dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti TAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryComparisonExpression
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -148,39 +151,39 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AND <IQueryFilter[]>: Ekspresi "AND" logika. Harus memiliki setidaknya 2 item.
-  - `[And <IQueryFilter[]>]`: Ekspresi logika "AND". Harus memiliki setidaknya 2 item.
+AND <IQueryFilter[]>: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
+  - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
-    - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+    - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
     - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
-  - `[Not <IQueryFilter>]`: Ekspresi logika "NOT".
-  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logika. Harus memiliki setidaknya 2 item.
+  - `[Not <IQueryFilter>]`: Ekspresi "NOT" logis.
+  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
-DIMENSI <IQueryComparisonExpression>: Memiliki ekspresi perbandingan untuk dimensi.
-  - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+DIMENSIONS <IQueryComparisonExpression>: Memiliki ekspresi perbandingan untuk dimensi.
+  - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
   - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
 
-NOT <IQueryFilter>: Ekspresi logika "NOT".
-  - `[And <IQueryFilter[]>]`: Ekspresi logika "AND". Harus memiliki setidaknya 2 item.
+NOT <IQueryFilter>: Ekspresi "NOT" logis.
+  - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
-    - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+    - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
     - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
-  - `[Not <IQueryFilter>]`: Ekspresi logika "NOT".
-  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logika. Harus memiliki setidaknya 2 item.
+  - `[Not <IQueryFilter>]`: Ekspresi "NOT" logis.
+  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
-OR <IQueryFilter[]>: Ekspresi "OR" logika. Harus memiliki setidaknya 2 item.
-  - `[And <IQueryFilter[]>]`: Ekspresi logika "AND". Harus memiliki setidaknya 2 item.
+OR <IQueryFilter[]>: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
+  - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
-    - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+    - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
     - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
-  - `[Not <IQueryFilter>]`: Ekspresi logika "NOT".
-  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logika. Harus memiliki setidaknya 2 item.
+  - `[Not <IQueryFilter>]`: Ekspresi "NOT" logis.
+  - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
 TAG <IQueryComparisonExpression>: Memiliki ekspresi perbandingan untuk tag.
-  - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+  - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
   - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
 
 ## RELATED LINKS

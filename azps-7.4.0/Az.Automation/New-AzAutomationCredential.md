@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCredential.md
-ms.openlocfilehash: 0b1d3e225f115d299ddc1074cd7ee670924bcad5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d51062a97089875dd3a9a22a0b9d1e16895f87f2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319887"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623316"
 ---
 # New-AzAutomationCredential
 
 ## SYNOPSIS
-Membuat kredensial Otomatisasi.
+Membuat kredensial Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzAutomationCredential [-Name] <String> [-Description <String>] [-Value] <PS
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutomationCredential** membuat kredensial sebagai objek **PSCredential** dalam Azure Automation.
+Cmdlet **New-AzAutomationCredential** membuat kredensial sebagai objek **PSCredential** di Azure Automation.
 
 ## EXAMPLES
 
@@ -40,15 +43,15 @@ PS C:\> New-AzAutomationCredential -AutomationAccountName "Contoso17" -Name "Con
 ```
 
 Perintah pertama menetapkan nama pengguna ke variabel $User.
-Perintah kedua mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
+Perintah kedua mengonversi kata sandi teks biasa menjadi string aman dengan menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya dalam variabel $Credential.
-Perintah akhir membuat kredensial Otomatisasi bernama ContosoCredential yang menggunakan $Credential.
+Perintah akhir membuat kredensial Automation bernama ContosoCredential yang menggunakan $Credential.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menyimpan kredensial.
+Menentukan nama akun Automation tempat cmdlet ini menyimpan kredensial.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk kredensial.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan kredensial sebagai objek **PSCredential** .
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

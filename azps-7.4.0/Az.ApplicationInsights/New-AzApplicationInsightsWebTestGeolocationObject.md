@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ApplicationInsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestGeolocationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestGeolocationObject.md
-ms.openlocfilehash: 402417d188976fc4eb557f61e601375c791fdda2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fd161ef529250d57e23e9638d2ebc71183c71695
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233487"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681133"
 ---
 # New-AzApplicationInsightsWebTestGeolocationObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk WebTestGeolocation.
+Buat objek dalam memori untuk WebTestGeolocation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtestgeolocationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ New-AzApplicationInsightsWebTestGeolocationObject [-Location <String>] [<CommonP
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk WebTestGeolocation.
+Buat objek dalam memori untuk WebTestGeolocation.
 
 ## EXAMPLES
 
@@ -39,12 +42,12 @@ emea-nl-ams-azr
 ```
 
 Perintah ini membuat objek memori untuk WebTestGeolocation.
-Sebagai nilai `GeoLocation` parameter dalam `New-AzApplicationInsightsWebTest`.
+Sebagai nilai `GeoLocation` parameter di `New-AzApplicationInsightsWebTest`.
 
 ## PARAMETERS
 
 ### -Lokasi
-ID Lokasi untuk webTest yang dijalankan.
+ID Lokasi untuk WebTest yang akan dijalankan.
 
 ```yaml
 Type: System.String
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

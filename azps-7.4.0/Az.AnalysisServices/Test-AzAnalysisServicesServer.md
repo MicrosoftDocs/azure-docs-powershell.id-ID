@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Test-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Test-AzAnalysisServicesServer.md
-ms.openlocfilehash: 41fdd146fb9c97a615bf490b175499a2a95bd01e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c385df68ba15230047069482827019810dc2a28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812700"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616244"
 ---
 # Test-AzAnalysisServicesServer
 
 ## SYNOPSIS
-Menguji keberadaan contoh server Analysis Services
+Menguji keberadaan instans server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/test-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzAnalysisServicesServer menguji keberadaan contoh server Analysis Services
+Cmdlet Test-AzAnalysisServicesServer menguji keberadaan instans server Analysis Services
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet Test-AzAnalysisServicesServer menguji keberadaan contoh server Analysis S
 Test-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 
-Perintah ini akan menguji jika ada server bernama testserver dalam grup uji grup sumber daya
+Perintah ini akan menguji apakah ada server bernama testserver di grup uji grup sumber daya
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server Analysis Services
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

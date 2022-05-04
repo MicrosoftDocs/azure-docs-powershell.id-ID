@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
-ms.openlocfilehash: 51bb020fb0d0cccc0ded8ce37175b9a1751ef49a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cdc59c3712d5a7ad4900ee392a477e5051a434b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654159"
 ---
 # Get-AzBillingAccount
 
 ## SYNOPSIS
-Dapatkan akun tagihan.
+Mendapatkan akun penagihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,14 +28,14 @@ Get-AzBillingAccount [-IncludeAddress] [-ExpandBillingProfile] [-ExpandInvoiceSe
  [<CommonParameters>]
 ```
 
-### Satu
+### Tunggal
 ```
 Get-AzBillingAccount -Name <System.Collections.Generic.List`1[System.String]> [-IncludeAddress] [-ExpandBillingProfile] [-ExpandInvoiceSection] [-ListEntitiesToCreateSubscription]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBillingAccount** mendapatkan akun tagihan, pengguna memiliki akses ke akun tersebut. 
+Cmdlet **Get-AzBillingAccount** mendapatkan akun penagihan, yang dapat diakses pengguna. 
 
 ## EXAMPLES
 
@@ -41,42 +44,42 @@ Cmdlet **Get-AzBillingAccount** mendapatkan akun tagihan, pengguna memiliki akse
 Get-AzBillingAccount
 ```
 
-Dapatkan semua akun tagihan yang dapat diakses pengguna.
+Mendapatkan semua akun penagihan yang dapat diakses pengguna.
 
 ### Contoh 2
 ```powershell
 Get-AzBillingAccount -Name 00000000-0000-0000-0000-000000000000
 ```
 
-Dapatkan akun tagihan dengan nama yang ditentukan.
+Dapatkan akun penagihan dengan nama yang ditentukan.
 
 ### Contoh 3
 ```powershell
 Get-AzBillingAccount -IncludeAddress
 ```
 
-Dapatkan semua akun tagihan yang dapat diakses pengguna, dan sertakan alamat dalam hasilnya.
+Dapatkan semua akun penagihan yang dapat diakses pengguna, dan sertakan alamat dalam hasilnya.
 
 ### Contoh 4
 ```powershell
 Get-AzBillingAccount -ExpandBillingProfile
 ```
 
-Dapatkan semua akun tagihan yang dapat diakses pengguna, dan sertakan profil tagihan dalam hasilnya.
+Dapatkan semua akun penagihan yang dapat diakses pengguna, dan sertakan profil penagihan dalam hasilnya.
 
 ### Contoh 5
 ```powershell
 Get-AzBillingAccount -ExpandInvoiceSection
 ```
 
-Dapatkan semua akun tagihan yang dapat diakses pengguna, serta sertakan profil tagihan dan bagian faktur di bawahnya dalam hasilnya.
+Dapatkan semua akun penagihan yang dapat diakses pengguna, dan sertakan profil penagihan dan bagian faktur di bawahnya dalam hasilnya.
 
 ### Contoh 6
 ```powershell
 Get-AzBillingAccount -ExpandInvoiceSection -IncludeAddress -ExpandBillingProfile -Name 00000000-0000-0000-0000-000000000000
 ```
 
-Dapatkan akun tagihan dengan nama tertentu, sertakan alamat, profil tagihan, dan bagian faktur di bawahnya dalam hasilnya.
+Dapatkan akun penagihan dengan nama yang ditentukan, dan sertakan alamat, profil penagihan, dan bagian faktur di bawahnya dalam hasilnya.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeAddress
-Sertakan alamat akun tagihan.
+Sertakan alamat akun penagihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandBillingProfile
-Sertakan profil tagihan di bawah akun tagihan.
+Sertakan profil penagihan di bawah akun penagihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandInvoiceSection
-Sertakan profil tagihan di bawah bagian akun tagihan dan faktur di bawahnya.
+Sertakan profil penagihan di bawah bagian akun penagihan dan faktur di bawahnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama akun tagihan tertentu.
+### -Name
+Nama akun penagihan tertentu.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListEntitiesToCreateSubscription
-Cantumkan entitas tagihan di bawah akun tagihan yang dapat digunakan sebagai input untuk membuat langganan.
+Cantumkan entitas penagihan di bawah akun penagihan yang dapat digunakan sebagai input untuk membuat langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

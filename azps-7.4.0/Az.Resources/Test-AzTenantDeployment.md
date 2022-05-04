@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzTenantDeployment.md
-ms.openlocfilehash: a9b57d8153a2321039f335874b9275faaa627d35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7606e134f0bb6caa84f59b7f451264f63d0bb8af
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665548"
 ---
 # Test-AzTenantDeployment
 
 ## SYNOPSIS
-Memvalidasi penyebaran di lingkup penyewa.
+Memvalidasi penyebaran pada cakupan penyewa.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/test-aztenantdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -128,25 +131,25 @@ Test-AzTenantDeployment [-Name <String>] -Location <String> [-QueryString <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzTenantDeployment** menentukan apakah templat penyebaran dan nilai parameternya valid pada lingkup penyewa saat ini.
+Cmdlet **Test-AzTenantDeployment** menentukan apakah templat penyebaran dan nilai parameternya valid pada cakupan penyewa saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Uji penyebaran dengan templat kustom dan file parameter
+### Contoh 1: Menguji penyebaran dengan templat kustom dan file parameter
 ```powershell
 Test-AzTenantDeployment -Location "West US" -TemplateFile "D:\Azure\Templates\OrgSetup.json" -TemplateParameterFile "D:\Azure\Templates\OrgParms.json"
 ```
 
-Perintah ini menguji penyebaran pada lingkup penyewa saat ini menggunakan file templat dan file parameter tertentu.
+Perintah ini menguji penyebaran pada cakupan penyewa saat ini menggunakan file templat dan file parameter yang diberikan.
 
-### Contoh 2: Uji penyebaran dengan objek templat kustom dan file parameter
+### Contoh 2: Menguji penyebaran dengan objek templat kustom dan file parameter
 ```powershell
 $TemplateFileText = [System.IO.File]::ReadAllText("D:\Azure\Templates\OrgSetup.json")
 $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 Test-AzTenantDeployment -Location "West US" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json"
 ```
 
-Perintah ini menguji penyebaran pada lingkup penyewa saat ini menggunakan hashtable dalam memori yang dibuat dari file templat tertentu dan file parameter.
+Perintah ini menguji penyebaran pada cakupan penyewa saat ini menggunakan hashtable dalam memori yang dibuat dari file templat yang diberikan dan file parameter.
 
 ## PARAMETERS
 
@@ -180,7 +183,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran yang akan diuji. Jika tidak ditentukan, default ke nama file templat saat file templat disediakan
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryString
-String kueri (misalnya, token SAS) untuk digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
+String kueri (misalnya, token SAS) yang akan digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
 
 ```yaml
 Type: System.String
@@ -226,9 +229,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
-Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
-Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
+Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
+Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
+Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateFile
-Jalur lokal ke file templat. Tipe file templat yang didukung: json dan bicep.
+Jalur lokal ke file templat. Jenis file templat yang didukung: json dan bicep.
 
 ```yaml
 Type: System.String
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID sumber daya templatSpec yang akan digunakan.
+ID sumber daya templatSpec yang akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

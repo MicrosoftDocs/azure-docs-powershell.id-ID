@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzRoleManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzRoleManagementPolicy.md
-ms.openlocfilehash: faad84b84c3fe5d0e695c1cfa874141d0f6fd599
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a4d5ec79661a82a59d0a5fb6ef891de94d244ac9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867060"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637874"
 ---
 # Update-AzRoleManagementPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan manajemen peran
+Memutakhirkan kebijakan manajemen peran
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azrolemanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-AzRoleManagementPolicy -InputObject <IAuthorizationIdentity> [-Descriptio
 ```
 
 ## DESCRIPTION
-Memperbarui kebijakan manajemen peran
+Memutakhirkan kebijakan manajemen peran
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ Name                                 Type                                       
 
 Setiap individu `Rule` pada kebijakan dapat diperbarui secara independen.
 
-### Contoh 2: Perbarui aturan kedaluwarsa dan aturan pemberitahuan kebijakan
+### Contoh 2: Memperbarui aturan kedaluwarsa dan aturan pemberitahuan kebijakan
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/"
 PS C:\> $expirationRule = [RoleManagementPolicyExpirationRule]@{
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.IAuthorizationIdentity
@@ -180,8 +183,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama (guid) kebijakan manajemen peran untuk upsert.
+### -Name
+Nama (guid) dari kebijakan manajemen peran ke upsert.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -Aturan
 Aturan yang diterapkan pada kebijakan.
-Untuk membuat, lihat bagian CATATAN untuk properti RULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti ATURAN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.Api20201001Preview.IRoleManagementPolicyRule[]
@@ -211,8 +214,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup kebijakan manajemen peran untuk upsert.
+### -Cakupan
+Cakupan kebijakan manajemen peran untuk upsert.
 
 ```yaml
 Type: System.String
@@ -226,8 +229,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -281,21 +284,21 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
-  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran yang akan dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleEligibilityScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) dari jadwal kelayakan peran yang akan didapatkan.
+  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
-  - `[RoleManagementPolicyName <String>]`: Nama (guid) kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Lingkup kebijakan manajemen peran.
+  - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
+  - `[Scope <String>]`: Ruang lingkup kebijakan manajemen peran.
 
 RULE <IRoleManagementPolicyRule[]>: Aturan yang diterapkan pada kebijakan.
-  - `RuleType <RoleManagementPolicyRuleType>`: Tipe aturan
+  - `RuleType <RoleManagementPolicyRuleType>`: Jenis aturan
   - `[Id <String>]`: Id aturan.
   - `[TargetCaller <String>]`: Penelepon pengaturan.
   - `[TargetEnforcedSetting <String[]>]`: Daftar pengaturan yang diberlakukan.
   - `[TargetInheritableSetting <String[]>]`: Daftar pengaturan yang dapat diwariskan.
-  - `[TargetLevel <String>]`: Tingkat penugasan yang diterapkan.
+  - `[TargetLevel <String>]`: Tingkat penugasan yang diterapkannya.
   - `[TargetObject <String[]>]`: Daftar objek target.
   - `[TargetOperation <String[]>]`: Jenis operasi.
 

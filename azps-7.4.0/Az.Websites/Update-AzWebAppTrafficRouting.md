@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppTrafficRouting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppTrafficRouting.md
-ms.openlocfilehash: 95f995654ab1c7bf4f2afe129d6e43f1d076a56e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f86e381e131ced48b1a233039c3f85e1700dad57
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143221877"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632025"
 ---
 # Update-AzWebAppTrafficRouting
 
 ## SYNOPSIS
-Memperbarui Aturan perutean ke Slot.
+Perbarui Aturan perutean ke Slot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azwebapptrafficrouting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Update-AzWebAppTrafficRouting -ResourceGroupName <String> -WebAppName <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzWebAppTrafficRouting memperbarui** konfigurasi aturan perutean untuk Slot Azure Web App.
+Cmdlet **Update-AzWebAppTrafficRouting memperbarui** konfigurasi aturan perutean untuk Slot Aplikasi Web Azure.
 
 ## EXAMPLES
 
@@ -36,14 +39,14 @@ Update-AzWebAppTrafficRouting -ResourceGroupName "Default-Web-WestUS" -WebAppNam
 
 Perintah ini memperbarui aturan perutean untuk mentransfer 15% lalu lintas produksi ke slot Stg.
 
-### Contoh 2: Perbarui aturan perutean untuk mengalihkan lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% dengan cara tambahan.
+### Contoh 2: Perbarui aturan perutean untuk mentransfer lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% secara bertahap.
 ```powershell
 Update-AzWebAppTrafficRouting -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" 
 -RoutingRule @{ActionHostName='XXXX.azurewebsites.net';ReroutePercentage=50;ChangeIntervalInMinutes=1;
 MinReroutePercentage=50;MaxReroutePercentage=90;Name='Stg';ChangeStep=10}
 ```
 
-Perintah ini Memperbarui aturan perutean untuk mengalihkan lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% dengan cara tambahan.
+Perintah ini Memperbarui aturan perutean untuk mentransfer lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% secara bertahap.
 
 ## PARAMETERS
 
@@ -78,9 +81,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PeruteanRule
-Perutean Aplikasi Web.
-Contoh: -RoutingRule @{ActionHostName=$slot. DefaultHostName ; ReroutePercentage=$ReroutePercentage ; Name=$slotName}
+### -RoutingRule
+RoutingRule Aplikasi Web.
+Contoh: -RoutingRule @{ActionHostName=$slot. DefaultHostName ; ReroutePercentage=$ReroutePercentage ; Nama=$slotName}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -109,8 +112,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -141,11 +144,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

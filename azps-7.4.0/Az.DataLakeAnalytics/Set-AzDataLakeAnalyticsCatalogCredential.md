@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 75e5d23261a740c2a9913c2e65963b02c40f3de7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b952baf29da7735f6f6b6d78e5b19a0592ba92a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228123"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605732"
 ---
 # Set-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
-Mengubah kata sandi kredensial azure Data Lake Analytics katalog.
+Memodifikasi kata sandi kredensial katalog Azure Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzDataLakeAnalyticsCatalogCredential [-Account] <String> [-DatabaseName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzDataLakeAnalyticsCatalogCredential mengubah kata sandi kredensial yang terkait dengan katalog Data Lake Analytics Azure.
+Cmdlet Set-AzDataLakeAnalyticsCatalogCredential memodifikasi kata sandi kredensial yang terkait dengan katalog Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan nama dan kata sandi kredensial saat ini untuk diubah.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseHost
-Menentukan nama host sumber data eksternal yang bisa disambungkan kredensial dalam format mydatabase.contoso.com.
+Menentukan nama host sumber data eksternal yang dapat disambungkan kredensial dalam format mydatabase.contoso.com.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database dalam akun Data Lake Analytics yang memegang kredensial.
+Menentukan nama database di akun Data Lake Analytics yang menyimpan kredensial.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor port yang digunakan untuk menyambungkan ke DatabaseHost tertentu menggunakan kredensial ini.
+Menentukan nomor port yang digunakan untuk menyambungkan ke DatabaseHost yang ditentukan menggunakan kredensial ini.
 
 ```yaml
 Type: System.Int32
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Menentukan Uniform Resource Identifier (URI) lengkap dari sumber data eksternal tempat kredensial ini dapat tersambung.
+Menentukan Pengidentifikasi Sumber Daya Seragam (URI) lengkap dari sumber data eksternal yang dapat disambungkan oleh kredensial ini.
 
 ```yaml
 Type: System.Uri
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

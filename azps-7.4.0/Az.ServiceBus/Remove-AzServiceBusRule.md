@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusRule.md
-ms.openlocfilehash: 69ccb0754d071b4c6620253acd25a853a0bc23cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d17dd7d8f85277ec0abfc13e77209bebad1db6f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058923"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654518"
 ---
 # Remove-AzServiceBusRule
 
 ## SYNOPSIS
-Menghapus aturan tertentu dari langganan tertentu.
+Menghapus aturan langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ Cmdlet **Remove-AzServiceBusRule** menghapus aturan langganan topik tertentu.
 Remove-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule
 ```
 
-Menghapus aturan `SBRule` langganan `SBSubscription` topik `SBTopic`tertentu .
+Menghapus aturan `SBRule` langganan `SBSubscription` topik `SBTopic`yang ditentukan .
 
-### Contoh 2: InputObject - Using Variable:
+### Contoh 2: InputObject - Menggunakan Variabel:
 ```powershell
 $inputobject = Get-AzServiceBusRule <params>
 Remove-AzServiceBusRule -InputObject $inputobject
@@ -52,12 +55,12 @@ Remove-AzServiceBusRule -InputObject $inputobject
 
 Menghapus aturan yang disediakan melalui $inputobject untuk parameter -InputObject
 
-### Contoh 3: InputObject - Using Piping:
+### Contoh 3: InputObject - Menggunakan Piping:
 ```powershell
 Get-AzServiceBusRule <params> | Remove-AzServiceBusRule
 ```
 
-### Contoh 4: ResourceId - Using Variable
+### Contoh 4: ResourceId - Menggunakan Variabel
 ```powershell
 $resourceid = Get-AzServiceBusRule <params>
 Remove-AzServiceBusRule -ResourceId $resourceid.Id
@@ -68,12 +71,12 @@ Remove-AzServiceBusRule -ResourceId $resourceid.Id
 Remove-AzServiceBusRule -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.ServiceBus/namespaces/NamespaceName/topics/TopicName/subscriptions/SubscriptionName/rules/RuleName"
 ```
 
-Menghapus aturan yang disediakan melalui ID ARM dalam $resourceid/string untuk parameter -ResourceId 
+Menghapus aturan yang disediakan melalui ID ARM di $resourceid/string untuk parameter -ResourceId 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Aturan
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Langganan
-Nama Langganan
+Nama langganan
 
 ```yaml
 Type: System.String
@@ -237,8 +240,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

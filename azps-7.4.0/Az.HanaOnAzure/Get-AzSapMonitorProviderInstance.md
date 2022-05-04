@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: 8224dc979e4774a74990e5baf12361054cdaad77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8ee7a6571f36f03da2c8045bc41dd9d2bdb328c1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122265"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636164"
 ---
 # Get-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
-Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/get-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSapMonitorProviderInstance -ResourceGroupName <String> -SapMonitorName <St
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzSapMonitorProviderInstance -Name <String> -ResourceGroupName <String> -SapMonitorName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzSapMonitorProviderInstance -InputObject <IHanaOnAzureIdentity> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua instans di bawah monitor SAP
+### Contoh 1: Mendapatkan semua instans di bawah monitor SAP
 ```powershell
 Get-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName ps-spamonitor-t01
 ```
@@ -56,7 +59,7 @@ ps-sapmonitorins-t02 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 
 Perintah ini mendapatkan semua instans di bawah monitor SAP.
 
-### Contoh 2: Dapatkan contoh monitor SAP berdasarkan nama
+### Contoh 2: Mendapatkan instans monitor SAP berdasarkan nama
 ```powershell
 Get-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName ps-spamonitor-t01 -Name ps-sapmonitorins-t02
 ```
@@ -67,9 +70,9 @@ Name                 Type
 ps-sapmonitorins-t02 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini mendapatkan contoh monitor SAP berdasarkan nama.
+Perintah ini mendapatkan instans monitor SAP berdasarkan nama.
 
-### Contoh 3: Mendapatkan instans monitor SAP menurut objek
+### Contoh 3: Mendapatkan instans monitor SAP berdasarkan objek
 ```powershell
 $sapIns = Get-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName ps-spamonitor-t01 -Name ps-sapmonitorins-t02
 Get-AzSapMonitorProviderInstance -InputObject $sapIns
@@ -81,9 +84,9 @@ Name                 Type
 ps-sapmonitorins-t02 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini mendapatkan instance monitor SAP berdasarkan objek.
+Perintah ini mendapatkan instans monitor SAP berdasarkan objek.
 
-### Contoh 4: Dapatkan contoh monitor SAP menurut pipeline
+### Contoh 4: Mendapatkan instans monitor SAP menurut alur
 ```powershell
 @{Id = "/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/nancyc-hn1/providers/Microsoft.HanaOnAzure/sapMonitors/ps-spamonitor-t01/providerInstances/ps-sapmonitorins-t02"} | Get-AzSapMonitorProviderInstance
 ```
@@ -94,7 +97,7 @@ Name                 Type
 ps-sapmonitorins-t02 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini mendapatkan instance monitor SAP menurut pipeline.
+Perintah ini mendapatkan instans monitor SAP berdasarkan alur.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama instans penyedia.
 
 ```yaml
@@ -174,8 +177,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -211,15 +214,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi kubah yang dihapus.
+  - `[Location <String>]`: Lokasi vault yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi
   - `[ProviderInstanceName <String>]`: Nama instans penyedia.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya identitas.
   - `[SapMonitorName <String>]`: Nama sumber daya monitor SAP.
-  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
-  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[VaultName <String>]`: Nama kubah
+  - `[Scope <String>]`: Cakupan penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
+  - `[SubscriptionId <String>]`: ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[VaultName <String>]`: Nama vault
 
 ## RELATED LINKS
 

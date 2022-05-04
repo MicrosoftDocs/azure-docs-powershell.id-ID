@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 76f58d62cb8db6c8a4d4c695adcdc4288479d035
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11b6cf25ab59ff5c384a183e7f8603425d0ce8a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631072"
 ---
 # New-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Mengonfigurasi Pencadangan untuk sumber daya azure yang didukung
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
