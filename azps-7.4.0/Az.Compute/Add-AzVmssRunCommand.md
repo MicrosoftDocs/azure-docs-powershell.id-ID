@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
-ms.openlocfilehash: 59724c8f0dfa4cd0e36258f987397ae11b0398c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 020899c19ed375bcf4c41f3fbc74537432528efd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006273"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633338"
 ---
 # Add-AzVmssRunCommand
 
 ## SYNOPSIS
-Menambahkan Perintah Jalankan ke instans VMSS
+Menambahkan Jalankan Perintah ke instans VMSS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzVmssRunCommand [-CommandId <String>] -Name <String> [-ScriptPath <String>]
 ```
 
 ## DESCRIPTION
-Menambahkan Perintah Jalankan ke Semua Instans VMSS
+Menambahkan Jalankan Perintah ke Semua Instans VMSS
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Menambahkan 'myruncommand' ke VMSS
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsyncExecution
-Opsional. Jika diatur ke true, penyediaan akan selesai segera setelah skrip dimulai dan tidak akan menunggu skrip selesai.
+Opsional. Jika diatur ke true, provisi akan selesai segera setelah skrip dimulai dan tidak akan menunggu skrip selesai.
 
 ```yaml
 Type: Boolean
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorBlobUri
-Menentukan blob penyimpanan Azure tempat streaming kesalahan skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat aliran kesalahan skrip akan diunggah.
 
 ```yaml
 Type: String
@@ -143,7 +146,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobUri
-Menentukan blob penyimpanan Azure tempat streaming output skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat aliran output skrip akan diunggah.
 
 ```yaml
 Type: String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsPassword
-Menentukan kata sandi akun pengguna pada VM ketika menjalankan perintah jalankan.
+Menentukan kata sandi akun pengguna pada VM saat menjalankan perintah jalankan.
 
 ```yaml
 Type: SecureString
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsUser
-Menentukan akun pengguna pada VM ketika menjalankan perintah jalankan.
+Menentukan akun pengguna pada VM saat menjalankan perintah jalankan.
 
 ```yaml
 Type: String
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Script
-Sumber skrip perintah jalankan.
+### -Skrip
+Sumber skrip perintah eksekusi.
 
 ```yaml
 Type: String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptPath
-Jalur sumber skrip perintah jalankan.
+Jalur sumber skrip perintah eksekusi.
 
 ```yaml
 Type: String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptUri
-Sumber Uri dari skrip perintah jalankan.
+Sumber Uri dari skrip perintah eksekusi.
 
 ```yaml
 Type: String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeOutInSeconds
-Waktu habis dalam detik untuk menjalankan perintah jalankan.
+Batas waktu dalam detik untuk menjalankan perintah jalankan.
 
 ```yaml
 Type: String
@@ -338,8 +341,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

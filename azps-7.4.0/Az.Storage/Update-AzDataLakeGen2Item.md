@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
-ms.openlocfilehash: 3f8fddf133a4763c623f3f3b73d6ceee1d26b7cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa311b0716631164855488d561b55860d3095a49
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057339"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660834"
 ---
 # Update-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Memperbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
+Perbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Update-AzDataLakeGen2Item -InputObject <AzureDataLakeGen2Item> [-Permission <Str
 
 ## DESCRIPTION
 Cmdlet **Update-AzDataLakeGen2Item** memperbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek ACL dengan 3 entri ACL, dan memperbarui ACL ke semua item dalam Filesystem secara rekurtif
+### Contoh 1: Buat objek ACL dengan entri 3 ACL, dan perbarui ACL ke semua item dalam Filesystem secara rekursif
 ```
 PS C:\>$acl = New-AzDataLakeGen2ItemAclObject -AccessControlType user -Permission rwx 
 PS C:\>$acl = New-AzDataLakeGen2ItemAclObject -AccessControlType group -Permission rw- -InputObject $acl 
@@ -57,9 +60,9 @@ dir1/file1           False        1024            2020-03-23 09:29:18Z rwxrw-rw-
 dir2                 True                         2020-03-23 09:28:36Z rwxrw-rw-    $superuser           $superuser
 ```
 
-Perintah ini terlebih dahulu membuat objek ACL dengan entri 3 acl (gunakan parameter -InputObject untuk menambahkan entri acl ke objek acl yang sudah ada), lalu mendapatkan semua item dalam filesystem dan memperbarui acl pada item.
+Perintah ini pertama-tama membuat objek ACL dengan entri 3 acl (gunakan parameter -InputObject untuk menambahkan entri acl ke objek acl yang ada), lalu mendapatkan semua item dalam sistem file dan memperbarui acl pada item.
 
-### Contoh 2: Memperbarui semua properti pada file, dan memperlihatkannya
+### Contoh 2: Memperbarui semua properti pada file, dan menampilkannya
 ```
 PS C:\> $file = Update-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/file1" `
                  -Acl $acl `
@@ -132,7 +135,7 @@ ArchiveStatus         :
 AccessTierChangedOn   : 1/1/0001 12:00:00 AM +00:00
 ```
 
-Perintah ini memperbarui semua properti pada file (ACL, izin, pemilik, grup, metadata, properti dapat diperbarui dengan semua selir), dan memperlihatkannya di konsol Powershell.
+Perintah ini memperbarui semua properti pada file (ACL, izin, pemilik, grup, metadata, properti dapat diperbarui dengan perpaduan apa pun), dan menampilkannya di konsol Powershell.
 
 ### Contoh 3: Menambahkan entri ACL ke direktori
 ```
@@ -152,8 +155,8 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/dir3            True                         2020-03-23 09:34:31Z rwxrw-rw-+   $superuser           $superuser
 ```
 
-Perintah ini mendapatkan ACL dari direktori, memperbarui/menambahkan entri ACL, dan diatur kembali ke direktori.
-Jika entri ACL dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada, akan menambahkan entri ACL baru, izin pembaruan lain dari entri ACL yang sudah ada.
+Perintah ini mendapatkan ACL dari direktori, memperbarui/menambahkan entri ACL, dan mengatur kembali ke direktori.
+Jika entri ACL dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada, akan menambahkan entri ACL baru, jika tidak, perbarui izin entri ACL yang ada.
 
 ## PARAMETERS
 
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -279,9 +282,9 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus diperbarui.
+Jalur dalam Filesystem yang ditentukan yang harus diperbarui.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
-Tidak menentukan parameter ini akan memperbarui direktori akar dari Filesystem.
+Tidak menentukan parameter ini akan memperbarui direktori akar Filesystem.
 
 ```yaml
 Type: System.String
@@ -297,9 +300,9 @@ Accept wildcard characters: False
 
 ### -Izin
 Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
-Setiap kelas dapat diberi izin baca, tulis, atau jalankan.
-Symbolic (rwxrw-rw-) didukung.
-Tidak valid dalam hubungannya dengan Acl.
+Setiap kelas dapat diberikan izin baca, tulis, atau jalankan.
+Simbolis (rwxrw-rw-) didukung.
+Tidak valid bersama dengan Acl.
 
 ```yaml
 Type: System.String
@@ -329,8 +332,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

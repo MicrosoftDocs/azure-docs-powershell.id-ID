@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryTag.md
-ms.openlocfilehash: d6974ace4955a91fc471f68ffac7d019180248f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9479db9688eb0847ba413e9c0607ef5ad88099fe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171297"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679048"
 ---
 # Remove-AzContainerRegistryTag
 
 ## SYNOPSIS
-Hapus tag ACR.
+Membatalkan tag ACR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistrytag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ Remove-AzContainerRegistryTag -RepositoryName <String> -Name <String> -RegistryN
 ```
 
 ## DESCRIPTION
-Hapus tag ACR.
-Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -DeleteEnable $true`
+Membatalkan tag ACR.
+Untuk menggunakan cmdlet ini, silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -DeleteEnable $true`
 Pertama.
 
 ## EXAMPLES
@@ -40,7 +43,7 @@ Remove-AzContainerRegistryTag -RegistryName registry -RepositoryName alpine -Nam
 True
 ```
 
-Lepas tag alpine:tag di bawah registri.
+Untag alpine:tag di bawah registri.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tandai.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama Penyimpanan.
+Nama Repositori.
 
 ```yaml
 Type: System.String
@@ -104,8 +107,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

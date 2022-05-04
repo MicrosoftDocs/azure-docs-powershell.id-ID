@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject.md
-ms.openlocfilehash: 3eb906994c8059667144e41854d4c8bdd00c92d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 624b82154ad949d4e85511afa63b5654cec27336
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802962"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651856"
 ---
 # New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk SapS4HanaSapS4HanaCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewsaps4hanasaps4hanacredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Buat objek dalam memori untuk SapS4HanaSapS4HanaCredentialScan.
 
 ## EXAMPLES
 
-### Contoh 1: Create SAPS4 Hana Credential Scan Object
+### Contoh 1: Buat Objek Pemindaian Kredensial SAPS4 Hana
 ```powershell
 PS C:\> New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject -Kind 'SapS4HanaSapS4HanaCredential' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ClientId '444' -CredentialReferenceName 'fdsafsdf' -CredentialType 'BasicAuth' -MaximumMemoryAllowedInGb 4 -JCoLibraryPath 'file://asdas' -ConnectedViaReferenceName 'IntegrationRuntime-NJh'
 
@@ -57,7 +60,7 @@ ScanRulesetType           :
 Worker                    :
 ```
 
-Buat Objek Pemindaian Kredensial SAPS4 Hana
+Membuat Objek Pemindaian Kredensial SAPS4 Hana
 
 ## PARAMETERS
 
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

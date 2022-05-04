@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 55c6e4956a85b5443fb3c93861d2a275b312d80e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bc24be88c799af86eec7b8c30d2d1b5a97f01033
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233901"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672658"
 ---
 # New-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
 Membuat penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 New-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvider01" -Name "Contoso OpenID Connect Provider" -MetadataEndpointUri "https://openid.provider/configuration" -ClientId "12432143" -Description "OpenID Connect provider description"
 ```
 
-Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi Contoso OpenID
+Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi OpenID Contoso
 
 ### Contoh 2
 
-Membuat penyedia Koneksi OpenID. (autogenerasi)
+Membuat penyedia Koneksi OpenID. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -80,7 +83,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama yang mudah dikenali untuk penyedia.
+### -Name
+Menentukan nama yang mudah diingat untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

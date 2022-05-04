@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
-ms.openlocfilehash: 819572e26652b5762b5fbc28bf554c9416a13531
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbcd9aea1956b56a740f45d0e62876d1f622790a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873954"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678112"
 ---
 # Update-AzDataProtectionBackupInstanceAssociatedPolicy
 
 ## SYNOPSIS
-Pembaruan kebijakan terkait untuk instans cadangan tertentu
+Memperbarui kebijakan terkait untuk instans cadangan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupinstanceassociatedpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzDataProtectionBackupInstanceAssociatedPolicy -BackupInstanceName <Strin
 ```
 
 ## DESCRIPTION
-Pembaruan kebijakan terkait untuk instans cadangan tertentu
+Memperbarui kebijakan terkait untuk instans cadangan tertentu
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupInstanceName
-Nama unik dari instans cadangan yang diproteksi
+Nama Unik instans cadangan yang dilindungi
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup Sumber Daya dari kubah cadangan
+Grup Sumber Daya vault cadangan
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan kubah
+Id Langganan vault
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan
+Nama brankas cadangan
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

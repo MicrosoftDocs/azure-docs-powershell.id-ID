@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: d0479f8f1e93e5692c1154c70eec6f4852434aad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd8933869b7b624db68135546fbed2509ff1da5c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804132"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652198"
 ---
 # Set-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Mengonfigurasi koneksi gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ IngressBytesTransferred : 100386089
 TunnelConnectionStatus  : []
 ```
 
-### Contoh 2: Menambahkan/Memperbarui tag ke VirtualNetworkGatewayConnection yang sudah ada
+### Contoh 2: Menambahkan/Memperbarui tag ke VirtualNetworkGatewayConnection yang ada
 ```powershell
 $conn = Get-AzVirtualNetworkGatewayConnection -Name 1 -ResourceGroupName myRG
 Set-AzVirtualNetworkGatewayConnection -VirtualNetworkGatewayConnection $conn -Tag @{ testtagKey="SomeTagKey"; testtagValue="SomeKeyValue" }
@@ -120,7 +123,7 @@ EgressBytesTransferred  : 91334484
 IngressBytesTransferred : 100386089
 TunnelConnectionStatus  : []
 ```
-### Contoh 3: Tambahkan/Hapus natRules ke VirtualNetworkGatewayConnection yang sudah ada
+### Contoh 3: Menambahkan/Menghapus natRules ke VirtualNetworkGatewayConnection yang ada
 ```powershell
 $conn = Get-AzVirtualNetworkGatewayConnection -Name 1 -ResourceGroupName myRG
 $egressNatrule = get-azVirtualNetworkGatewayNatRule -ResourceGroupName myRG -Name "natRule1" -ParentResourceName "gw1"
@@ -166,14 +169,14 @@ EgressNatRules          : [
                             }
                           ]
 ```
-Perintah pertama mendapatkan koneksi gateway jaringan virtual bernama 1 milik grup sumber daya myRG dan menyimpannya ke variabel bernama $conn.
+Perintah pertama mendapatkan koneksi gateway jaringan virtual bernama 1 yang termasuk dalam grup sumber daya myRG dan menyimpannya ke variabel bernama $conn.
 Perintah kedua mendapatkan natRule gateway jaringan virtual bernama natRule1 dan menyimpannya ke variabel bernama $egressNatrule.
-Perintah ketiga mengatur koneksi gateway jaringan virtual dengan semua IngressNatRules yang dihapus dan menambahkan egressNatrule ke dalam EgressNatRules.
+Perintah ketiga mengatur koneksi gateway jaringan virtual dengan menghapus semua IngressNatRules dan menambahkan egressNatrule ke dalam EgressNatRules.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpdTimeoutInSeconds
-Dead Peer Detection Timeout of the connection in seconds.
+Batas Waktu Deteksi Serekan Mati koneksi dalam hitungan detik.
 
 ```yaml
 Type: System.Int32
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -EgressNatRule
-Daftar aturan KELUAR NAT yang terkait dengan Koneksi ini.
+Daftar aturan NAT keluar yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Apakah menggunakan sesi BGP melalui terowongan VPN S2S
+Apakah akan menggunakan sesi BGP melalui terowongan VPN S2S
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -277,7 +280,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -IngressNatRule
-Daftar aturan NAT masuk yang terkait dengan Koneksi ini.
+Daftar aturan NAT ingress yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLocalAzureIpAddress
-Apakah menggunakan PrivateIP untuk koneksi S2S
+Apakah akan menggunakan PrivateIP untuk koneksi S2S
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -414,13 +417,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
@@ -438,7 +441,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVirtualNetworkGatewayConnection](./Get-AzVirtualNetworkGatewayConnection.md)
 
-[New-AzVirtualNetworkGatewayConnection](./New-AzVirtualNetworkGatewayConnection.md)
+[Baru-AzVirtualNetworkGatewayConnection](./New-AzVirtualNetworkGatewayConnection.md)
 
 [Remove-AzVirtualNetworkGatewayConnection](./Remove-AzVirtualNetworkGatewayConnection.md)
 

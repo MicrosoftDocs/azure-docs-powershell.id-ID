@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDetailVMIngestion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDetailVMIngestion.md
-ms.openlocfilehash: bb160c0601531d2e14925337b5c7ca23c8ce0ed0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5070f8823d03da538d1baff7bb4b4ba7cc92299a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316557"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627276"
 ---
 # Get-AzElasticDetailVMIngestion
 
 ## SYNOPSIS
-Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastis.
+Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticdetailvmingestion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Get-AzElasticDetailVMIngestion -Name <String> -ResourceGroupName <String> [-Subs
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DetailIdentitas
+### DetailsViaIdentity
 ```
 Get-AzElasticDetailVMIngestion -InputObject <IElasticIdentity> [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastis.
+Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastis
+### Contoh 1: Mencantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic
 ```powershell
 Get-AzElasticDetailVMIngestion -ResourceGroupName elastic-rg-3eytki -Name elastic-rhqz1v
 ```
@@ -49,7 +52,7 @@ elastic-rhqz1v:xxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx
 
 Perintah ini mencantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic.
 
-### Contoh 2: Cantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastis menurut pipeline
+### Contoh 2: Mencantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic berdasarkan alur
 ```powershell
 Get-AzElasticMonitor -ResourceGroupName elastic-rg-3eytki -Name elastic-rhqz1v | Get-AzElasticDetailVMIngestion
 ```
@@ -60,7 +63,7 @@ CloudId                                  IngestionKey
 elastic-rhqz1v:xxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Perintah ini mencantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic menurut saluran.
+Perintah ini mencantumkan detail penyerapan vm yang akan dipantau oleh sumber daya monitor Elastic berdasarkan alur.
 
 ## PARAMETERS
 
@@ -94,8 +97,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis berada.
+Nama grup sumber daya tempat sumber daya Elastic berada.
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -194,9 +197,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IElasticIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastis berada.
-  - `[RuleSetName <String>]`: Nama sumber daya Kumpulan Aturan Tag
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastic berada.
+  - `[RuleSetName <String>]`: Nama sumber daya Seperangkat Aturan Tag
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

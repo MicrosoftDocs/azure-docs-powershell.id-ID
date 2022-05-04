@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: 92be2ea85905fdfc74def5bc4a2cabf4eda14235
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1d53160c08eacd5d7d49f334b415f2726d85cd64
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870750"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627078"
 ---
 # Remove-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Menghapus Koneksi Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzVirtualNetworkGatewayConnection -Name <String> -ResourceGroupName <Stri
 ```
 
 ## DESCRIPTION
-Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Gateway Virtual Network Anda di Azure.
+Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Situs-ke-Situs atau Vnet-ke-Vnet) yang tersambung ke gateway Virtual Network Anda di Azure.
 Cmdlet **Remove-AzVirtualNetworkGatewayConnection** menghapus objek koneksi Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
@@ -36,7 +39,7 @@ Cmdlet **Remove-AzVirtualNetworkGatewayConnection** menghapus objek koneksi Anda
 Remove-AzVirtualNetworkGatewayConnection -Name myTunnel -ResourceGroupName myRG
 ```
 
-Menghapus objek Koneksi Gateway Virtual Network dengan nama "myTunnel" dalam grup sumber daya "myRG"
+Menghapus objek koneksi gateway Virtual Network dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama koneksi gateway jaringan virtual yang dihapus cmdlet ini.
 
 ```yaml
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVirtualNetworkGatewayConnection](./Get-AzVirtualNetworkGatewayConnection.md)
 
-[New-AzVirtualNetworkGatewayConnection](./New-AzVirtualNetworkGatewayConnection.md)
+[Baru-AzVirtualNetworkGatewayConnection](./New-AzVirtualNetworkGatewayConnection.md)
 
 [Set-AzVirtualNetworkGatewayConnection](./Set-AzVirtualNetworkGatewayConnection.md)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: 29acdcb841cc0fbcb735f2fea4fb77e1d9261ba0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6585cd9a586f44b445733d81f29831833b4d059d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224307"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671488"
 ---
 # New-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
-Membuat konfigurasi aturan untuk penyeimbang muatan.
+Membuat aturan konfigurasi untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzLoadBalancerRuleConfig -Name <String> [-Protocol <String>] [-LoadDistribut
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerRuleConfig** membuat konfigurasi aturan untuk penyeimbang muat Azure.
+Cmdlet **New-AzLoadBalancerRuleConfig** membuat konfigurasi aturan untuk load balancer Azure.
 
 ## EXAMPLES
 
@@ -66,12 +69,12 @@ $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $sl
 $slb | Set-AzLoadBalancer
 ```
 
-Tiga perintah pertama menyiapkan IP publik, ujung depan, dan probe untuk konfigurasi aturan dalam perintah keempat. Perintah keempat membuat aturan baru yang disebut MyLBrule dengan spesifikasi tertentu.
+Tiga perintah pertama menyiapkan IP publik, ujung depan, dan pemeriksaan untuk konfigurasi aturan dalam perintah forth. Perintah forth membuat aturan baru yang disebut MyLBrule dengan spesifikasi tertentu.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool[]
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan penyeimbang muatan ini.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan load balancer ini.
 
 ```yaml
 Type: System.Int32
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOutboundSNAT
-Mengonfigurasi SNAT untuk VM dalam kumpulan backend untuk menggunakan alamat publicIP yang ditentukan di bagian depan aturan keseimbangan beban.
+Mengonfigurasi SNAT untuk VM di kumpulan backend untuk menggunakan alamat publicIP yang ditentukan di frontend aturan penyeimbangan beban.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau penghentian koneksi yang tidak terduga. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan daftar alamat IP front-end untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung depan.
+Menentukan ID untuk konfigurasi alamat IP front-end.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
+Menentukan port front-end yang cocok dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: System.Int32
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang beban.
+Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam load balancer.
 
 ```yaml
 Type: System.Int32
@@ -254,7 +257,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan penyeimbangan beban yang dibuat cmdlet ini.
 
 ```yaml
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probe
-Menentukan probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan pemeriksaan untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSProbe
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeId
-Menentukan ID probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan ID probe yang akan dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang cocok dengan konfigurasi aturan penyeimbang muatan.
+Menentukan protokol yang cocok dengan konfigurasi aturan load balancer.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
 ```yaml
@@ -315,8 +318,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -368,7 +371,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzLoadBalancerRuleConfig](./Add-AzLoadBalancerRuleConfig.md)
+[Dapatkan-AzLoadBalancerRuleConfig](./Add-AzLoadBalancerRuleConfig.md)
 
 [Get-AzLoadBalancerRuleConfig](./Get-AzLoadBalancerRuleConfig.md)
 

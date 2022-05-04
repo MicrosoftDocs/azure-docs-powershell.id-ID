@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
-ms.openlocfilehash: 56049a43de0061f073dab0a872898e668dcf9baa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 966e24b2d7d608c1caeba129ca511dc70e1cea56
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634868"
 ---
 # Get-AzCognitiveServicesAccountDeployment
 
 ## SYNOPSIS
-Dapatkan Penggunaan akun Cognitive Services
+Mendapatkan Penyebaran akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCognitiveServicesAccountDeployment [-ResourceId] <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Dapatkan Penggunaan akun Cognitive Services
+Mendapatkan Penyebaran akun Cognitive Services
 
 ## EXAMPLES
 
@@ -41,12 +44,12 @@ Dapatkan Penggunaan akun Cognitive Services
 Get-AzCognitiveServicesAccountDeployment -ResourceGroupName cognitive-services-resource-group -AccountName resource-name
 ```
 
-Dapatkan Penggunaan akun Cognitive Services
+Mendapatkan Penyebaran akun Cognitive Services
 
 ## PARAMETERS
 
 ### -AccountName
-Nama Akun Layanan Kognitif.
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

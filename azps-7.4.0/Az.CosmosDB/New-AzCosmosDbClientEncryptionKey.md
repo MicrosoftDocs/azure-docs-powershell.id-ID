@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDbClientEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDbClientEncryptionKey.md
-ms.openlocfilehash: 0fce465b7cf548a2a66d93dba44677a22aeffaed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe542755b2046c1ecd7d44db193a4d2ba620e1e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943381"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636478"
 ---
 # New-AzCosmosDbClientEncryptionKey
 
 ## SYNOPSIS
 Membuat Kunci Enkripsi Klien CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbclientencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,9 +53,9 @@ Id       : /subscriptions/mySubscriptionId/resourceGroups/myRgName/providers/Mic
 Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlClientEncryptionKeyGetPropertiesResource
 ```
 
-Contoh ini memperlihatkan cara kunci baru dibuat. Jika KeyEncryptionKeyResolver tidak lolos Azure Key Vault KeyResolver digunakan secara default.
-Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 tipe AZURE_KEY_VAULT dengan nilai yang diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan tipe algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
-Dalam perintah kedua, kunci baru dibuat dengan nama sebagaimana diatur dalam variabel myClientEncryptionKeyName dan dengan KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama.
+Contoh ini menunjukkan bagaimana kunci baru dibuat. Jika KeyEncryptionKeyResolver tidak diteruskan Azure Key Vault KeyResolver digunakan secara default.
+Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
+Pada perintah kedua, kunci baru dibuat dengan nama sebagaimana diatur dalam variabel myClientEncryptionKeyName dan dengan KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama.
 
 ### Contoh 2
 ```powershell
@@ -65,9 +68,9 @@ Id       : /subscriptions/mySubscriptionId/resourceGroups/myRgName/providers/Mic
 Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlClientEncryptionKeyGetPropertiesResource
 ```
 
-Contoh ini memperlihatkan bagaimana kunci baru dibuat dan bagaimana KeyEncryptionKeyResolver dapat diteruskan sebagai parameter.
-Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 tipe AZURE_KEY_VAULT dengan nilai yang diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan tipe algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
-Perintah kedua membuat objek KeyResolver Azure Key Vault menggunakan kredensial Default Azure.
+Contoh ini menunjukkan bagaimana kunci baru dibuat dan bagaimana KeyEncryptionKeyResolver dapat diteruskan sebagai parameter.
+Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
+Perintah kedua membuat objek Azure Key Vault KeyResolver menggunakan kredensial Azure Default.
 Dalam perintah ketiga, kunci baru dibuat dengan nama sebagaimana diatur dalam variabel myClientEncryptionKeyName, KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama dan nilai KeyEncryptionKeyResolver diatur ke objek KeyResolver yang diperoleh melalui perintah kedua.
 
 ## PARAMETERS
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyResolver
-Antarmuka IKeyEncryptionKeyResolver tipe Azure.Core.Cryptography.IKeyEncryptionKeyResolver
+Antarmuka IKeyEncryptionKeyResolver jenis Azure.Core.Cryptography.IKeyEncryptionKeyResolver
 
 ```yaml
 Type: Azure.Core.Cryptography.IKeyEncryptionKeyResolver
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyWrapMetadata
-Objek KeyWrapMetaData tipe Microsoft.Azure.Commands.CosmosDB.PSSqlKeyWrapMetadata.
+Objek KeyWrapMetaData jenis Microsoft.Azure.Commands.CosmosDB.PSSqlKeyWrapMetadata.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlKeyWrapMetadata
@@ -162,7 +165,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kunci Enkripsi Klien.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlDatabaseObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetResults
@@ -207,8 +210,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

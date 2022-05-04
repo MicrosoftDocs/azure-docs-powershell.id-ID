@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
-ms.openlocfilehash: 5652b045746050437dc18310e18454a6fd6a0a27
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07abbb39d52739683c73941fb524f034011ccc84
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809992"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636722"
 ---
 # Get-AzImage
 
 ## SYNOPSIS
 Mendapatkan properti gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Location             : eastus2
 Tags                 : {}
 ```
 
-Perintah ini mendapatkan properti gambar bernama 'Image01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini mendapatkan properti gambar bernama 'Image01' di grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```powershell
@@ -227,7 +230,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

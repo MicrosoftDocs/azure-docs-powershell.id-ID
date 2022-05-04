@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
-ms.openlocfilehash: 79d865fd6d9529f3adc7e26fb7ce4b3e4bc8262d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3df9c11179eb054527d9e57076604d0bbe7c6967
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233667"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672298"
 ---
 # Set-AzApiManagementUser
 
 ## SYNOPSIS
 Mengatur detail pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzApiManagementUser -Context <PsApiManagementContext> -UserId <String> [-Fir
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementUser** mengatur detail pengguna.
+Cmdlet **Set-AzApiManagementUser** menetapkan detail pengguna.
 
 ## EXAMPLES
 
@@ -39,11 +42,11 @@ $securePassword = ConvertTo-SecureString "qwerty" -AsPlainText -Force
 Set-AzApiManagementUser -Context $apimContext -UserId "0123456789" -Email "patti.fuller@contoso.com" -Password $securePassword -State "Blocked"
 ```
 
-Perintah ini mengatur kata sandi pengguna dan alamat email baru dan memblokir pengguna.
+Perintah ini menetapkan kata sandi pengguna dan alamat email baru dan memblokir pengguna.
 
 ### Contoh 2
 
-Mengatur detail pengguna. (autogenerasi)
+Mengatur detail pengguna. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -52,7 +55,7 @@ Set-AzApiManagementUser -Context <PsApiManagementContext> -Email 'patti.fuller@c
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 Parameter ini diperlukan.
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Parameter ini harus panjangnya 1 hingga 100 karakter.
+Panjang parameter ini harus 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 
 ### -LastName
 Menentukan nama belakang pengguna.
-Parameter ini harus panjangnya 1 hingga 100 karakter.
+Panjang parameter ini harus 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Menentukan kata sandi pengguna.
 Parameter ini bersifat opsional.
 
@@ -179,7 +182,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status pengguna.
 Parameter ini bersifat opsional.
 Nilai defaultnya adalah Aktif.
@@ -213,8 +216,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

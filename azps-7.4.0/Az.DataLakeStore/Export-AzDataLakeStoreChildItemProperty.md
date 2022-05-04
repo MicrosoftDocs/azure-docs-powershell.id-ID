@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreChildItemProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreChildItemProperty.md
-ms.openlocfilehash: 74c979efb7a1e46e795b08758c41ceebfb536e1b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54e7cc39cf346e993ae590a5628d2d61bb658bb7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874692"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652918"
 ---
 # Export-AzDataLakeStoreChildItemProperty
 
 ## SYNOPSIS
-Mengekspor properti (Penggunaan disk dan Acl) untuk seluruh pohon dari jalur tertentu ke jalur output
+Mengekspor properti (Penggunaan disk dan Acl) untuk seluruh pohon dari jalur yang ditentukan ke jalur output
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/export-azdatalakestorechilditemproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Export-AzDataLakeStoreChildItemProperty [-Account] <String> [-Path] <DataLakeSto
 ```
 
 ## DESCRIPTION
-**Export-AzDataLakeStoreChildItemProperty** digunakan untuk melaporkan penggunaan ruang ADLS atau/dan penggunaan ACL untuk direktori tertentu serta sub direktori dan file.
+**Export-AzDataLakeStoreChildItemProperty** digunakan untuk melaporkan penggunaan ruang ADLS atau/dan penggunaan ACL untuk direktori tertentu dan sub direktori dan file.
 
 ## EXAMPLES
 
@@ -64,12 +67,12 @@ Set-AzDataLakeStoreItemAcl -Account ContosoADL -Path /a -Acl $newFullAcl -Recurs
 Export-AzDataLakeStoreChildItemProperty -Account ContosoADL -Path /a -OutputPath "C:\Users\contoso\Desktop\DumpFile.txt" -GetAcl -HideConsistentAcl -IncludeFile
 ```
 
-Dapatkan penggunaan ACL untuk semua subdirektori dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file. HideconsistentAcl dalam hal ini akan memperlihatkan Acl dari /a, bukan anak-anak karena semua anak memiliki acl yang sama dengan /a. Bendera ini melewati output acl subtree jika semua aklsnya sama dengan akarnya.
+Dapatkan penggunaan ACL untuk semua subdirektori dan file di bawah /a. IncludeFile memastikan penggunaan juga dilaporkan untuk file. HideconsistentAcl dalam hal ini akan menunjukkan Acl dari /a, bukan anak-anak karena semua anak memiliki acl yang sama dengan /a. Bendera ini melewati output acl subtree jika semua acl sama dengan root.
 
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk menjalankan operasi filesystem di
+Akun Data Lake Store untuk menjalankan operasi sistem file di
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetAcl
-Mengambil acl dimulai dari jalur akar
+Mengambil acl yang dimulai dari jalur akar
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetDiskUsage
-Mengambil kembali penggunaan disk dimulai dari jalur akar
+Mengambil penggunaan disk mulai dari jalur akar
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -HideConsistentAcl
-Jangan perlihatkan subtree direktori jika AKL sama di seluruh subtree. Ini memudahkan untuk melihat hanya jalur yang berbeda dengan AF. Misalnya jika semua file dan folder di bawah /a/b sama, jangan perlihatkan subtreeunder /a/b, dan hanya output /a/b dengan 'True' di kolom ACL KonsistenCannot diatur jika IncludeFiles tidak diatur, karena Acl yang konsisten tidak dapat ditentukan tanpa mengambil aksel untuk file tersebut.
+Jangan tampilkan subtree direktori jika ACL sama di seluruh subtree. Ini membuatnya lebih mudah untuk hanya melihat jalur yang berbeda dengan ACL. Misalnya jika semua file dan folder di bawah /a/b sama, jangan tampilkan subtreeunder /a/b, dan hanya output /a/b dengan 'True' di kolom ACL KonsistenCannot diatur jika IncludeFiles tidak diatur, karena Acl yang konsisten tidak dapat ditentukan tanpa mengambil acl untuk file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeFile
-Perlihatkan statistik pada tingkat file (defaultnya hanya memperlihatkan info tingkat direktori)
+Tampilkan statistik pada tingkat file (defaultnya adalah menampilkan info tingkat direktori saja)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumDepth
-Kedalaman maksimum dari direktori akar hingga penggunaan disk atau acl ditampilkan
+Kedalaman maksimum dari direktori akar sampai penggunaan disk atau acl ditampilkan
 
 ```yaml
 Type: System.Int32
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputPath
-Jalur ke file output. Dapat berupa Jalur lokal atau Jalur Adl. Secara default bersifat lokal. Jika SaveToAdl ditentukan, jalur tersebut adalah jalur ADL di akun yang sama
+Jalur ke file output. Dapat berupa Jalur lokal atau Jalur Adl. Secara default bersifat lokal. Jika SaveToAdl ditentukan, maka itu adalah jalur ADL di akun yang sama
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,8 +223,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam akun Data Lake tertentu yang harus diambil.
-Bisa berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
+Jalur di akun Data Lake yang ditentukan yang harus diambil.
+Dapat berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -236,8 +239,8 @@ Accept wildcard characters: False
 ```
 
 ### -SaveToAdl
-Jika lolos, simpan file dump ke ADL.
-DumpFile akan menjadi jalur ADL dalam kasus tersebut
+Jika diteruskan, maka simpan file cadangan ke ADL.
+DumpFile wil menjadi jalur ADL dalam kasus itu
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,8 +254,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

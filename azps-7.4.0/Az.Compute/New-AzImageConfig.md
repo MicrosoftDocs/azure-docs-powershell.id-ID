@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImageConfig.md
-ms.openlocfilehash: b06d67caa453b1aaa2eb7a66b4e9efdb26e04f4e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dedb4bc029abba162d6d74f668c9e5f521dacb62
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127863"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678472"
 ---
 # New-AzImageConfig
 
 ## SYNOPSIS
 Membuat objek gambar yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azimageconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,9 +47,9 @@ New-AzImage -Image $imageConfig -ImageName 'ImageName01' -ResourceGroupName 'Res
 
 Perintah pertama membuat objek gambar, lalu menyimpannya dalam variabel $imageConfig.
 Tiga perintah berikutnya menetapkan jalur disk os dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2. Pendekatan ini hanya untuk keterbacaan perintah berikut.
-Tiga perintah berikutnya masing-masing menambahkan disk os dan dua disk data ke gambar yang disimpan di $imageConfig.
-URI setiap disk disimpan di $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
-Perintah akhir membuat gambar bernama 'ImageName01' dalam grup sumber daya 'ResourceGroup01'.
+Tiga perintah berikutnya masing-masing menambahkan disk os dan dua disk data ke gambar yang disimpan dalam $imageConfig.
+URI setiap disk disimpan dalam $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
+Perintah akhir membuat gambar bernama 'ImageName01' di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVGeneration
-Menentukan Tipe HyperVGeneration untuk mesin virtual yang dibuat dari gambar.  Nilai yang diperbolehkan adalah V1 dan V2.
+Menentukan Jenis HyperVGeneration untuk komputer virtual yang dibuat dari gambar.  Nilai yang diizinkan adalah V1 dan V2.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan, bukan kawasan utama.
+Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan alih-alih wilayah utama.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDisk
-Menentukan disk sistem operasi.
+Menentukan Disk sistem operasi.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.ImageOSDisk
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVirtualMachineId
-Menentukan ID mesin virtual sumber.
+Menentukan ID komputer virtual sumber.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneResilient
-Aktifkan ketahanan zona
+Aktifkan zona tangguh
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

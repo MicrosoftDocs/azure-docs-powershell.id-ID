@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplication.md
-ms.openlocfilehash: 0bfc5b87b3ba336870a81f44a6fdbe92fd1f3634
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 661166f503ebda7cf4c12ecf29b219a7404f34ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672048"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709753"
 ---
 # Get-AzServiceFabricApplication
 
 ## SYNOPSIS
-Dapatkan detail aplikasi Service Fabric. Hanya mendukung aplikasi arm yang digunakan.
+Dapatkan detail aplikasi Service Fabric. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricApplication -ResourceId <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet ini mendapatkan detail aplikasi dalam grup dan kluster sumber daya yang ditentukan.
+Cmdlet ini mendapatkan detail aplikasi dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama aplikasi.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -147,7 +150,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ServiceFabric.Models.PSAplikasi
+### Microsoft.Azure.Commands.ServiceFabric.Models.PSApplication
 
 ## NOTES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: 257e0e69f746926f9c2d1aed838e0fbf07c033d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8802b6f8f58e71282ffc088791a37b11adf4435b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687978"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692842"
 ---
 # Set-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
-Memperbarui Konfigurasi Penyedia Identitas yang sudah ada.
+Memperbarui Konfigurasi Penyedia Identitas yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,21 +41,21 @@ Set-AzApiManagementIdentityProvider -InputObject <PsApiManagementIdentityProvide
 ```
 
 ## DESCRIPTION
-Memperbarui Konfigurasi Penyedia Identitas yang sudah ada.
+Memperbarui Konfigurasi Penyedia Identitas yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Penyedia Identitas facebook
+### Contoh 1: Memperbarui IdP facebook
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementIdentityProvider -Context $apimContext -Type Facebook -ClientSecret "updatedSecret" -PassThru
 ```
 
-Cmdlet memperbarui Rahasia Klien Penyedia Identitas Facebook;
+Cmdlet memperbarui Rahasia Klien IdP Facebook;
 
 ### Contoh 2
 
-Memperbarui Konfigurasi Penyedia Identitas yang sudah ada. (autogenerasi)
+Memperbarui Konfigurasi Penyedia Identitas yang ada. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -62,7 +65,7 @@ Set-AzApiManagementIdentityProvider -AllowedTenants 'samirtestbc.onmicrosoft.com
 ## PARAMETERS
 
 ### -AllowedTenants
-Daftar Penyewa Azure Active Directory yang diperbolehkan.
+Daftar Penyewa Azure Active Directory yang diizinkan.
 
 ```yaml
 Type: System.String[]
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Otoritas
-OpenID Koneksi menemukan nama host titik akhir untuk AAD atau AAD B2C. Parameter ini bersifat opsional.
+OpenID Koneksi nama host titik akhir penemuan untuk AAD atau AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -ClientId
 Id Klien Aplikasi di Penyedia Identitas eksternal.
-Id Aplikasi untuk masuk Facebook, ID Klien untuk masuk Google, ID Aplikasi untuk Microsoft.
+Ini adalah ID Aplikasi untuk login Facebook, ID Klien untuk login Google, ID Aplikasi untuk Microsoft.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ClientSecret
 Rahasia klien Aplikasi di Penyedia Identitas eksternal, digunakan untuk mengautentikasi permintaan masuk.
-Misalnya, ini adalah Rahasia Aplikasi untuk masuk Facebook, Kunci API untuk masuk Google, Kunci Publik untuk Microsoft.
+Misalnya, itu adalah Rahasia Aplikasi untuk login Facebook, Kunci API untuk login Google, Kunci Umum untuk Microsoft.
 
 ```yaml
 Type: System.String
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementIdentityProvider. Parameter ini diperlukan.
+Instans PsApiManagementIdentityProvider. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementIdentityProvider
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan  **PsApiManagementIdentityProvider** yang diubah cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan  **PsApiManagementIdentityProvider** yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordResetPolicyName
-Nama Kebijakan Pengaturan Ulang Kata Sandi. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Reset Kata Sandi. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileEditingPolicyName
-Nama Kebijakan Pengeditan Profil. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Pengeditan Profil. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigninPolicyName
-Nama Kebijakan Masuk. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Masuk. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigninTenant
-Penyewa Masuk untuk menimpa di AAD B2C, bukan `common` Penyewa
+Penyewa Masuk untuk mengambil alih di AAD B2C alih-alih `common` Penyewa
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -SignupPolicyName
-Nama Kebijakan Pendaftaran. Hanya berlaku untuk AAD Penyedia Identitas B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Pendaftaran. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -259,8 +262,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Pengidentifikasi Penyedia Identitas yang sudah ada.
+### -Type
+Pengidentifikasi Penyedia Identitas yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -276,8 +279,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

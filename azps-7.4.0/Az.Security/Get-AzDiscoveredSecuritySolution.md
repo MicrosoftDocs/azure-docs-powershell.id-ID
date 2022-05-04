@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzDiscoveredSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzDiscoveredSecuritySolution.md
-ms.openlocfilehash: bccbc116552615ec679837acf34ed96030af7290
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 600db4d782061728d8cdef2b22d5cfeccd463270
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709728"
 ---
 # Get-AzDiscoveredSecuritySolution
 
 ## SYNOPSIS
 Mendapatkan solusi keamanan yang ditemukan oleh Azure Security Center
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azdiscoveredsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 

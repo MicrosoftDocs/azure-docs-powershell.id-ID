@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Get-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Get-AzCostManagementExport.md
-ms.openlocfilehash: 9fbc4039dfc16f818e63f265a095c14d33f6a93d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1755119700882a88c36eda9a7f0de34393a8b2da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942967"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677788"
 ---
 # Get-AzCostManagementExport
 
 ## SYNOPSIS
-Operasi untuk mendapatkan ekspor untuk lingkup yang ditentukan menurut nama ekspor.
+Operasi untuk mendapatkan ekspor untuk cakupan yang ditentukan berdasarkan nama ekspor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/get-azcostmanagementexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzCostManagementExport -Scope <String> [-Expand <String>] [-DefaultProfile <
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzCostManagementExport -Name <String> -Scope <String> [-Expand <String>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzCostManagementExport -InputObject <ICostManagementIdentity> [-Expand <Stri
 ```
 
 ## DESCRIPTION
-Operasi untuk mendapatkan ekspor untuk lingkup yang ditentukan menurut nama ekspor.
+Operasi untuk mendapatkan ekspor untuk cakupan yang ditentukan berdasarkan nama ekspor.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua AzCostManagementExports menurut lingkup
+### Contoh 1: Dapatkan semua AzCostManagementExports menurut cakupan
 ```powershell
 Get-AzCostManagementExport -Scope 'subscriptions/**********'
 ```
@@ -55,9 +58,9 @@ ETag              Name                               Type
 "************" TestExport2                        Microsoft.CostManagement/exports
 ```
 
-Dapatkan semua AzCostManagementExports menurut Lingkup
+Dapatkan semua AzCostManagementExports berdasarkan Cakupan
 
-### Contoh 2: Dapatkan AzCostManagementExport menurut Nama dan lingkup
+### Contoh 2: Dapatkan AzCostManagementExport berdasarkan Nama dan cakupan
 ```powershell
 Get-AzCostManagementExport -Name 'TestExport' -Scope 'subscriptions/**********'
 ```
@@ -68,7 +71,7 @@ ETag              Name       Type
 "************" TestExport Microsoft.CostManagement/exports
 ```
 
-Dapatkan AzCostManagementExport menurut Nama dan lingkup
+Dapatkan AzCostManagementExport berdasarkan Nama dan cakupan
 
 ## PARAMETERS
 
@@ -118,8 +121,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Ekspor Nama.
+### -Name
+Nama Ekspor.
 
 ```yaml
 Type: System.String
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Parameter ini menentukan lingkup costmanagement dari perspektif berbeda 'Subscription','ResourceGroup' dan 'Provide Service'.
+### -Cakupan
+Parameter ini mendefinisikan cakupan costmanagement dari perspektif 'Langganan' yang berbeda,'ResourceGroup' dan 'Berikan Layanan'.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -169,12 +172,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ICostManagementIdentity>: Parameter Identitas
-  - `[AlertId <String>]`: ID Peringatan
-  - `[ExportName <String>]`: Ekspor Nama.
-  - `[ExternalCloudProviderId <String>]`: Ini dapat berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
-  - `[ExternalCloudProviderType <ExternalCloudProviderType?>]`: Tipe penyedia awan eksternal yang terkait dengan operasi dimensi/kueri. Ini termasuk 'externalSubscriptions' untuk akun tertaut dan 'externalBillingAccounts' untuk akun konsolidasi.
+  - `[AlertId <String>]`: ID Pemberitahuan
+  - `[ExportName <String>]`: Nama Ekspor.
+  - `[ExternalCloudProviderId <String>]`: Ini bisa berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
+  - `[ExternalCloudProviderType <ExternalCloudProviderType?>]`: Jenis penyedia cloud eksternal yang terkait dengan operasi dimensi/kueri. Ini termasuk 'externalSubscriptions' untuk akun tertaut dan 'externalBillingAccounts' untuk akun konsolidasi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Scope <String>]`: Lingkup yang terkait dengan operasi tampilan. Ini termasuk 'subscriptions/{subscriptionId}' untuk lingkup langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk lingkup resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk lingkup Akun Penagihan, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ pendaftaranAccountId}' untuk lingkup EnrollmentAccount, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk lingkup BillingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' untuk lingkup InvoiceSection, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' untuk lingkup Grup Manajemen, 'providers/Microsoft.CostManagement/externalBillingAccounts/{ externalBillingAccountName}' untuk lingkup Akun Tagihan Eksternal dan 'providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' untuk lingkup Langganan Eksternal.
+  - `[Scope <String>]`: Cakupan yang terkait dengan operasi tampilan. Ini termasuk 'subscriptions/{subscriptionId}' untuk cakupan langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk cakupan resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk cakupan EnrollmentAccount, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk cakupan BillingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' untuk cakupan InvoiceSection, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' untuk cakupan Grup Manajemen, 'providers/Microsoft.CostManagement/externalBillingAccounts/{ externalBillingAccountName}' untuk cakupan Akun Penagihan Eksternal dan 'providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' untuk cakupan Langganan Eksternal.
   - `[ViewName <String>]`: Nama tampilan
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
-ms.openlocfilehash: 1252c711fd0d18acefaf01dc0b7f33ac40a5ac77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8538026ee6e9ad1ce3d9949901ffa3042203cacb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635804"
 ---
 # Get-AzOperationalInsightsTable
 
 ## SYNOPSIS
-Dapatkan atau cantumkan tabel untuk ruang kerja.
+Mendapatkan atau mencantumkan tabel untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightstable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsTable [-ResourceGroupName] <String> [-WorkspaceName] <S
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan tabel untuk ruang kerja, daftar tabel di bawah ruang kerja saat "-TableName" tidak disediakan.
+Mendapatkan atau mencantumkan tabel untuk ruang kerja, mencantumkan tabel di bawah ruang kerja saat "-TableName" tidak disediakan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah ini mendapatkan semua tabel yang terkait dengan ruang kerja.
 Get-AzOperationalInsightsTable -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -tableName "ContosoSavedTableName"
 ```
 
-Perintah ini mendapatkan tabel tertentu menurut namanya.
+Perintah ini mendapatkan tabel tertentu berdasarkan namanya.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

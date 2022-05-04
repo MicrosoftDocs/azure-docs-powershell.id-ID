@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 14cf127a239f0c953f51c2743144e2960257e87d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7acf57b12e6c1842f43f903fc37c98d1c510767
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742356"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686402"
 ---
 # Remove-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi IP antarmuka jaringan dari antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzNetworkInterfaceIpConfig -Name IPConfig-1 -NetworkInterface $nic
 Set-AzNetworkInterface -NetworkInterface $nic
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang disebut mynic dan menyimpannya dalam variabel $nic. Perintah kedua menghapus konfigurasi IP yang disebut IPConfig-1 yang terkait dengan antarmuka jaringan ini. Perintah ketiga mengatur perubahan yang dibuat pada antarmuka jaringan.
+Perintah pertama mendapatkan antarmuka jaringan yang disebut mynic dan menyimpannya dalam variabel $nic. Perintah kedua menghapus konfigurasi IP yang disebut IPConfig-1 yang terkait dengan antarmuka jaringan ini. Perintah ketiga mengatur perubahan yang dilakukan pada antarmuka jaringan.
 
 ## PARAMETERS
 
@@ -58,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP antarmuka jaringan untuk dihapus.
+### -Name
+Menentukan nama konfigurasi IP antarmuka jaringan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterface
 Menentukan objek **NetworkInterface** .
-Objek ini berisi konfigurasi IP antarmuka jaringan untuk dihapus.
+Objek ini berisi konfigurasi IP antarmuka jaringan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

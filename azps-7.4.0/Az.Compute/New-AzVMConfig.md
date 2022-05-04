@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
-ms.openlocfilehash: bf1c82a353d8d8cc0e8cc069da99168da5406057
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f21f28dcd87803d9305289cdfe880f9f9907cfa0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877410"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633158"
 ---
 # New-AzVMConfig
 
 ## SYNOPSIS
-Membuat objek mesin virtual yang dapat dikonfigurasi.
+Membuat objek komputer virtual yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,33 +45,33 @@ New-AzVMConfig [-VMName] <String> [-VMSize] <String> [[-AvailabilitySetId] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVMConfig** membuat objek mesin virtual lokal yang dapat dikonfigurasi untuk Azure.
-Cmdlet lain dapat digunakan untuk mengonfigurasi objek mesin virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, Add-AzVMNetworkInterface, dan Set-AzVMOSDisk.
+Cmdlet **New-AzVMConfig** membuat objek komputer virtual lokal yang dapat dikonfigurasi untuk Azure.
+Cmdlet lain dapat digunakan untuk mengonfigurasi objek komputer virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, Add-AzVMNetworkInterface, dan Set-AzVMOSDisk.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek mesin virtual
+### Contoh 1: Membuat objek komputer virtual
 ```powershell
 $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet03 di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Komputer virtual milik set ketersediaan yang disimpan di $AvailabilitySet.
 
 ## PARAMETERS
 
 ### -AvailabilitySetId
-Menentukan ID kumpulan ketersediaan.
-Untuk mendapatkan objek kumpulan ketersediaan, gunakan cmdlet Get-AzAvailabilitySet.
+Menentukan ID set ketersediaan.
+Untuk mendapatkan objek set ketersediaan, gunakan cmdlet Get-AzAvailabilitySet.
 Objek set ketersediaan berisi properti ID. <br>
-Mesin virtual yang ditentukan dalam kumpulan ketersediaan yang sama dialokasikan ke node yang berbeda untuk memaksimalkan ketersediaan. <br>
-Untuk informasi selengkapnya tentang kumpulan ketersediaan, lihat [Mengelola ketersediaan mesin virtual](/azure/virtual-machines/availability). <br>
-Untuk informasi selengkapnya tentang pemeliharaan terencana Azure, lihat [Pemeliharaan terencana untuk mesin virtual di Azure](/azure/virtual-machines/maintenance-and-updates?toc=/azure/virtual-machines/windows/toc.json&bc=/azure/virtual-machines/windows/breadcrumb/toc.json) <br>
-Saat ini, VM hanya dapat ditambahkan ke ketersediaan yang diatur pada waktu pembuatan. Ketersediaan yang diatur untuk tempat VM ditambahkan harus berada di bawah grup sumber daya yang sama dengan sumber daya kumpulan ketersediaan. VM yang sudah ada tidak bisa ditambahkan ke kumpulan ketersediaan. <br>
-Properti ini tidak dapat ada bersama dengan referensi non-null properties.virtualMachineScaleSet.
+Komputer virtual yang ditentukan dalam set ketersediaan yang sama dialokasikan ke simpul yang berbeda untuk memaksimalkan ketersediaan. <br>
+Untuk informasi selengkapnya tentang set ketersediaan, lihat [Mengelola ketersediaan komputer virtual](/azure/virtual-machines/availability). <br>
+Untuk informasi selengkapnya tentang pemeliharaan [terencana Azure, lihat Pemeliharaan terencana untuk komputer virtual di Azure](/azure/virtual-machines/maintenance-and-updates?toc=/azure/virtual-machines/windows/toc.json&bc=/azure/virtual-machines/windows/breadcrumb/toc.json) <br>
+Saat ini, VM hanya dapat ditambahkan ke ketersediaan yang ditetapkan pada waktu pembuatan. Ketersediaan yang diatur ke tempat VM ditambahkan harus berada di bawah grup sumber daya yang sama dengan sumber daya set ketersediaan. VM yang ada tidak dapat ditambahkan ke set ketersediaan. <br>
+Properti ini tidak dapat ada bersama dengan referensi properties.virtualMachineScaleSet non-null.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -112,9 +115,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassd
-Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
-Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+### -EnableUltrassD
+Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan jenis akun penyimpanan UltraSSD_LRS pada VM.
+Disk terkelola dengan jenis akun penyimpanan UltraSSD_LRS dapat ditambahkan ke komputer virtual hanya jika properti ini diaktifkan.
 
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual.
+Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk komputer virtual atau set skala komputer virtual.
 Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri.
 Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan penggalian untuk mesin virtual Azure Spot.  Nilai yang didukung adalah 'Deallocate' dan 'Delete'.
+Kebijakan pengeluaran untuk komputer virtual Azure Spot.  Nilai yang didukung adalah 'Batalkan alokasi' dan 'Hapus'.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -HibernationEnabled
-Bendera yang mengaktifkan atau menonaktifkan kapabilitas hibernasi pada VM.
+Bendera yang mengaktifkan atau menonaktifkan kemampuan hibernasi pada VM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostId
-Id dari Host
+The Id of Host
 
 ```yaml
 Type: System.String
@@ -192,8 +195,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan daftar identitas pengguna yang terkait dengan set skala komputer virtual.
+Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Identitas mesin virtual, jika dikonfigurasi.
+Identitas komputer virtual, jika dikonfigurasi.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ResourceIdentityType]
@@ -224,12 +227,12 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk mesin virtual telah dilisensikan di tempat.
-Nilai yang memungkinkan untuk Windows Server adalah:
+Menentukan jenis lisensi, yang menunjukkan bahwa gambar atau disk untuk komputer virtual dilisensikan secara lokal.
+Nilai yang mungkin untuk server Windows adalah:
 - Windows_Client
 - Windows_Server
 
-Nilai yang memungkinkan untuk sistem operasi Linux Server adalah:
+Nilai yang mungkin untuk sistem operasi Linux Server adalah:
 - RHEL_BYOS (untuk RHEL)
 - SLES_BYOS (untuk SUSE)
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini adalah dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Juga, harga dibandingkan pada saat membuat / memperbarui VM / VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk mengusir VM/VMSS berprioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang memungkinkan adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0.01538.  -1 menunjukkan bahwa VM/VMSs prioritas rendah tidak boleh diusir karena alasan harga. Selain itu, harga maks default adalah -1 jika tidak disediakan oleh Anda.
+Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat membuat/memperbarui VM/VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. maxPrice juga akan digunakan untuk mengusir VM/VMSS prioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa VM/VMSS prioritas rendah tidak boleh dikeluarkan karena alasan harga. Selain itu, harga maksimum default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformFaultDomain
-Menentukan domain kesalahan mesin virtual.
+Menentukan domain kesalahan komputer virtual.
 
 ```yaml
 Type: System.Int32
@@ -276,10 +279,10 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk mesin virtual.  Hanya nilai yang didukung adalah 'Reguler', 'Titik' dan 'Rendah'.
-'Reguler' adalah untuk mesin virtual reguler.
-'Spot' adalah untuk mesin virtual spot.
-'Rendah' juga untuk mesin virtual spot tetapi digantikan dengan 'Spot'. Silakan gunakan 'Spot' dan bukan 'Rendah'.
+Prioritas untuk komputer virtual.  Hanya nilai yang didukung adalah 'Reguler', 'Spot' dan 'Rendah'.
+'Reguler' adalah untuk komputer virtual reguler.
+'Spot' adalah untuk komputer virtual spot.
+'Rendah' juga untuk komputer virtual spot tetapi digantikan oleh 'Spot'. Silakan gunakan 'Spot' alih-alih 'Rendah'.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan mesin virtual ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserData
-UserData untuk VM, yang akan dikodekan basis 64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk VM, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountAvailable
-Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api [dari Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
+Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
 
 ```yaml
 Type: System.Int32
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountPerCore
-Menentukan vCPU untuk rasio inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api dari [Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti hyper-threading dinonaktifkan.
+Menentukan rasio vCPU ke inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti bahwa hyper-threading dinonaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama untuk mesin maya.
+Menentukan nama untuk komputer virtual.
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMSize
-Menentukan ukuran untuk mesin virtual.
+Menentukan ukuran untuk komputer virtual.
 
 ```yaml
 Type: System.String
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmssId
-Id kumpulan skala mesin virtual
+Id set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Menentukan daftar zona ketersediaan untuk mesin maya. Nilai yang diperbolehkan bergantung pada kapabilitas kawasan. Nilai yang diizinkan biasanya adalah 1,2,3.
+Menentukan daftar zona ketersediaan untuk komputer virtual. Nilai yang diizinkan bergantung pada kemampuan wilayah. Nilai yang diizinkan biasanya adalah 1,2,3.
 
 ```yaml
 Type: System.String[]
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -449,7 +452,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Perbarui-AzVM](./Update-AzVM.md)
+[Update-AzVM](./Update-AzVM.md)
 
 [Set-AzVMOperatingSystem](./Set-AzVMOperatingSystem.md)
 

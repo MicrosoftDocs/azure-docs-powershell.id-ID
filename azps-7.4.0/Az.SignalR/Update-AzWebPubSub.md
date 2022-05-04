@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
-ms.openlocfilehash: 924392b330be8876453fa2feaee3c1db5f545783
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c011b40412c9ae9deb412b399556d575f58ef741
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738936"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709674"
 ---
 # Update-AzWebPubSub
 
 ## SYNOPSIS
-Operasi untuk memperbarui sumber daya keluar.
+Operasi untuk memperbarui sumber daya yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/update-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Update-AzWebPubSub -InputObject <IWebPubSubIdentity> [-DisableAadAuth] [-Disable
 ```
 
 ## DESCRIPTION
-Operasi untuk memperbarui sumber daya keluar.
+Operasi untuk memperbarui sumber daya yang keluar.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui sumber daya PubSub Web
+### Contoh 1: Memperbarui sumber daya Web PubSub
 ```powershell
 $wps = Update-AzWebPubSub -ResourceGroupName psdemo -Name psdemo-wps `
 -IdentityType SystemAssigned -LiveTraceEnabled true `
@@ -72,7 +75,7 @@ Version                      : 1.0
 
 
 
-### Contoh 2: Memperbarui sumber daya PubSub Web melalui identitas
+### Contoh 2: Memperbarui sumber daya Web PubSub melalui identitas
 ```powershell
 $identity = @{ ResourceGroupName = 'psdemo'
 ResourceName = 'psdemo-wps'
@@ -92,13 +95,13 @@ HostName                     : psdemo-wps.webpubsub.azure.com
 Version                      : 1.0
 ```
 
-Contoh ini menyusun tabel hash yang mewakili identitas sumber daya PubSub Web, lalu menyalurkan objek identitas ke `Update` cmdlet.
+Contohnya membuat tabel hash yang mewakili identitas sumber daya Web PubSub, lalu menyalurkan objek identitas ke `Update` cmdlet.
 Akhirnya menyalurkan hasil `Update` cmdlet untuk `Format-List` melihat semua nilai properti.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAadAuth
-DisableLocalAuthEnable atau disable aad authWhen diatur sebagai true, koneksi dengan AuthType=aad tidak akan berfungsi.
+DisableLocalAuthEnable atau nonaktifkan aad authWhen diatur sebagai true, koneksi dengan AuthType=aad tidak akan berfungsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-DisableLocalAuthEnable atau menonaktifkan auth lokal dengan AccessKeyWhen diatur sebagai true, koneksi dengan AccessKey=xxx tidak akan berfungsi.
+DisableLocalAuthEnable atau nonaktifkan autentikasi lokal dengan AccessKeyWhen diatur sebagai true, koneksi dengan AccessKey=xxx tidak akan berfungsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTlsClientCert
-Minta sertifikat klien selama jabat tangan TLS jika diaktifkan
+Meminta sertifikat klien selama jabat tangan TLS jika diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Mewakili tipe identitas: systemAssigned, userAssigned, None
+Mewakili jenis identitas: systemAssigned, userAssigned, None
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.ManagedIdentityType
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -LiveTraceCategory
 Mendapatkan atau mengatur daftar konfigurasi kategori.
-Untuk membangun, lihat bagian CATATAN untuk properti LIVETRACECATEGORY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LIVETRACECATEGORY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.ILiveTraceCategory[]
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -LiveTraceEnabled
-Menunjukkan apakah jejak langsung diaktifkan atau tidak. Ketika diatur ke true, klien jejak langsung dapat tersambung ke layanan. Jika tidak, klien jejak langsung tidak dapat tersambung ke layanan, sehingga Anda tidak dapat menerima log apa pun, apa pun yang Anda konfigurasi dalam "kategori". Nilai yang tersedia: true, false. Tidak peka huruf besar kecil.
+Menunjukkan apakah pelacakan langsung diaktifkan atau tidak. Ketika diatur ke true, klien pelacakan langsung dapat terhubung ke layanan. Jika tidak, klien pelacakan langsung tidak dapat terhubung ke layanan, sehingga Anda tidak dapat menerima log apa pun, apa pun yang Anda konfigurasi dalam "kategori". Nilai yang tersedia: true, false. Tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NetworkAcLDefaultAction
-Tindakan default ketika tidak ada aturan lain yang cocok
+### -NetworkAclDefaultAction
+Tindakan default saat tidak ada aturan lain yang cocok
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.AclAction
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointAcl
-AKL untuk permintaan dari titik akhir privat Untuk membangun, lihat bagian CATATAN untuk properti PRIVATEENDPOINTACL dan membuat tabel hash.
+ACL untuk permintaan dari titik akhir privat Untuk membangun, lihat bagian CATATAN untuk properti PRIVATEENDPOINTACL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IPrivateEndpointAcl[]
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 
 ### -PublicNetworkAccess
 Mengaktifkan atau menonaktifkan akses jaringan publik.
-Default ke "Diaktifkan". Saat Diaktifkan, AKL jaringan masih berlaku. Saat Dinonaktifkan, akses jaringan publik selalu dinonaktifkan apa pun yang Anda atur di AKL jaringan.
+Default ke "Diaktifkan". Saat Diaktifkan, ACL jaringan masih berlaku. Saat Dinonaktifkan, akses jaringan publik selalu dinonaktifkan apa pun yang Anda tetapkan di ACL jaringan.
 
 ```yaml
 Type: System.String
@@ -310,8 +313,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAllow
-Tipe permintaan yang diizinkan.
-Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+Jenis permintaan yang diizinkan.
+Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubRequestType[]
@@ -326,8 +329,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkDeny
-Tipe permintaan yang ditolak.
-Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+Jenis permintaan yang ditolak.
+Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubRequestType[]
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 
 ### -ResourceLogCategory
 Mendapatkan atau mengatur daftar konfigurasi kategori.
-Untuk membangun, lihat bagian CATATAN untuk properti RESOURCELOGCATEGORY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti RESOURCELOGCATEGORY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IResourceLogCategory[]
@@ -375,8 +378,8 @@ Accept wildcard characters: False
 
 ### -SkuCapacity
 Opsional, bilangan bulat.
-Hitungan unit sumber daya.
-1 secara default. Jika ada, nilai berikut diperbolehkan: Gratis: 1 Standar: 1,2,5,10,20,50,100
+Jumlah unit sumber daya.
+1 secara default. Jika ada, nilai berikut diizinkan: Gratis: 1 Standar: 1,2,5,10,20,50,100
 
 ```yaml
 Type: System.Int32
@@ -391,8 +394,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU.
-Nilai yang diperlukan.Diizinkan: Standard_S1, Free_F1
+Nama SKUnya.
+Nilai required.allowed: Standard_S1, Free_F1
 
 ```yaml
 Type: System.String
@@ -424,8 +427,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -469,8 +472,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -485,7 +488,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -501,7 +504,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -523,25 +526,25 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
+  - `[Location <String>]`: wilayah
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ResourceName <String>]`: Nama sumber daya.
-  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan pribadi bersama
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan privat bersama
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
-  - `[Enabled <String>]`: Menunjukkan apakah atau kategori jejak langsung diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar kecil.
-  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori jejak langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar kecil.
+  - `[Enabled <String>]`: Menunjukkan apakah atau kategori pelacakan langsung diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar/kecil.
+  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori pelacakan langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar/kecil.
 
-PRIVATEENDPOINTACL <IPrivateEndpointAcl[]>: ABI untuk permintaan dari titik akhir privat
+PRIVATEENDPOINTACL <IPrivateEndpointAcl[]>: ACL untuk permintaan dari titik akhir privat
   - `Name <String>`: Nama koneksi titik akhir privat
-  - `[Allow <WebPubSubRequestType[]>]`: Tipe permintaan yang diizinkan. Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
-  - `[Deny <WebPubSubRequestType[]>]`: Tipe permintaan yang ditolak. Nilainya bisa berupa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+  - `[Allow <WebPubSubRequestType[]>]`: Jenis permintaan yang diizinkan. Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
+  - `[Deny <WebPubSubRequestType[]>]`: Jenis permintaan yang ditolak. Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
 RESOURCELOGCATEGORY <IResourceLogCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
-  - `[Enabled <String>]`: Menunjukkan apakah atau kategori log sumber daya diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar kecil.
-  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori log sumber daya.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar kecil.
+  - `[Enabled <String>]`: Menunjukkan apakah atau kategori log sumber daya diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar/kecil.
+  - `[Name <String>]`: Mendapatkan atau mengatur nama kategori log sumber daya.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar/kecil.
 
 ## RELATED LINKS
 

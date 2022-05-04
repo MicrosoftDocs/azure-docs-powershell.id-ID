@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
-ms.openlocfilehash: 8ed04ba44a56ca285fc54afc754de170f8d387fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 97a6caaac89e01b57eab16e0af467131bf831485
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671436"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700952"
 ---
 # Get-AzStackEdgeStorageAccountCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan di perangkat.
+Mendapatkan kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzStackEdgeStorageAccountCredential [[-Name] <String>] [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait di perangkat Stack Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
+Cmdlet **Get-AzStackEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan yang sesuai di perangkat Stack Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun penyimpanan yang akan digunakan
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

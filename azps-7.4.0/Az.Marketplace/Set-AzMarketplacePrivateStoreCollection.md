@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: 7c78ff179ce88a278a6e741644f0fed3c65779cc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 56f97b753ed176bfe92f187e1a2a1ad3e98dc43d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686582"
 ---
 # Set-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
-Membuat atau memperbarui koleksi bursa pribadi
+Membuat atau memperbarui koleksi penyimpanan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestorecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzMarketplacePrivateStoreCollection -CollectionId <String> -PrivateStoreId <
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui koleksi bursa pribadi
+Membuat atau memperbarui koleksi penyimpanan privat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui koleksi bursa pribadi
+### Contoh 1: Membuat atau memperbarui koleksi penyimpanan privat
 ```powershell
 Set-AzMarketplacePrivateStoreCollection -CollectionId 7f5402e4-e8f4-46bd-9bd1-8d27866a606b -PrivateStoreId 7f5402e4-e8f4-46bd-9bd1-8d27866a606b -AllSubscription
 ```
@@ -41,12 +44,12 @@ Name                                 SystemDataCreatedAt SystemDataCreatedBy Sys
 7f5402e4-e8f4-46bd-9bd1-8d27866a606b                                         User                    12/13/2021 1:21:57 PM                             User
 ```
 
-Perintah ini membuat atau memperbarui koleksi bursa pribadi
+Perintah ini membuat atau memperbarui koleksi penyimpanan privat
 
 ## PARAMETERS
 
 ### -AllSubscription
-Mengindikasikan apakah semua langganan dipilih (=true) atau tidak (=false).
+Menunjukkan apakah semua langganan dipilih (=true) atau tidak (=false).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Klaim
-Mendapatkan atau mengatur asosiasi dengan Akun Tagihan Komersial.
+Mendapatkan atau menetapkan asosiasi dengan Akun Penagihan Komersial.
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Mengindikasikan apakah kumpulan diaktifkan atau dinonaktifkan.
+### -Diaktifkan
+Menunjukkan apakah koleksi diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

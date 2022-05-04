@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
-ms.openlocfilehash: 4ef0bc6c008dfa9d57910fdddad8fb1608c5d2ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b748fe1b876c97f2170b968ffa1c596c472f7e4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232569"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692716"
 ---
 # New-AzBatchAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzBatchAccountKey [-AccountName] <String> [-ResourceGroupName <String>] -Key
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchAccountKey** meregenerasi kunci utama atau sekunder akun Azure Batch.
+Cmdlet **New-AzBatchAccountKey** meregenerasi kunci primer atau sekunder dari akun Azure Batch.
 Cmdlet mengembalikan objek **BatchAccountContext** yang memiliki properti **PrimaryAccountKey** dan **SecondaryAccountKey** saat ini.
 
 ## EXAMPLES
@@ -48,12 +51,12 @@ Tags                         :
 TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
-Perintah ini meregenerasi kunci akun utama di akun Batch bernama pfuller.
+Perintah ini meregenerasi kunci akun utama pada akun Batch bernama pfuller.
 
 ## PARAMETERS
 
 ### -AccountName
-Menentukan nama akun Batch tempat cmdlet ini meregenerasi kunci.
+Menentukan nama akun Batch yang cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -83,9 +86,9 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci yang diregenerasi cmdlet ini.
+Menentukan jenis kunci yang diregenerasi cmdlet ini.
 Nilai yang valid adalah:
-- Utama
+- Primer
 - Sekunder
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya akun di mana cmdlet ini meregenerasi kunci.
+Menentukan grup sumber daya akun yang cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

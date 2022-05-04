@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
-ms.openlocfilehash: bca11d7c411f8d1eca145ceeee5018d149035aeb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f88102dfa6e5851a2415a141dda01d44f638c21
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701204"
 ---
 # Get-AzPolicyAlias
 
 ## SYNOPSIS
 Get-AzPolicyAlias mengambil dan menghasilkan jenis sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter yang diberikan. Jika tidak ada parameter yang disediakan, semua jenis sumber daya penyedia yang berisi alias akan menjadi output.
-Sakelar -ListAvailable memodifikasi perilaku ini dengan mencantumkan semua jenis sumber daya yang cocok termasuk yang tanpa alias.
+Tombol -ListAvailable memodifikasi perilaku ini dengan mencantumkan semua jenis sumber daya yang cocok termasuk yang tidak memiliki alias.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -148,7 +151,7 @@ Microsoft.Compute virtualMachineScaleSets            {Microsoft.Compute/VirtualM
 Microsoft.Compute virtualMachineScaleSets/extensions {Microsoft.Compute/virtualMachineScaleSets/extensions/provisioningState, Microsoft.Compute/virt...
 ```
 
-Mencantumkan semua jenis sumber daya penyedia yang namespacenya cocok dengan 'komputasi' dan jenis sumber daya yang cocok dengan 'virtual' dan berisi alias.
+Mencantumkan semua jenis sumber daya penyedia yang namespacenya cocok dengan 'komputasi' dan jenis sumber daya cocok dengan 'virtual' dan berisi alias.
 Catatan: -NamespaceMatch dan -ResourceTypeMatch menyediakan kecocokan eksklusif, sedangkan yang lain inklusif.
 
 ### Contoh 7
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Termasuk dalam item yang cocok dengan output dengan dan tanpa alias.
+Termasuk dalam item pencocokan output dengan dan tanpa alias.
 
 
 ```yaml
@@ -350,8 +353,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 
 ```yaml

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
-ms.openlocfilehash: cda14c12b7e7df2310a40a2afb030a9676f8ccf8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45efe1527912bad8cb876ed3e35e4982e3ad15df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804078"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652144"
 ---
 # Set-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Mengonfigurasi peering jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ $myVnet1TomyVnet2.AllowGatewayTransit = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 4: Menggunakan gateway jarak jauh dalam peering jaringan virtual
+### Contoh 4: Menggunakan gateway jarak jauh di peering jaringan virtual
 ```powershell
 # Get the virtual network peering 
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "ResourceGroup001" -Name "myVnet1TomyVnet2"
@@ -78,14 +81,14 @@ $myVnet1TomyVnet2.UseRemoteGateways = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-Dengan mengubah properti ini ke $True, gateway VNet rekan Anda bisa digunakan.
-Namun, rekan VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
-Properti ini tidak bisa digunakan jika gateway telah dikonfigurasi.
+Dengan mengubah properti ini menjadi $True, gateway VNet serekan Anda dapat digunakan.
+Namun, VNet serekan harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
+Properti ini tidak dapat digunakan jika gateway telah dikonfigurasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: c60b5ce4a426128dcf2ba30d069b5d1c3d4bdd31
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85962605d9a36fa02435a520c12bbb7177f024a1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742968"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636074"
 ---
 # New-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
-Membuat rantai sertifikat CA klien tepercaya untuk gateway aplikasi.
+Membuat rantai sertifikat OS klien tepercaya untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Cmdlet New-AzApplicationGatewayTrustedClientCertificate membuat rantai sertifika
 ```powershell
 $trustedClient = New-AzApplicationGatewayTrustedClientCertificate -Name "ClientCert" -CertificateFile "C:\clientCAChain.cer"
 ```
-Perintah membuat objek rantai sertifikat CA klien tepercaya baru yang mengambil jalur sertifikat CA klien sebagai input.
+Perintah membuat objek rantai sertifikat OS klien tepercaya baru yang mengambil jalur sertifikat CA klien sebagai input.
 
 ## PARAMETERS
 
 ### -CertificateFile
-Jalur file rantai sertifikat CA klien tepercaya
+Jalur file rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -67,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rantai sertifikat CA klien tepercaya
+### -Name
+Nama rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -114,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

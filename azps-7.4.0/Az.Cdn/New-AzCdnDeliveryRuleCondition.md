@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
-ms.openlocfilehash: eee5a1ec1b99d9e1fecc62a733e854fae7ad05b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fb80cea469f02c836e07388135d08e900dcafb54
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810864"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651454"
 ---
 # New-AzCdnDeliveryRuleCondition
 
 ## SYNOPSIS
 Membuat kondisi aturan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryrulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchValue
-Daftar nilai yang mungkin cocok.
+Daftar kemungkinan nilai kecocokan.
 
 ```yaml
 Type: System.String[]
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchVariable
-Variabel kecocokan kondisi.
+Cocokkan variabel kondisi.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika hasil dari kondisi ini harus dinegasikan.
+Menjelaskan apakah hasil kondisi ini harus dinegasikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Selector
+### -Pemilih
 Nama Pemilih yang akan dicocokkan
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Transformasi
-Transformasi untuk diterapkan sebelum mencocokkan.
+Transformasi untuk diterapkan sebelum pencocokan.
 Nilai yang mungkin adalah Huruf Kecil dan Huruf Besar
 
 ```yaml
@@ -155,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

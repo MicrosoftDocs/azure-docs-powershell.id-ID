@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyApplicationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyApplicationRule.md
-ms.openlocfilehash: beedcfd8ed29bca9ebaf3830d90c3c621cedaec2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 28b8d16b635dd33aa4418d7505442154a05f678b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996895"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671524"
 ---
-# New-AzFirewallPolicyApplicationRule
+# Baru-AzFirewallPolicyApplicationRule
 
 ## SYNOPSIS
 Membuat Aturan Aplikasi Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyapplicationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ Cmdlet **New-AzFirewallPolicyApplicationRule** membuat Aturan Aplikasi untuk Keb
 New-AzFirewallPolicyApplicationRule -Name AR1 -SourceAddress "192.168.0.0/16" -Protocol "http:80","https:443" -TargetFqdn "*.ro", "*.com"
 ```
 
-Contoh ini membuat aturan aplikasi dengan alamat sumber, protokol, dan fqdns target.
+Contoh ini membuat aturan aplikasi dengan alamat sumber, protokol, dan fqdn target.
 
 ### Contoh 2
 ```powershell
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari aturan
+Deskripsi aturan
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Aturan Aplikasi
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Ipgroups sumber aturan
+Ipgroup sumber aturan
 
 ```yaml
 Type: System.String[]
@@ -254,11 +257,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

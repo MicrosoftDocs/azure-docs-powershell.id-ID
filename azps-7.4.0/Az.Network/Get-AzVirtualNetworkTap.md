@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkTap.md
-ms.openlocfilehash: ebb3cc391e5c25ad70f299d0578f389b5b291ee3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a961c0151bbe6002ecb03d11f6d952e385f3ae60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679054"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673576"
 ---
 # Get-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Mendapatkan ketukan jaringan virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,18 +35,18 @@ Get-AzVirtualNetworkTap -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualNetworkTap** mendapatkan ketukan jaringan virtual Azure atau daftar ketuk jaringan virtual Azure dalam grup sumber daya.
+Cmdlet **Get-AzVirtualNetworkTap** mendapatkan ketukan jaringan virtual Azure atau daftar ketukan jaringan virtual Azure dalam grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ketuk jaringan virtual
+### Contoh 1: Mendapatkan ketukan jaringan virtual
 ```powershell
 Get-AzVirtualNetworkTap -ResourceGroupName "ResourceGroup1" -Name "VirtualTap1"
 ```
 
-Perintah ini mendapatkan referensi ketuk VirtualNetwork untuk diberikan "VirtualTap1" di "ResourceGroup1".
+Perintah ini mendapatkan referensi ketuk VirtualNetwork untuk "VirtualTap1" yang diberikan di "ResourceGroup1".
 
-### Contoh 2: Dapatkan semua ketukan jaringan virtual menggunakan pemfilteran
+### Contoh 2: Mendapatkan semua ketukan jaringan virtual menggunakan pemfilteran
 ```powershell
 Get-AzVirtualNetworkTap -Name "VirtualTap*"
 ```
@@ -67,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ketukan.
 
 ```yaml
@@ -83,7 +86,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari ketuk jaringan virtual.
+Nama grup sumber daya dari ketukan jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -112,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

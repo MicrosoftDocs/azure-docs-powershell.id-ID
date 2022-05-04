@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
-ms.openlocfilehash: 519ec6687a0dc4f3e0e85ff98481f87640efb55c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1d345a491a05f8372584fd67ee223959d678a1ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674604"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709908"
 ---
 # Get-AzRedisEnterpriseCache
 
 ## SYNOPSIS
-Mendapatkan informasi tentang klaster Redis Enterprise dan database terkaitnya.
+Mendapatkan informasi tentang kluster Redis Enterprise dan database terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/get-azredisenterprisecache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan informasi tentang klaster Redis Enterprise dan database terkaitnya.
 Get-AzRedisEnterpriseCache [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzRedisEnterpriseCache -ClusterName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -37,11 +40,11 @@ Get-AzRedisEnterpriseCache -ResourceGroupName <String> [-SubscriptionId <String[
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang klaster Redis Enterprise dan database terkaitnya.
+Mendapatkan informasi tentang kluster Redis Enterprise dan database terkait.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan cache Redis Enterprise menurut nama
+### Contoh 1: Mendapatkan cache Redis Enterprise berdasarkan nama
 ```powershell
 Get-AzRedisEnterpriseCache -ResourceGroupName "MyGroup" -Name "MyCache"
 ```
@@ -53,7 +56,7 @@ West US  MyCache Microsoft.Cache/redisEnterprise      {default}
 
 ```
 
-Perintah ini mendapatkan informasi tentang singgahan Redis Enterprise bernama MyCache.
+Perintah ini mendapatkan informasi tentang cache Redis Enterprise bernama MyCache.
 
 ### Contoh 2: Mencantumkan setiap cache Redis Enterprise dalam grup sumber daya
 ```powershell
@@ -68,7 +71,7 @@ East US  MyCache2 Microsoft.Cache/redisEnterprise {1, 2, 3} {default}
 
 ```
 
-Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise dalam grup sumber daya tertentu.
+Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise dalam grup sumber daya yang ditentukan.
 
 ### Contoh 3: Mencantumkan setiap cache Redis Enterprise dalam langganan
 ```powershell
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

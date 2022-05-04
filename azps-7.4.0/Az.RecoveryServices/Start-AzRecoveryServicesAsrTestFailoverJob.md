@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
-ms.openlocfilehash: ca2216ec7061bdfe94c5152c01ef65700dfaed7e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cc47e6e6ac333f3b8f1609bbf63e79ca77cbc8b0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868248"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651802"
 ---
 # Start-AzRecoveryServicesAsrTestFailoverJob
 
 ## SYNOPSIS
-Memulai operasi failover uji coba.
+Memulai operasi failover pengujian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrtestfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,8 +71,8 @@ Start-AzRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRReplica
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrTestFailoverJob** memulai uji failover item terproteksi azure Site Recovery replikasi atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
+Cmdlet **Start-AzRecoveryServicesAsrTestFailoverJob** memulai uji failover item yang dilindungi replikasi Azure Site Recovery atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -82,7 +85,7 @@ Memulai operasi failover pengujian untuk rencana pemulihan dengan parameter yang
 
 ### Contoh 2
 
-Memulai operasi failover uji coba. (autogenerasi)
+Memulai operasi failover pengujian. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -92,7 +95,7 @@ Start-AzRecoveryServicesAsrTestFailoverJob -AzureVMNetworkId <String> -Direction
 ## PARAMETERS
 
 ### -AzureVMNetworkId
-Menentukan id jaringan Azure vm untuk VM pemulihan setelah failover.
+Menentukan id jaringan azure vm untuk pemulihan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudServiceCreationOption
-Menentukan apakah layanan awan baru harus dibuat atau layanan awan pemulihan yang dikonfigurasi untuk VM harus digunakan untuk uji failover.
+Menentukan apakah layanan cloud baru harus dibuat atau layanan cloud pemulihan yang dikonfigurasi untuk VM harus digunakan untuk failover pengujian.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Menentukan arah failover.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - PrimaryToRecovery
-- PemulihanToPrimary
+- RecoveryToPrimary
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncPoint
-Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk kegagalan sinkronisasi multi VM yang diaktifkan VM (Berlaku hanya untuk VMware ke skenario replikasi Azure).
+Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk failover VM yang diaktifkan sinkronisasi multi VM (Hanya berlaku untuk skenario replikasi VMware ke Azure).
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Menentukan titik pemulihan kustom untuk menguji failover mesin yang dilindungi.
+Menentukan titik pemulihan kustom untuk menguji failover komputer yang dilindungi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPoint
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan untuk menguji failover ke
+Menentukan tag pemulihan untuk menguji failover
 
 ```yaml
 Type: System.String
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item yang diproteksi replikasi ASR.
+Menentukan item yang dilindungi replikasi ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMNetwork
-Menentukan jaringan mesin virtual Site Recovery untuk menyambungkan mesin virtual failover uji ke.
+Menentukan jaringan komputer virtual Site Recovery untuk menyambungkan komputer virtual failover pengujian.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRNetwork
@@ -280,8 +283,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

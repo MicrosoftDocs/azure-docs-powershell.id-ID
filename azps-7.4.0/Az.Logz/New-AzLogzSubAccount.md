@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzSubAccount.md
-ms.openlocfilehash: 3a7b20f7165b14fecfd3b61f4de0da9cdc3018ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9245155b6c7c627605c80d0099b74ffe0ddf1a37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681912"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647878"
 ---
 # New-AzLogzSubAccount
 
 ## SYNOPSIS
 Buat sub akun di bawah sumber daya monitor tertentu.
 Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -MarketplaceSubscriptionStatus
 Bendera yang menentukan Status Langganan Marketplace sumber daya.
-Jika pembayaran tidak dilakukan tepat waktu, sumber daya akan masuk dalam status Ditangguhkan.
+Jika pembayaran tidak dilakukan pada waktunya, sumber daya akan masuk dalam status Ditangguhkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.MarketplaceSubscriptionStatus
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 
 ### -PlanBillingCycle
 siklus penagihan yang berbeda seperti BULANAN/MINGGUAN.
-ini bisa menjadi enum
+ini bisa berupa enum
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 
 ### -PlanUsageType
 jenis penggunaan yang berbeda seperti PAYG/COMMITTED.
-ini bisa menjadi enum
+ini bisa berupa enum
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

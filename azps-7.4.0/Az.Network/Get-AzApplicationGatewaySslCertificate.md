@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 99dc8e7efa95bfe96723997f5f6204181ed06382
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ead416b76f61b52c7648de3c5650c7a319bba0d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872217"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710016"
 ---
 # Get-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ $Certs = Get-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW
 
 Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
 Perintah kedua ini mendapatkan daftar sertifikat SSL dari gateway aplikasi yang disimpan dalam variabel bernama $AppGW.
-Perintah kemudian menyimpan hasil dalam variabel bernama $Certs.
+Perintah kemudian menyimpan hasilnya dalam variabel bernama $Certs.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama kumpulan sertifikat SSL yang didapat cmdlet ini.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

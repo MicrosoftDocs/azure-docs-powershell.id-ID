@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocationEnabledResourceType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocationEnabledResourceType.md
-ms.openlocfilehash: bdb1f83a48c06f69dba504349401069e879767ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2a01d571358b93798a129ef4f1ed54e625a7e75d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685814"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678940"
 ---
 # Get-AzCustomLocationEnabledResourceType
 
 ## SYNOPSIS
-Mendapatkan daftar Tipe Sumber Daya yang Diaktifkan.
+Mendapatkan daftar Jenis Sumber Daya yang Diaktifkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/get-azcustomlocationenabledresourcetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzCustomLocationEnabledResourceType -Name <String> -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar Tipe Sumber Daya yang Diaktifkan.
+Mendapatkan daftar Jenis Sumber Daya yang Diaktifkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan daftar Tipe Sumber Daya yang Diaktifkan.
+### Contoh 1: Mendapatkan daftar Jenis Sumber Daya yang Diaktifkan.
 ```powershell
 Get-AzCustomLocationEnabledResourceType -ResourceGroupName azps_test_group -Name azps_test_cluster
 ```
@@ -40,7 +43,7 @@ Name                                                             Type
 017e563408cfcbaad0604875fef1f0e5a36d5fefa5e81a4c1c212c5a77fbcbde Microsoft.ExtendedLocation/customLocations/enabledResourceTypes
 ```
 
-Mendapatkan daftar Tipe Sumber Daya yang Diaktifkan.
+Mendapatkan daftar Jenis Sumber Daya yang Diaktifkan.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Lokasi Kustom.
 
 ```yaml
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

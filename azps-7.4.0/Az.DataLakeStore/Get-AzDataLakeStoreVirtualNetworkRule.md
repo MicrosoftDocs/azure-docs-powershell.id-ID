@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreVirtualNetworkRule.md
-ms.openlocfilehash: 3ee265a57d617ef8fdd290a56f8c4d3332a1f1cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e0d4e0692d9237cbab506661fd6eb9b99742a0e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809568"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678868"
 ---
 # Get-AzDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
-Mendapatkan aturan jaringan virtual tertentu di Penyimpanan Data Lake tertentu.
-Jika tidak ada aturan jaringan virtual yang ditentukan, maka daftar semua aturan jaringan virtual untuk akun tersebut.
+Mendapatkan aturan jaringan virtual yang ditentukan di Data Lake Store yang ditentukan.
+Jika tidak ada aturan jaringan virtual yang ditentukan, maka daftarkan semua aturan jaringan virtual untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzDataLakeStoreVirtualNetworkRule [-Account] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataLakeStoreVirtualNetworkRule mendapatkan aturan jaringan virtual tertentu dalam Data Lake Store yang ditentukan.
-Jika tidak ada aturan jaringan virtual yang ditentukan, maka daftar semua aturan jaringan virtual untuk akun tersebut.
+Cmdlet Get-AzDataLakeStoreVirtualNetworkRule mendapatkan aturan jaringan virtual yang ditentukan di Data Lake Store yang ditentukan.
+Jika tidak ada aturan jaringan virtual yang ditentukan, maka daftarkan semua aturan jaringan virtual untuk akun tersebut.
 
 ## EXAMPLES
 
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan jaringan virtual.
 
 ```yaml
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

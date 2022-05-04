@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
-ms.openlocfilehash: fe86fa7c8e71df09e83f54b4c7f7f2191e9005f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d7ce766a3005858eb33748abe95968b896ab4015
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652810"
 ---
 # New-AzDedicatedHsm
 
 ## SYNOPSIS
-Membuat atau Memperbarui HSM khusus dalam langganan tertentu.
+Membuat atau Memperbarui HSM khusus dalam langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/new-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzDedicatedHsm -Name <String> -ResourceGroupName <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui HSM khusus dalam langganan tertentu.
+Membuat atau Memperbarui HSM khusus dalam langganan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat HSM Khusus ke dalam jaringan virtual yang sudah ada
+### Contoh 1: Membuat Dedicated HSM ke jaringan virtual yang ada
 ```powershell
 New-AzDedicatedHsm -Name hsm-n7wfxi -ResourceGroupName dedicatedhsm-rg-n359cz -Location eastus -Sku "SafeNet Luna Network HSM A790" -StampId stamp1 -SubnetId "/subscriptions/xxxx-xxxx-xxx-xxx/resourceGroups/dedicatedhsm-rg-n359cz/providers/Microsoft.Network/virtualNetworks/vnetq30la9/subnets/hsmsubnet" -NetworkInterface @{PrivateIPAddress = '10.2.1.120' }
 ```
@@ -42,15 +45,15 @@ Name       Provisioning State SKU                           Location
 hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini membuat HSM Khusus ke dalam jaringan virtual yang sudah ada. Nilai defalut `SafteNet Luna Network HSM 790` adalah satu-satunya `sku` untuk layanan yang sudah ada. Referensi detail selengkapnya dokumen Azure Dedicated HSM.
+Perintah ini membuat Dedicated HSM ke dalam jaringan virtual yang ada. Nilai defalut `SafteNet Luna Network HSM 790` adalah satu-satunya `sku` untuk layanan yang ada. Detail selengkapnya mereferensikan dokumen Azure Dedicated HSM.
 
-**CATATAN:** Saat ini `New-AzDedicatedHsm` memiliki batasan yang dikembalikan sebelum HSM sepenuhnya disediakan di Azure.
-Oleh karena itu setelah membuat HSM baru, silakan kuerikan statusnya dan `Get-AzDedicatedHsm` pastikan sebelum menggunakannya `Provisioning State` `Succeeded` .
+**CATATAN:** Saat ini `New-AzDedicatedHsm` memiliki batasan bahwa ia kembali sebelum HSM sepenuhnya disediakan di Azure.
+Oleh karena itu setelah membuat HSM baru, silakan kueri statusnya dengan `Get-AzDedicatedHsm` dan pastikan `Provisioning State` sebelum `Succeeded` menggunakannya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Hsm khusus
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterface
 Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-Untuk membangun, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.Api20181031.INetworkInterface[]
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ID sumber daya ARM dalam bentuk /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/...
+Id sumber daya ARM dalam bentuk /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/...
 
 ```yaml
 Type: System.String
@@ -201,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Zona Hsm Khusus.
+Zona Dedicated Hsm.
 
 ```yaml
 Type: System.String[]
@@ -246,8 +249,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -296,7 +299,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 NETWORKINTERFACE <INetworkInterface[]>: Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-  - `[PrivateIPAddress <String>]`: Alamat Ip Pribadi antarmuka
+  - `[PrivateIPAddress <String>]`: Alamat IP privat antarmuka
 
 ## RELATED LINKS
 

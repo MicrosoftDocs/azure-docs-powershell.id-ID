@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
-ms.openlocfilehash: 6f133eb9fda2e01927d31ef4fa63b5f04929e3c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ee30fb285164582940769de0a898b7868f0ee24
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750294"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634922"
 ---
 # Get-AzConsumptionMarketplace
 
 ## SYNOPSIS
-Dapatkan marketplace langganan.
+Mendapatkan marketplace langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionmarketplace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzConsumptionMarketplace [-BillingPeriodName <String>] [-EndDate <DateTime>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzConsumptionMarketplace** mendapatkan pasar langganan.
+Cmdlet **Get-AzConsumptionMarketplace** mendapatkan marketplace langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan marketplaces
+### Contoh 1: Mendapatkan penggunaan marketplace
 ```powershell
 Get-AzConsumptionMarketplace -Top 10
 ```
@@ -76,7 +79,7 @@ UsageEnd:  2018-01-04T00:00:00Z
 UsageStart:  2018-01-03T00:00:00Z
 ```
 
-### Contoh 3: Dapatkan penggunaan marketplace dari BillingPeriodName
+### Contoh 3: Mendapatkan penggunaan marketplace BillingPeriodName
 ```powershell
 Get-AzConsumptionMarketplace -BillingPeriodName 201801-1 -Top 10
 ```
@@ -99,7 +102,7 @@ UsageEnd:  2017-10-29T00:00:00Z
 UsageStart:  2017-10-28T00:00:00Z
 ```
 
-### Contoh 4: Dapatkan penggunaan marketplace dengan filter InstanceName
+### Contoh 4: Mendapatkan penggunaan marketplace dengan filter InstanceName
 ```powershell
 Get-AzConsumptionMarketplace -InstanceName TestVM -Top 10
 ```
@@ -125,7 +128,7 @@ UsageStart:  2018-04-28T00:00:00Z
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan marketplace yang terkait dengannya.
+Nama periode penagihan tertentu untuk mendapatkan marketplace yang terkait.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal akhir (di UTC) pasar yang akan difilter.
+Tanggal akhir (dalam UTC) pasar untuk difilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Id instans pasar untuk difilter.
+Id instans marketplace untuk difilter.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama instans pasar untuk difilter.
+Nama instans marketplace yang akan difilter.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Grup sumber daya pasar untuk difilter.
+Grup sumber daya marketplace yang akan difilter.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (di UTC) pasar untuk memfilter.
+Tanggal mulai (dalam UTC) pasar untuk difilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -229,7 +232,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
@@ -245,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

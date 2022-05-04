@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
-ms.openlocfilehash: e3c66df5cfd1fbdeec32efc10e2335e618e66247
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cdb03005f961e134d4563be780f9465073057027
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739890"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672874"
 ---
 # New-AzPolicyExemption
 
 ## SYNOPSIS
 Membuat pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,22 +31,22 @@ New-AzPolicyExemption -Name <String> [-Scope <String>] [-DisplayName <String>] [
 
 ## DESCRIPTION
 Cmdlet **New-AzPolicyExemption** membuat pengecualian kebijakan.
-Tentukan penetapan kebijakan, kategori pembebasan, dan lingkup.
+Tentukan penetapan kebijakan, kategori pengecualian, dan cakupan.
 
 ## EXAMPLES
 
-### Contoh 1: Pembebasan kebijakan pada tingkat langganan
+### Contoh 1: Pembebasan kebijakan di tingkat langganan
 ```powershell
 $Subscription = Get-AzSubscription -SubscriptionName 'Subscription01'
 $Assignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment'
 New-AzPolicyExemption -Name 'VirtualMachinePolicyExemption' -PolicyAssignment $Assignment -Scope "/subscriptions/$($Subscription.Id)" -ExemptionCategory Waiver
 ```
 
-Perintah pertama mendapatkan langganan bernama Subscription01 menggunakan cmdlet Get-AzSubscription dan menyimpannya dalam variabel $Subscription.
+Perintah pertama mendapatkan langganan bernama Subscription01 dengan menggunakan cmdlet Get-AzSubscription dan menyimpannya dalam variabel $Subscription.
 Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment dengan menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $Assignment.
-Perintah akhir mengecualikan penetapan kebijakan dalam $Assignment pada tingkat langganan yang diidentifikasi oleh string lingkup langganan.
+Perintah akhir mengecualikan penetapan kebijakan dalam $Assignment pada tingkat langganan yang diidentifikasi oleh string cakupan langganan.
 
-### Contoh 2: Pembebasan kebijakan di tingkat grup sumber daya
+### Contoh 2: Pengecualian kebijakan di tingkat grup sumber daya
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 $Assignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment'
@@ -52,13 +55,13 @@ New-AzPolicyExemption -Name 'VirtualMachinePolicyAssignment' -PolicyAssignment $
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
 Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment dengan menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $Assignment.
-Perintah akhir mengecualikan penetapan kebijakan dalam $Assignment pada tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah akhir mengecualikan penetapan kebijakan di $Assignment pada tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi untuk pembebasan kebijakan baru.
+Deskripsi untuk pengecualian kebijakan baru.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan untuk pembebasan kebijakan baru.
+Nama tampilan untuk pengecualian kebijakan baru.
 
 ```yaml
 Type: System.String
@@ -118,8 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExemptionCategory
-Kategori pembebasan kebijakan dari pembebasan kebijakan baru.
-Nilai yang memungkinkan adalah Pengabaian dan Dimitigasi.
+Kategori pembebasan kebijakan dari pengecualian kebijakan baru.
+Nilai yang mungkin adalah Pengabaian dan Dimitigasi.
 
 ```yaml
 Type: System.String
@@ -134,8 +137,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -KedaluwarsaOn
-Tanggal dan waktu kedaluwarsa (dalam format UTC ISO 8601 yyyy-MM-ddTHH:mm:ssZ) dari pembebasan kebijakan baru.
+### -ExpiresOn
+Tanggal dan waktu kedaluwarsa (dalam format UTC ISO 8601 yyyy-MM-ddTHH:mm:ssZ) dari pengecualian kebijakan baru.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -150,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk pembebasan kebijakan baru.
-Ini bisa berupa jalur ke file yang berisi metadata JSON, atau metadata sebagai string JSON.
+Metadata untuk pengecualian kebijakan baru.
+Ini bisa menjadi jalur ke file yang berisi metadata JSON, atau metadata sebagai string JSON.
 
 ```yaml
 Type: System.String
@@ -165,8 +168,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pembebasan kebijakan baru.
+### -Name
+Nama pengecualian kebijakan baru.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyAssignment
-Id penugasan kebijakan yang dirujuk untuk pembebasan kebijakan baru.
+Id penetapan kebijakan yang dirujuk untuk pengecualian kebijakan baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionReferenceId
-Daftar ID referensi definisi kebijakan ketika penetapan kebijakan terkait adalah untuk kumpulan kebijakan (inisiatif).
+Daftar ID referensi definisi kebijakan saat penetapan kebijakan terkait adalah untuk kumpulan kebijakan (inisiatif).
 
 ```yaml
 Type: System.String[]
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup pembebasan kebijakan baru, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
+### -Cakupan
+Cakupan pengecualian kebijakan baru, misalnya /providers/managementGroups/{managementGroupName}, default ke langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -240,8 +243,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

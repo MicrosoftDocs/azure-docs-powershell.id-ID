@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
-ms.openlocfilehash: b4eafc57261ecc64cf9a1c5170bb4b5b0c625270
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3993b605ce4e0fddb4d1aca2ad9bf1c2c66ed9d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940195"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650956"
 ---
 # Get-AzAutoscaleSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzAutoscaleSetting -ResourceGroupName <String> [-Name <String>] [-DetailedOu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutoscaleSetting** mendapatkan semua pengaturan Skala Otomatis yang terkait dengan grup sumber daya atau pengaturan Skala Otomatis tertentu.
+Cmdlet **Get-AzAutoscaleSetting** mendapatkan semua pengaturan Autoscale yang terkait dengan grup sumber daya atau pengaturan Autoscale tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan Skala Otomatis
+### Contoh 1: Mendapatkan pengaturan Skala Otomatis
 ```powershell
 Get-AzAutoscaleSetting -ResourceGroup "Default-Web-EastUS" -DetailedOutput
 ```
@@ -120,9 +123,9 @@ Tags       : {[$type, Microsoft.WindowsAzure.Management.Common.Storage.CasePrese
              Resource]}
 ```
 
-Perintah ini mendapatkan pengaturan Skala Otomatis yang ditetapkan ke grup sumber daya Default-Web-EastUS.
+Perintah ini mendapatkan pengaturan Autoscale yang ditetapkan ke grup sumber daya Default-Web-EastUS.
 
-### Contoh 2: Dapatkan pengaturan Skala Otomatis menurut nama
+### Contoh 2: Mendapatkan pengaturan Skala Otomatis berdasarkan nama
 ```powershell
 Get-AzAutoscaleSetting -ResourceGroupName "Default-Web-EastUS" -Name "DefaultServerFarm-Default-Web-EastUS" -DetailedOutput
 ```
@@ -211,7 +214,7 @@ Tags       : {[$type, Microsoft.WindowsAzure.Management.Common.Storage.CasePrese
              Resource]}
 ```
 
-Perintah ini mendapatkan pengaturan Skala Otomatis bernama DefaultServerFarm-Default-Web-EastUS.
+Perintah ini mendapatkan pengaturan Autoscale bernama DefaultServerFarm-Default-Web-EastUS.
 
 ## PARAMETERS
 
@@ -245,7 +248,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama pengaturan yang akan didapatkan.
 
 ```yaml
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

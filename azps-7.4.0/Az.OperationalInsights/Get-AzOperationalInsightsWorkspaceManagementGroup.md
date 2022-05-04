@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceManagementGroup.md
-ms.openlocfilehash: d5a8fae91c5482ad94411bf2ef5ca3ce712b18a7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13d6d15cbf048f8a6567e86aa4781e6e3af86527
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626862"
 ---
 # Get-AzOperationalInsightsWorkspaceManagementGroup
 
 ## SYNOPSIS
 Mendapatkan detail grup manajemen yang tersambung ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspacemanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,9 +38,9 @@ Cmdlet **Get-AzOperationalInsightsWorkspaceManagementGroup** mencantumkan grup m
 Get-AzOperationalInsightsWorkspaceManagementGroup -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan grup manajemen untuk ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan grup manajemen untuk ruang kerja bernama MyWorkspace di grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Dapatkan grup manajemen dengan menggunakan saluran
+### Contoh 2: Mendapatkan grup manajemen dengan menggunakan alur
 ```powershell
 Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzOperationalInsightsWorkspaceManagementGroup
 ```
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

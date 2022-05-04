@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 08dd7e623f807760edbb13e7e5d697f9e5f5c2e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1dd632abaabdfd3c5ef019933b3efcddb7333306
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669978"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693148"
 ---
 # Get-AzSynapseSqlAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlAdvancedThreatProtectionSetting -ResourceId <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman tingkat lanjut dari ruang kerja analitik Azure Synapse.
+**Cmdlet Get-AzSynapseSqlAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman lanjutan dari Ruang Kerja analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzSynapseSqlAdvancedThreatProtectionSetting** mendapatkan pengatura
 Get-AzSynapseSqlAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan pengaturan proteksi ancaman tingkat lanjut untuk ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

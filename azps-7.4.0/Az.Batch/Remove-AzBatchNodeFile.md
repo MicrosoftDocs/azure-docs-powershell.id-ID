@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
-ms.openlocfilehash: b96cea6011ac38911824c38287cee292c889f729
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0e5505b4502fcd108b190a237be9b4e53d3ae625
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634994"
 ---
 # Remove-AzBatchNodeFile
 
 ## SYNOPSIS
-Menghapus file simpul untuk tugas atau node komputasi.
+Menghapus file simpul untuk tugas atau simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchnodefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzBatchNodeFile [[-InputObject] <PSNodeFile>] [-Force] [-Recursive] -Batc
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzBatchNodeFile** menghapus file simpul Azure Batch untuk tugas atau node komputasi.
+Cmdlet **Remove-AzBatchNodeFile** menghapus file simpul Azure Batch untuk tugas atau simpul komputasi.
 
 ## EXAMPLES
 
@@ -50,33 +53,33 @@ Cmdlet **Remove-AzBatchNodeFile** menghapus file simpul Azure Batch untuk tugas 
 Remove-AzBatchNodeFile -JobId "Job-000001" -TaskId "Task26" -Path "wd\testFile.txt" -BatchContext $Context
 ```
 
-Perintah ini menghapus file simpul yang bernama wd\testFile.txt.
-File tersebut dikaitkan dengan tugas yang memiliki ID Task26 di bawah pekerjaan Job-000001.
+Perintah ini menghapus file simpul yang diberi nama wd\testFile.txt.
+File tersebut dikaitkan dengan tugas yang memiliki TUGAS ID26 di bawah pekerjaan Job-000001.
 
 ### Contoh 2: Menghapus file dari simpul komputasi
 ```powershell
 Remove-AzBatchNodeFile -PoolId "Pool07" -ComputeNodeId "tvm-2316545714_1-20150725t213220z" -Path "startup\testFile.txt" -BatchContext $Context
 ```
 
-Perintah ini menghapus file simpul yang dinamai startup\testFile.txt dari simpul komputasi tertentu dalam kumpulan yang memiliki ID Pool07.
+Perintah ini menghapus file simpul yang diberi nama startup\testFile.txt dari simpul komputasi yang ditentukan di kumpulan yang memiliki ID Pool07.
 
-### Contoh 3: Menghapus file menggunakan pipeline
+### Contoh 3: Menghapus file dengan menggunakan alur
 ```powershell
 Get-AzBatchNodeFile -JobId "Job-000001" -TaskId "Task26" -Path "wd\testFile2.txt" -BatchContext $Context | Remove-AzBatchNodeFile -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file simpul menggunakan **Get-AzBatchNodeFile**.
-File tersebut dikaitkan dengan tugas yang memiliki ID Task26 di bawah pekerjaan Job-000001.
-Perintah melewati file tersebut ke cmdlet saat ini menggunakan pipeline.
+Perintah ini mendapatkan file simpul dengan menggunakan **Get-AzBatchNodeFile**.
+File tersebut dikaitkan dengan tugas yang memiliki TUGAS ID26 di bawah pekerjaan Job-000001.
+Perintah meneruskan file tersebut ke cmdlet saat ini dengan menggunakan alur.
 Cmdlet saat ini menghapus file simpul.
-Perintah menentukan parameter *Paksa* .
-Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
+Perintah menentukan parameter *Force* .
+Oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Menentukan ID simpul komputasi yang berisi file simpul batch yang dihapus cmdlet ini.
+Menentukan ID simpul komputasi yang berisi file simpul Batch yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur file dari file simpul untuk dihapus.
+Jalur file dari file simpul yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -196,9 +199,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rekursi
+### -Rekursif
 Menunjukkan bahwa cmdlet ini menghapus folder dan semua subfolder dan file di bawah jalur yang ditentukan.
-Cmdlet ini hanya relevan jika jalur adalah folder.
+Cmdlet ini hanya relevan jika jalurnya adalah folder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,8 +230,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

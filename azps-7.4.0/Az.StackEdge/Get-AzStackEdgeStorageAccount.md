@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
-ms.openlocfilehash: 88ab91466fb732fb2cc2feb779e4a0e23b139f53
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c74b3b7608ec00783fc637e96e05f8cc82c4eabc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058041"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626502"
 ---
 # Get-AzStackEdgeStorageAccount
 
 ## SYNOPSIS
-Mendapatkan akun Storage Edge di perangkat.
+Mendapatkan akun Storage Azure Stack Edge di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzStackEdgeStorageAccount [[-Name] <String>] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeStorageAccount** mendapatkan akun Storage Edge yang tersedia di perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi akun Storage Edge tertentu.
+Cmdlet **Get-AzStackEdgeStorageAccount** mendapatkan akun Edge Storage tersedia di perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter di cmdlet untuk mendapatkan informasi akun Storage Azure Stack Edge tertentu.
 
 ## EXAMPLES
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

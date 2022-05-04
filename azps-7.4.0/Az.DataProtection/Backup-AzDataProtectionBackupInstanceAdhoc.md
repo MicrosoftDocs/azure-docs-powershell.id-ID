@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/b
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
-ms.openlocfilehash: 5d67ab0b65bb3299418ab336b94cf1daaaad0f7b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e721a94fabcb93c9f817ddd58929d89ece2d90f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288297"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636362"
 ---
 # Backup-AzDataProtectionBackupInstanceAdhoc
 
 ## SYNOPSIS
 Memicu pencadangan adhoc
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/backup-azdataprotectionbackupinstanceadhoc) untuk informasi terbaru.
 
 ## SYNTAX
 

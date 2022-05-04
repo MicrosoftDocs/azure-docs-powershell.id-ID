@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssWinRMListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssWinRMListener.md
-ms.openlocfilehash: 010e34dcab316fcbd525d3a8d65b30102ab6c169
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 296c1fa0bdb00960c4ef76a957b280112b1e2d0f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289988"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633176"
 ---
 # Add-AzVmssWinRMListener
 
 ## SYNOPSIS
-Menambahkan pendengar WinRM ke VMSS.
+Menambahkan listener WinRM ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsswinrmlistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Add-AzVmssWinRMListener [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssWinRMListener** menambahkan pendengar Windows Remote Management (WinRM) di Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet **Add-AzVmssWinRMListener** menambahkan pendengar Windows Remote Management (WinRM) pada Virtual Machine Scale Set (VMSS).
 
 ## EXAMPLES
 
@@ -37,14 +40,14 @@ $VMSS = New-AzVmssConfig
 Add-AzVmssWinRMListener -VirtualMachineScaleSet $VMSS -Protocol Https -CertificateUrl "http://keyVaultName.vault.contoso.net/secrets/secretName/secretVersion"
 ```
 
-Contoh ini menambahkan pendengar WinRM ke VMSS.
-Perintah pertama menggunakan cmdlet **New-AzVmsConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
-Perintah kedua menambahkan protokol HTTP Pendengar WinRM dengan sertifikat di URL tertentu ke VMSS.
+Contoh ini menambahkan listener WinRM ke VMSS.
+Perintah pertama menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
+Perintah kedua menambahkan listener WinRM protokol HTTP dengan sertifikat di URL yang ditentukan ke VMSS.
 
 ## PARAMETERS
 
 ### -CertificateUrl
-Menentukan tautan, sebagai URL, sertifikat tempat mesin virtual baru ditetapkan.
+Menentukan tautan, sebagai URL, sertifikat tempat komputer virtual baru disediakan.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,13 +142,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ProtocolTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ProtocolTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String
 

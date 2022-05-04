@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzStaticRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzStaticRoute.md
-ms.openlocfilehash: e4c0a960730dbb2683198d4e82f52964a86802ce
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51b52204f3201dc05b2b588b33052aedf3f96c37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938539"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635966"
 ---
 # New-AzStaticRoute
 
 ## SYNOPSIS
-Membuat objek StaticRoute yang kemudian dapat ditambahkan ke objek Konfigurasi Perutean.
+Membuat objek StaticRoute yang kemudian dapat ditambahkan ke objek RoutingConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azstaticroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -AddressPrefix
-Daftar prefiks alamat.
+Daftar awalan alamat.
 
 ```yaml
 Type: String[]
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama rute.
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -118,4 +121,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)
+[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
