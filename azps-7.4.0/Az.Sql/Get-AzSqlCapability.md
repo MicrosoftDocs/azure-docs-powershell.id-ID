@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlcap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlCapability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlCapability.md
-ms.openlocfilehash: 8a9b6789c9f1fd20ca7c102aeb075d2a4665f9a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f2405d5489668bf1c6422d1d508f96394e4db04
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273051"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681528"
 ---
 # Get-AzSqlCapability
 
 ## SYNOPSIS
-Mendapatkan kapabilitas SQL Database untuk langganan saat ini.
+Mendapatkan kemampuan SQL Database untuk langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlcapability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,12 +37,12 @@ Get-AzSqlCapability [-LocationName] <String> [-Defaults] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlCapability** mendapatkan kemampuan Azure SQL Database yang tersedia pada langganan saat ini untuk suatu kawasan.
+Cmdlet **Get-AzSqlCapability** mendapatkan kemampuan Azure SQL Database yang tersedia pada langganan saat ini untuk suatu wilayah.
 Jika Anda menentukan parameter *ServerVersionName*, *EditionName*, atau *ServiceObjectiveName* , cmdlet ini mengembalikan nilai yang ditentukan dan pendahulunya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kapabilitas untuk langganan saat ini untuk kawasan
+### Contoh 1: Mendapatkan kemampuan untuk langganan saat ini untuk suatu wilayah
 ```powershell
 Get-AzSqlCapability -LocationName "Central US"
 ```
@@ -50,9 +53,9 @@ Status                  : Available
 SupportedServerVersions : {12.0, 2.0}
 ```
 
-Perintah ini mengembalikan kapabilitas untuk SQL Database instans pada langganan saat ini untuk kawasan AS Tengah.
+Perintah ini mengembalikan kemampuan untuk instans SQL Database pada langganan saat ini untuk wilayah AS Tengah.
 
-### Contoh 2: Mendapatkan kapabilitas default untuk langganan saat ini untuk kawasan
+### Contoh 2: Mendapatkan kemampuan default untuk langganan saat ini untuk suatu wilayah
 ```powershell
 Get-AzSqlCapability -LocationName "Central US" -Defaults
 ```
@@ -63,9 +66,9 @@ Status          : Available
 ExpandedDetails : Version: 2.0 (Default) -> Edition: Standard (Default) -> Service Objective: S0 (Default)
 ```
 
-Perintah ini mengembalikan kapabilitas default untuk database SQL pada langganan saat ini di kawasan AS Tengah.
+Perintah ini mengembalikan kemampuan default untuk database SQL pada langganan saat ini di wilayah AS Tengah.
 
-### Contoh 3: Dapatkan detail untuk tujuan layanan
+### Contoh 3: Mendapatkan detail untuk tujuan layanan
 ```powershell
 Get-AzSqlCapability -LocationName "Central US" -ServiceObjectiveName "S1"
 ```
@@ -77,7 +80,7 @@ ExpandedDetails : Version: 12.0 (Available) -> Edition: Standard (Default) -> Se
                   Version: 2.0 (Default) -> Edition: Standard (Default) -> Service Objective: S1 (Available)
 ```
 
-Perintah ini mendapatkan kapabilitas default untuk SQL Database untuk tujuan layanan tertentu pada langganan saat ini.
+Perintah ini mendapatkan kemampuan default untuk SQL Database untuk tujuan layanan yang ditentukan pada langganan saat ini.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -EditionName
-Menentukan nama edisi database di mana cmdlet ini mendapatkan kapabilitas.
+Menentukan nama edisi database yang mana cmdlet ini mendapatkan kemampuan.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -LocationName
 Menentukan nama Lokasi tempat cmdlet ini mendapatkan kapabilitas.
-Untuk informasi selengkapnya, lihat Kawasanhttp://azure.microsoft.com/en-us/regions/ Azure (http://azure.microsoft.com/en-us/regions/).
+Untuk informasi selengkapnya, lihat Wilayahhttp://azure.microsoft.com/en-us/regions/ Azure (http://azure.microsoft.com/en-us/regions/).
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersionName
-Menentukan nama versi server di mana cmdlet ini mendapatkan kapabilitas.
+Menentukan nama versi server yang cmdlet ini mendapatkan kemampuan.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan di mana cmdlet ini mendapatkan kapabilitas.
+Menentukan nama tujuan layanan yang cmdlet ini mendapatkan kemampuan.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

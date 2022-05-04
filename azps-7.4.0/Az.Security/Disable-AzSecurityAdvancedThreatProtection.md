@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzSecurityAdvancedThreatProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzSecurityAdvancedThreatProtection.md
-ms.openlocfilehash: 1ea0366711f9db09a23ab36fdca64373b7fabf64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb6990d4964f6c3099e67da8d361dfe9fddecbba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935065"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688706"
 ---
 # Disable-AzSecurityAdvancedThreatProtection
 
 ## SYNOPSIS
-Menonaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk akun penyimpanan / cosmosDB.
+Menonaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk akun penyimpanan/cosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/disable-azsecurityadvancedthreatprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Disable-AzSecurityAdvancedThreatProtection -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-`Disable-AzSecurityAdvancedThreatProtection` Cmdlet menonaktifkan kebijakan perlindungan ancaman untuk akun penyimpanan / cosmosDB.
+`Disable-AzSecurityAdvancedThreatProtection` Cmdlet menonaktifkan kebijakan perlindungan ancaman untuk akun penyimpanan/cosmosDB.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceId* .
 
 ## EXAMPLES
 
-### Contoh 1 : akun Storage
+### Contoh 1 : Akun Storage
 ```powershell
 Disable-AzSecurityAdvancedThreatProtection -ResourceId "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.Storage/storageAccounts/myStorageAccount/"
 ```
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -88,8 +91,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,11 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

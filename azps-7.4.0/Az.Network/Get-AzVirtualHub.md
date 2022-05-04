@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHub.md
-ms.openlocfilehash: 2b4c33061847e7bd7d8ac3ce8432d495afc44ff0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d32a35ce74c701a39b3d09ed412a8576adfaa94d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805698"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713992"
 ---
 # Get-AzVirtualHub
 
 ## SYNOPSIS
-Mendapatkan Azure VirtualHub menurut Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual berdasarkan ResourceGroupName/Subscription.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVirtualHub [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan Azure VirtualHub menurut Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual berdasarkan ResourceGroupName/Subscription.
 
 ## EXAMPLES
 
@@ -57,9 +60,9 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
-Kemudian, hub virtual akan menggunakan ResourceGroupName dan ResourceName.
+Kemudian mendapatkan hub virtual menggunakan ResourceGroupName dan ResourceName-nya.
 
 ### Contoh 2
 
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -141,11 +144,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -159,4 +162,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzVirtualHub](./Remove-AzVirtualHub.md)
 
-[Perbarui-AzVirtualHub](./Update-AzVirtualHub.md)
+[Update-AzVirtualHub](./Update-AzVirtualHub.md)

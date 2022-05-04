@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: 2eb173c0a2c4683285d86dde2072d8bcf51ece91
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a2d249803baa3e56a0ec1d9504011e967e89802a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676332"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719156"
 ---
 # Set-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mengatur aturan otorisasi untuk hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,25 +38,25 @@ Set-AzNotificationHubAuthorizationRule [-ResourceGroup] <String> [-Namespace] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzNotificationHubAuthorizationRule** mengubah aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke hub pemberitahuan.
+Cmdlet **Set-AzNotificationHubAuthorizationRule** memodifikasi aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke hub pemberitahuan.
 Aturan otorisasi mengelola akses ke hub pemberitahuan Anda dengan membuat tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Tingkat izin bisa menjadi salah satu hal berikut ini: 
-- Mendengarkan
-- Mengirim
+- Dengar
+- Kirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
 Cmdlet ini menyediakan dua cara untuk mengubah aturan otorisasi yang ditetapkan ke hub pemberitahuan.
-Untuk satu, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang anda inginkan untuk dimiliki aturan.
+Untuk satu, Anda dapat membuat **instans objek SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang Anda inginkan untuk dimiliki aturan.
 Anda dapat mengonfigurasi objek melalui .NET Framework.
-Anda kemudian dapat menyalin nilai properti tersebut ke aturan menggunakan parameter *SASRule* .
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut melalui parameter *InputFile* .
-File JSON adalah file teks yang menggunakan sintaks seperti ini: { "Name": "ContosoAuthorizationRule",  
+Anda kemudian dapat menyalin nilai properti tersebut ke aturan Anda dengan menggunakan parameter *SASRule* .
+Atau, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut melalui parameter *InputFile* .
+File JSON adalah file teks yang menggunakan sintaks yang mirip dengan ini: { "Name": "ContosoAuthorizationRule",  
   "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29KkUnnpUk01Y=",  
   "Hak": \[  
         "Dengarkan",  
         "Kirim"  
     \]  
-  } Ketika digunakan bersamaan dengan cmdlet New-AzNotificationHubAuthorizationRule, sampel JSON sebelumnya mengubah aturan otorisasi bernama ContosoAuthorizationRule untuk memberikan pengguna hak Dengarkan dan Kirim ke hub.
+  } Ketika digunakan bersama dengan cmdlet New-AzNotificationHubAuthorizationRule, sampel JSON sebelumnya memodifikasi aturan otorisasi bernama ContosoAuthorizationRule untuk memberi pengguna hak Dengar dan Kirim ke hub.
 
 ## EXAMPLES
 
@@ -62,9 +65,9 @@ File JSON adalah file teks yang menggunakan sintaks seperti ini: { "Name": "Cont
 Set-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationGroup" -NotificationHub "ContosoExternalHub" -InputFile "C:\Configuration\AuthorizationRules.json"
 ```
 
-Perintah ini mengubah aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoExternalHub.
-Anda harus menentukan ruang nama tempat hub berada serta grup sumber daya yang ditetapkan hub.
-Informasi tentang aturan yang diubah tidak disertakan dalam perintah itu sendiri.
+Perintah ini memodifikasi aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoExternalHub.
+Anda harus menentukan namespace tempat hub berada serta grup sumber daya tempat hub ditetapkan.
+Informasi tentang aturan yang dimodifikasi tidak disertakan dalam perintah itu sendiri.
 Sebagai gantinya, informasi tersebut ditemukan dalam file input C:\Configuration\AuthorizationRules.json.
 
 ## PARAMETERS
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan. Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan. Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -SASRule
-Menentukan objek **SharedAccessAuthorizationRuleAttributes** yang berisi informasi konfigurasi untuk aturan otorisasi yang diubah.
+Menentukan objek **SharedAccessAuthorizationRuleAttributes** yang berisi informasi konfigurasi untuk aturan otorisasi yang dimodifikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.NotificationHubs.Models.SharedAccessAuthorizationRuleAttributes
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -225,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNotificationHubAuthorizationRule](./New-AzNotificationHubAuthorizationRule.md)
 
-[Hapus-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
+[Remove-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
 
 

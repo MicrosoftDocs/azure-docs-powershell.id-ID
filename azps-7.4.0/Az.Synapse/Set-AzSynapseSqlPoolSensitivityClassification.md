@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: 479fcb45f52ab3afe5985ae16b563657add515a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48badf606f06c2e920ec5d11fc10d49f04d4f2cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993133"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688472"
 ---
 # Set-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
-Mengatur tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
+Mengatur jenis informasi dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
-### KlasifikasiObjectParameterSet (Default)
+### ClassificationObjectParameterSet (Default)
 ```
 Set-AzSynapseSqlPoolSensitivityClassification -ClassificationObject <SqlPoolSensitivityClassificationModel>
  [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,21 +44,21 @@ Set-AzSynapseSqlPoolSensitivityClassification [-SensitivityLabel <String>] [-Inf
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSynapseSqlPoolSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
+Cmdlet Set-AzSynapseSqlPoolSensitivityClassification mengatur jenis informasi dan label sensitivitas kolom di kumpulan SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
+### Contoh 1: Mengatur jenis informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
 ```powershell
 Set-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
 
-### Contoh 2: Mengatur tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
+### Contoh 2: Atur jenis informasi yang direkomendasikan dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Set-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Mengatur tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL, menggunakan pipa.
+### Contoh 3: Atur jenis informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL, menggunakan pipa.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Set-AzSynapseSqlPoolSensitivityClassification  -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
@@ -63,7 +66,7 @@ Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName Cont
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationType
-Nama yang menjelaskan tipe informasi data yang disimpan dalam kolom.
+Nama yang menjelaskan jenis informasi data yang disimpan dalam kolom.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SensitivityLabel
-Nama yang menjelaskan sensitivitas data yang disimpan dalam kolom.
+Nama yang menjelaskan sensitivitas data yang disimpan di kolom.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama Synapse SQL pool.
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -243,7 +246,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -258,8 +261,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

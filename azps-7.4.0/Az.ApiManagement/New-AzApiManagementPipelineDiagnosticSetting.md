@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementPipelineDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementPipelineDiagnosticSetting.md
-ms.openlocfilehash: 7d30e85ef08437557fd039aca77baa318b0ae515
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f1ac2fd1a820c57a3e1e29354f4f45ccb43cabe2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688194"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681259"
 ---
 # New-AzApiManagementPipelineDiagnosticSetting
 
 ## SYNOPSIS
-Membuat pengaturan Diagnostik untuk pesan HTTP masuk/keluar ke Gateway.
+Buat pengaturan Diagnostik untuk pesan HTTP masuk/keluar ke Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementpipelinediagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Request                                                                         
 Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementHttpMessageDiagnostic Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementHttpMessageDiagnostic
 ```
 
-Buat diagnostik saluran yang akan digunakan baik di FrontEnd atau Backend dalam Entitas Diagnostik.
+Buat diagnostik alur yang akan digunakan di FrontEnd atau Backend di Entitas Diagnostik.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Request
+### -Permintaan
 Pengaturan diagnostik untuk Permintaan.
 Parameter ini bersifat opsional.
 
@@ -94,11 +97,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/copy-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Copy-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Copy-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 81ece166d581388417ab09c7ce0b83736dc462ca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f9afc4d4399c184cee1bfdb37de56dc1d9f634e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738810"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688544"
 ---
 # Copy-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
-Menyalin cadangan penyimpanan jangka panjang ke database target.  
+Menyalin cadangan retensi jangka panjang ke database target.  
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/copy-azsqldatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Copy-AzSqlDatabaseLongTermRetentionBackup [-InputObject] <AzureSqlDatabaseLongTe
 ```
 
 ## DESCRIPTION
-Menyalin cadangan penyimpanan jangka panjang ke database target.  Database target mungkin berada dalam kluster yang berbeda dari sumber cadangan.  
+Menyalin cadangan retensi jangka panjang ke database target.  Database target mungkin berada di kluster yang berbeda dari sumber cadangan.  
 
 ## EXAMPLES
 
-### Contoh 1: Salin cadangan penyimpanan jangka panjang ke server lain dalam lingkungan yang sama.
+### Contoh 1: Salin cadangan retensi jangka panjang ke server lain dalam lingkungan yang sama.
 ```powershell
 Copy-AzSqlDatabaseLongTermRetentionBackup -Location southeastasia -ServerName test-server -DatabaseName test-database -BackupName 'e5c20f43-494c-4925-89d1-58e0f4569fb3;132579992320000000' -ResourceGroupName testrg -TargetDatabaseName ltr1 -TargetServerName ayang-eas -TargetSubscriptionId '01c4ec88-e179-44f7-9eb0-e9719a5087ab' -TargetResourceGroupName testrg
 ```
@@ -73,12 +76,12 @@ TargetBackupName                     : 70554a1f-ae6e-479e-99b1-50ea320654eb;1325
 TargetBackupResourceId               : /subscriptions/01c4ec88-e179-44f7-9eb0-e9719a5087ab/resourceGroups/test-rg/providers/Microsoft.Sql/locations/East Asia/longTermRetentionServers/ayang-eas/longTermRetentionDatabases/ltr1/longTermRetentionBackups/70554a1f-ae6e-479e-99b1-50ea320654eb;132579992320000000
 ```
 
-Tindakan ini menyalin cadangan penyimpanan jangka panjang dari database sumber di Asia Tenggara ke database target di Asia Timur.
+Ini menyalin cadangan retensi jangka panjang dari database sumber di Asia Tenggara ke database target di Asia Timur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cadangan Penyimpanan Jangka Panjang Database untuk dihapus.
+Objek Cadangan Retensi Jangka Panjang Database yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseLongTermRetentionBackupModel
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Cadangan Penyimpanan Jangka Panjang Database untuk dihapus.
+ID Sumber Daya dari Cadangan Retensi Jangka Panjang Database untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -287,8 +290,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

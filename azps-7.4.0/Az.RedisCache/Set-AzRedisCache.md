@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCache.md
-ms.openlocfilehash: bdb97374c096b9456613865f39b348be20029226
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2fd8177518d2d8f7d63d0048319d3970f5950c01
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740232"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676960"
 ---
 # Set-AzRedisCache
 
 ## SYNOPSIS
-Mengubah Azure Cache for Redis.
+Memodifikasi Azure Cache for Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/set-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Set-AzRedisCache [-ResourceGroupName <String>] -Name <String> [-Size <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRedisCache** mengubah Azure Cache for Redis.
+Cmdlet **Set-AzRedisCache** memodifikasi Azure Cache for Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi Azure Cache for Redis
+### Contoh 1: Mengubah Azure Cache for Redis
 ```powershell
 Set-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -RedisConfiguration @{"maxmemory-policy" = "allkeys-random"}
 ```
@@ -59,9 +62,9 @@ Set-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -RedisConfiguratio
           Zone               : []
 ```
 
-Perintah ini memperbarui kebijakan maxmemory untuk Azure Cache Anda dengan Redis bernama *MyCache*.
+Perintah ini memperbarui kebijakan maxmemory untuk Azure Cache fo Redis Bernama *MyCache*.
 
-### Contoh 2: Modifikasi Azure Cache for Redis - Jika Anda ingin Menonaktifkan RDB atau Persistensi Data AOF.
+### Contoh 2: Ubah Azure Cache for Redis - Jika Anda ingin Menonaktifkan Persistensi Data RDB atau AOF.
 ```powershell
 Set-AzRedisCache -Name "MyCache"  -RedisConfiguration @{"rdb-backup-enabled" = "false"}
 ```
@@ -92,7 +95,7 @@ Set-AzRedisCache -Name "MyCache"  -RedisConfiguration @{"rdb-backup-enabled" = "
 
 Cmdlet ini menonaktifkan persistensi data cadangan RDB untuk Azure Cache for Redis. Anda juga dapat menonaktifkan cache persisten cadangan AOF.
 
-### Contoh 3: Modifikasi Azure Cache for Redis - Jika Anda ingin menambahkan persistensi data setelah azure redis cache dibuat.
+### Contoh 3: Ubah Azure Cache for Redis - Jika Anda ingin menambahkan persistensi data setelah cache azure redis dibuat.
 ```powershell
 Set-AzRedisCache -Name "MyCache" -RedisConfiguration @{"rdb-backup-enabled" = "true"; "rdb-storage-connection-string" = "DefaultEndpointsProtocol=https;AccountName=mystorageaccount;AccountKey=pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=;EndpointSuffix=core.windows.net"; "rdb-backup-frequency" = "30"}
 ```
@@ -119,11 +122,11 @@ Set-AzRedisCache -Name "MyCache" -RedisConfiguration @{"rdb-backup-enabled" = "t
           Zone               : []
 ```
 
-Cmdlet ini memungkinkan persistensi cadangan rdb pada singgahan yang sudah ada. Anda juga dapat mengaktifkan persistensi cadangan sekaligus.
+Cmdlet ini memungkinkan persistensi cadangan rdb pada cache yang sudah ada. Anda juga dapat mengaktifkan persistensi cadangan aof.
 
-### Contoh 4: Modifikasi Azure Cache for Redis - Jika Anda ingin mengubah frekuensi cadangan rdb.
+### Contoh 4: Ubah Azure Cache for Redis - Jika Anda ingin mengubah frekuensi pencadangan rdb.
 
-Misalnya - Saat ini Anda mengambil snapshot RDB dalam setiap 30 menit, tetapi Anda ingin mengubah untuk mengambil snapshot 15 menit.
+Misalnya - Saat ini Anda mengambil rekam jepret RDB dalam setiap 30 menit, tetapi Anda ingin mengubah untuk mengambil rekam jepret 15 menit.
 
 ```powershell
 Set-AzRedisCache -Name "MyCache" -RedisConfiguration @{"rdb-backup-frequency" = "15"}
@@ -151,7 +154,7 @@ Set-AzRedisCache -Name "MyCache" -RedisConfiguration @{"rdb-backup-frequency" = 
           Zone               : []
 ```
 
-### Contoh 5: Modifikasi Azure Cache for Redis - Jika Anda ingin mengubah AOF mencadangkan persistensi data menjadi cadangan RDB.
+### Contoh 5: Ubah Azure Cache for Redis - Jika Anda ingin mengubah persistensi data cadangan AOF menjadi cadangan RDB.
 
 ```powershell
 Set-AzRedisCache -Name "MyCache"  -RedisConfiguration @{"aof-backup-enabled"= "false"; "rdb-backup-enabled" = "true"; "rdb-storage-connection-string" = "DefaultEndpointsProtocol=https;AccountName=mystorageaccount;AccountKey=pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=;EndpointSuffix=core.windows.net"; "rdb-backup-frequency" = "30"}
@@ -180,7 +183,7 @@ Set-AzRedisCache -Name "MyCache"  -RedisConfiguration @{"aof-backup-enabled"= "f
 ```
 
  
-Cmdlet ini membantu dalam mengubah metode ketekunan.
+Cmdlet ini membantu dalam mengubah metode persistensi.
 
 ### Contoh 6: Skalakan Instans Azure Cache for Redis - Perbarui ke ukuran yang berbeda.
 
@@ -210,9 +213,9 @@ Set-AzRedisCache -Name "MyCache" -Size "P2" -Sku "Premium"
           Zone               : []
 ```
 
-Perintah ini menambah atau mengurangi ukuran memori instans Anda.
+Perintah ini meningkatkan atau mengurangi ukuran memori instans Anda.
 
-### Contoh 7: Skalakan Instans Azure Cache for Redis - Perbarui ke tingkat yang berbeda.
+### Contoh 7: Menskalakan Instans Azure Cache for Redis - Perbarui ke tingkat yang berbeda.
 
 ```powershell
 Set-AzRedisCache -Name "MyCache" -Size "P1" -Sku "Premium" 
@@ -240,9 +243,9 @@ Set-AzRedisCache -Name "MyCache" -Size "P1" -Sku "Premium"
           Zone               : []
 ```
 
-Perintah ini membantu Anda mengubah tingkat cache Anda. Anda bisa mengubah dari Dasar ke Standar, atau Standar ke Premium.
+Perintah ini membantu Anda mengubah tingkat cache Anda. Anda dapat mengubah dari Dasar ke Standar, atau Standar ke Premium.
 
-### Contoh 8: Scale an Azure Cache for Redis Instance - Enable Redis Clustering.
+### Contoh 8: Menskalakan Instans Azure Cache for Redis - Aktifkan Pengklusteran Redis.
 
 ```powershell
 Set-AzRedisCache -Name "MyCache" -ShardCount 1
@@ -271,9 +274,9 @@ Set-AzRedisCache -Name "MyCache" -ShardCount 1
           Zone               : []
 ```
 
-Cmdlet ini membantu Anda mengaktifkan pengelompokan untuk instans Azure Cache for Redis Anda. Untuk menambah jumlah shard, harus mengaktifkan pengelompokan terlebih dahulu.
+Cmdlet ini membantu Anda mengaktifkan pengklusteran untuk instans Azure Cache for Redis Anda. Untuk meningkatkan jumlah shard, harus mengaktifkan pengklusteran terlebih dahulu.
 
-### Contoh 9: Scale an Azure Cache for Redis Instance - Use Redis Cluster to scale in/out.
+### Contoh 9: Menskalakan Instans Azure Cache for Redis - Gunakan Kluster Redis untuk menskalakan masuk/keluar.
 
 ```powershell
 Set-AzRedisCache -Name "MyCache" -ShardCount 2
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Menentukan tipe identitas yang digunakan untuk Azure Cache for Redis. Nilai yang valid: "SystemAssigned" atau "UserAssigned" atau "SystemAssignedUserAssigned" atau "None"
+Menentukan jenis identitas yang digunakan untuk Azure Cache for Redis. Nilai yang valid: "SystemAssigned" atau "UserAssigned" atau "SystemAssignedUserAssigned" atau "None"
 
 ```yaml
 Type: System.String
@@ -367,7 +370,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama Azure Cache for Redis yang akan diperbarui.
 
 ```yaml
@@ -383,46 +386,46 @@ Accept wildcard characters: False
 ```
 
 ### -RedisConfiguration
-Menentukan pengaturan konfigurasi Redis.
+Tentukan pengaturan konfigurasi Redis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - rdb-backup-enabled.
-Menentukan bahwa Redis persistensi data diaktifkan.
+Menentukan bahwa persistensi data Redis diaktifkan.
 Premium tingkat saja.
 - rdb-storage-connection-string.
 Menentukan string koneksi ke akun Storage untuk persistensi data Redis.
 Premium tingkat saja.
-- rdb-backup-frequency.
-Menentukan frekuensi cadangan untuk persistensi data Redis.
+- frekuensi pencadangan rdb.
+Menentukan frekuensi pencadangan untuk persistensi data Redis.
 Premium tingkat saja. 
 - maxmemory-reserved.
-Mengonfigurasi memori yang dipesan untuk proses non-cache.
+Mengonfigurasi memori yang dicadangkan untuk proses non-cache.
 Tingkat standar dan Premium. 
-- maxmemory-policy.
-Mengonfigurasi kebijakan penggalian untuk singgahan.
+- kebijakan maxmemory.
+Mengonfigurasi kebijakan pengeluaran untuk cache.
 Semua tingkat harga. 
 - notify-keyspace-events.
 Mengonfigurasi pemberitahuan keyspace.
 Tingkat standar dan premium. 
 - hash-max-ziplist-entries.
-Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
+Mengonfigurasi pengoptimalan memori untuk jenis data agregat kecil.
 Tingkat standar dan Premium. 
 - hash-max-ziplist-value.
-Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
+Mengonfigurasi pengoptimalan memori untuk jenis data agregat kecil.
 Tingkat standar dan Premium. 
 - set-max-intset-entries.
-Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
+Mengonfigurasi pengoptimalan memori untuk jenis data agregat kecil.
 Tingkat standar dan Premium. 
 - zset-max-ziplist-entries.
-Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
+Mengonfigurasi pengoptimalan memori untuk jenis data agregat kecil.
 Tingkat standar dan Premium. 
 - zset-max-ziplist-value.
-Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
+Mengonfigurasi pengoptimalan memori untuk jenis data agregat kecil.
 Tingkat standar dan Premium. 
 - Database.
-Mengonfigurasi jumlah database.
+Konfigurasikan jumlah database.
 Properti ini hanya dapat dikonfigurasi pada pembuatan cache.
 Tingkat standar dan Premium.
-Untuk informasi selengkapnya, lihat Mengelola Singgahan Azure Redis dengan Azure PowerShellhttp://go.microsoft.com/fwlink/?LinkId=800051 (http://go.microsoft.com/fwlink/?LinkId=800051).
+Untuk informasi selengkapnya, lihat Mengelola Azure Redis Cache dengan Azure PowerShellhttp://go.microsoft.com/fwlink/?LinkId=800051 (http://go.microsoft.com/fwlink/?LinkId=800051).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi Singgahan Redis.
+Menentukan nama grup sumber daya yang berisi Redis Cache.
 
 ```yaml
 Type: System.String
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShardCount
-Menentukan jumlah shard yang akan dibuat pada singgahan klaster Premium.
+Menentukan jumlah pecahan yang akan dibuat pada cache kluster Premium.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -481,8 +484,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Size
-Menentukan ukuran Singgahan Redis.
+### -Ukuran
+Menentukan ukuran Redis Cache.
 Nilai yang valid adalah: 
 - P1
 - P2
@@ -498,7 +501,7 @@ Nilai yang valid adalah:
 - C6
 - 250MB
 - 1GB
-- 2,5 GB
+- 2,5GB
 - 6GB
 - 13GB
 - 26GB
@@ -518,10 +521,10 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU Singgahan Redis untuk dibuat.
+Menentukan SKU Redis Cache untuk dibuat.
 Nilai yang valid adalah: 
 - Dasar
-- Standar
+- Standard
 - Premium Nilai defaultnya adalah Standar.
 
 ```yaml
@@ -553,7 +556,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantSettings
-Parameter ini telah ditolak.
+Parameter ini tidak digunakan lagi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -568,7 +571,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-Menentukan satu atau beberapa identitas pengguna yang disematkan koma untuk dikaitkan dengan Azure Cache for Redis. Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan satu atau beberapa identitas pengguna yang dipisahkan koma yang akan dikaitkan dengan Azure Cache for Redis. Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -582,8 +585,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -598,7 +601,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -613,7 +616,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -623,7 +626,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
@@ -637,6 +640,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 

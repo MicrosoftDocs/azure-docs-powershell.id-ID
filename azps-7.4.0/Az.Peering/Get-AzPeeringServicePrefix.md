@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
-ms.openlocfilehash: 42d85580d03c97b4ad0803c684e76894c50e74de
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ad8a165b49e211f4a89274fe08f527981d18aa81
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675756"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713902"
 ---
 # Get-AzPeeringServicePrefix
 
 ## SYNOPSIS
-Mendapatkan daftar prefiks layanan peering untuk langganan.
+Mendapatkan daftar awalan layanan peering untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringserviceprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzPeeringServicePrefix [-ResourceId] <String> [-Expand] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Daftar prefiks layanan peering untuk objek layanan peering
+Mencantumkan awalan layanan peering untuk objek peering service
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks untuk layanan peering berdasarkan perintah perpipaan.
+Mendapatkan awalan untuk layanan peering berdasarkan perintah pipa.
 
 ### Contoh 2
 ```powershell
@@ -85,7 +88,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks tertentu untuk layanan peering menurut id sumber daya.
+Mendapatkan awalan tertentu untuk layanan peering dengan id sumber daya.
 
 ### Contoh 3
 ```powershell
@@ -103,7 +106,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks tertentu untuk layanan peering menurut id sumber daya.
+Mendapatkan awalan tertentu untuk layanan peering dengan id sumber daya.
 
 ### Contoh 4
 ```powershell
@@ -123,7 +126,7 @@ Id                    : /subscriptions/resourceGroups/Building40/providers/Micro
 Type                  : Microsoft.Peering/peeringServices/prefixes
 ```
 
-Mendapatkan prefiks tertentu untuk layanan peering dengan atribut yang diperluas
+Mendapatkan awalan tertentu untuk layanan peering dengan atribut yang diperluas
 
 ## PARAMETERS
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menampilkan acara untuk prefiks layanan peering
+Menampilkan peristiwa untuk awalan layanan peering
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

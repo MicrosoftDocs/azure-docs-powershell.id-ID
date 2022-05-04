@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceManagementPrivateLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceManagementPrivateLink.md
-ms.openlocfilehash: f87518a9d0389710a7c7e2133eb3cfefbf09bfa8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11d73f64ebb2f42abbf82157590aea9d019cc427
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696116"
 ---
 # New-AzResourceManagementPrivateLink
 
 ## SYNOPSIS
-Membuat Private Link Manajemen Sumber Daya Azure
+Membuat Private Link Azure Resource Management
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcemanagementprivatelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzResourceManagementPrivateLink [[-ResourceGroupName] <String>] [-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzResourceManagementPrivateLink membuat tautan pribadi manajemen sumber daya tertentu.
+Cmdlet New-AzResourceManagementPrivateLink membuat tautan privat manajemen sumber daya tertentu.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Location                   : centralus
 PrivateEndpointConnections : {}
 ```
 
-Buat tautan privat manajemen sumber daya.
+Buat tautan privat pengelolaan sumber daya.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tautan pribadi.
+Lokasi tautan privat.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan privat.
 
 ```yaml
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

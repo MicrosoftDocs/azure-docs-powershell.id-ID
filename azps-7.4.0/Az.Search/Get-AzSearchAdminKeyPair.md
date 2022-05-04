@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
-ms.openlocfilehash: e466afd220d82f419de67620a33334f58adc4e74
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d9ca08c3576747bcf656ff2fe049339ec7bfff2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274797"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676816"
 ---
 # Get-AzSearchAdminKeyPair
 
 ## SYNOPSIS
-Mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
+Mendapatkan pasangan kunci admin dari layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchadminkeypair) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Primary                          Secondary
 3B06A25BDADFF72EC132736BAA2547A1 E643B75A52E04DF13EB690807C451C55
 ```
 
-Contoh mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
+Contohnya mendapatkan pasangan kunci admin dari layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Azure Cognitive Search Id Sumber Daya Layanan.
+Id Sumber Daya Layanan Azure Cognitive Search.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

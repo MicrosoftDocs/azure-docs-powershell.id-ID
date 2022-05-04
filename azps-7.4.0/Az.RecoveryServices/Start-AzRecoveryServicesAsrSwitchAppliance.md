@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchAppliance.md
-ms.openlocfilehash: 9c341b7fe479e241e780d8998dff4b107543ed29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d8ed8276c6a65df93d8cde9ace4dc753a160f0b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802422"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696224"
 ---
 # Start-AzRecoveryServicesAsrSwitchAppliance
 
 ## SYNOPSIS
-Memulai tindakan beralih alat untuk objek Site Recovery.
+Memulai tindakan beralih appliance untuk objek Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrswitchappliance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Start-AzRecoveryServicesAsrSwitchAppliance -Fabric <ASRFabric>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrSwitchAppliance** memulai proses peralihan alat untuk objek azure Site Recovery.
+Cmdlet **Start-AzRecoveryServicesAsrSwitchAppliance** memulai proses switch appliance untuk objek Azure Site Recovery.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ $currentJob = Start-AzRecoveryServicesAsrSwitchAppliance -Fabric $Fabric
  -ReplicationProtectedItem $RPI -TargetApplianceName $TargetApplianceName
 ```
 
-Memulai alat switch untuk item yang diproteksi replikasi tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai appliance switch untuk item yang dilindungi yang direplikasi yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -CredentialsToAccessVm
-Menentukan nama kredensial yang akan digunakan untuk mendorong penginstalan layanan Mobilitas pada mesin sumber jika diperlukan.
+Menentukan nama kredensial yang akan digunakan untuk mendorong penginstalan layanan Mobilitas pada komputer sumber jika diperlukan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item yang dilindungi replikasi ASR untuk dialihkan ke peralatan baru.
+Menentukan objek item yang dilindungi replikasi ASR untuk dialihkan ke appliance baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetApplianceName
-Menentukan nama alat yang akan digunakan untuk mereplikasi mesin ini.
+Menentukan nama appliance yang akan digunakan untuk mereplikasi komputer ini.
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -148,11 +151,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

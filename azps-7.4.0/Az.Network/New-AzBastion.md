@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
-ms.openlocfilehash: f44df1896f9cef2903cef81168e2a5fc511ef746
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 856c8210f844dbfb617d5c6480a0cccf1dcff44b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677248"
 ---
 # New-AzBastion
 
 ## SYNOPSIS
 Membuat sumber daya bastion.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ New-AzBastion -ResourceGroupName <String> -Name <String> -PublicIpAddressRgName 
 ```
 
 ## DESCRIPTION
-Membuat sumber daya bastion. Ini akan memerlukan Alamat Ip Publik dan VirtualNetwork. Harus ada subnet dengan nama AzureBastionSubnet dalam VirtualNetwork ini.Alamat Ip Pubik harus dibuat dengan Standar Sku.
+Membuat sumber daya bastion. Ini akan memerlukan Alamat IP Publik dan VirtualNetwork. Harus ada subnet dengan nama AzureBastionSubnet di VirtualNetwork ini. Alamat Ip Pubik harus dibuat dengan Standar Sku.
 
 ## EXAMPLES
 
@@ -132,7 +135,7 @@ Sku                  : {
 Scale Units          : 2
 ```
 Contoh ini membuat bastion yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama dengan bastion.
-Harus ada subnet dengan nama AzureBastionSubnet dalam vnet ini.
+Harus ada subnet dengan nama AzureBastionSubnet di vnet ini.
 Alamat Ip harus dibuat dengan Standar Sku.
 
 
@@ -219,13 +222,13 @@ Sku                  : {
                        }
 Scale Units          : 3
 ```
-Contoh ini membuat sumber daya BastionHost dengan Standar Sku dan 3 Unit Skala.
+Contoh ini membuat sumber daya BastionHost dengan Sku Standar dan 3 Unit Skala.
 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya bastion.
 
 ```yaml
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Alamat Ip publik Id sumber daya Azure untuk bastion.
+Id sumber daya Azure alamat IP publik untuk bastion.
 
 ```yaml
 Type: System.String
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressRgName
-Nama grup sumber daya alamat Ip publik untuk bastion.
+Nama grup sumber daya alamat IP publik untuk bastion.
 
 ```yaml
 Type: System.String
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The Bastion Sku Tier
+Tingkat Sku Bastion
 
 ```yaml
 Type: System.String
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -450,8 +453,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -466,7 +469,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -482,11 +485,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

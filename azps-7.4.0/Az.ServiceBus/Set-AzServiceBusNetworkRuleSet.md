@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: 0da45e55279a5eda1d40310bd23b56b53f7db64e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9936cbde0b68f25a08a3c5a618b34483f40dddee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739296"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688616"
 ---
 # Set-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
-Perbarui NetworkruleSet namespace yang diberikan dalam langganan Azure saat ini.
+Perbarui NetworkruleSet dari Namespace yang diberikan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzServiceBusNetworkRuleSet [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Perbarui NetwrokruleSet ruang nama tertentu dalam langganan Azure saat ini.
+Perbarui NetwrokruleSet dari Namespace yang diberikan di langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan -InputObject
+Memperbarui NetworkRuleSet menggunakan -InputObject
 
 
 ### Contoh 3
@@ -92,7 +95,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan -ResourceId ruang nama lainnya.
+Perbarui NetworkRuleSet menggunakan -ResourceId dari namespace lainnya.
 
 ## PARAMETERS
 
@@ -156,8 +159,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama ServiceBus.
+### -Name
+Nama Namespace ServiceBus.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya ruang nama
+ID Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -231,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
