@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: bb4b831854dfb991e0522a2086112d160280444c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e88d0232528256702cf94168f957c0a1ce7cbd22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056493"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624828"
 ---
 # Get-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Mendapatkan kumpulan data referensi dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+Mendapatkan himpunan data referensi dengan nama yang ditentukan di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName <String> -ResourceGrou
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzTimeSeriesInsightsReferenceDataSet -InputObject <ITimeSeriesInsightsIdenti
 ```
 
 ## DESCRIPTION
-Mendapatkan kumpulan data referensi dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+Mendapatkan himpunan data referensi dengan nama yang ditentukan di lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua kumpulan data referensi di bawah lingkungan tertentu
+### Contoh 1: Mencantumkan semua himpunan data referensi di bawah lingkungan yang ditentukan
 ```powershell
 Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -ResourceGroupName testgroup
 ```
@@ -53,9 +56,9 @@ eastus   dstest001 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 eastus   dstest002 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini mencantumkan semua kumpulan data referensi di bawah lingkungan yang ditentukan.
+Perintah ini mencantumkan semua himpunan data referensi di bawah lingkungan yang ditentukan.
 
-### Contoh 2: Mendapatkan kumpulan data referensi tertentu menurut nama
+### Contoh 2: Mendapatkan himpunan data referensi tertentu berdasarkan nama
 ```powershell
 Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -ResourceGroupName testgroup -ReferenceDataSetName dstest001
 ```
@@ -65,9 +68,9 @@ Location Name      Type
 eastus   dstest001 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini mendapatkan kumpulan data referensi tertentu.
+Perintah ini mendapatkan himpunan data referensi tertentu.
 
-### Contoh 3: Mendapatkan kumpulan data referensi tertentu menurut objek
+### Contoh 3: Mendapatkan himpunan data referensi tertentu menurut objek
 ```powershell
 $ds = Get-AzTimeSeriesInsightsReferenceDataSet -ResourceGroupName tsi-test-i01k5l -EnvironmentName tsi-envv8u56x -Name tsirdsqwufij 
 Get-AzTimeSeriesInsightsReferenceDataSet -InputObject $ds
@@ -78,7 +81,7 @@ Location Name         Type
 eastus2  tsirdsqwufij Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini mendapatkan kumpulan data referensi tertentu.
+Perintah ini mendapatkan himpunan data referensi tertentu.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data referensi Insights Time Series yang terkait dengan lingkungan tertentu.
+### -Name
+Nama himpunan data referensi Insights Time Series yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,9 +198,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
+  - `[ReferenceDataSetName <String>]`: Nama himpunan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 

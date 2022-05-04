@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
-ms.openlocfilehash: 622b85f8d10bca4bfa24a35466864fd0699fe583
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3487a837b1e44e47cf24fe9fe929af79921ac115
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575894"
 ---
 # Remove-AzSentinelAlertRule
 
 ## SYNOPSIS
 Menghapus Aturan Analitik (AlertRule)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +35,9 @@ Remove-AzSentinelAlertRule -InputObject <PSSentinelAlertRule> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSentinelAlertRule** menghapus Aturan Peringatan secara permanen dari ruang kerja tertentu.
-Anda dapat melewati objek **AlertRule** menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
-Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Cmdlet **Remove-AzSentinelAlertRule** menghapus Aturan Pemberitahuan secara permanen dari ruang kerja tertentu.
+Anda dapat meneruskan objek **AlertRule** dengan menggunakan operator alur, atau Anda dapat menentukan parameter yang diperlukan.
+Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Perintah ini menghapus Aturan Pemberitahuan dari ruang kerja.
 ## PARAMETERS
 
 ### -AlertRuleId
-Id Aturan Peringatan.
+Id Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -137,8 +140,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

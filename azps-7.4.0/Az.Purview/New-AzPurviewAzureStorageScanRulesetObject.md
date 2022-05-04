@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageScanRulesetObject.md
-ms.openlocfilehash: b9a88ec2ffba6802ada842e13e77ee9e49d5cfeb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fdb86674af0a4352b8c65684d56c965c8d06b953
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117891"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599144"
 ---
 # New-AzPurviewAzureStorageScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureStorageScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurestoragescanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

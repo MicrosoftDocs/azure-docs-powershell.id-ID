@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMBootDiagnosticsData.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMBootDiagnosticsData.md
-ms.openlocfilehash: 9100cda2d2d7dbcb1854cb7b1bda51d11852a82c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d43b32b78229e727300c7992a9fe1cc7e7d255b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066177"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598388"
 ---
 # Get-AzVMBootDiagnosticsData
 
 ## SYNOPSIS
-Mendapatkan data diagnostik boot untuk mesin virtual.
+Mendapatkan data diagnostik boot untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmbootdiagnosticsdata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,18 +36,18 @@ Get-AzVMBootDiagnosticsData [-ResourceGroupName] <String> [-Name] <String> [-Lin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMBootDiagnosticsData** mendapatkan data diagnostik boot untuk mesin virtual.
+Cmdlet **Get-AzVMBootDiagnosticsData** mendapatkan data diagnostik boot untuk komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan data diagnostik boot
+### Contoh 1: Mendapatkan data diagnostik boot
 ```powershell
 Get-AzVMBootDiagnosticsData -ResourceGroupName "ResourceGroup11" -Name "ContosoVM07" -Windows -LocalPath "C:\Contoso\BootDiagnostics"
 ```
 
-Perintah ini mendapatkan data diagnostik boot untuk mesin virtual bernama ContosoVM07.
-Mesin virtual ini menjalankan sistem operasi Windows.
-Perintah menyimpan data dalam jalur lokal tertentu.
+Perintah ini mendapatkan data diagnostik boot untuk komputer virtual bernama ContosoVM07.
+Komputer virtual ini menjalankan sistem operasi Windows.
+Perintah menyimpan data di jalur lokal yang ditentukan.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa mesin virtual menjalankan sistem operasi Linux.
+Menunjukkan bahwa komputer virtual menjalankan sistem operasi Linux.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama mesin virtual tempat cmdlet ini mendapatkan data diagnostik.
+### -Name
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan data diagnostik.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa mesin virtual menjalankan sistem operasi Windows.
+Menunjukkan bahwa komputer virtual menjalankan sistem operasi Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

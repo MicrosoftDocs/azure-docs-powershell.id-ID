@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
-ms.openlocfilehash: 35ac1d94e1aa37a8583dee0d43ed80975be8f573
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7782bbd049b8d9efd398fa588c034d5378a3fc01
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676026"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599288"
 ---
 # Invoke-AzOperationalInsightsQuery
 
 ## SYNOPSIS
 Mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/invoke-azoperationalinsightsquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,8 +37,8 @@ Invoke-AzOperationalInsightsQuery -Workspace <PSWorkspace> -Query <String> [-Tim
 
 ## DESCRIPTION
 Cmdlet **Invoke-AzOperationalInsightsQuery** mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
-Anda dapat mengakses status pencarian dalam properti Metadata dari objek yang dikembalikan.
-Jika status tertunda, pencarian belum selesai, dan hasilnya akan berasal dari arsip.
+Anda dapat mengakses status pencarian di properti Metadata dari objek yang dikembalikan.
+Jika status tertunda, maka pencarian belum selesai, dan hasilnya akan berasal dari arsip.
 Anda dapat mengambil hasil pencarian dari properti Nilai dari objek yang dikembalikan.
 Silakan periksa detail batas kueri umum di sini: https://docs.microsoft.com/azure/azure-monitor/service-limits#log-queries-and-language.
 
@@ -47,17 +50,17 @@ $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c
 $queryResults.Results
 ```
 
-Setelah diminta, $queryResults.Results akan berisi semua baris yang dihasilkan dari kueri Anda.
+Setelah dipanggil, $queryResults.Results akan berisi semua baris yang dihasilkan dari kueri Anda.
 
-### Contoh 2: Convert $results. Hasil IEnumerable ke array
+### Contoh 2: Konversi $results. Hasil IEnumerable ke array
 ```powershell
 $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10"
 $resultsArray = [System.Linq.Enumerable]::ToArray($queryResults.Results)
 ```
 
-Beberapa kueri dapat mengakibatkan kumpulan data yang sangat besar dikembalikan. Karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika Anda lebih suka memiliki array hasil, Anda bisa menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable menjadi array.
+Beberapa kueri dapat mengakibatkan himpunan data yang sangat besar dikembalikan. Karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika Anda lebih suka memiliki array hasil, Anda dapat menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable ke array.
 
-### Contoh 3: Mendapatkan hasil pencarian menggunakan kueri melalui jangka waktu tertentu
+### Contoh 3: Mendapatkan hasil pencarian menggunakan kueri selama jangka waktu tertentu
 ```powershell
 $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -Timespan (New-TimeSpan -Hours 24)
 $queryResults.Results
@@ -65,7 +68,7 @@ $queryResults.Results
 
 Hasil dari kueri ini akan dibatasi hingga 24 jam terakhir.
 
-### Contoh 4: Sertakan statistik & render dalam hasil kueri
+### Contoh 4: Menyertakan statistik & render dalam hasil kueri
 ```powershell
 $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -IncludeRender -IncludeStatistics
 $queryResults.Results
@@ -76,12 +79,12 @@ $queryResults.Statistics
 ...
 ```
 
-Lihat [https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions](https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions) detail tentang informasi render dan statistik.
+Lihat [https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions](https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions) untuk detail tentang info render dan statistik.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeRender
-Jika ditentukan, penyajian informasi untuk kueri metrik akan disertakan dalam respons.
+Jika ditentukan, informasi penyajian untuk kueri metrik akan disertakan dalam respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
-Kueri untuk dijalankan.
+### -Kueri
+Kueri yang akan dijalankan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Meletakkan batas atas pada jumlah waktu yang akan dihabiskan server untuk memproses kueri.
+Menempatkan batas atas pada jumlah waktu yang akan dihabiskan server untuk memproses kueri.
 Melihat: https://dev.loganalytics.io/documentation/Using-the-API/Timeouts
 
 ```yaml
@@ -186,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Ruang kerja
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

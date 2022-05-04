@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
-ms.openlocfilehash: 449f4b04130766a900be15228f6dabe5bb993350
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c29390decedb385e81d20d6c9f6ab1fc40c7990d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316341"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599504"
 ---
 # New-AzFunctionAppPlan
 
 ## SYNOPSIS
 Membuat paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/new-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat paket layanan aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat paket aplikasi premium Windows di Eropa Barat dengan kemampuan ledakan hingga 10 instans.
+### Contoh 1: Buat paket aplikasi premium Windows di Eropa Barat dengan kemampuan burst out hingga 10 instans.
 ```powershell
 New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                       -Name MyPremiumPlan `
@@ -41,7 +44,7 @@ New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                       -WorkerType Windows
 ```
 
-Perintah ini membuat paket aplikasi premium Windows di Eropa Barat dengan kemampuan ledakan hingga 10 instans.
+Perintah ini membuat paket aplikasi premium Windows di Eropa Barat dengan kemampuan burst out hingga 10 instans.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk paket pemakaian.
+Lokasi untuk paket konsumsi.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama paket App Service.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkerType
-Tipe pekerja untuk rencana tersebut.
+Jenis pekerja untuk paket tersebut.
 Input yang valid adalah: Windows atau Linux.
 
 ```yaml
@@ -227,8 +230,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

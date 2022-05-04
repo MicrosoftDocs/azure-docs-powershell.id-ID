@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSkuPreview.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSkuPreview.md
-ms.openlocfilehash: c6bf13dc599332e98424badbc6595b7573966ecf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1abbdd9a6fa389a92e4db7a9c152ee8c8b9e7719
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004689"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587970"
 ---
 # New-AzConnectedNetworkVendorSkuPreview
 
 ## SYNOPSIS
 Membuat atau memperbarui informasi pratinjau sku vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkvendorskupreview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat atau memperbarui informasi pratinjau sku vendor.
 
 ## EXAMPLES
 
-### Contoh 1: New-AzConnectedNetworkVendorSkuPreview menggunakan langganan pratinjau, nama sku, nama vendor dan langganan
+### Contoh 1: New-AzConnectedNetworkVendorSkuPreview menggunakan langganan pratinjau, nama sku, nama vendor, dan langganan
 ```powershell
 PS C:\> New-AzConnectedNetworkVendorSkuPreview -PreviewSubscription xxxxx-00000-xxxxx-00000 -SkuName mySku -VendorName myVendor -SubscriptionId xxxxx-22222-xxxxx-22222
 
@@ -48,12 +51,12 @@ Type                         : microsoft.hybridnetwork/vendors/vendorskus/previe
 
 ```
 
-Membuat langganan pratinjau untuk langganan xxxxx-00000-xxxxx-00000 sku mySku vendor dengan nama vendor myVendor, yang diizinkan untuk menyebarkan fungsi jaringan.
+Membuat langganan pratinjau untuk langganan xxxxx-00000-xxxxx-00000 dari vendor sku mySku dengan nama vendor myVendor, yang diizinkan untuk menyebarkan fungsi jaringan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama vendor sku.
+Nama sku vendor.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

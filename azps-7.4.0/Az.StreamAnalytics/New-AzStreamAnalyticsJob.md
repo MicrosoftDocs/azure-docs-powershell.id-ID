@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 4ba4016daff64fd0eba9b79e416b4bc6f3c652c8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b91930b3262a27cf5c032df4569ac121cb3f66b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222849"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588456"
 ---
 # New-AzStreamAnalyticsJob
 
 ## SYNOPSIS
-Membuat pekerjaan streaming atau menggantikan pekerjaan streaming yang sudah ada.
+Membuat pekerjaan streaming atau mengganti pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ New-AzStreamAnalyticsJob -Name <String> -ResourceGroupName <String> -Location <S
 ```
 
 ## DESCRIPTION
-Membuat pekerjaan streaming atau menggantikan pekerjaan streaming yang sudah ada.
+Membuat pekerjaan streaming atau mengganti pekerjaan streaming yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat pekerjaan analitik stream
+### Contoh 1: Membuat pekerjaan analisis aliran
 ```powershell
 New-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-02-pwsh -Location westcentralus -SkuName Standard
 ```
@@ -43,12 +46,12 @@ Location        Name          Type                                    ETag
 West Central US sajob-02-pwsh Microsoft.StreamAnalytics/streamingjobs a687c464-82ce-45cc-b88a-1f72ba2b1dc2
 ```
 
-Perintah ini membuat pekerjaan analitik streaming.
+Perintah ini membuat pekerjaan analisis aliran.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KompatibilitasLevel
+### -CompatibilityLevel
 Mengontrol perilaku runtime tertentu dari pekerjaan streaming.
 
 ```yaml
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 
 ### -DataLocale
 Lokal data dari pekerjaan analitik stream.
-Nilai harus berupa nama .NET Culture yang didukung dari set https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx.
-Default ke 'id-ID' jika tidak ada yang ditentukan.
+Nilai harus menjadi nama .NET Culture yang didukung dari set https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx.
+Tentukan default ke 'en-US' jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -125,9 +128,9 @@ Accept wildcard characters: False
 ```
 
 ### -EventsLateArrivalMaxDelayInSecond
-Penundaan maksimum yang dapat ditoleransi dalam detik di mana kejadian yang tiba terlambat dapat disertakan.
+Maksimum penundaan yang dapat ditoleransi dalam hitungan detik agar peristiwa yang datang terlambat dapat disertakan.
 Rentang yang didukung adalah -1 hingga 1814399 (20.23:59:59 hari) dan -1 digunakan untuk menentukan tunggu tanpa batas waktu.
-Jika properti tidak ada, properti diinterpretasikan memiliki nilai -1.
+Jika properti tidak ada, peristiwa dianggap memiliki nilai -1.
 
 ```yaml
 Type: System.Int32
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventsOutOfOrderMaxDelayInSecond
-Penundaan maksimum yang dapat ditoleransi dalam detik di mana kejadian di luar urutan dapat disesuaikan agar kembali sesuai urutan.
+Penundaan maksimum yang dapat ditoleransi dalam hitungan detik agar peristiwa yang keluar dari urutan dapat disesuaikan kembali ke dalam urutan.
 
 ```yaml
 Type: System.Int32
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventsOutOfOrderPolicy
-Menunjukkan kebijakan yang akan diterapkan pada kejadian yang tiba di luar urutan dalam aliran kejadian input.
+Menandakan kebijakan untuk diterapkan ke peristiwa yang sampai di luar urutan dalam aliran peristiwa input.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Support.EventsOutOfOrderPolicy
@@ -173,8 +176,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag dari pekerjaan streaming.
-Hilangkan nilai ini untuk selalu menimpa kumpulan rekaman saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Hilangkan nilai ini untuk selalu menimpa kumpulan catatan saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -189,8 +192,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk mengizinkan pekerjaan streaming baru dibuat, tetapi untuk mencegah pembaruan kumpulan rekaman yang sudah ada.
-Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
+Atur ke '*' untuk mengizinkan pekerjaan streaming baru dibuat, tetapi untuk mencegah pembaruan kumpulan catatan yang ada.
+Nilai lain akan menghasilkan respons 412 Pra-kondisi Gagal.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan streaming.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputErrorPolicy
-Menunjukkan kebijakan untuk diterapkan pada kejadian yang tiba di output dan tidak dapat ditulis ke penyimpanan eksternal karena salah bentuk (nilai kolom hilang, nilai kolom dengan tipe atau ukuran yang salah).
+Menandakan kebijakan untuk diterapkan ke peristiwa yang mencapai output dan tidak dapat ditulis ke penyimpanan eksternal karena cacat (nilai kolom hilang, nilai kolom dengan jenis atau ukuran yang salah).
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Support.OutputErrorPolicy
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU.
+Nama SKUnya.
 Diperlukan pada permintaan PUT (CreateOrReplace).
 
 ```yaml
@@ -326,8 +329,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

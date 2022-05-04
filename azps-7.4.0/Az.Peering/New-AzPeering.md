@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
-ms.openlocfilehash: c79c02ff408a8ab30ad0fec677d8f14bddcb2932
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70c65177c5233d6ca0a7f4709319f3045ca53ecf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311877"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589122"
 ---
 # New-AzPeering
 
 ## SYNOPSIS
 Membuat Sumber Daya ARM Peering baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ New-AzPeering [-ResourceGroupName] <String> [-Name] <String> [-PeeringLocation] 
 ```
 
 ## DESCRIPTION
-Membuat ARM Peering untuk langganan. Lihat [New-AzPeeringDirectConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringdirectconnectionobject) atau [New-AzPeeringExchangeConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi selengkapnya tentang membuat objek koneksi.
+Membuat Peering ARM untuk langganan. Lihat [New-AzPeeringDirectConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringdirectconnectionobject) atau [New-AzPeeringExchangeConnectionObject](https://docs.microsoft.com/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi selengkapnya tentang membuat objek koneksi.
 
 ## EXAMPLES
 
@@ -72,9 +75,9 @@ Type                 : Microsoft.Peering/peerings
 Tags                 : {}
 ```
 
-Buat Direct Peering baru dengan koneksi tunggal di fasilitas Seattle menggunakan PeerAsn 65000
+Buat Direct Peering baru dengan satu koneksi di fasilitas Seattle menggunakan PeerAsn 65000
 
-### Membuat Peering Exchange Baru
+### Buat Peering Exchange Baru
 ```powershell
 #Gets the ASN
 $asn = Get-AzPeerAsn -PeerName Contoso
@@ -98,7 +101,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Membuat peering exchange baru
+Membuat peering pertukaran baru
 
 ### Mengonversi Peering Warisan ke Peering ARM
 ```powershell
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftNetwork
-Pilih jaringan Microsoft yang ingin Anda ajakan rekan.
+Pilih jaringan Microsoft yang ingin Anda rekankan.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Kawasan Azure.
+Lokasi Fisik Berbeda dari Wilayah Azure.
 Gunakan Get-AzPeeringLocation -Kind \<kind\> gunakan Nama kota sebagai kunci.
 
 ```yaml
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Layanan Peering Microsoft.
+Tag yang akan dikaitkan dengan Microsoft Peering Service.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -329,8 +332,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

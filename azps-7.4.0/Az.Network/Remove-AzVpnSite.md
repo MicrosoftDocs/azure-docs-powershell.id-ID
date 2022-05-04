@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnSite.md
-ms.openlocfilehash: 1bbdd5e5d41e91242a46641e384d59072fd75281
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9dbd854569bfdc016ae96eed824acad84429baad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804654"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589284"
 ---
 # Remove-AzVpnSite
 
 ## SYNOPSIS
 Menghapus sumber daya Azure VpnSite.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,11 +57,11 @@ New-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite" -Location "West US
 Remove-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite"
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN di AS Barat dalam grup sumber daya "testRG" di Azure. 
+Hal di atas akan membuat grup sumber daya, Virtual WAN di US Barat dalam grup sumber daya "testRG" di Azure. 
 
 Kemudian membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
-Setelah situs dibuat, situs langsung dihapus menggunakan perintah Remove-AzVpnSite.
+Setelah situs dibuat, situs segera dihapus menggunakan perintah Remove-AzVpnSite.
 
 ### Contoh 2
 
@@ -72,7 +75,7 @@ New-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite" -Location "West US
 Get-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite" | Remove-AzVpnSite
 ```
 
-Sama seperti contoh 1 tetapi di sini penghapusan terjadi menggunakan output piped dari Get-AzVpnSite.
+Sama seperti contoh 1 tetapi di sini penghapusan terjadi menggunakan output yang disalurkan dari Get-AzVpnSite.
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek vpnSitus yang akan dihapus.
+Objek vpnSite yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnSite
@@ -121,8 +124,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama vpnSitus.
+### -Name
+Nama vpnSite.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk vpnSitus untuk dihapus.
+ID sumber daya Azure untuk vpnSite yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Situs Microsoft.Azure.Commands.Network.Models.PSVpnSite
+### Microsoft.Azure.Commands.Network.Models.PSVpnSite
 
 ### System.String
 
@@ -228,8 +231,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Situs Get-AzVpnSite](./Get-AzVpnSite.md)
+[Get-AzVpnSite](./Get-AzVpnSite.md)
 
-[Situs Baru-AzVpnSite](./New-AzVpnSite.md)
+[New-AzVpnSite](./New-AzVpnSite.md)
 
-[Situs Pembaruan-AzVpnSite](./Update-AzVpnSite.md)
+[Update-AzVpnSite](./Update-AzVpnSite.md)

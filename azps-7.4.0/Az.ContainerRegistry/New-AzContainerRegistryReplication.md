@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryReplication.md
-ms.openlocfilehash: cec26e569a08805d50e34e23f67988327178d9af
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77d989b0f2894fb763226301b57ca68b5a6abb23
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126891"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587952"
 ---
 # New-AzContainerRegistryReplication
 
 ## SYNOPSIS
 Membuat replikasi registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistryreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzContainerRegistryReplication [-ResourceGroupName] <String> [-RegistryName]
  [<CommonParameters>]
 ```
 
-### RegistriObjectParameterSet
+### RegistryObjectParameterSet
 ```
 New-AzContainerRegistryReplication -Registry <PSContainerRegistry> -Location <String> [-Name <String>]
  [-Tag <Hashtable>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -43,7 +46,7 @@ Cmdlet New-AzContainerRegistryReplication membuat replikasi registri kontainer b
 
 ## EXAMPLES
 
-### Contoh 1: Membuat replikasi registri kontainer baru.
+### Contoh 1: Buat replikasi registri kontainer baru.
 ```powershell
 New-AzContainerRegistryReplication -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name replication001 -Location 'west us' -Tag @{tagName='MyTag'}
 ```
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Registri Kontainer.
+Lokasi Container Registry.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Replikasi Registri Kontainer.
+### -Name
+Nama Replikasi Container Registry.
 Default ke nama lokasi.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Registri
-Objek Registri Kontainer.
+Objek Container Registry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer.
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Registri Kontainer.
+Tag Container Registry.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

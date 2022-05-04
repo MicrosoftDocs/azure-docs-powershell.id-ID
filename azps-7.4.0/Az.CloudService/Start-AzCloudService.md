@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/sta
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Start-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Start-AzCloudService.md
-ms.openlocfilehash: 8a3cdd5664bab98fe947e5b92ad76783db0e71fe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 08e187136c3dae7a25cf5738ebdff7a685901fc1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687492"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625728"
 ---
 # Start-AzCloudService
 
 ## SYNOPSIS
 Memulai layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/start-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 

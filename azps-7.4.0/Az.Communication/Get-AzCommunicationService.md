@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationService.md
-ms.openlocfilehash: b597b3dd0fa43ad52e2fc8534b54150610c0ebc7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9a0cafbd524425cb60cb08a780dab91726534a3c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319617"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634166"
 ---
 # Get-AzCommunicationService
 
 ## SYNOPSIS
 Dapatkan CommunicationService dan propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.communication/get-azcommunicationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan CommunicationService dan propertinya.
 Get-AzCommunicationService [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzCommunicationService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Dapatkan CommunicationService dan propertinya.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan Layanan Komunikasi yang sudah ada untuk Langganan
+### Contoh 1: Mencantumkan CommunicationServices yang ada untuk Langganan
 ```powershell
 Get-AzCommunicationService -SubscriptionId 73fc3592-3cef-4300-5e19-8d18b65ce0e8
 ```
@@ -63,7 +66,7 @@ global   ContosoResource5   Microsoft.Communication/communicationServices
 
 Mengembalikan daftar semua sumber daya ACS di bawah langganan tersebut.
 
-### Contoh 2: Dapatkan informasi tentang sumber daya Azure Communication tertentu
+### Contoh 2: Mendapatkan informasi tentang sumber daya Azure Communication tertentu
 ```powershell
 Get-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1
 ```
@@ -74,7 +77,7 @@ Location Name           Type                                          AzureAsync
 Global   ContosoAcsResource1 Microsoft.Communication/communicationServices
 ```
 
-Mengembalikan informasi tentang sumber daya ACS, jika ditemukan satu parameter yang cocok.
+Mengembalikan informasi tentang sumber daya ACS, jika satu parameter yang disediakan cocok ditemukan.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya CommunicationService.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -177,7 +180,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

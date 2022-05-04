@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreVirtualNetworkRule.md
-ms.openlocfilehash: a1660ebb3d595afa86dfa9b12052a3b1ce730be8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 100302b33a7faa5ec6f7b4ec1d2eb33710b5cd38
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124983"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589716"
 ---
 # Remove-AzDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
-Menghapus aturan jaringan virtual tertentu dalam Penyimpanan Data Lake tertentu.
+Menghapus aturan jaringan virtual yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzDataLakeStoreVirtualNetworkRule [-Account] <String> -Name <String> [-Pa
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataLakeStoreVirtualNetworkRule** menghapus aturan jaringan virtual tertentu dalam Data Lake Store yang ditentukan.
+Cmdlet **Remove-AzDataLakeStoreVirtualNetworkRule** menghapus aturan jaringan virtual yang ditentukan di Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan jaringan virtual.
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

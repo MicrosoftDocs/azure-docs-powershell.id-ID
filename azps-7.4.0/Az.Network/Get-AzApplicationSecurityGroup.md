@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationSecurityGroup.md
-ms.openlocfilehash: b05a8efd7b475dd32e74aadfa0d4082657a47084
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2bf3c2ad638c4d4f3791046493c77244743f9454
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615632"
 ---
 # Get-AzApplicationSecurityGroup
 
 ## SYNOPSIS
 Mendapatkan grup keamanan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationsecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzApplicationSecurityGroup** mendapatkan grup keamanan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil semua grup keamanan aplikasi.
+### Contoh 1: Ambil semua grup keamanan aplikasi.
 ```powershell
 Get-AzApplicationSecurityGroup
 ```
@@ -95,7 +98,7 @@ Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resource
 
 Perintah di atas mengembalikan semua grup keamanan aplikasi yang termasuk dalam grup sumber daya MyResourceGroup.
 
-### Contoh 3: Mengambil grup keamanan aplikasi tertentu.
+### Contoh 3: Mengambil kelompok keamanan aplikasi tertentu.
 ```powershell
 Get-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name MyApplicationSecurityGroup1
 ```
@@ -166,7 +169,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

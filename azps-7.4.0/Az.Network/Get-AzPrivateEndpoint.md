@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateEndpoint.md
-ms.openlocfilehash: 4a53e43638885497ea18ff79aa1386aab66d3720
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77f7af90ae7da465dd70d81e8e691b248a02c367
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743742"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606848"
 ---
 # Get-AzPrivateEndpoint
 
 ## SYNOPSIS
-Dapatkan titik akhir pribadi
+Mendapatkan titik akhir privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPrivateEndpoint [-Name <String>] [-ResourceGroupName <String>] [-DefaultPr
  [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzPrivateEndpoint -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -75,9 +78,9 @@ ManualPrivateLinkServiceConnections : [
                                       ]
 ```
 
-Perintah ini mendapatkan titik akhir privat bernama MyPrivateEndpoint1 dalam grup sumber daya TestResourceGroup
+Perintah ini mendapatkan titik akhir privat bernama MyPrivateEndpoint1 di grup sumber daya TestResourceGroup
 
-### Contoh 2: Mencantumkan semua titik akhir privat dalam ResourceGroup
+### Contoh 2: Mencantumkan semua titik akhir privat di ResourceGroup
 ```powershell
 Get-AzPrivateEndpoint -ResourceGroupName TestResourceGroup
 ```
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -221,4 +224,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzPrivateEndpoint](./New-AzPrivateEndpoint.md)
 
-[Hapus-AzPrivateEndpoint](./Remove-AzPrivateEndpoint.md)
+[Remove-AzPrivateEndpoint](./Remove-AzPrivateEndpoint.md)

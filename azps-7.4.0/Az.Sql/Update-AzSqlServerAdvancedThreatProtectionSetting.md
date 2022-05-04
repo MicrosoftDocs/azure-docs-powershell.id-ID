@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Update-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: a8a54b31954d70a5df31390d736a3c9e38615a05
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ab0670d80ef75e467b839df1919eb82c76aab4d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798984"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588726"
 ---
 # Update-AzSqlServerAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Mengatur pengaturan proteksi ancaman tingkat lanjut pada server.
+Mengatur pengaturan perlindungan ancaman tingkat lanjut pada server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlserveradvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,22 +31,22 @@ Update-AzSqlServerAdvancedThreatProtectionSetting [-PassThru] [-NotificationReci
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlServerAdvancedThreatProtectionSetting** mengatur pengaturan perlindungan ancaman tingkat lanjut di server Azure SQL.
+**Cmdlet Update-AzSqlServerAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada server Azure SQL.
 Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada server, pengaturan audit harus diaktifkan di server tersebut.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName* dan ServerName untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur pengaturan proteksi ancaman tingkat lanjut untuk database
+### Contoh 1: Mengatur pengaturan perlindungan ancaman tingkat lanjut untuk database
 ```powershell
 Update-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGroup11" -ServerName "Server01" -NotificationRecipientsEmails "admin01@contoso.com;secadmin@contoso.com" -EmailAdmins $False -ExcludedDetectionType "Sql_Injection_Vulnerability","SQL_Injection" -StorageAccountName "mystorageAccount"
 ```
 
-Perintah ini mengatur pengaturan proteksi ancaman tingkat lanjut untuk server bernama Server01.
+Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk server bernama Server01.
 
 ### Contoh 2
 
-Mengatur pengaturan proteksi ancaman tingkat lanjut pada server. (autogenerasi)
+Mengatur pengaturan perlindungan ancaman tingkat lanjut pada server. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example -->
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAdmins
-Menentukan apakah pengaturan proteksi ancaman tingkat lanjut menghubungi administrator dengan menggunakan email.
+Menentukan apakah pengaturan perlindungan ancaman tingkat lanjut menghubungi administrator dengan menggunakan email.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -83,12 +86,12 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Menentukan array tipe deteksi untuk dikecualikan dari pengaturan.
+Menentukan array jenis deteksi untuk dikecualikan dari pengaturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql_Injection
 - Sql_Injection_Vulnerability
 - Access_Anomaly
-- Tidak
+- Tidak ada
 
 ```yaml
 Type: System.String[]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Jumlah hari penyimpanan untuk log audit
+Jumlah hari retensi untuk log audit
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan yang akan digunakan. Wildcard tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang ditetapkan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut database. Jika ini pertama kalinya pengaturan deteksi ancaman database ditentukan dan parameter ini tidak disediakan, cmdlet akan gagal.
+Menentukan nama akun penyimpanan yang akan digunakan. Kartubebas tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang didefinisikan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut dari database. Jika ini pertama kalinya pengaturan deteksi ancaman database ditentukan dan parameter ini tidak disediakan, cmdlet akan gagal.
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

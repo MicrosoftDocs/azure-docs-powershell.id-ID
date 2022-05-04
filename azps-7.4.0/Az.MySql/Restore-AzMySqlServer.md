@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restore-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restore-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restore-AzMySqlServer.md
-ms.openlocfilehash: 10d923773699aabe8ffeb7a3241716798a1e5b20
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b542bf9dbfe2c4f522c41f06132a89c466e5de8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939817"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606974"
 ---
 # Restore-AzMySqlServer
 
 ## SYNOPSIS
-Memulihkan server dari cadangan yang sudah ada
+Memulihkan server dari cadangan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/restore-azmysqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Restore-AzMySqlServer -Name <String> -ResourceGroupName <String> -InputObject <I
 ```
 
 ## DESCRIPTION
-Memulihkan server dari cadangan yang sudah ada
+Memulihkan server dari cadangan yang ada
 
 ## EXAMPLES
 
-### Contoh 1: Restore MySql server using GeoReplica Restore
+### Contoh 1: Memulihkan server MySql menggunakan Pemulihan GeoReplika
 ```powershell
 Get-AzMySqlServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test-replica | Restore-AzMySqlServer -Name mysql-test -ResourceGroupName PowershellMySqlTest -UseGeoRestore 
 ```
@@ -50,9 +53,9 @@ Name          Location AdministratorLogin Version StorageProfileStorageMb SkuNam
 mysql-test-11 eastus   mysql_test         5.7     10240                   GP_Gen5_4 GeneralPurpose Disabled
 ```
 
-Cmdlet ini memulihkan server MySql menggunakan Pemulihan GeoReplica.
+Cmdlet ini memulihkan server MySql menggunakan Pemulihan GeoReplika.
 
-### Contoh 2: Pulihkan server MySql menggunakan PointInTime Restore
+### Contoh 2: Memulihkan server MySql menggunakan Pemulihan PointInTime
 ```powershell
 $restorePointInTime = (Get-Date).AddMinutes(-10)
 Get-AzMySqlServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test | Restore-AzMySqlServer -Name mysql-test-restore -ResourceGroupName PowershellMySqlTest -RestorePointInTime $restorePointInTime -UsePointInTimeRestore
@@ -64,7 +67,7 @@ Name               Location AdministratorLogin Version StorageProfileStorageMb S
 mysql-test-restore eastus   mysql_test         5.7     10240                   GP_Gen5_4 GeneralPurpose Disabled
 ```
 
-Cmdlet ini memulihkan server MySql menggunakan PointInTime Restore.
+Cmdlet ini memulihkan server MySql menggunakan Pemulihan PointInTime.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Objek server sumber untuk dipulihkan.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IServer
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat sumber daya berada.
+Lokasi sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointInTime
-Lokasi tempat sumber daya berada.
+Lokasi sumber daya berada.
 
 ```yaml
 Type: System.DateTime
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Metadata khusus aplikasi dalam bentuk pasangan nilai kunci.
+Metadata khusus aplikasi dalam bentuk pasangan kunci-nilai.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePointInTimeRestore
-Menggunakan mode PointInTime untuk memulihkan
+Gunakan mode PointInTime untuk memulihkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,8 +267,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -316,29 +319,29 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IServer>: Objek server sumber untuk dipulihkan.
-  - `Location <String>`: Lokasi geografis tempat sumber daya tinggal
+  - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan ketika server sedang dibuat (dan diperlukan untuk pembuatan).
   - `[EarliestRestoreDate <DateTime?>]`: Waktu pembuatan titik pemulihan paling awal (format ISO8601)
   - `[FullyQualifiedDomainName <String>]`: Nama domain server yang sepenuhnya memenuhi syarat.
-  - `[IdentityType <IdentityType?>]`: Tipe identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory untuk sumber daya secara otomatis.
+  - `[IdentityType <IdentityType?>]`: Jenis identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory untuk sumber daya secara otomatis.
   - `[InfrastructureEncryption <InfrastructureEncryption?>]`: Status memperlihatkan apakah enkripsi infrastruktur yang diaktifkan server.
   - `[MasterServerId <String>]`: Id server master dari server replika.
   - `[MinimalTlsVersion <MinimalTlsVersionEnum?>]`: Terapkan versi Tls minimal untuk server.
-  - `[PublicNetworkAccess <PublicNetworkAccessEnum?>]`: Apakah akses jaringan publik diperbolehkan atau tidak untuk server ini. Nilai bersifat opsional tetapi jika diteruskan, harus 'Diaktifkan' atau 'Dinonaktifkan'
+  - `[PublicNetworkAccess <PublicNetworkAccessEnum?>]`: Apakah akses jaringan publik diizinkan untuk server ini atau tidak. Nilai bersifat opsional tetapi jika diteruskan, harus 'Diaktifkan' atau 'Dinonaktifkan'
   - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang dapat dimiliki server master.
   - `[ReplicationRole <String>]`: Peran replikasi server.
-  - `[SkuCapacity <Int32?>]`: Kapasitas peningkatan/keluar skala, mewakili unit komputasi server.
+  - `[SkuCapacity <Int32?>]`: Kapasitas peningkatan/peluasan skala, mewakili unit komputasi server.
   - `[SkuFamily <String>]`: Keluarga perangkat keras.
-  - `[SkuName <String>]`: Nama sku, biasanya, tier + family + cores, misalnya B_Gen4_1, GP_Gen5_8.
-  - `[SkuSize <String>]`: Kode ukuran, yang akan diinterpretasikan oleh sumber daya yang sesuai.
+  - `[SkuName <String>]`: Nama sku, biasanya, tingkat + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+  - `[SkuSize <String>]`: Kode ukuran, yang akan ditafsirkan oleh sumber daya yang sesuai.
   - `[SkuTier <SkuTier?>]`: Tingkat SKU tertentu, misalnya Dasar.
-  - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penerapan ssl atau tidak saat tersambung ke server.
-  - `[StorageProfileBackupRetentionDay <Int32?>]`: Mencadangkan hari penyimpanan untuk server.
-  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundant atau tidak untuk cadangan server.
+  - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penegakan ssl atau tidak saat terhubung ke server.
+  - `[StorageProfileBackupRetentionDay <Int32?>]`: Hari retensi cadangan untuk server.
+  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundan atau tidak untuk pencadangan server.
   - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Pertumbuhan Otomatis.
-  - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maksimal yang diperbolehkan untuk server.
+  - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maks yang diizinkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.
 

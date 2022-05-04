@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMNetworkInterface.md
-ms.openlocfilehash: 1342722b9bccfaee5186a51f4cddb73c6437fc8c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bcf2303378490b8c6c4d24d85da412703807d61e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172521"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633734"
 ---
 # Add-AzVMNetworkInterface
 
 ## SYNOPSIS
-Menambahkan antarmuka jaringan ke mesin virtual.
+Menambahkan antarmuka jaringan ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmnetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,32 +37,32 @@ Add-AzVMNetworkInterface [-VM] <PSVirtualMachine>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVMNetworkInterface** menambahkan antarmuka jaringan ke mesin virtual.
-Anda dapat menambahkan antarmuka saat membuat mesin virtual atau menambahkannya ke mesin virtual yang sudah ada.
+Cmdlet **Add-AzVMNetworkInterface** menambahkan antarmuka jaringan ke komputer virtual.
+Anda dapat menambahkan antarmuka saat membuat komputer virtual atau menambahkannya ke komputer virtual yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan antarmuka jaringan ke mesin virtual baru
+### Contoh 1: Menambahkan antarmuka jaringan ke komputer virtual baru
 ```powershell
 $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1"
 Add-AzVMNetworkInterface -VM $VirtualMachine -Id "/subscriptions/46fc8ea4-2de6-4179-8ab1-365da4121af4/resourceGroups/contoso/providers/Microsoft.Network/networkInterfaces/sshNIC"
 ```
 
-Perintah pertama membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Perintah kedua menambahkan antarmuka jaringan ke mesin virtual yang disimpan di $VirtualMachine.
+Perintah pertama membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Perintah kedua menambahkan antarmuka jaringan ke komputer virtual yang disimpan di $VirtualMachine.
 
-### Contoh 2: Menambahkan antarmuka jaringan ke mesin virtual yang sudah ada
+### Contoh 2: Menambahkan antarmuka jaringan ke komputer virtual yang ada
 ```powershell
 $VirtualMachine = Get-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 Add-AzVMNetworkInterface -VM $VirtualMachine -Id "/subscriptions/46fc8ea4-2de6-4179-8ab1-365da4121af4/resourceGroups/contoso/providers/Microsoft.Network/networkInterfaces/sshNIC"
 Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dengan menggunakan cmdlet **Get-AzVM** .
-Perintah menyimpan mesin virtual dalam variabel $VirtualMachine.
-Perintah kedua menambahkan antarmuka jaringan ke mesin virtual yang disimpan di $VirtualMachine.
-Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine di ResourceGroup11.
+Perintah pertama mendapatkan komputer virtual bernama VirtualMachine07 dengan menggunakan cmdlet **Get-AzVM** .
+Perintah menyimpan komputer virtual dalam variabel $VirtualMachine.
+Perintah kedua menambahkan antarmuka jaringan ke komputer virtual yang disimpan di $VirtualMachine.
+Perintah akhir memperbarui status komputer virtual yang disimpan di $VirtualMachine di ResourceGroup11.
 
 ## PARAMETERS
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteOption
-Menentukan opsi hapus Antarmuka Jaringan setelah penghapusan VM. Opsi dilepas, Hapus
+Menentukan opsi penghapusan Antarmuka Jaringan setelah penghapusan VM. Opsinya adalah Lepaskan, Hapus
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID antarmuka jaringan untuk ditambahkan ke mesin virtual.
+Menentukan ID antarmuka jaringan untuk ditambahkan ke komputer virtual.
 Anda dapat menggunakan cmdlet [Get-AzNetworkInterface](/powershell/module/az.network/get-aznetworkinterface) untuk mendapatkan antarmuka jaringan.
 
 ```yaml
@@ -140,9 +143,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin maya lokal tempat untuk menambahkan antarmuka jaringan.
-Untuk membuat mesin virtual, gunakan cmdlet **New-AzVMConfig** .
-Untuk mendapatkan mesin virtual yang sudah ada, gunakan cmdlet **Get-AzVM** .
+Menentukan objek komputer virtual lokal untuk menambahkan antarmuka jaringan.
+Untuk membuat komputer virtual, gunakan cmdlet **New-AzVMConfig** .
+Untuk mendapatkan komputer virtual yang ada, gunakan cmdlet **Get-AzVM** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -165,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.INetworkInterfaceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.INetworkInterfaceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Management.Automation.SwitchParameter
 
@@ -179,6 +182,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVMConfig](./New-AzVMConfig.md)
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [Get-AzAvailabilitySet](./Get-AzAvailabilitySet.md)

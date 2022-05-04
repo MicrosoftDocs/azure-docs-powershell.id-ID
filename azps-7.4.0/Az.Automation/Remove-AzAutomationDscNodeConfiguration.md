@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: 09f1c37ec1b5929f81b08e5c6d63c8e0fb3af736
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a8ac0d0dd7435c209fd90ce9e759a0538997a012
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750978"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588204"
 ---
 # Remove-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
-Menghapus metadata dari konfigurasi simpul DSC dalam Otomatisasi.
+Menghapus metadata dari konfigurasi simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationdscnodeconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ Remove-AzAutomationDscNodeConfiguration [-Name] <String> [-Force] [-IgnoreNodeMa
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAutomationDscNodeConfiguration** menghapus metadata dari konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
-Otomatisasi menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
+Cmdlet **Remove-AzAutomationDscNodeConfiguration** menghapus metadata dari konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
+Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Menghapus metadata dari konfigurasi simpul DSC dalam Otomatisasi. (autogenerasi)
+Menghapus metadata dari konfigurasi simpul DSC di Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -44,7 +47,7 @@ Remove-AzAutomationDscNodeConfiguration -AutomationAccountName 'AutomationAccoun
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi simpul DSC di mana cmdlet ini menghapus metadata.
+Menentukan nama akun Automation yang berisi konfigurasi simpul DSC tempat cmdlet ini menghapus metadata.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi simpul DSC yang cmdletnya menghapus metadata.
+### -Name
+Menentukan nama konfigurasi simpul DSC yang cmdlet ini menghapus metadata.
 
 ```yaml
 Type: System.String
@@ -134,8 +137,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallMatchVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallMatchVariable.md
-ms.openlocfilehash: 9b56689ef8fb758439dad6619b8563e440b1c8be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f29296fa625f7c5cd119ae3dca087211d76128e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997129"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589338"
 ---
 # New-AzApplicationGatewayFirewallMatchVariable
 
 ## SYNOPSIS
 Membuat variabel kecocokan untuk kondisi firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallmatchvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzApplicationGatewayFirewallMatchVariable -VariableName <String> [-Selector 
 $variable = New-AzApplicationGatewayFirewallMatchVariable -VariableName RequestHeaders -Selector Content-Length
 ```
 
-Perintah membuat variabel kecocokan baru dengan nama header permintaan dan pemilih adalah bidang Panjang Konten. Variabel kecocokan baru disimpan di $variable.
+Perintah membuat variabel kecocokan baru dengan nama header permintaan dan pemilih adalah bidang Content-Length. Variabel kecocokan baru disimpan dalam $variable.
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Selector
+### -Pemilih
 Menjelaskan bidang koleksi matchVariable.
 
 ```yaml
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

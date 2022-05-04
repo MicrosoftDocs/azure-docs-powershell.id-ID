@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncCloudEndpoint.md
-ms.openlocfilehash: 5c9957b89451202de3e84ffcaa75a675d31e35df
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fd2b0c4361db824a1eaa18ac37767318ade4a838
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863912"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615002"
 ---
 # Remove-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
-Perintah ini akan menghapus titik akhir awan tertentu dari grup sinkronisasi. Tanpa setidaknya satu titik akhir awan, tidak ada titik akhir server lain dalam grup sinkronisasi ini yang bisa disinkronkan.
+Perintah ini akan menghapus titik akhir cloud yang ditentukan dari grup sinkronisasi. Tanpa setidaknya satu titik akhir cloud, tidak ada titik akhir server lain dalam grup sinkronisasi ini yang dapat disinkronkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzStorageSyncCloudEndpoint [-ResourceId] <String> [-Force] [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Perintah ini akan menghapus titik akhir awan tertentu dari grup sinkronisasi. File Azure berbagi referensi titik akhir awan tetap tidak tersentuh oleh proses ini. Perintah ini hanya ditujukan untuk penolakan. Menghapus titik akhir cloud adalah operasi yang merusak. Titik akhir server tidak bisa disinkronkan tanpa setidaknya satu titik akhir awan yang ada. Operasi ini tidak boleh dilakukan untuk mengatasi masalah sinkronisasi. Jika berbagi file Azure ini ditambahkan lagi ke grup sinkronisasi yang sama, sebagai titik akhir awan, berbagi file yang berkonflik dan konsekuensi lain yang tidak diinginkan.
+Perintah ini akan menghapus titik akhir cloud yang ditentukan dari grup sinkronisasi. File Azure berbagi referensi titik akhir cloud tetap tidak tersentuh oleh proses ini. Perintah ini hanya ditujukan untuk penonaktifan. Menghapus titik akhir cloud adalah operasi yang merusak. Titik akhir server tidak dapat disinkronkan tanpa setidaknya satu titik akhir cloud ada. Operasi ini tidak boleh dilakukan untuk menyelesaikan masalah sinkronisasi. Jika berbagi file Azure ini ditambahkan lagi ke grup sinkronisasi yang sama, sebagai titik akhir cloud, itu dapat menyebabkan file konflik dan konsekuensi lain yang tidak diinginkan.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Perintah ini akan menghapus titik akhir awan tertentu dari grup sinkronisasi. Fi
 Remove-AzStorageSyncCloudEndpoint -Force -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myCloudEndpointName"
 ```
 
-Perintah ini akan menghapus titik akhir awan.
+Perintah ini akan menghapus titik akhir cloud.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Pasokan -Paksa untuk melewati konfirmasi perintah ini.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input CloudEndpoint, biasanya melewati saluran.
+Objek Input CloudEndpoint, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSCloudEndpoint
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama CloudEndpoint.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, maka cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronkan.
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

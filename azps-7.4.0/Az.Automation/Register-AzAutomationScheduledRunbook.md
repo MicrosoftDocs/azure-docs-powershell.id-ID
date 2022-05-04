@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/regis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 36c405d0dc0cf79d951fb06d787a5048362c2241
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d1bba98739eab93626937e9d5ae949dd6f55b2a0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878922"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614750"
 ---
 # Register-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
 Mengaitkan runbook ke jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/register-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini mengaitkan runbook bernama Runbk01 dengan jadwal bernama Sched01 di
 
 ### Contoh 2
 
-Mengaitkan runbook ke jadwal. (autogenerasi)
+Mengaitkan runbook ke jadwal. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -58,7 +61,7 @@ Register-AzAutomationScheduledRunbook -AutomationAccountName 'Contoso17' -Parame
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan akun Otomatisasi untuk runbook tempat cmdlet ini beroperasi.
+Menentukan akun Automation untuk runbook tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 Menentukan tabel hash pasangan kunci/nilai.
 Kuncinya adalah nama parameter runbook.
 Nilainya adalah nilai parameter runbook.
-Ketika runbook dimulai sebagai respons terhadap jadwal terkait, parameter ini dikirimkan ke runbook.
+Ketika runbook dimulai sebagai respons terhadap jadwal terkait, parameter ini diteruskan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunOn
-Nama grup pekerja runbook hibrid.
+Nama grup hybrid runbook worker.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal cmdlet ini mengaitkan runbook.
+Menentukan nama jadwal tempat cmdlet ini mengaitkan runbook.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

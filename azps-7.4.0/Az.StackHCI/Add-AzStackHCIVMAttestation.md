@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/add-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Add-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Add-AzStackHCIVMAttestation.md
-ms.openlocfilehash: b88bac708f5864400bb1c7af47f7ca2e56dcd7a4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a1fc858528e9b707d1351dae966f1a5d3f84ae48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306009"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588636"
 ---
 # Add-AzStackHCIVMAttestation
 
 ## SYNOPSIS
 Add-AzStackHCIVMAttestation mengonfigurasi tamu untuk AzureStack HCI IMDS Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/add-azstackhcivmattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Add-AzStackHCIVMAttestation [-VMName] <String[]> [-Force] [-WhatIf] [-Confirm] [
 Add-AzStackHCIVMAttestation [-VM] <Object[]> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAll
+### TambahkanSemua
 ```
 Add-AzStackHCIVMAttestation [-AddAll] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,14 +47,14 @@ Add-AzStackHCIVMAttestation mengonfigurasi tamu untuk AzureStack HCI IMDS Attest
 Add-AzStackHCIVMAttestation -AddAll
 ```
 
-Menambahkan semua tamu di simpul saat ini
+Menambahkan semua tamu pada simpul saat ini
 
 ### CONTOH 2
 ```powershell
 Invoke-Command -ScriptBlock {Add-AzStackHCIVMAttestation -VMName "guest1", "guest2"} -ComputerName "node1"
 ```
 
-Memanggil dari simpul manajemen/WAC
+Memanggil dari node manajemen/WAC
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Tidak Ada Konfirmasi
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -155,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Nama: Nama VM.
-### AttestationHost: Host bahwa VM saat ini tersambung.
+### AttestationHost: Host yang saat ini terhubung dengan VM.
 ### Status: Status koneksi.
 ## NOTES
 

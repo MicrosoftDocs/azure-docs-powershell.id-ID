@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 1a07d9585dc508c52c4f18fabd5489bfe9234dcd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 52990543c8d4ea0d45e127ff7fc6b395d6478961
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812358"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614840"
 ---
 # Get-AzApplicationInsightsLinkedStorageAccount
 
 ## SYNOPSIS
-Dapatkan akun penyimpanan tertaut wawasan aplikasi
+Mendapatkan akun penyimpanan tertaut application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzApplicationInsightsLinkedStorageAccount -ResourceId <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Dapatkan akun penyimpanan tertaut wawasan aplikasi
+Mendapatkan akun penyimpanan tertaut application insights
 
 ## EXAMPLES
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen
+ResourceId Komponen
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

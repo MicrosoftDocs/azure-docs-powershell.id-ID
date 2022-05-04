@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
-ms.openlocfilehash: 1fb24f7f9d8122c8e435841a747d8e4e7606467a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a1e1ffe2e3da8d3c9989d1853e4642e8d2b59ebc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003123"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574724"
 ---
 # Update-AzDataFactoryV2
 
 ## SYNOPSIS
 Memperbarui properti pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/update-azdatafactoryv2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Identity          :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini memperbarui tag untuk pabrik WikiADF menjadi kamus yang berisi tag bernama myNewTagName dengan nilai myTagValue.
+Perintah ini memperbarui tag untuk pabrik WikiADF ke kamus yang berisi tag bernama myNewTagName dengan nilai myTagValue.
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionUserAssignedIdentity
-Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi kubah kunci pelanggan. Jika tidak diberikan Identitas Layanan Terkelola akan digunakan.
+Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi ke brankas kunci pelanggan. Jika tidak disediakan, Identitas Layanan Terkelola akan digunakan.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultBaseUrl
-Url Azure Key Vault digunakan untuk enkripsi dengan CMK.
+Url Key Vault Azure yang digunakan untuk enkripsi dengan CMK.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
+Jenis Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses jaringan publik diperbolehkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
+Apakah akses jaringan publik diizinkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pabrik data.
 
 ```yaml
@@ -270,8 +273,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

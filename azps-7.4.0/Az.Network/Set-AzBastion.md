@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
-ms.openlocfilehash: db9bae45950f5923eb6fc0871e862dbf143a3f01
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3e447f99401a60304e9635381bca4010b842e21
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312885"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615434"
 ---
 # Set-AzBastion
 
 ## SYNOPSIS
 Memperbarui Sumber Daya Bastion.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzBastion -InputObject <PSBastion> [-Sku <String>] [-ScaleUnit <Int32>] [-Ta
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBastion** dapat digunakan untuk memperbarui Sku, Unit Skala atau Tag sumber daya BastionHost yang sudah ada.
+Cmdlet **Set-AzBastion** dapat digunakan untuk memperbarui Sku, Unit Skala, atau Tag sumber daya BastionHost yang ada.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Sku                  : {
 Scale Units          : 10
 ```
 
-Memperbarui sumber daya BastionHost dengan Sku Dasar dan 2 Unit Skala ke Standar Sku dan 10 Unit Skala
+Memperbarui sumber daya BastionHost dengan Sku Dasar dan 2 Unit Skala ke Sku Standar dan 10 Unit Skala
 
 ### Contoh 2
 ```powershell
@@ -140,12 +143,12 @@ Sku                  : {
 Scale Units          : 50
 ```
 
-Pembaruan sumber daya BastionHost dengan Unit Skala Sku Dasar dan 2 ke Unit Skala Sku Standar dan 50
+Memperbarui sumber daya BastionHost dengan Sku Dasar dan 2 Unit Skala ke Sku Standar dan Unit Skala 50
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -189,7 +192,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Minta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The Bastion Sku Tier
+Tingkat Sku Bastion
 
 ```yaml
 Type: String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -250,8 +253,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -290,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0,0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Hashtable
 

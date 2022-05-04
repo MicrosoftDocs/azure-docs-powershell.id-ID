@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/New-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/New-AzManagementPartner.md
-ms.openlocfilehash: c632c8fcb1ac846b6aa04ec99382e94d115d1238
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 32c35a8f373ee69c60586f36a4ed56931e189f45
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745983"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598028"
 ---
 # New-AzManagementPartner
 
 ## SYNOPSIS
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mengaitkan ID Microsoft Partner Network (MPN) ke pengguna atau perwakilan layanan yang diautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/new-azmanagementpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzManagementPartner [-PartnerId] <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mengaitkan ID Microsoft Partner Network (MPN) ke pengguna atau perwakilan layanan yang diautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -76,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -108,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
-ms.openlocfilehash: 5021e40e2d35949f5d13f41bc6e51a718ead817c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 280e86b0ba5028afd9d60e73f3af1c8de74ca336
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064701"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587835"
 ---
 # New-AzCosmosDBDatabaseToRestore
 
 ## SYNOPSIS
-Membuat Database CosmosDB baru untuk Memulihkan objek(PSDatabaseToRestore)
+Membuat Database CosmosDB baru ke objek Pemulihan (PSDatabaseToRestore)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbdatabasetorestore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBDatabaseToRestore -DatabaseName <String> [-CollectionName <String[
 ```
 
 ## DESCRIPTION
-Membuat objek CosmosDB DatabaseToRestore baru(PSDatabaseToRestore). Objek yang dikembalikan ini dapat digunakan untuk menyempurnakan subset database dan kumpulan untuk dipulihkan.
+Membuat objek CosmosDB DatabaseToRestore baru (PSDatabaseToRestore). Objek yang dikembalikan ini dapat digunakan untuk membedakan subset database dan koleksi untuk dipulihkan.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ DatabaseName CollectionNames
 database1    {collection1, collection2, collection3}
 ```
 
-Membuat objek DatabaseToRestore baru dengan database nama1 dan koleksi dengan koleksi nama1, koleksi2, dan koleksi3.
+Membuat objek DatabaseToRestore baru dengan nama database1 dan koleksi dengan nama collection1, collection2, dan collection3.
 
 ## PARAMETERS
 
@@ -91,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/st
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlManagedInstance.md
-ms.openlocfilehash: a9c9d7389880e897de27a1ae6e8da9a1bfc6e7b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 742d75ee37075668f0fbda3e50624508d35b23a6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684918"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607370"
 ---
 # Stop-AzDataMigrationToSqlManagedInstance
 
 ## SYNOPSIS
 Hentikan migrasi database yang sedang berlangsung ke SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationtosqlmanagedinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: f4b1dcba40b9ee3c749a61aa310a818c3f58acb3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbf14062f394179479b5848c59d4508def09b209
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320715"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614876"
 ---
 # Get-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
-Dapatkan detail konfigurasi penyedia identitas.
+Dapatkan detail konfigurasi idP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,21 +35,21 @@ Get-AzApiManagementIdentityProvider -Context <PsApiManagementContext>
 ```
 
 ## DESCRIPTION
-Dapatkan detail konfigurasi penyedia identitas.
+Dapatkan detail konfigurasi idP.
 ClientSecret tidak akan disertakan ke dalam detail hasil. Untuk mendapatkan rahasia klien, gunakan **Get-AzApiManagementIdentityProviderClientSecret**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Penyedia Identitas
+### Contoh 1: Mendapatkan semua Penyedia Identitas
 
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProvider -Context $apimContext
 ```
 
-Dapatkan semua Konfigurasi penyedia identitas pada layanan.
+Dapatkan semua Konfigurasi IdP pada layanan.
 
-### Contoh 2: Dapatkan Penyedia Identitas Tipe AAD
+### Contoh 2: Dapatkan IdP Jenis AAD
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProvider -Context $apimContext -Type Aad
@@ -70,7 +73,7 @@ ServiceName              : contoso
 
 Mendapatkan Konfigurasi Penyedia Identitas Azure Active Directory.
 
-### Contoh 3: Dapatkan AAD Penyedia Identitas Tipe B2C
+### Contoh 3: Dapatkan IdP Jenis AAD B2C
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProvider -Context $context -Type AadB2C
@@ -96,8 +99,8 @@ Mendapatkan Konfigurasi Penyedia Identitas Azure Active Directory.
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -127,9 +130,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Pengidentifikasi Penyedia Identitas.
-Jika ditentukan akan mencoba menemukan konfigurasi penyedia identitas oleh pengidentifikasi.
+Jika ditentukan akan mencoba menemukan konfigurasi IdP oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
-ms.openlocfilehash: 993f3d820a9b25a00bce6eeb2e5d1b02b2e45aa3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87921858d79456655710c98bd589a7aaedcd97d0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615326"
 ---
 # New-AzRoleDefinition
 
 ## SYNOPSIS
 Membuat peran kustom di Azure RBAC.
-Sediakan file definisi peran JSON atau objek PSRoleDefinition sebagai input.
-Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran garis dasar.
-Lalu, ubah propertinya sesuai kebutuhan.
+Berikan file definisi peran JSON atau objek PSRoleDefinition sebagai input.
+Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran dasar.
+Kemudian, ubah propertinya sesuai kebutuhan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,25 +45,25 @@ Definisi peran input HARUS berisi properti berikut:
 2) Deskripsi: deskripsi singkat tentang peran yang meringkas akses yang diberikan peran.
 3) Tindakan: kumpulan operasi tempat peran kustom memberikan akses.
 Gunakan Get-AzProviderOperation untuk mendapatkan operasi untuk penyedia sumber daya Azure yang dapat diamankan menggunakan Azure RBAC.
-Berikut adalah beberapa string operasi yang valid:
- - "*/read" memberikan akses ke operasi baca semua penyedia sumber daya Azure.
- - "Microsoft.Network/*/read" memberikan akses ke operasi baca untuk semua tipe sumber daya di penyedia sumber daya Microsoft.Network Azure.
- - "Microsoft.Compute/virtualMachines/*" memberikan akses ke semua operasi mesin virtual dan tipe sumber daya anaknya.
-4) AssignableScopes: kumpulan lingkup (langganan Azure atau grup sumber daya) di mana peran kustom akan tersedia untuk penetapan.
-Menggunakan AssignableScopes, Anda dapat membuat peran kustom tersedia untuk tugas hanya dalam langganan atau grup sumber daya yang memerlukannya, dan tidak mengacaukan pengalaman pengguna untuk langganan atau grup sumber daya lainnya.
-Berikut adalah beberapa lingkup valid yang dapat ditetapkan:
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624": membuat peran tersedia untuk tugas dalam dua langganan.
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e": membuat peran tersedia untuk tugas dalam satu langganan.
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": membuat peran tersedia untuk penetapan hanya dalam grup sumber daya Jaringan.
-Definisi peran input MAY berisi properti berikut ini:
+Berikut ini adalah beberapa string operasi yang valid:
+ - "*/read" memberikan akses ke operasi baca dari semua penyedia sumber daya Azure.
+ - "Microsoft.Network/*/read" memberikan akses ke operasi baca untuk semua jenis sumber daya di penyedia sumber daya Microsoft.Network Azure.
+ - "Microsoft.Compute/virtualMachines/*" memberikan akses ke semua operasi komputer virtual dan jenis sumber daya anaknya.
+4) AssignableScopes: kumpulan cakupan (langganan Azure atau grup sumber daya) tempat peran kustom akan tersedia untuk penugasan.
+Menggunakan AssignableScopes, Anda dapat membuat peran kustom tersedia untuk penetapan hanya dalam langganan atau grup sumber daya yang membutuhkannya, dan tidak mengacaukan pengalaman pengguna untuk langganan atau grup sumber daya lainnya.
+Berikut ini adalah beberapa cakupan yang dapat ditetapkan yang valid:
+ - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624": membuat peran tersedia untuk penugasan dalam dua langganan.
+ - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e": membuat peran tersedia untuk penugasan dalam satu langganan.
+ - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": membuat peran hanya tersedia untuk penugasan di grup sumber daya Jaringan.
+Definisi peran input MUNGKIN berisi properti berikut:
 1) NotActions: kumpulan operasi yang harus dikecualikan dari Tindakan untuk menentukan tindakan efektif untuk peran kustom.
-Jika ada operasi tertentu yang tidak ingin Anda berikan akses ke dalam peran kustom, lebih mudah menggunakan NotActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
+Jika ada operasi tertentu yang tidak ingin Anda berikan aksesnya dalam peran kustom, lebih mudah untuk menggunakan NotActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
 2) DataActions: kumpulan operasi data tempat peran kustom memberikan akses.
 3) NotDataActions: kumpulan operasi yang harus dikecualikan dari DataActions untuk menentukan tindakan data yang efektif untuk peran kustom.
-Jika ada operasi data tertentu yang tidak ingin Anda berikan aksesnya dalam peran kustom, lebih mudah menggunakan NotDataActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
-CATATAN: Jika pengguna diberi peran yang menentukan operasi dalam NotActions dan juga menetapkan peran lain memberikan akses ke operasi yang sama - pengguna akan dapat melakukan operasi tersebut.
-NotActions bukan aturan penolakan - ini adalah cara yang mudah untuk membuat sekumpulan operasi yang diizinkan ketika operasi tertentu perlu dikecualikan.
-Berikut ini adalah contoh definisi peran json yang dapat disediakan sebagai input { "Name": "Updated Role", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang mesin virtual", "Tindakan": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxx"\] }
+Jika ada operasi data tertentu yang tidak ingin Anda berikan aksesnya dalam peran kustom, lebih mudah untuk menggunakan NotDataActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
+CATATAN: Jika pengguna diberi peran yang menentukan operasi di NotActions dan juga diberi peran lain memberikan akses ke operasi yang sama - pengguna akan dapat melakukan operasi tersebut.
+NotActions bukan aturan tolak - ini hanyalah cara mudah untuk membuat serangkaian operasi yang diizinkan ketika operasi tertentu perlu dikecualikan.
+Berikut ini adalah contoh definisi peran json yang dapat disediakan sebagai input { "Name": "Updated Role", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang komputer virtual", "Tindakan": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxx"\] }
 
 ## EXAMPLES
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Nama file yang berisi definisi peran json tunggal.
+Nama file yang berisi satu definisi peran json.
 
 ```yaml
 Type: System.String
@@ -142,18 +145,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 
