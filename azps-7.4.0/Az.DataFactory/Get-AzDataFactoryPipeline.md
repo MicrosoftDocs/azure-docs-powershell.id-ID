@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
-ms.openlocfilehash: fc5f1470aff36f4136b9a2f798928f4ef2e64955
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 44c5256246a6295e8777e8f7882e1a4667b5a972
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942661"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596786"
 ---
 # Get-AzDataFactoryPipeline
 
 ## SYNOPSIS
-Mendapatkan informasi tentang saluran di Azure Data Factory.
+Mendapatkan informasi tentang alur di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,22 +36,22 @@ Get-AzDataFactoryPipeline [[-Name] <String>] [-DataFactory] <PSDataFactory>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryPipeline** mendapatkan informasi tentang saluran dalam Azure Data Factory.
-Jika Anda menentukan nama pipeline, cmdlet ini akan mendapatkan informasi tentang pipeline tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua pipeline di pabrik data.
+Cmdlet **Get-AzDataFactoryPipeline** mendapatkan informasi tentang alur di Azure Data Factory.
+Jika Anda menentukan nama alur, cmdlet ini mendapatkan informasi tentang alur tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua alur di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang semua saluran
+### Contoh 1: Mendapatkan informasi tentang semua alur
 ```powershell
 Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 ```
 
-Perintah ini mendapatkan informasi tentang semua pipeline di pabrik data bernama WikiADF.
-Anda bisa salah satu dari contoh perintah berikut ini.
+Perintah ini mendapatkan informasi tentang semua alur di pabrik data bernama WikiADF.
+Anda dapat salah satu dari contoh perintah berikut.
 Yang kedua menggunakan objek **DataFactory** sebagai parameter.
 
-### Contoh 2: Mendapatkan informasi tentang saluran tertentu
+### Contoh 2: Mendapatkan informasi tentang alur tertentu
 ```powershell
 Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF" | Format-List
 ```
@@ -60,12 +63,12 @@ DataFactoryName   : WikiADF
 Properties        : Microsoft.DataFactories.PipelineProperties
 ```
 
-Perintah ini mendapatkan informasi tentang pipeline bernama DPWikisample di pabrik data bernama WikiADF.
-Perintah akan meneruskan informasi tersebut ke cmdlet Format-List menggunakan operator pipeline.
-Cmdlet itu memformat hasil.
-Untuk informasi selengkapnya, ketik .`Get-Help Format-List`
+Perintah ini mendapatkan informasi tentang alur bernama DPWikisample di pabrik data bernama WikiADF.
+Perintah meneruskan informasi tersebut ke cmdlet Format-List dengan menggunakan operator alur.
+Cmdlet tersebut memformat hasilnya.
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
-### Contoh 3: Dapatkan properti untuk pipeline tertentu
+### Contoh 3: Mendapatkan properti untuk alur tertentu
 ```powershell
 (Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name DPWikisample -DataFactoryName "WikiADF").Properties
 ```
@@ -79,9 +82,9 @@ RuntimeInfo : Microsoft.DataFactories.PipelineRuntimeInfo
 Start       : 6/5/2014 8:00:00 PM
 ```
 
-Perintah ini mendapatkan informasi untuk pipeline bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk menampilkan properti **Properti** yang terkait dengan saluran tersebut.
+Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk melihat properti **Properti** yang terkait dengan alur tersebut.
 
-### Contoh 4: Mendapatkan aktivitas untuk pipeline tertentu
+### Contoh 4: Mendapatkan aktivitas untuk alur tertentu
 ```powershell
 (Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF").Properties.Activities
 ```
@@ -104,9 +107,9 @@ Outputs           : {DAWikiAggregatedData}
 Policy            : Microsoft.DataFactories.ActivityPolicy
 ```
 
-Perintah ini mendapatkan informasi untuk saluran bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk menampilkan properti **Aktivitas** yang terkait dengan saluran tersebut.
+Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk melihat properti **Aktivitas** yang terkait dengan alur tersebut.
 
-### Contoh 5: Mendapatkan informasi runtime untuk pipeline tertentu
+### Contoh 5: Mendapatkan informasi runtime untuk alur tertentu
 ```powershell
 (Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF").Properties.RuntimeInfo
 ```
@@ -117,9 +120,9 @@ DeploymentTime
 6/5/2014 10:36:46 PM
 ```
 
-Perintah ini mendapatkan informasi untuk pipeline bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk menampilkan properti **RuntimeInfo** yang terkait dengan pipeline tersebut.
+Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk melihat properti **RuntimeInfo** yang terkait dengan alur tersebut.
 
-### Contoh 6: Dapatkan informasi tentang input untuk aktivitas pertama
+### Contoh 6: Mendapatkan informasi tentang input untuk aktivitas pertama
 ```powershell
 (Get-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF11").Properties.Activities[0].Inputs | Format-List
 ```
@@ -131,14 +134,14 @@ Name      : DAWikipediaClickEvents
 StartTime :
 ```
 
-Perintah ini mendapatkan informasi untuk saluran bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk menampilkan properti **Aktivitas** yang terkait dengan saluran tersebut.
-Perintah menampilkan properti **Input** dari elemen pertama array **Aktivitas** menggunakan **Format-List**.
+Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk melihat properti **Aktivitas** yang terkait dengan alur tersebut.
+Perintah menampilkan properti **Input** dari elemen pertama dari array **Aktivitas** dengan menggunakan **Format-List**.
 
 ## PARAMETERS
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini mendapatkan pipeline yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mendapatkan pipeline yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama alur untuk mendapatkan informasi.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mendapatkan pipeline yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini mendapatkan alur yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,18 +231,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSPipeline
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [New-AzDataFactoryPipeline](./New-AzDataFactoryPipeline.md)
 
-[Hapus-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
+[Remove-AzDataFactoryPipeline](./Remove-AzDataFactoryPipeline.md)
 
 [Resume-AzDataFactoryPipeline](./Resume-AzDataFactoryPipeline.md)
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 
-[Suspend-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
+[Suspensi-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
 
 

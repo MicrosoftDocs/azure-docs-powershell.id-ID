@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageDefinition.md
-ms.openlocfilehash: 264219a01e88cd8c4b30f536a2266a1fc879a195
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f3f9cfb2644687e9205a1e44d67bb73d96748024
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877662"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636847"
 ---
 # Get-AzGalleryImageDefinition
 
 ## SYNOPSIS
-Dapatkan atau cantumkan definisi gambar galeri.
+Mendapatkan atau mencantumkan definisi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgalleryimagedefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzGalleryImageDefinition [-ResourceId] <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan definisi gambar galeri.
+Mendapatkan atau mencantumkan definisi gambar galeri.
 
 ## EXAMPLES
 
@@ -221,7 +224,7 @@ Location            : eastus2
 Tags                : {}
 ```
 
-Dapatkan definisi gambar galeri di galeri1.
+Dapatkan definisi gambar galeri di gallery1.
 
 ## PARAMETERS
 
@@ -255,7 +258,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi gambar galeri.
 
 ```yaml
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

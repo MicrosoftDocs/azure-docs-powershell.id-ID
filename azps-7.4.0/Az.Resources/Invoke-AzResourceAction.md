@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
-ms.openlocfilehash: 46005ebe80f9de1436cb928fc3e84e760072431d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d382b271d17a85229078935213ac97d4504548f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673848"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684534"
 ---
 # Invoke-AzResourceAction
 
 ## SYNOPSIS
 Memanggil tindakan pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,18 +64,18 @@ Are you sure you want to invoke the 'start' action on the following resource: /s
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Perintah ini memulai Mesin Virtual dengan {ResourceId}.
+Perintah ini memulai Komputer Virtual dengan {ResourceId}.
 
-### Contoh 2: Memanggil poweroffing VM dengan ResourceName
+### Contoh 2: Memanggil pembatasan VM dengan ResourceName
 
 ```powershell
 Invoke-AzResourceAction -ResourceGroupName testGroup -ResourceName testVM -ResourceType Microsoft.Compute/virtualMachines/ -Action Poweroff -Force
 ```
 
-Perintah ini menghentikan Mesin Virtual dengan {ResourceId}.
-Oleh karena itu, perintah menentukan parameter *Paksa* , tidak meminta konfirmasi kepada Anda.
+Perintah ini menghentikan Komputer Virtual dengan {ResourceId}.
+Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
-### Contoh 3: Memanggil mendaftarkan penyedia sumber daya dengan ResourceId
+### Contoh 3: Memanggil pendaftaran penyedia sumber daya dengan ResourceId
 
 ```powershell
 Invoke-AzResourceAction -ResourceId /subscriptions/{subId}/providers/Microsoft.Network -action register -Force
@@ -90,12 +93,12 @@ registrationState : Registered
 ```
 
 Perintah ini mendaftarkan penyedia sumber daya "Microsoft.Network".
-Oleh karena itu, perintah menentukan parameter *Paksa* , tidak meminta konfirmasi kepada Anda.
+Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -Tindakan
-Menentukan nama tindakan yang akan dijalankan.
+Menentukan nama tindakan yang akan dipanggil.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -141,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceName
-Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini memanggil tindakan.
-Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
+Menentukan nama sumber daya ekstensi untuk sumber daya tempat cmdlet ini memanggil tindakan.
+Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceType
-Menentukan tipe sumber daya ekstensi.
-Misalnya: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya ekstensi.
+Contohnya: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-Menentukan parameter, sebagai tabel hash, untuk tindakan yang dijalankan cmdlet ini.
+Menentukan parameter, sebagai tabel hash, untuk tindakan yang dipanggil cmdlet ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya tempat cmdlet ini memanggil tindakan.
+Menentukan nama sumber daya sumber daya tempat cmdlet ini memanggil tindakan.
 Misalnya, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
 
 ```yaml
@@ -281,8 +284,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya.
-Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya.
+Misalnya, untuk database, jenis sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi di tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,8 +314,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

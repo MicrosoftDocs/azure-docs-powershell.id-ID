@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
-ms.openlocfilehash: 0b7b09b65a1178d91bcbab75a4f08903182a6415
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5c83c580d47ef8f25cf08a27f4b3787da3f64932
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064521"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649120"
 ---
 # New-AzDataBoxJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru dengan parameter yang ditentukan.
-Pekerjaan yang sudah ada tidak dapat diperbarui dengan API ini dan harus diperbarui dengan API pekerjaan Pembaruan.
+Pekerjaan yang ada tidak dapat diperbarui dengan API ini dan sebaliknya harus diperbarui dengan API pekerjaan Pembaruan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzDataBoxJob -Name <String> -ResourceGroupName <String> -Location <String> -
 
 ## DESCRIPTION
 Membuat pekerjaan baru dengan parameter yang ditentukan.
-Pekerjaan yang sudah ada tidak dapat diperbarui dengan API ini dan harus diperbarui dengan API pekerjaan Pembaruan.
+Pekerjaan yang ada tidak dapat diperbarui dengan API ini dan sebaliknya harus diperbarui dengan API pekerjaan Pembaruan.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ AddressType City          CompanyName Country PostalCode StateOrProvince StreetA
 Commercial  San Francisco             US      94107      CA              101 TOWNSEND ST
 ```
 
-Anda dapat memperluas dan memvisualisasikan objek lain dengan cara yang sama seperti detail dan alamat pengiriman yang diperluas.
+Anda dapat memperluas dan memvisualisasikan objek lain dengan cara yang sama seperti detail dan alamat pengiriman diperluas.
 
 ### Contoh 2: Membuat pekerjaan ekspor kotak data
 ```powershell
@@ -106,7 +109,7 @@ ExportTest WestUS   DeviceOrdered ExportFromAzure DataBox None         NonSchedu
 ```
 
 Membuat pekerjaan ekspor kotak data.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ### Contoh 3: Membuat pekerjaan impor kotak data dengan akun disk terkelola
 ```powershell
@@ -124,7 +127,7 @@ PwshManagedDisk WestUS   DeviceOrdered ImportToAzure DataBox None         NonSch
 ```
 
 Membuat pekerjaan impor kotak data dengan akun disk terkelola.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ### Contoh 4: Membuat pekerjaan impor kotak data dengan identitas yang ditetapkan pengguna
 ```powershell
@@ -143,7 +146,7 @@ PowershellMSI WestUS   DeviceOrdered ImportToAzure DataBox UserAssigned NonSched
 ```
 
 Membuat pekerjaan impor kotak data dengan identitas yang ditetapkan pengguna.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ### Contoh 5: Membuat pekerjaan kotak data dengan kunci Anda sendiri
 ```powershell
@@ -161,9 +164,9 @@ PowershellBYOK WestUS   DeviceOrdered ImportToAzure DataBox None         NonSche
 ```
 
 Membuat pekerjaan kotak data dengan kunci Anda sendiri.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
-### Contoh 6: Membuat kotak dataBekerjaan dengan kunci Anda sendiri
+### Contoh 6: Membuat pekerjaan databoxHeavy dengan kunci Anda sendiri
 ```powershell
 $dataAccount = New-AzDataBoxStorageAccountDetailsObject -DataAccountType "StorageAccount" -StorageAccountId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.Storage/storageAccounts/storageAccountName"
 $contactDetail = New-AzDataBoxContactDetailsObject -ContactName "random" -EmailList @("emailId") -Phone "1234567891"
@@ -178,10 +181,10 @@ Name    Location Status        TransferType  SkuName      IdentityType DeliveryT
 DbxHeavy WestUS  DeviceOrdered ImportToAzure DataBoxHeavy  None        NonScheduled Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.DataBoxHeavyJobDetails
 ```
 
-Membuat kotak dataBekerja dengan kunci Anda sendiri.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Membuat pekerjaan databoxHeavy dengan kunci Anda sendiri.
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
-### Contoh 7: Membuat kotak dataTugasDisk dengan Passkey Anda sendiri
+### Contoh 7: Membuat pekerjaan databoxDisk dengan Passkey Anda sendiri
 ```powershell
 $dataAccount = New-AzDataBoxStorageAccountDetailsObject -DataAccountType "StorageAccount" -StorageAccountId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.Storage/storageAccounts/storageAccountName"
 $contactDetail = New-AzDataBoxContactDetailsObject -ContactName "random" -EmailList @("emailId") -Phone "1234567891"
@@ -196,8 +199,8 @@ Name     Location Status        TransferType  SkuName     IdentityType DeliveryT
 pwshDisk WestUS   DeviceOrdered ImportToAzure DataBoxDisk None         NonScheduled Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.DataBoxDiskJobDetails
 ```
 
-Membuat kotak dataDisky dengan Passkey Anda sendiri.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Membuat pekerjaan databoxDisky dengan Passkey Anda sendiri.
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ### Contoh 8: Membuat pekerjaan kotak data dengan enkripsi ganda diaktifkan
 ```powershell
@@ -215,12 +218,12 @@ pwshDoubEncy WestUS   DeviceOrdered ImportToAzure DataBox None         NonSchedu
 ```
 
 Membuat pekerjaan kotak data dengan enkripsi ganda diaktifkan.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeliveryType
-Jenis pengiriman Job.
+Jenis pengiriman Pekerjaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Support.JobDeliveryType
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ### -Detail
 Detail pekerjaan yang dijalankan.
 Bidang ini hanya akan dikirim untuk filter detail perluas.
-Untuk membangun, lihat bagian CATATAN untuk properti DETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DETAIL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IJobDetails
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas
+Jenis identitas
 
 ```yaml
 Type: System.String
@@ -313,8 +316,8 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Lokasi sumber daya.
-Ini akan menjadi salah satu Kawasan Azure yang didukung dan terdaftar (misalnya AS Barat, AS Timur, Asia Tenggara, dll.).
-Kawasan sumber daya tidak dapat diubah setelah dibuat, tetapi jika kawasan yang identik ditentukan pada pembaruan permintaan akan berhasil.
+Ini akan menjadi salah satu Wilayah Azure yang didukung dan terdaftar (misalnya US Barat, AS Timur, Asia Tenggara, dll.).
+Wilayah sumber daya tidak dapat diubah setelah dibuat, tetapi jika wilayah yang identik ditentukan pada pembaruan, permintaan akan berhasil.
 
 ```yaml
 Type: System.String
@@ -328,9 +331,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+nama pekerjaan harus memiliki panjang antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -451,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransferType
-Tipe transfer data.
+Jenis transfer data.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Support.TransferType
@@ -480,8 +483,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -512,7 +515,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -534,59 +537,59 @@ DETAIL <IJobDetails>: Detail pekerjaan yang dijalankan. Bidang ini hanya akan di
     - `ContactName <String>`: Nama kontak orang tersebut.
     - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
     - `Phone <String>`: Telepon nomor kontak.
-    - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+    - `[Mobile <String>]`: Nomor ponsel kontak.
     - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan untuk tahap pekerjaan.
       - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
       - `StageName <NotificationStageName>`: Nama panggung.
     - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
-  - `Type <ClassDiscriminator>`: Menunjukkan tipe detail pekerjaan.
+  - `Type <ClassDiscriminator>`: Menunjukkan jenis detail pekerjaan.
   - `[DataExportDetail <IDataExportDetails[]>]`: Detail data yang akan diekspor dari azure.
-    - `AccountDetailDataAccountType <DataAccountType>`: Tipe Akun data yang akan ditransfer.
+    - `AccountDetailDataAccountType <DataAccountType>`: Jenis akun data yang akan ditransfer.
     - `TransferConfiguration <ITransferConfiguration>`: Konfigurasi untuk transfer data.
-      - `Type <TransferConfigurationType>`: Tipe konfigurasi untuk transfer.
-      - `[TransferAllDetail <ITransferConfigurationTransferAllDetails>]`: Peta tipe filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll
-        - `[IncludeDataAccountType <DataAccountType?>]`: Tipe akun data
+      - `Type <TransferConfigurationType>`: Jenis konfigurasi untuk transfer.
+      - `[TransferAllDetail <ITransferConfigurationTransferAllDetails>]`: Peta jenis filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll
+        - `[IncludeDataAccountType <DataAccountType?>]`: Jenis akun data
         - `[IncludeTransferAllBlob <Boolean?>]`: Untuk menunjukkan apakah semua blob Azure harus ditransfer
         - `[IncludeTransferAllFile <Boolean?>]`: Untuk menunjukkan apakah semua Azure Files harus ditransfer
-      - `[TransferFilterDetail <ITransferConfigurationTransferFilterDetails>]`: Peta tipe filter dan detail untuk memfilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
+      - `[TransferFilterDetail <ITransferConfigurationTransferFilterDetails>]`: Peta jenis filter dan detail untuk difilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
         - `[AzureFileFilterDetailFilePathList <String[]>]`: Daftar jalur lengkap file yang akan ditransfer.
-        - `[AzureFileFilterDetailFilePrefixList <String[]>]`: Daftar prefiks file Azure yang akan ditransfer.
-        - `[AzureFileFilterDetailFileShareList <String[]>]`: Daftar pembagian file yang akan ditransfer.
-        - `[BlobFilterDetailBlobPathList <String[]>]`: Daftar jalur lengkap dari blob yang akan ditransfer.
-        - `[BlobFilterDetailBlobPrefixList <String[]>]`: Daftar prefiks blob Azure yang akan ditransfer.
-        - `[BlobFilterDetailContainerList <String[]>]`: Daftar wadah blob yang akan ditransfer.
-        - `[IncludeDataAccountType <DataAccountType?>]`: Tipe akun data.
+        - `[AzureFileFilterDetailFilePrefixList <String[]>]`: Daftar awalan file Azure yang akan ditransfer.
+        - `[AzureFileFilterDetailFileShareList <String[]>]`: Daftar berbagi file yang akan ditransfer.
+        - `[BlobFilterDetailBlobPathList <String[]>]`: Daftar jalur lengkap blob yang akan ditransfer.
+        - `[BlobFilterDetailBlobPrefixList <String[]>]`: Daftar awalan blob Azure yang akan ditransfer.
+        - `[BlobFilterDetailContainerList <String[]>]`: Daftar kontainer blob yang akan ditransfer.
+        - `[IncludeDataAccountType <DataAccountType?>]`: Jenis akun data.
         - `[IncludeFilterFileDetail <IFilterFileDetails[]>]`: Detail file filter yang akan digunakan untuk transfer data.
-          - `FilterFilePath <String>`: Jalur file yang berisi detail semua item untuk ditransfer.
-          - `FilterFileType <FilterFileType>`: Tipe file filter.
-    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua pembagian yang akan dibuat di perangkat. Tidak boleh dilewati untuk pekerjaan TransferType:ExportFromAzure. Jika tidak lolos, layanan akan menghasilkan kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus. Kata sandi tidak dapat memiliki karakter berikut: Kata Sandi IilLoO0 hanya dapat memiliki alfabet, angka, dan karakter berikut : @#\-$%^!+=;:_()]+
+          - `FilterFilePath <String>`: Jalur file yang berisi detail semua item yang akan ditransfer.
+          - `FilterFileType <FilterFileType>`: Jenis file filter.
+    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi yang akan dibuat pada perangkat. Tidak boleh diteruskan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak diteruskan, layanan akan menghasilkan kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimum 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus. Kata sandi tidak boleh memiliki karakter berikut: Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
     - `[LogCollectionLevel <LogCollectionLevel?>]`: Tingkat log yang akan dikumpulkan.
   - `[DataImportDetail <IDataImportDetails[]>]`: Detail data yang akan diimpor ke azure.
-    - `AccountDetailDataAccountType <DataAccountType>`: Tipe Akun data yang akan ditransfer.
-    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua pembagian yang akan dibuat di perangkat. Tidak boleh dilewati untuk pekerjaan TransferType:ExportFromAzure. Jika tidak lolos, layanan akan menghasilkan kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus. Kata sandi tidak dapat memiliki karakter berikut: Kata Sandi IilLoO0 hanya dapat memiliki alfabet, angka, dan karakter berikut : @#\-$%^!+=;:_()]+
+    - `AccountDetailDataAccountType <DataAccountType>`: Jenis akun data yang akan ditransfer.
+    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi yang akan dibuat pada perangkat. Tidak boleh diteruskan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak diteruskan, layanan akan menghasilkan kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimum 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus. Kata sandi tidak boleh memiliki karakter berikut: Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
   - `[ExpectedDataSizeInTeraByte <Int32?>]`: Ukuran data yang diharapkan, yang perlu ditransfer dalam pekerjaan ini, dalam terabyte.
-  - `[KeyEncryptionKey <IKeyEncryptionKey>]`: Detail tentang tipe enkripsi kunci mana yang sedang digunakan.
-    - `KekType <KekType>`: Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.
+  - `[KeyEncryptionKey <IKeyEncryptionKey>]`: Detail tentang jenis enkripsi kunci mana yang sedang digunakan.
+    - `KekType <KekType>`: Jenis kunci enkripsi yang digunakan untuk enkripsi kunci.
     - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
       - `[Type <String>]`: Jenis identitas layanan terkelola.
       - `[UserAssignedResourceId <String>]`: Id sumber daya arm untuk identitas yang ditetapkan pengguna yang akan digunakan untuk mengambil token MSI.
-    - `[KekUrl <String>]`: Kunci enkripsi kunci. Diperlukan jika Pelanggan mengelola KekType.
-    - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Diperlukan jika Pelanggan mengelola KekType.
+    - `[KekUrl <String>]`: Kunci enkripsi kunci. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
+    - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
   - `[Preference <IPreferences>]`: Preferensi untuk pesanan.
-    - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Menentukan lapisan sekunder dari pemberkasan enkripsi berbasis perangkat lunak.
-    - `[PreferredDataCenterRegion <String[]>]`: Kawasan pusat data pilihan.
-    - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
+    - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Mendefinisikan lapisan sekunder pengaktifan enkripsi berbasis perangkat lunak.
+    - `[PreferredDataCenterRegion <String[]>]`: Wilayah pusat data pilihan.
+    - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
   - `[ShippingAddress <IShippingAddress>]`: Alamat pengiriman pelanggan.
     - `Country <String>`: Nama Negara.
-    - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+    - `StreetAddress1 <String>`: Alamat Jalan baris 1.
     - `[AddressType <AddressType?>]`: Jenis alamat.
     - `[City <String>]`: Nama Kota.
     - `[CompanyName <String>]`: Nama perusahaan.
     - `[PostalCode <String>]`: Kode pos.
     - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-    - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
-    - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-    - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
+    - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+    - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
+    - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
 ## RELATED LINKS
 

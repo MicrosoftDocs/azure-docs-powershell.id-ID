@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: d81022f6b6b52c561d8067e6a89f78f52ae3e89a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4cc54f267fc1e5957b9de1828625b7b7b11f2dcb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741312"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690632"
 ---
 # Get-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Mendapatkan informasi tentang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan informasi tentang server.
 Get-AzPostgreSqlFlexibleServer [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzPostgreSqlFlexibleServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Mendapatkan informasi tentang server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan server PostgreSql dalam langganan
+### Contoh 1: Mendapatkan server PostgreSql dalam langganan
 ```powershell
 Get-AzPostgreSqlFlexibleServer
 ```
@@ -74,7 +77,7 @@ Name                Location  SkuName         SkuTier        AdministratorLogin 
 postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Cmdlet ini mendapatkan server PostgreSql menurut grup sumber daya dan nama server.
+Cmdlet ini mendapatkan server PostgreSql berdasarkan grup sumber daya dan nama server.
 
 ### Contoh 3: Mencantumkan semua server PostgreSql dalam grup sumber daya tertentu
 ```powershell
@@ -90,7 +93,7 @@ postgresql-test-2   East US   Standard_D2s_v3 GeneralPurpose daeunyim           
 
 Cmdlet ini mencantumkan semua server PostgreSql dalam grup sumber daya yang ditentukan.
 
-### Contoh 4: Get PostgreSql server by identity
+### Contoh 4: Dapatkan server PostgreSql menurut identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgresql-test"
 Get-AzPostgreSqlFlexibleServer -InputObject $ID
@@ -102,7 +105,7 @@ Name                Location  SkuName         SkuTier        AdministratorLogin 
 postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Daftar cmdlet ini mendapatkan server PostgreSql berdasarkan identitas.
+Cmdlet ini mencantumkan mendapatkan server PostgreSql berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -136,7 +139,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -208,7 +211,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

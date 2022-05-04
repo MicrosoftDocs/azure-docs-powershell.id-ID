@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
-ms.openlocfilehash: 0ada96cf5729b24295ffa344dd9f3e53a45a4623
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3475d5676f9a715232d03608aa68a23b0296a6af
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672364"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637820"
 ---
 # Get-AzSentinelAlertRule
 
 ## SYNOPSIS
-Mendapatkan aturan analitik tertentu atau semua (Aturan Peringatan).
+Mendapatkan atau semua Aturan Analitik tertentu (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,12 +40,12 @@ Get-AzSentinelAlertRule -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelAlertRule** mendapatkan satu atau beberapa Aturan Analitik (Aturan Peringatan) dari ruang kerja tertentu.
-Jika Anda menentukan parameter *AlertRuleId* , sebuah objek AlertRule dikembalikan.
-Jika Anda tidak menentukan parameter *AlertRuleId* , array yang berisi semua Aturan Peringatan dalam ruang kerja tertentu akan dikembalikan.
+Cmdlet **Get-AzSentinelAlertRule** mendapatkan satu atau beberapa Aturan Analitik (Aturan Pemberitahuan) dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *AlertRuleId* , satu objek AlertRule dikembalikan.
+Jika Anda tidak menentukan parameter *AlertRuleId* , array yang berisi semua Aturan Pemberitahuan di ruang kerja yang ditentukan dikembalikan.
 Anda dapat menggunakan objek AlertRule untuk memperbarui AlertRule. Misalnya, Anda dapat mengaktifkan atau menonaktifkan AlertRule. <br/>
 
-*Catatan: AlertRuleId dapat berupa string apa pun, selama string tersebut unik di ruang kerja Anda dan dapat ditemukan dalam tampilan Azure Sentinel Analytics di bawah panel detail aturan di sebelah kanan Anda di bidang "Id"*
+*Catatan: AlertRuleId dapat berupa string apa pun, selama unik di ruang kerja Anda dan dapat ditemukan di tampilan Azure Sentinel Analytics di bawah panel detail aturan di sebelah kanan Anda di bidang "Id"*
 
 ## EXAMPLES
 
@@ -51,15 +54,15 @@ Anda dapat menggunakan objek AlertRule untuk memperbarui AlertRule. Misalnya, An
 $AlertRules = Get-AzSentinelAlertRule -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua AlertRules di ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRules.
+Contoh ini mendapatkan semua AlertRules di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRules.
 
 ### Contoh 2
 ```powershell
 $AlertRule = Get-AzSentinelAlertRule -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -AlertRuleId "myAlertRuleId"
 ```
 
-Contoh ini mendapatkan AlertRule di ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRule.<br/>
-*Harap diperhatikan bahwa **AlertRuleId** dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
+Contoh ini mendapatkan AlertRule di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRule.<br/>
+*Harap dicatat bahwa **AlertRuleId** dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
 
 ### Contoh 3
 ```powershell
@@ -71,7 +74,7 @@ Contoh ini mendapatkan AlertRule dengan nama tampilan yang berisi "Azure Securit
 ## PARAMETERS
 
 ### -AlertRuleId
-Id Aturan Peringatan.
+Id Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

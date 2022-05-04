@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzLogicApp.md
-ms.openlocfilehash: 3822b263718885e4cc6661c20724eb0852e241a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3eb5dc3dae13f2a6627de09ec73aa8735bf59f28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598082"
 ---
 # Set-AzLogicApp
 
 ## SYNOPSIS
-Mengubah aplikasi logika dalam grup sumber daya.
+Memodifikasi aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,21 +40,21 @@ Set-AzLogicApp -ResourceGroupName <String> -Name <String> [-AppServicePlan <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLogicApp** mengubah aplikasi logika menggunakan fitur Aplikasi Logika.
+Cmdlet **Set-AzLogicApp** memodifikasi aplikasi logika dengan menggunakan fitur Logic Apps.
 Aplikasi logika adalah kumpulan tindakan atau pemicu yang ditentukan dalam definisi Aplikasi Logika.
 Cmdlet ini mengembalikan objek **Alur Kerja** .
-Anda dapat mengubah aplikasi logika dengan menentukan nama, lokasi, definisi Aplikasi Logika, grup sumber daya, dan rencana.
+Anda dapat memodifikasi aplikasi logika dengan menentukan nama, lokasi, definisi Aplikasi Logika, grup sumber daya, dan paket.
 Definisi dan parameter Aplikasi Logika diformat dalam JavaScript Object Notation (JSON).
 Anda dapat menggunakan aplikasi logika sebagai templat untuk definisi dan parameter.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi aplikasi logika
+### Contoh 1: Mengubah aplikasi logika
 ```powershell
 Set-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp17" -State "Enabled" -AppServicePlan "ServicePlan01" -DefinitionFilePath "d:\workflows\Definition17.json" -ParameterFilePath "d:\workflows\Parameters17.json"
 ```
@@ -78,12 +81,12 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah ini mengubah aplikasi logika.
+Perintah ini memodifikasi aplikasi logika.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Menentukan nama rencana.
+Menentukan nama paket.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aplikasi logika.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter JSON yang diformat.
+Menentukan jalur file parameter berformat JSON.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-Menentukan objek kumpulan parameter untuk Aplikasi Logika.
+Menentukan objek pengumpulan parameter untuk Aplikasi Logika.
 Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status aplikasi logika.
 Nilai yang dapat diterima untuk parameter ini adalah: Diaktifkan dan Dinonaktifkan.
 
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseConsumptionModel
-Menunjukkan bahwa tagihan aplikasi logika menggunakan model berbasis konsumsi.
+Menunjukkan bahwa penagihan aplikasi logika menggunakan model berbasis konsumsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,8 +268,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -315,7 +318,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzLogicApp](./New-AzLogicApp.md)
 
-[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
+[Remove-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Start-AzLogicApp](./Start-AzLogicApp.md)
 

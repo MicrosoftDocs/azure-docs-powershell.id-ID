@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkDevice.md
-ms.openlocfilehash: e3888faf978fec08dfde0fe12e66ad1666629360
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ef554eb697fdf4fc101b8a39a8c25bd925c5d82f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004761"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646888"
 ---
 # New-AzConnectedNetworkDevice
 
 ## SYNOPSIS
 Membuat atau memperbarui perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Type                         : microsoft.hybridnetwork/devices
 
 ```
 
-Buat perangkat dengan Nama Perangkat dengan nama myMecDevice sumber daya di Resource Group myResources, Lokasi eastus dengan Ase Device Id /subscriptions/xxxxx-00000-xxxxx-00000/resourcegroups/myResources/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices/myAse.
+Buat perangkat dengan Nama Perangkat dengan nama sumber daya myMecDevice di Grup Sumber Daya myResources, Lokasi eastus dengan Ase Device Id /subscriptions/xxxxx-00000-xxxxx-00000/resourcegroups/myResources/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices/myAse.
 
 ### Contoh 2: New-AzConnectedNetworkDevice
 ```powershell
@@ -80,12 +83,12 @@ Type                         : microsoft.hybridnetwork/devices
 
 ```
 
-Buat perangkat dengan Nama Perangkat myMecDevice1 di Resource Group myResources, Location eastus2euap, SubscriptionId dan Ase Device Id /subscriptions/xxxxx-00000-xxxxx-00000/resourcegroups/myResources/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices/myAse1.
+Buat perangkat dengan Nama Perangkat myMecDevice1 di Grup Sumber Daya myResources, Lokasi eastus2euap, SubscriptionId dan Id Perangkat Ase /subscriptions/xxxxx-00000-xxxxx-00000/resourcegroups/myResources/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices/myAse1.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya untuk sumber daya perangkat.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -Properti
 Properti perangkat.
-Untuk membangun, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.IDevicePropertiesFormat
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -221,8 +224,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
-ms.openlocfilehash: d2e9633bc3b2bdf08f0f8a2d31fdc5304ddbd5bc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 306300e2bcc866319aad258d623413dac7d261c1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284570"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735148"
 ---
 # Get-AzLogicAppUpgradedDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi yang dimutakhirkan untuk aplikasi logika.
+Mendapatkan definisi yang ditingkatkan untuk aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicappupgradeddefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,17 +29,17 @@ Get-AzLogicAppUpgradedDefinition -ResourceGroupName <String> -Name <String> -Tar
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLogicAppUpgradedDefinition** mendapatkan definisi yang dimutakhirkan untuk versi skema dan aplikasi logika dari grup sumber daya.
-Cmdlet ini mengembalikan objek yang mewakili definisi aplikasi logika yang dimutakhirkan.
+Cmdlet **Get-AzLogicAppUpgradedDefinition** mendapatkan definisi yang ditingkatkan untuk versi skema dan aplikasi logika dari grup sumber daya.
+Cmdlet ini mengembalikan objek yang mewakili definisi aplikasi logika yang ditingkatkan.
 Tentukan nama grup sumber daya, nama aplikasi logika, dan versi skema target.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan definisi pemutakhiran aplikasi logika
+### Contoh 1: Mendapatkan definisi peningkatan aplikasi logika
 ```powershell
 $UpgradedDefinition = Get-AzLogicAppUpgradedDefinition -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -TargetSchemaVersion "2016-06-01"
 $UpgradedDefinition.ToString()
@@ -186,7 +189,7 @@ $UpgradedDefinition.ToString()
 }
 ```
 
-Perintah pertama mendapatkan definisi untuk aplikasi logika yang dimutakhirkan ke versi skema target yang ditentukan.
+Perintah pertama mendapatkan definisi untuk aplikasi logika yang ditingkatkan ke versi skema target yang ditentukan.
 Perintah menyimpan definisi dalam variabel $UpgradedDefinition.
 Perintah kedua menampilkan konten $UpgradedDefinition sebagai string.
 
@@ -207,7 +210,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aplikasi logika.
 
 ```yaml
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

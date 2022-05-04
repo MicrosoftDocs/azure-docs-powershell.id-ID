@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: 7a2575b2043822dc3c595be0c0fad920bf135999
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7c50dd84d7d5f951670d0242b49dbf989516d0b9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942283"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585704"
 ---
 # Stop-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
-Menghentikan pemicu yang dijalankan di pabrik data.
+Menghentikan eksekusi pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Stop-AzDataFactoryV2TriggerRun [-TriggerName] <String> [-TriggerRunId] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2TriggerRun** menghentikan pemicu yang dijalankan di pabrik data yang ditentukan dengan nama pemicu dan ID proses pemicu.
-Saat ini hanya didukung untuk TumblingWindowTriggers di WaitingOnDependency State.
+Cmdlet **Stop-AzDataFactoryV2TriggerRun** menghentikan eksekusi pemicu di pabrik data yang ditentukan dengan nama pemicu dan ID eksekusi pemicu.
+Saat ini hanya didukung untuk TumblingWindowTriggers dalam Status WaitingOnDependency.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Saat ini hanya didukung untuk TumblingWindowTriggers di WaitingOnDependency Stat
 Stop-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "testTumblingWindowTrigger" -TriggerRunId 08586002468005888497807248799CU16
 ```
 
-Perintah ini menghentikan pemicu berjalan dengan id '08586002468005888497807248799CU16' di pabrik WikiADF.
+Perintah ini menghentikan eksekusi pemicu dengan id '08586002468005888497807248799CU16' di pabrik WikiADF.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi tentang pemicu berjalan.
+Informasi tentang eksekusi pemicu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan cmdlet menulis true dalam hal operasi berhasil.
+Jika ditentukan cmdlet tulis true jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunId
-ID Jalankan pemicu.
+ID Eksekusi pemicu.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

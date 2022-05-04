@@ -5,18 +5,18 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
-ms.openlocfilehash: cb6b2161ed91621c6175a3f9a71195f42eb29916
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 92a08eff80d4a8c0623cda3edc2e7d28503aa23a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739422"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597344"
 ---
 # Get-AzSentinelDataConnector
 
 ## SYNOPSIS
 Mendapatkan Konektor Data. <br/><br/>
-Harap diperhatikan bahwa dukungan otomatisasi hanya tersedia untuk konektor data berikut:
+Harap dicatat bahwa dukungan otomatisasi hanya tersedia untuk konektor data berikut:
 * AADDataConnector
 * AATPDataConnector
 * ASCDataConnector
@@ -25,6 +25,9 @@ Harap diperhatikan bahwa dukungan otomatisasi hanya tersedia untuk konektor data
 * MDATPDataConnector
 * OfficeDataConnector
 * TIDataConnector
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentineldataconnector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,10 +50,10 @@ Get-AzSentinelDataConnector -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelDataConnector** mendapatkan Konektor Data dari ruang kerja tertentu.
-Jika Anda menentukan parameter *DataConnectorId* , sebuah objek **DataConnector** akan dikembalikan.
-Jika Anda tidak menentukan parameter *DataConnectorId* , array yang berisi semua Konektor Data dalam ruang kerja tertentu akan dikembalikan.
-Anda bisa menggunakan objek **DataConnector** untuk memperbarui Konektor Data, misalnya Anda bisa menonaktifkan **DataConnector**.
+Cmdlet **Get-AzSentinelDataConnector** mendapatkan Konektor Data dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *DataConnectorId* , satu objek **DataConnector** dikembalikan.
+Jika Anda tidak menentukan parameter *DataConnectorId* , array yang berisi semua Konektor Data di ruang kerja yang ditentukan dikembalikan.
+Anda dapat menggunakan objek **DataConnector** untuk memperbarui Konektor Data, misalnya Anda dapat menonaktifkan **DataConnector**.
 
 ## EXAMPLES
 
@@ -59,14 +62,14 @@ Anda bisa menggunakan objek **DataConnector** untuk memperbarui Konektor Data, m
 $DataConnectors = Get-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua DataConnector di ruang kerja tertentu, lalu menyimpannya dalam variabel $DataConnectors.
+Contoh ini mendapatkan semua DataConnectors di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $DataConnectors.
 
 ### Contoh 2
 ```powershell
 $DataConnector = Get-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -DataConnectorId "MyDataConnectorId"
 ```
 
-Contoh ini mendapatkan DataConnector di ruang kerja tertentu, lalu menyimpannya dalam variabel $DataConnector.
+Contoh ini mendapatkan DataConnector di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $DataConnector.
 
 ### Contoh 3
 ```powershell
@@ -137,7 +140,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

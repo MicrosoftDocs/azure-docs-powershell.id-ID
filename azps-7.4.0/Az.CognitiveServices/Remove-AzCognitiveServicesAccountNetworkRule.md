@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
-ms.openlocfilehash: 0e5bf6e65f6da3dc3a12fb3b0c6e2d2f6ac58450
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c13433796c7370eb9c0b40f4cf059d55493a814
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128464"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634238"
 ---
 # Remove-AzCognitiveServicesAccountNetworkRule
 
 ## SYNOPSIS
-Hapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Cognitive Services
+Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/remove-azcognitiveservicesaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Remove-AzCognitiveServicesAccountNetworkRule [-ResourceGroupName] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCognitiveServicesAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Cognitive Services
+Cmdlet **Remove-AzCognitiveServicesAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Cognitive Services
 
 ## EXAMPLES
 
@@ -65,14 +68,14 @@ Remove-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup
 
 Perintah ini menghapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON.
 
-### Contoh 3: Hapus IpRule pertama dengan pipeline
+### Contoh 3: Hapus IpRule pertama dengan alur
 ```powershell
 (Get-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount").IpRules[0] | Remove-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount"
 ```
 
-Perintah ini menghapus IpRule pertama dengan pipeline.
+Perintah ini menghapus IpRule pertama dengan alur.
 
-### Contoh 4: Hapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
+### Contoh 4: Menghapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
 ```powershell
 Remove-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -VirtualNetworkResourceId "/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1","/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/subnet2"
 ```
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressOrRange
-Cognitive Services Account NetworkRule IpAddressOrRange dalam string.
+Akun Cognitive Services NetworkRule IpRules IpAddressOrRange dalam string.
 
 ```yaml
 Type: System.String[]
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Cognitive Services Account NetworkRule IpRules.
+Akun Cognitive Services NetworkRule IpRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule[]
@@ -126,8 +129,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Akun Layanan Kognitif NetworkRule VirtualNetworkRules.
+Akun Cognitive Services NetworkRule VirtualNetworkRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSVirtualNetworkRule[]
@@ -186,8 +189,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

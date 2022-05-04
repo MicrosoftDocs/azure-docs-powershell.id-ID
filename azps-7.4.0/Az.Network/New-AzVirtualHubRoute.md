@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRoute.md
-ms.openlocfilehash: 65bbd3d0011fe86bb4a28209786f7946e7f86b5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be939ae89a87734e4b0ba088cfcf000427f05558
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313479"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646258"
 ---
 # New-AzVirtualHubRoute
 
 ## SYNOPSIS
-Membuat objek Azure Virtual Hub Route.
+Membuat objek Rute Azure Virtual Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzVirtualHubRoute -AddressPrefix <String[]> -NextHopIpAddress <String>
 ```
 
 ## DESCRIPTION
-Membuat objek Azure Virtual Hub Route.
+Membuat objek Rute Azure Virtual Hub.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Rute hub virtual adalah objek dalam memori yang dapat digunakan untuk membuat ob
 ## PARAMETERS
 
 ### -AddressPrefix
-Daftar Prefiks Alamat.
+Daftar Awalan Alamat.
 
 ```yaml
 Type: System.String[]
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopIpAddress
-Hop Berikutnya IpAddress.
+Lompatan Berikutnya IpAddress.
 
 ```yaml
 Type: System.String
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
-ms.openlocfilehash: 5b6baef6828a1a02da8b5c6690fc6d788b8c95b3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82118ff29b74e0e5537d709169a11fb5a56647d4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810504"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692770"
 ---
 # New-AzCloudServiceExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceextensionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,18 +33,18 @@ Membuat objek dalam memori untuk Ekstensi
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek ekstensi Geneva
+### Contoh 1: Membuat objek ekstensi Jenewa
 ```powershell
 $extension = New-AzCloudServiceExtensionObject -Name "GenevaExtension" -Publisher "Microsoft.Azure.Geneva" -Type "GenevaMonitoringPaaS" -TypeHandlerVersion "2.14.0.2"
 ```
 
-Perintah ini membuat objek ekstensi Jenewa yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek ekstensi Jenewa yang digunakan untuk membuat atau memperbarui layanan cloud.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Tentukan secara eksplisit apakah CRP dapat secara otomatis memutakhirkan typeHandlerVersion ke versi minor yang lebih tinggi ketika tersedia.
+Tentukan secara eksplisit apakah CRP dapat secara otomatis meningkatkan typeHandlerVersion ke versi minor yang lebih tinggi saat tersedia.
 
 ```yaml
 Type: System.Boolean
@@ -55,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama.
 
 ```yaml
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Jenis.
+### -Type
+Ketik.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

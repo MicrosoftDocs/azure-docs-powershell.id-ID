@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticPoolActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticPoolActivity.md
-ms.openlocfilehash: 4cccd4f74452dfe3ba46d489a7a366af144f5e79
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07d07150bfae0ebe2dff2e8697bf5c0508d0af37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799020"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618278"
 ---
 # Stop-AzSqlElasticPoolActivity
 
 ## SYNOPSIS
-Membatalkan operasi pembaruan asinkron pada kolam elastis.
+Membatalkan operasi pembaruan asinkron pada kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlelasticpoolactivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Stop-AzSqlElasticPoolActivity [-PassThru] [-ServerName] <String> [-ElasticPoolNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSqlElasticPoolActivity** membatalkan operasi pembaruan asinkron pada kolam elastis.
+Cmdlet **Stop-AzSqlElasticPoolActivity** membatalkan operasi pembaruan asinkron pada kumpulan elastis.
 
 ## EXAMPLES
 
-### Contoh 1: Batalkan operasi pembaruan asinkron pada kumpulan elastis
+### Contoh 1: Membatalkan operasi pembaruan asinkron pada kumpulan elastis
 ```powershell
 Stop-AzSqlElasticPoolActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" -OperationId af97005d-9243-4f8a-844e-402d1cc855f5
 ```
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElasticPoolName
-Nama Azure SQL Elastic Pool.
+Nama Kumpulan Elastis Azure SQL.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-ID operasi untuk diambil.
+ID operasi yang akan diambil.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -143,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

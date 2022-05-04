@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerCallbackUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerCallbackUrl.md
-ms.openlocfilehash: 8eebda6f524405a7db0abb1825b438bdc33adb64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e90e0d5a57b656567455da0b6827cf1f6c00bdc0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746712"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735216"
 ---
 # Get-AzLogicAppTriggerCallbackUrl
 
 ## SYNOPSIS
 Mendapatkan URL panggilan balik pemicu Aplikasi Logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapptriggercallbackurl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,17 +29,17 @@ Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName <String> -Name <String> -Tri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLogicAppTriggerCallbackUrl** mendapatkan URL panggilanback pemicu Aplikasi Logika dari grup sumber daya.
-Cmdlet ini mengembalikan objek **WorkflowTriggerCallbackUrl** yang mewakili URL callback.
+Cmdlet **Get-AzLogicAppTriggerCallbackUrl** mendapatkan URL panggilan balik pemicu Aplikasi Logika dari grup sumber daya.
+Cmdlet ini mengembalikan objek **WorkflowTriggerCallbackUrl** yang mewakili URL panggilan balik.
 Tentukan nama grup sumber daya, nama aplikasi logika, dan nama pemicu.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan URL panggilan balik pemicu Aplikasi Logika
+### Contoh 1: Mendapatkan URL panggilan balik pemicu Aplikasi Logika
 ```powershell
 Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName "ResourceGroup11" -Name "LogicApp1" -TriggerName "manual"
 ```
@@ -47,7 +50,7 @@ Value
 https://prod-03.westus.logic.azure.com:443/workflows/c4ed9335bc864140a11f4508d19acea3/triggers/manual/run?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=<value>
 ```
 
-Perintah ini mendapatkan URL callback pemicu Aplikasi Logika.
+Perintah ini mendapatkan URL panggilan balik pemicu Aplikasi Logika.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aplikasi logika.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

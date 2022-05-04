@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountGeneratedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountGeneratedIcn.md
-ms.openlocfilehash: 7f440faac80696e0679b3e556826c16c2e6f6851
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60e52b9412b7c28b94a31af88ff9e60b5315942b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873702"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735544"
 ---
 # Get-AzIntegrationAccountGeneratedIcn
 
 ## SYNOPSIS
-Cmdlet ini mengambil nilai saat ini dari nomor kontrol interchange yang dihasilkan per perjanjian.
+Cmdlet ini mengambil nilai saat ini dari nomor kontrol pertukaran yang dihasilkan per perjanjian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountgeneratedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzIntegrationAccountGeneratedIcn -ResourceGroupName <String> -Name <String> 
 
 ## DESCRIPTION
 Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk mengambil nilai saat ini dari nomor kontrol pertukaran yang dihasilkan sehingga untuk menulis kembali nilai yang ditingkatkan dengan Set-AzIntegrationAccountGeneratedIcn.
-Nomor kontrol pertukaran harus ditingkatkan untuk menghindari nomor kontrol pertukaran duplikat untuk angka yang belum bisa direplikasi ke wilayah pasif saat bencana terjadi di kawasan aktif.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
+Nomor kontrol pertukaran harus ditingkatkan untuk menghindari nomor kontrol pertukaran duplikat untuk angka yang belum dapat direplikasi ke wilayah pasif ketika bencana terjadi di wilayah aktif.
+Harap berikan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan X12 pertukaran nomor kontrol menurut nama perjanjian. Pastikan perjanjian yang ditentukan adalah tipe "X12"
+Perintah ini mendapatkan akun integrasi yang dihasilkan nomor kontrol pertukaran X12 berdasarkan nama perjanjian. Pastikan perjanjian yang ditentukan berjenis "X12"
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan Edifact nomor kontrol per pertukaran nama perjanjian. Pastikan perjanjian yang ditentukan adalah tipe "Edifact"
+Perintah ini mendapatkan akun integrasi yang dihasilkan nomor kontrol pertukaran Edifact berdasarkan nama perjanjian. Pastikan perjanjian yang ditentukan berjenis "Edifact"
 
 ### Contoh 3
 ```powershell
@@ -79,7 +82,7 @@ AgreementName            : X12IntegrationAccountAgreement3
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan semua nomor kontrol pertukaran X12 yang dihasilkan dengan nama akun integrasi.
+Perintah ini mendapatkan semua nomor kontrol pertukaran X12 yang dihasilkan berdasarkan nama akun integrasi.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Tipe perjanjian akun integrasi.
+Jenis perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun integrasi.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSub.md
-ms.openlocfilehash: 73618763a310ed26ada9a81186c8ddcbe84c285f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 736132c93067b9db7ae898800068b929bf4bd857
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800046"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691906"
 ---
 # Get-AzWebPubSub
 
 ## SYNOPSIS
 Dapatkan sumber daya dan propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan sumber daya dan propertinya.
 Get-AzWebPubSub [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzWebPubSub -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -46,7 +49,7 @@ Dapatkan sumber daya dan propertinya.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua sumber daya PubSub Web dalam langganan
+### Contoh 1: Mencantumkan semua sumber daya Web PubSub dalam langganan
 ```powershell
 Get-AzWebPubSub -SubscriptionId ef72249e-9785-4799-a76b-7cdd80e1b1d0
 ```
@@ -60,7 +63,7 @@ demo2               eastus        Free_F1
 
 
 
-### Contoh 2: Mencantumkan semua sumber daya PubSub Web dalam grup sumber daya
+### Contoh 2: Mencantumkan semua sumber daya Web PubSub dalam grup sumber daya
 ```powershell
 Get-AzWebPubSub -ResourceGroupName psdemo
 ```
@@ -73,7 +76,7 @@ psdemo-wps eastus   Standard_S1
 
 
 
-### Contoh 3: Dapatkan sumber daya Web PubSub tertentu
+### Contoh 3: Mendapatkan sumber daya Web PubSub tertentu
 ```powershell
 Get-AzWebPubSub -ResourceGroupName psdemo -Name psdemo-wps
 ```
@@ -86,7 +89,7 @@ psdemo-wps eastus   Standard_S1
 
 
 
-### Contoh 4: Dapatkan sumber daya Web PubSub tertentu melalui objek identitas
+### Contoh 4: Mendapatkan sumber daya Web PubSub tertentu melalui objek identitas
 ```powershell
 $identity = @{ ResourceGroupName = 'psdemo'
 ResourceName = 'psdemo-wps'
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.IWebPubSubIdentity
@@ -135,7 +138,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -205,12 +208,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
+  - `[Location <String>]`: wilayah
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ResourceName <String>]`: Nama sumber daya.
-  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan pribadi bersama
-  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan privat bersama
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

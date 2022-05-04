@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/add-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
-ms.openlocfilehash: 5cfb5c59c4f22b26c84e5c120c272d961549bb81
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cc87e17c2d142d8e5c3aff0fde11254f37d34cf3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316845"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666142"
 ---
 # Add-AzDnsRecordConfig
 
 ## SYNOPSIS
 Menambahkan catatan DNS ke objek kumpulan catatan lokal.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/add-azdnsrecordconfig) untuk informasi terbaru.
+
 ## SYNTAX
 
-### J
+### A
 ```
 Add-AzDnsRecordConfig -RecordSet <DnsRecordSet> -Ipv4Address <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -75,11 +78,11 @@ Add-AzDnsRecordConfig -RecordSet <DnsRecordSet> -CaaFlags <Byte> -CaaTag <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDnsRecordConfig** menambahkan catatan Domain Name System (DNS) ke objek **RecordSet** .
-Objek **RecordSet** adalah objek offline, dan perubahannya tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzDnsRecordSet untuk tetap melakukan perubahan ke layanan MICROSOFT AZURE DNS.
-Catatan SOA dibuat saat zona DNS dibuat, dan dihapus saat zona DNS dihapus.
-Anda tidak bisa menambahkan atau menghapus catatan SOA, tapi Anda bisa mengeditnya.
-Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
+Cmdlet **Add-AzDnsRecordConfig** menambahkan catatan Sistem Nama Domain (DNS) ke objek **RecordSet** .
+Objek **RecordSet** adalah objek offline, dan perubahannya tidak mengubah respons DNS hingga setelah Anda menjalankan cmdlet Set-AzDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Microsoft Azure.
+Rekaman SOA dibuat saat zona DNS dibuat, dan dihapus saat zona DNS dihapus.
+Anda tidak dapat menambahkan atau menghapus rekaman SOA, tetapi Anda bisa mengeditnya.
+Anda dapat meneruskan objek **RecordSet** ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ Get-AzDnsRecordSet -Name www -RecordType AAAA -ResourceGroupName MyResourceGroup
 
 Contoh ini menambahkan catatan AAAA ke kumpulan catatan yang sudah ada.
 
-### Contoh 3: Menambahkan catatan CNAME ke kumpulan catatan
+### Contoh 3: Menambahkan data CNAME ke kumpulan catatan
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name www -RecordType CNAME -ResourceGroupName MyResourceGroup -ZoneName myzone.com
 Add-AzDnsRecordConfig -RecordSet $RecordSet -Cname contoso.com
@@ -120,8 +123,8 @@ Set-AzDnsRecordSet -RecordSet $RecordSet
 Get-AzDnsRecordSet -Name www -RecordType CNAME -ResourceGroupName MyResourceGroup -ZoneName myzone.com | Add-AzDnsRecordConfig -Cname contoso.com | Set-AzDnsRecordSet
 ```
 
-Contoh ini menambahkan catatan CNAME ke kumpulan catatan yang sudah ada.
-Karena kumpulan catatan CNAME bisa berisi paling banyak satu catatan, kumpulan data awalnya harus kosong, atau rekaman yang sudah ada harus dihapus menggunakan Remove-AzDnsRecordConfig.
+Contoh ini menambahkan data CNAME ke kumpulan catatan yang sudah ada.
+Karena kumpulan data CNAME dapat berisi paling banyak satu catatan, kumpulan data awalnya harus berupa kumpulan catatan kosong, atau rekaman yang sudah ada harus dihapus menggunakan Remove-AzDnsRecordConfig.
 
 ### Contoh 4: Menambahkan catatan MX ke kumpulan catatan
 ```powershell
@@ -135,7 +138,7 @@ Get-AzDnsRecordSet -Name "@" -RecordType MX -ResourceGroupName MyResourceGroup -
 ```
 
 Contoh ini menambahkan catatan MX ke kumpulan catatan yang sudah ada.
-Nama catatan "@" menunjukkan kumpulan catatan di zona apex.
+Nama catatan "@" menunjukkan kumpulan catatan di puncak zona.
 
 ### Contoh 5: Menambahkan catatan NS ke kumpulan catatan
 ```powershell
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaTag
-Bidang tag catatan CAA untuk ditambahkan.
+Bidang tag rekaman CAA untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaValue
-Bidang nilai untuk catatan CAA untuk ditambahkan.
+Bidang nilai untuk catatan CAA yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cname
-Menentukan nama domain untuk catatan nama kanonis (CNAME).
+Menentukan nama domain untuk data nama kanonis (CNAME).
 
 ```yaml
 Type: System.String
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server mail exchange untuk catatan mail exchange (MX).
+Menentukan nama server pertukaran surat untuk rekaman pertukaran surat (MX).
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv4Address
-Menentukan alamat IPv4 untuk catatan A.
+Menentukan alamat IPv4 untuk rekaman A.
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Menentukan alamat IPv6 untuk catatan AAAA.
+Menentukan alamat IPv6 untuk rekaman AAAA.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nsdname
-Menentukan nama server nama untuk catatan server nama (NS).
+Menentukan nama server nama untuk rekaman server nama (NS).
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port untuk data layanan (SRV).
+Menentukan port untuk rekaman layanan (SRV).
 
 ```yaml
 Type: System.UInt16
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target catatan sumber daya penunjuk (PTR).
+Menentukan nama domain target dari rekaman sumber daya penunjuk (PTR).
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -Target
-Menentukan target untuk catatan SRV.
+Menentukan target untuk rekaman SRV.
 
 ```yaml
 Type: System.String
@@ -416,7 +419,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan nilai untuk catatan TXT.
 
 ```yaml
@@ -431,8 +434,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berat
-Menentukan bobot untuk catatan SRV.
+### -Bobot
+Menentukan bobot untuk rekaman SRV.
 
 ```yaml
 Type: System.UInt16
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

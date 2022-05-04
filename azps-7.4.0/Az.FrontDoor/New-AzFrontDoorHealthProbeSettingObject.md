@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
-ms.openlocfilehash: 69c3ee830c373c5cc33da5083f80364df1efdaa4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43b7277882929126d93388597a075355c1fbba63
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683946"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729644"
 ---
 # New-AzFrontDoorHealthProbeSettingObject
 
 ## SYNOPSIS
-Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
+Membuat objek PSHealthProbeSetting untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorhealthprobesettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorHealthProbeSettingObject -Name <String> [-Path <String>] [-Protoc
 ```
 
 ## DESCRIPTION
-Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
+Membuat objek PSHealthProbeSetting untuk pembuatan Front Door
 
 ## EXAMPLES
 
@@ -47,9 +50,9 @@ Name              : healthProbeSetting1
 Type              :
 ```
 
-Catatan: Pengaturan HealthProbeMethod tidak peka huruf besar kecil.
+Catatan: Pengaturan HealthProbeMethod tidak peka huruf besar/kecil.
 
-Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
+Membuat objek PSHealthProbeSetting untuk pembuatan Front Door
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah akan memungkinkan pemeriksaan kesehatan dilakukan terhadap backend yang ditentukan di bawah backendPools. Pemeriksaan kesehatan hanya dapat dinonaktifkan jika ada satu backend yang diaktifkan dalam satu kumpulan backend yang diaktifkan.
+Apakah akan mengaktifkan pemeriksaan kesehatan yang akan dilakukan terhadap backend yang ditentukan di bawah backendPools. Pemeriksaan kesehatan hanya dapat dinonaktifkan jika ada satu backend yang diaktifkan dalam satu kumpulan backend yang diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeMethod
-Mengonfigurasi metode HTTP mana yang digunakan untuk menyelimuti backend yang ditentukan di bawah backendPools.
+Mengonfigurasi metode HTTP mana yang akan digunakan untuk memeriksa backend yang ditentukan di bawah backendPools.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur yang akan digunakan untuk pemeriksaan kesehatan.
+Jalur yang digunakan untuk pemeriksaan kesehatan.
 Defaultnya adalah /
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Skema protokol yang digunakan untuk probe ini Nilai default adalah HTTP
+Skema protokol yang akan digunakan untuk nilai Default pemeriksaan ini adalah HTTP
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSProtocol
@@ -163,11 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting

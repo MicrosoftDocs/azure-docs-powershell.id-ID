@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
-ms.openlocfilehash: 5c9d89b8f744cb3205834f10fc173c1575fcc36c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99501045cf622a2bb80bf9cdc4a2aad4a4c7670f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868410"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729158"
 ---
 # Get-AzRecoveryServicesVault
 
 ## SYNOPSIS
 
-Mendapatkan daftar kubah Layanan Pemulihan.
+Mendapatkan daftar vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzRecoveryServicesVault [[-ResourceGroupName] <String>] [[-Name] <String>] -
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar kubah Layanan Pemulihan dalam langganan saat ini.
+Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar vault Layanan Pemulihan dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar kubah Layanan Pemuliha
 Get-AzRecoveryServicesVault
 ```
 
-Dapatkan daftar kubah dalam langganan yang dipilih.
+Dapatkan daftar vault dalam langganan yang dipilih.
 
 ### Contoh 2
 
@@ -53,7 +56,7 @@ Dapatkan daftar kubah dalam langganan yang dipilih.
 Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup"
 ```
 
-Dapatkan daftar kubah dalam grup sumber daya dalam langganan yang dipilih.
+Dapatkan daftar vault dalam grup sumber daya di langganan yang dipilih.
 
 ### Contoh 3
 
@@ -68,7 +71,7 @@ TenantId    : XXXXXXXX-XXXX-XXXX
 Type        : SystemAssigned
 ```
 
-Cmdlet pertama mendapatkan kubah dalam grup sumber daya dengan nama tertentu. Lalu kami mengakses informasi MSI dari kubah.
+Cmdlet pertama mendapatkan vault dalam grup sumber daya dengan nama yang diberikan. Kemudian kita mengakses informasi MSI dari vault.
 
 ## PARAMETERS
 
@@ -88,9 +91,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
-Menentukan nama kubah untuk kueri.
+Menentukan nama vault yang akan dikueri.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 
-Menentukan nama grup sumber daya Azure untuk mengambil objek Layanan Pemulihan tertentu.
+Menentukan nama grup sumber daya Azure untuk mengambil objek Layanan Pemulihan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -169,18 +172,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## NOTES
-Get-AzRecoveryServicesVault dalam versi lama Az.RecoveryServices(<=2.10.0) tidak dapat berfungsi dengan Az.Accounts(>=1.8.1) karena referensi perakitan yang salah. Modul Az.RecoveryServices perlu dimutakhirkan ke 2.11.0 atau yang lebih baru jika Anda menggunakan Az atau Az.Accounts terbaru.
+Get-AzRecoveryServicesVault dalam versi lama Az.RecoveryServices(<=2.10.0) tidak dapat bekerja dengan Az.Accounts(>=1.8.1) karena referensi rakitan yang salah. Modul Az.RecoveryServices perlu ditingkatkan ke 2.11.0 atau yang lebih baru jika Anda menggunakan Az atau Az.Accounts terbaru.
 
 ## RELATED LINKS
 

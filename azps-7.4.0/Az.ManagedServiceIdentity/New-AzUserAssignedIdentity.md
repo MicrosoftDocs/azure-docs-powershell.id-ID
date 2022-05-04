@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
-ms.openlocfilehash: ebcefde4e565a0325ec3e1c7a5bf02f0bde7d08d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 31d41524200d0fd7926f6423ac8dda5ee21538fe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998983"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734788"
 ---
 # New-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Membuat atau memperbarui identitas dalam grup sumber daya dan langganan tertentu.
+Membuat atau memperbarui identitas di grup langganan dan sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/new-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzUserAssignedIdentity -Name <String> -ResourceGroupName <String> -Location 
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui identitas dalam grup sumber daya dan langganan tertentu.
+Membuat atau memperbarui identitas di grup langganan dan sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat identitas yang ditetapkan pengguna dalam grup sumber daya dan langganan tertentu
+### Contoh 1: Membuat identitas yang ditetapkan pengguna dalam langganan dan grup sumber daya yang ditentukan
 ```powershell
 PS C:\> New-AzUserAssignedIdentity -ResourceGroupName azure-rg-test -Name uai-pwsh01 -Location eastus
 
@@ -39,7 +42,7 @@ Location Name       ResourceGroupName
 eastus   uai-pwsh01 azure-rg-test
 ```
 
-Perintah ini membuat identitas yang ditetapkan pengguna dalam grup sumber daya dan langganan tertentu
+Perintah ini membuat identitas yang ditetapkan pengguna dalam langganan dan grup sumber daya yang ditentukan
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya identitas.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
-ms.openlocfilehash: 3b78b55dc43f4c32f907f1481a4890cdac2585af
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1aebeb192aaaea6c8f4dafb21c94520a5640d564
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936199"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729014"
 ---
 # Initialize-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
-Perintah ini memicu penemuan item tanpa proteksi tipe beban kerja tertentu dalam wadah tertentu. Jika aplikasi DB tidak dilindungi secara otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali ditambahkan dan lanjutkan untuk melindunginya.
+Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer tertentu. Jika aplikasi DB tidak dilindungi secara otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali ditambahkan dan lanjutkan untuk melindunginya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Initialize-AzRecoveryServicesBackupProtectableItem [-Container] <ContainerBase> 
 ```
 
 ## DESCRIPTION
-cmdlet meminta beban kerja tertentu dalam wadah. Ini memicu operasi yang membuat item yang dapat dilindungi.
+cmdlet memerlukan beban kerja tertentu dalam kontainer. Ini memicu operasi yang membuat item yang dapat dilindungi.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Cmdlet menjalankan operasi penemuan untuk item baru yang dapat dilindungi.
 
 ### Contoh 2
 
-Perintah ini memicu penemuan item tanpa proteksi tipe beban kerja tertentu dalam wadah tertentu. (autogenerasi)
+Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer tertentu. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId $vault.ID -WorkloadType AzureVM
@@ -48,7 +51,7 @@ Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId 
 ## PARAMETERS
 
 ### -Kontainer
-Wadah tempat item berada
+Kontainer tempat item berada
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan wadah tempat penemuan sedang dipicu.
+Mengembalikan kontainer tempat penemuan dipicu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkloadType
-Tipe beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
+Jenis beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

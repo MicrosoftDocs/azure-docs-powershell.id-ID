@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: 80cac67214716846b654011c4af6b8c336fe5aef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 61120a48e9a4da5f90dc13f4458954620f6d2739
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270261"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729860"
 ---
 # Get-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
 Mendapatkan informasi simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,14 +57,14 @@ Cmdlet **Get-AzSynapseIntegrationRuntimeNode** mendapatkan informasi detail dari
 Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1'
 ```
 
-Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
+Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -IpAddress
 ```
 
-Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama simpul runtime integrasi.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

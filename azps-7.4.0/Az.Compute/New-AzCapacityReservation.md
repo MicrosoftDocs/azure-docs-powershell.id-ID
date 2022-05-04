@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
-ms.openlocfilehash: a92e809a83886451220a460ff434d1cb6ad67802
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0cef7b5eb386ad4140b33ac1ea0409ad4bc2a50f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231129"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592398"
 ---
 # New-AzCapacityReservation
 
 ## SYNOPSIS
-Membuat sumber daya Cadangan Kapasitas dalam Grup Reservasi Kapasitas
+Membuat sumber daya Reservasi Kapasitas dalam Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzCapacityReservation -ResourceGroupName <String> -ReservationGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCapacityReservation** membuat sumber daya Cadangan Kapasitas dalam Grup Reservasi Kapasitas
+Cmdlet **New-AzCapacityReservation** membuat sumber daya Reservasi Kapasitas dalam Grup Reservasi Kapasitas
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Cmdlet **New-AzCapacityReservation** membuat sumber daya Cadangan Kapasitas dala
 New-AzCapacityReservation -ResourceGroupName "myRG" -Location "eastus" -ReservationGroupName "myCapacityReservationGroup" -Name "myCapacityReservation" -Sku "Standard_DS1_v2" -CapacityToReserve 4
 ```
 
-Perintah ini akan membuat sumber daya Cadangan Kapasitas dengan sku yang disediakan dan kapasitas dalam Grup Reservasi Kapasitas bernama "myCapacityReservationGroup".
+Perintah ini akan membuat sumber daya Reservasi Kapasitas dengan sku dan kapasitas yang disediakan di Grup Reservasi Kapasitas bernama "myCapacityReservationGroup".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityToReserve
-Menentukan jumlah mesin virtual dalam kumpulan skala.
+Menentukan jumlah komputer virtual dalam set skala.
 
 ```yaml
 Type: System.Int32
@@ -99,7 +102,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya reservasi kapasitas.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU sumber daya yang kebutuhan kapasitasnya dicadangkan.
+SKU sumber daya yang kapasitasnya perlu dicadangkan.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
+Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Availability Zone untuk digunakan untuk pemesanan kapasitas ini.
+Zona Ketersediaan yang digunakan untuk reservasi kapasitas ini.
 
 ```yaml
 Type: System.String[]
@@ -189,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

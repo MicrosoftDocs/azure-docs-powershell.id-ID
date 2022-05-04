@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPacketCaptureFilterConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPacketCaptureFilterConfig.md
-ms.openlocfilehash: d12a499e81c2dbbb56235175a307744700cc5133
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0fbd8fab6c9f57fa9dc85f07438573841dd37f93
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678150"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727504"
 ---
 # New-AzPacketCaptureFilterConfig
 
 ## SYNOPSIS
 Membuat objek filter penangkapan paket baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azpacketcapturefilterconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzPacketCaptureFilterConfig [-Protocol <String>] [-RemoteIPAddress <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPacketCaptureFilterConfig membuat objek filter penangkapan paket baru. Objek ini digunakan untuk membatasi tipe paket yang direkam selama sesi pengambilan paket menggunakan kriteria yang ditentukan. Cmdlet New-AzNetworkWatcherPacketCapture dapat menerima beberapa objek filter untuk mengaktifkan sesi pengambilan gambar yang dapat dikomposisikan.
+Cmdlet New-AzPacketCaptureFilterConfig membuat objek filter penangkapan paket baru. Objek ini digunakan untuk membatasi jenis paket yang diambil selama sesi penangkapan paket menggunakan kriteria yang ditentukan. Cmdlet New-AzNetworkWatcherPacketCapture dapat menerima beberapa objek filter untuk mengaktifkan sesi pengambilan yang dapat disusun.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Tangkapan Paket dengan beberapa filter
+### Contoh 1: Membuat Pengambilan Paket dengan beberapa filter
 ```powershell
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -41,7 +44,7 @@ $filter2 = New-AzPacketCaptureFilterConfig -Protocol UDP
 New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtualMachineId $vm.Id -PacketCaptureName "PacketCaptureTest" -StorageAccountId $storageAccount.id -TimeLimitInSeconds 60 -Filters $filter1, $filter2
 ```
 
-Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Catatan: Ekstensi Azure Network Watcher harus diinstal di mesin virtual target untuk membuat tangkapan paket.
+Dalam contoh ini kita membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Catatan: Ekstensi Azure Network Watcher harus diinstal pada komputer virtual target untuk membuat tangkapan paket.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocalIPAddress
-Menentukan Alamat IP Lokal untuk memfilter.
+Menentukan Alamat IP Lokal untuk difilter.
 Contoh input: "127.0.0.1" untuk entri alamat tunggal.
 "127.0.0.1-127.0.0.255" untuk rentang.
 "127.0.0.1;127.0.0.5;" untuk beberapa entri.
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Menentukan Alamat IP Lokal untuk memfilter.
+Menentukan Alamat IP Lokal untuk difilter.
 Contoh input: "127.0.0.1" untuk entri alamat tunggal.
 "127.0.0.1-127.0.0.255" untuk rentang.
 "127.0.0.1;127.0.0.5;" untuk beberapa entri.
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan Protokol untuk memfilter. Nilai yang dapat diterima "TCP","UDP","Any"
+Menentukan Protokol yang akan difilter. Nilai yang dapat diterima "TCP","UDP","Any"
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteIPAddress
-Menentukan alamat IP jarak jauh untuk memfilter.
+Menentukan alamat IP jarak jauh untuk difilter.
 Contoh input: "127.0.0.1" untuk entri alamat tunggal.
 "127.0.0.1-127.0.0.255" untuk rentang.
 "127.0.0.1;127.0.0.5;" untuk beberapa entri.
@@ -130,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -RemotePort
-Menentukan Port Jauh untuk memfilter.
-Port jarak jauh Contoh input: "80" untuk entri port tunggal.
+Menentukan Port Jarak Jauh yang akan difilter.
+Input Contoh port jarak jauh: "80" untuk entri port tunggal.
 "80-85" untuk rentang.
 "80;443;" untuk beberapa entri.
 
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSPacketCaptureFilter
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, paket, tangkapan, lalu lintas, filter 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, paket, penangkapan, lalu lintas, filter 
 
 ## RELATED LINKS
 
@@ -167,7 +170,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -207,9 +210,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

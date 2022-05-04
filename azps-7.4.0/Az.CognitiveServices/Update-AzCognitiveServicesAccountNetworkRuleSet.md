@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
-ms.openlocfilehash: 83d90b7118c8aff2db69189df9a1ea5a266b1ce7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 650903f7f68d7799b3544707e665fae25365f209
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006399"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634184"
 ---
 # Update-AzCognitiveServicesAccountNetworkRuleSet
 
 ## SYNOPSIS
 Memperbarui properti NetworkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/update-azcognitiveservicesaccountnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,14 +41,14 @@ Update-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGr
     etworks/vnet2/subnets/subnet2"})
 ```
 
-Perintah ini memperbarui semua properti NetworkRule, Aturan input dengan JSON.
+Perintah ini memperbarui semua properti NetworkRule, aturan input dengan JSON.
 
-### Contoh 2: Properti Bypass Pembaruan dari NetworkRule
+### Contoh 2: Memperbarui properti Bypass dari NetworkRule
 ```powershell
 Update-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount"
 ```
 
-Perintah ini memperbarui properti Bypass networkrule (properti lain tidak akan berubah).
+Perintah ini memperbarui properti Bypass dari NetworkRule (properti lain tidak akan berubah).
 
 ### Contoh 3: Membersihkan aturan NetworkRule dari akun Cognitive Services
 ```powershell
@@ -57,7 +60,7 @@ Perintah ini membersihkan aturan NetworkRule dari akun Cognitive Services (prope
 ## PARAMETERS
 
 ### -DefaultAction
-Akun Layanan Kognitif NetworkRule DefaultAction. Nilai `Deny`default .
+Akun Cognitive Services NetworkRule DefaultAction. Nilai `Deny`default .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSNetWorkRuleDefaultActionEnum
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Cognitive Services Account NetworkRule IpRules.
+Akun Cognitive Services NetworkRule IpRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule[]
@@ -102,8 +105,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Akun Layanan Kognitif NetworkRule VirtualNetworkRules.
+Akun Cognitive Services NetworkRule VirtualNetworkRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSVirtualNetworkRule[]
@@ -147,8 +150,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

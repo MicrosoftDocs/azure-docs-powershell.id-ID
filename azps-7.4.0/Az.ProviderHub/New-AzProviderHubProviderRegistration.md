@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
-ms.openlocfilehash: 6d82a2ba5ddff9ca2becc9bccf90189a32387c59
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ee3bc7d74f0fa8ffab5326db841c77b783d91a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278055"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703722"
 ---
 # New-AzProviderHubProviderRegistration
 
 ## SYNOPSIS
 Membuat atau memperbarui pendaftaran penyedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubproviderregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 
 ### -ProviderAuthorization
 .
-Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderAuthorization[]

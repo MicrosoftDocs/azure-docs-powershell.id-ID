@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
-ms.openlocfilehash: afdd6569e47bb72bae11278b35018605acc01440
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 298834e5d6b9a24f01c87f459420fb5f23e86f11
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006057"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685594"
 ---
 # Get-AzVMDscExtensionStatus
 
 ## SYNOPSIS
-Mendapatkan status pengatur ekstensi DSC untuk mesin virtual.
+Mendapatkan status handler ekstensi DSC untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdscextensionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,14 +36,14 @@ Get-AzVMDscExtensionStatus [-VM <PSVirtualMachine>] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status handler ekstensi Konfigurasi Negara Yang Diinginkan (DSC) untuk mesin virtual dalam grup sumber daya.
+Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status handler ekstensi Desired State Configuration (DSC) untuk komputer virtual dalam grup sumber daya.
 Ketika konfigurasi diterapkan cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan status pengatur ekstensi DSC untuk mesin virtual. (autogenerasi)
+Mendapatkan status handler ekstensi DSC untuk komputer virtual. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -64,10 +67,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
 Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzVMDscExtensionStatus**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet Atur atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
+Tentukan parameter ini hanya jika Anda mengubah nama default di cmdlet Set atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin maya tempat ekstensi diaktifkan.
+Menentukan objek komputer virtual tempat ekstensi diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini mendapatkan status ekstensi DSC.
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan status ekstensi DSC.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: f79c3a08610231a7e82eca5a19672d48e8e177b7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 92c2dcd04ef62b48643b3faf0f663a79b5f109fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671416"
 ---
 # New-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Membuat Storage Insight di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ New-AzOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsStorageInsight** menciptakan Storage Insight baru di ruang kerja yang sudah ada.
+Cmdlet **New-AzOperationalInsightsStorageInsight** membuat Storage Insight baru di ruang kerja yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Storage Insight menurut nama
+### Contoh 1: Membuat wawasan Storage berdasarkan nama
 ```powershell
 $Storage = Get-AzStorageAccount -ResourceGroupName "ContosoResourceGroup" -Name "ContosoStorage"
 
@@ -51,11 +54,11 @@ New-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup
 ```
 
 Perintah pertama menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan bernama ContosoStorage, lalu menyimpannya dalam variabel $Storage.
-Perintah kedua melewati akun penyimpanan dalam $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator pipeline untuk mendapatkan kunci akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lain, gunakan Nilai[1] dan bukan Nilai[0].
-Perintah terakhir membuat wawasan penyimpanan bernama MyStorageInsight di ruang kerja bernama MyWorkspace.
-Wawasan penyimpanan ini menggunakan data dari tabel WADWindowsEventLogsTable dalam sumber daya akun penyimpanan tertentu.
+Perintah kedua meneruskan akun penyimpanan dalam $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator alur untuk mendapatkan kunci akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lain, gunakan Nilai[1] alih-alih Nilai[0].
+Perintah akhir membuat wawasan penyimpanan bernama MyStorageInsight di ruang kerja bernama MyWorkspace.
+Wawasan penyimpanan ini menggunakan data dari tabel WADWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
 
-### Contoh 2: Membuat Storage Insight menggunakan objek ruang kerja
+### Contoh 2: Membuat Storage Insight dengan menggunakan objek ruang kerja
 ```powershell
 $Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
@@ -68,14 +71,14 @@ New-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageIn
 
 Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam variabel $Workspace.
 Perintah kedua menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $Storage.
-Perintah ketiga melewati akun penyimpanan dalam $Storage ke cmdlet Get-AzStorageAccountKey menggunakan operator pipeline untuk mendapatkan kunci yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lain, gunakan Nilai[1] dan bukan Nilai[0].
+Perintah ketiga meneruskan akun penyimpanan dalam $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator alur untuk mendapatkan kunci yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lain, gunakan Nilai[1] alih-alih Nilai[0].
 Perintah akhir membuat wawasan penyimpanan bernama MyStorageInsight di ruang kerja yang ditentukan dalam $Workspace.
-Storage Insight menggunakan data dari tabel WADWindowsEventLogsTable dalam sumber daya akun penyimpanan tertentu.
+Wawasan Storage menggunakan data dari tabel WADWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
 
 ## PARAMETERS
 
 ### -Kontainer
-Menentukan daftar wadah yang berisi data.
+Menentukan daftar kontainer yang berisi data.
 
 ```yaml
 Type: System.String[]
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama Storage Insight.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -StorageAccountResourceId
 Menentukan sumber daya Azure dari akun penyimpanan.
-Ini dapat diambil dengan menjalankan cmdlet Get-AzStorageAccount dan mengakses parameter *Id* dari hasilnya.
+Ini dapat diambil dengan menjalankan cmdlet Get-AzStorageAccount dan mengakses parameter *Id* hasilnya.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag wawasan Storage
+Tag Storage Insight
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -225,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
-Menentukan ruang kerja untuk Storage Insight yang baru.
+### -Ruang kerja
+Menentukan ruang kerja untuk Storage Insight baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
@@ -240,7 +243,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja yang sudah ada.
 
 ```yaml
@@ -255,8 +258,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

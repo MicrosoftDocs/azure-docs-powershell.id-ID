@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnSiteLinkConnectionIkeSa.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnSiteLinkConnectionIkeSa.md
-ms.openlocfilehash: 9c2304dba10725d5c466bb852bf4ad52ac89bede
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 41eb36283a4a88d74c2c8ab3f41f5b6ae3f47d33
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743274"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729428"
 ---
 # Get-AzVpnSiteLinkConnectionIkeSa
 
 ## SYNOPSIS
-Dapatkan IKE Security Associations of VPN Site Link Connections
+Mendapatkan Asosiasi Keamanan IKE dari Koneksi Tautan Situs VPN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnsitelinkconnectionikesa) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Get-AzVpnSiteLinkConnectionIkeSa -ResourceId <String> [-AsJob] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVpnSiteLinkConnectionIkeSa** mengembalikan Asosiasi Keamanan IKE koneksi VPN Link Anda berdasarkan Vpn Site Link Connection Name, VPN Connection Name, VPN Gateway Name and Resource Group Name.
-Jika cmdlet **Get-AzVpnSiteLinkConnectionIkeSa** dikeluarkan tanpa menentukan parameter yang disebutkan di atas, output tidak akan memperlihatkan Asosiasi Keamanan IKE.
+Cmdlet **Get-AzVpnSiteLinkConnectionIkeSa** mengembalikan Asosiasi Keamanan IKE Koneksi TAUTAN VPN Anda berdasarkan Nama Koneksi VPN Site Link, Nama Koneksi VPN, Nama Koneksi VPN Gateway, dan Nama Grup Sumber Daya.
+Jika cmdlet **Get-AzVpnSiteLinkConnectionIkeSa** dikeluarkan tanpa menentukan parameter yang disebutkan di atas, output tidak akan menampilkan Asosiasi Keamanan IKE.
 
 ## EXAMPLES
 
@@ -114,7 +117,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koneksi tautan situs Vpn.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari koneksi tautan situs Vpn tempat Asosiasi Keamanan IKE perlu disambungkan.
+ID sumber daya Azure dari koneksi tautan situs Vpn tempat Asosiasi Keamanan IKE perlu diambil.
 
 ```yaml
 Type: String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

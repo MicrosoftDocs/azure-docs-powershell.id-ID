@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageVersion.md
-ms.openlocfilehash: bc308269db693a9540dfe2a3b67f748b1d1387bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f8d13af8b409375d14d20ee49b8c299bfb9e2f9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065925"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668248"
 ---
 # New-AzGalleryImageVersion
 
 ## SYNOPSIS
 
 Membuat versi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azgalleryimageversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Membuat versi gambar galeri.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat versi gambar dari mesin virtual
+### Contoh 1: Membuat versi gambar dari komputer virtual
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -47,7 +50,7 @@ $sourceImageId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGr
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -SourceImageId $sourceImageId
 ```
 
-Tambahkan versi gambar baru dari mesin virtual ke dalam definisi gambar.
+Tambahkan versi gambar baru dari komputer virtual ke dalam definisi gambar.
 
 ### Contoh 2: Membuat versi gambar dari gambar terkelola
 
@@ -89,7 +92,7 @@ $osDisk = @{Source = @{Id = "/subscriptions/00000000-0000-0000-0000-000000000000
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -OSDiskImage $osDisk
 ```
 
-Membuat versi gambar dari disk yang dikelola
+Membuat versi gambar dari disk terkelola
 
 ### Contoh 5: Menambahkan versi gambar baru dari disk terkelola dan menambahkan disk data tambahan
 
@@ -107,7 +110,7 @@ New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -
 
 Membuat versi gambar dengan menentukan OS dan disk data
 
-### Contoh 6: Menambahkan versi gambar baru dari snapshot disk OS
+### Contoh 6: Menambahkan versi gambar baru dari rekam jepret disk OS
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -119,9 +122,9 @@ $osSnapshot = @{Source = @{Id = "/subscriptions/00000000-0000-0000-0000-00000000
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -OSDiskImage $osDisk
 ```
 
-Membuat versi gambar dari snapshot disk
+Membuat versi gambar dari rekam jepret disk
 
-### Contoh 7: Menambahkan versi gambar baru dari snapshot disk OS dan menambahkan disk data tambahan
+### Contoh 7: Menambahkan versi gambar baru dari rekam jepret disk OS dan menambahkan disk data tambahan
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -135,9 +138,9 @@ $dataDisks = @($dataSnapshot0)
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -OSDiskImage $osSnapshot  -DataDiskImage $dataDisks
 ```
 
-Buat versi gambar dengan menentukan snapshot untuk OS dan disk data.
+Buat versi gambar dengan menentukan rekam jepret untuk OS dan disk data.
 
-### Contoh 8: Menambahkan versi gambar baru dari kombinasi disk dan snapshot
+### Contoh 8: Menambahkan versi gambar baru dari kombinasi disk dan rekam jepret
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -151,9 +154,9 @@ $dataDisks = @($dataDisk0)
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -OSDiskImage $osSnapshot  -DataDiskImage $dataDisks
 ```
 
-Buat versi gambar dengan menentukan snapshot sebagai disk OS dan disk yang dikelola sebagai disk data.
+Buat versi gambar dengan menentukan rekam jepret sebagai disk OS dan disk terkelola sebagai disk data.
 
-### Contoh 9: Tambahkan versi gambar baru dan salin ke kawasan tambahan.
+### Contoh 9: Tambahkan versi gambar baru dan salin ke wilayah tambahan.
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -172,9 +175,9 @@ $targetRegions = @($region_eastus, $region_westus, $region_ukwest, $region_south
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -SourceImageId $sourceImageId -ReplicaCount 1 -StorageAccountType $storageAccountType -TargetRegion $targetRegions
 ```
 
-Membuat versi gambar di empat kawasan. Dalam contoh ini, jumlah replika global adalah 1 dan tipe akun penyimpanan global Standard_ZRS. AS Timur akan memiliki 3 replika, masing-masing disimpan di penyimpanan akun Standard_LRS. AS Barat akan mewarisi dari pengaturan global dan memiliki 1 replika yang disimpan di Standard_ZRS. UK West akan memiliki jumlah replika 2 yang disimpan di Standard_ZRS. As Tengah Selatan akan memiliki satu replika yang disimpan di Standard_LRS.
+Membuat versi gambar di empat wilayah. Dalam contoh ini, jumlah replika global adalah 1 dan jenis akun penyimpanan global Standard_ZRS. US Timur akan memiliki 3 replika, masing-masing disimpan di penyimpanan akun Standard_LRS. AS Barat akan mewarisi dari pengaturan global dan memiliki 1 replika yang disimpan di Standard_ZRS. UK Barat akan memiliki jumlah replika 2 yang disimpan di Standard_ZRS. US Tengah Selatan akan memiliki satu replika yang disimpan di Standard_LRS.
 
-### Contoh 10: Menambahkan versi gambar baru dengan enkripsi di beberapa kawasan
+### Contoh 10: Menambahkan versi gambar baru dengan enkripsi di beberapa wilayah
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -207,7 +210,7 @@ $targetRegions = @($region_eastus, $region_westus)
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -SourceImageId $sourceImageId -TargetRegion $targetRegions
 ```
 
-Buat versi gambar dengan enkripsi di dua kawasan. Kumpulan enkripsi disk adalah sumber daya kawasan dan kumpulan enkripsi disk yang berbeda harus digunakan di setiap kawasan.
+Buat versi gambar dengan enkripsi di dua wilayah. Set enkripsi disk adalah sumber daya regional dan set enkripsi disk yang berbeda harus digunakan di setiap wilayah.
 
 ### Contoh 11: Membuat versi gambar dan mengecualikannya dari yang terbaru
 
@@ -222,7 +225,7 @@ New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -
 
 Tambahkan versi gambar baru ke dalam definisi gambar tetapi kecualikan agar tidak dipertimbangkan untuk versi terbaru dalam definisi gambarnya.
 
-### Contoh 12: Membuat versi gambar dan mengatur tanggal masa berakhirnya
+### Contoh 12: Membuat versi gambar dan mengatur tanggal akhir masa pakainya
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -234,13 +237,13 @@ $endOfLifeDate = "2024-08-02T00:00:00+00:00"
 New-AzGalleryImageVersion -ResourceGroupName $rgName -GalleryName $galleryName -GalleryImageDefinitionName $galleryImageDefinitionName -Name $galleryImageVersionName -Location $location -SourceImageId $sourceImageId -PublishingProfileEndOfLifeDate $endOfLifeDate
 ```
 
-Contoh ini memiliki tanggal akhir masa berlaku untuk versi gambar yang diatur ke 2 Agustus 2024 di UTC mignight. Tanggal akhir masa pakai dapat ditentukan untuk definisi gambar dan versi gambar. Versi gambar masih dapat digunakan setelah tanggal masa berakhir.
+Contoh ini memiliki tanggal akhir masa pakai untuk versi gambar yang diatur ke 2 Agustus 2024 pada mignight UTC. Tanggal akhir masa pakai dapat ditentukan untuk definisi gambar dan versi gambar. Versi gambar masih dapat digunakan setelah tanggal akhir masa pakai.
 
 ## PARAMETERS
 
 ### -AsJob
 
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,7 +337,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 Nama versi gambar galeri.
 
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 
 ### -OSDiskImage
 
-OS disk image misalnya @{Source = @{Id = <source_id>}; SizeInGB = 100; HostCaching = "ReadOnly" }
+Gambar disk OS misalnya @{Source = @{Id = <source_id>}; SizeInGB = 100; HostCaching = "ReadOnly" }
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.GalleryOSDiskImage
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 
 ### -PublishingProfileEndOfLifeDate
 
-Tanggal berakhirnya galeri Versi Gambar.
+Tanggal akhir masa pakai galeri Versi Gambar.
 
 ```yaml
 Type: System.DateTime
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 
 ### -PublishingProfileExcludeFromLatest
 
-Jika diatur, Virtual Machines disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
+Jika diatur, Virtual Machines yang disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 
 ### -ReplicaCount
 
-Jumlah replika Versi Gambar yang akan dibuat per kawasan.
+Jumlah replika Versi Gambar yang akan dibuat per wilayah.
 
 ```yaml
 Type: System.Int32
@@ -448,7 +451,7 @@ Accept wildcard characters: False
 
 ### -StorageAccountType
 
-Menentukan tipe akun penyimpanan yang akan digunakan untuk menyimpan gambar. Properti ini tidak dapat diperbarui. Nilai yang tersedia Standard_LRS, Standard_ZRS, dan Premium_LRS.
+Menentukan jenis akun penyimpanan yang akan digunakan untuk menyimpan gambar. Properti ini tidak dapat diperbarui. Nilai yang tersedia Standard_LRS, Standard_ZRS, dan Premium_LRS.
 
 ```yaml
 Type: System.String
@@ -494,9 +497,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -512,7 +515,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -529,7 +532,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
-ms.openlocfilehash: 2b8cd6c3124bfcaa4cc0b187d9c5210b3d31edbb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 399fbfee70ecc3ad6b2c418c2c197a85bab0bd07
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063008"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648814"
 ---
 # Get-AzDataShareSubscription
 
 ## SYNOPSIS
-Mendapatkan informasi tentang berbagi langganan di akun berbagi data.
+Mendapatkan informasi tentang langganan berbagi di akun berbagi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareSubscription -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareSubscription** menyediakan informasi tentang berbagi langganan dalam akun berbagi data. Jika berbagi nama langganan disediakan, cmdlet memberikan informasi tentang langganan berbagi tertentu. Jika tidak, cmdlet menyediakan daftar langganan berbagi di akun berbagi data.
+Cmdlet **Get-AzDataShareSubscription** menyediakan informasi tentang langganan berbagi di akun berbagi data. Jika nama langganan berbagi disediakan, cmdlet memberikan informasi tentang langganan berbagi tertentu. Jika tidak, cmdlet menyediakan daftar langganan berbagi di akun berbagi data.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama langganan berbagi data Azure
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

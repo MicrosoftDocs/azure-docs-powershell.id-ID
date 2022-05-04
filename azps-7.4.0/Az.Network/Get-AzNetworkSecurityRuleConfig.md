@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: 48415fda3834f9a152ef9aac9ae1f2bc4cab5af0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0784bb61d819a53e07dd5c9709170d7c1fdef6a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597740"
 ---
 # Get-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
-Dapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+Mendapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzNetworkSecurityGroup -Name nsg1 -ResourceGroupName rg1
     | Get-AzNetworkSecurityRuleConfig -Name "rdp-rule"
 ```
 
-Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari grup keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
+Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari kelompok keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi aturan keamanan jaringan yang akan didapatkan.
 
 ```yaml
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan untuk didapatkan.
+Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -123,7 +126,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzNetworkSecurityRuleConfig](./Add-AzNetworkSecurityRuleConfig.md)
+[Tambahkan-AzNetworkSecurityRuleConfig](./Add-AzNetworkSecurityRuleConfig.md)
 
 [New-AzNetworkSecurityRuleConfig](./New-AzNetworkSecurityRuleConfig.md)
 

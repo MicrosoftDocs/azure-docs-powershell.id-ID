@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
-ms.openlocfilehash: 164b96b061519dbf412c7a53cd81194b04c7310d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 047744082bd6e6e47a31ce9ae9a08ac56935e373
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123237"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705360"
 ---
 # New-AzDnsRecordSet
 
 ## SYNOPSIS
 Membuat kumpulan catatan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/new-azdnsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,18 +52,18 @@ New-AzDnsRecordSet -Name <String> -Zone <DnsZone> [-Ttl <UInt32>] -RecordType <R
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDnsRecordSet** membuat kumpulan catatan Domain Name System (DNS) baru dengan nama yang ditentukan dan mengetik dalam zona yang ditentukan.
-Objek **RecordSet** adalah sekumpulan catatan DNS dengan nama dan tipe yang sama.
-Perhatikan bahwa nama tersebut relatif terhadap zona dan bukan nama yang sepenuhnya memenuhi syarat.
-Parameter *DnsRecords* menentukan catatan dalam kumpulan catatan.
-Parameter ini mengambil array catatan DNS, dibuat menggunakan New-AzDnsRecordConfig.
-Anda bisa menggunakan operator pipeline untuk mengirimkan objek **DnsZone** ke cmdlet ini, atau Anda bisa melewati objek **DnsZone** sebagai parameter *Zona* , atau alternatifnya Anda bisa menentukan zona berdasarkan nama.
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
-Jika **RecordSet** yang cocok sudah ada (nama dan tipe rekaman yang sama), Anda harus menentukan parameter *Overwrite* , jika tidak cmdlet tidak akan membuat **RecordSet** baru.
+Cmdlet **New-AzDnsRecordSet** membuat kumpulan catatan Sistem Nama Domain (DNS) baru dengan nama dan jenis yang ditentukan di zona yang ditentukan.
+Objek **RecordSet** adalah sekumpulan catatan DNS dengan nama dan jenis yang sama.
+Perhatikan bahwa namanya relatif terhadap zona dan bukan nama yang sepenuhnya memenuhi syarat.
+Parameter *DnsRecords* menentukan rekaman dalam kumpulan catatan.
+Parameter ini mengambil array rekaman DNS, yang dibangun menggunakan New-AzDnsRecordConfig.
+Anda dapat menggunakan operator alur untuk meneruskan objek **DnsZone** ke cmdlet ini, atau Anda dapat meneruskan objek **DnsZone** sebagai parameter *Zona* , atau atau Anda dapat menentukan zona berdasarkan nama.
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Jika **RecordSet** yang cocok sudah ada (nama dan jenis rekaman yang sama), Anda harus menentukan parameter *Timpa* , jika tidak, cmdlet tidak akan membuat **RecordSet** baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Kumpulan Rekaman tipe A
+### Contoh 1: Membuat RecordSet tipe A
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -IPv4Address 1.2.3.4
@@ -80,10 +83,10 @@ $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "My
 ```
 
 Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
-Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
 
-### Contoh 2: Membuat Kumpulan Rekaman dari tipe AAAA
+### Contoh 2: Membuat RecordSet jenis AAAA
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Ipv6Address 2001:db8::1
@@ -91,11 +94,11 @@ $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName 
 ```
 
 Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
-Kumpulan catatan adalah tipe AAAA dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis AAAA dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 3: Membuat Kumpulan Rekaman tipe CNAME
+### Contoh 3: Membuat RecordSet jenis CNAME
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Cname www.contoso.com
@@ -103,11 +106,11 @@ $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName
 ```
 
 Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
-Kumpulan catatan adalah tipe CNAME dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis CNAME dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 4: Membuat RecordSet tipe MX
+### Contoh 4: Membuat RecordSet jenis MX
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Exchange "mail.microsoft.com" -Preference 5
@@ -115,11 +118,11 @@ $RecordSet = New-AzDnsRecordSet -Name "mail" -RecordType MX -ResourceGroupName "
 ```
 
 Perintah ini membuat **RecordSet** bernama www di zona myzone.com.
-Kumpulan catatan adalah tipe MX dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 5: Membuat Kumpulan Data tipe NS
+### Contoh 5: Membuat RecordSet jenis NS
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Nsdname ns1-01.azure-dns.com
@@ -127,11 +130,11 @@ $RecordSet = New-AzDnsRecordSet -Name "ns1" -RecordType NS -ResourceGroupName "M
 ```
 
 Perintah ini membuat **RecordSet** bernama ns1 di zona myzone.com.
-Kumpulan catatan adalah tipe NS dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis NS dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 6: Membuat RecordSet tipe PTR
+### Contoh 6: Membuat RecordSet jenis PTR
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Ptrdname www.contoso.com
@@ -139,49 +142,49 @@ $RecordSet = New-AzDnsRecordSet -Name "4" -RecordType PTR -ResourceGroupName "My
 ```
 
 Perintah ini membuat **RecordSet** bernama 4 di zona 3.2.1.in-addr.arpa.
-Kumpulan rekor adalah tipe PTR dan memiliki TTL 1 jam (3600 detik).
+Kumpulan catatan berjenis PTR dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 7: Membuat Kumpulan Data tipe SRV
+### Contoh 7: Membuat RecordSet jenis SRV
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Priority 0 -Weight 5 -Port 8080 -Target sipservice.contoso.com
 $RecordSet = New-AzDnsRecordSet -Name "_sip._tcp" -RecordType SRV -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet** bernama _sip._tcp di myzone.com zona.
-Kumpulan catatan adalah tipe SRV dan memiliki TTL 1 jam (3600 detik).
-Ini berisi satu catatan DNS, mengarah ke alamat IP 2001.2.3.4.
+Perintah ini membuat **RecordSet** bernama _sip._tcp di zona myzone.com.
+Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik).
+Ini berisi satu catatan DNS, menunjuk ke alamat IP 2001.2.3.4.
 Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 8: Membuat Kumpulan Data tipe TXT
+### Contoh 8: Membuat RecordSet jenis TXT
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Value "This is a TXT Record"
 $RecordSet = New-AzDnsRecordSet -Name "text" -RecordType TXT -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat teks **bernama RecordSet** di zona myzone.com.
-Kumpulan catatan adalah tipe TXT dan memiliki TTL 1 jam (3600 detik).
+Perintah ini membuat teks bernama **RecordSet** di zona myzone.com.
+Kumpulan catatan berjenis TXT dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 9: Membuat RecordSet di apex zona
+### Contoh 9: Membuat RecordSet di puncak zona
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Ipv4Address 1.2.3.4
 $RecordSet = New-AzDnsRecordSet -Name "@" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet** pada apex (atau akar) zona myzone.com.
+Perintah ini membuat **RecordSet** di puncak (atau root) zona myzone.com.
 Untuk melakukan ini, nama kumpulan catatan ditentukan sebagai "@" (termasuk tanda kutip ganda).
-Anda tidak bisa membuat catatan CNAME di puncak zona.
-Ini adalah batasan standar DNS; itu bukan batasan Azure DNS.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Anda tidak dapat membuat data CNAME di puncak zona.
+Ini adalah batasan dari standar DNS; ini bukan batasan Azure DNS.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 10: Membuat Kumpulan Catatan wildcard
+### Contoh 10: Membuat Kumpulan Catatan kartubebas
 ```powershell
 $Records = @()
 $Records += New-AzDnsRecordConfig -Ipv4Address 1.2.3.4
@@ -189,8 +192,8 @@ $RecordSet = New-AzDnsRecordSet -Name "*" -RecordType A -ResourceGroupName "MyRe
 ```
 
 Perintah ini membuat **RecordSet** bernama * di zona myzone.com.
-Ini adalah kumpulan rekor wildcard.
-Untuk membuat **Kumpulan Rekaman** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Ini adalah kumpulan catatan kartubebas.
+Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 11: Membuat kumpulan catatan kosong
 ```powershell
@@ -198,8 +201,8 @@ $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "My
 ```
 
 Perintah ini membuat **RecordSet** bernama www di zona myzone.com.
-Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik).
-Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung tempat Anda nanti bisa menambahkan catatan.
+Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik).
+Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung tempat Anda nantinya bisa menambahkan rekaman.
 
 ### Contoh 12: Membuat kumpulan catatan dan menyembunyikan semua konfirmasi
 ```powershell
@@ -207,8 +210,8 @@ $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "My
 ```
 
 Perintah ini membuat **RecordSet**.
-Parameter *Timpa* memastikan bahwa kumpulan catatan ini menimpa kumpulan catatan yang sudah ada sebelumnya dengan nama dan tipe yang sama (rekaman yang sudah ada dalam kumpulan catatan tersebut hilang).
-Parameter *Konfirmasi* dengan nilai $False menyembunyikan perintah konfirmasi.
+Parameter *Timpa* memastikan bahwa kumpulan catatan ini menimpa kumpulan catatan yang sudah ada sebelumnya dengan nama dan jenis yang sama (rekaman yang sudah ada dalam kumpulan catatan tersebut hilang).
+Parameter *Konfirmasi* dengan nilai $False menekan prompt konfirmasi.
 
 ## PARAMETERS
 
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -DnsRecords
 Menentukan array catatan DNS untuk disertakan dalam kumpulan catatan.
-Anda bisa menggunakan cmdlet New-AzDnsRecordConfig untuk membuat objek catatan DNS.
+Anda bisa menggunakan cmdlet New-AzDnsRecordConfig untuk membuat objek rekaman DNS.
 Lihat contoh untuk informasi selengkapnya.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 
 ### -Metadata
 Menentukan array metadata untuk dikaitkan dengan RecordSet.
-Metadata ditentukan menggunakan pasangan nilai nama yang dinyatakan sebagai tabel hash, misalnya @{"dept"="shopping";" env"="production"}.
+Metadata ditentukan menggunakan pasangan nama-nilai yang direpresentasikan sebagai tabel hash, misalnya @{"dept"="shopping";" env"="production"}.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -260,8 +263,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama **RecordSet** untuk dibuat.
+### -Name
+Menentukan nama **RecordSet** yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ### -RecordType
 Menentukan tipe catatan DNS yang akan dibuat.
 Nilai yang valid adalah:
-- J
+- A
 - AAAA
 - CNAME
 - MX
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Menentukan grup sumber daya yang berisi zona DNS.
 Anda juga harus menentukan parameter *ZoneName* untuk menentukan nama zona.
-Alternatifnya, Anda dapat menentukan zona dan grup sumber daya dengan masuk ke objek Zona DNS menggunakan parameter *Zona* .
+Atau, Anda dapat menentukan zona dan grup sumber daya dengan meneruskan objek Zona DNS menggunakan parameter *Zona* .
 
 ```yaml
 Type: System.String
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ttl
-Menentukan Time to Live (TTL) untuk Kumpulan Catatan DNS.
+Menentukan Time to Live (TTL) untuk RecordSet DNS.
 
 ```yaml
 Type: System.UInt32
@@ -393,7 +396,7 @@ Accept wildcard characters: False
 ### -ZoneName
 Menentukan nama zona untuk membuat **RecordSet**.
 Anda juga harus menentukan grup sumber daya yang berisi zona menggunakan parameter *ResourceGroupName* .
-Alternatifnya, Anda dapat menentukan zona dan grup sumber daya dengan masuk ke objek Zona DNS menggunakan parameter *Zona* .
+Atau, Anda dapat menentukan zona dan grup sumber daya dengan meneruskan objek Zona DNS menggunakan parameter *Zona* .
 
 ```yaml
 Type: System.String
@@ -407,8 +410,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -423,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -439,7 +442,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -461,9 +464,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
-Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
+Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/clear-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzContext.md
-ms.openlocfilehash: 19d9af81f7a420c0f3637c64742b987a14da9b6d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89d662990ad0e69b28655922de0cc815f2b23989
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068445"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616226"
 ---
 # Clear-AzContext
 
 ## SYNOPSIS
-Hapus semua kredensial, akun, dan informasi langganan Azure.
+Hapus semua informasi masuk, akun, dan langganan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/clear-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Clear-AzContext [-PassThru] [-Force] [-Scope <ContextModificationScope>]
 ```
 
 ## DESCRIPTION
-Hapus semua kredensial, akun, dan informasi langganan Azure.
+Hapus semua informasi masuk, akun, dan langganan Azure.
 
 ## EXAMPLES
 
@@ -53,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menghapus semua pengguna dan grup dari lingkup global tanpa meminta
+### -Force
+Menghapus semua pengguna dan grup dari cakupan global tanpa meminta
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan
+Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
+### -Cakupan
 Hapus konteks hanya untuk sesi PowerShell saat ini, atau untuk semua sesi.
 
 ```yaml
@@ -99,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -131,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

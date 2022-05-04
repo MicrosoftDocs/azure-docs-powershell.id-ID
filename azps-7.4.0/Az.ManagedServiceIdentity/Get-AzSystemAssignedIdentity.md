@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzSystemAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzSystemAssignedIdentity.md
-ms.openlocfilehash: 7cfce5781378db145067a5957255c1f91c60532f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f58545ceeb39b9061232b354142a55f7067dfa4d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807498"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734806"
 ---
 # Get-AzSystemAssignedIdentity
 
 ## SYNOPSIS
-Mendapatkan systemAssignedIdentity yang tersedia di bawah lingkup RP yang ditentukan.
+Mendapatkan systemAssignedIdentity yang tersedia di bawah cakupan RP yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/get-azsystemassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,11 +27,11 @@ Get-AzSystemAssignedIdentity -Scope <String> [-DefaultProfile <PSObject>] [<Comm
 ```
 
 ## DESCRIPTION
-Mendapatkan systemAssignedIdentity yang tersedia di bawah lingkup RP yang ditentukan.
+Mendapatkan systemAssignedIdentity yang tersedia di bawah cakupan RP yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan identitas sistem yang ditetapkan yang tersedia di bawah lingkup RP yang ditentukan
+### Contoh 1: Mendapatkan identitas yang ditetapkan sistem yang tersedia di bawah cakupan RP yang ditentukan
 ```powershell
 PS C:\> Get-AzSystemAssignedIdentity -Scope "/subscriptions/00000000-0000-0000-00000000000/resourcegroups/lucas-rg-test/providers/Microsoft.Web/sites/functionportal01"
 
@@ -37,7 +40,7 @@ Name            Location ResourceGroupName
 ubuntu-portal01 eastus   azure-rg-test
 ```
 
-Perintah ini mendapatkan identitas sistem yang ditetapkan yang tersedia di bawah lingkup RP yang ditentukan.
+Perintah ini mendapatkan identitas yang ditetapkan sistem yang tersedia di bawah cakupan RP yang ditentukan.
 
 ## PARAMETERS
 
@@ -56,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup penyedia sumber daya sumber daya.
+### -Cakupan
+Cakupan penyedia sumber daya sumber daya.
 Sumber daya induk diperluas oleh Identitas Terkelola.
 
 ```yaml
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

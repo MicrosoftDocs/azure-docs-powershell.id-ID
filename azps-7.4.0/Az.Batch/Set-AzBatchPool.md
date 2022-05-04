@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
-ms.openlocfilehash: ed9e3782740c9470f8a6279079d364b68e11c007
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 69feb861d91ffa7d7d7e5e5c12e6ac3e9610a1a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811368"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598496"
 ---
 # Set-AzBatchPool
 
 ## SYNOPSIS
-Memperbarui properti kolam renang.
+Memperbarui properti kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Set-AzBatchPool [-Pool] <PSCloudPool> -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBatchPool** memperbarui properti kolam renang di layanan Azure Batch.
+Cmdlet **Set-AzBatchPool** memperbarui properti kumpulan di layanan Azure Batch.
 Gunakan cmdlet Get-AzBatchPool untuk mendapatkan objek **PSCloudPool** .
-Ubah properti objek tersebut, lalu gunakan cmdlet saat ini untuk melakukan perubahan Pada layanan Batch.
+Ubah properti objek tersebut, lalu gunakan cmdlet saat ini untuk menerapkan perubahan Anda pada layanan Batch.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ $Pool.StartTask = $StartTask
 Set-AzBatchPool -Pool $Pool -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan kolam dengan menggunakan **Get-AzBatchPool**, lalu menyimpannya dalam variabel $Pool.
+Perintah pertama mendapatkan kumpulan dengan menggunakan **Get-AzBatchPool**, lalu menyimpannya dalam variabel $Pool.
 Tiga perintah berikutnya mengubah spesifikasi tugas mulai pada objek $Pool.
 Perintah akhir memperbarui layanan Batch agar sesuai dengan objek lokal di $Pool.
 
@@ -49,7 +52,7 @@ Perintah akhir memperbarui layanan Batch agar sesuai dengan objek lokal di $Pool
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kolam Renang
+### -Pool
 Menentukan **PSCloudPool** tempat cmdlet ini memperbarui layanan Batch.
 
 ```yaml
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -116,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchPool](./New-AzBatchPool.md)
 
-[Hapus-AzBatchPool](./Remove-AzBatchPool.md)
+[Remove-AzBatchPool](./Remove-AzBatchPool.md)
 
 [Cmdlet Azure Batch](/powershell/module/Az.Batch/)

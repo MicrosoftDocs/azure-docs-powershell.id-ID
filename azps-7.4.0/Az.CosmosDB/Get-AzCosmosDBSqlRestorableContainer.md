@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
-ms.openlocfilehash: be0c2e5e383abd01768ec6707d26df9f8fb608c6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13a9c9080648a2460113a57e420694bf961d75bb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126675"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595114"
 ---
 # Get-AzCosmosDBSqlRestorableContainer
 
 ## SYNOPSIS
-Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat disembuhkan yang tersedia untuk database tertentu.
+Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat dipulihkan yang tersedia untuk database tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorablecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +35,9 @@ Get-AzCosmosDBSqlRestorableContainer -InputObject <PSRestorableSqlDatabaseGetRes
 ```
 
 ## DESCRIPTION
-Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat disembuhkan yang tersedia untuk database tertentu.
-Daftar akan memiliki entri yang terkait untuk membuat, mengganti, dan menghapus kejadian semua kontainer langsung dan dihapus di bawah database.
-Daftar ini berguna untuk mengidentifikasi stempel waktu pemulihan berdasarkan perubahan dalam wadah. Misalnya, jika pengguna ingin memulihkan akun database ke stempel waktu ketika wadah tertentu dihapus, pengguna dapat menemukan kejadian penghapusan koleksi yang terkait dari daftar ini, dan memilih cap waktu sebelum acara penghapusan untuk dipulihkan.
+Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat dipulihkan yang tersedia untuk database tertentu.
+Daftar ini akan memiliki entri yang sesuai untuk membuat, mengganti, dan menghapus peristiwa semua kontainer langsung dan dihapus di bawah database.
+Daftar ini berguna untuk mengidentifikasi tanda waktu pemulihan berdasarkan perubahan dalam kontainer. Misalnya, jika pengguna ingin memulihkan akun database ke tanda waktu saat kontainer tertentu dihapus, pengguna dapat menemukan peristiwa penghapusan koleksi yang sesuai dari daftar ini, dan memilih tanda waktu sebelum peristiwa penghapusan untuk pemulihan.
 
 ## EXAMPLES
 
@@ -159,11 +162,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

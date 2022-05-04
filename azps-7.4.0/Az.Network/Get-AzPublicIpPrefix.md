@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpPrefix.md
-ms.openlocfilehash: 47e2417075ec32bafdfe110de4e3371e00debb7d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2546691be9bb7665857fdf610ed11d8d60133865
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281943"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612140"
 ---
 # Get-AzPublicIpPrefix
 
 ## SYNOPSIS
-Mendapatkan prefiks IP publik
+Mendapatkan awalan IP publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azpublicipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzPublicIpPrefix -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPublicIpPrefix** mendapatkan satu atau beberapa prefiks IP publik dalam grup sumber daya.
+Cmdlet **Get-AzPublicIpPrefix** mendapatkan satu atau beberapa awalan IP publik dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ IpTags                 : []
 PublicIpAddresses      : []
 ```
 
-Perintah ini mendapatkan sumber daya prefiks IP publik dengan myPublicIpPrefix1 dalam myRg grup sumber daya
+Perintah ini mendapatkan sumber daya awalan IP publik dengan myPublicIpPrefix1 dalam grup sumber daya myRg
 
 ### Contoh 2
 ```powershell
@@ -93,7 +96,7 @@ IpTags                 : []
 PublicIpAddresses      : []
 ```
 
-Perintah ini mendapatkan semua sumber daya prefiks IP publik yang dimulai dengan myPublicIpPrefix.
+Perintah ini mendapatkan semua sumber daya awalan IP publik yang dimulai dengan myPublicIpPrefix.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

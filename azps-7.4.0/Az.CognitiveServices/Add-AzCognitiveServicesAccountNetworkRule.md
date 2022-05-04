@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Add-AzCognitiveServicesAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Add-AzCognitiveServicesAccountNetworkRule.md
-ms.openlocfilehash: 0601dbe5c55240fbda93b1f985f197e945cfc7fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 880b2bb9f8f33b453fad5ff08ad3200885690c90
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810324"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631755"
 ---
 # Add-AzCognitiveServicesAccountNetworkRule
 
 ## SYNOPSIS
 Menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/add-azcognitiveservicesaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,14 +54,14 @@ Cmdlet **Add-AzCognitiveServicesAccountNetworkRule** menambahkan IpRules atau Vi
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan beberapa IpRules dengan IpAddressOrRange
+### Contoh 1: Menambahkan beberapa IpRules dengan IpAddressOrRange
 ```powershell
 Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -IpAddressOrRange "200.0.0.0/24","28.2.0.0/16"
 ```
 
 Perintah ini menambahkan beberapa IpRules dengan IpAddressOrRange.
 
-### Contoh 2: Tambahkan VirtualNetworkRule dengan VirtualNetworkResourceID
+### Contoh 2: Menambahkan VirtualNetworkRule dengan VirtualNetworkResourceID
 ```powershell
 $subnet = Get-AzVirtualNetwork -ResourceGroupName "myResourceGroup" -Name "myvirtualnetwork" | Get-AzVirtualNetworkSubnetConfig
 Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -VirtualNetworkResourceId $subnet[0].Id
@@ -66,7 +69,7 @@ Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -
 
 Perintah ini menambahkan VirtualNetworkRule dengan VirtualNetworkResourceID.
 
-### Contoh 3: Tambahkan VirtualNetworkRules dengan VirtualNetworkRule Objects dari akun lain
+### Contoh 3: Menambahkan VirtualNetworkRules dengan Objek VirtualNetworkRule dari akun lain
 ```powershell
 $networkrule = Get-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount1"
 Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount2" -VirtualNetworkRule $networkrule.VirtualNetworkRules
@@ -74,7 +77,7 @@ Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -
 
 Perintah ini menambahkan VirtualNetworkRules dengan VirtualNetworkRule Objects dari akun lain.
 
-### Contoh 4: Tambahkan beberapa IpRule dengan objek IpRule, input dengan JSON
+### Contoh 4: Tambahkan beberapa IpRule dengan objek IpRule, masukkan dengan JSON
 ```powershell
 Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -IpRule (@{IpAddressOrRange="200.0.0.0/24"},@{IpAddressOrRange="28.2.0.0/16"})
 ```
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressOrRange
-Cognitive Services Account NetworkRule IpAddressOrRange dalam string.
+Akun Cognitive Services NetworkRule IpRules IpAddressOrRange dalam string.
 
 ```yaml
 Type: System.String[]
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Cognitive Services Account NetworkRule IpRules.
+Akun Cognitive Services NetworkRule IpRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule[]
@@ -128,8 +131,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Layanan Kognitif.
+### -Name
+Nama Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Akun Layanan Kognitif NetworkRule VirtualNetworkRules.
+Akun Cognitive Services NetworkRule VirtualNetworkRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSVirtualNetworkRule[]
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

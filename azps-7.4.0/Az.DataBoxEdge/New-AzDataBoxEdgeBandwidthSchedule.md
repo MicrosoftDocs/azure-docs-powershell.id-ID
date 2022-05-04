@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeBandwidthSchedule.md
-ms.openlocfilehash: 37fedc91b107c990f9efde1cbe991c99b99d76d5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 94509a012d24db47e235ca3510a40a88146c5e29
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875322"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671866"
 ---
 # New-AzDataBoxEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Membuat jadwal Bandwidth baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzDataBoxEdgeBandwidthSchedule [-ResourceGroupName] <String> [-DeviceName] <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeBandwidthSchedule** membuat Jadwal Bandwidth baru untuk perangkat Data Box Edge untuk membantu mengelola penggunaan Bandwidth.
+**Cmdlet New-AzDataBoxEdgeBandwidthSchedule** membuat Jadwal Bandwidth baru untuk perangkat Data Box Edge untuk membantu mengelola penggunaan Bandwidth.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ bandwidthScheduleUnlimited  Sunday,Tuesday,Saturday     unlimited   11:00:00    
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysOfWeek
-Hari TerjadwalOfWeek
+DaysOfWeek Terjadwal
 
 ```yaml
 Type: System.String[]
@@ -137,8 +140,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnlimitedBandwidth
-Akan Mengatur Bandwidth Tak Terbatas, jika diatur ke false akan menetapkan nilai default sebagai 20 Mbps
+Akan Mengatur Bandwidth Tidak Terbatas, jika diatur ke false akan menetapkan nilai default sebagai 20 Mbps
 
 ```yaml
 Type: System.Boolean
@@ -212,8 +215,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,11 +246,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

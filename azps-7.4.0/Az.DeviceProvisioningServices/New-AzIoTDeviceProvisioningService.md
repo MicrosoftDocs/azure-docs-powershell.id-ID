@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 4f0e09da2719e2416819196c381c6950082dcf2c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8bc5595f0df1aa2dd983c2a2b43c4382e9ed351d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942049"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728258"
 ---
 # New-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Buat layanan penyediaan perangkat Azure IoT Hub.
+Membuat layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/new-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIoTDeviceProvisioningService [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAT52k=
 ```
 
-Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1 dan tag, di kawasan grup sumber daya.
+Buat layanan provisi perangkat Azure IoT Hub dengan tingkat harga standar S1 dan tag, di wilayah grup sumber daya.
 
 ### Contoh 2
 ```powershell
@@ -74,12 +77,12 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAPoOk=
 ```
 
-Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1, di wilayah 'eastus'.
+Buat layanan provisi perangkat Azure IoT Hub dengan tingkat harga standar S1, di wilayah 'eastus'.
 
 ## PARAMETERS
 
 ### -AllocationPolicy
-Kebijakan Alokasi Layanan Penyediaan Perangkat IoT
+Kebijakan Alokasi IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -124,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag instans Layanan Penyediaan Perangkat IoT. Tas properti dalam pasangan nilai kunci dalam bentuk tabel hash.
+Tag instans IoT Device Provisioning Service. Tas properti dalam pasangan kunci-nilai dalam bentuk tabel hash.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,11 +220,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

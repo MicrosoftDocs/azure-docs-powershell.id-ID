@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 201455e19f74510085edc6e3c77384744d9e29bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8c03bf057e2d3ade8621000787f45998070227f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998011"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597920"
 ---
 # Add-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Menambahkan konfigurasi pengalihan ke Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Perintah kedua menambahkan konfigurasi pengalihan ke gateway aplikasi.
 
 ### Contoh 2
 
-Menambahkan konfigurasi pengalihan ke Application Gateway. (autogenerasi)
+Menambahkan konfigurasi pengalihan ke Application Gateway. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 
 ### -IncludePath
 Sertakan jalur dalam url yang dialihkan.
-Default adalah true.
+Defaultnya adalah true.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -112,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri dalam url yang dialihkan.
-Default adalah true.
+Sertakan string kueri di url yang dialihkan.
+Defaultnya adalah true.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi Pengalihan
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan
+Jenis pengalihan
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan fo URL target
+Url target untuk pengalihan
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

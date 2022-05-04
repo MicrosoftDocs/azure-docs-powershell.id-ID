@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
-ms.openlocfilehash: 0f95957a39b24bb67e2fd4ddfc15dd75944dd75d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2410be572daf30eab9e8c72e4d1b2ef00b72ce57
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121365"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729608"
 ---
 # Get-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat dari kubah kunci.
+Mendapatkan sertifikat dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Get-AzKeyVaultCertificate [-ResourceId] <String> [-Name] <String> [-IncludeVersi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kubah kunci di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificate** mendapatkan sertifikat yang ditentukan atau versi sertifikat dari brankas kunci di Azure Key Vault.
 
 ## EXAMPLES
 
@@ -113,8 +116,8 @@ Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
 
-### Contoh 2: Dapatkan cert dan simpan sebagai pfx
-Perintah ini mendapatkan sertifikat bernama TestCert01 dari kubah kunci bernama ContosoKV01. Untuk mengunduh sertifikat sebagai file pfx, jalankan perintah berikut. Perintah ini mengakses SecretId lalu menyimpan konten sebagai file pfx.
+### Contoh 2: Dapatkan sertifikasi dan simpan sebagai pfx
+Perintah ini mendapatkan sertifikat bernama TestCert01 dari brankas kunci bernama ContosoKV01. Untuk mengunduh sertifikat sebagai file pfx, jalankan perintah berikut. Perintah ini mengakses SecretId lalu menyimpan konten sebagai file pfx.
 
 ```powershell
 $cert = Get-AzKeyVaultCertificate -VaultName $vaultName -Name $certName
@@ -124,7 +127,7 @@ $secretByte = [Convert]::FromBase64String(($secret.SecretValue | ConvertFrom-Sec
 [System.IO.File]::WriteAllBytes("cert.pfx", $secretByte)
 ```
 
-### Contoh 3: Dapatkan semua sertifikat yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
+### Contoh 3: Dapatkan semua sertifikat yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini.
 ```powershell
 Get-AzKeyVaultCertificate -VaultName 'contoso' -InRemovedState
 ```
@@ -156,9 +159,9 @@ Version            :
 Id                 : https://contoso.vault.azure.net:443/certificates/test2
 ```
 
-Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, tetapi tidak dibersihkan, dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
 
-### Contoh 4: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
+### Contoh 4: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini.
 ```powershell
 Get-AzKeyVaultCertificate -VaultName 'contoso' -Name 'test1' -InRemovedState
 ```
@@ -200,10 +203,10 @@ Version            : 7fe415d5518240c1a6fce89986b8d334
 Id                 : https://contoso.vault.azure.net:443/certificates/test1/7fe415d5518240c1a6fce89986b8d334
 ```
 
-Perintah ini mendapatkan sertifikat bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal sertifikat yang dihapus ini.
+Perintah ini mendapatkan sertifikat bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal dari sertifikat yang dihapus ini.
 
-### Contoh 5: Daftar sertifikat menggunakan pemfilteran
+### Contoh 5: Mencantumkan sertifikat menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "test*"
 ```
@@ -231,7 +234,7 @@ Name      : test2
 Version   :
 Id        : https://ContosoKV01.vault.azure.net:443/certificates/test2
 ```
-Perintah ini mendapatkan semua sertifikat yang dimulai dengan "uji" dari kubah kunci bernama ContosoKV01.
+Perintah ini mendapatkan semua sertifikat yang dimulai dengan "pengujian" dari brankas kunci bernama ContosoKV01.
 
 
 ## PARAMETERS
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePending
-Menentukan apakah akan menyertakan sertifikat tertunda dalam output
+Menentukan apakah akan menyertakan sertifikat yang tertunda dalam output
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,7 +314,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat yang akan didapatkan.
 
 ```yaml
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -406,8 +409,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzKeyVaultCertificate](./Add-AzKeyVaultCertificate.md)
+[Tambahkan-AzKeyVaultCertificate](./Add-AzKeyVaultCertificate.md)
 
-[Impor-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
 
-[Hapus-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)
+[Remove-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
-ms.openlocfilehash: 08aa73f69becb9bcaa21d67e4c1c0e24f81320be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a44f2436b37451cdee7fe61a1b9eaa4adb295586
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863280"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651622"
 ---
 # Get-AzSynapseRoleAssignment
 
 ## SYNOPSIS
-Mendapatkan penetapan peran Analitik Synapse.
+Mendapatkan penetapan peran Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,10 +91,10 @@ Get-AzSynapseRoleAssignment -WorkspaceObject <PSSynapseWorkspace> [-RoleDefiniti
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseRoleAssignment** mendapatkan Azure Synapse Penetapan Peran Analitik.
-Jika Anda tidak menentukan definisi peran atau nama utama pengguna, cmdlet ini mendapatkan semua penetapan peran.
+Cmdlet **Get-AzSynapseRoleAssignment** mendapatkan Azure Synapse Analytics Role Assignment.
+Jika Anda tidak menentukan definisi peran atau nama prinsipal pengguna, cmdlet ini mendapatkan semua penetapan peran.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 * GET /users/{id}
 * GET /servicePrincipals/{id}
@@ -103,35 +106,35 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan semua tugas peran di bawah ruang kerja.
+Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole
 ```
 
-Perintah ini mendapatkan semua tugas peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole.
+Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole.
 
 ### Contoh 3
 ```powershell
 Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName
 ```
 
-Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole dan nama utama pengguna ContosoName.
+Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole dan nama prinsipal pengguna ContosoName.
 
 ### Contoh 4
 ```powershell
 Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType
 ```
 
-Perintah ini mendapatkan tugas peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama utama pengguna ContosoName dan di bawah itemtype ContosoItemtype.
+Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama prinsipal pengguna ContosoName dan di bawah itemtype ContosoItemtype.
 
 ### Contoh 5
 ```powershell
 Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama prinsipal pengguna ContosoName, ContosoItemType dan ContosoItem.
+Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama prinsipal pengguna ContosoName, ContosoItemType, dan ContosoItem.
 
 ### Contoh 6
 ```powershell
@@ -139,7 +142,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseRoleAssignment
 ```
 
-Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja melalui saluran.
+Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja melalui alur.
 
 ## PARAMETERS
 
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
+ObjectId Azure AD Pengguna, Grup, atau Perwakilan Layanan.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id dari Peran yang ditetapkan untuk pokok.
+Id Peran yang ditetapkan ke prinsipal.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama Peran yang ditetapkan untuk pokok.
+Nama Peran yang ditetapkan ke prinsipal.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName dari prinsipal layanan.
+ServicePrincipalName dari perwakilan layanan.
 
 ```yaml
 Type: System.String
@@ -303,7 +306,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

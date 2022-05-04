@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/export
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
-ms.openlocfilehash: 979f17df6c73bc25990a5817bf841119ec8347e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ef91c8cf6a8741f64f89c70740e10c0a0e6b2e41
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674370"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728798"
 ---
 # Export-AzResourceGroup
 
 ## SYNOPSIS
-Merekam grup sumber daya sebagai templat dan menyimpannya ke file.
+Mengambil grup sumber daya sebagai templat dan menyimpannya ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/export-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Export-AzResourceGroup -ResourceGroupName <String> [-Path <String>] [-IncludePar
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzResourceGroup** menangkap grup sumber daya tertentu sebagai templat dan menyimpannya ke file JSON. Ini bisa berguna dalam skenario di mana Anda telah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan manfaat penggunaan templat yang didukung.
-Cmdlet ini memberi Anda awal yang mudah dengan menghasilkan templat untuk sumber daya yang sudah ada dalam grup sumber daya.
+Cmdlet **Export-AzResourceGroup** menangkap grup sumber daya yang ditentukan sebagai templat dan menyimpannya ke file JSON. Ini dapat berguna dalam skenario di mana Anda telah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan manfaat menggunakan penyebaran yang didukung templat.
+Cmdlet ini memberi Anda awal yang mudah dengan membuat templat untuk sumber daya yang ada di grup sumber daya.
 Mungkin ada beberapa kasus di mana cmdlet ini gagal menghasilkan beberapa bagian templat.
 Pesan peringatan akan memberi tahu Anda tentang sumber daya yang gagal.
 Templat masih akan dihasilkan untuk bagian-bagian yang berhasil.
@@ -43,12 +46,12 @@ Export-AzResourceGroup -ResourceGroupName "TestGroup"
 
 Perintah ini menangkap grup sumber daya bernama TestGroup sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
 
-### Contoh 2: Mengekspor sumber daya tunggal dari grup sumber daya
+### Contoh 2: Mengekspor satu sumber daya dari grup sumber daya
 ```powershell
 Export-AzResourceGroup -ResourceGroupName "TestGroup" -Resource "/subscriptions/5f43547b-1d2d-4a3e-ace4-88d4b600d568/resourceGroups/TestGroup/providers/Microsoft.Compute/virtualMachines/TestVirtualMachine"
 ```
 
-Perintah ini mengambil sumber daya Mesin Virtual bernama "TestVirtualMachine" dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
+Perintah ini menangkap sumber daya Komputer Virtual bernama "TestVirtualMachine" dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
 
 ### Contoh 3: Mengekspor pilihan sumber daya dari grup sumber daya
 ```powershell
@@ -58,12 +61,12 @@ Export-AzResourceGroup -ResourceGroupName "TestGroup" -SkipAllParameterization -
 )
 ```
 
-Perintah ini mengambil dua sumber daya dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini. Templat yang dihasilkan tidak akan berisi parameter yang dihasilkan.
+Perintah ini menangkap dua sumber daya dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini. Templat yang dihasilkan tidak akan berisi parameter yang dihasilkan.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API terbaru digunakan.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -153,8 +156,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini menggunakan versi API prarilis saat menentukan versi API mana yang akan digunakan secara otomatis.
+### -Pre
+Menunjukkan bahwa cmdlet ini menggunakan versi API pra-rilis saat secara otomatis menentukan versi API mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sumber daya
-Daftar resourceId untuk memfilter hasil.
+Daftar resourceIds untuk memfilter hasilnya.
 
 ```yaml
 Type: System.String[]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk diekspor.
+Menentukan nama grup sumber daya yang akan diekspor.
 
 ```yaml
 Type: System.String
@@ -228,8 +231,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

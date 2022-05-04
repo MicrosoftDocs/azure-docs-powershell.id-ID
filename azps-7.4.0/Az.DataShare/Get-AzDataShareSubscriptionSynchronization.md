@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscriptionSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscriptionSynchronization.md
-ms.openlocfilehash: a65511e921cf024d5f4029dec46e22b95f17c2ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 98d8b0c60df9d2e465d027f7858f266632d312f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809460"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649462"
 ---
 # Get-AzDataShareSubscriptionSynchronization
 
 ## SYNOPSIS
-Mendapatkan informasi tentang sinkronisasi berjalan dalam langganan berbagi.
+Mendapatkan informasi tentang sinkronisasi yang dijalankan dalam langganan berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesubscriptionsynchronization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareSubscriptionSynchronization -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareSubscriptionSynchronization** menyediakan informaiton tentang semua sinkronisasi yang berjalan dalam langganan berbagi di bawah akun berbagi data di konsumen.
+Cmdlet **Get-AzDataShareSubscriptionSynchronization** menyediakan informaiton tentang semua sinkronisasi yang dijalankan dalam langganan berbagi di bawah akun berbagi data pada konsumen.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ status            : Succeeded
 synchronizationId : b087e1a5-9144-4e1d-86d1-2a4adcf551d4
 ```
 
-Perintah ini menyediakan informasi tentang semua sinkronisasi yang berjalan untuk langganan berbagi AdsShareSubscription di bawah akun berbagi data WikiAds.
+Perintah ini menyediakan informasi tentang semua sinkronisasi yang dijalankan untuk langganan berbagi AdsShareSubscription di bawah akun berbagi data WikiAds.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -1,21 +1,21 @@
 ---
 description: Mengelola langganan Azure dengan Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 05/03/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Mengelola langganan Azure dengan Azure PowerShell
-ms.openlocfilehash: e7bc4d3733002f02963c8fa620918871d6ea2c54
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a546ce52a14bebd7e5204340f77229f33a2616f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691493"
 ---
 # <a name="use-multiple-azure-subscriptions"></a>Menggunakan beberapa langganan Azure
 
-Sebagian besar pengguna Azure hanya akan memiliki satu langganan. Namun, jika Anda adalah bagian dari lebih dari satu organisasi atau organisasi Anda telah membagi akses ke sumber daya tertentu di seluruh pengelompokan, Anda dapat memiliki beberapa langganan dalam Azure. CLI mendukung pemilihan langganan baik secara global maupun per perintah.
+Sebagian besar pengguna Azure hanya akan memiliki satu langganan. Namun, jika Anda adalah bagian dari lebih dari satu organisasi atau organisasi Anda telah membagi akses ke sumber daya tertentu di seluruh pengelompokan, Anda dapat memiliki beberapa langganan dalam Azure.
 
 Untuk informasi mendetail tentang langganan, penagihan, dan manajemen biaya, lihat [dokumentasi manajemen biaya dan penagihan](/azure/billing/).
 
@@ -28,13 +28,14 @@ Untuk mempelajari cara masuk ke penyewa tertentu, lihat [Masuk dengan Azure Powe
 
 ## <a name="change-the-active-subscription"></a>Mengubah langganan aktif
 
-Di Azure PowerShell, mengakses sumber daya untuk langganan memerlukan perubahan langganan yang berkaitan dengan sesi Azure Anda saat ini. Hal ini dilakukan dengan memodifikasi konteks sesi aktif, informasi tentang cmdlet penyewa, langganan, dan pengguna mana yang harus dijalankan. Untuk mengubah langganan, objek Konteks Azure PowerShell harus diambil dengan [Get-AzSubscription](/powershell/module/az.accounts/get-azsubscription) dan kemudian konteks saat ini diubah dengan [Set-AzContext](/powershell/module/az.accounts/set-azcontext).
+Di Azure PowerShell, mengakses sumber daya untuk langganan memerlukan perubahan langganan yang berkaitan dengan sesi Azure Anda saat ini. Hal ini dilakukan dengan memodifikasi konteks sesi aktif, informasi tentang cmdlet penyewa, langganan, dan pengguna mana yang harus dijalankan. Untuk mengubah langganan, Anda menggunakan cmdlet [Set-AzContext](/powershell/module/az.accounts/set-azcontext) untuk mengubah konteks saat ini.
 
-Contoh berikutnya menunjukkan cara mendapatkan langganan di penyewa aktif saat ini, dan mengaturnya sebagai sesi aktif:
+Contoh berikut menunjukkan cara mengubah konteks dalam sesi Azure Anda saat ini:
 
-```powershell-interactive
-$context = Get-AzSubscription -SubscriptionId ...
-Set-AzContext $context
+```azurepowershell-interactive
+Set-AzContext -Subscription <subscription name or id>
 ```
 
-Untuk mempelajari tentang konteks Azure PowerShell, termasuk cara menyimpannya dan beralih dengan cepat di antaranya untuk bekerja dengan beberapa langganan dengan mudah, lihat [Mempertahankan informasi masuk dengan konteks Azure PowerShell](context-persistence.md).
+Anda dapat menggunakan cmdlet [Get-AzSubscription](/powershell/module/az.accounts/get-azsubscription) untuk mengambil daftar langganan Azure Anda.
+
+Untuk mempelajari selengkapnya tentang konteks Azure PowerShell, termasuk cara menyimpannya dan beralih dengan cepat di antara mereka untuk bekerja dengan beberapa langganan, lihat [Menyimpan kredensial dengan konteks Azure PowerShell](context-persistence.md).

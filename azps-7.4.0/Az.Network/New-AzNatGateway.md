@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
-ms.openlocfilehash: b0461e29bc0ccf1d5cb27696eea87f9d8de33257
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 47e12edb7b978bb596921f7c045fe18edb31f50d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805122"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671506"
 ---
 # New-AzNatGateway
 
 ## SYNOPSIS
-Buat sumber daya Nat Gateway baru dengan properti Alamat Ip Publik/Prefiks Ip Publik, IdleTimeoutInMinutes dan Sku.
+Buat sumber daya Nat Gateway baru dengan properti Alamat IP Publik/Awalan IP Publik, IdleTimeoutInMinutes, dan Sku.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ New-AzNatGateway -ResourceGroupName <String> -Name <String> [-IdleTimeoutInMinut
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNatGateway** membuat Sumber Daya Gateway Nat. Natgateway memerlukan hal berikut: 
-- Alamat IP Publik dan/atau Prefiks Ip Publik
+Cmdlet **New-AzNatGateway** membuat Sumber Daya Nat Gateway. Natgateway memerlukan hal berikut: 
+- Alamat IP Publik dan/atau Awalan IP Publik
 - IdleTimeoutInMinutes 
 - Sku
 - ResourceGroupName
-- NamaPengguna Sumber Daya
+- ResourceName
 - Lokasi
 
 ## EXAMPLES
@@ -43,25 +46,25 @@ $pip = New-AzPublicIpAddress -Name "pip" -ResourceGroupName "natgateway_test" -L
 $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpAddress $pip
 ```
 
-### Contoh 2: Buat Nat Gateway dengan Prefiks Ip Publik
+### Contoh 2: Buat Nat Gateway dengan Awalan IP Publik
 ```powershell
 $publicipprefix = New-AzPublicIpPrefix -Name "prefix2" -ResourceGroupName "natgateway_test" -Location "eastus2" -Sku "Standard" -PrefixLength "31"
 $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpPrefix $publicipprefix
 ```
 
-### Contoh 3: Membuat Nat Gateway dengan Alamat IP Publik di Availability Zone 1
+### Contoh 3: Membuat Nat Gateway dengan Alamat IP Publik di Zona Ketersediaan 1
 ```powershell
 $pip = New-AzPublicIpAddress -Name "pip" -ResourceGroupName "natgateway_test" -Location "eastus2" -Sku "Standard" -IdleTimeoutInMinutes 4 -AllocationMethod "static"
 $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpAddress $pip -Zone "1"
 ```
 
 Perintah pertama membuat Alamat IP Publik standar.
-Perintah kedua membuat NAT Gateway dengan Alamat IP Publik di Availability Zone 1.
+Perintah kedua membuat NAT Gateway dengan Alamat IP Publik di Zona Ketersediaan 1.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu habis menganggur gateway nat.
+Batas waktu menganggur gateway nat.
 
 ```yaml
 Type: System.Int32
@@ -135,7 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway nat.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Array alamat ip publik yang terkait dengan sumber daya gateway nat.
+Array alamat IP publik yang terkait dengan sumber daya gateway nat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan zona tempat Nat Gateway harus digunakan.
+Daftar zona ketersediaan yang menunjukkan zona tempat Nat Gateway harus disebarkan.
 
 ```yaml
 Type: System.String[]
@@ -240,8 +243,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
-ms.openlocfilehash: d4e77ee5b64bdff69ff9f17a0649f86d0b833a7d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 054b195c674cba12f32ccb83cc2e9ab13d07e50b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940429"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665981"
 ---
 # Set-AzMediaService
 
 ## SYNOPSIS
-Mengubah properti tertentu dari layanan media yang sudah ada.
+Memodifikasi properti tertentu dari layanan media yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/set-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Set-AzMediaService [-ResourceGroupName] <String> [-AccountName] <String> [-Tag <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzMediaService** mengubah properti tertentu dari layanan media yang sudah ada.
+Cmdlet **Set-AzMediaService** memodifikasi properti tertentu dari layanan media yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah layanan media yang sudah ada
+### Contoh 1: Mengubah layanan media yang ada
 ```powershell
 $Tags = @{"tag1" = "value1"; "tag2" = "value2"}
 Set-AzMediaService -ResourceGroupName "ResourceGroup123" -AccountName "MediaService001" -Tag $Tags -StorageAccounts $StorageAccounts
@@ -118,8 +121,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Hapus-AzMediaService](./Remove-AzMediaService.md)
+[Remove-AzMediaService](./Remove-AzMediaService.md)
 
 

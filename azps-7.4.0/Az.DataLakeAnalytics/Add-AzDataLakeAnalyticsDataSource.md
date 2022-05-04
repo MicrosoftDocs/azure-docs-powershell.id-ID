@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: 4ab316a5367ef1bdfc59cbc051c58d3aaadbe9b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe6a72a9e2ac09d49976074b71d7eba671cd3f8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749358"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685254"
 ---
 # Add-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data ke akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/add-azdatalakeanalyticsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Perintah ini menambahkan sumber data Data Lake Store ke akun Data Lake Analytics
 
 ### Contoh 2
 
-Menambahkan sumber data ke akun Data Lake Analytics. (autogenerasi)
+Menambahkan sumber data ke akun Data Lake Analytics. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -56,7 +59,7 @@ Add-AzDataLakeAnalyticsDataSource -AccessKey '...newaccesskey...' -Account 'Cont
 ## PARAMETERS
 
 ### -AccessKey
-Menentukan kunci akses akun penyimpanan Blob Azure untuk ditambahkan.
+Menentukan kunci akses akun penyimpanan Azure Blob untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blob
-Menentukan nama akun Azure Blob Storage untuk ditambahkan.
+Menentukan nama akun Azure Blob Storage yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLakeStore
-Menentukan nama akun Azure Data Lake Store untuk ditambahkan.
+Menentukan nama akun Azure Data Lake Store yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

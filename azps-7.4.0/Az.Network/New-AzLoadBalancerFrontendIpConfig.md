@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: bc3fdc7d995b1b0b3957e9df0fe1bf1feda6b433
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9be9b4700243b0fa211265e710314312f61b683c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996715"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652450"
 ---
 # New-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Membuat konfigurasi IP ujung depan untuk penyeimbang beban.
+Membuat konfigurasi IP ujung depan untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,23 +66,23 @@ Cmdlet **New-AzLoadBalancerFrontendIpConfig** membuat konfigurasi IP front-end u
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi IP ujung depan untuk penyeimbang muatan
+### Contoh 1: Membuat konfigurasi IP front-end untuk load balancer
 ```powershell
 $publicip = New-AzPublicIpAddress -ResourceGroupName "MyResourceGroup" -Name "MyPublicIP" -Location "West US" -AllocationMethod "Dynamic"
 New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpAddress $publicip
 ```
 
-Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
+Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP di grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
 Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip.
 
-### Contoh 2: Membuat konfigurasi IP ujung depan untuk load balancer menggunakan prefiks ip
+### Contoh 2: Membuat konfigurasi IP front-end untuk load balancer menggunakan awalan ip
 ```powershell
 $publicipprefix = New-AzPublicIpPrefix -ResourceGroupName "MyResourceGroup" -name "MyPublicIPPrefix" -location "West US" -Sku Standard -PrefixLength 28
 $frontend = New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpAddressPrefix $publicipprefix
 ```
 
-Perintah pertama membuat prefiks ip publik bernama MyPublicIP panjang 28 dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicipprefix.
-Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan prefiks IP publik di $publicipprefix.
+Perintah pertama membuat awalan ip publik bernama MyPublicIP panjang 28 dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya di variabel $publicipprefix.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan awalan IP publik di $publicipprefix.
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan konfigurasi IP ujung-depan yang dibuat cmdlet ini.
+### -Name
+Menentukan konfigurasi IP front-end yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Menentukan alamat IP privat penyeimbang muat.
+Menentukan alamat IP privat dari load balancer.
 Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet* .
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddressVersion
-Versi alamat IP pribadi dari konfigurasi IP.
+Versi alamat IP privat dari konfigurasi IP.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Menentukan ID objek **PublicIpAddress** untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan ID objek **PublicIpAddress** untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefix
-Menentukan objek **PublicIpAddressPrefix** untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan objek **PublicIpAddressPrefix** untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefixId
-Menentukan ID objek **PublicIpAddressPrefix** untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan ID objek **PublicIpAddressPrefix** untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: System.String[]
@@ -250,8 +253,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

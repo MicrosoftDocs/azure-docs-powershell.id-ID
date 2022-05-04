@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
-ms.openlocfilehash: 404a3205654261d86d4b79383a6c9f20a84ef4a9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36cf4964a9c0f3c9fbc96c829c7c689675bc30a0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944335"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599900"
 ---
 # New-AzAutomationRunbook
 
 ## SYNOPSIS
-Membuat runbook Otomatisasi.
+Membuat runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzAutomationRunbook [-Name] <String> [-Description <String>] [-Tags <IDictio
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutomationRunbook** membuat Azure Automation runbook kosong dengan menggunakan APS.
+Cmdlet **New-AzAutomationRunbook** membuat runbook Azure Automation kosong dengan menggunakan APS.
 Tentukan nama untuk runbook.
 
 ## EXAMPLES
@@ -41,7 +44,7 @@ Perintah ini membuat runbook bernama Runbook02 di akun Azure Automation bernama 
 
 ### Contoh 2
 
-Membuat runbook Otomatisasi. (autogenerasi)
+Membuat runbook Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -53,7 +56,7 @@ New-AzAutomationRunbook -AutomationAccountName 'Contoso17' -Name 'Runbook02' -Re
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini membuat runbook.
+Menentukan nama akun Automation tempat cmdlet ini membuat runbook.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogProgress
-Menentukan apakah kemajuan log runbook.
+Menentukan apakah runbook mencatat kemajuan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah pembuatan log menyertakan informasi mendetail.
+Menentukan apakah pengelogan menyertakan informasi terperinci.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -127,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk runbook.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -172,15 +175,15 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe runbook yang dibuat cmdlet ini.
+### -Type
+Menentukan jenis runbook yang dibuat cmdlet ini.
 Nilai yang valid adalah:
-- Powershell
+- PowerShell
 - GraphicalPowerShell
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph sudah tidak terpakai.
+- Python2 Nilai Graph sudah usang.
 Ini setara dengan GraphicalPowerShellWorkflow.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

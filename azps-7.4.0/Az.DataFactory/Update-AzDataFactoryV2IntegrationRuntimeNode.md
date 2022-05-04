@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: e6640ae5fc0b6b59384bb6b08c56cdb74cc9f777
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 189107b83fbe0323cffe8a76ff9170bae8d6010b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125379"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685290"
 ---
 # Update-AzDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
-Memperbarui simpul runtime integrasi yang dihosting sendiri.
+Memperbarui simpul runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/update-azdatafactoryv2integrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,11 +43,11 @@ Update-AzDataFactoryV2IntegrationRuntimeNode -Name <String> -ConcurrentJobsLimit
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzDataFactoryV2IntegrationRuntimeNode** memperbarui properti runtime integrasi yang dihosting sendiri di pabrik data. Saat ini hanya mendukung pembaruan 'ConcurrentJobsLimit'.
+Cmdlet **Update-AzDataFactoryV2IntegrationRuntimeNode** memperbarui properti simpul runtime integrasi yang dihost sendiri di pabrik data. Saat ini hanya mendukung pembaruan 'ConcurrentJobsLimit'.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui simpul runtime integrasi yang dihosting sendiri
+### Contoh 1: Memperbarui simpul runtime integrasi yang dihost sendiri
 ```powershell
 Update-AzDataFactoryV2IntegrationRuntimeNode `
     -ResourceGroupName 'rg-test-dfv2' `
@@ -54,13 +57,13 @@ Update-AzDataFactoryV2IntegrationRuntimeNode `
     -ConcurrentJobsLimit 3
 ```
 
-Cmdlet memperbarui 'ConcurrentJobsLimit' ke 3 untuk node 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir'.
+Cmdlet memperbarui 'ConcurrentJobsLimit' ke 3 untuk node 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir'.
 
 ## PARAMETERS
 
 ### -ConcurrentJobsLimit
-Jumlah pekerjaan serentak yang diizinkan untuk berjalan pada simpul runtime integrasi.
-Nilai antara 1 dan maxConcurrentJobs diperbolehkan.
+Jumlah pekerjaan bersamaan yang diizinkan untuk berjalan pada simpul runtime integrasi.
+Nilai antara 1 dan maxConcurrentJobs diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama simpul runtime integrasi.
 
 ```yaml
@@ -179,8 +182,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -224,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

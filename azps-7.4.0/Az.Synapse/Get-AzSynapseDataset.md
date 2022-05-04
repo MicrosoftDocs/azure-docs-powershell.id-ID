@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataset.md
-ms.openlocfilehash: 5a21325ec73ba3e216bc838ca903dfed654ffbc2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 42df76a7f6f44fa54b84efbf6a25deabffa35d9a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993925"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616299"
 ---
 # Get-AzSynapseDataset
 
 ## SYNOPSIS
-Mendapatkan informasi tentang kumpulan data di ruang kerja.
+Mendapatkan informasi tentang himpunan data di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +35,9 @@ Get-AzSynapseDataset -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseDataset** mendapatkan informasi tentang kumpulan data di ruang kerja.
-Jika Anda menentukan nama kumpulan data, cmdlet ini akan mendapatkan informasi tentang kumpulan data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua kumpulan data dalam ruang kerja.
+Cmdlet **Get-AzSynapseDataset** mendapatkan informasi tentang himpunan data di ruang kerja.
+Jika Anda menentukan nama himpunan data, cmdlet ini mendapatkan informasi tentang himpunan data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua himpunan data di ruang kerja.
 
 ## EXAMPLES
 
@@ -43,14 +46,14 @@ Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua 
 Get-AzSynapseDataset -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua kumpulan data di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua himpunan data di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseDataset -WorkspaceName ContosoWorkspace -Name ContosoDataset
 ```
 
-Perintah ini mendapatkan informasi tentang kumpulan data bernama ContosoDataset di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang himpunan data bernama ContosoDataset di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data.
+### -Name
+Nama himpunan data.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

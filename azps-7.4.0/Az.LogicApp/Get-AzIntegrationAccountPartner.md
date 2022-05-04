@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 76f7ac2e555a99b5d9962defd4875a11aed5faff
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c379866f75e5da347e5fc3c1a5efe1ab2206fb59
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999505"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735508"
 ---
 # Get-AzIntegrationAccountPartner
 
 ## SYNOPSIS
 Mendapatkan mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Get-AzIntegrationAccountPartner [-ResourceGroupName <String>] [-Name <String>] [
 Cmdlet **Get-AzIntegrationAccountPartner** mendapatkan mitra akun integrasi dari grup sumber daya.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama mitra.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan mitra akun integrasi
+### Contoh 1: Mendapatkan mitra akun integrasi
 ```powershell
 Get-AzIntegrationAccountPartner -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -PartnerName "IntegrationAccountPartner22"
 ```
@@ -53,7 +56,7 @@ Metadata           :
 
 Perintah ini mendapatkan mitra akun integrasi bernama IntegrationAccountPartner22.
 
-### Contoh 2: Dapatkan mitra akun integrasi dengan menggunakan nama akun integrasi
+### Contoh 2: Mendapatkan mitra akun integrasi dengan menggunakan nama akun integrasi
 ```powershell
 Get-AzIntegrationAccountPartner -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31"
 ```
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

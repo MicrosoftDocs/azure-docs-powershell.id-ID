@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: ef76c438af240e127cd98d25b6052b6e3ae94c27
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a634695e8cb20bfeab74e5f45e7d532c9b48c258
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224955"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652432"
 ---
 # Get-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan keluar dalam penyeimbang beban.
+Mendapatkan konfigurasi aturan keluar dalam penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalanceroutboundruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,14 +32,14 @@ Cmdlet **Get-AzLoadBalancerOutboundRuleConfig** mendapatkan konfigurasi aturan k
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi aturan keluar di penyeimbang muat
+### Contoh 1: Mendapatkan konfigurasi aturan keluar dalam load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -ResourceGroupName "MyResourceGroup" -Name "MyLoadBalancer"
 Get-AzLoadBalancerOutboundRuleConfig -LoadBalancer $slb -Name "MyRule"
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua mendapatkan konfigurasi aturan keluar bernama MyRule yang terkait dengan penyeimbang muatan tersebut.
+Perintah kedua mendapatkan konfigurasi aturan keluar bernama MyRule yang terkait dengan load balancer tersebut.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan keluar.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

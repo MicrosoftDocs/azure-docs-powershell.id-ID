@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
-ms.openlocfilehash: 2585fd4fab9ba62bfe8019474fa77dd7f17d4603
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a6457082c33849fae8fae5f5ab5527cdb0d8204a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877878"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634220"
 ---
 # Set-AzCognitiveServicesAccount
 
 ## SYNOPSIS
-Mengubah akun.
+Memodifikasi akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/set-azcognitiveservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Set-AzCognitiveServicesAccount [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzCognitiveServicesAccount** mengubah SKU atau tag akun Cognitive Services yang ditentukan.
+Cmdlet **Set-AzCognitiveServicesAccount** memodifikasi SKU atau tag akun Cognitive Services yang ditentukan.
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiProperty
-ApiProperties dari Akun Layanan Kognitif. Diperlukan berdasarkan tipe akun tertentu.
+ApiProperties dari Akun Cognitive Services. Diperlukan oleh jenis akun tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Management.CognitiveServices.Models.CognitiveServicesAccountApiProperties
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Akun Layanan Kognitif baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
+Buat dan tetapkan Identitas Akun Cognitive Services baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -CognitiveServicesEncryption
-Apakah mengatur Kunci Enkripsi Akun Layanan KognitifSource ke Microsoft.CognitiveServices atau tidak.
+Apakah akan mengatur Cognitive Services Account Encryption KeySource ke Microsoft.CognitiveServices atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomSubdomainName
-Nama Subdomain Akun Layanan Kognitif.
+Nama Subdomain Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultEncryption
-Apakah mengatur kunci enkripsi Akun Layanan KognitifSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion dan KeyVaultUri, Cognitive Services Account Encryption KeySource juga akan diatur ke Microsoft.KeyVault cuaca parameter ini diatur atau tidak.
+Apakah akan mengatur kunci enkripsi Akun Cognitive ServicesSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion, dan KeyVaultUri, Cognitive Services Account Encryption KeySource juga akan diatur ke cuaca Microsoft.KeyVault parameter ini diatur atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultIdentityClientId
-Atur IdentityClientId untuk mengakses Azure KeyVault dari Enkripsi Akun Layanan Kognitif.
+Atur IdentityClientId untuk mengakses Azure KeyVault enkripsi akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun yang akan diubah.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Tipe akses jaringan untuk Akun Layanan Kognitif.
+Jenis akses jaringan untuk Akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Daftar Akun Storage yang Dimiliki Pengguna.
+Daftar Akun Storage Milik Pengguna.
 
 ```yaml
 Type: System.String[]
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-Atur id sumber daya untuk pengguna Akun Layanan Kognitif baru yang ditetapkan Identitas, identitas akan digunakan dengan layanan manajemen utama seperti Azure KeyVault.
+Atur id sumber daya untuk Identitas yang ditetapkan pengguna Akun Cognitive Services baru, identitas akan digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.String[]
@@ -424,8 +427,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -456,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -476,4 +479,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzCognitiveServicesAccount](./New-AzCognitiveServicesAccount.md)
 
-[Hapus-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)
+[Remove-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)

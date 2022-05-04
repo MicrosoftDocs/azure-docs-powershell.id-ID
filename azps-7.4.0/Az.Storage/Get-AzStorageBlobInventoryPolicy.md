@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobInventoryPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobInventoryPolicy.md
-ms.openlocfilehash: 1c483e3562fdef04cc19b872a4c80dae9a7d04fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d285062600d696e26414090675654418f2945fea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730004"
 ---
 # Get-AzStorageBlobInventoryPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan persediaan blob dari akun Storage.
+Mendapatkan kebijakan inventori blob dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobinventorypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzStorageBlobInventoryPolicy -StorageAccount <PSStorageAccount> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageBlobInventoryPolicy** mendapatkan kebijakan persediaan blob dari akun Storage.
+Cmdlet **Get-AzStorageBlobInventoryPolicy** mendapatkan kebijakan inventori blob dari akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan inventori blob dari akun Storage
+### Contoh 1: Mendapatkan kebijakan inventori blob dari akun Storage
 ```
 PS C:\> $policy = Get-AzStorageBlobInventoryPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 
@@ -65,7 +68,7 @@ Test1 False   containername Container  Csv     Daily                            
 Test2 True    containername Blob       Parquet Weekly   True             True                {blockBlob, appendBlob} {ccc, ddd}  {Name, Creation-Time, Last-Modified, Content-Length...}
 ```
 
-Perintah ini mendapatkan kebijakan persediaan blob dari akun Storage, dan menunjukkan proeprties-nya.
+Perintah ini mendapatkan kebijakan inventori blob dari akun Storage, dan menunjukkan proeprties-nya.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-id sumber daya akun Storage.
+id Sumber Daya Akun Storage.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

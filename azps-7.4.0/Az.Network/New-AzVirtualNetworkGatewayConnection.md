@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: 739b1904316079290dd5140eb4edc3fb4a1b8fcb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9ccb83a33441e74baced06d0050097a7e60608be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871272"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671470"
 ---
-# New-AzVirtualNetworkGatewayConnection
+# Baru-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Membuat koneksi VPN Situs-ke-Situs antara gateway jaringan virtual dan perangkat VPN lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,21 +58,21 @@ Membuat koneksi VPN Situs-ke-Situs antara gateway jaringan virtual dan perangkat
 ```powershell
 New-AzVirtualNetworkGatewayConnection -Name conn-client-1 -ResourceGroupName $RG1 -VirtualNetworkGateway1 $vnetgw1 -VirtualNetworkGateway2 $vnetgw2 -Location $loc1 -ConnectionType Vnet2Vnet -SharedKey 'a1b2c3d4e5'
 ```
-### Contoh 2 Tambahkan/Perbarui IngressNatRule/EgressNatRule ke koneksi gateway jaringan virtual yang sudah ada
+### Contoh 2 Menambahkan/Memperbarui IngressNatRule/EgressNatRule ke koneksi gateway jaringan virtual yang ada
 ```powershell
 $ingressnatrule = get-azVirtualNetworkGatewayNatRule -ResourceGroupName $RG1 -Name "natRule1" -ParentResourceName vnetgw1
 $egressnatrule = get-azVirtualNetworkGatewayNatRule -ResourceGroupName $RG1 -Name "natRule2" -ParentResourceName vnetgw1
 New-AzVirtualNetworkGatewayConnection -Name conn-client-1 -ResourceGroupName $RG1 -VirtualNetworkGateway1 $vnetgw1 -VirtualNetworkGateway2 $vnetgw2 -Location $loc1 -ConnectionType Vnet2Vnet -SharedKey 'a1b2c3d4e5' 
 -IngressNatRule $ingressnatrule -EgressNatRule $egressnatrule
 ```
-Perintah pertama mendapatkan gateway jaringan virtual natRule bernama natRule1 yang tipenya adalah IngressSnat.
-Perintah kedua mendapatkan gateway jaringan virtual natRule bernama natRule2 yang tipenya adalah EgressSnat.
+Perintah pertama mendapatkan natRule gateway jaringan virtual bernama natRule1 yang jenisnya adalah IngressSnat.
+Perintah kedua mendapatkan natRule gateway jaringan virtual bernama natRule2 yang jenisnya adalah EgressSnat.
 Perintah ketiga membuat koneksi gateway Jaringan virtual baru ini dengan Ingress dan Egress NatRules.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionType
-Tipe koneksi gateway:IPsec/Vnet2Vnet/ExpressRoute/VPNClient
+Jenis koneksi gateway:IPsec/Vnet2Vnet/ExpressRoute/VPNClient
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpdTimeoutInSeconds
-Dead Peer Detection Timeout of the connection in seconds.
+Batas Waktu Deteksi Serekan Mati koneksi dalam hitungan detik.
 
 ```yaml
 Type: System.Int32
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -EgressNatRule
-Daftar aturan KELUAR NAT yang terkait dengan Koneksi ini.
+Daftar aturan NAT keluar yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Apakah akan menetapkan sesi BGP melalui terowongan VPN S2S
+Apakah akan membuat sesi BGP melalui terowongan VPN S2S
 
 ```yaml
 Type: System.Boolean
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteGatewayBypass
-Apakah akan menggunakan akses jaringan virtual yang dipercepat melewati gateway
+Apakah akan menggunakan akses jaringan virtual yang dipercepat dengan melewati gateway
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -IngressNatRule
-Daftar aturan NAT masuk yang terkait dengan Koneksi ini.
+Daftar aturan NAT ingress yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -310,7 +313,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peer
-Peer
+Rekan Kerja
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPeering
@@ -370,8 +373,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PeruteanWeight
-PeruteanMudah.
+### -RoutingWeight
+RoutingWeight.
 
 ```yaml
 Type: System.Int32
@@ -401,8 +404,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Hashtable yang mewakili tag sumber daya.
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -492,7 +495,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -508,7 +511,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubModule.md
-ms.openlocfilehash: c6bc6b26abbae1b3eb522fe3c621e1077233249a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: db93750e83096455f45495854036ef0495199bff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315770"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617054"
 ---
 # Add-AzIotHubModule
 
 ## SYNOPSIS
 Buat modul pada perangkat IoT target dalam IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Add-AzIotHubModule [-ResourceId] <String> [-DeviceId] <String> [-ModuleId] <Stri
 ```
 
 ## DESCRIPTION
-Buat modul pada perangkat IoT target dengan tipe otorisasi yang berbeda dalam IoT Hub.
+Buat modul pada perangkat IoT target dengan jenis otorisasi yang berbeda dalam IoT Hub.
 
 ## EXAMPLES
 
@@ -63,12 +66,12 @@ Authentication             : Sas
 ManagedBy                  : 
 ```
 
-Buat modul di perangkat IoT target dengan otorisasi default (kunci pribadi bersama).
+Buat modul pada perangkat IoT target dengan otorisasi default (kunci privat bersama).
 
 ## PARAMETERS
 
 ### -AuthMethod
-Otorisasi mengetik entitas yang akan dibuat dengannya.
+Jenis otorisasi yang akan dibuat entitas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceAuthType
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryThumbprint
-Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci utama.
+Thumbprint sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci primer.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryThumbprint
-Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci sekunder.
+Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk kunci sekunder.
 
 ```yaml
 Type:System.String
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

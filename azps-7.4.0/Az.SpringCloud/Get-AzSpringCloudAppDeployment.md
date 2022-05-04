@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: 98345401c3bdc69be58eab3cb371d0b9080f4390
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c2e4d60ac758ba92b6e6278e031874cc7be57a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273339"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664108"
 ---
 # Get-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
-Dapatkan Deployment dan propertinya.
+Mendapatkan Penyebaran dan propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/get-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSpringCloudAppDeployment -ResourceGroupName <String> -ServiceName <String>
  [-Version <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzSpringCloudAppDeployment -AppName <String> -Name <String> -ResourceGroupName <String>
  -ServiceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,11 +47,11 @@ Get-AzSpringCloudAppDeployment -AppName <String> -ResourceGroupName <String> -Se
 ```
 
 ## DESCRIPTION
-Dapatkan Deployment dan propertinya.
+Mendapatkan Penyebaran dan propertinya.
 
 ## EXAMPLES
 
-### Contoh 1: Get Spring Cloud App Deploymeng by name.
+### Contoh 1: Dapatkan Spring Cloud App Deploymeng berdasarkan nama.
 ```powershell
 Get-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway -DeploymentName default
 ```
@@ -78,9 +81,9 @@ Property                             : Microsoft.Azure.PowerShell.Cmdlets.Spring
 Source                               : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.UserSourceInfo
 ```
 
-Dapatkan Spring Cloud App Deploymeng berdasarkan nama.
+Dapatkan Deploymeng Aplikasi Spring Cloud berdasarkan nama.
 
-### Contoh 2: Cantumkan semua penyebaran di bawah aplikasi cloud musim semi tertentu.
+### Contoh 2: Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 ```powershell
 Get-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway
 ```
@@ -92,7 +95,7 @@ default Microsoft.AppPlatform/Spring/apps/deployments
 prod    Microsoft.AppPlatform/Spring/apps/deployments
 ```
 
-Cantumkan semua penyebaran di bawah aplikasi cloud musim semi tertentu.
+Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 
 ## PARAMETERS
 
@@ -141,7 +144,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Penyebaran.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -240,15 +243,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
-  - `[BindingName <String>]`: Nama sumber daya Pengikat.
+  - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.
   - `[DeploymentName <String>]`: Nama sumber daya Penyebaran.
   - `[DomainName <String>]`: Nama sumber daya domain kustom.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[Location <String>]`: wilayah
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ServiceName <String>]`: Nama sumber daya Layanan.
-  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

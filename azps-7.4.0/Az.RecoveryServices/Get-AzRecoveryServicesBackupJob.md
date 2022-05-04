@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 3e32beb03184c6415fda91991c0021b62c984b8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9d44037d34710105b8539cc7ef676781f737769
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936235"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592020"
 ---
 # Get-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 
 Mendapatkan pekerjaan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +32,12 @@ Get-AzRecoveryServicesBackupJob [[-Status] <JobStatus>] [[-Operation] <JobOperat
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzRecoveryServicesBackupJob** mendapatkan pekerjaan Azure Backup untuk kubah tertentu.
-Mengatur konteks kubah menggunakan parameter -VaultId.
+Cmdlet **Get-AzRecoveryServicesBackupJob** mendapatkan pekerjaan Azure Backup untuk vault tertentu.
+Atur konteks vault dengan menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua pekerjaan yang sedang berlangsung
+### Contoh 1: Mendapatkan semua pekerjaan yang sedang berlangsung
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -51,17 +54,17 @@ V2VM             Backup               InProgress           4/23/2016 5:00:30 PM 
 Perintah pertama mendapatkan status pekerjaan yang sedang berlangsung sebagai array, lalu menyimpannya dalam variabel $Joblist.
 Perintah kedua menampilkan item pertama dalam array $Joblist.
 
-### Contoh 2: Dapatkan semua pekerjaan yang gagal dalam 7 hari terakhir
+### Contoh 2: Mendapatkan semua pekerjaan yang gagal dalam 7 hari terakhir
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 Get-AzRecoveryServicesBackupJob -From (Get-Date).AddDays(-7).ToUniversalTime() -Status Failed -VaultId $vault.ID
 ```
 
-Perintah ini mendapatkan pekerjaan yang gagal dari minggu lalu di lemari besi.
+Perintah ini mendapatkan pekerjaan yang gagal dari minggu lalu di vault.
 Parameter *Dari* menentukan waktu tujuh hari di masa lalu yang ditentukan dalam UTC.
 Perintah tidak menentukan nilai untuk parameter *Kepada* .
-Oleh karena itu, aplikasi ini menggunakan nilai default dari waktu saat ini.
+Oleh karena itu, ia menggunakan nilai default dari waktu saat ini.
 
 ### Contoh 3: Dapatkan pekerjaan yang sedang berlangsung dan tunggu penyelesaian
 
@@ -84,9 +87,9 @@ Waiting for completion...
 Done!
 ```
 
-Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan selesai.
+Skrip ini melakukan polling pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan selesai.
 
-Catatan: Anda dapat menggunakan cmdlet **Wait-AzRecoveryServicesBackupJob** untuk menunggu pekerjaan Azure Backup selesai, bukan While loop.
+Catatan: Anda dapat menggunakan cmdlet **Wait-AzRecoveryServicesBackupJob** untuk menunggu pekerjaan Azure Backup selesai alih-alih Perulangan Sementara.
 
 ### Contoh 4: Dapatkan semua pekerjaan AzureVM dalam 2 hari terakhir yang berhasil diselesaikan
 
@@ -95,7 +98,7 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "v
 $Jobs = Get-AzRecoveryServicesBackupJob  -VaultId $vault.ID  -Status Completed -From (Get-Date).AddDays(-2).ToUniversalTime() -BackupManagementType AzureVM
 ```
 
-Cmdlet pertama mengambil objek kubah. Cmdlet kedua menyimpan semua pekerjaan AzureVM dalam brankas tertentu yang selesai dalam 2 hari terakhir untuk $jobs. Ubah nilai parameter BackupManagementType menjadi MAB untuk mengambil pekerjaan agen MAB.
+Cmdlet pertama mengambil objek vault. Cmdlet kedua menyimpan semua pekerjaan AzureVM di vault tertentu yang selesai dalam 2 hari terakhir hingga $jobs. Ubah nilai parameter BackupManagementType ke MAB untuk mengambil pekerjaan agen MAB.
 
 ## PARAMETERS
 
@@ -134,9 +137,9 @@ Accept wildcard characters: False
 
 ### -Dari
 
-Menentukan mulai, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
+Menentukan awal, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
 Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
-Untuk informasi selengkapnya tentang objek **DateTime**, ketik .`Get-Help Get-Date`
+Untuk informasi selengkapnya tentang objek **DateTime** , ketik `Get-Help Get-Date`.
 Gunakan format UTC untuk tanggal.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 
 Menentukan pekerjaan yang akan didapatkan.
 
@@ -190,10 +193,10 @@ Menentukan operasi pekerjaan yang didapat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Cadangan
-- Mengonfigurasi Kembali
+- MengonfigurasiBackup
 - DeleteBackupData
-- Non-fungsikanBackup
-- Mengembalikan
+- NonaktifkanBackup
+- Pulihkan
 - BackupDataMove
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 Menentukan status pekerjaan yang didapat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- InProgress
+- SedangBerlangsung
 - Gagal
 - Dibatalkan
 - Membatalkan
@@ -234,11 +237,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kepada
+### -Ke
 
 Menentukan akhir, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
 Nilai default adalah waktu sistem saat ini.
-Jika menentukan parameter ini, Anda juga harus menentukan parameter **-From** .
+Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter **-From** .
 Gunakan format UTC untuk tanggal.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSecondaryRegion
-Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
+Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

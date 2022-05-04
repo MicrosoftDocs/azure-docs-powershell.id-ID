@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhookEvent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhookEvent.md
-ms.openlocfilehash: c7642da5a2785a6d922e395cb42c2f2a72a11985
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f41d5a3e7b2a96b2158bd3aa1035532e0b2e7432
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171333"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668068"
 ---
 # Get-AzContainerRegistryWebhookEvent
 
 ## SYNOPSIS
 Mendapatkan kejadian webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhookevent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzContainerRegistryWebhookEvent [-WebhookName] <String> [-ResourceGroupName]
  [-RegistryName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ListWebhookEventsByWebhookObjectParameterSet
+### DaftarWebhookEventsByWebhookObjectParameterSet
 ```
 Get-AzContainerRegistryWebhookEvent -Webhook <PSContainerRegistryWebhook>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzContainerRegistryWebhookEvent -ResourceId <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryWebhookEvent mencantumkan semua kejadian webhook.
+Cmdlet Get-AzContainerRegistryWebhookEvent mencantumkan semua peristiwa webhook.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua acara webhook.
+### Contoh 1: Mendapatkan semua peristiwa webhook.
 ```powershell
 Get-AzContainerRegistryWebhookEvent -ResourceGroupName mattacrtest001 -RegistryName premium001 -WebhookName webhook001
 ```
@@ -63,7 +66,7 @@ eb4aa503-0d14-4f25-8ae5-33cce9a8fd50     ping     11/16/2017 11:35:03 PM        
 2d0ce294-9b59-4f5c-953a-47f2b270526f     ping     11/17/2017 6:27:41 AM          200
 ```
 
-Mendapatkan semua acara webhook.
+Mendapatkan semua peristiwa webhook.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer.
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya webhook registri kontainer
+Id sumber daya Webhook registri kontainer
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Objek Registri Kontainer.
+Objek Container Registry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryWebhook
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -180,5 +183,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzContainerRegistryWebhook](Remove-AzContainerRegistryWebhook.md)
 
-[Uji-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)
+[Test-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)
 

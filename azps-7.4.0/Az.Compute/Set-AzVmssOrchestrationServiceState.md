@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
-ms.openlocfilehash: e0510f83d6c4af848404aa539e004970fc88a89e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83485a1bf8cdac49b23333f055f498921b909497
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127575"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616028"
 ---
 # Set-AzVmssOrchestrationServiceState
 
 ## SYNOPSIS
 Mengatur status layanan orkestrasi untuk VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssorchestrationservicestate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,19 +52,19 @@ Mengatur status layanan orkestrasi untuk VMSS.
 Set-AzVmssOrchestrationServiceState -ResourceGroupName "rg" -VMScaleSetName "vmss1" -ServiceName "AutomaticRepairs" -Action "Suspend"
 ```
 
-Perintah ini menangguhkan layanan Perbaikan Otomatis pada VMSS "vmss1" dalam grup sumber daya "rg".
+Perintah ini menangguhkan layanan Perbaikan Otomatis pada VMSS "vmss1" di grup sumber daya "rg".
 
 ### Contoh 2
 ```powershell
 Get-AzVmss -ResourceGroupName "rg" -VMScaleSetName "vmss1" | Set-AzVmssOrchestrationServiceState -ServiceName "AutomaticRepairs" -Action "Resume"
 ```
 
-Perintah ini melanjutkan layanan Perbaikan Otomatis pada VMSS "vmss1" dalam grup sumber daya "rg".
+Perintah ini melanjutkan layanan Perbaikan Otomatis pada VMSS "vmss1" di grup sumber daya "rg".
 
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang akan dilakukan.  Nilai yang memungkinkan adalah: Lanjutkan, Tangguhkan.
+Tindakan yang akan dilakukan.  Nilai yang mungkin adalah: Lanjutkan, Tangguhkan.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek lokal kumpulan skala mesin virtual.
+Objek lokal dari set skala komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama kumpulan skala mesin virtual.
+Nama set skala komputer virtual.
 
 ```yaml
 Type: System.String
@@ -180,8 +183,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

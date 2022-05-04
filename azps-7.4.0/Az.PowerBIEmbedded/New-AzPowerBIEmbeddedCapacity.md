@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 64f8e4511228c5055a720d38f7f15f559093748a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23cc8edbeefd1d66a25ab605489acce178e78c1b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803646"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729194"
 ---
 # New-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Membuat Kapasitas Tersemat PowerBI baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/new-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +52,12 @@ Tier                   : PBIE_Azure
 Tag                    : {}
 ```
 
-Membuat kapasitas bernama testcapacity di kawasan Azure West Central US dan dalam testRG grup sumber daya. Tingkat sku untuk kapasitasnya adalah A1.
+Membuat kapasitas bernama testcapacity di wilayah Azure US Tengah Barat dan dalam grup sumber daya testRG. Tingkat sku untuk kapasitasnya adalah A1.
 
 ## PARAMETERS
 
 ### -Administrator
-Nama yang dipisahkan koma untuk diatur sebagai administrator pada kapasitas
+Nama yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas
 
 ```yaml
 Type: System.String[]
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure tempat Kapasitas Tersemat PowerBI dihosting
+Wilayah Azure tempat Kapasitas Tersemat PowerBI dihosting
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kapasitas Tersemat PowerBI
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag pada kapasitas.
+Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag pada kapasitas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -159,7 +162,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

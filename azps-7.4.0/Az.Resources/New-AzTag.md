@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTag.md
-ms.openlocfilehash: cdea126608ae54dc9d2ab6e083e53e223deeb513
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4f856aa8de004429376e8ab2113ef64ad2c231fc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801558"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727198"
 ---
 # New-AzTag
 
 ## SYNOPSIS
-Membuat tag Azure yang sudah ditentukan sebelumnya atau menambahkan nilai ke tag yang sudah ada | Membuat atau memperbarui seluruh kumpulan tag pada sumber daya atau langganan.
+Membuat tag Azure yang telah ditentukan sebelumnya atau menambahkan nilai ke tag yang sudah ada | Membuat atau memperbarui seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,28 +37,28 @@ New-AzTag [-ResourceId] <String> [-Tag] <Hashtable> [-DefaultProfile <IAzureCont
 
 ## DESCRIPTION
 
-**CreatePredefinedTagSet**: Cmdlet **New-AzTag** membuat tag Azure yang sudah ditentukan sebelumnya dengan nilai opsional yang sudah ditentukan sebelumnya.
-Anda juga bisa menggunakannya untuk menambahkan nilai tambahan ke tag yang sudah ditentukan sebelumnya.
-Untuk membuat tag yang sudah ditentukan sebelumnya, masukkan nama tag unik.
-Untuk menambahkan nilai ke tag yang sudah ditentukan sebelumnya, tentukan nama tag yang sudah ada dan nilai baru.
-Cmdlet ini mengembalikan objek yang mewakili tag baru atau yang diubah dengan nilainya dan jumlah sumber daya yang telah diterapkan.
-Modul Tag Azure yang merupakan bagian dari **New-AzTag** dapat membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang bisa Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda bisa menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
-Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya atau sumber daya, gunakan parameter *Tag* cmdlet New-AzTag.
+**CreatePredefinedTagSet**: Cmdlet **New-AzTag** membuat tag Azure yang telah ditentukan sebelumnya dengan nilai opsional yang telah ditentukan sebelumnya.
+Anda juga dapat menggunakannya untuk menambahkan nilai tambahan ke tag yang sudah ditentukan sebelumnya.
+Untuk membuat tag yang telah ditentukan sebelumnya, masukkan nama tag unik.
+Untuk menambahkan nilai ke tag yang sudah ditentukan sebelumnya, tentukan nama tag yang ada dan nilai baru.
+Cmdlet ini mengembalikan objek yang mewakili tag baru atau yang dimodifikasi dengan nilainya dan jumlah sumber daya yang telah diterapkannya.
+Modul Azure Tags yang merupakan bagian dari **New-AzTag** dapat membantu Anda mengelola tag Azure yang telah ditentukan sebelumnya.
+Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya Azure dan grup sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Untuk menerapkan tag yang telah ditentukan sebelumnya ke sumber daya atau grup sumber daya, gunakan parameter *Tag* cmdlet New-AzTag.
 Untuk mencari grup sumber daya dengan nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* cmdlet Get-AzResourceGroup.
 Setiap tag memiliki nama.
 Nilai bersifat opsional.
-Tag Azure yang sudah ditentukan sebelumnya dapat memiliki beberapa nilai, tetapi saat Anda menerapkan tag ke grup sumber daya atau sumber daya, Anda menerapkan nama tag dan hanya salah satu nilainya.
-Misalnya, Anda bisa membuat tag Departemen yang sudah ditentukan sebelumnya dengan nilai untuk setiap departemen, seperti Keuangan, Sumber Daya Manusia, dan TI.
-Saat Anda menerapkan tag Departemen ke sumber daya, Anda hanya menerapkan satu nilai yang sudah ditentukan sebelumnya, seperti Keuangan.
+Tag Azure yang telah ditentukan sebelumnya dapat memiliki beberapa nilai, tetapi saat Anda menerapkan tag ke sumber daya atau grup sumber daya, Anda menerapkan nama tag dan hanya salah satu nilainya.
+Misalnya, Anda dapat membuat tag Departemen yang telah ditentukan sebelumnya dengan nilai untuk setiap departemen, seperti Keuangan, Sumber Daya Manusia, dan IT.
+Saat Anda menerapkan tag Departemen ke sumber daya, Anda hanya menerapkan satu nilai yang telah ditentukan sebelumnya, seperti Keuangan.
 
-**CreateByResourceIdParameterSet**: Cmdlet **New-AzTag** dengan **ResourceId** akan membuat atau memperbarui seluruh kumpulan tag pada sumber daya atau langganan.
-Operasi ini memungkinkan menambahkan atau mengganti seluruh kumpulan tag pada sumber daya atau langganan yang ditentukan. Entitas yang ditentukan dapat memiliki maksimal 50 tag.
+**CreateByResourceIdParameterSet**: Cmdlet **New-AzTag** dengan **ResourceId** membuat atau memperbarui seluruh kumpulan tag pada sumber daya atau langganan.
+Operasi ini memungkinkan penambahan atau mengganti seluruh set tag pada sumber daya atau langganan yang ditentukan. Entitas yang ditentukan dapat memiliki maksimal 50 tag.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tag yang sudah ditentukan sebelumnya
+### Contoh 1: Membuat tag yang telah ditentukan sebelumnya
 ```powershell
 New-AzTag -Name "FY2015"
 ```
@@ -66,12 +69,12 @@ Name   ValuesTable Count Values
 FY2015             0     {}
 ```
 
-Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama FY2015.
+Perintah ini membuat tag yang telah ditentukan sebelumnya bernama FY2015.
 Tag ini tidak memiliki nilai.
-Anda dapat menerapkan tag tanpa nilai ke grup sumber daya atau sumber daya, atau menggunakan **New-AzTag** untuk menambahkan nilai ke tag.
-Anda juga dapat menentukan nilai saat menerapkan tag ke grup sumber daya atau sumber daya.
+Anda dapat menerapkan tag tanpa nilai ke sumber daya atau grup sumber daya, atau menggunakan **New-AzTag** untuk menambahkan nilai ke tag.
+Anda juga dapat menentukan nilai saat menerapkan tag ke sumber daya atau grup sumber daya.
 
-### Contoh 2: Membuat tag yang sudah ditentukan sebelumnya dengan nilai
+### Contoh 2: Membuat tag yang telah ditentukan sebelumnya dengan nilai
 ```powershell
 New-AzTag -Name "Department" -Value "Finance"
 ```
@@ -86,9 +89,9 @@ Values:
         Finance     0
 ```
 
-Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama Departemen dengan nilai Keuangan.
+Perintah ini membuat tag yang telah ditentukan sebelumnya bernama Departemen dengan nilai Keuangan.
 
-### Contoh 3: Menambahkan nilai ke tag yang sudah ditentukan sebelumnya
+### Contoh 3: Menambahkan nilai ke tag yang telah ditentukan sebelumnya
 ```powershell
 New-AzTag -Name "Department" -Value "Finance"
 
@@ -108,10 +111,10 @@ Values:
         IT          0
 ```
 
-Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama Departemen dengan dua nilai.
-Jika nama tag ada, **New-AzTag** menambahkan nilai ke tag yang sudah ada, bukan membuat yang baru.
+Perintah ini membuat tag yang telah ditentukan sebelumnya bernama Departemen dengan dua nilai.
+Jika nama tag ada, **New-AzTag** menambahkan nilai ke tag yang ada alih-alih membuat yang baru.
 
-### Contoh 4: Menggunakan tag yang sudah ditentukan sebelumnya
+### Contoh 4: Menggunakan tag yang telah ditentukan sebelumnya
 ```powershell
 New-AzTag -Name "CostCenter" -Value "0001"
 Name:   CostCenter
@@ -157,7 +160,7 @@ Tags:
     CostCenter   0001
 ```
 
-Perintah dalam contoh ini membuat dan menggunakan tag yang sudah ditentukan sebelumnya.
+Perintah dalam contoh ini membuat dan menggunakan tag yang telah ditentukan sebelumnya.
 
 ### Contoh 5: Membuat atau memperbarui seluruh kumpulan tag pada langganan
 
@@ -216,11 +219,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama tag yang sudah ditentukan sebelumnya.
-Untuk membuat tag baru yang sudah ditentukan sebelumnya, masukkan nama yang unik.
-Untuk menambahkan nilai ke tag yang sudah ada, masukkan nama tag yang sudah ada.
-Jika tag yang sudah ditentukan sebelumnya memiliki nama yang ditentukan, **New-AzTag** menambahkan nilai yang ditentukan, jika ada, ke tag dengan nama tersebut dan bukan membuat tag baru.
+### -Name
+Menentukan nama tag yang telah ditentukan sebelumnya.
+Untuk membuat tag baru yang telah ditentukan sebelumnya, masukkan nama unik.
+Untuk menambahkan nilai ke tag yang sudah ada, masukkan nama tag yang ada.
+Jika tag yang sudah ditentukan sebelumnya memiliki nama yang ditentukan, **New-AzTag** menambahkan nilai yang ditentukan, jika ada, ke tag dengan nama tersebut alih-alih membuat tag baru.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya untuk entitas yang ditandai. Sumber daya, grup sumber daya, atau langganan mungkin ditandai.
+Pengidentifikasi sumber daya untuk entitas yang ditandai. Sumber daya, grup sumber daya, atau langganan dapat ditandai.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan diletakkan di sumber daya.
+Tag yang akan diletakkan pada sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -264,10 +267,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
-Menentukan nilai tag yang sudah ditentukan sebelumnya.
-Tag yang sudah ditentukan sebelumnya bisa memiliki beberapa nilai, tapi Anda hanya bisa memasukkan satu nilai dalam setiap perintah.
-Parameter ini opsional, karena tag bisa memiliki nama tanpa nilai.
+### -Nilai
+Menentukan nilai tag yang telah ditentukan sebelumnya.
+Tag yang telah ditentukan sebelumnya dapat memiliki beberapa nilai, tetapi Anda hanya dapat memasukkan satu nilai di setiap perintah.
+Parameter ini bersifat opsional, karena tag dapat memiliki nama tanpa nilai.
 
 ```yaml
 Type: System.String
@@ -281,8 +284,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -331,6 +334,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzTag](./Get-AzTag.md)
 
-[Hapus-AzTag](./Remove-AzTag.md)
+[Remove-AzTag](./Remove-AzTag.md)
 
-[Perbarui-AzTag](./Update-AzTag.md)
+[Update-AzTag](./Update-AzTag.md)

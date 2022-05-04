@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
-ms.openlocfilehash: dd1dd7aca9682842c77be025cc0208021c02beca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 704a513a7a8fdd940f45e2060f3ff9843ad0caac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798030"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705666"
 ---
 # New-AzRmStorageContainer
 
 ## SYNOPSIS
-Membuat wadah blob Storage
+Membuat kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,26 +53,26 @@ New-AzRmStorageContainer -StorageAccount <PSStorageAccount> -Name <String> -Defa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageContainer** membuat wadah blob Storage
+Cmdlet **New-AzRmStorageContainer membuat kontainer** blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Membuat wadah blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata
+### Contoh 1: Membuat kontainer blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata
 ```
 PS C:\>New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah ini membuat wadah blob Storage dengan nama akun Storage dan nama kontainer, dengan metadata.
+Perintah ini membuat kontainer blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata.
 
-### Contoh 2: Membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
+### Contoh 2: Membuat kontainer blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>New-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
 ```
 
-Perintah ini membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob.
+Perintah ini membuat kontainer blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob.
 
-### Contoh 3: Membuat wadah penyimpanan dengan pengaturan EncryptionScope
+### Contoh 3: Membuat kontainer penyimpanan dengan pengaturan EncryptionScope
 ```
 PS C:\> $c = New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Name testcontainer -DefaultEncryptionScope "testscope" -PreventEncryptionScopeOverride $true
 
@@ -88,10 +91,10 @@ PS C:\> $c.DenyEncryptionScopeOverride
 True
 ```
 
-Perintah ini membuat kontainer penyimpanan dengan enkripsiScope tangguh, dan memblokir pengesampingan lingkup enkripsi dari kontainer default.
-Lalu perlihatkan properti wadah terkait.
+Perintah ini membuat kontainer penyimpanan dengan defalt encryptionScope, dan memblokir penimpaan cakupan enkripsi dari default kontainer.
+Kemudian tampilkan properti kontainer terkait.
 
-### Contoh 4: Membuat wadah penyimpanan Azure dengan RootSquash
+### Contoh 4: Membuat kontainer penyimpanan Azure dengan RootSquash
 ```
 PS C:\> $container = New-AzRmStorageContainer -ResourceGroupName "myersourcegroup" -AccountName "mystorageaccount" -Name "mycontainer" -RootSquash AllSquash
 
@@ -102,9 +105,9 @@ PS C:\> $container.EnableNfsV3RootSquash
 False
 ```
 
-Perintah ini membuat wadah penyimpanan, dengan properti RootSquash diatur sebagai AllSquash.  RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
+Perintah ini membuat kontainer penyimpanan, dengan properti RootSquash ditetapkan sebagai AllSquash.  RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
 
-### Contoh 5: Membuat wadah penyimpanan dan mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi
+### Contoh 5: Membuat kontainer penyimpanan dan mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi
 ```
 PS C:\> $c = New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Name testcontainer -EnableImmutableStorageWithVersioning
 
@@ -117,13 +120,13 @@ Name          PublicAccess LastModified         HasLegalHold HasImmutabilityPoli
 testcontainer None         2021-07-19 08:26:19Z False        False                 False             True
 ```
 
-Perintah ini membuat wadah penyimpanan dan mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah ini membuat kontainer penyimpanan dan mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 Perintah hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob.
 
 ## PARAMETERS
 
 ### -DefaultEncryptionScope
-Default wadah untuk menggunakan lingkup enkripsi yang ditentukan untuk semua tulisan.
+Default kontainer untuk menggunakan cakupan enkripsi tertentu untuk semua penulisan.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableImmutableStorageWithVersioning
-Aktifkan Storage yang tidak dapat diubah dengan penerapan versi pada tingkat kontainer.
+Aktifkan Storage yang tidak dapat diubah dengan penerapan versi di tingkat kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreventEncryptionScopeOverride
-Blokir pengesampingan lingkup enkripsi dari kontainer default.
+Penimpaan blok cakupan enkripsi dari default kontainer.
 
 ```yaml
 Type: System.Boolean
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicAccess
-Wadah PublicAccess
+PublicAccess Kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSPublicAccess
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootSquash
-Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
+Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang mungkin termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -289,8 +292,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

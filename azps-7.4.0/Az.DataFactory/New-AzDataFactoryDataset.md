@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
-ms.openlocfilehash: 972f9894d0a7756b7cd0546c38918caa18210464
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3a703f14958937b948d58706c404ec9d150d762
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942553"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651316"
 ---
 # New-AzDataFactoryDataset
 
 ## SYNOPSIS
-Membuat kumpulan data di Pabrik Data.
+Membuat himpunan data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactorydataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,20 +37,20 @@ New-AzDataFactoryDataset [-DataFactory] <PSDataFactory> [[-Name] <String>] [-Fil
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryDataset** membuat kumpulan data dalam Azure Data Factory.
-Jika Anda menentukan nama untuk kumpulan data yang sudah ada, cmdlet ini meminta konfirmasi sebelum menggantikan kumpulan data.
-Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan kumpulan data yang sudah ada tanpa konfirmasi.
+Cmdlet **New-AzDataFactoryDataset** membuat himpunan data di Azure Data Factory.
+Jika Anda menentukan nama untuk himpunan data yang sudah ada, cmdlet ini akan meminta konfirmasi sebelum mengganti himpunan data.
+Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan himpunan data yang ada tanpa konfirmasi.
 Lakukan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
-- Membuat layanan tertaut. 
-- Membuat kumpulan data. 
-- Membuat saluran.
-Jika kumpulan data dengan nama yang sama sudah ada di pabrik data, cmdlet ini meminta Anda untuk mengonfirmasi apakah akan menimpa kumpulan data yang sudah ada dengan kumpulan data baru.
-Jika Anda mengonfirmasi untuk menimpa kumpulan data yang sudah ada, definisi kumpulan data juga diganti.
+- Buat layanan tertaut. 
+- Membuat himpunan data. 
+- Buat alur.
+Jika himpunan data dengan nama yang sama sudah ada di pabrik data, cmdlet ini meminta Anda untuk mengonfirmasi apakah akan menimpa himpunan data yang ada dengan himpunan data baru.
+Jika Anda mengonfirmasi untuk menimpa himpunan data yang ada, definisi himpunan data juga diganti.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kumpulan data
+### Contoh 1: Membuat himpunan data
 ```powershell
 New-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 ```
@@ -62,10 +65,10 @@ Policy            : Microsoft.DataFactories.Policy
 Structure         : {}
 ```
 
-Perintah ini membuat kumpulan data bernama DA_WikipediaClickEvents di pabrik data bernama WikiADF.
-Perintah mendasarkan kumpulan data pada informasi dalam file DAWikipediaClickEvents.json.
+Perintah ini membuat himpunan data bernama DA_WikipediaClickEvents di pabrik data bernama WikiADF.
+Perintah mendasarkan himpunan data pada informasi dalam file DAWikipediaClickEvents.json.
 
-### Contoh 2: Menampilkan ketersediaan untuk kumpulan data baru
+### Contoh 2: Melihat ketersediaan untuk himpunan data baru
 ```powershell
 $Dataset = New-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 $Dataset.Availability
@@ -79,10 +82,10 @@ Offset         :
 WaitOnExternal : Microsoft.DataFactories.WaitOnExternal
 ```
 
-Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
-Perintah kedua menggunakan notasi titik standar untuk menampilkan detail tentang properti Ketersediaan kumpulan data.
+Perintah pertama membuat himpunan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan himpunan data tersebut ke variabel $Dataset.
+Perintah kedua menggunakan notasi titik standar untuk menampilkan detail tentang properti Ketersediaan himpunan data.
 
-### Contoh 3: Menampilkan lokasi untuk kumpulan data baru
+### Contoh 3: Menampilkan lokasi untuk himpunan data baru
 ```powershell
 $Dataset = New-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 $Dataset.Location
@@ -96,10 +99,10 @@ LinkedServiceName : LinkedServiceWikipediaClickEvents
 PartitionBy       : {}
 ```
 
-Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
-Perintah kedua menampilkan detail tentang properti Lokasi kumpulan data.
+Perintah pertama membuat himpunan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan himpunan data tersebut ke variabel $Dataset.
+Perintah kedua menampilkan detail tentang properti Lokasi himpunan data.
 
-### Contoh 4: Menampilkan aturan validasi untuk kumpulan data baru
+### Contoh 4: Menampilkan aturan validasi untuk himpunan data baru
 ```powershell
 $Dataset = New-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 $Dataset.Policy.Validation | Format-List $dataset.Location
@@ -116,16 +119,16 @@ MinimumRows   :
 MinimumSizeMB : 1
 ```
 
-Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
-Perintah kedua mendapatkan detail tentang aturan validasi untuk kumpulan data, lalu mengirimkannya ke cmdlet Format-List menggunakan operator pipeline.
-Cmdlet Windows PowerShell itu memformat hasil.
-Untuk informasi selengkapnya, ketik .`Get-Help Format-List`
+Perintah pertama membuat himpunan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan himpunan data tersebut ke variabel $Dataset.
+Perintah kedua mendapatkan detail tentang aturan validasi untuk himpunan data, lalu meneruskannya ke cmdlet Format-List dengan menggunakan operator alur.
+Cmdlet Windows PowerShell memformat hasilnya.
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
 ## PARAMETERS
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini membuat kumpulan data di pabrik data yang ditentukan parameter ini.
+Cmdlet ini membuat himpunan data di pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini membuat kumpulan data di pabrik data yang ditentukan parameter ini.
+Cmdlet ini membuat himpunan data di pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi kumpulan data.
+Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi himpunan data.
 
 ```yaml
 Type: System.String
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan kumpulan data yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan himpunan data yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan data yang akan dibuat.
+### -Name
+Menentukan nama himpunan data yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini membuat kumpulan data dalam grup yang ditentukan parameter ini.
+Cmdlet ini membuat himpunan data dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -231,8 +234,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -276,7 +279,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataset
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

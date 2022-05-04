@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Move-AzRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Move-AzRecoveryServicesBackupRecoveryPoint.md
-ms.openlocfilehash: 3a1be2a132b7751ccafaf1e47f1f5cf6120c1a07
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 55050a21c7d5c2cdf35ffeffffe2faa9a6b1294a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310761"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728996"
 ---
 # Move-AzRecoveryServicesBackupRecoveryPoint
 
 ## SYNOPSIS
 Memindahkan titik pemulihan dari tingkat sumber ke tingkat tujuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/move-azrecoveryservicesbackuprecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 

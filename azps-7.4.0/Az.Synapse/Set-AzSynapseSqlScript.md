@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
-ms.openlocfilehash: 2abd5d3226cfe27e94a1614dde458edaaaa894c5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5dba9dca467fefe19c9a548d4d179635a2876bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993115"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691708"
 ---
 # Set-AzSynapseSqlScript
 
 ## SYNOPSIS
-Membuat atau memperbarui skrip SQL dalam ruang kerja.
+Membuat atau memperbarui skrip SQL di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Set-AzSynapseSqlScript -WorkspaceObject <PSSynapseWorkspace> -SqlPoolName <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL dalam ruang kerja.
+Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL di ruang kerja.
 
 ## EXAMPLES
 
@@ -73,12 +76,12 @@ Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sq
 Set-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sqlscript.sql"  -SqlPoolName Contososqlpool -SqlDatabaseName Contosodatabase
 ```
 
-Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql yang tersambung ke ContosoSqlPool dan menggunakan database bernama Contosodatabase di ruang kerja bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql yang terhubung ke ContosoSqlPool dan menggunakan database bernama Contosodatabase di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari skrip SQL.
+Deskripsi skrip SQL.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -FolderPath
 Folder tempat skrip SQL ini berada.
-Jika menentukan jalur multi-level seperti \[rootFolder/subFolder\], SqlScript akan muncul di tingkat bawah.
+Jika menentukan jalur multi-tingkat seperti \[rootFolder/subFolder\], SqlScript akan muncul di tingkat bawah.
 Jika tidak ditentukan, skrip SQL ini akan muncul di tingkat akar.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama skrip sql.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Sql pool mana skrip sql akan terhubung.
+Kumpulan sql mana yang akan disambungkan oleh skrip sql.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -244,8 +247,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

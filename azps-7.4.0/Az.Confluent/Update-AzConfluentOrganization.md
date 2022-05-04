@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Update-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Update-AzConfluentOrganization.md
-ms.openlocfilehash: d8e1d3bf58109a23424121b6d3af7539fde95b46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8cb9f2a2e1cbf5e370998708e12742a6575d5873
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289377"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692644"
 ---
 # Update-AzConfluentOrganization
 
 ## SYNOPSIS
-Perbarui sumber daya Organisasi
+Memperbarui sumber daya Organisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/update-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Update-AzConfluentOrganization -InputObject <IConfluentIdentity> [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Perbarui sumber daya Organisasi
+Memperbarui sumber daya Organisasi
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui organisasi konferensi menurut nama
+### Contoh 1: Memperbarui organisasi confluent berdasarkan nama
 ```powershell
 Update-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh -Tag @{"key01" = "value01"}
 ```
@@ -47,9 +50,9 @@ Location Name                 Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini memperbarui organisasi konferensi berdasarkan nama.
+Perintah ini memperbarui organisasi confluent berdasarkan nama.
 
-### Contoh 2: Memperbarui organisasi konferensi menurut saluran
+### Contoh 2: Memperbarui organisasi konfluen menurut alur
 ```powershell
 Get-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh | Update-AzConfluentOrganization -Tag @{"key01" = "value01"; "key02"="value02"}
 ```
@@ -60,7 +63,7 @@ Location Name                 Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini memperbarui organisasi konferensi menurut saluran.
+Perintah ini memperbarui organisasi konfluen berdasarkan alur.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya organisasi
 
 ```yaml
@@ -154,8 +157,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

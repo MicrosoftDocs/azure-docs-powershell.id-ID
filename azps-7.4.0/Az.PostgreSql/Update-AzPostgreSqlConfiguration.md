@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlConfiguration.md
-ms.openlocfilehash: 55a5e7e82c98a546bdd16b87fe994a73aec26fae
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 090aa7fe5879cdd913916c1638bfaa8c31d7a70c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741186"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705756"
 ---
 # Update-AzPostgreSqlConfiguration
 
 ## SYNOPSIS
 Memperbarui konfigurasi server.
 Gunakan Update-AzPostgreSqlServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Gunakan Update-AzPostgreSqlServer sebagai gantinya jika Anda ingin memperbarui A
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui konfigurasi PostgreSql menurut nama
+### Contoh 1: Memperbarui konfigurasi PostgreSql berdasarkan nama
 ```powershell
  Update-AzPostgreSqlConfiguration -Name intervalstyle -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer -Value SQL_STANDARD
 ```
@@ -50,9 +53,9 @@ Name          Value
 intervalstyle SQL_STANDARD
 ```
 
-Cmdlet ini memperbarui konfigurasi PostgreSql menurut nama.
+Cmdlet ini memperbarui konfigurasi PostgreSql berdasarkan nama.
 
-### Contoh 2: Memperbarui konfigurasi PostgreSql menurut identitas.
+### Contoh 2: Perbarui konfigurasi PostgreSql menurut identitas.
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/configurations/deadlock_timeout"
  Update-AzPostgreSqlConfiguration -InputObject $ID -Value 2000
@@ -64,12 +67,12 @@ Name             Value
 deadlock_timeout 2000
 ```
 
-Cmdlet ini memperbarui konfigurasi PostgreSql menurut identitas.
+Cmdlet ini memperbarui konfigurasi PostgreSql berdasarkan identitas.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi server.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber konfigurasi.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai konfigurasi.
 
 ```yaml
@@ -219,8 +222,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -276,7 +279,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

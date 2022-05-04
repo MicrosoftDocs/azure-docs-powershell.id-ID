@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 25489fa5b2c8799bb6e0895586c0330d2f7729b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59a258bc47bd104a4dd0c2fad3759615738beb73
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123651"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620348"
 ---
 # Get-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Cantumkan semua atau perlihatkan detail layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau tampilkan detail layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzIoTDeviceProvisioningService -ResourceGroupName <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ myresourcegroup1    myiotdps1   eastus      myiotdps1.azure-devices-provisioning
 myresourcegroup1    myiotdps2   westus      myiotdps2.azure-devices-provisioning.net    4       GeoLatency          0       Active
 ```
 
-Cantumkan semua layanan penyediaan perangkat Azure IoT Hub dalam langganan.
+Mencantumkan semua layanan provisi perangkat Azure IoT Hub dalam langganan.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ myresourcegroup     myiotdps1   eastus      myiotdps1.azure-devices-provisioning
 myresourcegroup     myiotdps2   westus      myiotdps2.azure-devices-provisioning.net    4       GeoLatency          0       Active
 ```
 
-Cantumkan semua layanan penyediaan perangkat Azure IoT Hub dalam grup sumber daya 'myresourcegroup'.
+Cantumkan semua Azure IoT Hub layanan provisi perangkat di grup sumber daya 'myresourcegroup'.
 
 ### Contoh 3
 ```powershell
@@ -85,7 +88,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAT52k=
 ```
 
-Tampilkan detail layanan penyediaan perangkat Azure IoT Hub 'myiotdps'.
+Tampilkan detail layanan provisi perangkat Azure IoT Hub 'myiotdps'.
 
 ## PARAMETERS
 
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -147,11 +150,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

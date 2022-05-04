@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: 53a577a0e80a61476df1277434ceb01faf906ffc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bc12ee483ad82789df521271bdd8051d7e0bb97a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060633"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667186"
 ---
 # New-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Membuat ASN terdaftar untuk peering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringregisteredasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,15 +45,15 @@ Buat ASN terdaftar untuk objek peering.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan peering dan buat ASN terdaftar
+### Contoh 1: Mendapatkan peering dan membuat ASN terdaftar
 ```powershell
 $peering = Get-AzPeering -ResourceGroupName $resourceGroupName -Name $name
 $peering | New-AzPeeringRegisteredAsn -Name $asnName -Asn $asn
 ```
 
-Dapatkan peering yang ingin Anda tambahkan ASN terdaftar. Lalu sampaikan itu ke komandan.
+Dapatkan peering yang ingin Anda tambahkan ASN terdaftar. Kemudian teruskan itu ke commandlet.
 
-### Contoh 2: Gunakan peering resourceId untuk membuat asn terdaftar
+### Contoh 2: Gunakan resourceId peering untuk membuat asn terdaftar
 ```powershell
 New-AzPeeringRegisteredAsn -ResourceId $resourceId -Name $asnName -Asn $asn
 ```
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ASN yang akan didaftarkan
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

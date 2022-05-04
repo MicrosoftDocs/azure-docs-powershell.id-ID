@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
-ms.openlocfilehash: 10ea9ae6fa17f6883aeee67a6f7a71b38c1bcb46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c13e8a11e4bc27c5b222be467104d8807f1b8461
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746316"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734842"
 ---
 # Get-AzMaintenanceUpdate
 
 ## SYNOPSIS
-Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
+Dapatkan pembaruan pemeliharaan yang tertunda ke sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceupdate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzMaintenanceUpdate [-ResourceGroupName] <String> [-ProviderName] <String> [
 ```
 
 ## DESCRIPTION
-Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
+Dapatkan pembaruan pemeliharaan yang tertunda ke sumber daya.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ NotBefore           : 1/24/2020 5:11:41 AM
 ResourceId          : /subscriptions/42c974dd-2c03-4f1b-96ad-b07f050aaa74/resourcegroups/smdtestwestus2/providers/Microsoft.Compute/hostGroups/smddhgwestus2/hosts/smddhwestus2
 ```
 
-Dapatkan pembaruan pemeliharaan tertunda ke sumber daya.
+Dapatkan pembaruan pemeliharaan yang tertunda ke sumber daya.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceParentType
-Tipe sumber daya induk.
+Jenis sumber daya induk.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
