@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
-ms.openlocfilehash: fdaf367194ac5071b4bb6b2c0234a1fea948ff41
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2de50f9f08da05736e8df2ebadbd6b969ba4cec5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122175"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585506"
 ---
 # New-AzImageBuilderCustomizerObject
 
 ## SYNOPSIS
 Menjelaskan satuan kustomisasi gambar
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildercustomizerobject) untuk informasi terbaru.
+
 ## SYNTAX
 
-### ShellKustomizer (Default)
+### ShellCustomizer (Default)
 ```
 New-AzImageBuilderCustomizerObject -CustomizerName <String> -ShellCustomizer [-Inline <String[]>]
  [-ScriptUri <String>] [-Sha256Checksum <String>] [<CommonParameters>]
@@ -31,14 +34,14 @@ New-AzImageBuilderCustomizerObject -CustomizerName <String> -FileCustomizer [-De
  [-Sha256Checksum <String>] [-SourceUri <String>] [<CommonParameters>]
 ```
 
-### PowerShellKustomizer
+### PowerShellCustomizer
 ```
 New-AzImageBuilderCustomizerObject -CustomizerName <String> -PowerShellCustomizer [-Inline <String[]>]
  [-RunAsSystem <Boolean>] [-RunElevated <Boolean>] [-ScriptUri <String>] [-Sha256Checksum <String>]
  [-ValidExitCode <Int32[]>] [<CommonParameters>]
 ```
 
-### Mulai ulangCustomizer
+### RestartCustomizer
 ```
 New-AzImageBuilderCustomizerObject -CustomizerName <String> -RestartCustomizer [-RestartCheckCommand <String>]
  [-RestartCommand <String>] [-RestartTimeout <String>] [<CommonParameters>]
@@ -95,7 +98,7 @@ settingUpMgmtAgtPath PowerShell {mkdir c:\\buildActions, echo Azure-Image-Builde
 
 Perintah ini membuat penyesuai powershell.
 
-### Contoh 4: Membuat penyesuai mulai ulang
+### Contoh 4: Membuat penyesuai hidupkan ulang
 ```powershell
 New-AzImageBuilderCustomizerObject -RestartCustomizer -CustomizerName 'restcus' -RestartCommand 'shutdown /f /r /t 0 /c \"packer restart\"' -RestartCheckCommand 'powershell -command "& {Write-Output "restarted."}"' -RestartTimeout '10m'
 ```
@@ -106,9 +109,9 @@ Name    Type           RestartCheckCommand                                 Resta
 restcus WindowsRestart powershell -command "& {Write-Output "restarted."}" shutdown /f /r /t 0 /c \"packer restart\" 10m
 ```
 
-Perintah ini membuat penyesuai mulai ulang.
+Perintah ini membuat penyesuai hidupkan ulang.
 
-### Contoh 5: Membuat kustomisasi shell
+### Contoh 5: Membuat penyesuai shell
 ```powershell
 New-AzImageBuilderCustomizerObject -ShellCustomizer -CustomizerName downloadBuildArtifacts -ScriptUri "https://raw.githubusercontent.com/danielsollondon/azvmimagebuilder/master/quickquickstarts/customizeScript2.sh" 
 ```
@@ -119,12 +122,12 @@ Name                   Type  Inline ScriptUri                                   
 downloadBuildArtifacts Shell        https://raw.githubusercontent.com/danielsollondon/azvmimagebuilder/master/quickquickstarts/customizeScript2.sh
 ```
 
-Perintah ini membuat pengkustomisasi shell.
+Perintah ini membuat penyesuai shell.
 
 ## PARAMETERS
 
 ### -CustomizerName
-Nama yang Mudah Dikenal untuk memberikan konteks tentang apa yang dilakukan langkah kustomisasi ini.
+Nama yang Mudah Diingat untuk memberikan konteks tentang apa yang dilakukan langkah penyesuaian ini.
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
-Jalur absolut ke file (dengan struktur direktori bertumpuk yang sudah dibuat) tempat file (dari sourceUri) akan diunggah dalam VM.
+### -Destination
+Jalur absolut ke file (dengan struktur direktori berlapis yang sudah dibuat) tempat file (dari sourceUri) akan diunggah ke di VM.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -FileCustomizer
 Mengunggah file ke VM (Linux, Windows).
-Sesuai dengan penyedia file Packer.
+Sesuai dengan provisioner file Packer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ### -Filter
 Array filter untuk memilih pembaruan yang akan diterapkan.
 Hilangkan atau tentukan array kosong untuk menggunakan default (tanpa filter).
-Lihat tautan di atas untuk contoh dan deskripsi mendetail dari bidang ini.
+Lihat tautan di atas untuk contoh dan deskripsi terperinci dari bidang ini.
 
 ```yaml
 Type: System.String[]
@@ -186,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Inline
+### -Sebaris
 Array perintah shell untuk dijalankan.
 
 ```yaml
@@ -201,9 +204,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PowerShellKustomizer
+### -PowerShellCustomizer
 Menjalankan PowerShell yang ditentukan pada VM (Windows).
-Sesuai dengan packer powershell provisioner.
+Sesuai dengan provisioner powershell Packer.
 Tepat salah satu dari 'scriptUri' atau 'inline' dapat ditentukan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartCheckCommand
-Perintah untuk memeriksa apakah restart berhasil [Default: ''].
+Perintah untuk memeriksa apakah hidupkan ulang berhasil [Default: ''].
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartCommand
-Perintah untuk menjalankan mulai ulang [Default: 'shutdown /r /f /t 0 /c packer restart']
+Perintah untuk menjalankan restart [Default: 'shutdown /r /f /t 0 /c packer restart']
 
 ```yaml
 Type: System.String
@@ -249,8 +252,8 @@ Accept wildcard characters: False
 ```
 
 ### -RestartCustomizer
-Boot ulang VM dan menunggu VM kembali online (Windows).
-Terkait dengan Packer windows-restart provisioner.
+Reboot VM dan menunggunya kembali online (Windows).
+Sesuai dengan provisioner windows-restart Packer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartTimeout
-Waktu habis mulai ulang yang ditentukan sebagai string besaran dan satuan, misalnya '5m' (5 menit) atau '2h' (2 jam) [Default: '5m'].
+Waktu habis hidupkan ulang yang ditentukan sebagai string besaran dan unit, misalnya '5m' (5 menit) atau '2 jam' (2 jam) [Default: '5m'].
 
 ```yaml
 Type: System.String
@@ -311,8 +314,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptUri
-URI dari skrip shell yang akan dijalankan untuk dikustomisasi.
-Ini bisa berupa tautan github, SAS URI untuk Azure Storage, dll.
+URI skrip shell yang akan dijalankan untuk penyesuaian.
+Ini bisa menjadi tautan github, SAS URI untuk Azure Storage, dll.
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ### -SearchCriterion
 Kriteria untuk mencari pembaruan.
 Hilangkan atau tentukan string kosong untuk menggunakan default (cari semua).
-Lihat tautan di atas untuk contoh dan deskripsi mendetail dari bidang ini.
+Lihat tautan di atas untuk contoh dan deskripsi terperinci dari bidang ini.
 
 ```yaml
 Type: System.String
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sha256Checksum
-Checksum SHA256 dari skrip shell yang disediakan dalam bidang scriptUri.
+Checksum SHA256 dari skrip shell yang disediakan di bidang scriptUri.
 
 ```yaml
 Type: System.String
@@ -358,9 +361,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ShellKustomizer
+### -ShellCustomizer
 Menjalankan skrip shell selama fase kustomisasi (Linux).
-Sesuai dengan penyedia shell Packer.
+Sesuai dengan provisioner shell Packer.
 Tepat salah satu dari 'scriptUri' atau 'inline' dapat ditentukan.
 
 ```yaml
@@ -376,8 +379,8 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-URI file yang akan diunggah untuk mengustomisasi VM.
-Ini bisa berupa tautan github, SAS URI untuk Azure Storage, dll.
+URI file yang akan diunggah untuk menyesuaikan VM.
+Ini bisa menjadi tautan github, SAS URI untuk Azure Storage, dll.
 
 ```yaml
 Type: System.String
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateLimit
-Jumlah maksimum pembaruan untuk diterapkan dalam satu waktu.
+Jumlah maksimum pembaruan yang akan diterapkan pada satu waktu.
 Hilangkan atau tentukan 0 untuk menggunakan default (1000).
 
 ```yaml
@@ -425,7 +428,7 @@ Accept wildcard characters: False
 
 ### -WindowsUpdateCustomizer
 Menginstal Pembaruan Windows.
-Terkait dengan Packer Windows Update Provisioner (https://github.com/rgl/packer-provisioner-windows-update).
+Sesuai dengan Packer Windows Update Provisioner (https://github.com/rgl/packer-provisioner-windows-update).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

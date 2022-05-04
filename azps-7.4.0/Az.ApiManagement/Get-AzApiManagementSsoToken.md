@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSsoToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSsoToken.md
-ms.openlocfilehash: 4ce3d695049b2fb4c24cadce403673418f9bb442
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fd3c0500f7744bb9eb2bb62da27fb740336236a9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067743"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648562"
 ---
 # Get-AzApiManagementSsoToken
 
 ## SYNOPSIS
 Mendapatkan tautan dengan token SSO ke portal manajemen yang disebarkan dari layanan API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementssotoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,16 +36,16 @@ Get-AzApiManagementSsoToken -InputObject <PsApiManagement> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen yang digunakan dari layanan API Management.
+Cmdlet **Get-AzApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token akses menyeluruh (SSO) ke portal manajemen yang disebarkan dari layanan API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan token SSO dari layanan API Management
+### Contoh 1: Mendapatkan token SSO dari layanan API Management
 ```powershell
 Get-AzApiManagementSsoToken -ResourceGroupName "Contoso" -Name "ContosoApi"
 ```
 
-Perintah ini mendapatkan token SSO layanan API Management.
+Perintah ini mendapatkan token SSO dari layanan API Management.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagement. Parameter ini diperlukan.
+Instans PsApiManagement. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -76,7 +79,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama instans API Management.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana API Management ada.
+Menentukan nama grup sumber daya tempat API Management ada.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

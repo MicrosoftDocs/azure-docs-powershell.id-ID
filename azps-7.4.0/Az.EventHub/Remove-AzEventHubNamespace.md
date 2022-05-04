@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
-ms.openlocfilehash: d1a4a34150ceac599f009bd1010cee2a7887a91c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1e343dea19c065a54215994dabf23ab7bf7166ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001773"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659430"
 ---
 # Remove-AzEventHubNamespace
 
 ## SYNOPSIS
-Menghapus ruang nama Hub Kejadian tertentu.
+Menghapus namespace layanan Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzEventHubNamespace [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubNamespace menghapus dan menghapus ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Remove-AzEventHubNamespace menghapus dan menghapus namespace layanan Azure Event Hubs yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,31 +50,31 @@ Cmdlet Remove-AzEventHubNamespace menghapus dan menghapus ruang nama Hub Kejadia
 Remove-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -Name MyNamespaceName
 ```
 
-Menghapus ruang \`nama Hub Kejadian MyNamespaceName\` dalam grup \`sumber daya MyResourceGroupName\`.
+Menghapus namespace \`Layanan Azure Event Hubs MyNamespaceName\` dalam grup \`sumber daya MyResourceGroupName\`.
 
-### Contoh 2: InputObject - Using Variable:
+### Contoh 2: InputObject - Menggunakan Variabel:
 ```powershell
 $inputObject = Get-AzEventHubNamespace <params> 
 Remove-AzEventHubNamespace -InputObject $inputObject
 ```
 
-### Contoh 3: InputObject - Using Piping:
+### Contoh 3: InputObject - Menggunakan Piping:
 ```powershell
 Get-AzEventHubNamespace <params> | Remove-AzEventHubNamespace
 ```
 
-### Contoh 4: ResourceId - Using Variable
+### Contoh 4: ResourceId - Menggunakan Variabel
 ```powershell
 $resourceid = Get-AzEventHubNamespace <params>
 Remove-AzEventHubNamespace -ResourceId $resourceid.Id
 ```
 
-### Contoh 5: ResourceId - Using Piping:
+### Contoh 5: ResourceId - Menggunakan Piping:
 ```powershell
 Get-AzResource -ResourceType Microsoft.EventHub/Namespaces | Remove-AzEventHubNamespace
 ```
 
-### Contoh 6: ResourceId - Using String:
+### Contoh 6: ResourceId - Menggunakan String:
 ```powershell
 Remove-AzEventHubNamespace -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.EventHub/namespaces/NamespaceName"
 ```
@@ -79,7 +82,7 @@ Remove-AzEventHubNamespace -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-xxxxxx/r
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Ruang Nama EventHubs
+Objek Namespace EventHubs
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama EventHub
+### -Name
+Nama Namespace Layanan EventHub
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama EventHubs
+Id Sumber Daya Namespace EventHubs
 
 ```yaml
 Type: System.String
@@ -183,8 +186,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

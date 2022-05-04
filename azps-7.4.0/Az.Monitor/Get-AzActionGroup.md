@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActionGroup.md
-ms.openlocfilehash: 325ad03bc18af74a23d824af2952f876a9c1e457
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1c8987441a3ec8e4b968d428bf203f233e45c1f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657954"
 ---
 # Get-AzActionGroup
 
 ## SYNOPSIS
 Mendapatkan grup tindakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,21 +39,21 @@ Cmdlet **Get-AzActionGroup** mendapatkan satu atau beberapa grup tindakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan grup tindakan menurut ID langganan
+### Contoh 1: Mendapatkan grup tindakan menurut ID langganan
 ```powershell
 Get-AzActionGroup
 ```
 
 Perintah ini mencantumkan semua grup tindakan untuk langganan saat ini.
 
-### Contoh 2: Dapatkan grup tindakan untuk grup sumber daya tertentu
+### Contoh 2: Mendapatkan grup tindakan untuk grup sumber daya yang diberikan
 ```powershell
 Get-AzActionGroup -ResourceGroup "Default-activityLogAlerts"
 ```
 
-Perintah ini mencantumkan grup tindakan untuk grup sumber daya tertentu.
+Perintah ini mencantumkan grup tindakan untuk grup sumber daya yang diberikan.
 
-### Contoh 3: Dapatkan grup tindakan.
+### Contoh 3: Mendapatkan grup tindakan.
 ```powershell
 Get-AzActionGroup -ResourceGroup "Default-activityLogAlerts" -Name "actionGroup1"
 ```
@@ -74,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup tindakan.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

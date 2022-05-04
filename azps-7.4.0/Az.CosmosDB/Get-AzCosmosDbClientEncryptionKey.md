@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDbClientEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDbClientEncryptionKey.md
-ms.openlocfilehash: 7db738c85b23526bca9d4bde946cc02aadb853fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b85064137afac87b499a419ec135e508b642c73
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876132"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594736"
 ---
 # Get-AzCosmosDbClientEncryptionKey
 
 ## SYNOPSIS
-Dapatkan Kunci Enkripsi Klien CosmosDB.
+Mendapatkan Kunci Enkripsi Klien CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbclientencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDbClientEncryptionKey [-Name <String>] -SqlDatabaseObject <PSSqlData
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDbClientEncryptionKey** mendapatkan daftar semua Kunci Enkripsi Klien CosmosDB yang sudah ada untuk ResourceGroupName, AccountName dan DatabaseName tertentu dan mendapatkan satu Kunci Enkripsi Klien CosmosDB untuk ResourceGroupName, AccountName, DatabaseName, dan ClientEncryptionKeyName tertentu.
+Cmdlet **Get-AzCosmosDbClientEncryptionKey** mendapatkan daftar semua Kunci Enkripsi Klien CosmosDB yang ada untuk ResourceGroupName, AccountName, dan DatabaseName tertentu dan mendapatkan satu Kunci Enkripsi Klien CosmosDB untuk ResourceGroupName, AccountName, DatabaseName, dan ClientEncryptionKeyName tertentu.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Id                       : Id
 Resource                 : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlClientEncryptionKeyGetPropertiesResource
 ```
 
-Perintah mendapatkan semua kunci enkripsi klien dalam database seperti yang diatur di myRgName.
+Perintah mendapatkan semua kunci enkripsi klien dalam database sebagaimana diatur dalam myRgName.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kunci Enkripsi Klien.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlDatabaseObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetResults
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssExtension.md
-ms.openlocfilehash: 20fec60f8b684968a70fcf549981f88a8155c29a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 463143592869b615b82a3101d36e8429e09d54da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230805"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620582"
 ---
 # Remove-AzVmssExtension
 
 ## SYNOPSIS
 Menghapus ekstensi dari VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmssextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzVmssExtension [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [-Id
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVmssExtension** menghapus ekstensi dari Rangkaian Skala Mesin Virtual (VMSS).
+Cmdlet **Remove-AzVmssExtension** menghapus ekstensi dari Virtual Machine Scale Set (VMSS).
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ $vmss = Get-AzVmss -ResourceGroupName $RGName -VMScaleSetName $vmssName
 Remove-AzVmssExtension -ResourceGroupName "Group002" -VirtualMachineScaleSet $vmss -Id $extensionId
 ```
 
-Perintah ini menghapus id ekstensi tentukan dari VMSS yang termasuk dalam grup sumber daya bernama Group002.
+Perintah ini menghapus tentukan id ekstensi dari VMSS yang termasuk dalam grup sumber daya bernama Group002.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi yang dihapus cmdlet ini dari VMSS.
 
 ```yaml
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -163,4 +166,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzVmssExtension](./Add-AzVmssExtension.md)
+[Tambahkan-EkstensiAzVmss](./Add-AzVmssExtension.md)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Submit-AzDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Submit-AzDataLakeAnalyticsJob.md
-ms.openlocfilehash: 05c15c3b1e0b507457abe3f4b8632c4d3ab3701e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff1a3ea15361ffe40f21a3cf9aa6c7c7c7a2b7df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642588"
 ---
 # Submit-AzDataLakeAnalyticsJob
 
 ## SYNOPSIS
 Mengirimkan pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/submit-azdatalakeanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,18 +72,18 @@ Submit-AzDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-Script] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Submit-AzDataLakeAnalyticsJob** mengirimkan pekerjaan Data Lake Analytics Azure.
+Cmdlet **Submit-AzDataLakeAnalyticsJob** mengirimkan pekerjaan Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Kirim pekerjaan
+### Contoh 1: Mengirimkan pekerjaan
 ```powershell
 Submit-AzDataLakeAnalyticsJob -Account "ContosoAdlAccount" -Name "New Job" -ScriptPath $LocalScriptPath -AnalyticsUnits 32
 ```
 
 Perintah ini mengirimkan pekerjaan Data Lake Analytics.
 
-### Contoh 2: Kirim pekerjaan dengan parameter skrip
+### Contoh 2: Mengirimkan pekerjaan dengan parameter skrip
 ```powershell
 $parameters = [ordered]@{}
 $parameters["Department"] = "Sales"
@@ -89,12 +92,12 @@ $parameters["StartDateTime"] = (Get-Date).AddDays(-14)
 Submit-AzDataLakeAnalyticsJob -Account "ContosoAdlAccount" -Name "New Job" -ScriptPath $LocalScriptPath -AnalyticsUnits 32 -ScriptParameter $parameters
 ```
 
-Parameter skrip U-SQL telah didahului di atas konten skrip utama, misalnya: string DECLARE @Department = "Sales"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = datetime baru(2017, 12, 6, 0, 0, 0, 0);
+Parameter skrip U-SQL telah ditambahkan sebelumnya di atas konten skrip utama, misalnya: DECLARE @Department string = "Sales"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = DateTime baru(2017, 12, 6, 0, 0, 0, 0);
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun Data Lake Analytics di mana pekerjaan akan dikirimkan.
+Nama akun Data Lake Analytics tempat pekerjaan akan dikirimkan.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticsUnits
-Unit analitik untuk digunakan untuk pekerjaan ini. Biasanya, lebih banyak unit analitik yang didedikasikan untuk skrip menghasilkan waktu eksekusi skrip yang lebih cepat.
+Unit analitik yang digunakan untuk pekerjaan ini. Biasanya, lebih banyak unit analitik yang didedikasikan untuk skrip menghasilkan waktu eksekusi skrip yang lebih cepat.
 
 ```yaml
 Type: System.Int32
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompileOnly
-Menunjukkan bahwa pengiriman hanya harus menyusun pekerjaan dan tidak dijalankan jika diatur ke true.
+Menunjukkan bahwa pengiriman hanya boleh membangun pekerjaan dan tidak dijalankan jika diatur ke true.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pekerjaan yang ramah untuk dikirim.
+### -Name
+Nama pekerjaan yang mudah diingat untuk dikirimkan.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineId
-ID yang menunjukkan penyerahan pekerjaan ini adalah bagian dari serangkaian pekerjaan berulang dan juga terkait dengan alur kerja.
+ID yang menunjukkan pengiriman pekerjaan ini adalah bagian dari serangkaian pekerjaan berulang dan juga terkait dengan alur pekerjaan.
 
 ```yaml
 Type: System.Guid
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Nama yang mudah dikenali untuk pipeline yang terkait dengan pekerjaan ini.
+Nama ramah opsional untuk alur yang terkait dengan pekerjaan ini.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineUri
-Uri opsional yang menautkan ke layanan asal yang terkait dengan saluran ini.
+Uri opsional yang menautkan ke layanan asal yang terkait dengan alur ini.
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrenceName
-Nama yang ramah opsional untuk korrelasi pengulangan antar pekerjaan.
+Nama ramah opsional untuk korelasi pengulangan antar pekerjaan.
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunId
-ID yang mengidentifikasi proses perulangan pipa tertentu ini.
+ID yang mengidentifikasi iterasi eksekusi khusus dari alur ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -Runtime
-Secara opsional, atur versi runtime yang akan digunakan untuk pekerjaan tersebut. Jika dibiarkan tidak diatur, runtime default digunakan.
+Secara opsional atur versi runtime yang akan digunakan untuk pekerjaan tersebut. Jika dibiarkan tidak diatur, runtime default akan digunakan.
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptParameter
-Parameter skrip untuk pekerjaan ini, sebagai kamus nama parameter (string) ke nilai (kombinasi byte, sbyte, int, uint (atau uint32), long, ulong (atau uint64), float, double, decimal, short (atau int16), ushort (atau uint16), char, string, DateTime, bool, Guid, atau byte[]).
+Parameter skrip untuk pekerjaan ini, sebagai kamus nama parameter (string) ke nilai (kombinasi byte, sbyte, int, uint (atau uint32), long, ulong (atau uint64), float, double, desimal, pendek (atau int16), ushort (atau uint16), char, string, DateTime, bool, Guid, atau byte[]).
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptPath
-Jalur ke file skrip untuk dikirim.
+Jalur ke file skrip untuk dikirimkan.
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

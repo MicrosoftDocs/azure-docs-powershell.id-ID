@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTrafficRouting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTrafficRouting.md
-ms.openlocfilehash: 6c71a4b56dd7aed9a8349636103ba19daaed5b73
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3ba3e19b3f7d816008aa9a04e60d09efe124f34d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056043"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649840"
 ---
 # Get-AzWebAppTrafficRouting
 
 ## SYNOPSIS
 Dapatkan Aturan perutean untuk nama Slot yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapptrafficrouting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,11 +27,11 @@ Get-AzWebAppTrafficRouting -ResourceGroupName <String> -WebAppName <String> -Rul
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppTrafficRouting** Mendapatkan konfigurasi aturan perutean dari Slot Azure Web App.
+Cmdlet **Get-AzWebAppTrafficRouting** Mendapatkan konfigurasi aturan perutean dari Slot Aplikasi Web Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aturan perutean tertentu dari slot webapp
+### Contoh 1: Mendapatkan aturan perutean tertentu dari slot aplikasi web
 ```powershell
 Get-AzWebAppTrafficRouting -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite"  -RuleName 'Stg'
 ```
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

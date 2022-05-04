@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJobPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJobPipeline.md
-ms.openlocfilehash: d87f4f75202e66816a05161ac94f8c67460fc838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f48dede6336bbe5819bdc541e9860f5df85bfd0c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064179"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640482"
 ---
 # Get-AzDataLakeAnalyticsJobPipeline
 
 ## SYNOPSIS
-Mendapatkan pipa atau saluran Pekerjaan Data Lake Analytics.
+Mendapatkan alur atau alur Pekerjaan Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsjobpipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,28 +35,28 @@ Get-AzDataLakeAnalyticsJobPipeline [-Account] <String> [-PipelineId] <Guid> [-Su
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsJobPipeline** mendapatkan pipeline Azure Data Lake Analytics Job atau daftar saluran tertentu.
+**Get-AzDataLakeAnalyticsJobPipeline** mendapatkan alur Azure Data Lake Analytics Job tertentu atau daftar alur.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pipeline tertentu
+### Contoh 1: Mendapatkan alur tertentu
 ```powershell
 Get-AzDataLakeAnalyticsJobPipeline -Account "contosoadla" -PipelineId 83cb7ad2-3523-4b82-b909-d478b0d8aea3
 ```
 
-Perintah ini mendapatkan pipeline yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
+Perintah ini mendapatkan alur yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
 
-### Contoh 2: Dapatkan daftar semua saluran dalam akun
+### Contoh 2: Mendapatkan daftar semua alur di akun
 ```powershell
 Get-AzDataLakeAnalyticsJobPipeline -AccountName "contosoadla"
 ```
 
-Perintah ini mendapatkan daftar semua alur dalam akun "contosoadla"
+Perintah ini mendapatkan daftar semua alur di akun "contosoadla"
 
 ## PARAMETERS
 
 ### -Akun
-Nama nama akun Data Lake Analytics yang ingin diambil alur pekerjaannya.
+Nama nama akun Data Lake Analytics di mana ingin mengambil alur pekerjaan.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineId
-ID pipeline pekerjaan tertentu untuk mengembalikan informasi.
+ID alur pekerjaan tertentu untuk mengembalikan informasi.
 
 ```yaml
 Type: System.Guid
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubmittedAfter
-Filter opsional yang mengembalikan alur kerja hanya dikirimkan setelah waktu yang ditentukan.
+Filter opsional yang mengembalikan alur pekerjaan hanya dikirimkan setelah waktu yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -112,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -DikirimBefore
-Filter opsional yang mengembalikan pipeline pekerjaan hanya dikirimkan sebelum waktu yang ditentukan.
+### -SubmittedBefore
+Filter opsional yang mengembalikan alur pekerjaan hanya dikirimkan sebelum waktu yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

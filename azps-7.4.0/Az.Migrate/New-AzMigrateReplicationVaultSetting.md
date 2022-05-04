@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationVaultSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationVaultSetting.md
-ms.openlocfilehash: 0f5ff56a047a8620ce5fc98172bdbc73b6604d78
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e92e69d135dfcc834b8a9bb5958420872bc31cb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314846"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667618"
 ---
 # New-AzMigrateReplicationVaultSetting
 
 ## SYNOPSIS
-Operasi untuk mengonfigurasi pengaturan kubah.
+Operasi untuk mengonfigurasi pengaturan vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationvaultsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzMigrateReplicationVaultSetting -ResourceGroupName <String> -ResourceName <
 ```
 
 ## DESCRIPTION
-Operasi untuk mengonfigurasi pengaturan kubah.
+Operasi untuk mengonfigurasi pengaturan vault.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ PS C:\> {{ Add code here }}
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah layanan pemulihan ada.
+Nama grup sumber daya tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama kubah layanan pemulihan.
+Nama vault layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

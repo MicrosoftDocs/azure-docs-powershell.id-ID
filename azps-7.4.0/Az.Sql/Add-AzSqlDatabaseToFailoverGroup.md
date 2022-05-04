@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
-ms.openlocfilehash: f24b4f65abbd5cb76c195b9bd5d4a1e4ab63481f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6bab5b0a01165031622c72ab5c384c59312f5888
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865818"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643722"
 ---
-# Add-AzSqlDatabaseToFailoverGroup
+# Tambahkan-AzSqlDatabaseToFailoverGroup
 
 ## SYNOPSIS
 Menambahkan satu atau beberapa database ke Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqldatabasetofailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Add-AzSqlDatabaseToFailoverGroup [-ServerName] <String> [-FailoverGroupName] <St
 ```
 
 ## DESCRIPTION
-Menambahkan satu atau beberapa database di server utama Grup Failover Azure SQL Database ke Grup Failover tersebut. Database tidak boleh berupa database sekunder dalam hubungan replikasi yang sudah ada. Perintah akan memulai geo-replikasi database apa pun yang ditambahkan ke server sekunder Grup Failover.
-Untuk mendapatkan objek database yang digunakan untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzSqlDatabase.
+Menambahkan satu atau beberapa database di server utama Grup Failover Azure SQL Database ke Grup Failover tersebut. Database tidak boleh berupa database sekunder dalam hubungan replikasi yang ada. Perintah akan memulai replikasi geografis database apa pun yang ditambahkan ke server sekunder Grup Failover.
+Untuk mendapatkan objek database untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzSqlDatabase.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
@@ -37,7 +40,7 @@ Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 $failoverGroup = Get-AzSqlDatabase -ResourceGroupName rg -ServerName primaryserver -DatabaseName db1 | Add-AzSqlDatabaseToFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg
 ```
 
-Perintah ini menambahkan satu database ke Grup Failover dengan memilahnya.
+Perintah ini menambahkan satu database ke Grup Failover dengan menyalurkannya.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +62,7 @@ Perintah ini menambahkan semua database dalam Kumpulan Elastis ke Grup Failover.
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa Database Azure SQL di server utama Grup Failover untuk ditambahkan ke Grup Failover.
+Satu atau beberapa Azure SQL Database di server utama Grup Failover untuk ditambahkan ke Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup failover Azure SQL Database.
+Nama Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL Database utama Grup Failover.
+Nama server Azure SQL Database utama Grup Failover.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -150,15 +153,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
+[Baru-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
 
 [Set-AzSqlDatabaseFailoverGroup](./Set-AzSqlDatabaseFailoverGroup.md)
 
-[Get-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
+[Dapatkan-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFromFailoverGroup](./Remove-AzSqlDatabaseFromFailoverGroup.md)
 
-[Switch-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
+[Alihkan-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 

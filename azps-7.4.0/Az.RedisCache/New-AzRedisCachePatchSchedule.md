@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCachePatchSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCachePatchSchedule.md
-ms.openlocfilehash: 0c997fa3b0c9cf7ecc9d0db7ddfa47deda7cb69a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 92b3e36785bf749188068cdec44ec467e55d04f0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674676"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661320"
 ---
 # New-AzRedisCachePatchSchedule
 
 ## SYNOPSIS
 Menambahkan jadwal patch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscachepatchschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,13 +33,13 @@ Cmdlet **New-AzRedisCachePatchSchedule** menambahkan jadwal patch ke cache di Az
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan menambahkan jadwal patch pada singgahan
+### Contoh 1: Membuat dan menambahkan jadwal patch pada cache
 ```powershell
 New-AzRedisCachePatchSchedule -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -Entries @(New-AzRedisCacheScheduleEntry -DayOfWeek "Weekend" -StartHourUtc 2 -MaintenanceWindow "06:00:00")
 ```
 
-Perintah ini menambahkan jadwal patch ke singgahan bernama RedisCache06.
-Parameter Entries mengambil sebagai nilai perintah yang menggunakan **New-AzRedisCacheScheScheduleEntry** untuk membuat jadwal.
+Perintah ini menambahkan jadwal patch ke cache bernama RedisCache06.
+Parameter Entries mengambil sebagai nilainya perintah yang menggunakan **New-AzRedisCacheScheduleEntry** untuk membuat jadwal.
 
 ## PARAMETERS
 
@@ -55,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Entri
-Menentukan array jadwal yang ditetapkan cmdlet ini pada singgahan. Untuk mendapatkan objek **PSScheduleEntry** , gunakan cmdlet New-AzRedisCacheScheduleEntry.
+### -Entries
+Menentukan array jadwal yang ditetapkan cmdlet ini pada cache. Untuk mendapatkan objek **PSScheduleEntry** , gunakan cmdlet New-AzRedisCacheScheduleEntry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RedisCache.Models.PSScheduleEntry[]
@@ -70,8 +73,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama singgahan.
+### -Name
+Menentukan nama cache.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi singgahan.
+Menentukan nama grup sumber daya yang berisi cache.
 
 ```yaml
 Type: System.String
@@ -100,8 +103,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -144,7 +147,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.RedisCache.Models.PSScheduleEntry
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 

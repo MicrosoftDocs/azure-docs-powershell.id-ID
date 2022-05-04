@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeerAdvertisedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeerAdvertisedRoute.md
-ms.openlocfilehash: a1b1fc4a22bc92ebfd2ee3c662ad44f95724d7a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd516a11b1f7948a6dffb837fe3f988374a37f79
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939105"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621739"
 ---
 # Get-AzVirtualRouterPeerAdvertisedRoute
 
 ## SYNOPSIS
-Daftar rute yang diiklankan oleh peer router virtual tertentu
+Mencantumkan rute yang diiklankan oleh peer router virtual tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualrouterpeeradvertisedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzVirtualRouterPeerAdvertisedRoute -InputObject <PSVirtualRouterPeer> [-AsJo
 ```
 
 ## DESCRIPTION
-Mengingat A rekan router virtual baik berdasarkan nama atau objek, menghitung rute yang diiklankan ke rekan tersebut oleh router virtual tertentu.
+Mengingat rekan router virtual baik berdasarkan nama atau objek, hitung rute yang diiklankan ke rekan tersebut oleh router virtual tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Get-AzVirtualRouterPeerAdvertisedRouter -InputObject $virtualRouterPeer
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input rekan perute virtual.
+Objek input rekan router virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualRouterPeer
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya rekan perute virtual
+Nama grup sumber daya peer router virtual
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

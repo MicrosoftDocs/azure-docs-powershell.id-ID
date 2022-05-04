@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDevice.md
-ms.openlocfilehash: ea3c41d895534d34116d0af227e9cd5cb9001e2d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f3fa56949e302d82d1cdc26a10ba44bf8671ea0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122067"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622110"
 ---
 # Add-AzIotHubDevice
 
 ## SYNOPSIS
-Buat perangkat dalam IoT Hub.
+Membuat perangkat dalam IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Add-AzIotHubDevice [-ResourceId] <String> [-DeviceId] <String> [-AuthMethod <PSD
 ```
 
 ## DESCRIPTION
-Buat perangkat dengan tipe otorisasi berbeda dalam IoT Hub.
+Buat perangkat dengan jenis otorisasi yang berbeda dalam IoT Hub.
 
 ## EXAMPLES
 
@@ -53,21 +56,21 @@ Buat perangkat dengan tipe otorisasi berbeda dalam IoT Hub.
 Add-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -AuthMethod "shared_private_key" -EdgeEnabled
 ```
 
-Buat perangkat IoT berkemampuan edge dengan otorisasi default (kunci pribadi bersama).
+Buat perangkat IoT berkemampuan edge dengan otorisasi default (kunci privat bersama).
 
 ### Contoh 2
 ```powershell
 Add-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice2" -AuthMethod "x509_ca" -Status Disabled -StatusReason "Some Reason"
 ```
 
-Buat perangkat IoT dengan otorisasi CA akar dengan status dan alasan yang dinonaktifkan.
+Buat perangkat IoT dengan otorisasi OS root dengan status dan alasan yang dinonaktifkan.
 
 ### Contoh 3
 ```powershell
 Add-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -AuthMethod "shared_private_key" -EdgeEnabled -Children device1,device2
 ```
 
-Buat perangkat IoT berkemampuan tepi dan tambahkan perangkat anak ke perangkat tersebut.
+Buat perangkat IoT berkemampuan edge dan tambahkan perangkat anak ke dalamnya.
 
 ### Contoh 4
 ```powershell
@@ -79,7 +82,7 @@ Buat perangkat IoT dan atur perangkat induknya.
 ## PARAMETERS
 
 ### -AuthMethod
-Otorisasi mengetik entitas yang akan dibuat dengannya.
+Jenis otorisasi yang akan dibuat entitas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceAuthType
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeEnabled
-Bendera menunjukkan pengaktifan edge.
+Bendera yang menunjukkan pengaktifan tepi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menimpa perangkat induk perangkat non-edge.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryThumbprint
-Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci utama.
+Thumbprint sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci primer.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryThumbprint
-Sidik jari sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci sekunder.
+Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk kunci sekunder.
 
 ```yaml
 Type: System.String
@@ -305,8 +308,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

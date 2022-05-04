@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppCertificate.md
-ms.openlocfilehash: 7308b9da699b397f17126b5edc1a47b44d0f0e8f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c455a8e3c3127cfb0fcb7e816de43adcb253395
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115173"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639348"
 ---
 # Get-AzWebAppCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,23 +30,23 @@ Get-AzWebAppCertificate [[-ResourceGroupName] <String>] [[-Thumbprint] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzWebAppCertificate** mendapatkan informasi tentang sertifikat Azure Web App yang terkait dengan grup sumber daya tertentu.
-Jika Anda mengetahui sidik jari sertifikat, Anda juga bisa menggunakan cmdlet ini untuk mendapatkan informasi tentang sertifikat yang ditentukan.
+Jika Anda mengetahui thumbprint sertifikat, Anda juga dapat menggunakan cmdlet ini untuk mendapatkan informasi tentang sertifikat tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan sertifikat Web App dalam grup sumber daya
+### Contoh 1: Mendapatkan sertifikat Aplikasi Web dalam grup sumber daya
 ```powershell
 Get-AzWebAppCertificate -ResourceGroupName "ContosoResourceGroup"
 ```
 
-Perintah ini mengembalikan informasi tentang sertifikat Web App yang diunggah yang terkait dengan grup sumber daya ContosoResourceGroup.
+Perintah ini mengembalikan informasi tentang sertifikat Aplikasi Web yang diunggah yang terkait dengan grup sumber daya ContosoResourceGroup.
 
 ### Contoh 2: Mendapatkan sertifikat aplikasi web tertentu
 ```powershell
 Get-AzWebAppCertificate -ResourceGroupName "ContosoResourceGroup" -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
 
-Perintah ini mendapatkan sertifikat ContosoResourceGroup Web App dengan sidik jari E3A38EBA60CAA1C162785A2E1C44A15AD450199C3.
+Perintah ini mendapatkan sertifikat Aplikasi Web ContosoResourceGroup dengan thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
+### -Thumbprint
 Menentukan pengidentifikasi unik untuk sertifikat.
 
 ```yaml
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/sta
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Start-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Start-AzImageBuilderTemplate.md
-ms.openlocfilehash: 203ce844cfe520019c5f12ce4f31a0607585ff02
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aedd7f50b9bf1734c0c0d99ca0bc438073238ccd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227241"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638828"
 ---
 # Start-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Membuat artefak dari templat gambar yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/start-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Perintah ini memulai templat gambar.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Id langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -236,8 +239,8 @@ INPUTOBJECT <IImageBuilderIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ImageTemplateName <String>]`: Nama Templat gambar
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[RunOutputName <String>]`: Nama output jalankan
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[RunOutputName <String>]`: Nama output eksekusi
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. Id langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

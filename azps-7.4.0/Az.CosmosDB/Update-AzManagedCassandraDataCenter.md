@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: bbb46fd3dc8367f7a8b93ae0f8dc532eed3f549c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ebc35d0f2f269a730e671dcaf2fd8cf6b7c8c0c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942949"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662058"
 ---
 # Update-AzManagedCassandraDatacenter
 
 ## SYNOPSIS
-Perbarui Instans Terkelola Azure yang sudah ada untuk pusat data Apache Cassandra.
+Perbarui pusat data Azure Managed Instances for Apache Cassandra yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Update-AzManagedCassandraDatacenter -ParentObject <PSClusterResource> [-NodeCoun
 ```
 
 ## DESCRIPTION
-**Cmdlet Update-AzManagedCassandraDataCenter** memperbarui pusat data Cassandra yang dikelola yang sudah ada.
+**Cmdlet Update-AzManagedCassandraDataCenter** memperbarui pusat data Cassandra terkelola yang ada.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Update-AzManagedCassandraDataCenter `
 ## PARAMETERS
 
 ### -BackupStorageCustomerKeyUri
-Kunci URI ke KeyVault yang digunakan untuk mengenkripsi cadangan Cassandra. Jika tidak diatur, akan menggunakan kunci Azure sendiri. Pastikan identitas kluster yang ditetapkan sistem telah diberi izin yang sesuai (izin dapatkan/bungkus kunci/pembungkusan) pada kunci.
+URI ke kunci KeyVault yang digunakan untuk mengenkripsi cadangan Cassandra. Jika tidak diatur, akan menggunakan kunci Azure sendiri. Pastikan identitas kluster yang ditetapkan sistem telah diberi izin yang sesuai (izin kunci get/wrap/unwrap) pada kunci.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Base64EncodedCassandraYamlFragment
-Fragmen konfigurasi untuk disertakan dalam `cassandra.yaml` simpul pusat data ini, base64 dikodekan.
+Fragmen konfigurasi untuk disertakan pada `cassandra.yaml` simpul pusat data ini, dikodekan Base64.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Cassandra yang dikelola.
+Nama kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatacenterName
-Nama Datacenter Cassandra yang Dikelola.
+Nama Pusat Data Cassandra Terkelola.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cassandra Datacenter terkelola
+Objek Pusat Data Cassandra Terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSDataCenterResource
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah node yang akan dibuat di pusat data ini.
+Jumlah simpul yang akan dibuat di pusat data ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek kluster Cassandra untuk membuat pusat data di dalamnya.
+Objek kluster Cassandra untuk membuat pusat data.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -213,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementCertificate.md
-ms.openlocfilehash: 804130dd2889bdffa5522587386c0e8599606a49
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8bebe70561de0123367fb577af677c3e1c483b83
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879444"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662634"
 ---
 # Set-AzApiManagementCertificate
 
 ## SYNOPSIS
-Mengubah sertifikat API Management yang dikonfigurasi untuk autentikasi bersama dengan backend.
+Memodifikasi sertifikat API Management yang dikonfigurasi untuk autentikasi timbal balik dengan backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzApiManagementCertificate -Context <PsApiManagementContext> -CertificateId 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementCertificate** mengubah sertifikat azure API Management.
+Cmdlet **Set-AzApiManagementCertificate** memodifikasi sertifikat Azure API Management.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Set-AzApiManagementCertificate -Context $ApiMgmtContext -CertificateId "0123456789" -PfxFilePath "C:\contoso\certificates\apimanagementnew.pfx" -PfxPassword "2222"
 ```
 
-Perintah ini mengubah sertifikat API Management yang ditentukan.
+Perintah ini memodifikasi sertifikat API Management yang ditentukan.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
+Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
 Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

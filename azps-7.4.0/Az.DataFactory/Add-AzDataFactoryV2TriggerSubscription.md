@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2TriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2TriggerSubscription.md
-ms.openlocfilehash: 874107938a5fb14dfdbc89b1cde77b3a116faf71
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 880fdf0c75d190f4b0f595c4ba2f7797c6ccf490
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228753"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620528"
 ---
 # Add-AzDataFactoryV2TriggerSubscription
 
 ## SYNOPSIS
-Berlangganan pemicu kejadian ke acara layanan eksternal.
+Berlangganan pemicu peristiwa ke peristiwa layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/add-azdatafactoryv2triggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Add-AzDataFactoryV2TriggerSubscription [-ResourceId] <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Perintah ini berlangganan pemicu kejadian ke kejadian layanan eksternal tertentu dari pendefinisian pemicu.
+Perintah ini berlangganan pemicu peristiwa ke peristiwa layanan eksternal yang ditentukan dari penentuan pemicu.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ TriggerName Status
 Trigger1    Provisioning
 ```
 
-Perintah ini akan berlangganan pemicu BlobEnetTrigger1 ke kejadian tertentu dari pendefinisian pemicu.
+Perintah ini akan berlangganan pemicu BlobEnetTrigger1 ke peristiwa yang ditentukan dari pendefinisian pemicu.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -148,8 +151,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

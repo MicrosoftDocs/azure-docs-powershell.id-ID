@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceLoggingProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceLoggingProperty.md
-ms.openlocfilehash: 968d4a7daefccfa7c343eab1a392711079029120
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c55be7b5db81d43db4104c4555f1f15806c1c98
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671130"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616388"
 ---
 # Get-AzStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Mendapatkan properti pembuatan log untuk layanan Azure Storage.
+Mendapatkan properti pengelogan untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageserviceloggingproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,20 +29,20 @@ Get-AzStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Contex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk layanan Azure Storage.
+Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pengelogan untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti pembuatan log untuk layanan Blob
+### Contoh 1: Mendapatkan properti pengelogan untuk Blob service
 ```
 C:\PS>Get-AzStorageServiceLoggingProperty -ServiceType Blob
 ```
 
-Perintah ini mendapatkan properti pembuatan log untuk penyimpanan blob.
+Perintah ini mendapatkan properti pengelogan untuk penyimpanan blob.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -71,12 +74,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
+Menentukan jenis layanan penyimpanan.
+Cmdlet ini mendapatkan properti pengelogan untuk jenis layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan 
-- Meja
-- Antrian
+- Blob 
+- Tabel
+- Antrean
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

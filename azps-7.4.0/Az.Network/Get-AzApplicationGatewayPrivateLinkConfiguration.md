@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 4df6e3f4dcb53258c015266843a4256a85047b53
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 206c6a090b8c079a7b12119c4df7c7981b5ef84c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640113"
 ---
 # Get-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi tautan privat gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,27 +28,27 @@ Get-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayPrivateLinkConfiguration** mendapatkan konfigurasi tautan pribadi gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayPrivateLinkConfiguration** mendapatkan konfigurasi tautan privat gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1 : Dapatkan konfigurasi tautan privat tertentu
+### Contoh 1 : Mendapatkan konfigurasi tautan privat tertentu
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $PrivateLinkConfiguration = Get-AzApplicationGatewayPrivateLinkConfiguration -Name "privateLinkConfig01" -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan konfigurasi tautan pribadi bernama privateLinkConfig01 dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfiguration.
+Perintah kedua mendapatkan konfigurasi tautan privat bernama privateLinkConfig01 dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfiguration.
 
-### Contoh 2 : Dapatkan daftar konfigurasi tautan pribadi
+### Contoh 2 : Mendapatkan daftar konfigurasi tautan privat
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $PrivateLinkConfigurations = Get-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan semua konfigurasi tautan pribadi dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfigurations.
+Perintah kedua mendapatkan semua konfigurasi tautan privat dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfigurations.
 
 ## PARAMETERS
 
@@ -79,8 +82,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi gateway aplikasi privateLink
+### -Name
+Nama konfigurasi privateLink gateway aplikasi
 
 ```yaml
 Type: String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

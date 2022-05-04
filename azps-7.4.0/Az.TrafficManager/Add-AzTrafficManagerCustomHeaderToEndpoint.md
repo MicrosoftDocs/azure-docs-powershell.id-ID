@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToEndpoint.md
-ms.openlocfilehash: fdd83d4516d72596966200a2c14788ebda622fb1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3058496617c311cb7378e025c47d91b84329ac6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056421"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643290"
 ---
 # Add-AzTrafficManagerCustomHeaderToEndpoint
 
 ## SYNOPSIS
 Menambahkan informasi header kustom ke objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagercustomheadertoendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Add-AzTrafficManagerCustomHeaderToEndpoint** menambahkan informasi head
 Anda bisa mendapatkan titik akhir dengan menggunakan cmdlet New-AzTrafficManagerEndpoint atau Get-AzTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
-Lakukan perubahan anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint.
+Terapkan perubahan Anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -42,10 +45,10 @@ Add-AzTrafficManagerCustomHeaderToEndpoint -TrafficManagerEndpoint $TrafficManag
 Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama membuat titik akhir Azure Traffic Manager menggunakan cmdlet **New-AzTrafficManagerEndpoint**.
+Perintah pertama membuat titik akhir Azure Traffic Manager dengan menggunakan cmdlet **New-AzTrafficManagerEndpoint**.
 Perintah menyimpan titik akhir lokal dalam variabel $TrafficManagerEndpoint.
-Perintah kedua menambahkan informasi header kustom ke titik akhir yang disimpan di $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah kedua menambahkan informasi header kustom ke titik akhir yang disimpan dalam $TrafficManagerEndpoint.
+Perintah akhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama informasi header kustom yang akan ditambahkan.
 
 ```yaml
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
-Cmdlet ini mengubah objek lokal ini.
+Cmdlet ini memodifikasi objek lokal ini.
 Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint atau New-AzTrafficManagerEndpoint.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan nilai informasi header kustom yang akan ditambahkan.
 
 ```yaml
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

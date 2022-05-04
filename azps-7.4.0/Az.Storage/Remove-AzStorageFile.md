@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
-ms.openlocfilehash: cff3afc9bca584d6a928018eb5a8b65ef2a4cbaf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b1783090f396ebcd371db41e2598d37a412bfd7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170829"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639546"
 ---
 # Remove-AzStorageFile
 
 ## SYNOPSIS
 Menghapus file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Remove-AzStorageFile [-ShareName] <String> [-Path] <String> [-PassThru] [-Contex
  [<CommonParameters>]
 ```
 
-### Berbagi
+### Bagikan
 ```
 Remove-AzStorageFile [-Share] <CloudFileShare> [-Path] <String> [-PassThru] [-ServerTimeoutPerRequest <Int32>]
  [-ClientTimeoutPerRequest <Int32>] [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>]
@@ -62,19 +65,19 @@ PS C:\>Remove-AzStorageFile -ShareName "ContosoShare06" -Path "ContosoFile22"
 
 Perintah ini menghapus file yang bernama ContosoFile22 dari berbagi file bernama ContosoShare06.
 
-### Contoh 2: Mendapatkan file dari berbagi file menggunakan objek berbagi file
+### Contoh 2: Mendapatkan file dari berbagi file dengan menggunakan objek berbagi file
 ```
 PS C:\>Get-AzStorageShare -Name "ContosoShare06" | Remove-AzStorageFile -Path "ContosoFile22"
 ```
 
-Perintah ini menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu meneruskan objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu meneruskan objek tersebut ke cmdlet saat ini dengan menggunakan operator alur.
 Perintah saat ini menghapus file yang bernama ContosoFile22 dari ContosoShare06.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -90,9 +93,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
-Cmdlet ini menghapus file yang ditentukan dalam berbagi parameter ini.
+Cmdlet ini menghapus file dalam berbagi yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
@@ -239,8 +242,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama file yang dibagikan.
-Cmdlet ini menghapus file yang ditentukan dalam berbagi parameter ini.
+Menentukan nama berbagi file.
+Cmdlet ini menghapus file dalam berbagi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -254,8 +257,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

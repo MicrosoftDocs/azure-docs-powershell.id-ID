@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
-ms.openlocfilehash: 288199242735ef9e439fd1d131d3b0273338b849
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9ca439a39b097fe6259339fdde2a387fd3bcabca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003321"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638954"
 ---
 # Set-AzDataFactoryPipelineActivePeriod
 
 ## SYNOPSIS
 Mengonfigurasi periode aktif untuk irisan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactorypipelineactiveperiod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,10 +39,10 @@ Set-AzDataFactoryPipelineActivePeriod [-PipelineName] <String> [-DataFactory] <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataFactoryPipelineActivePeriod** mengonfigurasi periode aktif untuk irisan data yang diproses oleh pipeline di Azure Data Factory.
-Jika Anda menggunakan cmdlet Set-AzDataFactorySliceStatus untuk mengubah status irisan untuk kumpulan data, pastikan bahwa waktu mulai dan waktu akhir untuk sebuah pemotongan berada dalam periode aktif alur.
-Setelah membuat pipeline, Anda bisa menentukan periode di mana pemrosesan data terjadi.
-Menentukan periode aktif untuk alur menentukan durasi waktu di mana irisan data diproses berdasarkan properti **Ketersediaan** yang ditetapkan untuk setiap kumpulan data Pabrik Data.
+Cmdlet **Set-AzDataFactoryPipelineActivePeriod** mengonfigurasi periode aktif untuk irisan data yang diproses oleh alur di Azure Data Factory.
+Jika Anda menggunakan cmdlet Set-AzDataFactorySliceStatus untuk memodifikasi status irisan untuk himpunan data, pastikan bahwa waktu mulai dan waktu akhir untuk irisan berada dalam periode aktif alur.
+Setelah membuat alur, Anda dapat menentukan periode di mana pemrosesan data terjadi.
+Menentukan periode aktif untuk alur menentukan durasi waktu di mana irisan data diproses berdasarkan properti **Ketersediaan** yang ditentukan untuk setiap himpunan data Data Factory.
 
 ## EXAMPLES
 
@@ -56,14 +59,14 @@ Are you sure you want to set pipeline 'DPWikisample' active period from '05/21/2
 True
 ```
 
-Perintah ini mengonfigurasi periode aktif untuk irisan data yang diproses oleh pipeline bernama DPWikisample.
-Perintah menyediakan titik awal dan titik akhir untuk irisan data sebagai nilai.
+Perintah ini mengonfigurasi periode aktif untuk irisan data yang diproses alur bernama DPWikisample.
+Perintah menyediakan titik awal dan akhir untuk irisan data sebagai nilai.
 Perintah mengembalikan nilai $True.
 
 ## PARAMETERS
 
 ### -AutoResolve
-Menunjukkan bahwa cmdlet ini menggunakan tekad otomatis.
+Menunjukkan bahwa cmdlet ini menggunakan penyelesaian otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini mengubah periode aktif untuk pipeline milik pabrik data yang ditentukan parameter ini.
+Cmdlet ini memodifikasi periode aktif untuk alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mengubah periode aktif untuk pipeline milik pabrik data yang ditentukan parameter ini.
+Cmdlet ini memodifikasi periode aktif untuk alur milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept wildcard characters: False
 ### -EndDateTime
 Menentukan akhir periode waktu sebagai objek **DateTime** .
 Pemrosesan data terjadi atau irisan data diproses dalam periode ini.
-Untuk informasi selengkapnya tentang objek **DateTime**, ketik .`Get-Help Get-Date`
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-0101T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
+Untuk informasi selengkapnya tentang objek **DateTime** , ketik `Get-Help Get-Date`.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-201501T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Menentukan nama garis pipa.
-Cmdlet ini mengatur periode aktif untuk pipeline yang ditentukan parameter ini.
+Menentukan nama alur.
+Cmdlet ini mengatur periode aktif untuk alur yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mengubah periode aktif untuk pipeline yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini memodifikasi periode aktif untuk alur yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -251,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

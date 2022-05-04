@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
-ms.openlocfilehash: cf5be8eac6961c6228f85e90f9cc400b9766ad07
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b33944071c32f8cddb2dc3b2401ef851b24e4d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004059"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649084"
 ---
 # Remove-AzManagedCassandraCluster
 
 ## SYNOPSIS
-Menghapus Instans Terkelola Azure untuk klaster Apache Cassandra.
+Menghapus kluster Azure Managed Instances for Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzManagedCassandraCluster -InputObject <PSClusterResource> [-AsJob] [-Pas
 ```
 
 ## DESCRIPTION
-**Cmdlet Remove-AzManagedCassandraCluster** menghapus kluster Cassandra yang dikelola dan semua pusat data di dalamnya.
+**Cmdlet Remove-AzManagedCassandraCluster** menghapus kluster Cassandra terkelola dan semua pusat data di dalamnya.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ $clusterResource | Remove-AzManagedCassandraCluster
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Cassandra yang dikelola.
+Nama kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kluster untuk dihapus.
+Objek kluster yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Untuk diatur ke true jika pengguna ingin menerima output. Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
+Untuk diatur ke true jika pengguna ingin menerima output. Output benar jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kluster Cassandra yang dikelola.
+Id sumber daya kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

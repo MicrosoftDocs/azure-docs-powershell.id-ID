@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
-ms.openlocfilehash: aadad81dfd88800474449172d420390b2a503a8e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b9b798ad1e0d70680a953130d4461b72fa6e1ae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809172"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731048"
 ---
 # Remove-AzIoTDeviceProvisioningServiceEnrollmentGroup
 
 ## SYNOPSIS
 Menghapus grup pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningserviceenrollmentgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Remove-AzIoTDeviceProvisioningServiceEnrollmentGroup [-ResourceId] <String> [-Na
 ```
 
 ## DESCRIPTION
-Hapus grup pendaftaran di Layanan Penyediaan Perangkat Azure IoT Hub.
+Menghapus grup pendaftaran di Azure IoT Hub Device Provisioning Service.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsName
-Nama Layanan Penyediaan Perangkat IoT
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup pendaftaran.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

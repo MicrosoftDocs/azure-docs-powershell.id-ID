@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2ActivityRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2ActivityRun.md
-ms.openlocfilehash: 1922db20b29808cdf2ed78a87910304ecb22cb44
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6e8950d6290a2c0dd7dd2097d9b30e71b490136a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288711"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658404"
 ---
 # Get-AzDataFactoryV2ActivityRun
 
 ## SYNOPSIS
 Mendapatkan informasi tentang eksekusi aktivitas untuk eksekusi alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2activityrun) untuk informasi terbaru.
 
 ## SYNTAX
 

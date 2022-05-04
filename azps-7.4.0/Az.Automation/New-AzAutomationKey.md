@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationKey.md
-ms.openlocfilehash: 3932a68fb498c489166f31b74e1a799946c5e71a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3ad8a3d7506a5efba3ad4e5ef0892f2ee45eb959
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586621"
 ---
 # New-AzAutomationKey
 
 ## SYNOPSIS
-Meregenerasi kunci registrasi untuk akun Otomatisasi.
+Meregenerasi kunci pendaftaran untuk akun Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,17 +33,17 @@ Cmdlet **New-AzAutomationKey meregenerasi** kunci pendaftaran untuk akun Azure A
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kunci untuk akun Otomatisasi
+### Contoh 1: Meregenerasi kunci untuk akun Automation
 ```
 PS C:\>New-AzAutomationKey -KeyType Primary -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini meregenerasi kunci utama untuk akun Azure Automation bernama AutomationAccount01 dalam grup sumber daya bernama ResourceGroup01.
+Perintah ini meregenerasi kunci primer untuk akun Azure Automation bernama AutomationAccount01 di grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini meregenerasi kunci.
+Menentukan nama akun Automation yang cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -70,9 +73,9 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci registrasi agen.
+Menentukan jenis kunci pendaftaran agen.
 Nilai yang valid adalah: 
-- Utama 
+- Primer 
 - Sekunder
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini meregenerasi kunci untuk akun Otomatisasi dalam grup sumber daya yang ditentukan parameter ini.
+Cmdlet ini meregenerasi kunci untuk akun Automation di grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

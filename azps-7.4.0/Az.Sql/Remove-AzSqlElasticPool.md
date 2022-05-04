@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticPool.md
-ms.openlocfilehash: 42f3f3487f4b351b3233306907c5567807d614e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9a95e0d703087ad61e5d3f2e0007f6e7872eabdf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307071"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641886"
 ---
 # Remove-AzSqlElasticPool
 
 ## SYNOPSIS
 Menghapus kumpulan database elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Remove-AzSqlElasticPool [-ElasticPoolName] <String> [-Force] [-ServerName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlElasticPool** menghapus kolam elastis Azure SQL Database.
+Cmdlet **Remove-AzSqlElasticPool** menghapus kumpulan elastis Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kumpulan elastis
+### Contoh 1: Menghapus kumpulan elastis
 ```powershell
 Remove-AzSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
@@ -70,7 +73,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host kumpulan elastis.
+Menentukan nama server yang menghosting kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -167,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzSqlElasticPoolDatabase](./Get-AzSqlElasticPoolDatabase.md)
 
-[New-AzSqlElasticPool](./New-AzSqlElasticPool.md)
+[Baru-AzSqlElasticPool](./New-AzSqlElasticPool.md)
 
 [Set-AzSqlElasticPool](./Set-AzSqlElasticPool.md)
 

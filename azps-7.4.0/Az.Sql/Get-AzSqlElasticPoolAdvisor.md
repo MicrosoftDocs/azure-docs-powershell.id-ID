@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolAdvisor.md
-ms.openlocfilehash: 295dc845f3236f68dd50b26eda4486970b5fa6d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a1ebe3371ddf4103462206e6e42ce8890c57dfc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738450"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595832"
 ---
 # Get-AzSqlElasticPoolAdvisor
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa Penasihat untuk Azure SQL Elastic Pool.
+Mendapatkan satu atau beberapa Advisor untuk Azure SQL Elastic Pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpooladvisor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,9 +85,9 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah akan mencantumkan semua penasihat untuk kumpulan elastis bernama WIRunnerPool.
+Perintah mendapatkan daftar semua penasihat untuk kumpulan elastis bernama WIRunnerPool.
 
-### Contoh 2: Dapatkan penasihat tunggal untuk kumpulan elastis yang ditentukan
+### Contoh 2: Dapatkan satu penasihat untuk kumpulan elastis yang ditentukan
 ```powershell
 Get-AzSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex"
 ```
@@ -102,7 +105,7 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mendapatkan Penasihat bernama CreateIndex untuk kumpulan elastis bernama WIRunnerPool.
+Perintah ini mendapatkan Advisor bernama CreateIndex untuk kumpulan elastis bernama WIRunnerPool.
 
 ### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```powershell
@@ -163,7 +166,7 @@ RecommendedActions             : {}
 
 Perintah ini mendapatkan semua penasihat untuk kumpulan elastis dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 
-### Contoh 4: Dapatkan penasihat tunggal dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```powershell
 Get-AzSqlElasticPoolAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 ```
@@ -215,12 +218,12 @@ RecommendationsStatus          : NoDbParameterizationIssue
 RecommendedActions             : {}
 ```
 
-Perintah akan mencantumkan semua penasihat untuk kumpulan elastis bernama WIRunnerPool yang dimulai dengan huruf "d".
+Perintah mendapatkan daftar semua penasihat untuk kumpulan elastis bernama WIRunnerPool yang dimulai dengan huruf "d".
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama Penasihat yang didapat cmdlet ini.
+Menentukan nama Advisor yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElasticPoolName
-Menentukan nama kumpulan elastis yang meminta cmdlet ini kepada Penasihat.
+Menentukan nama kumpulan elastis yang cmdlet ini meminta Advisor.
 
 ```yaml
 Type: System.String
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRecommendedActions
-Menunjukkan bahwa cmdlet menyertakan tindakan yang disarankan dari Penasihat dalam respons.
+Menunjukkan bahwa cmdlet menyertakan tindakan Advisor yang direkomendasikan dalam respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -323,7 +326,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, elastispool, mssql, penasihat
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, elasticpool, mssql, advisor
 
 ## RELATED LINKS
 
@@ -335,4 +338,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlElasticPoolAdvisorAutoExecuteStatus](./Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

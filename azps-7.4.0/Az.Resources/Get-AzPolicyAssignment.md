@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
-ms.openlocfilehash: ae798ed937c0165ce5cc43af75fb56c196c68999
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c45067782014e9d8ab375d9242541b8cf9f3a003
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674244"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727378"
 ---
 # Get-AzPolicyAssignment
 
 ## SYNOPSIS
 Mendapatkan penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,12 +48,12 @@ Get-AzPolicyAssignment -Id <String> [-PolicyDefinitionId <String>] [-ApiVersion 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicyAssignment** mendapatkan semua penetapan kebijakan atau tugas tertentu.
-Identifikasi penetapan kebijakan untuk mendapatkan berdasarkan nama dan lingkup atau menurut ID.
+Cmdlet **Get-AzPolicyAssignment** mendapatkan semua penetapan kebijakan atau penugasan tertentu.
+Identifikasi penetapan kebijakan untuk mendapatkan berdasarkan nama dan cakupan atau berdasarkan ID.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua penetapan kebijakan
+### Contoh 1: Mendapatkan semua penetapan kebijakan
 ```powershell
 Get-AzPolicyAssignment
 ```
@@ -64,7 +67,7 @@ Get-AzPolicyAssignment -Name 'PolicyAssignment07' -Scope $ResourceGroup.Resource
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk lingkup yang diidentifikasi properti **ResourceId** $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk cakupan yang diidentifikasi properti **ResourceId** dari $ResourceGroup.
 
 ### Contoh 3: Mendapatkan semua penetapan kebijakan yang ditetapkan ke grup manajemen
 ```powershell
@@ -72,13 +75,13 @@ $mgId = 'myManagementGroup'
 Get-AzPolicyAssignment -Scope '/providers/Microsoft.Management/managementgroups/$mgId'
 ```
 
-Perintah pertama menentukan ID grup manajemen ke kueri.
+Perintah pertama menentukan ID grup manajemen yang akan dikueri.
 Perintah kedua mendapatkan semua penetapan kebijakan yang ditetapkan ke grup manajemen dengan ID 'myManagementGroup'.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDescendent
-Menyebabkan daftar penetapan kebijakan yang dikembalikan menyertakan semua tugas yang terkait dengan lingkup tertentu, termasuk yang berasal dari lingkup leluhur dan yang berasal dari lingkup turunan.
+Menyebabkan daftar penetapan kebijakan yang dikembalikan menyertakan semua tugas yang terkait dengan cakupan yang diberikan, termasuk yang berasal dari cakupan leluhur dan yang berasal dari cakupan keturunan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penetapan kebijakan yang didapat cmdlet ini.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup di mana kebijakan diterapkan untuk penetapan yang didapat cmdlet ini.
+### -Cakupan
+Menentukan cakupan di mana kebijakan diterapkan untuk penugasan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

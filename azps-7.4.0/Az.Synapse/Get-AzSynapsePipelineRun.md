@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipelineRun.md
-ms.openlocfilehash: b1b9e5936304304aec3f140a74ff72fb954e51fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54ec1c3cd03a6fe06317818bb215fc1b13512b2b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270135"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649894"
 ---
 # Get-AzSynapsePipelineRun
 
 ## SYNOPSIS
-Mendapatkan informasi tentang jalur pipa yang berjalan.
+Mendapatkan informasi tentang eksekusi alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsepipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,31 +49,31 @@ Get-AzSynapsePipelineRun -WorkspaceObject <PSSynapseWorkspace> -RunStartedAfter 
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzSynapsePipelineRun** mengembalikan informasi tentang jalankan untuk saluran yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId memperlihatkan detail untuk dijalankan dengan ID tersebut. Jika PipelineRunId tidak ditentukan, pipelineRunId memperlihatkan informasi tentang semua alur yang terjadi antara nilai RunStartedAfter dan RunStartedBefore.
+Perintah **Get-AzSynapsePipelineRun** mengembalikan informasi tentang eksekusi untuk alur yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId akan menampilkan detail untuk eksekusi dengan ID tersebut. Jika PipelineRunId tidak ditentukan, maka pipelineRunId menunjukkan informasi tentang semua eksekusi untuk alur yang terjadi antara nilai RunStartedAfter dan RunStartedBefore.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pipeline yang dijalankan oleh ID
+### Contoh 1: Dapatkan eksekusi alur berdasarkan ID
 ```powershell
 Get-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace -PipelineRunId "61eb095a-fe23-4591-8a97-fade6c65ca72"
 ```
 
-Perintah ini mendapatkan detail tentang pipeline run dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
+Perintah ini mendapatkan detail tentang eksekusi alur dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
 
-### Contoh 2: Mendapatkan pipeline berjalan di antara tanggal
+### Contoh 2: Mendapatkan alur yang berjalan di antara tanggal
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapsePipelineRun -RunStartedAfter "4/2/2007 7:23:57 PM" -RunStartedBefore "4/2/2027 7:23:57 PM"
 ```
 
-Perintah ini mendapatkan detail tentang jalannya semua saluran di ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 19:23:57 PM"
+Perintah ini mendapatkan detail tentang eksekusi semua alur di ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 19:23:57 PM"
 
-### Contoh 3: Mendapatkan satu pipeline berjalan di antara tanggal
+### Contoh 3: Mendapatkan eksekusi alur tunggal di antara tanggal
 ```powershell
 Get-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace -Name ContosoPipeline -RunStartedAfter "4/2/2007 7:23:57 PM" -RunStartedBefore "4/2/2027 7:23:57 PM"
 ```
 
-Perintah ini mendapatkan detail tentang alur ContosoPipeline dalam ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 7:23:57 PM"
+Perintah ini mendapatkan detail tentang eksekusi alur ContosoPipeline di ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 7:23:57 PM"
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Nama saluran.
+Nama alur.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-Pengidentifikasi proses saluran.
+Pengidentifikasi eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedAfter
-Waktu pada atau setelah acara jalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau setelah peristiwa eksekusi diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedBefore
-Waktu pada atau sebelum acara jalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau sebelum peristiwa eksekusi diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/grant-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
-ms.openlocfilehash: 4f2829c30fc0ff273e698610166bdd130d2ae0db
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f603c6162962c1f9f1edc5970f610ecd90535bdf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063081"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620366"
 ---
 # Grant-AzDataShareSubscriptionAccess
 
 ## SYNOPSIS
 Memberikan akses langganan berbagi yang dicabut ke berbagi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/grant-azdatasharesubscriptionaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Name                      : AdsShare
 Type                      : Microsoft.DataShare/ShareSubscriptions
 ```
 
-Memberikan akses untuk berbagi langganan yang diidentifikasi dengan id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
+Memberikan akses ke langganan berbagi yang diidentifikasi dengan id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari berbagi data azure
+Id sumber daya berbagi data azure
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareSubscriptionId
-Id langganan berbagi langganan penyedia
+Id langganan berbagi dari langganan berbagi penyedia
 
 ```yaml
 Type: System.String
@@ -149,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksVNetPeering.md
-ms.openlocfilehash: b8955956fb94eb812bc955cc6fffc99c65173e0e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb2b4b55ad22548a724860fadb2a887aa32543a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228015"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660042"
 ---
 # Get-AzDatabricksVNetPeering
 
 ## SYNOPSIS
-Mendapatkan ruang kerja vNet Peering.
+Mendapatkan Peering vNet ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/get-azdatabricksvnetpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDatabricksVNetPeering -ResourceGroupName <String> -WorkspaceName <String> 
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDatabricksVNetPeering -Name <String> -ResourceGroupName <String> -WorkspaceName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzDatabricksVNetPeering -InputObject <IDatabricksIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Mendapatkan ruang kerja vNet Peering.
+Mendapatkan Peering vNet ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua peering vnet di bawah trik data
+### Contoh 1: Mencantumkan semua peering vnet di bawah databricks
 ```powershell
 Get-AzDatabricksVNetPeering -WorkspaceName databricks-test01 -ResourceGroupName lucas-manual-test
 ```
@@ -54,9 +57,9 @@ vnetpeering-t01
 vnetpeering-t02
 ```
 
-Perintah ini mencantumkan semua peering vnet di bawah trik data.
+Perintah ini mencantumkan semua peering vnet di bawah databricks.
 
-### Contoh 2: Dapatkan peering vnet
+### Contoh 2: Mendapatkan peering vnet
 ```powershell
 Get-AzDatabricksVNetPeering -ResourceGroupName lucas-manual-test -WorkspaceName databricks-test01 -Name MyPeering-test01
 ```
@@ -69,7 +72,7 @@ MyPeering-test01
 
 Perintah ini mendapatkan peering vnet.
 
-### Contoh 3: Dapatkan vnet peering by object
+### Contoh 3: Mendapatkan peering vnet berdasarkan objek
 ```powershell
 New-AzDatabricksVNetPeering -Name vnetpeering-t02 -WorkspaceName databricks-test01 -ResourceGroupName lucas-manual-test -RemoteVirtualNetworkId '/subscriptions/xxxxx-xxxx-xxx-xxxxx/resourceGroups/azure-manual-test/providers/Microsoft.Network/virtualNetworks/vnet-test02' | Get-AzDatabricksVNetPeering
 ```
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.IDatabricksIdentity
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama ruang kerja peering vNet.
+### -Name
+Nama peering vNet ruang kerja.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -213,9 +216,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDatabricksIdentity>: Parameter Identitas
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[PeeringName <String>]`: Nama ruang kerja vNet peering.
+  - `[PeeringName <String>]`: Nama peering vNet ruang kerja.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

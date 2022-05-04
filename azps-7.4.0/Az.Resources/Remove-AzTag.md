@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
-ms.openlocfilehash: 928d5a4ddca0db812e9c0125e7bcaa8db9b66288
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b5f241658164ff2c89f2b270fe388ecfc3a1af09
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673380"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618566"
 ---
 # Remove-AzTag
 
 ## SYNOPSIS
-Menghapus tag atau nilai Azure yang sudah ditentukan sebelumnya | Menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+Menghapus tag atau nilai Azure yang telah ditentukan sebelumnya | Menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,27 +37,27 @@ Remove-AzTag [-PassThru] -ResourceId <String> [-DefaultProfile <IAzureContextCon
 
 ## DESCRIPTION
 
-**RemovePredefinedTagSet**: Cmdlet **Remove-AzTag** menghapus tag dan nilai Azure yang sudah ditentukan sebelumnya dari langganan Anda.
-Untuk menghapus nilai tertentu dari tag yang sudah ditentukan sebelumnya, gunakan parameter *Nilai* .
+**RemovePredefinedTagSet**: Cmdlet **Remove-AzTag** menghapus tag dan nilai Azure yang telah ditentukan sebelumnya dari langganan Anda.
+Untuk menghapus nilai tertentu dari tag yang telah ditentukan sebelumnya, gunakan parameter *Nilai* .
 Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya. Anda tidak dapat menghapus tag atau nilai yang saat ini diterapkan ke grup sumber daya atau sumber daya.
-Sebelum menggunakan **Remove-AzTag**, gunakan parameter *Tag* cmdlet Set-AzResourceGroup untuk menghapus tag atau nilai dari grup sumber daya atau sumber daya.
-Modul Tag Azure yang merupakan bagian dari **Remove-AzTag** dapat membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang bisa Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda bisa menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Sebelum menggunakan **Remove-AzTag**, gunakan parameter *Tag* cmdlet Set-AzResourceGroup untuk menghapus tag atau nilai dari sumber daya atau grup sumber daya.
+Modul Tag Azure yang merupakan bagian dari **Remove-AzTag** dapat membantu Anda mengelola tag Azure yang telah ditentukan sebelumnya.
+Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya Azure dan grup sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
 
-**RemoveByResourceIdParameterSet**: Cmdlet **Remove-AzTag** dengan **ResourceId** menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+**RemoveByResourceIdParameterSet**: Cmdlet **Remove-AzTag** dengan **ResourceId** menghapus seluruh set tag pada sumber daya atau langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tag yang sudah ditentukan sebelumnya
+### Contoh 1: Menghapus tag yang telah ditentukan sebelumnya
 ```powershell
 Remove-AzTag -Name "Department"
 ```
 
-Perintah ini menghapus tag yang sudah ditentukan sebelumnya bernama Departemen dan semua nilainya.
-Jika tag telah diterapkan ke sumber daya atau grup sumber daya, perintah gagal.
+Perintah ini menghapus tag yang telah ditentukan sebelumnya bernama Departemen dan semua nilainya.
+Jika tag telah diterapkan ke sumber daya atau grup sumber daya apa pun, perintah gagal.
 
-### Contoh 2: Menghapus nilai dari tag yang sudah ditentukan sebelumnya
+### Contoh 2: Menghapus nilai dari tag yang telah ditentukan sebelumnya
 ```powershell
 Remove-AzTag -Name "Department" -Value "HumanResources" -PassThru
 ```
@@ -71,9 +74,9 @@ Values:
         IT            12
 ```
 
-Perintah ini menghapus nilai HumanResources dari tag Departemen yang sudah ditentukan sebelumnya.
+Perintah ini menghapus nilai HumanResources dari tag Departemen yang telah ditentukan sebelumnya.
 Ini tidak menghapus tag.
-Jika nilai telah diterapkan ke sumber daya atau grup sumber daya, perintah gagal.
+Jika nilai telah diterapkan ke sumber daya atau grup sumber daya apa pun, perintah gagal.
 
 ### Contoh 3: Menghapus seluruh kumpulan tag pada langganan
 
@@ -81,7 +84,7 @@ Jika nilai telah diterapkan ke sumber daya atau grup sumber daya, perintah gagal
 Remove-AzTag -ResourceId /subscriptions/{subId}
 ```
 
-Perintah ini menghapus seluruh kumpulan tag pada langganan dengan {subId}. Objek tidak akan mengembalikan objek yang dihapus jika tidak lolos dalam "-PassThru".
+Perintah ini menghapus seluruh kumpulan tag pada langganan dengan {subId}. Ini tidak akan mengembalikan objek yang dihapus jika tidak melewati "-PassThru".
 
 ### Contoh 4: Menghapus seluruh kumpulan tag pada sumber daya
 
@@ -100,7 +103,7 @@ Properties :
              Status   Normal
 ```
 
-Perintah ini menghapus seluruh kumpulan tag pada sumber daya dengan {resourceId}. Ini mengembalikan oject yang dihapus saat masuk ke "-PassThru".
+Perintah ini menghapus seluruh kumpulan tag pada sumber daya dengan {resourceId}. Ini mengembalikan oktet yang dihapus saat meneruskan "-PassThru".
 
 ## PARAMETERS
 
@@ -119,8 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan Nama tag yang sudah ditentukan sebelumnya untuk dihapus.
+### -Name
+Menentukan Nama tag yang telah ditentukan sebelumnya untuk dihapus.
 Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya.
 Untuk menghapus nilai yang dipilih, tetapi tidak menghapus tag, gunakan parameter *Nilai* .
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya untuk entitas bertag. Sumber daya, grup sumber daya, atau langganan mungkin ditandai.
+Pengidentifikasi sumber daya untuk entitas yang diberi tag. Sumber daya, grup sumber daya, atau langganan dapat ditandai.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
-Menghapus nilai yang ditentukan dari tag yang sudah ditentukan sebelumnya, tetapi tidak menghapus tag.
+### -Nilai
+Menghapus nilai yang ditentukan dari tag yang telah ditentukan sebelumnya, tetapi tidak menghapus tag.
 
 ```yaml
 Type: System.String[]
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -235,4 +238,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzTag](./New-AzTag.md)
 
-[Perbarui-AzTag](./Update-AzTag.md)
+[Update-AzTag](./Update-AzTag.md)

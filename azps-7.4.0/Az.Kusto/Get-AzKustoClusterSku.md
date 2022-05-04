@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterSku.md
-ms.openlocfilehash: b1dafd7ca5819842752562669823ab9d0c8160a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6090810d77233b3ca9c78898c3772ebcf67f7c1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120753"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661680"
 ---
 # Get-AzKustoClusterSku
 
 ## SYNOPSIS
 Mencantumkan SKU yang memenuhi syarat untuk penyedia sumber daya Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoclustersku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ Perintah di atas mencantumkan SKU yang memenuhi syarat untuk kluster tertentu
 ## PARAMETERS
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

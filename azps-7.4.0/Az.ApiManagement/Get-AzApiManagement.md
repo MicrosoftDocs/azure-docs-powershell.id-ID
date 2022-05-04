@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagement.md
-ms.openlocfilehash: d454c36889dee873ce8b4a1c380a8795696fe4e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87406c20f6546cc08cd60b06c59940ab6d90c88b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812574"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599918"
 ---
 # Get-AzApiManagement
 
 ## SYNOPSIS
-Mendapatkan daftar atau deskripsi Layanan API Management tertentu.
+Mendapatkan daftar atau deskripsi layanan API Management tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzApiManagement -ResourceId <String> [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagement** mendapatkan daftar semua layanan API Management dalam langganan atau grup sumber daya tertentu atau API Management tertentu.
+Cmdlet **Get-AzApiManagement** mendapatkan daftar semua layanan API Management berdasarkan langganan atau grup sumber daya tertentu atau API Management tertentu.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama layanan API Management.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan layanan API Management.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan layanan API Management.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -141,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
+[Remove-AzApiManagement](./Remove-AzApiManagement.md)
 
 [Restore-AzApiManagement](./Restore-AzApiManagement.md)
 

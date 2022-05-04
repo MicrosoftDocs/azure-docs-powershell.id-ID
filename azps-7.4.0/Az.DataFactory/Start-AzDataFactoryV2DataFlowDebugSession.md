@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
-ms.openlocfilehash: 72b6ddba9a11840e2cbc812bb074d079585e3769
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89b15231ce030d571153e968ab8d712ec97bc123
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874800"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596660"
 ---
 # Start-AzDataFactoryV2DataFlowDebugSession
 
 ## SYNOPSIS
 Memulai sesi debug aliran data di Azure Data Factory
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2dataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Start-AzDataFactoryV2DataFlowDebugSession [[-IntegrationRuntimeFile] <String>] [
 ```
 
 ## DESCRIPTION
-Perintah yang berjalan panjang ini memulai sesi debug alur data untuk perintah debug yang akan datang. Perintah ini dapat dilampirkan dengan definisi runtime integrasi untuk mengonfigurasi ukuran/tipe kluster sesi debug.
-Urutan perintah PowerShell untuk alur kerja debug alur data harus:
+Perintah jangka panjang ini memulai sesi debug aliran data untuk perintah debug yang akan datang. Perintah ini dapat melampirkan dengan definisi runtime integrasi untuk mengonfigurasi ukuran/jenis kluster sesi debug.
+Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
 1. Start-AzDataFactoryV2DataFlowDebugSession
 1. Add-AzDataFactoryV2DataFlowDebugSessionPackage
 1. Invoke-AzDataFactoryV2DataFlowDebugSessionCommand (ulangi langkah ini untuk perintah/target yang berbeda, atau ulangi langkah 2-3 untuk mengubah file paket)
@@ -80,7 +83,7 @@ Memulai sesi debug dengan bendera AsJob.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,8 +187,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -229,7 +232,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDebugSession
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

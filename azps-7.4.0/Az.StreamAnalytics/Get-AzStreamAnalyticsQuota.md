@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
-ms.openlocfilehash: 738719d51c7e2e3489297dc5dfd1a3c6215ea30a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbaaddb5fe0e4f08f37ee59f77033e012ef64b51
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641580"
 ---
 # Get-AzStreamAnalyticsQuota
 
 ## SYNOPSIS
-Mengambil informasi kuota langganan saat ini di kawasan tertentu.
+Mengambil informasi kuota langganan saat ini di wilayah tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzStreamAnalyticsQuota -Location <String> [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Mengambil informasi kuota langganan saat ini di kawasan tertentu.
+Mengambil informasi kuota langganan saat ini di wilayah tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang kuota Unit Streaming untuk wilayah
+### Contoh 1: Mendapatkan informasi tentang kuota Unit Streaming untuk suatu wilayah
 ```powershell
 Get-AzStreamAnalyticsQuota -Location 'WestCentralUS'
 ```
@@ -40,7 +43,7 @@ StreamingUnits    Microsoft.StreamAnalytics/quotas
 StreamingClusters Microsoft.StreamAnalytics/quotas
 ```
 
-Perintah ini mengembalikan informasi tentang kuota dan penggunaan Unit Streaming di kawasan WestCentralUS.
+Perintah ini mengembalikan informasi tentang kuota dan penggunaan Unit Streaming di wilayah WestCentralUS.
 
 ## PARAMETERS
 
@@ -60,8 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan tempat untuk mengambil informasi kuota langganan.
-Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+Wilayah tempat untuk mengambil informasi kuota langganan.
+Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

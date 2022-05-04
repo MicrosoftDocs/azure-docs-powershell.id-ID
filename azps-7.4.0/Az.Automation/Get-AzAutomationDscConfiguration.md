@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 0519db463d2b482c8b84a2fc119ab3a40f83d639
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6e3b147aa4f702cf76a291f7ebd0055c57e5dce0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812106"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592896"
 ---
 # Get-AzAutomationDscConfiguration
 
 ## SYNOPSIS
-Mendapatkan konfigurasi DSC dari Otomatisasi.
+Mendapatkan konfigurasi DSC dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ Cmdlet **Get-AzAutomationDscConfiguration** mendapatkan konfigurasi APS Desired 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua konfigurasi DSC
+### Contoh 1: Mendapatkan semua konfigurasi DSC
 ```
 PS C:\>Get-AzAutomationDscConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua konfigurasi DSC di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua konfigurasi DSC di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan konfigurasi DSC berdasarkan nama
+### Contoh 2: Mendapatkan konfigurasi DSC berdasarkan nama
 ```
 PS C:\>Get-AzAutomationDscConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Name "ContosoConfiguration"
 ```
@@ -54,7 +57,7 @@ Perintah ini mendapatkan metadata untuk konfigurasi DSC bernama MyConfiguration 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang didapatkan cmdlet ini.
+Menentukan nama akun Automation yang berisi konfigurasi DSC yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -83,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi DSC yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama konfigurasi DSC yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan konfigurasi DSC.
+Menentukan nama grup sumber daya yang cmdlet ini mendapatkan konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

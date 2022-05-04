@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: fd89f9a49a23cb43d2f9878553bf8fa71d0dce68
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 940ae0d3808975e7d575eb6b5ede8fd09d9419d6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315777"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622146"
 ---
 # Add-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Membuat pengayaan pesan untuk titik akhir yang dipilih di IoT Hub Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Add-AzIotHubMessageEnrichment [-ResourceId] <String> [-Key] <String> -Value <Str
 
 ## DESCRIPTION
 Tambahkan hingga 10 pengayaan pesan per IoT Hub. Ini ditambahkan sebagai properti aplikasi ke pesan yang dikirim ke titik akhir yang dipilih.
-Untuk mengetahui selengkapnya, lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview
+Untuk mengetahui lebih lanjut, lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Key
+### -Kunci
 Kunci pengayaan.
 
 ```yaml
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai pengayaan.
 
 ```yaml
@@ -178,8 +181,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

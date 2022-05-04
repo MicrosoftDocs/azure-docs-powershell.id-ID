@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeHealthResponseMatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeHealthResponseMatch.md
-ms.openlocfilehash: 8832aecc5532df4f33b898897d0797ee30835d9f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0e4f91889854ed5e9a7784ee29b827fdb90b3a96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678798"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600944"
 ---
 # New-AzApplicationGatewayProbeHealthResponseMatch
 
 ## SYNOPSIS
-Membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Health Probe untuk gateway aplikasi.
+Membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Pemeriksaan Kesehatan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprobehealthresponsematch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayProbeHealthResponseMatch [-Body <String>] [-StatusCode <
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayProbeHealthResponseMatch** membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Health Probe untuk gateway aplikasi.
+Cmdlet **Add-AzApplicationGatewayProbeHealthResponseMatch** membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Pemeriksaan Kesehatan untuk gateway aplikasi.
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Cmdlet **Add-AzApplicationGatewayProbeHealthResponseMatch** membuat kecocokan re
 $responsematch = New-AzApplicationGatewayProbeHealthResponseMatch -Body "helloworld" -StatusCode "200-399","503"
 ```
 
-Perintah ini membuat kecocokan respons kesehatan yang dapat dialihkan ke ProbeConfig sebagai parameter.
+Perintah ini membuat kecocokan respons kesehatan yang dapat diteruskan ke ProbeConfig sebagai parameter.
 
 ## PARAMETERS
 
 ### -Isi
-Tubuh yang harus dikandung dalam respons kesehatan.
+Isi yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

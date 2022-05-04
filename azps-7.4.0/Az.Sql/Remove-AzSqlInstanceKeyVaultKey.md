@@ -5,40 +5,43 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: ce5d4762333356bedd4093194d3a0c4030b5232d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2bccda7d36f20f08c22c6e5145e5e843fea29d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306999"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658836"
 ---
 # Remove-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Menghapus kunci Key Vault dari instans terkelola SQL
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancekeyvaultkey) untuk informasi terbaru.
+
 ## SYNTAX
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyDefaultParameterSet (Default)
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyDefaultParameterSet (Default)
 ```
 Remove-AzSqlInstanceKeyVaultKey [-ResourceGroupName] <String> [-InstanceName] <String> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyInputObjectParameterSet
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyInputObjectParameterSet
 ```
 Remove-AzSqlInstanceKeyVaultKey [-Instance] <AzureSqlManagedInstanceModel> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyResourceIdParameterSet
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyResourceIdParameterSet
 ```
 Remove-AzSqlInstanceKeyVaultKey [-InstanceResourceId] <String> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSqlInstanceKeyVaultKey menghapus kunci Key Vault dari Instans Terkelola yang ditentukan. Perhatikan bahwa izin instans terkelola SQL ke kubah kunci tidak diubah. Untuk mengubah izin, gunakan Set-AzKeyVaultAccessPolicy. Perhatikan bahwa cmdlet ini tidak membuat perubahan pada Key Vault. Untuk menghapus kunci dari Key Vault, gunakan Remove-AzureKeyVaultKey.
+Cmdlet Remove-AzSqlInstanceKeyVaultKey menghapus kunci Key Vault dari Instans Terkelola yang ditentukan. Perhatikan bahwa izin instans terkelola SQL ke brankas kunci tidak diubah. Untuk mengubah izin, gunakan Set-AzKeyVaultAccessPolicy. Perhatikan bahwa cmdlet ini tidak membuat perubahan pada Key Vault. Untuk menghapus kunci dari Key Vault, gunakan Remove-AzureKeyVaultKey.
 
 ## EXAMPLES
 
@@ -95,7 +98,7 @@ Type                   : AzureKeyVault
 
 Perintah ini menghapus kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' dari instans terkelola yang ditentukan. 
 
-### Contoh 4: Menggunakan piping
+### Contoh 4: Menggunakan pipa
 ```powershell
 $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 $managedInstance | Remove-AzSqlInstanceKeyVaultKey -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -205,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
-ms.openlocfilehash: b30e4abf47811ac0597670be24ec01130b3c9bb3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3a784201bf49ea1583099d32fc2fe68bf3431a35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592890"
 ---
 # Get-AzAutomationDscCompilationJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan kompilasi DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,31 +48,31 @@ Cmdlet **Get-AzAutomationDscCompilationJob** mendapatkan pekerjaan kompilasi APS
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua pekerjaan kompilasi DSC
+### Contoh 1: Mendapatkan semua pekerjaan kompilasi DSC
 ```
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua pekerjaan kompilasi di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua pekerjaan kompilasi di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan pekerjaan kompilasi DSC untuk konfigurasi
+### Contoh 2: Mendapatkan pekerjaan kompilasi DSC untuk konfigurasi
 ```
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ConfigurationName "ContosoConfiguration"
 ```
 
 Perintah ini mendapatkan semua pekerjaan kompilasi untuk konfigurasi DSC bernama ContosoConfiguration di akun Automation bernama Contoso17.
 
-### Contoh 3: Dapatkan pekerjaan kompilasi DSC tertentu
+### Contoh 3: Mendapatkan pekerjaan kompilasi DSC tertentu
 ```
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Id c0a1718e-d8be-4fa3-91b6-82e1d3a36298
 ```
 
-Perintah ini mendapatkan pekerjaan kompilasi dengan ID yang ditentukan di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan pekerjaan kompilasi dengan ID yang ditentukan di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi pekerjaan kompilasi DSC yang didapat cmdlet ini.
+Menentukan nama akun Automation yang berisi pekerjaan kompilasi DSC yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik pekerjaan kompilasi DSC yang didapat cmdlet ini.
+Menentukan ID unik dari pekerjaan kompilasi DSC yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan pekerjaan kompilasi DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan pekerjaan kompilasi DSC.
 
 ```yaml
 Type: System.String
@@ -180,11 +183,11 @@ Menentukan status pekerjaan yang didapat cmdlet ini.
 Nilai yang valid adalah: 
 - Selesai 
 - Gagal 
-- Antri 
-- Mulai 
+- Dalam antrean 
+- Memulai 
 - Melanjutkan 
 - Menjalankan 
-- Berhenti 
+- Stopped 
 - Menghentikan 
 - Ditangguhkan 
 - Menangguhkan 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

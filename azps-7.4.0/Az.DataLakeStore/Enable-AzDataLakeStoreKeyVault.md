@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/en
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Enable-AzDataLakeStoreKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Enable-AzDataLakeStoreKeyVault.md
-ms.openlocfilehash: a0bb51ae63e34ab3a0902041fde54810fbeb597c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2f1317e8ce4f27af4824c1e5579a28cda1a268d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288513"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648904"
 ---
 # Enable-AzDataLakeStoreKeyVault
 
 ## SYNOPSIS
-Mencoba mengaktifkan pengguna yang dikelola Key Vault untuk enkripsi akun Penyimpanan Data Lake yang ditentukan.
+Mencoba mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/enable-azdatalakestorekeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,21 +28,21 @@ Enable-AzDataLakeStoreKeyVault [-Account] <String> [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzDataLakeStoreKeyVault** berusaha mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Penyimpanan Data Lake yang ditentukan.
+Cmdlet **Enable-AzDataLakeStoreKeyVault** mencoba mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan Key Vault untuk akun ContosoADLS
+### Contoh 1: Mengaktifkan Key Vault untuk akun ContosoADLS
 ```powershell
 Enable-AzDataLakeStoreKeyVault -Name "ContosoADLS"
 ```
 
-Perintah ini berusaha mengaktifkan Key Vault yang dikelola pengguna untuk akun Data Lake Store bernama ContosoADLS.
+Perintah ini mencoba mengaktifkan Key Vault yang dikelola pengguna untuk akun Data Lake Store bernama ContosoADLS.
 
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk mengaktifkan Key Vault yang dikelola pengguna untuk
+Akun Data Lake Store untuk mengaktifkan Key Vault yang dikelola pengguna
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang terkait dengan akun. Jika tidak ditentukan akan coba ditemukan.
+Nama grup sumber daya yang terkait dengan akun. Jika tidak ditentukan akan mencoba ditemukan.
 
 ```yaml
 Type: System.String
@@ -83,8 +86,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

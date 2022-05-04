@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewRegexClassificationRulePatternObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewRegexClassificationRulePatternObject.md
-ms.openlocfilehash: f605a04107a0a8b00ee082b1e664b995ef33094a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60f818390c3079ee9380e444abd88809f12bc4c8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936541"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639906"
 ---
 # New-AzPurviewRegexClassificationRulePatternObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk RegexClassificationRulePattern.
+Buat objek dalam memori untuk RegexClassificationRulePattern.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewregexclassificationrulepatternobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ New-AzPurviewRegexClassificationRulePatternObject [-Pattern <String>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk RegexClassificationRulePattern.
+Buat objek dalam memori untuk RegexClassificationRulePattern.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

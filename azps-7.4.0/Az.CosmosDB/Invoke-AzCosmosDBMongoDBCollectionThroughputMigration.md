@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBMongoDBCollectionThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBMongoDBCollectionThroughputMigration.md
-ms.openlocfilehash: be470c53d011eb52c34ceb0f517c0dad6141359b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 21d06bbd213d789241ae92d475e54e87762a6add
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686142"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594412"
 ---
 # Invoke-AzCosmosDBMongoDBCollectionThroughputMigration
 
 ## SYNOPSIS
-Gunakan ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+Gunakan ini untuk memigrasikan throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbmongodbcollectionthroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzCosmosDBMongoDBCollectionThroughputMigration [-Name <String>]
 ```
 
 ## DESCRIPTION
-Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasi.
+Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasikan.
 
 ## EXAMPLES
 
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koleksi.
 
 ```yaml
@@ -159,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThroughputType
-Tipe throughput untuk dimigrasikan.
-Nilai yang memungkinkan adalah: Skala Otomatis, Manual.
+Jenis throughput untuk dimigrasikan.
+Nilai yang mungkin adalah: Autoscale, Manual.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

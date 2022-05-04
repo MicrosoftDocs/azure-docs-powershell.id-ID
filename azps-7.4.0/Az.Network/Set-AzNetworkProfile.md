@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkProfile.md
-ms.openlocfilehash: d02c5679c80bc59bdd7855fed226677aaac9f9b1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e94260a85fd2c7de4c2201fb315a2d38caefe980
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061198"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650488"
 ---
 # Set-AzNetworkProfile
 
 ## SYNOPSIS
 Memperbarui profil jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +43,12 @@ $networkProfile.ContainerNetworkInterfaceConfigurations = New-AzNetworkProfileCo
 $networkProfile | Set-AzNetworkProfile
 ```
 
-Perintah pertama akan mendapatkan profil jaringan yang sudah ada. Perintah kedua memperbarui tag dan yang ketiga menambahkan konfigurasi antarmuka jaringan di profil jaringan. Perintah keempat memperbarui profil jaringan.
+Perintah pertama mendapatkan profil jaringan yang ada. Perintah kedua memperbarui tag dan yang ketiga menambahkan konfigurasi antarmuka jaringan pada profil jaringan. Perintah keempat memperbarui profil jaringan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,8 +92,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,4 +142,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNetworkProfile](./New-AzNetworkProfile.md)
 
-[Hapus-AzNetworkProfile](./Remove-AzNetworkProfile.md)
+[Remove-AzNetworkProfile](./Remove-AzNetworkProfile.md)

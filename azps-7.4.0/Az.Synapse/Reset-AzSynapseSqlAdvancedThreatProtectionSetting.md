@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: af6bee25c73d280af5999920735566dc9f1ce875
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ed09af8eda90da77dd1171d32e76af55c2fad6cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269487"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660654"
 ---
 # Reset-AzSynapseSqlAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Menghapus pengaturan proteksi ancaman tingkat lanjut dari ruang kerja.
+Menghapus pengaturan perlindungan ancaman tingkat lanjut dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Reset-AzSynapseSqlAdvancedThreatProtectionSetting -ResourceId <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet **Pengaturan Ulang-AzSynapseSqlAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari Ruang Kerja Analitik Azure Synapse.
+Cmdlet **Reset-AzSynapseSqlAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari Ruang Kerja analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Cmdlet **Pengaturan Ulang-AzSynapseSqlAdvancedThreatProtectionSetting** menghapu
 Reset-AzSynapseSqlAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menghapus pengaturan proteksi ancaman tingkat lanjut dari ruang kerja bernama ContosoWorkspace.
+Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

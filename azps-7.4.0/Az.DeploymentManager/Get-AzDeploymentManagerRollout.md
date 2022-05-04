@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerRollout.md
-ms.openlocfilehash: a2441159d3953a52c71dcda543e0d2c2416fff8e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f16acbba0cdb20793f3b3909686d5fea6c7a5a3f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124191"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659952"
 ---
 # Get-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Mendapatkan peluncuran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,10 +41,10 @@ Get-AzDeploymentManagerRollout [-InputObject] <PSRollout> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentManagerRollout** mendapatkan peluncuran, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi mendetail tentang kemajuan peluncuran.
-Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
+Cmdlet **Get-AzDeploymentManagerRollout** mendapatkan peluncuran, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi terperinci tentang kemajuan peluncuran.
+Tentukan peluncuran berdasarkan nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat menyediakan objek Peluncuran atau ResourceId.
 
-Objek peluncuran yang dikembalikan berisi layanan, unit layanan, dan langkah-langkah yang telah disebarkan dan yang sedang berlangsung. Mereka yang belum disebarkan tidak berada dalam respons.
+Objek peluncuran yang dikembalikan berisi layanan, unit layanan, dan langkah-langkah yang telah disebarkan dan yang sedang berlangsung. Mereka yang belum disebarkan tidak dalam respons.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGro
 Get-AzDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout -Verbose
 ```
 
-Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup. Sakelar -Verbose menampilkan semua detail peluncuran secara hierarki; memperlihatkan Layanan, ServiceUnits, dan langkah-langkah di bawah setiap ServiceUnit dan informasi kontekstual untuk setiap langkah untuk tampilan menyeluruhan peluncuran.
+Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup. Sakelar -Verbose menampilkan semua detail peluncuran secara hierarkis; memperlihatkan Layanan, ServiceUnits, dan langkah-langkah di bawah setiap ServiceUnit dan informasi kontekstual untuk setiap langkah untuk tampilan holistik peluncuran.
 
 ### Contoh 3: Mendapatkan peluncuran menggunakan pengidentifikasi sumber daya
 ```powershell
@@ -71,7 +74,7 @@ Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGro
 Get-AzDeploymentManagerRollout -InputObject $rolloutObject
 ```
 
-Perintah ini mendapatkan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
+Perintah ini mendapatkan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $rolloutObject.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama peluncuran.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryAttempt
-Upaya coba kembali peluncuran.
+Upaya coba lagi peluncuran.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

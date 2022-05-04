@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiskEncryptionExtension.md
-ms.openlocfilehash: f2f91998c637f31eb4bdb43cd8e728d103f798cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f51bb87eac6ce3468592987063a770967fafb724
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065690"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586478"
 ---
 # Remove-AzVMDiskEncryptionExtension
 
 ## SYNOPSIS
-Menghapus ekstensi enkripsi disk dari mesin maya.
+Menghapus ekstensi enkripsi disk dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmdiskencryptionextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,25 +29,25 @@ Remove-AzVMDiskEncryptionExtension [-ResourceGroupName] <String> [-VMName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMDiskEncryptionExtension** menghapus ekstensi enkripsi disk dan konfigurasi ekstensi terkait dari mesin virtual. Jika tidak ada nama ekstensi yang ditentukan, cmdlet ini menghapus ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk mesin virtual berbasis Linux. 
+Cmdlet **Remove-AzVMDiskEncryptionExtension** menghapus ekstensi enkripsi disk dan konfigurasi ekstensi terkait dari komputer virtual. Jika tidak ada nama ekstensi yang ditentukan, cmdlet ini menghapus ekstensi dengan nama default AzureDiskEncryption untuk komputer virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk komputer virtual berbasis Linux. 
 
-Cmdlet ini akan gagal jika enkripsi pada mesin virtual belum dinonaktifkan terlebih dahulu.  Untuk menonaktifkan enkripsi pada mesin virtual, gunakan [Disable-AzVMDiskEncryption](./Disable-AzVMDiskEncryption.md). 
+Cmdlet ini akan gagal jika enkripsi pada komputer virtual belum dinonaktifkan terlebih dahulu.  Untuk menonaktifkan enkripsi pada komputer virtual, gunakan [Disable-AzVMDiskEncryption](./Disable-AzVMDiskEncryption.md). 
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi enkripsi disk dari mesin virtual.
+### Contoh 1: Hapus ekstensi enkripsi disk dari komputer virtual.
 ```powershell
 Remove-AzVMDiskEncryptionExtension -ResourceGroupName "MyResourceGroup" -VMName "MyTestVM"
 ```
 
-Perintah ini menghapus ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk mesin virtual berbasis Linux bernama MyTestVM.
+Perintah ini menghapus ekstensi dengan nama default AzureDiskEncryption untuk komputer virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk komputer virtual berbasis Linux bernama MyTestVM.
 
-### Contoh 2: Hapus ekstensi enkripsi disk tertentu dari mesin virtual.
+### Contoh 2: Hapus ekstensi enkripsi disk tertentu dari komputer virtual.
 ```powershell
 Remove-AzVMDiskEncryptionExtension -ResourceGroupName "MyResourceGroup" -VMName "MyTestVM" -Name "MyDiskEncryptionExtension"
 ```
 
-Perintah ini menghapus ekstensi enkripsi bernama MyDiskEncryptionExtension dari mesin virtual bernama MyTestVM.
+Perintah ini menghapus ekstensi enkripsi bernama MyDiskEncryptionExtension dari komputer virtual bernama MyTestVM.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -78,10 +81,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzVMDiskEncryptionExtension mengatur nama ini ke AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows dan AzureDiskEncryptionForLinux untuk mesin virtual Linux.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDiskEncryptionExtension** atau gunakan nama sumber daya yang berbeda dalam templat Resource Manager.
+Cmdlet Set-AzVMDiskEncryptionExtension mengatur nama ini ke AzureDiskEncryption untuk komputer virtual yang menjalankan sistem operasi Windows dan AzureDiskEncryptionForLinux untuk komputer virtual Linux.
+Tentukan parameter ini hanya jika Anda mengubah nama default di cmdlet **Set-AzVMDiskEncryptionExtension** atau gunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk mesin virtual.
+Menentukan nama grup sumber daya untuk komputer virtual.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

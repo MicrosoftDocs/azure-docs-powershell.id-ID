@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: 6004cb921019aa7cbe56bb4f4ae982296b095d72
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b25ed576c6d39a9123aa2efdc79fe5b9db4bd782
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060003"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600620"
 ---
 # New-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
 Membuat pemetaan jaringan ASR di antara dua jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrnetworkmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ $currentJob = New-AzRecoveryServicesAsrNetworkMapping -AzureToAzure -Name "mappi
  -PrimaryAzureNetworkId $AzureNetworkId -RecoveryFabric $RecoveryAzureFabric -RecoveryAzureNetworkId $RecoveryNetworkId
 ```
 
-Memulai pemetaan jaringan untuk operasi pembuatan menggunakan nama yang ditentukan, jaringan utama dan pemulihan, dan mengembalikan pekerjaan ASR untuk melacak operasi(Skenario Azure ke Azure).
+Memulai pemetaan jaringan untuk operasi pembuatan menggunakan nama, jaringan utama dan pemulihan yang ditentukan, dan mengembalikan pekerjaan ASR untuk melacak operasi (skenario Azure ke Azure).
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemetaan jaringan ASR untuk dibuat.
 
 ```yaml
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PemulihanFabric
-Objek kain Azure Site Recovery terkait dengan kawasan Azure pemulihan.
+### -RecoveryFabric
+Objek fabric Azure Site Recovery yang sesuai dengan wilayah Azure pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

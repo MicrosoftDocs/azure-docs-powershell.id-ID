@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotContinuousWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotContinuousWebJob.md
-ms.openlocfilehash: 23348ef2c1072e4434e5ff1c5d863951eb69a66a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 037a58e8ad6c071fff284e2d6d70495bbd2f5f5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669042"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600062"
 ---
 # Get-AzWebAppSlotContinuousWebJob
 
 ## SYNOPSIS
-Dapatkan atau cantumkan web berkelanjutan untuk slot penyebaran.
+Mendapatkan atau mencantumkan web berkelanjutan untuk slot penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotcontinuouswebjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWebAppSlotContinuousWebJob -AppName <String> -ResourceGroupName <String> -
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzWebAppSlotContinuousWebJob -AppName <String> -Name <String> -ResourceGroupName <String>
  -SlotName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
@@ -38,7 +41,7 @@ Get-AzWebAppSlotContinuousWebJob -InputObject <IWebsitesIdentity> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan web berkelanjutan untuk slot penyebaran.
+Mendapatkan atau mencantumkan web berkelanjutan untuk slot penyebaran.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ appService-test01/slot01/slotcontinuousjob-04                 webjob-rg-test
 
 Perintah ini mencantumkan web berkelanjutan untuk slot penyebaran.
 
-### Contoh 2: Dapatkan web berkelanjutan untuk slot penyebaran
+### Contoh 2: Mendapatkan web berkelanjutan untuk slot penyebaran
 ```powershell
 PS C:\> Get-AzWebAppSlotContinuousWebJob -ResourceGroupName webjob-rg-test -AppName appService-test01 -SlotName slot01 -Name slotcontinuousjob-03
 
@@ -65,7 +68,7 @@ appService-test01/slot01/slotcontinuousjob-03                 webjob-rg-test
 
 Perintah ini mendapatkan web berkelanjutan untuk slot penyebaran.
 
-### Contoh 3: Dapatkan web berkelanjutan untuk slot penyebaran menurut pipeline
+### Contoh 3: Mendapatkan web berkelanjutan untuk slot penyebaran menurut alur
 ```powershell
 PS C:\> $webjob = Get-AzWebAppSlotContinuousWebJob -ResourceGroupName webjob-rg-test -AppName appService-test01 -SlotName slot01 -Name slotcontinuousjob-03
 PS C:\> Start-AzWebAppSlotContinuousWebJob -ResourceGroupName webjob-rg-test -AppName appService-test01 -SlotName slot01 -Name slotcontinuousjob-03
@@ -76,7 +79,7 @@ Name                                          Kind WebJobType ResourceGroupName
 appService-test01/slot01/slotcontinuousjob-03                 webjob-rg-test
 ```
 
-Perintah ini mendapatkan web berkelanjutan untuk slot penyebaran menurut saluran.
+Perintah ini mendapatkan web berkelanjutan untuk slot penyebaran menurut alur.
 
 ## PARAMETERS
 
@@ -125,8 +128,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Web Job.
+### -Name
+Nama Pekerjaan Web.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### -SlotName
 Nama slot penyebaran.
-Jika slot tidak ditentukan, API menghapus penyebaran untuk slot produksi.
+Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String[]
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -223,19 +226,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobHistoryId <String>]`: ID Riwayat.
-  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
-  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
-  - `[WebJobName <String>]`: Nama Web Job.
+  - `[WebJobName <String>]`: Nama Pekerjaan Web.
 
 ## RELATED LINKS

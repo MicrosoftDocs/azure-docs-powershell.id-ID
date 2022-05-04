@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: 300231117c951f37c80b59b39887f277c03c78bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ad607593539916c38e5021d9aab7189ac48aa0a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229455"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594700"
 ---
 # Get-AzManagedCassandraDatacenter
 
 ## SYNOPSIS
-Mendapatkan Instans Terkelola Azure untuk pusat data Apache Cassandra.
+Mendapatkan pusat data Azure Managed Instances for Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzManagedCassandraDatacenter -ParentObject <PSClusterResource> [-DefaultProf
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzManagedCassandraDataCenter** mengambil properti pusat data Cassandra yang dikelola yang sudah ada.
+**Cmdlet Get-AzManagedCassandraDataCenter** mengambil properti pusat data Cassandra terkelola yang ada.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ $clusterResource | Get-AzManagedCassandraDataCenter
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Cassandra yang dikelola.
+Nama kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataCenterName
-Nama pusat data Cassandra yang dikelola.
+Nama pusat data Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cassandra Datacenter terkelola
+Objek Pusat Data Cassandra Terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSDataCenterResource
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kluster Cassandra yang dikelola.
+Id sumber daya kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

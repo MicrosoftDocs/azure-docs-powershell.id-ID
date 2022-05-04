@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Connect-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Connect-AzConnectedMachine.md
-ms.openlocfilehash: a668a523eecea58daa52f5179b0792ffc721d6d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 73852938f889a56e69eeaa50066acd023443e899
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876888"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638990"
 ---
 # Connect-AzConnectedMachine
 
 ## SYNOPSIS
-API untuk mendaftarkan mesin baru dan dengan demikian membuat sumber daya terlacak di ARM
+API untuk mendaftarkan komputer baru dan dengan demikian membuat sumber daya terlacak di ARM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/connect-azconnectedmachine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Connect-AzConnectedMachine [-ResourceGroupName] <String> [-Location] <String> [[
 ```
 
 ## DESCRIPTION
-API untuk mendaftarkan mesin baru dan dengan demikian membuat sumber daya terlacak di ARM
+API untuk mendaftarkan komputer baru dan dengan demikian membuat sumber daya terlacak di ARM
 
 ## EXAMPLES
 
-### Contoh 1: Onboards mesin yang Anda gunakan sebagai mesin tersambung
+### Contoh 1: Onboard komputer tempat Anda berada sebagai komputer yang terhubung
 ```powershell
 Connect-AzConnectedMachine -ResourceGroupName contoso-connected-machines -Name linux_eastus1_1 -Location eastus
 ```
@@ -48,9 +51,9 @@ Name             Location OSName   Status     ProvisioningState
 linux_eastus1_1  eastus   linux    Connected  Succeeded
 ```
 
-Menautkan mesin yang Anda gunakan sebagai mesin yang tersambung.
+Onboard komputer tempat Anda berada sebagai mesin yang terhubung.
 
-### Contoh 2: Onboards mesin jarak jauh sebagai perangkat yang tersambung
+### Contoh 2: Onboarding komputer jarak jauh sebagai perangkat yang terhubung
 ```powershell
 $session = Connect-PSSession -ComputerName WINBOX
 Connect-AzConnectedMachine -ResourceGroupName contoso-rg -Name win_eastus1_1 -Location eastus -PSSession $session
@@ -69,7 +72,7 @@ Name           Location OSName   Status     ProvisioningState
 win_eastus1_1  eastus   windows  Connected  Succeeded
 ```
 
-Menggunakan mesin jarak jauh sebagai perangkat yang tersambung menggunakan pengisian ulang PowerShell.
+Onboard komputer jarak jauh sebagai perangkat yang terhubung menggunakan PowerShell jarak jauh.
 Catatan: hanya Windows sebagai target yang didukung saat ini.
 
 ## PARAMETERS
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama yang akan digunakan untuk mesin ini.
+### -Name
+Nama yang akan digunakan untuk komputer ini.
 Nama host digunakan secara default.
 
 ```yaml
@@ -136,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -PSSession
-Jika ditentukan, perintah yang menggunakan mesin onboards ke Azure akan dijalankan dalam setiap PSSession.
-CATATAN: Ini hanya berfungsi di Windows untuk saat ini.
+Ketika ditentukan, perintah yang menyetorkan komputer ke Azure akan dijalankan dalam setiap PSSession.
+CATATAN: Ini hanya berfungsi pada Windows untuk saat ini.
 
 ```yaml
 Type: System.Management.Automation.Runspaces.PSSession[]
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang ingin Anda tambahkan mesin.
+Nama grup sumber daya yang ingin Anda tambahkan komputernya.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang ingin Anda tambahkan ke komputer.
+ID langganan yang ingin Anda tambahkan mesinnya.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

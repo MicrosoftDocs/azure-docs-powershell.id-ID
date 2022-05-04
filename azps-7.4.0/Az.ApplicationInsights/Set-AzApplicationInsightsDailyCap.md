@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsDailyCap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsDailyCap.md
-ms.openlocfilehash: 730fd1afc05ba873d7c31546089d968401f280c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 475cc9e04225dd31bcd684ce495260ff2102e505
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751500"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593172"
 ---
 # Set-AzApplicationInsightsDailyCap
 
 ## SYNOPSIS
-Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
+Mengatur batas volume data harian untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightsdailycap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Set-AzApplicationInsightsDailyCap [-ResourceId] <String> [-DailyCapGB <Double>]
 ```
 
 ## DESCRIPTION
-Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
+Mengatur batas volume data harian untuk sumber daya application insights
 
 ## EXAMPLES
 
-### Contoh 1 Mengatur batas volume data harian untuk sumber daya wawasan aplikasi
+### Contoh 1 Atur batas volume data harian untuk sumber daya application insights
 ```powershell
 Set-AzApplicationInsightsDailyCap -ResourceGroupName "testgroup" -Name "test" -DailyCapGB 400 -DisableNotificationWhenHitCap
 ```
@@ -55,7 +58,7 @@ Set-AzApplicationInsightsDailyCap -ResourceGroupName "testgroup" -Name "test" -D
 400         0                           True
 ```
 
-Atur batas volume data harian ke 400GB per hari dan hentikan pengiriman pemberitahuan ketika hit cap untuk sumber daya "uji" dalam grup sumber daya "grup uji"
+Atur batas volume data harian ke 400GB per hari dan hentikan pengiriman pemberitahuan saat hit cap untuk sumber daya "pengujian" di grup sumber daya "grup testgroup"
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyCapGB
-Topi harian.
+Batas Harian.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableNotificationWhenHitCap
-Hentikan pengiriman pemberitahuan saat menekan kapital.
+Hentikan kirim pemberitahuan saat tekan batas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen Insights Aplikasi.
 
 ```yaml
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

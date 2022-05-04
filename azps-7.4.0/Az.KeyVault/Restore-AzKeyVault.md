@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
-ms.openlocfilehash: a25222499c631ce17825ef58eb7fb337b0dc1eac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe3818d5541fc689f33b95c57b45baab0f12e380
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226737"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652594"
 ---
 # Restore-AzKeyVault
 
 ## SYNOPSIS
-Memulihkan sepenuhnya HSM yang dikelola dari cadangan.
+Sepenuhnya memulihkan HSM terkelola dari cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Restore-AzKeyVault -BackupFolder <String> [-KeyName <String>] [-PassThru] -Stora
 ```
 
 ## DESCRIPTION
-Memulihkan HSM terkelola sepenuhnya dari cadangan yang disimpan dalam akun penyimpanan.
+Sepenuhnya memulihkan HSM terkelola dari cadangan yang disimpan di akun penyimpanan.
 Gunakan `Backup-AzKeyVault` untuk mencadangkan.
 
 ## EXAMPLES
@@ -59,12 +62,12 @@ $sasToken = ConvertTo-SecureString -AsPlainText -Force "?sv=2019-12-12&ss=bfqt&s
 Restore-AzKeyVault -HsmName myHsm -StorageContainerUri "https://{accountName}.blob.core.windows.net/{containerName}" -BackupFolder "mhsm-myHsm-2020101308504935" -SasToken $sasToken
 ```
 
-Contoh memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-2020101308504935" wadah penyimpanan "https://{accountName}.blob.core.windows.net/{containerName}".
+Contoh memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-2020101308504935" dari kontainer penyimpanan "https://{accountName}.blob.core.windows.net/{containerName}".
 
 ## PARAMETERS
 
 ### -BackupFolder
-Nama folder cadangan, misalnya 'mhsm *--2020101309020403'. File juga dapat ditumpuk seperti 'cadangan/mhsm-*-2020101309020403'.
+Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Ini juga dapat disarangkan seperti 'backups/mhsm--* 2020101309020403'.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmObject
-Objek HSM yang dikelola
+Objek HSM terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerName
-Nama wadah blob tempat cadangan akan disimpan.
+Nama kontainer blob tempat cadangan akan disimpan.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerUri
-URI wadah penyimpanan tempat cadangan akan disimpan.
+URI kontainer penyimpanan tempat cadangan akan disimpan.
 
 ```yaml
 Type: System.Uri
@@ -213,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -245,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

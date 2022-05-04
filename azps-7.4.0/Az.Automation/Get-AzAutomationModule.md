@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
-ms.openlocfilehash: f40bd4226e757f073395f91888cb69a2869f33a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4cc54849e1fabcf18525671610e0cc9851402e2a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687618"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592668"
 ---
 # Get-AzAutomationModule
 
 ## SYNOPSIS
-Mendapatkan metadata untuk modul dari Otomatisasi.
+Mendapatkan metadata untuk modul dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,19 +45,19 @@ Cmdlet **Get-AzAutomationModule** mendapatkan metadata untuk modul dari Azure Au
 PS C:\>Get-AzAutomationModule -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan semua modul dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua modul di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan modul
+### Contoh 2: Mendapatkan modul
 ```
 PS C:\>Get-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan modul bernama ContosoModule dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan modul bernama ContosoModule di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan metadata modul.
+Menentukan nama akun Automation yang cmdlet ini mendapatkan metadata modul.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama modul tempat cmdlet ini mendapatkan metadata.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan metadata modul.
+Menentukan nama grup sumber daya yang cmdlet ini mendapatkan metadata modul.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

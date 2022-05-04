@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: b49e8f13e590298eb866e75ea3cbb23536ca9daa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3a4d2174411cf1fc83c9fe7d0bb044b9e7233b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129753"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660420"
 ---
 # Get-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Dapatkan kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Mendapatkan kunci api application insights untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzApplicationInsightsApiKey [-ResourceId] <String> [[-ApiKeyId] <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Mendapatkan kunci api application insights untuk sumber daya application insights
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Id                                   Description Permissions                    
 82549f39-f3ae-492e-8f94-f7aada75fa57 test3       ReadTelemetry                     Wed, 18 Oct 2017 22:30:23 GMT
 ```
 
-Dapatkan kunci api wawasan aplikasi untuk sumber daya "uji" dalam grup sumber daya "testGroup".
+Dapatkan kunci api application insights untuk "pengujian" sumber daya di grup sumber daya "testGroup".
 
 ### Contoh 2 Dapatkan kunci API tertentu untuk sumber daya wawasan aplikasi
 ```powershell
@@ -68,7 +71,7 @@ Permissions : {ReadTelemetry}
 Description : test1
 ```
 
-Dapatkan kunci api wawasan aplikasi tertentu yang id adalah "7c4c61dc-b392-4aa4-992f-e e92b84e5dee" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
+Dapatkan kunci api application insights tertentu yang idnya adalah "7c4c61dc-b392-4aa4-992f-e e92b84e5dee" untuk sumber daya "pengujian" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen Insights Aplikasi.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

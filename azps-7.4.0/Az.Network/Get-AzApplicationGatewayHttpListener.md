@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 1347a90c60e633d151ca2ac0c91914420cfc31a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 46475a76a2921e91b474c4656f0ba1bb8a47e3b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667456"
 ---
 # Get-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Mendapatkan pendengar HTTP gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,15 +33,15 @@ Cmdlet **Get-AzApplicationGatewayHttpListener** mendapatkan pendengar HTTP gatew
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pendengar HTTP tertentu
+### Contoh 1: Mendapatkan pendengar HTTP tertentu
 ```powershell
 $Appgw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Listener = Get-AzApplicationGatewayHttpListener -Name "Listener01" -ApplicationGateway $Appgw
 ```
 
-Perintah ini mendapatkan pendengar HTTP bernama Listener01.
+Perintah ini mendapatkan listener HTTP bernama Listener01.
 
-### Contoh 2: Dapatkan daftar pendengar HTTP
+### Contoh 2: Mendapatkan daftar listener HTTP
 ```powershell
 $Appgw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Listeners = Get-AzApplicationGatewayHttpListener -ApplicationGateway $Appgw
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama pendengar HTTP yang didapat cmdlet ini.
 
 ```yaml
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

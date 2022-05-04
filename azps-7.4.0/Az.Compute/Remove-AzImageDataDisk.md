@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzImageDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzImageDataDisk.md
-ms.openlocfilehash: 0c91c747d65352e5e145e3b794074dc08ffe11de
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b87d945e69d3ea7e163fdec09e2d5455b69e3ed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877248"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642894"
 ---
 # Remove-AzImageDataDisk
 
 ## SYNOPSIS
 Menghapus disk data dari objek gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azimagedatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Remove-AzImageDataDisk** menghapus disk data dari objek gambar.
 Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01' | Remove-AzImageDataDisk -Lun 1 | Update-AzImage;
 ```
 
-Perintah ini menghapus disk data dari unit logika nomor 1 dari gambar yang sudah ada 'Image01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini menghapus disk data unit logis nomor 1 dari gambar 'Image01' yang ada di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN).
+Menentukan nomor unit logis (LUN).
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -83,8 +86,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

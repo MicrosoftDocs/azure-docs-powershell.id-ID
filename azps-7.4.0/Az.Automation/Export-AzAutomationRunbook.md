@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
-ms.openlocfilehash: 260273b47113e2020ff69f9abbff86342a9335e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91bed1a7cc8ed5afad58da8a22b97438e1974bcc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751464"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592938"
 ---
 # Export-AzAutomationRunbook
 
 ## SYNOPSIS
-Mengekspor runbook Otomatisasi.
+Mengekspor runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Export-AzAutomationRunbook [-Name] <String> [-Slot <String>] [-OutputFolder <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1), untuk runbook alur kerja wps_2 atau wps_2, atau ke file runbook grafis (.graphrunbook), untuk runbook grafis.
+Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1), untuk runbook Alur Kerja wps_2 atau wps_2, atau ke file runbook grafis (.graphrunbook), untuk runbook grafis.
 Nama runbook menjadi nama file yang diekspor.
 
 ## EXAMPLES
@@ -37,12 +40,12 @@ Nama runbook menjadi nama file yang diekspor.
 PS C:\>Export-AzAutomationRunbook -ResourceGroupName "ResourceGroup01" -AutomationAccountName "ContosoAutomationAccount" -Name "Runbook03" -Slot "Published" -OutputFolder "C:\Users\PattiFuller\Desktop"
 ```
 
-Perintah ini mengekspor versi runbook Otomatisasi yang diterbitkan ke desktop pengguna.
+Perintah ini mengekspor versi runbook Automation yang diterbitkan ke desktop pengguna.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengekspor runbook.
+Menentukan nama akun Automation tempat cmdlet ini mengekspor runbook.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama runbook yang diekspor cmdlet ini.
 Nama runbook menjadi nama file ekspor.
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 Menentukan apakah cmdlet ini mengekspor draf atau konten runbook yang diterbitkan.
 Nilai yang valid adalah: 
 - Diterbitkan 
-- Draft
+- Draf
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

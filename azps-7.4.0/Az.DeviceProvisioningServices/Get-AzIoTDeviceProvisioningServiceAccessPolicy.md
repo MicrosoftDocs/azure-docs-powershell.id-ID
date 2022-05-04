@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
-ms.openlocfilehash: 7ac023b83a5903415f657b2ca589f83e6cd3f15b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11ab1f8ea8d4e70940137577aa36737650527f3f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123669"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620312"
 ---
 # Get-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Cantumkan semua atau perlihatkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau tampilkan detail kebijakan akses bersama dalam layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-KeyName 
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : ServiceConfig, DeviceConnect, EnrollmentWrite
 ```
 
-Tampilkan detail kebijakan akses bersama "mypolicy" dalam layanan penyediaan perangkat Azure IoT Hub.
+Menampilkan detail kebijakan akses bersama "mypolicy" dalam layanan provisi perangkat Azure IoT Hub.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci kebijakan akses Layanan Penyediaan Perangkat IoT
+Nama kunci kebijakan akses IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -119,8 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

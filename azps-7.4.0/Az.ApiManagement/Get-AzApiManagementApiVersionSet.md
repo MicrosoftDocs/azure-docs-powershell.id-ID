@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiVersionSet.md
-ms.openlocfilehash: e5af625c67a8d9e1c90edc7318ded8e16f8bfd41
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 488bb40f885114d9829855706f9b18a1d5679e94
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688482"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642714"
 ---
 # Get-AzApiManagementApiVersionSet
 
 ## SYNOPSIS
-Dapatkan detail Kumpulan Versi API
+Mendapatkan detail Set Versi API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzApiManagementApiVersionSet -Context <PsApiManagementContext> [-ApiVersionS
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks API Management.
+Cmdlet **Get-AzApiManagementApiVersionSet** mendapatkan detail Set Versi API yang dikonfigurasi dalam konteks API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Set Versi API
+### Contoh 1: Mendapatkan semua Set Versi API
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApiVersionSet -Context $ApiMgmtContext
@@ -75,9 +78,9 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan semua kumpulan Versi API untuk konteks yang ditentukan.
+Perintah ini mendapatkan semua set Versi API untuk konteks yang ditentukan.
 
-### Contoh 2: Dapatkan VERSI API yang Diatur oleh ID
+### Contoh 2: Mendapatkan Versi API yang Ditetapkan oleh ID
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId $ApiVersionSetId
@@ -95,12 +98,12 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan SET Versi API dengan ID yang ditentukan.
+Perintah ini mendapatkan Set Versi API dengan ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-PENGIDENTIFIKASI API untuk dicari.
+Pengidentifikasi API untuk dicari.
 Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari ApiVersionSet. Jika ditentukan akan mencoba menemukan apiVersionSet oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari ApiVersionSet. Jika ditentukan akan mencoba menemukan apiVersionSet oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

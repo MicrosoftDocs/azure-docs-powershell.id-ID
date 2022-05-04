@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: d1867dc5157e7bc359847bf185bd50e07d549e2d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 56517fe10eef8d76dae1f27a243c76f15eb51b38
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872352"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596246"
 ---
 # Add-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP antarmuka jaringan ke antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ $nic | Set-AzNetworkInterfaceIpConfig -Name $nic.IpConfigurations[0].Name -Subne
 $nic | Add-AzNetworkInterfaceIpConfig -Name MyNewIpConfig -Subnet $vnet.Subnets[0] -ApplicationSecurityGroup $asg | Set-AzNetworkInterface
 ```
 
-Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface yang termasuk dalam subnet di jaringan virtual baru MyVNET. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk mengaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan yang juga terkait dengan objek grup keamanan aplikasi.
+Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface milik subnet di jaringan virtual baru MyVNET. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk mengaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan yang juga ditautkan ke objek kelompok keamanan aplikasi.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroup
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kelompok keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroupId
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kelompok keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.String[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRule
-Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muat tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSInboundNatRule[]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRuleId
-Menentukan kumpulan referensi aturan NAT masuk penyeimbang muatan tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi aturan NAT masuk load balancer tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.String[]
@@ -198,7 +201,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi IP antarmuka jaringan.
 
 ```yaml
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Menentukan alamat IP statis dari konfigurasi IP antarmuka jaringan.
+Menentukan alamat IP statis konfigurasi IP antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -360,7 +363,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

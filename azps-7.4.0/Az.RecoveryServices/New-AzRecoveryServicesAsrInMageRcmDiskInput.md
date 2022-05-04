@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrInMageRcmDiskInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrInMageRcmDiskInput.md
-ms.openlocfilehash: 3b4276d612992d75e32be46a1b3be8fd8767482a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7f6f25ec3f85cf0945ff905eda0aaa36eb2cd877
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117405"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728888"
 ---
 # New-AzRecoveryServicesAsrInMageRcmDiskInput
 
 ## SYNOPSIS
-Membuat konfigurasi replikasi Disk Azure Site Recovery untuk replikasi VMware Ke Azure.
+Membuat konfigurasi replikasi Azure Site Recovery Disk untuk replikasi VMware Ke Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrinmagercmdiskinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzRecoveryServicesAsrInMageRcmDiskInput -DiskId <String> -LogStorageAccountI
 ```
 
 ## DESCRIPTION
-Membuat objek pemetaan disk yang memetakan disk mesin virtual VMware ke akun penyimpanan cache dan tipe disk terkelola target (kawasan pemulihan) untuk digunakan untuk mereplikasi disk.
+Membuat objek pemetaan disk yang memetakan disk komputer virtual VMware ke akun penyimpanan cache dan jenis disk terkelola target (wilayah pemulihan) yang akan digunakan untuk mereplikasi disk.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ DiskType            : Standard_LRS
 DiskEncryptionSetId : 8010C296-91a1-a639-6714-a02903020cbc
 ```
 
-Buat objek pemetaan disk untuk disk mesin virtual VMware yang akan direplikasi. Digunakan selama mengaktifkan perlindungan untuk mesin VMware.
+Buat objek pemetaan disk untuk disk komputer virtual VMware yang akan direplikasi. Digunakan selama mengaktifkan perlindungan untuk komputer VMware.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan id ARM set enkripsi diska.
+Menentukan ID ARM set enkripsi disk.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Tentukan DiskId diska yang terkait dengan pemetaan ini.
+Tentukan DiskId disk yang sesuai dengan pemetaan ini.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskType
-Menentukan tipe disk Pemulihan.
+Menentukan jenis disk Pemulihan.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogStorageAccountId
-Menentukan Id akun penyimpanan log atau cache yang akan digunakan untuk menyimpan log replikasi.
+Menentukan ID akun penyimpanan log atau cache yang akan digunakan untuk menyimpan log replikasi.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -154,11 +157,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

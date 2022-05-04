@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubNotificationRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubNotificationRegistration.md
-ms.openlocfilehash: 35a5b6f094a71330f5aa46706541c87d466986c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f56619309f5b40caf4169f30b045e4ad91ad4e45
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651946"
 ---
 # New-AzProviderHubNotificationRegistration
 
 ## SYNOPSIS
 Membuat atau memperbarui pendaftaran pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubnotificationregistration) untuk informasi terbaru.
 
 ## SYNTAX
 

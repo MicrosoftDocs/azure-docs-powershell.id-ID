@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzServiceEndpointPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzServiceEndpointPolicyDefinition.md
-ms.openlocfilehash: 3519eeb9f5710c3cc94dd367365ff776b436e542
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a00dc143fe881196ca58c5503217b5fd2680454
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280845"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652360"
 ---
 # New-AzServiceEndpointPolicyDefinition
 
 ## SYNOPSIS
 Membuat definisi kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azserviceendpointpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **New-AzServiceEndpointPolicyDefinition** membuat definisi kebijakan titi
 $policydef= New-AzServiceEndpointPolicyDefinition -Name "ServiceEndpointPolicyDefinition1" -ResourceGroupName "ResourceGroup01" -Service "Microsoft.Storage" -ServiceResources "subscriptions/sub1" -Description "New Definition"
 ```
 
-Perintah ini membuat definisi kebijakan titik akhir layanan dengan nama ServiceEndpointPolicyDefinition1, layanan Microsoft. Storage, langganan/sub1 sumber daya layanan, dan deskripsi "Definisi Baru" yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $policydef.
+Perintah ini membuat definisi kebijakan titik akhir layanan dengan nama ServiceEndpointPolicyDefinition1, layanan Microsoft. Storage, langganan/sub1 sumber daya layanan dan deskripsi "Definisi Baru" yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $policydef.
 
 ### Contoh 2
 

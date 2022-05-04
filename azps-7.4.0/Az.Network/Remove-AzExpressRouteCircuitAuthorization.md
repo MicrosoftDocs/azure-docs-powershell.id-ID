@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitAuthorization.md
-ms.openlocfilehash: 74c3d735961e84c13af42508ab08b5d2edfded5d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 34cd1a24a4cd9def2d887d330199325fd102e1b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938377"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640050"
 ---
 # Remove-AzExpressRouteCircuitAuthorization
 
 ## SYNOPSIS
-Menghapus otorisasi konfigurasi ExpressRoute yang sudah ada.
+Menghapus otorisasi konfigurasi ExpressRoute yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzExpressRouteCircuitAuthorization [-Name <String>] -ExpressRouteCircuit 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzExpressRouteCircuitAuthorization menghapus otorisasi** yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke Azure menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringannya ke sirkuit. Hanya bisa ada satu otorisasi per jaringan virtual. Namun, kapan saja, pemilik sirkuit dapat menggunakan **Remove-AzExpressRouteCircuitAuthorization** untuk menghapus otorisasi yang ditetapkan ke jaringan virtual. Ketika hal tersebut terjadi, jaringan virtual terkait tidak lagi dapat menggunakan sirkuit ExpressRoute untuk tersambung ke Azure.
+Cmdlet **Remove-AzExpressRouteCircuitAuthorization** menghapus otorisasi yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menghubungkan jaringan lokal Anda ke Azure dengan menggunakan penyedia konektivitas alih-alih Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit. Hanya ada satu otorisasi per jaringan virtual. Namun, kapan saja, pemilik sirkuit dapat menggunakan **Remove-AzExpressRouteCircuitAuthorization** untuk menghapus otorisasi yang ditetapkan ke jaringan virtual. Ketika itu terjadi, jaringan virtual yang sesuai tidak lagi dapat menggunakan sirkuit ExpressRoute untuk menyambungkan ke Azure.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama otorisasi sirkuit yang dihapus cmdlet ini.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayHybridConnection.md
-ms.openlocfilehash: 218fd58571ba3f00da35cdc4011244f85f55f81e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 19ce7cf6d94e22fbb0418df9e4b1fd655c63dfa7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674568"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596102"
 ---
 # Remove-AzRelayHybridConnection
 
 ## SYNOPSIS
-Menghapus HybridConnection dari ruang nama HybridConnection yang ditentukan.
+Menghapus HybridConnection dari namespace HybridConnection yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/remove-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzRelayHybridConnection [-ResourceGroupName] <String> [-Namespace] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRelayHybridConnection** menghapus HybridConnection dari ruang nama Relay yang ditentukan.
+Cmdlet **Remove-AzRelayHybridConnection** menghapus HybridConnection dari namespace Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Remove-AzRelayHybridConnection** menghapus HybridConnection dari ruang 
 Remove-AzRelayHybridConnection -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name TestHybridConnection
 ```
 
-Menghapus HybridConnection `TestHybridConnection` dari ruang `TestNameSpace-Relay1`nama .
+Menghapus HybridConnection `TestHybridConnection` dari namespace `TestNameSpace-Relay1`.
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama HybridConnections.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

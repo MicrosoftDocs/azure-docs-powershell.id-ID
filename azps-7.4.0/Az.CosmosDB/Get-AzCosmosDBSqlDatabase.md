@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlDatabase.md
-ms.openlocfilehash: 7062b114e431d89039977fc2aa767c8841108b85
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 25459d942b4ddf7b200a2627e35fe7d82ae1a9a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595150"
 ---
 # Get-AzCosmosDBSqlDatabase
 
 ## SYNOPSIS
-Mendapatkan Database CosmosDB Sql.
+Mendapatkan CosmosDB Sql Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlDatabase [-Name <String>] -ParentObject <PSDatabaseAccountGetRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlDatabase** mendapatkan daftar semua Database CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Database CosmosDB Sql untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
+Cmdlet **Get-AzCosmosDBSqlDatabase** mendapatkan daftar semua Database CosmosDB Sql yang ada untuk ResourceGroupName, AccountName, dan mendapatkan satu CosmosDB Sql Database untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
 
 ## EXAMPLES
 
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database.
 
 ```yaml
@@ -125,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

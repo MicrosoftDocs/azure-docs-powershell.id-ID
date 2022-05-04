@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: b957ccb182e13a4051771512dad393a1c54fb98d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ea336ebecfef673ef1af0daaf2b88dd8f237d57e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651712"
 ---
 # Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Mengaktifkan Azure AD hanya autentikasi untuk SQL Managed Instance tertentu.
+Mengaktifkan autentikasi Azure AD hanya untuk SQL Managed Instance tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlinstanceactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceGroupName] <Stri
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GunakanInputObjectParameterSet
+### UseInputObjectParameterSet
 ```
 Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication -InputObject <AzureSqlManagedInstanceModel>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication** mengaktifkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk Instans Terkelola AzureSQL dalam langganan saat ini.
+Cmdlet **Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication memungkinkan persyaratan autentikasi** hanya Azure Active Directory (Azure AD) untuk AzureSQL Managed Instance dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ ResourceGroupName InstanceName        AzureADOnlyAuthentication
 ResourceGroup01   ManagedInstance01   True
 ```
 
-Perintah ini memungkinkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk Instans Terkelola AzureSQL bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
+Perintah ini memungkinkan persyaratan autentikasi hanya Azure Active Directory (Azure AD) untuk AzureSQL Managed Instance bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans yang dikelola untuk digunakan.
+Objek instans terkelola yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Azure SQL Managed Instance hanya autentikasi Azure Active Directory yang ada.
+Nama Azure SQL Managed Instance autentikasi Azure Active Directory saja yang masuk.
 
 ```yaml
 Type: System.String
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,4 +187,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlInstanceActiveDirectoryAdministrator](./Set-AzSqlInstanceActiveDirectoryAdministrator.md)
 
-[Get-AzSqlInstanceActiveDirectoryAdministrator](./Get-AzSqlInstanceActiveDirectoryAdministrator.md)
+[Remove-AzSqlInstanceActiveDirectoryAdministrator](./Get-AzSqlInstanceActiveDirectoryAdministrator.md)

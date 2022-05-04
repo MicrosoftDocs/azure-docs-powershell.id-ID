@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
-ms.openlocfilehash: 16907e6dc1a427d233470b2c6be673d92192c5e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec866f86641b8f6de1e5ddb42f9ff0daafdcfe5b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997111"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650596"
 ---
 # New-AzApplicationGatewayRewriteRuleHeaderConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi header aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleheaderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **AzApplicationGatewayRewriteRuleHeaderConfiguration** membuat kumpulan t
 $hc = New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName abc -HeaderValue def
 ```
 
-Perintah ini membuat konfigurasi header aturan penulisan ulang dan menyimpan hasil dalam variabel bernama $hc.
+Perintah ini membuat konfigurasi header aturan penulisan ulang dan menyimpan hasilnya dalam variabel bernama $hc.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderName
-Nama Header untuk ditulis ulang
+Nama Header yang akan ditulis ulang
 
 ```yaml
 Type: System.String
@@ -69,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderValue
-Nilai header ke kumpulan untuk nama header tertentu.
-Header akan dihapus jika dihilangkan
+Nilai header ke set untuk nama header yang diberikan.
+Header akan dihapus jika ini dihilangkan
 
 ```yaml
 Type: System.String
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

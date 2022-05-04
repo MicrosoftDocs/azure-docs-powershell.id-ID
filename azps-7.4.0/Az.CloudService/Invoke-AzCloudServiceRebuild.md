@@ -5,22 +5,25 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/inv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRebuild.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRebuild.md
-ms.openlocfilehash: 776459ba5ee1d104991ce9d66c249c371e9c7318
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6e87ee16b3a8aa7717aebfa1ec5bcb4071d2711d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810540"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662238"
 ---
 # Invoke-AzCloudServiceRebuild
 
 ## SYNOPSIS
-Membangun kembali Role Instances menginstal ulang sistem operasi pada instans peran web atau peran pekerja dan menginisialisasi sumber daya penyimpanan yang digunakan oleh mereka.
+Bangun ulang Role Instances menginstal ulang sistem operasi pada instans peran web atau peran pekerja dan menginisialisasi sumber daya penyimpanan yang digunakan oleh mereka.
 Jika Anda tidak ingin menginisialisasi sumber daya penyimpanan, Anda dapat menggunakan Reimage Role Instances.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudservicerebuild) untuk informasi terbaru.
 
 ## SYNTAX
 
-### RebuildExpanded (Default)
+### Bangun UlangExpanded (Default)
 ```
 Invoke-AzCloudServiceRebuild -CloudServiceName <String> -ResourceGroupName <String> -RoleInstance <String[]>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
@@ -34,7 +37,7 @@ Invoke-AzCloudServiceRebuild -InputObject <ICloudServiceIdentity> -RoleInstance 
 ```
 
 ## DESCRIPTION
-Membangun kembali Role Instances menginstal ulang sistem operasi pada instans peran web atau peran pekerja dan menginisialisasi sumber daya penyimpanan yang digunakan oleh mereka.
+Bangun ulang Role Instances menginstal ulang sistem operasi pada instans peran web atau peran pekerja dan menginisialisasi sumber daya penyimpanan yang digunakan oleh mereka.
 Jika Anda tidak ingin menginisialisasi sumber daya penyimpanan, Anda dapat menggunakan Reimage Role Instances.
 
 ## EXAMPLES
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

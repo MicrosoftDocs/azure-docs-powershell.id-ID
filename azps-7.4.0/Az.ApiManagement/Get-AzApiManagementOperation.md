@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOperation.md
-ms.openlocfilehash: 636467427e7c41acf864d38cf8700ecee645b2c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0894cc9d88d4a9b65d467f80e33479a091aae9d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879876"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648580"
 ---
 # Get-AzApiManagementOperation
 
 ## SYNOPSIS
 Mendapatkan daftar atau Operasi API tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzApiManagementOperation -Context <PsApiManagementContext> -ApiId <String> [
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua operasi manajemen API
+### Contoh 1: Mendapatkan semua operasi manajemen API
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOperation -Context $apimContext -ApiId $APIId
@@ -45,13 +48,13 @@ Get-AzApiManagementOperation -Context $apimContext -ApiId $APIId
 
 Perintah ini mendapatkan semua operasi manajemen API.
 
-### Contoh 2: Dapatkan operasi API Management menurut ID operasi
+### Contoh 2: Mendapatkan operasi API Management berdasarkan ID operasi
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOperation -Context $apimContext -ApiId $APIId -OperationId "Operation003"
 ```
 
-Perintah ini mendapatkan operasi manajemen API menurut ID operasi bernama Operation0003.
+Perintah ini mendapatkan operasi manajemen API berdasarkan ID operasi bernama Operation0003.
 
 ## PARAMETERS
 
@@ -85,8 +88,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

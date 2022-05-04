@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolPrincipalAssignment.md
-ms.openlocfilehash: 5e923b2f043ea8106878e9eb6185cf05d73f371a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d437c3869f8fe1640faf1537800c88f1858ecd19
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222507"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586944"
 ---
 # Remove-AzSynapseKustoPoolPrincipalAssignment
 
 ## SYNOPSIS
-Menghapus Kusto pool principalAssignment.
+Menghapus kumpulan Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoolprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Remove-AzSynapseKustoPoolPrincipalAssignment -InputObject <ISynapseIdentity> [-D
 ```
 
 ## DESCRIPTION
-Menghapus Kusto pool principalAssignment.
+Menghapus kumpulan Kusto principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Kusto pool PrincipalAssignment menurut nama yang sudah ada
+### Contoh 1: Menghapus kumpulan Kusto principalAssignment yang sudah ada berdasarkan nama
 ```powershell
 Remove-AzSynapseKustoPoolPrincipalAssignment -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -PrincipalAssignmentName kustoprincipal1
 ```
@@ -47,7 +50,7 @@ Perintah di atas menghapus Kusto pool principalAssignment "kustoprincipal1" di r
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -197,8 +200,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -249,14 +252,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

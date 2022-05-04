@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: ed104a87b4ce5211e4e3ff6e6e85756b7c9d7bc9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 75ce020eb3cdb2365c6be789e04ffe90cebf5ac3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874782"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660150"
 ---
 # Remove-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
 Menghapus sumber data dari akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Remove-AzDataLakeAnalyticsDataSource [-Account] <String> [-Blob] <String> [-Forc
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataLakeAnalyticsDataSource** menghapus sumber data dari akun azure Data Lake Analytics.
+Cmdlet **Remove-AzDataLakeAnalyticsDataSource** menghapus sumber data dari akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blob
-Menentukan nama akun Storage AzureBlob untuk dihapus.
+Menentukan nama akun Storage AzureBlob yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLakeStore
-Menentukan nama akun AzureData Lake Store untuk dihapus.
+Menentukan nama akun AzureData Lake Store yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -154,8 +157,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

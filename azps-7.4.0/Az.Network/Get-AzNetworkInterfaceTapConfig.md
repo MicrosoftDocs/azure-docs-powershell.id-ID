@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: 624e218a888afab9aa866693c0c043045b8af6f6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5fc6b280435668f28567c4faf7405e12ca5d9375
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282087"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585380"
 ---
 # Get-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
 Mendapatkan sumber daya konfigurasi Tap.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterfacetapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzNetworkInterfaceTapConfig -ResourceId <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration untuk grup sumber daya tertentu, antarmuka jaringan, dan mengetuk nama konfigurasi atau daftar konfigurasi ketuk dalam grup sumber daya dan antarmuka jaringan.
+Cmdlet **Get-AzNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration untuk grup sumber daya tertentu, antarmuka jaringan, dan ketuk nama konfigurasi atau daftar konfigurasi ketuk dalam grup sumber daya dan antarmuka jaringan.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration u
 Get-AzNetworkInterfaceTapConfig -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName"
 ```
 
-Perintah ini akan menambahkan konfigurasi ketukan untuk antarmuka jaringan yang diberikan.
+Perintah ini akan menambahkan konfigurasi ketukan untuk antarmuka jaringan tertentu.
 
 ### Contoh 2: Mendapatkan konfigurasi ketukan yang diberikan
 ```powershell
 Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName" -Name "tapconfigName"
 ```
 
-Perintah ini mendapatkan konfigurasi ketukan tertentu yang ditambahkan untuk antarmuka jaringan yang diberikan.
+Perintah ini mendapatkan konfigurasi ketukan khusus yang ditambahkan untuk antarmuka jaringan tertentu.
 
 ### Contoh 3: Mendapatkan konfigurasi ketukan yang diberikan
 ```powershell

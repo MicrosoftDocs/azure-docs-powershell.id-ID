@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
-ms.openlocfilehash: 53fb1b8116d24a4950bb08713b35ae8a56206738
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a3ae506ea3a338d052f4835644a3472c284e0d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125145"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642544"
 ---
 # Test-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
 Memeriksa keberadaan item katalog.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/test-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,20 +73,20 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe item katalog item untuk diperiksa.
+Menentukan tipe item katalog dari item yang akan diperiksa.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Database
 - Skema
-- Majelis
-- Meja
+- Rakitan
+- Tabel
 - TablePartition
-- TableValuedFungction
+- TableValuedFunction
 - TableStatistics
 - ExternalDataSource
-- Lihat
+- Tampilan
 - Prosedur
 - Rahasia
-- Credential
+- Informasi masuk
 - Jenis
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke item yang akan disambungkan, atau jalur ke item induk item yang akan dicantumkan.
+Menentukan jalur ke item yang akan diambil, atau jalur ke item induk item yang akan dicantumkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

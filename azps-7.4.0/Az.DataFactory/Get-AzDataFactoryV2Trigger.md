@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Trigger.md
-ms.openlocfilehash: f1d2d2cc0ef680cce78ed418d9865efb81498a28
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8115a64e2e8b1edd1ddd8d47a7d0512a07b9f14a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228537"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660186"
 ---
 # Get-AzDataFactoryV2Trigger
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2trigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzDataFactoryV2Trigger [-ResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryV2Trigger** mendapatkan informasi tentang pemicu di pabrik data. Jika Anda menentukan nama pemicu, cmdlet akan mendapatkan informasi tentang pemicu tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua pemicu di pabrik data.
+Cmdlet **Get-AzDataFactoryV2Trigger** mendapatkan informasi tentang pemicu di pabrik data. Jika Anda menentukan nama pemicu, cmdlet mendapatkan informasi tentang pemicu tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua pemicu di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang semua pemicu
+### Contoh 1: Mendapatkan informasi tentang semua pemicu
 ```powershell
 Get-AzDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 ```
@@ -76,7 +79,7 @@ Get-AzDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -
     RuntimeState      : Stopped
 ```
 
-Mendapatkan pemicu tunggal yang disebut "ScheduledTrigger" di pabrik data "WikiADF".
+Mendapatkan satu pemicu yang disebut "ScheduledTrigger" di pabrik data "WikiADF".
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

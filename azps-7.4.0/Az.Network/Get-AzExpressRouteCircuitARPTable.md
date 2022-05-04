@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitARPTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitARPTable.md
-ms.openlocfilehash: a1e259a72492d89ba9f48d58a19ad56a3cae4fe4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bafb2a0e17d624ee1f16576514ecc5ceced5590e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679518"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621742"
 ---
 # Get-AzExpressRouteCircuitARPTable
 
 ## SYNOPSIS
 Mendapatkan tabel ARP dari sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitarptable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute sedang diperiksa.
+Nama sirkuit ExpressRoute yang sedang diperiksa.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

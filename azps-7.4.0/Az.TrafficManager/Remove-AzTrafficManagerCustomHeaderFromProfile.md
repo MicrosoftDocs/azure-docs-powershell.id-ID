@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromProfile.md
-ms.openlocfilehash: 0661d8ab0f544299ebf7ee04f5edc91d7fe46ea7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e6aee33ccbb187bb4e5d99fa6a194c2dba44a205
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931051"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658656"
 ---
 # Remove-AzTrafficManagerCustomHeaderFromProfile
 
 ## SYNOPSIS
 Menghapus informasi header kustom dari objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagercustomheaderfromprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Remove-AzTrafficManagerCustomHeaderFromProfile** menghapus informasi he
 Anda bisa mendapatkan profil dengan menggunakan cmdlet New-AzTrafficManagerProfile atau Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
+Terapkan perubahan Anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
 Perintah kedua menghapus informasi header kustom dari profil yang disimpan di $TrafficManagerProfile.
-Perintah terakhir memperbarui profil di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
+Perintah akhir memperbarui profil di Traffic Manager agar sesuai dengan nilai lokal di $TrafficManagerProfile.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama informasi header kustom yang akan dihapus.
 
 ```yaml
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini mengubah objek lokal ini.
+Cmdlet ini memodifikasi objek lokal ini.
 Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
@@ -94,8 +97,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

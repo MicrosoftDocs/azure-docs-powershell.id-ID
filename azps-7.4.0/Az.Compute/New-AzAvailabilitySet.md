@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzAvailabilitySet.md
-ms.openlocfilehash: b7eee9369147418a8363b432b2bf2edc6b5b7f5d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a4623f9cc687203b4c1531bd61f3a3a496411811
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065979"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642930"
 ---
 # New-AzAvailabilitySet
 
 ## SYNOPSIS
-Membuat kumpulan ketersediaan Azure.
+Membuat set ketersediaan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +31,21 @@ New-AzAvailabilitySet [-ResourceGroupName] <String> [-Name] <String> [-Location]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAvailabilitySet** membuat kumpulan ketersediaan Azure.
+Cmdlet **New-AzAvailabilitySet** membuat set ketersediaan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kumpulan ketersediaan
+### Contoh 1: Membuat set ketersediaan
 ```powershell
 New-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03" -Location "West US"
 ```
 
-Perintah ini membuat kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11.
+Perintah ini membuat set ketersediaan bernama AvailabilitySet03 di grup sumber daya bernama ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk kumpulan ketersediaan.
+Menentukan lokasi untuk set ketersediaan.
 
 ```yaml
 Type: System.String
@@ -86,8 +89,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk kumpulan ketersediaan.
+### -Name
+Menentukan nama untuk set ketersediaan.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan kumpulan ketersediaan ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan set ketersediaan ini.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ### -Sku
 Nama Sku.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diratakan: Untuk disk yang dikelola
+- Diselaraskan: Untuk disk terkelola
 - Klasik: Untuk disk yang tidak dikelola
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash.
+Pasangan kunci-nilai dalam bentuk tabel hash.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -195,13 +198,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
-ms.openlocfilehash: d8b77d43a47be6ad34f1dfbc2a5a6cbad6f4cecc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2bcd1bf802e2148f30b97e3a244df676e0efbb27
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312651"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727396"
 ---
 # Set-AzVirtualNetwork
 
 ## SYNOPSIS
 Memperbarui jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,12 +47,12 @@ Remove-AzVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork $virtual
 $virtualNetwork | Set-AzVirtualNetwork ## Remove subnet from virtual network
 ```
 
-Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Kemudian menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork kemudian digunakan untuk menulis status jaringan virtual yang dimodifikasi di sisi layanan. Ketika cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet akan dihapus.
+Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Kemudian menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork kemudian digunakan untuk menulis status jaringan virtual yang dimodifikasi di sisi layanan. Ketika cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet dihapus.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek jaringan maya yang mewakili status di mana jaringan maya harus disetel.
+Menentukan objek jaringan virtual yang mewakili status yang harus diatur oleh jaringan virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -108,9 +111,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)
 
-[Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)
 
 [New-AzVirtualNetwork](./New-AzVirtualNetwork.md)
 

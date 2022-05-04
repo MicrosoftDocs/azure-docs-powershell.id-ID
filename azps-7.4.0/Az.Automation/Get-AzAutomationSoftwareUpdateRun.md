@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
-ms.openlocfilehash: fad38a94440f6c8598d5321af332f11af7cc7d15
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fce8c8bbcca328e071154db1fdd3b4df72452dcd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320031"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662472"
 ---
 # Get-AzAutomationSoftwareUpdateRun
 
 ## SYNOPSIS
-Mendapatkan daftar pembaruan perangkat lunak otomatisasi azure yang berjalan.
+Mendapatkan daftar eksekusi pembaruan perangkat lunak azure automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsoftwareupdaterun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +52,12 @@ Get-AzAutomationSoftwareUpdateRun [-SoftwareUpdateConfiguration <SoftwareUpdateC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAutomationSoftwareUpdateRun mengembalikan daftar pembaruan perangkat lunak yang berjalan. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, itu bisa dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan pembaruan yang dibuat. Proses pembaruan adalah agregat dari hasil semua mesin yang dijalankan. Anda dapat menjalankan konfigurasi pembaruan perangkat lunak tertentu dengan melewati parameter SoftwareUpdateConfigurationName. Untuk mendapatkan jalan tertentu, Anda perlu memberikan parameter nama. Anda juga bisa mencantumkan berjalan dengan status tertentu, menjalankan penargetan sistem operasi tertentu, atau berjalan dimulai setelah waktu tertentu dengan melewati parameter yang sesuai.
+Cmdlet Get-AzAutomationSoftwareUpdateRun mengembalikan daftar eksekusi pembaruan perangkat lunak. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, konfigurasi tersebut dapat dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan eksekusi pembaruan yang dibuat. Eksekusi pembaruan adalah agregat dari hasil semua eksekusi komputer. Anda bisa mendapatkan eksekusi untuk konfigurasi pembaruan perangkat lunak tertentu dengan melewati parameter SoftwareUpdateConfigurationName. Untuk mendapatkan eksekusi tertentu, Anda perlu meneruskan parameter nama. Anda juga dapat mencantumkan eksekusi dengan status tertentu, menjalankan penargetan sistem operasi tertentu, atau berjalan dimulai setelah waktu tertentu dengan melewati parameter yang sesuai.
 
 ## EXAMPLES
 
 ### Contoh 1
-Contoh ini mencantumkan semua pembaruan berjalan dipicu oleh konfigurasi pembaruan perangkat lunak tertentu.
+Contoh ini mencantumkan semua eksekusi pembaruan yang dipicu oleh konfigurasi pembaruan perangkat lunak tertentu.
 
 ```powershell
 PS C:\> Get-AzAutomationSoftwareUpdateRun -ResourceGroupName "mygroup" `
@@ -94,7 +97,7 @@ LastModifiedTime                : 5/22/2018 10:02:58 PM +00:00
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id konfigurasi pembaruan perangkat lunak dijalankan.
+Id konfigurasi pembaruan perangkat lunak yang dijalankan.
 
 ```yaml
 Type: System.Guid
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperatingSystem
-Sistem operasi jalankan.
+Sistem operasi eksekusi.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.OperatingSystemType]
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfiguration
-Konfigurasi pembaruan perangkat lunak memicu proses.
+Konfigurasi pembaruan perangkat lunak memicu eksekusi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateConfiguration
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfigurationName
-Nama konfigurasi pembaruan perangkat lunak memicu proses.
+Nama konfigurasi pembaruan perangkat lunak memicu eksekusi.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai minimum dalam pelarian.
+Waktu mulai minimum eksekusi.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status pelarian.
+Status eksekusi.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateRunStatus]
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: 49c45a77372cdf5a4e3e40a06d56004f77b212f6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2764c32aec43dcce311d7a67ff0499aad66748ce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283905"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667870"
 ---
 # Set-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
-Perbarui atau tambahkan penawaran ke koleksi toko pribadi tertentu.
+Perbarui atau tambahkan penawaran ke koleksi penyimpanan privat tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestorecollectionoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzMarketplacePrivateStoreCollectionOffer -CollectionId <String> -OfferId <St
 ```
 
 ## DESCRIPTION
-Perbarui atau tambahkan penawaran ke koleksi toko pribadi tertentu.
+Perbarui atau tambahkan penawaran ke koleksi penyimpanan privat tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui penawaran untuk koleksi bursa pribadi 
+### Contoh 1: Membuat atau memperbarui penawaran ke koleksi penyimpanan privat 
 ```powershell
 $acc = @{Accessibility = "azure_managedservices_professional"}
 New-AzMarketplacePrivateStoreCollectionOffer -CollectionId fdb889a1-cf3e-49f0-95b8-2bb012fa01f1 -PrivateStoreId 7f5402e4-e8f4-46bd-9bd1-8d27866a606b  -OfferId aumatics.azure_managedservices -Plan $acc
@@ -42,7 +45,7 @@ Name                           SystemDataCreatedAt SystemDataCreatedBy SystemDat
 aumatics.azure_managedservices
 ```
 
-Perintah ini membuat atau memperbarui penawaran untuk koleksi bursa pribadi.
+Perintah ini membuat atau memperbarui penawaran ke koleksi penyimpanan privat.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -IconFileUri
-Uris File Ikon
+Uri File Ikon
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferId
-ID penawaran untuk memperbarui atau menghapus
+ID penawaran untuk diperbarui atau dihapus
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menawarkan rencana Untuk membangun, lihat bagian CATATAN untuk properti PLAN dan membuat tabel hash.
+Menawarkan paket Untuk membangun, lihat bagian CATATAN untuk properti PLAN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.IPlan[]
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateSuppressedDueIdempotence
-Menunjukkan apakah penawaran tidak diperbarui ke db (true = tidak diperbarui).
-Jika daftar yang diperbolehkan identik dengan daftar yang sudah ada dalam db, penawaran tidak akan diperbarui.
+Menunjukkan apakah penawaran tidak diperbarui ke db (benar = tidak diperbarui).
+Jika daftar izinkan identik dengan yang ada di db, penawaran tidak akan diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,8 +185,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -231,7 +234,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-RENCANA <IPlan[]>: Paket penawaran
+RENCANAkan <IPlan[]>: Paket penawaran
   - `[Accessibility <Accessibility?>]`: Merencanakan aksesibilitas
 
 ## RELATED LINKS

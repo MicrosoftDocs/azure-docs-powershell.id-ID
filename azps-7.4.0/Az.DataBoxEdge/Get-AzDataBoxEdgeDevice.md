@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeDevice.md
-ms.openlocfilehash: ef13d6cf31b3ccc6013ef8dc277d5f690b062b35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f0ceb69fcba98afbb9201cce3d0516f6cf691e02
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660240"
 ---
 # Get-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
-Mendapatkan informasi tentang perangkat Box Edge Data yang tersedia.
+Mendapatkan informasi tentang perangkat Data Box Edge yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Get-AzDataBoxEdgeDevice [-ResourceGroupName] <String> [-Name] <String> [-Alert]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeDevice** mendapatkan informasi tentang Perangkat Box Edge Data yang tersedia. Anda bisa menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi di perangkat tertentu. 
+Cmdlet **Get-AzDataBoxEdgeDevice** mendapatkan informasi tentang Perangkat Azure Data Box Edge yang tersedia. Anda dapat menentukan Nama perangkat bersama dengan Nama Grup Sumber Daya untuk mendapatkan informasi di perangkat tertentu. 
 
 ## EXAMPLES
 
@@ -126,8 +129,8 @@ deviceName      resourceGroupName    Edge    eastus
 
 ## PARAMETERS
 
-### -Peringatan
-Mengambil pemberitahuan di perangkat edge/gateway kotak data
+### -Pemberitahuan
+Mengambil pemberitahuan pada perangkat edge/gateway kotak data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtendedInfo
-Mendapatkan informasi tambahan untuk perangkat Box Edge/Gateway Kotak Data yang ditentukan
+Mendapatkan informasi tambahan untuk perangkat Data Box Edge/Data Box Gateway yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Perangkat
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSetting
-Mendapatkan pengaturan jaringan perangkat Box Edge/Gateway Box Data yang ditentukan
+Mendapatkan pengaturan jaringan perangkat Data Box Edge/Data Box Gateway yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,11 +262,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

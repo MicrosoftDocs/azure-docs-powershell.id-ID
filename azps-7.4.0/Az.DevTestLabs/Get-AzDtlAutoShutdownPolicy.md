@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 5bd416b5ab70f10eb535781ea7ec6d57e3690309
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3654bb33cd68ebbcd560365f5b6e7eaa0fb1d5b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123795"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661932"
 ---
 # Get-AzDtlAutoShutdownPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan shutdown otomatis lab di DevTest Labs.
+Mendapatkan kebijakan matikan otomatis lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlautoshutdownpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzDtlAutoShutdownPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlAutoShutdownPolicy** mendapatkan kebijakan matikan otomatis laboratorium, yang memungkinkan Anda mematikan semua mesin virtual secara otomatis di laboratorium pada waktu yang ditentukan pada hari tersebut.
-Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu yang telah Anda atur untuk mematikan mesin virtual lab secara otomatis.
+Cmdlet **Get-AzDtlAutoShutdownPolicy** mendapatkan kebijakan matikan otomatis lab, yang memungkinkan Anda mematikan semua komputer virtual secara otomatis di lab pada waktu yang ditentukan dalam sehari.
+Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu yang telah Anda atur untuk mematikan komputer virtual lab secara otomatis.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan kebijakan shutdown otomatis lab di DevTest Labs. (autogenerasi)
+Mendapatkan kebijakan matikan otomatis lab di DevTest Labs. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzDtlAutoShutdownPolicy -LabName <String> -ResourceGroupName MyResourceGroup
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

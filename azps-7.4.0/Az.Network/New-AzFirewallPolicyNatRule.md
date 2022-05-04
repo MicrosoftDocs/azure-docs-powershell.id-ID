@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNatRule.md
-ms.openlocfilehash: 66dd4b42915eab9f7c7df9391e8c229661c8e78b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 56f165a4941fdae0d2eb4f7922979a4c15e843ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678384"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600854"
 ---
-# New-AzFirewallPolicyNatRule
+# Baru-AzFirewallPolicyNatRule
 
 ## SYNOPSIS
 Membuat Aturan NAT Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,14 +60,14 @@ Cmdlet **New-AzFirewallPolicyNatRule** membuat aturan NAT untuk Kebijakan Azure 
 New-AzFirewallPolicyNatRule -Name NatRule1 -Protocol "TCP" -SourceAddress "192.168.0.0/16" -DestinationAddress 10.20.30.40 -DestinationPort 1000 -TranslatedAddress "192.168.0.1" -TranslatedPort "100"
 ```
 
-Contoh ini membuat aturan NAT dengan alamat sumber, protokol, alamat tujuan, port tujuan, alamat terjemahan, dan port terjemahan.
+Contoh ini membuat aturan NAT dengan alamat sumber, protokol, alamat tujuan, port tujuan, alamat terjemahan, dan port yang diterjemahkan.
 
 ### Contoh 2
 ```powershell
 New-AzFirewallPolicyNatRule -Name NatRule1 -Protocol "TCP" -SourceAddress "192.168.0.0/16" -DestinationAddress 10.20.30.40 -DestinationPort 1000 -TranslatedFqdn "internalhttp.server.net" -TranslatedPort "100"
 ```
 
-Contoh ini membuat aturan NAT dengan alamat sumber, protokol, alamat tujuan, port tujuan, fqdn terjemahan, dan port terjemahan.
+Contoh ini membuat aturan NAT dengan alamat sumber, protokol, alamat tujuan, port tujuan, fqdn yang diterjemahkan, dan port yang diterjemahkan.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari aturan
+Deskripsi aturan
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kumpulan Aturan NAT
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Ipgroups sumber aturan
+Ipgroup sumber aturan
 
 ```yaml
 Type: System.String[]
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -TranslatedAddress
-Alamat terjemahan untuk aturan NAT ini
+Alamat yang diterjemahkan untuk aturan NAT ini
 
 ```yaml
 Type: System.String
@@ -234,11 +237,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

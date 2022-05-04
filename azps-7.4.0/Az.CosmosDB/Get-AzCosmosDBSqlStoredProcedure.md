@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: 86173ff2163b7e8111f95f2995d4f6c07285bc71
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8aa2e7bfbfc26dbc23e3f96f29a9695bdb45431b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229473"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594898"
 ---
 # Get-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
-Dapatkan CosmosDB Sql StoredProcedure.
+Mendapatkan CosmosDB Sql StoredProcedure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlstoredprocedure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlStoredProcedure [-Name <String>] -ParentObject <PSSqlContainerG
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlStoredProcedure** mendapatkan daftar semua CosmosDB Sql StoredProcedures yang sudah ada untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName dan mendapatkan satu CosmosDB Sql StoredProcedure untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan StoredProcedureName.
+Cmdlet **Get-AzCosmosDBSqlStoredProcedure** mendapatkan daftar semua CosmosDB Sql StoredProcedures yang ada untuk ResourceGroupName tertentu, AccountName, DatabaseName, dan ContainerName dan mendapatkan satu CosmosDB Sql StoredProcedure untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan StoredProcedureName tertentu.
 
 ## EXAMPLES
 
@@ -109,8 +112,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Prcodecure yang Disimpan.
+### -Name
+Nama Prcodecure tersimpan.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -155,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

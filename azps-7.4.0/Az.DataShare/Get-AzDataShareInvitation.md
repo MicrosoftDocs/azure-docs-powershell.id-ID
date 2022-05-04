@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareInvitation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareInvitation.md
-ms.openlocfilehash: 4ec8cbc78f564cd8c3c9599cbc8132b83924002b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 658623b365f60c4efadad5c4ee33c009dfc80f19
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124515"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617504"
 ---
 # Get-AzDataShareInvitation
 
 ## SYNOPSIS
-Mendapatkan undangan informasi tentang berbagi data.
+Mendapatkan undangan informasi berbagi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatashareinvitation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzDataShareInvitation -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareInvitation** mendapatkan informasi tentang undangan yang ditambahkan dalam berbagi data. Jika Anda menentukan nama undangan, cmdlet ini akan mendapatkan informasi tentang undangan. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua undangan dalam berbagi.
+Cmdlet **Get-AzDataShareInvitation** mendapatkan informasi tentang undangan yang ditambahkan dalam berbagi data. Jika Anda menentukan nama undangan, cmdlet ini mendapatkan informasi tentang undangan. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua undangan dalam berbagi.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Name             : AdsInvitation
 Type             : Microsoft.DataShare/Invitations
 ```
 
-Perintah ini menyediakan informasi tentang undangan AdsInvitation yang ada di AdsShare berbagi data.
+Perintah ini menyediakan informasi tentang undangan AdsInvitation yang ada di berbagi data AdsShare.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama undangan berbagi data Azure
 
 ```yaml
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

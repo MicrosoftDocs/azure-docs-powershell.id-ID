@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
-ms.openlocfilehash: fc08ff4443df2034d07c68bb7c6d03a6b01c6ece
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3b59de790764ba7abee4ab3d3d29b5c8dc94cef2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059643"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600530"
 ---
 # Get-AzResourceMoverRequiredForResources
 
 ## SYNOPSIS
-Daftar sumber daya pemindahan tempat sumber daya lengan diperlukan.
+Daftar sumber daya pemindahan tempat sumber daya arm diperlukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemoverrequiredforresources) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzResourceMoverRequiredForResources -MoveCollectionName <String> -ResourceGr
 ```
 
 ## DESCRIPTION
-Daftar sumber daya pemindahan tempat sumber daya lengan diperlukan.
+Daftar sumber daya pemindahan tempat sumber daya arm diperlukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar ARMID sumber daya yang diperlukan yang harus ditambahkan, untuk menambahkan sumber daya yang ditentukan.
+### Contoh 1: Dapatkan daftar ARMID sumber daya yang diperlukan yang perlu ditambahkan, untuk menambahkan sumber daya yang ditentukan.
 ```powershell
 Get-AzResourceMoverRequiredForResources -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -ResourceGroupName "RG-MoveCollection-demoRMS" -SourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups"
 ```
@@ -41,7 +44,7 @@ Get-AzResourceMoverRequiredForResources -MoveCollectionName "PS-centralus-westce
 /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/psdemorm/providers/microsoft.network/networksecuritygroups/psdemovm-nsg
 ```
 
-Dapatkan daftar ARMID sumber daya yang diperlukan yang harus ditambahkan, untuk menambahkan sumber daya yang ditentukan.
+Dapatkan daftar ARMID sumber daya yang diperlukan yang perlu ditambahkan, untuk menambahkan sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveCollectionName
-Nama Pindahkan Koleksi.
+Nama Kumpulan Pemindahan.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceId
-SourceId tempat api diinvokasi.
+sourceId tempat api dipanggil.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlertObjectHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlertObjectHistory.md
-ms.openlocfilehash: 02b7fc24e7f512ae0f10b6748ee925b8a16bfa69
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6d3961d5408d5f915f66dedde5730f8ea39fbc96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752510"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620887"
 ---
 # Get-AzAlertObjectHistory
 
 ## SYNOPSIS
-Mendapatkan informasi Riwayat Peringatan
+Mendapatkan informasi Riwayat Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azalertobjecthistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzAlertObjectHistory -InputObject <PSSmartGroup> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzAlertObjectHistory** mendapatkan riwayat peringatan.
+**Cmdlet Get-AzAlertObjectHistory** mendapatkan riwayat pemberitahuan.
 
 ## EXAMPLES
 
@@ -40,12 +43,12 @@ Get-AzAlertObjectHistory -InputObject <PSSmartGroup> [-DefaultProfile <IAzureCon
 Get-AzAlertObjectHistory -AlertId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529"
 ```
 
-Mendapatkan detail riwayat peringatan. 
+Mendapatkan detail riwayat pemberitahuan. 
 
 ## PARAMETERS
 
 ### -AlertId
-Pengidentifikasi Unik Peringatan / ResourceId pemberitahuan.
+Pengidentifikasi Unik Pemberitahuan / ResourceId pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Input objek dari pipeline.
+Masukkan objek dari alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSSmartGroup
@@ -90,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Remove-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Remove-AzAppConfigurationStore.md
-ms.openlocfilehash: 9c9593a7685def9c393c2f0e41a008d3c116f5ac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c190c1d53d8042477d3955b6bfa961f5d1966f78
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687816"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620869"
 ---
 # Remove-AzAppConfigurationStore
 
 ## SYNOPSIS
 Menghapus penyimpanan konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/remove-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,24 +39,24 @@ Menghapus penyimpanan konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus toko konfigurasi aplikasi
+### Contoh 1: Menghapus penyimpanan konfigurasi aplikasi
 ```powershell
 Remove-AzAppConfigurationStore -Name appconfig-test03 -ResourceGroupName lucas-manual-test
 ```
 
-Perintah ini menghapus toko konfigurasi aplikasi.
+Perintah ini menghapus penyimpanan konfigurasi aplikasi.
 
-### Contoh 2: Menghapus toko konfigurasi aplikasi
+### Contoh 2: Menghapus penyimpanan konfigurasi aplikasi
 ```powershell
 Get-AzAppConfigurationStore -Name appconfig-test02 -ResourceGroupName lucas-manual-test | Remove-AzAppConfigurationStore
 ```
 
-Perintah ini menghapus toko konfigurasi aplikasi.
+Perintah ini menghapus penyimpanan konfigurasi aplikasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyimpanan konfigurasi.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -225,7 +228,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.

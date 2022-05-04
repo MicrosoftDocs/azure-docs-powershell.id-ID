@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 0d79bd56b461543804f34936fcb409ea94f4ebeb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 40302497a8bdb30bf44a95918166bec20af8bf4b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117369"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728852"
 ---
 # New-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Membuat kebijakan replikasi Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -156,8 +159,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Otentikasi
-Menentukan tipe autentikasi yang digunakan.
+### -Autentikasi
+Menentukan jenis autentikasi yang digunakan.
 Nilai yang valid adalah:
 
 - Sertifikat
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToAzure
-Beralih parameter menentukan skenario pembuatan kebijakan azure ke azure.
+Parameter pengalihan menentukan skenario pembuatan kebijakan azure ke azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kompresi
+### -Pemadatan
 Menentukan apakah pemadatan harus diaktifkan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVToAzure
-Beralih parameter untuk menentukan kebijakan akan digunakan untuk mereplikasi mesin virtual Hyper-V ke Azure
+Beralih parameter untuk menentukan kebijakan akan digunakan untuk mereplikasi komputer virtual Hyper-V ke Azure
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncStatus
-Menentukan status sinkronisasi multiVm untuk kebijakan tersebut.
+Menentukan status sinkronisasi multiVm untuk kebijakan.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama kebijakan replikasi ASR.
 
 ```yaml
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfRecoveryPointsToRetain
-Menentukan titik pemulihan angka untuk dipertahankan.
+Menentukan titik pemulihan angka yang akan dipertahankan.
 
 ```yaml
 Type: System.Int32
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaDeletion
-Menentukan apakah mesin virtual replika harus dihapus saat menonaktifkan replikasi dari situs yang dikelola VMM ke situs lain.
+Menentukan apakah komputer virtual replika harus dihapus saat menonaktifkan replikasi dari situs terkelola VMM ke situs lain.
 
 ```yaml
 Type: System.String
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicateVMwareToAzure
-Beralih parameter yang menentukan VMware ke skenario replikasi Azure.
+Alihkan parameter yang menentukan skenario replikasi VMware ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationFrequencyInSeconds
-Menentukan interval frekuensi replikasi dalam detik.
+Menentukan interval frekuensi replikasi dalam hitungan detik.
 Nilai yang valid adalah:
 
 - 30
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 
 ### -ReplicationStartTime
 Menentukan waktu mulai replikasi.
-Harus tidak lebih dari 24 jam dari awal pekerjaan.
+Ini harus tidak lebih dari 24 jam sejak awal pekerjaan.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -449,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPOWarningThresholdInMinutes
-Nilai ambang batas RPO dalam menit untuk memperingatkan.
+Nilai ambang BATAS RPO dalam hitungan menit untuk diperingatkan.
 
 ```yaml
 Type: System.Int32
@@ -479,7 +482,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMwareToAzure
-Parameter switch yang menentukan bahwa kebijakan replikasi yang sedang dibuat akan digunakan untuk mereplikasi mesin virtual VMware dan/atau Server fisik ke Azure.
+Beralih parameter yang menentukan bahwa kebijakan replikasi yang sedang dibuat akan digunakan untuk mereplikasi komputer virtual VMware dan/atau server Fisik ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -493,8 +496,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -509,7 +512,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -524,11 +527,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

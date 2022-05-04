@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSite.md
-ms.openlocfilehash: 629c3fd8b006e991ae5d7ab851a28e90ffe5f3a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9f08742743cf68e4fa385fbb8721239f1e46559
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996535"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621642"
 ---
 # New-AzVpnSite
 
 ## SYNOPSIS
 Membuat sumber daya Azure VpnSite baru. Ini adalah representasi RM dari cabang pelanggan yang diunggah ke Azure untuk konektivitas S2S dengan hub virtual Cortex.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Type              : Microsoft.Network/vpnSites
 ProvisioningState : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN di AS Timur dalam grup sumber daya "nonlinkSitus" di Azure. 
+Hal di atas akan membuat grup sumber daya, Virtual WAN di US Timur dalam grup sumber daya "nonlinkSite" di Azure. 
 
 Kemudian membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
@@ -122,11 +125,11 @@ $vpnSiteLink2 = New-AzVpnSiteLink -Name "testVpnSiteLink2" -IpAddress "15.25.35.
 $vpnSite = New-AzVpnSite -ResourceGroupName "multilink" -Name "testVpnSite" -Location "East US" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink1, $vpnSiteLink2)
 ```
 
-Di atas akan membuat grup sumber daya, Virtual WAN dan Situs Vpn dengan 1 VpnSiteLinks di AS Timur dalam grup sumber daya "multilink" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN dan VpnSite dengan 1 VpnSiteLinks di US Timur dalam grup sumber daya "multilink" di Azure.
 
 ### Contoh 3
 
-Membuat sumber daya Azure VpnSite baru. (autogenerasi)
+Membuat sumber daya Azure VpnSite baru. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -138,7 +141,7 @@ New-AzVpnSite -AddressSpace <String[]> -DeviceModel 'SomeDevice' -DeviceVendor '
 ## PARAMETERS
 
 ### -AddressSpace
-Prefiks alamat dari jaringan virtual.
+Awalan alamat jaringan virtual.
 
 ```yaml
 Type: System.String[]
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -BgpPeeringAddress
-Alamat Peering BGP untuk Situs Vpn ini.
+Alamat Peering BGP untuk VpnSite ini.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -BgpPeeringWeight
-Bobot BGP Peering untuk VpnSite ini.
+Bobot Peering BGP untuk VpnSite ini.
 
 ```yaml
 Type: System.UInt32
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceModel
-Model perangkat perangkat dari perangkat vpn jarak jauh.
+Model perangkat perangkat vpn jarak jauh.
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceVendor
-Vendor perangkat perangkat perangkat vpn jarak jauh.
+Vendor perangkat perangkat dari perangkat vpn jarak jauh.
 
 ```yaml
 Type: System.String
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkSpeedInMbps
-Model perangkat perangkat dari perangkat vpn jarak jauh.
+Model perangkat perangkat vpn jarak jauh.
 
 ```yaml
 Type: System.UInt32
@@ -317,7 +320,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Kebijakan hentian lalu lintas office 365 untuk VpnSite ini.
+Kebijakan breakout lalu lintas office 365 untuk VpnSite ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSO365PolicyProperties
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWan
-VirtualWan VpnSite ini harus tersambung.
+VirtualWan yang perlu dihubungkan dengan VpnSite ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualWan
@@ -393,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWanId
-ResourceId VirtualWan Situs Vpn ini harus tersambung.
+ResourceId VirtualWan yang perlu dihubungkan dengan VpnSite ini.
 
 ```yaml
 Type: System.String
@@ -408,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWanName
-Nama VirtualWan situs Vpn ini harus tersambung.
+Nama VirtualWan yang perlu dihubungkan dengan VpnSite ini.
 
 ```yaml
 Type: System.String
@@ -423,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWanResourceGroupName
-Nama grup sumber daya VirtualWan situs Vpn ini harus tersambung.
+Nama grup sumber daya VirtualWan yang perlu dihubungkan dengan VpnSite ini.
 
 ```yaml
 Type: System.String
@@ -452,8 +455,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -468,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -484,20 +487,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
-### Situs Microsoft.Azure.Commands.Network.Models.PSVpnSite
+### Microsoft.Azure.Commands.Network.Models.PSVpnSite
 ## NOTES
 
 ## RELATED LINKS
 
-[Situs Get-AzVpnSite](./Get-AzVpnSite.md)
+[Get-AzVpnSite](./Get-AzVpnSite.md)
 
-[Situs Hapus-AzVpnSite](./Remove-AzVpnSite.md)
+[Remove-AzVpnSite](./Remove-AzVpnSite.md)
 
-[Situs Pembaruan-AzVpnSite](./Update-AzVpnSite.md)
+[Update-AzVpnSite](./Update-AzVpnSite.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsAccessPolicy.md
-ms.openlocfilehash: 0e6ff03583e14ae4c342a22a4eb5529ccfd17ecb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 982457c44557d567edc443f3e99ecf54124a2003
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056439"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595436"
 ---
 # New-AzTimeSeriesInsightsAccessPolicy
 
 ## SYNOPSIS
 Membuat atau memperbarui kebijakan akses di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan akses.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalObjectId
-ObjekDi prinsipal dalam Azure Active Directory.
+ObjectId dari prinsipal dalam Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Daftar peran pokok ditetapkan pada lingkungan.
+Daftar peran yang ditetapkan prinsipal pada lingkungan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Support.AccessPolicyRole[]
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

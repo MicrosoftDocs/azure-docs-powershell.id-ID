@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecPolicy.md
-ms.openlocfilehash: 921880d3adb5919832e18a10674b873731ae2dc5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9fb62db30a588b06c62851452511929a57e2d617
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677862"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621660"
 ---
 # New-AzVpnClientIpsecPolicy
 
 ## SYNOPSIS
-Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur di gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru / yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientipsecpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,25 +29,25 @@ New-AzVpnClientIpsecPolicy [-SALifeTime <Int32>] [-SADataSize <Int32>] [-IpsecEn
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur di gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru / yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Definisikan vpn objek kebijakan ipsec:
+### Contoh 1: Tentukan objek kebijakan ipsec vpn:
 ```powershell
 $vpnclientipsecpolicy = New-AzVpnClientIpsecPolicy -IpsecEncryption AES256 -IpsecIntegrity SHA256 -SALifeTime 86472 -SADataSize 429497 -IkeEncryption AES256 -IkeIntegrity SHA256 -DhGroup DHGroup2 -PfsGroup None
 ```
 
-Cmdlet ini digunakan untuk membuat objek kebijakan ipsec vpn menggunakan nilai satu atau semua parameter yang dilewati yang dapat dilewati pengguna ke param:VpnClientIpsecPolicy dari perintah PS memungkinkan: New-AzVirtualNetworkGateway (Pembuatan VPN Gateway baru) / Set-AzVirtualNetworkGateway (pembaruan VPN Gateway yang ada) di ResourceGroup :
+Cmdlet ini digunakan untuk membuat objek kebijakan ipsec vpn menggunakan nilai satu atau semua parameter yang diteruskan yang dapat diteruskan pengguna ke param:VpnClientIpsecPolicy dari perintah PS memungkinkan: New-AzVirtualNetworkGateway (Pembuatan VPN Gateway baru) / Set-AzVirtualNetworkGateway (pembaruan VPN Gateway yang ada) di ResourceGroup :
 
-### Contoh 2: Buat gateway jaringan virtual baru dengan pengaturan kebijakan ipsec kustom vpn:
+### Contoh 2: Buat gateway jaringan virtual baru dengan mengatur kebijakan ipsec kustom vpn:
 ```powershell
 $vnetGateway = New-AzVirtualNetworkGateway -ResourceGroupName vnet-gateway -name myNGW -location $location -IpConfigurations $vnetIpConfig -GatewayType Vpn -VpnType RouteBased -GatewaySku VpnGw1 -VpnClientIpsecPolicy $vpnclientipsecpolicy
 ```
 
 Cmdlet ini mengembalikan objek gateway jaringan virtual setelah pembuatan. 
 
-### Contoh 3: Set vpn custom ipsec policy on existing virtual network gateway:
+### Contoh 3: Atur kebijakan ipsec kustom vpn pada gateway jaringan virtual yang ada:
 ```powershell
 $vnetGateway = Set-AzVirtualNetworkGateway -VirtualNetworkGateway $gateway -VpnClientIpsecPolicy $vpnclientipsecpolicy
 ```
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-VpnClient DH Groups digunakan di IKE Fase 1 untuk awal SA
+Grup VpnClient DH yang digunakan dalam IKE Fase 1 untuk SA awal
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeIntegrity
-Algoritma integritas VpnClient IKE (Fase IKE 2)
+Algoritma integritas IKE VpnClient (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi VpnClient IPSec (Tahap 1 IKE)
+Algoritma enkripsi VPNClient IPSec (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas VpnClient IPSec (Tahap 1 IKE)
+Algoritma integritas VpnClient IPSec (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup PFS VpnClient yang digunakan di IKE Fase 2 untuk anak baru SA
+Grup PFS VpnClient yang digunakan dalam IKE Fase 2 untuk SA anak baru
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSize
-Ukuran muatan VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran payload VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTime
-VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
+Asosiasi Keamanan VPNClient IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32
@@ -202,11 +205,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

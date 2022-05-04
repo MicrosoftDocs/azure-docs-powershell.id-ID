@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalytics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalytics.md
-ms.openlocfilehash: dd420b834a29b5cedda3b2e1abb06157123a51c8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 86298e5041f0d09d6a1a5a9c96c7fde7dbe5c45a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593728"
 ---
 # Get-AzIotSecurityAnalytics
 
 ## SYNOPSIS
-Dapatkan analitik keamanan IoT
+Mendapatkan analitik keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecurityanalytics) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzIotSecurityAnalytics -ResourceGroupName <String> -SolutionName <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecurityAnalytics mengembalikan sekumpulan analitik keamanan solusi keamanan iot tertentu
+Cmdlet Get-AzIotSecurityAnalytics mengembalikan sekumpulan analitik keamanan dari solusi keamanan iot tertentu
 
 ## EXAMPLES
 
@@ -114,12 +117,12 @@ MostPrevalentDeviceRecommendations: [
       }
 ```
 
-Dapatkan IoT Security Analytics tuna rungu untuk Solusi Keamanan "MySolution" dalam grup reasource "MyResourceGroup"
+Dapatkan IoT Security Analytics untuk Solusi Keamanan tuli "MySolution" di grup sumber daya "MyResourceGroup"
 
 ## PARAMETERS
 
 ### -Default
-Jika ada, dapatkan kumpulan analitik default, jika tidak, dapatkan daftar semua kumpulan analitik.
+Jika ada, dapatkan kumpulan analitik default, jika tidak, dapatkan daftar semua set analitik.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

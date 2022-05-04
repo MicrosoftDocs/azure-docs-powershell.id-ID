@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesDefinition.md
-ms.openlocfilehash: 6c0388ae6c865da4398b9dfbb9ea9974a6cb6d3c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 302505dc1391dbff06345ed5d675ec96e58647ad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746064"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727864"
 ---
 # Remove-AzManagedServicesDefinition
 
 ## SYNOPSIS
 Menghapus definisi pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/remove-azmanagedservicesdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Menghapus definisi pendaftaran.
 Remove-AzManagedServicesDefinition -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -Scope "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
 
-Menghapus definisi pendaftaran Azure Lighthouse pada lingkup tertentu.
+Menghapus definisi pendaftaran Azure Lighthouse pada cakupan yang diberikan.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 GUID definisi pendaftaran.
 
 ```yaml
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup sumber daya.
+### -Cakupan
+Cakupan sumber daya.
 
 ```yaml
 Type: System.String
@@ -120,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -174,9 +177,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
+  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
   - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
-  - `[Scope <String>]`: Lingkup sumber daya.
+  - `[Scope <String>]`: Cakupan sumber daya.
 
 ## RELATED LINKS
 

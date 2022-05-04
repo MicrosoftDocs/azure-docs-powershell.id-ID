@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
-ms.openlocfilehash: 63413fde3f4d8ecb3ada24266aa00337d2ec105f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dbe02059cabf6fc76dd26e19d11414cf8e19b865
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058563"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600422"
 ---
 # Get-AzSqlElasticJobExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzSqlElasticJobExecution [-ParentObject] <AzureSqlElasticJobAgentModel> [-Jo
  [-EndTimeMax <DateTime>] [-Active] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WithJobExecutionIdUsingParentObject
+### DenganJobExecutionIdUsingParentObject
 ```
 Get-AzSqlElasticJobExecution [-ParentObject] <AzureSqlElasticJobAgentModel> -JobName <String>
  -JobExecutionId <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -53,7 +56,7 @@ Get-AzSqlElasticJobExecution [-ParentResourceId] <String> [-JobName <String>] [-
  [-Active] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WithJobExecutionIdUsingParentResourceId
+### DenganJobExecutionIdUsingParentResourceId
 ```
 Get-AzSqlElasticJobExecution [-ParentResourceId] <String> -JobName <String> -JobExecutionId <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -94,7 +97,7 @@ Mendapatkan satu atau beberapa eksekusi pekerjaan
 
 ### Contoh 3
 
-Mendapatkan satu atau beberapa eksekusi pekerjaan. (autogenerasi)
+Mendapatkan satu atau beberapa eksekusi pekerjaan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -104,7 +107,7 @@ Get-AzSqlElasticJobExecution -JobExecutionId 00000000-0000-0000-0000-00000000000
 ## PARAMETERS
 
 ### -Aktif
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMax
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMin
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

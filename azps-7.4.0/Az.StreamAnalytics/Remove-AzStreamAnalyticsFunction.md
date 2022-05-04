@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: f51ce1f211b1d57777cc28afe60ef3b5f64cc71c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3a8b1e833a0e7137abf0b8df9ccfe4c0ffee9fb0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670158"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595652"
 ---
 # Remove-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
 Menghapus fungsi dari pekerjaan streaming.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/remove-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Menghapus fungsi dari pekerjaan streaming.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus fungsi Stream Analytics
+### Contoh 1: Menghapus fungsi Azure Stream Analytics
 ```powershell
 Remove-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-01
 
@@ -44,13 +47,13 @@ Remove-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob
 
 Perintah ini menghapus fungsi dari pekerjaan.
 
-### Contoh 2: Menghapus fungsi Stream Analytics menurut pipeline
+### Contoh 2: Menghapus fungsi Azure Stream Analytics menurut alur
 ```powershell
 Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-02 | Remove-AzStreamAnalyticsFunction
 
 ```
 
-Perintah ini menghapus fungsi dari pekerjaan menurut saluran.
+Perintah ini menghapus fungsi dari pekerjaan menurut alur.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fungsi.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -216,10 +219,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

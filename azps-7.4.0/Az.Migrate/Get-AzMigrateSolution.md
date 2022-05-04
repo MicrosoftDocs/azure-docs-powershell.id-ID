@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSolution.md
-ms.openlocfilehash: e5e06a1f423b0dd41d8508cbc9dcbfd1ec2056fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fabd7854b9efaba6ed4a2478c75de7623f1689e4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873162"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642174"
 ---
 # Get-AzMigrateSolution
 
 ## SYNOPSIS
 Mendapatkan solusi dalam proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratesolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Etag                                   Name                              Type
 "010097f1-0000-1800-0000-5ee9ae2b0000" Servers-Migration-ServerMigration Microsoft.Migrate/MigrateProjec…
 ```
 
-Dapatkan migrasi solusi proyek berdasarkan nama.
+Dapatkan solusi proyek Migrasi berdasarkan nama.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrateProjectName
-Nama proyek Migrasi Azure.
+Nama proyek Azure Migrate.
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik solusi migrasi dalam proyek migrasi.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Azure Resource Group yang melakukan migrasi proyek adalah bagian dari.
+Nama Grup Sumber Daya Azure yang memigrasikan proyek adalah bagian darinya.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

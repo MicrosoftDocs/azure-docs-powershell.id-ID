@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
-ms.openlocfilehash: 90a75f1e7689265c215457165a3704f73aaaff6a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 73e1ea3f79e43dfd85e9d6d8c1f6f8bd4c38324a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227871"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617270"
 ---
 # Remove-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Menghapus Topik Domain Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/remove-azeventgriddomaintopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,14 +50,14 @@ Menghapus Topik Domain Azure Event Grid.
 Remove-AzEventGridDomainTopic -ResourceGroupName MyResourceGroupName -DomainName Domain1 -Name Topic1
 ```
 
-Menghapus Topik \`Domain Kisi Kejadian1\` di bawah Domain \`Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Menghapus Topik \`Domain Event Grid Topik1\` di bawah Domain \`Domain1\` di grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/Topic1" | Remove-AzEventGridDomainTopic
 ```
 
-Menghapus Topik \`Domain Kisi Kejadian1\` di bawah Domain \`Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Menghapus Topik \`Domain Event Grid Topik1\` di bawah Domain \`Domain1\` di grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama topik domain EventGrid.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Domain Kisi Kejadian.
+Pengidentifikasi Sumber Daya yang mewakili Topik Domain Event Grid.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

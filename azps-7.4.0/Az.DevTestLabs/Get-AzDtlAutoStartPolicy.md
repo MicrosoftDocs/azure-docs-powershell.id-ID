@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
-ms.openlocfilehash: 7cb520aff78dc4fe1d473d38f3698c397c6692c4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 438e371f93af06c3f32771e56bfb6d8514e41674
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002223"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651154"
 ---
 # Get-AzDtlAutoStartPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan mulai otomatis lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlautostartpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzDtlAutoStartPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlAutoStartPolicy** mendapatkan kebijakan mulai otomatis lab yang menjadwalkan mesin virtual lab untuk mulai otomatis.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan hari-hari dalam seminggu dan waktu hari yang telah Anda tetapkan untuk memungkinkan mesin virtual lab dijadwalkan untuk mulai otomatis.
+Cmdlet **Get-AzDtlAutoStartPolicy** mendapatkan kebijakan mulai otomatis lab yang menjadwalkan komputer virtual lab untuk mulai otomatis.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan hari dalam seminggu dan waktu yang telah Anda tetapkan untuk memungkinkan komputer virtual lab dijadwalkan untuk mulai otomatis.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan kebijakan mulai otomatis lab di DevTest Labs. (autogenerasi)
+Mendapatkan kebijakan mulai otomatis lab di DevTest Labs. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzDtlAutoStartPolicy -LabName <String> -ResourceGroupName MyResourceGroup
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan kebijakan mulai otomatis.
+Menentukan nama lab yang cmdlet ini mendapatkan kebijakan mulai otomatis.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

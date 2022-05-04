@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPool.md
-ms.openlocfilehash: e789493f5c476c089cf7ce242d1dea44df2d2aaa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b30e687f11b21d9b7010d30f3deb46f13d6e987d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942013"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659448"
 ---
 # Update-AzDiskPool
 
 ## SYNOPSIS
 Memperbarui kumpulan Disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/update-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Memperbarui kumpulan Disk.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Disk Pool
+### Contoh 1: Memperbarui Kumpulan Disk
 ```powershell
 Update-AzDiskPool -Name 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test' -DiskId @()
 ```
@@ -51,7 +54,7 @@ disk-pool-1      eastus2euap Running   Succeeded         {3}
 
 Perintah ini memperbarui Kumpulan Disk.
 
-### Contoh 2: Memperbarui Disk Pool menurut objek
+### Contoh 2: Memperbarui Kumpulan Disk menurut objek
 ```powershell
 Get-AzDiskPool -ResourceGroupName 'storagepool-rg-test' -Name 'disk-pool-1' | Update-AzDiskPool -DiskId @()
 ```
@@ -67,7 +70,7 @@ Perintah ini memperbarui Kumpulan Disk menurut objek.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Daftar Disk terkelola Azure untuk dilampirkan ke Kumpulan Disk.
-Untuk membangun, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
+Daftar Disk Terkelola Azure untuk dilampirkan ke Kumpulan Disk.
+Untuk membuat, lihat bagian CATATAN untuk properti DISK dan membuat tabel hash.
 
 ```yaml
 Type: System.String[]
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
+Id sumber daya Azure. Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kumpulan Disk.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku
+Nama SKU
 
 ```yaml
 Type: System.String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -315,11 +318,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
-  - `[DiskPoolName <String>]`: Nama Disk Pool.
+  - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

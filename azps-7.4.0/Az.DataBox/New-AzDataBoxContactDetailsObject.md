@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
-ms.openlocfilehash: e325f283e69d5052f6ffce165377e00de287dcf5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 50298acdc6912861bf1a51a05847e24a5bf686c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685747"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617612"
 ---
 # New-AzDataBoxContactDetailsObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk ContactDetails.
+Buat objek dalam memori untuk ContactDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxcontactdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxContactDetailsObject -ContactName <String> -EmailList <String[]> -P
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk ContactDetails.
+Buat objek dalam memori untuk ContactDetails.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mobile
-Nomor ponsel orang yang dihubungi.
+Nomor ponsel kontak.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -NotificationPreference
 Preferensi pemberitahuan untuk tahap pekerjaan.
-Untuk membangun, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.INotificationPreference[]
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

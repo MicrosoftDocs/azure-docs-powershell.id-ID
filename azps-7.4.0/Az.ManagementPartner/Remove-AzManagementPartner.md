@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Remove-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Remove-AzManagementPartner.md
-ms.openlocfilehash: 2ed50811564a06f5650b9820184fd4430d394f8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f1eff8bf8196be92ac557e9f6bfbb9bcdbf1ec36
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745982"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727792"
 ---
 # Remove-AzManagementPartner
 
 ## SYNOPSIS
-Hapus ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Hapus ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/remove-azmanagementpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzManagementPartner [-PartnerId] <String> [-PassThru] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Hapus ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Hapus ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Remove-AzManagementPartner -PartnerId 123457 -PassThru
 true
 ```
 
-Hapus mitra manajemen
+Menghapus mitra manajemen
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, itu adalah angka 6 digit
+Id mitra manajemen, ini adalah angka 6 digit
 
 ```yaml
 Type: System.String
@@ -87,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -119,11 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

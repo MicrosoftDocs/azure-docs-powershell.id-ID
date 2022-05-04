@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
-ms.openlocfilehash: 93d55b3497c70433db6d62a9834ec142ca87a610
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 133813f32e40a38c070a724b7569199fb60b14aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877482"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639133"
 ---
 # New-AzVM
 
 ## SYNOPSIS
 Membuat mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,15 +65,15 @@ New-AzVM [[-ResourceGroupName] <String>] [[-Location] <String>] [-EdgeZone <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVM** membuat mesin virtual di Azure.
-Cmdlet ini mengambil objek mesin virtual sebagai input.
-Gunakan cmdlet New-AzVMConfig untuk membuat objek mesin virtual.
-Cmdlet **New-AzVM** akan membuat akun penyimpanan baru untuk diagnostik boot jika belum ada. Cmdlet lain dapat digunakan untuk mengonfigurasi mesin virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, Add-AzVMNetworkInterface, dan Set-AzVMOSDisk.
-The `SimpleParameterSet` provides a convenient method to create a VM by making common VM creation arguments opsional.
+Cmdlet **New-AzVM** membuat komputer virtual di Azure.
+Cmdlet ini mengambil objek komputer virtual sebagai input.
+Gunakan cmdlet New-AzVMConfig untuk membuat objek komputer virtual.
+Cmdlet **New-AzVM** akan membuat akun penyimpanan baru untuk diagnostik boot jika belum ada. Cmdlet lain dapat digunakan untuk mengonfigurasi komputer virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, Add-AzVMNetworkInterface, dan Set-AzVMOSDisk.
+`SimpleParameterSet` menyediakan metode yang nyaman untuk membuat VM dengan membuat argumen pembuatan VM umum opsional.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat mesin virtual
+### Contoh 1: Membuat komputer virtual
 ```powershell
 New-AzVM -Name MyVm -Credential (Get-Credential)
 ```
@@ -94,11 +97,11 @@ StorageProfile           : {ImageReference, OsDisk, DataDisks}
 FullyQualifiedDomainName : myvm-222222.eastus.cloudapp.azure.com
 ```
 
-Contoh skrip ini memperlihatkan cara membuat mesin virtual.
+Contoh skrip ini menunjukkan cara membuat komputer virtual.
 Skrip akan meminta nama pengguna dan kata sandi untuk VM.
 Skrip ini menggunakan beberapa cmdlet lainnya.
 
-### Contoh 2: Membuat mesin virtual dari gambar pengguna kustom
+### Contoh 2: Membuat komputer virtual dari gambar pengguna kustom
 ```powershell
 ## VM Account
 # Credentials for Local Admin account you created in the sysprepped (generalized) vhd image
@@ -147,10 +150,10 @@ $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name $OSDiskName -VhdUri $
 New-AzVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $VirtualMachine -Verbose
 ```
 
-Contoh ini mengambil gambar sistem operasi kustom yang sudah disiapkan dan disalurkan yang sudah ada dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menyebarkan VHD, dan menjalankannya.
-Skrip ini bisa digunakan untuk penyediaan otomatis karena menggunakan kredensial admin mesin virtual lokal sebaris daripada memanggil **Get-Credential** yang memerlukan interaksi pengguna.
+Contoh ini mengambil gambar sistem operasi kustom sys-prepped yang sudah ada dan digeneralisasi dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menyebarkan VHD, dan menjalankannya.
+Skrip ini dapat digunakan untuk provisi otomatis karena menggunakan kredensial admin komputer virtual lokal sebaris **alih-alih memanggil Get-Credential** yang memerlukan interaksi pengguna.
 Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure Anda.
-Anda dapat mengonfirmasi status masuk menggunakan cmdlet **Get-AzSubscription** .
+Anda dapat mengonfirmasi status masuk Anda dengan menggunakan cmdlet **Get-AzSubscription** .
 
 ### Contoh 3: Membuat VM dari gambar marketplace tanpa IP Publik
 ```powershell
@@ -209,7 +212,7 @@ New-AzVM -ResourceGroupName $ResourceGroupName -Name $VMName -Credential $cred -
 $vm = Get-AzVM -ResourceGroupName $ResourceGroupName -Name $VMName -UserData;
 ```
 
-Nilai UserData harus selalu dikodekan dengan Base64. 
+Nilai UserData harus selalu dikodekan Base64. 
 
 ### Contoh 5: Membuat VM baru dengan subnet yang sudah ada di grup sumber daya lain
 ```
@@ -228,12 +231,12 @@ $VirtualMachine = Set-AzVMSourceImage -VM $VirtualMachine -PublisherName 'Micros
 New-AzVm -ResourceGroupName ResourceGroup1 -Location SouthCentralUS -VM $VirtualMachine
 ```
 
-Contoh ini menyebarkan VM Windows dari marketplace dalam satu grup sumber daya dengan subnet yang sudah ada di grup sumber daya lain.
+Contoh ini menyebarkan VM Windows dari marketplace dalam satu grup sumber daya dengan subnet yang ada di grup sumber daya lain.
 
 ## PARAMETERS
 
 ### -AddressPrefix
-Prefiks alamat untuk jaringan virtual yang akan dibuat untuk VM.
+Awalan alamat untuk jaringan virtual yang akan dibuat untuk VM.
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilitySetName
-Menentukan nama untuk kumpulan ketersediaan.
+Menentukan nama untuk set ketersediaan.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -308,8 +311,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
-Kredensial administrator untuk VM.
+### -Credential
+Info masuk administrator untuk VM.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataDiskDeleteOption
-Menentukan opsi penghapusan Disk Data setelah penghapusan VM. Opsi dilepas, Hapus
+Menentukan opsi penghapusan Disk Data setelah penghapusan VM. Opsinya adalah Lepaskan, Hapus
 
 ```yaml
 Type: System.String
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableBginfoExtension
-Menunjukkan bahwa cmdlet ini tidak menginstal ekstensi **Info BG** pada mesin virtual.
+Menunjukkan bahwa cmdlet ini tidak menginstal ekstensi **Info BG** pada komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskFile
-Jalur lokal ke file hard disk virtual untuk diunggah ke cloud dan untuk membuat VM, dan harus memiliki '.vhd' sebagai akhirannya.
+Jalur lokal ke file hard disk virtual yang akan diunggah ke cloud dan untuk membuat VM, dan harus memiliki '.vhd' sebagai akhirannya.
 
 ```yaml
 Type: System.String
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan, bukan kawasan utama.
+Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan alih-alih wilayah utama.
 
 ```yaml
 Type: System.String
@@ -428,7 +431,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassd
+### -EnableUltrassD
 Gunakan disk UltraSSD untuk vm.
 
 ```yaml
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
+Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk komputer virtual atau set skala komputer virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan penggalian untuk mesin virtual Azure Spot.  Nilai yang didukung adalah 'Deallocate' dan 'Delete'.
+Kebijakan pengeluaran untuk komputer virtual Azure Spot.  Nilai yang didukung adalah 'Batalkan alokasi' dan 'Hapus'.
 
 ```yaml
 Type: System.String
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -GenerateSshKey
-Buat pasangan kunci Publik/Privat SSH dan buat sumber daya Kunci Publik SSH di Azure.
+Buat pasangan kunci Publik/Privat SSH dan buat sumber daya Kunci Umum SSH di Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -489,7 +492,7 @@ Accept wildcard characters: False
 ```
 
 ### -HibernationEnabled
-Bendera yang mengaktifkan atau menonaktifkan kapabilitas hibernasi pada VM.
+Bendera yang mengaktifkan atau menonaktifkan kemampuan hibernasi pada VM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -504,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostGroupId
-Menentukan grup host khusus tempat mesin virtual berada.
+Menentukan grup host khusus tempat komputer virtual akan berada.
 
 ```yaml
 Type: System.String
@@ -519,7 +522,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostId
-Id dari Host
+The Id of Host
 
 ```yaml
 Type: System.String
@@ -534,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gambar
-Nama gambar yang mudah dikenali di mana VM akan dibuat.  Ini termasuk: Win2019Datacenter, Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
+Nama gambar yang mudah diingat di mana VM akan dibangun.  Ini termasuk: Win2019Datacenter, Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
 
 ```yaml
 Type: System.String
@@ -549,8 +552,8 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk mesin virtual telah dilisensikan di tempat.
-Nilai yang memungkinkan untuk Windows Server adalah:
+Menentukan jenis lisensi, yang menunjukkan bahwa gambar atau disk untuk komputer virtual dilisensikan secara lokal.
+Nilai yang mungkin untuk server Windows adalah:
 - Windows_Client
 - Windows_Server Kemungkinan nilai untuk sistem operasi Linux Server adalah: 
 - RHEL_BYOS (untuk RHEL) 
@@ -569,7 +572,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan apakah file disk untuk Linux VM, jika ditentukan; atau Windows, jika tidak ditentukan secara default.
+Menunjukkan apakah file disk adalah untuk VM Linux, jika ditentukan; atau Windows, jika tidak ditentukan secara default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -584,7 +587,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk mesin maya.
+Menentukan lokasi untuk komputer virtual.
 
 ```yaml
 Type: System.String
@@ -611,7 +614,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Harga maksimal penagihan mesin virtual prioritas rendah.
+Harga maksimum penagihan komputer virtual berprioritas rendah.
 
 ```yaml
 Type: System.Double
@@ -625,7 +628,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya VM.
 
 ```yaml
@@ -641,7 +644,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaceDeleteOption
-Menentukan tindakan apa yang harus dilakukan pada sumber daya NetworkInterface ketika VM dihapus. Opsinya adalah: Lepaskan, Hapus.
+Menentukan tindakan apa yang akan dilakukan pada sumber daya NetworkInterface saat VM dihapus. Opsinya adalah: Lepaskan, Hapus.
 
 ```yaml
 Type: System.String
@@ -656,7 +659,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenPorts
-Daftar port yang akan dibuka di grup keamanan jaringan (NSG) untuk VM yang dibuat.  Nilai default tergantung pada tipe gambar yang dipilih (misalnya, Windows: 3389, 5985 dan Linux: 22).
+Daftar port yang akan dibuka pada kelompok keamanan jaringan (NSG) untuk VM yang dibuat.  Nilai default tergantung pada jenis gambar yang dipilih (yaitu, Windows: 3389, 5985 dan Linux: 22).
 
 ```yaml
 Type: System.Int32[]
@@ -671,7 +674,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSDiskDeleteOption
-Menentukan opsi penghapusan Disk OS setelah penghapusan VM. Opsi dilepas, Hapus
+Menentukan opsi penghapusan Disk OS setelah penghapusan VM. Opsinya adalah Lepaskan, Hapus
 
 ```yaml
 Type: System.String
@@ -686,7 +689,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformFaultDomain
-Menentukan domain kesalahan mesin virtual.
+Menentukan domain kesalahan komputer virtual.
 
 ```yaml
 Type: System.Int32
@@ -701,10 +704,10 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk mesin virtual.  Hanya nilai yang didukung adalah 'Reguler', 'Titik' dan 'Rendah'.
-'Reguler' adalah untuk mesin virtual reguler.
-'Spot' adalah untuk mesin virtual spot.
-'Rendah' juga untuk mesin virtual spot tetapi digantikan dengan 'Spot'. Silakan gunakan 'Spot' dan bukan 'Rendah'.
+Prioritas untuk komputer virtual.  Hanya nilai yang didukung adalah 'Reguler', 'Spot' dan 'Rendah'.
+'Reguler' adalah untuk komputer virtual reguler.
+'Spot' adalah untuk komputer virtual spot.
+'Rendah' juga untuk komputer virtual spot tetapi digantikan oleh 'Spot'. Silakan gunakan 'Spot' alih-alih 'Rendah'.
 
 ```yaml
 Type: System.String
@@ -719,7 +722,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan mesin virtual ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -790,8 +793,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Size
-Ukuran Mesin Virtual.  Nilai Default adalah: Standard_D2s_v3.
+### -Ukuran
+Ukuran Komputer Virtual.  Nilai Defaultnya adalah: Standard_D2s_v3.
 
 ```yaml
 Type: System.String
@@ -806,7 +809,7 @@ Accept wildcard characters: False
 ```
 
 ### -SshKeyName
-Nama sumber daya Kunci Publik SSH.
+Nama sumber daya Kunci Umum SSH.
 
 ```yaml
 Type: System.String
@@ -821,7 +824,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetAddressPrefix
-Prefiks alamat untuk subnet yang akan dibuat untuk VM.
+Awalan alamat untuk subnet yang akan dibuat untuk VM.
 
 ```yaml
 Type: System.String
@@ -851,7 +854,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-Jika parameter ada, maka VM ditetapkan identitas sistem terkelola yang dihasilkan secara otomatis.
+Jika parameter ada, maka VM diberi identitas sistem terkelola yang dibuat secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -866,7 +869,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
+Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai.
 Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
 Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
@@ -898,7 +901,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserData
-UserData untuk VM, yang akan dikodekan basis 64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk VM, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.String
@@ -913,7 +916,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountAvailable
-Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api [dari Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
+Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
 
 ```yaml
 Type: System.Int32
@@ -928,7 +931,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountPerCore
-Menentukan vCPU untuk rasio inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api dari [Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti hyper-threading dinonaktifkan.
+Menentukan rasio vCPU ke inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti bahwa hyper-threading dinonaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -958,9 +961,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual lokal untuk dibuat.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet New-AzVMConfig.
-Cmdlet lain dapat digunakan untuk mengonfigurasi mesin virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, dan Add-AzVMNetworkInterface.
+Menentukan komputer virtual lokal yang akan dibuat.
+Untuk mendapatkan objek komputer virtual, gunakan cmdlet New-AzVMConfig.
+Cmdlet lain dapat digunakan untuk mengonfigurasi komputer virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, dan Add-AzVMNetworkInterface.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -975,7 +978,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmssId
-ID Kumpulan Skala Mesin Virtual yang akan dikaitkan dengan VM ini
+ID Set Skala Komputer Virtual yang akan dikaitkan dengan VM ini
 
 ```yaml
 Type: System.String
@@ -990,7 +993,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Menentukan daftar zona mesin maya.
+Menentukan daftar zona komputer virtual.
 
 ```yaml
 Type: System.String[]
@@ -1016,8 +1019,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1032,7 +1035,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -1048,7 +1051,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -1070,9 +1073,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
-[Hapus-AzVM](./Remove-AzVM.md)
+[Remove-AzVM](./Remove-AzVM.md)
 
 [Mulai ulang-AzVM](./Restart-AzVM.md)
 
@@ -1080,7 +1083,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzVM](./Stop-AzVM.md)
 
-[Perbarui-AzVM](./Update-AzVM.md)
+[Update-AzVM](./Update-AzVM.md)
 
 [Add-AzVMDataDisk](./Add-AzVMDataDisk.md)
 

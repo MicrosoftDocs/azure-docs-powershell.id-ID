@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/move-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Move-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Move-AzResource.md
-ms.openlocfilehash: 11f31da0bc1eb25ddbfa42c10965a23900d7e008
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8d45544003fa82ae719825d33dbfec82e242e967
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275499"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661140"
 ---
 # Move-AzResource
 
 ## SYNOPSIS
 Memindahkan sumber daya ke grup sumber daya atau langganan yang berbeda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/move-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Move-AzResource -DestinationResourceGroupName <String> [-DestinationSubscription
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzResource** memindahkan sumber daya yang sudah ada ke grup sumber daya yang berbeda.
-Grup sumber daya tersebut bisa berada dalam langganan yang berbeda.
+Cmdlet **Move-AzResource** memindahkan sumber daya yang ada ke grup sumber daya yang berbeda.
+Grup sumber daya tersebut dapat berada dalam langganan yang berbeda.
 
 ## EXAMPLES
 
@@ -38,14 +41,14 @@ $Resource = Get-AzResource -ResourceType "Microsoft.ClassicCompute/storageAccoun
 Move-AzResource -ResourceId $Resource.ResourceId -DestinationResourceGroupName "ResourceGroup14"
 ```
 
-Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount menggunakan cmdlet Get-AzResource, lalu menyimpan sumber daya tersebut dalam variabel $Resource.
+Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount dengan menggunakan cmdlet Get-AzResource, lalu menyimpan sumber daya tersebut dalam variabel $Resource.
 Perintah kedua memindahkan sumber daya tersebut ke dalam grup sumber daya bernama ResourceGroup14.
-Perintah mengidentifikasi sumber daya untuk dipindahkan menggunakan properti **ResourceId** $Resource.
+Perintah mengidentifikasi sumber daya yang akan dipindahkan dengan menggunakan properti **ResourceId** $Resource.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -120,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,8 +153,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -198,11 +201,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzResource](./Get-AzResource.md)
+[Mendapatkan-AzResource](./Get-AzResource.md)
 
-[New-AzResource](./New-AzResource.md)
+[Baru-AzResource](./New-AzResource.md)
 
-[Hapus-AzResource](./Remove-AzResource.md)
+[Remove-AzResource](./Remove-AzResource.md)
 
 [Set-AzResource](./Set-AzResource.md)
 

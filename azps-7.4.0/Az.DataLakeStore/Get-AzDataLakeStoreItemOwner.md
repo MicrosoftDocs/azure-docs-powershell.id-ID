@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
-ms.openlocfilehash: 99ffebb118744aadc9a24a8ac6acc11195fea300
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 907fb0cc1ea72069f9ed9c79ea12572d7ba5f8df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809622"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640464"
 ---
 # Get-AzDataLakeStoreItemOwner
 
 ## SYNOPSIS
 Mendapatkan pemilik file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemowner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzDataLakeStoreItemOwner** mendapatkan pemilik file atau folder di 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemilik untuk direktori
+### Contoh 1: Mendapatkan pemilik untuk direktori
 ```powershell
 Get-AzDataLakeStoreItemOwner -AccountName "ContosoADL" -Path / -Type User
 ```
@@ -40,7 +43,7 @@ Perintah ini mendapatkan pemilik pengguna untuk direktori akar akun ContosoADL.
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari sebuah item, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -84,8 +87,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe pemilik yang akan didapatkan.
+### -Type
+Menentukan jenis pemilik yang akan didapatkan.
 Nilai yang dapat diterima untuk parameter ini adalah: Pengguna dan Grup.
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

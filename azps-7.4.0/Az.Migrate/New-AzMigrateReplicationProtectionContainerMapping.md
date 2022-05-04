@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
-ms.openlocfilehash: 74de689dab8fc2eff2753f124890c89bf60d2a88
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0818c525a37b3c72e7d87cfa77a669edd0cde55f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998560"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667672"
 ---
 # New-AzMigrateReplicationProtectionContainerMapping
 
 ## SYNOPSIS
-Operasi untuk membuat pemetaan wadah proteksi.
+Operasi untuk membuat pemetaan kontainer perlindungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzMigrateReplicationProtectionContainerMapping -FabricName <String> -Mapping
 ```
 
 ## DESCRIPTION
-Operasi untuk membuat pemetaan wadah proteksi.
+Operasi untuk membuat pemetaan kontainer perlindungan.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Membuat pemetaan
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama kain.
+Nama fabric.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -MappingName
-Nama pemetaan wadah proteksi.
+Nama pemetaan kontainer perlindungan.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerName
-Nama wadah proteksi.
+Nama kontainer perlindungan.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -ProviderSpecificInput
 Input khusus penyedia untuk pemasangan.
-Untuk membangun, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IReplicationProviderSpecificContainerMappingInput
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah layanan pemulihan ada.
+Nama grup sumber daya tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama kubah layanan pemulihan.
+Nama vault layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetProtectionContainerId
-Nama wadah perlindungan unik target.
+Nama kontainer perlindungan unik target.
 
 ```yaml
 Type: System.String
@@ -238,8 +241,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -288,7 +291,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PROVIDERSPECIFICINPUT <IReplicationProviderSpecificContainerMappingInput>: Input khusus penyedia untuk pemasangan.
-  - `[InstanceType <String>]`: Tipe kelas.
+  - `[InstanceType <String>]`: Jenis kelas.
 
 ## RELATED LINKS
 

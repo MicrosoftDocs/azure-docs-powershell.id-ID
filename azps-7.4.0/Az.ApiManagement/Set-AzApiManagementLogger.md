@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
-ms.openlocfilehash: cce2b366fe7b068906db9c63d9ba0a8e258c0938
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be49083fe35527db8146cfb4265dfbb147e910bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687942"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662544"
 ---
 # Set-AzApiManagementLogger
 
 ## SYNOPSIS
-Mengubah API Management Logger.
+Memodifikasi pencatat API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementlogger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,21 +38,21 @@ Set-AzApiManagementLogger -Context <PsApiManagementContext> -LoggerId <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementLogger** mengubah pengaturan Azure API Management **Logger**.
+Cmdlet **Set-AzApiManagementLogger** memodifikasi pengaturan Azure API Management **Logger**.
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi logger EventHub
+### Contoh 1: Mengubah pencatat EventHub
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementLogger -Context $apimContext -LoggerId "Logger123" -Name "ContosoSdkEventHub" -ConnectionString "Endpoint=sb://ContosoSdkEventHubs.servicebus.windows.net/;SharedAccessKeyName=SendKey;SharedAccessKey=<key>" -Description "updated SDK event hub logger" -PassThru
 ```
 
-Perintah ini mengubah logger yang memiliki ID Logger123.
+Perintah ini memodifikasi pencatat yang memiliki ID Logger123.
 
 ### Contoh 2
 
-Mengubah API Management Logger. (autogenerasi)
+Memodifikasi pencatat API Management. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -59,7 +62,7 @@ Set-AzApiManagementLogger -Confirm -Context <PsApiManagementContext> -Instrument
 ## PARAMETERS
 
 ### -ConnectionString
-Menentukan string koneksi Azure Event Hubs yang menyertakan hak kebijakan Kirim.
+Menentukan string koneksi Azure Event Hubs yang menyertakan Kirim hak kebijakan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstrumentationKey
-Kunci Instrumentasi aplikasi Insights. Parameter ini bersifat opsional.
+Kunci Instrumentasi Insights aplikasi. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -134,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuffered
-Menentukan bahwa rekaman dalam logger dibunyikan sebelum diterbitkan.
-Ketika catatan dibunyikan, data dikirim ke Hub Acara setiap 15 detik, atau setiap kali buffer menerima 256 KB pesan.
+Menentukan bahwa rekaman dalam pencatat di-buffer sebelum diterbitkan.
+Ketika rekaman di-buffer, rekaman dikirim ke Azure Event Hubs setiap 15 detik, atau setiap kali buffer menerima pesan 256 KB.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama entitas hub acara dari portal klasik Azure.
+### -Name
+Menentukan nama entitas pusat aktivitas dari portal klasik Azure.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan  **PsApiManagementLogger** yang diubah cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan  **PsApiManagementLogger** yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,8 +197,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

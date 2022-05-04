@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 97323fe74d7125371addfe83c30de905cd445e9d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7bc09cb96d3c2a899d8ff51baf3e8b6e4eb89694
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679896"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596210"
 ---
 # Add-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi subnet ke jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Add-AzVirtualNetworkSubnetConfig -Name <String> -VirtualNetwork <PSVirtualNetwor
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVirtualNetworkSubnetConfig** menambahkan konfigurasi subnet ke jaringan virtual Azure yang sudah ada.
+Cmdlet **Add-AzVirtualNetworkSubnetConfig** menambahkan konfigurasi subnet ke jaringan virtual Azure yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan subnet ke jaringan virtual yang sudah ada
+### Contoh 1: Menambahkan subnet ke jaringan virtual yang ada
 ```powershell
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
@@ -54,18 +57,18 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Add-AzVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
+  Contoh ini pertama-tama membuat grup sumber daya sebagai kontainer sumber daya yang akan dibuat. Kemudian membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Add-AzVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang ada dengan subnet baru.
 
-### Contoh 2: Menambahkan delegasi ke subnet yang ditambahkan ke jaringan virtual yang sudah ada
+### Contoh 2: Menambahkan delegasi ke subnet yang ditambahkan ke jaringan virtual yang ada
 ```powershell
 $vnet = Get-AzVirtualNetwork -Name "myVNet" -ResourceGroupName "myResourceGroup"
 $delegation = New-AzDelegation -Name "myDelegation" -ServiceName "Microsoft.Sql/servers"
 Add-AzVirtualNetworkSubnetConfig -Name "mySubnet" -VirtualNetwork $vnet -AddressPrefix "10.0.2.0/24" -Delegation $delegation | Set-AzVirtualNetwork
 ```
 
-Contoh ini akan mendapatkan vnet yang sudah ada terlebih dahulu.
-Lalu, membuat objek delegasi dalam memori.
-Terakhir, aplikasi ini membuat subnet baru dengan delegasi yang ditambahkan ke vnet. Konfigurasi yang diubah kemudian dikirim ke server.
+Contoh ini pertama kali mendapatkan vnet yang ada.
+Kemudian, ia membuat objek delegasi dalam memori.
+Terakhir, ini membuat subnet baru dengan delegasi yang ditambahkan ke vnet. Konfigurasi yang dimodifikasi kemudian dikirim ke server.
 
 ## PARAMETERS
 
@@ -144,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi subnet untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi subnet yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat di subnet.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkServiceNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat di subnet.
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan Id sumber daya GATEWAY NAT yang terkait dengan konfigurasi subnet.
+Menentukan Id sumber daya NAT Gateway yang terkait dengan konfigurasi subnet.
 
 ```yaml
 Type: System.String
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

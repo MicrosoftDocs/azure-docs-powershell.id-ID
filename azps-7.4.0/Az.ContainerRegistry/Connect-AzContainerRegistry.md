@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Connect-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Connect-AzContainerRegistry.md
-ms.openlocfilehash: 748738bdf0b19b00801e042aa337087045a5a2f4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36effe578fa1aaf02c873092bb8cf470dfb8ee4f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289179"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662112"
 ---
 # Connect-AzContainerRegistry
 
 ## SYNOPSIS
 Masuk ke registri kontainer azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/connect-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Masuk ke ACR dengan nama pengguna/kata sandi admin saat pengguna admin diaktifka
 Connect-AzContainerRegistry -Name $RegistryName -UserName $ServicePrincipal -Password $ServicePrincipalPassword
 ```
 
-Masuk ke ACR dengan ID dan kata sandi aplikasi utama layanan.
+Masuk ke ACR dengan ID aplikasi dan kata sandi perwakilan layanan.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama Azure Container Registry.
 
 ```yaml
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
-Kata sandi untuk Azure Container Registry.
+### -Kata sandi
+Kata Sandi Untuk Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NamaPengguna
+### -UserName
 Nama Pengguna Untuk Azure Container Registry.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

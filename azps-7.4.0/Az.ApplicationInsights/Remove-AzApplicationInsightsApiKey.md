@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: 0980ede6eee9b2c1c3d3eca1aacc7e72ab5f505c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: acd3afc90404f88b37ec8f14cb683156c3ba3e0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812214"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593279"
 ---
 # Remove-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Menghapus kunci api wawasan aplikasi untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzApplicationInsightsApiKey [-ResourceId] <String> [-ApiKeyId] <String> [
 ```
 
 ## DESCRIPTION
-Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Menghapus kunci api wawasan aplikasi untuk sumber daya application insights
 
 ## EXAMPLES
 
@@ -51,12 +54,12 @@ Remove-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test" -
 True
 ```
 
-Hapus kunci api wawasan aplikasi tertentu yang id adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
+Hapus kunci api wawasan aplikasi tertentu yang idnya adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "pengujian" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
 ### -ApiKeyId
-ID Kunci API Insights aplikasi.
+ID Kunci API Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen Insights Aplikasi.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
+Jika ditentukan akan menulis true jika operasi berhasil. Parameter ini bersifat opsional. Nilai defaultnya adalah salah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

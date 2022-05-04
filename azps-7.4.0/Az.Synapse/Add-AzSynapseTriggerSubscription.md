@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
-ms.openlocfilehash: a3c30b0842a0cfc4da827bf64aa710c7b6702ff4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54ac2fd2de153fb587901203f89e7e49a4ab66ad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639402"
 ---
 # Add-AzSynapseTriggerSubscription
 
 ## SYNOPSIS
-Berlangganan pemicu kejadian ke acara layanan eksternal.
+Berlangganan pemicu peristiwa ke peristiwa layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/add-azsynapsetriggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzSynapseTriggerSubscription -InputObject <PSTriggerResource> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu kejadian ke kejadian layanan eksternal tertentu dari pendefinisian pemicu.
+Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu peristiwa ke peristiwa layanan eksternal yang ditentukan dari penentuan pemicu.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu kejadian ke keja
 Add-AzSynapseTriggerSubscription -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke peristiwa yang ditentukan dari penentuan pemicu.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Add-AzSynapseTriggerSubscription -Name ContosoTrigger
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu melalui pipeline.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke peristiwa yang ditentukan dari penentuan pemicu melalui alur.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTri
 $trigger | Add-AzSynapseTriggerSubscription
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu melalui pipeline.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke peristiwa yang ditentukan dari penentuan pemicu melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

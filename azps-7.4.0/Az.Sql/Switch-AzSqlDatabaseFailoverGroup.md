@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/switch-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: 800cff24d3f2767784ca206599ba2e4791d320c5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 022919c1ab3a91d154598ec376b20cd81728fc39
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271593"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641796"
 ---
-# Switch-AzSqlDatabaseFailoverGroup
+# Alihkan-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
-Menjalankan failover grup failover Azure SQL Database.
+Menjalankan failover Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/switch-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Switch-AzSqlDatabaseFailoverGroup [-ServerName] <String> [[-FailoverGroupName] <
 ```
 
 ## DESCRIPTION
-Perintah ini menukar peran server dalam Grup Failover dan mengalihkan semua database sekunder ke peran utama. Semua sesi TDS baru secara otomatis dirutekan kembali ke server sekunder setelah cache klien DNS direfresh. Ketika server utama asli kembali online, semua database utama sebelumnya di dalamnya akan beralih ke peran sekunder.
+Perintah ini menukar peran server dalam Grup Failover dan mengalihkan semua database sekunder ke peran utama. Semua sesi TDS baru secara otomatis dirutekan ulang ke server sekunder setelah cache klien DNS di-refresh. Ketika server utama asli kembali online, semua sebelumnya database utama di dalamnya akan beralih ke peran sekunder.
 Server sekunder Grup Failover harus digunakan untuk menjalankan perintah ini.
 Jika parameter AllowDataLoss tidak ditentukan, perintah ini menunggu hingga kedua peran dialihkan. Jika parameter AllowDataLoss ditentukan, perintah hanya menunggu hingga primer baru mengasumsikan perannya.
 
@@ -37,19 +40,19 @@ Jika parameter AllowDataLoss tidak ditentukan, perintah ini menunggu hingga kedu
 Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName secondaryserver -FailoverGroupName fg | Switch-AzSqlDatabaseFailoverGroup -AllowDataLoss
 ```
 
-Keluarkan operasi failover yang memungkinkan hilangnya data dengan piping dalam Grup Failover.
+Terbitkan operasi failover yang memungkinkan kehilangan data dengan pipa di Grup Failover.
 
 ### Contoh 2
 ```powershell
 Switch-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName secondaryserver -FailoverGroupName fg
 ```
 
-Keluarkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembali.
+Terbitkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan gulung balik.
 
 ## PARAMETERS
 
 ### -AllowDataLoss
-Selesaikan failover meskipun melakukannya dapat mengakibatkan hilangnya data. Ini akan memungkinkan failover untuk melanjutkan bahkan jika database utama tidak tersedia.
+Selesaikan failover bahkan jika melakukannya dapat mengakibatkan kehilangan data. Ini akan memungkinkan failover untuk melanjutkan meskipun database utama tidak tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup failover Azure SQL Database.
+Nama Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL Database sekunder grup Failover.
+Nama Server Azure SQL Database sekunder dari Grup Failover.
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,13 +187,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
+[Baru-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
 
 [Set-AzSqlDatabaseFailoverGroup](./Set-AzSqlDatabaseFailoverGroup.md)
 
-[Get-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
+[Dapatkan-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
 
-[Add-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
+[Tambahkan-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFromFailoverGroup](./Remove-AzSqlDatabaseFromFailoverGroup.md)
 

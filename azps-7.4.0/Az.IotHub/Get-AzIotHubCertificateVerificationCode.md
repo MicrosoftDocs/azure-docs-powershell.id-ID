@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificateVerificationCode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificateVerificationCode.md
-ms.openlocfilehash: b5cdc773667b7ed4093e7a0a87ad5ae4300563b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 884367b246d0739880feb94f3c42cf6877cc8e24
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315729"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616982"
 ---
 # Get-AzIotHubCertificateVerificationCode
 
 ## SYNOPSIS
 Menghasilkan kode verifikasi untuk sertifikat Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubcertificateverificationcode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Get-AzIotHubCertificateVerificationCode [-ResourceId] <String> [-Etag] <String>
 ```
 
 ## DESCRIPTION
-Kode verifikasi ini digunakan untuk menyelesaikan langkah bukti kepemilikan untuk sertifikat. Gunakan kode verifikasi ini sebagai CN sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
-Untuk penjelasan mendetail tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
+Kode verifikasi ini digunakan untuk melengkapi bukti langkah kepemilikan untuk sertifikat. Gunakan kode verifikasi ini sebagai CN sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
+Untuk penjelasan terperinci tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 
@@ -126,8 +129,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
-ms.openlocfilehash: 35220548858b8850d11f89ccb42a23ee69ed64dd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f2dbb48b3bef41fd66cf842747e2fc6af29c600b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223443"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651766"
 ---
 # Set-AzPolicyDefinition
 
 ## SYNOPSIS
-Mengubah definisi kebijakan.
+Memodifikasi definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Set-AzPolicyDefinition [-DisplayName <String>] [-Description <String>] [-Policy 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPolicyDefinition** mengubah definisi kebijakan.
+Cmdlet **Set-AzPolicyDefinition** memodifikasi definisi kebijakan.
 
 ## EXAMPLES
 
@@ -92,12 +95,12 @@ Properties         : @{displayName=VMPolicyDefinition; policyType=Custom; mode=A
 PolicyDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policyDefinitions/VMPolicyDefinition
 ```
 
-Perintah ini memperbarui metadata definisi kebijakan bernama VMPolicyDefinition untuk menunjukkan kategorinya adalah "Mesin Virtual".
+Perintah ini memperbarui metadata definisi kebijakan bernama VMPolicyDefinition untuk menunjukkan kategorinya adalah "Komputer Virtual".
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan untuk diperbarui.
+Nama grup manajemen definisi kebijakan yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk definisi kebijakan. Ini bisa berupa jalur ke nama file yang berisi metadata, atau metadata sebagai string.
+Metadata untuk definisi kebijakan. Ini bisa menjadi jalur ke nama file yang berisi metadata, atau metadata sebagai string.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama definisi kebijakan yang diubah cmdlet ini.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Deklarasi parameter untuk definisi kebijakan. Ini bisa berupa jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
+Deklarasi parameter untuk definisi kebijakan. Ini dapat berupa jalur ke nama file atau uri yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan definisi kebijakan untuk diperbarui.
+ID langganan definisi kebijakan yang akan diperbarui.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

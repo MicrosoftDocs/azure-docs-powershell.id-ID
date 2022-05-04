@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
-ms.openlocfilehash: 4d4a0e4730b55fce8e2e8c5e3752dfe40dfc2c34
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e7620eeb9e2604a40142583703acf604f9f8ccff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285831"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616910"
 ---
 # Get-AzIotHubDeployment
 
 ## SYNOPSIS
 Mencantumkan semua atau penyebaran IoT Edge tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Get-AzIotHubDeployment [-ResourceId] <String> [-Name <String>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan detail penggunaan IoT Edge atau Penyebaran IoT Edge Daftar dalam IoT Hub.
-Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi selengkapnya.
+Dapatkan detail penyebaran IoT Edge atau Mencantumkan penyebaran IoT Edge dalam IoT Hub.
+Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Dapatkan detail penyebaran IoT Edge.
 Get-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 ```
 
-Cantumkan semua penyebaran IoT Edge dalam IoT Hub.
+Mencantumkan semua penyebaran IoT Edge dalam IoT Hub.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pengidentifikasi untuk penyebaran.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

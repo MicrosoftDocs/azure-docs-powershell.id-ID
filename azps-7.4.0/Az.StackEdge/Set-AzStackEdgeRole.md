@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeRole.md
-ms.openlocfilehash: 24d7e92ec5c23c84e4348b13d5f8b825133ba567
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63d31fcb98482e9f49c9645343937e4060f329e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057897"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639582"
 ---
 # Set-AzStackEdgeRole
 
 ## SYNOPSIS
 Memperbarui Peran untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/set-azstackedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzStackEdgeRole -ShareName <String[]> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStackEdgeRole** memperbarui peran IoT untuk perangkat Stack Edge. Berbagi lama yang terpasang akan diganti dengan yang baru disediakan dalam parameter ShareName.
+Cmdlet **Set-AzStackEdgeRole** memperbarui peran IoT untuk perangkat Stack Edge. Berbagi lama yang dipasang akan diganti dengan yang baru disediakan dalam parameter ShareName.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Name    IoTHostHub             Platform Status  IotEdgeDeviceId   IotDeviceId  R
 roleiot ehub.azure-devices.net Linux    Enabled iotEdgeDeviceUd   iotDevice    resourceGroupName
 ```
 
-Bagikan Nama akan menggantikan berbagi lama yang terpasang dengan yang baru disediakan
+Nama Berbagi akan menggantikan berbagi lama yang dipasang dengan yang baru disediakan
 
 ### Contoh 2
 ```powershell
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Peran
 
 ```yaml
@@ -175,8 +178,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

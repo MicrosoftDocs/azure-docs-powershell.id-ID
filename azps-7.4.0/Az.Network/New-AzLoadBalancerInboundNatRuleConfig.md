@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: c5d49ea5c9a5b1bd759bc10f76825c19c3f3aaf5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f772d2d7ebbf86200f8d110af9105bba038204c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119007"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652396"
 ---
 # New-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Membuat konfigurasi aturan NAT masuk untuk penyeimbang beban.
+Membuat konfigurasi aturan NAT yang masuk untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,36 +42,36 @@ New-AzLoadBalancerInboundNatRuleConfig -Name <String> [-Protocol <String>] [-Fro
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerInboundNatRuleConfig** membuat konfigurasi aturan terjemahan alamat jaringan masuk (NAT) untuk penyeimbang muatan Azure.
+Cmdlet **New-AzLoadBalancerInboundNatRuleConfig** membuat konfigurasi aturan terjemahan alamat jaringan (NAT) masuk untuk load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi aturan NAT masuk untuk penyeimbang muat
+### Contoh 1: Membuat konfigurasi aturan NAT masuk untuk load balancer
 ```powershell
 $publicip = New-AzPublicIpAddress -ResourceGroupName "MyResourceGroup" -Name "MyPublicIP" -Location "West US" -AllocationMethod "Dynamic"
 $frontend = New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpAddress $publicip
 New-AzLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule" -FrontendIPConfiguration $frontend -Protocol "Tcp" -FrontendPort 3389 -BackendPort 3389
 ```
 
-Perintah pertama membuat alamat IP publik bernama MyPublicIP dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
-Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya dalam variabel $frontend.
-Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek ujung depan di $frontend.
-Protokol TCP ditentukan dan port ujung depan adalah 3389, sama seperti port backend dalam hal ini.
+Perintah pertama membuat alamat IP publik bernama MyPublicIP di grup sumber daya bernama MyResourceGroup, lalu menyimpannya di variabel $publicip.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya di variabel $frontend.
+Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek front-end di $frontend.
+Protokol TCP ditentukan dan port front-end adalah 3389, sama dengan port backend dalam hal ini.
 Parameter *FrontendIpConfiguration*, *Protocol*, *FrontendPort*, dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk.
 
-### Contoh 2: Membuat konfigurasi V2 aturan NAT masuk untuk penyeimbang muatan
+### Contoh 2: Membuat konfigurasi aturan NAT masuk V2 untuk load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 $natRuleV2 = New-AzLoadBalancerInboundNatRuleConfig -Name natRuleV2 -Protocol "Tcp" -FrontendIpConfiguration $slb.FrontendIpConfigurations[0] -FrontendPortRangeStart 3390 -FrontendPortRangeEnd 4001 -BackendAddressPool $slb.BackendAddressPools[0] -IdleTimeoutInMinutes 4 -BackendPort 3389
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyloadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua membuat konfigurasi aturan NAT masuk bernama natRuleV2.The *FrontendIpConfiguration*, *BackendAddressPool*, *Protocol*, *FrontendPortRangeStart*, *FrontendPortRangeEnd* dan *BackendPort* parameter semua diperlukan untuk membuat konfigurasi V2 aturan NAT masuk.
+Perintah kedua membuat konfigurasi aturan NAT masuk bernama natRuleV2.Parameter *FrontendIpConfiguration*, *BackendAddressPool*, *Protocol*, *FrontendPortRangeStart*, *FrontendPortRangeEnd* , dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk V2.
 
 ## PARAMETERS
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
+Menentukan port ujung belakang untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
 
 ```yaml
 Type: System.Int32
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau penghentian koneksi yang tidak terduga. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan daftar alamat IP front-end untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung depan.
+Menentukan ID untuk konfigurasi alamat IP front-end.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
+Menentukan port front-end yang cocok dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: System.Int32
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang beban.
+Menentukan lamanya waktu, dalam menit, yang status percakapannya dipertahankan dalam load balancer.
 
 ```yaml
 Type: System.Int32
@@ -187,7 +190,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi aturan yang dibuat cmdlet ini.
 
 ```yaml
@@ -280,8 +283,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

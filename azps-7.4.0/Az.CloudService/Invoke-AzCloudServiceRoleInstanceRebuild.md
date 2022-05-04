@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/inv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceRebuild.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceRebuild.md
-ms.openlocfilehash: 919be893d2b575399d20f4c801ba53ffe39e51aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 551c969794ff67071697256aa87f8a294f62d8a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641472"
 ---
 # Invoke-AzCloudServiceRoleInstanceRebuild
 
 ## SYNOPSIS
 Operasi Membangun kembali Asinkron Instans Peran menginstal ulang sistem operasi pada instans peran web atau peran pekerja dan menginisialisasi sumber daya penyimpanan yang digunakan oleh mereka.
 Jika Anda tidak ingin menginisialisasi sumber daya penyimpanan, Anda dapat menggunakan Reimage Role Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudserviceroleinstancerebuild) untuk informasi terbaru.
 
 ## SYNTAX
 

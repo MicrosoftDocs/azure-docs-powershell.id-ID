@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectableItem.md
-ms.openlocfilehash: 3f208202e14ee94fc892a925b016084272c92037
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4fba82461d8a6b67fe1902bff20e77da87b3bc96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600602"
 ---
 # New-AzRecoveryServicesAsrProtectableItem
 
 ## SYNOPSIS
 Tambahkan(Temukan) server fisik ke daftar item yang dapat dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzRecoveryServicesAsrProtectableItem -ProtectionContainer <ASRProtectionCont
 ```
 
 ## DESCRIPTION
-**New-AzRecoveryServicesAsrProtectableItem** menambahkan item baru yang dapat dilindungi ke daftar item yang dapat dilindungi yang ditemukan dalam kontainer perlindungan dalam fabric ASR (hanya berlaku untuk jenis fabric VMware).
+**New-AzRecoveryServicesAsrProtectableItem** menambahkan item baru yang dapat dilindungi ke daftar item yang dapat dilindungi yang ditemukan dalam kontainer perlindungan dalam fabric ASR (hanya berlaku untuk jenis kain VMware).
 
 ## EXAMPLES
 

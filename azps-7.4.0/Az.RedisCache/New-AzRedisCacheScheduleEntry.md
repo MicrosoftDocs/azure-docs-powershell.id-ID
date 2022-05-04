@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
-ms.openlocfilehash: c0e035799d9274eb641616ec04f3ae82d5e10433
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b32d23c04f6bd4e13c48641c03788956aa038c89
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661266"
 ---
 # New-AzRedisCacheScheduleEntry
 
 ## SYNOPSIS
 Membuat entri jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscachescheduleentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzRedisCacheScheduleEntry -DayOfWeek <String> -StartHourUtc <Int32> [-Mainte
 
 ## DESCRIPTION
 Cmdlet **New-AzRedisCacheScheduleEntry** membuat objek **PSScheduleEntry** .
-Cmdlet jadwal singgahan Azure Redis Cache, seperti cmdlet New-AzRedisCachePatchSchedule, memerlukan objek entri jadwal.
+Cmdlet jadwal patch Azure Redis Cache, seperti cmdlet New-AzRedisCachePatchSchedule, memerlukan objek entri jadwal.
 
 ## EXAMPLES
 
@@ -36,14 +39,14 @@ Cmdlet jadwal singgahan Azure Redis Cache, seperti cmdlet New-AzRedisCachePatchS
 New-AzRedisCacheScheduleEntry -DayOfWeek "Weekend" -StartHourUtc 2 -MaintenanceWindow "06:00:00"
 ```
 
-Perintah ini membuat objek **PSScheduleEntry** yang menunjukkan jadwal akhir pekan yang memiliki waktu mulai dan jendela yang ditentukan.
+Perintah ini membuat objek **PSScheduleEntry** yang mewakili jadwal akhir pekan yang memiliki waktu mulai dan jendela yang ditentukan.
 
 ## PARAMETERS
 
 ### -DayOfWeek
 Menentukan hari dalam seminggu untuk entri jadwal.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Everyday 
+- Setiap hari 
 - Akhir pekan 
 - Senin 
 - Selasa 
@@ -51,7 +54,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Kamis 
 - Jumat 
 - Sabtu 
-- Minggu
+- Hari Minggu
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindow
-Menentukan jumlah waktu jendela yang diperbolehkan untuk pembaruan.
+Menentukan jumlah jendela waktu yang diizinkan untuk pembaruan.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartHourUtc
-Menentukan satu jam dari hari ketika jadwal dimulai.
+Menentukan satu jam hari ketika jadwal dimulai.
 
 ```yaml
 Type: System.Int32
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -127,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.RedisCache.Models.PSScheduleEntry
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 

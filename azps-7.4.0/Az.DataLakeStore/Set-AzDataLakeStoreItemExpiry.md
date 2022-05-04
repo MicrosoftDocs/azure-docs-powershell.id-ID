@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemExpiry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemExpiry.md
-ms.openlocfilehash: 72443e6e4c8e45caeb6b8518b28ae7b5861c9167
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a35df4aeb304f28f066d3e931822213804190361
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124965"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585632"
 ---
 # Set-AzDataLakeStoreItemExpiry
 
 ## SYNOPSIS
 Mengatur atau menghapus waktu kedaluwarsa untuk file di akun Azure Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemexpiry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,10 +54,10 @@ Ini akan menyebabkan file kedaluwarsa (ditandai untuk dihapus) dalam dua jam.
 Set-AzDataLakeStoreItemExpiry -AccountName "ContosoADL" -Path /myfile.txt
 ```
 
-Menghapus kedaluwarsa yang sebelumnya diatur pada file 'myfile.txt' dalam akun 'ContosoADL'.
+Menghapus kedaluwarsa yang sebelumnya diatur pada file 'myfile.txt' di akun 'ContosoADL'.
 Ini berarti file tidak akan kedaluwarsa secara otomatis (ditandai untuk dihapus) dan harus dihapus secara manual atau diatur untuk kedaluwarsa lagi.
 
-### Contoh 3: Atur waktu kedaluwarsa untuk file relatif ke sekarang
+### Contoh 3: Mengatur waktu kedaluwarsa untuk file relatif terhadap sekarang
 ```powershell
 Set-AzDataLakeStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -RelativeFileExpiryOption RelativeToNow -RelativeTime 240000
 Set-AzDataLakeStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -RelativeFileExpiryOption RelativeToCreationDate -RelativeTime 240000
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Waktu kedaluwarsa mutlak untuk file yang ditentukan.
+Waktu kedaluwarsa absolut untuk file yang ditentukan.
 Jika tidak ada nilai atau diatur ke MaxValue, file tidak akan pernah kedaluwarsa.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake item file yang akan diatur atau dihapus kedaluwarsanya.
+Menentukan jalur Data Lake Store dari item file yang akan diatur atau dihapus kedaluwarsanya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelativeFileExpiryOption
-Opsi relatif kedaluwarsa. RelativeToNow atau RelativeToCreationDate adalah opsi saat ini
+Opsi kedaluwarsa relatif. RelativeToNow atau RelativeToCreationDate adalah opsi saat ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+PathRelativeExpiryOptions
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

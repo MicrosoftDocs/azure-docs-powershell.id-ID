@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScopedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScopedResource.md
-ms.openlocfilehash: 4a3693d5770edee99a20f86059749bdc30142e97
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fafd1883de9c7b53949b1f80486c3bb11e2e1ac2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939999"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638648"
 ---
 # Get-AzInsightsPrivateLinkScopedResource
 
 ## SYNOPSIS
-Dapatkan sumber daya lingkup tautan privat
+Dapatkan untuk sumber daya terlingkup tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azinsightsprivatelinkscopedresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzInsightsPrivateLinkScopedResource -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Dapatkan atau daftar untuk sumber daya lingkup tautan privat, sumber daya yang dilingkup bisa berupa ruang kerja Analitik Log atau komponen Insights Aplikasi
+Dapatkan atau daftar untuk sumber daya terlingkup tautan privat, sumber daya terlingkup bisa berupa ruang kerja Analitik Log atau komponen Insights Aplikasi
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Dapatkan atau daftar untuk sumber daya lingkup tautan privat, sumber daya yang d
 Get-AzInsightsPrivateLinkScopedResource -ResourceGroupName "rg_name" -ScopeName "scope_name"
 ```
 
-Sumber daya lingkup daftar di bawah lingkup tautan privat "scope_name"
+Cantumkan sumber daya terlingkup di bawah cakupan tautan privat "scope_name"
 
 ### Contoh 2
 ```powershell
 Get-AzInsightsPrivateLinkScopedResource -ResourceGroupName "rg_name" -ScopeName "scope_name" -Name "scoped_resource_name"
 ```
 
-Dapatkan sumber daya tercakup di bawah lingkup tautan privat "scope_name" dengan nama "scoped_resource_name"
+Dapatkan sumber daya terlingkup di bawah cakupan tautan privat "scope_name" dengan nama "scoped_resource_name"
 
 ## PARAMETERS
 
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya lingkup
+### -Name
+Nama sumber daya terlingkup
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya
+ID sumber daya
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeName
-Nama Lingkup Private Link
+Nama Cakupan Private Link
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

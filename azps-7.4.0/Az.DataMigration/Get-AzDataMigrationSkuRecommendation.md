@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSkuRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSkuRecommendation.md
-ms.openlocfilehash: 326a6266a8126a5f280ebc90ad37c229a0a16e1c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 925132878c543184340cc14e892c75bba655f316
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874530"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659466"
 ---
 # Get-AzDataMigrationSkuRecommendation
 
 ## SYNOPSIS
 Memberikan rekomendasi SKU untuk penawaran Azure SQL
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationskurecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,9 +65,9 @@ Finishing SKU recommendations...
 Event and Error Logs Folder Path: C:\Users\vmanhas\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan Jalankan Rekomendasi SKU pada SQL Server tertentu menggunakan string koneksi.
+Perintah ini menjalankan Jalankan Rekomendasi SKU pada SQL Server yang diberikan menggunakan string koneksi.
 
-### Contoh 2: Jalankan Jalankan Rekomendasi SKU pada SQL Server tertentu menggunakan file konfigurasi penilaian
+### Contoh 2: Jalankan Eksekusi Rekomendasi SKU pada SQL Server yang diberikan menggunakan file konfigurasi penilaian
 ```powershell
 PS C:\> Get-AzDataMigrationSkuRecommendation -ConfigFilePath "C:\Users\user\document\config.json"
 
@@ -89,7 +92,7 @@ Finishing SKU recommendations...
 Event and Error Logs Folder Path: C:\Users\vmanhas\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan Jalankan Rekomendasi SKU pada SQL Server tertentu menggunakan file konfigurasi.
+Perintah ini menjalankan Jalankan Rekomendasi SKU pada SQL Server yang diberikan menggunakan file konfigurasi.
 
 ## PARAMETERS
 
@@ -110,9 +113,9 @@ Accept wildcard characters: False
 
 ### -DatabaseAllowList
 Opsional.
-Spasi yang dipisahkan daftar nama database yang akan diperbolehkan untuk pertimbangan rekomendasi SKU sambil mengecualikan semua yang lain.
-Hanya atur salah satu dari yang berikut ini atau tidak: databaseAllowList, databaseDenyList.
-Cara melewati - "Database1 Database2" (Default: null)
+Daftar nama database yang dipisahkan spasi untuk diizinkan untuk pertimbangan rekomendasi SKU sambil mengecualikan semua yang lain.
+Hanya atur salah satu dari berikut ini atau tidak: databaseAllowList, databaseDenyList.
+Cara meneruskan - "Database1 Database2" (Default: null)
 
 ```yaml
 Type: System.String
@@ -128,9 +131,9 @@ Accept wildcard characters: False
 
 ### -DatabaseDenyList
 Opsional.
-Spasi yang dipisahkan daftar nama database yang tidak akan dipertimbangkan untuk rekomendasi SKU.
-Hanya atur salah satu dari yang berikut ini atau tidak: databaseAllowList, databaseDenyList.
-Cara melewati - "Database1 Database2" (Default: null)
+Daftar nama database yang dipisahkan spasi agar tidak dipertimbangkan untuk rekomendasi SKU.
+Hanya atur salah satu dari berikut ini atau tidak: databaseAllowList, databaseDenyList.
+Cara meneruskan - "Database1 Database2" (Default: null)
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -DisplayResult
 Opsional.
-Apakah akan mencetak hasil rekomendasi SKU atau tidak ke konsol.
+Apakah akan mencetak hasil rekomendasi SKU ke konsol atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ElasticStrategy
 Opsional.
-Apakah menggunakan strategi elastis atau tidak untuk rekomendasi SKU berdasarkan profil penggunaan sumber daya.
+Apakah akan menggunakan strategi elastis untuk rekomendasi SKU berdasarkan pembuatan profil penggunaan sumber daya atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,8 +181,8 @@ Accept wildcard characters: False
 
 ### -EndTime
 Opsional.
-Waktu akhir UTC titik data kinerja untuk dipertimbangkan selama agregasi, dalam format YYYY-MM-DD HH:MM.
-Hanya digunakan untuk strategi baseline (non-elastis).
+Waktu akhir UTC titik data performa yang perlu dipertimbangkan selama agregasi, dalam format HH:MM-DD YYYY-MM.
+Hanya digunakan untuk strategi garis besar (non-elastis).
 (Default: semua poin data yang dikumpulkan akan dipertimbangkan)
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder dari data dan hasil mana laporan akan ditulis/dibaca.
+Folder data dan laporan hasil mana yang akan ditulis ke/dibaca.
 Nilai di sini harus sama dengan yang digunakan dalam PerfDataCollection
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 
 ### -Timpa
 Opsional.
-Apakah akan menimpa laporan rekomendasi SKU yang sudah ada atau tidak.
+Apakah akan menimpa laporan rekomendasi SKU yang ada atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,8 +245,8 @@ Accept wildcard characters: False
 
 ### -ScalingFactor
 Opsional.
-Faktor penskalaan (kenyamanan) digunakan selama rekomendasi SKU.
-Misalnya, jika ditentukan bahwa ada persyaratan CPU vCore 4 dengan faktor penskalaan 150%, maka persyaratan CPU yang benar adalah 6 vCores.
+Faktor penskalaan (kenyamanan) yang digunakan selama rekomendasi SKU.
+Misalnya, jika ditentukan bahwa ada persyaratan CPU 4 vCore dengan faktor penskalaan 150%, maka persyaratan CPU yang sebenarnya adalah 6 vCore.
 (Default: 100)
 
 ```yaml
@@ -260,8 +263,8 @@ Accept wildcard characters: False
 
 ### -StartTime
 Opsional.
-Waktu mulai UTC titik data kinerja untuk dipertimbangkan selama agregasi, dalam format YYYY-MM-DD HH:MM.
-Hanya digunakan untuk strategi baseline (non-elastis).
+Waktu mulai UTC titik data performa yang perlu dipertimbangkan selama agregasi, dalam format YYYY-MM-DD HH:MM.
+Hanya digunakan untuk strategi garis besar (non-elastis).
 (Default: semua poin data yang dikumpulkan akan dipertimbangkan)
 
 ```yaml
@@ -278,8 +281,8 @@ Accept wildcard characters: False
 
 ### -TargetPercentile
 Opsional.
-Persentil titik data yang akan digunakan selama agregasi data kinerja.
-Hanya digunakan untuk strategi baseline (non-elastis).
+Persentil poin data yang akan digunakan selama agregasi data performa.
+Hanya digunakan untuk strategi garis besar (non-elastis).
 (Default: 95)
 
 ```yaml
@@ -296,9 +299,9 @@ Accept wildcard characters: False
 
 ### -TargetPlatform
 Opsional.
-Platform target untuk rekomendasi SKU: AzureSqlDatabase, AzureSqlManagedInstance, AzureSqlVirtualMachine, atau Any.
-Jika Ada yang dipilih, maka rekomendasi SKU untuk ketiga platform target akan dievaluasi, dan yang paling pas akan dikembalikan.
-(Default: Any)
+Platform target untuk rekomendasi SKU: Baik AzureSqlDatabase, AzureSqlManagedInstance, AzureSqlVirtualMachine, atau Apa pun.
+Jika ada yang dipilih, maka rekomendasi SKU untuk ketiga platform target akan dievaluasi, dan yang paling cocok akan dikembalikan.
+(Default: Apa pun)
 
 ```yaml
 Type: System.String
@@ -314,8 +317,8 @@ Accept wildcard characters: False
 
 ### -TargetSqlInstance
 Opsional.
-Nama instans SQL yang akan ditargetkan rekomendasi SKU.
-(Default: outputFolder akan dipindai untuk file yang dibuat oleh tindakan PerfDataCollection, dan rekomendasi akan disediakan untuk setiap instans yang ditemukan)
+Nama instans SQL yang akan ditargetkan oleh rekomendasi SKU.
+(Default: outputFolder akan dipindai untuk file yang dibuat oleh tindakan PerfDataCollection, dan rekomendasi akan diberikan untuk setiap instans yang ditemukan)
 
 ```yaml
 Type: System.String
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutput.md
-ms.openlocfilehash: 8d66d283e051216fc78d28355871e3e744036ce2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48fa89b94c60e18408675ba1b0109af1e0fa8f98
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067131"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592704"
 ---
 # Get-AzAutomationJobOutput
 
 ## SYNOPSIS
-Mendapatkan output dari pekerjaan Otomatisasi.
+Mendapatkan output dari pekerjaan Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,17 +34,17 @@ Cmdlet **Get-AzAutomationJobOutput** mendapatkan output dari pekerjaan Azure Aut
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan output dari pekerjaan Automation
+### Contoh 1: Mendapatkan output dari pekerjaan Automation
 ```
 PS C:\>Get-AzAutomationJobOutput -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01" -Stream "Any"
 ```
 
-Perintah ini mendapatkan semua output dari pekerjaan yang memiliki ID yang ditentukan.
+Perintah ini mendapatkan semua output pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan output pekerjaan.
+Menentukan nama akun Automation yang cmdlet ini mendapatkan output pekerjaan.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan di mana cmdlet ini mendapatkan output.
+Menentukan ID pekerjaan yang cmdlet ini mendapatkan output.
 
 ```yaml
 Type: System.Guid
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan output pekerjaan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan output pekerjaan.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 Menentukan waktu mulai sebagai objek **DateTimeOffset** .
-Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string yang dapat dikonversi ke **DateTimeOffset** yang valid.
 Cmdlet mengambil output yang dibuat setelah waktu ini.
 
 ```yaml
@@ -118,13 +121,13 @@ Accept wildcard characters: False
 ```
 
 ### -Stream
-Menentukan tipe output.
+Menentukan jenis output.
 Nilai yang valid adalah: 
-- Setiap
+- Apa pun
 - Debug
 - Kesalahan
 - Output
-- Kemajuan
+- Progres
 - Verbose
 - Peringatan
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

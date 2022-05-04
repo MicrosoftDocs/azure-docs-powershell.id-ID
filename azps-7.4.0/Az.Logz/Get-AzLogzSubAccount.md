@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccount.md
-ms.openlocfilehash: bb56a928dd99b624a7344f61ff59d67570bbf7c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d7f09cd1cce8cfd8c96a47f1aa0b677047c6daa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807894"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652504"
 ---
 # Get-AzLogzSubAccount
 
 ## SYNOPSIS
 Dapatkan sub akun di bawah sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ logz01-subaccount01 Enabled          westus2  logz-rg-test
 
 Perintah ini mendapatkan sub akun di bawah sumber daya monitor tertentu.
 
-### Contoh 3: Mendapatkan sub akun di bawah sumber daya monitor tertentu berdasarkan alur
+### Contoh 3: Dapatkan sub akun di bawah sumber daya monitor tertentu berdasarkan alur
 ```powershell
 New-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01 -Location 'westus2' -PlanBillingCycle 'Monthly' -PlanUsageType 'PAYG' -PlanDetail '100gb14days' -PlanEffectiveDate (Get-Date -AsUTC) -UserInfoEmailAddress 'xxxxx@microsoft.com' -UserInfoPhoneNumber 'xxxxxx' -UserInfoFirstName 'xxx' -UserInfoLastName 'xxx' | Get-AzLogzSubAccount
 ```
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Suspend-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Suspend-AzAnalysisServicesServer.md
-ms.openlocfilehash: 4932ff86c069fb74780840e1e437137f65f6e51b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3e5881259145fbd53dee73b24a4819815d2a6584
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320823"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586154"
 ---
 # Suspend-AzAnalysisServicesServer
 
 ## SYNOPSIS
-Menangguhkan contoh server Analysis Services
+Menangguhkan instans server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/suspend-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Suspend-AzAnalysisServicesServer [[-ResourceGroupName] <String>] [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet Suspend-AzAnalysisServicesServer menangguhkan contoh server Analysis Services
+Cmdlet Suspend-AzAnalysisServicesServer menangguhkan instans server Analysis Services
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet Suspend-AzAnalysisServicesServer menangguhkan contoh server Analysis Serv
 Suspend-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 
-Perintah ini akan menangguhkan server aktif bernama testserver dalam grup uji grup sumber daya
+Perintah ini akan menangguhkan server aktif bernama testserver di grup sumber daya grup uji
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server Analysis Services
 
 ```yaml
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

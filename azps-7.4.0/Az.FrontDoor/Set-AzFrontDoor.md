@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
-ms.openlocfilehash: 3b073a4180978f01d31fb2a41d57ff9358253762
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b27357d0e9f750a6dbbfe455658949779c849a67
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316377"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658116"
 ---
 # Set-AzFrontDoor
 
 ## SYNOPSIS
-Memperbarui penyeimbang muat Pintu Depan
+Memperbarui load balancer Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/set-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,11 +102,11 @@ Set-AzFrontDoor -ResourceId <String> [-RoutingRule <PSRoutingRule[]>] [-BackendP
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzFrontDoor** memperbarui penyeimbang beban Pintu Depan. Jika parameter input tidak disediakan, parameter lama dari Pintu Depan yang sudah ada akan digunakan.
+Cmdlet **Set-AzFrontDoor** memperbarui penyeimbang beban Front Door. Jika parameter input tidak disediakan, parameter lama dari Front Door yang ada akan digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: perbarui Pintu Depan yang sudah ada dengan FrontDoorName dan ResourceGroupName.
+### Contoh 1: perbarui Front Door yang ada dengan FrontDoorName dan ResourceGroupName.
 ```powershell
 Set-AzFrontDoor -Name "frontDoor1" -ResourceGroupName "resourceGroup1" -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 ```
@@ -127,9 +130,9 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoors
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
-### Contoh 2: memperbarui Pintu Depan yang sudah ada dengan objek PSFrontDoor.
+### Contoh 2: perbarui Front Door yang ada dengan objek PSFrontDoor.
 ```powershell
 Set-AzFrontDoor -InputObject $frontDoor1 -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 ```
@@ -153,9 +156,9 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
-### Contoh 3: memperbarui Pintu Depan yang sudah ada dengan ResourceId
+### Contoh 3: memperbarui Front Door yang ada dengan ResourceId
 ```powershell
 Set-AzFrontDoor -ResourceId {resourceId} -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 ```
@@ -179,10 +182,10 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
-### Contoh 4: memperbarui properti BackendPoolSetting EnforceCertificateNameCheck pintu depan yang sudah ada dengan parameter sakelar -DisableCertificateNameCheck
-Pintu Depan yang akan diperbarui dapat diidentifikasi menggunakan FrontoorName dan ResourceGroupName, objek PSFrontDoor, atau ResourceId. (Lihat di atas 3 contoh misalnya) Contoh di bawah ini menggunakan objek PSFrontDoor.
+### Contoh 4: memperbarui properti BackendPoolSetting EnforceCertificateNameCheck dari Front Door yang ada dengan parameter switch -DisableCertificateNameCheck
+Front Door yang akan diperbarui dapat diidentifikasi menggunakan FrontoorName dan ResourceGroupName, objek PSFrontDoor, atau ResourceId. (Lihat di atas 3 contoh misalnya) Contoh di bawah ini menggunakan objek PSFrontDoor.
 
 ```powershell
 Set-AzFrontDoor -InputObject $frontDoor1 -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -DisableCertificateNameCheck
@@ -207,7 +210,7 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
 ## PARAMETERS
 
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolsSetting
-Pengaturan untuk semua backendPool.
+Pengaturan untuk semua backendPools.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableCertificateNameCheck
-Apakah menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend. Tidak berpengaruh pada permintaan non-HTTPS.
+Apakah akan menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend. Tidak berpengaruh pada permintaan non-HTTPS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Status operasional penyeimbang muat Pintu Depan.
+Status operasional load balancer Front Door.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSetting
-Pengaturan pemeriksaan kesehatan yang terkait dengan instans Pintu Depan ini.
+Pengaturan pemeriksaan kesehatan yang terkait dengan instans Front Door ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting[]
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Pintu Depan untuk diperbarui.
+Objek Front Door untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSetting
-Pengaturan keseimbangan muat yang terkait dengan instans Pintu Depan ini.
+Pengaturan penyeimbangan beban yang terkait dengan instans Front Door ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSLoadBalancingSetting[]
@@ -347,8 +350,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Pintu Depan untuk diperbarui.
+### -Name
+Nama Front Door yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat Pintu Depan berada.
+Grup sumber daya tempat Front Door berada.
 
 ```yaml
 Type: System.String
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Pintu Depan untuk memperbarui
+ID Sumber Daya Front Door untuk diperbarui
 
 ```yaml
 Type: System.String
@@ -392,7 +395,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PeruteanRule
+### -RoutingRule
 Aturan perutean yang terkait dengan FrontDoor ini
 
 ```yaml
@@ -408,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag terkait dengan FrontDoor.
+Tag yang terkait dengan FrontDoor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -422,8 +425,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -438,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

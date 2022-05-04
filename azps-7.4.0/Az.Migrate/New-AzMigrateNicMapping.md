@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateNicMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateNicMapping.md
-ms.openlocfilehash: 9816b3686f4797e231b738cd1d319ca710621089
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa5910d75d90de9ae7405b9083b38dc316b0aeab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283689"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667852"
 ---
 # New-AzMigrateNicMapping
 
 ## SYNOPSIS
 Membuat objek untuk memperbarui properti NIC dari server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratenicmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzMigrateNicMapping -NicID <String> [-TargetNicIP <String>] [-TargetNicName 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzMigrateNicMapping membuat pemetaan sumber NIC yang dilampirkan ke server yang akan dimigrasikan.
+Cmdlet New-AzMigrateNicMapping membuat pemetaan NIC sumber yang dilampirkan ke server yang akan dimigrasikan.
 Objek ini disediakan sebagai input ke cmdlet Set-AzMigrateServerReplication untuk memperbarui NIC dan propertinya untuk server replikasi.
 
 ## EXAMPLES
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNicIP
-Menentukan IP di dalam subnet tujuan yang akan digunakan untuk NIC.
+Menentukan IP dalam subnet tujuan yang akan digunakan untuk NIC.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNicSelectionType
-Menentukan apakah NIC yang akan diperbarui akan menjadi migrasi utama, sekunder, atau tidak.
+Menentukan apakah NIC yang akan diperbarui akan menjadi primer, sekunder, atau tidak dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNicSubnet
-Menentukan nama Subnet untuk NIC di Virtual Network tujuan yang perlu dimigrasi server.
+Menentukan nama Subnet untuk NIC di Virtual Network tujuan tempat server perlu dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

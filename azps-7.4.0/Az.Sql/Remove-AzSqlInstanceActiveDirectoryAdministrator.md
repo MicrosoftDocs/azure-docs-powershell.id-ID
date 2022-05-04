@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: 86f0712e08957afb66f91dc2a6124a9e26f50bf3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d19ea4d7539d464086290d2cfe42b66635fc78ce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799218"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660960"
 ---
 # Remove-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menghapus administrator Azure AD untuk SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstanceactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzSqlInstanceActiveDirectoryAdministrator [-Force] [-PassThru] [-Resource
  [-InstanceName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GunakanInputObjectParameterSet
+### UseInputObjectParameterSet
 ```
 Remove-AzSqlInstanceActiveDirectoryAdministrator [-Force] [-PassThru]
  -InputObject <AzureSqlManagedInstanceModel> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -39,7 +42,7 @@ Remove-AzSqlInstanceActiveDirectoryAdministrator [-Force] [-PassThru] [-Resource
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlInstanceActiveDirectoryAdministrator** menghapus administrator Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
+Cmdlet **Remove-AzSqlInstanceActiveDirectoryAdministrator** menghapus administrator Azure Active Directory (Azure AD) untuk AzureSQL Managed Instance dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ ResourceGroupName InstanceName          DisplayName ObjectId
 ResourceGroup01   ManagedInstanceName01 DBAs        40b79501-b343-44ed-9ce7-da4c8cc7353b
 ```
 
-Perintah ini menghapus administrator Azure AD dari objek instans yang dikelola.
+Perintah ini menghapus administrator Azure AD dari objek instans terkelola.
 
 ### Contoh 3
 ```powershell
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans yang dikelola untuk digunakan.
+Objek instans terkelola yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -198,8 +201,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -246,4 +249,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlInstanceActiveDirectoryAdministrator](./Set-AzSqlInstanceActiveDirectoryAdministrator.md)
 
-[Get-AzSqlInstanceActiveDirectoryAdministrator](./Get-AzSqlInstanceActiveDirectoryAdministrator.md)
+[Remove-AzSqlInstanceActiveDirectoryAdministrator](./Get-AzSqlInstanceActiveDirectoryAdministrator.md)

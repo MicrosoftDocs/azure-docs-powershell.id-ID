@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionPeering.md
-ms.openlocfilehash: 144bbd99556a434741c58ab40c349315a8a2f52b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 47a9133961d59af6c130c0c3e149343938cc1acb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314091"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650722"
 ---
 # Get-AzExpressRouteCrossConnectionPeering
 
 ## SYNOPSIS
 Mendapatkan konfigurasi peering koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi peering yang akan diambil.
 
 ```yaml
@@ -85,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### PSExpressRouteCrossConnection
-Parameter 'ExpressRouteCrossConnection' menerima nilai tipe 'PSExpressRouteCrossConnection' dari pipeline
+Parameter 'ExpressRouteCrossConnection' menerima nilai jenis 'PSExpressRouteCrossConnection' dari alur
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
-ms.openlocfilehash: f97797a400dc18770b93a3b008d363ddfe647089
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15c5702ac9f247eae5c4b8d8300a887393edcc40
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746370"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727990"
 ---
 # Get-AzMlCommitmentAssociation
 
 ## SYNOPSIS
 Mengambil informasi ringkasan untuk satu atau beberapa asosiasi komitmen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzMlCommitmentAssociation -ResourceGroupName <String> -CommitmentPlanName <S
 
 ## DESCRIPTION
 Mengambil informasi asosiasi komitmen.
-Tergantung pada parameter yang dilewati, cmdlet mengembalikan asosiasi komitmen tertentu atau kumpulan asosiasi komitmen untuk rencana komitmen yang ditentukan.
+Bergantung pada parameter yang dilewatkan, cmdlet mengembalikan asosiasi komitmen tertentu atau kumpulan asosiasi komitmen untuk rencana komitmen yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan asosiasi komitmen tertentu
+### Contoh 1: Mendapatkan asosiasi komitmen tertentu
 ```powershell
 Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPlanName "MyCommitmentPlanName" -Name "MyCommitmentAssociationName"
 ```
 
-### Contoh 2: Dapatkan semua asosiasi komitmen untuk rencana komitmen yang ditentukan
+### Contoh 2: Mendapatkan semua asosiasi komitmen untuk paket komitmen yang ditentukan
 ```powershell
 Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPlanName "MyCommitmentPlanName"
 ```
@@ -43,7 +46,7 @@ Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPl
 ## PARAMETERS
 
 ### -CommitmentPlanName
-Nama rencana komitmen Azure ML yang memiliki satu atau beberapa asosiasi komitmen.
+Nama paket komitmen Azure ML yang memiliki satu atau beberapa asosiasi komitmen.
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama asosiasi komitmen Azure ML.
 
 ```yaml
@@ -103,17 +106,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.CommitmentPlan
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

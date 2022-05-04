@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitor.md
-ms.openlocfilehash: 3ed469e3e9950e2324bcdbbef4b904961ab2ec89
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5feb11712bbb04743da668c217c1ab283f0a81fb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746496"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667906"
 ---
 # Get-AzLogzMonitor
 
 ## SYNOPSIS
 Mendapatkan properti sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Name          MonitoringStatus Location ResourceGroupName
 logz-pwsh01   Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini mendapatkan properti sumber daya monitor logz tertentu.
+Perintah ini mendapatkan properti dari sumber daya monitor logz tertentu.
 
 ### Contoh 4: Mendapatkan properti sumber daya monitor logz tertentu menurut alur
 ```powershell
@@ -98,7 +101,7 @@ Name          MonitoringStatus Location ResourceGroupName
 logz-pwsh01   Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini mendapatkan properti sumber daya monitor logz tertentu menurut alur.
+Perintah ini mendapatkan properti sumber daya monitor logz tertentu berdasarkan alur.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

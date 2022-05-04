@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTriggerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTriggerObject.md
-ms.openlocfilehash: 12551a3f2ccc506d007b336b86611b8a2764dc07
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d8d1e4d79aa83e6b716966af936886ec18405947
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868806"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650326"
 ---
 # New-AzPurviewTriggerObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk Pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewtriggerobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleAdditionalProperty
-Kamus .\<any\>
+Kamus dari \<any\>.
 Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULEADDITIONALPROPERTY dan buat tabel hash.
 
 ```yaml
@@ -286,7 +289,7 @@ SCHEDULEADDITIONALPROPERTY <IRecurrenceScheduleAdditionalProperties>: Kamus <any
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 SCHEDULEMONTHLYOCCURRENCE <IRecurrenceScheduleOccurrence[]>: 
-  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus dari <any>
+  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus <any>
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[Day <DayOfWeek?>]`: 
   - `[Occurrence <Int32?>]`: 

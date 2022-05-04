@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicKey.md
-ms.openlocfilehash: 3e88b5f5efe24d6df6e40f0764fb29f0f2f7e198
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a07c84c8b08584d95f144ed389727a8a6b330fcd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941599"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651100"
 ---
 # Get-AzEventGridTopicKey
 
 ## SYNOPSIS
-Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan peristiwa ke topik Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopickey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEventGridTopicKey [-ResourceGroupName] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopikInputObjectParameterSet
+### TopicInputObjectParameterSet
 ```
 Get-AzEventGridTopicKey [-InputObject] <PSTopic> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -37,7 +40,7 @@ Get-AzEventGridTopicKey [-ResourceId] <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan peristiwa ke topik Event Grid.
 
 ## EXAMPLES
 
@@ -46,14 +49,14 @@ Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke topik 
 Get-AzEventGridTopicKey -ResourceGroup MyResourceGroupName -Name Topic1
 ```
 
-Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik Event Grid Topic1 \`\` di grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | Get-AzEventGridTopicKey
 ```
 
-Mendapatkan kunci akses bersama topik \`Kisi Acara Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan kunci akses bersama topik Event Grid Topic1 \`\` di grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Topik EventGrid.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
+Pengidentifikasi Sumber Daya yang mewakili Topik Event Grid.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssUefi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssUefi.md
-ms.openlocfilehash: b9109483e3d75177fe00619e4c805b48ee3fe5cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 40688e7f1461bbcdfe9a6d812b013f809d3a1531
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658458"
 ---
 # Set-AzVmssUefi
 
 ## SYNOPSIS
-Memodifikasi properti UEFI dari mesin virtual gen 2 yang merupakan bagian dari rangkaian skala mesin virtual
+Memodifikasi properti UEFI dari komputer virtual gen 2 yang merupakan bagian dari set skala komputer virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssuefi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzVmssUefi [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-EnableVtp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssUefi** memodifikasi properti mesin virtual UEFI dalam rangkaian skala mesin virtual. 
+Cmdlet **Set-AzVmssUefi** memodifikasi properti UEFI komputer virtual dalam set skala komputer virtual. 
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ $VMSS = Get-AzVmss -ResourceGroupName "ResourceGroup11" -VMScaleSetName "Contoso
 Set-AzVmssUefi -VirtualMachineScaleSet $VMSS -EnableVtpm $true -EnableSecureBoot $true
 ```
 
-Perintah pertama mendapatkan kumpulan skala mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVmss**.
+Perintah pertama mendapatkan set skala komputer virtual bernama ContosoVM07 dengan menggunakan **Get-AzVmss**.
 Perintah menyimpannya dalam variabel $VMSS.
-Perintah kedua mengubah pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada mesin virtual di $VMSS.
-Perintah melewati hasil ke cmdlet Update-AzVmss, yang mengimplementasikan perubahan Anda.
-Perubahan pada mode kas menyebabkan mesin virtual dimulai ulang.
+Perintah kedua memodifikasi pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada komputer virtual di $VMSS.
+Perintah meneruskan hasil ke cmdlet Update-AzVmss, yang mengimplementasikan perubahan Anda.
+Perubahan pada mode kasir menyebabkan komputer virtual dimulai ulang.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableSecureBoot
-Parameter untuk mengalihkan boot aman pada VM dari kumpulan skala
+Parameter untuk beralih boot aman pada VM set skala
 
 ```yaml
 Type: Boolean
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableVtpm
-Parameter untuk mengalihkan vTPM pada VM kumpulan skala
+Parameter untuk beralih vTPM pada VM dari set skala
 
 ```yaml
 Type: Boolean
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSet
-Profil kumpulan skala mesin virtual.
+Profil set skala komputer virtual.
 
 ```yaml
 Type: PSVirtualMachineScaleSet
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

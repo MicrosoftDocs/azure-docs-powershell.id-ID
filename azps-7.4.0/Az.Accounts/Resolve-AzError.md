@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/resolve
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Resolve-AzError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Resolve-AzError.md
-ms.openlocfilehash: 134ec8fc872aa52cbb1e7af6c8c13120d5117aba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 654803ee06976f12b6e1424ed5b16b024c5aecf0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752670"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649355"
 ---
 # Resolve-AzError
 
 ## SYNOPSIS
-Menampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang diperluas untuk kesalahan Azure PowerShell.
+Tampilkan informasi terperinci tentang kesalahan PowerShell, dengan detail yang diperluas untuk kesalahan Azure PowerShell.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/resolve-azerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Resolve-AzError [-Last] [-DefaultProfile <IAzureContextContainer>] [<CommonParam
 ```
 
 ## DESCRIPTION
-Mengatasi dan menampilkan informasi mendetail tentang kesalahan dalam sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, jejak tumpukan, dan semua pengecualian dalam dan agregat. Untuk kesalahan Azure PowerShell menyediakan detail tambahan dalam masalah layanan debugging, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
+Mengatasi dan menampilkan informasi terperinci tentang kesalahan dalam sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, pelacakan tumpukan, dan semua pengecualian dalam dan agregat. Untuk kesalahan Azure PowerShell memberikan detail tambahan dalam masalah layanan penelusuran kesalahan, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
 
 ## EXAMPLES
 
@@ -129,7 +132,7 @@ Position       : At line:1 char:1
 HistoryId      : 5
 ```
 
-Dapatkan detail semua kesalahan yang terjadi dalam sesi saat ini.
+Dapatkan detail semua kesalahan yang telah terjadi dalam sesi saat ini.
 
 ### Contoh 3: Mengatasi Kesalahan Tertentu
 ```powershell
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kesalahan
-Satu atau beberapa catatan kesalahan untuk diatasi.  Jika tidak ada parameter yang ditentukan, semua kesalahan dalam sesi akan diatasi.
+Satu atau beberapa catatan kesalahan untuk diatasi.  Jika tidak ada parameter yang ditentukan, semua kesalahan dalam sesi akan diselesaikan.
 
 ```yaml
 Type: System.Management.Automation.ErrorRecord[]
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Terakhir
-Hanya mengatasi kesalahan terakhir yang terjadi dalam sesi.
+Atasi hanya kesalahan terakhir yang terjadi dalam sesi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

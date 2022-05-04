@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: 58f412cf4d9742b6993d208553007aa03438a2f4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3661880467b37d0b9a2aa14b5f2df3f44b4d28d5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003087"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596570"
 ---
 # New-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
 Membuat akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzDataLakeAnalyticsAccount [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeAnalyticsAccount** membuat akun Data Lake Analytics Azure.
+Cmdlet **New-AzDataLakeAnalyticsAccount** membuat akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi untuk membuat akun Data Lake Analytics.
-Hanya AS Timur 2 yang didukung saat ini.
+Hanya US Timur 2 yang didukung saat ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAnalyticsUnits
-Unit analitik maksimum opsional yang didukung untuk akun ini.
+Unit analitik maksimum maksimum yang didukung opsional untuk akun ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxJobCount
-Pekerjaan maksimum yang didukung opsional yang berjalan di bawah akun pada saat yang sama. Jika tidak ada yang ditentukan, default ke 3
+Pekerjaan maksimum opsional yang didukung yang berjalan di bawah akun secara bersamaan. Jika tidak ada yang ditentukan, default ke 3
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Data Lake Analytics.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStoreRetention
-Jumlah hari opsional yang dipertahankan metadata pekerjaan. Jika tidak ada yang ditentukan, defaultnya adalah 30 hari.
+Jumlah hari opsional metadata pekerjaan dipertahankan. Jika tidak ada yang ditentukan, defaultnya adalah 30 hari.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-String,kamus string tag yang terkait dengan akun ini
+String, kamus string tag yang terkait dengan akun ini
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

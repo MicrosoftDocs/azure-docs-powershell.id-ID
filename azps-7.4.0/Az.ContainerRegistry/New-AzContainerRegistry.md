@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
-ms.openlocfilehash: 14dde3a6de31a441f05aa968fc7a5fd5a553f828
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b624ad48f986560299688040653df7e9ef4629de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229653"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599756"
 ---
 # New-AzContainerRegistry
 
 ## SYNOPSIS
 Membuat registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzContainerRegistry [-ResourceGroupName] <String> [-Name] <String> [-Sku] <S
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzContainerRegistry membuat registri wadah.
+Cmdlet New-AzContainerRegistry membuat registri kontainer.
 
 ## EXAMPLES
 
@@ -44,9 +47,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri kontainer dengan akun penyimpanan baru dalam grup \`sumber daya MyResourceGroup\`.
+Perintah ini membuat registri kontainer dengan akun penyimpanan baru di grup \`sumber daya MyResourceGroup\`.
 
-### Contoh 2: Membuat registri kontainer dengan pengguna admin diaktifkan.
+### Contoh 2: Buat registri kontainer dengan pengguna admin diaktifkan.
 ```powershell
 New-AzContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic" -EnableAdminUser
 ```
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Registri Kontainer.
+Lokasi Container Registry.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Registri Kontainer.
+### -Name
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Kontainer Registri SKU.
+SKU Container Registry.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container Registry Tags.Key-value pairs in the form of a hash table.
+Pasangan Container Registry Tags.Key-value dalam bentuk tabel hash.
 Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

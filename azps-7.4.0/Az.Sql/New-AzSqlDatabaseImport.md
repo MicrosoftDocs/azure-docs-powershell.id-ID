@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseImport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseImport.md
-ms.openlocfilehash: 059ac0655cf939efc561f5e796078ca9b3672b02
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c1ce82fc033b3faff3afd34e8315dc31e92c0fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272366"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593632"
 ---
 # New-AzSqlDatabaseImport
 
 ## SYNOPSIS
 Mengimpor file .bacpac dan membuat database baru di server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseimport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzSqlDatabaseImport -DatabaseName <String> -Edition <DatabaseEdition> -Servi
 
 ## DESCRIPTION
 Cmdlet **New-AzSqlDatabaseImport** mengimpor file bacpac dari akun penyimpanan Azure ke Azure SQL Database baru.
-Permintaan status dapatkan database impor mungkin dikirim untuk mengambil informasi status untuk permintaan ini.
+Permintaan dapatkan status database impor dapat dikirim untuk mengambil informasi status untuk permintaan ini.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Perintah ini membuat permintaan impor untuk mengimpor .bacpac ke database baru.
 
 ### Contoh 2
 
-Mengimpor file .bacpac dan membuat database baru di server. (autogenerasi)
+Mengimpor file .bacpac dan membuat database baru di server. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -102,16 +105,16 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationType
-Menentukan tipe autentikasi yang digunakan untuk mengakses server.
-Parameter ini default untuk SQL jika tidak ada tipe autentikasi yang diatur.
+Menentukan jenis autentikasi yang digunakan untuk mengakses server.
+Parameter ini default ke SQL jika tidak ada jenis autentikasi yang diatur.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - SQL.
 SQL autentikasi.
-Atur *parameter AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator SQL. 
-- AdPassword.
-Azure Active Directory autentikasi.
+Atur parameter *AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator SQL. 
+- Kata Sandi AD.
+Autentikasi Azure Active Directory.
 Atur *AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator Azure Active Directory.
-Parameter ini hanya tersedia di server V12 SQL Database.
+Parameter ini hanya tersedia di server SQL Database V12.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.AuthenticationType
@@ -172,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### -Edisi
-Menentukan edisi database baru untuk diimpor.
+Menentukan edisi database baru yang akan diimpor.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Premium
 - Dasar
-- Standar
+- Standard
 - Gudang Data
 - Gratis
 
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerResourceIdForPrivateLink
-Id sumber daya sql server untuk membuat tautan privat
+Id sumber daya server sql untuk membuat tautan privat
 
 ```yaml
 Type: System.String
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceIdForPrivateLink
-Id sumber daya akun penyimpanan untuk membuat tautan pribadi
+Id sumber daya akun penyimpanan untuk membuat tautan privat
 
 ```yaml
 Type: System.String
@@ -284,12 +287,12 @@ Accept wildcard characters: False
 ```
 
 ### -StorageKeyType
-Menentukan tipe kunci akses untuk akun penyimpanan.
+Menentukan jenis kunci akses untuk akun penyimpanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - StorageAccessKey.
 Menggunakan kunci akun penyimpanan. 
 - SharedAccessKey.
-Menggunakan tombol Tanda Tangan Akses Bersama (SAS).
+Menggunakan kunci Tanda Tangan Akses Bersama (SAS).
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.StorageKeyType
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseNetworkIsolation
-Jika diatur, akan membuat tautan pribadi untuk akun penyimpanan dan/atau server SQL
+Jika diatur, akan membuat tautan privat untuk akun penyimpanan dan/atau server SQL
 
 ```yaml
 Type: System.Boolean
@@ -334,8 +337,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -377,7 +380,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportBaseModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 

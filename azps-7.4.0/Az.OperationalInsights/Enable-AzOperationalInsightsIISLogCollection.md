@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsIISLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsIISLogCollection.md
-ms.openlocfilehash: b0b1838b42cb6769ba8007582c2ed8d381781e52
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b79d82494c23d919946754c030c3ce4285d16463
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312237"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652126"
 ---
 # Enable-AzOperationalInsightsIISLogCollection
 
 ## SYNOPSIS
-Memulai pengumpulan log IIS dari komputer dalam ruang kerja.
+Memulai pengumpulan log IIS dari komputer di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/enable-azoperationalinsightsiislogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Enable-AzOperationalInsightsIISLogCollection [-Workspace] <PSWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzOperationalInsightsIISLogCollection** memulai pengumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
+Cmdlet **Enable-AzOperationalInsightsIISLogCollection** memulai pengumpulan log Layanan Informasi Internet (IIS) dari komputer yang terhubung di ruang kerja.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ ResourceId        : /subscriptions/xxxx-xxxx-xxxx-xxxx-xxxx/resourceGroups/test-
 Kind              : IISLogs
 Properties        : {"state":"OnPremiseEnabled"} 
 ```
-Memulai kumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
+Memulai pengumpulan log Layanan Informasi Internet (IIS) dari komputer yang terhubung di ruang kerja.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

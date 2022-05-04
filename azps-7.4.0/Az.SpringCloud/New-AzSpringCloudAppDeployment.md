@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.SpringCloud/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: 7387f229f3f902c423523ad3fc8f16d15795c3fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b4e829968c92e5117a14e4b57d669aacf486f36c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865944"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650218"
 ---
 # New-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
-Buat Penyebaran baru atau perbarui Penyebaran keluar.
+Buat Penyebaran baru atau perbarui Penyebaran yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/new-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ New-AzSpringCloudAppDeployment -AppName <String> -Name <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Buat Penyebaran baru atau perbarui Penyebaran keluar.
+Buat Penyebaran baru atau perbarui Penyebaran yang keluar.
 
 ## EXAMPLES
 
-### Contoh 1: Contoh 1: Membuat penyebaran cloud musim semi.
+### Contoh 1: Contoh 1: Membuat penyebaran spring cloud.
 ```powershell
 New-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rp -name spring-cloud-service -AppName gateway -DeploymentName default
 ```
@@ -63,7 +66,7 @@ Property                             : Microsoft.Azure.PowerShell.Cmdlets.Spring
 Source                               : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.UserSourceInfo
 ```
 
-Membuat penyebaran awan musim semi.
+Buat penyebaran spring cloud.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Penyebaran.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceType
-Tipe sumber yang diunggah
+Jenis sumber yang diunggah
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Support.UserSourceType
@@ -310,8 +313,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -325,8 +328,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

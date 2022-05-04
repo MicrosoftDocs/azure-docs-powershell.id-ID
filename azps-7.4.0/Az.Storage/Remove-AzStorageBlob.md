@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlob.md
-ms.openlocfilehash: 26b07650610285ed10f52806a361c4a0c5cdb45a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54b91612432d5c770014214218b3aff156995712
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932437"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618206"
 ---
 # Remove-AzStorageBlob
 
 ## SYNOPSIS
-Menghapus blob penyimpanan tertentu.
+Menghapus blob penyimpanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageblob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,44 +50,44 @@ Remove-AzStorageBlob -CloudBlobContainer <CloudBlobContainer> [-Blob] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageBlob** menghapus blob tertentu dari akun penyimpanan di Azure.
+Cmdlet **Remove-AzStorageBlob** menghapus blob yang ditentukan dari akun penyimpanan di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus blob penyimpanan menurut nama
+### Contoh 1: Menghapus blob penyimpanan berdasarkan nama
 ```
 PS C:\>Remove-AzStorageBlob -Container "ContainerName" -Blob "BlobName"
 ```
 
 Perintah ini menghapus blob yang diidentifikasi dengan namanya.
 
-### Contoh 2: Menghapus blob penyimpanan menggunakan pipeline
+### Contoh 2: Menghapus blob penyimpanan menggunakan alur
 ```
 PS C:\>Get-AzStorageBlob -Container "ContainerName" -Blob "BlobName" | Remove-AzStorageBlob
 ```
 
-Perintah ini menggunakan saluran.
+Perintah ini menggunakan alur.
 
-### Contoh 3: Menghapus blob penyimpanan menggunakan pipeline
+### Contoh 3: Menghapus blob penyimpanan menggunakan alur
 ```
 PS C:\>Get-AzStorageContainer -Container container* | Remove-AzStorageBlob -Blob "BlobName"
 ```
 
-Perintah ini menggunakan karakter wildcard tanda bintang (*) dan pipeline untuk mengambil blob atau blob, lalu menghapusnya.
+Perintah ini menggunakan karakter kartubebas tanda bintang (*) dan alur untuk mengambil blob atau blob lalu menghapusnya.
 
-### Contoh 4: Menghapus versi blob tunggal
+### Contoh 4: Menghapus satu versi blob
 ```
 PS C:\> Remove-AzStorageBlob -Container "containername" -Blob blob2 -VersionId "2020-07-03T16:19:16.2883167Z"
 ```
 
-Perintah ini menghapus satu blobs verion dengan VersionId.
+Perintah ini menghapus satu verion blob dengan VersionId.
 
-### Contoh 5: Menghapus snapshot blob tunggal
+### Contoh 5: Menghapus satu rekam jepret blob
 ```
 PS C:\> Remove-AzStorageBlob -Container "containername" -Blob blob1 -SnapshotTime "2020-07-06T06:56:06.8588431Z"
 ```
 
-Perintah ini menghapus snapshot blob tunggal dengan SnapshotTime.
+Perintah ini menghapus rekam jepret blob tunggal dengan SnapshotTime.
 
 ## PARAMETERS
 
@@ -119,8 +122,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan blob awan.
+Menentukan blob cloud.
 Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
+Menentukan objek **CloudBlobContainer** dari pustaka Klien Azure Storage.
 Anda dapat menggunakan cmdlet Get-AzStorageContainer untuk mendapatkannya.
 
 ```yaml
@@ -168,9 +171,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Menentukan nama wadah.
+Menentukan nama kontainer.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Anda dapat menggunakan cmdlet New-AzStorageContext untuk membuatnya.
 
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteSnapshot
-Menentukan bahwa semua snapshot dihapus, tetapi bukan blob dasar.
-Jika parameter ini tidak ditentukan, blob dasar dan snapshotnya akan dihapus bersamaan.
+Menentukan bahwa semua rekam jepret dihapus, tetapi bukan blob dasar.
+Jika parameter ini tidak ditentukan, blob dasar dan rekam jepretnya akan dihapus bersamaan.
 Pengguna diminta untuk mengonfirmasi operasi penghapusan.
 
 ```yaml
@@ -249,8 +252,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menghapus blob dan snapshotnya tanpa konfirmasi.
+### -Force
+Menunjukkan bahwa cmdlet ini menghapus blob dan rekam jepretnya tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 
 ### -ServerTimeoutPerRequest
 Menentukan profil Azure untuk cmdlet yang akan dibaca.
-Jika tidak ditentukan, cmdlet akan dibaca dari profil default.
+Jika tidak ditentukan, cmdlet akan membaca dari profil default.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
 Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
@@ -342,8 +345,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -392,7 +395,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageBlob](./Get-AzStorageBlob.md)
+[Dapatkan-BlobPenyimpananAz](./Get-AzStorageBlob.md)
 
 [Get-AzStorageBlobContent](./Get-AzStorageBlobContent.md)
 

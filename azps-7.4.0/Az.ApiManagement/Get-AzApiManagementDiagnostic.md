@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
-ms.openlocfilehash: b6fc4507182772315c0268c090040e66523bc709
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 898bbd522c3fcdf1409a4304e6ab07f15f42936f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944821"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593351"
 ---
 # Get-AzApiManagementDiagnostic
 
 ## SYNOPSIS
-Dapatkan detail Diagnostik yang dikonfigurasi pada tingkat layanan atau Api Level. Diagnostik digunakan untuk mencatat permintaan/respons dari gateway Manajemen Api.
+Dapatkan detail Diagnostik yang dikonfigurasi di tingkat layanan atau Api Level. Diagnostik digunakan untuk mencatat permintaan/respons dari gateway Api Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzApiManagementDiagnostic -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-**Get-AzApiManagementDiagnostic** mendapatkan detail diagnostik yang dikonfigurasi dalam layanan manajemen Api pada lingkup tertentu.
+**Get-AzApiManagementDiagnostic** mendapatkan detail diagnostik yang dikonfigurasi dalam layanan Api management pada cakupan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua diagnostik yang dikonfigurasi di lingkup penyewa.
+### Contoh 1: Dapatkan semua diagnostik yang dikonfigurasi di cakupan penyewa.
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementDiagnostic -Context $apimContext
@@ -68,9 +71,9 @@ ResourceGroupName            : Api-Default-WestUS
 ServiceName                  : contoso
 ```
 
-Perintah ini mendapatkan semua diagnostik yang dikonfigurasi dalam layanan Manajemen Api.
+Perintah ini mendapatkan semua diagnostik yang dikonfigurasi dalam layanan Api Management.
 
-### Contoh 2: Dapatkan semua diagnostik yang dikonfigurasi di lingkup Api
+### Contoh 2: Dapatkan semua diagnostik yang dikonfigurasi di cakupan Api
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementDiagnostic -Context $apimContext -ApiId "echo-api"
@@ -92,7 +95,7 @@ ServiceName                  : contoso
 
 Perintah ini mendapatkan semua diagnostik yang dikonfigurasi di `echo-api` lingkup Api
 
-### Contoh 3: Dapatkan diagnostik lingkup API yang ditentukan oleh Id
+### Contoh 3: Mendapatkan diagnostik cakupan API yang ditentukan oleh Id
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementDiagnostic -Context $apimContext -ApiId "echo-api" -DiagnosticId "applicationinsights"
@@ -117,8 +120,8 @@ Perintah ini mendapatkan diagnostik yang dikonfigurasi `applicationinsights` dal
 ## PARAMETERS
 
 ### -ApiId
-Pengidentifikasi API yang sudah ada.
-Jika ditentukan akan mengembalikan diagnostik lingkup API.
+Pengidentifikasi API yang ada.
+Jika ditentukan akan mengembalikan diagnostik cakupan API.
 Parameter ini diperlukan.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -165,8 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticId
-Pengidentifikasi diagnostik yang sudah ada.
-Jika ditentukan akan mengembalikan kebijakan lingkup produk.
+Pengidentifikasi diagnostik yang ada.
+Jika ditentukan akan mengembalikan kebijakan cakupan produk.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier of a Diagnostic or Api Diagnostic. Jika ditentukan akan mencoba menemukan diagnostik oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari Diagnostik atau Diagnostik Api. Jika ditentukan akan mencoba menemukan diagnostik oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

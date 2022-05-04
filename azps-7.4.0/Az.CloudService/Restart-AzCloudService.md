@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/res
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
-ms.openlocfilehash: e2461af92f7179ab7f2230f5430fb69552c69b8f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bb2fa8f8bde5a83bd55946fd43d2f09236d9eebe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640734"
 ---
 # Restart-AzCloudService
 
 ## SYNOPSIS
 Menghidupkan ulang satu atau beberapa instans peran dalam layanan cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/restart-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
-ms.openlocfilehash: 37b067cd554ade6ab52120ba0f3d31b3091d7114
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d37612e7b853722d59481a45fdc966cb798da3f4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938071"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642228"
 ---
 # Set-AzNatGateway
 
 ## SYNOPSIS
-Perbarui Sumber Daya Nat Gateway dengan Alamat Ip Publik, Prefiks Ip Publik, dan IdleTimeoutInMinutes.
+Perbarui Sumber Daya Nat Gateway dengan Alamat IP Publik, Awalan IP Publik, dan IdleTimeoutInMinutes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzNatGateway -InputObject <PSNatGateway> [-PublicIpAddress <PSResourceId[]>]
 ```
 
 ## DESCRIPTION
-Perbarui Sumber Daya Nat Gateway dengan Alamat Ip Publik, Prefiks Ip Publik, dan IdleTimeoutInMinutes.
+Perbarui Sumber Daya Nat Gateway dengan Alamat IP Publik, Awalan IP Publik, dan IdleTimeoutInMinutes.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ $natUpdate = Set-AzNatGateway -ResourceId "natgateway_id" -PublicIpAddress $pipA
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu habis menganggur gateway nat.
+Batas waktu menganggur gateway nat.
 
 ```yaml
 Type: System.Int32
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan Sumber Daya Gateway Nat.
+Menentukan Sumber Daya Nat Gateway.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNatGateway
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya Gateway Nat.
+### -Name
+Nama Sumber Daya Nat Gateway.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Array alamat ip publik yang terkait dengan sumber daya gateway nat.
+Array alamat IP publik yang terkait dengan sumber daya gateway nat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan Id sumber daya Gateway Nat.
+Menentukan Id sumber daya Nat Gateway.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

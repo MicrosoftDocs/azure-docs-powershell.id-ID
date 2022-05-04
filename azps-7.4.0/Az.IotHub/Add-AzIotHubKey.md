@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubKey.md
-ms.openlocfilehash: 1c55d8653bcc9b1bc405eee9c3e7b3e5141d22bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ecd7e9c12ba56a7e76a2317a63ad3911585f0eaf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808362"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617108"
 ---
 # Add-AzIotHubKey
 
 ## SYNOPSIS
 Membuat Kunci IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ KeyNames tidak unik dan perlu dikelola dengan hati-hati.
 Add-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "newkey" -PrimaryKey "primarykey" -SecondaryKey "secondarykey" -Rights RegistryRead
 ```
 
-Membuat kunci bernama "mykey" untuk iothub "myiothub" dengan izin RegistriRead.
+Membuat kunci bernama "mykey" untuk iothub "myiothub" dengan izin RegistryRead.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Kunci utama
+Kunci primer
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

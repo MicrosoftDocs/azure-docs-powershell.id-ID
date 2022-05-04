@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: 02d11e3f6cd650ac118a9cbbe03b37fbd8b45c88
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59783037e25f9c05b1533c8350158ce2c6744508
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228587"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648958"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
 Mendapatkan informasi simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,9 +76,9 @@ MaxConcurrentJobs      : 48
 IpAddress              :
 ```
 
-Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2'.
+Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2'.
 
-### Contoh 2: Mendapatkan informasi detail dari simpul runtime integrasi bersama dengan alamat IP.
+### Contoh 2: Mendapatkan informasi detail simpul runtime integrasi bersama dengan alamat IP.
 ```powershell
 Get-AzDataFactoryV2IntegrationRuntimeNode -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2'  -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -IpAddress
 ```
@@ -105,7 +108,7 @@ MaxConcurrentJobs      : 48
 IpAddress              : 167.220.1.167
 ```
 
-Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 
@@ -184,7 +187,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama simpul runtime integrasi.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -245,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

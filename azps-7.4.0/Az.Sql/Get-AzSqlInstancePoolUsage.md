@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
-ms.openlocfilehash: 45ec352cf29a5f223d42e3dcdb9ae56e9c9d3921
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9227bec3c93ecbe05c772cd81fedc37d662cb0f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307737"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658872"
 ---
 # Get-AzSqlInstancePoolUsage
 
 ## SYNOPSIS
-Mengembalikan informasi tentang penggunaan kumpulan instans Azure SQL.
+Mengembalikan informasi tentang penggunaan kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancepoolusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,9 +76,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL.
+Mendapatkan penggunaan untuk instancepool0 kumpulan Instans Azure SQL.
 
-### Contoh 2: Mendapatkan penggunaan kumpulan instans Azure SQL menggunakan objek kumpulan instans
+### Contoh 2: Mendapatkan penggunaan kumpulan Instans Azure SQL menggunakan objek kumpulan instans
 ```powershell
 $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancepool0
 Get-AzSqlInstancePoolUsage -InstancePool $instancePool
@@ -107,9 +110,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL menggunakan objek kumpulan instans.
+Mendapatkan penggunaan untuk instancepool0 kumpulan Instans Azure SQL menggunakan objek kumpulan instans.
 
-### Contoh 3: Mendapatkan penggunaan kumpulan instans Azure SQL menggunakan id sumber daya kumpulan instans
+### Contoh 3: Mendapatkan penggunaan kumpulan Instans Azure SQL menggunakan id sumber daya kumpulan instans
 ```powershell
 Get-AzSqlInstancePoolUsage -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 ```
@@ -142,7 +145,7 @@ Type           : Microsoft.Sql/instancePools/usages
 
 Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL menggunakan pengidentifikasi sumber daya kumpulan instans.
 
-### Contoh 3: Mendapatkan penggunaan kumpulan instans Azure SQL dengan rincian penggunaan instans terkelola dalam kumpulan.
+### Contoh 3: Mendapatkan penggunaan kumpulan Instans Azure SQL dengan perincian penggunaan instans terkelola dalam kumpulan.
 ```powershell
 Get-AzSqlInstancePoolUsage -ResourceGroupName resourcegroup01 -Name instancepool0 -ExpandChildren
 ```
@@ -197,7 +200,7 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/managedInstances/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL beserta penggunaan instans terkelola dalam instancepool0.
+Mendapatkan penggunaan untuk instancepool0 kumpulan Instans Azure SQL bersama dengan penggunaan instans terkelola dalam instancepool0.
 
 ## PARAMETERS
 
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandChildren
-Benderai yang mengindikasikan apakah akan memperluas penggunaan kumpulan instans ini dengan penggunaan anak-anaknya.
+Bendera yang menunjukkan apakah akan memperluas penggunaan kumpulan instans ini dengan penggunaan anak-anaknya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan instans terkelola.
 
 ```yaml
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

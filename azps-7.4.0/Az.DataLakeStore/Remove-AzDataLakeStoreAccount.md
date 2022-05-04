@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 3c76ebe2230cac802c82fafc179542e0d2d37d2e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2e6e033d3e7cc8f7f670d6ca4e61f8c9b558934
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318087"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617522"
 ---
 # Remove-AzDataLakeStoreAccount
 
 ## SYNOPSIS
 Menghapus akun Data Lake Store secara permanen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Remove-AzDataLakeStoreAccount** menghapus akun Data Lake Store secara p
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus akun Penyimpanan Data Lake
+### Contoh 1: Menghapus akun Data Lake Store
 ```powershell
 Remove-AzDataLakeStoreAccount -Name "ContosoADL"
 ```
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun yang akan dihapus.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang berisi akun untuk dihapus.
+Menentukan grup sumber daya yang berisi akun yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

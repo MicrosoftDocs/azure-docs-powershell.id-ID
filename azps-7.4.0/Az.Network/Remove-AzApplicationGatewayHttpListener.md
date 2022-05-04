@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 08ab16aeece0b396667a078df68e4cc53819ef5f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec2b509d5ac25318df9c24e4a66cb075e7f6014c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224181"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616694"
 ---
 # Remove-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Menghapus pendengar HTTP dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Remove-AzApplicationGatewayHttpListener** menghapus pendengar HTTP dari
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pendengar HTTP gateway aplikasi
+### Contoh 1: Menghapus listener HTTP gateway aplikasi
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 Remove-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener02"
@@ -38,7 +41,7 @@ Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menghapus pendengar HTTP bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus listener HTTP bernama Listener02 dari gateway aplikasi yang disimpan di $AppGw.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama pendengar HTTP yang dihapus cmdlet ini.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

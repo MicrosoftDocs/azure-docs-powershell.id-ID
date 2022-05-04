@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iotcentral/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/Get-AzIotCentralApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/Get-AzIotCentralApp.md
-ms.openlocfilehash: ba9def6dde336859eb077713d46efb980f84f96d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2d144689ed5706c5026c5db4d2d90b57742cafb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001089"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640248"
 ---
 # Get-AzIotCentralApp
 
 ## SYNOPSIS
-Mendapatkan properti untuk satu atau beberapa Aplikasi Pusat IoT.
+Mendapatkan properti untuk satu atau beberapa Aplikasi IoT Central.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iotcentral/get-aziotcentralapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Get-AzIotCentralApp -ResourceId <String> [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Mendapatkan metadata untuk Aplikasi Pusat IoT tertentu, atau semua aplikasi dalam Grup Sumber Daya atau Langganan, bergantung pada Kumpulan Parameter. 
+Mendapatkan metadata untuk Aplikasi IoT Central tertentu, atau semua aplikasi dalam Grup Sumber Daya atau Langganan, tergantung pada Set Parameter. 
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan Aplikasi Pusat IoT Tertentu.
+### Contoh 1 Dapatkan Aplikasi IoT Central tertentu.
 ```powershell
 Get-AzIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName"
 ```
@@ -62,8 +65,8 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Mendapatkan metadata untuk Aplikasi Pusat IoT yang ditentukan.
-### Contoh 2 Dapatkan Aplikasi Pusat IoT dalam Langganan.
+Mendapatkan metadata untuk Aplikasi IoT Central yang ditentukan.
+### Contoh 2 Dapatkan Aplikasi IoT Central dalam Langganan.
 ```powershell
 Get-AzIotCentralApp
 ```
@@ -99,8 +102,8 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName2
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Mendapatkan metadata untuk semua Aplikasi Pusat IoT dalam Langganan saat ini.
-### Contoh 3 Dapatkan Aplikasi Pusat IoT dalam Grup Sumber Daya.
+Mendapatkan metadata untuk semua Aplikasi IoT Central dalam Langganan saat ini.
+### Contoh 3 Dapatkan Aplikasi IoT Central di Grup Sumber Daya.
 ```powershell
 Get-AzIotCentralApp -ResourceGroupName "MyResourceGroupName"
 ```
@@ -136,7 +139,7 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Mendapatkan metadata untuk semua Aplikasi Pusat IoT dalam Grup Sumber Daya yang disediakan.
+Mendapatkan metadata untuk semua Aplikasi IoT Central di Grup Sumber Daya yang disediakan.
 
 ## PARAMETERS
 
@@ -155,8 +158,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya Aplikasi Pusat Iot.
+### -Name
+Nama Sumber Daya Aplikasi Iot Central.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Aplikasi Pusat Iot.
+Id Sumber Daya Aplikasi Iot Central.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Restart-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Restart-AzMigrateServerReplication.md
-ms.openlocfilehash: 2339e310fe1cf7013bd3aaa6ffc9dd37b7c1468c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4069374c9f06c98f9ae3e2260eeff03695bbdba3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998557"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667474"
 ---
 # Restart-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memulai ulang replikasi untuk server yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/restart-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,9 +67,9 @@ Task                             : {DisableProtectionOnPrimary, UpdateDraState}
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Dengan id.
+Berdasarkan id.
 
-### Contoh 2: By Input Object
+### Contoh 2: Berdasarkan Objek Input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID "/Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.RecoveryServices/vaults/AzMigrateTestProjectPWSH02aarsvault/replicationFabrics/AzMigratePWSHTc8d1replicationfabric/replicationProtectionContainers/AzMigratePWSHTc8d1replicationcontainer/replicationMigrationItems/bcdr-vcenter-fareast-corp-micro-cfcc5a24-a40e-56b9-a6af-e206c9ca4f93_50063baa-9806-d6d6-7e09-c0ae87309b4f"
 $output = Restart-AzMigrateServerReplication -InputObject $obj
@@ -115,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek mesin dari server replikasi.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Menentukan objek komputer dari server replikasi.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server replcating yang perlu dimulainya resync.
+Menentukan server replcating yang resyncnya perlu dimulai.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

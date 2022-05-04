@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzDeviceSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzDeviceSecurityGroup.md
-ms.openlocfilehash: f75b8f75199be8b4d78dbcdaeb62ca2c8d4446b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0818cb64768aa9a417ac313921fdc61df5d2bcfa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934921"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661122"
 ---
 # Set-AzDeviceSecurityGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui grup keamanan perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azdevicesecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ AllowlistRules: [
 DenylistRules: []
 ```
 
-Memperbarui grup keamanan perangkat yang sudah ada dari IoT Hub "/subscriptions/XXXXXXXX-XXXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub" dengan tipe aturan "ActiveConnectionsNotInAllowedRange"
+Perbarui grup keamanan perangkat yang ada dari IoT Hub "/subscriptions/XXXXXXXX-XXXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub" dengan jenis aturan "ActiveConnectionsNotInAllowedRange"
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -HubResourceId
-id sumber daya IoT Hub.
+IoT Hub ID sumber daya.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -280,8 +283,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

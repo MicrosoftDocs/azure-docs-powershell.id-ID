@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecuritySolution.md
-ms.openlocfilehash: 9cb4f59f15b635fb33d56112aa1f59bac8469080
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 72d42656e933ae301a10e1234bd37f77cc215160
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935101"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621300"
 ---
 # Get-AzIotSecuritySolution
 
 ## SYNOPSIS
-Dapatkan solusi keamanan IoT
+Mendapatkan solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzIotSecuritySolution -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecuritySolution mengembalikan satu atau beberapa solusi keamanan iot. Solusi keamanan IoT mengumpulkan data keamanan dan kejadian dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
+Cmdlet Get-AzIotSecuritySolution mengembalikan satu atau beberapa solusi keamanan iot. Solusi keamanan IoT mengumpulkan data keamanan dan peristiwa dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ UnmaskedIpLoggingStatus: "Enabled"
 Tags: {}
 ```
 
-Dapatkan solusi "MySample" dalam grup sumber daya "MyResourceGroup"
+Dapatkan solusi "MySample" di grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

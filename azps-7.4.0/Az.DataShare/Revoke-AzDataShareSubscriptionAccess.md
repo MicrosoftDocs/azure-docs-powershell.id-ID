@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/revoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Revoke-AzDataShareSubscriptionAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Revoke-AzDataShareSubscriptionAccess.md
-ms.openlocfilehash: 14f26c8d8a12b08a053be531da76d243028880b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe1297d6d41587af1d193259e3275cff4fe4fc7a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661950"
 ---
 # Revoke-AzDataShareSubscriptionAccess
 
 ## SYNOPSIS
-Mencabut akses berbagi langganan ke berbagi sumber
+Mencabut akses langganan berbagi ke berbagi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/revoke-azdatasharesubscriptionaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari berbagi data azure
+Id sumber daya berbagi data azure
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareSubscriptionId
-Id langganan berbagi langganan penyedia
+Id langganan berbagi dari langganan berbagi penyedia
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

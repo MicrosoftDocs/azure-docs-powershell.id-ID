@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: c12c6a8f5f752608f5ba36f8f0ff6e52cb5af477
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b100c6c9a7e0dd070110591eb987ea4ba7ce3110
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869940"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144652054"
 ---
 # Get-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
-Mendapatkan ASN terdaftar untuk peering tipe server rute pertukaran internet.
+Mendapatkan ASN terdaftar untuk peering jenis server rute pertukaran internet.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringregisteredasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,23 +41,23 @@ Get-AzPeeringRegisteredAsn [-ResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan ASN terdaftar.
+Mendapatkan atau mencantumkan ASN terdaftar.
 
 ## EXAMPLES
 
-### Daftar ASN terdaftar untuk peering
+### Mencantumkan ASN terdaftar untuk peering
 ```powershell
 Get-AzPeeringRegisteredAsn -ResourceGroupName $resourceGroupName -PeeringName $peeringName
 ```
 
 Mencantumkan asn terdaftar.
 
-### Dapatkan ASN terdaftar untuk peering by name
+### Mendapatkan ASN terdaftar untuk peering menurut nama
 ```powershell
 Get-AzPeeringRegisteredAsn -ResourceGroupName $resourceGroupName -PeeringName $peeringName -Name $registeredAsnName
 ```
 
-Mendapat asn peering terdaftar.
+Mendapatkan asn peering terdaftar.
 
 ## PARAMETERS
 
@@ -88,8 +91,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama ASN yang terdaftar
+### -Name
+Nama ASN terdaftar
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
