@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapss
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
-ms.openlocfilehash: 70288aa4d2c829254fd19af81782b766b17f2952
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0daed1c1230752a5761886ba801f254fb9f396e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807408"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597992"
 ---
 # Get-AzMapsSubscriptionOperation
 
 ## SYNOPSIS
-Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
+Mencantumkan operasi yang tersedia untuk Penyedia Sumber Daya Peta
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapssubscriptionoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,11 +27,11 @@ Get-AzMapsSubscriptionOperation [-SubscriptionId <String[]>] [-DefaultProfile <P
 ```
 
 ## DESCRIPTION
-Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
+Mencantumkan operasi yang tersedia untuk Penyedia Sumber Daya Peta
 
 ## EXAMPLES
 
-### Contoh 1: Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
+### Contoh 1: Mencantumkan operasi yang tersedia untuk Penyedia Sumber Daya Peta
 ```powershell
 Get-AzMapsSubscriptionOperation
 ```
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: d1d07a60310b7f4c30b832946e207aec51907196
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e3ff691e0815784a82820d68174879f6c6f4e64
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737784"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632132"
 ---
 # Remove-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
-Menghapus pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL.
+Menghapus pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlservermssupportaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,17 +36,17 @@ Remove-AzSqlServerMSSupportAudit -ServerObject <AzureSqlServerModel> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlServerMSupportAudit** menghapus pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
+Cmdlet **Remove-AzSqlServerMSSupportAudit** menghapus pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+Untuk menggunakan cmdlet , gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL
+### Contoh 1: Menghapus pengaturan audit operasi dukungan Microsoft dari server Azure SQL
 ```powershell
 Remove-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
 
-### Contoh 2: Hapus, melalui saluran, Microsoft mendukung pengaturan pengauditan server Azure SQL
+### Contoh 2: Hapus, melalui alur, Microsoft mendukung pengaturan audit server Azure SQL
 ```powershell
 Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Remove-AzSqlServerMSSupportAudit
 ```
@@ -51,7 +54,7 @@ Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Re
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,8 +128,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

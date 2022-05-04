@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
-ms.openlocfilehash: edbb0ebe73b23625cfb4c04b134962467746bc10
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dee38582d7e49fd4eb2dff6ff8a887d4726b51d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313965"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600980"
 ---
-# Get-AzVirtualNetworkGatewaySupportedVpnDevice
+# Dapatkan-AzVirtualNetworkGatewaySupportedVpnDevice
 
 ## SYNOPSIS
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaysupportedvpndevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzVirtualNetworkGatewaySupportedVpnDevice -Name <String> -ResourceGroupName 
 ```
 
 ## DESCRIPTION
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway jaringan virtual.
 
 ```yaml
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

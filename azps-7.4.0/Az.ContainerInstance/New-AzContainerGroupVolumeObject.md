@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
-ms.openlocfilehash: 03f6df9a7e22228fa24fc2de693cbeaa8a60436a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3126dd309708116886d5e68a4c6adccc658e3321
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065025"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587988"
 ---
 # New-AzContainerGroupVolumeObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Volume
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroupvolumeobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzContainerGroupVolumeObject -Name <String> [-AzureFileReadOnly] [-AzureFile
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk Volume. Saat ini, kami mendukung pemasangan berbagi File Azure sebagai volume atau menentukan penyimpanan git sebagai direktori volume. Volume direktori kosong dan volume rahasia belum didukung.
+Buat objek dalam memori untuk Volume. Saat ini, kami mendukung pemasangan berbagi Azure File sebagai volume atau menentukan repositori git sebagai direktori volume. Volume direktori kosong dan volume rahasia belum didukung.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Perintah ini membuat volume File Azure.
 ## PARAMETERS
 
 ### -AzureFileReadOnly
-Bendera yang mengindikasikan apakah File Azure yang dibagikan dipasang sebagai volume bersifat baca-saja.
+Bendera yang menunjukkan apakah File Azure yang dibagikan dipasang sebagai volume bersifat baca-saja.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileShareName
-Nama berbagi File Azure yang akan dikaitkan sebagai volume.
+Nama pembagian File Azure yang akan dipasang sebagai volume.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileStorageAccountKey
-Kunci akses akun penyimpanan yang digunakan untuk mengakses berbagi File Azure.
+Kunci akses akun penyimpanan yang digunakan untuk mengakses pembagian File Azure.
 
 ```yaml
 Type: System.Security.SecureString
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileStorageAccountName
-Nama akun penyimpanan yang berisi berbagi File Azure.
+Nama akun penyimpanan yang berisi pembagian File Azure.
 
 ```yaml
 Type: System.String
@@ -110,9 +113,9 @@ Accept wildcard characters: False
 
 ### -GitRepoDirectoryName
 Nama direktori target.
-Tidak boleh memuat atau memulai dengan '..'.
-Jika '.' disertakan, direktori volume akan menjadi repository git.
-Jika tidak, jika ditentukan, volume akan berisi repository git dalam subdirektori dengan nama tertentu.
+Tidak boleh berisi atau dimulai dengan '..'.
+Jika '.' disediakan, direktori volume akan menjadi repositori git.
+Jika tidak, jika ditentukan, volume akan berisi repositori git di subdirektori dengan nama yang diberikan.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepoRepositoryUrl
-URL Penyimpanan.
+URL Repositori.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepoRevision
-Lakukan hash untuk revisi yang ditentukan.
+Terapkan hash untuk revisi yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama volume.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

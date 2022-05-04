@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 810cab4276dd002aad2b119436b63bed0fd028e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5c5b3a9e70d382c51863b483f4d0765681fd45f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640860"
 ---
 # Set-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
-Membuat saluran di Pabrik Data.
+Membuat alur di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,19 +36,19 @@ Set-AzDataFactoryV2Pipeline [-DefinitionFile] <String> [-ResourceId] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzDataFactoryV2Pipeline membuat saluran dalam Azure Data Factory.
-Jika Anda menentukan nama untuk pipeline yang sudah ada, cmdlet meminta Anda untuk konfirmasi sebelum menggantikan pipeline.
-Jika Anda menentukan parameter Paksa, cmdlet menggantikan pipeline yang sudah ada tanpa konfirmasi.
+Cmdlet Set-AzDataFactoryV2Pipeline membuat alur di Azure Data Factory.
+Jika Anda menentukan nama untuk alur yang sudah ada, cmdlet akan meminta konfirmasi sebelum menggantikan alur.
+Jika Anda menentukan parameter Paksa, cmdlet menggantikan alur yang ada tanpa konfirmasi.
 Lakukan operasi ini dalam urutan berikut: -- Buat pabrik data.
 -- Buat layanan tertaut.
--- Membuat kumpulan data.
--- Buat pipa.
-Jika pipeline dengan nama yang sama sudah ada di pabrik data, cmdlet ini meminta Anda untuk mengonfirmasi apakah akan menimpa pipeline yang sudah ada dengan pipeline baru.
-Jika Anda mengonfirmasi untuk menimpa pipeline yang sudah ada, definisi pipeline juga diganti.
+-- Buat himpunan data.
+-- Buat alur.
+Jika alur dengan nama yang sama sudah ada di pabrik data, cmdlet ini meminta Anda untuk mengonfirmasi apakah akan menimpa alur yang ada dengan alur baru.
+Jika Anda mengonfirmasi untuk menimpa alur yang ada, definisi alur juga diganti.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat pipeline
+### Contoh 1: Membuat alur
 ```powershell
 Set-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataFactoryName "WikiADF" -File "C:\DPWikisample.json"
 ```
@@ -58,15 +61,15 @@ Set-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -Name "DPWikisample" -DataF
     Parameters        : {[OutputBlobName, Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]}
 ```
 
-Perintah ini membuat pipeline bernama DPWikisample di pabrik data bernama ADF.
-Perintah mendasarkan pipeline pada informasi dalam file DPWikisample.json.
-File ini menyertakan informasi tentang aktivitas seperti Aktivitas Salin dan Aktivitas HDInsight dalam saluran.
+Perintah ini membuat alur bernama DPWikisample di pabrik data bernama ADF.
+Perintah mendasarkan alur pada informasi dalam file DPWikisample.json.
+File ini mencakup informasi tentang aktivitas seperti Aktivitas Salin dan Aktivitas HDInsight dalam alur.
 
 ## PARAMETERS
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini membuat pipeline untuk pabrik data yang ditentukan parameter ini.
+Cmdlet ini membuat alur untuk pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan pipeline yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan alur yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama alur yang akan dibuat.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini membuat pipeline untuk grup yang ditentukan parameter ini.
+Cmdlet ini membuat alur untuk grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -213,12 +216,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzDataFactoryV2Pipeline]()
 
-[Hapus-AzDataFactoryV2Pipeline]()
+[Remove-AzDataFactoryV2Pipeline]()
 
 [Invoke-AzDataFactoryV2Pipeline]()

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
-ms.openlocfilehash: 6b037f47f6ecd65f6a06332423589063e5dc95d3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a744d07f45fa96a2ca8c4b1d602b210d3e6d56d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684450"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612482"
 ---
 # Expand-AzWvdMsixImage
 
 ## SYNOPSIS
 Memperluas dan Mencantumkan paket MSIX dalam Gambar, mengingat Jalur Gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/expand-azwvdmsiximage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Expand-AzWvdMsixImage -HostPoolName <String> -ResourceGroupName <String> [-Subsc
  [-Uri <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Expand-AzWvdMsixImage -HostPoolName <String> -ResourceGroupName <String> -MsixImageUri <IMsixImageUri>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -48,7 +51,7 @@ Memperluas dan Mencantumkan paket MSIX dalam Gambar, mengingat Jalur Gambar.
 
 ## EXAMPLES
 
-### Contoh 1: Memperluas Jalur Gambar tertentu dan mengambil metadata Paket yang ditemukan di AppxManifest.xml
+### Contoh 1: Memperluas Jalur Gambar yang ditentukan dan mengambil metadata Paket yang ditemukan di AppxManifest.xml
 ```powershell
 Expand-AzWvdMsixImage -HostPoolName HostPoolName `
           -ResourceGroupName resourceGroupName `
@@ -62,7 +65,7 @@ Name                          Type
 HostPoolName/extractmsiximage Microsoft.DesktopVirtualization/hostpools/extractmsiximage
 ```
 
-Perintah ini mengembalikan Metadata Dari Paket MSIX yang ditemukan dalam Jalur Gambar tertentu.
+Perintah ini mengembalikan Metadata Paket MSIX yang ditemukan di Jalur Gambar yang diberikan.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -MsixImageUri
-Mewakili URI yang mengacu pada Gambar MSIX Untuk dibangun, lihat bagian CATATAN untuk properti MSIXIMAGEURI dan membuat tabel hash.
+Mewakili URI yang mengacu pada MSIX Image To construct, lihat bagian NOTES untuk properti MSIXIMAGEURI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IMsixImageUri
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -231,15 +234,15 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
-MSIXIMAGEURI <IMsixImageUri>: Mewakili URI yang mengacu pada MSIX Image
+MSIXIMAGEURI <IMsixImageUri>: Mewakili URI yang mengacu pada Gambar MSIX
   - `[Uri <String>]`: URI ke Gambar
 
 ## RELATED LINKS

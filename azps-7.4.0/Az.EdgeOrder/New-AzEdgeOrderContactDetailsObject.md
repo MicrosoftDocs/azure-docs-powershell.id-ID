@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderContactDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderContactDetailsObject.md
-ms.openlocfilehash: d69d0a4306e287705930dfe6c533510c7166b3e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8854f59a771f3d143cf6a3467b56df9e676b86a9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629238"
 ---
 # New-AzEdgeOrderContactDetailsObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk ContactDetails.
+Buat objek dalam memori untuk ContactDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeordercontactdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEdgeOrderContactDetailsObject -ContactName <String> -EmailList <String[]> 
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk ContactDetails.
+Buat objek dalam memori untuk ContactDetails.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mobile
-Nomor ponsel orang yang dihubungi.
+Nomor ponsel kontak.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
-ms.openlocfilehash: 342ae28bc1a0712d90b2ef5c1886b8bc0cb9e447
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3bfdb7f4ed92649d34d37e813bc727a1edb118aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142736920"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613022"
 ---
 # Test-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memeriksa keberadaan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/test-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Test-AzSynapseSqlPool -Name <String> [-Version <Int32>] -WorkspaceObject <PSSyna
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzSynapseSqlPool** memeriksa keberadaan kumpulan SQL Analitik Synapse.
+Cmdlet **Test-AzSynapseSqlPool** memeriksa keberadaan kumpulan SQL Synapse Analytics.
 
 ## EXAMPLES
 
@@ -60,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Synapse SQL pool.
+### -Name
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi Synapse SQL pool. Misalnya, 2 atau 3.
+Versi kumpulan SQL Synapse. Misalnya, 2 atau 3.
 
 ```yaml
 Type: System.Int32
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

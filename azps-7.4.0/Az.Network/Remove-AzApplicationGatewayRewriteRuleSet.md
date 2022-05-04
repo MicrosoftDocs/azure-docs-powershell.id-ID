@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRewriteRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRewriteRuleSet.md
-ms.openlocfilehash: b66a9da01ee97fd5aa02121c7e7e5ab82dc583ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8a04ce603a4021c833d3c6b40973bd8d2932e8a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996463"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599396"
 ---
 # Remove-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
-Menghapus kumpulan aturan penulisan ulang dari gateway aplikasi.
+Menghapus seperangkat aturan penulisan ulang dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayrewriteruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzApplicationGatewayRewriteRuleSet -Name <String> -ApplicationGateway <PS
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayRewriteRuleSet** menghapus kumpulan aturan penulisan ulang dari gateway aplikasi Azure.
+Cmdlet **Remove-AzApplicationGatewayRewriteRuleSet** menghapus seperangkat aturan penulisan ulang dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menghapus kumpulan aturan penulisan ulang bernama RuleSet02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus seperangkat aturan penulisan ulang bernama RuleSet02 dari gateway aplikasi yang disimpan di $AppGw.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway aplikasi RewriteRuleSet
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDatabaseManagedInstanceDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDatabaseManagedInstanceDataSourceObject.md
-ms.openlocfilehash: 4bc661da30f526897f9e3aff42ac51108827eb31
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b0cc9c8812c24e1fa0b2291f25165737a5b35cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118017"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608378"
 ---
 # New-AzPurviewAzureSqlDatabaseManagedInstanceDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSqlDatabaseManagedInstanceDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresqldatabasemanagedinstancedatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat objek dalam memori untuk AzureSqlDatabaseManagedInstanceDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek sumber data instans terkelola database Azure SQL
+### Contoh 1: Membuat Azure SQL objek sumber data instans terkelola database
 ```powershell
 PS C:\> New-AzPurviewAzureSqlDatabaseManagedInstanceDataSourceObject -Kind 'AzureSqlDatabaseManagedInstance' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ServerEndpoint 'tcp:sqlause.public.3b6a39.database.windows.net,3342'
 
@@ -50,7 +53,7 @@ ServerEndpoint           : tcp:sqlause.public.3b6a39.database.windows.net,3342
 SubscriptionId           :
 ```
 
-Membuat database Azure SQL objek sumber data yang dikelola database
+Membuat Azure SQL objek sumber data instans terkelola database
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

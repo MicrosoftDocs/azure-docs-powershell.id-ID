@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
-ms.openlocfilehash: c699c175c9383c9a9830d5f53848418993192b40
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf7686e2114328a5bf0c09bae91aff364175ec92
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803466"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589086"
 ---
 # Get-AzProviderHubNotificationRegistration
 
 ## SYNOPSIS
 Mendapatkan detail pendaftaran pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubnotificationregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderHubNotificationRegistration -ProviderNamespace <String> [-Subscrip
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzProviderHubNotificationRegistration -Name <String> -ProviderNamespace <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan detail pendaftaran pemberitahuan.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan semua pendaftaran pemberitahuan menurut ProviderNamespace.
+### Contoh 1: Mencantumkan semua pendaftaran pemberitahuan menurut ProviderNamespace.
 ```powershell
 Get-AzProviderHubNotificationRegistration -ProviderNamespace "Microsoft.Contoso"
 ```
@@ -54,7 +57,7 @@ notificationRegistrationTest1
 notificationRegistrationTest2
 ```
 
-Cantumkan semua pendaftaran pemberitahuan di ruang nama penyedia.
+Cantumkan semua pendaftaran pemberitahuan di namespace penyedia.
 
 ### Contoh 2: Dapatkan pendaftaran pemberitahuan berdasarkan nama.
 ```powershell
@@ -101,7 +104,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pendaftaran pemberitahuan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -168,12 +171,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
-  - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
-  - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
+  - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
+  - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.
+  - `[NestedResourceTypeThird <String>]`: Jenis sumber daya anak ketiga.
+  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
-  - `[ResourceType <String>]`: Tipe sumber daya.
+  - `[ResourceType <String>]`: Jenis sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.
   - `[Sku <String>]`: SKU.
   - `[SubscriptionId <String>]`: ID langganan target.

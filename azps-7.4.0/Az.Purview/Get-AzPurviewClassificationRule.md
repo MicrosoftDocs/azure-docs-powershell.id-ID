@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewClassificationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewClassificationRule.md
-ms.openlocfilehash: 7a0a4143c4de82dd9a03f072f9c5fda1f0c3b25a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2001f3f2383819c4642377f2d7bfbc6305bd75a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869328"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589014"
 ---
 # Get-AzPurviewClassificationRule
 
 ## SYNOPSIS
 Mendapatkan aturan klasifikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewclassificationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Mendapatkan aturan klasifikasi
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aturan klasifikasi kustom berdasarkan nama
+### Contoh 1: Dapatkan aturan klasifikasi kustom berdasarkan nama
 ```powershell
 PS C:\> Get-AzPurviewClassificationRule -Endpoint https://parv-brs-2.purview.azure.com/ -Name ClassificationRule1
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/publis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Publish-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Publish-AzBlueprint.md
-ms.openlocfilehash: 4fdf967573b30e5be0c7cc843984148cf9cb6d5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 996352d85e0f6d38ac3703b3f438695e2e2c8c39
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007065"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598460"
 ---
 # Publish-AzBlueprint
 
 ## SYNOPSIS
-Terbitkan versi baru cetak biru.
+Menerbitkan versi baru cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/publish-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,8 +53,8 @@ Menerbitkan versi baru definisi cetak biru.
 
 ## PARAMETERS
 
-### -Blueprint
-Objek Blueprint.
+### -Cetak biru
+Objek cetak biru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprint
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeNote
-Catatan untuk menjelaskan konten versi cetak biru ini.
+Catatan untuk menjelaskan isi versi cetak biru ini.
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

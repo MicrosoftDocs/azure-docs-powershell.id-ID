@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
-ms.openlocfilehash: 083297498c487b4114ff06d2794c47fc3d0f1241
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 08c7c48699bb8261fcab232625b35ead75a63d1e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286803"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590868"
 ---
 # Add-AzEventHubIPRule
 
 ## SYNOPSIS
-Menambahkan aturan IP tunggal ke NetworkRuleSet dari Namespace yang diberikan
+Menambahkan satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/add-azeventhubiprule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Add-AzEventHubIPRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Menambahkan aturan IP tunggal ke NetworkRuleSet dari Namespace yang diberikan
+Menambahkan satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Type                : Microsoft.Eventhub/Namespaces/NetworkRuleSet
 IpRules             : {11.22.33.44, Allow}
 VirtualNetworkRules : 
 ```
-tambahkan IPRule dengan IpMask "11.22.33.44" dan Izinkan Tindakan untuk ruang nama tertentu.
+tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Izinkan untuk namespace yang diberikan.
 
 ### Contoh 2
 ```powershell
@@ -65,7 +68,7 @@ Type                : Microsoft.Eventhub/Namespaces/NetworkRuleSet
 IpRules             : {11.22.33.44, Allow}
 VirtualNetworkRules : 
 ```
-tambahkan IPRule dengan IpMask "11.22.33.44" dan Izinkan Tindakan untuk ruang nama tertentu.
+tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Izinkan untuk namespace yang diberikan.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRuleObject
-Objek Konfigurasi IpRule yang akan ditambahkan
+Objek Konfigurasi IPRule yang akan ditambahkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSNWRuleSetIpRulesAttributes
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama
+### -Name
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

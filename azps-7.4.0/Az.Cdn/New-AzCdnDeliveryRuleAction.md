@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
-ms.openlocfilehash: 210d2c47824000a6826ce249039f151f3a7f526a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 824bd55fba0af140e086b8e657ee3741e0e13a70
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749880"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629724"
 ---
 # New-AzCdnDeliveryRuleAction
 
 ## SYNOPSIS
 Membuat tindakan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 

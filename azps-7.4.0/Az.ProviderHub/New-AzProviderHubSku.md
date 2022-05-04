@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
-ms.openlocfilehash: 940c3996ed885a92c1215b1a672695424084d3cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83f91a3d743b1d0fcf00093d93790d7f9198941e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936901"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599216"
 ---
 # New-AzProviderHubSku
 
 ## SYNOPSIS
 Membuat atau memperbarui sku jenis sumber daya dalam jenis sumber daya yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU- nya.
+The SKU.
 
 ```yaml
 Type: System.String

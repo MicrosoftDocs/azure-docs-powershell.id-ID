@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
-ms.openlocfilehash: c03ebe0c235eaaa3dfc935497ef836706dbbcbe7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ecec102a1365722f606f754879f17e2f1bace6aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993565"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600116"
 ---
 # Get-AzSynapseTriggerRun
 
 ## SYNOPSIS
-Mengembalikan informasi tentang pemicu yang dijalankan.
+Mengembalikan informasi tentang eksekusi pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseTriggerRun -WorkspaceObject <PSSynapseWorkspace> -Name <String> -Ru
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzSynapseTriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu tertentu dalam jangka waktu tertentu.
+Perintah **Get-AzSynapseTriggerRun** mengembalikan informasi terperinci tentang eksekusi pemicu untuk pemicu yang ditentukan dalam jangka waktu tertentu.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah **Get-AzSynapseTriggerRun** mengembalikan informasi mendetail tentang p
 Get-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Name ContosoTrigger -RunStartedAfter "2018-09-01T21:00" -RunStartedBefore "2019-09-01T21:00"
 ```
 
-Perintah ini memperlihatkan informasi tentang berjalan untuk ContosoTrigger di ruang kerja ContosoWorkspace yang dimulai antara "2018-09-01T21:00" dan "2019-09-01T21:00".
+Perintah ini menunjukkan informasi tentang eksekusi untuk ContosoTrigger di ruang kerja ContosoWorkspace yang dimulai antara "2018-09-01T21:00" dan "2019-09-01T21:00".
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseTriggerRun -Name ContosoTrigger -RunStartedAfter "2018-09-01T21:00" -RunStartedBefore "2019-09-01T21:00"
 ```
 
-Perintah ini memperlihatkan informasi tentang berjalan untuk ContosoTrigger di ruang kerja ContosoWorkspace yang dimulai antara "2018-09-01T21:00" dan "2019-09-01T21:00" melalui pipeline.
+Perintah ini menunjukkan informasi tentang eksekusi untuk ContosoTrigger di ruang kerja ContosoWorkspace yang dimulai antara "2018-09-01T21:00" dan "2019-09-01T21:00" melalui alur.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedAfter
-Waktu pada atau setelah acara jalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau setelah peristiwa eksekusi diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedBefore
-Waktu pada atau sebelum acara jalankan diperbarui dalam format 'ISO 8601'.
+Waktu pada atau sebelum peristiwa eksekusi diperbarui dalam format 'ISO 8601'.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

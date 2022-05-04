@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: 42810df59ce149beb40e7bf43e2366d40f8c56c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33e8944990e3ef7a2919afba596ade4878a6e0fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125217"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601412"
 ---
 # Set-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
-Mengubah akun Data Lake Analytics.
+Memodifikasi akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzDataLakeAnalyticsAccount [-Name] <String> [[-Tag] <Hashtable>] [[-Resource
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeAnalyticsAccount** mengubah akun Data Lake Analytics Azure.
+Cmdlet **Set-AzDataLakeAnalyticsAccount** memodifikasi akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah ini mengubah sumber data default dan properti Tag akun.
 
 ### Contoh 2
 
-Mengubah akun Data Lake Analytics. (autogenerasi)
+Memodifikasi akun Data Lake Analytics. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -51,7 +54,7 @@ Set-AzDataLakeAnalyticsAccount -AllowAzureIpState Enabled -FirewallState Enabled
 ## PARAMETERS
 
 ### -AllowAzureIpState
-Secara opsional izinkan/blok Azure asal IP melalui firewall.
+Secara opsional izinkan/blokir IP asal Azure melalui firewall.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallAllowAzureIpsState]
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallState
-Secara opsional mengaktifkan/menonaktifkan aturan firewall yang sudah ada.
+Aktifkan/nonaktifkan aturan firewall yang ada secara opsional.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallState]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAnalyticsUnits
-Unit analitik maksimum maksimum yang didukung opsional untuk memperbarui akun.
+Unit analitik maksimum yang didukung opsional untuk memperbarui akun.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxJobCount
-Maksimum pekerjaan yang didukung opsional yang berjalan di bawah akun pada saat yang sama untuk diatur.
+Pekerjaan maksimum maksimum yang didukung opsional yang berjalan di bawah akun secara bersamaan untuk diatur.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -127,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Data Lake Analytics.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-String,kamus string tag yang terkait dengan akun ini yang harus mengganti kumpulan tag saat ini
+String, kamus string tag yang terkait dengan akun ini yang harus menggantikan kumpulan tag saat ini
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,13 +215,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.TierType, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallState, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallState, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallAllowAzureIpsState, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Analytics.Models.FirewallAllowAzureIpsState, Microsoft.Azure.Management.DataLake.Analytics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactory.md
-ms.openlocfilehash: 04508c196d147f12a02a79b9c08c4cf54171e1a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a4855094ad41604dc6d30d4ff6c701765bcc10f7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125595"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609188"
 ---
 # Get-AzDataFactory
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Pabrik Data.
+Mendapatkan informasi tentang Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Get-AzDataFactory [[-Name] <String>] [-ResourceGroupName] <String> [-DefaultProf
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataFactory** mendapatkan informasi tentang pabrik data dalam grup sumber daya Azure.
-Jika Anda menentukan nama pabrik data, cmdlet ini akan mendapatkan informasi tentang pabrik data tersebut.
+Jika Anda menentukan nama pabrik data, cmdlet ini mendapatkan informasi tentang pabrik data tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua pabrik data dalam grup sumber daya Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua pabrik data
+### Contoh 1: Mendapatkan semua pabrik data
 ```powershell
 Get-AzDataFactory -ResourceGroupName "ADF"
 ```
@@ -51,7 +54,7 @@ Tags              : {}
 Properties        : Microsoft.WindowsAzure.Commands.Utilities.PSDataFactoryConfiguration
 ```
 
-Perintah ini menampilkan informasi tentang semua pabrik data dalam langganan Azure.
+Perintah ini menampilkan informasi tentang semua pabrik data di langganan Azure.
 
 ### Contoh 2: Mendapatkan pabrik data tertentu
 ```powershell
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pabrik data untuk mendapatkan informasi.
+### -Name
+Menentukan nama pabrik data yang akan mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -129,12 +132,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [New-AzDataFactory](./New-AzDataFactory.md)
 
-[Hapus-AzDataFactory](./Remove-AzDataFactory.md)
+[Remove-AzDataFactory](./Remove-AzDataFactory.md)
 
 

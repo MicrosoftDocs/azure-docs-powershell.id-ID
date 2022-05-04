@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationFileShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationFileShare.md
-ms.openlocfilehash: 2238395d71f7d55ae1cf434153c128ac74161400
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a06e8ca4918415b7cec9db4b8c387c56a4395e22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874405"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599540"
 ---
 # New-AzDataMigrationFileShare
 
 ## SYNOPSIS
 Membuat objek FileShare untuk Azure Database Migration Service, yang menentukan berbagi jaringan lokal untuk mengambil cadangan database sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationfileshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataMigrationFileShare -Path <String> -Credential <PSCredential>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationFileShare membuat objek FileShare yang menentukan berbagi jaringan lokal yang Azure Database Migration Service bisa mengambil cadangan database sumber. Akun layanan yang menjalankan instans SQL Server sumber harus memiliki hak istimewa penulisan pada berbagi jaringan ini.
+Cmdlet New-AzDataMigrationFileShare membuat objek FileShare yang menentukan berbagi jaringan lokal yang Azure Database Migration Service dapat mengambil cadangan database sumber. Akun layanan yang menjalankan instans SQL Server sumber harus memiliki hak istimewa tulis di berbagi jaringan.
 
 ## EXAMPLES
 
@@ -42,8 +45,8 @@ domain\user testadmin123 \\fileshare\folder1
 
 ## PARAMETERS
 
-### -Kredensial
-Kredensial untuk mengakses berbagi file.
+### -Credential
+Info masuk untuk mengakses berbagi file.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -88,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

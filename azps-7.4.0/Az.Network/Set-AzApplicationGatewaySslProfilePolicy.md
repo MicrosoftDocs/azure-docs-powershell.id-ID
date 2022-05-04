@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfilePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfilePolicy.md
-ms.openlocfilehash: 6db5fc4688a2cd33a6fec87a8b8e83de31a43a8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5a3ea21072c46cb0580eab03b14806b08aabd27d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312921"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608504"
 ---
 # Set-AzApplicationGatewaySslProfilePolicy
 
 ## SYNOPSIS
-Mengubah kebijakan SSL profil SSL gateway aplikasi.
+Memodifikasi kebijakan SSL dari profil SSL gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslprofilepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzApplicationGatewaySslProfilePolicy -SslProfile <PSApplicationGatewaySslPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewaySslProfilePolicy** mengubah kebijakan SSL profil SSL gateway aplikasi.
+Cmdlet **Set-AzApplicationGatewaySslProfilePolicy** memodifikasi kebijakan SSL profil SSL gateway aplikasi.
 
 ## EXAMPLES
 
@@ -38,12 +41,12 @@ $profile  = Get-AzApplicationGatewaySslProfile -Name "SslProfile01" -Application
 $profile = Set-AzApplicationGatewaySslProfilePolicy -SslProfile $profile -PolicyType Predefined -PolicyName AppGwSslPolicy20170401
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil ssl bernama SslProfile01 untuk $AppGw dan menyimpan pengaturan dalam variabel $profile. Perintah terakhir mengubah kebijakan ssl objek profil ssl yang disimpan di $profile.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil ssl bernama SslProfile01 untuk $AppGw dan menyimpan pengaturan dalam variabel $profile. Perintah terakhir memodifikasi kebijakan ssl objek profil ssl yang disimpan di $profile.
 
 ## PARAMETERS
 
 ### -CipherSuite
-Rangkaian sandi Ssl untuk diaktifkan dalam urutan yang ditentukan untuk gateway aplikasi
+Suite sandi Ssl untuk diaktifkan dalam urutan yang ditentukan ke gateway aplikasi
 
 ```yaml
 Type: String[]
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinProtocolVersion
-Versi minimum protokol Ssl untuk didukung di gateway aplikasi
+Versi minimum protokol Ssl yang akan didukung pada gateway aplikasi
 
 ```yaml
 Type: String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-Nama kebijakan Ssl yang sudah ditentukan sebelumnya
+Nama kebijakan Ssl yang telah ditentukan sebelumnya
 
 ```yaml
 Type: String
@@ -150,8 +153,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

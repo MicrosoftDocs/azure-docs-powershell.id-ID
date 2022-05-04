@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: f4295dc5cc8bc6dde06df8e0a957a264d4a86146
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec4544338ff4997d8ece2737fc98ee246ca5d4dd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125271"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591102"
 ---
 # New-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Membuat kredensial katalog Azure Data Lake Analytics baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzDataLakeAnalyticsCatalogCredential [-Account] <String> [-DatabaseName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataLakeAnalyticsCatalogCredential membuat kredensial baru untuk digunakan dalam katalog Data Lake Analytics Azure untuk menyambungkan ke sumber data eksternal.
+Cmdlet New-AzDataLakeAnalyticsCatalogCredential membuat kredensial baru untuk digunakan dalam katalog Azure Data Lake Analytics untuk menyambungkan ke sumber data eksternal.
 
 ## EXAMPLES
 
@@ -48,9 +51,9 @@ New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -DatabaseHost "example.contoso.com" -Port 8080
 ```
 
-Perintah ini membuat kredensial yang ditentukan untuk akun, database, host, dan port tertentu menggunakan protokol https.
+Perintah ini membuat kredensial yang ditentukan untuk akun, database, host, dan port yang ditentukan menggunakan protokol https.
 
-### Contoh 2: Membuat kredensial untuk katalog yang menentukan URI penuh
+### Contoh 2: Membuat kredensial untuk katalog yang menentukan URI lengkap
 ```powershell
 New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -DatabaseName "databaseName" `
@@ -59,7 +62,7 @@ New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -Uri "http://httpExample.contoso.com:8080"
 ```
 
-Perintah ini membuat kredensial tertentu untuk URI akun, database, dan sumber data eksternal yang ditentukan.
+Perintah ini membuat kredensial yang ditentukan untuk URI akun, database, dan sumber data eksternal yang ditentukan.
 
 ## PARAMETERS
 
@@ -78,8 +81,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kredensial
-Menentukan nama pengguna dan kata sandi kredensial yang terkait.
+### -Credential
+Menentukan nama pengguna dan kata sandi kredensial yang sesuai.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseHost
-Menentukan nama host sumber data eksternal yang bisa disambungkan kredensial dalam format mydatabase.contoso.com.
+Menentukan nama host sumber data eksternal yang dapat disambungkan kredensial dalam format mydatabase.contoso.com.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database dalam akun Data Lake Analytics tempat kredensial akan disimpan.
+Menentukan nama database di akun Data Lake Analytics tempat kredensial akan disimpan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor port yang digunakan untuk menyambungkan ke DatabaseHost tertentu menggunakan kredensial ini.
+Menentukan nomor port yang digunakan untuk menyambungkan ke DatabaseHost yang ditentukan menggunakan kredensial ini.
 
 ```yaml
 Type: System.Int32
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Menentukan Uniform Resource Identifier (URI) lengkap dari sumber data eksternal tempat kredensial ini dapat tersambung.
+Menentukan Pengidentifikasi Sumber Daya Seragam (URI) lengkap dari sumber data eksternal yang dapat disambungkan oleh kredensial ini.
 
 ```yaml
 Type: System.Uri
@@ -183,8 +186,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

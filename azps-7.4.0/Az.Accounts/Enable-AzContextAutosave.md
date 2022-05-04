@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
-ms.openlocfilehash: d42707f94f4c18ea4fa2b7008aeeee560212a5ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6e2fcdea01c9bb97c8a65c4b8899537bd9bfbba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752796"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612878"
 ---
 # Enable-AzContextAutosave
 
 ## SYNOPSIS
-Konteks Azure adalah objek PowerShell yang mewakili langganan aktif Anda untuk menjalankan perintah, dan informasi autentikasi yang diperlukan untuk menyambungkan ke awan Azure. Dengan konteks Azure, Azure PowerShell tidak perlu mengotentikasi ulang akun Setiap kali Anda beralih langganan. Untuk informasi selengkapnya, lihat [Objek konteks Azure PowerShell](https://docs.microsoft.com/powershell/azure/context-persistence).
+Konteks Azure adalah objek PowerShell yang mewakili langganan aktif Anda untuk menjalankan perintah, dan informasi autentikasi yang diperlukan untuk tersambung ke cloud Azure. Dengan konteks Azure, Azure PowerShell tidak perlu mengautentikasi ulang akun Anda setiap kali beralih langganan. Untuk informasi selengkapnya, lihat [Azure PowerShell objek konteks](https://docs.microsoft.com/powershell/azure/context-persistence).
 
 Cmdlet ini memungkinkan informasi konteks Azure disimpan dan dimuat secara otomatis saat Anda memulai proses PowerShell. Misalnya, saat membuka jendela baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/enable-azcontextautosave) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Enable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <I
 
 ## DESCRIPTION
 
-Memungkinkan informasi konteks Azure disimpan dan dimuat secara otomatis saat proses PowerShell dimulai. Konteks disimpan di akhir eksekusi cmdlet apa pun yang mempengaruhi konteks. Misalnya, cmdlet profil apa pun. Jika Anda menggunakan autentikasi pengguna, token dapat diperbarui selama menjalankan cmdlet apa pun.
+Memungkinkan informasi konteks Azure disimpan dan dimuat secara otomatis saat proses PowerShell dimulai. Konteks disimpan di akhir eksekusi cmdlet apa pun yang memengaruhi konteks. Misalnya, cmdlet profil apa pun. Jika Anda menggunakan autentikasi pengguna, maka token dapat diperbarui selama menjalankan cmdlet apa pun.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan penyimpanan otomatis kredensial untuk pengguna saat ini
+### Contoh 1: Mengaktifkan kredensial penyimpanan otomatis untuk pengguna saat ini
 
 Aktifkan penyimpanan otomatis kredensial untuk pengguna saat ini. Setiap kali jendela PowerShell dibuka, konteks Anda saat ini diingat tanpa masuk.
 
@@ -42,7 +45,7 @@ Enable-AzContextAutosave
 
 ### Contoh 2
 
-Izinkan informasi kredensial, akun, dan langganan Azure, disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell dalam sesi PowerShell ini. (autogenerasi)
+Izinkan informasi kredensial, akun, dan langganan Azure, disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell di sesi PowerShell ini. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example -->
 Enable-AzContextAutosave -Scope Process
@@ -66,9 +69,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
+### -Cakupan
 
-Menentukan lingkup perubahan konteks. Misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini. Perubahan yang dibuat dengan lingkup `CurrentUser` akan mempengaruhi semua sesi PowerShell yang dimulai oleh pengguna. Jika sesi tertentu perlu memiliki pengaturan yang berbeda, gunakan lingkup `Process`.
+Menentukan cakupan perubahan konteks. Misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini. Perubahan yang dilakukan dengan cakupan `CurrentUser` akan memengaruhi semua sesi PowerShell yang dimulai oleh pengguna. Jika sesi tertentu harus memiliki pengaturan yang berbeda, gunakan cakupan `Process`.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -83,9 +86,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -117,11 +120,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

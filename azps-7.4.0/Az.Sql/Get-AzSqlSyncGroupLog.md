@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
-ms.openlocfilehash: 03c81a7f4cb91ea29bba0fed1a6d2ee7885ee5a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02b46815fad3bd2e55ca9a3e73310e1bb7cbdd14
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799416"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588870"
 ---
 # Get-AzSqlSyncGroupLog
 
 ## SYNOPSIS
 Mengembalikan log grup sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncgrouplog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ TimeStamp            LogLevel Details                                   Source
 6/13/2017 7:11:59 AM Success  Schema information obtained successfully. fangltest2.database.windows.net/fangltest
 ```
 
-Perintah ini mendapatkan log Grup Sinkronisasi Azure SQL.
+Perintah ini mendapatkan log grup sinkronisasi Azure SQL.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir log ke kueri.
+Waktu akhir log untuk dikueri.
 
 ```yaml
 Type: System.DateTime
@@ -92,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Tipe log yang akan dikueri.
-Nilai yang valid adalah: 'Kesalahan', 'Peringatan', 'Sukses' dan 'Semua'.
+Jenis log yang akan dikueri.
+Nilai yang valid adalah: 'Error', 'Warning', 'Success' dan 'All'.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai log ke kueri.
+Waktu mulai log untuk dikueri.
 
 ```yaml
 Type: System.DateTime
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

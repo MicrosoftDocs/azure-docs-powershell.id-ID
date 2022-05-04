@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogTagRule.md
-ms.openlocfilehash: 916e0325b4854ec9b72ec8c3c7d829cac8ae2d6e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b954936bcc5d43e4abd80e7456cde0da0092253d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590994"
 ---
 # New-AzDatadogTagRule
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogtagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ New-AzDatadogTagRule -InputObject <IDatadogIdentity> [-LogRuleFilteringTag <IFil
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 1: Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu
 ```powershell
 $ftobjArray = @()
 $ftobjArray += New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
@@ -54,9 +57,9 @@ Name    Type
 default microsoft.Datadog/monitors/tagrules
 ```
 
-Perintah ini membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
-### Contoh 2: Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu menurut pipeline
+### Contoh 2: Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur
 ```powershell
 $ftobjArray = @()
 $ftobjArray += New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
@@ -70,7 +73,7 @@ Name    Type
 default microsoft.Datadog/monitors/tagrules
 ```
 
-Perintah ini membuat atau memperbarui aturan tag yang ditetapkan untuk sumber daya monitor tertentu menurut pipeline.
+Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -105,12 +108,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleFilteringTag
-Daftar pemfilteran tag yang akan digunakan untuk mengambil log.
-Hal ini hanya berlaku jika bendera SendResourceLogs diaktifkan.
-Jika kosong, semua sumber daya akan direkam.
-Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
-Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-Untuk membangun, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan membuat tabel hash.
+Daftar tag pemfilteran yang akan digunakan untuk menangkap log.
+Ini hanya berlaku jika bendera SendResourceLogs diaktifkan.
+Jika kosong, semua sumber daya akan ditangkap.
+Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
+Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+Untuk membuat, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]
@@ -170,11 +173,11 @@ Accept wildcard characters: False
 ```
 
 ### -MetricRuleFilteringTag
-Daftar pemfilteran tag yang akan digunakan untuk mengambil metrik.
-Jika kosong, semua sumber daya akan direkam.
-Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
-Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-Untuk membangun, lihat bagian CATATAN untuk properti METRICRULEFILTERINGTAG dan membuat tabel hash.
+Daftar tag pemfilteran yang akan digunakan untuk menangkap metrik.
+Jika kosong, semua sumber daya akan ditangkap.
+Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
+Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+Untuk membuat, lihat bagian CATATAN untuk properti METRICRULEFILTERINGTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -203,8 +206,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan aturan
+### -Name
+Nama seperangkat aturan
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -249,8 +252,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -304,18 +307,18 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RuleSetName <String>]`: Nama kumpulan aturan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 
-LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk mengambil log. Hal ini hanya berlaku jika bendera SendResourceLogs diaktifkan. Jika kosong, semua sumber daya akan direkam. Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-  - `[Action <TagAction?>]`: Tindakan valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
-  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) tag.
+LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk menangkap log. Ini hanya berlaku jika bendera SendResourceLogs diaktifkan. Jika kosong, semua sumber daya akan ditangkap. Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+  - `[Action <TagAction?>]`: Tindakan yang valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
+  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) dari tag.
   - `[Value <String>]`: Nilai tag.
 
-METRICRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk mengambil metrik. Jika kosong, semua sumber daya akan direkam. Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-  - `[Action <TagAction?>]`: Tindakan valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
-  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) tag.
+METRICRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk menangkap metrik. Jika kosong, semua sumber daya akan ditangkap. Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+  - `[Action <TagAction?>]`: Tindakan yang valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
+  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) dari tag.
   - `[Value <String>]`: Nilai tag.
 
 ## RELATED LINKS

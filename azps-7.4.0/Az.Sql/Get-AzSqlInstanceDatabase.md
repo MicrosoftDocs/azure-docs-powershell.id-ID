@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabase.md
-ms.openlocfilehash: 6973ad4e9387556acd54a86112310a72eed6e1fe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fdd3f8f94b256da6aa72adffeafb1860de9767b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865224"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621246"
 ---
 # Get-AzSqlInstanceDatabase
 
 ## SYNOPSIS
 Mengembalikan informasi tentang database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzSqlInstanceDatabase [[-Name] <String>] [-InstanceObject] <AzureSqlManagedI
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Instans terkelola Azure SQL Database.
+Cmdlet **Get-AzSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Azure SQL Database Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua database pada instans
+### Contoh 1: Mendapatkan semua database pada instans
 ```powershell
 Get-AzSqlInstanceDatabase -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01"
 ```
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceObject
-Objek instans yang akan digunakan untuk mendapatkan database instans
+Objek instans yang digunakan untuk mendapatkan database instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya objek instans untuk mendapatkan
+Id sumber daya objek instans yang akan didapatkan
 
 ```yaml
 Type: System.String
@@ -226,8 +229,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Database Instans Azure SQL untuk diambil.
+### -Name
+Nama Database Instans Azure SQL yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

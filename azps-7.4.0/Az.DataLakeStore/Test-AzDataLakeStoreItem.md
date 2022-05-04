@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/te
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Test-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Test-AzDataLakeStoreItem.md
-ms.openlocfilehash: a60b2cabcf1c750dd958171d5caced156eb05509
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 47fc02efa97ba79d72e15f97ad5b3fc344137d05
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685152"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591084"
 ---
 # Test-AzDataLakeStoreItem
 
 ## SYNOPSIS
-Menguji keberadaan file atau folder di Penyimpanan Data Lake.
+Menguji keberadaan file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/test-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Perintah ini menguji apakah file Test.csv ada di akun ContosoADL.
 
 ### Contoh 2
 
-Menguji keberadaan file atau folder di Penyimpanan Data Lake. (autogenerasi)
+Menguji keberadaan file atau folder di Data Lake Store. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -49,7 +52,7 @@ Test-AzDataLakeStoreItem -Account 'ContosoADL' -Path '/MyFiles/Test.csv' -PathTy
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari item yang akan diuji, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item yang akan diuji, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -94,9 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -PathType
-Menentukan tipe item yang akan diuji.
+Menentukan jenis item yang akan diuji.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Setiap 
+- Apa pun 
 - File 
 - Folder
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

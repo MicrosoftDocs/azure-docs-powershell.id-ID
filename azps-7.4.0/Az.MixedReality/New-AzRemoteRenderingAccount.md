@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccount.md
-ms.openlocfilehash: fac9a2c703f149bc1fe4b9593771463cfb358620
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a191dc674defd778942648ff46e815b3b40de2e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681084"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621822"
 ---
 # New-AzRemoteRenderingAccount
 
 ## SYNOPSIS
-Membuat Akun Remote Rendering
+Buat Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzRemoteRenderingAccount -ResourceGroupName <String> -Name <String> -Locatio
 ```
 
 ## DESCRIPTION
-Buat Akun Remote Rendering baru di Langganan, Grup Sumber Daya, dan Kawasan tertentu.
+Buat Akun Remote Rendering baru di Langganan, Grup Sumber Daya, dan Wilayah tertentu.
 
 ## EXAMPLES
 
@@ -46,12 +49,12 @@ Name                : example
 Type                : Microsoft.MixedReality/RemoteRenderingAccounts
 ```
 
-Buat "contoh" Akun Remote Rendering baru dalam Langganan saat ini, Grup Sumber Daya "rg1" dan AS Tengah.
+Buat "contoh" Akun Remote Rendering baru di Langganan saat ini, Grup Sumber Daya "rg1" dan AS Tengah.
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Remote Rendering Nama Akun.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -142,12 +145,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

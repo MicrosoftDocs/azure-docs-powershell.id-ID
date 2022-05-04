@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRule.md
-ms.openlocfilehash: 2e186bd1d1c30e020756d8ab0d76b9e6bff28b56
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63e7e9b8b7783c52d40044ccdd59cfe0d0fe9de9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996985"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608576"
 ---
 # New-AzFirewallNetworkRule
 
 ## SYNOPSIS
 Membuat Aturan Jaringan Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,19 +42,19 @@ $rule = New-AzFirewallNetworkRule -Name "all-tcp-traffic" -Description "Rule for
 
 Contoh ini membuat aturan untuk semua lalu lintas TCP. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
 
-### Contoh 2: Membuat aturan untuk semua lalu lintas TCP dari 10.0.0.0 hingga 60.1.5.0:4040
+### Contoh 2: Buat aturan untuk semua lalu lintas TCP dari 10.0.0.0 hingga 60.1.5.0:4040
 ```powershell
 $rule = New-AzFirewallNetworkRule -Name "partial-tcp-rule" -Description "Rule for all TCP traffic from 10.0.0.0 to 60.1.5.0:4040" -Protocol TCP -SourceAddress "10.0.0.0" -DestinationAddress "60.1.5.0" -DestinationPort "4040"
 ```
 
 Contoh ini membuat aturan untuk semua lalu lintas TCP dari 10.0.0.0 hingga 60.1.5.0:4040. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
 
-### Contoh 3: Membuat aturan untuk semua lalu lintas TCP dan ICMP dari sumber mana pun ke 10.0.0.0/16
+### Contoh 3: Membuat aturan untuk semua lalu lintas TCP dan ICMP dari sumber apa pun ke 10.0.0.0/16
 ```powershell
 $rule = New-AzFirewallNetworkRule -Name "tcp-and-icmp-rule" -Description "Rule for all TCP and ICMP traffic from any source to 10.0.0.0/16" -Protocol TCP,ICMP -SourceAddress * -DestinationAddress "10.0.0.0/16" -DestinationPort *
 ```
 
-Contoh ini membuat aturan untuk semua lalu lintas TCP dari sumber mana pun ke 10.0.0.0/16. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
+Contoh ini membuat aturan untuk semua lalu lintas TCP dari sumber apa pun ke 10.0.0.0/16. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional aturan ini.
+Menentukan deskripsi opsional dari aturan ini.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan jaringan ini. Nama harus unik di dalam kumpulan aturan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan tipe lalu lintas yang akan difilter menurut aturan ini. Nilai yang mungkin adalah TCP, UDP, ICMP dan Any.
+Menentukan jenis lalu lintas yang akan difilter oleh aturan ini. Nilai yang mungkin adalah TCP, UDP, ICMP, dan Apa pun.
 
 ```yaml
 Type: System.String[]
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,11 +241,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

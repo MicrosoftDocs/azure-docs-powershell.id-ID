@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeKey.md
-ms.openlocfilehash: cee646d11f1b2b054edb8fbed35bb689a6ec06c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f471e8669f69e9e270d943f82d2dd7eba566444
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288675"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619430"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeKey
 
 ## SYNOPSIS
 Mendapatkan kunci untuk runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimekey) untuk informasi terbaru.
 
 ## SYNTAX
 

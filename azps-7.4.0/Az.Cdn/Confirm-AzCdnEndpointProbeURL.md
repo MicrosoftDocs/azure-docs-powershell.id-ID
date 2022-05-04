@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/confirm-azcd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Confirm-AzCdnEndpointProbeURL.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Confirm-AzCdnEndpointProbeURL.md
-ms.openlocfilehash: 81e634db27d2bd673ab04f904855d9d52952542b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb247f1dc0da77c32f58f4de6facc3b845267097
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232263"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653800"
 ---
 # Confirm-AzCdnEndpointProbeURL
 
 ## SYNOPSIS
 Memvalidasi URL probe.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/confirm-azcdnendpointprobeurl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Confirm-AzCdnEndpointProbeURL -ProbeUrl <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-**Cmdlet Confirm-AzCdnEndpointProbeURL** mengonfirmasi apakah URL probe yang disediakan dapat digunakan untuk akselerasi situs dinamis.
+**Cmdlet Confirm-AzCdnEndpointProbeURL** mengonfirmasi apakah URL pemeriksaan yang disediakan dapat digunakan untuk akselerasi situs dinamis.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeUrl
-Usulan nama URL probe untuk divalidasi.
+Nama URL probe yang diusulkan untuk divalidasi.
 
 ```yaml
 Type: System.String
@@ -75,11 +78,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

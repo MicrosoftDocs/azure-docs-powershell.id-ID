@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
-ms.openlocfilehash: dfa3ac7062bcf2289aec1cfc9f31ed6ca00ac902
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33e6352dd8b1abb4ee4cadc203b7512950aa1d58
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282879"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608756"
 ---
 # Set-AzNetAppFilesAccount
 
 ## SYNOPSIS
-Memperbarui akun Azure NetApp Files (ANF) dengan kumpulan data baru. Berguna untuk penghapusan direktori aktif terkait.
+Memperbarui akun Azure NetApp Files (ANF) dengan himpunan data baru. Berguna untuk penghapusan direktori aktif terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Set-AzNetAppFilesAccount -Location <String> -Name <String> [-Tag <Hashtable>] -R
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzNetAppFilesAccount** mengubah akun ANF.
+Cmdlet **Set-AzNetAppFilesAccount** memodifikasi akun ANF.
 
 ## EXAMPLES
 
-### Contoh 1 : Memodifikasi akun ANF
+### Contoh 1 : Mengubah akun ANF
 ```powershell
 Set-AzNetAppFilesAccount -ResourceGroupName "MyRG" -l "westus2" -Name "MyAnfAccount"
 ```
@@ -58,7 +61,7 @@ ActiveDirectories : {}
 ProvisioningState : Succeeded
 ```
 
-Perintah ini melakukan pembaruan pada akun tertentu. Tidak adanya direktori aktif berarti direktori tersebut akan dihapus dari akun.
+Perintah ini melakukan pembaruan pada akun yang diberikan. Tidak adanya direktori aktif berarti akan dihapus dari akun.
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun ANF
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya
+Hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

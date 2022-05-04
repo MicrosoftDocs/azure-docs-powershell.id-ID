@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
-ms.openlocfilehash: f383d230f94359a4273834771c38c7878c6de64c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74801472e36524e0795b07e265639e89895b1cdb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807228"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589464"
 ---
 # Get-AzMigrateServerReplication
 
 ## SYNOPSIS
 Mengambil detail server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Type                        : Microsoft.RecoveryServices/vaults/replicationFabri
 
 Dapatkan dengan id.
 
-### Contoh 2: Cantumkan semua dalam project menurut id.
+### Contoh 2: Mencantumkan semua dalam proyek menurut id.
 ```powershell
 Get-AzMigrateServerReplication -ResourceGroupID /Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020 -ProjectID "/subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.Migrate/MigrateProjects/AzMigrateTestProjectPWSH"
 ```
@@ -159,7 +162,7 @@ Type                        : Microsoft.RecoveryServices/vaults/replicationFabri
 
 Daftar semua.
 
-### Contoh 3: Cantumkan semua dalam project menurut nama.
+### Contoh 3: Mencantumkan semua dalam proyek berdasarkan nama.
 ```powershell
 Get-AzMigrateServerReplication -ResourceGroupName azmigratepwshtestasr13072020 -ProjectName AzMigrateTestProjectPWSH
 ```
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscoveredMachineId
-Menentukan ID mesin dari server yang ditemukan.
+Menentukan ID komputer dari server yang ditemukan.
 
 ```yaml
 Type: System.String
@@ -270,8 +273,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek mesin dari server replikasi.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Menentukan objek komputer dari server replikasi.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectID
-Menentukan Project Azure Migrasi server yang sedang direplikasi.
+Menentukan Project Azure Migrate tempat server mereplikasi.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Menentukan proyek Migrasi Azure dalam langganan saat ini.
+Menentukan proyek Azure Migrate dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupID
-Menentukan Grup Sumber Daya Azure Melakukan migrasi Project dalam langganan saat ini.
+Menentukan Grup Sumber Daya Project Azure Migrate dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya Azure Melakukan migrasi Project dalam langganan saat ini.
+Menentukan Grup Sumber Daya Project Azure Migrate dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token paginasi.
+Token penomoran halaman.
 
 ```yaml
 Type: System.String
@@ -406,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

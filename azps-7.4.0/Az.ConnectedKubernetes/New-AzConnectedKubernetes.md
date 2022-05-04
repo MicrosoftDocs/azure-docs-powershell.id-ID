@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
-ms.openlocfilehash: b244fe3ead5d829efb1a0f693e65eca8c5a5d875
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8cc60346a67648a14c84ec8c3895171c7b2bc6e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230265"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609548"
 ---
 # New-AzConnectedKubernetes
 
 ## SYNOPSIS
 API untuk mendaftarkan kluster Kubernetes baru dan membuat sumber daya terlacak di Azure Resource Manager (ARM).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/new-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ API untuk mendaftarkan kluster Kubernetes baru dan membuat sumber daya terlacak 
 
 ## EXAMPLES
 
-### Contoh 1: Create a connected kubernetes
+### Contoh 1: Membuat kubernetes yang terhubung
 ```powershell
 New-AzConnectedKubernetes -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -Location eastus
 ```
@@ -44,7 +47,7 @@ eastus   azps_test_cluster azps_test_group
 
 Perintah ini membuat kubernetes yang terhubung.
 
-### Contoh 2: Create a connected kubernetes with parameters kubeConfig and kubeContext
+### Contoh 2: Membuat kubernetes yang terhubung dengan parameter kubeConfig dan kubeContext
 ```powershell
 New-AzConnectedKubernetes -ClusterName azps_test_cluster1 -ResourceGroupName azps_test_group -Location eastus -KubeConfig $HOME\.kube\config -KubeContext azps_aks_t01
 ```
@@ -60,7 +63,7 @@ Perintah ini membuat kubernetes yang terhubung dengan parameter kubeConfig dan k
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kubernetes yang dinamai get.
+Nama kluster Kubernetes tempat get dipanggil.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Distribusi
-Distribusi Kubernetes yang berjalan pada kluster terhubung ini.
+Distribusi Kubernetes yang berjalan pada kluster yang terhubung ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Infrastruktur
-Infrastruktur tempat kluster Kubernetes diwakili oleh kluster terhubung ini sedang berjalan.
+Infrastruktur tempat kluster Kubernetes yang diwakili oleh kluster yang terhubung ini berjalan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -KubeConfig
-Jalur ke berkas konfigurasi kube
+Jalur ke file konfigurasi kube
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -KubeContext
-Konteks kubconfig dari mesin saat ini
+Konteks Kubconfig dari komputer saat ini
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisioningState
-Status penyediaan sumber daya kluster yang terhubung.
+Status provisi sumber daya kluster yang terhubung.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Support.ProvisioningState
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang didaftarkan oleh kluster kubernetes.
+Nama grup sumber daya tempat kluster kubernetes didaftarkan.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID dari langganan yang didaftarkan oleh kluster kubernetes.
+ID langganan tempat kluster kubernetes didaftarkan.
 
 ```yaml
 Type: System.String
@@ -224,8 +227,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

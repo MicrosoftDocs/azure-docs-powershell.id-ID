@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
-ms.openlocfilehash: 3e718ac42850dd0218a6150b6d19b62b810f64c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 037b494564bf02d3bdb9f7c024e6106962acddc8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066951"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654123"
 ---
 # Set-AzBlueprintArtifact
 
 ## SYNOPSIS
 Memperbarui artefak dalam definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprintartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Set-AzBlueprintArtifact -Name <String> -Type <PSArtifactKind> -Blueprint <PSBlue
 ```
 
 ## DESCRIPTION
-Perbarui artefak. Ada dua cara untuk memperbarui artefak: baik melalui artefak JSON sebagai file input atau dengan menyediakan parameter sebaris untuk artefak. Meskipun metode JSON tidak memerlukan tipe artefak untuk disediakan dalam metode parameter sebaris mengharuskan pengguna untuk menyediakan tipe artefak melalui parameter -Type.
+Memperbarui artefak. Ada dua cara untuk memperbarui artefak: baik melalui artefak JSON sebagai file input atau melalui penyediaan parameter sebaris untuk artefak. Meskipun metode JSON tidak memerlukan jenis artefak untuk disediakan dalam metode parameter sebaris mengharuskan pengguna untuk memberikan jenis artefak melalui parameter -Type.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Type               : Microsoft.Blueprint/blueprints/artifacts
 Name               : PolicyAssignmentStorageTag
 ```
 
-Perbarui artefak melalui file artefak JSON.
+Perbarui artefak melalui file JSON artefak.
 
 ### Contoh 2
 ```powershell
@@ -133,8 +136,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Blueprint
-Objek Blueprint.
+### -Cetak biru
+Objek cetak biru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintBase
@@ -205,7 +208,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama artefak
 
 ```yaml
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionId
-Id Definisi definisi definisi kebijakan.
+Id Definisi dari definisi kebijakan.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionParameter
-Hashtable parameter untuk lolos ke artifak definisi kebijakan.
+Hashtable parameter untuk diteruskan ke artefak definisi kebijakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya artefak akan berada di bawah.
+Nama grup sumber daya tempat artefak akan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionPrincipalId
-Daftar id prinsipal definisi peran.
+Daftar id utama definisi peran.
 
 ```yaml
 Type: System.String[]
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateFile
-Lokasi file templat ARM di disk.
+Lokasi file templat ARM pada disk.
 
 ```yaml
 Type: System.String
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterFile
-Lokasi file parameter templat ARM di disk.
+Lokasi file parameter templat ARM pada disk.
 
 ```yaml
 Type: System.String
@@ -325,9 +328,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Jenis artefak.
-Ada 3 tipe yang didukung: RoleAssignmentArtifact, PolicyAssignmentArtifact, TemplateArtifact.
+Ada 3 jenis yang didukung: RoleAssignmentArtifact, PolicyAssignmentArtifact, TemplateArtifact.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSArtifactKind
@@ -342,8 +345,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

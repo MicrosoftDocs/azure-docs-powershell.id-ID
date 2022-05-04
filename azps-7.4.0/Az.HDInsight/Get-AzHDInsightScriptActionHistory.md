@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightScriptActionHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightScriptActionHistory.md
-ms.openlocfilehash: 08891d4cbac705a4835bb0b52122a0161dc56eeb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 53ad97dd4074291d8eedfdba773318e4b843bb12
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808578"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619178"
 ---
 # Get-AzHDInsightScriptActionHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat tindakan skrip untuk kluster dan mencantumkannya dalam urutan kronologis terbalik, atau mendapatkan detail tindakan skrip yang dijalankan sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightscriptactionhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Cmdlet **Get-AzHDInsightScriptActionHistory** mendapatkan riwayat tindakan skrip
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan riwayat eksekusi tindakan skrip untuk kluster
+### Contoh 1: Mendapatkan riwayat eksekusi tindakan skrip untuk kluster
 ```powershell
 Get-AzHDInsightScriptActionHistory -ClusterName "your-hadoop-001"
 ```
 
-Perintah ini mendapatkan riwayat tindakan skrip untuk cluster your-hadoop-001.
+Perintah ini mendapatkan riwayat tindakan skrip untuk kluster your-hadoop-001.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptExecutionId
-Menentukan ID eksekusi aksi skrip yang dijalankan.
+Menentukan ID eksekusi tindakan skrip yang dijalankan.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

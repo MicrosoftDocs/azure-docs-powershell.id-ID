@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
-ms.openlocfilehash: 6fbdac3415f01125e42d26b39150f87fa7441e10
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8ca7289c2f68f5426274699076f210e50b800759
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063027"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598208"
 ---
 # New-AzDataShareDataSetMapping
 
 ## SYNOPSIS
-Membuat pemetaan kumpulan data untuk langganan berbagi.
+Membuat pemetaan himpunan data untuk langganan berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharedatasetmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzDataShareDataSetMapping -ResourceGroupName <String> -AccountName <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareDataSetMapping** membuat pemetaan kumpulan data antara kumpulan data sumber dan akun penyimpanan wastafel dalam langganan bersama.
+Cmdlet **New-AzDataShareDataSetMapping** membuat pemetaan himpunan data antara himpunan data sumber dan akun penyimpanan sink dalam langganan berbagi.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Name                 : AdsDataSetMapping
 Type                 : Microsoft.DataShare/DataSetMappings
 ```
 
-Perintah ini membuat kumpulan data pemetaan AdsDataSetMapping ke akun penyimpanan AdsStorage untuk berbagi langganan AdsShareSubscription di akun berbagi data WikiAdsAccount.
+Perintah ini membuat himpunan data yang memetakan AdsDataSetMapping ke akun penyimpanan AdsStorage untuk berbagi langganan AdsShareSubscription di akun berbagi data WikiAdsAccount.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataSetId
-Id kumpulan data konsumen
+Id himpunan data konsumen
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pemetaan kumpulan data Azure
+### -Name
+Nama pemetaan himpunan data Azure
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Id Sumber Daya Akun Azure Storage
+Azure Storage Account ResourceId
 
 ```yaml
 Type: System.String
@@ -231,8 +234,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
-ms.openlocfilehash: 34485a86df387e195f9ab95404863ee845fb0131
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b8fa53ca18f1c47839f2ee3472534e854c3f30ac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289485"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609566"
 ---
 # Update-AzVmssInstance
 
 ## SYNOPSIS
-Memulai pemutakhiran manual instans VMSS.
+Memulai peningkatan manual instans VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmssinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,22 +29,22 @@ Update-AzVmssInstance [-ResourceGroupName] <String> [-VMScaleSetName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzVmssInstance memulai pemutakhiran manual instans Kumpulan Skala Mesin Virtual (VMSS) yang ditentukan.
-Ini digunakan saat kebijakan pemutakhiran pada Kumpulan Skala VMSS diatur ke manual.
+Cmdlet Update-AzVmssInstance memulai peningkatan manual instans Virtual Machine Scale Set (VMSS) yang ditentukan.
+Ini digunakan ketika kebijakan peningkatan pada Set Skala VMSS diatur ke manual.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai pemutakhiran instans VMSS
+### Contoh 1: Memulai peningkatan instans VMSS
 ```powershell
 Update-AzVmssInstance -ResourceGroupName "Group011" -VMScaleSetName "VMScaleSet001" -InstanceId "0"
 ```
 
-Perintah ini memulai pemutakhiran VMSS bernama VMScaleSet001 yang memiliki ID instans 0.
+Perintah ini memulai peningkatan VMSS bernama VMScaleSet001 yang memiliki ID instans 0.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID instans yang akan dimutakhirkan.
+Menentukan, sebagai array string, ID atau ID instans untuk ditingkatkan.
 
 ```yaml
 Type: System.String[]
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama instans VMSS yang dimutakhirkan cmdlet ini.
+Menentukan nama instans VMSS yang ditingkatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -163,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

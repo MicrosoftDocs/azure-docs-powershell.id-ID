@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
-ms.openlocfilehash: ff927254aa4841a4c55187291300e6fce20c716f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11c5e74a6f7d92ab3241570e45b74560c820697e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811458"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640752"
 ---
 # Remove-AzBatchTask
 
 ## SYNOPSIS
-Menghapus tugas Kumpulan.
+Menghapus tugas Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,31 +41,31 @@ Cmdlet ini meminta konfirmasi kepada Anda, kecuali Anda menentukan parameter *Pa
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tugas Kumpulan menurut ID
+### Contoh 1: Menghapus tugas Batch berdasarkan ID
 ```powershell
 Remove-AzBatchTask -JobId "Job-000001" -Id "Task23" -BatchContext $Context
 ```
 
-Perintah ini menghapus tugas yang memiliki ID Task23 di bawah pekerjaan yang memiliki ID Job-000001.
+Perintah ini menghapus tugas yang memiliki TUGAS ID23 di bawah pekerjaan yang memiliki ID Job-000001.
 Perintah meminta konfirmasi kepada Anda.
 Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Menghapus tugas Kumpulan dengan menggunakan saluran tanpa konfirmasi
+### Contoh 2: Menghapus tugas Batch dengan menggunakan alur tanpa konfirmasi
 ```powershell
 Get-AzBatchTask -JobId "Job-000001" -Id "Task26" -BatchContext $Context | Remove-AzBatchTask -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan tugas Kumpulan yang memiliki ID Task26 dalam pekerjaan yang memiliki cmdlet ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask** .
-Perintah melewati tugas tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan tugas Batch yang memiliki TUGAS ID26 dalam pekerjaan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask** .
+Perintah meneruskan tugas tersebut ke cmdlet saat ini dengan menggunakan operator alur.
 Perintah menghapus tugas tersebut.
-Perintah ini menentukan parameter *Paksa* .
-Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
+Perintah ini menentukan parameter *Force* .
+Oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID tugas yang dihapus cmdlet ini.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -209,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchTask](./New-AzBatchTask.md)
 
-[Hapus-AzBatchTask](./Remove-AzBatchTask.md)
+[Remove-AzBatchTask](./Remove-AzBatchTask.md)
 
 [Stop-AzBatchTask](./Stop-AzBatchTask.md)
 

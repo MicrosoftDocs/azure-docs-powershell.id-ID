@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
-ms.openlocfilehash: f5d09ba7a8fa7b9e160df7a1d4fb718032a88991
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48a2f2dc9f239272500bbc4fa990093e7a14ca47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675972"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608468"
 ---
 # New-AzOperationalInsightsLinuxSyslogDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data ke komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightslinuxsyslogdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ New-AzOperationalInsightsLinuxSyslogDataSource [-Workspace] <PSWorkspace> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsLinuxSyslogDataSource** menambahkan sumber data syslog ke komputer Linux yang terhubung dalam ruang kerja.
-Azure Operational Insights dapat mengumpulkan data syslog.
+Cmdlet **New-AzOperationalInsightsLinuxSyslogDataSource** menambahkan sumber data syslog ke komputer Linux yang terhubung di ruang kerja.
+Insights Operasional Azure dapat mengumpulkan data syslog.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Get-AzOperationalInsightsDataSource `
 ## PARAMETERS
 
 ### -CollectAlert
-Menunjukkan bahwa Insights Operasional mengumpulkan pesan peringatan.
+Menunjukkan bahwa Insights Operasional mengumpulkan pesan pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -249,8 +252,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk sumber data. Nama tidak diekspos dalam Portal Azure dan string apa pun dapat digunakan selama itu unik.
+### -Name
+Menentukan nama untuk sumber data. Nama tidak diekspos di Portal Microsoft Azure dan string apa pun dapat digunakan selama unik.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -294,7 +297,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -309,8 +312,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

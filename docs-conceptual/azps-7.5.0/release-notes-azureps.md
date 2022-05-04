@@ -1,17 +1,17 @@
 ---
 description: Pelajari semua pembaruan terbaru untuk modul Azure PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Catatan rilis Azure PowerShell
-ms.openlocfilehash: 37457fb7db7747841b0f3ffdd3c0758ec788a8dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 911b8c055c92618c8e5a02815da6930b7e640e3d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294310"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620922"
 ---
 # <a name="azure-powershell-release-notes"></a>Catatan rilis Azure PowerShell
 ## <a name="750---april-2022"></a>7.5.0 - April 2022
@@ -245,13 +245,13 @@ Rilis ini memigrasikan Microsoft.Azure. Graph SDK ke MicrosoftGraph SDK.
     - 'Get-AzSqlInstanceLink'
     - 'Remove-AzSqlInstanceLink'
     - 'Set-AzSqlInstanceLink'
-* Menambahkan dukungan untuk operasi pemulihan lintas penyewa dan lintas langganan DataWarehouse ke cmdlet 'Restore-AzSqlDatabase'
+* Menambahkan dukungan untuk lintas penyewa DataWarehouse dan operasi pemulihan lintas langganan ke cmdlet 'Restore-AzSqlDatabase'
 
 #### <a name="azstorage"></a>Az.Storage
 * Contoh yang diperbarui dalam dokumentasi referensi untuk 'Close-AzStorageFileHandle'
-* Didukung untuk membuat konteks penyimpanan dengan blob, antrean, file, titik akhir layanan tabel yang disesuaikan
+* Didukung buat konteks penyimpanan dengan blob, antrean, file, titik akhir layanan tabel yang disesuaikan
     - 'New-AzStorageContext'
-* Memperbaiki kegagalan blob salin pada akun Premium Storage, atau namespace hierarkis yang diaktifkan akun
+* Memperbaiki kegagalan blob salinan pada akun Premium Storage, atau namespace hierarkis yang diaktifkan akun
     -  'Copy-AzStorageBlob' 
 * Didukung membuat token SAS akun, token SAS kontainer, token SAS blob dengan EncryptionScope
     -  'New-AzStorageAccountSASToken' 
@@ -266,16 +266,16 @@ Rilis ini memigrasikan Microsoft.Azure. Graph SDK ke MicrosoftGraph SDK.
 
 #### <a name="azsynapse"></a>Az.Synapse
 * Azure.Analytics.Synapse.Artifacts yang ditingkatkan ke 1.0.0-preview.14
-* Memperbaiki masalah bahwa cmdlet berikut hanya memperlihatkan 100 entri
+* Memperbaiki masalah bahwa cmdlet berikut ini hanya memperlihatkan 100 entri
     - Cmdlet 'Get-AzSynapseRoleAssignment'
     - Cmdlet 'Get-AzSynapsePipelineRun'
     - Cmdlet 'Get-AzSynapseTriggerRun'
     - Cmdlet 'Get-AzSynapseActivityRun'
-* Memperbaiki masalah bahwa seharusnya ada pesan kesalahan saat menghapus alur dependensi
+* Memperbaiki masalah bahwa harus ada pesan kesalahan saat menghapus alur dependensi
 
 #### <a name="azwebsites"></a>Az.Websites
 * Memperbaiki 'Set-AzWebAppSlot' untuk mendukung pembaruan versi MinTlsVersion [#17663]
-* Memperbaiki 'Set-AzAppServicePlan' untuk menyimpan Tag yang ada saat menambahkan Tag baru 
+* Memperbaiki 'Set-AzAppServicePlan' untuk mempertahankan Tag yang ada saat menambahkan Tag baru 
 * Memperbaiki 'Set-AzWebApp','Set-AzWebAppSlot', 'Get-AzWebApp' dan 'Get-AzWebAppSlot' untuk mengekspos properti 'VnetRouteAllEnabled' di 'SiteConfig' [#15663]
 * Memperbaiki 'Set-AzWebApp', 'Set-AzWebAppSlot', 'Get-AzWebApp' dan 'Get-AzWebAppSlot' untuk mengekspos properti 'HealthCheckPath' di 'SiteConfig' [#16325]
 * Memperbaiki masalah konversi DateTime yang disebabkan oleh budaya [#17253]
@@ -313,7 +313,7 @@ Rilis ini memigrasikan Microsoft.Azure. Graph SDK ke MicrosoftGraph SDK.
 
 ## <a name="732---march-2022"></a>7.3.2 - Maret 2022
 #### <a name="azaccounts"></a>Az.Accounts
-* Mengubah kerangka kerja target AuthenticationAssemblyLoadContext ke netcoreapp2.1 [#17428]
+* Kerangka kerja target yang diubah dari AuthenticationAssemblyLoadContext ke netcoreapp2.1 [#17428]
 
 #### <a name="azcompute"></a>Az.Compute
 * Fitur New-AzVM yang diperbarui untuk parameter 'vCPUsAvailable' dan 'vCPUsPerCore'. Cmdlet tidak akan mencoba menggunakan fitur 'VMCustomizationPreview' baru jika pengguna tidak memiliki akses ke fitur tersebut. [#17370]
@@ -324,7 +324,7 @@ Rilis ini memigrasikan Microsoft.Azure. Graph SDK ke MicrosoftGraph SDK.
 * Mengaktifkan Lanjutkan Evaluasi Akses untuk MSGraph
 * Pesan kesalahan yang disempurnakan saat login diblokir oleh AAD
 * Pesan kesalahan yang disempurnakan ketika autentikasi ulang senyap gagal
-* Loaded System.Private.ServiceModel and System.ServiceModel.Primitives on Windows PowerShell [#17087]
+* System.Private.ServiceModel dan System.ServiceModel.Primitives di Windows PowerShell [#17087]
 
 #### <a name="azaks"></a>Az.Aks
 * Memperbarui pesan peringatan perubahan yang melanggar [#16805]
@@ -353,7 +353,7 @@ Rilis ini memigrasikan Microsoft.Azure. Graph SDK ke MicrosoftGraph SDK.
 * Menambahkan properti MSI ke New-AzEventHubNamespace dan Set-AzEventHubNamespace. Menambahkan New-AzEventHubEncryptionConfig.
 
 #### <a name="azkeyvault"></a>Az.KeyVault
-* 'New-AzKeyVaultManagedHsm': didukung yang menentukan berapa lama hsm terkelola yang dihapus dipertahankan oleh 'SoftDeleteRetentionInDays' dan mengaktifkan perlindungan penghapusan menyeluruh oleh 'EnablePurgeProtection'
+* 'New-AzKeyVaultManagedHsm': didukung yang menentukan berapa lama hsm terkelola yang dihapus dipertahankan oleh 'SoftDeleteRetentionInDays' dan mengaktifkan perlindungan penghapusan menyeluruh dengan 'EnablePurgeProtection'
 * 'Update-AzKeyVaultManagedHsm': didukung mengaktifkan perlindungan penghapusan menyeluruh oleh 'EnablePurgeProtection'
 * 'Get-AzKeyVaultManagedHsm': Didukung mendapatkan atau mencantumkan HSM terkelola yang dihapus
 * 'Remove-AzKeyVaultManagedHsm': Didukung pembersihan HSM terkelola yang dihapus tertentu

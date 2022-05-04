@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 875c645005238e6967696222c94be4e7f49d246f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e38b7fca8716356230c0f31d8b39e9801d623dc8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287829"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646600"
 ---
 # Set-AzDtlAutoShutdownPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan shutdown otomatis lab DevTest Labs.
+Mengatur kebijakan matikan otomatis lab DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlautoshutdownpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Set-AzDtlAutoShutdownPolicy [[-Time] <DateTime>] [-Enable] [-LabName] <String> [
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Menonaktifkan
+### Nonaktifkan
 ```
 Set-AzDtlAutoShutdownPolicy [[-Time] <DateTime>] [-Disable] [-LabName] <String> [-ResourceGroupName] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDtlAutoShutdownPolicy** mengatur kebijakan matikan otomatis laboratorium, yang secara otomatis mematikan semua mesin virtual di laboratorium pada waktu yang ditentukan pada hari tersebut.
-Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk menetapkan kebijakan.
+Cmdlet **Set-AzDtlAutoShutdownPolicy** menetapkan kebijakan matikan otomatis lab, yang secara otomatis mematikan semua komputer virtual di lab pada waktu yang ditentukan dalam sehari.
+Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk mengatur kebijakan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mengatur kebijakan shutdown otomatis lab DevTest Labs. (autogenerasi)
+Mengatur kebijakan matikan otomatis lab DevTest Labs. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzDtlAutoShutdownPolicy -Enable -LabName <String> -ResourceGroupName MyResourceGroup -Time <DateTime>
@@ -63,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Non-fungsikan
-Menunjukkan bahwa cmdlet menonaktifkan kebijakan di laboratorium.
+### -Nonaktifkan
+Menunjukkan bahwa cmdlet menonaktifkan kebijakan di lab.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa cmdlet memungkinkan kebijakan di lab.
+Menunjukkan bahwa cmdlet mengaktifkan kebijakan di lab.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mengatur kebijakan matikan otomatis.
+Menentukan nama lab tempat cmdlet ini menetapkan kebijakan matikan otomatis.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu
-Menentukan waktu, sebagai objek **DateTime** , ketika mesin virtual di lab harus dimatikan.
+Menentukan waktu, sebagai objek **DateTime** , saat komputer virtual di lab harus dimatikan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

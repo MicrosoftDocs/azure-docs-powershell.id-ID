@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 5f6bdc8a1ddd9197c135abba51cb3a9a154da1a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 060948750a1b010a2f1c3f607bcb1506aa34e84f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996283"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589302"
 ---
 # Remove-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Menghapus Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,17 +34,17 @@ Cmdlet **Get-AzVirtualNetworkGateway** mengembalikan objek gateway Anda di Azure
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Gateway Virtual Network
+### Contoh 1: Menghapus gateway Virtual Network
 ```powershell
 Remove-AzVirtualNetworkGateway -Name myGateway -ResourceGroupName myRG
 ```
 
-Menghapus objek Gateway Virtual Network dengan nama "myGateway" dalam grup sumber daya "myRG" Catatan: Anda harus menghapus semua koneksi ke Gateway Virtual Network terlebih dahulu menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection**.
+Menghapus objek gateway Virtual Network dengan nama "myGateway" dalam grup sumber daya "myRG" Catatan: Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Virtual Network menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection**.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama gateway jaringan virtual yang dihapus cmdlet ini.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,9 +180,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
+[Dapatkan-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
 
-[New-AzVirtualNetworkGateway](./New-AzVirtualNetworkGateway.md)
+[Baru-GatewayJaringanVirtualAz](./New-AzVirtualNetworkGateway.md)
 
 [Reset-AzVirtualNetworkGateway](./Reset-AzVirtualNetworkGateway.md)
 

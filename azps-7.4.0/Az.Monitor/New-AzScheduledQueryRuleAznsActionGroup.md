@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
-ms.openlocfilehash: aca188a53537b01c33858af8ca19301e72d5698f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 03bae5fe191f9be5de6a15ec05721719c13a1ec9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939889"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630766"
 ---
 # New-AzScheduledQueryRuleAznsActionGroup
 
 ## SYNOPSIS
-Membuat objek dari tipe Grup Tindakan Azns
+Membuat objek jenis Azns Action Group
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleaznsactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ New-AzScheduledQueryRuleAznsActionGroup [-ActionGroup <String[]>] [-EmailSubject
 ```
 
 ## DESCRIPTION
-Membuat objek tipe Grup Tindakan Azns.
-Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log.
+Membuat objek jenis Azns Action Group.
+Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ $aznsActionGroup = New-AzScheduledQueryRuleAznsActionGroup -ActionGroup @("/subs
 ## PARAMETERS
 
 ### -ActionGroup
-Daftar grup tindakan untuk mengirim pemberitahuan ke
+Daftar grup tindakan yang akan dikirimi pemberitahuan
 
 ```yaml
 Type: System.String[]
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomWebhookPayload
-Muatan webhook yang dikustomisasi
+Payload webhook yang disesuaikan
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailSubject
-Subjek email pemberitahuan pemberitahuan
+Subjek email pemberitahuan
 
 ```yaml
 Type: System.String
@@ -98,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

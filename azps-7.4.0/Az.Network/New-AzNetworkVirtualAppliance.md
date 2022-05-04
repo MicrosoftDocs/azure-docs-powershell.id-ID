@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkVirtualAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkVirtualAppliance.md
-ms.openlocfilehash: 5a1bdf9a53aac3d13aeda93c47152e1aef717940
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e1bffe00cca148e29d5a9b8aa1885e7bfd2dd29f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678204"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628896"
 ---
 # New-AzNetworkVirtualAppliance
 
 ## SYNOPSIS
-Buat sumber daya Network Virtual Appliance.
+Membuat sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkvirtualappliance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzNetworkVirtualAppliance -ResourceId <String> -Location <String> -VirtualHu
 ```
 
 ## DESCRIPTION
-Perintah New-AzNetworkVirtualAppliance membuat sumber daya Peralatan Virtual Jaringan di Azure.
+Perintah New-AzNetworkVirtualAppliance membuat sumber daya Network Virtual Appliance di Azure.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Membuat sumber daya Network Virtual Appliance baru dalam grup sumber daya: testr
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -174,7 +177,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku Alat Virtual.
+Sku Appliance Virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSkuProperties
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualApplianceAsn
-Nomor ASN dari Peralatan Virtual.
+Nomor ASN Appliance Virtual.
 
 ```yaml
 Type: System.Int32
@@ -279,8 +282,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

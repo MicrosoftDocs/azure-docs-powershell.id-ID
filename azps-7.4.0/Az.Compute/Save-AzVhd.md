@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/save-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVhd.md
-ms.openlocfilehash: c3b7cce83903cea15358e263b4330786f77532d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 97719c1251e2f2f7cae134968602bb8e74c2fc6c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686880"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653314"
 ---
 # Save-AzVhd
 
 ## SYNOPSIS
 Menyimpan gambar .vhd yang diunduh secara lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/save-azvhd) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,10 +57,10 @@ Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7
 ```
 
 Perintah ini mengunduh file .vhd, dan menyimpannya di jalur lokal.
-Perintah menyertakan parameter *Timpa* .
+Perintah ini mencakup parameter *Timpa* .
 Oleh karena itu, jika C:\vhd\Win7Image.vhd sudah ada, perintah ini menggantikannya.
 
-### Contoh 3: Mengunduh gambar menggunakan jumlah utas yang ditentukan
+### Contoh 3: Mengunduh gambar dengan menggunakan jumlah utas yang ditentukan
 ```powershell
 Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -NumberOfThreads 32 -ResourceGroupName "rgname"
 ```
@@ -66,7 +69,7 @@ Perintah ini mengunduh file .vhd, dan menyimpannya di jalur lokal.
 Perintah menentukan nilai 32 untuk parameter *NumberOfThreads* .
 Oleh karena itu, cmdlet menggunakan 32 utas untuk tindakan ini.
 
-### Contoh 4: Unduh gambar dan tentukan kunci penyimpanan
+### Contoh 4: Mengunduh gambar dan menentukan kunci penyimpanan
 ```powershell
 Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -StorageKey "zNvcH0r5vAGmC5AbwEtpcyWCMyBd3eMDbdaa4ua6kwxq6vTZH3Y+sw==" -ResourceGroupName "rgname"
 ```
@@ -76,7 +79,7 @@ Perintah ini mengunduh file .vhd dan menentukan kunci penyimpanan.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-Menentukan Uniform Resource Identifier (URI) blob dalam `Azure`.
+Menentukan Pengidentifikasi Sumber Daya Seragam (URI) blob di `Azure`.
 
 ```yaml
 Type: System.Uri
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -StorageKey
 Menentukan kunci penyimpanan akun penyimpanan blob.
-Jika Anda tidak menentukan kunci, cmdlet ini akan mencoba menentukan kunci penyimpanan akun di *SourceUri* dari Azure.
+Jika Anda tidak menentukan kunci, cmdlet ini mencoba menentukan kunci penyimpanan akun di *SourceUri* dari Azure.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

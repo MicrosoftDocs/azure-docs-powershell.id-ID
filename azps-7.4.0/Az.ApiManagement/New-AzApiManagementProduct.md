@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
-ms.openlocfilehash: 6b3491093ab34ff5d14ef232ddf5e8b5340f2415
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b87c6e3059aee463c6849e77005dfd9e998d12d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688104"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588258"
 ---
 # New-AzApiManagementProduct
 
 ## SYNOPSIS
 Membuat produk API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzApiManagementProduct -Context <PsApiManagementContext> [-ProductId <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementProduct** menciptakan produk API Management.
+Cmdlet **New-AzApiManagementProduct** membuat produk API Management.
 
 ## EXAMPLES
 
@@ -52,8 +55,8 @@ Langganan dan persetujuan diperlukan.
 
 ## PARAMETERS
 
-### -PersetujuanDiperlukan
-Menunjukkan apakah langganan produk memerlukan persetujuan atau tidak.
+### -ApprovalRequired
+Menunjukkan apakah langganan ke produk memerlukan persetujuan atau tidak.
 Secara default, parameter ini **$False**.
 
 ```yaml
@@ -68,8 +71,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ProductId
 Menentukan pengidentifikasi produk baru.
-Jika Anda tidak menentukan parameter ini, produk baru akan dihasilkan.
+Jika Anda tidak menentukan parameter ini, produk baru akan dibuat.
 
 ```yaml
 Type: System.String
@@ -144,11 +147,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status produk.
 psdx_paramvalues
 - NotPublished
-- Diterbitkan Nilai default adalah NotPublished.
+- Diterbitkan Nilai defaultnya adalah NotPublished.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState]
@@ -180,8 +183,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionsLimit
-Menentukan jumlah maksimum langganan bersamaan.
-Nilai defaultnya adalah Tidak Ada.
+Menentukan jumlah maksimum langganan simultan.
+Nilai default-nya adalah Tidak Ada.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -221,9 +224,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

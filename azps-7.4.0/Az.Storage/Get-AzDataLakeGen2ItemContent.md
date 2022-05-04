@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
-ms.openlocfilehash: 7c1074342dce67bcbb5f1c80412039ddadb5c389
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e129fcaedfaabd8fc0aac791cbd5c0d5842eb2e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737135"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613274"
 ---
 # Get-AzDataLakeGen2ItemContent
 
 ## SYNOPSIS
-Mengunduh file.
+Unduh file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2itemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,8 +37,8 @@ Get-AzDataLakeGen2ItemContent -InputObject <AzureDataLakeGen2Item> [-Destination
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeGen2ItemContent** mengunduh file dalam Filesystem di akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **Get-AzDataLakeGen2ItemContent** mengunduh file di Filesystem di akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ dir1/file1           False        1024            2020-03-23 09:29:18Z rwx---rwx
 
 Perintah ini mengunduh file ke file lokal tanpa perintah.
 
-### Contoh 2: Dapatkan file, lalu pipeline untuk mengunduh file ke file lokal
+### Contoh 2: Dapatkan file, lalu alur untuk mengunduh file ke file lokal
 ```
 PS C:\> Get-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/file1" |  Get-AzDataLakeGen2ItemContent -Destination $localDestFile 
 
@@ -63,12 +66,12 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/file1           False        1024            2020-03-23 09:29:18Z rwx---rwx    $superuser           $superuser
 ```
 
-Perintah ini terlebih dahulu mendapatkan file, lalu pipeline untuk mengunduh file ke file lokal.
+Perintah ini pertama-tama mendapatkan file, lalu alur untuk mengunduh file ke file lokal.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -143,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
+### -Destination
 Jalur file lokal tujuan.
 
 ```yaml
@@ -173,8 +176,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menimpa blob atau file yang sudah ada
+### -Force
+Paksa untuk menimpa blob atau file yang ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus dihapus.
+Jalur dalam Filesystem yang ditentukan yang harus dihapus.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
 
 ```yaml
@@ -219,8 +222,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

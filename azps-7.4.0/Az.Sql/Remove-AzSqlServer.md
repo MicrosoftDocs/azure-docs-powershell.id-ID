@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServer.md
-ms.openlocfilehash: 062e84f46a87f09feacc20b99bf0d50f01acd494
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9725d1b94f67d8257709c13dcacb754c53abfd4b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799128"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588798"
 ---
-# Remove-AzSqlServer
+# Hapus-AzSqlServer
 
 ## SYNOPSIS
 Menghapus server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzSqlServer [-ServerName] <String> [-Force] [-ResourceGroupName] <String>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzSqlServer** menghapus server Azure SQL Database.
-Operasi penghapusan tidak sinkron dan mungkin memakan waktu, jadi verifikasi bahwa operasi sudah selesai sebelum melakukan operasi tambahan apa pun yang bergantung pada server yang dihapus sepenuhnya.
+Operasi penghapusan tidak sinkron dan mungkin memakan waktu, jadi pastikan operasi selesai sebelum melakukan operasi tambahan yang bergantung pada server yang dihapus sepenuhnya.
 Misalnya, Anda perlu membuat server baru yang menggunakan nama yang sama.
 
 ## EXAMPLES
@@ -56,7 +59,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -147,11 +150,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlServer](./Get-AzSqlServer.md)
+[Dapatkan-AzSqlServer](./Get-AzSqlServer.md)
 
-[New-AzSqlServer](./New-AzSqlServer.md)
+[Baru-AzSqlServer](./New-AzSqlServer.md)
 
-[Set-AzSqlServer](./Set-AzSqlServer.md)
+[Atur-AzSqlServer](./Set-AzSqlServer.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

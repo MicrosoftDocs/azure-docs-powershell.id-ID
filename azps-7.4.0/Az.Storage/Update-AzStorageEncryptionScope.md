@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
-ms.openlocfilehash: 1ec35efb2cfbc2a4a187dc9efadf82c6b8626c1d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c416e024313e15cd03c3720bd7fd792ac7310e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932221"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588546"
 ---
 # Update-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Mengubah lingkup enkripsi untuk akun Storage.
+Ubah cakupan enkripsi untuk akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,11 +63,11 @@ Update-AzStorageEncryptionScope -InputObject <PSEncryptionScope> [-KeyvaultEncry
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageEncryptionScope** mengubah lingkup enkripsi untuk akun Storage.
+Cmdlet **Update-AzStorageEncryptionScope** memodifikasi cakupan enkripsi untuk akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan lingkup enkripsi
+### Contoh 1: Menonaktifkan cakupan enkripsi
 ```
 PS C:\> Update-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -State Disabled 
 
@@ -75,9 +78,9 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Disabled Microsoft.Storage
 ```
 
-Perintah ini menonaktifkan lingkup enkripsi.
+Perintah ini menonaktifkan cakupan enkripsi.
 
-### Contoh 2: Mengaktifkan lingkup enkripsi
+### Contoh 2: Mengaktifkan cakupan enkripsi
 ```
 PS C:\> Update-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -State Enabled 
 
@@ -88,9 +91,9 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini mengaktifkan lingkup enkripsi.
+Perintah ini memungkinkan cakupan enkripsi.
 
-### Contoh 3: Memperbarui lingkup enkripsi untuk menggunakan enkripsi Storage
+### Contoh 3: Memperbarui cakupan enkripsi untuk menggunakan enkripsi Storage
 ```
 PS C:\> Update-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -StorageEncryption
 
@@ -101,9 +104,9 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini memperbarui lingkup enkripsi untuk menggunakan Enkripsi Storage.
+Perintah ini memperbarui cakupan enkripsi untuk menggunakan enkripsi Storage.
 
-### Contoh 4: Memperbarui lingkup enkripsi untuk menggunakan Enkripsi Keyvault
+### Contoh 4: Memperbarui cakupan enkripsi untuk menggunakan Enkripsi Keyvault
 ```
 PS C:\> Update-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EncryptionScopeName testscope -KeyvaultEncryption -KeyUri "https://keyvalutname.vault.azure.net:443/keys/keyname/34a0ba563b4243d9a0ef2b1d3c0c7d57"
 
@@ -114,8 +117,8 @@ Name      State    Source             KeyVaultKeyUri                            
 testscope Enabled  Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/keys/keyname/34a0ba563b4243d9a0ef2b1d3c0c7d57
 ```
 
-Perintah ini memperbarui lingkup enkripsi untuk menggunakan Enkripsi Keyvault.
-Akun Storage Yang diperlukan Identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
+Perintah ini memperbarui cakupan enkripsi untuk menggunakan Enkripsi Keyvault.
+Identitas akun Storage perlu mendapatkan, wrapkey, izin unwrapkey ke kunci keyvault.
 
 ## PARAMETERS
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUri
-Kunci Uri
+Uri kunci
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyvaultEncryption
-Membuat lingkup enkripsi dengan keySource sebagai Microsoft.Keyvault
+Membuat cakupan enkripsi dengan keySource sebagai Microsoft.Keyvault
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,8 +212,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Perbarui Status lingkup enkripsi, Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'.
+### -State
+Perbarui Status cakupan enkripsi, Nilai yang mungkin meliputi: 'Diaktifkan', 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageEncryption
-Buat lingkup enkripsi dengan keySource sebagai Microsoft. Storage.
+Buat cakupan enkripsi dengan keySource sebagai Microsoft. Storage.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,8 +273,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobTag.md
-ms.openlocfilehash: 9327b7d5c4e6b8511e3b3b3e5883bb9228346376
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d8a7de96169bc9a3ed2343dc31533d1b8b87e13
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798372"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613255"
 ---
 # Get-AzStorageBlobTag
 
 ## SYNOPSIS
-Dapatkan tag blob dari blob tertentu.
+Mendapatkan tag blob dari blob tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobtag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Get-AzStorageBlobTag -CloudBlobContainer <CloudBlobContainer> [-Blob] <String> [
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tag blob pada blob tertentu
+### Contoh 1: Mendapatkan tag blob pada blob tertentu
 ```
 PS C:\> Get-AzStorageBlobTag -Container "containername" -Blob testblob
 
@@ -60,7 +63,7 @@ tag2                           value2
 
 Perintah ini mendapatkan tag blob pada blob tertentu.
 
-### Contoh 2: Dapatkan tag blob pada blob tertentu dengan kondisi tag
+### Contoh 2: Mendapatkan tag blob pada blob tertentu dengan kondisi tag
 ```
 PS C:\> Get-AzStorageBlobTag -Container "containername" -Blob testblob -TagCondition """tag1""='value1'"
 
@@ -71,7 +74,7 @@ tag2                           value2
 ```
 
 Perintah ini mendapatkan tag blob pada blob tertentu dengan kondisi tag.
-Cmdlet hanya akan berhasil ketika blob berisi tag dengan nama "tag1" dan nilai "value1", selain itu cmdlet akan gagal dengan kode kesalahan 412.
+Cmdlet hanya akan berhasil ketika blob berisi tag dengan nama "tag1" dan nilai "value1", jika tidak cmdlet akan gagal dengan kode kesalahan 412.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -212,8 +215,8 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
+Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -227,8 +230,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

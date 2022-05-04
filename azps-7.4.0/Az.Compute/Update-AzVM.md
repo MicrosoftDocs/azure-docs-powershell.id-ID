@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
-ms.openlocfilehash: 04d410d3f297d1109da55ea04612c105033c9d66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70613ec9379cfa1d6bb818b051a7ec391bcf3473
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065259"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629598"
 ---
 # Update-AzVM
 
 ## SYNOPSIS
-Memperbarui status mesin virtual Azure.
+Memperbarui status komputer virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,20 +53,20 @@ Update-AzVM [-Id] <String> -VM <PSVirtualMachine> [-Tag <Hashtable>] [-OsDiskWri
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzVM** memperbarui status mesin virtual Azure ke status objek mesin virtual.
+Cmdlet **Update-AzVM** memperbarui status komputer virtual Azure ke status objek komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui mesin virtual
+### Contoh 1: Memperbarui komputer virtual
 ```powershell
 Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
-Perintah ini memperbarui mesin virtual, $VirtualMachine, di ResourceGroup11.
-Perintah memperbaruinya dengan menggunakan objek mesin virtual yang disimpan dalam variabel $VirtualMachine.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM** .
+Perintah ini memperbarui komputer virtual, $VirtualMachine, di ResourceGroup11.
+Perintah memperbaruinya dengan menggunakan objek komputer virtual yang disimpan dalam variabel $VirtualMachine.
+Untuk mendapatkan objek komputer virtual, gunakan cmdlet **Get-AzVM** .
 
-### Contoh 2: Memperbarui mesin virtual untuk menonaktifkan hyperthreading.
+### Contoh 2: Perbarui komputer virtual untuk menonaktifkan hyperthreading.
 ```powershell
 $resourceGroupName = <Resource Group Name>;
 $vmname = <Virtual Machine Name>;
@@ -88,7 +91,7 @@ Update-AzVm -ResourceGroupName $rgname -VM $vm -vCPUsAvailable $vCPUsAvailable1 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. 
+Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk komputer virtual atau set skala komputer virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Resource/Temp di host itu sendiri. 
 
 ```yaml
 Type: System.Boolean
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -HibernationEnabled
-Bendera yang mengaktifkan atau menonaktifkan kapabilitas hibernasi pada VM.
+Bendera yang mengaktifkan atau menonaktifkan kemampuan hibernasi pada VM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostId
-Id dari Host
+The Id of Host
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya mesin maya.
+Menentukan ID sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Menentukan daftar identitas pengguna yang terkait dengan mesin virtual.
-Referensi identitas pengguna akan berupa ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan daftar identitas pengguna yang terkait dengan komputer virtual.
+Referensi identitas pengguna adalah ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang digunakan untuk mesin virtual. Nilai yang valid adalah SystemAssigned, UserAssigned, SystemAssignedUserAssigned, dan None.
+Jenis identitas yang digunakan untuk komputer virtual. Nilai yang valid adalah SystemAssigned, UserAssigned, SystemAssignedUserAssigned, dan None.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ResourceIdentityType]
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini adalah dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Juga, harga dibandingkan pada saat membuat / memperbarui VM / VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk mengusir VM/VMSS berprioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang memungkinkan adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0.01538.  -1 menunjukkan bahwa VM/VMSs prioritas rendah tidak boleh diusir karena alasan harga. Selain itu, harga maks default adalah -1 jika tidak disediakan oleh Anda.
+Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat membuat/memperbarui VM/VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk mengusir VM/VMSS prioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa VM/VMSS prioritas rendah tidak boleh dikeluarkan karena alasan harga. Selain itu, harga maksimum default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan mesin virtual ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -300,8 +303,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
-Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
+Menentukan sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai.
+Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
 Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
@@ -317,8 +320,8 @@ Accept wildcard characters: False
 ```
 
 ### -UltraSSDEnabled
-Bendera yang mengaktifkan atau menonaktifkan kapabilitas untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
-Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+Bendera yang memungkinkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan jenis akun penyimpanan UltraSSD_LRS pada VM.
+Disk terkelola dengan jenis akun penyimpanan UltraSSD_LRS dapat ditambahkan ke komputer virtual hanya jika properti ini diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserData
-UserData untuk VM, yang akan dikodekan basis 64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk VM, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.String
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountAvailable
-Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api [dari Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
+Menentukan jumlah vCPU yang tersedia untuk VM. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku defaultnya adalah mengaturnya ke nilai vCPU yang tersedia untuk ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list).
 
 ```yaml
 Type: System.Int32
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -vCPUCountPerCore
-Menentukan vCPU untuk rasio inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api dari [Daftar semua ukuran mesin virtual yang tersedia di suatu kawasan](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti hyper-threading dinonaktifkan.
+Menentukan rasio vCPU ke inti fisik. Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default diatur ke nilai vCPUsPerCore untuk Ukuran VM yang diekspos dalam respons api daftar [semua ukuran komputer virtual yang tersedia di suatu wilayah](https://docs.microsoft.com/en-us/rest/api/compute/resource-skus/list). Mengatur properti ini ke 1 juga berarti bahwa hyper-threading dinonaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -378,9 +381,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
-Objek mesin virtual ini berisi status yang diperbarui untuk mesin virtual.
+Menentukan objek komputer virtual lokal.
+Untuk mendapatkan objek komputer virtual, gunakan cmdlet Get-AzVM.
+Objek komputer virtual ini berisi status yang diperbarui untuk komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -394,8 +397,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -426,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -444,13 +447,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
-[AzVM baru](./New-AzVM.md)
+[New-AzVM](./New-AzVM.md)
 
 [Hapus-AzVM](./Remove-AzVM.md)
 
-[Mulai ulang-AzVM](./Restart-AzVM.md)
+[Hidupkan ulang-AzVM](./Restart-AzVM.md)
 
 [Start-AzVM](./Start-AzVM.md)
 

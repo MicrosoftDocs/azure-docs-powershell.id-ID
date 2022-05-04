@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamily.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamily.md
-ms.openlocfilehash: 520b248973c5b9829683c693060db61a941830e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b689644ddb9531adb856a651556366943fa5503c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684234"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629274"
 ---
 # Get-AzEdgeOrderProductFamily
 
 ## SYNOPSIS
-Metode ini menyediakan daftar keluarga produk untuk langganan tertentu.
+Metode ini menyediakan daftar keluarga produk untuk langganan yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderproductfamily) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzEdgeOrderProductFamily -FilterableProperty <Hashtable> [-SubscriptionId <S
 ```
 
 ## DESCRIPTION
-Metode ini menyediakan daftar keluarga produk untuk langganan tertentu.
+Metode ini menyediakan daftar keluarga produk untuk langganan yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail produk tertentuFamilies
+### Contoh 1: Mendapatkan detail productFamilies tertentu
 ```powershell
 $familyDetails = Get-AzEdgeOrderProductFamily -SubscriptionId SubscriptionId -FilterableProperty  @{"azurestackedge"=@($filterableProperty)} -Expand "configurations"
 $familyDetails.ProductLine.Product.Configuration.HierarchyInformation
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-$expand didukung pada parameter konfigurasi untuk produk, yang menyediakan detail tentang konfigurasi untuk produk.
+$expand didukung pada parameter konfigurasi untuk produk, yang memberikan detail tentang konfigurasi untuk produk.
 
 ```yaml
 Type: System.String
@@ -109,8 +112,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -158,8 +161,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan menyampaikan detail langganan secara eksplisit
-  - `QuotaId <String>`: ID kuota langganan
+CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
+  - `QuotaId <String>`: ID Kuota langganan
   - `[LocationPlacementId <String>]`: Id penempatan lokasi langganan
   - `[RegisteredFeature <ICustomerSubscriptionRegisteredFeatures[]>]`: Daftar bendera fitur terdaftar untuk langganan
     - `[Name <String>]`: Nama fitur terdaftar langganan

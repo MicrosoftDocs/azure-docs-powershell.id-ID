@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
-ms.openlocfilehash: 3a7656c142335ba318289d7926c00bbd093108ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c14b1cfd1ac08c6cc025e9a0a51d228876eeda0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230405"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590058"
 ---
 # Get-AzADUser
 
 ## SYNOPSIS
 Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menurut kunci
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -67,7 +69,7 @@ Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menuru
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengguna masuk
+### Contoh 1: Mendapatkan pengguna masuk
 ```powershell
 Get-AzADUser -SignedIn
 ```
@@ -79,7 +81,7 @@ Mendapatkan pengguna masuk
 Get-AzADUser -First 10 -Select 'City' -AppendSelected
 ```
 
-Cantumkan 10 pengguna pertama dan tambahkan properti 'City' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
+Cantumkan 10 pengguna pertama dan tambahkan properti 'Kota' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
 
 ### Contoh 3: Mendapatkan pengguna menurut nama tampilan
 ```powershell
@@ -227,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cari
-Cari item menurut frasa pencarian
+Mencari item menurut frasa pencarian
 
 ```yaml
 Type: System.String
