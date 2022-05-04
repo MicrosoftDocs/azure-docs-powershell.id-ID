@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSchedule.md
-ms.openlocfilehash: 8dbd10e161886eede7dbde455cd5ca0c1cc7d57b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9455ee25f140aa4b2bded8061392885bcad276ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879066"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680648"
 ---
 # Get-AzAutomationSchedule
 
 ## SYNOPSIS
-Mendapatkan jadwal Otomatisasi.
+Mendapatkan jadwal Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,17 +40,17 @@ Cmdlet **Get-AzAutomationSchedule** mendapatkan jadwal Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan jadwal
+### Contoh 1: Mendapatkan jadwal
 ```
 PS C:\>Get-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "DailySchedule08" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan jadwal yang bernama DailySchedule08.
+Perintah ini mendapatkan jadwal bernama DailySchedule08.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan jadwal.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan jadwal.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama jadwal yang didapat cmdlet ini.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan jadwal.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan jadwal.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

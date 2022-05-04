@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzE
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzExternalSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzExternalSecuritySolution.md
-ms.openlocfilehash: b6057129f2a6f7cd26d7f73b3f9bd497691e6552
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d51d46ccdb0b0cd215be76a3de3fb02c2bf6d4f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673038"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696026"
 ---
 # Get-AzExternalSecuritySolution
 
 ## SYNOPSIS
-Dapatkan solusi keamanan eksternal 
+Mendapatkan solusi keamanan eksternal 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azexternalsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzExternalSecuritySolution -ResourceId <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Dapatkan solusi keamanan eksternal
+Mendapatkan solusi keamanan eksternal
 
 ## EXAMPLES
 
@@ -115,7 +118,7 @@ Name              : aad_testservicews
 Kind              : AAD
 ```
 
-Dapatkan solusi keamanan eksternal tertentu
+Mendapatkan solusi keamanan eksternal tertentu
 
 ## PARAMETERS
 
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

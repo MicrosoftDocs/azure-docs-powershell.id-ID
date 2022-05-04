@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
-ms.openlocfilehash: e1f7ac6ce2fd4b4bb9f026e148d5a9746ba5f647
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 242841f280dc667cc2232dec5a385a5a5b9a1cf4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941581"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712984"
 ---
 # Add-AzEventHubVirtualNetworkRule
 
 ## SYNOPSIS
-Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Namespace tertentu
+Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/add-azeventhubvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Add-AzEventHubVirtualNetworkRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Namespace tertentu
+Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Namespace yang diberikan
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Type                : Microsoft.Eventhub/Namespaces/NetworkRuleSet
 IpRules             : 
 VirtualNetworkRules : {/subscriptions/SubscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
 ```
-Menambahkan Subnet dan IgnoreMissingVnetServiceEndpoint (VirtualNetworkRule) tertentu ke NetworkRuleSet untuk Namespace yang diberikan
+Menambahkan Subnet dan IgnoreMissingVnetServiceEndpoint (VirtualNetworkRule) yang diberikan ke NetworkRuleSet untuk Namespace yang diberikan
 
 ### Contoh 2
 ```powershell
@@ -66,7 +69,7 @@ Type                : Microsoft.Eventhub/Namespaces/NetworkRuleSet
 IpRules             : 
 VirtualNetworkRules : {/subscriptions/SubscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
 ```
-Menambahkan $virtualruleset 1 ke NetworkRuleSet untuk Ruang Nama tertentu
+Menambahkan $virtualruleset 1 ke NetworkRuleSet untuk Namespace yang diberikan
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingVnetServiceEndpoint
-ARM ID dari Subnet
+ARM ID of Subnet
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama
+### -Name
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

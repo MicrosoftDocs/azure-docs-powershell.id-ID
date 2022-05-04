@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: 4273746bcf101f333e586a51a8cf412de7ff2a4d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ea225d3054bdf54acf8e3ffcf51c9b916cabe8c2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269775"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687140"
 ---
 # New-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
 Membuat atau memperbarui koneksi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopooldataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Kind     Location  Name
 EventHub East US 2 testws/testkustopool/testdatabase/eventhubdc
 ```
 
-Perintah di atas membuat koneksi data EventHub baru bernama "eventhubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas membuat koneksi data EventHub baru bernama "eventhubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
 ### Contoh 2: Membuat koneksi data EventGrid baru
 ```powershell
@@ -98,7 +101,7 @@ Kind      Location  Name
 EventGrid East US 2 testws/testkustopool/testdatabase/eventgriddc
 ```
 
-Perintah di atas membuat koneksi data EventGrid baru bernama "eventgriddc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas membuat koneksi data EventGrid baru bernama "eventgriddc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
 ### Contoh 3: Membuat koneksi data IotHub baru
 ```powershell
@@ -111,12 +114,12 @@ Kind   Location  Name
 IotHub East US 2 testws/testkustopool/testdatabase/iothubdc
 ```
 
-Perintah di atas membuat koneksi data IotHub baru bernama "iothubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas membuat koneksi data IotHub baru bernama "iothubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BlobstorageEventType
-Nama tipe kejadian penyimpanan blob untuk diproses.
+### -BlobStorageEventType
+Nama jenis peristiwa penyimpanan blob yang akan diproses.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.BlobStorageEventType
@@ -145,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kompresi
-Tipe pemadatan pesan hub kejadian.
+### -Pemadatan
+Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.Compression
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsumerGroup
-Grup konsumen acara/iot hub.
+Grup konsumen event/iot hub.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kumpulan Kusto.
+Nama database di kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional, format data bisa ditambahkan ke setiap pesan.
+Secara opsional format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.EventGridDataFormat
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubResourceId
-ID sumber daya hub kejadian yang akan digunakan untuk membuat koneksi data / kisi kejadian dikonfigurasi untuk mengirim kejadian.
+ID sumber daya pusat aktivitas yang akan digunakan untuk membuat koneksi data/kisi peristiwa dikonfigurasi untuk mengirim peristiwa.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem hub acara/iot.
+Properti sistem dari event/iot hub.
 
 ```yaml
 Type: System.String[]
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama dari setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +299,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis titik akhir untuk koneksi data
 
 ```yaml
@@ -342,8 +345,8 @@ Accept wildcard characters: False
 ```
 
 ### -MappingRuleName
-Aturan pemetaan yang akan digunakan untuk mencerna data.
-Secara opsional, informasi pemetaan bisa ditambahkan ke setiap pesan.
+Aturan pemetaan yang akan digunakan untuk menyerap data.
+Secara opsional informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -434,8 +437,8 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Tabel tempat data harus dicerna.
-Secara opsional, informasi tabel bisa ditambahkan ke setiap pesan.
+Tabel tempat data harus diserap.
+Secara opsional informasi tabel dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -449,7 +452,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -464,8 +467,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

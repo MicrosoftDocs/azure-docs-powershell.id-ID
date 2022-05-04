@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
-ms.openlocfilehash: 269d5b44640da489f920d13ee0a3c457bfed6b22
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 26aeddc1640c4404cac89851538838bc3c59670b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807876"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679946"
 ---
 # Get-AzLogzMonitoredResource
 
 ## SYNOPSIS
 Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitoredresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Log
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan sumber daya yang sedang dipantau oleh sumber daya monitor Logz
+### Contoh 1: Mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz
 ```powershell
 Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz
 ```
@@ -53,7 +56,7 @@ CapturedByRules                                       True
 
 Perintah ini mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
 
-### Contoh 2: Daftar sumber daya yang sedang dipantau oleh sub akun Logz
+### Contoh 2: Mencantumkan sumber daya yang saat ini sedang dipantau oleh sub akun Logz
 ```powershell
 Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz -SubAccountName lpslogzsubaccount
 ```
@@ -64,7 +67,7 @@ ReasonForLogsStatus ReasonForMetricsStatus SendingLog SendingMetric
 Other                                      False
 ```
 
-Perintah ini mencantumkan sumber daya yang sedang dipantau oleh sub akun Logz
+Perintah ini mencantumkan sumber daya yang saat ini sedang dipantau oleh sub akun Logz
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubAccountName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

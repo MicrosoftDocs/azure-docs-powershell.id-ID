@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 6f5e5a96b9a1ade36def64b5fc4f7c54f5155555
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83ced19f6e65f3ecd58abcd2d0736da37de2c88c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272799"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713524"
 ---
 # Get-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
-Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
+Mendapatkan jenis informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzSqlDatabaseSensitivityRecommendation [-ResourceGroupName] <String> [-Serve
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlDatabaseSensitivityRecommendation mengembalikan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
+Cmdlet Get-AzSqlDatabaseSensitivityRecommendation mengembalikan jenis informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas database Azure SQL.
+### Contoh 1: Dapatkan jenis informasi yang direkomendasikan dan label sensitivitas database Azure SQL.
 ```powershell
 Get-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database
 ```
@@ -67,7 +70,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas database Azure SQL menggunakan Piping.
+### Contoh 2: Dapatkan jenis informasi yang direkomendasikan dan label sensitivitas database Azure SQL menggunakan Piping.
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Get-AzSqlDatabaseSensitivityRecommendation
 ```
@@ -100,7 +103,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

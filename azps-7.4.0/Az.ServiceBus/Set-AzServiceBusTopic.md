@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusTopic.md
-ms.openlocfilehash: 07698aeea9dc4501edaeff14317185b830c7607b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 125e54e148ca947525ddf5c8e7fe738b4bf824b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739206"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703523"
 ---
 # Set-AzServiceBusTopic
 
 ## SYNOPSIS
-Memperbarui deskripsi topik Bus Layanan dalam ruang nama Bus Layanan tertentu.
+Memperbarui deskripsi topik Bus Layanan di namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebustopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzServiceBusTopic [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusTopic** memperbarui objek deskripsi untuk topik Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Cmdlet **Set-AzServiceBusTopic** memperbarui objek deskripsi untuk topik Bus Layanan di namespace Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ SupportOrdering                     : False
 UpdatedAt                           : 10/12/2018 12:01:29 AM
 ```
 
-Memperbarui topik tertentu dengan deskripsi baru dalam ruang nama yang ditentukan. Contoh ini memperbarui properti **EnableExpress** ke **true**. 
+Memperbarui topik yang ditentukan dengan deskripsi baru di namespace yang ditentukan. Contoh ini memperbarui properti **EnableExpress** ke **true**. 
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Topik.
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

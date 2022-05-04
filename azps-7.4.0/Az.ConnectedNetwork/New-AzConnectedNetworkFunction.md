@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunction.md
-ms.openlocfilehash: 98a5f0e16ea679ad98e54f8a4235d6dc935d398b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8241045660327665894ca89954565ac729b0f8fb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127269"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680450"
 ---
 # New-AzConnectedNetworkFunction
 
@@ -18,6 +18,9 @@ ms.locfileid: "143127269"
 Membuat atau memperbarui sumber daya fungsi jaringan.
 Operasi ini dapat memakan waktu hingga 6 jam untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,10 +54,10 @@ Location Name      Etag                 ResourceGroupName
 eastus   vnf_Test1 "SampleEtagvalue"    myResources
 ```
 
-Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi IP ke IPv4.
-Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan tipe sakelar vm.
-Lalu menggunakannya untuk membuat objek konfigurasi pengguna dengan hpehs nama peran, data kustom dan array antarmuka jaringan.
-Kemudian membuat NF menggunakan konfigurasi pengguna, nama vendor, nama sku, nama perangkat dll.
+Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi ip ke IPv4.
+Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan jenis sakelar vm.
+Kemudian menggunakannya untuk membuat objek konfigurasi pengguna dengan nama peran hpehss, data kustom, dan array antarmuka jaringan.
+Kemudian membuat NF menggunakan userconfiguration, nama vendor, nama sku, nama perangkat, dll.
 
 ### Contoh 2: Penyebaran VNF 2 langkah
 ```powershell
@@ -68,13 +71,13 @@ PS C:\> $v2.ServiceKey
 abcd-sample-service-key-val-1234
 ```
 
-Sama dengan alur kerja 1 langkah selain tidak ada bidang data kustom dalam objek Konfigurasi Pengguna.
+Sama seperti alur kerja langkah 1 selain tidak ada bidang data kustom di objek Konfigurasi Pengguna.
 Membuat NF dan akan menggunakan kunci layanan yang diperoleh di sini untuk menyebarkan NF vendor.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerConfiguration
-Fungsi jaringan kontainer konfigurasi dari pengguna.
+Konfigurasi kontainer fungsi jaringan dari pengguna.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedApplicationParameter
-Parameter untuk aplikasi yang dikelola.
+Parameter untuk aplikasi terkelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -178,7 +181,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya untuk sumber daya fungsi jaringan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama sku untuk fungsi jaringan.
-Setelah diatur, perangkat tidak dapat diperbarui.
+Setelah diatur, tidak dapat diperbarui.
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 
 ### -UserConfiguration
 Konfigurasi fungsi jaringan dari pengguna.
-Untuk membangun, lihat bagian CATATAN untuk properti USERCONFIGURATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti USERCONFIGURATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkFunctionUserConfiguration[]
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 
 ### -VendorName
 Nama vendor untuk fungsi jaringan.
-Setelah diatur, perangkat tidak dapat diperbarui.
+Setelah diatur, tidak dapat diperbarui.
 
 ```yaml
 Type: System.String
@@ -302,8 +305,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -334,13 +337,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkFungsi
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkFunction
 
 ## NOTES
 
@@ -362,8 +365,8 @@ USERCONFIGURATION <INetworkFunctionUserConfiguration[]>: Konfigurasi fungsi jari
       - `[Subnet <String>]`: Nilai subnet.
     - `[MacAddress <String>]`: Alamat MAC antarmuka jaringan.
     - `[Name <String>]`: Nama antarmuka jaringan.
-    - `[VMSwitchType <VMSwitchType?>]`: Tipe sakelar VM.
-  - `[OSProfileCustomData <String>]`: Menentukan string data kustom berkode basis 64. String berkode basis 64 didekodekan ke array biner yang disimpan sebagai file di mesin virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan berikan rahasia atau kata sandi apa pun dalam properti customData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData dialihkan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/)    Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk mengkustomisasi VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+    - `[VMSwitchType <VMSwitchType?>]`: Jenis sakelar VM.
+  - `[OSProfileCustomData <String>]`: Menentukan string data kustom yang dikodekan base-64. String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai file pada komputer virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan berikan rahasia atau kata sandi apa pun di properti customData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData diteruskan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/)    Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
   - `[RoleName <String>]`: Nama peran fungsi jaringan.
   - `[UserDataParameter <IAny>]`: Parameter data pengguna dari pelanggan.
 

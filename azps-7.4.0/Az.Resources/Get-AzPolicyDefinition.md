@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyDefinition.md
-ms.openlocfilehash: 47cea8164d377c1ec38b6528e5a97dcc788d3224
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 613ca265d2c8e0b45992f929f562aa2d257acde1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674190"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687536"
 ---
 # Get-AzPolicyDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,32 +60,32 @@ Get-AzPolicyDefinition [-ManagementGroupName <String>] [-SubscriptionId <Guid>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicyDefinition** mendapatkan kumpulan definisi kebijakan atau definisi kebijakan tertentu yang diidentifikasi menurut nama atau ID.
+Cmdlet **Get-AzPolicyDefinition** mendapatkan kumpulan definisi kebijakan atau definisi kebijakan tertentu yang diidentifikasi berdasarkan nama atau ID.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua definisi kebijakan
+### Contoh 1: Mendapatkan semua definisi kebijakan
 ```powershell
 Get-AzPolicyDefinition
 ```
 
 Perintah ini mendapatkan semua definisi kebijakan.
 
-### Contoh 2: Dapatkan definisi kebijakan dari langganan saat ini menurut nama
+### Contoh 2: Dapatkan definisi kebijakan dari langganan saat ini berdasarkan nama
 ```powershell
 Get-AzPolicyDefinition -Name 'VMPolicyDefinition'
 ```
 
 Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari langganan default saat ini.
 
-### Contoh 3: Dapatkan definisi kebijakan dari grup manajemen menurut nama
+### Contoh 3: Mendapatkan definisi kebijakan dari grup manajemen menurut nama
 ```powershell
 Get-AzPolicyDefinition -Name 'VMPolicyDefinition' -ManagementGroupName 'Dept42'
 ```
 
 Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari grup manajemen bernama Dept42.
 
-### Contoh 4: Dapatkan semua definisi kebijakan bawaan dari langganan
+### Contoh 4: Mendapatkan semua definisi kebijakan bawaan dari langganan
 ```powershell
 Get-AzPolicyDefinition -SubscriptionId '3bf44b72-c631-427a-b8c8-53e2595398ca' -Builtin
 ```
@@ -94,12 +97,12 @@ Perintah ini mendapatkan semua definisi kebijakan bawaan dari langganan dengan I
 Get-AzPolicyDefinition | where-object {$_.Properties.metadata.category -eq "Virtual Machine"}
 ```
 
-Perintah ini mendapatkan semua definisi kebijakan dalam kategori "Mesin Virtual".
+Perintah ini mendapatkan semua definisi kebijakan dalam kategori "Komputer Virtual".
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang didapat cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama definisi kebijakan yang didapat cmdlet ini.
 
 ```yaml
@@ -216,8 +219,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

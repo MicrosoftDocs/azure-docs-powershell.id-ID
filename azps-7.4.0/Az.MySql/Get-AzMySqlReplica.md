@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlReplica.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlReplica.md
-ms.openlocfilehash: 73aad0c3384ba8fc57bbdc04ad58794b46140e54
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 88f0018676d7ebb2b8b4bfad6614e7e53efee88a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283185"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712750"
 ---
 # Get-AzMySqlReplica
 
 ## SYNOPSIS
 Mencantumkan semua replika untuk server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlreplica) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Mencantumkan semua replika untuk server tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan replika server MySql menurut grup sumber daya dan nama server
+### Contoh 1: Dapatkan replika server MySql menurut grup sumber daya dan nama server
 ```powershell
 Get-AzMySqlReplica -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

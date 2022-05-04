@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspace.md
-ms.openlocfilehash: dc917dce69298c26f5aca423d8c62aef31e400b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c07c3718d2d2d6147b6f7e2b981dd447ac2946cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669672"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695666"
 ---
 # New-AzSynapseWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzSynapseWorkspace -ResourceGroupName <String> -Name <String> -Location <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseWorkspace** membuat ruang kerja Analitik Azure Synapse.
+Cmdlet **New-AzSynapseWorkspace** membuat ruang kerja Azure Synapse Analytics.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ $creds = New-Object System.Management.Automation.PSCredential ("ContosoUser", $p
 New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWorkspace -Location northeurope -DefaultDataLakeStorageAccountName ContosoAdlGen2Storage -DefaultDataLakeStorageFilesystem ContosoFileSystem -SqlAdministratorLoginCredential $creds
 ```
 
-Perintah ini membuat ruang kerja Analitik Synapse bernama ContosoWorkspace yang menggunakan Penyimpanan Data ContosoAdlGenStorage, dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini membuat ruang kerja Synapse Analytics bernama ContosoWorkspace yang menggunakan Penyimpanan Data ContosoAdlGenStorage, di grup sumber daya bernama ContosoResourceGroup.
 
 ### Contoh 2
 ```powershell
@@ -60,12 +63,12 @@ $config = New-AzSynapseGitRepositoryConfig -RepositoryType GitHub -AccountName C
 New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWorkspace -Location northeurope -DefaultDataLakeStorageAccountName ContosoAdlGen2Storage -DefaultDataLakeStorageFilesystem ContosoFileSystem -SqlAdministratorLoginCredential $creds -GitRepository $config
 ```
 
-Perintah ini membuat ruang kerja Analitik Synapse bernama ContosoWorkspace yang menggunakan Penyimpanan Data ContosoAdlGenStorage, dalam grup sumber daya bernama ContosoResourceGroup. Dan ruang kerja terhubung ke Git Repository yang disebut ContosoRepo.
+Perintah ini membuat ruang kerja Synapse Analytics bernama ContosoWorkspace yang menggunakan Penyimpanan Data ContosoAdlGenStorage, di grup sumber daya bernama ContosoResourceGroup. Dan ruang kerja terhubung ke Repositori Git yang disebut ContosoRepo.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepository
-Git Repositori Pengaturan. Koneksi ruang kerja ke tempat penyimpanan untuk kontrol sumber dan kolaborasi untuk bekerja pada saluran ruang kerja Anda
+Repositori Git Pengaturan. Koneksi ruang kerja ke repositori untuk kontrol sumber dan kolaborasi untuk bekerja pada alur ruang kerja Anda
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSWorkspaceRepositoryConfiguration
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure tempat sumber daya harus dibuat.
+Wilayah Azure tempat sumber daya harus dibuat.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedResourceGroupName
-Wadah yang berisi sumber daya tambahan. Dibuat secara default sementara nama dapat ditentukan. Perhatikan bahwa bidang ini tidak boleh sama dengan ResourceGroupName
+Kontainer yang menyimpan sumber daya tambahan. Dibuat secara default sementara nama dapat ditentukan. Perhatikan bahwa bidang ini tidak boleh sama dengan ResourceGroupName
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -274,8 +277,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

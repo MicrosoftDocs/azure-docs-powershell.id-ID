@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPredefinedPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPredefinedPolicy.md
-ms.openlocfilehash: 32dbcc656562248678404124c395abb384568729
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f46398cfe1f3b6ebf6667826b424766fb7df2dce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939547"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613940"
 ---
 # Get-AzApplicationGatewaySslPredefinedPolicy
 
 ## SYNOPSIS
-Mendapatkan Kebijakan SSL yang Sudah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
+Mendapatkan Kebijakan SSL yang Telah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslpredefinedpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewaySslPredefinedPolicy [-Name <String>] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewaySslPredefinedPolicy** mendapatkan Kebijakan SSL yang Sudah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
+Cmdlet **Get-AzApplicationGatewaySslPredefinedPolicy** mendapatkan Kebijakan SSL yang telah ditentukan sebelumnya yang disediakan oleh Application Gateway.
 
 ## EXAMPLES
 
@@ -110,7 +113,7 @@ CipherSuites:
     TLS_RSA_WITH_AES_128_CBC_SHA
 ```
 
-Perintah ini mengembalikan semua kebijakan SSL yang sudah ditentukan sebelumnya.
+Perintah ini mengembalikan semua kebijakan SSL yang telah ditentukan sebelumnya.
 
 ### Contoh 2
 ```powershell
@@ -139,7 +142,7 @@ CipherSuites:
     TLS_RSA_WITH_AES_128_CBC_SHA
 ```
 
-Perintah ini mengembalikan kebijakan yang sudah ditentukan sebelumnya dengan nama AppGwSslPolicy20170401.
+Perintah ini mengembalikan kebijakan yang telah ditentukan sebelumnya dengan nama AppGwSslPolicy20170401.
 
 ### Contoh 3
 ```powershell
@@ -189,7 +192,7 @@ CipherSuites:
     TLS_RSA_WITH_AES_128_CBC_SHA
 ```
 
-Perintah ini mengembalikan kebijakan yang sudah ditentukan sebelumnya dengan nama yang dimulai dengan "AppGwSslPolicy2017".
+Perintah ini mengembalikan kebijakan yang telah ditentukan sebelumnya dengan nama yang dimulai dengan "AppGwSslPolicy2017".
 
 ## PARAMETERS
 
@@ -208,8 +211,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan ssl yang sudah ditentukan sebelumnya
+### -Name
+Nama kebijakan ssl yang telah ditentukan sebelumnya
 
 ```yaml
 Type: System.String
@@ -224,11 +227,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

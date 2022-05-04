@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistry.md
-ms.openlocfilehash: 8889e63b7c20a781907e8c4c31a9ea4e817bba23
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11ba512fc081240df4482e09bc3211e4f118651f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229775"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659700"
 ---
 # Get-AzContainerRegistry
 
 ## SYNOPSIS
 Mendapatkan registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzContainerRegistry [[-ResourceGroupName] <String>] [-IncludeDetail]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### RegistriNameParameterSet
+### RegistryNameParameterSet
 ```
 Get-AzContainerRegistry [-ResourceGroupName] <String> [-Name] <String> [-IncludeDetail]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Cmdlet Get-AzContainerRegistry mendapatkan registri kontainer tertentu atau semu
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan registri kontainer tertentu
+### Contoh 1: Mendapatkan registri kontainer tertentu
 ```powershell
 Get-AzContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry"
 ```
@@ -82,7 +85,7 @@ myregistry1       Premium    myregistry1.azurecr.io    10/31/2017 6:29:31 PM    
 
 Perintah ini mendapatkan semua registri kontainer dalam grup sumber daya.
 
-### Contoh 3: Dapatkan semua registri kontainer dalam langganan
+### Contoh 3: Mendapatkan semua registri kontainer dalam langganan
 ```powershell
 Get-AzContainerRegistry
 ```
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Registri Kontainer.
+### -Name
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

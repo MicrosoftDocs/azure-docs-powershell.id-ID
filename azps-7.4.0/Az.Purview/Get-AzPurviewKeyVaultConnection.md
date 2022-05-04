@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewKeyVaultConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewKeyVaultConnection.md
-ms.openlocfilehash: 60ce14d9419e7d21476efd62ef72af37d1782d7c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18073ec94405b30b2375e8b6b2b46b426c6c53c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936865"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628590"
 ---
 # Get-AzPurviewKeyVaultConnection
 
 ## SYNOPSIS
 Mendapatkan informasi brankas kunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewkeyvaultconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

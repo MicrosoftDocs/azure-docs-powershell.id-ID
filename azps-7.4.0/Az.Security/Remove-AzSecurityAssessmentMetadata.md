@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: 3c113353f8c7a276f6a2be923bfa0144255d4171
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa39811b02f00d7c601a6c6785610c9085bf0065
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274383"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712516"
 ---
 # Remove-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
 Menghapus metadata penilaian keamanan dari langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azsecurityassessmentmetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSecurityAssessmentMetadata -InputObject <PSSecurityAssessmentMetadata> 
 ```
 
 ## DESCRIPTION
-Menghapus metadata penilaian keamanan dari langganan. Tindakan ini akan menghapus tipe penilaian dan semua hasil penilaian yang relevan dari langganan.
+Menghapus metadata penilaian keamanan dari langganan. Tindakan ini akan menghapus jenis penilaian dan semua hasil penilaian yang relevan dari langganan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Menghapus metadata penilaian keamanan dari langganan. Tindakan ini akan menghapu
 Remove-AzSecurityAssessmentMetadata -Name 4FB6C0A0-1137-42C7-A1C7-4BD37C91DE8D
 ```
 
-Menghapus tipe penilaian dari langganan
+Menghapus jenis penilaian dari langganan
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: String
@@ -126,8 +129,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

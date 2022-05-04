@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 61417529244bd2b3753653b4350dacad8fd8ffc9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0357b88c962459cb0a065d8d0717ebf0d6854f6d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314361"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712714"
 ---
 # Add-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat akar tepercaya ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaytrustedrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
 Perintah kedua menambahkan sertifikat akar tepercaya baru untuk Application Gateway mengambil jalur sertifikat akar sebagai input.
-Perintah ketiga membuat pengaturan backend http baru menggunakan sertifikat akar tepercaya untuk memvalidasi sertifikat server backend terhadap.
+Perintah ketiga membuat pengaturan http backend baru menggunakan sertifikat akar tepercaya untuk memvalidasi sertifikat server backend.
 Perintah keempat memperbarui Application Gateway.
 
 ## PARAMETERS
@@ -89,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sertifikat TrustedRoot
 
 ```yaml
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

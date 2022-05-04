@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationService.md
-ms.openlocfilehash: 858ac6b7e8b55b66c5c922047ec47b163d9d0f3b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 486b47e2944b71bdc39d85cc6e50488bf77b4daf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874206"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660114"
 ---
 # Remove-AzDataMigrationService
 
 ## SYNOPSIS
-Menghapus contoh Azure Database Migration Service dari Azure.
+Menghapus instans Azure Database Migration Service dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzDataMigrationService [-ResourceId] <String> [-Force] [-DeleteRunningTas
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDataMigrationService menghapus contoh Azure Database Migration Service dari Azure. Memasukkan parameter DeleteRunningTask akan menghapus semua tugas Azure Database Migration Service yang terkait dengan layanan yang sedang dihapus. 
+Cmdlet Remove-AzDataMigrationService menghapus instans Azure Database Migration Service dari Azure. Menyediakan parameter DeleteRunningTask akan menghapus semua tugas Azure Database Migration Service yang terkait dengan layanan yang sedang dihapus. 
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Remove-AzDataMigrationService menghapus contoh Azure Database Migration S
 Remove-AzDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService
 ```
 
-Contoh di atas menghapus contoh Azure Database Migration Service bernama TestService yang terdapat dalam Azure Resource Group bernama MyResourceGroup.
+Contoh di atas menghapus instans Azure Database Migration Service bernama TestService yang terkandung dalam Grup Sumber Daya Azure bernama MyResourceGroup.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteRunningTask
-Menghapus tugas apa pun yang sedang berjalan
+Menghapus tugas yang sedang berjalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataMigrationService Object.
+Objek PSDataMigrationService.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Database Migration Service.
 
 ```yaml
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

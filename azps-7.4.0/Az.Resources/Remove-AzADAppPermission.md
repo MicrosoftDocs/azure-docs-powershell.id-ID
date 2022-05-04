@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
-ms.openlocfilehash: 4eb5d02aa11d92ce490cf8888834aa360f2561f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51d624807e8cac4a02c1d54ba2a666d48ddd0c7f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309555"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713686"
 ---
 # Remove-AzADAppPermission
 
 ## SYNOPSIS
 Menghapus izin API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ Menghapus izin API.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Izin API
+### Contoh 1: Menghapus Izin API
 ```powershell
 Remove-AzADAppPermission -ObjectId 9cc74d5e-1162-4b90-8696-65f3d6a3f7d0 -PermissionId 5f8c59db-677d-491f-a6b8-5f174b11ec1d
 ```
 
-Hapus izin yang didelegasikan "Group.Read.All" microsoft Graph API dari Ad Application (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
+Menghapus izin yang didelegasikan "Group.Read.All" microsoft Graph API dari Aplikasi AD (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Pengidentifikasi unik di Azure AD.
+Pengidentifikasi unik dalam Azure AD.
 
 ```yaml
 Type: System.Guid
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionId
-Pengidentifikasi unik untuk salah satu contoh oauth2PermissionScopes atau appRole yang diekspos oleh aplikasi sumber daya.
+Pengidentifikasi unik untuk salah satu instans oauth2PermissionScopes atau appRole yang diekspos aplikasi sumber daya.
 
 ```yaml
 Type: System.Guid
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

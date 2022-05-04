@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonSqlCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonSqlCredentialScanObject.md
-ms.openlocfilehash: 7d5fb348366db7f2276b7e0f4354f93975a988d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33efebc148575db095b388c2b6157cecae1f0387
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936811"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587232"
 ---
 # New-AzPurviewAmazonSqlCredentialScanObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk AmazonSqlCredentialScan.
+Buat objek dalam memori untuk AmazonSqlCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewamazonsqlcredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzPurviewAmazonSqlCredentialScanObject -Kind <ScanAuthorizationType> [-Colle
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk AmazonSqlCredentialScan.
+Buat objek dalam memori untuk AmazonSqlCredentialScan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek pemindaian Kredensial Amazon Sql
+### Contoh 1: Membuat objek pemindaian Kredensial Amazon Sql
 ```powershell
 PS C:\> New-AzPurviewAmazonSqlCredentialScanObject -Kind 'AmazonSqlCredential' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -CredentialReferenceName 'sqlauth' -CredentialType 'SqlAuth' -DatabaseName 'db' -Port 5432 -ScanRulesetName 'AmazonSql' -ScanRulesetType 'System' -ServerEndpoint 'DummyServer' -VpcEndpointServiceName 'com.amazonaws.ypce.wus.123456789'
 
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

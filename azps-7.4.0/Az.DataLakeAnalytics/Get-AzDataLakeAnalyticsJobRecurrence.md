@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJobRecurrence.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJobRecurrence.md
-ms.openlocfilehash: 49c190ff998f8fed7f52d5e66475ab4a2b8ee034
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 20bbd06a3eabe7fe4a61922fed03afb9c96de610
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003105"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605822"
 ---
 # Get-AzDataLakeAnalyticsJobRecurrence
 
 ## SYNOPSIS
-Mendapatkan pekerjaan Data Lake Analytics pengulangan atau pengulangan.
+Mendapatkan pengulangan atau pengulangan Pekerjaan Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsjobrecurrence) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,28 +36,28 @@ Get-AzDataLakeAnalyticsJobRecurrence [-Account] <String> [-RecurrenceId] <Guid>
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsJobRecurrence** mendapatkan Pengulangan Azure Data Lake Analytics Job tertentu atau daftar pengulangan.
+**Get-AzDataLakeAnalyticsJobRecurrence** mendapatkan pengulangan Azure Data Lake Analytics Job tertentu atau daftar pengulangan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengulangan yang ditentukan
+### Contoh 1: Mendapatkan pengulangan yang ditentukan
 ```powershell
 Get-AzDataLakeAnalyticsJobRecurrence -Account "contosoadla" -RecurrenceId 83cb7ad2-3523-4b82-b909-d478b0d8aea3
 ```
 
-Perintah ini mendapatkan pengulangan pekerjaan yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' dalam akun 'contosoadla'.
+Perintah ini mendapatkan pengulangan pekerjaan yang ditentukan dengan id '83cb7ad2-3523-4b82-b909-d478b0d8aea3' di akun 'contosoadla'.
 
-### Contoh 2: Dapatkan daftar semua pengulangan dalam akun
+### Contoh 2: Mendapatkan daftar semua pengulangan di akun
 ```powershell
 Get-AzDataLakeAnalyticsJobRecurrence -AccountName "contosoadla"
 ```
 
-Perintah ini mendapatkan daftar semua pengulangan dalam akun "contosoadla"
+Perintah ini mendapatkan daftar semua pengulangan di akun "contosoadla"
 
 ## PARAMETERS
 
 ### -Akun
-Nama nama akun Data Lake Analytics yang ingin diambil pengulangan pekerjaannya.
+Nama nama akun Data Lake Analytics di mana ingin mengambil pengulangan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -DikirimBefore
+### -SubmittedBefore
 Filter opsional yang mengembalikan pengulangan pekerjaan hanya dikirimkan sebelum waktu yang ditentukan.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

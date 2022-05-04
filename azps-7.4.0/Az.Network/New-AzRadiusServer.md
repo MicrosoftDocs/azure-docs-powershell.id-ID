@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azra
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRadiusServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRadiusServer.md
-ms.openlocfilehash: 31a0db28ed50350bac7d35dc755ae8419749ef82
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbd1739de73bf75147c77f47643d4137cb285938
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313587"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687734"
 ---
 # New-AzRadiusServer
 
 ## SYNOPSIS
 Membuat konfigurasi server radius eksternal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azradiusserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzRadiusServer -RadiusServerAddress <String> -RadiusServerSecret <SecureStri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzRadiusServer membuat konfigurasi server radius eksternal untuk digunakan dalam gateway jaringan virtual dan konfigurasi server VPN.
+Cmdlet New-AzRadiusServer membuat konfigurasi server radius eksternal yang akan digunakan dalam gateway jaringan virtual dan konfigurasi server VPN.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ $radiusServer2 = New-AzRadiusServer -RadiusServerAddress 10.1.0.2 -RadiusServerS
 New-AzVirtualNetworkGateway -ResourceGroupName $rgname -name $rname -location $location -IpConfigurations $vnetIpConfig -GatewayType Vpn -VpnType RouteBased -EnableBgp $false -GatewaySku VpnGw1 -VpnClientAddressPool 201.169.0.0/16 -VpnClientProtocol "IkeV2" -RadiusServerList $radiusServers
 ```
 
-Membuat beberapa konfigurasi server radius eksternal yang akan digunakan untuk mengonfigurasi P2S di gateway jaringan virtual baru.
+Membuat beberapa konfigurasi server radius eksternal yang akan digunakan untuk mengonfigurasi P2S pada gateway jaringan virtual baru.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

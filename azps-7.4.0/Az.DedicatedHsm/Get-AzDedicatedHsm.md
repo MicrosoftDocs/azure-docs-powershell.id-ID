@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
-ms.openlocfilehash: dfb0397d26c0f9f16b3aa9e6bee1d38004802349
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d7d85072828d080dab47d2300bed23712eebb627
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062361"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713038"
 ---
 # Get-AzDedicatedHsm
 
 ## SYNOPSIS
-Mendapatkan HSM khusus Azure yang ditentukan.
+Mendapatkan Azure dedicated HSM yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/get-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDedicatedHsm [-SubscriptionId <String[]>] [-Top <Int32>] [-DefaultProfile 
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDedicatedHsm -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,11 +46,11 @@ Get-AzDedicatedHsm -ResourceGroupName <String> [-SubscriptionId <String[]>] [-To
 ```
 
 ## DESCRIPTION
-Mendapatkan HSM khusus Azure yang ditentukan.
+Mendapatkan Azure dedicated HSM yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua HSM Khusus di bawah langganan
+### Contoh 1: Mendapatkan semua Dedicated HSM di bawah langganan
 ```powershell
 Get-AzDedicatedHsm
 ```
@@ -59,9 +62,9 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 yeminghsm  Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan semua HSM Khusus di bawah langganan
+Perintah ini mendapatkan semua Dedicated HSM di bawah langganan
 
-### Contoh 2: Dapatkan semua HSM Khusus di bawah grup sumber daya.
+### Contoh 2: Dapatkan semua Dedicated HSM di bawah grup sumber daya.
 ```powershell
 Get-AzDedicatedHsm -ResourceGroupName dedicatedhsm-rg-n359cz
 ```
@@ -72,9 +75,9 @@ Name       Provisioning State SKU                           Location
 hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan semua HSM Khusus di bawah grup sumber daya.
+Perintah ini mendapatkan semua Dedicated HSM di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan HSM Khusus menurut nama
+### Contoh 3: Mendapatkan Dedicated HSM berdasarkan nama
 ```powershell
 Get-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName dedicatedhsm-rg-n359cz
 ```
@@ -85,9 +88,9 @@ Name       Provisioning State SKU                           Location
 hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan HSM Khusus berdasarkan nama.
+Perintah ini mendapatkan Dedicated HSM berdasarkan nama.
 
-### Contoh 4: Dapatkan HSM Khusus menurut objek
+### Contoh 4: Mendapatkan Dedicated HSM menurut objek
 ```powershell
 $hsm = New-AzDedicatedHsm -Name hsm-n7wfxi -ResourceGroupName dedicatedhsm-rg-n359cz -Location eastus -Sku "SafeNet Luna Network HSM A790" -StampId stamp1 -SubnetId "/subscriptions/xxxx-xxxx-xxx-xxx/resourceGroups/dedicatedhsm-rg-n359cz/providers/Microsoft.Network/virtualNetworks/vnetq30la9/subnets/hsmsubnet" -NetworkInterface @{PrivateIPAddress = '10.2.1.120' }
 Get-AzDedicatedHsm -InputObject $hsm
@@ -99,7 +102,7 @@ Name       Provisioning State SKU                           Location
 hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan HSM Khusus berdasarkan objek.
+Perintah ini mendapatkan Dedicated HSM berdasarkan objek.
 
 ## PARAMETERS
 
@@ -133,7 +136,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama HSM khusus.
 
 ```yaml
@@ -164,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah hasil maksimum untuk dikembalikan.
+### -Atas
+Jumlah hasil maksimum yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -218,7 +221,7 @@ INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

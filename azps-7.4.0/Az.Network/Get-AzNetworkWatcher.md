@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcher.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcher.md
-ms.openlocfilehash: c4023ab8a6b2fb7dd7361daccc49688791108cbe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7b98cac5a43563cac45bd0f077ae91ec97f93153
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677320"
 ---
 # Get-AzNetworkWatcher
 
 ## SYNOPSIS
-Mendapatkan properti Network Watcher
+Mendapatkan properti dari Network Watcher
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcher) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ Get-AzNetworkWatcher -Location <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcher mendapatkan satu atau beberapa sumber daya azure Network Watcher.
+Cmdlet Get-AzNetworkWatcher mendapatkan satu atau beberapa sumber daya Azure Network Watcher.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Network Watcher
+### Contoh 1: Mendapatkan Network Watcher
 ```powershell
 Get-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG
 ```
@@ -51,7 +54,7 @@ ProvisioningState : Succeeded
 
 Mendapatkan Network Watcher bernama NetworkWatcher_westcentralus dalam grup sumber daya NetworkWatcherRG.
 
-### Contoh 2: Daftar Pengawas Jaringan menggunakan pemfilteran
+### Contoh 2: Mencantumkan Network Watcher menggunakan pemfilteran
 ```powershell
 Get-AzNetworkWatcher -Name NetworkWatcher*
 ```
@@ -72,7 +75,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Mendapatkan Pengamat Jaringan yang dimulai dengan "NetworkWatcher"
+Mendapatkan Network Watcher yang dimulai dengan "NetworkWatcher"
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pengawas jaringan.
+### -Name
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -137,18 +140,18 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan 
 
 ## RELATED LINKS
 
@@ -156,7 +159,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -196,9 +199,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

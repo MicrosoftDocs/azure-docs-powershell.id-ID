@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: 3e4516bfe7e9ba9f8e1fd118ab91355efd0d246a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7a5f3c502807af5fce27c95977c4d04083eea47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741546"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613706"
 ---
 # Remove-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi dari hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +33,11 @@ Remove-AzNotificationHubAuthorizationRule [-ResourceGroup] <String> [-Namespace]
 Cmdlet **Remove-AzNotificationHubAuthorizationRule** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari hub pemberitahuan.
 Aturan otorisasi mengelola akses ke hub pemberitahuan Anda melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Tingkat izin bisa menjadi salah satu hal berikut ini: 
-- Mendengarkan
-- Mengirim
+- Dengar
+- Kirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
-Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
+Menghapus aturan otorisasi juga menghapus izin pengguna yang sesuai.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Remove-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -Notific
 ```
 
 Perintah ini menghapus aturan otorisasi bernama ListenRule dari hub pemberitahuan bernama ContosoExternalHub.
-Ketika menjalankan perintah ini, Anda harus menentukan ruang nama dan grup sumber daya tempat hub ditetapkan.
+Saat menjalankan perintah ini, Anda harus menentukan namespace layanan dan grup sumber daya tempat hub ditetapkan.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -NotificationHub
 Menentukan hub pemberitahuan tempat aturan otorisasi ditetapkan.
-Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platformnya.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

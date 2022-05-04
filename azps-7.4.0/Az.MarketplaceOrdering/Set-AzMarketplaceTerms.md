@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplaceorder
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Set-AzMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Set-AzMarketplaceTerms.md
-ms.openlocfilehash: 624372e52d426d8693b9c888864ebb9b56767d43
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 463f55d7d1389f9dcca75f409498f9ccbe41d7b6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687878"
 ---
 # Set-AzMarketplaceTerms
 
 ## SYNOPSIS
-Menerima atau menolak ketentuan untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Silakan gunakan Get-AzMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
+Terima atau tolak persyaratan untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id paket(Nama). Silakan gunakan Get-AzMarketplaceTerms untuk mendapatkan persyaratan perjanjian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplaceordering/set-azmarketplaceterms) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Set-AzMarketplaceTerms [-Reject] [-InputObject] <PSAgreementTerms> [-DefaultProf
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzMarketplaceTerms** menyimpan objek persyaratan untuk rangkap id(Publisher) penerbit tertentu, id penawaran(Produk) dan id rencana(Nama).
+Cmdlet **Set-AzMarketplaceTerms** menyimpan objek istilah untuk id penerbit tertentu (Publisher), id penawaran(Produk) dan id paket(Nama) tuple.
 
 ## EXAMPLES
 
@@ -59,11 +62,11 @@ Perintah ini mendapatkan perjanjian penerbit marketplace
 ```powershell
 Set-AzMarketplaceTerms -Publisher "microsoft-ads" -Product "windows-data-science-vm" -Name "windows2016" -Terms $agreementTerms -Accept
 ```
-Perintah ini mengatur perjanjian penerbit ke 'Terima', dan mendapatkan nilai untuk parameter 'Ketentuan' dari cmdlet 'Get-AzMarketplaceTerms'
+Perintah ini menetapkan perjanjian penerbit ke 'Terima', dan mendapatkan nilai untuk parameter 'Ketentuan' dari cmdlet 'Get-AzMarketplaceTerms'
 ## PARAMETERS
 
 ### -Terima
-Berikan ini untuk menerima ketentuan hukum.
+Berikan ini untuk menerima persyaratan hukum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek istilah yang dikembalikan dalam cmdlet Get-AzMarketplaceTerms. Ini adalah parameter wajib jika Parameter yang Diterima adalah benar.
+Objek istilah yang dikembalikan dalam cmdlet Get-AzMarketplaceTerms. Ini adalah parameter wajib jika Parameter yang diterima benar.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
@@ -107,8 +110,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-String gambar pengidentifikasi rencana sedang digunakan.
+### -Name
+String pengidentifikasi paket gambar yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Produk
-Menawarkan string gambar pengidentifikasi yang sedang digunakan.
+Menawarkan string gambar pengidentifikasi yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher string pengidentifikasi gambar yang sedang digunakan.
+Publisher string gambar pengidentifikasi yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tolak
-Berikan ini untuk menolak ketentuan hukum.
+Teruskan ini untuk menolak persyaratan hukum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Persyaratan
-Objek istilah yang dikembalikan dalam cmdlet Get-AzMarketplaceTerms. Ini adalah parameter wajib jika Parameter yang Diterima adalah benar.
+### -Istilah
+Objek istilah yang dikembalikan dalam cmdlet Get-AzMarketplaceTerms. Ini adalah parameter wajib jika Parameter yang diterima benar.
 
 ```yaml
 Type: Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
@@ -182,8 +185,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

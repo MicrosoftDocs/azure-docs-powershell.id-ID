@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterSize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterSize.md
-ms.openlocfilehash: b2c9dfb3e0041eb3256f8c4d5186bb3cb53db836
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb1fa712cc208175bfa44c93e319f0813e4158b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001404"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680000"
 ---
 # Set-AzHDInsightClusterSize
 
 ## SYNOPSIS
-Mengatur jumlah node Pekerja dalam kluster yang ditentukan.
+Mengatur jumlah simpul Pekerja dalam kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclustersize) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzHDInsightClusterSize [-ClusterName] <String> [-TargetInstanceCount] <Int32
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightClusterSize** mengatur jumlah node Worker dalam kluster Azure HDInsight yang ditentukan.
+Cmdlet **Set-AzHDInsightClusterSize** menetapkan jumlah simpul Pekerja dalam kluster Azure HDInsight tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur ukuran kluster yang ditentukan
+### Contoh 1: Mengatur ukuran kluster tertentu
 ```powershell
 Set-AzHDInsightClusterSize -ClusterName "your-hadoop-001" -TargetInstanceCount 6
 ```
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetInstanceCount
-Menentukan jumlah node Pekerja yang diinginkan dalam kluster.
+Menentukan jumlah simpul Pekerja yang diinginkan dalam kluster.
 
 ```yaml
 Type: System.Int32
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

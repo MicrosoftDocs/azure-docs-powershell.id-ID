@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: 1cfe7d07f83a4f702d78683cd497669bd72187b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a780e4e1f430ce084a957dd11302b82d4ec568b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943003"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688130"
 ---
 # Update-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
-Memperbarui Tugas Peran CosmosDB Sql yang sudah ada.
+Memperbarui Penetapan Peran CosmosDB Sql yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Update-AzCosmosDBSqlRoleAssignment -InputObject <PSSqlRoleAssignmentGetResults>
 ```
 
 ## DESCRIPTION
-Memperbarui Tugas Peran CosmosDB Sql yang sudah ada.
-Lingkup dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbName) atau dimulai dengan nama database (ie. /dbs/dbName).
+Memperbarui Penetapan Peran CosmosDB Sql yang ada.
+Cakupan dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbs/dbName) atau dimulai dengan nama database (yaitu /dbs/dbName).
 RoleDefinitionId dan Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Tugas Peran.
+Objek Penetapan Peran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlRoleAssignmentGetResults
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-OBJECT ID (Guid) dari pokok AAD tempat Penetapan Peran diberikan. Ini bisa berupa pengguna, grup, prinsipal layanan, atau identitas terkelola.
+ID Objek (Guid) dari perwakilan AAD tempat Penetapan Peran diberikan. Ini bisa berupa pengguna, grup, perwakilan layanan, atau identitas terkelola.
 
 ```yaml
 Type: System.String
@@ -199,8 +202,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Jalur sumber daya di bawah tempat Tugas Peran akan memberikan akses. Misalnya. '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
+### -Cakupan
+Jalur sumber daya di bawah tempat Penetapan Peran akan memberikan akses. Mis. '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
 
 ```yaml
 Type: System.String
@@ -214,8 +217,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssVMDataDisk.md
-ms.openlocfilehash: a10a7c49e325afba48842f0f3d84be9d70b32538
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d58d208ef9379c981e0efd8b90805094dc1b8f60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633194"
 ---
 # Add-AzVmssVMDataDisk
 
 ## SYNOPSIS
-Menambahkan disk data ke VM Vmss.
+Menambahkan disk data ke VM VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Add-AzVmssVMDataDisk [-VirtualMachineScaleSetVM] <PSVirtualMachineScaleSetVM> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssVMDataDisk** menambahkan disk data ke Vmss VM.
+Cmdlet **Add-AzVmssVMDataDisk** menambahkan disk data ke VM Vmss.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan disk data terkelola ke VM VM.
+### Contoh 1: Tambahkan disk data terkelola ke VM VM.
 ```powershell
 $disk = Get-AzDisk -ResourceGroupName $rgname -DiskName $diskname0
 $VmssVM = Get-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0
@@ -39,21 +42,21 @@ $VmssVM = Add-AzVmssVMDataDisk -VirtualMachineScaleSetVM $VmssVM -Lun 0 -DiskSiz
 Update-AzVmssVM -VirtualMachineScaleSetVM $VmssVM
 ```
 
-Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah berikutnya menambahkan disk yang dikelola ke VM Vmss yang disimpan secara lokal di $VmssVM.
-Perintah terakhir memperbarui VM VM dengan disk data tambahan.
+Perintah pertama mendapatkan disk terkelola yang ada.
+Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
+Perintah berikutnya menambahkan disk terkelola ke VM Vmss yang disimpan secara lokal di $VmssVM.
+Perintah akhir memperbarui VM VM dengan disk data tambahan.
 
 ## PARAMETERS
 
-### -Caching
-Menentukan mode cache diska.
+### -Penembolokan
+Menentukan mode penembolokan disk.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite
 - Tidak Ada Nilai default adalah ReadWrite.
-Mengubah nilai ini menyebabkan mesin virtual dimulai ulang.
-Pengaturan ini mempengaruhi konsistensi dan kinerja disk.
+Mengubah nilai ini menyebabkan komputer virtual dimulai ulang.
+Pengaturan ini memengaruhi konsistensi dan performa disk.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.CachingTypes
@@ -69,18 +72,18 @@ Accept wildcard characters: False
 ```
 
 ### -CreateOption
-Menentukan apakah cmdlet ini membuat disk di mesin virtual dari platform atau gambar pengguna, membuat disk kosong, atau melampirkan disk yang sudah ada.
+Menentukan apakah cmdlet ini membuat disk di komputer virtual dari platform atau gambar pengguna, membuat disk kosong, atau melampirkan disk yang ada.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Melampirkan.
-Tentukan opsi ini untuk membuat mesin virtual dari disk khusus.
+Tentukan opsi ini untuk membuat komputer virtual dari disk khusus.
 Saat Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
-*VhdUri* adalah semua yang diperlukan untuk memberi tahu platform Azure lokasi hard disk virtual (VHD) untuk dilampirkan sebagai disk data ke mesin virtual.
+*VhdUri* adalah semua yang diperlukan untuk memberi tahu platform Azure lokasi hard disk virtual (VHD) untuk dilampirkan sebagai disk data ke komputer virtual.
 - Kosong.
 Tentukan ini untuk membuat disk data kosong.
 - FromImage.
-Tentukan opsi ini untuk membuat mesin virtual dari citra atau disk yang diskala.
-Ketika menentukan opsi ini, Anda harus menentukan parameter *SourceImageUri* juga untuk memberi tahu platform Azure lokasi VHD untuk dilampirkan sebagai disk data.
-Parameter *VhdUri* digunakan sebagai lokasi yang mengidentifikasi tempat VHD disk data akan disimpan ketika digunakan oleh mesin virtual.
+Tentukan opsi ini untuk membuat komputer virtual dari citra atau disk umum.
+Saat Anda menentukan opsi ini, Anda harus menentukan parameter *SourceImageUri* juga untuk memberi tahu platform Azure lokasi VHD untuk dilampirkan sebagai disk data.
+Parameter *VhdUri* digunakan sebagai lokasi yang mengidentifikasi tempat VHD disk data akan disimpan saat digunakan oleh komputer virtual.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
+Menentukan ID sumber daya set enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskSizeInGB
-Menentukan ukuran, dalam gigabyte, disk kosong untuk dilampirkan ke mesin virtual.
+Menentukan ukuran, dalam gigabyte, dari disk kosong untuk dilampirkan ke komputer virtual.
 
 ```yaml
 Type: System.Int32
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN) untuk disk data.
+Menentukan nomor unit logis (LUN) untuk disk data.
 
 ```yaml
 Type: System.Int32
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-Menentukan ID disk yang dikelola.
+Menentukan ID disk terkelola.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Menentukan tipe akun penyimpanan disk terkelola.
+Menentukan jenis akun penyimpanan disk terkelola.
 
 ```yaml
 Type: System.String
@@ -185,8 +188,8 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSetVM
-Menentukan skala mesin virtual lokal set objek VM tempat untuk menambahkan disk data.
-Anda dapat menggunakan cmdlet **Get-AzVmssVM** untuk mendapatkan skala mesin virtual yang mengatur objek VM.
+Menentukan objek VM set skala komputer virtual lokal untuk menambahkan disk data.
+Anda dapat menggunakan cmdlet **Get-AzVmssVM** untuk mendapatkan objek VM set skala komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data yang dikelola.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

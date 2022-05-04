@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
-ms.openlocfilehash: cfbf93a2e9e54cde13b346d0845d1679b1a299e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a68dad1022e71ff3c24e30389f39830b53f48d5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743580"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687770"
 ---
-# Get-AzRouteTable
+# New-AzRouteTable
 
 ## SYNOPSIS
 Mendapatkan tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzRouteTable [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
  [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzRouteTable -ResourceGroupName <String> -Name <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -34,11 +37,11 @@ Get-AzRouteTable -ResourceGroupName <String> -Name <String> -ExpandResource <Str
 
 ## DESCRIPTION
 Cmdlet **Get-AzRouteTable** mendapatkan tabel rute Azure.
-Anda bisa mendapatkan satu tabel rute, atau mendapatkan semua tabel rute dalam grup sumber daya atau dalam langganan Anda.
+Anda bisa mendapatkan satu tabel rute, atau mendapatkan semua tabel rute dalam grup sumber daya atau di langganan Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tabel rute
+### Contoh 1: Mendapatkan tabel rute
 ```powershell
 Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01"
 ```
@@ -69,7 +72,7 @@ Subnets           : []
 
 Perintah ini mendapatkan tabel rute bernama RouteTable01 dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 2: Daftar tabel rute menggunakan pemfilteran
+### Contoh 2: Mencantumkan tabel rute menggunakan pemfilteran
 ```powershell
 Get-AzRouteTable -Name RouteTable*
 ```
@@ -152,7 +155,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tabel rute yang didapat cmdlet ini.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tabel rute yang didapatkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi tabel rute yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -225,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzRouteTable](./Remove-AzRouteTable.md)
 
-[Set-AzRouteTable](./Set-AzRouteTable.md)
+[New-AzRouteTable](./Set-AzRouteTable.md)
 
 

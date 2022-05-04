@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancer.md
-ms.openlocfilehash: e73dee292150d71bbc719f6cb7733a7ca36af231
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7772bebb9b8965a803b73765de208f606c868f6c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313245"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679892"
 ---
 # Remove-AzLoadBalancer
 
 ## SYNOPSIS
-Menghapus penyeimbang beban.
+Menghapus load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzLoadBalancer -ResourceGroupName <String> -Name <String> [-Force] [-AsJo
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancer** menghapus penyeimbang muatan Azure.
+Cmdlet **Remove-AzLoadBalancer** menghapus load balancer Azure.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Cmdlet **Remove-AzLoadBalancer** menghapus penyeimbang muatan Azure.
 Remove-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini menghapus load balancer bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
+Perintah ini menghapus load balancer bernama MyLoadBalancer di grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menghapus penyeimbang beban terlepas dari apakah sumber daya ditetapkan padanya.
+### -Force
+Menunjukkan bahwa cmdlet ini menghapus load balancer terlepas dari apakah sumber daya ditetapkan untuk itu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyeimbang muatan untuk dihapus.
+### -Name
+Menentukan nama load balancer yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi load balancer untuk dihapus.
+Menentukan nama grup sumber daya yang berisi load balancer yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -130,8 +133,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,10 +179,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [New-AzLoadBalancer](./New-AzLoadBalancer.md)
 
-[Set-AzLoadBalancer](./Set-AzLoadBalancer.md)
+[Atur-AzLoadBalancer](./Set-AzLoadBalancer.md)
 
 

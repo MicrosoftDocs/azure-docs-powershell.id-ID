@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlServiceNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlServiceNode.md
-ms.openlocfilehash: d562580cc6730e4d361a32bc08af0558e0dc363f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cf5e1ed4fc72668961fe69b1309d61d944fb13e5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874170"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677698"
 ---
 # Remove-AzDataMigrationSqlServiceNode
 
 ## SYNOPSIS
 Hapus simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationsqlservicenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Hapus simpul runtime integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Simpul Runtime Intergrasi yang ditentukan untuk Sql Migration Service
+### Contoh 1: Menghapus Simpul Intergration Runtime yang ditentukan untuk Sql Migration Service
 ```powershell
 Remove-AzDataMigrationSqlServiceNode -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" -NodeName "WIN-AKLAB" | Select *
 ```
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

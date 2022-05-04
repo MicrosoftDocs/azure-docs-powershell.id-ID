@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseManagedVirtualNetworkConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseManagedVirtualNetworkConfig.md
-ms.openlocfilehash: c910e9ae7fd449dd9258e4728458628d6318e927
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 57f9d92236e8a82960594243df387cb22845e6ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992827"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713146"
 ---
 # Update-AzSynapseManagedVirtualNetworkConfig
 
 ## SYNOPSIS
-Pembaruan konfigurasi jaringan maya terkelola ke ruang kerja.
+Memperbarui konfigurasi jaringan virtual terkelola ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsemanagedvirtualnetworkconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzSynapseManagedVirtualNetworkConfig -WorkspaceObject <PSSynapseWorkspace
 ```
 
 ## DESCRIPTION
-**Cmdlet Update-AzSynapseManagedVirtualNetworkConfig** memperbarui konfigurasi jaringan virtual terkelola ke ruang kerja.
+Cmdlet **Update-AzSynapseManagedVirtualNetworkConfig** memperbarui konfigurasi jaringan virtual terkelola ke ruang kerja.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ $ws = $ws | Update-AzSynapseManagedVirtualNetworkConfig -AllowedAadTenantIdsForL
 $ws | Update-AzSynapseWorkspace
 ```
 
-Perintah pertama mengambil objek ruang kerja. Perintah kedua memperbarui ID penyewa AAD yang diperbolehkan. Perintah ketiga memperbarui ruang kerja.
+Perintah pertama mengambil objek ruang kerja. Perintah kedua memperbarui ID penyewa AAD yang diizinkan. Perintah ketiga memperbarui ruang kerja.
 
 ## PARAMETERS
 
 ### -AllowedAadTenantIdsForLinking
-ID penyewa AAD yang diperbolehkan untuk penautan.
+ID penyewa AAD yang diizinkan untuk penautan.
 
 ```yaml
 Type: System.String[]
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreventDataExfiltration
-Menunjukkan apakah akan mencegah eksfiltrasi data.
+Menunjukkan apakah akan mencegah penyelundupan data.
 
 ```yaml
 Type: System.Boolean
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

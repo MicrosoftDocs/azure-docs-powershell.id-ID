@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
-ms.openlocfilehash: f0da838ede970ce6fc468744056dddc4cd100fa2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 892dfb0cf263b88036667f76faf58ce176e4bb7c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865458"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713488"
 ---
 # Get-AzSqlDatabaseUpgradeHint
 
 ## SYNOPSIS
 Mendapatkan petunjuk tingkat harga untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseupgradehint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Get-AzSqlDatabaseUpgradeHint [-ServerName] <String> [-DatabaseName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseUpgradeHint** mendapatkan petunjuk tingkat harga untuk memutakhirkan Azure SQL Database.
-Database yang masih berada di tingkat harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkat harga Dasar, Standar, atau Premium yang baru.
+Cmdlet **Get-AzSqlDatabaseUpgradeHint** mendapatkan petunjuk tingkat harga untuk meningkatkan Azure SQL Database.
+Database yang masih berada di tingkat harga Web dan Bisnis mendapatkan petunjuk untuk meningkatkan ke tingkat harga Dasar, Standar, atau Premium baru.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -38,34 +41,34 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
 
-Perintah ini mengembalikan petunjuk pemutakhiran untuk semua database di server bernama Server01.
+Perintah ini mengembalikan petunjuk peningkatan untuk semua database di server bernama Server01.
 
-### Contoh 2: Dapatkan rekomendasi untuk database tertentu
+### Contoh 2: Mendapatkan rekomendasi untuk database tertentu
 ```powershell
 Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengembalikan petunjuk pemutakhiran untuk database tertentu.
+Perintah ini mengembalikan petunjuk peningkatan untuk database tertentu.
 
 ### Contoh 3: Dapatkan rekomendasi untuk semua database yang tidak berada dalam kumpulan database elastis
 ```powershell
 Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ExcludeElasticPoolCandidates $True
 ```
 
-Perintah ini mengembalikan petunjuk pemutakhiran untuk semua database yang tidak berada dalam kumpulan database elastis.
+Perintah ini mengembalikan petunjuk peningkatan untuk semua database yang tidak berada dalam kumpulan database elastis.
 
-### Contoh 4: Dapatkan rekomendasi untuk semua database di server menggunakan pemfilteran
+### Contoh 4: Mendapatkan rekomendasi untuk semua database di server menggunakan pemfilteran
 ```powershell
 Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database*"
 ```
 
-Perintah ini mengembalikan petunjuk pemutakhiran untuk semua database di server bernama Server01 yang dimulai dengan "Database".
+Perintah ini mengembalikan petunjuk peningkatan untuk semua database di server bernama Server01 yang dimulai dengan "Database".
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database SQL tempat cmdlet ini mendapatkan petunjuk pemutakhiran.
-Jika Anda tidak menentukan database, cmdlet ini mendapatkan petunjuk untuk semua database di server logika.
+Menentukan nama database SQL yang cmdlet ini mendapatkan petunjuk peningkatan.
+Jika Anda tidak menentukan database, cmdlet ini mendapatkan petunjuk untuk semua database di server logis.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menghosting database tempat cmdlet ini mendapatkan petunjuk pemutakhiran.
+Menentukan nama server yang menghosting database tempat cmdlet ini mendapatkan petunjuk peningkatan.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

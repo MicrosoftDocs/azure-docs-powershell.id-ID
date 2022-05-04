@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinUniqueKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinUniqueKey.md
-ms.openlocfilehash: cfd8ec30cfc6d0d267fe284865ab508a1f898265
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c5ee4b5a31eb56011af096ef82d0b78e68d4dea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126441"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680342"
 ---
 # New-AzCosmosDBGremlinUniqueKey
 
 ## SYNOPSIS
 Membuat objek CosmosDB UniqueKeyPolicy baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinuniquekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ New-AzCosmosDBGremlinUniqueKey -Path <String[]> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCosmosDBGremlinUniqueKeyPolicy** menciptakan objek baru tipe PSUniqueKeyPolicy.
+Cmdlet **New-AzCosmosDBGremlinUniqueKeyPolicy** membuat objek baru jenis PSUniqueKeyPolicy.
 
 ## EXAMPLES
 
@@ -72,11 +75,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

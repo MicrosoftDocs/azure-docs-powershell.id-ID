@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: e03e4f9e5d3b0dc55aca894b9e328063c5a47e63
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77c7dac19050c9b6b2e96b2d30f3f16a979bf605
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675036"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713866"
 ---
 # Remove-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
-Menghapus catatan DNS Pribadi dari objek kumpulan catatan lokal.
+Menghapus catatan DNS Privat dari objek kumpulan catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Remove-AzPrivateDnsRecordConfig -RecordSet <PSPrivateDnsRecordSet> -Cname <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzPrivateDnsRecordConfig menghapus catatan Private Domain Name System (DNS) dari kumpulan catatan. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk tetap melakukan perubahan ke layanan DNS pribadi Microsoft Azure. Untuk menghapus catatan, semua bidang untuk tipe catatan tersebut harus sama persis. Anda tidak bisa menambahkan atau menghapus catatan SOA. Catatan SOA dibuat secara otomatis ketika zona DNS Pribadi dibuat dan dihapus secara otomatis saat zona DNS Pribadi dihapus. Anda dapat mengirimkan objek RecordSet ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
+Cmdlet Remove-AzPrivateDnsRecordConfig menghapus catatan Sistem Nama Domain Privat (DNS) dari kumpulan catatan. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga setelah Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Privat Microsoft Azure. Untuk menghapus rekaman, semua bidang untuk tipe rekaman tersebut harus sama persis. Anda tidak dapat menambahkan atau menghapus rekaman SOA. Catatan SOA secara otomatis dibuat saat zona DNS Privat dibuat dan dihapus secara otomatis saat zona DNS Privat dihapus. Anda dapat meneruskan objek RecordSet ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
 
 ## EXAMPLES
 
@@ -91,9 +94,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan A dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya akan berupa kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan A dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya akan menjadi kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
-### Contoh 2: Menghapus catatan AAAA dari kumpulan rekaman
+### Contoh 2: Menghapus catatan AAAA dari kumpulan catatan
 ```powershell
  $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
  Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv6Address 2001:DB80:4009:1803::1005
@@ -118,9 +121,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan AAAA dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya akan berupa kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan AAAA dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya akan menjadi kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
-### Contoh 3: Menghapus catatan CNAME dari kumpulan catatan
+### Contoh 3: Menghapus data CNAME dari kumpulan catatan
 ```powershell
  $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
  Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Cname contoso.com
@@ -145,9 +148,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan CNAME dari kumpulan catatan yang sudah ada. Karena kumpulan catatan CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
+Contoh ini menghapus data CNAME dari kumpulan catatan yang sudah ada. Karena kumpulan data CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
 
-### Contoh 4: Menghapus rekaman MX dari kumpulan catatan
+### Contoh 4: Menghapus catatan MX dari kumpulan catatan
 ```powershell
  $RecordSet = Get-AzPrivateDnsRecordSet -Name "@" -RecordType MX -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
  Remove-AzPrivateDnsRecordConfig -Exchange mail.microsoft.com -Preference 5 -RecordSet $RecordSet
@@ -172,7 +175,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan MX dari kumpulan catatan yang sudah ada. Nama catatan "@" menunjukkan kumpulan catatan di zona apex. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan MX dari kumpulan catatan yang sudah ada. Nama catatan "@" menunjukkan kumpulan catatan di puncak zona. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
 ### Contoh 5: Menghapus catatan PTR dari kumpulan catatan
 ```powershell
@@ -199,7 +202,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan PTR dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan PTR dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
 ### Contoh 6: Menghapus catatan SRV dari kumpulan catatan
 ```powershell
@@ -226,7 +229,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan SRV dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan SRV dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
 ### Contoh 7: Menghapus catatan TXT dari kumpulan catatan
 ```powershell
@@ -253,14 +256,14 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus catatan TXT dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzPrivateDnsRecordSet.
+Contoh ini menghapus catatan TXT dari kumpulan catatan yang sudah ada. Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong. Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzPrivateDnsRecordSet.
 
 ## PARAMETERS
 
 ### -Cname
-Nama kanonis catatan CNAME untuk dihapus.
+Nama kanonis data CNAME yang akan dihapus.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -290,9 +293,9 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Host pertukaran email catatan MX untuk dihapus.
+Host pertukaran email dari catatan MX yang akan dihapus.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv4Address
-Alamat IPv4 catatan A untuk dihapus.
+Alamat IPv4 rekaman A yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Alamat IPv6 catatan AAAA untuk dihapus.
+Alamat IPv6 dari catatan AAAA yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Nomor port catatan SRV untuk dihapus.
+Nomor port rekaman SRV yang akan dihapus.
 
 ```yaml
 Type: System.UInt16
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -Preferensi
-Nilai preferensi catatan MX untuk dihapus.
+Nilai preferensi rekaman MX yang akan dihapus.
 
 ```yaml
 Type: System.UInt16
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Nilai prioritas catatan SRV untuk dihapus.
+Nilai prioritas catatan SRV yang akan dihapus.
 
 ```yaml
 Type: System.UInt16
@@ -382,9 +385,9 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Host target catatan PTR untuk dihapus.
+Host target rekaman PTR yang akan dihapus.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordSet
-Kumpulan catatan untuk menghapus catatan.
+Kumpulan catatan untuk menghapus rekaman.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsRecordSet
@@ -414,9 +417,9 @@ Accept wildcard characters: False
 ```
 
 ### -Target
-Host target catatan SRV untuk dihapus.
+Host target catatan SRV yang akan dihapus.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -430,8 +433,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai teks catatan TXT untuk dihapus.
+### -Nilai
+Nilai teks catatan TXT yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -445,8 +448,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Berat
-Nilai berat catatan SRV untuk dihapus.
+### -Bobot
+Nilai bobot rekaman SRV yang akan dihapus.
 
 ```yaml
 Type: System.UInt16
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

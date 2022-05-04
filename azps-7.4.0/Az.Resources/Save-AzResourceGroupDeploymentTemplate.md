@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/save-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzResourceGroupDeploymentTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzResourceGroupDeploymentTemplate.md
-ms.openlocfilehash: b63cf7ed7ee983334edd05a49e0bfa117b190a23
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 414d5de02ee0f66f5526298897221a49177bce5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867186"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606542"
 ---
 # Save-AzResourceGroupDeploymentTemplate
 
 ## SYNOPSIS
 Menyimpan templat penyebaran grup sumber daya ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/save-azresourcegroupdeploymenttemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Perintah ini mendapatkan templat penyebaran dari TestDeployment dan menyimpannya
 
 ### Contoh 2
 
-Menyimpan templat penyebaran grup sumber daya ke file. (autogenerasi)
+Menyimpan templat penyebaran grup sumber daya ke file. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -80,7 +83,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini menggunakan versi API prarilis saat menentukan versi API mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini menggunakan versi API pra-rilis saat secara otomatis menentukan versi API mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

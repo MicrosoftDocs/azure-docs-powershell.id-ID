@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/invoke-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
-ms.openlocfilehash: dcaf12a7117bbb31dc3c0fc73cd481742624141a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ecca772ce77e3a441eea7198dbec33d3daddf542
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865080"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695972"
 ---
 # Invoke-AzSqlElasticPoolFailover
 
 ## SYNOPSIS
-Failovers kolam elastis.
+Failover kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqlelasticpoolfailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Invoke-AzSqlElasticPoolFailover [-ElasticPoolName] <String> [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Invoke-AzSqlElasticPoolFailover gagal di kolam elastis. Failover akan terjadi di semua database dalam kumpulan elastis setelah menjalankan cmdlet ini.
+Cmdlet Invoke-AzSqlElasticPoolFailover failover kumpulan elastis. Failover akan terjadi pada semua database di kumpulan elastis setelah menjalankan cmdlet ini.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ Cmdlet Invoke-AzSqlElasticPoolFailover gagal di kolam elastis. Failover akan ter
 Invoke-AzSqlElasticPoolFailover -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini akan gagal lagi dari kumpulan elastis bernama "ElasticPool01" di server bernama "Server01".  Ini berarti failover akan terjadi di semua database dalam kumpulan elastis bernama "ElasticPool01".
+Perintah ini akan melakukan failover kumpulan elastis bernama "ElasticPool01" di server bernama "Server01".  Ini berarti failover akan terjadi pada semua database di kumpulan elastis bernama "ElasticPool01".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElasticPoolName
-Nama Azure SQL Elastic Pool untuk dihapus.
+Nama Kumpulan Elastis Azure SQL yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada eksekusi Berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Pada Eksekusi berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Invoke-AzSqlDatabaseFailover](./Invoke-AzSqlDatabaseFailover.md)
 
-[New-AzSqlElasticPool](./New-AzSqlElasticPool.md)
+[Baru-AzSqlElasticPool](./New-AzSqlElasticPool.md)
 
 [Remove-AzSqlElasticPool](./Remove-AzSqlElasticPool.md)
 

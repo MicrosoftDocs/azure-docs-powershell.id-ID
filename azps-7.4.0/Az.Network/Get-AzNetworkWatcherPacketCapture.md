@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 3e8563a2e6fe8a2d0fc8b5481fa684e020f362b7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8736a740c3298682023a4133040ecbf6ef48cc70
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282069"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704982"
 ---
 # Get-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Mendapatkan informasi dan properti serta status sumber daya penangkapan paket.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 

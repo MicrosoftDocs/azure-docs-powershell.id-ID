@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
-ms.openlocfilehash: da8003dd991521afa54974100745fe6d64400eac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f91ddaa503326e7311d4f52f1db1f4b1a1ceb831
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670212"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688508"
 ---
 # Get-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Mendapatkan detail tentang pekerjaan streaming yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzStreamAnalyticsJob [-SubscriptionId <String[]>] [-Expand <String>] [-Defau
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzStreamAnalyticsJob -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-Expand <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -48,7 +51,7 @@ Mendapatkan detail tentang pekerjaan streaming yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang semua pekerjaan dalam langganan
+### Contoh 1: Mendapatkan informasi tentang semua pekerjaan dalam langganan
 ```powershell
 Get-AzStreamAnalyticsJob
 ```
@@ -59,9 +62,9 @@ West Central US sajob-02-pwsh Microsoft.StreamAnalytics/streamingjobs
 West Central US sajob-01-pwsh Microsoft.StreamAnalytics/streamingjobs
 ```
 
-Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam langganan Azure.
+Perintah ini mengembalikan informasi tentang semua pekerjaan Azure Stream Analytics di langganan Azure.
 
-### Contoh 2: Dapatkan informasi tentang semua pekerjaan dalam grup sumber daya
+### Contoh 2: Mendapatkan informasi tentang semua pekerjaan dalam grup sumber daya
 ```powershell
 Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test
 ```
@@ -72,7 +75,7 @@ West Central US sajob-02-pwsh Microsoft.StreamAnalytics/streamingjobs
 West Central US sajob-01-pwsh Microsoft.StreamAnalytics/streamingjobs
 ```
 
-Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam grup sumber daya.
+Perintah ini mengembalikan informasi tentang semua pekerjaan Azure Stream Analytics di grup sumber daya.
 
 ### Contoh 3: Mendapatkan informasi tentang pekerjaan tertentu dalam grup sumber daya
 ```powershell
@@ -84,9 +87,9 @@ Location        Name          Type                                    ETag
 West Central US sajob-02-pwsh Microsoft.StreamAnalytics/streamingjobs ac26a506-a4cb-4a7d-9ec8-c3149b8589bd
 ```
 
-Perintah ini mengembalikan informasi tentang pekerjaan Streaming Analytics StreamingJob dalam grup sumber daya.
+Perintah ini mengembalikan informasi tentang pekerjaan Stream Analytics StreamingJob di grup sumber daya.
 
-### Contoh 4: Mendapatkan informasi tentang pekerjaan tertentu dalam grup sumber daya menurut saluran
+### Contoh 4: Mendapatkan informasi tentang pekerjaan tertentu dalam grup sumber daya menurut alur
 ```powershell
 New-AzStreamAnalyticsJob -ResourceGroupName lucas-rg-test -Name sajob-02-pwsh -Location westcentralus -SkuName Standard | Get-AzStreamAnalyticsJob 
 ```
@@ -96,7 +99,7 @@ Location        Name          Type                                    ETag
 West Central US sajob-02-pwsh Microsoft.StreamAnalytics/streamingjobs ac26a506-a4cb-4a7d-9ec8-c3149b8589bd
 ```
 
-Perintah ini mengembalikan informasi tentang pekerjaan Streaming Analytics StreamingJob dalam grup sumber daya.
+Perintah ini mengembalikan informasi tentang pekerjaan Stream Analytics StreamingJob di grup sumber daya.
 
 ## PARAMETERS
 
@@ -116,9 +119,9 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Parameter kueri OData $expand.
-Ini adalah daftar properti pekerjaan streaming tambahan yang dipisahkan koma untuk disertakan dalam respons, di luar kumpulan default yang dikembalikan ketika parameter ini tidak ada.
-Kumpulan default adalah semua properti pekerjaan streaming selain 'input', 'transformasi', 'output', dan 'fungsi'.
+Parameter kueri $expand OData.
+Ini adalah daftar properti pekerjaan streaming tambahan yang dipisahkan koma untuk disertakan dalam respons, di luar set default yang dikembalikan ketika parameter ini tidak ada.
+Set default adalah semua properti pekerjaan streaming selain 'input', 'transformasi', 'output', dan 'functions'.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan streaming.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -218,10 +221,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

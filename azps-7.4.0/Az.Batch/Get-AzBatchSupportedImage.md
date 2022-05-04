@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
-ms.openlocfilehash: 52143f34f05ad6a3dd173e029eaaf10c87b02f41
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 86a662a2b7e2a0d333332e1ed63775de93d4f3dd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750600"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679173"
 ---
 # Get-AzBatchSupportedImage
 
 ## SYNOPSIS
-Mendapatkan batch gambar yang didukung untuk akun Batch.
+Mendapatkan gambar yang didukung Batch untuk akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchsupportedimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzBatchSupportedImage [-Filter <String>] [-MaxCount <Int32>] -BatchContext <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchSupportedImage** mendapatkan gambar mesin virtual yang didukung yang tersedia dalam akun Azure Batch.
+Cmdlet **Get-AzBatchSupportedImage** mendapatkan gambar komputer virtual yang didukung yang tersedia di akun Azure Batch.
 Tentukan akun dengan menggunakan parameter *BatchContext* .
 
 ## EXAMPLES
@@ -69,17 +72,17 @@ VerificationType      : Verified
 ...
 ```
 
-Perintah pertama mendapatkan konteks akun Batch yang berisi kunci akses untuk langganan Anda menggunakan **Get-AzBatchAccountKey**.
+Perintah pertama mendapatkan konteks akun Batch yang berisi kunci akses untuk langganan Anda dengan menggunakan **Get-AzBatchAccountKey**.
 Perintah menyimpan konteks dalam variabel $Context untuk digunakan dalam perintah berikutnya.
 Perintah kedua mendapatkan semua gambar yang didukung yang tersedia untuk akun Batch tersebut.
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
-Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Instans BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
+Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
+Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData untuk gambar yang didukung.
+Menentukan klausa filter OData untuk gambar yang didukung.
 Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua gambar yang didukung akun Batch.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

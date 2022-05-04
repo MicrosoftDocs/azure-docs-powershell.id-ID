@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
-ms.openlocfilehash: dcece7aa21797bac3b870913a1ecd1dbe6ad4087
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aff80ca806e2e8b06a8db8fc93fbd1bf3c9baa88
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680198"
 ---
 # Stop-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
-Menghentikan alur yang dijalankan di pabrik data.
+Menghentikan eksekusi alur di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzDataFactoryV2PipelineRun [-PipelineRunId] <String> [-PassThru] [-DataFact
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2PipelineRun** menghentikan proses pipeline di pabrik data yang ditentukan dengan ID proses saluran.
+Cmdlet **Stop-AzDataFactoryV2PipelineRun** menghentikan eksekusi alur di pabrik data yang ditentukan dengan ID eksekusi alur.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Are you sure you want to stop pipeline run 'b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 true
 ```
 
-Perintah ini menghentikan proses pipeline dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di pabrik WikiADF.
+Perintah ini menghentikan eksekusi alur dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di pabrik WikiADF.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-ID Jalankan dari pipeline.
+ID Eksekusi alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan cmdlet menulis true dalam hal operasi berhasil.
+Jika ditentukan cmdlet tulis true jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-ID Jalankan dari pipeline.
+ID Eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -165,8 +168,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

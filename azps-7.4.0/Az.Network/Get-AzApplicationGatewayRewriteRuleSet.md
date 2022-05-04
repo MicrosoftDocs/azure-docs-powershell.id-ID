@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRewriteRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRewriteRuleSet.md
-ms.openlocfilehash: 8b949d101e80575e7374c4e72ed0d2fea746f7e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9761024ce7ce04e0e88770088ec16c5a1d17a3d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705036"
 ---
 # Get-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
-Mendapatkan kumpulan aturan penulisan ulang gateway aplikasi.
+Mendapatkan seperangkat aturan penulisan ulang gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayrewriteruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Get-AzApplicationGatewayRewriteRuleSet [-Name <String>] -ApplicationGateway <PSA
 ```
 
 ## DESCRIPTION
-Mendapatkan kumpulan aturan penulisan ulang gateway aplikasi.
+Mendapatkan seperangkat aturan penulisan ulang gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1 : Mendapatkan kumpulan aturan penulisan ulang tertentu
+### Contoh 1 : Mendapatkan seperangkat aturan penulisan ulang tertentu
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Rule = Get-AzApplicationGatewayRewriteRuleSet -Name "RuleSet01" -ApplicationGateway $AppGW
 ```
 
 Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
-Perintah kedua mendapatkan kumpulan aturan penulisan ulang bernama RuleSet01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan seperangkat aturan penulisan ulang bernama RuleSet01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway aplikasi RewriteRuleSet
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
