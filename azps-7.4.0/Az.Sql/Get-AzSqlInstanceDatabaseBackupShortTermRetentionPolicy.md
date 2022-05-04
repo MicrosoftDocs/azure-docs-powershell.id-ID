@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 81c59c84a3b1ae977db00a3613f6378adae4db29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd5dee03938993a4ba389d0d2170f4189a24f9f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560038"
 ---
 # Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka pendek yang didaftarkan ke database ini.
-Kebijakan ini adalah periode penyimpanan, dalam hari, untuk cadangan pemulihan point-in-time.
+Cmdlet **Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy** mendapatkan kebijakan retensi jangka pendek yang terdaftar ke database ini.
+Kebijakan ini adalah periode retensi, dalam hari, untuk pencadangan pemulihan titik waktu.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ DeletionDate      :
 RetentionDays     : 7
 ```
 
-Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk database01 melalui perpipaan dalam objek database.
+Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk database01 melalui piping dalam objek database.
 
 ### Contoh 3
 ```powershell
@@ -93,7 +96,7 @@ DeletionDate      : 2019-03-02 11:00:16 PM
 RetentionDays     : 7
 ```
 
-Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk semua database yang dihapus bernama database01 melalui piping dalam objek database yang dihapus.
+Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk semua database yang dihapus bernama database01 melalui pipa dalam objek database yang dihapus.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PenghapusanDate
+### -DeletionDate
 Tanggal penghapusan Database Instans Azure SQL untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

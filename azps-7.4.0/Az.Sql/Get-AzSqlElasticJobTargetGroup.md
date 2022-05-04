@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
-ms.openlocfilehash: 37c30cea2e27f666dca74b69836a4999dfeb49ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6426422ad3427e63ebce045ed561f0b0533afb34
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933805"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573698"
 ---
 # Get-AzSqlElasticJobTargetGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlElasticJobTargetGroup [-ParentResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlElasticJobTargetGroup mendapatkan grup target dan itu adalah target
+Cmdlet Get-AzSqlElasticJobTargetGroup mendapatkan grup target dan targetnya
 
 ## EXAMPLES
 
@@ -54,11 +57,11 @@ TargetGroupName Targets
 tg1             (s1,db1)
 ```
 
-Mendapatkan grup target dan itu adalah target
+Mendapatkan grup target dan targetnya
 
 ### Contoh 2
 
-Mendapatkan satu atau beberapa grup target pekerjaan. (autogenerasi)
+Mendapatkan satu atau beberapa grup target pekerjaan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup target
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

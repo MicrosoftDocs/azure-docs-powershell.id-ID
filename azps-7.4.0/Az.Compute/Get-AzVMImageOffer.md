@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageOffer.md
-ms.openlocfilehash: 26c286816310cfec94bd0c54b4eb56784a862277
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd950b0ea06fcbbc019c40aa5769adedc1a6ecf5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809910"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570098"
 ---
 # Get-AzVMImageOffer
 
 ## SYNOPSIS
-Mendapatkan tipe penawaran VMImage.
+Mendapatkan jenis penawaran VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimageoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzVMImageOffer -Location <String> [-EdgeZone <String>] -PublisherName <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMImageOffer** mendapatkan tipe penawaran VMImage.
+Cmdlet **Get-AzVMImageOffer** mendapatkan jenis penawaran VMImage.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tipe penawaran untuk penerbit
+### Contoh 1: Mendapatkan jenis penawaran untuk penerbit
 ```powershell
 Get-AzVMImageOffer -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini mendapatkan tipe penawaran untuk penerbit tertentu di kawasan AS Tengah.
+Perintah ini mendapatkan jenis penawaran untuk penerbit yang ditentukan di wilayah US Tengah.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, penawaran Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, pesan akan dikueri dari lokasi yang diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, penawaran Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, itu akan dikueri dari lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
-ms.openlocfilehash: 8fbeaafe6ed0ffd5d20756742bf06a5ca89957e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf644b9507f911e94b97f6a1852dac61652a4eac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942841"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567778"
 ---
 # Update-AzDataBoxJob
 
 ## SYNOPSIS
-Memperbarui properti pekerjaan yang sudah ada.
+Memperbarui properti pekerjaan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/update-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Update-AzDataBoxJob -Name <String> -ResourceGroupName <String> [-SubscriptionId 
 ```
 
 ## DESCRIPTION
-Memperbarui properti pekerjaan yang sudah ada.
+Memperbarui properti pekerjaan yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke pelanggan yang dikelola dengan identitas yang ditetapkan pengguna 
+### Contoh 1: Memperbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke dikelola pelanggan dengan identitas yang ditetapkan pengguna 
 ```powershell
 $keyEncryptionDetails = New-AzDataBoxKeyEncryptionKeyObject -KekType "CustomerManaged" -IdentityProperty @{Type = "UserAssigned"; UserAssignedResourceId = "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identityName"} -KekUrl "keyIdentifier" -KekVaultResourceId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/keyVaultName"
 
@@ -59,7 +62,7 @@ Name         Location Status        TransferType  SkuName IdentityType DeliveryT
 Powershell10 WestUS   DeviceOrdered ImportToAzure DataBox UserAssigned NonScheduled Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.DataBoxJobDetails
 ```
 
-Perbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke pelanggan yang dikelola dengan identitas yang ditetapkan pengguna.
+Perbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke dikelola pelanggan dengan identitas yang ditetapkan pengguna.
 
 ### Contoh 2: Memperbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke pelanggan yang dikelola dengan identitas sistem dalam 2 pembaruan
 ```powershell
@@ -88,22 +91,22 @@ KekType         KekUrl                                           KekVaultResourc
 CustomerManaged keyIdentifier /subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/keyVaultName
 ```
 
-Perbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola untuk pelanggan yang dikelola oleh pelanggan dengan identitas yang ditetapkan sytem.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Perbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke pelanggan yang dikelola pelanggan dengan identitas yang ditetapkan sytem.
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
-### Contoh 3: Memperbarui pekerjaan kotak data dari sistem yang ditetapkan ke pengguna yang ditetapkan dengan enkripsi kunci terkelola pelanggan
+### Contoh 3: Memperbarui pekerjaan kotak data dari sistem yang ditetapkan untuk pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan
 ```powershell
 $keyEncryptionDetails = New-AzDataBoxKeyEncryptionKeyObject -KekType "CustomerManaged" -IdentityProperty @{Type = "UserAssigned"; UserAssignedResourceId = "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identityName"} -KekUrl "keyIdentifier" -KekVaultResourceId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/keyVaultName"
 $updateSystemToUserAssigned = Update-AzDataBoxJob -Name "pwshTestSAssigned" -ResourceGroupName "resourceGroupName" -KeyEncryptionKey $keyEncryptionDetails -ContactDetail $contactDetail -ShippingAddress $ShippingDetails  -IdentityType "SystemAssigned,UserAssigned" -UserAssignedIdentity @{"/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identityName" = @{}}
 ```
 
-Perbarui pekerjaan kotak data dari sistem yang ditetapkan ke pengguna yang ditetapkan dengan enkripsi kunci terkelola pelanggan.
-Untuk kegagalan dijalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
+Perbarui pekerjaan kotak data dari sistem yang ditetapkan untuk pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan.
+Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -ContactDetail
 Detail kontak untuk pemberitahuan dan pengiriman.
-Untuk membuat, lihat bagian CATATAN untuk properti CONTACTDETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti CONTACTDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IContactDetails
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas
+Jenis identitas
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 
 ### -IfMatch
 Menentukan kondisi If-Match.
-Patch hanya akan dilakukan jika ETag pekerjaan di server cocok dengan nilai ini.
+Patch akan dilakukan hanya jika ETag pekerjaan di server cocok dengan nilai ini.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -KeyEncryptionKey
 Kunci enkripsi kunci untuk pekerjaan tersebut.
-Untuk membuat, lihat bagian CATATAN untuk properti KEYENCRYPTIONKEY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti KEYENCRYPTIONKEY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IKeyEncryptionKey
@@ -195,9 +198,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+panjang nama pekerjaan harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 
 ### -ShippingAddress
 Alamat pengiriman pelanggan.
-Untuk membangun, lihat bagian CATATAN untuk properti SHIPPINGADDRESS dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IShippingAddress
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Daftar pasangan nilai kunci yang menjelaskan sumber daya.
-Tag ini dapat digunakan dalam menampilkan dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
+Tag ini dapat digunakan dalam melihat dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -303,8 +306,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -356,31 +359,31 @@ CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengirima
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
-  - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+  - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan untuk tahap pekerjaan.
     - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
     - `StageName <NotificationStageName>`: Nama panggung.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
 KEYENCRYPTIONKEY <IKeyEncryptionKey>: Kunci enkripsi kunci untuk pekerjaan tersebut.
-  - `KekType <KekType>`: Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.
+  - `KekType <KekType>`: Jenis kunci enkripsi yang digunakan untuk enkripsi kunci.
   - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
     - `[Type <String>]`: Jenis identitas layanan terkelola.
     - `[UserAssignedResourceId <String>]`: Id sumber daya arm untuk identitas yang ditetapkan pengguna yang akan digunakan untuk mengambil token MSI.
-  - `[KekUrl <String>]`: Kunci enkripsi kunci. Diperlukan jika Pelanggan mengelola KekType.
-  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Diperlukan jika Pelanggan mengelola KekType.
+  - `[KekUrl <String>]`: Kunci enkripsi kunci. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
+  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
 
 SHIPPINGADDRESS <IShippingAddress>: Alamat pengiriman pelanggan.
   - `Country <String>`: Nama Negara.
-  - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
   - `[City <String>]`: Nama Kota.
   - `[CompanyName <String>]`: Nama perusahaan.
   - `[PostalCode <String>]`: Kode pos.
   - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-  - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
-  - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-  - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
+  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
+  - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
 ## RELATED LINKS
 

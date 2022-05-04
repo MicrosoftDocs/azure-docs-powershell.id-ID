@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
-ms.openlocfilehash: be185869052a7d5285673ad2c84b4d7670fa168f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60b5e8e9a43499208e5fdb51259745a8a564e41d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309465"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568748"
 ---
 # Remove-AzPolicyExemption
 
 ## SYNOPSIS
 Menghapus pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,18 +45,18 @@ Cmdlet **Remove-AzPolicyExemption** menghapus pengecualian kebijakan yang ditent
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pembebasan kebijakan menurut nama dan lingkup
+### Contoh 1: Menghapus pengecualian kebijakan berdasarkan nama dan cakupan
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 Remove-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId -Confirm
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup.
 Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
 Perintah kedua menghapus pengecualian kebijakan bernama PolicyExemption07 yang ditetapkan pada tingkat grup sumber daya.
-Properti **ResourceId** $ResourceGroup mengidentifikasi grup sumber daya.
+Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
 
-### Contoh 2: Hapus pembebasan kebijakan menurut ID
+### Contoh 2: Menghapus pengecualian kebijakan berdasarkan ID
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11' 
 $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId
@@ -61,15 +64,15 @@ Remove-AzPolicyExemption -Id $PolicyExemption.ResourceId -Confirm
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan pembebasan kebijakan pada tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyExemption.
-Properti **ResourceId** $ResourceGroup mengidentifikasi grup sumber daya.
-Perintah akhir menghapus pengecualian kebijakan yang diidentifikasi properti **ResourceId** $PolicyExemption.
+Perintah kedua mendapatkan pengecualian kebijakan di tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyExemption.
+Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
+Perintah akhir menghapus pengecualian kebijakan yang diidentifikasi oleh properti **ResourceId** dari $PolicyExemption.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID pembebasan kebijakan yang sepenuhnya memenuhi syarat untuk dihapus, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
+ID pengecualian kebijakan yang sepenuhnya memenuhi syarat untuk dihapus, termasuk cakupan, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pembebasan kebijakan untuk menghapus yang merupakan output dari cmdlet lain.
+Objek pengecualian kebijakan untuk menghapus yang merupakan output dari cmdlet lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyExemption
@@ -143,8 +146,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pengecualian kebijakan untuk dihapus.
+### -Name
+Nama pengecualian kebijakan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -158,8 +161,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup pengecualian kebijakan untuk menghapus, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
+### -Cakupan
+Cakupan pengecualian kebijakan untuk dihapus, misalnya /providers/managementGroups/{managementGroupName}, default ke langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

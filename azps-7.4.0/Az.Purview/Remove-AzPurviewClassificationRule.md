@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewClassificationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewClassificationRule.md
-ms.openlocfilehash: 966f6a29306a7fd0bfc3d61f0667f313fe690014
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aca193fb185960e1a3f818d799937b3fa79ea18c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060165"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570944"
 ---
 # Remove-AzPurviewClassificationRule
 
 ## SYNOPSIS
 Menghapus aturan klasifikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewclassificationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Menghapus aturan klasifikasi
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus aturan klasifikasi kustom menurut nama
+### Contoh 1: Menghapus aturan klasifikasi kustom berdasarkan nama
 ```powershell
 PS C:\> Remove-AzPurviewClassificationRule -Endpoint https://parv-brs-2.purview.azure.com -ClassificationRuleName 'RuleDUmmy'
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

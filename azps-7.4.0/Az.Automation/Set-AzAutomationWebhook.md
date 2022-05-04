@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
-ms.openlocfilehash: 79b80b372385b4e35d278edd5d636d7318cf6ffe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6613ba518699d613b59796c4c21cffa0af521d20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563122"
 ---
 # Set-AzAutomationWebhook
 
 ## SYNOPSIS
-Mengubah webhook untuk runbook Otomatisasi.
+Memodifikasi webhook untuk runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzAutomationWebhook [-Name] <String> [-IsEnabled] <Boolean> [[-Parameters] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationWebhook** mengubah webhook untuk runbook Azure Automation.
+Cmdlet **Set-AzAutomationWebhook** memodifikasi webhook untuk runbook Azure Automation.
 
 ## EXAMPLES
 
@@ -36,26 +39,26 @@ Cmdlet **Set-AzAutomationWebhook** mengubah webhook untuk runbook Azure Automati
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -IsEnabled $False
 ```
 
-Perintah ini menonaktifkan webhook bernama Webhook01 di akun Otomatisasi bernama AutomationAccount01.
+Perintah ini menonaktifkan webhook bernama Webhook01 di akun Automation bernama AutomationAccount01.
 
 ### Contoh 2
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -RunOn 'Windows'
 ```
 
-Perintah ini mengatur nilai jalankan pada untuk webhook dan memaksa runbook dijalankan pada grup Pekerja Hibrid yang disebut Windows.
+Perintah ini mengatur nilai run on untuk webhook dan memaksa runbook dijalankan pada grup Hybrid Worker yang disebut Windows.
 
 ### Contoh 3
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -RunOn $null
 ```
 
-Perintah ini memperbarui nilai jalankan pada untuk webhook dan memaksa runbook dijalankan pada pekerja runbook Azure. 
+Perintah ini memperbarui nilai jalankan pada webhook dan memaksa runbook dijalankan pada pekerja runbook Azure. 
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah webhook.
+Menentukan nama akun Automation tempat cmdlet ini memodifikasi webhook.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama webhook yang diubah cmdlet ini.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 Menentukan kamus pasangan kunci/nilai.
 Kuncinya adalah nama parameter runbook.
 Nilainya adalah nilai parameter runbook.
-Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini dikirimkan ke runbook.
+Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini diteruskan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah webhook.
+Menentukan nama grup sumber daya yang cmdlet ini memodifikasi webhook.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRule.md
-ms.openlocfilehash: 66d574b095abbef164ff279cb88b109728b1ec77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 451110d47af35dcefe5ee474e45af58aec1870e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745290"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560938"
 ---
 # New-AzScheduledQueryRule
 
 ## SYNOPSIS
-Membuat Aturan Peringatan Log (tipe Aturan Kueri Terjadwal)
+Membuat Aturan Pemberitahuan Log (Jenis Aturan Kueri Terjadwal)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzScheduledQueryRule -Source <PSScheduledQueryRuleSource> -Schedule <PSSched
 ```
 
 ## DESCRIPTION
-Membuat Aturan Peringatan Log (tipe Aturan Kueri Terjadwal)
+Membuat Aturan Pemberitahuan Log (Jenis Aturan Kueri Terjadwal)
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ New-AzScheduledQueryRule -Location "West Europe" -Action $alertingAction -Enable
 ## PARAMETERS
 
 ### -Tindakan
-Aturan kueri terjadwal Tindakan Peringatan
+Tindakan Pemberitahuan aturan kueri terjadwal
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSScheduledQueryRuleAlertingAction
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Status peringatan azure - nilai yang valid - $true, $false
+### -Diaktifkan
+Status pemberitahuan azure - nilai yang valid - $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemberitahuan
 
 ```yaml
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber aturan kueri terjadwal
 
 ```yaml
@@ -203,8 +206,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

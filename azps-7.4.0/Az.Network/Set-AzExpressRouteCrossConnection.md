@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCrossConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCrossConnection.md
-ms.openlocfilehash: 066e2f0eb761826ad0a95816bb3a5cc7643c282a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6eddc616eef40f3626f9c0012a21b0e9069e6f1a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312795"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579134"
 ---
 # Set-AzExpressRouteCrossConnection
 
 ## SYNOPSIS
-Mengubah koneksi silang ExpressRoute.
+Memodifikasi koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azexpressroutecrossconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ModifikasiByCircuitReference
+### ModifyByCircuitReference
 ```
 Set-AzExpressRouteCrossConnection -ExpressRouteCrossConnection <PSExpressRouteCrossConnection> [-AsJob]
  [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -35,11 +38,11 @@ Set-AzExpressRouteCrossConnection -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzExpressRouteCrossConnection** menyimpan koneksi silang ExpressRoute yang diubah ke Azure.
+Cmdlet **Set-AzExpressRouteCrossConnection** menyimpan koneksi silang ExpressRoute yang dimodifikasi ke Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah Status Penyediaan Penyediaan Layanan dari koneksi silang ExpressRoute
+### Contoh 1: Mengubah Status Provisi Penyedia Layanan dari koneksi silang ExpressRoute
 ```powershell
 $cc = Get-AzExpressRouteCrossConnection -Name $CrossConnectionName -ResourceGroupName $rg
 $cc.ServiceProviderProvisioningState = 'Provisioned'
@@ -49,7 +52,7 @@ Set-AzExpressRouteCrossConnection -ExpressRouteCrossConnection $cc
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-Menentukan objek **ExpressRouteCrossConnection** yang diubah cmdlet ini.
+Menentukan objek **ExpressRouteCrossConnection** yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -93,7 +96,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama koneksi lintas rute ekspres.
+### -Name
+Nama koneksi silang rute ekspres.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceProviderProvisioningState
-Status penyediaan penyediaan layanan yang akan diatur
+Status provisi penyedia layanan yang akan ditetapkan
 
 ```yaml
 Type: System.String
@@ -183,8 +186,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,12 +217,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSExpressRouteCrossConnection
-Parameter 'ExpressRouteCrossConnection' menerima nilai tipe 'PSExpressRouteCrossConnection' dari pipeline
+Parameter 'ExpressRouteCrossConnection' menerima nilai jenis 'PSExpressRouteCrossConnection' dari alur
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionBackupInstanceInAzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionBackupInstanceInAzGraph.md
-ms.openlocfilehash: 4364c8f1ba1277baf880599e8f2e430d100ce18f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89948f2e84e6ba837db5c7db5d54fbf96f3c96e5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684792"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579494"
 ---
 # Search-AzDataProtectionBackupInstanceInAzGraph
 
 ## SYNOPSIS
-Mencari instans Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+Mencari instans Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionbackupinstanceinazgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Search-AzDataProtectionBackupInstanceInAzGraph -DatasourceType <DatasourceTypes>
 ```
 
 ## DESCRIPTION
-Mencari instans Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+Mencari instans Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua instans cadangan disk azure yang dilindungi dalam langganan tertentu
+### Contoh 1: Mendapatkan semua instans cadangan disk azure yang dilindungi dalam langganan tertentu
 ```powershell
 Search-AzDataProtectionBackupInstanceInAzGraph -Subscription "xxxx-xxx-xxx" -DatasourceType AzureDisk
 ```
@@ -62,9 +65,9 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166     microsoft.datapro
 sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6bad4305a   microsoft.dataprotection/backupvaults/backupinstances sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6b
 ```
 
-Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam kumpulan grup sumber daya tertentu
+Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam sekumpulan grup sumber daya tertentu
 
-### Contoh 3: Dapatkan semua instans cadangan disk azure yang dilindungi dalam daftar grup sumber daya tertentu dengan status perlindungan 'ProteksiKonfigurasi'
+### Contoh 3: Dapatkan semua instans cadangan disk azure yang dilindungi dalam daftar grup sumber daya tertentu dengan status perlindungan 'ProtectionConfigured'
 ```powershell
 Search-AzDataProtectionBackupInstanceInAzGraph -Subscription "xxxx-xxx-xxx" -DatasourceType AzureDisk -ResourceGroup @("sarath-rg", "sarath-rg2") -ProtectionStatus  ProtectionConfigured
 ```
@@ -77,12 +80,12 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166     microsoft.datapro
 sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6bad4305a   microsoft.dataprotection/backupvaults/backupinstances sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6b
 ```
 
-Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam sekumpulan grup sumber daya tertentu dengan status perlindungan sebagai ProteksiKonfigurasi
+Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam sekumpulan grup sumber daya tertentu dengan status perlindungan sebagai ProtectionConfigured
 
 ## PARAMETERS
 
 ### -DatasourceType
-Tipe Sumber Data
+Jenis Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionStatus
-Status Proteksi item
+Status Perlindungan item
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.ProtectionStatus[]
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Nama kubah
+Nama vault
 
 ```yaml
 Type: System.String[]
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

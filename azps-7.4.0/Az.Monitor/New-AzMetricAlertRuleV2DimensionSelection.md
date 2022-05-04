@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
-ms.openlocfilehash: a2ca4b71fe0bc297f69102040519626d777fa0da
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c9448f2af5c83a1f2a51ab657b188f21946ab25
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745362"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560920"
 ---
 # New-AzMetricAlertRuleV2DimensionSelection
 
 ## SYNOPSIS
-Membuat objek pemilihan dimensi lokal yang dapat digunakan untuk menyusun kriteria peringatan metrik.
+Membuat objek pemilihan dimensi lokal yang dapat digunakan untuk membuat kriteria pemberitahuan metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzMetricAlertRuleV2DimensionSelection -DimensionName <String> -ValuesToInclu
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricAlertRuleV2DimensionSelection membuat objek pemilihan** dimensi lokal untuk membantu pembangunan kriteria peringatan metrik menggunakan cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) .
+Cmdlet **New-AzMetricAlertRuleV2DimensionSelection membuat objek pemilihan** dimensi lokal untuk membantu pembangunan kriteria pemberitahuan metrik menggunakan cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) .
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Dimension IncludeValues ExcludeValues
 LUN       {1, 3, 4}
 ```
 
-Perintah ini membuat objek pemilihan dimensi yang menentukan bahwa nilai {1,3,4} harus dipilih untuk Dimensi "LUN"
+Perintah ini membuat objek pemilihan dimensi yang menentukan bahwa nilai {1,3,4} perlu dipilih untuk Dimensi "LUN"
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

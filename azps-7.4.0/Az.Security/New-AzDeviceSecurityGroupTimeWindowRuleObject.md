@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupTimeWindowRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupTimeWindowRuleObject.md
-ms.openlocfilehash: bef904969becc822933fdccbafad76e4fb300b12
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ad1259690ca7ea72b6939fa015780b5abe09035
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800964"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568676"
 ---
 # New-AzDeviceSecurityGroupTimeWindowRuleObject
 
 ## SYNOPSIS
 Membuat aturan jendela waktu baru untuk grup keamanan perangkat (Keamanan IoT)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygrouptimewindowruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 

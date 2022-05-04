@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
-ms.openlocfilehash: 88c92f09f3cd1ac604ffb324f74484e64c49d007
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23d0e3c3796a0b0686f3538397b18d13241a16f4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198906"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570404"
 ---
 # New-AzADUser
 
 ## SYNOPSIS
 Menambahkan entitas baru ke pengguna
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

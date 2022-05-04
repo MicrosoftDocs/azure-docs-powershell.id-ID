@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnConfiguration.md
-ms.openlocfilehash: 722724c238c48f82536e0ebc56d82810cd76499d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ad5f10f5a94ceb26e4b8eecf3de32997181fd2bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997489"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567058"
 ---
 # Get-AzVirtualWanVpnConfiguration
 
 ## SYNOPSIS
-Mendapatkan konfigurasi Vpn untuk subset VpnSites yang tersambung ke WAN ini melalui VpnConnections. Mengunggah konfigurasi Vpn yang dihasilkan ke blob penyimpanan yang ditentukan oleh pelanggan.
+Mendapatkan konfigurasi Vpn untuk subset VpnSites yang terhubung ke WAN ini melalui VpnConnections. Mengunggah konfigurasi Vpn yang dihasilkan ke blob penyimpanan yang ditentukan oleh pelanggan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzVirtualWanVpnConfiguration -ResourceId <String> -StorageSasUrl <String> -V
 ```
 
 ## DESCRIPTION
-Mendapatkan konfigurasi Vpn untuk subset VpnSites yang tersambung ke WAN ini melalui VpnConnections. Mengunggah konfigurasi Vpn yang dihasilkan ke blob penyimpanan yang ditentukan oleh pelanggan.
+Mendapatkan konfigurasi Vpn untuk subset VpnSites yang terhubung ke WAN ini melalui VpnConnections. Mengunggah konfigurasi Vpn yang dihasilkan ke blob penyimpanan yang ditentukan oleh pelanggan.
 
 ## EXAMPLES
 
@@ -87,13 +90,13 @@ SasUrl
 SignedSasUrl
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan VpnSite di US Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection.
 
 Konfigurasi kemudian diunduh menggunakan commandlet ini.
 
-Jika commandlet berhasil, konfigurasi unduhan akan ditulis ke blob yang ditunjukkan oleh SignedSasUrl. Di bawah ini adalah contoh bagaimana URL akan terlihat seperti : https://[account].blob.core.windows.net/[container]/[path/to/blob]? Ayo kita kejar dia.
+Jika commandlet berhasil, konfigurasi unduhan akan ditulis ke blob yang ditunjukkan oleh SignedSasUrl. Di bawah ini adalah contoh bagaimana URL akan terlihat seperti : https://[account].blob.core.windows.net/[container]/[path/to/blob]? [SAS]
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek situs vpn yang akan diubah
+Objek situs vpn yang akan dimodifikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualWan
@@ -127,7 +130,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSasUrl
-Url SAS untuk lokasi penyimpanan tempat konfigurasi akan dihasilkan.
+Url SAS untuk lokasi penyimpanan tempat konfigurasi akan dibuat.
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

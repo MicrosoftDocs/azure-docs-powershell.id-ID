@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/test-azmys
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Test-AzMySqlFlexibleServerConnect.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Test-AzMySqlFlexibleServerConnect.md
-ms.openlocfilehash: 52f74032f603261056c9c0e40c09ef7a3f23b438
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3007ea1ae67824dea11f32ef6b904f5149cdba7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872730"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577604"
 ---
 # Test-AzMySqlFlexibleServerConnect
 
 ## SYNOPSIS
 Menguji koneksi ke server database
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/test-azmysqlflexibleserverconnect) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Test-AzMySqlFlexibleServerConnect -Name <String> -QueryText <String> -ResourceGr
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### TestViaIdentitas
+### TestViaIdentity
 ```
 Test-AzMySqlFlexibleServerConnect -AdministratorLoginPassword <SecureString> -InputObject <IMySqlIdentity>
  [-DatabaseName <String>] [-AdministratorUserName <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -61,7 +64,7 @@ Get-AzMySqlFlexibleServerConnect -ResourceGroupName PowershellMySqlTest -Name my
 The connection testing to mysql-test.database.azure.com was successful!
 ```
 
-Uji koneksi menurut grup sumber daya dan nama server
+Menguji koneksi menurut grup sumber daya dan nama server
 
 ### Contoh 2: Uji koneksi menurut identitas
 ```powershell
@@ -73,7 +76,7 @@ Get-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -ServerName mys
 The connection testing to mysql-test.database.azure.com was successful!
 ```
 
-Uji koneksi menurut identitas
+Menguji koneksi oleh identitas
 
 ### Contoh 3: Uji kueri menurut nama
 ```powershell
@@ -110,8 +113,8 @@ Menguji kueri menurut identitas
 
 ### -AdministratorLoginPassword
 Kata sandi administrator.
-Minimal 8 karakter dan maksimal 128 karakter.
-Kata sandi harus berisi karakter dari tiga kategori berikut: Huruf besar bahasa Inggris, huruf kecil bahasa Inggris, angka, dan karakter non-alfanumerik.
+Minimal 8 karakter dan maksimum 128 karakter.
+Sandi Anda harus berisi karakter dari tiga kategori berikut: huruf besar bahasa Inggris, huruf kecil bahasa Inggris, angka, dan karakter non-alfanumerik.
 
 ```yaml
 Type: System.Security.SecureString
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -AdministratorUserName
 Nama pengguna administrator untuk server.
-Setelah diatur, tidak dapat diubah.
+Setelah diatur, itu tidak dapat diubah.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database untuk disambungkan.
+Nama database yang akan disambungkan.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Server yang akan disambungkan.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -187,7 +190,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server yang akan disambungkan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryText
-Kueri untuk diuji database
+Kueri untuk database yang akan diuji
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -259,7 +262,7 @@ INPUTOBJECT <IMySqlIdentity>: Server yang akan disambungkan.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: 44d09e6ffee3b4000c1d7910d7fcfb2ed38effa3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c19c773a15009a3566e24335ccc987001d0e775
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282843"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571214"
 ---
 # Update-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Memperbarui konfigurasi direktori aktif Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesactivedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 

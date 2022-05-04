@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Add-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
-ms.openlocfilehash: 35ebf18a73ab661006d27e65d95992b5e4fbbf46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7afa84d9cef4342b3f2c7f7ca78e2e395a2dd6b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274725"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562036"
 ---
 # Add-AzSecurityAdaptiveNetworkHardening
 
 ## SYNOPSIS
 Memberlakukan aturan yang diberikan pada NSG yang tercantum dalam permintaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/add-azsecurityadaptivenetworkhardening) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Add-AzSecurityAdaptiveNetworkHardening [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Hardening Jaringan Adaptif dihitung secara otomatis oleh Azure Security Center, gunakan cmdlet ini untuk menerapkan aturan tertentu pada NSG yang tercantum dalam permintaan.
+Hardening Jaringan Adaptif secara otomatis dihitung dengan Azure Security Center, gunakan cmdlet ini untuk memberlakukan aturan yang diberikan pada NSG yang tercantum dalam permintaan.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdaptiveNetworkHardeningResourceName
-Nama sumber daya Pengerasan Jaringan Adaptif.
+Nama sumber daya Penguatan Jaringan Adaptif.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespace
-Ruang Nama sumber daya.
+Namespace sumber daya.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aturan
-Aturan yang akan diterapkan.
+Aturan yang akan diberlakukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SecurityCenter.Models.AdaptiveNetworkHardenings.PSSecurityAdaptiveNetworkHardeningsRule
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroups
-ID sumber daya Azure dari grup keamanan jaringan efektif yang akan diperbarui dengan aturan keamanan yang dibuat dari aturan Pengerasan Jaringan Adaptif.
+ID sumber daya Azure dari kelompok keamanan jaringan efektif yang akan diperbarui dengan aturan keamanan yang dibuat dari aturan Penguatan Jaringan Adaptif.
 
 ```yaml
 Type: System.Collections.Generic.List<System.String>
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan
+Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

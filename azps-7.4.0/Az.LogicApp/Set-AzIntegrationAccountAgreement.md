@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: 30086c60b423fa7b4cd89f0a2feb7cf9920b46c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d8babebae7a77405e002d1bd5c4bd4a36bbd1700
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807984"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563782"
 ---
 # Set-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
-Mengubah perjanjian akun integrasi.
+Memodifikasi perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Set-AzIntegrationAccountAgreement -ResourceGroupName <String> -Name <String> -Ag
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzIntegrationAccountAgreement** mengubah perjanjian akun integrasi.
+Cmdlet **Set-AzIntegrationAccountAgreement** memodifikasi perjanjian akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili perjanjian akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama perjanjian.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -68,7 +71,7 @@ Perintah ini memperbarui perjanjian akun integrasi dalam grup sumber daya Azure 
 
 ### Contoh 2
 
-Mengubah perjanjian akun integrasi. (autogenerasi)
+Memodifikasi perjanjian akun integrasi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzIntegrationAccountAgreement -AgreementContentFilePath 'C:\temp\AgreementContent.json' -AgreementName 'IntegrationAccountAgreement06' -GuestIdentityQualifier 'BB' -GuestIdentityQualifierValue <String> -GuestPartner 'GuestPartner' -HostIdentityQualifier 'AA' -HostIdentityQualifierValue <String> -HostPartner 'HostPartner' -Metadata <Object> -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -122,10 +125,10 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Menentukan tipe perjanjian akun integrasi.
+Menentukan jenis perjanjian akun integrasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - X12 
-- AS2
+- Applicability Statement 2
 - Edifact
 
 ```yaml
@@ -156,7 +159,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifier
-Menentukan nama pengualifikasi identitas bisnis untuk mitra tamu.
+Menentukan kualifikasi identitas bisnis nama untuk mitra tamu.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifierValue
-Nilai kualifikasi identitas tamu persetujuan akun integrasi.
+Nilai kualifikasi identitas tamu perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostIdentityQualifier
-Menentukan pengualifikasi identitas bisnis nama untuk mitra host.
+Menentukan kualifikasi identitas bisnis nama untuk mitra host.
 
 ```yaml
 Type: System.String
@@ -276,7 +279,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -306,8 +309,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

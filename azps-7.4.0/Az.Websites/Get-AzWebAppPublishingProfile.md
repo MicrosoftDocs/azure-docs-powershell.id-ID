@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
-ms.openlocfilehash: ef9c8baf82c5d39552bc3734574d2492eed30712
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 46f1c27707f073702faa5c424d28fb9256e40dd0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930547"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571718"
 ---
 # Get-AzWebAppPublishingProfile
 
 ## SYNOPSIS
 Mendapatkan profil penerbitan Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapppublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzWebAppPublishingProfile [[-OutputFile] <String>] [[-Format] <String>] [-In
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppPublishingProfile** mendapatkan profil penerbitan Azure Web App.
+Cmdlet **Get-AzWebAppPublishingProfile** mendapatkan profil penerbitan Aplikasi Web Azure.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzWebAppPublishingProfile** mendapatkan profil penerbitan Azure Web
 Get-AzWebAppPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Format "Ftp" -OutputFile "C:\Users\contoso\outputfile.publishsettings"
 ```
 
-Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output tertentu.
+Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -153,13 +156,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

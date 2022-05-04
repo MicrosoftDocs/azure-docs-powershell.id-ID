@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: ff21ddcfec7bbef0be4314f308fee6c00eab2a3a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd48bf401328b08bc5e5b620717920c9ae3c403b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285093"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563872"
 ---
 # Remove-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Menghapus definisi peran kustom dari HSM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,10 +35,10 @@ Remove-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] -InputObje
 ```
 
 ## DESCRIPTION
-`Remove-AzKeyVaultRoleDefinition` Cmdlet menghapus peran kustom di Azure Role-Based Access Control Azure KeyVault yang dikelola HSM.
-`-RoleName` Berikan parameter peran kustom atau objek peran yang sudah ada untuk menghapus peran kustom tersebut.
+`Remove-AzKeyVaultRoleDefinition` Cmdlet menghapus peran kustom di Azure Role-Based Access Control HSM terkelola Azure KeyVault.
+`-RoleName` Berikan parameter peran kustom yang ada atau objek peran untuk menghapus peran kustom tersebut.
 Secara default, `Remove-AzKeyVaultRoleDefinition` meminta konfirmasi kepada Anda.
-Untuk menyembunyikan perintah, gunakan `-Force` parameter.
+Untuk menekan prompt, gunakan `-Force` parameter .
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ $role = Get-AzKeyVaultRoleDefinition -HsmName myHsm -RoleName "my role"
 $role | Remove-AzKeyVaultRoleDefinition -HsmName myHsm -Force
 ```
 
-Contoh ini menghapus peran kustom bernama "peran saya" dengan mempipa objek peran. Ini juga menekan prompt dengan `-Force`.
+Contoh ini menghapus peran kustom bernama "peran saya" dengan memilah objek peran. Ini juga menekan prompt dengan `-Force`.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
+### -Cakupan
+Cakupan tempat penetapan peran atau definisi berlaku, misalnya, '/' atau '/keys' atau '/keys/{keyName}'.
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

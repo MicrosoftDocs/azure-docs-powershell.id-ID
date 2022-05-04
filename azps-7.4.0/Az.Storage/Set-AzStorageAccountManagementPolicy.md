@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/set-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: 0396ed17ded3e868be0e41f5f481dd5e7a1b6bef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5efc3b7b165578b3295efb4f26f1108897a8dca9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864108"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568406"
 ---
-# Set-AzStorageAccountManagementPolicy
+# Atur-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
-Membuat atau mengubah kebijakan manajemen akun Azure Storage.
+Membuat atau memodifikasi kebijakan manajemen akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageaccountmanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Set-AzStorageAccountManagementPolicy [-StorageAccountResourceId] <String> -Polic
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageAccountManagementPolicy** membuat atau mengubah kebijakan manajemen akun Azure Storage.
+Cmdlet **Set-AzStorageAccountManagementPolicy** membuat atau memodifikasi kebijakan manajemen akun Azure Storage.
 
 ## EXAMPLES
 
@@ -158,7 +161,7 @@ Rules              : [
                      ]
 ```
 
-Perintah ini terlebih dahulu membuat 2 objek aturan ManagementPolicy, lalu membuat atau memperbarui kebijakan manajemen akun Storage dengan 2 objek aturan ManagementPolicy.
+Perintah ini pertama-tama membuat 2 objek aturan ManagementPolicy, lalu membuat atau memperbarui kebijakan manajemen akun Storage dengan 2 objek aturan ManagementPolicy.
 
 ### Contoh 2: Membuat atau memperbarui kebijakan manajemen akun Storage dengan kebijakan format Json.
 ```
@@ -302,7 +305,7 @@ Perintah ini membuat atau memperbarui kebijakan manajemen akun Storage dengan ke
 PS C:\>$outputPolicy = Get-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" | Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup2" -AccountName "mystorageaccount2"
 ```
 
-Perintah ini terlebih dahulu mendapatkan kebijakan manajemen dari akun Storage, lalu mengaturnya ke akun Storage lain.
+Perintah ini pertama-tama mendapatkan kebijakan manajemen dari akun Storage, lalu mengaturnya ke akun Storage lain.
 
 ## PARAMETERS
 
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-id sumber daya akun Storage.
+id Sumber Daya Akun Storage.
 
 ```yaml
 Type: System.String
@@ -411,8 +414,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -427,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
-ms.openlocfilehash: ba0bb45f48cab7be3b02c886c318b7109da23208
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ee36e0db103228954fc5b20663ac8876d185f7bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198917"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571664"
 ---
 # New-AzADSpCredential
 
 ## SYNOPSIS
 Membuat kredensial kunci atau kredensial kata sandi untuk perwakilan layanan.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

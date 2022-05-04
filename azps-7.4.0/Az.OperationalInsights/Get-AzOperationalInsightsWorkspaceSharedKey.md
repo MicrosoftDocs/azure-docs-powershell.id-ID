@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsWorkspaceSharedKey.md
-ms.openlocfilehash: a3b64cdc2c94ca377d9299f2ee06c23ab2916f48
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8198ab52fd09eb5a3e73ed90c8809cea3db98104
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279333"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562324"
 ---
 # Get-AzOperationalInsightsWorkspaceSharedKey
 
 ## SYNOPSIS
 Mendapatkan kunci bersama untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsworkspacesharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,20 +34,20 @@ Kunci digunakan untuk menyambungkan agen Insights Operasional ke ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci bersama menurut nama ruang kerja
+### Contoh 1: Mendapatkan kunci bersama berdasarkan nama ruang kerja
 ```powershell
 Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah ini mendapatkan kunci bersama untuk ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan kunci bersama untuk ruang kerja bernama MyWorkspace di grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Dapatkan kunci bersama menggunakan pipeline
+### Contoh 2: Dapatkan kunci bersama dengan menggunakan alur
 ```powershell
 Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Get-AzOperationalInsightsWorkspaceSharedKey
 ```
 
-Perintah ini mendapatkan ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu mengirimkan ruang kerja ke cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey** .
-Perintah akan mendapatkan kunci bersama untuk ruang kerja tersebut.
+Perintah ini mendapatkan ruang kerja bernama MyWorkspace menggunakan cmdlet Get-AzOperationalInsightsWorkspace, lalu meneruskan ruang kerja ke cmdlet **Get-AzOperationalInsightsWorkspaceSharedKey** .
+Perintah mendapatkan kunci bersama untuk ruang kerja tersebut.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

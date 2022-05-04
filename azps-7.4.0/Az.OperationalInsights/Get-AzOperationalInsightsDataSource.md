@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataSource.md
-ms.openlocfilehash: 02df1eaf67835896c06a8f5c9b1177e160ff4ace
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05aba2478c6211d14f6e33867ba545d0073f31d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142937495"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558796"
 ---
 # Get-AzOperationalInsightsDataSource
 
 ## SYNOPSIS
 Dapatkan sumber data di bawah ruang kerja Azure Log Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,8 +49,8 @@ Get-AzOperationalInsightsDataSource [-ResourceGroupName] <String> [-WorkspaceNam
 
 ## DESCRIPTION
 Cmdlet **Get-AzOperationalInsightsDataSource** mendapatkan sumber data.
-Anda bisa menentukan sumber data untuk didapatkan.
-Anda bisa memfilter hasil berdasarkan jenis sumber data.
+Anda dapat menentukan sumber data yang akan didapatkan.
+Anda dapat memfilter hasil berdasarkan jenis sumber data.
 
 ## EXAMPLES
 ### Contoh 1
@@ -68,7 +71,7 @@ Properties        : {"customLogName":"Customlog_CL","description":"","extraction
                     ths":null,"windowsFileTypeLogPaths":["D:\\logs.txt"]}},"recordDelimiter":{"regexDelimiter":{"matchI
                     ndex":0,"numberdGroup":null,"pattern":"\\n"}}}]}
 ```
-Dapatkan sumber data.
+Mendapatkan sumber data.
 ## PARAMETERS
 
 ### -DefaultProfile
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Menentukan jenis sumber data yang akan didapatkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - AzureActivityLog 
@@ -122,8 +125,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama sumber data untuk didapatkan.
+### -Name
+Menentukan nama sumber data yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi sumber data untuk didapatkan.
+Menentukan nama grup sumber daya yang berisi sumber data yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -244,7 +247,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerAcl.md
-ms.openlocfilehash: b5ee44cb9ff810e9f6bfb3207598902abe1cc05a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 023e3132bc4203e4a6fa51eadef24951a2c6410d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994519"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561658"
 ---
 # Set-AzStorageContainerAcl
 
 ## SYNOPSIS
-Mengatur izin akses publik ke wadah penyimpanan.
+Mengatur izin akses publik ke kontainer penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragecontaineracl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,29 +30,29 @@ Set-AzStorageContainerAcl [-Name] <String> [-Permission] <BlobContainerPublicAcc
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageContainerAcl** mengatur izin akses publik ke wadah penyimpanan tertentu di Azure.
+Cmdlet **Set-AzStorageContainerAcl** mengatur izin akses publik ke kontainer penyimpanan yang ditentukan di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Atur wadah penyimpanan azure ACL menurut nama
+### Contoh 1: Mengatur ACL kontainer penyimpanan azure berdasarkan nama
 ```
 PS C:\>Set-AzStorageContainerAcl -Container "Container01" -Permission Off -PassThru
 ```
 
-Perintah ini membuat wadah yang tidak memiliki akses publik.
+Perintah ini membuat kontainer yang tidak memiliki akses publik.
 
-### Contoh 2: Atur wadah penyimpanan azure ACL dengan menggunakan saluran
+### Contoh 2: Mengatur ACL kontainer penyimpanan azure dengan menggunakan alur
 ```
 PS C:\>Get-AzStorageContainer container* | Set-AzStorageContainerAcl -Permission Blob -PassThru
 ```
 
-Perintah ini mendapatkan semua wadah penyimpanan yang namanya dimulai dengan kontainer lalu meneruskan hasil pada pipeline untuk mengatur izin bagi mereka semua ke akses Blob.
+Perintah ini mendapatkan semua kontainer penyimpanan yang namanya dimulai dengan kontainer dan kemudian meneruskan hasilnya pada alur untuk mengatur izin untuk mereka semua ke akses Blob.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -65,9 +68,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -83,9 +86,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext.
+Anda dapat membuatnya dengan menggunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -114,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama wadah.
+### -Name
+Menentukan nama kontainer.
 
 ```yaml
 Type: System.String
@@ -146,15 +149,15 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan tingkat akses publik ke wadah ini.
-Secara default, wadah dan gumpalan apa pun di dalamnya hanya dapat diakses oleh pemilik akun penyimpanan.
+Menentukan tingkat akses publik ke kontainer ini.
+Secara default, kontainer dan blob apa pun di dalamnya hanya dapat diakses oleh pemilik akun penyimpanan.
 Untuk memberikan izin baca pengguna anonim ke kontainer dan blobnya, Anda dapat mengatur izin kontainer untuk mengaktifkan akses publik.
-Pengguna anonim dapat membaca gumpalan dalam wadah yang tersedia untuk umum tanpa mengautentikasi permintaan.
+Pengguna anonim dapat membaca blob dalam kontainer yang tersedia untuk umum tanpa mengautentikasi permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah: --Container.
-Menyediakan akses baca penuh ke wadah dan blob-nya.
-Klien dapat menghitung blob dalam kontainer melalui permintaan anonim, tetapi tidak dapat menghitung kontainer dalam akun penyimpanan. -Blob.
-Menyediakan akses baca ke data blob dalam wadah melalui permintaan anonim, tetapi tidak menyediakan akses ke data kontainer.
-Klien tidak dapat menghitung blob dalam kontainer menggunakan permintaan anonim. -Off.
+Menyediakan akses baca penuh ke kontainer dan blobnya.
+Klien dapat menghitung blob dalam kontainer melalui permintaan anonim, tetapi tidak dapat menghitung kontainer di akun penyimpanan. --Blob.
+Menyediakan akses baca ke data blob dalam kontainer melalui permintaan anonim, tetapi tidak menyediakan akses ke data kontainer.
+Klien tidak dapat menghitung blob dalam kontainer dengan menggunakan permintaan anonim. -Off.
 Membatasi akses hanya ke pemilik akun penyimpanan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 Waktu sisi server habis untuk setiap permintaan.
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -204,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageContainer](./Get-AzStorageContainer.md)
+[Dapatkan-AzStorageContainer](./Get-AzStorageContainer.md)
 
 [New-AzStorageContainer](./New-AzStorageContainer.md)
 

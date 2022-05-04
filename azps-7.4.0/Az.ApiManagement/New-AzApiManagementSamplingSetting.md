@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSamplingSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSamplingSetting.md
-ms.openlocfilehash: 5d01324a4775776e6b13484a6a24da11f5342ddc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6736c65de4d6c5417dc07e525ec11316bd318afa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067581"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559750"
 ---
 # New-AzApiManagementSamplingSetting
 
 ## SYNOPSIS
 Membuat pengaturan pengambilan sampel baru untuk Diagnostik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsamplingsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **New-AzApiManagementSamplingSetting** membuat pengaturan pengambilan sam
 
 ## EXAMPLES
 
-### Contoh 1: Membuat pengaturan Sampling dasar
+### Contoh 1: Membuat pengaturan Pengambilan Sampel dasar
 ```powershell
 New-AzApiManagementSamplingSetting -SamplingType fixed -SamplingPercentage 100
 ```
@@ -40,11 +43,11 @@ SamplingType Percentage
 fixed               100
 ```
 
-Membuat pengaturan pengambilan sampel tipe `Fixed` dengan pembuatan log untuk 100% dari permintaan / respons
+Membuat pengaturan pengambilan sampel jenis `Fixed` dengan pengelogan untuk 100% dari permintaan/respons
 
 ### Contoh 2
 
-Buat pengaturan pengambilan sampel baru untuk Diagnostik. (autogenerasi)
+Buat pengaturan pengambilan sampel baru untuk Diagnostik. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -SamplingPercentage
-Rate of Sampling untuk Fixed Rate Sampling. Parameter ini bersifat opsional.
+Laju Pengambilan Sampel untuk Pengambilan Sampel Laju Tetap. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -SamplingType
-Jenis Sampling.
+Jenis Pengambilan Sampel.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

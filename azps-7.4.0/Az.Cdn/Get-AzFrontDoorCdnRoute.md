@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: ac5b6ff118343b09f2b22ef64031dce517528c2a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c5ed43ee9714ab2424fed85082114102077fae3b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878382"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581654"
 ---
 # Get-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
-Dapatkan rute.
+Mendapatkan rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzFrontDoorCdnRoute -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Dapatkan rute.
+Mendapatkan rute.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Dapatkan rute.
 Get-AzFrontDoorCdnRoute -EndpointName $endpointName -ProfileName $profileName -ResourceGroupName $resourceGroupName -RouteName $routeName
 ```
 
-Dapatkan rute.
+Mendapatkan rute.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Objek titik akhir Pintu Depan Azure.
+Objek titik akhir Azure Front Door.
 
 ```yaml
 Type: PSAfdEndpoint
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Nama titik akhir Pintu Depan Azure.
+Nama titik akhir Azure Front Door.
 
 ```yaml
 Type: String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteName
-Nama rute Pintu Depan Azure.
+Nama rute Azure Front Door.
 
 ```yaml
 Type: String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

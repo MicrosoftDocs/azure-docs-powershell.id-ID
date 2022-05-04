@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 17158c5f44208233df6861e7488fd9758a99f192
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a42ed6c7da324fa28aa66ff002487731a9ba213a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933931"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582914"
 ---
 # Get-AzSqlDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Get-AzSqlDatabaseBackupShortTermRetentionPolicy -ResourceId <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseBackupShortTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka pendek yang terdaftar dalam database ini.
-Kebijakan ini adalah periode penyimpanan dalam hari dan interval pencadangan disensial dalam jam, untuk cadangan pemulihan point-in-time.
+Cmdlet **Get-AzSqlDatabaseBackupShortTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka pendek yang terdaftar untuk database ini.
+Kebijakan ini adalah periode retensi dalam hari dan interval pencadangan diferensial dalam jam, untuk pencadangan pemulihan titik waktu.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ ResourceGroupName ServerName  DatabaseName RetentionDays DiffBackupIntervalInHou
 resourcegroup01   server01    database01   7             24
 ```
 
-Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk database01 melalui perpipaan dalam objek database.
+Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk database01 melalui pipa dalam objek database.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama Azure SQL Database untuk digunakan.
+Nama Azure SQL Database yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat database berada.
+Nama server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

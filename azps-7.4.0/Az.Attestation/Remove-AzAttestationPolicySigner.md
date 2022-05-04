@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
-ms.openlocfilehash: e7b653440ee790e0f3f585ff4b75711c58e1cd14
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba03ae337fbd3ad49161760e0144046625135792
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129573"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578379"
 ---
 # Remove-AzAttestationPolicySigner
 
 ## SYNOPSIS
 Menghapus penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/remove-azattestationpolicysigner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzAttestationPolicySigner [-ResourceId] <String> -Signer <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzAttestationPolicySigner menghapus penanda tangan kebijakan tepercaya untuk penyewa dalam Azure Attestation.
+Cmdlet Remove-AzAttestationPolicySigner menghapus penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
 
 ## EXAMPLES
 
@@ -61,8 +64,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyedia atestation.
+### -Name
+Menentukan nama penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan RESOURCEID penyedia atestation.
+Menentukan ResourceID dari penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -Penanda tangan
-Menentukan Token Web JSON RFC7519 yang berisi klaim bernama "maa-policyCertificate" yang nilainya adalah Kunci Web JSON RFC7517 yang berisi kunci penandatanganan tepercaya untuk dihapus.
-RFC7519 JWT harus ditandatangani dengan salah satu kunci penandatanganan tepercaya yang sudah ada.
+Menentukan RFC7519 JSON Web Token yang berisi klaim bernama "maa-policyCertificate" yang nilainya adalah Kunci Web JSON RFC7517 yang berisi kunci penandatanganan tepercaya untuk dihapus.
+RFC7519 JWT harus ditandatangani dengan salah satu kunci penandatanganan tepercaya yang ada.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

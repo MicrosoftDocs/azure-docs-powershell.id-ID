@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: f68727b108cf1acf659a16d1b468519df7deb79f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 47da6ebfd11e770a698acf60d8936f79caf8c0b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128853"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578090"
 ---
 # Get-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
 Mendapatkan grup asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup asal Pintu Depan Azure.
+Nama grup asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Objek profil Pintu Depan Azure.
+Objek profil Azure Front Door.
 
 ```yaml
 Type: PSAfdProfile
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDatabaseManagedInstanceMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDatabaseManagedInstanceMsiScanObject.md
-ms.openlocfilehash: 5b9411f3ce06a7a4a3e0932b443b39c6b56aad81
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 56f8dc2724278ce3af2add8e1d21a9b25920c7ec
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277569"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566788"
 ---
 # New-AzPurviewAzureSqlDatabaseManagedInstanceMsiScanObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk AzureSqlDatabaseManagedInstanceMsiScan.
+Buat objek dalam memori untuk AzureSqlDatabaseManagedInstanceMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresqldatabasemanagedinstancemsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzPurviewAzureSqlDatabaseManagedInstanceMsiScanObject -Kind <ScanAuthorizati
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk AzureSqlDatabaseManagedInstanceMsiScan.
+Buat objek dalam memori untuk AzureSqlDatabaseManagedInstanceMsiScan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek pemindaian Msi Instans Terkelola Database Azure Sql
+### Contoh 1: Membuat objek pemindaian Azure Sql Database Managed Instance Msi
 ```powershell
 PS C:\> New-AzPurviewAzureSqlDatabaseManagedInstanceMsiScanObject -Kind 'AzureSqlDatabaseManagedInstanceMsi' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -DatabaseName 'db' -ScanRulesetName 'AzureSqlDatabaseManagedInstance' -ScanRulesetType 'System' -ServerEndpoint 'tcp:sqstzn.public.5aaf14.database.windows.net,3342'
 
@@ -52,7 +55,7 @@ ServerEndpoint            : tcp:sqstzn.public.5aaf14.database.windows.net,3342
 Worker                    :
 ```
 
-Membuat objek pemindaian Msi Instans Terkelola Database Azure Sql
+Membuat objek pemindaian Azure Sql Database Managed Instance Msi
 
 ## PARAMETERS
 
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: 1412a60f7b09199de9847fbd8ccd14285a263f56
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a6a0f9ebe81c30e6888112d235df615e7eafdb9a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943399"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577982"
 ---
 # New-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
-Membuat Tugas Peran CosmosDB Sql baru.
+Membuat Penetapan Peran CosmosDB Sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +44,8 @@ New-AzCosmosDBSqlRoleAssignment [-Id <String>] -Scope <String> -PrincipalId <Str
 ```
 
 ## DESCRIPTION
-Membuat Tugas Peran CosmosDB Sql baru.
-Lingkup dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbName) atau dimulai dengan nama database (ie. /dbs/dbName).
+Membuat Penetapan Peran CosmosDB Sql baru.
+Cakupan dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbs/dbName) atau dimulai dengan nama database (yaitu /dbs/dbName).
 RoleDefinitionId dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Id Pokok Penugasan Peran Guid.
+Id Utama Guid dari Penetapan Peran.
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup.
+### -Cakupan
+Cakupan.
 
 ```yaml
 Type: System.String
@@ -201,8 +204,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

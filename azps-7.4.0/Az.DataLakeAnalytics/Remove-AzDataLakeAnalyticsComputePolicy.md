@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 4405ea45525566ea4b50fc079d202ee4614d419c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c66e5f7ab59eca723e8489590c38fdc488cb520a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685332"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567688"
 ---
 # Remove-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
-Menghapus kebijakan komputasi Azure Data Lake Analytics yang ditentukan
+Menghapus kebijakan komputasi Azure Data Lake Analytics tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,12 +37,12 @@ Remove-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account]
 Remove-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name myPolicy
 ```
 
-Perintah ini menghapus kebijakan komputasi yang ditentukan dengan nama 'myPolicy' dalam akun 'contosoadla'.
+Perintah ini menghapus kebijakan komputasi yang ditentukan dengan nama 'myPolicy' di akun 'contosoadla'.
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun yang akan dihapus kebijakan komputasinya.
+Nama akun untuk menghapus kebijakan komputasi.
 
 ```yaml
 Type: System.String
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan komputasi untuk dihapus.
+### -Name
+Nama kebijakan komputasi yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true setelah penghapusan berhasil.
+Kembalikan true setelah penghapusan berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana Akun Anda sudah ada.
+Nama grup sumber daya tempat Akun Anda berada.
 Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

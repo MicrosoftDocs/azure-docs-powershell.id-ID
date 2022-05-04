@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: 56b032f4bd55e7382052a96ccdf850c7a5eee892
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 56e9826fbed6bae9a9b5bd8fc02f880551a1e9a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065674"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563188"
 ---
 # Remove-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
-Menghapus ekstensi Diagnostik dari mesin virtual.
+Menghapus ekstensi Diagnostik dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,19 +29,19 @@ Remove-AzVMDiagnosticsExtension [-ResourceGroupName] <String> [-VMName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMDiagnosticsExtension** menghapus ekstensi Diagnostik Azure dari mesin virtual.
-Anda harus meneruskan output cmdlet ini ke cmdlet Update-AzVM untuk menerapkan perubahan Anda.
+Cmdlet **Remove-AzVMDiagnosticsExtension** menghapus ekstensi Azure Diagnostics dari komputer virtual.
+Anda harus meneruskan output cmdlet ini ke cmdlet Update-AzVM untuk mengimplementasikan perubahan Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi Diagnostik dari mesin virtual
+### Contoh 1: Menghapus ekstensi Diagnostik dari komputer virtual
 ```powershell
 Remove-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22" | Update-AzVM
 ```
 
-Perintah ini menghapus ekstensi Diagnostik dari mesin virtual bernama ContosoVM22.
-Perintah melewati hasil ke cmdlet Update-AzVM menggunakan operator pipeline.
-Perintah itu memperbarui mesin virtual.
+Perintah ini menghapus ekstensi Diagnostik dari komputer virtual bernama ContosoVM22.
+Perintah meneruskan hasil ke cmdlet Update-AzVM dengan menggunakan operator alur.
+Perintah itu memperbarui komputer virtual.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi Diagnostik yang dihapus cmdlet ini.
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi Diagnostik.
+Menentukan nama komputer virtual tempat cmdlet ini menghapus ekstensi Diagnostik.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -136,6 +139,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzVMDiagnosticsExtension](./Set-AzVMDiagnosticsExtension.md)
 
-[Perbarui-AzVM](./Update-AzVM.md)
+[Update-AzVM](./Update-AzVM.md)
 
 

@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: c47ebacd35876bbe7a336ec61828f0568fff4928
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a6949a1abd7e2c3bd57c8bdca0ed6375e5bc2705
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932059"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568388"
 ---
 # Update-AzStreamAnalyticsCluster
 
 ## SYNOPSIS
-Memperbarui kluster yang sudah ada.
-Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
+Memperbarui kluster yang ada.
+Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) kluster tanpa memengaruhi definisi kluster lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Update-AzStreamAnalyticsCluster -InputObject <IStreamAnalyticsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Memperbarui kluster yang sudah ada.
-Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
+Memperbarui kluster yang ada.
+Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) kluster tanpa memengaruhi definisi kluster lainnya.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kluster analitik stream berdasarkan nama
+### Contoh 1: Memperbarui kluster analisis aliran berdasarkan nama
 ```powershell
 Update-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-test01 -Tag @{'key4'=4}
 ```
@@ -52,9 +55,9 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters
 ```
 
-Perintah ini memperbarui kluster analitik streaming berdasarkan nama.
+Perintah ini memperbarui kluster analisis aliran berdasarkan nama.
 
-### Contoh 2: Memperbarui kluster analitik streaming menurut pipeline
+### Contoh 2: Memperbarui kluster analisis aliran menurut alur
 ```powershell
 $sac = Get-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-test01
 Update-AzStreamAnalyticsCluster -InputObject $sac -Tag @{'key2'=2;'key3'=3}
@@ -65,12 +68,12 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters
 ```
 
-Perintah ini memperbarui kluster analitik streaming menurut saluran.
+Perintah ini memperbarui kluster analisis aliran berdasarkan alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,8 +104,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Hilangkan nilai ini untuk selalu menimpa kumpulan rekaman saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Hilangkan nilai ini untuk selalu menimpa kumpulan catatan saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -146,7 +149,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Menunjukkan jumlah unit streaming yang dapat didukung oleh kluster.
-Nilai valid untuk properti ini adalah kelipatan 36 dengan nilai minimum 36 dan nilai maksimum 216.
+Menunjukkan jumlah unit streaming yang dapat didukung kluster.
+Nilai yang valid untuk properti ini adalah kelipatan 36 dengan nilai minimum 36 dan nilai maksimum 216.
 Diperlukan pada permintaan PUT (CreateOrUpdate).
 
 ```yaml
@@ -255,8 +258,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -311,10 +314,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

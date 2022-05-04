@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
-ms.openlocfilehash: b7ffffa39881da248b23abcebe24738b93855476
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ef5977062eadf70116fe3b240db586cb2553e6eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865386"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573734"
 ---
 # Get-AzSqlElasticJobTargetExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Mendapatkan satu atau beberapa eksekusi target pekerjaan
 ## PARAMETERS
 
 ### -Aktif
-Tandai untuk memfilter menurut eksekusi aktif.
+Bendera untuk memfilter menurut eksekusi aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMax
-Memfilter dengan maks waktu pembuatan
+Memfilter menurut maks waktu pembuatan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Memfilter menurut waktu min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Memfilter menurut maks waktu akhir.
+Filter menurut waktu akhir maks.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMin
-Filter menurut waktu akhir menit.
+Filter menurut waktu akhir min.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

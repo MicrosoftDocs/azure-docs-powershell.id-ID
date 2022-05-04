@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Update-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Update-AzCostManagementExport.md
-ms.openlocfilehash: 4e9de45e7445e8e3e3dd16918887f2b82a6959f5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a684a3d9ac0d5906372594f4c32785d1973571f0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685836"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562702"
 ---
 # Update-AzCostManagementExport
 
@@ -18,7 +18,10 @@ ms.locfileid: "142685836"
 Operasi untuk membuat atau memperbarui ekspor.
 Operasi pembaruan memerlukan eTag terbaru untuk diatur dalam permintaan.
 Anda dapat memperoleh eTag terbaru dengan melakukan operasi get.
-Operasi Buat tidak memerlukan eTag.
+Operasi buat tidak memerlukan eTag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/update-azcostmanagementexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Update-AzCostManagementExport -InputObject <ICostManagementIdentity> [-Configura
 Operasi untuk membuat atau memperbarui ekspor.
 Operasi pembaruan memerlukan eTag terbaru untuk diatur dalam permintaan.
 Anda dapat memperoleh eTag terbaru dengan melakukan operasi get.
-Operasi Buat tidak memerlukan eTag.
+Operasi buat tidak memerlukan eTag.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui AzCostManagementExport menurut lingkup dan nama
+### Contoh 1: Memperbarui AzCostManagementExport menurut cakupan dan nama
 ```powershell
 Update-AzCostManagementExport -Scope "subscriptions//*********" -Name "TestExport" -ScheduleRecurrence 'Weekly'
 ```
@@ -61,9 +64,9 @@ ETag              Name                                 Type
 "********" TestExportDatasetAggregationInfo Microsoft.CostManagement/exports
 ```
 
-Perbarui AzCostManagementExport menurut Lingkup dan nama
+Perbarui AzCostManagementExport menurut Cakupan dan nama
 
-### Contoh 2: Update AzCostManagementExport by InputObject
+### Contoh 2: Memperbarui AzCostManagementExport oleh InputObject
 ```powershell
 $oldExport = Get-AzCostManagementExport -Scope "subscriptions/*********" -Name "TestExport"
 Update-AzCostManagementExport -InputObject $oldExport -ScheduleRecurrence 'Weekly'
@@ -81,7 +84,7 @@ Perbarui AzCostManagementExport oleh InputObject
 
 ### -ConfigurationColumn
 Array nama kolom yang akan disertakan dalam ekspor.
-Jika tidak disediakan, ekspor akan menyertakan semua kolom yang tersedia.
+Jika tidak disediakan maka ekspor akan menyertakan semua kolom yang tersedia.
 Kolom yang tersedia dapat bervariasi menurut saluran pelanggan (lihat contoh).
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefinitionType
-Tipe ekspor.
+Jenis ekspor.
 Perhatikan bahwa 'Penggunaan' setara dengan 'ActualCost' dan berlaku untuk ekspor yang belum menyediakan data untuk biaya atau amortisasi untuk reservasi layanan.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationContainer
-Nama wadah tempat ekspor akan diunggah.
+Nama kontainer tempat ekspor akan diunggah.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 
 ### -ETag
 eTag sumber daya.
-Untuk menangani skenario pembaruan serentak, bidang ini akan digunakan untuk menentukan apakah pengguna memperbarui versi terbaru atau tidak.
+Untuk menangani skenario pembaruan bersamaan, bidang ini akan digunakan untuk menentukan apakah pengguna memperbarui versi terbaru atau tidak.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.ICostManagementIdentity
@@ -251,8 +254,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Ekspor Nama.
+### -Name
+Nama Ekspor.
 
 ```yaml
 Type: System.String
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 
 ### -ScheduleStatus
 Status jadwal ekspor.
-Jika 'Tidak Aktif', jadwal ekspor akan dijeda.
+Jika 'Tidak Aktif', jadwal ekspor dijeda.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Support.StatusType
@@ -327,8 +330,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Parameter ini menentukan lingkup costmanagement dari perspektif berbeda 'Subscription','ResourceGroup' dan 'Provide Service'.
+### -Cakupan
+Parameter ini mendefinisikan cakupan costmanagement dari perspektif yang berbeda 'Langganan','ResourceGroup' dan 'Sediakan Layanan'.
 
 ```yaml
 Type: System.String
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimePeriodTo
-Tanggal akhir untuk mengekspor data.
+Tanggal selesai untuk mengekspor data.
 
 ```yaml
 Type: System.DateTime
@@ -372,8 +375,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -424,12 +427,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ICostManagementIdentity>: Parameter Identitas
-  - `[AlertId <String>]`: ID Peringatan
-  - `[ExportName <String>]`: Ekspor Nama.
-  - `[ExternalCloudProviderId <String>]`: Ini dapat berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
-  - `[ExternalCloudProviderType <ExternalCloudProviderType?>]`: Tipe penyedia awan eksternal yang terkait dengan operasi dimensi/kueri. Ini termasuk 'externalSubscriptions' untuk akun tertaut dan 'externalBillingAccounts' untuk akun konsolidasi.
+  - `[AlertId <String>]`: ID Pemberitahuan
+  - `[ExportName <String>]`: Nama Ekspor.
+  - `[ExternalCloudProviderId <String>]`: Ini bisa menjadi '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
+  - `[ExternalCloudProviderType <ExternalCloudProviderType?>]`: Jenis penyedia cloud eksternal yang terkait dengan operasi dimensi/kueri. Ini termasuk 'externalSubscriptions' untuk akun tertaut dan 'externalBillingAccounts' untuk akun konsolidasi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Scope <String>]`: Lingkup yang terkait dengan operasi tampilan. Ini termasuk 'subscriptions/{subscriptionId}' untuk lingkup langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk lingkup resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk lingkup Akun Penagihan, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ pendaftaranAccountId}' untuk lingkup EnrollmentAccount, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk lingkup BillingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' untuk lingkup InvoiceSection, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' untuk lingkup Grup Manajemen, 'providers/Microsoft.CostManagement/externalBillingAccounts/{ externalBillingAccountName}' untuk lingkup Akun Tagihan Eksternal dan 'providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' untuk lingkup Langganan Eksternal.
+  - `[Scope <String>]`: Cakupan yang terkait dengan operasi tampilan. Ini termasuk 'subscriptions/{subscriptionId}' untuk cakupan langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk cakupan resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk cakupan EnrollmentAccount, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk cakupan BillingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' untuk cakupan InvoiceSection, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' untuk cakupan Grup Manajemen, 'providers/Microsoft.CostManagement/externalBillingAccounts/{ externalBillingAccountName}' untuk cakupan Akun Penagihan Eksternal dan 'providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' untuk cakupan Langganan Eksternal.
   - `[ViewName <String>]`: Nama tampilan
 
 ## RELATED LINKS

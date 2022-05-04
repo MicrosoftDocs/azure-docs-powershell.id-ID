@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
-ms.openlocfilehash: 9b543e9311ae56442c64d794990724903ab520af
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c72755bce43014b34434c7966c4e34d9d790bb65
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868284"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577262"
 ---
 # Undo-AzRecoveryServicesBackupItemDeletion
 
 ## SYNOPSIS
-Jika item cadangan dihapus dan disajikan dalam status dihapus dengan lembut, perintah ini mengembalikan item ke keadaan di mana data dipertahankan selamanya 
+Jika item cadangan dihapus dan ada dalam status dihapus sementara, perintah ini membawa item kembali ke status di mana data disimpan selamanya 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Undo-AzRecoveryServicesBackupItemDeletion [-Item] <ItemBase> [-Force] [-VaultId 
 ```
 
 ## DESCRIPTION
-Cmdlet Undo-AzRecoveryServicesBackupItemDeletion mengembalikan item yang dihapus lunak ke keadaan di mana proteksi dihentikan tetapi data dipertahankan selamanya.
+Cmdlet Undo-AzRecoveryServicesBackupItemDeletion mengembalikan item yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data disimpan selamanya.
 
 ## EXAMPLES
 
@@ -38,15 +41,15 @@ $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM
 Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0]
 ```
 
-Perintah pertama mendapatkan array wadah cadangan, lalu menyimpannya dalam array $Cont.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
-Perintah ketiga menonaktifkan Proteksi pencadangan untuk item dalam $PI\[ 0\] dan meletakkan item dalam status softdeleted.
-Perintah keempat mendapatkan item yang berada dalam status softdeleted.
-Perintah terakhir membawa VM softdeleted ke status di mana proteksi dihentikan tetapi data dipertahankan selamanya.
+Perintah pertama mendapatkan array kontainer cadangan, lalu menyimpannya di array $Cont.
+Perintah kedua mendapatkan item Backup yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
+Perintah ketiga menonaktifkan perlindungan Pencadangan untuk item di $PI\[ 0\] dan menempatkan item dalam status dihapus sementara.
+Perintah keempat mendapatkan item yang dalam status dihapus sementara.
+Perintah terakhir membawa VM yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data dipertahankan selamanya.
 
 ### Contoh 2
 
-Merehidrasi Item yang dihapus dengan lembut. (autogenerasi)
+Merehidrasi Item yang dihapus sementara. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Paksa menonaktifkan proteksi pencadangan (mencegah dialog konfirmasi).
+### -Force
+Paksa menonaktifkan perlindungan pencadangan (mencegah dialog konfirmasi).
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 
 ### -Item
 Menentukan item cadangan tempat cmdlet ini mengembalikan penghapusan.
-Untuk mendapatkan cmdlet AzureRmRecoveryServicesBackupItem, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
+Untuk mendapatkan AzureRmRecoveryServicesBackupItem, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

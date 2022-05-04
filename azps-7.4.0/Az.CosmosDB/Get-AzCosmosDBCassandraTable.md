@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: 27c2f18e001436d2565dd974b909a0ba225de6c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc87e21c2a8799bacae32f140007c406e5473efb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686394"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579746"
 ---
 # Get-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
-Dapatkan Tabel CosmosDB Cassandra.
+Mendapatkan Tabel CosmosDB Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBCassandraTable [-Name <String>] -ParentObject <PSCassandraKeyspace
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBCassandraTable** menciptakan yang baru atau memperbarui Keyspace CosmosDB Cassandra yang sudah ada.
+**Cmdlet Get-AzCosmosDBCassandraTable** membuat yang baru atau memperbarui CosmosDB Cassandra Keyspace yang ada.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Name    Id   Resource
 {name}  {id} {resourceObject}
 ```
 
-{{ Get-AzCosmosDBCassandraTable mendapatkan properti CassandraKeyspace yang sudah ada. Anda dapat memperluas Sumber Daya untuk mendapatkan properti DefaultTtl, Skema, _etag, _ts, _rid.}}
+{{ Get-AzCosmosDBCassandraTable mendapatkan properti dari CassandraKeyspace yang ada. Anda bisa memperluas Sumber Daya untuk mendapatkan DefaultTtl, Skema, _etag, _ts, _rid properti.}}
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Tabel Cassandra.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

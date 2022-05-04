@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSynchronization.md
-ms.openlocfilehash: 46f640543a5974e2782c4161732806488ef6d1aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b305cf880167ffb0e9d065f8e84e103c88556bc1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684738"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559156"
 ---
 # Get-AzDataShareSynchronization
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pengaturan sinkronisasi untuk berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesynchronization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Status            : Succeeded
 SynchronizationId : e6dc7080-6589-4628-8b50-8fc31b460089
 ```
 
-Perintah ini menyediakan informasi tentang semua pengaturan sinkronisasi yang ada dalam berbagi AdsShare di akun berbagi data WikiAds.
+Perintah ini menyediakan informasi tentang semua pengaturan sinkronisasi yang ada di berbagi AdsShare di akun berbagi data WikiAds.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

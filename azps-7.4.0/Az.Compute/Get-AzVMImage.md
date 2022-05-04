@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
-ms.openlocfilehash: 9cfc8c93a28acc21381205705a98ffae04ff8176
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85268ed4f27ec1b170117a9e27bad014e8339176
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128169"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570170"
 ---
 # Get-AzVMImage
 
 ## SYNOPSIS
 Mendapatkan semua versi VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Get-AzVMImage** mendapatkan semua versi VMImage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan objek VMImage
+### Contoh 1: Mendapatkan objek VMImage
 ```powershell
 Get-AzVMImage -Location "Central US" -PublisherName "MicrosoftWindowsServer" -Offer "windowsserver" -Skus "2012-R2-Datacenter"
 ```
@@ -83,7 +86,7 @@ DataDiskImages   : []
 
 Perintah ini mendapatkan versi VMImage tertentu yang cocok dengan nilai yang ditentukan.
 
-### Contoh 3: Dapatkan objek VMImage
+### Contoh 3: Mendapatkan objek VMImage
 ```powershell
 Get-AzVMImage -Location "Central US" -PublisherName "MicrosoftWindowsServer" -Offer "windowsserver" -Skus "2012-R2-Datacenter" -Version 4.127.2018*
 ```
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, VM Image akan dikueri dari wilayah utama Azure. Jika tidak, pesan akan dikueri dari lokasi yang diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, itu akan dikueri dari lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-Menentukan tipe penawaran VMImage.
+Menentukan jenis penawaran VMImage.
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skus
-Menentukan VMImage SKU.
+Menentukan SKU VMImage.
 Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku.
 
 ```yaml
@@ -211,8 +214,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
-Menentukan jumlah maksimum gambar mesin virtual yang dikembalikan. 
+### -Atas
+Menentukan jumlah maksimum gambar komputer virtual yang dikembalikan. 
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -242,7 +245,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -264,6 +267,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Simpan-AzVMImage](./Save-AzVMImage.md)
+[Save-AzVMImage](./Save-AzVMImage.md)
 
 

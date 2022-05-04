@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/switch-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Switch-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Switch-AzWebAppSlot.md
-ms.openlocfilehash: 4e5e6caa4e4e1e547f9803cddf1f159c4b2dc2ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: afe621b1e8aa434944aaf8efd0a22c209765451b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143055575"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582500"
 ---
 # Switch-AzWebAppSlot
 
 ## SYNOPSIS
 Menukar dua slot dalam Aplikasi Web
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/switch-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Switch-AzWebAppSlot [-SourceSlotName] <String> [[-DestinationSlotName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Switch-AzWebAppSlot** beralih dua slot yang terkait dengan Azure Web App.
+Cmdlet **Switch-AzWebAppSlot** mengalihkan dua slot yang terkait dengan Azure Web App.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Cmdlet **Switch-AzWebAppSlot** beralih dua slot yang terkait dengan Azure Web Ap
 Switch-AzWebAppSlot -SourceSlotName "sourceslot" -DestinationSlotName "destinationslot" -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini akan beralih slot "sourceslot" dengan slot "destinationslot" di Web App ContosoWebApp dalam grup sumber daya Default-Web-WestUS.
+Perintah ini akan mengalihkan slot "sourceslot" dengan slot "destinationslot" pada Aplikasi Web ContosoWebApp di grup sumber daya Default-Web-WestUS.
 
 > [!NOTE]
 > Gunakan "produksi" sebagai nama slot ketika slot sumber atau tujuan dimaksudkan untuk menjadi slot produksi.
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SwapWithPreviewAction
-Menukar Dengan Tindakan Pratinjau
+Tukar Dengan Tindakan Pratinjau
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.WebApps.Utilities.SwapWithPreviewAction]
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,13 +207,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

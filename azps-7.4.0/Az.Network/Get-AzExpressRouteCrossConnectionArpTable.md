@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionArpTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionArpTable.md
-ms.openlocfilehash: bffb2d450998518c014ee2875a7a0d40b32daf63
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a82e765e57fb5f2d3dfd46906efb4c86c0d1816
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143225081"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567076"
 ---
 # Get-AzExpressRouteCrossConnectionArpTable
 
 ## SYNOPSIS
 Mendapatkan tabel ARP dari koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionarptable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Get-AzExpressRouteCrossConnectionARPTable -ResourceGroupName $RG -ExpressRouteCr
 ## PARAMETERS
 
 ### -CrossConnectionName
-Nama Express Route Cross Connection
+Nama Koneksi Lintas Rute Ekspres
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-The Express Route Cross Connection
+Koneksi Lintas Rute Ekspres
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

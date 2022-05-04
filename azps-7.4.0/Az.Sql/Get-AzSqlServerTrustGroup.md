@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
-ms.openlocfilehash: 11b6d286f436df11091e3bef140e0e29aecd7ba0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 41c29ae4afedb2c0b14234e61365e8c59fabdeae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995653"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573715"
 ---
 # Get-AzSqlServerTrustGroup
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Grup Kepercayaan Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservertrustgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSqlServerTrustGroup [-ResourceId] <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerTrustGroup** mendapatkan informasi tentang Server Trust Group dan anggotanya untuk langganan saat ini. Berdasarkan kumpulan parameter cmdlet ini dapat mengambil Grup Kepercayaan Server tertentu, semua Grup Kepercayaan Server di lokasi tertentu atau Grup Kepercayaan Server yang telah menentukan Instans Terkelola AzureSQL sebagai anggota.
+Cmdlet **Get-AzSqlServerTrustGroup** mendapatkan informasi tentang Grup Kepercayaan Server dan anggotanya untuk langganan saat ini. Berdasarkan set parameter cmdlet ini dapat mengambil Grup Kepercayaan Server tertentu, semua Grup Kepercayaan Server di lokasi tertentu atau Grup Kepercayaan Server yang telah menentukan AzureSQL Managed Instance sebagai anggota.
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Grup Kepercayaan Server untuk diambil.
+Lokasi Grup Kepercayaan Server yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Grup Kepercayaan Server untuk diambil.
+### -Name
+Nama Grup Kepercayaan Server yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

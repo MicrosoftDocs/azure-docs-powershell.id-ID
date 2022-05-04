@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsContinuousExport.md
-ms.openlocfilehash: 14f218a4ed997b3161666d240a87d64248754698
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: de0bacdc1a249d0a00101d550168089f1ae26550
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687762"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582302"
 ---
 # Get-AzApplicationInsightsContinuousExport
 
 ## SYNOPSIS
-Dapatkan konfigurasi ekspor berkelanjutan wawasan aplikasi untuk sumber daya wawasan aplikasi
+Mendapatkan konfigurasi ekspor berkelanjutan application insights untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzApplicationInsightsContinuousExport [-ResourceId] <String> [[-ExportId] <S
 ```
 
 ## DESCRIPTION
-Dapatkan konfigurasi ekspor berkelanjutan wawasan aplikasi untuk sumber daya wawasan aplikasi
+Mendapatkan konfigurasi ekspor berkelanjutan application insights untuk sumber daya application insights
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan ekspor berkelanjutan untuk sumber daya wawasan aplikasi
+### Contoh 1 Dapatkan ekspor berkelanjutan untuk sumber daya application insights
 ```powershell
 Get-AzApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test"
 ```
@@ -52,9 +55,9 @@ ExportId                     DocumentTypes                ExportStatus Destinati
 ZJrfffySPdtG3ESn3iRxVIEFuNY= Request, Performance Counter Preparing    /subscriptions/{subid}...
 ```
 
-Dapatkan konfigurasi ekspor berkelanjutan wawasan aplikasi untuk sumber daya bernama "uji" dalam grup sumber daya "grup uji"
+Mendapatkan konfigurasi ekspor berkelanjutan application insights untuk sumber daya bernama "test" di grup sumber daya "testgroup"
 
-### Contoh 2 Dapatkan ekspor berkelanjutan untuk sumber daya wawasan aplikasi
+### Contoh 2 Dapatkan ekspor berkelanjutan untuk sumber daya application insights
 ```powershell
 Get-AzApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test" -ExportId "ZJrfffySPdtG3ESn3iRxVIEFuNY="
 ```
@@ -71,7 +74,7 @@ ExportStatus                     : Preparing
 LastSuccessTime                  :
 ```
 
-Dapatkan konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "ZJrfffySPdtG3ESn3iRxVIEFuNY=" untuk sumber daya bernama "test" dalam grup sumber daya "testgroup"
+Dapatkan konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "ZJrfffySPdtG3ESn3iRxVIEFuNY=" untuk sumber daya bernama "uji" dalam grup sumber daya "testgroup"
 
 ## PARAMETERS
 
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen Insights Aplikasi.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

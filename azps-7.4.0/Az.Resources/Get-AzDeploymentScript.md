@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
-ms.openlocfilehash: 70065c5a7266f501462740c70a8ccd6fae0c2690
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 619a5cd59a38760a568e2e9c2e3ad2e63a95f149
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059481"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572222"
 ---
 # Get-AzDeploymentScript
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeploymentscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzDeploymentScript [-Id] <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentScript** mendapatkan satu skrip penyebaran atau daftar skrip penyebaran.
+Cmdlet **Get-AzDeploymentScript** mendapatkan skrip penyebaran tunggal atau daftar skrip penyebaran.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Mendapatkan skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber da
 Get-AzDeploymentScript -Id "/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.Resources/deploymentScripts/{deploymentScriptName}"
 ```
 
-Mendapatkan skrip penyebaran dengan Id sumber daya tertentu. 
+Mendapatkan skrip penyebaran dengan Id sumber daya yang diberikan. 
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama skrip penyebaran
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

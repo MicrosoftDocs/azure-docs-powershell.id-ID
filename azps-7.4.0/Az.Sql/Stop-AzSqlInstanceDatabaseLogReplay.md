@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlIn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: 26d2142ddf6604bf8d04f3d4227a1efdacce3970
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 95e51f22e67c53d1efaa7bd8980c76b38899cd96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271629"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563260"
 ---
 # Stop-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
-Membatalkan layanan Pemutaran Ulang Log dengan menjatuhkan database.
+Membatalkan layanan Pemutaran Ulang Log dengan menghilangkan database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlinstancedatabaselogreplay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Stop-AzSqlInstanceDatabaseLogReplay [-Force] [-PassThru] [-InputObject] <AzureSq
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSqlInstanceDatabaseLogReplay** menjatuhkan database dan dengan demikian membatalkan layanan Putar Ulang Log.
+Cmdlet **Stop-AzSqlInstanceDatabaseLogReplay** menghilangkan database dan dengan demikian membatalkan layanan Pemutaran Ulang Log.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Cmdlet **Stop-AzSqlInstanceDatabaseLogReplay** menjatuhkan database dan dengan d
 Stop-AzSqlInstanceDatabaseLogReplay -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "ManagedDatabaseName"
 ```
 
-Perintah ini akan membatalkan layanan pemutaran log pada database tertentu.
+Perintah ini akan membatalkan layanan pemutaran ulang log pada database tertentu.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database instans.
 
 ```yaml
@@ -151,8 +154,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

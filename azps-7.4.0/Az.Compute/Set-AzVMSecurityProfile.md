@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
-ms.openlocfilehash: cec4a77e4977059f1368107862d2d28ca58ea8d7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: befaf82ae633caaf11f5fe619828c2d35e98dc1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289517"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582140"
 ---
 # Set-AzVMSecurityProfile
 
 ## SYNOPSIS
 Mengatur enum SecurityType untuk Virtual Machines.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzVMSecurityProfile [-VM] <PSVirtualMachine> [-SecurityType <SecurityTypes>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmSecurityProfile** mengatur Tipe Keamanan VM
+Cmdlet **Set-AzVmSecurityProfile** mengatur Jenis Keamanan VM
 
 ## EXAMPLES
 
@@ -35,9 +38,9 @@ $VM = Get-AzVM -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM07"
 $VM = Set-AzVmSecurityProfile -VM $VM -SecurityType "TrustedLaunch"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVm**.
+Perintah pertama mendapatkan komputer virtual bernama ContosoVM07 dengan menggunakan **Get-AzVm**.
 Perintah menyimpannya dalam variabel $VM.
-Perintah kedua mengatur enum SecurityType menjadi "TrustedLaunch"
+Perintah kedua mengatur enum SecurityType ke "TrustedLaunch"
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityType
-Enum yang mewakili tipe keamanan (misalnya: Peluncuran Tepercaya)
+Enum yang mewakili jenis keamanan (misalnya: Peluncuran Tepercaya)
 
 ```yaml
 Type: SecurityTypes
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Profil mesin virtual.
+Profil komputer virtual.
 
 ```yaml
 Type: PSVirtualMachine
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

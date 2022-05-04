@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
-ms.openlocfilehash: 94d7348c69747107254dcb4cf453033419fdfa69
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b56833d235313e43a0e9e101b3bc1d10ca13be5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572384"
 ---
 # Update-AzMySqlFlexibleServerConfiguration
 
 ## SYNOPSIS
 Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui konfigurasi MySql menurut nama
+### Contoh 1: Memperbarui konfigurasi MySql berdasarkan nama
 ```powershell
 Update-AzMySqlFlexibleServerConfiguration -Name net_retry_count -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -Value 15
 ```
@@ -48,9 +51,9 @@ Name            Value AllowedValue  Source         DefaultValue
 net_retry_count 15    1-4294967295  user-override  10
 ```
 
-Cmdlet ini memperbarui konfigurasi MySql menurut nama.
+Cmdlet ini memperbarui konfigurasi MySql berdasarkan nama.
 
-### Contoh 2: Perbarui konfigurasi MySql menurut identitas.
+### Contoh 2: Perbarui konfigurasi MySql berdasarkan identitas.
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBForMySql/flexibleServers/mysql-test/configurations/wait_timeout"
 Update-AzMySqlFlexibleServerConfiguration -InputObject $ID -Value 150
@@ -62,12 +65,12 @@ Name         Value AllowedValue Source         DefaultValue
 wait_timeout 150   1-31536000   user-override  28800
 ```
 
-Cmdlet ini memperbarui konfigurasi MySql menurut identitas.
+Cmdlet ini memperbarui konfigurasi MySql berdasarkan identitas.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi server.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -172,9 +175,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber nilai pembaruan.
-Nilai defaultnya adalah user-override
+Nilai defaultnya adalah pengguna-override
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai konfigurasi.
 
 ```yaml
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -276,7 +279,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

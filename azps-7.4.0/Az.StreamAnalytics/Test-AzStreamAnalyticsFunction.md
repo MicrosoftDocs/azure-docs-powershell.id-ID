@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: 820d4774260353f4a50ea9dd7ba8da838daffccb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6082a2365011a33dd40e74006daee26d7ba2238f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559724"
 ---
 # Test-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
-Menguji apakah informasi yang disediakan untuk fungsi valid.
-Hal ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara syntactically benar.
+Menguji apakah informasi yang diberikan untuk fungsi valid.
+Ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara sintaksis benar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/test-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Test-AzStreamAnalyticsFunction -JobName <String> -Name <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Menguji apakah informasi yang disediakan untuk fungsi valid.
-Hal ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara syntactically benar.
+Menguji apakah informasi yang diberikan untuk fungsi valid.
+Ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara sintaksis benar.
 
 ## EXAMPLES
 
-### Contoh 1: Menguji fungsi Stream Analytics
+### Contoh 1: Menguji fungsi Azure Stream Analytics
 ```powershell
 Test-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name mlsfunction-01
 ```
@@ -46,7 +49,7 @@ Perintah ini menguji status koneksi fungsi dalam pekerjaan streaming.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fungsi.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -136,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

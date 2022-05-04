@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
-ms.openlocfilehash: 41cf6fa79356795cb84650a8c5d1872f6c657de0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8903628cdc7937f9304301c7594d423ac521e198
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876348"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573266"
 ---
 # New-AzContainerGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui grup kontainer dengan konfigurasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,9 +57,9 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup kontainer dengan instance container, yang gambarnya adalah nginx terbaru, dan meminta alamat IP publik dengan port pembukaan 8000 dan 8001.
+Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya adalah nginx terbaru, dan meminta alamat IP publik dengan membuka port 8000 dan 8001.
 
-### Contoh 2: Membuat grup kontainer dan menjalankan skrip kustom di dalam wadah.
+### Contoh 2: Membuat grup kontainer dan menjalankan skrip kustom di dalam kontainer.
 ```powershell
 $env1 = New-AzContainerInstanceEnvironmentVariableObject -Name "env1" -Value "value1"
 $env2 = New-AzContainerInstanceEnvironmentVariableObject -Name "env2" -SecureValue (ConvertTo-SecureString -String "value2" -AsPlainText -Force)
@@ -70,7 +73,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup wadah dan menjalankan skrip kustom di dalam wadah.
+Perintah ini membuat grup kontainer dan menjalankan skrip kustom di dalam kontainer.
 
 ### Contoh 3: Membuat grup kontainer run-to-completion
 ```powershell
@@ -84,9 +87,9 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup wadah yang mencetak 'halo' dan berhenti.
+Perintah ini membuat grup kontainer yang mencetak 'halo' dan berhenti.
 
-### Contoh 4: Membuat grup kontainer dengan instance container menggunakan image nginx di Azure Container Registry
+### Contoh 4: Membuat grup kontainer dengan instans kontainer menggunakan image nginx di Azure Container Registry
 ```powershell
 $container = New-AzContainerInstanceObject -Name test-container -Image myacr.azurecr.io/nginx:latest
 $imageRegistryCredential = New-AzContainerGroupImageRegistryCredentialObject -Server "myacr.azurecr.io" -Username "username" -Password (ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force) 
@@ -99,9 +102,9 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup wadah dengan contoh wadah, yang gambarnya nginx dalam Azure Container Registry.
+Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya nginx dalam Azure Container Registry.
 
-### Contoh 5: Membuat grup wadah dengan contoh kontainer menggunakan nginx gambar dalam registri gambar wadah kustom
+### Contoh 5: Membuat grup kontainer dengan instans kontainer menggunakan image nginx di registri gambar kontainer kustom
 ```powershell
 $container = New-AzContainerInstanceObject -Name test-container -Image myserver.com/nginx:latest
 $imageRegistryCredential = New-AzContainerGroupImageRegistryCredentialObject -Server "myserver.com" -Username "username" -Password (ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force) 
@@ -114,7 +117,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup wadah dengan contoh wadah, yang gambarnya adalah gambar kustom dari registri gambar wadah kustom.
+Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya adalah gambar kustom dari registri gambar kontainer kustom.
 
 ### Contoh 6: Membuat grup kontainer yang memasang volume File Azure
 ```powershell
@@ -130,7 +133,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini membuat grup wadah dengan contoh wadah, yang gambarnya adalah gambar kustom dari registri gambar wadah kustom.
+Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya adalah gambar kustom dari registri gambar kontainer kustom.
 
 ### Contoh 7: Membuat grup kontainer dengan sistem yang ditetapkan dan identitas yang ditetapkan pengguna
 ```powershell
@@ -149,7 +152,7 @@ Perintah ini membuat grup kontainer dengan sistem yang ditetapkan dan identitas 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Kontainer dalam grup wadah.
-Untuk membangun, lihat bagian CATATAN untuk properti CONTAINER dan membuat tabel hash.
+Kontainer dalam grup kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti KONTAINER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainer[]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsConfigNameServer
-Server DNS untuk grup wadah.
+Server DNS untuk grup kontainer.
 
 ```yaml
 Type: System.String[]
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsConfigOption
-Opsi DNS untuk grup wadah.
+Opsi DNS untuk grup kontainer.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsConfigSearchDomain
-Domain pencarian DNS untuk pencarian nama host dalam grup wadah.
+Domain pencarian DNS untuk pencarian nama host di grup kontainer.
 
 ```yaml
 Type: System.String
@@ -285,9 +288,9 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang digunakan untuk grup kontainer.
-Tipe 'SystemAssigned, UserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
-Tipe 'Tidak Ada' akan menghapus identitas apa pun dari grup kontainer.
+Jenis identitas yang digunakan untuk grup kontainer.
+Jenis 'SystemAssigned, UserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
+Jenis 'None' akan menghapus identitas apa pun dari grup kontainer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.ResourceIdentityType
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 
 ### -IdentityUserAssignedIdentity
 Daftar identitas pengguna yang terkait dengan grup kontainer.
-Referensi kunci kamus identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+Referensi kunci kamus identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 
 ### -ImageRegistryCredential
 Kredensial registri gambar tempat grup kontainer dibuat.
-Untuk membangun, lihat bagian CATATAN untuk properti IMAGEREGISTRYCREDENTIAL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti IMAGEREGISTRYCREDENTIAL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IImageRegistryCredential[]
@@ -334,8 +337,8 @@ Accept wildcard characters: False
 ```
 
 ### -InitContainer
-Wadah init untuk grup kontainer.
-Untuk membangun, lihat bagian CATATAN untuk properti INITCONTAINER dan membuat tabel hash.
+Kontainer init untuk grup kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti INITCONTAINER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IInitContainerDefinition[]
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressDnsNameLabel
-Label Nama dns untuk IP.
+Label nama dns untuk IP.
 
 ```yaml
 Type: System.String
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressIP
-IP terekspos ke internet publik.
+IP yang terekspos ke internet publik.
 
 ```yaml
 Type: System.String
@@ -380,8 +383,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressPort
-Daftar port yang diekspos pada grup kontainer.
-Untuk membuat, lihat bagian CATATAN untuk properti IPADDRESSPORT dan membuat tabel hash.
+Daftar port yang terekspos di grup kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti IPADDRESSPORT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IPort[]
@@ -396,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressType
-Menentukan apakah IP diekspos ke internet publik atau VNET pribadi.
+Menentukan apakah IP terekspos ke internet publik atau VNET pribadi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.ContainerGroupIPAddressType
@@ -426,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogAnalyticLogType
-Tipe log yang akan digunakan.
+Jenis log yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.LogAnalyticsLogType
@@ -500,8 +503,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama grup wadah.
+### -Name
+Nama grup kontainer.
 
 ```yaml
 Type: System.String
@@ -531,7 +534,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Tipe sistem operasi yang diperlukan oleh wadah dalam grup wadah.
+Jenis sistem operasi yang diperlukan oleh kontainer dalam grup kontainer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.OperatingSystemTypes
@@ -561,8 +564,8 @@ Accept wildcard characters: False
 ```
 
 ### -RestartPolicy
-Mulai ulang kebijakan untuk semua kontainer dalam grup kontainer.
-- `Always` Selalu hidupkan ulang- `OnFailure` Mulai ulang pada kegagalan- `Never` Jangan pernah memulai ulang
+Kebijakan hidupkan ulang untuk semua kontainer dalam grup kontainer.
+- `Always` Selalu hidupkan ulang- `OnFailure` Hidupkan ulang pada kegagalan- `Never` Jangan pernah memulai ulang
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.ContainerGroupRestartPolicy
@@ -577,7 +580,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU untuk grup wadah.
+SKU untuk grup kontainer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.ContainerGroupSku
@@ -592,8 +595,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ID sumber daya subnet untuk grup wadah.
-Untuk membuat, lihat bagian CATATAN untuk properti SUBNETID dan membuat tabel hash.
+ID sumber daya subnet untuk grup kontainer.
+Untuk membuat, lihat bagian NOTES untuk properti SUBNETID dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainerGroupSubnetId[]
@@ -608,8 +611,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -639,8 +642,8 @@ Accept wildcard characters: False
 ```
 
 ### -Volume
-Daftar volume yang dapat dikaitkan oleh kontainer dalam grup kontainer ini.
-Untuk membangun, lihat bagian CATATAN untuk properti VOLUME dan membuat tabel hash.
+Daftar volume yang dapat dipasang oleh kontainer dalam grup kontainer ini.
+Untuk membuat, lihat bagian CATATAN untuk properti VOLUME dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IVolume[]
@@ -655,7 +658,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Zona untuk grup wadah.
+Zona untuk grup kontainer.
 
 ```yaml
 Type: System.String[]
@@ -669,8 +672,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -685,7 +688,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -701,7 +704,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -718,51 +721,51 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTAINER <IContainer[]>: Kontainer dalam grup kontainer.
-  - `Image <String>`: Nama gambar yang digunakan untuk membuat instance container.
-  - `Name <String>`: Nama kontainer yang disediakan pengguna.
-  - `RequestCpu <Double>`: Permintaan CPU dari instance container ini.
+KONTAINER <IContainer[]>: Kontainer dalam grup kontainer.
+  - `Image <String>`: Nama gambar yang digunakan untuk membuat instans kontainer.
+  - `Name <String>`: Nama instans kontainer yang disediakan pengguna.
+  - `RequestCpu <Double>`: Permintaan CPU dari instans kontainer ini.
   - `RequestMemoryInGb <Double>`: Permintaan memori dalam GB instans kontainer ini.
-  - `[Command <String[]>]`: Perintah untuk dijalankan dalam instance container dalam formulir exec.
-  - `[EnvironmentVariable <IEnvironmentVariable[]>]`: Variabel lingkungan yang diatur dalam instance kontainer.
+  - `[Command <String[]>]`: Perintah untuk dijalankan dalam instans kontainer dalam bentuk exec.
+  - `[EnvironmentVariable <IEnvironmentVariable[]>]`: Variabel lingkungan yang akan diatur dalam instans kontainer.
     - `Name <String>`: Nama variabel lingkungan.
     - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
     - `[Value <String>]`: Nilai variabel lingkungan.
-  - `[LimitCpu <Double?>]`: Batas CPU dari instans kontainer ini.
+  - `[LimitCpu <Double?>]`: Batas CPU instans kontainer ini.
   - `[LimitMemoryInGb <Double?>]`: Batas memori dalam GB instans kontainer ini.
-  - `[LimitsGpuCount <Int32?>]`: Hitungan sumber daya GPU.
+  - `[LimitsGpuCount <Int32?>]`: Jumlah sumber daya GPU.
   - `[LimitsGpuSku <GpuSku?>]`: SKU sumber daya GPU.
-  - `[LivenessProbeExecCommand <String[]>]`: Perintah untuk dijalankan dalam wadah.
-  - `[LivenessProbeFailureThreshold <Int32?>]`: Ambang batas kegagalan.
+  - `[LivenessProbeExecCommand <String[]>]`: Perintah untuk dijalankan dalam kontainer.
+  - `[LivenessProbeFailureThreshold <Int32?>]`: Ambang kegagalan.
   - `[LivenessProbeHttpGetHttpHeader <IHttpHeader[]>]`: Header HTTP.
     - `[Name <String>]`: Nama header.
     - `[Value <String>]`: Nilai header.
   - `[LivenessProbeHttpGetPath <String>]`: Jalur menuju probe.
-  - `[LivenessProbeHttpGetPort <Int32?>]`: Nomor port untuk diprobes.
+  - `[LivenessProbeHttpGetPort <Int32?>]`: Nomor port untuk pemeriksaan.
   - `[LivenessProbeHttpGetScheme <Scheme?>]`: Skemanya.
   - `[LivenessProbeInitialDelaySecond <Int32?>]`: Detik penundaan awal.
   - `[LivenessProbePeriodSecond <Int32?>]`: Detik periode.
   - `[LivenessProbeSuccessThreshold <Int32?>]`: Ambang keberhasilan.
-  - `[LivenessProbeTimeoutSecond <Int32?>]`: Waktu habis detik.
-  - `[Port <IContainerPort[]>]`: Port yang terbuka pada instance container.
-    - `Port <Int32>`: Nomor port yang diekspos dalam grup kontainer.
+  - `[LivenessProbeTimeoutSecond <Int32?>]`: Detik waktu habis.
+  - `[Port <IContainerPort[]>]`: Port yang diekspos pada instans kontainer.
+    - `Port <Int32>`: Nomor port yang terekspos dalam grup kontainer.
     - `[Protocol <ContainerNetworkProtocol?>]`: Protokol yang terkait dengan port.
-  - `[ReadinessProbeExecCommand <String[]>]`: Perintah untuk dijalankan dalam wadah.
-  - `[ReadinessProbeFailureThreshold <Int32?>]`: Ambang batas kegagalan.
+  - `[ReadinessProbeExecCommand <String[]>]`: Perintah untuk dijalankan dalam kontainer.
+  - `[ReadinessProbeFailureThreshold <Int32?>]`: Ambang kegagalan.
   - `[ReadinessProbeHttpGetHttpHeader <IHttpHeader[]>]`: Header HTTP.
   - `[ReadinessProbeHttpGetPath <String>]`: Jalur menuju probe.
-  - `[ReadinessProbeHttpGetPort <Int32?>]`: Nomor port untuk diprobes.
+  - `[ReadinessProbeHttpGetPort <Int32?>]`: Nomor port untuk pemeriksaan.
   - `[ReadinessProbeHttpGetScheme <Scheme?>]`: Skemanya.
   - `[ReadinessProbeInitialDelaySecond <Int32?>]`: Detik penundaan awal.
   - `[ReadinessProbePeriodSecond <Int32?>]`: Detik periode.
   - `[ReadinessProbeSuccessThreshold <Int32?>]`: Ambang keberhasilan.
-  - `[ReadinessProbeTimeoutSecond <Int32?>]`: Waktu habis detik.
-  - `[RequestsGpuCount <Int32?>]`: Hitungan sumber daya GPU.
+  - `[ReadinessProbeTimeoutSecond <Int32?>]`: Detik waktu habis.
+  - `[RequestsGpuCount <Int32?>]`: Jumlah sumber daya GPU.
   - `[RequestsGpuSku <GpuSku?>]`: SKU sumber daya GPU.
-  - `[VolumeMount <IVolumeMount[]>]`: Volume terpasang yang tersedia untuk instance container.
-    - `MountPath <String>`: Jalur dalam wadah tempat volume harus dipasang. Tidak boleh mengandung titik dua (:).
-    - `Name <String>`: Nama dudukan volume.
-    - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah dudukan volume bersifat baca-saja.
+  - `[VolumeMount <IVolumeMount[]>]`: Pemasangan volume tersedia untuk instans kontainer.
+    - `MountPath <String>`: Jalur dalam kontainer tempat volume harus dipasang. Tidak boleh ada titik dua (:).
+    - `Name <String>`: Nama pemasangan volume.
+    - `[ReadOnly <Boolean?>]`: Bendera yang menunjukkan apakah pemasangan volume bersifat baca-saja.
 
 IMAGEREGISTRYCREDENTIAL <IImageRegistryCredential[]>: Kredensial registri gambar tempat grup kontainer dibuat.
   - `Server <String>`: Server registri gambar Docker tanpa protokol seperti "http" dan "https".
@@ -771,37 +774,37 @@ IMAGEREGISTRYCREDENTIAL <IImageRegistryCredential[]>: Kredensial registri gambar
   - `[IdentityUrl <String>]`: URL identitas untuk registri privat.
   - `[Password <String>]`: Kata sandi untuk registri privat.
 
-INITCONTAINER <IInitContainerDefinition[]>: Wadah init untuk grup kontainer.
-  - `Name <String>`: Nama untuk wadah init.
-  - `[Command <String[]>]`: Perintah untuk menjalankan dalam wadah init dalam formulir exec.
-  - `[EnvironmentVariable <IEnvironmentVariable[]>]`: Variabel lingkungan yang diatur dalam wadah init.
+INITCONTAINER <IInitContainerDefinition[]>: Kontainer init untuk grup kontainer.
+  - `Name <String>`: Nama untuk kontainer init.
+  - `[Command <String[]>]`: Perintah untuk menjalankan dalam kontainer init dalam bentuk exec.
+  - `[EnvironmentVariable <IEnvironmentVariable[]>]`: Variabel lingkungan yang akan diatur dalam kontainer init.
     - `Name <String>`: Nama variabel lingkungan.
     - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
     - `[Value <String>]`: Nilai variabel lingkungan.
-  - `[Image <String>]`: Gambar wadah init.
-  - `[VolumeMount <IVolumeMount[]>]`: Dudukan volume yang tersedia untuk wadah init.
-    - `MountPath <String>`: Jalur dalam wadah tempat volume harus dipasang. Tidak boleh mengandung titik dua (:).
-    - `Name <String>`: Nama dudukan volume.
-    - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah dudukan volume bersifat baca-saja.
+  - `[Image <String>]`: Gambar kontainer init.
+  - `[VolumeMount <IVolumeMount[]>]`: Pemasangan volume tersedia untuk kontainer init.
+    - `MountPath <String>`: Jalur dalam kontainer tempat volume harus dipasang. Tidak boleh ada titik dua (:).
+    - `Name <String>`: Nama pemasangan volume.
+    - `[ReadOnly <Boolean?>]`: Bendera yang menunjukkan apakah pemasangan volume bersifat baca-saja.
 
-IPADDRESSPORT <IPort[]>: Daftar port yang diekspos pada grup kontainer.
+IPADDRESSPORT <IPort[]>: Daftar port yang terekspos pada grup kontainer.
   - `Port1 <Int32>`: Nomor port.
   - `[Protocol <ContainerGroupNetworkProtocol?>]`: Protokol yang terkait dengan port.
 
 SUBNETID <IContainerGroupSubnetId[]>: ID sumber daya subnet untuk grup kontainer.
   - `Id <String>`: ID sumber daya jaringan virtual dan subnet.
-  - `[Name <String>]`: Nama yang mudah dikenali untuk subnet.
+  - `[Name <String>]`: Nama yang mudah diingat untuk subnet.
 
 VOLUME <IVolume[]>: Daftar volume yang dapat dipasang oleh kontainer dalam grup kontainer ini.
   - `Name <String>`: Nama volume.
   - `[AzureFileReadOnly <Boolean?>]`: Bendera yang menunjukkan apakah File Azure yang dibagikan dipasang sebagai volume bersifat baca-saja.
-  - `[AzureFileShareName <String>]`: Nama berbagi File Azure yang akan dikaitkan sebagai volume.
+  - `[AzureFileShareName <String>]`: Nama berbagi File Azure yang akan dipasang sebagai volume.
   - `[AzureFileStorageAccountKey <String>]`: Kunci akses akun penyimpanan yang digunakan untuk mengakses berbagi File Azure.
   - `[AzureFileStorageAccountName <String>]`: Nama akun penyimpanan yang berisi berbagi File Azure.
   - `[EmptyDir <IAny>]`: Volume direktori kosong.
-  - `[GitRepoDirectory <String>]`: Nama direktori target. Tidak boleh memuat atau memulai dengan '..'.  Jika '.' disertakan, direktori volume akan menjadi repository git.  Jika tidak, jika ditentukan, volume akan berisi repository git dalam subdirektori dengan nama tertentu.
-  - `[GitRepoRepository <String>]`: URL Repository
-  - `[GitRepoRevision <String>]`: Melakukan hash untuk revisi yang ditentukan.
+  - `[GitRepoDirectory <String>]`: Nama direktori target. Tidak boleh berisi atau dimulai dengan '..'.  Jika '.' disediakan, direktori volume akan menjadi repositori git.  Jika tidak, jika ditentukan, volume akan berisi repositori git di subdirektori dengan nama yang diberikan.
+  - `[GitRepoRepository <String>]`: URL Repositori
+  - `[GitRepoRevision <String>]`: Terapkan hash untuk revisi yang ditentukan.
   - `[Secret <ISecretVolume>]`: Volume rahasia.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 

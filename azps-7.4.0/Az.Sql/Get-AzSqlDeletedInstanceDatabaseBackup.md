@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
-ms.openlocfilehash: 71f08d99848a347129bd88915c7dfc5f08969874
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 676627cbd5be7f7194518ae212886406de5da5d5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563242"
 ---
 # Get-AzSqlDeletedInstanceDatabaseBackup
 
 ## SYNOPSIS
-Mendapatkan database yang dihapus yang bisa Anda pulihkan.
+Mendapatkan database terhapus yang bisa Anda pulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldeletedinstancedatabasebackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzSqlDeletedInstanceDatabaseBackup [-ResourceGroupName] <String> [-InstanceN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDeletedInstanceDatabaseBackup** mendapatkan cadangan database instans SQL yang dihapus yang ditentukan yang dapat Anda pulihkan, atau semua cadangan yang dihapus yang dapat Anda pulihkan.
+Cmdlet **Get-AzSqlDeletedInstanceDatabaseBackup** mendapatkan cadangan database SQL Instance tertentu yang dapat Anda pulihkan, atau semua cadangan yang dihapus yang dapat Anda pulihkan.
 Cmdlet ini juga didukung oleh layanan SQL Instance Stretch Database di Azure.
 
 ## EXAMPLES
@@ -77,7 +80,7 @@ Id                   : /subscriptions/00000000-0000-0000-0000-000000000000/resou
 
 Perintah ini mendapatkan semua cadangan database yang dihapus di server.
 
-### Contoh 2: Dapatkan cadangan database yang dihapus tertentu
+### Contoh 2: Mendapatkan cadangan database yang dihapus yang ditentukan
 ```powershell
 Get-AzSqlDeletedInstanceDatabaseBackup -ResourceGroupName "ContosoResourceGroup" -InstanceName "ContosoServer" -DatabaseName "DB1"
 ```
@@ -148,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PenghapusanDate
+### -DeletionDate
 Tanggal penghapusan Database Instans Azure SQL untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
@@ -194,11 +197,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

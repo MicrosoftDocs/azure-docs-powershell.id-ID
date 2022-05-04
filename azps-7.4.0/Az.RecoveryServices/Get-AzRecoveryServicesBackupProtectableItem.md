@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
-ms.openlocfilehash: afa4b733a839a17dedd7fb24b9af481777f12b95
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f54d9581a17a3cc0efa8f846b4038efd992812b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740448"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563368"
 ---
 # Get-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
-Perintah ini akan mengambil semua item yang dapat dilindungi dalam wadah tertentu atau di seluruh kontainer terdaftar. Ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atasnya seperti Instance, AvailabilityGroup dll.
+Perintah ini akan mengambil semua item yang dapat dilindungi dalam kontainer tertentu atau di semua kontainer terdaftar. Ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atasnya seperti Instans, AvailabilityGroup, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Get-AzRecoveryServicesBackupProtectableItem [-ParentID] <String> [[-ItemType] <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupProtectableItem** mendapatkan daftar item yang dapat dilindungi dalam wadah dan status proteksi item.
-Wadah yang terdaftar pada kubah Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat dilindungi.
+Cmdlet **Get-AzRecoveryServicesBackupProtectableItem** mendapatkan daftar item yang dapat dilindungi dalam kontainer dan status perlindungan item.
+Kontainer yang terdaftar ke vault Azure Recovery Services dapat memiliki satu atau beberapa item yang dapat dilindungi.
 
 ## EXAMPLES
 
@@ -52,13 +55,13 @@ $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVMAppCont
 $Item = Get-AzRecoveryServicesBackupProtectableItem -Container $Container -ItemType "SQLInstance" -WorkloadType "MSSQL" -VaultId $Vault.ID
 ```
 
-Perintah pertama mendapatkan wadah tipe MSSQL, lalu menyimpannya dalam variabel $Container.
-Perintah kedua mendapatkan item Cadangan yang dapat dilindungi di $Container, lalu menyimpannya dalam variabel $Item.
+Perintah pertama mendapatkan kontainer jenis MSSQL, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item cadangan yang dapat dilindungi di $Container, lalu menyimpannya dalam variabel $Item.
 
 ## PARAMETERS
 
 ### -Kontainer
-Wadah tempat item berada
+Kontainer tempat item berada
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe item yang dapat diproteksi. Nilai yang berlaku: (SQLDataBase, SQLInstance, SQLAvailabilityGroup).
+Menentukan tipe item yang dapat dilindungi. Nilai yang berlaku: (SQLDataBase, SQLInstance, SQLAvailabilityGroup).
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemType
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Database, Instance, atau AvailabilityGroup.
+### -Name
+Menentukan nama Database, Instans, atau AvailabilityGroup.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkloadType
-Tipe beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
+Jenis beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

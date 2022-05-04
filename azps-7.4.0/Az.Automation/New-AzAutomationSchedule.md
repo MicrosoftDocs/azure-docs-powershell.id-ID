@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSchedule.md
-ms.openlocfilehash: 9aef49607cb2da70acbcc81096b0634988424fd4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b56a3b717009d664120940694a55207c35b73d4f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571646"
 ---
 # New-AzAutomationSchedule
 
 ## SYNOPSIS
-Membuat jadwal Otomatisasi.
+Membuat jadwal Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzAutomationSchedule [-Name] <String> [-StartTime] <DateTimeOffset> [-Descri
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ByMonthlyDayOfWeek
+### OlehMonthlyDayOfWeek
 ```
 New-AzAutomationSchedule [-Name] <String> [-StartTime] <DateTimeOffset> [-Description <String>]
  [-DayOfWeek <DayOfWeek>] [-DayOfWeekOccurrence <DayOfWeekOccurrence>] [-ExpiryTime <DateTimeOffset>]
@@ -72,14 +75,14 @@ Cmdlet **New-AzAutomationSchedule** membuat jadwal dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat jadwal satu kali dalam waktu lokal
+### Contoh 1: Membuat jadwal satu kali di waktu setempat
 ```
 PS C:\> $TimeZone = ([System.TimeZoneInfo]::Local).Id
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -StartTime "23:00" -OneTime -ResourceGroupName "ResourceGroup01" -TimeZone $TimeZone
 ```
 
 Perintah pertama mendapatkan ID zona waktu dari sistem dan menyimpannya dalam variabel $TimeZone.
-Perintah kedua membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00 dalam zona waktu yang ditentukan.
+Perintah kedua membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00 di zona waktu yang ditentukan.
 
 ### Contoh 2: Membuat jadwal satu kali di zona waktu lain
 ```
@@ -87,8 +90,8 @@ PS C:\> $TimeZone = "Europe/Paris"
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -StartTime "23:00Z" -OneTime -ResourceGroupName "ResourceGroup01" -TimeZone $TimeZone
 ```
 
-Perintah pertama menginisialisasi variabel $TimeZone dengan nilai `Europe/Paris` Perintah kedua membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00 UTC dalam zona waktu yang ditentukan.
-> Catatan: Jadwalkan *StartTime* dihitung dengan menambahkan *TimeZone* Offset ke *StartTime* yang disediakan
+Perintah pertama menginisialisasi variabel $TimeZone dengan nilai `Europe/Paris` Perintah kedua membuat jadwal yang berjalan satu kali pada tanggal saat ini pada pukul 23.00 UTC di zona waktu yang ditentukan.
+> Catatan: Jadwal *StartTime* dihitung dengan menambahkan *TimeZone* Offset ke *StartTime* yang disediakan
 
 ### Contoh 3: Membuat jadwal berulang
 ```
@@ -97,11 +100,11 @@ PS C:\> $EndTime = $StartTime.AddYears(1)
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule02" -StartTime $StartTime -ExpiryTime $EndTime -DayInterval 1 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
+Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
 Tentukan waktu yang setidaknya lima menit di masa mendatang.
-Perintah kedua membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $EndDate.
+Perintah kedua membuat objek tanggal dengan menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $EndDate.
 Perintah menentukan waktu yang akan datang.
-Perintah terakhir membuat jadwal harian bernama Schedule02 untuk dimulai pada waktu yang disimpan di $StartDate dan kedaluwarsa pada waktu yang disimpan di $EndDate.
+Perintah akhir membuat jadwal harian bernama Schedule02 untuk memulai pada waktu yang disimpan di $StartDate dan kedaluwarsa pada saat disimpan di $EndDate.
 
 ### Contoh 4: Membuat jadwal berulang mingguan
 ```
@@ -110,14 +113,14 @@ PS C:\> [System.DayOfWeek[]]$WeekDays = @([System.DayOfWeek]::Monday..[System.Da
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule03" -StartTime $StartTime -WeekInterval 1 -DaysOfWeek $WeekDays -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
+Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam variabel $StartDate.
 Perintah kedua membuat array hari minggu yang berisi Senin, Selasa, Rabu, Kamis, dan Jumat.
-Perintah terakhir membuat jadwal harian bernama Schedule03 yang akan dijalankan senin hingga Jumat setiap minggu pada pukul 13.00. Jadwal tidak akan pernah kedaluwarsa.
+Perintah akhir membuat jadwal harian bernama Schedule03 yang akan berjalan Senin hingga Jumat setiap minggu pukul 13.00. Jadwal tidak akan pernah kedaluwarsa.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini membuat jadwal.
+Menentukan nama akun Automation yang cmdlet ini membuat jadwal.
 
 ```yaml
 Type: System.String
@@ -172,10 +175,10 @@ psdx_paramvalues
 - 4
 - -1
 - Pertama
-- Kedua
+- Detik
 - Ketiga
 - Keempat
-- Hari Terakhir
+- LastDay
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Cmdlet.DayOfWeekOccurrence
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 
 ### -ExpiryTime
 Menentukan waktu kedaluwarsa jadwal sebagai objek **DateTimeOffset** .
-Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string yang dapat dikonversi ke **DateTimeOffset** yang valid.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -313,7 +316,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk jadwal.
 
 ```yaml
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini membuat jadwal.
+Menentukan nama grup sumber daya yang cmdlet ini membuat jadwal.
 
 ```yaml
 Type: System.String
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 Menentukan waktu mulai jadwal sebagai objek **DateTimeOffset** .
-Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string yang dapat dikonversi ke **DateTimeOffset** yang valid.
 Jika *Zona Waktu* disediakan, *StartTime* dihitung dengan menambahkan Offset *Zona Waktu* Input.
 
 ```yaml
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

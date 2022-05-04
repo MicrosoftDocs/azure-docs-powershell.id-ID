@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
-ms.openlocfilehash: 2b0da2897e6bc31e7b86fecb0ff6a7fa3b669281
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c68dfa0c113e34f72a8eb6f1687edcacebf7ab32
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800640"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576974"
 ---
 # New-AzServiceBusKey
 
 ## SYNOPSIS
 Meregenerasi string koneksi primer atau sekunder untuk namespace layanan atau antrean atau topik Bus Layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementKeyVaultObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementKeyVaultObject.md
-ms.openlocfilehash: 1a71360c811f617b3cee5aed5125744acf3553d2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbf080fdc62fce460340c786b4eb99b335b66992
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129861"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570278"
 ---
 # New-AzApiManagementKeyVaultObject
 
 ## SYNOPSIS
-Membuat contoh PsApiManagementKeyVaultObject.
+Membuat instans PsApiManagementKeyVaultObject.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementkeyvaultobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzApiManagementKeyVaultObject -SecretIdentifier <String> [-IdentityClientId 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementKeyVaultObject** membuat contoh PsApiManagementKeyVaultObjecte.
+Cmdlet **New-AzApiManagementKeyVaultObject** membuat instans PsApiManagementKeyVaultObjecte.
 
 ## EXAMPLES
 
-### Contoh 1 : Membuat keyVault Bernamavalue
+### Contoh 1 : Membuat keyVault Namedvalue
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 $keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -37,9 +40,9 @@ $keyVaultNamedValue = New-AzApiManagementNamedValue -Context $context -NamedValu
 ```
 
 Perintah pertama membuat keyvault.
-Perintah kedua membuat nilai bernama menggunakan secret dari keyvault ini.
+Perintah kedua membuat nilai bernama menggunakan rahasia dari keyvault ini.
 
-### Contoh 2 : Membuat sertifikat keyVault
+### Contoh 2 : Membuat Sertifikat keyVault
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 $keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -67,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityClientId
-Id Klien Identitas identitas identitas terkelola yang ditetapkan pengguna.
-Akan ditetapkan sistem default jika dibiarkan kosong.
+Id Klien Identitas dari Identitas Terkelola yang ditetapkan pengguna.
+Akan ditetapkan sistem default jika dikosongkan.
 
 ```yaml
 Type: System.String
@@ -98,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

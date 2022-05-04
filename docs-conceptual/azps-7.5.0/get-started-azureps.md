@@ -1,17 +1,17 @@
 ---
 description: Mulai menggunakan Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: get-started-article
 title: Mulai menggunakan Azure PowerShell
-ms.openlocfilehash: 8b93200ef32b9e70a4fd52ce1dc0f00b8be1fd29
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9aa9af6d709b10114f5ed00279f92a19fcad9d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294283"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568316"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 

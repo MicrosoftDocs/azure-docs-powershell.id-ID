@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
-ms.openlocfilehash: cf281f5e1b348129d63dbe5c40cef3f02a8261a4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f6e1a0b7768ab4a213e436df7caec4e89e344c8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872496"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571160"
 ---
 # Update-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Memperbarui volume Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ ProvisioningState : Succeeded
 SubnetId          : /subscriptions/subsId/resourceGroups/MyRG/providers/Microsoft.Network/virtualNetworks/MyRG-vnet/subnets/default
 ```
 
-Perintah ini memperbarui volume ANF "MyAnfVolume" dengan ukuran UsageThreshold yang baru.
+Perintah ini memperbarui volume ANF "MyAnfVolume" dengan ukuran UsageThreshold baru.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cadangan
+### -Pencadangan
 Array hashtable yang mewakili objek cadangan
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultGroupQuotaInKiB
-Kuota grup default untuk volume dalam KiB. JikaDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
+Kuota grup default untuk volume dalam KiB. Jika isDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultUserQuotaInKiB
-Kuota pengguna default untuk volume dalam KiB. JikaDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
+Kuota pengguna default untuk volume dalam KiB. Jika isDefaultQuotaEnabled diatur, nilai minimum 4 KiB berlaku.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume untuk diperbarui
+Objek volume yang akan diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -221,7 +224,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama volume ANF
 
 ```yaml
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool yang berisi volume untuk diperbarui
+Objek kumpulan yang berisi volume yang akan diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotPolicyId
-Snapshot Policy ResourceId digunakan untuk menerapkan kebijakan snapshot ke volume
+ResourceId Kebijakan Rekam Jepret yang digunakan untuk menerapkan kebijakan rekam jepret ke volume
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya
+Hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThroughputMibps
-Throughput maksimum dalam Mibps yang dapat dicapai dengan volume ini
+Throughput maksimum dalam Mibps yang dapat dicapai oleh volume ini
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsageThreshold
-Kuota penyimpanan maksimum yang diperbolehkan untuk sistem file dalam byte
+Kuota penyimpanan maksimum yang diizinkan untuk sistem file dalam byte
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -371,8 +374,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -387,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

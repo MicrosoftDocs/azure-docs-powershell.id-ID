@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxSyslogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxSyslogCollection.md
-ms.openlocfilehash: 73d6d4750bbcd6c39d038a0605ec310941c85f6f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70805e1bb893290eeadde021dfad9ab4a8dd1d0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312363"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580502"
 ---
 # Disable-AzOperationalInsightsLinuxSyslogCollection
 
 ## SYNOPSIS
 Menghentikan pengumpulan data syslog dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightslinuxsyslogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Disable-AzOperationalInsightsLinuxSyslogCollection [-Workspace] <PSWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzOperationalInsightsLinuxSyslogCollection** menghentikan pengumpulan data syslog dari komputer Linux yang terhubung dalam ruang kerja.
+Cmdlet **Disable-AzOperationalInsightsLinuxSyslogCollection** menghentikan pengumpulan data syslog dari komputer Linux yang terhubung di ruang kerja.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ ResourceId        : /subscriptions/xxxx-xxxx-xxxx-xxxx-xxxx/resourceGroups/test-
 Kind              : LinuxSyslogCollection
 Properties        : {"state":"Disabled"} 
 ```
-Menghentikan pengumpulan data syslog dari komputer Linux yang terhubung dalam ruang kerja.
+Menghentikan pengumpulan data syslog dari komputer Linux yang terhubung di ruang kerja.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

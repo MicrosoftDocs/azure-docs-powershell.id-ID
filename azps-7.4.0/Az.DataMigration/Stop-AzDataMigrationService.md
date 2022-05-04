@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
-ms.openlocfilehash: e511906f589a882981930ab09548de2f2b36c52b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6720819bae6084b63c37ab918c4f2fe71ba372a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874098"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564070"
 ---
 # Stop-AzDataMigrationService
 
 ## SYNOPSIS
-Menghentikan contoh Azure Database Migration Service yang berada dalam status berjalan.
+Menghentikan instans Azure Database Migration Service yang dalam keadaan berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzDataMigrationService menghentikan contoh Azure Database Migration Service yang sedang berjalan.
+Cmdlet Stop-AzDataMigrationService menghentikan instans Azure Database Migration Service yang dalam keadaan berjalan.
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Cmdlet Stop-AzDataMigrationService menghentikan contoh Azure Database Migration 
 Stop-AzDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService
 ```
 
-Contoh di atas menghentikan contoh Azure Database Migration Service yang disebut TestService berdasarkan nama layanan yang dikirim sebagai parameter input
+Contoh di atas menghentikan instans Azure Database Migration Service yang disebut TestService berdasarkan nama layanan yang diteruskan sebagai parameter input
 
 ### Contoh 2
 ```powershell
 Stop-AzDataMigrationService -InputObject $TestService
 ```
 
-Contoh di atas menghentikan contoh Azure Database Migration Service berdasarkan objek PSDataMigrationService yang dikirim sebagai parameter input.
+Contoh di atas menghentikan instans Azure Database Migration Service berdasarkan objek PSDataMigrationService yang diteruskan sebagai parameter input.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataMigrationService Object.
+Objek PSDataMigrationService.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -88,7 +91,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama Database Migration Service.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

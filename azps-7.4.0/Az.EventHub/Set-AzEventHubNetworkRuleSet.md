@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNetworkRuleSet.md
-ms.openlocfilehash: 2811a884ac152fbc04795e2fb828cf310fe86212
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 78ef259207ce5514d2bb5b076ac9c28adf452720
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941149"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571322"
 ---
 # Set-AzEventHubNetworkRuleSet
 
 ## SYNOPSIS
-Perbarui NetworkruleSet namespace yang diberikan dalam langganan Azure saat ini.
+Perbarui NetworkruleSet dari Namespace yang diberikan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzEventHubNetworkRuleSet [-ResourceGroupName] <String> [-Name] <String> [-Re
 ```
 
 ## DESCRIPTION
-Perbarui NetworkruleSet namespace yang diberikan dalam langganan Azure saat ini.
+Perbarui NetworkruleSet dari Namespace yang diberikan di langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Type                : Microsoft.EventHub/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan parameter -IPRule dan -VirtualNetworkRule
+Perbarui Parameter NetworkRuleSet menggunakan parameter -IPRule dan -VirtualNetworkRule
 
 ### Contoh 2
 ```powershell
@@ -92,7 +95,7 @@ Type                : Microsoft.EventHub/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan -ResourceId ruang nama lainnya.
+Perbarui NetworkRuleSet menggunakan -ResourceId dari namespace layanan lain.
 
 ## PARAMETERS
 
@@ -156,8 +159,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama EventHub.
+### -Name
+Nama Namespace Layanan EventHub.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya ruang nama
+ID Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -231,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

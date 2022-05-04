@@ -5,19 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
-ms.openlocfilehash: 694dccbf1889284ebc9964f47391311ba77981ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 879e50bf70c952d27c4ad65fd42a74ed48e92540
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309429"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580214"
 ---
 # Set-AzRoleAssignment
 
 ## SYNOPSIS
-Perbarui Tugas Peran yang sudah ada.
+Perbarui Penetapan Peran yang sudah ada.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /users/{id}
 - GET /servicePrincipals/{id}
@@ -25,7 +25,10 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
 
-Harap perhatikan bahwa cmdlet ini akan ditandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini memiliki hak istimewa yang tidak cukup untuk mendapatkan tipe objek.
+Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,10 +45,10 @@ Set-AzRoleAssignment -InputFile <String> [-PassThru] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Gunakan perintah New-AzRoleAssignment untuk mengubah tugas yang sudah ada.  
-Deskripsi bisa berupa string apa pun yang valid, gunakan itu untuk mendiferensiasi satu sama lain.  
-jika Kondisi diatur Versi Kondisi harus diatur juga tetapi jika Anda memperbarui Kondisi yang tidak diperlukan.
-Versi Kondisi dapat dimutakhirkan dari 1.0 ke 2.0 tetapi tidak dapat diturunkan kembali. Berhati-hatilah karena 2.0 tidak dapat diingat dengan 1.0.
+Gunakan perintah New-AzRoleAssignment untuk mengubah penugasan yang ada.  
+Deskripsi dapat berupa string yang valid, menggunakannya untuk mendiferensiasi satu sama lain.  
+jika Kondisi diatur Versi Kondisi juga harus diatur tetapi jika Anda memperbarui Kondisi yang tidak diperlukan.
+Versi Kondisi dapat ditingkatkan dari 1.0 ke 2.0 tetapi tidak dapat diturunkan kembali. Berhati-hatilah karena 2.0 tidak dapat ditolak dengan 1.0.
 
 ## EXAMPLES
 
@@ -80,7 +83,7 @@ RoleAssignmentId   : /providers/Microsoft.Management/managementGroups/1273adef-0
   Condition          : @Resource[Microsoft.Storage/storageAccounts/blobServices/containers/blobs:Path] StringEqualsIgnoreCase 'foo_storage_container'
 ```
 
-Memperbarui penetapan peran yang sudah ada dengan mengubah objek
+Memperbarui penetapan peran yang sudah ada dengan memodifikasi objek
 
 ### Contoh 2
 ```powershell
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: c9540aba45c461a163ebb4b1d2a134468f760888
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 954e38da467b765b9634a3eb42c294194fd3ac8d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800820"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572042"
 ---
 # Get-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Mendapatkan deskripsi aturan otorisasi tertentu untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR). 
+Mendapatkan deskripsi aturan otorisasi yang ditentukan untuk Namespace layanan atau Antrean atau Topik atau Alias tertentu (Konfigurasi GeoDR). 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,13 +28,13 @@ Get-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### AntreanAuthorizationRuleSet
+### QueueAuthorizationRuleSet
 ```
 Get-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String>
  [[-Name] <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopikAuthorizationRuleSet
+### TopicAuthorizationRuleSet
 ```
 Get-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String>
  [[-Name] <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -44,7 +47,7 @@ Get-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusAuthorizationRule** mendapatkan deskripsi aturan otorisasi tertentu dalam Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) tertentu.
+Cmdlet **Get-AzServiceBusAuthorizationRule** mendapatkan deskripsi aturan otorisasi yang ditentukan di Namespace layanan atau Antrean atau Topik atau Alias yang diberikan (Konfigurasi GeoDR).
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Get-AzServiceBusAuthorizationRule** mendapatkan deskripsi aturan otoris
 Get-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk ruang nama tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk namespace layanan tertentu.
 
 ### Contoh 2
 ```powershell
@@ -67,19 +70,19 @@ Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk antrean tertentu.
 Get-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk topik tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk topik tertentu.
 
 ### Contoh 4
 ```powershell
 Get-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -AliasName SBAlias -Name AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk ruang nama dan alias tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk namespace layanan dan alias tertentu.
 
 ## PARAMETERS
 
 ### -AliasName
-Nama konfigurasi GeoDR
+Nama Konfigurasi GeoDR
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

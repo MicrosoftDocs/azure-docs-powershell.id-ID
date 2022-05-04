@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpConfig.md
-ms.openlocfilehash: a4ec0ea984ad7264cf2242fb6c0250b82791046c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 06d9859d75f06c4e866ebd3864e1e80eec55a06c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289917"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561370"
 ---
 # New-AzVmssIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP untuk antarmuka jaringan VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,8 +34,8 @@ New-AzVmssIpConfig [[-Name] <String>] [[-Id] <String>] [[-SubnetId] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVmsIpConfig** membuat objek konfigurasi IP untuk antarmuka jaringan Kumpulan Skala Mesin Virtual (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *KONFIGURASI IP* cmdlet Add-AzVmssNetworkInterfaceConfiguration.
+Cmdlet **New-AzVmssIpConfig** membuat objek konfigurasi IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPConfiguration* dari cmdlet Add-AzVmssNetworkInterfaceConfiguration.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ $IPConfiguration = New-AzVmssIPConfig -Name "ContosoVmssInterface02" -SubnetId $
 ```
 
 Perintah ini membuat objek konfigurasi IP bernama ContosoVmssInterface02.
-Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
+Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan dalam $SubnetId.
 Perintah menyimpan pengaturan konfigurasi dalam variabel $IPConfiguration untuk digunakan nanti dengan **Add-AzVmssNetworkInterfaceConfiguration**.
 
 ### Contoh 2: Membuat objek konfigurasi IP yang menyertakan pengaturan kumpulan NAT
@@ -51,16 +54,16 @@ $IPConfiguration = New-AzVmssIPConfig -Name "ContosoVmssInterface03" -LoadBalanc
 ```
 
 Perintah ini membuat objek konfigurasi IP bernama ContosoVmssInterface03, lalu menyimpannya dalam variabel $IPConfiguration untuk digunakan nanti.
-Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
+Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan dalam $SubnetId.
 Perintah menyimpan pengaturan konfigurasi dalam variabel $IPConfiguration untuk digunakan nanti.
 Perintah menentukan nilai untuk parameter *LoadBalancerInboundNatPoolsId* dan *LoadBalancerBackendAddressPoolsId* .
 
 ## PARAMETERS
 
 ### -ApplicationGatewayBackendAddressPoolsId
-Menentukan array referensi ke kumpulan alamat backend dari load balancer.
-Kumpulan skala dapat mereferensikan kumpulan alamat backend dari satu publik dan satu penyeimbang muatan internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
+Menentukan array referensi ke kumpulan alamat backend load balancer.
+Set skala dapat mereferensikan kumpulan alamat backend dari satu penyeimbang beban publik dan satu internal.
+Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml
 Type: System.String[]
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ### -DnsSetting
 Pengaturan dns yang akan diterapkan pada alamat publicIP.
 Label nama domain pengaturan Dns yang akan diterapkan pada alamat publicIP.
-Penggambatan label nama domain dan indeks vm akan menjadi label nama domain sumber daya Alamat IP Publik yang akan dibuat.
+Perangkaian label nama domain dan indeks vm akan menjadi label nama domain dari sumber daya Alamat IP Publik yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -137,9 +140,9 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPoolsId
-Menentukan array referensi ke kumpulan penerjemahan alamat jaringan masuk (NAT) dari penyeimbang muatan.
-Kumpulan skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang muatan internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
+Menentukan array referensi ke kumpulan terjemahan alamat jaringan (NAT) masuk dari load balancer.
+Set skala dapat mereferensikan kumpulan NAT masuk dari satu penyeimbang beban publik dan satu internal.
+Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml
 Type: System.String[]
@@ -154,9 +157,9 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatPoolsId
-Menentukan array referensi ke kumpulan NAT masuk dari penyeimbang muatan.
-Kumpulan skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang muatan internal.
-Beberapa kumpulan skala tidak dapat menggunakan penyeimbang muatan yang sama.
+Menentukan array referensi ke kumpulan NAT masuk dari load balancer.
+Set skala dapat mereferensikan kumpulan NAT masuk dari satu penyeimbang beban publik dan satu internal.
+Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml
 Type: System.String[]
@@ -170,7 +173,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi IP.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddressVersion
-Tentukan konfigurasi IP untuk alamat IP privat.  Default diambil sebagai IPv4.  Nilai yang memungkinkan adalah: 'IPv4' dan 'IPv6'.
+Tentukan konfigurasi IP untuk alamat IP privat.  Default diambil sebagai IPv4.  Nilai yang mungkin adalah: 'IPv4' dan 'IPv6'.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddressConfigurationIdleTimeoutInMinutes
-Waktu habis menganggur alamat IP publik.
+Batas waktu menganggur alamat IP publik.
 
 ```yaml
 Type: System.Int32
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddressVersion
-Tentukan konfigurasi IP untuk alamat IP publik.  Default diambil sebagai IPv4.  Nilai yang memungkinkan adalah: 'IPv4' dan 'IPv6'.
+Tentukan konfigurasi IP untuk alamat IP publik.  Default diambil sebagai IPv4.  Nilai yang mungkin adalah: 'IPv4' dan 'IPv6'.
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPPrefix
-ID Prefiks IP Publik
+ID Awalan IP Publik
 
 ```yaml
 Type: System.String
@@ -290,8 +293,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

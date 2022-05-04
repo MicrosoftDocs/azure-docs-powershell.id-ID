@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Restart-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Restart-AzAnalysisServicesInstance.md
-ms.openlocfilehash: aab95768152ad70df8da7dadad12dd0c69ecc5df
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f45e86e86e26d1fb9827b315421dccadf6018c4a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129987"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568133"
 ---
 # Restart-AzAnalysisServicesInstance
 
 ## SYNOPSIS
-Memulai ulang contoh server Analysis Services dalam lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+Menghidupkan ulang instans server Analysis Services di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/restart-azanalysisservicesinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Restart-AzAnalysisServicesInstance [-Instance] <String> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Cmdlet Restart-AzAnalysisServicesInstance memulai ulang contoh server Azure Analysis Services
+Cmdlet Restart-AzAnalysisServicesInstance memulai ulang instans server Azure Analysis Services
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ Restart-AzAnalysisServicesInstance
 Instance: testserver
 ```
 
-Perintah ini akan memulai ulang 'testserver' server dalam lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+Perintah ini akan menghidupkan ulang server 'testserver' di lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
 
 ## PARAMETERS
 
 ### -Instance
-Nama contoh server Analysis Services untuk memulai ulang
+Nama instans server Analysis Services untuk memulai ulang
 
 ```yaml
 Type: System.String
@@ -71,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -103,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

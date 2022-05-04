@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Import-AzKeyVaultSecurityDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Import-AzKeyVaultSecurityDomain.md
-ms.openlocfilehash: b43f8c77e0df4ea918c167a2b57cde412dd7578a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3869a8d1746ed3dd478dc84a0b55a8bf50733e7b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121329"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563980"
 ---
 # Import-AzKeyVaultSecurityDomain
 
 ## SYNOPSIS
-Mengimpor data domain keamanan yang sebelumnya diekspor ke HSM yang dikelola.
+Mengimpor data domain keamanan yang sebelumnya diekspor ke HSM terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/import-azkeyvaultsecuritydomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Import-AzKeyVaultSecurityDomain -Keys <KeyPath[]> -SecurityDomainPath <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengimpor data domain keamanan yang sebelumnya diekspor ke HSM yang dikelola.
+Cmdlet ini mengimpor data domain keamanan yang sebelumnya diekspor ke HSM terkelola.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Import-AzKeyVaultSecurityDomain -Name testmhsm -Keys $keys -SecurityDomainPath {
 ```
 
 Pertama, kunci perlu disediakan untuk mendekripsi data domain keamanan.
-Lalu, perintah **Impor-AzKeyVaultSecurityDomain** memulihkan data domain keamanan yang dicadangkan sebelumnya ke HSM yang dikelola menggunakan kunci ini.
+Kemudian, perintah **Import-AzKeyVaultSecurityDomain** memulihkan data domain keamanan yang dicadangkan sebelumnya ke HSM terkelola menggunakan kunci ini.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili HSM yang dikelola.
+Objek yang mewakili HSM terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultIdentityItem
@@ -79,7 +82,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Keys
+### -Kunci
 Informasi tentang kunci yang digunakan untuk mendekripsi data domain keamanan.
 Lihat contoh bagaimana konstruksinya.
 
@@ -95,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama HSM yang dikelola.
+### -Name
+Nama HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

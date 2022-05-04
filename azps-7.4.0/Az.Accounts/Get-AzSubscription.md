@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzSubscription.md
-ms.openlocfilehash: 4173435975408764c5df94d8f3a4b1a3d6f21cf6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18c2c1d512dd834a8013dcc476d8fd5a044e4d44
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143321345"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580088"
 ---
 # Get-AzSubscription
 
 ## SYNOPSIS
 Dapatkan langganan yang dapat diakses akun saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzSubscription [-SubscriptionName <String>] [-TenantId <String>] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSubscription mendapatkan ID langganan, nama langganan, dan penyewa rumah untuk langganan yang dapat diakses akun saat ini.
+Cmdlet Get-AzSubscription mendapatkan ID langganan, nama langganan, dan penyewa beranda untuk langganan yang dapat diakses akun saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua langganan di semua penyewa
+### Contoh 1: Mendapatkan semua langganan di semua penyewa
 ```powershell
 Get-AzSubscription
 ```
@@ -51,7 +54,7 @@ Subscription3                      zzzz-zzzz-zzzz-zzzz     bbbb-bbbb-bbbb-bbbb  
 
 Perintah ini mendapatkan semua langganan di semua penyewa yang diotorisasi untuk akun saat ini.
 
-### Contoh 2: Dapatkan semua langganan untuk penyewa tertentu
+### Contoh 2: Mendapatkan semua langganan untuk penyewa tertentu
 ```powershell
 Get-AzSubscription -TenantId "aaaa-aaaa-aaaa-aaaa"
 ```
@@ -63,9 +66,9 @@ Subscription1                      yyyy-yyyy-yyyy-yyyy     aaaa-aaaa-aaaa-aaaa  
 Subscription2                      xxxx-xxxx-xxxx-xxxx     aaaa-aaaa-aaaa-aaaa             Enabled
 ```
 
-Cantumkan semua langganan dalam penyewa tertentu yang diotorisasi untuk akun saat ini.
+Cantumkan semua langganan di penyewa tertentu yang diotorisasi untuk akun saat ini.
 
-### Contoh 3: Dapatkan semua langganan di penyewa saat ini
+### Contoh 3: Mendapatkan semua langganan di penyewa saat ini
 ```powershell
 Get-AzSubscription
 ```
@@ -77,7 +80,7 @@ Subscription1                      yyyy-yyyy-yyyy-yyyy     aaaa-aaaa-aaaa-aaaa  
 Subscription2                      xxxx-xxxx-xxxx-xxxx     aaaa-aaaa-aaaa-aaaa             Enabled
 ```
 
-Perintah ini mendapatkan semua langganan dalam penyewa saat ini yang diotorisasi untuk pengguna saat ini.
+Perintah ini mendapatkan semua langganan di penyewa saat ini yang diotorisasi untuk pengguna saat ini.
 
 ### Contoh 4: Mengubah konteks saat ini untuk menggunakan langganan tertentu
 ```powershell
@@ -95,7 +98,7 @@ Perintah ini mendapatkan langganan yang ditentukan, lalu mengatur konteks saat i
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

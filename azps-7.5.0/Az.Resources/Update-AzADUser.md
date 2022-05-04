@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: df37f1d496ae3c5e2fbadf8b2df34bef90644935
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d058972db6cada0692e7374a785ebd0e2348aad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111293"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582338"
 ---
 # Update-AzADUser
 
 ## SYNOPSIS
 Memperbarui entitas dalam pengguna
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -89,7 +91,7 @@ Memperbarui entitas dalam pengguna
 Update-AzADUser -UPNOrObjectId $upn -City $city
 ```
 
-Memperbarui pengguna berdasarkan nama prinsipal pengguna
+Memperbarui pengguna menurut nama prinsipal pengguna
 
 ## PARAMETERS
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 ### -AgeGroup
 Mengatur grup usia pengguna.
 Nilai yang diizinkan: null, minor, notAdult dan adult.
-Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
+Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -163,7 +165,7 @@ Accept wildcard characters: False
 ### -ConsentProvidedForMinor
 Mengatur apakah persetujuan telah diperoleh untuk anak di bawah umur.
 Nilai yang diizinkan: null, granted, denied, dan notRequired.
-Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
+Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -261,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmployeeHireDate
-Tanggal dan waktu saat pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang.
+Tanggal dan waktu ketika pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang.
 Mendukung $filter (eq, ne, NOT , ge, le, in).
 
 ```yaml
@@ -311,7 +313,7 @@ Accept wildcard characters: False
 
 ### -ExternalUserState
 Untuk pengguna eksternal yang diundang ke penyewa menggunakan API undangan, properti ini mewakili status undangan pengguna yang diundang.
-Untuk pengguna yang diundang, statusnya dapat Berupa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
+Untuk pengguna yang diundang, statusnya bisa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -327,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalUserStateChangeDateTime
-Memperlihatkan tanda waktu untuk perubahan terbaru pada properti externalUserState.
+Memperlihatkan tanda waktu untuk perubahan terbaru ke properti externalUserState.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -359,8 +361,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi pada login berhasil berikutnya (benar).
-Perilaku default adalah (false) untuk tidak mengubah kata sandi pada login berikutnya yang berhasil.
+Ini harus ditentukan jika pengguna harus mengubah kata sandi pada login yang berhasil berikutnya (benar).
+Perilaku default adalah (false) untuk tidak mengubah kata sandi pada login yang berhasil berikutnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +413,7 @@ Mewakili identitas yang dapat digunakan untuk masuk ke akun pengguna ini.
 Identitas dapat disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terkait dengan akun pengguna.
 Mungkin berisi beberapa item dengan nilai signInType yang sama.
 Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
-Untuk membuat, lihat bagian CATATAN untuk properti IDENTITY dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti IDENTITY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphObjectIdentity[]
@@ -426,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input pengguna Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+objek input pengguna Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser
@@ -509,7 +511,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Nama utama pengguna pengguna yang akan diperbarui.
+Nama utama pengguna dari pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -575,7 +577,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -761,8 +763,8 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Kode negara dua huruf (standar ISO 3166).
-Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
-Contohnya meliputi: US, JP, dan GB.
+Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
+Contohnya meliputi: AS, JP, dan GB.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -784,7 +786,7 @@ UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar
 Menurut konvensi, ini harus dipetakan ke nama email pengguna.
 Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa.
 Properti ini diperlukan saat pengguna dibuat.
-Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
+Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
 
 ```yaml
@@ -870,8 +872,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 IDENTITY <IMicrosoftGraphObjectIdentity[]>: Mewakili identitas yang dapat digunakan untuk masuk ke akun pengguna ini. Identitas dapat disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terkait dengan akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
   - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak terfederasi), properti ini adalah nama domain default penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi federasi, misalnya contoso.com.Supports $filter. Batas karakter 512.
-  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi pengeluar sertifikat dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
-  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
+  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi penerbit dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
+  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh pengeluar sertifikat. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
 
 INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

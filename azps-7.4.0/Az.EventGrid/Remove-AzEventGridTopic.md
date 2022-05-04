@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridTopic.md
-ms.openlocfilehash: f4f88a41df65ba7e2447f0afbd38c73f2510ddba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d1b688ad1f51a94e750401cf88c1386867bb99f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683982"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580880"
 ---
 # Remove-AzEventGridTopic
 
 ## SYNOPSIS
 Menghapus Topik Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/remove-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Remove-AzEventGridTopic [-ResourceId] <String> [-PassThru] [-DefaultProfile <IAz
  [-Confirm] [<CommonParameters>]
 ```
 
-### TopikInputObjectParameterSet
+### TopicInputObjectParameterSet
 ```
 Remove-AzEventGridTopic [-InputObject] <PSTopic> [-PassThru] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,14 +50,14 @@ Menghapus Topik Azure Event Grid.
 Remove-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1
 ```
 
-Menghapus topik \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Menghapus topik \`Event Grid Topic1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/topics/Topic1" | Remove-AzEventGridTopic
 ```
 
-Menghapus topik \`Kisi Kejadian1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Menghapus topik \`Event Grid Topic1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Topik EventGrid.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Topik EventGrid.
+ResourceID Topik EventGrid.
 
 ```yaml
 Type: System.String
@@ -148,8 +151,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

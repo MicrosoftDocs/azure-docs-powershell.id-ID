@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
-ms.openlocfilehash: 266714dced0e3663b577459180739551630fcdc7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 048e01bbae25b8d814f5788217ca45fa0417dc85
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122499"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569540"
 ---
 # Add-AzHDInsightStorage
 
 ## SYNOPSIS
 Menambahkan kunci Azure Storage ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightstorage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,8 +82,8 @@ Perintah ini menambahkan entri akun penyimpanan blob ke konfigurasi HDInsight be
 
 ## PARAMETERS
 
-### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+### -Konfigurasi
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

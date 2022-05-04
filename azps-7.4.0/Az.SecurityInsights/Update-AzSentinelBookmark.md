@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
-ms.openlocfilehash: a5b4ca6a7413dce0943bcfee38b8088de8c33687
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23edc8e8b68629ac79150bf5341bb8e34e9d227d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866502"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572060"
 ---
 # Update-AzSentinelBookmark
 
 ## SYNOPSIS
 Memperbarui Bookmark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,8 +48,8 @@ Update-AzSentinelBookmark -ResourceId <String> [-DisplayName <String>]
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelBookmark** memperbarui bookmark di ruang kerja yang ditentukan.
-Anda bisa melewati objek **Bookmark** sebagai parameter atau dengan menggunakan operator pipeline, atau anda bisa menentukan parameter *BookmarkId* yang diperlukan.
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Anda dapat meneruskan objek **Bookmark** sebagai parameter atau dengan menggunakan operator alur, atau anda dapat menentukan parameter *BookmarkId* yang diperlukan.
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Wi
 Update-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceNAme" -BookmarkId "MyBookmarkId" -Notes "Found something interesting"
 ```
 
-Perintah memperbarui Bookmark dengan mengatur properti *Catatan* .  Semua properti lainnya tetap sama.
+Perintah memperbarui Bookmark dengan mengatur properti *Notes* .  Semua properti lainnya tetap sama.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ $Bookmark = Get-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -Workspa
 $Bookmark | Set-AzSentinelBookmark -Notes "Found something interesting"
 ```
 
-Perintah pertama mendapatkan Bookmark menurut *BookmarkId* dari ruang kerja tertentu, lalu menyimpannya dalam variabel $Bookmark.
+Perintah pertama mendapatkan Bookmark by *BookmarkId* dari ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $Bookmark.
 Perintah kedua memperbarui properti Notes. Semua properti lainnya tetap sama.
 
 ## PARAMETERS
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InsidenInfo
+### -IncidentInfo
 Info Insiden Bookmark.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri Bookmark.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: 741413673cc3a57f2ec168308a715ec46df16692
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5036cfd20e480776a74fe1d535a4808e051a4053
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998586"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558904"
 ---
 # Get-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
-Mendapatkan koleksi bursa pribadi
+Mendapatkan koleksi penyimpanan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestorecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplacePrivateStoreCollection -PrivateStoreId <String> [-DefaultProfil
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMarketplacePrivateStoreCollection -CollectionId <String> -PrivateStoreId <String>
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzMarketplacePrivateStoreCollection -InputObject <IMarketplaceIdentity> [-De
 ```
 
 ## DESCRIPTION
-Mendapatkan koleksi bursa pribadi
+Mendapatkan koleksi penyimpanan privat
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar koleksi bursa pribadi
+### Contoh 1: Mendapatkan daftar koleksi penyimpanan privat
 ```powershell
 Get-AzMarketplacePrivateStoreCollection -PrivateStoreId 53425a7b-4ac1-4729-8340-e1da5046212c
 ```
@@ -55,7 +58,7 @@ Name                                 SystemDataCreatedAt  SystemDataCreatedBy Sy
 
 ```
 
-Perintah ini mendapatkan daftar koleksi bursa pribadi
+Perintah ini mendapatkan daftar koleksi penyimpanan privat
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -145,8 +148,8 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

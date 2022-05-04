@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImage.md
-ms.openlocfilehash: 8a5ede403bf91aaaa1f5d015aa62e5709ef41370
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3ddc9eec731746a3d10104400fada6befc4a358
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289892"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570144"
 ---
 # Get-AzVMExtensionImage
 
 ## SYNOPSIS
 Mendapatkan semua versi untuk ekstensi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmextensionimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,9 +65,9 @@ Version          : 1210.12.109.1004
 FilterExpression :
 ```
 
-Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan tipe yang ditentukan.
+Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan jenis yang ditentukan.
 
-### Contoh 2: Dapatkan versi gambar ekstensi dengan filter melalui versi
+### Contoh 2: Mendapatkan versi gambar ekstensi dengan filter melalui versi
 ```powershell
 Get-AzVMExtensionImage -Location "West US" -PublisherName "Chef.Bootstrap.WindowsAzure" -Type "ChefClient" -Version 12*
 ```
@@ -88,9 +91,9 @@ Version          : 1210.12.109.1004
 FilterExpression :
 ```
 
-Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, tipe, dan versi tertentu yang dimulai dengan 12.
+Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, jenis, dan versi yang ditentukan yang dimulai dengan 12.
 
-### Contoh 3: Dapatkan versi gambar ekstensi dengan filter melalui versi
+### Contoh 3: Mendapatkan versi gambar ekstensi dengan filter melalui versi
 ```powershell
 Get-AzVMExtensionImage -Location "West US" -PublisherName "Chef.Bootstrap.WindowsAzure" -Type "ChefClient" -Version 1207.12.3.0
 ```
@@ -112,7 +115,7 @@ SupportsMultipleExtensions : False
 VMScaleSetEnabled          : False
 ```
 
-Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, tipe, dan versi yang ditentukan.
+Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, jenis, dan versi yang ditentukan.
 
 ## PARAMETERS
 
@@ -177,9 +180,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe ekstensi.
-Untuk mendapatkan tipe ekstensi, gunakan cmdlet Get-AzVMExtensionImageType.
+### -Type
+Menentukan jenis ekstensi.
+Untuk mendapatkan jenis ekstensi, gunakan cmdlet Get-AzVMExtensionImageType.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 3e233dee244cf7e08d44e9c7c26c58b30ccfeea7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f06d4b60657320765114abcfdb1d71a70a55609e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806292"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577586"
 ---
 # Get-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi IP ujung depan gateway aplikasi.
+Mendapatkan konfigurasi IP front-end dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,26 +33,26 @@ Cmdlet **Get-AzApplicationGatewayFrontendIPConfig** mendapatkan konfigurasi IP f
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi IP front-end tertentu
+### Contoh 1: Mendapatkan konfigurasi IP front-end tertentu
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $FrontEndIP= Get-AzApplicationGatewayFrontendIPConfig -Name "FrontEndIP01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan konfigurasi IP ujung depan bernama FrontEndIP01 dari $AppGw dan menyimpannya dalam variabel $FrontEndIP.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan konfigurasi IP front-end bernama FrontEndIP01 dari $AppGw dan menyimpannya dalam variabel $FrontEndIP.
 
-### Contoh 2: Dapatkan daftar konfigurasi IP ujung depan
+### Contoh 2: Mendapatkan daftar konfigurasi IP front-end
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $FrontEndIPs= Get-AzApplicationGatewayFrontendIPConfig  -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan daftar konfigurasi IP ujung-depan dari $AppGw dan menyimpannya dalam variabel $FrontEndIPs.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan daftar konfigurasi IP front-end dari $AppGw dan menyimpannya dalam variabel $FrontEndIPs.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi yang berisi konfigurasi IP ujung-depan.
+Menentukan objek gateway aplikasi yang berisi konfigurasi IP front-end.
 
 ```yaml
 Type: PSApplicationGateway
@@ -78,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP ujung depan yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama konfigurasi IP front-end yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

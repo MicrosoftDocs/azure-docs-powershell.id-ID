@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
-ms.openlocfilehash: e2536a8fecdd4cf161bac7d0ffa169e765a79955
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b288ac380b5c53615ce001c0337a67d108528895
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570224"
 ---
 # Get-AzBatchAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,14 +33,14 @@ Cmdlet **Get-AzBatchAccountKey** mendapatkan kunci akun Azure Batch dalam langga
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akun kumpulan dan simpan dalam variabel $Context untuk digunakan nanti
+### Contoh 1: Dapatkan kunci akun batch dan simpan dalam variabel $Context untuk digunakan nanti
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName myaccount
 ```
 
 Perintah ini mendapatkan detail akun dan menyimpannya dalam `$Context` objek untuk digunakan nanti.
 
-### Contoh 2: Dapatkan kunci akun kumpulan dan tampilkan kunci akun tersebut
+### Contoh 2: Mendapatkan kunci akun batch dan menampilkannya
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName myaccount
 $Context.PrimaryAccountKey
@@ -46,12 +49,12 @@ $Context.SecondaryAccountKey
 ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ABCDEFGHIJKLMN==
 ```
 
-Perintah ini akan mendapatkan kunci akun dan mencetaknya ke konsol.
+Perintah ini mendapatkan kunci akun dan mencetaknya ke konsol.
 
 ## PARAMETERS
 
 ### -AccountName
-Menentukan nama akun di mana cmdlet ini mendapatkan kunci.
+Menentukan nama akun yang cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun di mana cmdlet ini mendapatkan kunci.
+Menentukan nama grup sumber daya yang berisi akun tempat cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

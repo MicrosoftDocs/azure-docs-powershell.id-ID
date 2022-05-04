@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
-ms.openlocfilehash: 949a9bb89de5023eaad828cd15a3863b7c8b7743
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 157159fac2b244fbb0a8ddb4267cf8d71c7b3b11
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672066"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560236"
 ---
 # Start-AzServiceBusMigration
 
 ## SYNOPSIS
-Membuat konfigurasi Migrasi baru dan mulai melakukan migrasi entitas dari Standar ke Premium ruang nama
+Membuat konfigurasi Migrasi baru dan mulai memigrasikan entitas dari Namespace Standar ke Premium
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/start-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Start-AzServiceBusMigration [-ResourceGroupName] <String> [-Name] <String> [-Tar
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzServiceBusMigration** membuat konfigurasi Migrasi baru dan mulai melakukan migrasi entitas dari Standar ke Premium ruang nama
+Cmdlet **Start-AzServiceBusMigration** membuat konfigurasi Migrasi baru dan mulai memigrasikan entitas dari namespace Standar ke Premium
 
 ## EXAMPLES
 
@@ -44,12 +47,12 @@ TargetNamespace   : /subscriptions/SubscriptionId/resourceGroups/ResourceGroup/p
 PostMigrationName : TestingNamespaceStandardMigrationPostMigration
 ```
 
-Membuat konfigurasi migrasi baru untuk ruang nama 'TestingNamespaceStandardMigration' ke ruang nama 'TestingNamespacePremiumMigration'
+Membuat konfigurasi migrasi baru untuk namespace 'TestingNamespaceStandardMigration' ke 'TestingNamespacePremiumMigration'
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama Standar
+### -Name
+Nama Namespace Standar
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostMigrationName
-Post Migration Name for Standard Namespace in Migration
+Nama Pasca Migrasi untuk Namespace Standar dalam Migrasi
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNameSpace
-Premium Id ARM Ruang Nama
+Premium Namespace ARM Id
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -170,11 +173,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

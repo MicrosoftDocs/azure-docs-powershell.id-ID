@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
-ms.openlocfilehash: 29aa325f103fb9e910109f127243536146431b7d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 346d37a05f2942b29ad64033a5d4abc61b9f97d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688968"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580106"
 ---
 # Get-AzAccessToken
 
 ## SYNOPSIS
-Dapatkan token akses mentah. Saat menggunakan -ResourceUrl, pastikan nilai cocok dengan lingkungan Azure saat ini. Anda dapat merujuk ke nilai `(Get-AzContext).Environment`.
+Mendapatkan token akses mentah. Saat menggunakan -ResourceUrl, pastikan nilainya cocok dengan lingkungan Azure saat ini. Anda dapat merujuk ke nilai `(Get-AzContext).Environment`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azaccesstoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,21 +44,21 @@ Dapatkan token akses
 Get-AzAccessToken
 ```
 
-Dapatkan token akses akun saat ini untuk titik akhir ResourceManager
+Mendapatkan token akses akun saat ini untuk titik akhir ResourceManager
 
-### Contoh 2 Dapatkan token akses untuk titik akhir Graph Microsoft
+### Contoh 2 Dapatkan token akses untuk titik akhir Microsoft Graph
 ```powershell
 Get-AzAccessToken -ResourceTypeName MSGraph
 ```
 
-Dapatkan token akses titik akhir Microsoft Graph untuk akun saat ini
+Mendapatkan token akses titik akhir Microsoft Graph untuk akun saat ini
 
-### Contoh 3 Dapatkan token akses untuk titik akhir Graph Microsoft
+### Contoh 3 Dapatkan token akses untuk titik akhir Microsoft Graph
 ```powershell
 Get-AzAccessToken -ResourceUrl "https://graph.microsoft.com/"
 ```
 
-Dapatkan token akses titik akhir Microsoft Graph untuk akun saat ini
+Mendapatkan token akses titik akhir Microsoft Graph untuk akun saat ini
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceTypeName
-Nama tipe sumber daya opsional, nilai yang didukung: AadGraph, AnalysisServices, Arm, Attestation, Batch, DataLake, KeyVault, MSGraph, OperationalInsights, ResourceManager, Storage, Synapse. Nilai default adalah Arm jika tidak ditentukan.
+Nama jenis sumber daya opsional, nilai yang didukung: AadGraph, AnalysisServices, Arm, Attestation, Batch, DataLake, KeyVault, MSGraph, OperationalInsights, ResourceManager, Storage, Synapse. Nilai defaultnya adalah Arm jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceUrl
-Url sumber daya untuk hal tersebut Anda meminta token, misalnya 'https://graph.microsoft.com/'.
+Url sumber daya untuk itu Anda meminta token, misalnya 'https://graph.microsoft.com/'.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id Penyewa Opsional. Gunakan id penyewa konteks default jika tidak ditentukan.
+Id Penyewa Opsional. Gunakan id penyewa dari konteks default jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -120,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

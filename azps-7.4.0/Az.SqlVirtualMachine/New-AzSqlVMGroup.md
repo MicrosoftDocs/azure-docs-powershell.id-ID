@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
-ms.openlocfilehash: 34a8ef13add41cd3cccd19382acb51236243ece7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1df98b02d84f828d12cfa850194794adfd39838c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559966"
 ---
 # New-AzSqlVMGroup
 
 ## SYNOPSIS
-Membuat grup mesin virtual sql baru.
+Membuat grup komputer virtual sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzSqlVMGroup [-Location] <String> -Offer <String> -Sku <String> -ClusterOper
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSqlVMGroup membuat grup mesin virtual Azure SQL.
+Cmdlet New-AzSqlVMGroup membuat grup komputer virtual Azure SQL.
 
 ## EXAMPLES
 
@@ -47,8 +50,8 @@ Name       ResourceGroupName  Sku       Offer
 test-group ResourceGroup01    Developer SQL2017-WS2016
 ```
 
-Membuat grup mesin virtual Azure SQL baru dengan vm grup uji dalam grup sumber daya ResourceGroup01.
-$profile adalah objek tipe Microsoft.Azure.Management.SqlVirtualMachine.Models.WsfcDomainProfile
+Membuat grup komputer virtual Azure SQL baru dengan vm grup pengujian di grup sumber daya ResourceGroup01.
+$profile adalah objek jenis Microsoft.Azure.Management.SqlVirtualMachine.Models.WsfcDomainProfile
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterOperatorAccount
-Nama yang digunakan untuk kluster pengoperasian
+Nama yang digunakan untuk kluster operasi
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileShareWitnessPath
-Jalur opsional untuk saksi filehare
+Jalur opsional untuk saksi fileshare
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-SQL lokasi grup mesin virtual.
+SQL lokasi grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-SQL nama grup mesin virtual.
+### -Name
+SQL nama grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-SQL penawaran grup mesin virtual.
+SQL penawaran grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -OuPath
-Jalur Unit Organisasi tempat simpul dan klaster akan hadir
+Jalur Unit Organisasi tempat simpul dan kluster akan ada
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL tipe grup mesin virtual.
+SQL jenis grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccount
-Nama di mana layanan SQL akan berjalan pada semua mesin virtual SQL yang berpartisipasi dalam kluster
+Nama di mana layanan SQL akan berjalan pada semua komputer virtual SQL yang berpartisipasi dalam kluster
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountPrimaryKey
-Kunci utama akun penyimpanan saksi
+Kunci utama akun penyimpanan bukti
 
 ```yaml
 Type: System.Security.SecureString
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Kunci utama akun penyimpanan saksi
+Kunci utama akun penyimpanan bukti
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan grup mesin virtual SQL.
+Tag yang akan dikaitkan dengan grup komputer virtual SQL.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -292,8 +295,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

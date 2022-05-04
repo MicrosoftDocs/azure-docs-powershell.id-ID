@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: 9786b3ba4c071f9af39cb37c825e3db4fbc406b7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b099d4e6b2086c597ffc9e9dd04a0280256be684
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170649"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576632"
 ---
 # New-AzStreamAnalyticsCluster
 
 ## SYNOPSIS
-Membuat Cluster Stream Analytics atau menggantikan kluster yang sudah ada.
+Membuat Kluster Azure Stream Analytics atau menggantikan kluster yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzStreamAnalyticsCluster -Name <String> -ResourceGroupName <String> [-Subscr
 ```
 
 ## DESCRIPTION
-Membuat Cluster Stream Analytics atau menggantikan kluster yang sudah ada.
+Membuat Kluster Azure Stream Analytics atau menggantikan kluster yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kluster analitik streaming baru
+### Contoh 1: Membuat kluster analisis aliran baru
 ```powershell
 New-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-ps-test01 -Location "West Central US" -SkuName "Default" -SkuCapacity 36
 ```
@@ -41,12 +44,12 @@ Location        Name          Type                               Etag
 West Central US sac-ps-test01 Microsoft.StreamAnalytics/clusters
 ```
 
-Perintah ini membuat kluster analitik streaming baru.
+Perintah ini membuat kluster analisis aliran baru.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,8 +80,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Hilangkan nilai ini untuk selalu menimpa kumpulan rekaman saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Hilangkan nilai ini untuk selalu menimpa kumpulan catatan saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -93,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan kumpulan rekaman yang sudah ada.
-Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
+Atur ke '*' untuk mengizinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan kumpulan catatan yang sudah ada.
+Nilai lain akan menghasilkan respons 412 Pra-kondisi Gagal.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Menunjukkan jumlah unit streaming yang dapat didukung oleh kluster.
-Nilai valid untuk properti ini adalah kelipatan 36 dengan nilai minimum 36 dan nilai maksimum 216.
+Menunjukkan jumlah unit streaming yang dapat didukung kluster.
+Nilai yang valid untuk properti ini adalah kelipatan 36 dengan nilai minimum 36 dan nilai maksimum 216.
 Diperlukan pada permintaan PUT (CreateOrUpdate).
 
 ```yaml
@@ -232,8 +235,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

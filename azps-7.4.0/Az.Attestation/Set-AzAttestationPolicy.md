@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Set-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Set-AzAttestationPolicy.md
-ms.openlocfilehash: 91bbd7a2ff54037d694b78ba3bc85cce33f1fb5c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e965bf8301fcaf13ddfa0c0b5f4bca714deb88f2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067239"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578360"
 ---
 # Set-AzAttestationPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan dari penyewa di Azure Attestationn.
+Menetapkan kebijakan dari penyewa di Azure Attestationn.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/set-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzAttestationPolicy [-ResourceId] <String> -Tee <String> -Policy <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzAttestationPolicy mengatur kebijakan dari penyewa di Azure Attestation.
+Cmdlet Set-AzAttestationPolicy menetapkan kebijakan dari penyewa di Azure Attestation.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ $policy = Get-Content -Path .\custom.sgx.policy.txt
 Set-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave -Policy $policy
 ```
 
-Mengatur kebijakan yang ditentukan pengguna untuk tipe TEE *SgxEnclave* untuk *pshtest* Penyedia Pengesahan menggunakan format kebijakan teks (default).
+Mengatur kebijakan yang ditentukan pengguna untuk jenis TEE *SgxEnclave* untuk *pshtest Penyedia Pengesahan* menggunakan format kebijakan teks (default).
 
 ### Contoh 2
 ```powershell
@@ -51,7 +54,7 @@ $policyjwt = Get-Content -Path .\custom.sgx.policy.jwt.format.txt
 Set-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave -Policy $policyjwt -PolicyFormat JWT
 ```
 
-Mengatur kebijakan yang ditentukan pengguna untuk tipe TEE *SgxEnclave* untuk *pshtest* Penyedia Pengesahan menggunakan format kebijakan JWT.
+Mengatur kebijakan yang ditentukan pengguna untuk jenis TEE *SgxEnclave* untuk *pshtest* Penyedia Pengesahan menggunakan format kebijakan JWT.
 
 ## PARAMETERS
 
@@ -70,9 +73,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penyewa.
-Cmdlet ini mengatur kebijakan penetapan untuk penyewa yang ditentukan parameter ini.
+Cmdlet ini menetapkan kebijakan pengesahan untuk penyewa yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan dokumen kebijakan yang akan diatur.  Format kebijakan dapat berupa Teks atau JSON Web Token (JWT).
+Menentukan dokumen kebijakan yang akan ditetapkan.  Format kebijakan dapat berupa Teks atau JSON Web Token (JWT).
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan RESOURCEID penyedia atestation.
+Menentukan ResourceID dari penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tee
-Menentukan tipe Lingkungan Eksekusi Tepercaya.
-Empat jenis lingkungan didukung: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
+Menentukan jenis Lingkungan Eksekusi Tepercaya.
+Empat jenis lingkungan didukung: SgxEnclave, OpenEnclave, CyResComponent, dan VBSEnclave.
 
 ```yaml
 Type: System.String
@@ -178,8 +181,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

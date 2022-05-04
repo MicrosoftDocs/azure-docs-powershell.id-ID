@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: 238ef3b7ad62a0f52d371e557ee23a925700c28e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d46d6446fd1a09c486fbd19bd32cc65b5a4c23c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558454"
 ---
 # Update-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Memperbarui detail penemuan untuk vCenter terdaftar.
+Perbarui detail penemuan untuk vCenter Server terdaftar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzRecoveryServicesAsrvCenter -ResourceId <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrvCenter** adalah pembaruan detail penemuan untuk vCenter terdaftar.
+Cmdlet **Update-AzRecoveryServicesAsrvCenter** adalah memperbarui detail penemuan untuk vCenter Server terdaftar.
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Update-AzRecoveryServicesAsrvCenter -Account $fabric.fabricSpecificDetails.RunAs
 Returns ASRJOB for update vCenter.
 ```
 
-Memperbarui detail penemuan untuk vCenter terdaftar.
+Perbarui detail penemuan untuk vCenter Server terdaftar.
 
 ## PARAMETERS
 
 ### -Akun
-akun kredensial masuk vCenter.
+Akun kredensial masuk vCenter Server.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRunAsAccount
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek server vCenter untuk memperbarui detail penemuan.
+Objek server vCenter server untuk memperbarui detail penemuan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRvCenter
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP di server vCenter untuk digunakan untuk penemuan.
+Port TCP di server vCenter Server yang digunakan untuk penemuan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan resourceId vCenter.
+Menentukan resourceId vCenter Server.
 
 ```yaml
 Type: System.String
@@ -124,8 +127,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

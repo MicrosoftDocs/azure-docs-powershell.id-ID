@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiSchema.md
-ms.openlocfilehash: 9dbc63161c867ff7f5d2c5af48ca39a5c6619699
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c0ad9eec2f0d046c71cbfddbecaf6a02a29d689b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320787"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581762"
 ---
 # Get-AzApiManagementApiSchema
 
 ## SYNOPSIS
-Dapatkan detail Skema API
+Mendapatkan detail Skema API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapischema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Get-AzApiManagementApiSchema** mendapatkan detail Skema API
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail semua Skema Api api api
+### Contoh 1: Dapatkan detail semua Skema Api dari Api
 ```powershell
 $context = New-AzApiManagementContext -ResourceId /subscriptions/subid/resourceGroups/resourceGroupName/providers/Microsoft.ApiManagement/service/sdktestapim4163
 Get-AzApiManagementApiSchema -Context $context -ApiId wsdlapitest
@@ -56,7 +59,7 @@ Schema Document    : <?xml version=""1.0"" encoding=""UTF-8""....
 
 Perintah ini mendapatkan semua skema API yang terkait dengan Api `swagger-petstore-extensive` untuk Konteks ApiManagement tertentu.
 
-### Contoh 2: Dapatkan skema tertentu yang terkait dengan Api
+### Contoh 2: Mendapatkan skema tertentu yang terkait dengan Api
 ```powershell
 $context = New-AzApiManagementContext -ResourceId /subscriptions/subid/resourceGroups/resourceGroupName/providers/Microsoft.ApiManagement/service/sdktestapim4163
 Get-AzApiManagementApiSchema -Context $context -ApiId swagger-petstore-extensive -SchemaId 5cc9cf67e6ed3b1154e638bd
@@ -77,7 +80,7 @@ Perintah ini mendapatkan skema `5cc9cf67e6ed3b1154e638bd` API yang terkait denga
 ## PARAMETERS
 
 ### -ApiId
-PENGIDENTIFIKASI API untuk dicari.
+Pengidentifikasi API untuk dicari.
 Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
@@ -92,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari Api Schema. Jika ditentukan akan mencoba menemukan skema api oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari Skema Api. Jika ditentukan akan mencoba menemukan skema api oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

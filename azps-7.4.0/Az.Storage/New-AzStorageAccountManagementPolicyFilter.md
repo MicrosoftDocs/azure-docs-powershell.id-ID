@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyFilter.md
-ms.openlocfilehash: 4ded93f880641ebb9c9f1d716da7a5e2f5b1f0a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec4eaf9eaae974d3f73a182fa0ea19a8401f5f20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864324"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573662"
 ---
-# New-AzStorageAccountManagementPolicyFilter
+# Baru-AzStorageAccountManagementPolicyFilter
 
 ## SYNOPSIS
 Membuat objek filter aturan ManagementPolicy, yang dapat digunakan di New-AzStorageAccountManagementPolicyRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyfilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,12 +46,12 @@ PS C:\>$rule = New-AzStorageAccountManagementPolicyRule -Name Test -Action $acti
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah ini membuat objek filter aturan ManagementPolicy. Lalu tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
+Perintah ini membuat objek filter aturan ManagementPolicy. Kemudian tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
 
 ## PARAMETERS
 
 ### -BlobType
-Array string agar blobtypes cocok. Saat ini blokBlob mendukung semua tindakan tingkatan dan penghapusan. Hanya tindakan penghapusan yang didukung untuk menambahkanBlob.
+Array string untuk blobtype agar cocok. Saat ini blockBlob mendukung semua tindakan tingkatan dan penghapusan. Hanya tindakan penghapusan yang didukung untuk appendBlob.
 
 ```yaml
 Type: System.String[]
@@ -79,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixMatch
-Array string agar prefiks cocok.
-String prefiks harus dimulai dengan nama kontainer.
+Array string untuk awalan agar cocok.
+Untai awalan harus dimulai dengan nama kontainer.
 
 ```yaml
 Type: System.String[]
@@ -95,11 +98,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

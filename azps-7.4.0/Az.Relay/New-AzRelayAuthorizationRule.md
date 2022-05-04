@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
-ms.openlocfilehash: c860a69988759295c999221906b46c45616aabbc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 423795cab1d4bfe261a3e7e14d217c806632ed6e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740142"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563350"
 ---
 # New-AzRelayAuthorizationRule
 
 ## SYNOPSIS
-Membuat aturan otorisasi baru untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,11 +43,11 @@ New-AzRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRelayAuthorizationRule** membuat aturan otorisasi baru untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Cmdlet **New-AzRelayAuthorizationRule** membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1: Ruang nama
+### Contoh 1: Namespace
 ```powershell
 New-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -Rights "Listen"
 ```
@@ -56,7 +59,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/AuthorizationRules/AuthoRule1
 ```
 
-`AuthoRule1` Membuat dengan hak **Dengarkan** untuk ruang `TestNameSpace-Relay1`nama .
+`AuthoRule1` Membuat dengan hak **Dengar** untuk namespace `TestNameSpace-Relay1`.
 
 ### Contoh 2: WcfRelay
 ```powershell
@@ -118,7 +121,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hak
-Hak, misalnya "Dengarkan","Kirim","Kelola"
+Hak, misalnya "Dengar","Kirim","Kelola"
 
 ```yaml
 Type: System.String[]
@@ -206,8 +209,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

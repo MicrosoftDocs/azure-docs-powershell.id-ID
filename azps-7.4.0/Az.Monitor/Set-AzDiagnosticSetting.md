@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
-ms.openlocfilehash: 2e0bd065dc6b01f2539444bb42a137e5fc3a2629
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: af837a1b6060661d19fa191569d9ce05767ee9d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558868"
 ---
 # Set-AzDiagnosticSetting
 
 ## SYNOPSIS
 Mengatur pengaturan log dan metrik untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,9 +42,9 @@ Set-AzDiagnosticSetting -InputObject <PSServiceDiagnosticSettings> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDiagnosticSetting** mengaktifkan atau menonaktifkan setiap kali grain dan kategori log untuk sumber daya tertentu.
-Log dan metrik disimpan dalam akun penyimpanan tertentu.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Set-AzDiagnosticSetting** memungkinkan atau menonaktifkan setiap kali grain dan kategori log untuk sumber daya tertentu.
+Log dan metrik disimpan di akun penyimpanan yang ditentukan.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Logs
    Category : Category4
 ```
 
-Perintah ini menonaktifkan kategori metrik yang disebut Kategori1 dan Kategori2.
+Perintah ini menonaktifkan kategori metrik yang disebut Category1 dan Category2.
 Semua kategori lainnya tetap sama.
 
 ### Contoh 4: Mengaktifkan/menonaktifkan beberapa kategori log
@@ -120,7 +123,7 @@ Logs
    Category : Category4
 ```
 
-Perintah ini mengaktifkan Kategori1 dan Kategori2.
+Perintah ini mengaktifkan Category1 dan Category2.
 Semua kategori metrik dan log lainnya tetap sama.
 
 ### Contoh 5: Mengaktifkan butir waktu dan beberapa kategori
@@ -128,15 +131,15 @@ Semua kategori metrik dan log lainnya tetap sama.
 Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $True -Category Category1,Category2 -Timegrain PT1M
 ```
 
-Perintah ini hanya memungkinkan Kategori1, Kategori2, dan biji-bijian waktu PT1M.
-Semua biji-bijian dan kategori lain tidak berubah.
+Perintah ini hanya memungkinkan Category1, Category2, dan time grain PT1M.
+Semua butir dan kategori waktu lainnya tidak berubah.
 
-### Contoh 6: Menggunakan pipeline
+### Contoh 6: Menggunakan alur
 ```powershell
 Get-AzDiagnosticSetting -ResourceId "Resource01" | Set-AzDiagnosticSetting -Enabled $True -Category Category1,Category2
 ```
 
-Perintah ini menggunakan saluran PowerShell untuk mengatur (tidak ada perubahan yang dibuat) pengaturan diagnostik.
+Perintah ini menggunakan alur PowerShell untuk mengatur (tidak ada perubahan yang dibuat) pengaturan diagnostik.
 
 ### Contoh 7: Mengaktifkan semua kategori untuk langganan
 ```powershell
@@ -186,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Menunjukkan apakah akan mengaktifkan diagnostik.
 Tentukan $True untuk mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
 
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleId
-Id aturan otorisasi hub acara
+Id aturan otorisasi pusat aktivitas
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubName
-Nama hub acara
+Nama pusat aktivitas
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportToResourceSpecific
-Bendera yang mengindikasikan bahwa ekspor ke LA harus dilakukan ke tabel sumber daya tertentu, alias. tabel skema khusus atau tetap, dibandingkan dengan tabel skema dinamis **default** yang disebut **AzureDiagnostics**.
+Bendera yang menunjukkan bahwa ekspor ke LA harus dilakukan ke tabel khusus sumber daya, alias. tabel skema khusus atau tetap, dibandingkan dengan tabel skema dinamis **default** yang disebut **AzureDiagnostics**.
 
 Argumen ini hanya efektif ketika argumen **-workspaceId** juga diberikan.
 
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input (dimungkinkan dari pipeline.) Nama dan resourceId akan diekstrak dari objek ini.
+Objek input (dimungkinkan dari alur.) Nama dan resourceId akan diekstrak dari objek ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings
@@ -309,7 +312,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pengaturan diagnostik. Nilai defaultnya adalah **layanan**.
 
 ```yaml
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionEnabled
-Menunjukkan apakah penyimpanan informasi diagnostik diaktifkan. Perhatikan bahwa hal ini hanya berlaku ketika menyimpan data ke akun Storage.
+Menunjukkan apakah retensi informasi diagnostik diaktifkan. Perhatikan bahwa ini hanya berlaku saat menyimpan data ke akun Storage.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Menentukan kebijakan penyimpanan, dalam hari. Perhatikan bahwa hal ini hanya berlaku ketika menyimpan data ke akun Storage.
+Menentukan kebijakan penyimpanan, dalam hari. Perhatikan bahwa ini hanya berlaku saat menyimpan data ke akun Storage.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Menentukan ID akun Storage tempat menyimpan data.
+Menentukan ID akun Storage untuk menyimpan data.
 
 ```yaml
 Type: System.String
@@ -401,7 +404,7 @@ Accept wildcard characters: False
 
 ### -Timegrain
 Menentukan butir waktu untuk mengaktifkan atau menonaktifkan metrik, sesuai dengan nilai *Diaktifkan*.
-Jika Anda tidak menentukan butir waktu, perintah ini beroperasi pada semua biji-bijian waktu yang tersedia.
+Jika Anda tidak menentukan butir waktu, perintah ini beroperasi pada semua butir waktu yang tersedia.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceId
-Id sumber daya ruang kerja Analitik Log untuk mengirim log/metrik ke
+Id sumber daya ruang kerja Log Analytics untuk mengirim log/metrik ke
 
 ```yaml
 Type: System.String
@@ -430,8 +433,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -446,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

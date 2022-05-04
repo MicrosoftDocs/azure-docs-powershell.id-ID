@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsContinuousExport.md
-ms.openlocfilehash: 35a53de01c23f132cbeb4580824acaaa51095f35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7599f03815e91a5e19f0daf7506f8e3a30e5150
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129663"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578666"
 ---
 # New-AzApplicationInsightsContinuousExport
 
 ## SYNOPSIS
-Membuat konfigurasi ekspor berkelanjutan wawasan aplikasi baru untuk sumber daya wawasan aplikasi
+Membuat konfigurasi ekspor berkelanjutan application insights baru untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ New-AzApplicationInsightsContinuousExport [-ResourceId] <String> -DocumentType <
 ```
 
 ## DESCRIPTION
-Membuat konfigurasi ekspor berkelanjutan wawasan aplikasi baru untuk sumber daya wawasan aplikasi
+Membuat konfigurasi ekspor berkelanjutan application insights baru untuk sumber daya application insights
 
 ## EXAMPLES
 
-### Contoh 1 Membuat konfigurasi ekspor berkelanjutan baru untuk sumber daya wawasan aplikasi
+### Contoh 1 Membuat konfigurasi ekspor berkelanjutan baru untuk sumber daya application insights
 ```powershell
 $sastoken = New-AzStorageContainerSASToken -Name testcontainer -Context $context -ExpiryTime (Get-Date).AddYears(50) -Permission w
 $sasuri = "https://teststorageaccount.blob.core.windows.net/testcontainer" + $sastoken
@@ -66,7 +69,7 @@ ExportStatus                     : Preparing
 LastSuccessTime                  :
 ```
 
-Buat konfigurasi ekspor berkelanjutan wawasan aplikasi baru untuk mengekspor tipe dokumen "Permintaan" dan "Lacak" ke penyimpanan berisi "testcontainer" dalam akun penyimpanan "teststorageaccount" dalam grup sumber daya "testgroup". Token SAS harus valid dan memiliki izin menulis ke wadah, jika tidak, fitur ekspor berkelanjutan tidak akan berfungsi. Jika token SAS kedaluwarsa, fitur ekspor berkelanjutan akan berhenti berfungsi.
+Buat konfigurasi ekspor berkelanjutan application insights baru untuk mengekspor jenis dokumen "Request" dan "Trace" ke penyimpanan berisi "testcontainer" di akun penyimpanan "teststorageaccount" dalam grup sumber daya "testgroup". Token SAS harus valid dan memiliki izin tulis ke kontainer, jika tidak, fitur ekspor berkelanjutan tidak akan berfungsi. Jika token SAS kedaluwarsa, fitur ekspor berkelanjutan akan berhenti berfungsi.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DocumentType
-Tipe dokumen yang perlu diekspor.
+Jenis dokumen yang perlu diekspor.
 
 ```yaml
 Type: System.String[]
@@ -116,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen.
 
 ```yaml
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

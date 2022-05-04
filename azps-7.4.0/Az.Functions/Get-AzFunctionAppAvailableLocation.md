@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
-ms.openlocfilehash: 6b085b5fd8c6cc878ea958b488680c4722781df1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f231772bfc6348ff3ae3083150f4473a075566c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227475"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572996"
 ---
 # Get-AzFunctionAppAvailableLocation
 
 ## SYNOPSIS
-Mendapatkan lokasi di mana aplikasi fungsi untuk tipe os dan rencana tertentu tersedia.
+Mendapatkan lokasi tempat aplikasi fungsi untuk os dan jenis paket yang diberikan tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappavailablelocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzFunctionAppAvailableLocation [[-SubscriptionId] <String[]>] [[-PlanType] <
 ```
 
 ## DESCRIPTION
-Mendapatkan lokasi di mana aplikasi fungsi untuk tipe os dan rencana tertentu tersedia.
+Mendapatkan lokasi tempat aplikasi fungsi untuk os dan jenis paket yang diberikan tersedia.
 
 ## EXAMPLES
 
@@ -106,9 +109,9 @@ France Central
 Norway East
 ```
 
-Perintah ini mendapatkan lokasi di mana Premium tersedia untuk Linux.
+Perintah ini mendapatkan lokasi tempat Premium tersedia untuk Linux.
 
-### Contoh 3: Dapatkan lokasi di mana Konsumsi tersedia untuk Windows.
+### Contoh 3: Dapatkan lokasi tempat Konsumsi tersedia untuk Windows.
 ```powershell
 Get-AzFunctionAppAvailableLocation -PlanType Consumption -OSType Windows
 ```
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Tipe OS untuk paket layanan.
+Jenis OS untuk paket layanan.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanType
-Tipe paket.
+Jenis paket.
 Input yang valid: Konsumsi atau Premium
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String[]
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

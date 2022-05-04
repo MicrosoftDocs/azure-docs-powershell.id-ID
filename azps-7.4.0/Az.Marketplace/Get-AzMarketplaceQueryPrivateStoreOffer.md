@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceQueryPrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceQueryPrivateStoreOffer.md
-ms.openlocfilehash: 4f2357591dc8acaf20296a9c6a0c4deb15ee9dbf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: febb4d926258989f28bde0cd3b46e0a791da4452
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283995"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560956"
 ---
 # Get-AzMarketplaceQueryPrivateStoreOffer
 
 ## SYNOPSIS
 Daftar penawaran, terlepas dari koleksinya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacequeryprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplaceQueryPrivateStoreOffer -PrivateStoreId <String> [-DefaultProfil
  [-WhatIf] [<CommonParameters>]
 ```
 
-### KueriIdentitas
+### QueryViaIdentity
 ```
 Get-AzMarketplaceQueryPrivateStoreOffer -InputObject <IMarketplaceIdentity> [-DefaultProfile <PSObject>]
  [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -36,7 +39,7 @@ Daftar penawaran, terlepas dari koleksinya
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan penawaran bursa pribadi terlepas dari koleksi
+### Contoh 1: Mengembalikan penawaran penyimpanan privat terlepas dari koleksi
 ```powershell
 Get-AzMarketplaceQueryPrivateStoreOffer -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a
 ```
@@ -52,7 +55,7 @@ CreatedAt ETag                                   ModifiedAt OfferDisplayName Pri
 
 ```
 
-Perintah ini mengembalikan penawaran bursa pribadi terlepas dari koleksinya
+Perintah ini mengembalikan penawaran penyimpanan privat terlepas dari koleksi
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -156,8 +159,8 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

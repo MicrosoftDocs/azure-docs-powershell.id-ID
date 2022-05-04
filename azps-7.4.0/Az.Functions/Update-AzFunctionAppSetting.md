@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppSetting.md
-ms.openlocfilehash: 75eb8816402a09659155e0bc26a29d07f0281266
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 40f27bd461faaddcb129a10c79b52faee9a463c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572906"
 ---
 # Update-AzFunctionAppSetting
 
 ## SYNOPSIS
 Menambahkan atau memperbarui pengaturan aplikasi di aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/update-azfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

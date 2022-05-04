@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: c03d0524e1f07ada0671f3fa54d8a34bfeb9186d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 81ec8cc1434fe3fd789c0e3b1efe2cc0a695be37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744552"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571106"
 ---
 # Add-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
-Menambahkan port ujung depan ke gateway aplikasi.
+Menambahkan port front-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ Add-AzApplicationGatewayFrontendPort -ApplicationGateway <PSApplicationGateway> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayFrontendPort** menambahkan port ujung depan ke gateway aplikasi.
+Cmdlet **Add-AzApplicationGatewayFrontendPort** menambahkan port front-end ke gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan port ujung depan ke gateway aplikasi
+### Contoh 1: Menambahkan port front-end ke gateway aplikasi
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $AppGw = Add-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name "FrontEndPort01" -Port 80
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menambahkan port 80 sebagai port ujung depan untuk gateway aplikasi yang disimpan di $AppGw dan memberi nama port FrontEndPort01.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua menambahkan port 80 sebagai port front-end untuk gateway aplikasi yang disimpan di $AppGw dan memberi nama port FrontEndPort01.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menambahkan port ujung depan.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan port front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -71,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama port ujung-depan.
+### -Name
+Menentukan nama port front-end.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor porta.
+Menentukan nomor port.
 
 ```yaml
 Type: System.Int32
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

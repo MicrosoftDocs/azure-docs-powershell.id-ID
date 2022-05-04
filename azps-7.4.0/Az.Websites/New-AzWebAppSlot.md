@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
-ms.openlocfilehash: 85a98d4a232cbe12a969398a3fccef064b5ec88c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 66bbb3c9346364314708ec27dcae430b04f9be02
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222003"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570440"
 ---
 # New-AzWebAppSlot
 
 ## SYNOPSIS
 Membuat slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzWebAppSlot [-ResourceGroupName] <String> [-Name] <String> [[-Slot] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppSlot** membuat Azure Web App Slot dalam grup sumber daya tertentu yang menggunakan paket App Service dan pusat data yang ditentukan.
+Cmdlet **New-AzWebAppSlot** membuat Slot Aplikasi Web Azure dalam grup sumber daya tertentu yang menggunakan paket App Service dan pusat data yang ditentukan.
 
 ## EXAMPLES
 
@@ -39,13 +42,13 @@ Cmdlet **New-AzWebAppSlot** membuat Azure Web App Slot dalam grup sumber daya te
 New-AzWebAppSlot -ResourceGroupName Default-Web-WestUS -Name "ContosoSite" -AppServicePlan "ContosoServicePlan" -Slot "Slot001"
 ```
 
-Perintah ini membuat Slot bernama Slot001 di bawah nama Aplikasi Web yang sudah ada ContosoSite dalam grup sumber daya yang sudah ada bernama Default-Web-WestUS di pusat data AS Barat.
-Perintah menggunakan rencana App Service yang sudah ada bernama ContosoServicePlan.
+Perintah ini membuat Slot bernama Slot001 di bawah nama Aplikasi Web yang ada ContosoSite di grup sumber daya yang ada bernama Default-Web-WestUS di pusat data US Barat.
+Perintah ini menggunakan paket App Service yang ada bernama ContosoServicePlan.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-App Service Nama Rencana atau Id Paket App Service. Jika Slot dan Paket App Service berada dalam Grup Sumber Daya yang berbeda, gunakan ID, bukan nama. Id Paket App Service dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket App Service.
+Nama Paket App Service atau Id Paket App Service. Jika Slot dan Paket App Service berada di Grup Sumber Daya yang berbeda, gunakan ID, bukan nama. Id Paket App Service dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket App Service.
 
 ```yaml
 Type: System.String
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Aplikasi Pengaturan Menimpa Hashtable
+App Pengaturan Overrides Hashtable
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Kontainer Pribadi
+Url Server Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Private Container Registry
+Nama Pengguna Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Webhook penyebaran berkelanjutan kontainer Enables/Disables
+Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan kontainer
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreCustomHostNames
-Opsi Abaikan Nama Host Kustom
+Abaikan Opsi Nama Host Kustom
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Webapp
 
 ```yaml
@@ -300,17 +303,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## NOTES
 
@@ -318,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
+[Remove-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
 [Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 

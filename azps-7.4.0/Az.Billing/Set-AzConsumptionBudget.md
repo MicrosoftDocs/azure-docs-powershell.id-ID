@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/set-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
-ms.openlocfilehash: ad585e5c515da0eb3b36ac39c51aeca59e2482f4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3204c2c598d337a799d974df7fb1374120a930a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811296"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571556"
 ---
 # Set-AzConsumptionBudget
 
 ## SYNOPSIS
 Perbarui anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/set-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Cmdlet Set-AzConsumptionBudget memperbarui anggaran baik dalam langganan atau gr
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui anggaran dengan jumlah baru dengan nama anggaran pada tingkat langganan
+### Contoh 1: Memperbarui anggaran dengan jumlah baru dengan nama anggaran di tingkat langganan
 ```powershell
 Set-AzConsumptionBudget -Name PSBudget -Amount 75
 ```
@@ -76,7 +79,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 2: Memperbarui anggaran dengan pemberitahuan ketika biaya atau penggunaan mencapai ambang batas 90 persen dari jumlah pada tingkat langganan
+### Contoh 2: Memperbarui anggaran dengan pemberitahuan saat biaya atau penggunaan mencapai ambang batas 90 persen dari jumlah di tingkat langganan
 ```powershell
 Set-AzConsumptionBudget -Name PSBudget -NotificationKey notificationKey-ps1234 -NotificationEnabled -NotificationThreshold 90 -ContactEmail @('johndoe@contoso.com','janesmith@contoso.com') -ContactRole Owner,Reader,Contributor
 ```
@@ -117,7 +120,7 @@ Type:  Microsoft.Consumption/budgets
 
 ## PARAMETERS
 
-### -Amount
+### -Jumlah
 Jumlah anggaran.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactEmail
-Alamat email untuk mengirim pemberitahuan anggaran ke saat ambang batas melebihi batas.
+Alamat email untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactRole
-Peran kontak untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
+Hubungi peran untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal akhir (YYYY-MM-DD dalam UTC) periode waktu anggaran.
+Tanggal selesai (YYYY-MM-DD dalam UTC) periode waktu anggaran.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -255,7 +258,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama anggaran.
 
 ```yaml
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationKey
-Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan sakelar pemberitahuan diaktifkan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
+Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan pengalihan pemberitahuan diaktifkan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
 
 ```yaml
 Type: System.String
@@ -365,9 +368,9 @@ Accept wildcard characters: False
 
 ### -StartDate
 Tanggal mulai (YYYY-MM-DD dalam UTC) periode waktu anggaran.
-Tidak sebelum bulan saat ini untuk biji-bijian waktu bulanan.
-Tidak sebelum tiga bulan untuk biji-bijian kuartalan waktu.
-Tidak sebelum dua belas bulan untuk biji-bijian tahunan.
+Tidak sebelum bulan ini untuk butir waktu bulanan.
+Tidak sebelum tiga bulan untuk biji-bijian waktu triwulanan.
+Tidak sebelum dua belas bulan untuk butir waktu tahunan.
 Tanggal mulai di masa mendatang tidak lebih dari tiga bulan.
 
 ```yaml
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Butir waktu anggaran bisa bulanan, kuartalan, atau tahunan.
+Butir waktu anggaran bisa bulanan, triwulanan, atau tahunan.
 
 ```yaml
 Type: System.String
@@ -398,8 +401,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -441,7 +444,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
 ## NOTES
-- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia untuk pelanggan Perjanjian Enterprise.
-- SDK PowerShell untuk Pemakaian menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- Saat ini, PowerShell SDK untuk Konsumsi hanya tersedia untuk Perjanjian Enterprise pelanggan.
+- PowerShell SDK for Consumption menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

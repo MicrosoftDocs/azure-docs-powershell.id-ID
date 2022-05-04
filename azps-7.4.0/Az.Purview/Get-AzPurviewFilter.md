@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewFilter.md
-ms.openlocfilehash: 7faf122d141e1d4750d53d2bbdcb7180a1de3f08
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6b882b1e7872e162a374eca06f4109a631f64890
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060471"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562270"
 ---
 # Get-AzPurviewFilter
 
 ## SYNOPSIS
 Mendapatkan filter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewfilter) untuk informasi terbaru.
 
 ## SYNTAX
 

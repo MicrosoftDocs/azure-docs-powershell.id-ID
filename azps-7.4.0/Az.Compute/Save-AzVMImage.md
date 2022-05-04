@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/save-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
-ms.openlocfilehash: 869802d384c6f692b078b32ee700e994c64bc9b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1c625fa633281b257b0dc2590b5697b89296c6c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171855"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561334"
 ---
 # Save-AzVMImage
 
 ## SYNOPSIS
-Menyimpan mesin virtual sebagai VMImage.
+Menyimpan komputer virtual sebagai VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/save-azvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,26 +37,26 @@ Save-AzVMImage [-DestinationContainerName] <String> [-VHDNamePrefix] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzVMImage** menyimpan mesin virtual sebagai VMImage.
-Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu tandai sebagai umum dengan menggunakan cmdlet Set-AzVM.
+Cmdlet **Save-AzVMImage** menyimpan komputer virtual sebagai VMImage.
+Sebelum Anda membuat gambar komputer virtual, sysprep komputer virtual, lalu tandai sebagai digeneralisasi dengan menggunakan cmdlet Set-AzVM.
 Output cmdlet ini adalah templat JavaScript Object Notation (JSON).
-Anda dapat menggunakan mesin virtual dari gambar yang diambil.
+Anda dapat menyebarkan komputer virtual dari gambar yang diambil.
 
 ## EXAMPLES
 
-### Contoh 1: Capture a virtual machine
+### Contoh 1: Mengambil komputer virtual
 ```powershell
 Set-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized 
 Save-AzVMImage -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -DestinationContainerName "VMContainer01" -VHDNamePrefix "VM07"
 ```
 
-Perintah pertama menandai mesin virtual bernama VirtualMachine07 seperti yang digeneralisasi.
-Perintah kedua menangkap mesin virtual bernama VirtualMachine07 sebagai VMImage.
+Perintah pertama menandai komputer virtual bernama VirtualMachine07 sebagai umum.
+Perintah kedua menangkap komputer virtual bernama VirtualMachine07 sebagai VMImage.
 Properti **Output** mengembalikan templat JSON.
 
 ### Contoh 2
 
-Menyimpan mesin virtual sebagai VMImage. (autogenerasi)
+Menyimpan komputer virtual sebagai VMImage. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -63,7 +66,7 @@ Save-AzVMImage -DestinationContainerName 'VMContainer01' -Name 'VirtualMachine07
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationContainerName
-Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda pegang gambar Anda.
-Jika wadah tidak ada, wadah tersebut dibuat untuk Anda.
-Hard disk virtual (VHDs) yang merupakan VMImage berada di wadah yang ditentukan parameter ini.
-Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu wadah yang memiliki nama ini di setiap akun penyimpanan.
-URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxx-xxxx-xxxx-xxxx.vhd.
+Menentukan nama kontainer di dalam kontainer "sistem" yang ingin Anda pegang gambar Anda.
+Jika kontainer tidak ada, kontainer dibuat untuk Anda.
+Hard disk virtual (VHD) yang merupakan VMImage berada di kontainer yang ditentukan parameter ini.
+Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu kontainer yang memiliki nama ini di setiap akun penyimpanan.
+URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxxx-xxxx-xxxx-xxxx-xxx.vhd.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya mesin virtual.
+Menentukan ID Sumber Daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Menunjukkan bahwa cmdlet ini menimpa VHD apa pun yang memiliki prefiks yang sama dalam wadah tujuan.
+Menunjukkan bahwa cmdlet ini menimpa VHD apa pun yang memiliki awalan yang sama dalam kontainer tujuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur file tempat templat gambar yang direkam disimpan.
+Jalur file tempat templat gambar yang diambil disimpan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -187,8 +190,8 @@ Accept wildcard characters: False
 ```
 
 ### -VHDNamePrefix
-Menentukan prefiks dalam nama gumpala yang merupakan profil penyimpanan VMImage.
-Misalnya, prefiks vhdPrefix untuk disk sistem operasi menghasilkan nama vhdPrefix-osdisk.\<guid\>. Vhd.
+Menentukan awalan dalam nama blob yang merupakan profil penyimpanan VMImage.
+Misalnya, awalan vhdPrefix untuk disk sistem operasi menghasilkan nama vhdPrefix-osdisk.\<guid\>. Vhd.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

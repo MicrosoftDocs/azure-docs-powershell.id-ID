@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeOrder.md
-ms.openlocfilehash: eae5b38af4e72cfbdca81e58a9aeca5f02ef848d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aca04f0e0000194eda03c982ab8bc51c3d154413
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228879"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581239"
 ---
 # New-AzDataBoxEdgeOrder
 
 ## SYNOPSIS
-Membuat urutan baru untuk perangkat.
+Membuat pesanan baru untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgeorder) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzDataBoxEdgeOrder [-ResourceGroupName] <String> [-DeviceName] <String> -Con
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeOrder** membuat urutan baru untuk perangkat Data Box Edge. Sumber daya perangkat Data Box Edge harus dibuat terlebih dahulu sebelum membuat pesanan. Anda bisa menentukan detail seperti kontak orang, nama perusahaan, email, alamat dll. sebagai parameter untuk membuat pesanan.
+Cmdlet **New-AzDataBoxEdgeOrder** membuat pesanan baru untuk perangkat Data Box Edge. Sumber daya perangkat Data Box Edge perlu dibuat terlebih dahulu sebelum membuat pesanan. Anda dapat menentukan detail seperti kontak orang, nama perusahaan, email, alamat, dll. sebagai parameter untuk membuat pesanan.
 
 ## EXAMPLES
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactPerson
-Nama orang kontak
+Nama kontak orang
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Nama Sumber Daya
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -254,8 +257,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Nama Negara Bagian
+### -State
+Nama Status
 
 ```yaml
 Type: System.String
@@ -269,8 +272,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

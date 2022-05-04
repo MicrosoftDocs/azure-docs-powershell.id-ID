@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtension.md
-ms.openlocfilehash: accc5824e9f006bf190eb6079489b4a116c3725f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2a215e66cc49f96822c21595933cfa0c0725ee9a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172251"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570141"
 ---
 # Get-AzVMExtension
 
 ## SYNOPSIS
-Dapatkan properti Ekstensi Mesin Virtual yang terinstal di mesin virtual.
+Mendapatkan properti Ekstensi Komputer Virtual yang diinstal pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,9 +42,9 @@ Get-AzVMExtension [-Status] [-ResourceId <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMExtension** mendapatkan properti Ekstensi Mesin Virtual yang diinstal pada mesin virtual.
+Cmdlet **Get-AzVMExtension** mendapatkan properti Ekstensi Komputer Virtual yang diinstal pada komputer virtual.
 Tentukan nama ekstensi untuk mendapatkan properti.
-Untuk mendapatkan hanya tampilan instans ekstensi, tentukan parameter Status.
+Untuk hanya mendapatkan tampilan instans ekstensi, tentukan parameter Status.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ AutoUpgradeMinorVersion : True
 ForceUpdateTag          :
 ```
 
-Perintah ini mendapatkan properti untuk ekstensi bernama CustomScriptExtension pada mesin virtual bernama VirtualMachine22 dalam grup sumber daya ResourceGroup11.
+Perintah ini mendapatkan properti untuk ekstensi bernama CustomScriptExtension pada komputer virtual bernama VirtualMachine22 di grup sumber daya ResourceGroup11.
 
 ### Contoh 2: Mendapatkan tampilan instans ekstensi
 ```powershell
@@ -97,9 +100,9 @@ AutoUpgradeMinorVersion : True
 ForceUpdateTag          :
 ```
 
-Perintah ini mendapatkan tampilan instans untuk ekstensi bernama CustomScriptExtension pada mesin virtual bernama VirtualMachine22 dalam grup sumber daya ResourceGroup11.
+Perintah ini mendapatkan tampilan instans untuk ekstensi bernama CustomScriptExtension pada komputer virtual bernama VirtualMachine22 di grup sumber daya ResourceGroup11.
 
-### Contoh 3: Menginstal semua ekstensi di VM
+### Contoh 3: Dapatkan semua ekstensi yang terinstal pada VM
 ```powershell
 Get-AzVMExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine22"
 ```
@@ -150,7 +153,7 @@ AutoUpgradeMinorVersion : True
 ForceUpdateTag          :
 ```
 
-Perintah ini akan menginstal daftar ekstensi di mesin virtual bernama VirtualMachine22 dalam grup sumber daya ResourceGroup11.
+Perintah ini mendapatkan daftar ekstensi yang diinstal pada komputer virtual bernama VirtualMachine22 di grup sumber daya ResourceGroup11.
 
 ## PARAMETERS
 
@@ -169,7 +172,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi.
 Cmdlet ini mendapatkan properti untuk ekstensi yang ditentukan parameter ini.
 
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya yang menentukan objek mesin virtual tempat ekstensi diaktifkan.
+Id Sumber Daya yang menentukan objek komputer virtual tempat ekstensi aktif.
 
 ```yaml
 Type: System.String
@@ -231,8 +234,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini mendapatkan properti ekstensi dari mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini mendapatkan properti ekstensi dari komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMObject
-Menentukan objek mesin maya tempat ekstensi diaktifkan.
+Menentukan objek komputer virtual tempat ekstensi diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

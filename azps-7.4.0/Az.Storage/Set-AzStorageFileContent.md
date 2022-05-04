@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
-ms.openlocfilehash: 7e314cd504275d1cd65363bfe28ae018fcd634f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c13f60f8602648684ed07245d91c6e1b03a6bf2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932310"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576830"
 ---
 # Set-AzStorageFileContent
 
 ## SYNOPSIS
 Mengunggah konten file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragefilecontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzStorageFileContent [-ShareName] <String> [-Source] <String> [[-Path] <Stri
  [-PreserveSMBAttribute] [<CommonParameters>]
 ```
 
-### Berbagi
+### Bagikan
 ```
 Set-AzStorageFileContent [-Share] <CloudFileShare> [-Source] <String> [[-Path] <String>] [-PassThru] [-Force]
  [-AsJob] [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -49,14 +52,14 @@ Cmdlet **Set-AzStorageFileContent** mengunggah konten file ke file pada berbagi 
 
 ## EXAMPLES
 
-### Contoh 1: Upload file dalam folder saat ini
+### Contoh 1: Upload file di folder saat ini
 ```
 PS C:\>Set-AzStorageFileContent -ShareName "ContosoShare06" -Source "DataFile37" -Path "ContosoWorkingFolder/CurrentDataFile"
 ```
 
-Perintah ini mengunggah file yang bernama DataFile37 dalam folder saat ini sebagai file yang dinamai CurrentDataFile dalam folder bernama ContosoWorkingFolder.
+Perintah ini mengunggah file bernama DataFile37 di folder saat ini sebagai file yang bernama CurrentDataFile di folder bernama ContosoWorkingFolder.
 
-### Contoh 2: Upload semua file dalam folder saat ini
+### Contoh 2: Upload semua file di folder saat ini
 ```
 PS C:\>$CurrentFolder = (Get-Item .).FullName
 PS C:\> $Container = Get-AzStorageShare -Name "ContosoShare06"
@@ -66,16 +69,16 @@ PS C:\> Get-ChildItem -Recurse | Where-Object { $_.GetType().Name -eq "FileInfo"
 }
 ```
 
-Contoh ini menggunakan beberapa cmdlet umum Windows PowerShell dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar kontainer ContosoShare06.
+Contoh ini menggunakan beberapa cmdlet Windows PowerShell umum dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar kontainer ContosoShare06.
 Perintah pertama mendapatkan nama folder saat ini dan menyimpannya dalam variabel $CurrentFolder.
 Perintah kedua menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam variabel $Container.
-Perintah akhir mendapatkan konten folder saat ini dan meneruskan masing-masing ke cmdlet Where-Object menggunakan operator pipeline.
+Perintah akhir mendapatkan konten folder saat ini dan meneruskan masing-masing ke cmdlet Where-Object dengan menggunakan operator alur.
 Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke cmdlet ForEach-Object.
-Cmdlet tersebut menjalankan blok skrip untuk setiap file yang membuat jalur yang sesuai untuknya lalu menggunakan cmdlet saat ini untuk mengunggah file.
+Cmdlet tersebut menjalankan blok skrip untuk setiap file yang membuat jalur yang sesuai untuknya dan kemudian menggunakan cmdlet saat ini untuk mengunggah file.
 Hasilnya memiliki nama yang sama dan posisi relatif yang sama sehubungan dengan file lain yang diunggah contoh ini.
-Untuk informasi selengkapnya tentang blok skrip, ketik .`Get-Help about_Script_Blocks`
+Untuk informasi selengkapnya tentang blok skrip, ketik `Get-Help about_Script_Blocks`.
 
-### Contoh 3: Upload file lokal ke file Azure, dan mempertahankan properti File SMB lokal (File Attributtes, Waktu Pembuatan File, Waktu Penulisan Terakhir File) dalam file Azure.
+### Contoh 3: Upload file lokal ke file Azure, dan mempertahankan properti File SMB lokal (Attributte File, Waktu Pembuatan File, Waktu Penulisan Terakhir File) dalam file Azure.
 ```
 PS C:\>Get-AzStorageFileContent -source $localFilePath -ShareName sample -Path "dir1/file1" -PreserveSMBAttribute
 ```
@@ -100,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -117,9 +120,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -135,7 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
@@ -184,8 +187,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menimpa file penyimpanan Azure yang sudah ada.
+### -Force
+Menunjukkan bahwa cmdlet ini menimpa file penyimpanan Azure yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,11 +219,11 @@ Accept wildcard characters: False
 
 ### -Jalur
 Menentukan jalur file atau folder.
-Cmdlet ini mengunggah konten ke file yang ditentukan parameter ini, atau ke file dalam folder yang ditentukan parameter ini.
-Jika Anda menentukan folder, cmdlet ini akan membuat file yang memiliki nama yang sama dengan file sumber.
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut dan menyimpan konten ke file tersebut.
-Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Force_ , cmdlet ini menimpa konten file.
-Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Force_, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
+Cmdlet ini mengunggah konten ke file yang ditentukan parameter ini, atau ke file di folder yang ditentukan parameter ini.
+Jika Anda menentukan folder, cmdlet ini membuat file yang memiliki nama yang sama dengan file sumber.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini membuat file tersebut dan menyimpan konten ke file tersebut.
+Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Paksa_ , cmdlet ini menimpa konten file.
+Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Paksa_, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
 Jika Anda menentukan jalur folder yang tidak ada, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreserveSMBAttribute
-Simpan properti SMB File sumber (Attributte File, Waktu Pembuatan File, Waktu Tulis Terakhir File) di File tujuan. Parameter ini hanya tersedia di Windows.
+Pertahankan properti File SMB sumber (Attributte File, Waktu Pembuatan File, Waktu Penulisan Terakhir File) di File tujuan. Parameter ini hanya tersedia di Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
-Cmdlet ini mengunggah ke file dalam file yang dibagikan parameter ini.
+Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
@@ -285,8 +288,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama file yang dibagikan.
-Cmdlet ini mengunggah ke file dalam file yang dibagikan parameter ini.
+Menentukan nama berbagi file.
+Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Menentukan file sumber yang diunggah cmdlet ini.
 Jika Anda menentukan file yang tidak ada, cmdlet ini mengembalikan kesalahan.
 
@@ -316,8 +319,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -332,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

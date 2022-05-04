@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintArtifact.md
-ms.openlocfilehash: 25d2218ac44e726385bac98dd44f69e9d2119993
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3b03e50d1412d4e0b2e121288ba8603d23424367
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878490"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576524"
 ---
 # Get-AzBlueprintArtifact
 
 ## SYNOPSIS
-Ambil artefak dari definisi cetak biru.
+Mengambil artefak dari definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/get-azblueprintartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzBlueprintArtifact [-Name <String>] -Blueprint <PSBlueprintBase> [-Blueprin
 ```
 
 ## DESCRIPTION
-Ambil artefak dari definisi cetak biru. Jika versi definisi cetak biru tidak ditentukan, versi draf diambil. Dalam kasus di mana tidak ada versi draf, definisi cetak biru terbaru yang diterbitkan dikembalikan.
+Mengambil artefak dari definisi cetak biru. Jika versi definisi cetak biru tidak ditentukan, versi draf diambil. Dalam kasus di mana tidak ada versi draf, definisi cetak biru terbaru yang diterbitkan dikembalikan.
 
 ## EXAMPLES
 
@@ -58,12 +61,12 @@ Type               : Microsoft.Blueprint/blueprints/artifacts
 Name               : 0e1593da-47d5-4b75-800c-9a797dd23192
 ```
 
-Ambil artefak dari definisi cetak biru. 
+Ambil artefak dari definisi cetak biru.. 
 
 ## PARAMETERS
 
-### -Blueprint
-Objek Blueprint.
+### -Cetak biru
+Objek cetak biru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintBase
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlueprintVersion
-Versi cetak biru untuk mendapatkan artefak dari.
+Versi cetak biru untuk mendapatkan artefak.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama artefak
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

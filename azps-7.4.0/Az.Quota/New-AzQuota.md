@@ -5,22 +5,25 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/new-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuota.md
-ms.openlocfilehash: 76f48847e33cc2fdf8ff20025a6f4e41d40c6270
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd0c10deaa41d6b6b533904b9cee48d4b99445e5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117657"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558562"
 ---
 # New-AzQuota
 
 ## SYNOPSIS
-Buat atau perbarui batas kuota untuk sumber daya tertentu dengan nilai yang diminta.
-Untuk memperbarui kuota, ikuti langkah-langkah ini:\n1.
-Gunakan operasi GET untuk kuota dan penggunaan untuk menentukan berapa banyak sisa kuota untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
-Langkah-langkah ini dirinci dalam [contoh ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).\n2.
+Buat atau perbarui batas kuota untuk sumber daya yang ditentukan dengan nilai yang diminta.
+Untuk memperbarui kuota, ikuti langkah-langkah berikut:\n1.
+Gunakan operasi GET untuk kuota dan penggunaan untuk menentukan berapa banyak kuota yang tersisa untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
+Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
-Silakan periksa URI di header lokasi untuk status detail permintaan.
+Silakan periksa URI di header lokasi untuk status terperinci permintaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/new-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,16 +34,16 @@ New-AzQuota -ResourceName <String> -Scope <String> [-Limit <ILimitJsonObject>] [
 ```
 
 ## DESCRIPTION
-Buat atau perbarui batas kuota untuk sumber daya tertentu dengan nilai yang diminta.
-Untuk memperbarui kuota, ikuti langkah-langkah ini:\n1.
-Gunakan operasi GET untuk kuota dan penggunaan untuk menentukan berapa banyak sisa kuota untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
-Langkah-langkah ini dirinci dalam [contoh ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).\n2.
+Buat atau perbarui batas kuota untuk sumber daya yang ditentukan dengan nilai yang diminta.
+Untuk memperbarui kuota, ikuti langkah-langkah berikut:\n1.
+Gunakan operasi GET untuk kuota dan penggunaan untuk menentukan berapa banyak kuota yang tersisa untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
+Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
-Silakan periksa URI di header lokasi untuk status detail permintaan.
+Silakan periksa URI di header lokasi untuk status terperinci permintaan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui batas kuota untuk sumber daya tertentu dengan nilai yang diminta
+### Contoh 1: Membuat atau memperbarui batas kuota untuk sumber daya yang ditentukan dengan nilai yang diminta
 ```powershell
 $limit = New-AzQuotaLimitObject -Value 1003
 New-AzQuota -Scope "subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Network/locations/eastus2" -ResourceName "PublicIPAddresses" -Name "PublicIPAddresses" -Limit $limit
@@ -52,12 +55,12 @@ Name              NameLocalizedValue          Unit  ETag
 PublicIPAddresses Public IP Addresses - Basic Count
 ```
 
-Perintah ini membuat atau memperbarui batas kuota untuk sumber daya tertentu dengan nilai yang diminta.
+Perintah ini membuat atau memperbarui batas kuota untuk sumber daya yang ditentukan dengan nilai yang diminta.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Limit
+### -Batas
 Properti batas kuota sumber daya.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceName
 Nama sumber daya untuk penyedia sumber daya tertentu.
-Misalnya:
+Contohnya:
 - Nama SKU untuk Microsoft.Compute
 - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Nama tipe sumber daya.
+Nama jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -164,11 +167,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Target URI sumber daya Azure.
-Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi List GET.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+### -Cakupan
+URI sumber daya Azure target.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
+`{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -182,8 +185,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 3493c73af74fe5535ec9e52377a072aa0b764e60
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c98efd86f03e50946bb63224023f5221ddd3c2be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676210"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566878"
 ---
 # Get-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
-Mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu.
+Mengembalikan semua pencarian tersimpan untuk ruang kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-WorkspaceNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian yang disimpan.
-Jika Anda menentukan ID pencarian yang disimpan, maka pencarian tersimpan yang terkait dengan ID tersebut akan dikembalikan.
+Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian tersimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian tersimpan.
+Jika Anda menentukan ID pencarian tersimpan, maka pencarian tersimpan yang sesuai dengan ID tersebut dikembalikan.
 
 ## EXAMPLES
 
@@ -36,14 +39,14 @@ Jika Anda menentukan ID pencarian yang disimpan, maka pencarian tersimpan yang t
 Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini mendapatkan semua sumber daya yang disimpan yang terkait dengan ruang kerja.
+Perintah ini mendapatkan semua sumber daya tersimpan yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan pencarian tertentu yang disimpan menurut ID
+### Contoh 2: Mendapatkan pencarian tersimpan tertentu menurut ID
 ```powershell
 Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId"
 ```
 
-Perintah ini mendapatkan pencarian tertentu yang disimpan dengan ID-nya.
+Perintah ini mendapatkan pencarian tersimpan tertentu dengan ID-nya.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -SavedSearchId
-Menentukan ID pencarian yang disimpan.
+Menentukan ID pencarian tersimpan.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

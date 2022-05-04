@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableCollection.md
-ms.openlocfilehash: cc1825b00422e6573944c4e705abd3e247fe4024
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 78def50262a66cd180151dda804ee6d33e996132
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561298"
 ---
 # Get-AzCosmosDBMongoDBRestorableCollection
 
 ## SYNOPSIS
-Mencantumkan semua kumpulan Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk database tertentu.
+Mencantumkan semua koleksi Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk database tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorablecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +35,9 @@ Get-AzCosmosDBMongoDBRestorableCollection -InputObject <PSRestorableSqlDatabaseG
 ```
 
 ## DESCRIPTION
-Mencantumkan semua kumpulan Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk database tertentu.
-Daftar akan memiliki entri yang terkait dengan pembuatan, penggantian, dan penghapusan acara semua koleksi langsung dan dihapus di bawah database tertentu.
-Daftar ini berguna untuk mengidentifikasi cap waktu pemulihan berdasarkan perubahan dalam kumpulan. Misalnya, jika pengguna ingin memulihkan akun database ke stempel waktu ketika kumpulan tertentu dihapus, pengguna dapat menemukan kejadian penghapusan koleksi terkait dari daftar ini, dan memilih cap waktu sebelum acara penghapusan untuk dipulihkan.
+Mencantumkan semua koleksi Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk database tertentu.
+Daftar ini akan memiliki entri yang sesuai untuk membuat, mengganti, dan menghapus peristiwa semua koleksi langsung dan dihapus di bawah database tertentu.
+Daftar ini berguna untuk mengidentifikasi tanda waktu pemulihan berdasarkan perubahan dalam koleksi. Misalnya, jika pengguna ingin memulihkan akun database ke tanda waktu saat koleksi tertentu dihapus, pengguna dapat menemukan peristiwa penghapusan koleksi yang sesuai dari daftar ini, dan memilih tanda waktu sebelum peristiwa penghapusan untuk pemulihan.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ OwnerId         : foo-collection1
 OwnerResourceId : Ts0YAP+RbG0=
 ```
 
-Objek sumber daya berisi properti sumber daya kumpulan
+Objek sumber daya berisi properti sumber daya koleksi
 
 ## PARAMETERS
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Database MongoDB Yang Dapat Dipulihkan CosmosDB
+Objek Database MongoDB yang Dapat Dipulihkan CosmosDB
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableSqlDatabaseGetResult
@@ -156,11 +159,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

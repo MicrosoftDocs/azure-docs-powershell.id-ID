@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: 009e38723d3d2f9a7a03a36cc9db61dff69330a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e5ec04f905d415db467c2527dfbf03a8586f16d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993637"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559665"
 ---
 # Get-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
-Mendapatkan tipe informasi saat ini dan label sensitivitas kolom dalam kumpulan SQL.
+Mendapatkan jenis informasi saat ini dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Get-AzSynapseSqlPoolSensitivityClassification -SqlPoolObject <PSSynapseSqlPool> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSynapseSqlPoolSensitivityClassification mengembalikan tipe informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
+Cmdlet Get-AzSynapseSqlPoolSensitivityClassification mengembalikan jenis informasi saat ini dan label sensitivitas kolom di kumpulan Azure Synapse SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi saat ini dan label sensitivitas kumpulan Azure Synapse SQL.
+### Contoh 1: Dapatkan jenis informasi saat ini dan label sensitivitas kumpulan Azure Synapse SQL.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool
 ```
@@ -80,7 +83,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi saat ini dan label sensitivitas kumpulan Azure Synapse SQL dengan Piping.
+### Contoh 2: Dapatkan jenis informasi saat ini dan label sensitivitas kumpulan Azure Synapse SQL dengan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityClassification
 ```
@@ -110,7 +113,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 3: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari kumpulan Azure Synapse SQL.
+### Contoh 3: Dapatkan jenis informasi saat ini dan label sensitivitas kolom tertentu dari kumpulan Azure Synapse SQL.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 ```
@@ -129,7 +132,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 4: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 4: Dapatkan jenis informasi saat ini dan label sensitivitas kolom tertentu dari kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityClassification -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 ```
@@ -151,7 +154,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama Synapse SQL pool.
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -270,7 +273,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

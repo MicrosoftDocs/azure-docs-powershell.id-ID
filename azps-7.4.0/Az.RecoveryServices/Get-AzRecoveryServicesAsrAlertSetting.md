@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: 655a41176e4214fea5df36959916e15cc7180adf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02e7caf5a1a27a97e804f234e3c61e42b2bb740d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802656"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570890"
 ---
 # Get-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk kubah.
+Mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasralertsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzRecoveryServicesAsrAlertSetting [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrAlertSetting** mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk kubah.
+Cmdlet **Get-AzRecoveryServicesAsrAlertSetting** mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk vault.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ CustomEmailAddress     EmailSubscriptionOwner Locale
 {abcxxxx@xxxx.com} On                     en-US
 ```
 
-Dapatkan Pengaturan Pemberitahuan / Pemberitahuan untuk Azure Site Recovery.
+Mendapatkan Pengaturan Pemberitahuan / Pemberitahuan untuk Azure Site Recovery.
 
 ## PARAMETERS
 
@@ -59,11 +62,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

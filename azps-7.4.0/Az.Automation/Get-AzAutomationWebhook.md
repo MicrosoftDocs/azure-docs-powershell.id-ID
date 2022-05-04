@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationWebhook.md
-ms.openlocfilehash: 577737dc20c12bf085b18b8f8be021625ccc9ce5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fbe9ee85ba33ba917b5e4f01e7a2e9e68f27f930
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007461"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573392"
 ---
 # Get-AzAutomationWebhook
 
 ## SYNOPSIS
-Mendapatkan webhook dari Otomatisasi.
+Mendapatkan webhook dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +43,12 @@ Get-AzAutomationWebhook -RunbookName <String> [-ResourceGroupName] <String> [-Au
 
 ## DESCRIPTION
 Cmdlet **Get-AzAutomationWebhook** mendapatkan webhook.
-Untuk mendapatkan webhook tertentu, tentukan nama webhook atau tentukan nama runbook Azure Automation untuk menyambungkan webhook ke dalamnya.<br>
-**Catatan:** WebhookUri dikembalikan sebagai string kosong karena masalah keamanan. Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet **New-AzAutomationWebhook** , karena tidak dapat diambil menggunakan **Get-AzAutomationWebhook**.
+Untuk mendapatkan webhook tertentu, tentukan nama webhook atau tentukan nama runbook Azure Automation agar webhook tersambung ke dalamnya.<br>
+**Catatan:** WebhookUri dikembalikan sebagai string kosong karena masalah keamanan. Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet **New-AzAutomationWebhook** , karena tidak dapat diambil dengan menggunakan **Get-AzAutomationWebhook**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua webhook untuk runbook
+### Contoh 1: Mendapatkan semua webhook untuk runbook
 ```
 PS C:\>Get-AzAutomationWebhook -RunbookName "Runbook03" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
@@ -55,7 +58,7 @@ Perintah ini mendapatkan semua webhook untuk runbook bernama Runbook03 di akun A
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan webhook.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan webhook.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama webhook yang didapat cmdlet ini.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan webhook.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan webhook.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook di mana cmdlet ini mendapatkan webhook.
+Menentukan nama runbook yang cmdlet ini mendapatkan webhook.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

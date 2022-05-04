@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlConfiguration.md
-ms.openlocfilehash: f52099e4fc94143a62d697326ed13a4fbb0aa4dc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f5e4c3c729931650e37840463cf649014841233
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119457"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562414"
 ---
 # Update-AzMySqlConfiguration
 
 ## SYNOPSIS
 Memperbarui konfigurasi server.
 Gunakan Update-AzMySqlServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Gunakan Update-AzMySqlServer sebagai gantinya jika Anda ingin memperbarui Admini
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui konfigurasi MySql menurut nama
+### Contoh 1: Memperbarui konfigurasi MySql berdasarkan nama
 ```powershell
 Update-AzMySqlConfiguration -Name net_retry_count -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -Value 15
 ```
@@ -50,9 +53,9 @@ Name            Value
 net_retry_count 15
 ```
 
-Cmdlet ini memperbarui konfigurasi MySql menurut nama.
+Cmdlet ini memperbarui konfigurasi MySql berdasarkan nama.
 
-### Contoh 2: Perbarui konfigurasi MySql menurut identitas.
+### Contoh 2: Perbarui konfigurasi MySql berdasarkan identitas.
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/servers/mysql-test/configurations/wait_timeout"
 Update-AzMySqlConfiguration -InputObject $ID -Value 150
@@ -64,12 +67,12 @@ Name         Value
 wait_timeout 150
 ```
 
-Cmdlet ini memperbarui konfigurasi MySql menurut identitas.
+Cmdlet ini memperbarui konfigurasi MySql berdasarkan identitas.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Parameter Identitas.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -114,7 +117,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi server.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber konfigurasi.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai konfigurasi.
 
 ```yaml
@@ -220,8 +223,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -278,7 +281,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJob.md
-ms.openlocfilehash: 7c38b13f2f758591aec5ee4e9728a6c1156954b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a35d197efb4548c29ef69cf046f26f10a64cb602
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007227"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578270"
 ---
 # New-AzBatchJob
 
 ## SYNOPSIS
 Membuat pekerjaan di layanan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzBatchJob [-Id] <String> [-CommonEnvironmentSettings <IDictionary>] [-Displ
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchJob** membuat pekerjaan dalam layanan Azure Batch dalam akun yang ditentukan oleh parameter *BatchAccountContext*.
+Cmdlet **New-AzBatchJob** membuat pekerjaan di layanan Azure Batch di akun yang ditentukan oleh parameter *BatchAccountContext*.
 
 ## EXAMPLES
 
@@ -41,18 +44,18 @@ $PoolInformation.PoolId = "Pool22"
 New-AzBatchJob -Id "ContosoJob35" -PoolInformation $PoolInformation -BatchContext $Context
 ```
 
-Perintah pertama membuat objek **PSPoolInformation** menggunakan cmdlet New-Object.
+Perintah pertama membuat objek **PSPoolInformation** dengan menggunakan cmdlet New-Object.
 Perintah menyimpan objek tersebut dalam variabel $PoolInformation.
-Perintah kedua menetapkan ID Pool22 ke properti **PoolId** objek dalam $PoolInformation.
-Perintah terakhir membuat pekerjaan yang memiliki ID ContosoJob35.
-Tugas ditambahkan ke pekerjaan yang dijalankan pada kumpulan yang memiliki ID Pool22.
+Perintah kedua menetapkan ID Pool22 ke properti **PoolId** objek di $PoolInformation.
+Perintah akhir membuat pekerjaan yang memiliki ID ContosoJob35.
+Tugas yang ditambahkan ke pekerjaan berjalan pada kumpulan yang memiliki ID Pool22.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -JobPreparationTask
 Menentukan tugas Persiapan Pekerjaan.
-Layanan Batch menjalankan tugas Persiapan Pekerjaan pada simpul komputasi sebelum memulai tugas apa pun dari pekerjaan tersebut pada simpul komputasi tersebut.
+Layanan Batch menjalankan tugas Persiapan Pekerjaan pada simpul komputasi sebelum memulai tugas pekerjaan tersebut pada simpul komputasi tersebut.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSJobPreparationTask
@@ -177,8 +180,8 @@ Accept wildcard characters: False
 
 ### -JobReleaseTask
 Menentukan tugas Rilis Pekerjaan.
-Layanan Batch menjalankan tugas Rilis Pekerjaan ketika pekerjaan berakhir.
-Layanan Batch menjalankan tugas Rilis Pekerjaan di setiap simpul komputasi tempat layanan menjalankan tugas apa pun dari pekerjaan tersebut.
+Layanan Batch menjalankan tugas Rilis Pekerjaan saat pekerjaan berakhir.
+Layanan Batch menjalankan tugas Rilis Pekerjaan pada setiap simpul komputasi di mana ia menjalankan tugas pekerjaan apa pun.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSJobReleaseTask
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnAllTasksComplete
-Menentukan tindakan yang dilakukan layanan Batch jika semua tugas dalam pekerjaan berada dalam status selesai.
+Menentukan tindakan yang diambil layanan Batch jika semua tugas dalam pekerjaan dalam status selesai.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.OnAllTasksComplete]
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnTaskFailure
-Menentukan tindakan yang dilakukan layanan Batch jika ada tugas dalam pekerjaan yang gagal.
+Menentukan tindakan yang diambil layanan Batch jika ada tugas dalam pekerjaan yang gagal.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.OnTaskFailure]
@@ -261,7 +264,7 @@ Menentukan prioritas pekerjaan.
 Nilai yang valid adalah: bilangan bulat dari -1000 hingga 1000.
 Nilai -1000 adalah prioritas terendah.
 Nilai 1000 adalah prioritas tertinggi.
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.Int32
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

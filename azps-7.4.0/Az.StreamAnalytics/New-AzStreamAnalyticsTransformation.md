@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: 7f2d42facee66c54a45d6ca4abdf4631cca83e5b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48f410e05cfd029a1b1c3d411ae678ab1335b33a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057267"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563149"
 ---
 # New-AzStreamAnalyticsTransformation
 
 ## SYNOPSIS
-Membuat transformasi atau menggantikan transformasi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat transformasi atau mengganti transformasi yang sudah ada di bawah pekerjaan streaming yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticstransformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzStreamAnalyticsTransformation -JobName <String> -Name <String> -ResourceGr
 ```
 
 ## DESCRIPTION
-Membuat transformasi atau menggantikan transformasi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat transformasi atau mengganti transformasi yang sudah ada di bawah pekerjaan streaming yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau mengganti transformasi dalam pekerjaan analitik stream
+### Contoh 1: Membuat atau mengganti transformasi dalam pekerjaan analisis aliran
 ```powershell
 New-AzStreamAnalyticsTransformation -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name tranf-01 -StreamingUnit 6 -Query "Select Id, Name from input-01"
 ```
@@ -40,7 +43,7 @@ Name     Type                                                    ETag
 tranf-01 Microsoft.StreamAnalytics/streamingjobs/transformations ec0c7238-6bb2-4dad-b2cf-04c6a9285f4d
 ```
 
-Perintah ini membuat transformasi dalam pekerjaan stream analytics yang disebut.
+Perintah ini membuat transformasi dalam pekerjaan analisis aliran yang disebut.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag transformasi.
 Hilangkan nilai ini untuk selalu menimpa transformasi saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -77,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memungkinkan transformasi baru dibuat, tetapi untuk mencegah pembaruan transformasi yang sudah ada.
-Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
+Atur ke '*' untuk memungkinkan transformasi baru dibuat, tetapi untuk mencegah pembaruan transformasi yang ada.
+Nilai lain akan menghasilkan respons 412 Pra-kondisi Gagal.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama transformasi.
 
 ```yaml
@@ -122,9 +125,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Menentukan kueri yang akan dijalankan dalam pekerjaan streaming.
-Anda dapat mempelajari selengkapnya tentang Stream Analytics Query Language (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
+Anda dapat mempelajari selengkapnya tentang Bahasa Kueri Azure Stream Analytics (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
 Diperlukan pada permintaan PUT (CreateOrReplace).
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreamingUnit
-Menentukan jumlah unit streaming yang digunakan oleh pekerjaan streaming.
+Menentukan jumlah unit streaming yang digunakan pekerjaan streaming.
 
 ```yaml
 Type: System.Int32
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

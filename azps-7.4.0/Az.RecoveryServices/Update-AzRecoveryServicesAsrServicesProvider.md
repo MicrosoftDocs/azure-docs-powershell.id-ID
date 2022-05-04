@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrServicesProvider.md
-ms.openlocfilehash: 75fed2bd1979e82b86a5a1ed368eff0336f94064
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b679a0b8e0d5a6de4016971ce8a17fee0141aa0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868122"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566680"
 ---
 # Update-AzRecoveryServicesAsrServicesProvider
 
 ## SYNOPSIS
-Refresh (Refresh server) informasi yang diterima dari Penyedia Layanan Site Recovery Azure.
+Menyegarkan (Refresh server) informasi yang diterima dari Penyedia Layanan azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrservicesprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzRecoveryServicesAsrServicesProvider -InputObject <ASRRecoveryServicesPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrServicesProvider** memperbarui informasi yang diterima dari Penyedia Layanan azure Site Recovery. Anda dapat menggunakan cmdlet ini untuk memicu refresh informasi yang diterima dari Penyedia Layanan Pemulihan.
+Cmdlet **Update-AzRecoveryServicesAsrServicesProvider** memperbarui informasi yang diterima dari Penyedia Layanan Azure Site Recovery. Anda dapat menggunakan cmdlet ini untuk memicu refresh informasi yang diterima dari Penyedia Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Update-AzRecoveryServicesAsrServicesProvider** memperbarui informasi ya
 $currentJob = Update-AzRecoveryServicesAsrServicesProvider -InputObject $ServicesProvider
 ```
 
-Memulai operasi refresh informasi dari penyedia layanan ASR tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi refresh informasi dari penyedia layanan ASR yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek penyedia layanan ASR yang mengidentifikasi server yang informasinya akan diperbarui(direfresh.)
+Menentukan objek penyedia layanan ASR yang mengidentifikasi server yang informasinya akan diperbarui (disegarkan.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
@@ -69,8 +72,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

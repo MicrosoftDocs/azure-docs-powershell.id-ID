@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/remove-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
-ms.openlocfilehash: e94538e4ad8709b1f59e897c43af5028d4f4440b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6289e081976d3a88c09ac13543b218a48c54b537
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142880002"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568227"
 ---
 # Remove-AzAksNodePool
 
 ## SYNOPSIS
-Hapus kumpulan node dari kluster terkelola.
+Hapus kumpulan simpul dari kluster terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/remove-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +50,11 @@ Remove-AzAksNodePool [-Name] <String> -ClusterObject <PSKubernetesCluster> [-Pas
 ```
 
 ## DESCRIPTION
-Hapus kumpulan node dari kluster terkelola.
+Hapus kumpulan simpul dari kluster terkelola.
 
 ## EXAMPLES
 
-### Hapus kumpulan simpul yang ditentukan
+### Menghapus kumpulan simpul yang ditentukan
 ```powershell
 Remove-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster -Name winpool
 ```
@@ -59,7 +62,7 @@ Remove-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster -
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Hapus kumpulan simpul tanpa perintah
+### -Force
+Menghapus kumpulan simpul tanpa perintah
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id of an node pool in managed Kubernetes cluster
+Id kumpulan simpul di kluster Kubernetes terkelola
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sebuah objek PSAgentPool, biasanya melewati pipa.
+Objek PSAgentPool, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSNodePool
@@ -163,7 +166,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan simpul Anda
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -225,8 +228,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

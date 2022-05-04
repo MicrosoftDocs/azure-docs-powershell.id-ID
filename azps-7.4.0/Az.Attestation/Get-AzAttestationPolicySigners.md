@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
-ms.openlocfilehash: 7552d7e55fe4bd6c6182c64d3fe3c9aadd563b15
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 228b64295708f003021643b7aff9e464de8ca7ea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812178"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578395"
 ---
 # Get-AzAttestationPolicySigners
 
 ## SYNOPSIS
 Mendapatkan penanda tangan kebijakan tepercaya dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestationpolicysigners) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ JKU              : https://pshtest.us.attest.azure.net/certs
 Certificates     : {}
 ```
 
-Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest* Penyedia Pengesahan di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Pengesahan ini.
+Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest Penyedia Pengesahan* di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +77,7 @@ Certificates     : {{
                    }}
 ```
 
-Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest2* Penyedia Pengesahan2 di Resource Group *psh-test-rg*.  Perhatikan bahwa ada satu penanda tangan tepercaya untuk Penyedia Pengesahan ini.
+Mendapatkan penanda tangan kebijakan tepercaya untuk Penyedia Pengesahan *pshtest2* di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa ada satu penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
 ### Contoh 3
 ```powershell
@@ -95,7 +98,7 @@ JKU              : https://sharedcus.cus.attest.azure.net/certs
 Certificates     : {}
 ```
 
-Mendapatkan penanda tangan kebijakan tepercaya untuk Penyedia Default Pengesahan di Location *Central US*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Default Pengesahan.
+Mendapatkan penanda tangan kebijakan tepercaya untuk Penyedia Default Pengesahan di Lokasi *US Tengah*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Default Pengesahan.
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan Lokasi penyedia penetapan default.
+Menentukan Lokasi penyedia pengesahan default.
 
 ```yaml
 Type: System.String
@@ -144,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyedia atestation.
+### -Name
+Menentukan nama penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan RESOURCEID penyedia atestation.
+Menentukan ResourceID dari penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: 37e2df2d9633b5d0716a69bf090aaa2a3343acfb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07aa05947b5947ee8f768595b9938ee0bea22326
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063873"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567670"
 ---
 # Get-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
-Mendapatkan penyedia identitas tepercaya tertentu di Data Lake Store yang ditentukan.
+Mendapatkan IdP tepercaya yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada penyedia yang ditentukan, maka daftar semua penyedia untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Get-AzDataLakeStoreTrustedIdProvider [-Account] <String> [[-Name] <String>] [[-R
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeStoreTrustedIdProvider** mendapatkan penyedia identitas tepercaya tertentu dalam Data Lake Store yang ditentukan.
+Cmdlet **Get-AzDataLakeStoreTrustedIdProvider** mendapatkan IdP tepercaya yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada penyedia yang ditentukan, maka daftar semua penyedia untuk akun tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penyedia identitas tepercaya tertentu
+### Contoh 1: Mendapatkan IdP tepercaya tertentu
 ```powershell
 Get-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL" -Name MyProvider
 ```
@@ -49,7 +52,7 @@ Mencantumkan semua penyedia di bawah akun "ContosoADL"
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk mengambil penyedia identitas tepercaya dari
+Akun Data Lake Store untuk mengambil idP tepercaya dari
 
 ```yaml
 Type: System.String
@@ -78,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama penyedia identitas tepercaya untuk diambil
+### -Name
+Nama IdP tepercaya yang akan diambil
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana ingin mengambil penyedia identitas tepercaya yang ditentukan akun tertentu.
+Nama grup sumber daya di mana ingin mengambil idP tepercaya yang ditentukan dari akun yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

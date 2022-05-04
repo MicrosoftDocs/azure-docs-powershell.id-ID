@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogTagRule.md
-ms.openlocfilehash: 433d7cc9591d0b405be7d28443f2dc3d4d24858f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bcec29fa9ea73e053ea6afdfff2914d2ebdbb9a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317756"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562666"
 ---
 # Get-AzDatadogTagRule
 
 ## SYNOPSIS
-Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogtagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDatadogTagRule -MonitorName <String> -ResourceGroupName <String> [-Subscri
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDatadogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -37,7 +40,7 @@ Get-AzDatadogTagRule -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>
 ```
 
 ## DESCRIPTION
-Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ default microsoft.Datadog/monitors/tagrules
 
 Perintah ini mencantumkan semua aturan tag yang ditetapkan untuk sumber daya monitor tertentu.
 
-### Contoh 2: Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 2: Mendapatkan seperangkat aturan tag untuk sumber daya monitor tertentu
 ```powershell
 Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default'
 ```
@@ -65,9 +68,9 @@ Name    Type
 default microsoft.Datadog/monitors/tagrules
 ```
 
-Perintah ini mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Perintah ini mendapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
 
-### Contoh 3: Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu menurut pipeline
+### Contoh 3: Mendapatkan seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur
 ```powershell
 Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | Get-AzDatadogTagRule
 ```
@@ -78,7 +81,7 @@ Name    Type
 default microsoft.Datadog/monitors/tagrules
 ```
 
-Perintah ini mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu menurut saluran.
+Perintah ini mendapatkan seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan aturan
+### -Name
+Nama seperangkat aturan
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -197,8 +200,8 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RuleSetName <String>]`: Nama kumpulan aturan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

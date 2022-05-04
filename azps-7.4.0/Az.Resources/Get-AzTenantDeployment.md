@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeployment.md
-ms.openlocfilehash: 3dd0042016bdd940236298cb6b24d1f13587c4f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6e8ab9d5f76a99d2023c667d622d5f2b35f52f05
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673884"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569108"
 ---
 # Get-AzTenantDeployment
 
 ## SYNOPSIS
-Dapatkan penggunaan di lingkup penyewa
+Mendapatkan penyebaran di cakupan penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztenantdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,34 +34,34 @@ Get-AzTenantDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTenantDeployment** mendapatkan penyebaran di lingkup penyewa.
-Tentukan parameter *Nama* atau *Id* untuk memfilter hasil.
-Secara default, **Get-AzTenantDeployment** mendapatkan semua penyebaran di lingkup penyewa.
+Cmdlet **Get-AzTenantDeployment** mendapatkan penyebaran di cakupan penyewa.
+Tentukan parameter *Nama* atau *Id* untuk memfilter hasilnya.
+Secara default, **Get-AzTenantDeployment** mendapatkan semua penyebaran di cakupan penyewa.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua penyebaran di lingkup penyewa
+### Contoh 1: Mendapatkan semua penyebaran di cakupan penyewa
 ```powershell
 Get-AzTenantDeployment
 ```
 
-Perintah ini mendapatkan semua penyebaran pada lingkup penyewa saat ini.
+Perintah ini mendapatkan semua penyebaran di cakupan penyewa saat ini.
 
 ### Contoh 2: Mendapatkan penyebaran berdasarkan nama
 ```powershell
 Get-AzDeployment -Name "Deploy01"
 ```
 
-Perintah ini mendapatkan penyebaran "Deploy01" di lingkup penyewa saat ini.
-Anda dapat menetapkan nama untuk penyebaran saat membuatnya menggunakan cmdlet **New-AzTenantDeployment** .
+Perintah ini mendapatkan penyebaran "Deploy01" di cakupan penyewa saat ini.
+Anda dapat menetapkan nama ke penyebaran saat membuatnya dengan menggunakan cmdlet **New-AzTenantDeployment** .
 Jika Anda tidak menetapkan nama, cmdlet menyediakan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
-### Contoh 3: Dapatkan penyebaran menurut ID
+### Contoh 3: Mendapatkan penyebaran berdasarkan ID
 ```powershell
 Get-AzDeployment -Id "/providers/Microsoft.Resources/deployments/Deploy01"
 ```
 
-Perintah ini mendapatkan penyebaran "Deploy01" di lingkup penyewa.
+Perintah ini mendapatkan penyebaran "Deploy01" di cakupan penyewa.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 contoh: /providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran.
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

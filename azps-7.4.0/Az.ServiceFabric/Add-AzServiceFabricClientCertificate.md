@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricClientCertificate.md
-ms.openlocfilehash: 86be1aa8521e275cb934d1a702cff9c7d1593c8d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dfa733e077fe4ab64f10b63cb6b16fcdb8f96beb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308727"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580196"
 ---
 # Add-AzServiceFabricClientCertificate
 
 ## SYNOPSIS
-Tambahkan nama umum atau sidik jari ke kluster untuk tujuan autentikasi klien.
+Tambahkan nama umum atau thumbprint ke kluster untuk tujuan autentikasi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SingleUpdateWithUmbprint
+### SingleUpdateWithThumbprint
 ```
 Add-AzServiceFabricClientCertificate [-Admin] [-ResourceGroupName] <String> [-Name] <String>
  -Thumbprint <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,7 +42,7 @@ Add-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <Stri
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MultipleUpdatesWithumbprint
+### MultipleUpdatesWithThumbprint
 ```
 Add-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-AdminClientThumbprint <String[]>] [-ReadonlyClientThumbprint <String[]>]
@@ -47,7 +50,7 @@ Add-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Gunakan **Add-AzServiceFabricClientCertificate** untuk menambahkan nama umum dan sidik jari penerbit atau sidik jari sertifikat ke kluster, sehingga klien dapat menggunakannya untuk autentikasi.
+Gunakan **Add-AzServiceFabricClientCertificate** untuk menambahkan nama umum dan thumbprint penerbit atau thumbprint sertifikat ke kluster, sehingga klien dapat menggunakannya untuk autentikasi.
 
 ## EXAMPLES
 
@@ -56,19 +59,19 @@ Gunakan **Add-AzServiceFabricClientCertificate** untuk menambahkan nama umum dan
 Add-AzServiceFabricClientCertificate -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A -Admin
 ```
 
-Perintah ini akan menambahkan sertifikat dengan sidik jari '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster, sehingga klien dapat menggunakan sertifikat sebagai admin untuk berkomunikasi dengan kluster.
+Perintah ini akan menambahkan sertifikat dengan thumbprint '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster, sehingga klien dapat menggunakan sertifikat sebagai admin untuk berkomunikasi dengan kluster.
 
 ### Contoh 2
 ```powershell
 Add-AzServiceFabricClientCertificate -ResourceGroupName 'Group2' -Name 'Contoso02SFCluster' -CommonName 'Contoso.com' -IssuerThumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A
 ```
 
-Perintah ini akan menambahkan sertifikat klien baca saja yang nama umumnya adalah 'Contoso.com' dan sidik jari penerbit adalah '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster.
+Perintah ini akan menambahkan sertifikat klien baca saja yang nama umumnya adalah 'Contoso.com' dan thumbprint penerbit adalah '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster.
 
 ## PARAMETERS
 
 ### -Admin
-Tipe autentikasi klien
+Jenis autentikasi klien
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminClientThumbprint
-Menentukan sidik jari sertifikat klien yang hanya memiliki izin admin
+Tentukan thumbprint sertifikat klien yang hanya memiliki izin admin
 
 ```yaml
 Type: System.String[]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificateCommonName
-Tentukan nama umum klien , tipe sidik jari dan autentikasi penerbit
+Tentukan nama umum klien , thumbprint penerbit dan jenis autentikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSClientCertificateCommonName[]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerThumbprint
-Tentukan sidik jari penerbit sertifikat klien
+Tentukan thumbprint pengeluar sertifikat klien
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyClientThumbprint
-Menentukan sidik jari sertifikat klien yang hanya memiliki izin baca-saja
+Tentukan thumbprint sertifikat klien yang hanya memiliki izin baca-saja
 
 ```yaml
 Type: System.String[]
@@ -202,8 +205,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
-Tentukan sidik jari sertifikat klien
+### -Thumbprint
+Tentukan thumbprint sertifikat klien
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

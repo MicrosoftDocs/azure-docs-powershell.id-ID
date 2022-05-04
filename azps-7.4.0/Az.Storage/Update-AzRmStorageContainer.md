@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
-ms.openlocfilehash: 23942c6af22fd6e9dd5d5afe0d76ba067d42ebe9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8510c05ee68dacdf6881f4f5d5f3078a3b83de27
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932257"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576704"
 ---
 # Update-AzRmStorageContainer
 
 ## SYNOPSIS
-Mengubah wadah blob Storage
+Memodifikasi kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,33 +43,33 @@ Update-AzRmStorageContainer -InputObject <PSContainer> [-PublicAccess <PSPublicA
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRmStorageContainer** memodifikasi wadah blob Storage
+Cmdlet **Update-AzRmStorageContainer** memodifikasi kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah metadata kontainer blob dan akses publik Storage dengan nama akun dan nama kontainer Storage
+### Contoh 1: Memodifikasi metadata kontainer blob Storage dan akses publik dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Update-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -PublicAccess Container -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini mengubah metadata dan akses publik kontainer blob Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini memodifikasi metadata kontainer blob Storage dan akses publik dengan nama akun Storage dan nama kontainer.
 
-### Contoh 2: Menonaktifkan akses publik pada wadah blob Storage dengan objek akun Storage dan nama kontainer
+### Contoh 2: Menonaktifkan akses publik pada kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Update-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess None
 ```
 
-Perintah ini menonaktifkan akses publik pada wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini menonaktifkan akses publik pada kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Mengatur akses publik sebagai Blob untuk semua wadah blob Storage dalam akun Storage dengan pipeline
+### Contoh 3: Mengatur akses publik sebagai Blob untuk semua kontainer blob Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Update-AzRmStorageContainer -PublicAccess Blob
 ```
 
-Perintah ini mengatur akses publik sebagai Blob untuk semua wadah blob Storage dalam akun Storage dengan pipeline.
+Perintah ini mengatur akses publik sebagai Blob untuk semua kontainer blob Storage di akun Storage dengan alur.
 
-### Contoh 4: Memperbarui wadah penyimpanan Azure dengan RootSquash
+### Contoh 4: Memperbarui kontainer penyimpanan Azure dengan RootSquash
 ```
 PS C:\> $container = Update-AzRmStorageContainer -ResourceGroupName "myersourcegroup" -AccountName "mystorageaccount" -Name "mycontainer" -RootSquash NoRootSquash
 
@@ -77,7 +80,7 @@ PS C:\> $container.EnableNfsV3RootSquash
 False
 ```
 
-Perintah ini memperbarui wadah penyimpanan, dengan properti RootSquash diatur sebagai NoRootSquash. RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
+Perintah ini memperbarui kontainer penyimpanan, dengan properti RootSquash ditetapkan sebagai NoRootSquash. RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -126,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicAccess
-Wadah PublicAccess
+PublicAccess Kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSPublicAccess
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootSquash
-Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
+Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang mungkin termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -218,8 +221,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

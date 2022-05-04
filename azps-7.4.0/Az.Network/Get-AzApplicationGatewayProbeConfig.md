@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 8856d4527d7fc766645978cb5e3332e3b45d6963
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 144c62bbb123e57ed7bcd4ee8f372f1fac89fbc1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939565"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580628"
 ---
 # Get-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
+Mendapatkan konfigurasi pemeriksaan kesehatan yang ada dari Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzApplicationGatewayProbeConfig [-Name <String>] -ApplicationGateway <PSAppl
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
+Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi pemeriksaan kesehatan yang ada dari Application Gateway.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan probe yang sudah ada dari gateway aplikasi
+### Contoh 1: Mendapatkan pemeriksaan yang sudah ada dari gateway aplikasi
 ```powershell
 Get-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe02"
 ```
@@ -39,7 +42,7 @@ Perintah ini mendapatkan pemeriksaan kesehatan bernama Probe02 dari gateway apli
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini mendapatkan konfigurasi probe.
+Menentukan gateway aplikasi tempat cmdlet ini mendapatkan konfigurasi pemeriksaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama probe.
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -98,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Menambahkan probe ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
+[Menambahkan pemeriksaan ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
 
 [Add-AzApplicationGatewayProbeConfig](./Add-AzApplicationGatewayProbeConfig.md)
 

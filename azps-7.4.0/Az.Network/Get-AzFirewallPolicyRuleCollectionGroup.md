@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: e478ab309c542801de7581a7f3e6a34b1e2d3bcb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 245200e436e3da98082d944b2fed28962fe59b69
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560884"
 ---
 # Get-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
-Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure
+Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +50,11 @@ Cmdlet **Get-AzFirewallPolicyRuleCollectionGroup** mendapatkan RuleCollectionGro
 Get-AzFirewallPolicyRuleCollectionGroup -Name rg1 -AzureFirewallPolicy $fp
 ```
 
-Contoh ini mendapatkan kumpulan aturanGroup dalam kebijakan firewall $fp
+Contoh ini mendapatkan collectionGroup aturan dalam kebijakan firewall $fp
 
 ### Contoh 2
 
-Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure. (autogenerasi)
+Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

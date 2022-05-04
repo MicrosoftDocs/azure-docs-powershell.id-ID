@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Quota/New-AzQuot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuotaLimitObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuotaLimitObject.md
-ms.openlocfilehash: f60fb72cb6532e4bb0faeec8ffd0b4baaf398fd1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f8a53078a4bb3c958676f62a9eb0e30909adfd90
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310887"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577299"
 ---
 # New-AzQuotaLimitObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk LimitObject.
+Buat objek dalam memori untuk LimitObject.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/new-azquotalimitobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ New-AzQuotaLimitObject -Value <Int32> [-LimitType <QuotaLimitTypes>] [<CommonPar
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk LimitObject.
+Buat objek dalam memori untuk LimitObject.
 
 ## EXAMPLES
 
@@ -39,12 +42,12 @@ LimitObjectType LimitType Value
 LimitValue                1003
 ```
 
-Perintah ini membuat objek dalam memori untuk LimitValue sebagai nilai batas parameter dalam cmdlet Baru/Pembaruan-AzQuota.
+Perintah ini membuat objek dalam memori untuk LimitValue sebagai nilai Batas parameter dalam cmdlet New/Update-AzQuota.
 
 ## PARAMETERS
 
 ### -LimitType
-Tipe batas kuota atau penggunaan.
+Jenis batas kuota atau penggunaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Quota.Support.QuotaLimitTypes
@@ -58,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai kuota/batas.
 
 ```yaml
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

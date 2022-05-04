@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/edit-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
-ms.openlocfilehash: 128d1566a6e80efce748806cbb58cbeb7c48409b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f4cdfbbfb9753b46c4f239566c8242feccef25aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143268749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571826"
 ---
 # Edit-AzWebAppBackupConfiguration
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/edit-azwebappbackupconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Edit-AzWebAppBackupConfiguration** mengedit cadangan konfigurasi saat i
 
 ### Contoh 1
 
-Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (autogenerasi)
+Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -51,8 +54,8 @@ Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <Stri
 
 ## PARAMETERS
 
-### -Databases
-Database tipe DatabaseBackupSetting[]
+### -Database
+Database jenis DatabaseBackupSetting[]
 
 ```yaml
 Type: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrequencyUnit
-Satuan Frekuensi
+Unit Frekuensi
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepAtLeastOneBackup
-Pertahankan Setidaknya Satu Opsi Pencadangan
+Pertahankan setidaknya satu opsi pencadangan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPeriodInDays
-Periode penyimpanan dalam hari
+Periode Retensi Dalam Hari
 
 ```yaml
 Type: System.Int32
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-URL Akun Storage
+Url Akun Storage
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -244,7 +247,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ### Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
 

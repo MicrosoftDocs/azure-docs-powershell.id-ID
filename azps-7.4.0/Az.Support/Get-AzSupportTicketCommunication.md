@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicketCommunication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicketCommunication.md
-ms.openlocfilehash: b97a0f876113ac9ed12846fd46d30f36bbf1727f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da1a7c04dffc90499fac61b421c7082dc568a0b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270459"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576614"
 ---
 # Get-AzSupportTicketCommunication
 
 ## SYNOPSIS
-Dapatkan komunikasi tiket dukungan.
+Mendapatkan komunikasi tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportticketcommunication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,21 +37,21 @@ Get-AzSupportTicketCommunication [-Name <String>] -SupportTicketObject <PSSuppor
 ```
 
 ## DESCRIPTION
-Mendapatkan komunikasi untuk tiket dukungan. Ini akan mengambil semua komunikasi untuk tiket jika Anda tidak menentukan parameter lain. Anda juga bisa memfilter komunikasi dengan CreatedDate atau CommunicationType menggunakan parameter Filter. Berikut adalah beberapa contoh nilai filter yang bisa Anda tentukan.
+Mendapatkan komunikasi untuk tiket dukungan. Ini akan mengambil semua komunikasi untuk tiket jika Anda tidak menentukan parameter lain. Anda juga dapat memfilter komunikasi dengan CreatedDate atau CommunicationType menggunakan parameter Filter. Berikut adalah beberapa contoh nilai filter yang bisa Anda tentukan.
 
 
 | Skenario                                                        | Filter                                                     |
 |-----------------------------------------------------------------|------------------------------------------------------------|
-| Dapatkan komunikasi Web                                          | "CommunicationType eq 'Web'"                               |
-| Dapatkan komunikasi Telepon                                        | "CommunicationType eq 'Phone'"                             |
-| Dapatkan komunikasi yang dibuat pada atau setelah 20 Des 2019 | "CreatedDate ge 2019-12-20"                                |
-| Dapatkan komunikasi yang dibuat setelah 20 Des 2019       | "CreatedDate gt 2019-12-20"                                |
-| Membuat komunikasi Web setelah 20 Des 2019            | "CreatedDate gt 2019-12-20 and CommunicationType eq 'Web'" |
+| Mendapatkan komunikasi Web                                          | "CommunicationType eq 'Web'"                               |
+| Mendapatkan komunikasi Telepon                                        | "CommunicationType eq 'Telepon'"                             |
+| Mendapatkan komunikasi yang dibuat pada atau setelah 20 Des 2019 | "CreatedDate ge 2019-12-20"                                |
+| Mendapatkan komunikasi yang dibuat setelah 20 Des 2019       | "CreatedDate gt 2019-12-20"                                |
+| Mendapatkan komunikasi Web yang dibuat setelah 20 Des 2019            | "CreatedDate gt 2019-12-20 dan CommunicationType eq 'Web'" |
 
 
 Cmdlet ini mendukung paging melalui parameter Pertama dan Lewati.
 
-Anda juga bisa mengambil satu komunikasi tiket dukungan dengan menentukan nama komunikasi. 
+Anda juga dapat mengambil satu komunikasi tiket dukungan dengan menentukan nama komunikasi. 
 
 ## EXAMPLES
 
@@ -129,7 +132,7 @@ testmessage3 user@contoso.com     test message3  2/4/2020 9:38:14 PM
 testmessage2 user@contoso.com     test message2  2/4/2020 9:36:36 PM
 ```
 
-### Contoh 8: Ambil semua komunikasi untuk tiket dukungan dengan objek tiket dukungan perpipaan
+### Contoh 8: Mengambil semua komunikasi untuk tiket dukungan dengan menyalurkan objek tiket dukungan
 ```powershell
 Get-AzSupportTicket -Name "test1" | Get-AzSupportTicketCommunication
 ```
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan ke hasil cmdlet ini.
+Filter yang akan diterapkan ke hasil cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama komunikasi.
 
 ```yaml
@@ -219,9 +222,9 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah total objek dalam kumpulan data (bilangan bulat) diikuti dengan objek yang dipilih.
-Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan menampilkan "Jumlah total tidak diketahui." Bilangan bulat memiliki properti Akurasi yang menunjukkan keandalan nilai total hitungan.
-Nilai Akurasi berkisar dari 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak dapat menghitung objek, 1,0 berarti bahwa hitungan tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
+Melaporkan jumlah total objek dalam himpunan data (bilangan bulat) diikuti oleh objek yang dipilih.
+Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan menampilkan "Jumlah total tidak diketahui." Bilangan bulat memiliki properti Akurasi yang menunjukkan keandalan nilai jumlah total.
+Nilai Akurasi berkisar antara 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak dapat menghitung objek, 1,0 berarti bahwa hitungannya tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hanya mendapatkan jumlah objek yang ditentukan.
 Masukkan jumlah objek yang akan didapatkan.
 
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
