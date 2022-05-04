@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/new-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPool.md
-ms.openlocfilehash: 044881d99cce4b52c51dbc5973eb0b4ecf8a4a2b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: abedb7d9d0df23d2aa21e5f611321e159e04e823
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316953"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737794"
 ---
 # New-AzDiskPool
 
@@ -18,6 +18,9 @@ ms.locfileid: "143316953"
 Membuat atau Memperbarui kumpulan Disk.
 Operasi pembuatan atau pembaruan ini dapat memakan waktu 15 menit untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/new-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 

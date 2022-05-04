@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
-ms.openlocfilehash: 2a63a354a8a50897b86e7b0b2b483c88d0fcdb9e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f42154071fc72a80aab1f5b172608569adbb7acd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280665"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724176"
 ---
 # New-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Membuat sumber daya VirtualNetworkTap.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +44,13 @@ Cmdlet **New-AzVirtualNetworkTap** membuat sumber daya ketuk jaringan virtual Az
 
 ## EXAMPLES
 
-### Contoh 1: Buat ketuk jaringan virtual Azure
+### Contoh 1: Membuat ketukan jaringan virtual Azure
 ```powershell
 New-AzVirtualNetworkTap -Name "VirtualNetworkTap1" -ResourceGroupName "ResourceGroup1" -Location "centralus" -DestinationPort 8888 -DestinationNetworkInterfaceIPConfiguration $destinationNic.IpConfigurations[0]
 ```
 
-Perintah ini membuat ketuk jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (DestinationIpConfiguration, DestinationPort).
-Semua ketuk sumber mengonfigurasi lalu lintas VM akan dirutekan ke IP Tujuan + Port ini.
+Perintah ini membuat ketukan jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (DestinationIpConfiguration, DestinationPort).
+Semua ketuk sumber yang dikonfigurasi lalu lintas VM akan dirutekan ke IP Tujuan + Port ini.
 
 ### Contoh 2: Buat ketuk jaringan virtual Azure menggunakan IP LoadBalancer
 ```powershell
@@ -56,13 +59,13 @@ $frontend = New-AzLoadBalancerFrontendIpConfig -Name $frontendName -PublicIpAddr
 New-AzVirtualNetworkTap -Name "VirtualNetworkTap1" -ResourceGroupName "ResourceGroup1" -Location "centralus" -DestinationLoadBalancerFrontEndIPConfiguration $frontend
 ```
 
-Perintah ini membuat ketuk jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (FrontEndIpConfiguration).
-Semua ketuk sumber mengonfigurasi lalu lintas VM akan dirutekan ke LoadBalancer IpConfiguration ini. Port Tujuan Default adalah 4789.
+Perintah ini membuat ketukan jaringan virtual bernama "VirtualNetworkTap1" yang memiliki detail konfigurasi VM tujuan (FrontEndIpConfiguration).
+Semua ketuk sumber lalu lintas VM yang dikonfigurasi akan dirutekan ke LoadBalancer IpConfiguration ini. Port Tujuan Default adalah 4789.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationLoadBalancerFrontEndIPConfiguration
-Referensi sumber daya konfigurasi IP ujung depan penyeimbang muatan tujuan.
+Referensi sumber daya konfigurasi IP front end load balancer tujuan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationLoadBalancerFrontEndIPConfigurationId
-Referensi sumber daya konfigurasi IP ujung depan penyeimbang muatan tujuan.
+Referensi sumber daya konfigurasi IP front end load balancer tujuan.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Pelabuhan Tujuan dari kolektor paket
+Port Tujuan kolektor paket
 
 ```yaml
 Type: System.Int32
@@ -166,7 +169,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -196,7 +199,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ketukan.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari ketuk jaringan virtual.
+Nama grup sumber daya dari ketukan jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -241,8 +244,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

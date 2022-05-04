@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/add-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
-ms.openlocfilehash: e0104fd3a33e3fdbf433463e0683528550fe6a48
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e329f8989f52bf1074c0a31a6078eb247badda8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143305847"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739378"
 ---
-# Add-AzStorageAccountManagementPolicyAction
+# Tambahkan-AzstorageAccountManagementPolicyaction
 
 ## SYNOPSIS
-Menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan tersebut. Objek dapat digunakan dalam New-AzStorageAccountManagementPolicyRule.
+Menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan. Objek dapat digunakan dalam New-AzStorageAccountManagementPolicyRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azstorageaccountmanagementpolicyaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Add-AzStorageAccountManagementPolicyAction -BlobVersionAction <String> -DaysAfte
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzStorageAccountManagementPolicyAction** menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan tersebut.
+Cmdlet **Add-AzStorageAccountManagementPolicyAction** menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan.
 
 ## EXAMPLES
 
@@ -76,9 +79,9 @@ PS C:\>$rule = New-AzStorageAccountManagementPolicyRule -Name Test -Action $acti
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 3 perintah berikut ini menambahkan 3 tindakan ke objek. Lalu tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
+Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 3 perintah berikut menambahkan 3 tindakan ke objek . Kemudian tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
 
-### Contoh 2: Membuat objek Grup Tindakan ManagementPolicy dengan 6 tindakan pada snapshot dan versi blob, lalu menambahkannya ke aturan kebijakan manajemen dan diatur ke akun Storage
+### Contoh 2: Membuat objek Grup Tindakan ManagementPolicy dengan 6 tindakan pada rekam jepret dan versi blob, lalu menambahkannya ke aturan kebijakan manajemen dan diatur ke akun Storage
 ```
 PS C:\> $action = Add-AzStorageAccountManagementPolicyAction  -SnapshotAction Delete -daysAfterCreationGreaterThan 40
 PS C:\> $action = Add-AzStorageAccountManagementPolicyAction -InputObject $action -SnapshotAction TierToArchive -daysAfterCreationGreaterThan 50
@@ -106,7 +109,7 @@ PS C:\>$rule = New-AzStorageAccountManagementPolicyRule -Name Test -Action $acti
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 5 perintah berikut ini menambahkan 5 tindakan pada snapshot dan versi blob ke objek. Lalu tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
+Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 5 perintah berikut menambahkan 5 tindakan pada rekam jepret dan versi blob ke objek. Kemudian tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
 
 ## PARAMETERS
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterCreationGreaterThan
-Nilai bilangan bulat menunjukkan usia dalam hari setelah pembuatan.
+Nilai bilangan bulat menunjukkan usia dalam beberapa hari setelah pembuatan.
 
 ```yaml
 Type: System.Int32
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterLastAccessTimeGreaterThan
-Nilai bilangan bulat menunjukkan usia dalam hari setelah akses blob terakhir. Properti ini hanya dapat digunakan bersama dengan kebijakan pelacakan waktu akses terakhir.
+Nilai bilangan bulat yang menunjukkan usia dalam beberapa hari setelah akses blob terakhir. Properti ini hanya dapat digunakan bersama dengan kebijakan pelacakan waktu akses terakhir.
 
 ```yaml
 Type: System.Int32
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterModificationGreaterThan
-Nilai bilangan bulat menunjukkan usia dalam hari setelah modifikasi terakhir.
+Nilai bilangan bulat menunjukkan usia dalam beberapa hari setelah modifikasi terakhir.
 
 ```yaml
 Type: System.Int32
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoTierToHotFromCool
-Memungkinkan tingkat otomatis blob dari dingin ke panas pada akses blob. Ini hanya berfungsi dengan tindakan TierToCool dan DaysAfterLastAccessTimeGreaterThan.
+Memungkinkan penjenjangan otomatis blob dari dingin ke panas pada akses blob. Ini hanya berfungsi dengan tindakan TierToCool dan DaysAfterLastAccessTimeGreaterThan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Jika memasukkan objek Tindakan ManagementPolicy, akan mengatur tindakan ke objek tindakan input.
-Jika tidak diinput, akan membuat objek tindakan baru.
+Jika tidak input, akan membuat objek tindakan baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSManagementPolicyActionGroup
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotAction
-Tindakan kebijakan manajemen untuk snapshot.
+Tindakan kebijakan manajemen untuk rekam jepret.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

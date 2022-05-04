@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRule.md
-ms.openlocfilehash: de485cbf497a976b75bbd2b23bde45c3b00c0709
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 097eb5bacf64bfae6ca84382817a8ff99dcc3c5d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680976"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738910"
 ---
 # Add-AzMetricAlertRule
 
 ## SYNOPSIS
 Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azmetricalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,9 +32,9 @@ Add-AzMetricAlertRule -WindowSize <TimeSpan> -Operator <ConditionOperator> -Thre
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzMetricAlertRule** menambahkan atau memperbarui aturan peringatan berbasis metrik.
-Aturan yang ditambahkan terkait dengan grup sumber daya dan memiliki nama.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Add-AzMetricAlertRule** menambahkan atau memperbarui aturan pemberitahuan berbasis metrik.
+Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ RequestId                                                                       
 
 Perintah ini menonaktifkan aturan.
 Jika aturan tidak ada, aturan akan membuatnya dinonaktifkan.
-Jika aturan sudah ada, maka aturan tersebut hanya menonaktifkannya.
+Jika aturan ada, maka aturan hanya menonaktifkannya.
 
 ### Contoh 3: Menambahkan aturan dengan tindakan
 ```powershell
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana aturan ditentukan.
+Menentukan lokasi tempat aturan ditentukan.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricName
-Menentukan nama metrik yang sedang dipantau oleh aturan.
+Menentukan nama metrik yang dipantau aturan.
 Tentukan parameter ini hanya untuk aturan berbasis metrik.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menentukan operator relasi untuk kondisi aturan.
+Menentukan operator relasional untuk kondisi aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - GreaterThan
 - GreaterThanOrEqual
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Menentukan ID sumber daya yang sedang dipantau oleh aturan. CATATAN: Properti ini tidak dapat diperbarui untuk aturan pemberitahuan yang sudah ada.
+Menentukan ID sumber daya yang dipantau aturan. CATATAN: Properti ini tidak dapat diperbarui untuk aturan pemberitahuan yang ada.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ambang batas
-Menentukan ambang batas aturan.
+Menentukan ambang aturan.
 
 ```yaml
 Type: System.Double
@@ -282,8 +285,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -329,7 +332,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
@@ -351,6 +354,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzAlertRuleWebhook](./New-AzAlertRuleWebhook.md)
 
-[Hapus-AzAlertRule](./Remove-AzAlertRule.md)
+[Remove-AzAlertRule](./Remove-AzAlertRule.md)
 
 

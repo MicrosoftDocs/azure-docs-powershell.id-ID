@@ -1,17 +1,17 @@
 ---
 description: Menggunakan Az Predictor untuk penyelesaian perintah sadar konteks cerdas dalam Azure PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Penyelesaian perintah sadar konteks cerdas dengan Az Predictor
-ms.openlocfilehash: c55c6feee3bf586fbde8b3c3d8783d52d160b72a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: becb532c84db9fa7b5f554c9bd207059dd1b9f6c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116338"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721512"
 ---
 # <a name="intelligent-context-aware-command-completion-with-az-predictor"></a>Penyelesaian perintah sadar konteks cerdas dengan Az Predictor
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplication.md
-ms.openlocfilehash: 5a149adbffeaf17fc3b9ec113479f4b047ab0188
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 478b25a8a9443f228b78668ca26298ff666ce9c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748872"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703020"
 ---
 # Get-AzWvdApplication
 
 ## SYNOPSIS
-Dapatkan aplikasi.
+Mendapatkan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWvdApplication -GroupName <String> -ResourceGroupName <String> [-Subscript
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzWvdApplication -GroupName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzWvdApplication -InputObject <IDesktopVirtualizationIdentity> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Dapatkan aplikasi.
+Mendapatkan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows Aplikasi Desktop Virtual berdasarkan nama
+### Contoh 1: Dapatkan Windows Aplikasi Virtual Desktop berdasarkan nama
 ```powershell
 Get-AzWvdApplication -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName -Name ApplicationName
 ```
@@ -53,9 +56,9 @@ Name                                 Type
 ApplicationGroupName/ApplicationName Microsoft.DesktopVirtualization/applicationgroups/applications
 ```
 
-Perintah ini mendapatkan Aplikasi Desktop Virtual Windows dalam Grup aplikasi.
+Perintah ini mendapatkan Aplikasi Virtual Desktop Windows dalam Grup aplikasi.
 
-### Contoh 2: Daftar Windows Aplikasi Desktop Virtual
+### Contoh 2: Mencantumkan Windows Aplikasi Virtual Desktop
 ```powershell
 Get-AzWvdApplication -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName
 ```
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi dalam grup aplikasi yang ditentukan
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -171,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IAplikasi
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IApplication
 
 ## NOTES
 
@@ -188,9 +191,9 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringExchangeConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringExchangeConnectionObject.md
-ms.openlocfilehash: bbde9f94362dd1d352db91f6359b8d5715d2a780
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd9fab5af76f1af7076e2ce5d9c9435c23c49596
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118125"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723906"
 ---
 # Set-AzPeeringExchangeConnectionObject
 
 ## SYNOPSIS
-Mengatur atau memperbarui informasi koneksi Exchange. 
+Mengatur atau memperbarui informasi Koneksi Exchange. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/set-azpeeringexchangeconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,23 +41,23 @@ Set-AzPeeringExchangeConnectionObject -InputObject <PSExchangeConnection> -MD5Au
 ```
 
 ## DESCRIPTION
-Digunakan bersama dengan Update-AzPeering, ini adalah operasi memori dan hanya akan bertahan dengan `Update-AzPeering`. 
+Digunakan bersama dengan Update-AzPeering, ini adalah operasi dalam memori dan hanya akan bertahan dengan `Update-AzPeering`. 
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Md5 Hash
+### Contoh 1: Memperbarui Hash Md5
 ```powershell
 $update = Get-AzPeering -PeerName "ContosoPeering" -ResourceGroupName rg1 | Set-AzPeeringExchangeConnectionObject -MD5AuthenticationKey $hash
 ```
 
-Memperbarui Hash Md5 untuk koneksi pertama dalam objek Peering dalam memori. 
+Memperbarui Hash Md5 untuk koneksi pertama di objek Peering dalam memori. 
 
 ### Contoh 2: Memperbarui Alamat Sesi Bgp
 ```powershell
 $update = Get-AzPeering -PeerName "ContosoPeering" -ResourceGroupName rg1 | Set-AzPeeringExchangeConnectionObject -PeerSessionIPv4Address "192.168.0.1" -MaxPrefixesAdvertisedIPv4 20000
 ```
 
-Memperbarui Alamat Peering untuk koneksi pertama dalam objek Peering di memori. 
+Memperbarui Alamat Peering untuk koneksi pertama di objek Peering dalam memori. 
 
 ## PARAMETERS
 
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

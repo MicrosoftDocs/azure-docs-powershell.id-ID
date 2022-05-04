@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: d99a8fe0c5786497257f78a5e322e0be0f8e1b00
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e79773a3654d5664c8f9fe1eb11fb7f8ff8ee091
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280557"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702390"
 ---
 # Remove-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
-Menghapus objek rantai sertifikat CA klien tepercaya dari gateway aplikasi.
+Menghapus objek rantai sertifikat OS klien tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $gw = Remove-AzApplicationGatewayTrustedClientCertificate -ApplicationGateway $g
 Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw. Perintah kedua menghapus rantai sertifikat CA klien tepercaya bernama "TrustedClientCertificate01" dari gateway aplikasi yang disimpan di $gw. Perintah terakhir memperbarui gateway aplikasi.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw. Perintah kedua menghapus rantai sertifikat OS klien tepercaya bernama "TrustedClientCertificate01" dari gateway aplikasi yang disimpan di $gw. Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
 
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rantai sertifikat CA klien tepercaya
+### -Name
+Nama rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

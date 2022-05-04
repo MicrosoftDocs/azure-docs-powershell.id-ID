@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
-ms.openlocfilehash: 1a779391596a0b09c35d59abe6d78e4a0e19dc3a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d73ff1efa5e27c9a682e27d609942bf2dbfe1da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932617"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737077"
 ---
 # New-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Membuat file atau direktori dalam sistem file.
+Buat file atau direktori dalam sistem file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ New-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> [-Directory] [-Um
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori dalam Filesystem di akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori di Filesystem di akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Perintah ini membuat(mengunggah) file data lake dari file sumber lokal, dan cmdl
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak. Nilai defaultnya adalah 10.
+Jumlah total tugas asinkron bersamaan. Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -161,8 +164,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Jika lolos, item baru akan dibuat tanpa perintah apa pun
+### -Force
+Jika diteruskan maka item baru dibuat tanpa perintah apa pun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus dibuat.
+Jalur dalam Filesystem yang ditentukan yang harus dibuat.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
 
 ```yaml
@@ -209,8 +212,8 @@ Accept wildcard characters: False
 
 ### -Izin
 Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
-Setiap kelas dapat diberi izin baca, tulis, atau jalankan.
-Symbolic (rwxrw-rw-) didukung.
+Setiap kelas dapat diberikan izin baca, tulis, atau jalankan.
+Simbolis (rwxrw-rw-) didukung.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Tentukan jalur file sumber lokal yang akan diunggah ke file Datalake Gen2.
 
 ```yaml
@@ -256,9 +259,9 @@ Accept wildcard characters: False
 ```
 
 ### -Umask
-Saat membuat Item Baru dan direktori induk tidak memiliki ACL default, umask membatasi izin file atau direktori untuk dibuat.
+Saat membuat Item Baru dan direktori induk tidak memiliki ACL default, umask membatasi izin file atau direktori yang akan dibuat.
 Izin yang dihasilkan diberikan oleh p & ^u, di mana p adalah izin dan Anda adalah umask.
-Symbolic (rwxrw-rw-) didukung.
+Simbolis (rwxrw-rw-) didukung.
 
 ```yaml
 Type: System.String
@@ -272,8 +275,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateEndpointConnection.md
-ms.openlocfilehash: 53571dfd227cf207c4c8f69688f58468b1f19a8a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 10652e023102f9470c88852f674ef89c204236de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801234"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688742"
 ---
 # Get-AzSearchPrivateEndpointConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi titik akhir privat ke layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSearchPrivateEndpointConnection [-ResourceId] <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSearchPrivateEndpointConnection** mendapatkan koneksi titik akhir pribadi ke layanan Azure Cognitive Search.
+Cmdlet **Get-AzSearchPrivateEndpointConnection** mendapatkan koneksi titik akhir privat ke layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Name                                                          Id
 arjagann-test-cuseuap-pe.4c74dd7c-7016-42ac-827a-8d5d1378f266 /subscriptions/a4337210-c6b0-4de4-907a-688f1c120d9a/resourceGroups/arjagann/providers/Microsoft.Search/searchServices/arjagann-test-cuseuap/privateEndpointConnections/arjagann-test-cuseuap-pe.4c74dd7c-7016-42ac-827a-8d5d1378f266
 ```
 
-Contoh ini mendapatkan semua koneksi titik akhir privat ke layanan Azure Cognitive Search.
+Contohnya mendapatkan semua koneksi titik akhir privat ke layanan Azure Cognitive Search.
 
 ### Contoh 2
 ```powershell
@@ -73,7 +76,7 @@ Get-AzSearchPrivateEndpointConnection -ResourceGroupName arjagann -ServiceName a
 }
 ```
 
-Contoh ini mendapatkan koneksi titik akhir privat tertentu menurut nama (dikonversi ke JSON untuk kemudahan membaca) ke layanan Azure Cognitive Search.
+Contohnya mendapatkan koneksi titik akhir privat tertentu berdasarkan nama (dikonversi ke JSON untuk kemudahan membaca) ke layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
@@ -92,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-nama koneksi titik akhir privat Layanan Azure Cognitive Search
+### -Name
+nama koneksi titik akhir privat Azure Cognitive Search Service
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya layanan tautan privat
+Id sumber daya layanan private link
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

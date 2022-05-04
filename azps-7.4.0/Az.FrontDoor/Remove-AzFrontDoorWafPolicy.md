@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoorWafPolicy.md
-ms.openlocfilehash: 86677e285076a7749758864b20e3217ad1684c11
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b703973cc4e7e16dbce13105ba30e5203f85efbb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747864"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702840"
 ---
 # Remove-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
-Hapus kebijakan WAF
+Menghapus kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/remove-azfrontdoorwafpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzFrontDoorWafPolicy -ResourceId <String> [-PassThru] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzFrontDoorWafPolicy** menghapus kebijakan WAF dalam langganan saat ini
+Cmdlet **Remove-AzFrontDoorWafPolicy** menghapus kebijakan WAF di bawah langganan saat ini
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Hapus kebijakan WAF yang disebut $policyName di $resourceGroupName.
 Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Remove-AzFrontDoorWafPolicy
 ```
 
-Hapus semua kebijakan WAF dalam $resourceGroupName.
+Hapus semua kebijakan WAF di $resourceGroupName.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kebijakan WAF untuk dihapus.
+Objek kebijakan WAF yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSPolicy
@@ -88,8 +91,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan WAF untuk dihapus.
+### -Name
+Nama kebijakan WAF yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya kebijakan WAF untuk dihapus
+Id Sumber Daya kebijakan WAF yang akan dihapus
 
 ```yaml
 Type: System.String
@@ -148,8 +151,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

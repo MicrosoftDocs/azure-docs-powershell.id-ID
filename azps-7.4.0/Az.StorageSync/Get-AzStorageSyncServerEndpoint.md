@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: cae6fb815064796d81ea53201dbc4dc5ef98ef16
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fe795cd247e097567f7e6bbadbdd1489fde64752
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270873"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723816"
 ---
 # Get-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua titik akhir server dalam grup sinkronisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzStorageSyncServerEndpoint [-ParentResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua titik akhir server dalam grup sinkronisasi tertentu. Ini dapat digunakan untuk juga mencantumkan atribut dari setiap titik akhir server.
+Perintah ini mencantumkan semua titik akhir server dalam grup sinkronisasi tertentu. Ini dapat digunakan untuk juga mencantumkan atribut setiap titik akhir server.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini mencantumkan semua titik akhir server dalam grup sinkronisasi terte
 Get-AzStorageSyncServerEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName"
 ```
 
-Perintah ini mendapatkan semua titik akhir server yang terdapat dalam grup sinkronisasi yang ditentukan. Tentukan -ServerEndpointName untuk mengembalikan yang spesifik.
+Perintah ini mendapatkan semua titik akhir server yang terkandung dalam grup sinkronisasi yang ditentukan. Tentukan -ServerEndpointName untuk mengembalikan yang spesifik.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama titik akhir server.
 
 ```yaml
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronkan.
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

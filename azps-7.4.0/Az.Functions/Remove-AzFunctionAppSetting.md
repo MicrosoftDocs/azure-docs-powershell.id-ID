@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
-ms.openlocfilehash: 414f7bbd86c9abfab45d25cee6ec2080bacae441
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 651006131fd8f01c6cfaa41d9d5bcd4fd5221682
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286281"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715880"
 ---
 # Remove-AzFunctionAppSetting
 
 ## SYNOPSIS
 Menghapus pengaturan aplikasi dari aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/remove-azfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

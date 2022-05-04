@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 7598aa7cbcc7bc35628660b510f651ed69b068a9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ef2f475149a5deac33523035c8a2d1c6eb64a42a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680022"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711976"
 ---
 # Add-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi IP ujung depan ke gateway aplikasi.
+Menambahkan konfigurasi IP front-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,15 +39,15 @@ Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway <PSApplicationGatew
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayFrontendIPConfig** menambahkan konfigurasi IP ujung depan ke gateway aplikasi.
-Gateway aplikasi mendukung dua tipe konfigurasi IP ujung depan: 
+Cmdlet **Add-AzApplicationGatewayFrontendIPConfig** menambahkan konfigurasi IP front-end ke gateway aplikasi.
+Gateway aplikasi mendukung dua jenis konfigurasi IP front-end: 
 - Alamat IP publik
-- Alamat IP privat menggunakan load-balancing internal (ILB) Gateway aplikasi bisa memiliki paling banyak satu IP publik dan satu IP pribadi.
-Tambahkan alamat IP publik dan alamat IP pribadi sebagai IP front-end terpisah.
+- Alamat IP privat menggunakan penyeimbangan beban internal (ILB) Gateway aplikasi dapat memiliki paling banyak satu IP publik dan satu IP privat.
+Tambahkan alamat IP publik dan alamat IP privat sebagai IP front-end terpisah.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan IP publik sebagai alamat IP ujung depan
+### Contoh 1: Menambahkan IP publik sebagai alamat IP front-end
 ```powershell
 $PublicIp = New-AzPublicIpAddress -ResourceGroupName "ResourceGroup01" -Name "PublicIp01" -location "West US" -AllocationMethod Dynamic
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
@@ -52,10 +55,10 @@ $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Na
 ```
 
 Perintah pertama membuat objek alamat IP publik dan menyimpannya dalam variabel $PublicIp.
-Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah ketiga menambahkan konfigurasi IP ujung depan bernama FrontEndIp01, untuk gateway di $AppGw, menggunakan alamat yang disimpan di $PublicIp.
+Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah ketiga menambahkan konfigurasi IP front-end bernama FrontEndIp01, untuk gateway di $AppGw, menggunakan alamat yang disimpan di $PublicIp.
 
-### Contoh 2: Menambahkan IP pribadi statis sebagai alamat IP ujung depan
+### Contoh 2: Menambahkan IP privat statis sebagai alamat IP front-end
 ```powershell
 $VNet = Get-AzVirtualNetwork -Name "VNet01" -ResourceGroupName "ResourceGroup01"
 $Subnet = Get-AzVirtualNetworkSubnetConfig -Name "Subnet01" -VirtualNetwork $VNet
@@ -65,8 +68,8 @@ $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Na
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $VNet.
 Perintah kedua mendapatkan konfigurasi subnet bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam variabel $Subnet.
-Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah keempat menambahkan konfigurasi IP front-end bernama FrontendIP02 menggunakan $Subnet dari perintah kedua dan alamat IP pribadi 10.0.1.1.
+Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah keempat menambahkan konfigurasi IP front-end bernama FrontendIP02 menggunakan $Subnet dari perintah kedua dan alamat IP privat 10.0.1.1.
 
 ### Contoh 3: Menambahkan IP privat dinamis sebagai alamat IP front-end
 ```powershell
@@ -78,13 +81,13 @@ $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Na
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $VNet.
 Perintah kedua mendapatkan konfigurasi subnet bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam variabel $Subnet.
-Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah keempat menambahkan konfigurasi IP ujung depan bernama FrontendIP02 menggunakan $Subnet dari perintah kedua.
+Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah keempat menambahkan konfigurasi IP front-end bernama FrontendIP02 menggunakan $Subnet dari perintah kedua.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menambahkan konfigurasi IP ujung depan.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan konfigurasi IP front-end.
 
 ```yaml
 Type: PSApplicationGateway
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP ujung-depan untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi IP front-end yang akan ditambahkan.
 
 ```yaml
 Type: String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Menentukan alamat IP privat untuk ditambahkan sebagai IP ujung depan untuk gateway aplikasi.
+Menentukan alamat IP privat untuk ditambahkan sebagai IP front-end untuk gateway aplikasi.
 Jika ditentukan, IP ini dialokasikan secara statis dari subnet.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddress
-Menentukan alamat IP publik yang ditambahkan cmdlet ini sebagai alamat IP ujung depan untuk gateway aplikasi.
+Menentukan alamat IP publik yang ditambahkan cmdlet ini sebagai alamat IP front-end untuk gateway aplikasi.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddressId
-Menentukan ID alamat IP publik yang ditambahkan cmdlet ini sebagai alamat IP ujung depan untuk gateway aplikasi.
+Menentukan ID alamat IP publik yang ditambahkan cmdlet ini sebagai alamat IP front-end untuk gateway aplikasi.
 
 ```yaml
 Type: String
@@ -205,10 +208,10 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan subnet yang ditambahkan cmdlet ini sebagai konfigurasi IP ujung depan.
-Jika Anda menentukan parameter ini, artinya gateway aplikasi mendukung konfigurasi berbasis IP privat.
-Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus dimiliki oleh subnet ini.
-Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini dipilih secara dinamis sebagai alamat IP ujung depan gateway aplikasi.
+Menentukan subnet yang ditambahkan cmdlet ini sebagai konfigurasi IP front-end.
+Jika Anda menentukan parameter ini, itu menyiratkan bahwa gateway aplikasi mendukung konfigurasi berbasis IP privat.
+Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus milik subnet ini.
+Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini diambil secara dinamis sebagai alamat IP front-end gateway aplikasi.
 
 ```yaml
 Type: PSSubnet
@@ -223,10 +226,10 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet yang ditambahkan cmdlet ini sebagai konfigurasi IP ujung depan.
-Subnet yang lolos menyiratkan IP pribadi.
-Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus dimiliki oleh subnet ini.
-Jika tidak, salah satu IP dari subnet ini dipilih secara dinamis sebagai IP ujung depan gateway aplikasi.
+Menentukan ID subnet yang ditambahkan cmdlet ini sebagai konfigurasi IP front-end.
+Meneruskan subnet menyiratkan IP privat.
+Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus milik subnet ini.
+Jika tidak, salah satu IP dari subnet ini secara dinamis diambil sebagai IP front-end gateway aplikasi.
 
 ```yaml
 Type: String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

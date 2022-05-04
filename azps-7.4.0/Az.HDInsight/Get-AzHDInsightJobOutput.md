@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
-ms.openlocfilehash: 7d466f91105f07fd78787ca430802781ed776bc5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8a6324761ace4477aa2d808b0b2dd0ecd48103e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683550"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683544"
 ---
 # Get-AzHDInsightJobOutput
 
 ## SYNOPSIS
 Mendapatkan output log untuk pekerjaan dari akun penyimpanan yang terkait dengan kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Get-AzHDInsightJobOutput [-ClusterName] <String> [-JobId] <String> [[-DefaultCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun Storage yang terkait dengan cluster Azure HDInsight.
+Cmdlet **Get-AzHDInsightJobOutput** mendapatkan output log untuk pekerjaan dari akun Storage yang terkait dengan kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan output log untuk pekerjaan
+### Contoh 1: Mendapatkan output log untuk pekerjaan
 ```powershell
 # Cluster info
 $clusterName = "your-hadoop-001"
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultContainer
-Menentukan nama wadah default.
+Menentukan nama kontainer default.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayOutputType
-Menentukan tipe output pekerjaan yang diminta.
+Menentukan jenis output pekerjaan yang diminta.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - StandardOutput
 - StandardError
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan dari pekerjaan yang outputnya akan di ambil.
+Menentukan ID pekerjaan dari pekerjaan yang outputnya akan diambil.
 
 ```yaml
 Type: System.String
@@ -196,11 +199,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

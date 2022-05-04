@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: b249ee49f4746fbf8130791cad1eab8b0f6aa5a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 53fadff711a02472a30e256408792514cdebe5e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678834"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724302"
 ---
 # New-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Membuat aturan perutean permintaan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +52,12 @@ Cmdlet **Add-AzApplicationGatewayRequestRoutingRule** membuat aturan perutean pe
 $Rule = New-AzApplicationGatewayRequestRoutingRule -Name "Rule01" -RuleType Basic -Priority 100 -BackendHttpSettings $Setting -HttpListener $Listener -BackendAddressPool $Pool
 ```
 
-Perintah ini membuat aturan perutean permintaan dasar bernama Rule01 dan menyimpan hasil dalam variabel bernama $Rule.
+Perintah ini membuat aturan perutean permintaan dasar bernama Rule01 dan menyimpan hasilnya dalam variabel bernama $Rule.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan kumpulan alamat ujung-belakang, sebagai objek, agar aturan perutean permintaan dibuat.
+Menentukan kumpulan alamat back-end, sebagai objek, agar aturan perutean permintaan dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID kumpulan alamat ujung-belakang dari aturan perutean permintaan untuk dibuat.
+Menentukan ID kumpulan alamat back-end dari aturan perutean permintaan untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettings
-Menentukan pengaturan HTTP ujung-belakang, sebagai objek, agar aturan perutean permintaan dibuat.
+Menentukan pengaturan HTTP back-end, sebagai objek, agar aturan perutean permintaan dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettingsId
-Menentukan ID pengaturan HTTP ujung-belakang dari aturan perutean permintaan untuk dibuat.
+Menentukan ID pengaturan HTTP back-end dari aturan perutean permintaan untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListener
-Menentukan pendengar HTTP ujung-belakang untuk membuat aturan perutean permintaan.
+Menentukan pendengar HTTP back-end untuk membuat aturan perutean permintaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -158,7 +161,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan perutean permintaan yang dibuat cmdlet ini.
 
 ```yaml
@@ -189,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfigurasi Ulang
-Konfigurasi Ulang gateway aplikasi
+### -RedirectConfiguration
+Konfigurasi Ulang Gateway Aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -RewriteRuleSet
-Gateway aplikasi RewriteRuleSet
+RewriteRuleSet gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleSet
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleType
-Menentukan tipe aturan perutean permintaan.
+Menentukan jenis aturan perutean permintaan.
 
 ```yaml
 Type: System.String
@@ -292,11 +295,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

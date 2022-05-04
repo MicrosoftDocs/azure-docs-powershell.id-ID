@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: c9fd30db3665ed2f51da4958c9bc65fcf0d1635e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbc6638c2473aed4863f3641e19e1eee3fbf3b7b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932383"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729896"
 ---
 # Set-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage
+Membuat atau memperbarui ImmutabilityPolicy dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,27 +78,27 @@ Set-AzRmStorageContainerImmutabilityPolicy [-InputObject] <PSImmutabilityPolicy>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRmStorageContainerImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage
+Cmdlet **Set-AzRmStorageContainerImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy dari kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui ImmutabilityPolicy wadah blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Membuat atau memperbarui ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Set-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -ImmutabilityPeriod 10
 ```
 
-Perintah ini membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini membuat atau memperbarui ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Extend ImmutabilityPolicy of a Storage blob container, with Storage account object
+### Contoh 2: Perluas ImmutabilityPolicy dari kontainer blob Storage, dengan objek akun Storage
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 PS C:\>Set-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -ImmutabilityPeriod 20 -Etag $policy.Etag -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy wadah blob Storage, dengan objek akun Storage. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
+Perintah ini memperluas ImmutabilityPolicy dari kontainer blob Storage, dengan objek akun Storage. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
 
-### Contoh 3: Update ImmutabilityPolicy of a Storage blob container
+### Contoh 3: Memperbarui ImmutabilityPolicy dari kontainer blob Storage
 ```
 PS C:\>$containerObject = Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -Name "myContainer"
 PS C:\>$policy = Set-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -ImmutabilityPeriod 12
@@ -104,19 +107,19 @@ PS C:\>$policy = Set-AzRmStorageContainerImmutabilityPolicy -Container $containe
 PS C:\>$policy = Set-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -AllowProtectedAppendWrite $false -AllowProtectedAppendWriteAll $true
 ```
 
-Perintah ini memperbarui ImmutabilityPolicy kontainer blob Storage dengan objek kontainer Storage 3 kali: Pertama untuk ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag, lalu diaktifkan AllowProtectedAppendWrite, akhirnya diaktifkan AllowProtectedAppendWriteAll.
+Perintah ini memperbarui ImmutabilityPolicy dari kontainer blob Storage dengan objek kontainer Storage 3 kali: Pertama ke ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag, lalu diaktifkan AllowProtectedAppendWrite, akhirnya diaktifkan AllowProtectedAppendWriteAll.
 
-### Contoh 4: Extend ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
+### Contoh 4: Perluas ImmutabilityPolicy dari kontainer blob Storage, dengan objek ImmutabilityPolicy
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Set-AzRmStorageContainerImmutabilityPolicy -ImmutabilityPeriod 15 -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy wadah blob Storage, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
+Perintah ini memperluas ImmutabilityPolicy dari kontainer blob Storage, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
 
 ## PARAMETERS
 
 ### -AllowProtectedAppendWrite
-Properti ini hanya dapat diubah untuk kebijakan penyimpanan berbasis waktu yang tidak terkunci. Dengan properti ini diaktifkan, blok baru dapat ditulis ke campuran tambahan sambil mempertahankan perlindungan dan kepatuhan kekebalan. Hanya blok baru yang dapat ditambahkan dan blok yang sudah ada tidak dapat diubah atau dihapus. '-AllowProtectedAppendWrites' dan '-AllowProtectedAppendWritesAll' sama eksklusifnya.
+Properti ini hanya dapat diubah untuk kebijakan penyimpanan berbasis waktu yang tidak terkunci. Dengan properti ini diaktifkan, blok baru dapat ditulis ke blob penambahan sambil mempertahankan perlindungan dan kepatuhan imutabilitas. Hanya blok baru yang dapat ditambahkan dan blok yang ada tidak dapat dimodifikasi atau dihapus. '-AllowProtectedAppendWrites' dan '-AllowProtectedAppendWritesAll' saling eksklusif.
 
 ```yaml
 Type: System.Boolean
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AllowProtectedAppendWriteSemua
-Properti ini hanya dapat diubah untuk kebijakan yang tidak terkunci. Saat diaktifkan, blok baru dapat ditulis ke 'Blob Disetujui dan Blokir' sambil mempertahankan perlindungan dan kepatuhan kekebalan tubuh. Hanya blok baru yang dapat ditambahkan dan blok yang sudah ada tidak dapat diubah atau dihapus. Properti ini tidak dapat diubah dengan ExtendImmutabilityPolicy API. '-AllowProtectedAppendWrites' dan '-AllowProtectedAppendWritesAll' sama eksklusifnya.
+### -AllowProtectedAppendWriteAll
+Properti ini hanya dapat diubah untuk kebijakan yang tidak terkunci. Saat diaktifkan, blok baru dapat ditulis ke 'Blob Yang Disetujui dan Blokir' sambil mempertahankan perlindungan dan kepatuhan imutabilitas. Hanya blok baru yang dapat ditambahkan dan blok yang ada tidak dapat dimodifikasi atau dihapus. Properti ini tidak dapat diubah dengan ExtendImmutabilityPolicy API. '-AllowProtectedAppendWrites' dan '-AllowProtectedAppendWritesAll' saling eksklusif.
 
 ```yaml
 Type: System.Boolean
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Etag kebijakan keabadian. Jika -ExtendPolicy tidak ditentukan, Etag bersifat opsional; Etag lain diperlukan.
+Kebijakan imutabilitas etag. Jika -ExtendPolicy tidak ditentukan, Etag bersifat opsional; Etag lain diperlukan.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtendPolicy
-Menunjukkan ExtendPolicy untuk Memperluas ImmutabilityPolicy yang sudah ada.  Setelah ImmutabilityPolicy dikunci, ImmutabilityPolicy hanya dapat diperpanjang. 
+Tunjukkan ExtendPolicy untuk Memperluas ImmutabilityPolicy yang ada.  Setelah ImmutabilityPolicy dikunci, immutabilityPolicy hanya dapat diperpanjang. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutabilityPeriod
-Periode kekebalan sejak penciptaan dalam beberapa hari.
+Periode imutabilitas sejak pembuatan dalam beberapa hari.
 
 ```yaml
 Type: System.Int32
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -319,8 +322,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

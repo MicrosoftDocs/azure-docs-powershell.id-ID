@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
-ms.openlocfilehash: 35f66eca40ece8678a80247c83477c499067c415
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 834865f6dc81936bbd831808d1d7796a7090bbd2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738892"
 ---
 # Add-AzWebtestAlertRule
 
 ## SYNOPSIS
-Menambahkan atau memperbarui aturan pemberitahuan terlama.
+Menambahkan atau memperbarui aturan pemberitahuan webtest.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azwebtestalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Add-AzWebtestAlertRule -MetricName <String> -TargetResourceUri <String> -WindowS
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzWebtestAlertRule** menambahkan atau memperbarui aturan peringatan dari tipe metrik, acara, atau terlama.
-Aturan yang ditambahkan terkait dengan grup sumber daya dan memiliki nama.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Add-AzWebtestAlertRule** menambahkan atau memperbarui aturan pemberitahuan dari jenis metrik, peristiwa, atau webtest.
+Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan aturan pemberitahuan terlama
+### Contoh 1: Menambahkan aturan pemberitahuan webtest
 ```powershell
 Add-AzWebtestAlertRule -Name "webtestRule" -Location "East US" -ResourceGroup "Default-Web-EastUS" -WindowSize 00:05:00 -MetricName "metric" -TargetResourceUri "/subscriptions/b67f7fec-69fc-4974-9099-a26bd6ffeda3/resourcegroups/Default-Web-WestUS/providers/Microsoft.Insights/webtests/leowebtestr1-webtestr1" -Description "Nice Webtest rule" -Failed 3
 ```
@@ -46,7 +49,7 @@ RequestId                                                                       
 9a5bc388-c7ac-4dc6-aa70-f4bc29c2c712                                                                                 OK
 ```
 
-Perintah ini menambahkan atau memperbarui aturan pemberitahuan terlama.
+Perintah ini menambahkan atau memperbarui aturan pemberitahuan webtest.
 
 ## PARAMETERS
 
@@ -112,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -FailedLocationCount
-Menentukan jumlah lokasi yang gagal untuk aturan terlama.
-Ini mirip dengan ambang batas dalam tipe aturan lainnya.
+Menentukan jumlah lokasi yang gagal untuk aturan webtest.
+Ini mirip dengan ambang batas dalam jenis aturan lainnya.
 
 ```yaml
 Type: System.Int32
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana aturan ditentukan.
+Menentukan lokasi tempat aturan ditentukan.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricNamespace
-Menentukan ruang nama metrik untuk aturan.
+Menentukan namespace metrik untuk aturan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan.
 
 ```yaml
@@ -232,8 +235,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -275,7 +278,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

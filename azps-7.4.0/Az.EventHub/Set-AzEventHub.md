@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHub.md
-ms.openlocfilehash: fc26664d2f2c5d6bce6340652a496deb8682ab7b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fb7fd10e1f07134dc97dab7bd0d74c4eb8557748
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227637"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721334"
 ---
 # Set-AzEventHub
 
 ## SYNOPSIS
-Memperbarui Hub Kejadian tertentu.
+Memperbarui Pusat Aktivitas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Set-AzEventHub [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHub memperbarui properti Hub Kejadian yang ditentukan.
+Cmdlet Set-AzEventHub memperbarui properti Pusat Aktivitas yang ditentukan.
 
 ## EXAMPLES
 
@@ -55,14 +58,14 @@ $createdEventHub.CaptureDescription.Destination.StorageAccountResourceId = "/sub
 Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject $createdEventHub 
 ```
 
-Memperbarui Hub \`Kejadian MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur properti CaptureDescription
+Memperbarui Event Hub \`MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur properti CaptureDescription
 
 ### Contoh 2
 ```powershell
 Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Memperbarui Hub \`Kejadian MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur periode penyimpanan pesan menjadi 4 hari, dan jumlah partisi menjadi 2.
+Memperbarui Event Hub \`MyEventHubName\` yang diwakili oleh \`objek MyCreatedEventHub\` , mengatur periode retensi pesan menjadi 4 hari, dan jumlah partisi menjadi 2.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -messageRetentionInDays
-Penyimpanan Pesan Eventhub Dalam Hari
+Retensi Pesan Eventhub Dalam Hari
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -111,8 +114,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama
+### -Name
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

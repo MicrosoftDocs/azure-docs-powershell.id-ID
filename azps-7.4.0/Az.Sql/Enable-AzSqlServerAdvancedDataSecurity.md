@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
-ms.openlocfilehash: c272a0b0d63bc2c905a3bc5b9e212c50a565be77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e167f7c319480160129c1cd71d9405f6f5a29bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934057"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723150"
 ---
 # Enable-AzSqlServerAdvancedDataSecurity
 
 ## SYNOPSIS
-Mengaktifkan Keamanan Data Tingkat Lanjut di server.
+Mengaktifkan Advanced Data Security di server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlserveradvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Enable-AzSqlServerAdvancedDataSecurity [-DoNotConfigureVulnerabilityAssessment] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSqlServerAdvancedDataSecurity** memungkinkan Keamanan Data Tingkat Lanjut di server. Keamanan Data Tingkat Lanjut adalah paket keamanan terpadu yang menyertakan Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk server Anda. (Akun penyimpanan baru akan dibuat secara otomatis untuk menghemat penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun tersebut akan digunakan sebagai gantinya)
+Cmdlet **Enable-AzSqlServerAdvancedDataSecurity** memungkinkan Advanced Data Security di server. Advanced Data Security adalah paket keamanan terpadu yang mencakup Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk server Anda. (Akun penyimpanan baru akan secara otomatis dibuat untuk menyimpan penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun tersebut akan digunakan sebagai gantinya)
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 2: Mengaktifkan Keamanan Data Tingkat Lanjut server dari sumber daya server
+### Contoh 2: Mengaktifkan Server Advanced Data Security dari sumber daya server
 ```powershell
 Get-AzSqlServer `
            -ResourceGroupName "ResourceGroup01" `
@@ -60,7 +63,7 @@ IsEnabled                    : True
 
 ### Contoh 3
 
-Mengaktifkan Keamanan Data Tingkat Lanjut di server. (autogenerasi)
+Mengaktifkan Advanced Data Security di server. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,7 +73,7 @@ Enable-AzSqlServerAdvancedDataSecurity -DoNotConfigureVulnerabilityAssessment -R
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentName
-Menyediakan nama kustom untuk penyebaran Keamanan Data Tingkat Lanjut
+Menyediakan nama kustom untuk penyebaran Advanced Data Security
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek server untuk digunakan dengan operasi kebijakan Keamanan Data Tingkat Lanjut
+Objek server yang akan digunakan dengan operasi kebijakan Advanced Data Security
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

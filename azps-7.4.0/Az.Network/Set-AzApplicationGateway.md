@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGateway.md
-ms.openlocfilehash: 7bd8e40cd8416d1f532deb7fefa444477f9d7ce6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 90702803005046728a77cdf88c577d0ce69ef530
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804618"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731930"
 ---
 # Set-AzApplicationGateway
 
 ## SYNOPSIS
 Memperbarui gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Perintah ini memperbarui gateway aplikasi dengan pengaturan dalam variabel $AppG
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi yang mewakili status di mana gateway aplikasi harus diatur.
+Menentukan objek gateway aplikasi yang mewakili status gateway aplikasi yang harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

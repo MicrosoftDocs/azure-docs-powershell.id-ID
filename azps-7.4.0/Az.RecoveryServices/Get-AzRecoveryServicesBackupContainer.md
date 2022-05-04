@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: 500c65c1ec707fcc64dafeec3c954777f37d3929
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9ffab12f2be16bd4c27a4798a3259f24d12702b9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117531"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739540"
 ---
 # Get-AzRecoveryServicesBackupContainer
 
 ## SYNOPSIS
 
-Mendapatkan pencadangan kontainer.
+Mendapatkan kontainer Backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,29 +32,29 @@ Get-AzRecoveryServicesBackupContainer [-ContainerType] <ContainerType> [[-Backup
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzRecoveryServicesBackupContainer** mendapatkan wadah cadangan. Wadah Cadangan merangkum sumber data yang dimodelkan sebagai item cadangan.
-Untuk tipe Kontainer "Azure VM" , output mencantumkan semua kontainer yang namanya sama persis dengan yang dilewatkan sebagai nilai untuk parameter Friendly Name. Untuk tipe kontainer lainnya, output memberikan daftar kontainer dengan nama yang mirip dengan nilai yang dilewati untuk parameter Nama yang mudah dikenali.
-Mengatur konteks kubah menggunakan parameter -VaultId.
+Cmdlet **Get-AzRecoveryServicesBackupContainer** mendapatkan kontainer cadangan. Kontainer Backup merangkum sumber data yang dimodelkan sebagai item cadangan.
+Untuk jenis Kontainer "Azure VM" , output mencantumkan semua kontainer yang namanya sama persis dengan yang diteruskan sebagai nilai untuk parameter Nama Yang Mudah Diingat. Untuk jenis kontainer lainnya, output memberikan daftar kontainer dengan nama yang mirip dengan nilai yang diteruskan untuk parameter Nama yang mudah diingat.
+Atur konteks vault dengan menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan wadah tertentu
+### Contoh 1: Mendapatkan kontainer tertentu
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 Get-AzRecoveryServicesBackupContainer -ContainerType "AzureVM" -Status "Registered" -FriendlyName "V2VM" -VaultId $vault.ID
 ```
 
-Perintah ini mendapatkan wadah bernama V2VM tipe AzureVM.
+Perintah ini mendapatkan kontainer bernama V2VM jenis AzureVM.
 
-### Contoh 2: Mendapatkan semua kontainer dari tipe tertentu
+### Contoh 2: Mendapatkan semua kontainer dari jenis tertentu
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupManagementType MAB -VaultId $vault.ID
 ```
 
-Perintah ini mendapatkan semua wadah Windows yang dilindungi oleh agen Azure Backup.
+Perintah ini mendapatkan semua kontainer Windows yang dilindungi oleh agen Azure Backup.
 Parameter **BackupManagementType** hanya diperlukan untuk kontainer Windows.
 
 ## PARAMETERS
@@ -65,7 +68,7 @@ Kelas sumber daya yang dilindungi. Nilai yang dapat diterima untuk parameter ini
 - AzureWorkload
 - AzureStorage
 
-Parameter ini digunakan untuk membedakan mesin Windows yang dicadangkan menggunakan agen MARS atau mesin cadangan lainnya.
+Parameter ini digunakan untuk membedakan Windows mesin yang dicadangkan menggunakan agen MARS atau mesin cadangan lainnya.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 
 ### -ContainerType
 
-Menentukan tipe wadah cadangan.
+Menentukan jenis kontainer cadangan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - AzureVM
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -FriendlyName
 
-Menentukan nama kontainer yang mudah didapatkan.
+Menentukan nama kontainer yang mudah diingat untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 
 Menentukan nama grup sumber daya.
-Parameter ini hanya untuk mesin virtual Azure.
+Parameter ini hanya untuk komputer virtual Azure.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -Status
 
-Menentukan status registrasi kontainer.
+Menentukan status pendaftaran kontainer.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Terdaftar
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

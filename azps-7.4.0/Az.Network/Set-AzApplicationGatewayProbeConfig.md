@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: a9ecb30a076cf6a024c0d0f3c7eb58e8e0f5df64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 37ec667abbf95afda0c9826dad9a5288dd320e4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312975"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731894"
 ---
 # Set-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang sudah ada.
+Mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,21 +31,21 @@ Set-AzApplicationGatewayProbeConfig -ApplicationGateway <PSApplicationGateway> -
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzApplicationGatewayProbeConfig mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang sudah ada.
+Cmdlet Set-AzApplicationGatewayProbeConfig mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur konfigurasi untuk pemeriksaan kesehatan di gateway aplikasi
+### Contoh 1: Mengatur konfigurasi untuk pemeriksaan kesehatan pada gateway aplikasi
 ```powershell
 Set-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe05" -Protocol Http -HostName "contoso.com" -Path "/path/custompath.htm" -Interval 30 -Timeout 120 -UnhealthyThreshold 8
 ```
 
 Perintah ini mengatur konfigurasi untuk pemeriksaan kesehatan bernama Probe05 untuk gateway aplikasi bernama Gateway.
-Perintah ini juga mengatur ambang batas tidak sehat menjadi 8 kali percobaan dan waktu keluar setelah 120 detik.
+Perintah ini juga menetapkan ambang tidak sehat menjadi 8 percobaan ulang dan waktu habis setelah 120 detik.
 
 ### Contoh 2
 
-Mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang sudah ada. (autogenerasi)
+Mengatur konfigurasi pemeriksaan kesehatan pada Application Gateway yang ada. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -52,7 +55,7 @@ Set-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Interval 30 -Ma
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini mengirim probe.
+Menentukan gateway aplikasi tempat cmdlet ini mengirim pemeriksaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host tempat cmdlet ini mengirim probe.
+Menentukan nama host tempat cmdlet ini mengirim pemeriksaan.
 
 ```yaml
 Type: System.String
@@ -97,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval probe dalam detik.
-Ini adalah interval waktu antara dua probe berturut-turut.
+Menentukan interval pemeriksaan dalam hitungan detik.
+Nilai ini adalah jeda waktu antara dua pemeriksaan berturutan.
 Nilai ini antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cocok
-Tubuh yang harus dikandung dalam respons kesehatan.
+Isi yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama probe.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ### -Jalur
 Menentukan jalur relatif probe.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Probe dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
+Pemeriksaan dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 
 ### -PickHostNameFromBackendHttpSettings
 Apakah header host harus dipilih dari pengaturan http backend.
-Nilai default adalah false
+Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang digunakan untuk mengirim probe.
+Menentukan protokol yang digunakan untuk mengirim pemeriksaan.
 
 ```yaml
 Type: System.String
@@ -210,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu habis
-Menentukan waktu probe habis dalam detik.
-Cmdlet ini menandai pemeriksaan gagal jika respons valid tidak diterima dengan periode waktu habis ini.
+Menentukan batas waktu pemeriksaan dalam hitung detik.
+Cmdlet ini menandai pemeriksaan sebagai gagal jika respons yang valid tidak diterima dengan periode batas waktu ini.
 Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -227,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah percobaan ulang probe.
-Server backend ditandai turun setelah jumlah kegagalan penyelidikan berturut-turut mencapai ambang batas yang tidak sehat.
+Menentukan jumlah percobaan kembali probe.
+Server backend ditandai tidak berfungsi setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang batas yang tidak sehat.
 Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

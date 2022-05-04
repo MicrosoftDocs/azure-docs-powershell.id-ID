@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: 3fb0e68a38da8b1d2c27a483d818bcb400e00373
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d71206b29be44c7cf5bb8a27c72e37a7213b330d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748980"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712237"
 ---
 # Remove-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Menghapus unit layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerserviceunit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Remove-AzDeploymentManagerServiceUnit [-InputObject] <PSServiceUnitResource> [-P
 ## DESCRIPTION
 Cmdlet **Remove-AzDeploymentManagerServiceUnit** menghapus unit layanan dalam layanan.
 
-Tentukan unit layanan menurut namanya, layanan di mana layanan ditetapkan, nama topologi layanan dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
+Tentukan unit layanan berdasarkan namanya, layanan tempat unit layanan ditentukan, nama topologi layanan, dan nama grup sumber daya. Secara bergantian, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
 
 ## EXAMPLES
 
@@ -76,21 +79,21 @@ Tentukan unit layanan menurut namanya, layanan di mana layanan ditetapkan, nama 
 Remove-AzDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -ServiceName ContosoService1  -Name ContosoService1Storage
 ```
 
-Perintah ini menghapus unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
+Perintah ini menghapus unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 2: Hapus unit layanan menggunakan pengidentifikasi sumber daya.
+### Contoh 2: Menghapus unit layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 Remove-AzDeploymentManagerServiceUnit -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1/serviceUnits/ContosoService1Storage"
 ```
 
 Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 3: Hapus unit layanan menggunakan objek unit layanan.
+### Contoh 3: Menghapus unit layanan menggunakan objek unit layanan.
 ```powershell
 Remove-AzDeploymentManagerServiceUnit -InputObject $serviceUnitObject
 ```
 
-Perintah ini menghapus unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup yang sesuai dengan properti Name, ServiceName, ServiceTopologyName, dan ResourceGroupName dari $serviceUnitObject.
+Perintah ini menghapus unit layanan yang masing-masing nama, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan properti Name, ServiceName, ServiceTopologyName, dan ResourceGroupName dari $serviceUnitObject.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unit layanan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama layanan topologi unit layanan adalah bagian dari.
+Nama topologi layanan yang menjadi bagian dari unit layanan.
 
 ```yaml
 Type: System.String
@@ -274,8 +277,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

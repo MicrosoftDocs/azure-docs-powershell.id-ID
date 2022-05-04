@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
-ms.openlocfilehash: 13e6e0ec48b0a3f1d184473614fa07a6dfabe706
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 78323c2c92a3a8230fccc0cc3588275ac02a911a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737272"
 ---
 # Set-AzSqlDatabaseRecommendedActionState
 
 ## SYNOPSIS
 Memperbarui status tindakan yang direkomendasikan Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaserecommendedactionstate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Ini memungkinkan tindakan yang direkomendasikan untuk diterapkan, dikembalikan, 
 
 ## EXAMPLES
 
-### Contoh 1: Menerapkan status tindakan yang disarankan ke tertunda
+### Contoh 1: Terapkan status tindakan yang direkomendasikan ke tertunda
 ```powershell
 Set-AzSqlDatabaseRecommendedActionState -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893" -State Pending
 ```
@@ -70,7 +73,7 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini memperbarui status tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 yang termasuk dalam database bernama WIRunner menjadi Tertunda.
+Perintah ini memperbarui status tindakan yang direkomendasikan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 yang termasuk dalam database bernama WIRunner ke Tertunda.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini mengatur status tindakan yang disarankan.
+Menentukan nama database yang cmdletnya menetapkan status tindakan yang direkomendasikan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActionName
-Menentukan nama tindakan yang disarankan untuk status yang sedang diperbarui.
+Menentukan nama tindakan yang direkomendasikan yang statusnya sedang diperbarui.
 
 ```yaml
 Type: System.String
@@ -164,11 +167,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Menentukan nilai baru di mana cmdlet ini memperbarui status tindakan yang direkomendasikan.
+### -State
+Menentukan nilai baru tempat cmdlet ini memperbarui status tindakan yang direkomendasikan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Aktif
-- Tertunda
+- Sedang diproses
 - PendingRevert
 - RevertCancelled
 - Diabaikan
@@ -187,8 +190,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -232,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat, rekomendasi
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

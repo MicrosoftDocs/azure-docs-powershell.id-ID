@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: bb3d86dc858b48ae3e7b4aae5f4cb4fed932a37f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c3efc922b8a60bf48a214b8ed52782caaa64b66f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939655"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723456"
 ---
 # Add-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
-Membuat sumber daya TapConfiguration yang terkait dengan NetworkInterface. Ini akan merujuk ke sumber daya VirtualNetworkTap yang sudah ada.
+Membuat sumber daya TapConfiguration yang terkait dengan NetworkInterface. Ini akan mereferensikan ke sumber daya VirtualNetworkTap yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-aznetworkinterfacetapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Add-AzNetworkInterfaceTapConfig -NetworkInterface <PSNetworkInterface> -Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzNetworkInterfaceTapConfig** membuat sumber daya TapConfiguration yang terkait dengan NetworkInterface. Ini akan merujuk ke sumber daya VirtualNetworkTap yang sudah ada.
+Cmdlet **Add-AzNetworkInterfaceTapConfig** membuat sumber daya TapConfiguration yang terkait dengan NetworkInterface. Ini akan mereferensikan ke sumber daya VirtualNetworkTap yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan TapConfiguration ke NetworkInterface tertentu
+### Contoh 1: Menambahkan TapConfiguration ke NetworkInterface tertentu
 ```powershell
 Add-AzNetworkInterfaceTapConfig -NetworkInterface $sourceNic -VirtualNetworkTap $vVirtualNetworkTap -Name 'myTapConfig'
 ```
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi ketuk.
+### -Name
+Nama konfigurasi ketukan.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
-ms.openlocfilehash: 21e56a52b44ed3655c3ba40bca56d32f3562feb8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff0db88b95a21cf58f2510f3dc688def1949e9f9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275895"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738406"
 ---
 # Search-AzGraph
 
 ## SYNOPSIS
-Kueri sumber daya yang dikelola oleh Azure Resource Manager.
+Mengkueri sumber daya yang dikelola oleh Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/search-azgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ westcentralus     32
 westus            26
 ```
 
-Kueri kompleks tentang sumber daya yang menampilkan pemilihan bidang, pemfilteran dan ringkasan.
+Kueri kompleks tentang sumber daya yang menampilkan pemilihan bidang, pemfilteran, dan ringkasan.
 
 ### Contoh 3
 ```powershell
@@ -94,7 +97,7 @@ location   : westeurope
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/test/providers/Microsoft.Network/networkSecurityGroups/17nsg
 ```
 
-Kueri dengan token lompat yang lolos dari hasil kueri sebelumnya. Harap dicatat bahwa menyimpan id dalam hasil wajib untuk mendapatkan kembali token skip.
+Kueri dengan token lewati yang diteruskan dari hasil kueri sebelumnya. Harap dicatat bahwa menyimpan id dalam hasil adalah wajib untuk mendapatkan kembali token lompati.
 
 ### Contoh 4
 ```powershell
@@ -117,7 +120,7 @@ tags       :
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/Service-INT-a/providers/Microsoft.EventGrid/topics/egtopic-1
 ```
 
-Kueri yang dicakup ke grup manajemen yang memungkinkan kueri berhasil dengan hasil lingkup parsial jika MyManagementGroupId memiliki lebih dari N langganan di bawahnya.
+Kueri yang dilingkup ke grup manajemen yang memungkinkan kueri berhasil dengan hasil cakupan parsial jika MyManagementGroupId memiliki lebih dari langganan N di bawahnya.
 N adalah jumlah maksimum langganan yang dapat diproses oleh server.
 
 ## PARAMETERS
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroup
-Grup manajemen untuk menjalankan kueri terhadap.
+Grup manajemen untuk menjalankan kueri.
 
 ```yaml
 Type: System.String[]
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
-kueri Resource Graph.
+### -Kueri
+Resource Graph kueri.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lompat untuk digunakan untuk mendapatkan halaman hasil berikutnya jika ada.
+Token lewati yang digunakan untuk mendapatkan halaman hasil berikutnya jika berlaku.
 
 ```yaml
 Type: System.String
@@ -227,9 +230,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
-Jumlah maksimum objek yang akan dikembalikan. Nilai yang diperbolehkan: 1-1000.
-Nilai defaultnya adalah 100.
+### -First
+Jumlah maksimum objek yang akan dikembalikan. Nilai yang diizinkan: 1-1000.
+Nilai default adalah 100.
 
 ```yaml
 Type: System.Int32
@@ -244,11 +247,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

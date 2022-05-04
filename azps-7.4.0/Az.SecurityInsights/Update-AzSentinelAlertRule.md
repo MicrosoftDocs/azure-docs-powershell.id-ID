@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
-ms.openlocfilehash: cc4476b2d87d23e138feee7b25068112bf03023a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f12697797defb3c1a329e29c0f2a0e41ec5b1323
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274185"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739504"
 ---
 # Update-AzSentinelAlertRule
 
 ## SYNOPSIS
 Memperbarui Aturan Analitik (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Update-AzSentinelAlertRule [-AlertRuleTemplateName <String>] [-Enabled] [-Disabl
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelAlertRule** memperbarui Aturan Analitik (Pemberitahuan) di ruang kerja yang ditentukan.
-Anda dapat menggunakan -InputObject atau -ResourceId atau -AlertId.  Anda dapat memperbarui 1 parameter properti atau lebih.
+Anda dapat menggunakan -InputObject atau -ResourceId atau -AlertId.  Anda dapat memperbarui 1 atau beberapa parameter properti.
 Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
@@ -70,7 +73,7 @@ Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Wi
 Update-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -Disabled -DisplayName "Disabled-AlertRuleDisplayName"
 ```
 
-Contoh ini memperbarui pengaturan **AlertRule** menjadi *Dinonaktifkan* dan mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
+Contoh ini memperbarui pengaturan **AlertRule** ke *Dinonaktifkan* dan mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
 
 ### Contoh 2
 ```powershell
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat keparahan
-Tingkat Keparahan Insiden.
+Tingkat keparahan insiden.
 
 ```yaml
 Type: System.String

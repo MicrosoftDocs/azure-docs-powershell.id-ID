@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Enable-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Enable-AzActivityLogAlert.md
-ms.openlocfilehash: e9addb498f665324f540dc1149b5c42eadafffc6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e47db9bf39e48c687372a249bbef446480852b5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680940"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738856"
 ---
 # Enable-AzActivityLogAlert
 
 ## SYNOPSIS
-Mengaktifkan pemberitahuan log aktivitas dan mengatur Tagnya.
+Mengaktifkan pemberitahuan log aktivitas dan mengatur Tag-nya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/enable-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Enable-AzActivityLogAlert -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzActivityLogAlert** memungkinkan mengaktifkan pemberitahuan log aktivitas dan mengatur tagnya.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar menambal sumber daya.
+Cmdlet **Enable-AzActivityLogAlert** memungkinkan mengaktifkan pemberitahuan log aktivitas dan mengatur tag-nya.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar menambal sumber daya.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari 
 Enable-AzActivityLogAlert -Name "alert1" -ResourceGroupName "Default-ActivityLogsAlerts"
 ```
 
-Perintah ini memungkinkan pemberitahuan log aktivitas yang disebut pemberitahuan1 dalam grup sumber daya Default-ActivityLogsAlerts.
+Perintah ini memungkinkan pemberitahuan log aktivitas yang disebut alert1 di grup sumber daya Default-ActivityLogsAlerts.
 
 ### Contoh 2: Mengaktifkan pemberitahuan log aktivitas menggunakan objek PSActivityLogAlertResource sebagai input
 ```powershell
@@ -57,14 +60,14 @@ $obj = Get-AzActivityLogAlert -ResourceGroup "Default-activityLogAlerts" -Name "
 Enable-AzActivityLogAlert -InputObject $obj
 ```
 
-Perintah ini mengaktifkan pemberitahuan log aktivitas yang disebut peringatan1. Untuk ini, objek PSActivityLogAlertResource digunakan sebagai argumen input.
+Perintah ini memungkinkan pemberitahuan log aktivitas yang disebut alert1. Untuk ini, ia menggunakan objek PSActivityLogAlertResource sebagai argumen input.
 
 ### Contoh 3: Aktifkan ActivityLogAlert menggunakan parameter ResourceId
 ```powershell
 Get-AzResource -ResourceGroupName "myResourceGroup" -Name "myLogAlert" | Enable-AzActivityLogAlert
 ```
 
-Perintah ini memungkinkan ActivityLogAlert menggunakan parameter ResourceId dari pipe.
+Perintah ini memungkinkan ActivityLogAlert menggunakan parameter ResourceId dari pipa.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Mengatur properti tag InputObject dari panggilan untuk mengekstrak nama yang diperlukan, nama grup sumber daya, dan properti tag opsional.
+Mengatur properti tag InputObject panggilan untuk mengekstrak nama yang diperlukan, nama grup sumber daya, dan properti tag opsional.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemberitahuan log aktivitas.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya peringatan akan ada.
+Nama grup sumber daya tempat sumber daya pemberitahuan akan ada.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Mengatur properti tag ResourceId panggilan untuk mengekstrak nama yang diperlukan, properti nama grup sumber daya.
+Mengatur properti tag ResourceId dari panggilan untuk mengekstrak nama yang diperlukan, properti nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -143,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -194,9 +197,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzActivityLogAlert](./Get-AzActivityLogAlert.md)
 
-[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
-[Grup Baru-AzAction](./New-AzActionGroup.md)
+[New-AzActionGroup](./New-AzActionGroup.md)
 
 [New-AzActivityLogAlertCondition](./New-AzActivityLogAlertCondition.md)
 

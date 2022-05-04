@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAuthorization.md
-ms.openlocfilehash: 30ab99d39c78b31a7e4133ae3a8aeb40e1e1b304
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9295f8050797bcae109a88943759ff0fe16dc2d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930907"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701958"
 ---
 # New-AzVMwareAuthorization
 
 ## SYNOPSIS
-Membuat atau memperbarui Otorisasi Sirkuit ExpressRoute di awan pribadi
+Membuat atau memperbarui Otorisasi Sirkuit ExpressRoute di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzVMwareAuthorization -Name <String> -PrivateCloudName <String> -ResourceGro
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui Otorisasi Sirkuit ExpressRoute di awan pribadi
+Membuat atau memperbarui Otorisasi Sirkuit ExpressRoute di cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Otorisasi Sirkuit di awan pribadi
+### Contoh 1: Membuat Otorisasi Sirkuit di cloud privat
 ```powershell
 New-AzVMwareAuthorization -Name azps_test_authorization -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 ```
@@ -40,12 +43,12 @@ Name                    Type                                       ResourceGroup
 azps_test_authorization Microsoft.AVS/privateClouds/authorizations azps_test_group
 ```
 
-Membuat Otorisasi Sirkuit di awan pribadi
+Membuat Otorisasi Sirkuit di cloud privat
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
+### -Name
+Nama Otorisasi Sirkuit ExpressRoute di cloud privat
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan pribadi.
+Nama cloud privat.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -150,8 +153,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

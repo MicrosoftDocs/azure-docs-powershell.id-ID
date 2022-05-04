@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
-ms.openlocfilehash: c7870aa8cd19b9e1fad2664cf5ac6074482b9baa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c7be75e4f3319b778fda15f911ae716d58a81b1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224865"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723366"
 ---
-# Get-AzNetworkSecurityGroup
+# Dapatkan-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Mendapatkan grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzNetworkSecurityGroup [-Name <String>] [-ResourceGroupName <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzNetworkSecurityGroup -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -37,7 +40,7 @@ Cmdlet **Get-AzNetworkSecurityGroup** mendapatkan grup keamanan jaringan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil grup keamanan jaringan yang sudah ada
+### Contoh 1: Mengambil grup keamanan jaringan yang ada
 ```powershell
 Get-AzNetworkSecurityGroup -Name nsg1 -ResourceGroupName "rg1"
 ```
@@ -218,7 +221,7 @@ Subnets                     : []
 
 Perintah ini mengembalikan konten grup keamanan jaringan Azure "nsg1" dalam grup sumber daya "rg1"
 
-### Contoh 2: Mencantumkan grup keamanan jaringan yang sudah ada menggunakan pemfilteran
+### Contoh 2: Mencantumkan grup keamanan jaringan yang ada menggunakan pemfilteran
 ```powershell
 Get-AzNetworkSecurityGroup -Name nsg*
 ```
@@ -429,7 +432,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama grup keamanan jaringan yang didapat cmdlet ini.
 
 ```yaml
@@ -484,7 +487,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -502,6 +505,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzNetworkSecurityGroup](./Remove-AzNetworkSecurityGroup.md)
 
-[Set-AzNetworkSecurityGroup](./Set-AzNetworkSecurityGroup.md)
+[Atur-AzNetworkSecurityGroup](./Set-AzNetworkSecurityGroup.md)
 
 

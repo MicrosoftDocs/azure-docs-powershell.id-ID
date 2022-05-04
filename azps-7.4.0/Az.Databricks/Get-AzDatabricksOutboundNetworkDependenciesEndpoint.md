@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksOutboundNetworkDependenciesEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksOutboundNetworkDependenciesEndpoint.md
-ms.openlocfilehash: e187f9eb52504c4bbb082475eac473a98f9f5a65
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b0fc33d3e30bde736b98a83a6d7f36c79afd6aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684630"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701905"
 ---
 # Get-AzDatabricksOutboundNetworkDependenciesEndpoint
 
 ## SYNOPSIS
-Mendapatkan daftar titik akhir yang VNET Injected Workspace memanggil Azure Databricks Control Plane.
+Mendapatkan daftar titik akhir yang disebut Ruang Kerja yang Disuntikkan VNET ke Sarana Kontrol Azure Databricks.
 Anda harus mengonfigurasi akses keluar dengan titik akhir ini.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/en-us/azure/databricks/administration-guide/cloud-configurations/azure/udr
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/get-azdatabricksoutboundnetworkdependenciesendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,13 +30,13 @@ Get-AzDatabricksOutboundNetworkDependenciesEndpoint -ResourceGroupName <String> 
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar titik akhir yang VNET Injected Workspace memanggil Azure Databricks Control Plane.
+Mendapatkan daftar titik akhir yang disebut Ruang Kerja yang Disuntikkan VNET ke Sarana Kontrol Azure Databricks.
 Anda harus mengonfigurasi akses keluar dengan titik akhir ini.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/en-us/azure/databricks/administration-guide/cloud-configurations/azure/udr
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan daftar titik akhir yang VNET Injected Workspace memanggil Azure Databricks Control Plane
+### Contoh 1: Mendapatkan daftar titik akhir yang disebut Ruang Kerja yang Disuntikkan VNET ke Sarana Kontrol Azure Databricks
 ```powershell
 Get-AzDatabricksOutboundNetworkDependenciesEndpoint -ResourceGroupName "databricks-rg-zbpoy7" -WorkspaceName databricks-portal
 ```
@@ -86,7 +89,7 @@ Endpoint : {{
            }}
 ```
 
-Perintah ini mendapatkan daftar titik akhir yang VNET Injected Workspace memanggil Azure Databricks Control Plane.
+Perintah ini mendapatkan daftar titik akhir yang disebut Ruang Kerja Yang Disuntikkan VNET ke Sarana Kontrol Azure Databricks.
 Anda harus mengonfigurasi akses keluar dengan titik akhir ini.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/en-us/azure/databricks/administration-guide/cloud-configurations/azure/udr
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

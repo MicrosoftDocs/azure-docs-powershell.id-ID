@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: e5eac0d53d3bb9f4ca25df64b24916a8c56055c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8515aa247a73fd6aad5315741f734f0a1131777c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124155"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677608"
 ---
 # Get-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Mendapatkan topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerservicetopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Get-AzDeploymentManagerServiceTopology [-InputObject] <PSServiceTopologyResource
 ## DESCRIPTION
 Cmdlet **Get-AzDeploymentManagerServiceTopology** mendapatkan topologi layanan.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzDeploymentManagerServiceTopology.
-Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceTopology atau ResourceId.
+Anda dapat memodifikasi objek ini secara lokal, lalu menerapkan perubahan pada topologi dengan menggunakan cmdlet Set-AzDeploymentManagerServiceTopology.
+Tentukan topologi layanan berdasarkan namanya dan nama grup sumber daya. Secara bergantian, Anda dapat menyediakan objek ServiceTopology atau ResourceId.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Perintah ini mendapatkan topologi layanan bernama ContosoServiceTopology di Cont
 Get-AzDeploymentManagerService -InputObject $serviceTopologyObject
 ```
 
-Perintah ini mendapatkan topologi layanan yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
+Perintah ini mendapatkan topologi layanan yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $serviceTopologyObject.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama topologi layanan.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

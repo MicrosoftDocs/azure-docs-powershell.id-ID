@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
-ms.openlocfilehash: 99a3051d383d2ef740aaf19e7eee619865b07468
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: face79613109358b1e2c16996f1e338b5b46b895
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314793"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689246"
 ---
 # Get-AzMetricDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetricdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzMetricDefinition** mendapatkan definisi metrik.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan definisi metrik untuk sumber daya
+### Contoh 1: Mendapatkan definisi metrik untuk sumber daya
 ```powershell
 Get-AzMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2"
 ```
@@ -58,7 +61,7 @@ Unit                   : Count
 
 Perintah ini mendapatkan definisi metrik untuk sumber daya yang ditentukan.
 
-### Contoh 2: Dapatkan definisi metrik dengan output mendetail
+### Contoh 2: Dapatkan definisi metrik dengan output terperinci
 ```powershell
 Get-AzMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2" -DetailedOutput
 ```
@@ -99,9 +102,9 @@ Unit                   : Count
 ```
 
 Perintah ini mendapatkan definisi metrik untuk situs web2.
-Outputnya mendetail.
+Outputnya dirinci.
 
-### Contoh 3: Dapatkan definisi metrik menurut nama
+### Contoh 3: Mendapatkan definisi metrik berdasarkan nama
 ```powershell
 Get-AzMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2" -DetailedOutput -MetricName "BytesSent,CpuTime"
 ```
@@ -141,7 +144,7 @@ Unit                   : Bytes
 ```
 
 Perintah ini mendapatkan definisi untuk metrik BytesSent dan CpuTime.
-Outputnya mendetail.
+Outputnya dirinci.
 
 ## PARAMETERS
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedOutput
-Menunjukkan bahwa operasi ini menyertakan output mendetail.
+Menunjukkan bahwa operasi ini menyertakan output terperinci.
 Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricNamespace
-Menentukan ruang nama metrik untuk definisi metrik kueri.
+Menentukan namespace metrik untuk mengkueri definisi metrik.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -241,6 +244,6 @@ Informasi selengkapnya tentang metrik yang didukung dapat ditemukan di: https://
 ## RELATED LINKS
 
 [Get-AzMetric](./Get-AzMetric.md)
- [Filter AzMetric Baru](./New-AzMetricFilter.md)
+ [New-AzMetricFilter](./New-AzMetricFilter.md)
 
 

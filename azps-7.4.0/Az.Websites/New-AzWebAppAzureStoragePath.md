@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
-ms.openlocfilehash: 6017ec301464cb88e0ac68119653c170e630c76d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3d2c0257fc5a1feb34b905ada746be5a6557664
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143268453"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694406"
 ---
 # New-AzWebAppAzureStoragePath
 
 ## SYNOPSIS
-Membuat objek yang mewakili jalur Azure Storage untuk dipasang di Web App. Ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp dan Set-AzWebAppSlot
+Membuat objek yang mewakili jalur Azure Storage yang akan dipasang di Aplikasi Web. Ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp dan Set-AzWebAppSlot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappazurestoragepath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzWebAppAzureStoragePath -Name <String> -Type <AzureStorageType> -AccountNam
 ```
 
 ## DESCRIPTION
-Membuat objek yang mewakili jalur Azure Storage untuk dipasang di dalam Aplikasi Web.
+Membuat objek yang mewakili jalur Azure Storage yang akan dipasang di dalam Aplikasi Web.
 
 ## EXAMPLES
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MountPath
-Jalur dalam wadah tempat berbagi yang ditentukan oleh ShareName akan diekspos
+Jalur dalam kontainer tempat berbagi yang ditentukan oleh ShareName akan diekspos
 
 ```yaml
 Type: System.String
@@ -104,9 +107,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pengidentifikasi properti Azure Storage.
-Harus unik dalam Web App atau Slot
+Harus unik dalam Aplikasi Web atau Slot
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Nama bagikan untuk dipasangkan ke wadah
+Nama berbagi yang akan dipasang ke kontainer
 
 ```yaml
 Type: System.String
@@ -135,9 +138,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe akun Azure Storage.
-Windows Container hanya mendukung Azure Files
+### -Type
+Jenis akun Azure Storage.
+Kontainer Windows hanya mendukung Azure Files
 
 ```yaml
 Type: Microsoft.Azure.Management.WebSites.Models.AzureStorageType
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

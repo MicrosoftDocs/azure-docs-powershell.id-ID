@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNatGateway.md
-ms.openlocfilehash: efadda1fb56665226b402dc08e9e08eb560971ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 171a7906bab6dc2f44cb4bba064700e148320da2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871992"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739918"
 ---
 # Get-AzNatGateway
 
 ## SYNOPSIS
-Mendapatkan sumber daya Nat Gateway dalam grup sumber daya menurut nama atau Id NatGateway atau semua sumber daya Gateway Nat dalam grup sumber daya.
+Mendapatkan sumber daya Nat Gateway dalam grup sumber daya menurut nama atau Id NatGateway atau semua sumber daya Nat Gateway dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzNatGateway -ResourceId <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya Nat Gateway dalam grup sumber daya menurut nama OR NatGateway Id ATAU semua sumber daya Gateway Nat dalam grup sumber daya.
+Mendapatkan sumber daya Nat Gateway dalam grup sumber daya menurut nama ATAU Id NatGateway ATAU semua sumber daya Nat Gateway dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -162,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway nat.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

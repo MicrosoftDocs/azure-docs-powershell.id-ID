@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
-ms.openlocfilehash: cc428c2d29f9bf497f8f34f5bee5e6f240801275
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82e5dc84d630b669658a9693b76394781e4663e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000063"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721136"
 ---
 # Get-AzLabServicesLab
 
 ## SYNOPSIS
 API untuk mendapatkan lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/get-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ API untuk mendapatkan lab.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua lab
+### Contoh 1: Mendapatkan semua lab
 ```powershell
 Get-AzLab
 ```
@@ -69,7 +72,7 @@ westus2       Lab4                                               Microsoft.LabSe
 
 Mengembalikan semua lab untuk langganan saat ini.
 
-### Contoh 2: Dapatkan lab tertentu
+### Contoh 2: Mendapatkan lab tertentu
 ```powershell
 Get-AzLab -ResourceGroupName 'yourgroupname' -Name 'yourlabname'
 ```
@@ -82,7 +85,7 @@ westus2       yourlabName                                        Microsoft.LabSe
 
 Dapatkan lab tertentu menggunakan nama grup sumber daya dan nama lab.
 
-### Contoh 3: Membuat semua lab dengan rencana lab
+### Contoh 3: Membuat semua lab dengan paket lab
 ```powershell
 $plan = Get-AzLabPlan -LabPlanName 'lab plan name'
 $plan | Get-AzLab -Name 'lab name'
@@ -94,9 +97,9 @@ Location      Name                                               Type
 westus2       lab Name                                        Microsoft.LabServices/labs
 ```
 
-Dapatkan laboratorium tertentu dalam rencana lab menggunakan objek rencana lab dan nama laboratorium.
+Dapatkan lab tertentu dalam rencana lab menggunakan objek rencana lab dan nama lab.
 
-### Contoh 4: Dapatkan lab menggunakan wildcard dalam nama lab.
+### Contoh 4: Mendapatkan lab menggunakan kartubebas dalam nama lab.
 ```powershell
 Get-AzLab -ResourceGroupName 'group name' -Name '*lab name'
 ```
@@ -108,7 +111,7 @@ westus2       yourlab Name                                        Microsoft.LabS
 westus2       anotherlab Name                                     Microsoft.LabServices/labs
 ```
 
-Menggunakan parameter Nama dan wildcard semua lab dalam grup sumber daya seperti nama yang dikembalikan.
+Menggunakan parameter Nama dan kartubebas semua lab dalam grup sumber daya seperti nama dikembalikan.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlan
-Untuk membuat, lihat bagian CATATAN untuk properti LABPLAN dan membuat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti LABPLAN dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.LabPlan
@@ -142,7 +145,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 
 ```yaml
@@ -202,8 +205,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -254,31 +257,31 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 LABPLAN <LabPlan>: 
-  - `Location <String>`: Lokasi geografis tempat sumber daya tinggal
-  - `[AllowedRegion <String[]>]`: Kawasan yang diperbolehkan untuk digunakan oleh pembuat lab saat membuat lab menggunakan rencana lab ini.
+  - `Location <String>`: Lokasi geografis tempat sumber daya berada
+  - `[AllowedRegion <String[]>]`: Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
   - `[DefaultAutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.
   - `[DefaultAutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileNoConnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan sebelum mematikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah pemutusan saat diputuskan diaktifkan
-  - `[DefaultAutoShutdownProfileShutdownOnIdle <ShutdownOnIdleMode?>]`: Apakah VM akan dimatikan ketika diam selama periode waktu tertentu.
-  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan saat VM belum tersambung setelah periode waktu tertentu.
+  - `[DefaultAutoShutdownProfileNoConnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
+  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah matikan saat pemutusan sambungan diaktifkan
+  - `[DefaultAutoShutdownProfileShutdownOnIdle <ShutdownOnIdleMode?>]`: Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
+  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
   - `[DefaultConnectionProfileClientRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui RDP.
   - `[DefaultConnectionProfileClientSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui SSH.
   - `[DefaultConnectionProfileWebRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui RDP.
   - `[DefaultConnectionProfileWebSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui SSH.
   - `[DefaultNetworkProfileSubnetId <String>]`: Id sumber daya subnet eksternal
-  - `[LinkedLmsInstance <String>]`: Url dasar contoh lms rencana lab ini dapat menautkan daftar nama lab terhadap.
-  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke rencana lab ini. Ketika menyimpan gambar mesin virtual templat lab, gambar itu akan tetap ada di galeri ini. Gambar bersama dari galeri dapat disediakan untuk digunakan saat membuat laboratorium baru.
+  - `[LinkedLmsInstance <String>]`: Url Dasar instans lms rencana lab ini dapat menautkan daftar nama lab.
+  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke paket lab ini. Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan bertahan di galeri ini. Gambar bersama dari galeri dapat digunakan saat membuat lab baru.
   - `[SupportInfoEmail <String>]`: Mendukung alamat email kontak.
   - `[SupportInfoInstruction <String>]`: Instruksi dukungan.
-  - `[SupportInfoPhone <String>]`: Nomor telepon kontak dukungan.
+  - `[SupportInfoPhone <String>]`: Mendukung nomor telepon kontak.
   - `[SupportInfoUrl <String>]`: Alamat web dukungan.
-  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
+  - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
-  - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 

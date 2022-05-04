@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
-ms.openlocfilehash: 376d46c9aa3a63393d22ab6d2271b2a33c9161ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f2e1704b8883aacf11065729ee8e4e20f125913f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679248"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738694"
 ---
 # Get-AzNetworkWatcherSecurityGroupView
 
 ## SYNOPSIS
-Menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Melihat aturan kelompok keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchersecuritygroupview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzNetworkWatcherSecurityGroupView -Location <String> -TargetVirtualMachineId
 ```
 
 ## DESCRIPTION
-Get-AzNetworkWatcherSecurityGroupView memungkinkan Anda menampilkan aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+Get-AzNetworkWatcherSecurityGroupView memungkinkan Anda melihat aturan grup keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Melakukan panggilan Tampilan Grup Keamanan di VM
+### Contoh 1: Melakukan panggilan Tampilan Grup Keamanan pada VM
 ```powershell
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -50,12 +53,12 @@ $VM = Get-AzVM -ResourceGroupName ContosoResourceGroup -Name VM0
 Get-AzNetworkWatcherSecurityGroupView -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id
 ```
 
-Dalam contoh di atas, kami terlebih dahulu mendapatkan Network Watcher regional, lalu VM di kawasan tersebut. Lalu kami membuat panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
+Dalam contoh di atas, pertama-tama kita mendapatkan Network Watcher regional, lalu VM di wilayah tersebut. Kemudian kami melakukan panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -173,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityGroupViewResult
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, alur, ip 
 
 ## RELATED LINKS
 
@@ -181,7 +184,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -221,9 +224,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

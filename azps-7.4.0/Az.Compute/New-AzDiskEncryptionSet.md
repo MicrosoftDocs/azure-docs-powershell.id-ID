@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSet.md
-ms.openlocfilehash: ad1484ee8303492512f73ae14f876e018a56c614
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a01a06d71f863635095e1cccb50644b50ee9b1db
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172125"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685470"
 ---
 # New-AzDiskEncryptionSet
 
 ## SYNOPSIS
-Membuat kumpulan enkripsi disk.
+Membuat set enkripsi disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskencryptionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDiskEncryptionSet [-ResourceGroupName] <String> [-Name] <String> [-InputOb
 ```
 
 ## DESCRIPTION
-Membuat kumpulan enkripsi disk.
+Membuat set enkripsi disk.
 
 ## EXAMPLES
 
@@ -35,12 +38,12 @@ $config = New-AzDiskEncryptionSetConfig -Location 'westcentralus' -KeyUrl "https
 $config | New-AzDiskEncryptionSet -ResourceGroupName 'rg1' -Name 'enc1'
 ```
 
-Membuat kumpulan enkripsi disk menggunakan kunci aktif yang diberikan dalam kubah kunci.
+Membuat set enkripsi disk menggunakan kunci aktif yang diberikan di brankas kunci.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek lokal kumpulan enkripsi disk.
+Objek lokal dari set enkripsi disk.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSDiskEncryptionSet
@@ -84,8 +87,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan enkripsi disk.
+### -Name
+Nama set enkripsi disk.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
-ms.openlocfilehash: a1e4c07606a0ff65033ed6546b12a0ca44f18adb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0fab14d3e2006cc02e8657c220288599fb5cff72
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997327"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708040"
 ---
 # Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic
 
 ## SYNOPSIS
-Memanggil sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+Panggil sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/invoke-aznetworkwatchernetworkconfigurationdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Results : [
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 
 ### -TargetResourceId
 ID sumber daya target untuk melakukan diagnostik konfigurasi jaringan.
-Opsi yang valid adalah VM, NetworkInterface, VMSS/NetworkInterface dan Application Gateway.
+Opsi yang valid adalah VM, NetworkInterface, VMSS/NetworkInterface, dan Application Gateway.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 
 ### -VerbosityLevel
 Tingkat verbositas.
-Nilai yang diterima adalah 'Normal', 'Minimum', 'Penuh'.
+Nilai yang diterima adalah 'Normal', 'Minimum', 'Full'.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -261,7 +264,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkConfigurationDiagnosticResponse
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, diagnostik, profil
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, diagnostik, profil
 
 ## RELATED LINKS
 
@@ -269,7 +272,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -309,9 +312,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

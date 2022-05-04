@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Stop-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Stop-AzHDInsightJob.md
-ms.openlocfilehash: 077390ccab108bb2f332753ba7a055d6d26abb3a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3b7396a0c345f85e9c99254dd1daa3fb71121d43
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227385"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700484"
 ---
 # Stop-AzHDInsightJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan yang berjalan tertentu pada kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/stop-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Stop-AzHDInsightJob `
             -JobId $jobId
 ```
 
-Perintah ini menghentikan pekerjaan di kluster bernama your-hadoop-001.
+Perintah ini menghentikan pekerjaan pada kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

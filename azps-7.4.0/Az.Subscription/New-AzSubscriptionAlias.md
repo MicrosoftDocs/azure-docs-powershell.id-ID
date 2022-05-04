@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
-ms.openlocfilehash: c8a318583868c0f2db4b8f813f1d2b63c75736df
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0370c949d00360e24a55332b0d62630032356858
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863676"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737956"
 ---
 # New-AzSubscriptionAlias
 
 ## SYNOPSIS
 Membuat alias dan langganan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.subscription/new-azsubscriptionalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzSubscriptionAlias -AliasName <String> [-BillingScope <String>] [-Workload 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSubscriptionAlias membuat alias** dan langganan baru
+Cmdlet **New-AzSubscriptionAlias** membuat alias dan langganan baru
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingScope
-Lingkup Tagihan
+Cakupan Penagihan
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Beban kerja
-Tipe Beban Kerja
+Jenis Beban Kerja
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,11 +202,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

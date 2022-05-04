@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareAccount.md
-ms.openlocfilehash: 9db7c0c780c7d004f17afb976973bbf9994ba5ff
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9edbfb18b82dd3a0304563495e9cd24a9a62c6cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684648"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686762"
 ---
 # New-AzDataShareAccount
 
 ## SYNOPSIS
 Membuat akun berbagi data baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatashareaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataShareAccount -ResourceGroupName <String> -Name <String> -Location <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareAccount** membuat akun datashare dalam grup sumber daya Azure yang ditentukan.
+**Cmdlet New-AzDataShareAccount** membuat akun datashare di grup sumber daya Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Type              : Microsoft.DataShare/accounts
 Id                : /subscriptions/4834da9b-787a-44f6-ae81-60707ab8c957/resourceGroups/ADS/providers/Microsoft.DataShare/accounts/WikiADS
 ```
 
-Membuat akun bernama "WikiADS" dalam grup sumber daya "ADS"
+Membuat akun bernama "WikiADS" di grup sumber daya "ADS"
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun berbagi data Azure.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure akan dibuat.
+Nama grup sumber daya akun berbagi data azure akan dibuat.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

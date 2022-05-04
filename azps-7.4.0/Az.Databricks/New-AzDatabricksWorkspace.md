@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
-ms.openlocfilehash: 5764f10efe2adb3513b5500e89082403f12275a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 903c4674550fd3a10a42b94dca465252ab86fd3b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706476"
 ---
 # New-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-
 
 Perintah ini membuat ruang kerja Databricks.
 
-### Contoh 2: Membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi
+### Contoh 2: Membuat ruang kerja Databricks dengan jaringan virtual yang disesuaikan
 ```powershell
 $dlg = New-AzDelegation -Name dbrdl -ServiceName "Microsoft.Databricks/workspaces"
 $rdpRule = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
@@ -67,7 +70,7 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Perintah ini membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi dalam grup sumber daya.
+Perintah ini membuat ruang kerja Databricks dengan jaringan virtual yang disesuaikan dalam grup sumber daya.
 
 ### Contoh 3: Membuat ruang kerja Databricks dengan mengaktifkan enkripsi
 ```powershell
@@ -81,7 +84,7 @@ workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-
 ```
 
 Perintah ini membuat ruang kerja Databricks dan mengaturnya untuk mempersiapkan enkripsi.
-Silakan lihat contoh Update-AzDatabricksWorkspace untuk pengaturan lainnya ke enkripsi.
+Silakan lihat contoh Update-AzDatabricksWorkspace untuk pengaturan lebih lanjut ke enkripsi.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeySource
-Kunci enkripsiSource (penyedia).
-Kemungkinan nilai (tidak peka huruf besar kecil): Default, Microsoft.Keyvault
+Sumber kunci enkripsi (penyedia).
+Nilai yang mungkin (tidak peka huruf besar/kecil): Default, Microsoft.Keyvault
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Support.KeySource
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyVaultUri
-Uri dari KeyVault.
+Uri Dari KeyVault.
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ruang kerja.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Tipe akses jaringan untuk mengakses ruang kerja.
+Jenis akses jaringan untuk mengakses ruang kerja.
 Atur nilai ke dinonaktifkan untuk mengakses ruang kerja hanya melalui tautan privat.
 
 ```yaml
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredNsgRule
-Mendapatkan atau mengatur nilai yang mengindikasikan apakah bidang data (kluster) untuk mengontrol komunikasi pesawat terjadi melalui titik akhir privat.
+Mendapatkan atau menetapkan nilai yang menunjukkan apakah bidang data (kluster) untuk mengontrol komunikasi sarana terjadi melalui titik akhir privat.
 Nilai yang didukung adalah 'AllRules' dan 'NoAzureDatabricksRules'.
 Nilai 'NoAzureServiceRules' hanya untuk penggunaan internal.
 
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -555,8 +558,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -571,7 +574,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -587,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

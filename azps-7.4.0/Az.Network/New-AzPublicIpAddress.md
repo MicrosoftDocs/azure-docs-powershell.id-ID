@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpAddress.md
-ms.openlocfilehash: 02e5084ff53b92c94182df42863139b42a3498c6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6214101701e575e41462e9e919c809708a3bb584
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678060"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729338"
 ---
 # New-AzPublicIpAddress
 
 ## SYNOPSIS
 Membuat alamat IP publik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,14 +41,14 @@ Cmdlet **New-AzPublicIpAddress** membuat alamat IP publik.
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location
 ```
 
-Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini karena -AllocationMethod ditentukan sebagai 'Statis'. Jika ditentukan sebagai 'Dinamis', alamat IP publik akan dialokasikan hanya ketika Anda memulai (atau membuat) sumber daya terkait (seperti VM atau penyeimbang muat).
+Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang menunjuk ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini karena -AllocationMethod ditentukan sebagai 'Statis'. Jika ditentukan sebagai 'Dinamis', alamat IP publik hanya dialokasikan saat Anda memulai (atau membuat) sumber daya terkait (seperti VM atau load balancer).
 
 ### Contoh 2: Membuat alamat IP publik dengan FQDN terbalik
 ```powershell
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location -ReverseFqdn $customFqdn
 ```
 
-Perintah ini membuat sumber daya alamat IP publik baru. Dengan parameter -ReverseFqdn, Azure membuat catatan DNS PTR (reverse-lookup) untuk alamat IP publik yang dialokasikan ke sumber daya ini, mengarah ke $customFqdn yang ditentukan dalam perintah. Sebagai prasyarat, $customFqdn (misalnya webapp.contoso.com) harus memiliki catatan DNS CNAME (pencarian maju) yang mengarah ke $dnsPrefix.$location.cloudapp.azure.com.
+Perintah ini membuat sumber daya alamat IP publik baru. Dengan parameter -ReverseFqdn, Azure membuat rekaman DNS PTR (pencarian terbalik) untuk alamat IP publik yang dialokasikan ke sumber daya ini, menunjuk ke $customFqdn yang ditentukan dalam perintah. Sebagai prasyarat, $customFqdn (misalnya webapp.contoso.com) harus memiliki catatan DNS CNAME (pencarian maju) yang menunjuk ke $dnsPrefix.$location.cloudapp.azure.com.
 
 ### Contoh 3: Membuat alamat IP publik baru dengan IpTag
 ```powershell
@@ -53,31 +56,31 @@ $ipTag = New-AzPublicIpTag -IpTagType "FirstPartyUsage" -Tag "/Sql"
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location -IpTag $ipTag
 ```
 
-Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini karena -AllocationMethod ditentukan sebagai 'Statis'. Jika ditentukan sebagai 'Dinamis', alamat IP publik akan dialokasikan hanya ketika Anda memulai (atau membuat) sumber daya terkait (seperti VM atau penyeimbang muat). Iptag digunakan untuk spesifik Tag yang terkait dengan sumber daya. Iptag dapat ditentukan menggunakan New-AzPublicIpTag dan dikirim sebagai input melalui -IpTags.
+Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang menunjuk ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini karena -AllocationMethod ditentukan sebagai 'Statis'. Jika ditentukan sebagai 'Dinamis', alamat IP publik hanya dialokasikan saat Anda memulai (atau membuat) sumber daya terkait (seperti VM atau load balancer). Iptag digunakan untuk menentukan Tag yang terkait dengan sumber daya. Iptag dapat ditentukan menggunakan New-AzPublicIpTag dan diteruskan sebagai input melalui -IpTags.
 
-### Contoh 4: Membuat alamat IP publik baru dari Prefiks
+### Contoh 4: Membuat alamat IP publik baru dari Awalan
 ```powershell
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location -PublicIpPrefix $publicIpPrefix -Sku Standard
 ```
 
-Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini dari publicIpPrefix yang ditentukan.
-Opsi ini hanya didukung untuk 'Standar' Sku dan 'Static' AllocationMethod.
+Perintah ini membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang menunjuk ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan untuk sumber daya ini dari publicIpPrefix yang ditentukan.
+Opsi ini hanya didukung untuk Sku 'Standar' dan 'Statis' AllocationMethod.
 
-### Contoh 5: Membuat alamat IP publik tertentu dari Prefiks BYOIP
+### Contoh 5: Membuat alamat IP publik tertentu dari Awalan BYOIP
 ```powershell
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -Location $location -IpAddress 0.0.0.0 -PublicIpPrefix $publicIpPrefix -Sku Standard
 ```
 
 Perintah ini membuat sumber daya alamat IP publik baru dengan IP tertentu. NRP akan memeriksa apakah IP yang diberikan berada di dalam PublicIpPrefix dan apakah PublicIpPrefix yang diberikan adalah BYOIP PublicIpPrefix.
-alamat IP publik yang diberikan segera dialokasikan ke sumber daya ini dari publicIpPrefix yang ditentukan. Opsi ini hanya didukung untuk Sku 'Standar' dan Alokasi 'Statis'Method dan Byoip PublicIpPrefix.
+alamat IP publik yang diberikan segera dialokasikan untuk sumber daya ini dari publicIpPrefix yang ditentukan. Opsi ini hanya didukung untuk Sku 'Standar' dan 'Statis' AllocationMethod dan BYOIP PublicIpPrefix.
 
 ### Contoh 6: Membuat alamat IP publik global baru
 ```powershell
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $domainNameLabel -Location $location -Sku Standard -Tier Global
 ```
 
-Perintah ini membuat sumber daya alamat IP publik global yang baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik global segera dialokasikan ke sumber daya ini.
-Opsi ini hanya didukung untuk 'Standar' Sku dan 'Static' AllocationMethod.
+Perintah ini membuat sumber daya alamat IP publik global baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang menunjuk ke alamat IP publik sumber daya ini. Alamat IP publik global segera dialokasikan untuk sumber daya ini.
+Opsi ini hanya didukung untuk Sku 'Standar' dan 'Statis' AllocationMethod.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan waktu habis diam, dalam menit.
+Menentukan batas waktu diam, dalam menit.
 
 ```yaml
 Type: System.Int32
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat untuk membuat alamat IP publik.
+Menentukan wilayah tempat membuat alamat IP publik.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama alamat IP publik yang dibuat cmdlet ini.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReverseFqdn
-Menentukan reverse nama domain yang sepenuhnya memenuhi syarat (FQDN).
+Menentukan nama domain terbalik yang sepenuhnya memenuhi syarat (FQDN).
 
 ```yaml
 Type: System.String
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama IP Sku publik.
+Nama Sku IP publik.
 
 ```yaml
 Type: System.String
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Ip publik Sku Tier.
+Tingkat Sku IP publik.
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: System.String[]
@@ -371,8 +374,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -387,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -427,7 +430,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzPublicIpAddress](./Get-AzPublicIpAddress.md)
+[Dapatkan-AzPublicIpAddress](./Get-AzPublicIpAddress.md)
 
 [Remove-AzPublicIpAddress](./Remove-AzPublicIpAddress.md)
 

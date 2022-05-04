@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderPreferencesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderPreferencesObject.md
-ms.openlocfilehash: 80b1ecaea5077e7a0a331287db920296d82f69cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ed4b86d6cd70e26402ca6c9ce4ef260c97d49548
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809064"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723492"
 ---
 # New-AzEdgeOrderPreferencesObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk Preferensi.
+Buat objek dalam memori untuk Preferensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderpreferencesobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzEdgeOrderPreferencesObject [-EncryptionPreference <IEncryptionPreferences>
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk Preferensi.
+Buat objek dalam memori untuk Preferensi.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Membuat objek preferensi dalam memori untuk mengatur preferensi sumber daya tran
 
 ### -EncryptionPreference
 Preferensi yang terkait dengan Enkripsi.
-Untuk membangun, lihat bagian CATATAN untuk properti ENCRYPTIONPREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti ENCRYPTIONPREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IEncryptionPreferences
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 
 ### -ManagementResourcePreference
 Preferensi yang terkait dengan sumber daya Manajemen.
-Untuk membangun, lihat bagian CATATAN untuk properti MANAGEMENTRESOURCEPREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTRESOURCEPREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IManagementResourcePreferences
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 
 ### -NotificationPreference
 Preferensi pemberitahuan.
-Untuk membangun, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.INotificationPreference[]
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -TransportPreference
 Preferensi yang terkait dengan logistik pengiriman pesanan.
-Untuk membangun, lihat bagian CATATAN untuk properti TRANSPORTPREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti TRANSPORTPREFERENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.ITransportPreferences
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -123,7 +126,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 ENCRYPTIONPREFERENCE <IEncryptionPreferences>: Preferensi yang terkait dengan Enkripsi.
-  - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Diwajibkan untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
+  - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
 
 MANAGEMENTRESOURCEPREFERENCE <IManagementResourcePreferences>: Preferensi yang terkait dengan sumber daya Manajemen.
   - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
@@ -133,7 +136,7 @@ NOTIFICATIONPREFERENCE <INotificationPreference[]>: Preferensi pemberitahuan.
   - `StageName <NotificationStageName>`: Nama panggung.
 
 TRANSPORTPREFERENCE <ITransportPreferences>: Preferensi yang terkait dengan logistik pengiriman pesanan.
-  - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
+  - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
 ## RELATED LINKS
 

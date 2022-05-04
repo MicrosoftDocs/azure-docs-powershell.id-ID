@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
-ms.openlocfilehash: a076ad91333387c861d9998c17033199afa5fe2b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c3dae61296d99f7edca9efea9b4a2a5d0981be0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286587"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739198"
 ---
 # Disable-AzFrontDoorCustomDomainHttps
 
 ## SYNOPSIS
 Menonaktifkan HTTPS untuk domain kustom
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/disable-azfrontdoorcustomdomainhttps) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan.
+Nama Front Door.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek titik akhir Frontend untuk diperbarui.
+Objek titik akhir Frontend yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSFrontendEndpoint
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat Pintu Depan berada.
+Grup sumber daya tempat Front Door berada.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya titik akhir Pintu Depan untuk menonaktifkan https
+Id Sumber Daya titik akhir Front Door untuk menonaktifkan https
 
 ```yaml
 Type: System.String
@@ -219,8 +222,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

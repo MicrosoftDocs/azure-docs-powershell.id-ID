@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountNameAvailability.md
-ms.openlocfilehash: 2b370586365ae3e866b17331e77608c84cdb57aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4783f8ef33026e0b802cd8b769507848b9777b52
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864468"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738046"
 ---
 # Get-AzStorageAccountNameAvailability
 
 ## SYNOPSIS
 Memeriksa ketersediaan nama akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzStorageAccountNameAvailability** memeriksa apakah nama akun Azure
 
 ## EXAMPLES
 
-### Contoh 1: Memeriksa ketersediaan nama akun Storage
+### Contoh 1: Periksa ketersediaan nama akun Storage
 ```
 PS C:\>Get-AzStorageAccountNameAvailability -Name 'contosostorage03'
 ```
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Storage yang diperiksa cmdlet ini.
 
 ```yaml
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -84,6 +87,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Manajer Azure Storage](./Az.Storage.md)
+[Cmdlet Azure Storage Manager](./Az.Storage.md)
 
 

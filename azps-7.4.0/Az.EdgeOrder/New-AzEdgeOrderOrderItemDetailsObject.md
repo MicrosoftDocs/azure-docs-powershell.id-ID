@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
-ms.openlocfilehash: eb8929b5f505ee55bb07a7da61124c61850862b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d3fc890c2bc41f804e39bf5c3b286ec23b739bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001881"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723546"
 ---
 # New-AzEdgeOrderOrderItemDetailsObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk OrderItemDetails.
+Buat objek dalam memori untuk OrderItemDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderorderitemdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEdgeOrderOrderItemDetailsObject -OrderItemType <OrderItemType> -ProductDet
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk OrderItemDetails.
+Buat objek dalam memori untuk OrderItemDetails.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ $HierarchyInformation=New-AzEdgeOrderHierarchyInformationObject -ProductFamilyNa
 $details = New-AzEdgeOrderOrderItemDetailsObject -OrderItemType "Purchase"  -ProductDetail  @{"HierarchyInformation"=$HierarchyInformation}
 ```
 
-Membuat objek dalam memori untuk OrderItemDetails.
+Buat objek dalam memori untuk OrderItemDetails.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrderItemType
-Tipe item pesanan.
+Jenis item pesanan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Support.OrderItemType
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 
 ### -Preferensi
 Preferensi pemberitahuan pelanggan.
-Untuk membuat, lihat bagian CATATAN untuk properti PREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PREFERENSI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IPreferences
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -ProductDetail
 Pengidentifikasi unik untuk konfigurasi.
-Untuk membangun, lihat bagian CATATAN untuk properti PRODUCTDETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PRODUCTDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IProductDetails
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -121,21 +124,21 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PREFERENSI <IPreferences>: Preferensi pemberitahuan pelanggan.
   - `[EncryptionPreference <IEncryptionPreferences>]`: Preferensi yang terkait dengan Enkripsi.
-    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Diwajibkan untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
+    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
   - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi yang terkait dengan sumber daya Manajemen.
     - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
   - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan.
     - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
     - `StageName <NotificationStageName>`: Nama panggung.
   - `[TransportPreference <ITransportPreferences>]`: Preferensi yang terkait dengan logistik pengiriman pesanan.
-    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
+    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
 PRODUCTDETAIL <IProductDetails>: Pengidentifikasi unik untuk konfigurasi.
-  - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang mengidentifikasi produk secara unik
-    - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang mengidentifikasi konfigurasi secara unik
-    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang mengidentifikasi keluarga produk secara unik
-    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi baris produk secara unik
-    - `[ProductName <String>]`: Mewakili nama produk yang mengidentifikasi produk secara unik
+  - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang secara unik mengidentifikasi produk
+    - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang secara unik mengidentifikasi konfigurasi
+    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang secara unik mengidentifikasi keluarga produk
+    - `[ProductLineName <String>]`: Mewakili nama baris produk yang secara unik mengidentifikasi lini produk
+    - `[ProductName <String>]`: Mewakili nama produk yang secara unik mengidentifikasi produk
 
 ## RELATED LINKS
 

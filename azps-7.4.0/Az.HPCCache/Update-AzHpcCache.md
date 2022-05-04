@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Update-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Update-AzHpcCache.md
-ms.openlocfilehash: 359e574fe4cb4256c4497679a3c1f8838dda759f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18bde27ccb803e173bce2f9128c19bf252fed243
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285921"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705324"
 ---
 # Update-AzHpcCache
 
 ## SYNOPSIS
 Memperbarui HPC Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/update-azhpccache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Update-AzHpcCache -ResourceGroupName testRG -CacheName testCache
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Flush
-Menyiram HPC Cache.
+Membersihkan HPC Cache.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda. Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin memperbarui singgahan.
+### -Force
+Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda. Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin memperbarui cache.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek cache untuk diperbarui.
+Objek cache yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PSHPCCache
@@ -130,8 +133,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama singgahan.
+### -Name
+Nama cache.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana Anda ingin memperbarui singgahan.
+Nama grup sumber daya di mana Anda ingin memperbarui cache.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya singgahan
+Id sumber daya Cache
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Upgrade
-Mutakhirkan HpcCache.
+Tingkatkan HpcCache.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

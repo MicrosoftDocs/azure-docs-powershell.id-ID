@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
-ms.openlocfilehash: 392827e99c2d7cde83d9d7ef380055d545713818
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 242585eebb6aec0ab436de9845b4954282041beb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275877"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683112"
 ---
 # New-AzResourceGraphQuery
 
 ## SYNOPSIS
-Membuat kueri grafik baru.
+Buat kueri grafik baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/new-azresourcegraphquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzResourceGraphQuery -Name <String> -ResourceGroupName <String> [-Subscripti
 ```
 
 ## DESCRIPTION
-Membuat kueri grafik baru.
+Buat kueri grafik baru.
 
 ## EXAMPLES
 
@@ -41,9 +44,9 @@ Location Name      Type
 global   query-t03 microsoft.resourcegraph/queries
 ```
 
-Perintah ini membuat kueri grafik sumber daya menurut parameter kueri.
+Perintah ini membuat kueri grafik sumber daya berdasarkan parameter kueri.
 
-### Contoh 2: Membuat kueri grafik sumber daya menurut parameter file
+### Contoh 2: Membuat kueri grafik sumber daya dengan parameter file
 ```powershell
 New-AzResourceGraphQuery -Name query-t04 -ResourceGroupName azure-rg-test -Location "global" -Description "requesting a subset of resource fields." -File 'D:\azure-service\ResourceGraph.Autorest\azure-powershell\src\ResourceGraph\ResourceGraph.Autorest\test\Query.kql'
 ```
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Konten file akan dikirimkan ke parameter kueri.
+Konten file akan diteruskan ke parameter kueri.
 
 ```yaml
 Type: System.String
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya kueri Graph.
+### -Name
+Nama sumber daya Graph Query.
 
 ```yaml
 Type: System.String
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
-KQL kueri yang akan berupa grafik.
+### -Kueri
+KQL kueri yang akan menjadi grafik.
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

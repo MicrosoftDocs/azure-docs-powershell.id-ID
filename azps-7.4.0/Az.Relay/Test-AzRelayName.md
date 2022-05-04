@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/test-azrel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Test-AzRelayName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Test-AzRelayName.md
-ms.openlocfilehash: b3e1dc61e683310bed57a890bcd49947c2e6730b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13462fce12541b22591c4b0c71c90ae7de342003
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867834"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738478"
 ---
 # Test-AzRelayName
 
 ## SYNOPSIS
 Memeriksa Ketersediaan Nama NameSpace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/test-azrelayname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ NameAvailable    Reason Message
         False NameInUse The specified service namespace is not available.
 ```
 
-Mengembalikan status ketersediaan nama ruang nama
+Mengembalikan status pada ketersediaan nama namespace
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Relai Nama Ruang Nama.
+Nama Namespace Layanan Relai.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

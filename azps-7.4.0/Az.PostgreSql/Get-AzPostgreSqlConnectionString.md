@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlConnectionString.md
-ms.openlocfilehash: 8af0ee79c53e531da8779826b0bc98a521a8de60
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3a080db919801a7c7a034c121b21ffb2a0665401
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675468"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731786"
 ---
 # Get-AzPostgreSqlConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan string koneksi server PostgreSql menurut grup sumber daya dan nama server
+### Contoh 1: Mendapatkan string koneksi server PostgreSql menurut grup sumber daya dan nama server
 ```powershell
 Get-AzPostgreSqlConnectionString -Client ADO.NET -Name PostgreSqlTestServer -ResourceGroupName PostgreSqlTestRG
 ```
@@ -47,7 +50,7 @@ Server=postgresqltestserver.postgres.database.azure.com;Database={your_database}
 
 Cmdlet ini mendapatkan string koneksi server PostgreSql menurut grup sumber daya dan nama server.
 
-### Contoh 2: Dapatkan string koneksi server PostgreSql menurut identitas
+### Contoh 2: Mendapatkan string koneksi server PostgreSql berdasarkan identitas
 ```powershell
 Get-AzPostgreSqlServer -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer | Get-AzPostgreSqlConnectionString -Client PHP
 ```
@@ -56,7 +59,7 @@ Get-AzPostgreSqlServer -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSq
 host=postgresqltestserver.postgres.database.azure.com port=5432 dbname={your_database} user=pwsh@postgresqltestserver password={your_password} sslmode=require
 ```
 
-Cmdlet ini mendapatkan string koneksi server PostgreSql menurut identitas.
+Cmdlet ini mendapatkan string koneksi server PostgreSql berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -171,29 +174,29 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IServer>: Server untuk string koneksi
-  - `Location <String>`: Lokasi geografis tempat sumber daya tinggal
+  - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan ketika server sedang dibuat (dan diperlukan untuk pembuatan).
   - `[EarliestRestoreDate <DateTime?>]`: Waktu pembuatan titik pemulihan paling awal (format ISO8601)
   - `[FullyQualifiedDomainName <String>]`: Nama domain server yang sepenuhnya memenuhi syarat.
-  - `[IdentityType <IdentityType?>]`: Tipe identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory untuk sumber daya secara otomatis.
+  - `[IdentityType <IdentityType?>]`: Jenis identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory secara otomatis untuk sumber daya.
   - `[InfrastructureEncryption <InfrastructureEncryption?>]`: Status memperlihatkan apakah enkripsi infrastruktur yang diaktifkan server.
   - `[MasterServerId <String>]`: Id server master dari server replika.
   - `[MinimalTlsVersion <MinimalTlsVersionEnum?>]`: Terapkan versi Tls minimal untuk server.
-  - `[PublicNetworkAccess <PublicNetworkAccessEnum?>]`: Apakah akses jaringan publik diperbolehkan atau tidak untuk server ini. Nilai bersifat opsional tetapi jika diteruskan, harus 'Diaktifkan' atau 'Dinonaktifkan'
+  - `[PublicNetworkAccess <PublicNetworkAccessEnum?>]`: Apakah akses jaringan publik diizinkan atau tidak untuk server ini. Nilai bersifat opsional tetapi jika diteruskan, harus 'Diaktifkan' atau 'Dinonaktifkan'
   - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang dapat dimiliki server master.
   - `[ReplicationRole <String>]`: Peran replikasi server.
-  - `[SkuCapacity <Int32?>]`: Kapasitas peningkatan/keluar skala, mewakili unit komputasi server.
+  - `[SkuCapacity <Int32?>]`: Kapasitas peningkatan/peluasan skala, mewakili unit komputasi server.
   - `[SkuFamily <String>]`: Keluarga perangkat keras.
-  - `[SkuName <String>]`: Nama sku, biasanya, tier + family + cores, misalnya B_Gen4_1, GP_Gen5_8.
-  - `[SkuSize <String>]`: Kode ukuran, yang akan diinterpretasikan oleh sumber daya yang sesuai.
+  - `[SkuName <String>]`: Nama sku, biasanya, tingkat + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+  - `[SkuSize <String>]`: Kode ukuran, yang akan ditafsirkan oleh sumber daya sebagaimana mewajibkan.
   - `[SkuTier <SkuTier?>]`: Tingkat SKU tertentu, misalnya Dasar.
-  - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penerapan ssl atau tidak saat tersambung ke server.
-  - `[StorageProfileBackupRetentionDay <Int32?>]`: Mencadangkan hari penyimpanan untuk server.
-  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundant atau tidak untuk cadangan server.
-  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Pertumbuhan Otomatis.
-  - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maksimal yang diperbolehkan untuk server.
+  - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penegakan ssl atau tidak saat tersambung ke server.
+  - `[StorageProfileBackupRetentionDay <Int32?>]`: Hari retensi cadangan untuk server.
+  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundan atau tidak untuk pencadangan server.
+  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Auto Grow.
+  - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maks yang diizinkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplaceorder
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Get-AzMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Get-AzMarketplaceTerms.md
-ms.openlocfilehash: e09cd6b67b7894d4f4e9d00caddaa8ef48a82d58
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 66e483a7e9ac5e1bd4d6626d160e34d2ea9b7a33
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681426"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723528"
 ---
 # Get-AzMarketplaceTerms
 
 ## SYNOPSIS
-Dapatkan ketentuan perjanjian untuk id penerbit tertentu(Publisher), id penawaran(Produk) dan id rencana(Nama). Objek istilah yang dikembalikan oleh perintah ini harus dialihkan ke Set-AzMarketplaceTerms untuk menerima ketentuan hukum.
+Dapatkan ketentuan perjanjian untuk id penerbit tertentu (Publisher), id penawaran(Produk) dan id paket(Nama). Objek istilah yang dikembalikan oleh perintah ini harus diteruskan ke Set-AzMarketplaceTerms untuk menerima persyaratan hukum.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplaceordering/get-azmarketplaceterms) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplaceTerms -Publisher <String> -Product <String> -Name <String>
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzMarketplaceTerms** mengembalikan persyaratan untuk rangkap id(Publisher) penerbit tertentu, id penawaran(Produk) dan id rencana(Nama).
+Cmdlet **Get-AzMarketplaceTerms** mengembalikan istilah untuk id penerbit tertentu (Publisher), id penawaran(Produk) dan tuple id paket(Nama).
 
 ## EXAMPLES
 
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-String gambar pengidentifikasi rencana sedang digunakan.
+### -Name
+String pengidentifikasi paket gambar yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Produk
-Menawarkan string gambar pengidentifikasi yang sedang digunakan.
+Menawarkan string gambar pengidentifikasi yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher string pengidentifikasi gambar yang sedang digunakan.
+Publisher string gambar pengidentifikasi yang sedang disebarkan.
 
 ```yaml
 Type: System.String
@@ -108,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

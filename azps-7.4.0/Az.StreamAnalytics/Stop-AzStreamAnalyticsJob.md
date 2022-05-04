@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Stop-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Stop-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 8038b980775325facb78f58b40a2407e41ebf621
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d0d675fadc378291ab2efa15e07c56454780388
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270567"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722916"
 ---
 # Stop-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan streaming yang sedang berjalan.
-Hal ini akan menyebabkan pekerjaan streaming yang berjalan berhenti memproses kejadian input dan menghasilkan output.
+Ini akan menyebabkan pekerjaan streaming yang sedang berjalan berhenti memproses peristiwa input dan menghasilkan output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/stop-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Stop-AzStreamAnalyticsJob -Name <String> -ResourceGroupName <String> [-Subscript
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentitas
+### StopViaIdentity
 ```
 Stop-AzStreamAnalyticsJob -InputObject <IStreamAnalyticsIdentity> [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -34,11 +37,11 @@ Stop-AzStreamAnalyticsJob -InputObject <IStreamAnalyticsIdentity> [-DefaultProfi
 
 ## DESCRIPTION
 Menghentikan pekerjaan streaming yang sedang berjalan.
-Hal ini akan menyebabkan pekerjaan streaming yang berjalan berhenti memproses kejadian input dan menghasilkan output.
+Ini akan menyebabkan pekerjaan streaming yang sedang berjalan berhenti memproses peristiwa input dan menghasilkan output.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan pekerjaan Stream Analytics
+### Contoh 1: Menghentikan pekerjaan Azure Stream Analytics
 ```powershell
 Stop-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal
 
@@ -46,18 +49,18 @@ Stop-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal
 
 Perintah ini menghentikan pekerjaan StreamingJob.
 
-### Contoh 2: Menghentikan pekerjaan Stream Analytics menurut pipeline
+### Contoh 2: Menghentikan pekerjaan Azure Stream Analytics menurut alur
 ```powershell
 Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal | Stop-AzStreamAnalyticsJob
 
 ```
 
-Perintah ini menghentikan pekerjaan StreamingJob menurut saluran.
+Perintah ini menghentikan pekerjaan StreamingJob menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan streaming.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -233,10 +236,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 
