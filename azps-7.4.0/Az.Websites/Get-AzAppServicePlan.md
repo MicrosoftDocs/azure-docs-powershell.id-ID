@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServicePlan.md
-ms.openlocfilehash: 95b0dbc460d427b4b86fbb9f491ce6615ef0d1c8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e6b7caae0082c010fbc23375612e97081220f6da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992539"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624774"
 ---
 # Get-AzAppServicePlan
 
 ## SYNOPSIS
-Mendapatkan paket Azure App Service dalam grup sumber daya tertentu.
+Mendapatkan paket Azure App Service dalam grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,23 +35,23 @@ Get-AzAppServicePlan [-Location] <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAppServicePlan** mendapatkan rencana Azure App Service dalam grup sumber daya yang ditentukan.
+Cmdlet **Get-AzAppServicePlan** mendapatkan paket Azure App Service dalam grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan paket App Service dari grup sumber daya
+### Contoh 1: Mendapatkan paket App Service dari grup sumber daya
 ```powershell
 Get-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 ```
 
 Perintah ini mendapatkan paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
-### Contoh 2: Dapatkan semua paket App Service di lokasi
+### Contoh 2: Mendapatkan semua paket App Service di lokasi
 ```powershell
 Get-AzAppServicePlan -Location "West US"
 ```
 
-Perintah ini mendapatkan semua paket App Service yang terletak di kawasan "AS Barat".
+Perintah ini mendapatkan semua rencana App Service yang terletak di wilayah "US Barat".
 
 ## PARAMETERS
 
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Rencana App Service
+### -Name
+Nama Paket App Service
 
 ```yaml
 Type: System.String
@@ -113,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

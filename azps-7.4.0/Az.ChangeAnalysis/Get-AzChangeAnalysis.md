@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.changeanalysis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
-ms.openlocfilehash: 0d274952fe38fb00288706020a2e26c780f7317c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 624a718e925af594dc5fc23786d8611de2d8fe6a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878040"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691332"
 ---
 # Get-AzChangeAnalysis
 
 ## SYNOPSIS
-Data pelanggan selalu disematkan jika kueri pada tingkat langganan atau grup sumber daya.
-Untuk kueri pada sumber daya tunggal, data pelanggan disematkan jika pengguna tidak memiliki akses.
+Data pelanggan selalu diselubungi jika kueri di tingkat langganan atau grup sumber daya.
+Untuk kueri pada satu sumber daya, data pelanggan ditutupi jika pengguna tidak memiliki akses.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.changeanalysis/get-azchangeanalysis) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Get-AzChangeAnalysis -ResourceGroupName <String> -EndTime <DateTime> -StartTime 
 ```
 
 ## DESCRIPTION
-Data pelanggan selalu disematkan jika kueri pada tingkat langganan atau grup sumber daya.
-Untuk kueri pada sumber daya tunggal, data pelanggan disematkan jika pengguna tidak memiliki akses.
+Data pelanggan selalu diselubungi jika kueri di tingkat langganan atau grup sumber daya.
+Untuk kueri pada satu sumber daya, data pelanggan ditutupi jika pengguna tidak memiliki akses.
 
 ## EXAMPLES
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -185,8 +188,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lewati digunakan untuk melanjutkan mengambil item setelah operasi mengembalikan hasil parsial.
-Jika respons sebelumnya berisi elemen NextLink, nilai elemen NextLink akan menyertakan parameter skipToken yang menentukan titik awal untuk digunakan untuk panggilan berikutnya.
+Token lewati digunakan untuk terus mengambil item setelah operasi mengembalikan hasil parsial.
+Jika respons sebelumnya berisi elemen nextLink, nilai elemen nextLink akan menyertakan parameter skipToken yang menentukan titik awal yang akan digunakan untuk panggilan berikutnya.
 
 ```yaml
 Type: System.String
@@ -230,8 +233,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

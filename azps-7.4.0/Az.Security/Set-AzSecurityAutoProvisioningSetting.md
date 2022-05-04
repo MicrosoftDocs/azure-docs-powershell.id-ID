@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAutoProvisioningSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAutoProvisioningSetting.md
-ms.openlocfilehash: 0406411763933c2ef80feb58808cea91b2bc488e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f15cfe869c6897bf4248537a6b7dbd24a9a2cc7e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866610"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693274"
 ---
 # Set-AzSecurityAutoProvisioningSetting
 
 ## SYNOPSIS
-Memperbarui pengaturan penyediaan otomatis
+Memperbarui pengaturan provisi otomatis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecurityautoprovisioningsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,9 +41,9 @@ Set-AzSecurityAutoProvisioningSetting -InputObject <PSSecurityAutoProvisioningSe
 ```
 
 ## DESCRIPTION
-Mengaktifkan atau menonaktifkan pengaturan penyediaan otomatis untuk langganan.
-Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Center menyediakan agen keamanan yang akan diinstal secara otomatis di VM Anda.
-Agen keamanan akan memantau VM Anda untuk membuat peringatan keamanan dan memantau kepatuhan keamanan VM.
+Mengaktifkan atau menonaktifkan pengaturan provisi otomatis untuk langganan.
+Provisi Otomatis Pengaturan memungkinkan Anda memutuskan apakah Anda ingin Azure Security Center untuk secara otomatis menyediakan agen keamanan yang akan diinstal pada VM Anda.
+Agen keamanan akan memantau VM Anda untuk membuat pemberitahuan keamanan dan memantau kepatuhan keamanan VM.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/autoProvisioningSettings/default default On
 ```
 
-Mengaktifkan pengaturan penyediaan otomatis untuk langganan.
+Mengaktifkan pengaturan provisi otomatis untuk langganan.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/autoProvisioningSettings/default de...
 ```
 
-Menonaktifkan pengaturan penyediaan otomatis untuk langganan.
+Menonaktifkan pengaturan provisi otomatis untuk langganan.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoProvision
-Penyediaan Otomatis.
+Provisi Otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -147,8 +150,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

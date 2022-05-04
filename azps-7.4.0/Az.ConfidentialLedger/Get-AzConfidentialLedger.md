@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
-ms.openlocfilehash: d7ea6706be4b78bb63bbe202e4d08b6eaf540076
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e2200f13cbad3e6e0b84b22d257d5ee849abbd8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694173"
 ---
 # Get-AzConfidentialLedger
 
 ## SYNOPSIS
-Mengambil properti Buku Besar Rahasia.
+Mengambil properti Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/get-azconfidentialledger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConfidentialLedger [-SubscriptionId <String[]>] [-Filter <String>] [-Defau
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzConfidentialLedger -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,11 +47,11 @@ Get-AzConfidentialLedger -ResourceGroupName <String> [-SubscriptionId <String[]>
 ```
 
 ## DESCRIPTION
-Mengambil properti Buku Besar Rahasia.
+Mengambil properti Azure Confidential Ledger.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar Buku Besar Rahasia
+### Contoh 1: Mencantumkan Confidential Ledgers
 ```powershell
 PS C:\> Get-AzConfidentialLedger `
   -SubscriptionId 00000000-0000-0000-0000-000000000000
@@ -59,9 +62,9 @@ eastus   testledger1
 eastus   testledger2
 ```
 
-Mencantumkan semua Buku Kas Rahasia di bawah langganan.
+Mencantumkan semua Confidential Ledgers di bawah langganan.
 
-### Contoh 2: Dapatkan Buku Besar Rahasia
+### Contoh 2: Mendapatkan Confidential Ledger
 ```powershell
 PS C:\> Get-AzConfidentialLedger `
   -Name test-ledger `
@@ -71,7 +74,7 @@ Location Name
 eastus   test-ledger
 ```
 
-Mencantumkan semua Buku Kas Rahasia di bawah grup sumber daya.
+Mencantumkan semua Confidential Ledgers di bawah grup sumber daya.
 
 ## PARAMETERS
 
@@ -91,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan pada operasi daftar.
-Misalnya.
+Filter yang akan diterapkan pada operasi daftar.
+misalnya.
 $filter=ledgerType eq 'Public'
 
 ```yaml
@@ -122,8 +125,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Buku Besar Rahasia
+### -Name
+Nama Confidential Ledger
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -190,9 +193,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LedgerName <String>]`: Nama Buku Besar Rahasia
+  - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

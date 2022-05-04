@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/test-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzWebPubSubNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzWebPubSubNameAvailability.md
-ms.openlocfilehash: e0b372cc956712cd25690906358acf7a395709fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 758b51f2194e9ad7b9d0dee39be44bf760a6c5bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671562"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610304"
 ---
 # Test-AzWebPubSubNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama sumber daya valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/test-azwebpubsubnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Memeriksa apakah nama sumber daya valid dan belum digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa apakah nama sumber daya "abc" tersedia di kawasan AS timur.
+### Contoh 1: Periksa apakah nama sumber daya "abc" tersedia di wilayah US timur.
 ```powershell
 Test-AzWebPubSubNameAvailability -Location eastus -Name abc
 ```
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-kawasan
+wilayah
 
 ```yaml
 Type: System.String
@@ -74,9 +77,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya untuk divalidasi.
-mis."my-resource-name"
+misalnya,my-resource-name"
 
 ```yaml
 Type: System.String
@@ -91,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

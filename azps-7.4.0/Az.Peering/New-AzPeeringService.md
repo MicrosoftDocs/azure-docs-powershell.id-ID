@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
-ms.openlocfilehash: 26ec9897cfdb9118f746b5e23902a27b5c681c4f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 195a743006a2a0e53cbad9b21783d6dc635f52b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803700"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621570"
 ---
 # New-AzPeeringService
 
 ## SYNOPSIS
 Membuat layanan peering baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Id                     : /subscriptions/resourceGroups/Building40/providers/Micr
 Type                   : Microsoft.Peering/peeringServices
 ```
 
-Membuat objek layanan peering dengan penyedia dan lokasi peering. Gunakan dalam hubungannya dengan `Get-AzPeeringServiceProvider` dan `Get-AzPeeringServiceLocation`
+Membuat objek peering service dengan penyedia dan lokasi peering. Gunakan bersama dengan `Get-AzPeeringServiceProvider` dan `Get-AzPeeringServiceLocation`
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Kawasan Azure. Gunakan Get-AzPeeringServiceLocation [-Country <country>]
+Lokasi Fisik Berbeda dari Wilayah Azure. Gunakan Get-AzPeeringServiceLocation [-Country <country>]
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Layanan InputObject Microsoft.
+Tag yang akan dikaitkan dengan Microsoft InputObject Service.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -156,8 +159,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -188,11 +191,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

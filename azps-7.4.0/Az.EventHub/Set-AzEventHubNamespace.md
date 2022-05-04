@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 3465418a9c722b02f2f55747d81bab9cc95d6375
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f6987823df433b63272959f50fe3c56a4a6a3c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227655"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627240"
 ---
 # Set-AzEventHubNamespace
 
 ## SYNOPSIS
-Memperbarui ruang nama Hub Kejadian yang ditentukan.
+Memperbarui namespace layanan Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Set-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [[-Locati
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubNamespace memperbarui properti ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Set-AzEventHubNamespace memperbarui properti namespace Layanan Pusat Aktivitas yang ditentukan.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ MaximumThroughputUnits : 10
 
 ```
 
-Memperbarui Tag untuk ruang \`nama MyNamespaceName\` menjadi Dibuat .
+Memperbarui Tag untuk namespace \`MyNamespaceName\` menjadi Dibuat.
 
 ### Contoh 2
 ```powershell
@@ -103,17 +106,17 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = enabled dan MaximumThroughputUnits = 10
+Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = diaktifkan dan MaximumThroughputUnits = 10
 
 ### Contoh 3
 
-Memperbarui ruang nama Hub Kejadian yang ditentukan. (autogenerasi)
+Memperbarui namespace layanan Azure Event Hubs yang ditentukan. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzEventHubNamespace -Location 'WestUS' -Name MyNamespaceName -ResourceGroupName MyResourceGroupName -SkuName Basic
 ```
 
-### Contoh 4: Aktifkan enkripsi identitas yang ditetapkan sistem pada ruang nama
+### Contoh 4: Mengaktifkan enkripsi identitas yang ditetapkan sistem pada namespace
 
 ```powershell
 New-AzEventHubNamespace -ResourceGroupName myresourcegroup -Name MyNamespaceName -Location northeurope -SkuName Premium -IdentityType SystemAssigned
@@ -164,9 +167,9 @@ EncryptionConfig              : {{ KeyName: key1,
                                  }}
 ```
 
-Buat ruang nama dengan Identitas Yang Ditetapkan Sistem diaktifkan lalu gunakan Perintah Setel untuk menambahkan konfigurasi enkripsi.
+Buat namespace layanan dengan Identitas yang Ditetapkan Sistem diaktifkan lalu gunakan Perintah Set untuk menambahkan konfigurasi enkripsi.
 
-### Contoh 5: Menambahkan konfigurasi enkripsi lain ke ruang nama dalam Contoh 4
+### Contoh 5: Menambahkan konfigurasi enkripsi lain ke namespace layanan di Contoh 4
 
 ```powershell
 $namespace = Get-AzEventHubNamespace -ResourceGroupName myresourcegroup -Name MyNamespaceName
@@ -223,7 +226,7 @@ EncryptionConfig              : {{ KeyName: key1,
                                  }}
 ```
 
-Jika Anda harus menambahkan konfigurasi enkripsi ke ruang nama. Lakukan Dapatkan di ruang nama dan buat kueri hasil untuk menyertakan konfigurasi enkripsi baru.
+Jika Anda harus menambahkan konfigurasi enkripsi ke namespace. Lakukan Dapatkan di namespace layanan dan kueri hasilnya untuk menyertakan konfigurasi enkripsi baru.
 
 
 ## PARAMETERS
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama
+mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan Kafka untuk ruang nama
+mengaktifkan atau menonaktifkan Kafka untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionConfig
-Properti Key
+Properti Kunci
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEncryptionConfigAttributes[]
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-mengaktifkan atau menonaktifkan Identitas untuk ruang nama
+mengaktifkan atau menonaktifkan Identitas untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas ('SystemAssigned', 'UserAssigned', 'SystemAssigned', 'UserAssigned', 'None')
+Jenis Identitas ('SystemAssigned', 'UserAssigned', 'SystemAssigned', 'UserAssigned', 'None')
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityUserDefined
-Identitas yang ditentukan pengguna atau Tidak Ada
+Identitas yang Ditentukan Pengguna atau Tidak Ada
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Ruang Nama EventHub.
+Lokasi Namespace EventHub.
 
 ```yaml
 Type: System.String
@@ -448,8 +451,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama EventHub.
+### -Name
+Nama Namespace EventHub.
 
 ```yaml
 Type: System.String
@@ -494,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku Ruang Nama.
+Nama Sku Namespace.
 
 ```yaml
 Type: System.String
@@ -509,8 +512,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Nonaktifkan/Aktifkan Ruang Nama.
+### -State
+Nonaktifkan/Aktifkan Namespace.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.NamespaceState]
@@ -540,8 +543,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -556,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -572,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -580,7 +583,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=neutral, PublicKeyToken=null]]
 
 ### System.Collections.Hashtable
 

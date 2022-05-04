@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: b54537c94b40b40ff11cc5f3b59202c998d4535f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e73c1b66f6e4198047c21bbad92467827a8e297a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751842"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692986"
 ---
 # Set-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
-Mengubah server otorisasi.
+Memodifikasi server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzApiManagementAuthorizationServer -Context <PsApiManagementContext> -Server
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementAuthorizationServer** mengubah detail server otorisasi Azure API Management.
+Cmdlet **Set-AzApiManagementAuthorizationServer** memodifikasi detail server otorisasi Azure API Management.
 
 ## EXAMPLES
 
@@ -43,11 +46,11 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Set-AzApiManagementAuthorizationServer -Context $ApiMgmtContext -ServerId 0123456789 -Name "Contoso OAuth2 server" -ClientRegistrationPageUrl "https://contoso/signupv2" -AuthorizationEndpointUrl "https://contoso/authv2" -TokenEndpointUrl "https://contoso/tokenv2" -ClientId "clientid" -ClientSecret "e041ed1b660b4eadbad5a29d066e6e88" -AuthorizationRequestMethods @('Get') -GrantTypes @( 'AuthorizationCode', 'Implicit', 'ClientCredentials') -ClientAuthenticationMethods @('Basic') -TokenBodyParameters @{'par1'='val1'} -AccessTokenSendingMethods @('AuthorizationHeader')
 ```
 
-Perintah ini mengubah server otorisasi API Management yang ditentukan.
+Perintah ini memodifikasi server otorisasi API Management yang ditentukan.
 
 ### Contoh 2
 
-Mengubah server otorisasi. (autogenerasi)
+Memodifikasi server otorisasi. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationEndpointUrl
-Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan hibah otorisasi.
+Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan pemberian otorisasi.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultScope
-Menentukan lingkup default untuk server otorisasi.
+Menentukan cakupan default untuk server otorisasi.
 
 ```yaml
 Type: System.String
@@ -229,9 +232,9 @@ Accept wildcard characters: False
 ```
 
 ### -GrantTypes
-Menentukan array tipe hibah.
+Menentukan array jenis hibah.
 psdx_paramvalues
-- Kode Otorisasi
+- AuthorizationCode
 - ClientCredentials 
 - Implisit 
 - ResourceOwnerPassword
@@ -249,8 +252,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama server otorisasi untuk diubah.
+### -Name
+Menentukan nama server otorisasi yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerId
-Menentukan ID server otorisasi untuk diubah.
+Menentukan ID server otorisasi yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportState
-Menunjukkan apakah akan mendukung parameter *Negara Bagian* .
+Menunjukkan apakah akan mendukung parameter *Status* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenBodyParameters
-Menentukan parameter isi tambahan menggunakan format aplikasi/x-www-form-urlencoded.
+Menentukan parameter isi tambahan menggunakan format application/x-www-form-urlencoded.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan menyajikan hibah otorisasi atau token refresh.
+Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan menyajikan pemberian otorisasi atau token refresh.
 
 ```yaml
 Type: System.String
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

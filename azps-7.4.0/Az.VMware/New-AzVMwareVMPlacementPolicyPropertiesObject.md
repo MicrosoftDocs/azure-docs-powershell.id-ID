@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVMPlacementPolicyPropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVMPlacementPolicyPropertiesObject.md
-ms.openlocfilehash: 0cb05819dd1aa00b4d8798404663c0892ac05006
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43285f6c7793181435daa0229f6cc113f1db99c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930925"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666502"
 ---
 # New-AzVMwareVMPlacementPolicyPropertiesObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk VMPlacementPolicyProperties.
+Buat objek dalam memori untuk VMPlacementPolicyProperties.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarevmplacementpolicypropertiesobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzVMwareVMPlacementPolicyPropertiesObject -AffinityType <AffinityType> -Type
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk VMPlacementPolicyProperties.
+Buat objek dalam memori untuk VMPlacementPolicyProperties.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek dalam memori untuk VMPlacementPolicyProperties.
+### Contoh 1: Buat objek dalam memori untuk VMPlacementPolicyProperties.
 ```powershell
 New-AzVMwareVMPlacementPolicyPropertiesObject -AffinityType 'Affinity' -Type 'VmVm' -VMMember @{"abc"="123"}
 ```
@@ -39,12 +42,12 @@ DisplayName ProvisioningState State AffinityType VMMember
                                     Affinity     {System.Collections.Hashtable}
 ```
 
-Membuat objek dalam memori untuk VMPlacementPolicyProperties.
+Buat objek dalam memori untuk VMPlacementPolicyProperties.
 
 ## PARAMETERS
 
 ### -AffinityType
-tipe afeinitas kebijakan penempatan.
+jenis afinitas kebijakan penempatan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.AffinityType
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Apakah kebijakan penempatan diaktifkan atau dinonaktifkan.
 
 ```yaml
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 jenis kebijakan penempatan.
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMMember
-Daftar anggota mesin virtual.
+Daftar anggota komputer virtual.
 
 ```yaml
 Type: System.String[]
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

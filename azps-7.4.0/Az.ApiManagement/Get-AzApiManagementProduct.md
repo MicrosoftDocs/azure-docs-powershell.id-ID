@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
-ms.openlocfilehash: 1585c7753f03a4b92437b6de15d4dd3f50d6f8b8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e9d16935e9db7a9be73d38a12c6f3de6746cc775
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320661"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663569"
 ---
 # Get-AzApiManagementProduct
 
 ## SYNOPSIS
 Mendapatkan daftar atau produk tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Get-AzApiManagementProduct -Context $apimContext
 
 Perintah ini mendapatkan semua produk API Management.
 
-### Contoh 2: Dapatkan produk berdasarkan ID
+### Contoh 2: Mendapatkan produk berdasarkan ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementProduct -Context $apimContext -ProductId "0123456789"
@@ -91,8 +94,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -Judul
 Menentukan judul produk yang akan dicari.
-Jika ditentukan, cmdlet berusaha mendapatkan produk berdasarkan judul.
+Jika ditentukan, cmdlet mencoba mendapatkan produk berdasarkan judul.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

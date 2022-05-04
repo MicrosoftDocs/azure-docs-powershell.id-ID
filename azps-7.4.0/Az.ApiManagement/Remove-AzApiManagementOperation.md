@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOperation.md
-ms.openlocfilehash: 2d533105c692e6dc6ef2cb3ffe23ec48b924da18
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb2aff3f2b954c91d2a9b0436d7e480a9aaf861d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662886"
 ---
 # Remove-AzApiManagementOperation
 
 ## SYNOPSIS
-Menghapus operasi yang sudah ada.
+Menghapus operasi yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,17 +30,17 @@ Remove-AzApiManagementOperation -Context <PsApiManagementContext> -ApiId <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementOperation** menghapus operasi yang sudah ada.
+Cmdlet **Remove-AzApiManagementOperation** menghapus operasi yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Operasi API yang sudah ada
+### Contoh 1: Menghapus Operasi API yang ada
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementOperation -Context $apimContext -ApiId "0123456789" -OperationId "9876543210"
 ```
 
-Perintah ini menghapus Operasi API yang sudah ada.
+Perintah ini menghapus Operasi API yang ada.
 
 ## PARAMETERS
 
@@ -71,8 +74,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh **PsApiManagementContext**.
+### -Context
+Menentukan **instans PsApiManagementContext**.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

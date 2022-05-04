@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
-ms.openlocfilehash: c0eda87ae0b7f44ac1c163b15f2104b9912d70fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99ddfd3d01b84aad5e6eb5cec170fac719ae9778
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143305991"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710464"
 ---
 # Register-AzStackHCI
 
 ## SYNOPSIS
 Register-AzStackHCI membuat sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan mendaftarkan kluster lokal dengan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/register-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ PortalResourceURL: https://portal.azure.com/#@c31c0dbb-ce27-4c78-ad26-a5f717c145
 PortalAADAppPermissionsURL: https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/CallAnAPI/appId/980be58d-578c-4cff-b4cd-43e9c3a77826/isMSAApp/
 ```
 
-Memanggil salah satu simpul kluster.
+Memanggil pada salah satu node kluster.
 
 ### CONTOH 2
 ```powershell
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Menentukan sidik jari sertifikat yang tersedia di semua simpul. Pengguna bertanggung jawab untuk mengelola sertifikat.
+Menentukan thumbprint sertifikat yang tersedia pada semua simpul. Pengguna bertanggung jawab untuk mengelola sertifikat.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Menentukan nama kluster atau salah satu simpul kluster di kluster lokal yang sedang didaftarkan ke Azure.
+Menentukan nama kluster atau salah satu node kluster di kluster lokal yang sedang didaftarkan ke Azure.
 
 ```yaml
 Type: System.String
@@ -153,9 +156,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan kredensial untuk ComputerName.
-Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini yang menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAzureArcServer
-Menentukan parameter ini ke $false akan melewati pendaftaran simpul kluster dengan Arka untuk server.
+Menentukan parameter ini ke $false akan melewati pendaftaran node kluster dengan Arc untuk server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### -GraphAccessToken
 Menentukan token akses Graph.
-Menentukan hal ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -232,8 +235,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-Menentukan Kawasan untuk membuat sumber daya.
+### -Wilayah
+Menentukan Wilayah untuk membuat sumber daya.
 Defaultnya adalah EastUS.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepairRegistration
-Perbaiki pendaftaran Azure Stack HCI saat ini dengan cloud. Cmdlet ini menghapus sertifikat lokal pada simpul tergugus dan sertifikat jarak jauh dalam aplikasi Azure AD di awan dan menghasilkan sertifikat pengganti baru untuk keduanya. Grup sumber daya, nama sumber daya, dan pilihan pendaftaran lainnya dipertahankan.
+Perbaiki pendaftaran Azure Stack HCI saat ini dengan cloud. Cmdlet ini menghapus sertifikat lokal pada node terkluster dan sertifikat jarak jauh di aplikasi Azure AD di cloud dan menghasilkan sertifikat pengganti baru untuk keduanya. Grup sumber daya, nama sumber daya, dan pilihan pendaftaran lainnya dipertahankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Azure Resource Group.
+Menentukan nama Grup Sumber Daya Azure.
 Jika tidak ditentukan \<LocalClusterName\>-rg akan digunakan sebagai nama grup sumber daya.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan tag sumber daya untuk sumber daya di Azure dalam bentuk pasangan nilai kunci dalam tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Menentukan tag sumber daya untuk sumber daya di Azure dalam bentuk pasangan kunci-nilai dalam tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseDeviceAuthentication
-Gunakan autentikasi kode perangkat, bukan perintah browser interaktif.
+Gunakan autentikasi kode perangkat alih-alih perintah browser interaktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -366,8 +369,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Hasil: Berhasil atau Gagal atau TertundaForAdminConsent atau Dibatalkan.
 ### ResourceId: ID sumber daya sumber daya yang dibuat di Azure.
-### PortalResourceURL: URL Sumber Daya Portal Azure.
-### PortalAADAppPermissionsURL: URL Portal Azure untuk halaman izin aplikasi AAD.
+### PortalResourceURL: URL Sumber Daya Portal Microsoft Azure.
+### PortalAADAppPermissionsURL: URL Portal Microsoft Azure untuk halaman izin aplikasi AAD.
 ## NOTES
 
 ## RELATED LINKS

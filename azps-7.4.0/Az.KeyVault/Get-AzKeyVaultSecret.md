@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
-ms.openlocfilehash: c169d9f5f711aeb5c800315448131ec917d7e3d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 689428865ef29235893f949e097b29fd47688b27
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226845"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602780"
 ---
 # Get-AzKeyVaultSecret
 
 ## SYNOPSIS
-Mendapatkan rahasia dalam kubah kunci.
+Mendapatkan rahasia di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,12 +78,12 @@ Get-AzKeyVaultSecret [-ResourceId] <String> [-Name] <String> [-IncludeVersions]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultSecret** mendapatkan rahasia dalam kubah kunci.
-Cmdlet ini mendapatkan rahasia tertentu atau semua rahasia dalam kubah kunci.
+Cmdlet **Get-AzKeyVaultSecret** mendapatkan rahasia dalam brankas kunci.
+Cmdlet ini mendapatkan rahasia tertentu atau semua rahasia dalam brankas kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua versi saat ini dari semua rahasia dalam kubah kunci
+### Contoh 1: Mendapatkan semua versi saat ini dari semua rahasia dalam brankas kunci
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso'
 ```
@@ -111,9 +114,9 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi saat ini dari semua rahasia dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan versi saat ini dari semua rahasia di brankas kunci bernama Contoso.
 
-### Contoh 2: Dapatkan semua versi rahasia tertentu
+### Contoh 2: Mendapatkan semua versi rahasia tertentu
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso' -Name 'secret1' -IncludeVersions
 ```
@@ -144,7 +147,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan semua versi rahasia bernama secret1 dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua versi rahasia bernama secret1 di brankas kunci bernama Contoso.
 
 ### Contoh 3: Mendapatkan versi rahasia tertentu saat ini
 ```powershell
@@ -165,7 +168,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi rahasia saat ini yang bernama secret1 dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan versi rahasia saat ini bernama secret1 di brankas kunci bernama Contoso.
 
 ### Contoh 4: Mendapatkan versi tertentu dari rahasia tertentu
 ```powershell
@@ -186,18 +189,18 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi rahasia tertentu yang bernama secret1 dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan versi tertentu dari rahasia bernama secret1 di brankas kunci bernama Contoso.
 
-### Contoh 5: Mendapatkan nilai teks biasa dari versi rahasia tertentu saat ini
+### Contoh 5: Dapatkan nilai teks biasa dari versi rahasia tertentu saat ini
 ```powershell
 $secretText = Get-AzKeyVaultSecret -VaultName 'Contoso' -Name 'ITSecret' -AsPlainText
 ```
 
-Cmdlet mengembalikan rahasia sebagai string ketika `-AsPlainText` diterapkan.
+Cmdlet mengembalikan rahasia sebagai string saat `-AsPlainText` diterapkan.
 
-**Catatan:** Saat mencantumkan rahasia, yaitu tidak menyediakan `-Name`, yang `-AsPlainText` diabaikan.
+**Catatan:** Saat mencantumkan rahasia, yaitu tidak menyediakan `-Name`, `-AsPlainText` diabaikan.
 
-### Contoh 6: Dapatkan semua rahasia yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
+### Contoh 6: Dapatkan semua rahasia yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini.
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso' -InRemovedState
 ```
@@ -230,9 +233,9 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini mendapatkan semua rahasia yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua rahasia yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
 
-### Contoh 7: Gets the secret ITSecret that has been deleted but not purged for this key vault.
+### Contoh 7: Mendapatkan ITSecret rahasia yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini.
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso' -Name 'secret1' -InRemovedState
 ```
@@ -253,10 +256,10 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini mendapatkan rahasia 'rahasia1' yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal rahasia yang dihapus ini.
+Perintah ini mendapatkan rahasia 'secret1' yang sebelumnya telah dihapus, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal dari rahasia yang dihapus ini.
 
-### Contoh 8: Dapatkan semua versi saat ini dari semua rahasia dalam kubah kunci menggunakan pemfilteran
+### Contoh 8: Mendapatkan semua versi saat ini dari semua rahasia dalam brankas kunci menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso' -Name "secret*"
 ```
@@ -287,12 +290,12 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini mendapatkan versi saat ini dari semua rahasia dalam kubah kunci bernama Contoso yang dimulai dengan "rahasia".
+Perintah ini mendapatkan versi saat ini dari semua rahasia di brankas kunci bernama Contoso yang dimulai dengan "rahasia".
 
 ## PARAMETERS
 
 ### -AsPlainText
-Ketika diatur, cmdlet akan mengonversi rahasia dalam string aman ke string plaintext yang didekripsi sebagai output.
+Ketika diatur, cmdlet akan mengonversi rahasia dalam string aman ke string teks biasa yang didekripsi sebagai output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,9 +326,9 @@ Accept wildcard characters: False
 
 ### -IncludeVersions
 Menunjukkan bahwa cmdlet ini mendapatkan semua versi rahasia.
-Versi rahasia saat ini adalah versi pertama dalam daftar.
-Jika menentukan parameter ini, Anda juga harus menentukan parameter *Name* dan *VaultName* .
-Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini akan mendapatkan versi rahasia saat ini dengan *Nama* yang ditentukan.
+Versi rahasia saat ini adalah yang pertama dalam daftar.
+Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter *Nama* dan *VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini mendapatkan versi rahasia saat ini dengan *Nama* yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -369,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama rahasia yang akan didapatkan.
 
 ```yaml
@@ -412,8 +415,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci tempat rahasia berada.
-Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama brankas kunci tempat rahasia berada.
+Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari brankas kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi rahasia.
-Cmdlet ini menyusun FQDN rahasia berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama rahasia, dan versi rahasia.
+Cmdlet ini membangun FQDN rahasia berdasarkan nama brankas kunci, lingkungan yang saat ini Anda pilih, nama rahasia, dan versi rahasia.
 
 ```yaml
 Type: System.String
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -470,5 +473,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Batalkan-AzKeyVaultSecretRemoval](./Undo-AzKeyVaultSecretRemoval.md)
 
-[Set-AzKeyVaultSecret](./Set-AzKeyVaultSecret.md)
+[Atur-AzKeyVaultSecret](./Set-AzKeyVaultSecret.md)
 

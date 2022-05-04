@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: ca5bde317373ded1d4a401a121b3cb43f3434cac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: db61a1770547fb3242c44c6cb193537ac14d7df2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804636"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708958"
 ---
 # Set-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
-Mengubah port ujung depan untuk gateway aplikasi.
+Memodifikasi port front-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApplicationGatewayFrontendPort -ApplicationGateway <PSApplicationGateway> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayFrontendPort** mengubah port ujung depan untuk gateway aplikasi.
+Cmdlet **Set-AzApplicationGatewayFrontendPort** memodifikasi port front-end untuk gateway aplikasi.
 
 ## EXAMPLES
 
@@ -36,13 +39,13 @@ $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupNam
 $AppGw = Set-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name "FrontEndPort01" -Port 80
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mengubah gateway di $AppGw untuk menggunakan port 80 untuk port ujung depan bernama FrontEndPort01.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua memodifikasi gateway di $AppGw untuk menggunakan port 80 untuk port front-end bernama FrontEndPort01.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi tempat cmdlet ini mengaitkan port ujung depan.
+Menentukan objek gateway aplikasi tempat cmdlet ini mengaitkan port front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -71,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama port ujung-depan untuk diubah.
+### -Name
+Menentukan nama port front-end yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan nomor porta yang akan digunakan untuk port ujung-depan.
+Menentukan nomor port yang akan digunakan untuk port front-end.
 
 ```yaml
 Type: System.Int32
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

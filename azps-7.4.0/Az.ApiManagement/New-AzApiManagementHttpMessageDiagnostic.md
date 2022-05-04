@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
-ms.openlocfilehash: 72a5f91e35276cf3870cd1ba305217a090cb0baa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b499de6d6c88a62df20cb4d881538253a8cadbe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233973"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643002"
 ---
 # New-AzApiManagementHttpMessageDiagnostic
 
 ## SYNOPSIS
-Membuat contoh **PsApiManagementHttpMessageDiagnostic** yang merupakan pengaturan diagnostik Pesan Http dari Diagnostik
+Membuat **instans PsApiManagementHttpMessageDiagnostic** yang merupakan pengaturan diagnostik Pesan Http dari Diagnostik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementhttpmessagediagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzApiManagementHttpMessageDiagnostic [-HeadersToLog <String[]>] [-BodyBytesT
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementHttpMessageDiagnostic** membuat pengaturan diagnostik Pesan Http.
+Cmdlet **New-AzApiManagementHttpMessageDiagnostic membuat pengaturan diagnostik** Pesan Http.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Pengaturan diagnostik Pesan Http Dasar
+### Contoh 1: Membuat Pengaturan Diagnostik Pesan Http Dasar
 ```powershell
 New-AzApiManagementHttpMessageDiagnostic -HeadersToLog 'Content-Type', 'UserAgent' -BodyBytesToLog 100
 ```
@@ -40,12 +43,12 @@ Headers                   Body
 {Content-Type, UserAgent} Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementBodyDiagnosticSetting
 ```
 
-Membuat pengaturan diagnostik pesan http untuk membuat log `Content-Type` dan `User-Agent` header bersama dengan 100 byte `body`
+Membuat pengaturan diagnostik pesan http untuk mencatat `Content-Type` dan `User-Agent` header bersama dengan 100 byte `body`
 
 ## PARAMETERS
 
 ### -BodyBytesToLog
-Jumlah permintaan byte isi untuk log. Parameter ini bersifat opsional.
+Jumlah byte isi permintaan untuk dicatat. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -90,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

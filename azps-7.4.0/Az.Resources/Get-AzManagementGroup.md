@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
-ms.openlocfilehash: fb839fd5d70adfcda2c1fc328fb415be6d5234c1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54fb15aa038b69970eddfee2b2436dedc6306ac9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059409"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693436"
 ---
 # Get-AzManagementGroup
 
 ## SYNOPSIS
-Dapatkan Grup Manajemen
+Mendapatkan Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,18 +27,18 @@ Dapatkan Grup Manajemen
 Get-AzManagementGroup [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Getoperation
+### GetOperation
 ```
 Get-AzManagementGroup [-GroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-Expand] [-Recurse]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzManagementGroup Mendapatkan semua atau Grup Manajemen tertentu.
+cmdlet Get-AzManagementGroup Mendapatkan semua atau Grup Manajemen tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Grup Manajemen
+### Contoh 1: Mendapatkan semua Grup Manajemen
 ```powershell
 Get-AzManagementGroup
 ```
@@ -54,7 +57,7 @@ TenantId    : 6b2064b9-34bd-46e6-9092-52f2dd5f7fc0
 DisplayName : TestGroupChildDisplayName
 ```
 
-### Contoh 2: Dapatkan Grup Manajemen tertentu
+### Contoh 2: Mendapatkan Grup Manajemen tertentu
 ```powershell
 Get-AzManagementGroup -GroupName TestGroup
 ```
@@ -72,7 +75,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 3: Dapatkan Grup Manajemen tertentu dan tingkat hierarki pertama
+### Contoh 3: Mendapatkan Grup Manajemen tertentu dan tingkat hierarki pertama
 ```powershell
 $reponse = Get-AzManagementGroup -GroupName TestGroupParent -Expand
 $response
@@ -98,9 +101,9 @@ DisplayName : TestGroup1DisplayName
 Children    :
 ```
 
-`Expand` Dengan bendera, seseorang dapat menavigasi larik `Children` dan mendapatkan detail untuk setiap anak. Misalnya, `Children[0]` akan memberikan detail untuk grup dengan nama `TestGroup1DisplayName`tampilan .
+`Expand` Dengan bendera , seseorang dapat menavigasi melalui `Children` array dan mendapatkan detail untuk setiap anak. Misalnya, `Children[0]` akan memberikan detail untuk grup dengan nama `TestGroup1DisplayName`tampilan .
 
-### Contoh 4: Dapatkan Grup Manajemen tertentu dan semua tingkat hierarki
+### Contoh 4: Mendapatkan Grup Manajemen tertentu dan semua tingkat hierarki
 ```powershell
 $response = Get-AzManagementGroup -GroupName TestGroupParent -Expand -Recurse
 $response
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Memperluas output untuk mencantumkan anak-anak grup manajemen
+Perluas output untuk mencantumkan turunan grup manajemen
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Berulang
-Mencantumkan anak-anak grup manajemen secara rekuuran
+### -Recurse
+Mencantumkan turunan grup manajemen secara rekursif
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,8 +199,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -228,11 +231,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

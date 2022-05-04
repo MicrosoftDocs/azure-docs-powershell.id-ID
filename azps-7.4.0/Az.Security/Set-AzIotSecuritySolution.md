@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
-ms.openlocfilehash: 7394c6294eac90e7ea9570bc81d00f2e015506a6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: beaadb73b16ab1bb5acb9619eb331aecd216133a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672552"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708544"
 ---
 # Set-AzIotSecuritySolution
 
 ## SYNOPSIS
 Membuat atau memperbarui solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Set-AzIotSecuritySolution -ResourceId <String> [-Tag <Hashtable>] -Location <Str
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzIotSecuritySolution membuat atau memperbarui solusi keamanan iot tertentu. Solusi keamanan IoT mengumpulkan data keamanan dan kejadian dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
+Cmdlet Set-AzIotSecuritySolution membuat atau memperbarui solusi keamanan iot tertentu. Solusi keamanan IoT mengumpulkan data keamanan dan peristiwa dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
 Nama solusi keamanan iot harus identik dengan nama hub iot.
 
 ## EXAMPLES
@@ -92,7 +95,7 @@ UnmaskedIpLoggingStatus: "Enabled"
 Tags: {}
 ```
 
-Buat solusi keamanan iot baru "MySample" untuk hub IoT dengan id sumber daya "/subscriptions/XXXXXXXX-XXXXX-XXXX-XXXXXXXXXX/resourceGroups/MichalResourceGroup/providers/Microsoft.Devices/IotHubs/MySample" (nama solusi harus identik dengan nama hub IoT)
+Buat solusi keamanan iot baru "MySample" untuk hub IoT dengan id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXXX-XXXXXXXXXXXXX/resourceGroups/MichalResourceGroup/providers/Microsoft.Devices/IotHubs/MySample" (nama solusi harus identik dengan nama hub IoT)
 
 ## PARAMETERS
 
@@ -165,7 +168,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Status.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ekspor
-Mengekspor data.
+Ekspor data.
 
 ```yaml
 Type: System.String[]
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHub
-Banyak hub.
+Hub Iot.
 
 ```yaml
 Type: System.String[]
@@ -288,7 +291,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -303,7 +306,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RekomendasiKonfigurasi
+### -RecommendationsConfiguration
 Rekomendasi konfigurasi.
 
 ```yaml
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tags.
+Tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnmaskedIpLoggingStatus
-Status pembuatan log ip yang tidak dimasuki.
+Status pengelogan ip yang tidak dimasuki.
 
 ```yaml
 Type: System.String
@@ -441,8 +444,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
-ID Ruang Kerja.
+### -Ruang kerja
+ID ruang kerja.
 
 ```yaml
 Type: System.String
@@ -468,8 +471,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -484,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -500,7 +503,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 7b5b8d7f90bedae058272c15131e95eb4a40ef47
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a835d9b2fc522c400d6d482455e8e2e1b82b10a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277227"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708742"
 ---
 # Disable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
-Menonaktifkan proteksi untuk item yang dilindungi cadangan.
+Menonaktifkan perlindungan untuk item yang dilindungi Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackupprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,27 +29,27 @@ Disable-AzRecoveryServicesBackupProtection [-Item] <ItemBase> [-RemoveRecoveryPo
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzRecoveryServicesBackupProtection** menonaktifkan proteksi untuk item yang dilindungi Azure Backup.
+Cmdlet **Disable-AzRecoveryServicesBackupProtection** menonaktifkan perlindungan untuk item yang dilindungi Azure Backup.
 Cmdlet ini menghentikan pencadangan terjadwal reguler item.
-Cmdlet ini juga dapat menghapus titik pemulihan yang sudah ada untuk item cadangan jika dijalankan dengan parameter RemoveRecoveryPoints.
-Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet ini juga dapat menghapus titik pemulihan yang ada untuk item cadangan jika dijalankan dengan parameter RemoveRecoveryPoints.
+Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Nonaktifkan proteksi Pencadangan
+### Contoh 1: Nonaktifkan perlindungan Pencadangan
 ```powershell
 $Cont = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered 
 $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM 
 Disable-AzRecoveryServicesBackupProtection -Item $PI[0]
 ```
 
-Perintah pertama mendapatkan array wadah cadangan, lalu menyimpannya dalam array $Cont.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
-Perintah terakhir menonaktifkan Proteksi pencadangan untuk item dalam $PI\[ 0\], tetapi mempertahankan data.
+Perintah pertama mendapatkan array kontainer cadangan, lalu menyimpannya di array $Cont.
+Perintah kedua mendapatkan item Backup yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
+Perintah terakhir menonaktifkan perlindungan Pencadangan untuk item di $PI\[ 0\], tetapi menyimpan data.
 
 ### Contoh 2
 
-Menonaktifkan proteksi untuk item yang dilindungi cadangan. (autogenerasi)
+Menonaktifkan perlindungan untuk item yang dilindungi Cadangan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -86,8 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan di mana cmdlet ini menonaktifkan proteksi.
-Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
+Menentukan item Cadangan di mana cmdlet ini menonaktifkan perlindungan.
+Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveRecoveryPoints
-Menunjukkan bahwa cmdlet ini menghapus titik pemulihan yang sudah ada.
+Menunjukkan bahwa cmdlet ini menghapus titik pemulihan yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

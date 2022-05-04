@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/remove-azdns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
-ms.openlocfilehash: bb52c0f872f89b8f156c9fdf0f1d54b05121a3c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9bca6a1d675b96567e0ceba4464dcb8156f566d2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748566"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692411"
 ---
 # Remove-AzDnsRecordSet
 
 ## SYNOPSIS
 Menghapus kumpulan catatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/remove-azdnsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,14 +42,14 @@ Remove-AzDnsRecordSet -RecordSet <DnsRecordSet> [-Overwrite] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDnsRecordSet** menghapus kumpulan rekaman tertentu dari zona yang ditentukan.
-Anda tidak dapat menghapus catatan SOA atau server nama (NS) yang secara otomatis dibuat di apex zona.
-Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini menggunakan operator pipeline atau sebagai parameter.
-Untuk mengidentifikasi catatan yang diatur menurut nama dan mengetik tanpa menggunakan objek **RecordSet** , Anda harus melewati zona sebagai objek **DnsZone** ke cmdlet ini dengan menggunakan operator pipeline atau sebagai parameter, atau sebagai alternatif Anda bisa menentukan parameter *ZoneName* dan *ResourceGroupName* .
-Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Cmdlet **Remove-AzDnsRecordSet** menghapus kumpulan catatan yang ditentukan dari zona yang ditentukan.
+Anda tidak dapat menghapus rekaman SOA atau server nama (NS) yang secara otomatis dibuat di puncak zona.
+Anda dapat meneruskan objek **RecordSet** ke cmdlet ini dengan menggunakan operator alur atau sebagai parameter.
+Untuk mengidentifikasi kumpulan catatan berdasarkan nama dan jenis tanpa menggunakan objek **RecordSet** , Anda harus melewati zona sebagai objek **DnsZone** ke cmdlet ini dengan menggunakan operator alur atau sebagai parameter, atau Anda dapat menentukan parameter *ZoneName* dan *ResourceGroupName* .
+Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 Saat menentukan kumpulan catatan menggunakan objek **RecordSet** , kumpulan catatan tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini memberikan perlindungan untuk perubahan serentak.
-Anda bisa menyembunyikan ini dengan menggunakan parameter *Timpa* , yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
+Ini memberikan perlindungan untuk perubahan bersamaan.
+Anda dapat menekan ini dengan menggunakan parameter *Timpa* , yang menghapus kumpulan catatan terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -56,9 +59,9 @@ $RecordSet = Get-AzDnsRecordSet -Name "www" -ResourceGroupName "MyResourceGroup"
 Remove-AzDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan dalam $RecordSet.
+Perintah pertama mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan di $RecordSet.
 
-### Contoh 2: Menghapus kumpulan rekaman dan menyembunyikan semua konfirmasi
+### Contoh 2: Menghapus kumpulan catatan dan menekan semua konfirmasi
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup"
 Remove-AzDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
@@ -70,9 +73,9 @@ Remove-AzDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
 Remove-AzDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Confirm:$False
 ```
 
-Perintah pertama akan mendapatkan kumpulan rekaman yang ditentukan.
-Perintah kedua menghapus kumpulan catatan, bahkan jika telah berubah sementara itu.
-Perintah konfirmasi disempurnakan.
+Perintah pertama mendapatkan kumpulan catatan yang ditentukan.
+Perintah kedua menghapus kumpulan catatan, meskipun telah berubah sementara itu.
+Perintah konfirmasi ditekan.
 
 ## PARAMETERS
 
@@ -91,10 +94,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama **Kumpulan Data** untuk dihapus.
-Saat menentukan catatan yang diatur menurut nama, zona DNS harus ditentukan menggunakan parameter *Zona* atau parameter *ZoneName* dan *ResourceGroupName* .
-Alternatifnya, kumpulan catatan dapat ditentukan menggunakan objek **RecordSet** , yang dikirim menggunakan parameter *RecordSet* .
+### -Name
+Menentukan nama **RecordSet** yang akan dihapus.
+Saat menentukan kumpulan catatan berdasarkan nama, zona DNS harus ditentukan menggunakan parameter *Zona* atau parameter *ZoneName* dan *ResourceGroupName* .
+Atau, kumpulan catatan dapat ditentukan menggunakan objek **RecordSet** , diteruskan menggunakan parameter *RecordSet* .
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 
 ### -Timpa
 Saat menentukan kumpulan catatan menggunakan objek **RecordSet** , kumpulan catatan tidak dihapus jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
-Ini memberikan perlindungan untuk perubahan serentak.
-Ini dapat disempurnakan menggunakan parameter *Timpa* , yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
+Ini memberikan perlindungan untuk perubahan bersamaan.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus kumpulan catatan terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecordSet
-Menentukan objek **RecordSet** untuk dihapus.
-Alternatifnya, kumpulan catatan dapat ditentukan menggunakan parameter *Nama* dan *Zona* , atau menggunakan parameter *Name*, *ZoneName*, dan *ResourceGroupName* .
+Menentukan objek **RecordSet** yang akan dihapus.
+Atau, kumpulan catatan dapat ditentukan menggunakan parameter *Nama* dan *Zona* , atau menggunakan parameter *Nama*, *ZoneName*, dan *ResourceGroupName* .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsRecordSet
@@ -159,15 +162,15 @@ Accept wildcard characters: False
 ### -RecordType
 Menentukan tipe catatan DNS.
 Nilai yang valid adalah:
-- J
+- A
 - AAAA
 - CNAME
 - MX
 - NS
 - PTR
 - SRV
-- Rekaman SOA TXT dihapus secara otomatis saat zona dihapus.
-Anda tidak bisa menghapus catatan SOA secara manual.
+- Catatan SOA TXT dihapus secara otomatis saat zona dihapus.
+Anda tidak dapat menghapus rekaman SOA secara manual.
 
 ```yaml
 Type: Microsoft.Azure.Management.Dns.Models.RecordType
@@ -183,9 +186,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang berisi zona DNS yang berisi **Kumpulan Rekaman** untuk dihapus.
-Parameter ini hanya berlaku ketika kumpulan catatan dan zona DNS ditentukan menggunakan parameter *Nama* dan *Nama Zona* .
-Alternatifnya, Anda dapat menentukan kumpulan rekaman menggunakan parameter *RecordSet* , atau parameter *Name* and *Zone* .
+Menentukan grup sumber daya yang berisi zona DNS yang berisi **RecordSet** untuk dihapus.
+Parameter ini hanya berlaku ketika kumpulan catatan dan zona DNS ditentukan menggunakan parameter *Nama* dan *ZoneName* .
+Atau, Anda dapat menentukan kumpulan catatan menggunakan parameter *RecordSet* , atau parameter *Nama* dan *Zona* .
 
 ```yaml
 Type: System.String
@@ -200,9 +203,9 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Menentukan zona DNS yang berisi **KumpulanData** untuk dihapus.
-Parameter ini hanya berlaku ketika menentukan kumpulan rekaman menggunakan parameter *Nama* .
-Alternatifnya, Anda dapat menentukan kumpulan catatan menggunakan parameter *RecordSet* , atau parameter *Name*, *ZoneName*, dan *ResourceGroupName* .
+Menentukan zona DNS yang berisi **RecordSet** untuk dihapus.
+Parameter ini hanya berlaku saat menentukan kumpulan catatan menggunakan parameter *Nama* .
+Atau, Anda dapat menentukan kumpulan catatan menggunakan parameter *RecordSet* , atau parameter *Name*, *ZoneName*, dan *ResourceGroupName* .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsZone
@@ -217,9 +220,9 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona yang berisi **Kumpulan Data** untuk dihapus.
+Menentukan nama zona yang berisi **RecordSet** untuk dihapus.
 Anda juga harus menentukan parameter *Nama* dan *ResourceGroupName* .
-Alternatifnya, kumpulan catatan dapat ditentukan menggunakan parameter *RecordSet* , atau parameter *Nama* dan *Zona* .
+Atau, kumpulan catatan dapat ditentukan menggunakan parameter *RecordSet* , atau parameter *Nama* dan *Zona* .
 
 ```yaml
 Type: System.String
@@ -233,8 +236,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -283,9 +286,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
-Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
+Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 

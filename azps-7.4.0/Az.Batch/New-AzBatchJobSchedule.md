@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJobSchedule.md
-ms.openlocfilehash: 10e6bff9f7f12e1f3695f11d0b29973e29aef172
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89f88e82f1886fd28f3fc053a44e2e0b9193ea78
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007209"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694299"
 ---
 # New-AzBatchJobSchedule
 
 ## SYNOPSIS
 Membuat jadwal pekerjaan di layanan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchjobschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzBatchJobSchedule [-Id] <String> [-DisplayName <String>] -Schedule <PSSched
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchJobSchedule** menciptakan jadwal pekerjaan dalam layanan Azure Batch.
+Cmdlet **New-AzBatchJobSchedule** membuat jadwal pekerjaan di layanan Azure Batch.
 Parameter *BatchAccountContext* menentukan akun tempat cmdlet ini membuat jadwal.
 
 ## EXAMPLES
@@ -43,19 +46,19 @@ New-AzBatchJobSchedule -Id "JobSchedule17" -Schedule $Schedule -JobSpecification
 ```
 
 Contoh ini membuat jadwal pekerjaan.
-Lima perintah pertama membuat dan mengubah objek **PSSchedule**, **PSJobSpecification**, dan **PSPoolInformation** .
+Lima perintah pertama membuat dan memodifikasi objek **PSSchedule**, **PSJobSpecification**, dan **PSPoolInformation** .
 Perintah menggunakan cmdlet New-Object dan sintaks Azure PowerShell standar.
 Perintah menyimpan objek ini dalam variabel $Schedule dan $JobSpecification.
-Perintah terakhir membuat jadwal pekerjaan yang memiliki JOBSchedule17 ID.
+Perintah akhir membuat jadwal pekerjaan yang memiliki ID JobSchedule17.
 Jadwal ini membuat pekerjaan dengan interval pengulangan satu hari.
-Pekerjaan dijalankan pada pool yang memiliki ID ContosoPool06, seperti yang ditentukan dalam perintah kelima.
+Pekerjaan berjalan pada kumpulan yang memiliki ID ContosoPool06, seperti yang ditentukan dalam perintah kelima.
 Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $Context.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jadwal
-Menentukan jadwal yang menentukan kapan membuat pekerjaan.
+Menentukan jadwal yang menentukan kapan harus membuat pekerjaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSSchedule
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -186,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchJobSchedule](./Get-AzBatchJobSchedule.md)
 
-[Hapus-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
+[Remove-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
 
 [Stop-AzBatchJobSchedule](./Stop-AzBatchJobSchedule.md)
 

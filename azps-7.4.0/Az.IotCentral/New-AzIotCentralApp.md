@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iotcentral/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/New-AzIotCentralApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/New-AzIotCentralApp.md
-ms.openlocfilehash: 97fdb151b0d2e9b8af4c596e7df778fab4cdd6e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0f6092410da6c44a15f96bae1c5f3cf5d0149462
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227169"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622239"
 ---
 # New-AzIotCentralApp
 
 ## SYNOPSIS
-Membuat Aplikasi Pusat IoT baru.
+Membuat Aplikasi IoT Central baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iotcentral/new-aziotcentralapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzIotCentralApp [-Subdomain] <String> [-DisplayName <String>] [-Template <St
 ```
 
 ## DESCRIPTION
-Membuat Aplikasi Pusat IoT baru dengan properti dan metadata yang disediakan. Untuk pengenalan IoT Central, lihat https://docs.microsoft.com/azure/iot-central/.
+Membuat Aplikasi IoT Central baru dengan properti dan metadata yang disediakan. Untuk pengenalan IoT Central, lihat https://docs.microsoft.com/azure/iot-central/.
 
 ## EXAMPLES
 
-### Contoh 1 Buat Aplikasi Pusat IoT sederhana.
+### Contoh 1 Buat Aplikasi IoT Central sederhana.
 ```powershell
 New-AzIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain"
 ```
@@ -51,9 +54,9 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Buat aplikasi IoT Central di st2 tingkat harga standar, di wilayah grup sumber daya.
+Buat aplikasi IoT Central di tingkat harga standar ST2, di wilayah grup sumber daya.
 
-### Contoh 2 Buat Aplikasi Pusat IoT sederhana.
+### Contoh 2 Buat Aplikasi IoT Central sederhana.
 ```powershell
 New-AzIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain" -Sku "ST2" -DisplayName "My Custom Display Name" -Template "iotc-default" -Location "westus"
 ```
@@ -74,7 +77,7 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Buat aplikasi IoT Central dengan tingkat harga standar ST2 di wilayah 'westus', dengan nama tampilan kustom, berdasarkan templat default iotc.
+Buat aplikasi IoT Central dengan tingkat harga standar ST2 di wilayah 'westus', dengan nama tampilan kustom, berdasarkan templat iotc-default.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan kustom untuk aplikasi Pusat IoT.
+Nama tampilan kustom untuk aplikasi IoT Central.
 Defaultnya adalah nama sumber daya.
 
 ```yaml
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya Aplikasi Pusat Iot.
+### -Name
+Nama Sumber Daya Aplikasi Iot Central.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tingkat harga untuk aplikasi Pusat IoT.
+Tingkat harga untuk aplikasi IoT Central.
 Nilai defaultnya adalah ST2.
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subdomain
-Subdomain untuk URL Pusat IoT.
+Subdomain untuk URL IoT Central.
 Setiap aplikasi harus memiliki subdomain yang unik.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Iot Central Application Resource Tags.
+Tag Sumber Daya Aplikasi Iot Central.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -234,8 +237,8 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-Tipe identitas terkelola untuk aplikasi IoT Central.
-Nilai defaultnya tidak ada. Identitas terkelola yang ditetapkan sistem didukung.
+Jenis identitas terkelola untuk aplikasi IoT Central.
+Nilai defaultnya adalah Tidak Ada. Identitas terkelola yang ditetapkan sistem didukung.
 
 ```yaml
 Type: System.String
@@ -249,8 +252,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

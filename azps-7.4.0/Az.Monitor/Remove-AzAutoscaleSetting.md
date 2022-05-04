@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
-ms.openlocfilehash: 13db5fe54fecb1de1c35eb824883553e0a9627e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ddb26f5a53ecf14dd542cc725a5be0feec960b36
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119763"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657810"
 ---
 # Remove-AzAutoscaleSetting
 
 ## SYNOPSIS
 Menghapus pengaturan Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ Remove-AzAutoscaleSetting -ResourceGroupName <String> -Name <String> [-DefaultPr
 ## DESCRIPTION
 Cmdlet **Remove-AzAutoscaleSetting** menghapus pengaturan Skala Otomatis.
 Anda harus menentukan nama pengaturan dan nama grup sumber daya yang ditetapkan.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Menghapus pengaturan Skala Otomatis. (autogenerasi)
+Menghapus pengaturan Skala Otomatis. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Remove-AzAutoscaleSetting -Name 'LogAlertRule1' -ResourceGroupName MyResourceGroup
@@ -57,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pengaturan Skala Otomatis untuk dihapus.
+### -Name
+Menentukan nama pengaturan Skala Otomatis yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -87,8 +90,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

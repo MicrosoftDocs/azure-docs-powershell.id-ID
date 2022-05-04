@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
-ms.openlocfilehash: ad60c0ae669b4818ebfd756697931b277927c007
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 044757ad926bf552fcd0b958ea2c8730c4ebfd49
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812412"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662760"
 ---
 # Restore-AzApiManagement
 
 ## SYNOPSIS
 Memulihkan Layanan API Management dari blob Azure Storage yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/restore-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Restore-AzApiManagement -ResourceGroupName <String> -Name <String> [-StorageCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzApiManagement** memulihkan Layanan API Management dari cadangan tertentu yang berada dalam blob Azure Storage.
+Cmdlet **Restore-AzApiManagement** memulihkan Layanan API Management dari cadangan yang ditentukan yang berada dalam blob Azure Storage.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama instans API Management yang akan dipulihkan dengan cadangan.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana API Management ada.
+Menentukan nama grup sumber daya tempat API Management ada.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceContainerName
-Menentukan nama wadah sumber cadangan penyimpanan Azure.
+Menentukan nama kontainer sumber cadangan penyimpanan Azure.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -170,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
+[Remove-AzApiManagement](./Remove-AzApiManagement.md)
 
 

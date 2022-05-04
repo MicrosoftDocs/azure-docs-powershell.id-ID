@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
-ms.openlocfilehash: 0b92af5bc71d49af88e60ceddbd7491a5d152563
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b2374ab01191f3ab1cef905c8c9cec6db5a0f1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122157"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698130"
 ---
 # New-AzImportExport
 
 ## SYNOPSIS
-Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada dalam langganan tertentu.
+Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada dalam langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/new-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ New-AzImportExport -Name <String> -ResourceGroupName <String> [-SubscriptionId <
 ```
 
 ## DESCRIPTION
-Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada dalam langganan tertentu.
+Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada dalam langganan yang ditentukan.
 
 ## EXAMPLES
 
@@ -58,12 +61,12 @@ Location Name     Type
 eastus   test-job Microsoft.ImportExport/jobs
 ```
 
-Cmdlet ini menciptakan pekerjaan ImportExport baru.
+Cmdlet ini membuat pekerjaan ImportExport baru.
 
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons.
+Menentukan bahasa yang dipilih untuk respons.
 
 ```yaml
 Type: System.String
@@ -78,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupDriveManifest
-Nilai default adalah false.
-Menunjukkan apakah file manifes pada drive harus disalin untuk memblokir blob.
+Nilai defaultnya adalah salah.
+Menunjukkan apakah file manifes pada drive harus disalin ke blob blok.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobListBlobPathPrefix
-Koleksi string blob-prefix.
+Kumpulan string awalan blob.
 
 ```yaml
 Type: System.String[]
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTenantId
-ID penyewa klien membuat permintaan.
+ID penyewa klien yang membuat permintaan.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeliveryPackageCarrierName
-Nama operator yang digunakan untuk mengirimkan drive impor atau ekspor.
+Nama operator yang digunakan untuk mengirim drive impor atau ekspor.
 
 ```yaml
 Type: System.String
@@ -244,9 +247,9 @@ Accept wildcard characters: False
 ```
 
 ### -DriveList
-Daftar hingga sepuluh drive yang terdiri dari pekerjaan tersebut.
+Daftar hingga sepuluh drive yang terdiri dari pekerjaan.
 Daftar drive adalah elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
-Untuk membangun, lihat bagian CATATAN untuk properti DRIVELIST dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DRIVELIST dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveStatus[]
@@ -261,8 +264,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExportBlobListblobPath
-URI relatif ke blok blob yang berisi daftar prefiks jalur blob atau jalur blob seperti yang ditentukan di atas, dimulai dengan nama kontainer.
-Jika blob berada dalam wadah akar, URI harus dimulai dengan $root.
+URI relatif ke blob blok yang berisi daftar jalur blob atau awalan jalur blob seperti yang didefinisikan di atas, dimulai dengan nama kontainer.
+Jika blob berada dalam kontainer akar, URI harus dimulai dengan $root.
 
 ```yaml
 Type: System.String
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncompleteBlobListUri
-Jalur blob yang menunjuk ke blok blob yang berisi daftar nama blob yang tidak diekspor karena ruang drive yang tidak mencukup.
+Jalur blob yang menunjuk ke blob blok yang berisi daftar nama blob yang tidak diekspor karena ruang drive yang tidak cukup.
 Jika semua blob berhasil diekspor, maka elemen ini tidak disertakan dalam respons.
 
 ```yaml
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 
 ### -LogLevel
 Nilai defaultnya adalah Kesalahan.
-Menunjukkan apakah pembuatan log kesalahan atau pembuatan log verbose akan diaktifkan.
+Menunjukkan apakah pengelogan kesalahan atau pengelogan verbose akan diaktifkan.
 
 ```yaml
 Type: System.String
@@ -338,7 +341,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan impor/ekspor.
 
 ```yaml
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -PercentComplete
-Persentase keseluruhan yang diselesaikan untuk pekerjaan tersebut.
+Persentase keseluruhan selesai untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.Int32
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya mengidentifikasi grup sumber daya dalam langganan pengguna secara unik.
+Nama grup sumber daya secara unik mengidentifikasi grup sumber daya dalam langganan pengguna.
 
 ```yaml
 Type: System.String
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressCountryOrRegion
-Negara atau kawasan yang akan digunakan saat mengembalikan drive.
+Negara atau wilayah yang akan digunakan saat mengembalikan drive.
 
 ```yaml
 Type: System.String
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressRecipientName
-Nama penerima yang akan menerima hard drive saat mereka dikembalikan.
+Nama penerima yang akan menerima hard drive saat dikembalikan.
 
 ```yaml
 Type: System.String
@@ -534,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnPackageCarrierName
-Nama operator yang digunakan untuk mengirimkan drive impor atau ekspor.
+Nama operator yang digunakan untuk mengirim drive impor atau ekspor.
 
 ```yaml
 Type: System.String
@@ -594,7 +597,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnShippingCarrierAccountNumber
-Nomor akun pelanggan dengan operator.
+Nomor rekening pelanggan dengan operator.
 
 ```yaml
 Type: System.String
@@ -609,7 +612,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnShippingCarrierName
-Nama operatornya.
+Nama operator.
 
 ```yaml
 Type: System.String
@@ -639,7 +642,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShippingInformationCountryOrRegion
-Negara atau kawasan yang akan digunakan saat mengembalikan drive.
+Negara atau wilayah yang akan digunakan saat mengembalikan drive.
 
 ```yaml
 Type: System.String
@@ -684,7 +687,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShippingInformationRecipientName
-Nama penerima yang akan menerima hard drive saat mereka dikembalikan.
+Nama penerima yang akan menerima hard drive saat dikembalikan.
 
 ```yaml
 Type: System.String
@@ -743,8 +746,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Status pekerjaan saat ini.
+### -State
+Kondisi pekerjaan saat ini.
 
 ```yaml
 Type: System.String
@@ -789,7 +792,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan tag yang akan ditetapkan ke pekerjaan tersebut.
+Menentukan tag yang akan ditetapkan ke pekerjaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IPutJobParametersTags
@@ -803,8 +806,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -819,7 +822,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -835,7 +838,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -852,19 +855,19 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DRIVELIST <IDriveStatus[]>: Daftar hingga sepuluh drive yang terdiri dari pekerjaan tersebut. Daftar drive adalah elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
-  - `[BitLockerKey <String>]`: Tombol BitLocker yang digunakan untuk mengenkripsi drive.
+DRIVELIST <IDriveStatus[]>: Daftar hingga sepuluh drive yang terdiri dari pekerjaan. Daftar drive adalah elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
+  - `[BitLockerKey <String>]`: Kunci BitLocker yang digunakan untuk mengenkripsi drive.
   - `[BytesSucceeded <Int64?>]`: Byte berhasil ditransfer untuk drive.
-  - `[CopyStatus <String>]`: Status mendetail tentang proses transfer data. Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Transfer.
+  - `[CopyStatus <String>]`: Status terperinci tentang proses transfer data. Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Mentransfer.
   - `[DriveHeaderHash <String>]`: Nilai hash header drive.
   - `[DriveId <String>]`: Nomor seri perangkat keras drive, tanpa spasi.
-  - `[ErrorLogUri <String>]`: URI yang mengarah ke blob yang berisi log kesalahan untuk operasi transfer data.
-  - `[ManifestFile <String>]`: Jalur relatif file manifes di drive. 
-  - `[ManifestHash <String>]`: Hash MD5 berkode Base16 dari file manifes di drive.
-  - `[ManifestUri <String>]`: URI yang mengarah ke blob yang berisi file manifes drive. 
+  - `[ErrorLogUri <String>]`: URI yang menunjuk ke blob yang berisi log kesalahan untuk operasi transfer data.
+  - `[ManifestFile <String>]`: Jalur relatif file manifes pada drive. 
+  - `[ManifestHash <String>]`: Hash MD5 yang dikodekan Base16 dari file manifes pada drive.
+  - `[ManifestUri <String>]`: URI yang menunjuk ke blob yang berisi file manifes drive. 
   - `[PercentComplete <Int32?>]`: Persentase selesai untuk drive. 
   - `[State <DriveState?>]`: Status drive saat ini. 
-  - `[VerboseLogUri <String>]`: URI yang mengarah ke blob yang berisi log verbose untuk operasi transfer data. 
+  - `[VerboseLogUri <String>]`: URI yang menunjuk ke blob yang berisi log verbose untuk operasi transfer data. 
 
 ## RELATED LINKS
 

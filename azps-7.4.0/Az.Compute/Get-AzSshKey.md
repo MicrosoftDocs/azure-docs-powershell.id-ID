@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azss
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSshKey.md
-ms.openlocfilehash: d87f55791ff34dbf79fdc72be4586e75c9bacee9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18424e7ca737fe1b023fe030fe0abad695c108b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231291"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647014"
 ---
 # Get-AzSshKey
 
 ## SYNOPSIS
-Mendapatkan properti sumber daya Kunci Publik SSH.
+Mendapatkan properti sumber daya Kunci Umum SSH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzSshKey [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Mendapatkan properti sumber daya Kunci Publik SSH.
+Mendapatkan properti sumber daya Kunci Umum SSH.
 
 ## EXAMPLES
 
@@ -40,21 +43,21 @@ Mendapatkan properti sumber daya Kunci Publik SSH.
 Get-AzSshKey -ResourceGroupName "testRG" -Name "SshKey1"
 ```
 
-Contoh ini mengambil sumber daya Kunci Publik Ssh tertentu.
+Contoh ini mengambil sumber daya Kunci Umum Ssh tertentu.
 
 ### Contoh 2
 ```powershell
 Get-AzSshKey -ResourceGroupName "testRG"
 ```
 
-Contoh ini mengambil daftar sumber daya Kunci Publik Ssh yang ada di Grup Sumber Daya: "testRG"
+Contoh ini mengambil daftar sumber daya Kunci Umum Ssh yang ada di Grup Sumber Daya: "testRG"
 
 ### Contoh 3
 ```powershell
 Get-AzSshKey 
 ```
 
-Contoh ini mengambil semua sumber daya Kunci Publik Ssh dalam langganan. 
+Contoh ini mengambil semua sumber daya Kunci Umum Ssh dalam langganan. 
 
 ## PARAMETERS
 
@@ -73,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama sumber daya Kunci Publik Ssh untuk didapatkan.
+### -Name
+Menentukan nama sumber daya Kunci Umum Ssh yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk Sumber Daya Kunci Publik SSH Anda.
+ID Sumber Daya untuk Sumber Daya Kunci Umum SSH Anda.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

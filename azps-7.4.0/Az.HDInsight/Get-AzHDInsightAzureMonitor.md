@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightAzureMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightAzureMonitor.md
-ms.openlocfilehash: 03900a81ee467adfc4cb19d23501fa8f9ec9e563
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5cd89e710f9ff75a1f48529564a47c10a0c025eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122517"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666070"
 ---
 # Get-AzHDInsightAzureMonitor
 
 ## SYNOPSIS
 Mendapatkan status azure monitor dari kluster HDInsight tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightazuremonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzHDInsightAzureMonitor [-InputObject] <AzureHDInsightCluster> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightAzureMonitor** mendapatkan status azure monitor dari kluster HDInsight yang ditentukan.
+Cmdlet **Get-AzHDInsightAzureMonitor** mendapatkan status azure monitor dari kluster HDInsight tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ $resourceGroupName = "Group"
 Get-AzHDInsightAzureMonitor -ClusterName $clusterName -ResourceGroup $resourceGroupName
 ```
 
-Cmdlet ini mendapatkan status azure monitor dari kluster HDInsight yang ditentukan.
+Cmdlet ini mendapatkan status azure monitor dari kluster HDInsight tertentu.
 
 ### Contoh 2
 ```powershell
@@ -60,7 +63,7 @@ $cluster=Get-AzHDInsightCluster -ClusterName $clusterName
 $cluster | Get-AzHDInsightAzureMonitor
 ```
 
-Cmdlet ini mendapatkan azure monitor dengan pipeline.
+Cmdlet ini mendapatkan azure monitor dengan alur.
 
 ## PARAMETERS
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

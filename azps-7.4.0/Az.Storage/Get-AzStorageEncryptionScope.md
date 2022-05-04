@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageEncryptionScope.md
-ms.openlocfilehash: 9c4639ae9d33e43a5b7f71ff8dbbdcc4a4ccd6fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e33b1a91df5de72a88fd2586dad12801144bfa28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798318"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668590"
 ---
 # Get-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Dapatkan atau cantumkan lingkup enkripsi dari akun Storage.
+Mendapatkan atau mencantumkan cakupan enkripsi dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Get-AzStorageEncryptionScope** mendapatkan atau mencantumkan cakupan en
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan lingkup enkripsi tunggal
+### Contoh 1: Mendapatkan cakupan enkripsi tunggal
 ```
 PS C:\> Get-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EncryptionScopeName $scopename
 
@@ -48,9 +51,9 @@ Name      State    Source             KeyVaultKeyUri
 testscope Disabled Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/keys/keyname
 ```
 
-Perintah ini mendapatkan satu lingkup enkripsi.
+Perintah ini mendapatkan cakupan enkripsi tunggal.
 
-### Contoh 2: Mencantumkan semua lingkup enkripsi akun Storage
+### Contoh 2: Mencantumkan semua cakupan enkripsi akun Storage
 ```
 PS C:\> Get-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" 
 
@@ -63,7 +66,7 @@ testscope Disabled Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/k
 scope2    Enabled  Microsoft.Storage
 ```
 
-Perintah ini mencantumkan semua lingkup enkripsi akun Storage.
+Perintah ini mencantumkan semua cakupan enkripsi akun Storage.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccountKey.md
-ms.openlocfilehash: a50f931fb19d7e0f14c0f757780c3b281a1ce3a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0028a5be7cc05890124a55afdea847362d97cdfd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998173"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627150"
 ---
 # Get-AzRemoteRenderingAccountKey
 
 ## SYNOPSIS
-Dapatkan kunci Akun Remote Rendering
+Mendapatkan kunci Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Dapatkan kunci pengembang dari "contoh" Akun Remote Rendering dari Grup Sumber Daya dan Langganan saat ini "rg1".
+Dapatkan kunci pengembang Remote Rendering Akun "contoh" dari Langganan saat ini dan Grup Sumber Daya "rg1".
 
 ### Contoh 2
 ```powershell
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Remote Rendering Nama Akun.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya akun Remote Rendering.
+ID sumber daya Akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

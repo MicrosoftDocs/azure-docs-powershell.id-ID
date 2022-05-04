@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: 84029f84fe2f9f464c2e48a3f3099865503c7eb8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d46ef1f1aed47d3216ffdd6acb1287751c3bd17a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143268965"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626520"
 ---
 # Remove-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
 Menghapus titik akhir dari objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerendpointconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,8 +33,8 @@ Cmdlet **Remove-AzTrafficManagerEndpointConfig** menghapus titik akhir dari obje
 Anda bisa mendapatkan profil dengan menggunakan cmdlet Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
-Untuk menghapus titik akhir dan melakukan perubahan dalam operasi tunggal, gunakan cmdlet Remove-AzTrafficManagerEndpoint.
+Terapkan perubahan Anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
+Untuk menghapus titik akhir dan menerapkan perubahan dalam satu operasi, gunakan cmdlet Remove-AzTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 Perintah kedua menghapus titik akhir Azure bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
 Perintah ini hanya mengubah objek lokal.
 
-Perintah terakhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
+Perintah akhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal di $TrafficManagerProfile.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini mengubah objek lokal ini.
+Cmdlet ini memodifikasi objek lokal ini.
 Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

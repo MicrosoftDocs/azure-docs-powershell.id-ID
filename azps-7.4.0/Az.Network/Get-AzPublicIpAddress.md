@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpAddress.md
-ms.openlocfilehash: 159d914df948142324d0cf94e6dac185441a2cbf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 198ae5acdac0c937e12e0a26404230db56a4b594
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743616"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647824"
 ---
-# Get-AzPublicIpAddress
+# Dapatkan-AzPublicIpAddress
 
 ## SYNOPSIS
 Mendapatkan alamat IP publik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Sku                      : {
 IpTags                   : []
 ```
 
-Perintah ini mendapatkan sumber daya alamat IP publik dengan nama MyPublicIp di myRg grup sumber daya.
+Perintah ini mendapatkan sumber daya alamat IP publik dengan nama myPublicIp di grup sumber daya myRg.
 
 ### Contoh 2: Mendapatkan sumber daya IP publik menggunakan pemfilteran
 ```powershell
@@ -176,7 +179,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama alamat IP publik yang didapat cmdlet ini.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: True
 ```
 
 ### -NetworkInterfaceName
-Nama Antarmuka Jaringan Mesin Virtual.
+Nama Antarmuka Jaringan Komputer Virtual.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi alamat IP publik yang didapat cmdlet ini.
+Menentukan nama grup sumber daya yang berisi alamat IP publik yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: True
 ```
 
 ### -VirtualMachineIndex
-Indeks Mesin Virtual.
+Indeks Komputer Virtual.
 
 ```yaml
 Type: System.String
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSetName
-Nama Kumpulan Skala Mesin Virtual.
+Nama Set Skala Komputer Virtual.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

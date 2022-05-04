@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 4caf8faefe86aa92428fc13e613eb35c207904fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d55d6e1674e5e7c2f9b319b4c325e9a28d64416d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282807"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657828"
 ---
 # Add-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Menambahkan pengaturan HTTP back-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

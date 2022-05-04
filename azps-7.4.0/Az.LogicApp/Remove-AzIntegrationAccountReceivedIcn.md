@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountReceivedIcn.md
-ms.openlocfilehash: 8816d7c35affd272a143e978db940727ca57960c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36fa539d9117fcf72a4fe5a275fdebeee96a429e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746658"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604508"
 ---
 # Remove-AzIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
-Cmdlet ini menghapus nomor kontrol per perjanjian per perjanjian dan nilai nomor kontrol penerimaan tertentu.
+Cmdlet ini menghapus nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountreceivedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,10 +29,10 @@ Remove-AzIntegrationAccountReceivedIcn -ResourceGroupName <String> -Name <String
 ```
 
 ## DESCRIPTION
-Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk menghapus nomor kontrol pertukaran yang diterima dari akun integrasi sehingga konektor B2B dapat memproses kembali pesan ketika deteksi angka duplikat diaktifkan.
+Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk menghapus nomor kontrol pertukaran yang diterima dari akun integrasi sehingga konektor B2B dapat memproses lagi pesan saat deteksi nomor duplikat diaktifkan.
 Jarang terjadi nomor kontrol pertukaran yang diterima dapat dicadangkan sesaat sebelum bencana dan sebelum konektor B2B menolak pertukaran sebagai salah.
-Dalam situasi seperti itu, operasi mungkin ingin mengaktifkan situs pemulihan untuk memproses lagi pertukaran yang sama setelah muatannya diperbaiki.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
+Dalam kesempatan seperti itu, operasi mungkin ingin mengaktifkan situs pemulihan untuk memproses lagi pertukaran yang sama setelah payload-nya diperbaiki.
+Harap berikan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -55,9 +58,9 @@ At line:1 char:1
     + FullyQualifiedErrorId : Microsoft.Azure.Commands.LogicApp.Cmdlets.GetAzureIntegrationAccountReceivedIcnCommand
 ```
 
-Mencoba mendapatkan nomor kontrol pertukaran X12 yang diterima, yang kontennya tidak dalam format yang valid.
+Mencoba untuk mendapatkan nomor kontrol pertukaran X12 yang diterima yang kontennya tidak dalam format yang valid.
 Menghapus nomor kontrol pertukaran X12 yang diterima.
-Mengonfirmasi nomor kontrol pertukaran X12 yang diterima dihapus dengan mencoba mendapatkannya lagi.
+Mengonfirmasi nomor kontrol pertukaran X12 yang diterima telah dihapus dengan mencoba mendapatkannya lagi.
 
 ### Contoh 2
 ```powershell
@@ -81,9 +84,9 @@ At line:1 char:1
     + FullyQualifiedErrorId : Microsoft.Azure.Commands.LogicApp.Cmdlets.GetAzureIntegrationAccountReceivedIcnCommand
 ```
 
-Mencoba mendapatkan nomor kontrol pertukaran Edifact yang diterima, yang kontennya tidak dalam format yang valid.
+Upaya untuk mendapatkan nomor kontrol pertukaran Edifact yang diterima kontennya tidak dalam format yang valid.
 Menghapus nomor kontrol pertukaran Edifact yang diterima.
-Mengonfirmasi nomor kontrol pertukaran Edifact yang diterima dihapus dengan mencoba mendapatkannya lagi.
+Mengonfirmasi nomor kontrol pertukaran Edifact yang diterima telah dihapus dengan mencoba mendapatkannya lagi.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Tipe perjanjian akun integrasi.
+Jenis perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun integrasi.
 
 ```yaml
@@ -178,8 +181,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

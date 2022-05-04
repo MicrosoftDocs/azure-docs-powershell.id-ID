@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptStringExecutionParameterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptStringExecutionParameterObject.md
-ms.openlocfilehash: cf97c103bd813980a61ffa890f5de41ca3d8fac0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1b7af3576b9f7ee940399c36452e43ea73de1def
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669150"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665296"
 ---
 # New-AzVMwareScriptStringExecutionParameterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ScriptStringExecutionParameter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarescriptstringexecutionparameterobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ Name                  Type   Value
 azps_test_stringvalue Value  stringValue
 ```
 
-Membuat objek Skrip Skrip Eksekusi String lokal
+Membuat objek Eksekusi String Skrip lokal
 
 ## PARAMETERS
 
-### -Nama
-Nama parameter.
+### -Name
+Nama parameternya.
 
 ```yaml
 Type: System.String
@@ -57,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai untuk parameter yang dilewati.
+### -Nilai
+Nilai untuk parameter yang diteruskan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

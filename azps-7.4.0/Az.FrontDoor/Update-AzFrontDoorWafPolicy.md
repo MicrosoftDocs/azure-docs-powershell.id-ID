@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Update-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Update-AzFrontDoorWafPolicy.md
-ms.openlocfilehash: 185b532cd2c38da9568ec5f25ea55912c03bc111
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1fe28ad72e8ce203e3244f2d4e48e43648e86cf0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632762"
 ---
 # Update-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
-Perbarui kebijakan WAF
+Memperbarui kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/update-azfrontdoorwafpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzFrontDoorWafPolicy -ResourceId <String> [-EnabledState <PSEnabledState>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzFrontDoorWafPolicy** memperbarui kebijakan WAF yang sudah ada. Jika parameter input tidak disediakan, parameter lama dari kebijakan WAF yang sudah ada akan digunakan.
+Cmdlet **Update-AzFrontDoorWafPolicy** memperbarui kebijakan WAF yang ada. Jika parameter input tidak disediakan, parameter lama dari kebijakan WAF yang ada akan digunakan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 {policyName} Prevention            Enabled                           403 https://www.bing.com/
 ```
 
-Perbarui kode status kustom kebijakan WAF yang sudah ada.
+Perbarui kode status kustom kebijakan WAF yang ada.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 {policyName} Detection            Enabled                           403 https://www.bing.com/
 ```
 
-Memperbarui mode kebijakan WAF yang sudah ada.
+Perbarui mode kebijakan WAF yang ada.
 
 ### Contoh 3
 ```powershell
@@ -85,14 +88,14 @@ Name          PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redire
 {policyName}  Detection           Disabled                           403 https://www.bing.com/
 ```
 
-Perbarui kebijakan WAF yang sudah ada yang diaktifkan status dan mode.
+Perbarui status dan mode yang diaktifkan kebijakan WAF yang ada.
 
 ### Contoh 4
 ```powershell
 Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Update-AzFrontDoorWafPolicy -Mode Detection -EnabledState Disabled
 ```
 
-Memperbarui semua kebijakan WAF dalam $resourceGroupName
+Memperbarui semua kebijakan WAF di $resourceGroupName
 
 ## PARAMETERS
 
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah kebijakan dalam status aktif atau status nonaktif.
-Nilai yang memungkinkan termasuk: 'Dinonaktifkan', 'Diaktifkan'
+Apakah kebijakan dalam status diaktifkan atau dinonaktifkan.
+Nilai yang mungkin termasuk: 'Dinonaktifkan', 'Diaktifkan'
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -204,8 +207,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Menjelaskan apakah mode tersebut berada dalam mode deteksi atau mode pencegahan pada tingkat kebijakan.
-Nilai yang memungkinkan termasuk:'Pencegahan', 'Deteksi'
+Menjelaskan apakah dalam mode deteksi atau mode pencegahan pada tingkat kebijakan.
+Nilai yang mungkin termasuk:'Pencegahan', 'Deteksi'
 
 ```yaml
 Type: System.String
@@ -219,8 +222,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama FireWallPolicy untuk diperbarui.
+### -Name
+Nama FireWallPolicy yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectUrl
-Mengalihkan URL
+URL Pengalihan
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestBodyCheck
-Menentukan apakah isi harus diperiksa oleh aturan terkelola. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'
+Menentukan apakah isi harus diperiksa oleh aturan terkelola. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -294,8 +297,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

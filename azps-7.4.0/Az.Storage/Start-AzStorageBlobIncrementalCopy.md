@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
-ms.openlocfilehash: 8ed911181a82ba4164aa4c77c971fb28bb93cbe6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5c11a287be7dde2a3ef7c9611cdfb1db97dd6352
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270981"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641706"
 ---
 # Start-AzStorageBlobIncrementalCopy
 
 ## SYNOPSIS
-Memulai operasi salinan bertahbik dari snapshot blob Halaman ke blob Halaman tujuan yang ditentukan.
+Mulai operasi Penyalinan bertahap dari rekam jepret blob Halaman ke blob Halaman tujuan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/start-azstorageblobincrementalcopy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Start-AzStorageBlobIncrementalCopy -CloudBlob <CloudPageBlob> -DestCloudBlob <Cl
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### NamaPengguna
+### ContainerName
 ```
 Start-AzStorageBlobIncrementalCopy -SrcBlob <String> -SrcContainer <String>
  -SrcBlobSnapshotTime <DateTimeOffset> -DestContainer <String> [-DestBlob <String>]
@@ -62,44 +65,44 @@ Start-AzStorageBlobIncrementalCopy -AbsoluteUri <String> -DestContainer <String>
 ```
 
 ## DESCRIPTION
-Memulai operasi salinan bertahbik dari snapshot blob Halaman ke blob Halaman tujuan yang ditentukan.
+Mulai operasi Penyalinan bertahap dari rekam jepret blob Halaman ke blob Halaman tujuan yang ditentukan.
 Lihat detail selengkapnya tentang fitur di https://docs.microsoft.com/rest/api/storageservices/fileservices/incremental-copy-blob.
 
 ## EXAMPLES
 
-### Contoh 1: Start Incremental Copy Operation by blob name and snapshot time
+### Contoh 1: Mulai Operasi Salin Bertambah Bertahap berdasarkan nama blob dan waktu rekam jepret
 ```
 PS C:\>Start-AzStorageBlobIncrementalCopy -SrcContainer container1 -SrcBlob blob1 -SrcBlobSnapshotTime "04/07/2017 09:55:36.1190229 AM +00:00" -DestContainer container2 -DestBlob blob2
 ```
 
-Perintah ini memulai Operasi Penyalinan Tambahan menurut nama blob dan waktu snapshot
+Perintah ini memulai Operasi Salin Bertambah Bertahap berdasarkan nama blob dan waktu rekam jepret
 
-### Contoh 2: Start Incremental copy operation using source uri
+### Contoh 2: Mulai operasi penyalinan bertahap menggunakan uri sumber
 ```
 PS C:\>Start-AzStorageBlobIncrementalCopy -AbsoluteUri "http://www.somesite.com/somefile?snapshot=2017-04-07T10:05:40.2126635Z" -DestContainer container -DestBlob blob -DestContext $context
 ```
 
-Perintah ini memulai Operasi Penyalinan Penambahan menggunakan uri sumber
+Perintah ini memulai Operasi Salin Bertahap menggunakan uri sumber
 
-### Contoh 3: Start Incremental copy operation using container pipeline from GetAzureStorageContainer
+### Contoh 3: Mulai operasi salin inkremental menggunakan alur kontainer dari GetAzureStorageContainer
 ```
 PS C:\>Get-AzStorageContainer -Container container1 | Start-AzStorageBlobIncrementalCopy -SrcBlob blob  -SrcBlobSnapshotTime "04/07/2017 09:55:36.1190229 AM +00:00" -DestContainer container2
 ```
 
-Perintah ini memulai Operasi Salin Bertahap menggunakan pipeline kontainer dari GetAzureStorageContainer
+Perintah ini memulai Operasi Salin Inkremental menggunakan alur kontainer dari GetAzureStorageContainer
 
-### Contoh 4: start Incremental copy operation from CloudPageBlob object to destination blob with blob name
+### Contoh 4: mulai operasi penyalinan inkremental dari objek CloudPageBlob ke blob tujuan dengan nama blob
 ```
 PS C:\>$srcBlobSnapshot = Get-AzStorageBlob -Container container1 -prefix blob1| ?{$_.ICloudBlob.IsSnapshot})[0]
 PS C:\>Start-AzStorageBlobIncrementalCopy -CloudBlob $srcBlobSnapshot.ICloudBlob -DestContainer container2 -DestBlob blob2
 ```
 
-Perintah ini memulai Operasi Salinan Bertahap dari objek CloudPageBlob ke blob tujuan dengan nama blob
+Perintah ini memulai Operasi Salin Inkremental dari objek CloudPageBlob ke blob tujuan dengan nama blob
 
 ## PARAMETERS
 
 ### -AbsoluteUri
-Mutlak Uri ke sumbernya. Perlu dicatat bahwa kredensial harus disediakan di Uri, jika sumber memerlukannya.
+Uri absolut ke sumbernya. Perhatikan bahwa kredensial harus disediakan di Uri, jika sumbernya memerlukannya.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Objek CloudBlob dari pustaka Klien Azure Storage. Anda dapat membuatnya atau menggunakan cmdlet Get-AzStorageBlob.
+Objek CloudBlob dari pustaka klien Azure Storage. Anda dapat membuatnya atau menggunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudPageBlob
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -174,8 +177,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Konteks Azure Storage Sumber. Anda dapat membuatnya dengan cmdlet New-AzStorageContext.
+### -Context
+Konteks Azure Storage Sumber. Anda dapat membuatnya dengan New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestContainer
-Nama wadah tujuan
+Nama kontainer tujuan
 
 ```yaml
 Type: System.String
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestContext
-Konteks Azure Storage Tujuan. Anda dapat membuatnya dengan cmdlet New-AzStorageContext.
+Konteks Azure Storage Tujuan. Anda dapat membuatnya dengan New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcBlobSnapshotTime
-Waktu snapshot blob halaman sumber.
+Waktu rekam jepret blob halaman sumber.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcContainer
-Nama Wadah Sumber
+Nama Kontainer Sumber
 
 ```yaml
 Type: System.String
@@ -348,8 +351,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

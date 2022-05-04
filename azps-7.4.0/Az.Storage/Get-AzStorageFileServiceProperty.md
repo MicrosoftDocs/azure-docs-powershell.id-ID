@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileServiceProperty.md
-ms.openlocfilehash: 2ba4c9d4d627d50276e70c00170310e1f60e6cce
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd870151601e9bc07218945247646301e17b7efd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798264"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709584"
 ---
 # Get-AzStorageFileServiceProperty
 
 ## SYNOPSIS
-Mendapatkan properti layanan untuk layanan File Azure Storage.
+Mendapatkan properti layanan untuk layanan file Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragefileserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzStorageFileServiceProperty** mendapatkan properti layanan untuk l
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti layanan File Azure Storage dari akun Storage tertentu
+### Contoh 1: Mendapatkan properti layanan File Azure Storage dari Akun Storage tertentu
 ```powershell
 PS C:\> Get-AzStorageFileServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id Sumber Daya akun Storage, atau Properti layanan File Id Sumber Daya.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan File.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

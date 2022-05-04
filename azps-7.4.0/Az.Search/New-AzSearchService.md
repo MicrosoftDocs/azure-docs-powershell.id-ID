@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/new-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchService.md
-ms.openlocfilehash: b50447f616c033b037f48d8b027d4f3321a8d2fe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa49d30bd56939343ae149661e819632559c0c75
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673074"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697574"
 ---
 # New-AzSearchService
 
 ## SYNOPSIS
 Membuat layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/new-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzSearchService [-ResourceGroupName] <String> [-Name] <String> [-Sku] <PSSku
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSearchService** membuat layanan Azure Cognitive Search dengan parameter tertentu.
+Cmdlet **New-AzSearchService** membuat layanan Azure Cognitive Search dengan parameter yang ditentukan.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRuleList
-(Opsional) aturan IP layanan Azure Cognitive Search
+(Opsional) aturan IP Layanan Azure Cognitive Search
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSIpRule[]
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-lokasi Layanan Azure Cognitive Search.
+Azure Cognitive Search Lokasi layanan.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Azure Cognitive Search Nama layanan.
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-(Opsional) akses jaringan publik Layanan Azure Cognitive Search (Diaktifkan/Dinonaktifkan)
+(Opsional) Azure Cognitive Search Akses jaringan publik Layanan (Diaktifkan/Dinonaktifkan)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSPublicNetworkAccess]
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaCount
-Azure Cognitive Search Hitungan replika layanan.
+Azure Cognitive Search Jumlah replika layanan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -219,8 +222,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,11 +253,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

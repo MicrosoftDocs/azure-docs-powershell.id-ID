@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
-ms.openlocfilehash: dd0da8fb867dd014819056f21326e7f6e72485cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 852d6a750620eb8f6eac5142b306eb57b7f84399
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320355"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693040"
 ---
 # Set-AzApiManagementApiSchema
 
 ## SYNOPSIS
-Mengubah Skema API
+Memodifikasi Skema API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapischema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Set-AzApiManagementApiSchema -ResourceId <String> [-SchemaDocumentContentType <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiSchema** mengubah Skema API Azure API Management.
+Cmdlet **Set-AzApiManagementApiSchema** memodifikasi Skema API Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah Skema API
+### Contoh 1: Memodifikasi Skema API
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementApiSchema -Context $ApiMgmtContext -ApiId "echo-api" -SchemaId "2"
@@ -55,7 +58,7 @@ Contoh memperbarui Skema Api
 
 ### Contoh 2
 
-Mengubah Skema API. (autogenerasi)
+Memodifikasi Skema API. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -65,7 +68,7 @@ Set-AzApiManagementApiSchema -ApiId 'echo-api' -Context <PsApiManagementContext>
 ## PARAMETERS
 
 ### -ApiId
-Pengidentifikasi API yang sudah ada.
+Pengidentifikasi API yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -80,8 +83,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementApiSchema.
+Instans PsApiManagementApiSchema.
 Parameter ini diperlukan.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi tipe mewakili API yang ditetapkan.
+Jika ditentukan, contoh jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId of Diagnostic atau Api Schema. Parameter ini diperlukan.
+Arm ResourceId dari Diagnostik atau Skema Api. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaDocumentContentType
-ContentType dari api Schema. Parameter ini bersifat opsional.
+ContentType dari Skema api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaId
-Pengidentifikasi Skema yang sudah ada.
+Pengidentifikasi Skema yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -218,8 +221,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

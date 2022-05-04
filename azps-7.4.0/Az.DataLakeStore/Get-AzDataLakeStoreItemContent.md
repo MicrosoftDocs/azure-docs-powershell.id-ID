@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemContent.md
-ms.openlocfilehash: e022aa7882e496835d3de8bf5f84dd4b40403a62
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54793d8a0ba2ed9a75d236c1e06cca534dbcc599
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288459"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660168"
 ---
 # Get-AzDataLakeStoreItemContent
 
 ## SYNOPSIS
 Mendapatkan konten file di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,12 +59,12 @@ Perintah ini mendapatkan konten file MyFile.txt di akun ContosoADL.
 Get-AzDataLakeStoreItemContent -AccountName "ContosoADL" -Path "/MyFile.txt" -Head 2
 ```
 
-Perintah ini mendapatkan dua baris baru pertama yang dipisahkan dalam file MyFile.txt di akun ContosoADL.
+Perintah ini mendapatkan dua baris baru pertama yang dipisahkan baris dalam file MyFile.txt di akun ContosoADL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ### -Pengodean
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diketahui
+- Tidak dikenal
 - String
 - Unicode
 - Byte
-- BigEndianUnicode
+- Kode BigEndianUnicode
 - UTF8
 - UTF7
 - Ascii
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kepala
-Jumlah baris (baris baru dibatasi) dari awal file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
+Jumlah baris (baris baru dibatasi) dari awal file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -147,7 +150,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Length
+### -Panjang
 Menentukan panjang, dalam byte, konten yang akan didapatkan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari sebuah file, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari file, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -192,8 +195,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tail
-Jumlah baris (baris baru dibatasi) dari akhir file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
+### -Ekor
+Jumlah baris (baris baru dibatasi) dari akhir file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -207,8 +210,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

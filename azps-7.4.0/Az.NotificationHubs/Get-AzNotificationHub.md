@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
-ms.openlocfilehash: fed27bdc0883d25e41e35c14e578a5e0cfa77924
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 50a5d96855fb756d9c5300ab243167eb1a681d5e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312291"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602456"
 ---
 # Get-AzNotificationHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang hub pemberitahuan Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,26 +29,26 @@ Get-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String> [[-Notific
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama tertentu dan ditetapkan ke grup sumber daya tertentu.
-Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan di ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Cmdlet **Get-AzNotificationHub** mendapatkan informasi tentang hub pemberitahuan di namespace tertentu dan ditetapkan ke grup sumber daya tertentu.
+Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan di namespace ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 Atau, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan ke informasi tentang hub pemberitahuan tertentu.
-Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Bursa Windows, yang digunakan oleh klien tersebut.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Windows Store, yang digunakan oleh klien tersebut.
 Hub ini kira-kira setara dengan aplikasi individual dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet ini hanya mendapatkan informasi tentang hub itu sendiri.
-Cmdlet lainnya, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotificationHubListKeys, dan Get-AzNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
+Cmdlet lain, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotificationHubListKeys, dan Get-AzNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk semua hub pemberitahuan dalam ruang nama tertentu
+### Contoh 1: Mendapatkan informasi untuk semua hub pemberitahuan di namespace tertentu
 ```powershell
 Get-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini mendapatkan informasi untuk semua hub pemberitahuan di ruang nama bernama ContosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini mendapatkan informasi untuk semua hub pemberitahuan di namespace bernama ContosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ### Contoh 2
 
-Mendapatkan informasi tentang hub pemberitahuan Anda. (autogenerasi)
+Mendapatkan informasi tentang hub pemberitahuan Anda. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -70,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

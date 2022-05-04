@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: 67dfb891952a3ab206490caa3af342f4693ecd00
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a0c7e9802c2b2015a5de10716fb744308876fbcd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624090"
 ---
 # Remove-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Menghapus Key Vault dikelola Azure Storage definisi SAS.
+Menghapus definisi SAS Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Remove-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedSt
 ```
 
 ## DESCRIPTION
-Menghapus Key Vault dikelola Azure Storage definisi SAS. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS sesuai definisi SAS ini.
+Menghapus definisi SAS Azure Storage terkelola Key Vault. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS sesuai definisi SAS ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Key Vault dikelola Azure Storage definisi SAS.
+### Contoh 1: Menghapus definisi SAS Azure Storage terkelola Key Vault.
 ```powershell
 Remove-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef' -PassThru
 ```
@@ -52,9 +55,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Menghapus Key Vault dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' dalam kubah 'myvault'.
+Menghapus definisi SAS Key Vault terkelola Storage 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
 
-### Contoh 2: Hapus Key Vault dikelola Azure Storage definisi SAS tanpa konfirmasi pengguna.
+### Contoh 2: Menghapus definisi SAS Azure Storage terkelola Key Vault tanpa konfirmasi pengguna.
 ```powershell
 Remove-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef' -PassThru -Force
 ```
@@ -70,13 +73,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Menghapus Key Vault dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' dalam kubah 'myvault'.
+Menghapus definisi SAS Key Vault terkelola Storage 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
 
 ## PARAMETERS
 
 ### -AccountName
-Storage nama akun.
-Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih dan nama akun penyimpanan.
+Nama akun penyimpanan.
+Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -135,9 +138,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Storage nama definisi sas.
-Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Cmdlet membangun FQDN definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan, dan nama definisi sas.
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -183,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

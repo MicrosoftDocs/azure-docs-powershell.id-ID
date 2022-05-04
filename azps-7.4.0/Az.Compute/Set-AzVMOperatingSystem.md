@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOperatingSystem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOperatingSystem.md
-ms.openlocfilehash: bea46ec1266d37b161bd5ed2a66d55e4643fad7c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee9be361b031845a30689b53014c247fd222ad22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171747"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670030"
 ---
 # Set-AzVMOperatingSystem
 
 ## SYNOPSIS
-Mengatur properti sistem operasi selama pembuatan mesin virtual baru.
+Mengatur properti sistem operasi selama pembuatan komputer virtual baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmoperatingsystem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,12 +65,12 @@ Set-AzVMOperatingSystem [-VM] <PSVirtualMachine> [-Linux] [-ComputerName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMOperatingSystem** mengatur properti sistem operasi selama pembuatan mesin virtual baru.
-Anda bisa menentukan kredensial masuk, nama komputer, dan tipe sistem operasi.
+Cmdlet **Set-AzVMOperatingSystem** menetapkan properti sistem operasi selama pembuatan komputer virtual baru.
+Anda dapat menentukan kredensial masuk, nama komputer, dan jenis sistem operasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur properti sistem operasi untuk mesin virtual baru
+### Contoh 1: Mengatur properti sistem operasi untuk komputer virtual baru
 ```powershell
 $SecurePassword = ConvertTo-SecureString "Password" -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential ("FullerP", $SecurePassword); 
@@ -81,21 +84,21 @@ $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Windows -Computer
 ```
 
 Perintah pertama mengonversi kata sandi menjadi string aman, lalu menyimpannya dalam variabel $SecurePassword.
-Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString`
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial dalam variabel $Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help New-Object`
-Perintah ketiga mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
-Perintah keempat membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut ini.
-Karena Anda dapat menentukan string ini secara langsung dalam perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
+Perintah ketiga mendapatkan set ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah keempat membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
+Karena Anda dapat menentukan string ini langsung dalam perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
 Namun, Anda mungkin menggunakan pendekatan seperti ini dalam skrip.
-Perintah akhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
-Perintah menggunakan kredensial yang disimpan di $Credential.
+Perintah akhir menetapkan properti sistem operasi untuk komputer virtual yang disimpan dalam $VirtualMachine.
+Perintah menggunakan kredensial yang disimpan dalam $Credential.
 Perintah menggunakan variabel yang ditetapkan dalam perintah sebelumnya untuk beberapa parameter.
 
-### Contoh 2: Mengatur properti sistem operasi untuk mesin virtual baru dengan hot patching diaktifkan
+### Contoh 2: Mengatur properti sistem operasi untuk komputer virtual baru dengan patching panas diaktifkan
 ```powershell
 $SecurePassword = ConvertTo-SecureString "Password" -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential ("FullerP", $SecurePassword); 
@@ -109,22 +112,22 @@ $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Windows -Computer
 ```
 
 Perintah pertama mengonversi kata sandi menjadi string aman, lalu menyimpannya dalam variabel $SecurePassword.
-Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString`
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial dalam variabel $Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help New-Object`
-Perintah ketiga mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
-Perintah keempat membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut ini.
-Karena Anda dapat menentukan string ini secara langsung dalam perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
+Perintah ketiga mendapatkan set ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah keempat membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
+Karena Anda dapat menentukan string ini langsung dalam perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
 Namun, Anda mungkin menggunakan pendekatan seperti ini dalam skrip.
-Perintah akhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
-Perintah menggunakan kredensial yang disimpan di $Credential.
+Perintah akhir menetapkan properti sistem operasi untuk komputer virtual yang disimpan dalam $VirtualMachine.
+Perintah menggunakan kredensial yang disimpan dalam $Credential.
 Perintah menggunakan variabel yang ditetapkan dalam perintah sebelumnya untuk beberapa parameter.
-Perintah mengaktifkan Hotpatching pada mesin virtual.
+Perintah ini memungkinkan Hotpatching pada komputer virtual.
 
-### Contoh 3: Mengatur properti sistem operasi untuk mesin virtual Linux baru
+### Contoh 3: Mengatur properti sistem operasi untuk komputer virtual Linux baru
 ```powershell
 $SecurePassword = ConvertTo-SecureString "Password" -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential ("FullerP", $SecurePassword); 
@@ -136,23 +139,23 @@ $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Linux -ComputerNa
 ```
 
 Perintah pertama mengonversi kata sandi menjadi string aman, lalu menyimpannya dalam variabel $SecurePassword.
-Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString`
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial dalam variabel $Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help New-Object`
-Perintah ketiga mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
-Perintah keempat membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Dua perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut ini.
-Perintah akhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
-Perintah menggunakan kredensial yang disimpan di $Credential.
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
+Perintah ketiga mendapatkan set ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah keempat membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Dua perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
+Perintah akhir menetapkan properti sistem operasi untuk komputer virtual yang disimpan dalam $VirtualMachine.
+Perintah menggunakan kredensial yang disimpan dalam $Credential.
 Perintah menggunakan variabel yang ditetapkan dalam perintah sebelumnya untuk beberapa parameter.
-Perintah mengatur nilai mode patch di mesin virtual ke "AutomaticByPlatform".
+Perintah mengatur nilai mode patch pada komputer virtual ke "AutomaticByPlatform".
 
 ## PARAMETERS
 
 ### -AssessmentMode
-Nilai mode penilaian otomatis untuk mesin virtual. Nilai yang memungkinkan adalah ImageDefault dan AutomaticByPlatform.
+Nilai mode penilaian otomatis untuk komputer virtual. Nilai yang mungkin adalah ImageDefault dan AutomaticByPlatform.
 
 ```yaml
 Type: System.String
@@ -181,10 +184,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kredensial
-Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
+### -Credential
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string yang akan dialihkan ke mesin virtual. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://docs.microsoft.com/azure/virtual-machines/custom-data).
+Menentukan string yang akan diteruskan ke komputer virtual. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://docs.microsoft.com/azure/virtual-machines/custom-data).
 **Catatan: Tidak disarankan untuk menyimpan informasi sensitif dalam data kustom.**
 
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableVMAgent
-Nonaktifkan Agen VM Penyediaan.
+Nonaktifkan Penyediaan Agen VM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoUpdate
-Menunjukkan bahwa cmdlet ini mengaktifkan pembaruan otomatis.
+Menunjukkan bahwa cmdlet ini memungkinkan pembaruan otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHotpatching
-Memungkinkan pelanggan untuk menambal VM Azure mereka tanpa memerlukan boot ulang. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
+Memungkinkan pelanggan untuk menambal Azure VM mereka tanpa memerlukan boot ulang. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa tipe sistem operasi adalah Linux.
+Menunjukkan bahwa jenis sistem operasi adalah Linux.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,11 +309,11 @@ Accept wildcard characters: False
 ```
 
 ### -PatchMode
-Menentukan mode patch in-guest ke mesin virtual IaaS.<br><br>
-Nilai yang memungkinkan adalah:<br>
-**AutomaticByPlatform** - Penginstalan patch untuk mesin virtual akan dikelola oleh Azure. Gunakan dengan -Windows atau -Linux. Memerlukan -ProvisionVMAgent. Memerlukan -EnableAutoUpdate ketika digunakan dengan -Windows. <br>
-**AutomaticByOS** - Penginstalan patch untuk mesin virtual akan dikelola oleh OS. Gunakan dengan -Windows. Memerlukan -ProvisionVMAgent dan -EnableAutoUpdate.<br>
-**Manual** - Anda mengontrol aplikasi patch ke mesin virtual. Gunakan dengan -Windows. Memerlukan -ProvisionVMAgent.<br>
+Menentukan mode patching in-guest ke komputer virtual IaaS.<br><br>
+Kemungkinan nilainya adalah:<br>
+**AutomaticByPlatform** - Penginstalan patch untuk komputer virtual akan dikelola oleh Azure. Gunakan dengan -Windows atau -Linux. Membutuhkan -ProvisionVMAgent. Memerlukan -EnableAutoUpdate saat digunakan dengan -Windows. <br>
+**AutomaticByOS** - Penginstalan patch untuk komputer virtual akan dikelola oleh OS. Gunakan dengan -Windows. Memerlukan -ProvisionVMAgent dan -EnableAutoUpdate.<br>
+**Manual** - Anda mengontrol aplikasi patch ke komputer virtual. Gunakan dengan -Windows. Membutuhkan -ProvisionVMAgent.<br>
 **ImageDefault** - Penginstalan patch dikelola oleh pengaturan default pada gambar OS. Gunakan dengan -Linux.
 
 ```yaml
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionVMAgent
-Menunjukkan bahwa pengaturan mengharuskan agen mesin maya diinstal pada mesin virtual.
+Menunjukkan bahwa pengaturan mengharuskan agen komputer virtual diinstal pada komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,8 +344,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu mesin maya. misalnya \"Waktu\" Standar Pasifik. <br>
-Nilai yang memungkinkan dapat [berupa nilai TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
+Menentukan zona waktu komputer virtual. misalnya \"Waktu\" Standar Pasifik. <br>
+Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String
@@ -357,9 +360,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual lokal tempat untuk mengatur properti sistem operasi.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
-Buat objek mesin virtual dengan menggunakan cmdlet New-AzVMConfig.
+Menentukan objek komputer virtual lokal untuk mengatur properti sistem operasi.
+Untuk mendapatkan objek komputer virtual, gunakan cmdlet Get-AzVM.
+Buat objek komputer virtual dengan menggunakan cmdlet New-AzVMConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa tipe sistem operasi Windows.
+Menunjukkan bahwa jenis sistem operasi Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -435,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -457,7 +460,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [New-AzVMConfig](./New-AzVMConfig.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: c46e8f2e5bf7ee6688ee05866482fc0a57dbd62c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 303dcd6e4fb6fb884d724e6cabcca5fe46df1f34
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872946"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661644"
 ---
 # Update-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
-Perbarui untuk lingkup tautan privat
+Pembaruan untuk cakupan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/update-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Update-AzInsightsPrivateLinkScope -InputObject <PSMonitorPrivateLinkScope> [-Tag
 ```
 
 ## DESCRIPTION
-Perbarui untuk lingkup tautan privat
+Pembaruan untuk cakupan tautan privat
 
 ## EXAMPLES
 
@@ -47,21 +50,21 @@ Perbarui untuk lingkup tautan privat
 Update-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name" -Tags "key:value"
 ```
 
-perbarui lingkup tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name" untuk menggunakan tag "key:value"
+perbarui cakupan tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name" untuk menggunakan tag "key:value"
 
 ### Contoh 2
 ```powershell
 Update-AzInsightsPrivateLinkScope -ResourceId "/subscriptions/{subscriptionId}/resourceGroups/rg_name/providers/Microsoft.Insights/privateLinkScopes/scope_name" -Tags "key:value"
 ```
 
-perbarui lingkup tautan privat dengan Id sumber daya untuk menggunakan tag "key:value"
+perbarui cakupan tautan privat dengan Id sumber daya untuk menggunakan tag "key:value"
 
 ### Contoh 3
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name" | Update-AzInsightsPrivateLinkScope -Tags "key:value"
 ```
 
-perbarui lingkup tautan privat dengan input objek lingkup tautan pribadi untuk menggunakan tag "key:value"
+memperbarui cakupan tautan privat dengan objek cakupan tautan privat input untuk menggunakan tag "key:value"
 
 ## PARAMETERS
 
@@ -95,8 +98,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Lingkup Private Link
+### -Name
+Nama Cakupan Private Link
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya
+ID sumber daya
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Tags
+Tag
 
 ```yaml
 Type: System.String[]
@@ -155,8 +158,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

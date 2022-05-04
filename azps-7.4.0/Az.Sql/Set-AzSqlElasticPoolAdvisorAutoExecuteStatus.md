@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: e1dfbd67fbf353f47cc5b70d2d7a987688efe1ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2fc1a8780eb8520bfff22994d7cf27d0e4808767
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306513"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697448"
 ---
 # Set-AzSqlElasticPoolAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
 Memperbarui status eksekusi otomatis Azure SQL Elastic Pool Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticpooladvisorautoexecutestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Set-AzSqlElasticPoolAdvisorAutoExecuteStatus -AdvisorName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** mengatur properti auto execute untuk Azure SQL Elastic Pool Advisor.
+Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** menetapkan properti eksekusi otomatis untuk Azure SQL Elastic Pool Advisor.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan eksekusi otomatis untuk penasihat
+### Contoh 1: Mengaktifkan eksekusi otomatis untuk advisor
 ```powershell
 Set-AzSqlElasticPoolAdvisorAutoExecuteStatus -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -AutoExecuteStatus Enabled
 ```
@@ -50,12 +53,12 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mengatur status eksekusi otomatis penasihat bernama CreateIndex untuk diaktifkan.
+Perintah ini mengatur status eksekusi otomatis penasihat bernama CreateIndex ke diaktifkan.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang mana cmdlet ini memperbarui status eksekusi otomatis.
+Menentukan nama advisor tempat cmdlet ini memperbarui status eksekusi otomatis.
 
 ```yaml
 Type: System.String
@@ -72,8 +75,8 @@ Accept wildcard characters: False
 ### -AutoExecuteStatus
 Menentukan nilai baru di mana cmdlet ini memperbarui status eksekusi otomatis.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan
-- Tamu penyandang cacat
+- Aktif
+- Nonaktifkan
 - Default
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -194,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, kolam elastis, mssql, penasihat
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, kumpulan elastis, mssql, advisor
 
 ## RELATED LINKS
 

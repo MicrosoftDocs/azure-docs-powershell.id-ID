@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 1d1c87bc2d31636c789559e279e6b1c1c28bc72e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f44f025d5a55693126a5d51b3c2431af15ab46bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741078"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669112"
 ---
 # Test-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
-Menguji keberadaan contoh Kapasitas Tersemat PowerBI.
+Menguji keberadaan instans Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/test-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzPowerBIEmbeddedCapacity [-Name] <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzPowerBIEmbeddedCapacity menguji keberadaan contoh Kapasitas Tersemat PowerBI
+Cmdlet Test-AzPowerBIEmbeddedCapacity menguji keberadaan instans Kapasitas Tersemat PowerBI
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Cmdlet Test-AzPowerBIEmbeddedCapacity menguji keberadaan contoh Kapasitas Tersem
 True
 ```
 
-Perintah ini akan menguji jika ada kapasitas bernama testcapacity
+Perintah ini akan menguji apakah ada kapasitas bernama testcapacity
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kapasitas Tersemat PowerBI
 
 ```yaml
@@ -73,11 +76,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccount.md
-ms.openlocfilehash: 34b2d710ad160f790fc1afca2d79876ab748f683
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ef55c2cbf539bb9ba34b250ce31df91aae49915
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670770"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668536"
 ---
 # Remove-AzStorageAccount
 
 ## SYNOPSIS
-Menghapus akun Penyimpanan dari Azure.
+Menghapus akun Storage dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Remove-AzStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-Force] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageAccount** menghapus akun Penyimpanan dari Azure.
+Cmdlet **Remove-AzStorageAccount** menghapus akun Storage dari Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus akun Penyimpanan
+### Contoh 1: Menghapus akun Storage
 ```
 PS C:\>Remove-AzStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini menghapus akun Penyimpanan yang ditentukan.
+Perintah ini menghapus akun Storage yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Penyimpanan untuk dihapus.
+### -Name
+Menentukan nama akun Storage yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Penyimpanan untuk dihapus.
+Menentukan nama grup sumber daya yang berisi akun Storage untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -112,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageAccount](./Get-AzStorageAccount.md)
+[Dapatkan-AkunPenyimpananAz](./Get-AzStorageAccount.md)
 
 [New-AzStorageAccount](./New-AzStorageAccount.md)
 

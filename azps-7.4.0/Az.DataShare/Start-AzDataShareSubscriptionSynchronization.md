@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/start-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Start-AzDataShareSubscriptionSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Start-AzDataShareSubscriptionSynchronization.md
-ms.openlocfilehash: ebcf239584d6e151a58fbe348373a29a4416a9bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bfd46f447ba38e201c16a6dda5eef941276b63f6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002709"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698291"
 ---
 # Start-AzDataShareSubscriptionSynchronization
 
 ## SYNOPSIS
 Memulai sinkronisasi untuk langganan berbagi. Langganan berbagi dapat ditentukan melalui id sumber daya atau namanya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/start-azdatasharesubscriptionsynchronization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ status            : Succeeded
 synchronizationId : 20a4416b-b33b-4539-a908-71dc8ef698fb
 ```
 
-Perintah ini memulai sinkronisasi untuk sharesubscription bernama AdsShareSubscription di akun WikiAds. 
+Perintah ini memulai sinkronisasi untuk langganan berbagi bernama AdsShareSubscription di akun WikiAds. 
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationMode
-Mode sinkronisasi (FullSync atau Inkremental)
+Mode sinkronisasi (FullSync atau Incremental)
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/remove-azdns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordConfig.md
-ms.openlocfilehash: eacf2cc53e78cbcabd112aafb598a95ea59cd263
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 681860e049744914beebe5378afa73f3891b4bac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287505"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710321"
 ---
 # Remove-AzDnsRecordConfig
 
 ## SYNOPSIS
 Menghapus catatan DNS dari objek kumpulan catatan lokal.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/remove-azdnsrecordconfig) untuk informasi terbaru.
+
 ## SYNTAX
 
-### J
+### A
 ```
 Remove-AzDnsRecordConfig -RecordSet <DnsRecordSet> -Ipv4Address <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -75,12 +78,12 @@ Remove-AzDnsRecordConfig -RecordSet <DnsRecordSet> -CaaFlags <Byte> -CaaTag <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDnsRecordConfig** menghapus catatan Domain Name System (DNS) dari kumpulan catatan.
-Objek **RecordSet** adalah objek offline, dan perubahannya tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzDnsRecordSet untuk tetap melakukan perubahan ke layanan MICROSOFT AZURE DNS.
-Untuk menghapus catatan, semua bidang untuk tipe catatan tersebut harus sama persis.
-Anda tidak bisa menambahkan atau menghapus catatan SOA.
-Catatan SOA dibuat secara otomatis ketika zona DNS dibuat dan dihapus secara otomatis saat zona DNS dihapus.
-Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
+Cmdlet **Remove-AzDnsRecordConfig** menghapus catatan Sistem Nama Domain (DNS) dari kumpulan catatan.
+Objek **RecordSet** adalah objek offline, dan perubahannya tidak mengubah respons DNS hingga setelah Anda menjalankan cmdlet Set-AzDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Microsoft Azure.
+Untuk menghapus rekaman, semua bidang untuk tipe rekaman tersebut harus sama persis.
+Anda tidak dapat menambahkan atau menghapus rekaman SOA.
+Rekaman SOA secara otomatis dibuat saat zona DNS dibuat dan dihapus secara otomatis saat zona DNS dihapus.
+Anda dapat meneruskan objek **RecordSet** ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
 
 ## EXAMPLES
 
@@ -96,10 +99,10 @@ Get-AzDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup
 ```
 
 Contoh ini menghapus catatan A dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya akan berupa kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya akan menjadi kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
-### Contoh 2: Menghapus catatan AAAA dari kumpulan rekaman
+### Contoh 2: Menghapus catatan AAAA dari kumpulan catatan
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 Remove-AzDnsRecordConfig -RecordSet $RecordSet -Ipv6Address 2001:DB80:4009:1803::1005
@@ -111,10 +114,10 @@ Get-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGr
 ```
 
 Contoh ini menghapus catatan AAAA dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya akan berupa kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya akan menjadi kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
-### Contoh 3: Menghapus catatan CNAME dari kumpulan catatan
+### Contoh 3: Menghapus data CNAME dari kumpulan catatan
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 Remove-AzDnsRecordConfig -RecordSet $RecordSet -Cname contoso.com
@@ -125,10 +128,10 @@ Set-AzDnsRecordSet -RecordSet $RecordSet
 Get-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" | Remove-AzDnsRecordConfig -Cname contoso.com | Set-AzDnsRecordSet
 ```
 
-Contoh ini menghapus catatan CNAME dari kumpulan catatan yang sudah ada.
-Karena kumpulan catatan CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
+Contoh ini menghapus data CNAME dari kumpulan catatan yang sudah ada.
+Karena kumpulan data CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
 
-### Contoh 4: Menghapus rekaman MX dari kumpulan catatan
+### Contoh 4: Menghapus catatan MX dari kumpulan catatan
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name "@" -RecordType MX -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 Remove-AzDnsRecordConfig -Exchange mail.microsoft.com -Preference 5 -RecordSet $RecordSet
@@ -140,9 +143,9 @@ Get-AzDnsRecordSet -Name "@" -RecordType MX -ResourceGroupName "MyResourceGroup"
 ```
 
 Contoh ini menghapus catatan MX dari kumpulan catatan yang sudah ada.
-Nama catatan "@" menunjukkan kumpulan catatan di zona apex.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Nama catatan "@" menunjukkan kumpulan catatan di puncak zona.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
 ### Contoh 5: Menghapus catatan NS dari kumpulan catatan
 ```powershell
@@ -156,10 +159,10 @@ Get-AzDnsRecordSet -Name "abc" -RecordType NS -ResourceGroupName "MyResourceGrou
 ```
 
 Contoh ini menghapus catatan NS dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
-### Contoh 6: Menghapus catatan PTR dari kumpulan rekaman
+### Contoh 6: Menghapus catatan PTR dari kumpulan catatan
 ```powershell
 $RecordSet = Get-AzDnsRecordSet -Name "4" -RecordType PTR -ResourceGroupName "MyResourceGroup" -ZoneName 3.2.1.in-addr.arpa
 Remove-AzDnsRecordConfig -Ptrdname www.contoso.com -RecordSet $RecordSet
@@ -171,8 +174,8 @@ Get-AzDnsRecordSet -Name "4" -RecordType PTR -ResourceGroupName "MyResourceGroup
 ```
 
 Contoh ini menghapus catatan PTR dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
 ### Contoh 7: Menghapus catatan SRV dari kumpulan catatan
 ```powershell
@@ -186,8 +189,8 @@ Get-AzDnsRecordSet -Name "_sip._tcp" -RecordType SRV -ResourceGroupName "MyResou
 ```
 
 Contoh ini menghapus catatan SRV dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
 ### Contoh 8: Menghapus catatan TXT dari kumpulan catatan
 ```powershell
@@ -201,8 +204,8 @@ Get-AzDnsRecordSet -Name "text" -RecordType TXT -ResourceGroupName "MyResourceGr
 ```
 
 Contoh ini menghapus catatan TXT dari kumpulan catatan yang sudah ada.
-Jika ini adalah satu-satunya catatan dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
-Untuk menghapus kumpulan catatan secara keseluruhan, lihat Remove-AzDnsRecordSet.
+Jika ini adalah satu-satunya rekaman dalam kumpulan catatan, hasilnya adalah kumpulan catatan kosong.
+Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 
 ## PARAMETERS
 
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaTag
-Bidang tag catatan CAA untuk ditambahkan.
+Bidang tag rekaman CAA untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaValue
-Bidang nilai untuk catatan CAA untuk ditambahkan.
+Bidang nilai untuk catatan CAA yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cname
-Menentukan nama domain untuk catatan nama kanonis (CNAME).
+Menentukan nama domain untuk data nama kanonis (CNAME).
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server mail exchange untuk catatan mail exchange (MX).
+Menentukan nama server pertukaran surat untuk rekaman pertukaran surat (MX).
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv4Address
-Menentukan alamat IPv4 untuk catatan A.
+Menentukan alamat IPv4 untuk rekaman A.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Menentukan alamat IPv6 untuk catatan AAAA.
+Menentukan alamat IPv6 untuk rekaman AAAA.
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nsdname
-Menentukan server nama untuk catatan server nama (NS).
+Menentukan server nama untuk rekaman server nama (NS).
 
 ```yaml
 Type: System.String
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port untuk data layanan (SRV).
+Menentukan port untuk rekaman layanan (SRV).
 
 ```yaml
 Type: System.UInt16
@@ -387,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target catatan penunjuk (PTR).
+Menentukan nama domain target rekaman penunjuk (PTR).
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordSet
-Menentukan objek **RecordSet** yang berisi catatan untuk dihapus.
+Menentukan objek **RecordSet** yang berisi rekaman yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsRecordSet
@@ -417,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### -Target
-Menentukan target untuk catatan SRV.
+Menentukan target untuk rekaman SRV.
 
 ```yaml
 Type: System.String
@@ -431,7 +434,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan nilai untuk catatan TXT.
 
 ```yaml
@@ -446,8 +449,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berat
-Menentukan bobot untuk catatan SRV.
+### -Bobot
+Menentukan bobot untuk rekaman SRV.
 
 ```yaml
 Type: System.UInt16
@@ -462,7 +465,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

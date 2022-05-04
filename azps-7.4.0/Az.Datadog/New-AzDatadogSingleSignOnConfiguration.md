@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: df22e1fee8a5acd81dc3f9d86aac4e95bc81c8d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09b58791c8b21c6859db51a67da5fce361af51a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693922"
 ---
 # New-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
-Mengonfigurasi masuk tunggal untuk sumber daya ini.
+Mengonfigurasi akses menyeluruh untuk sumber daya ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogsinglesignonconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ New-AzDatadogSingleSignOnConfiguration -InputObject <IDatadogIdentity> [-Enterpr
 ```
 
 ## DESCRIPTION
-Mengonfigurasi masuk tunggal untuk sumber daya ini.
+Mengonfigurasi akses menyeluruh untuk sumber daya ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi masuk tunggal untuk sumber daya monitor data
+### Contoh 1: Mengonfigurasi akses menyeluruh untuk sumber daya monitor Data
 ```powershell
 New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 ```
@@ -49,9 +52,9 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mengonfigurasi masuk tunggal untuk sumber daya monitor data.
+Perintah ini mengonfigurasi akses menyeluruh untuk sumber daya Monitor data.
 
-### Contoh 2: Mengonfigurasi masuk tunggal untuk sumber daya monitor data menurut saluran
+### Contoh 2: Mengonfigurasi akses menyeluruh untuk sumber daya monitor Data menurut alur
 ```powershell
 Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | New-AzDatadogSingleSignOnConfiguration -SingleSignOnState Disable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 ```
@@ -62,12 +65,12 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mengonfigurasi masuk tunggal untuk sumber daya monitor data menurut saluran.
+Perintah ini mengonfigurasi akses menyeluruh untuk sumber daya monitor Data menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnterpriseAppId
-Id Aplikasi Perusahaan yang digunakan untuk Masuk tunggal.
+Id Aplikasi Perusahaan yang digunakan untuk Akses menyeluruh.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -272,8 +275,8 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RuleSetName <String>]`: Nama kumpulan aturan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

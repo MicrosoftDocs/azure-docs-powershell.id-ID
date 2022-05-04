@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/set-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
-ms.openlocfilehash: 4d97fc48251dc8ac2463b066d7670b6ceceba1cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b63ec612803f605df4ef32b1ad232f944fb5f518
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688680"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605048"
 ---
 # Set-AzAksCluster
 
 ## SYNOPSIS
 Memperbarui atau membuat kluster Kubernetes terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/set-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,12 +81,12 @@ Memperbarui atau membuat kluster Kubernetes terkelola.
 Get-AzAksCluster -ResourceGroupName group -Name myCluster | Set-AzAksCluster -NodeCount 5
 ```
 
-Atur jumlah node dalam kluster Kubernetes menjadi 5.
+Atur jumlah simpul di kluster Kubernetes ke 5.
 
 ## PARAMETERS
 
 ### -AcrNameToAttach
-Berikan peran 'acrpull' dari ACR yang ditentukan untuk AKS Service Principal, misalnya myacr
+Berikan peran 'acrpull' dari ACR yang ditentukan kepada Perwakilan Layanan AKS, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -AcrNameToDetach
-Menonaktifkan penetapan peran 'acrpull' ke ACR yang ditentukan menurut nama atau ID sumber daya, misalnya myacr
+Nonaktifkan penetapan peran 'acrpull' ke ACR yang ditentukan oleh nama atau ID sumber daya, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiServerAccessAuthorizedIpRange
-Rentang IP yang diotorisasi untuk mengakses server API Kubernetes.
+Rentang IP berwenang untuk mengakses server API Kubernetes.
 
 ```yaml
 Type: System.String[]
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiServerAccessPrivateDnsZone
-Mode zona DNS pribadi untuk kluster.
+Mode zona DNS privat untuk kluster.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlPlaneOnly
-Hanya akan meningkatkan pesawat kontrol ke versi target.
+Hanya akan meningkatkan sarana kontrol ke versi target.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsNamePrefix
-Prefiks nama DNS untuk kluster.
+Awalan nama DNS untuk kluster.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableApiServerAccessPrivateClusterPublicFQDN
-Apakah akan membuat FQDN publik tambahan untuk klaster privat atau tidak.
+Apakah akan membuat FQDN publik tambahan untuk kluster privat atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,8 +235,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableNodeAutoScaling
-Apakah mengaktifkan penskalakan otomatis
+### -EnableNodeAutoscaling
+Apakah akan mengaktifkan auto-scaler
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -FqdnSubdomain
-Subdomain FQDN dari kluster privat dengan zona dns pribadi kustom.
+Subdomain FQDN dari kluster privat dengan zona dns privat kustom.
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id dari kluster Kubernetes yang dikelola
+Id kluster Kubernetes terkelola
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
+Objek PSKubernetesCluster, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerAllocatedOutboundPort
-Jumlah port SNAT yang dialokasikan per VM yang diinginkan.
+Jumlah port SNAT yang dialokasikan yang diinginkan per VM.
 
 ```yaml
 Type: System.Int32
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerIdleTimeoutInMinute
-Waktu habis aliran keluar yang diinginkan habis dalam hitungan menit.
+Batas waktu menganggur alur keluar yang diinginkan dalam menit.
 
 ```yaml
 Type: System.Int32
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerManagedOutboundIpCount
-Jumlah IP keluar terkelola yang diinginkan untuk kluster load balancer.
+Jumlah IP keluar terkelola yang diinginkan untuk load balancer kluster.
 
 ```yaml
 Type: System.Int32
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerOutboundIp
-Sumber daya IP keluar yang diinginkan untuk kluster load balancer.
+Sumber daya IP keluar yang diinginkan untuk load balancer kluster.
 
 ```yaml
 Type: System.String[]
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerOutboundIpPrefix
-Sumber daya Outbound IP Prefix yang diinginkan untuk kluster load balancer.
+Sumber daya Awalan IP keluar yang diinginkan untuk penyeimbang beban kluster.
 
 ```yaml
 Type: System.String[]
@@ -413,7 +416,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster terkelola Kubernetes.
 
 ```yaml
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah node default untuk kumpulan simpul.
+Jumlah default simpul untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeImageOnly
-Hanya akan memutakhirkan versi node pool untuk meratakan bidang kontrol.
+Hanya akan meningkatkan versi kumpulan simpul untuk menyelaraskan sarana kontrol.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMaxCount
-Jumlah node maksimum untuk penskalaan otomatis
+Jumlah maksimum simpul untuk penskalaan otomatis
 
 ```yaml
 Type: System.Int32
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMinCount
-Jumlah node minimum untuk penskalaan otomatis.
+Jumlah minimum simpul untuk penskalaan otomatis.
 
 ```yaml
 Type: System.Int32
@@ -504,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeOsDiskSize
-Menentukan ukuran, dalam GB, disk sistem operasi.
+Menentukan ukuran, dalam GB, dari disk sistem operasi.
 
 ```yaml
 Type: System.Int32
@@ -534,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVmSize
-Ukuran Mesin Virtual.
+Ukuran Komputer Virtual.
 
 ```yaml
 Type: System.String
@@ -564,7 +567,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIdAndSecret
-Id klien dan rahasia klien yang terkait dengan aplikasi AAD / prinsipal layanan.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD/perwakilan layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -597,7 +600,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -626,8 +629,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -642,7 +645,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -658,7 +661,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

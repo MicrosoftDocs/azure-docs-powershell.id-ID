@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionVendorConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionVendorConfigurationObject.md
-ms.openlocfilehash: b06d168ae2d4b597310d81ba5d9253ab3b3d445c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45ab1003a287d0833d8a7c50a2f6720115befedc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004743"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626088"
 ---
 # New-AzConnectedNetworkFunctionVendorConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk NetworkFunctionVendorConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkfunctionvendorconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,15 +45,15 @@ PS C:\> $key += $keyData
 PS C:\> $vendorconf = New-AzConnectedNetworkFunctionVendorConfigurationObject -NetworkInterface $ip1,$ip2 -RoleName hpehss -OSProfileAdminUsername MecUser -OSProfileCustomData $customData -OSProfileCustomDataRequired $True -SshPublicKey $key
 ```
 
-Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi IP ke IPv4.
-Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan tipe sakelar vm.
-Membuat identitas kunci ssh, Lalu menggunakannya untuk membuat objek konfigurasi vendor dengan hpehss nama peran, data kustom, keyData dan array antarmuka jaringan, yang akan digunakan dalam pembuatan NF vendor.
+Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi ip ke IPv4.
+Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan jenis sakelar vm.
+Membuat identitas kunci ssh, Kemudian menggunakannya untuk membuat objek konfigurasi vendor dengan nama peran hpehss, data kustom, keyData dan array antarmuka jaringan, yang akan digunakan dalam pembuatan NF vendor.
 
 ## PARAMETERS
 
 ### -NetworkInterface
 Konfigurasi antarmuka jaringan.
-Untuk membangun, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan membuat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti NETWORKINTERFACE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkInterface[]
@@ -68,19 +71,19 @@ Accept wildcard characters: False
 Menentukan nama akun administrator.
 
 
- **batasan Windows-saja:** Tidak dapat berakhiran "." 
+ **pembatasan khusus Windows:** Tidak dapat berakhiran "." 
 
- **Nilai yang tidak diperbolehkan:** "administrator", "admin", "user", "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "backup", "console", "david", "guest", "john", "owner", "root", "server", "sql", "support", "support_388945a0", "sys", "test2", "test3", "user4", "user5".
+ **Nilai yang tidak diizinkan:** "administrator", "admin", "user", "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "backup", "console", "david", "guest", "john", "owner", "root", "server", "sql", "support", "support_388945a0", "sys", "test2", "test3", "user4", "user5".
 
 
  **Panjang minimum (Linux):** 1 karakter 
 
- **Panjang maks (Linux):** 64 karakter 
+ **Panjang maksimum (Linux):** 64 karakter 
 
- **Panjang maksimal (Windows):** 20 karakter  
+ **Panjang maksimum (Windows):** 20 karakter  
 
-\<li\> Untuk akses akar ke VM Linux, lihat [Menggunakan hak istimewa akar pada mesin virtual Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-\<li\> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat [Memilih Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+\<li\> Untuk akses root ke VM Linux, lihat [Menggunakan hak istimewa root pada komputer virtual Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+\<li\> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan di bidang ini, lihat [Memilih Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 
 ```yaml
 Type: System.String
@@ -95,20 +98,20 @@ Accept wildcard characters: False
 ```
 
 ### -OSProfileCustomData
-Menentukan string data kustom berkode basis 64.
-String berkode basis 64 didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
+Menentukan string data kustom yang dikodekan base-64.
+String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai file pada komputer virtual.
 Panjang maksimum array biner adalah 65535 byte.
 
 
- **Catatan: Jangan berikan rahasia atau kata sandi apa pun dalam properti customData** 
+ **Catatan: Jangan meneruskan rahasia atau kata sandi apa pun di properti customData** 
 
  Properti ini tidak dapat diperbarui setelah VM dibuat.
 
 
- customData dialihkan ke VM untuk disimpan sebagai file.
-Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
+ customData diteruskan ke VM untuk disimpan sebagai file.
+Untuk informasi selengkapnya lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
 
- Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk mengkustomisasi VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+ Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -SshPublicKey
-Daftar kunci publik SSH yang digunakan untuk mengautentikasi dengan VM berbasis linux.
-Untuk membangun, lihat bagian CATATAN untuk properti SSHPUBLICKEY dan membuat tabel hash.
+Daftar kunci umum SSH yang digunakan untuk mengautentikasi dengan VM berbasis linux.
+Untuk membuat, lihat bagian CATATAN untuk properti SSHPUBLICKEY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.ISshPublicKey[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -196,11 +199,11 @@ NETWORKINTERFACE <INetworkInterface[]>: Konfigurasi antarmuka jaringan.
     - `[Subnet <String>]`: Nilai subnet.
   - `[MacAddress <String>]`: Alamat MAC antarmuka jaringan.
   - `[Name <String>]`: Nama antarmuka jaringan.
-  - `[VMSwitchType <VMSwitchType?>]`: Tipe sakelar VM.
+  - `[VMSwitchType <VMSwitchType?>]`: Jenis sakelar VM.
 
-SSHPUBLICKEY <ISshPublicKey[]>: Daftar kunci publik SSH yang digunakan untuk mengautentikasi dengan VM berbasis linux.
-  - `[KeyData <String>]`: Sertifikat kunci publik SSH yang digunakan untuk mengautentikasi dengan VM melalui ssh. Kunci harus setidaknya 2048-bit dan dalam format ssh-rsa.    Untuk membuat kunci ssh, lihat [Membuat kunci SSH di Linux dan Mac untuk VM Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-mac-create-ssh-keys?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-  - `[Path <String>]`: Menentukan jalur lengkap pada VM yang dibuat tempat kunci publik ssh disimpan. Jika file sudah ada, kunci yang ditentukan ditambahkan ke file. Contoh: /home/user/.ssh/authorized_keys
+SSHPUBLICKEY <ISshPublicKey[]>: Daftar kunci umum SSH yang digunakan untuk mengautentikasi dengan VM berbasis linux.
+  - `[KeyData <String>]`: Sertifikat kunci umum SSH yang digunakan untuk mengautentikasi dengan VM melalui ssh. Kuncinya harus setidaknya 2048-bit dan dalam format ssh-rsa.    Untuk membuat kunci ssh, lihat [Membuat kunci SSH di Linux dan Mac untuk VM Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-mac-create-ssh-keys?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+  - `[Path <String>]`: Menentukan jalur lengkap pada VM yang dibuat tempat kunci umum ssh disimpan. Jika file sudah ada, kunci yang ditentukan ditambahkan ke file. Contoh: /home/user/.ssh/authorized_keys
 
 ## RELATED LINKS
 

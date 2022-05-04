@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultContext.md
-ms.openlocfilehash: 076ac91c78f94449092eb9dcb35b735608bff75b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 66ae1069b906d3f8440e3cc16e6c36e200a5a00c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802476"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697682"
 ---
 # Set-AzRecoveryServicesVaultContext
 
 ## SYNOPSIS
 
 Mengatur konteks vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Set-AzRecoveryServicesVaultContext -Vault <ARSVault> [-DefaultProfile <IAzureCon
 
 Cmdlet **Set-AzRecoveryServicesVaultContext** mengatur konteks vault untuk layanan Azure Site Recovery.
 
-Peringatan: Cmdlet ini tidak digunakan lagi dalam rilis perubahan yang melanggar di masa mendatang. Tidak akan ada penggantinya. Silakan gunakan parameter -VaultId di semua perintah Layanan Pemulihan ke depannya.
+Peringatan: Cmdlet ini tidak digunakan lagi dalam rilis perubahan yang melanggar di masa mendatang. Tidak akan ada pengganti untuk itu. Silakan gunakan parameter -VaultId di semua perintah Layanan Pemulihan ke depannya.
 
 ## EXAMPLES
 

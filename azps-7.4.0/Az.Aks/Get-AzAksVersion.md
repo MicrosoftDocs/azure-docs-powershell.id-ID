@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksver
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
-ms.openlocfilehash: f862b26ab2d36cf49deb9048794642f69766e7fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45fa83b141d82c05b0b6e24f23bd95c027f2517e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068103"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624702"
 ---
 # Get-AzAksVersion
 
 ## SYNOPSIS
-Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
-Operasi mengembalikan properti dari setiap orkestrator termasuk versi, pemutakhiran yang tersedia dan apakah versi atau pemutakhiran tersebut ada dalam pratinjau.
+Melihat daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
+Operasi mengembalikan properti dari setiap orkestrator termasuk versi, peningkatan yang tersedia, dan apakah versi atau peningkatan tersebut dalam pratinjau.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Get-AzAksVersion -Location <String> [-SubscriptionId <String[]>] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
-Operasi mengembalikan properti dari setiap orkestrator termasuk versi, pemutakhiran yang tersedia dan apakah versi atau pemutakhiran tersebut ada dalam pratinjau.
+Melihat daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
+Operasi mengembalikan properti dari setiap orkestrator termasuk versi, peningkatan yang tersedia, dan apakah versi atau peningkatan tersebut dalam pratinjau.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
+### Contoh 1: Mencantumkan versi yang tersedia untuk membuat kluster Kubernetes terkelola.
 ```powershell
 Get-AzAksVersion -location eastus
 ```
@@ -49,7 +52,7 @@ True              Kubernetes       1.20.9
         True      Kubernetes       1.22.2
 ```
 
-Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
+Melihat daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama kawasan Azure yang didukung.
+Nama wilayah Azure yang didukung.
 
 ```yaml
 Type: System.String
@@ -84,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

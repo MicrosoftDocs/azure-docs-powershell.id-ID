@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: a17d493a933de9b76705cdea871d4aab44ea9fcd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f0dc4d6875a707f725d8ca79a2867ff99b454194
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142736956"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668734"
 ---
 # Get-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Mendapatkan ImmutabilityPolicy dari wadah blob Storage
+Mendapatkan ImmutabilityPolicy dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,37 +41,37 @@ Get-AzRmStorageContainerImmutabilityPolicy -Container <PSContainer> [-Etag <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy dari wadah blob Storage
+Cmdlet **Get-AzRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy dari kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Get ImmutabilityPolicy of a Storage blob container with Storage account name and container name
+### Contoh 1: Dapatkan ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini mendapatkan ImmutabilityPolicy dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
 
-### Contoh 2: Get ImmutabilityPolicy of a Storage blob container with Storage account object and container name
+### Contoh 2: Dapatkan ImmutabilityPolicy dari kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini mendapatkan ImmutabilityPolicy dari kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Get ImmutabilityPolicy of a Storage blob container with Storage container object
+### Contoh 3: Dapatkan ImmutabilityPolicy dari kontainer blob Storage dengan objek kontainer Storage
 ```
 PS C:\>$containerObject = Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -Name "myContainer"
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -Container $containerObject
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy dari wadah blob Storage dengan objek kontainer Storage.
+Perintah ini mendapatkan ImmutabilityPolicy dari kontainer blob Storage dengan objek kontainer Storage.
 
 ## PARAMETERS
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Etag kebijakan keabadian.
+Kebijakan imutabilitas etag.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

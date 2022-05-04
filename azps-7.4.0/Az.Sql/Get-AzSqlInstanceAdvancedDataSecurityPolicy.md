@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceAdvancedDataSecurityPolicy.md
-ms.openlocfilehash: 2b809161c0c31ecee2807891e94199b3f829e7d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8300b5f7bd17249300ca93f0a668ef072ca6d5ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707518"
 ---
 # Get-AzSqlInstanceAdvancedDataSecurityPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan Keamanan Data Tingkat Lanjut dari instans terkelola.
+Mendapatkan kebijakan Advanced Data Security dari instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceadvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzSqlInstanceAdvancedDataSecurityPolicy [-InputObject <AzureSqlManagedInstan
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceAdvancedDataSecurityPolicy** mengambil kebijakan Keamanan Data Tingkat Lanjut dari instans terkelola.
+Cmdlet **Get-AzSqlInstanceAdvancedDataSecurityPolicy** mengambil kebijakan Advanced Data Security dari instans terkelola.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan instans terkelola Keamanan Data Tingkat Lanjut
+### Contoh 1: Mendapatkan Advanced Data Security instans terkelola
 ```powershell
 Get-AzSqlInstanceAdvancedDataSecurityPolicy `
             -ResourceGroupName "ResourceGroup01" `
@@ -43,7 +46,7 @@ ManagedInstanceName          : ManagedInstance01
 IsEnabled                    : True
 ```
 
-### Contoh 2: Mendapatkan instans terkelola Keamanan Data Tingkat Lanjut dari sumber daya instans terkelola
+### Contoh 2: Mendapatkan Advanced Data Security instans terkelola dari sumber daya instans terkelola
 ```powershell
 Get-AzSqlInstance `
            -ResourceGroupName "ResourceGroup01" `
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans terkelola untuk digunakan dengan operasi kebijakan Keamanan Data Tingkat Lanjut
+Objek instans terkelola untuk digunakan dengan operasi kebijakan Advanced Data Security
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Database nama instans yang dikelola.
+SQL Database nama instans terkelola.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

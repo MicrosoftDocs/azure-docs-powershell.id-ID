@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRulesetVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRulesetVersion.md
-ms.openlocfilehash: 9f22787f57901b79e02f1442c6cd3447c62bba03
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54fc0d42500403a964148b6b1716892350228223
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803322"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597632"
 ---
 # Get-AzPurviewSystemScanRulesetVersion
 
 ## SYNOPSIS
 Mencantumkan versi aturan pemindaian sistem di Katalog data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewsystemscanrulesetversion) untuk informasi terbaru.
 
 ## SYNTAX
 

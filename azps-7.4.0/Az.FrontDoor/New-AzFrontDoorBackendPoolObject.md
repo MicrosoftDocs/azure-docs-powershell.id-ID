@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
-ms.openlocfilehash: f2237c7a68b66afee0db27e11b062131c630a022
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c74035f2149308633ab14c6b2d22b0650dd1cc26
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941113"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710285"
 ---
 # New-AzFrontDoorBackendPoolObject
 
 ## SYNOPSIS
-Membuat objek PSBackendPool untuk pembuatan Pintu Depan
+Membuat objek PSBackendPool untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorBackendPoolObject -ResourceGroupName <String> -Name <String> -Fro
 ```
 
 ## DESCRIPTION
-Membuat objek PSBackendPool untuk pembuatan Pintu Depan
+Membuat objek PSBackendPool untuk pembuatan Front Door
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ Name                    : backendpool1
 Type                    :
 ```
 
-Membuat objek PSBackendPool untuk pembuatan Pintu Depan
+Membuat objek PSBackendPool untuk pembuatan Front Door
 
 ## PARAMETERS
 
 ### -Backend
-Kumpulan backend untuk kolam ini.
+Set backend untuk kumpulan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackend[]
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan tempat aturan perutean ini berada.
+Nama Front Door tempat aturan perutean ini berada.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSettingsName
-Nama pengaturan penyeimbangan muatan untuk kumpulan backend ini
+Nama pengaturan penyeimbangan beban untuk kumpulan backend ini
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama BackendPool.
 
 ```yaml
@@ -159,11 +162,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

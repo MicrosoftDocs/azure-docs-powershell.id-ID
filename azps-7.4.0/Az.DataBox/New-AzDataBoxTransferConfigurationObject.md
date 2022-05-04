@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
-ms.openlocfilehash: aee475f70a60d03298d38190910fdd7c5f81bb39
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e2dcb011e4ea0fbc91ba5fddf282351c913154f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598334"
 ---
 # New-AzDataBoxTransferConfigurationObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk TransferConfiguration.
+Buat objek dalam memori untuk TransferConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxtransferconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxTransferConfigurationObject -Type <TransferConfigurationType>
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk TransferConfiguration.
+Buat objek dalam memori untuk TransferConfiguration.
 
 ## EXAMPLES
 
@@ -40,9 +43,9 @@ Membuat objek dalam memori untuk pekerjaan ekspor TransferConfiguration
 ## PARAMETERS
 
 ### -TransferAllDetail
-Peta tipe filter dan detail untuk mentransfer semua data.
+Peta jenis filter dan detail untuk mentransfer semua data.
 Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll.
-Untuk membangun, lihat bagian CATATAN untuk properti TRANSFERALLDETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti TRANSFERALLDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.ITransferConfigurationTransferAllDetails
@@ -57,9 +60,9 @@ Accept wildcard characters: False
 ```
 
 ### -TransferFilterDetail
-Peta tipe filter dan detail yang akan difilter.
+Peta jenis filter dan detail untuk difilter.
 Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
-Untuk membangun, lihat bagian CATATAN untuk properti TRANSFERFILTERDETAIL dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti TRANSFERFILTERDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.ITransferConfigurationTransferFilterDetails
@@ -73,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe konfigurasi untuk transfer.
+### -Type
+Jenis konfigurasi untuk transfer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Support.TransferConfigurationType
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -106,22 +109,22 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TRANSFERALLDETAIL <ITransferConfigurationTransferAllDetails>: Peta tipe filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll.
-  - `[IncludeDataAccountType <DataAccountType?>]`: Tipe akun data
+TRANSFERALLDETAIL <ITransferConfigurationTransferAllDetails>: Peta jenis filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll.
+  - `[IncludeDataAccountType <DataAccountType?>]`: Jenis akun data
   - `[IncludeTransferAllBlob <Boolean?>]`: Untuk menunjukkan apakah semua blob Azure harus ditransfer
   - `[IncludeTransferAllFile <Boolean?>]`: Untuk menunjukkan apakah semua Azure Files harus ditransfer
 
-TRANSFERFILTERDETAIL <ITransferConfigurationTransferFilterDetails>: Peta tipe filter dan detail untuk difilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
+TRANSFERFILTERDETAIL <ITransferConfigurationTransferFilterDetails>: Peta jenis filter dan detail untuk difilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
   - `[AzureFileFilterDetailFilePathList <String[]>]`: Daftar jalur lengkap file yang akan ditransfer.
-  - `[AzureFileFilterDetailFilePrefixList <String[]>]`: Daftar prefiks file Azure yang akan ditransfer.
-  - `[AzureFileFilterDetailFileShareList <String[]>]`: Daftar pembagian file yang akan ditransfer.
-  - `[BlobFilterDetailBlobPathList <String[]>]`: Daftar jalur lengkap dari blob yang akan ditransfer.
-  - `[BlobFilterDetailBlobPrefixList <String[]>]`: Daftar prefiks blob Azure yang akan ditransfer.
-  - `[BlobFilterDetailContainerList <String[]>]`: Daftar wadah blob yang akan ditransfer.
-  - `[IncludeDataAccountType <DataAccountType?>]`: Tipe akun data.
+  - `[AzureFileFilterDetailFilePrefixList <String[]>]`: Daftar awalan file Azure yang akan ditransfer.
+  - `[AzureFileFilterDetailFileShareList <String[]>]`: Daftar berbagi file yang akan ditransfer.
+  - `[BlobFilterDetailBlobPathList <String[]>]`: Daftar jalur lengkap blob yang akan ditransfer.
+  - `[BlobFilterDetailBlobPrefixList <String[]>]`: Daftar awalan blob Azure yang akan ditransfer.
+  - `[BlobFilterDetailContainerList <String[]>]`: Daftar kontainer blob yang akan ditransfer.
+  - `[IncludeDataAccountType <DataAccountType?>]`: Jenis akun data.
   - `[IncludeFilterFileDetail <IFilterFileDetails[]>]`: Detail file filter yang akan digunakan untuk transfer data.
-    - `FilterFilePath <String>`: Jalur file yang berisi detail semua item untuk ditransfer.
-    - `FilterFileType <FilterFileType>`: Tipe file filter.
+    - `FilterFilePath <String>`: Jalur file yang berisi detail semua item yang akan ditransfer.
+    - `FilterFileType <FilterFileType>`: Jenis file filter.
 
 ## RELATED LINKS
 

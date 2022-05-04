@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/reset
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Reset-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Reset-AzRedisCache.md
-ms.openlocfilehash: 812abd6274265095e2747817e94f5b7584a98b04
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51add8c6ffbc8837b2e246ffc23755c9ee4e122c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310167"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657576"
 ---
 # Reset-AzRedisCache
 
 ## SYNOPSIS
-Memulai ulang simpul singgahan.
+Menghidupkan ulang simpul cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/reset-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Reset-AzRedisCache [-ResourceGroupName <String>] -Name <String> -RebootType <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzRedisCache** memulai ulang simpul instans Cache Azure Redis.
+Cmdlet **Reset-AzRedisCache** memulai ulang simpul instans Azure Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Hidupkan ulang kedua node
+### Contoh 1: Mulai ulang kedua simpul
 ```powershell
 Reset-AzRedisCache -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -RebootType "AllNodes" -Force
 ```
 
-Perintah ini memulai ulang kedua node untuk singgahan bernama RedisCache06.
+Perintah ini memulai ulang kedua simpul untuk cache bernama RedisCache06.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama singgahan.
+### -Name
+Menentukan nama cache.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootType
-Menentukan simpul atau node mana yang akan dimulai ulang.
+Menentukan simpul atau simpul mana yang akan dimulai ulang.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - PrimaryNode 
 - SecondaryNode 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi singgahan.
+Menentukan nama grup sumber daya yang berisi cache.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShardId
-Menentukan ID shard yang dimulai ulang cmdlet ini untuk cache premium dengan clustering diaktifkan.
+Menentukan ID shard yang dimulai ulang cmdlet ini untuk cache premium dengan pengklusteran diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -150,8 +153,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -182,30 +185,30 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
 ### System.Boolean
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
 [Export-AzRedisCache](./Export-AzRedisCache.md)
 
-[Impor-AzRedisCache](./Import-AzRedisCache.md)
+[Import-AzRedisCache](./Import-AzRedisCache.md)
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)
 

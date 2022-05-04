@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkSession.md
-ms.openlocfilehash: 38f90a8d5b28b0405fc8a0fcf1de5472f15c1419
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 470a39227f599f75b40f219a45884b5020fc3369
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269163"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668482"
 ---
 # Stop-AzSynapseSparkSession
 
 ## SYNOPSIS
 Menghentikan sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsesparksession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzSynapseSparkSession -InputObject <PSSynapseSparkSession> [-PassThru] [-As
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSynapseSparkSession** menghentikan sesi Spark Analitik Synapse.
+Cmdlet **Stop-AzSynapseSparkSession** menghentikan sesi Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -SparkPoolName Co
 $pool | Stop-AzSynapseSparkSession -LivyId 324
 ```
 
-Perintah ini menghentikan sesi Synapse Analytics Spark melalui pipeline.
+Perintah ini menghentikan sesi Synapse Analytics Spark melalui alur.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ $session = Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolN
 $session | Stop-AzSynapseSparkSession
 ```
 
-Perintah ini menghentikan sesi Synapse Analytics Spark melalui pipeline.
+Perintah ini menghentikan sesi Synapse Analytics Spark melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input sesi percikan api, biasanya melewati pipeline.
+Objek input sesi Spark, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkSession
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama kolam renang Synapse Spark.
+Nama kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati pipeline.
+Objek input kumpulan Spark, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -172,7 +175,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

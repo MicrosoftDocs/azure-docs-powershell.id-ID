@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApi.md
-ms.openlocfilehash: 0f0bbd77050c288d9d50c7c6439547ed27db6da8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 455476219a84e5da08ff25eb978bf03d162b29fc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067977"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602006"
 ---
 # Get-AzApiManagementApi
 
 ## SYNOPSIS
 Mendapatkan API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,11 +54,11 @@ Get-AzApiManagementApi -Context <PsApiManagementContext> -GatewayId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementApi** mendapatkan satu atau beberapa API Azure API Management.
+Cmdlet **Get-AzApiManagementApi** mendapatkan satu atau beberapa AZURE API Management API.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua API manajemen
+### Contoh 1: Mendapatkan semua API manajemen
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext
@@ -63,7 +66,7 @@ Get-AzApiManagementApi -Context $ApiMgmtContext
 
 Perintah ini mendapatkan semua API untuk konteks yang ditentukan.
 
-### Contoh 2: Dapatkan API manajemen menurut ID
+### Contoh 2: Mendapatkan API manajemen berdasarkan ID
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext -ApiId $ApiId
@@ -71,7 +74,7 @@ Get-AzApiManagementApi -Context $ApiMgmtContext -ApiId $ApiId
 
 Perintah ini mendapatkan API dengan ID yang ditentukan.
 
-### Contoh 3: Dapatkan API manajemen menurut nama
+### Contoh 3: Dapatkan API manajemen berdasarkan nama
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi"
@@ -79,7 +82,7 @@ Get-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi"
 
 Perintah ini mendapatkan API dengan nama yang ditentukan.
 
-### Contoh 4: Mendapatkan API manajemen dari GatewayId
+### Contoh 4: Mendapatkan API manajemen dengan GatewayId
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext -GatewayId "g01"
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -164,7 +167,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama API yang akan didapatkan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan ID produk yang akan mendapatkan API.
+Menentukan ID produk untuk mendapatkan API.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -213,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Export-AzApiManagementApi](./Export-AzApiManagementApi.md)
 
-[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [New-AzApiManagementApi](./New-AzApiManagementApi.md)
 

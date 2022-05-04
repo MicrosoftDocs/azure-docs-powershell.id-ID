@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
-ms.openlocfilehash: 0eecce3e026a17571cafa9970f1bcdb87894a938
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff93a63ffc526c6c66ec0fc08c1d1978b31789f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799506"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697466"
 ---
 # Get-AzSqlServerAdvisor
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa Penasihat untuk Server Azure SQL.
+Mendapatkan satu atau beberapa Advisor untuk Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveradvisor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlServerAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] -Serv
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa Azure SQL Server Advisors untuk Server Azure SQL.
+Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa Azure SQL Server Advisor untuk Server Azure SQL.
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ RecommendedActions             : {}
 
 Perintah ini mendapatkan daftar semua penasihat untuk server bernama wi-runner-australia-east yang termasuk dalam grup sumber daya bernama WIRunnersProd.
 
-### Contoh 2: Dapatkan penasihat tunggal untuk server
+### Contoh 2: Mendapatkan satu penasihat untuk server
 ```powershell
 Get-AzSqlServerAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex"
 ```
@@ -95,7 +98,7 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mendapatkan penasihat bernama CreateIndex untuk server bernama wi-runner-australia-east.
+Perintah ini mendapatkan advisor bernama CreateIndex untuk server bernama wi-runner-australia-east.
 
 ### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```powershell
@@ -150,9 +153,9 @@ RecommendedActions             : {}
 ```
 
 Perintah ini mendapatkan semua penasihat untuk server bernama wi-runner-australia-east.
-Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan penasihat yang disertakan dalam respons.
+Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan advisor yang disertakan dalam respons.
 
-### Contoh 4: Dapatkan penasihat tunggal dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Mendapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```powershell
 Get-AzSqlServerAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 ```
@@ -172,7 +175,7 @@ RecommendedActions             : {IR_[test_schema]_[test_table_0.0361551]_6C7AE8
                                  IR_[test_schema]_[test_table_0.437714]_6C7AE8CC9C87E7FD5893...}
 ```
 
-Perintah ini mendapatkan penasihat bernama CreateIndex dari server bernama wi-runner-australia-east dengan tindakan yang direkomendasikan yang disertakan dalam respons.
+Perintah ini mendapatkan advisor bernama CreateIndex dari server bernama wi-runner-australia-east dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 
 ### Contoh 5: Mencantumkan semua penasihat untuk server menggunakan pemfilteran
 ```powershell
@@ -206,7 +209,7 @@ Perintah ini mendapatkan daftar semua penasihat untuk server bernama wi-runner-a
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang didapatkan cmdlet ini.
+Menentukan nama advisor yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server untuk penasihat yang diminta cmdlet ini.
+Menentukan nama server untuk advisor yang diminta cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -294,7 +297,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlServerAdvisorModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
-ms.openlocfilehash: 84c0620f54f477553e68664207f36ef2379c21e7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1928809da4db824f45bd44ab57bb149a07a030ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223875"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708975"
 ---
 # Remove-AzExpressRouteConnection
 
 ## SYNOPSIS
 Menghapus ExpressRouteConnection.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressrouteconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Vir
 
 Setelah gateway dibuat, gateway tersambung ke ExpressRouteSite menggunakan perintah New-AzExpressRouteConnection.
 
-Lalu koneksi akan menghapus koneksi menggunakan nama koneksi.
+Kemudian menghapus koneksi menggunakan nama koneksi.
 
 ### Contoh 2
 
@@ -79,7 +82,7 @@ New-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.ResourceGro
 Get-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.ResourceGroupName -ParentResourceName $ExpressRouteGateway.Name -Name "testConnection" | Remove-AzExpressRouteConnection
 ```
 
-Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek piped dari Get-AzExpressRouteConnection.
+Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek yang disalurkan dari Get-AzExpressRouteConnection.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek ExpressRouteConnection untuk diperbarui.
+Objek ExpressRouteConnection yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteConnection
@@ -143,7 +146,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek ExpressRouteConnection untuk dihapus.
+Id sumber daya objek ExpressRouteConnection yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -204,8 +207,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

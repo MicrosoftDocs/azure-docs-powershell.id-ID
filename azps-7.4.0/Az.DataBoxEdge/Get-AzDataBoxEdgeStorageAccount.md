@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: 393de852b1b625d90b7a2042388c400aeda9c6d9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00a150b0c63069969cafb55b52f375c36b56e15e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318537"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627420"
 ---
 # Get-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
 Mendapatkan akun Storage Azure Stack Edge di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzDataBoxEdgeStorageAccount [[-Name] <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageAccount** mendapatkan akun Azure Stack Edge Storage tersedia di perangkat Data Box Edge. Anda dapat menentukan Nama sebagai parameter di cmdlet untuk mendapatkan informasi akun Storage Azure Stack Edge tertentu.
+Cmdlet **Get-AzDataBoxEdgeStorageAccount** mendapatkan akun Storage Edge yang tersedia di perangkat Data Box Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi akun Storage Edge tertentu.
 
 ## EXAMPLES
 

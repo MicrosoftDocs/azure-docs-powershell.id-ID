@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupVault.md
-ms.openlocfilehash: ae8c2a2923cb9ba100d516d325f47f2ecab5d57e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a439e622601221d1c69acb861ed4c52982c139c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063189"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658296"
 ---
 # Remove-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Menghapus sumber daya BackupVault dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 

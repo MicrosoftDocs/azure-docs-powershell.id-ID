@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
-ms.openlocfilehash: fe255ce280d1e6ff817cca9f9fac3a7a47849e0f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b95527d44d1633dcb4791f08ce514fc107c2b85e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939106"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657756"
 ---
 # Get-AzVirtualWanVpnServerConfigurationVpnProfile
 
 ## SYNOPSIS
-Menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien point to site.
+Menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfigurationvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Get-AzVirtualWanVpnServerConfigurationVpnProfile -ResourceId <String> -VpnServer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualWanVpnServerConfigurationVpnProfile** memungkinkan Anda menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site. Hal ini diperlukan untuk konektivitas situs Point to site dari Point ke site client ke Azure P2SVpnGateway.
+Cmdlet **Get-AzVirtualWanVpnServerConfigurationVpnProfile** memungkinkan Anda membuat dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site. Ini diperlukan untuk konektivitas Titik ke situs dari klien Titik ke situs ke Azure P2SVpnGateway.
 
 ## EXAMPLES
 
@@ -75,12 +78,12 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/aa3
              qsEAbWAcYiKfUHFxZzh2hwvtb49dfVtUDA%3D&st=2019-10-25T19%3A52%3A36Z&se=2019-10-25T20%3A52%3A36Z&sp=r&fileExtension=.zip
 ```
 
-Perintah di atas akan menghasilkan dan mengembalikan URL SAS bagi pelanggan untuk mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
+Perintah di atas akan menghasilkan dan mengembalikan Url SAS bagi pelanggan untuk mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
 
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Metode Autentikasi
+Metode autentikasi
 
 ```yaml
 Type: String
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWanObject
-Objek wan virtual.
+Objek virtual wan.
 
 ```yaml
 Type: PSVirtualWan
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfiguration
-VpnServerConfiguration yang terkait dengan VirtualWan ini.
+VpnServerConfiguration yang dikaitkan dengan VirtualWan ini.
 
 ```yaml
 Type: PSVpnServerConfiguration
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfigurationId
-Id vpn server configuraiton objek wan Virtual ini akan dikaitkan dengan.
+Id objek configuraiton server Vpn yang akan dikaitkan dengan Virtual wan ini.
 
 ```yaml
 Type: String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

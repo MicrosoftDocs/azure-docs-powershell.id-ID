@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
-ms.openlocfilehash: 989914bc8632c6a65cf4808a1ba188ea2d18b2e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee7a46e81e8e09e421521da49dde72b77a85085e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744210"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615704"
 ---
 # Add-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP ke gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvirtualnetworkgatewayipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP gateway untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi IP gateway yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -VirtualNetworkGateway
 Menentukan objek **PSVirtualNetworkGateway** .
-Cmdlet ini mengubah objek **PSVirtualNetworkGateway** yang Anda tentukan.
+Cmdlet ini memodifikasi objek **PSVirtualNetworkGateway** yang Anda tentukan.
 Anda dapat menggunakan cmdlet Get-AzVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway** .
 
 ```yaml
@@ -217,8 +220,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,8 +266,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
+[Dapatkan-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
 
-[New-AzVirtualNetworkGatewayIpConfig](./New-AzVirtualNetworkGatewayIpConfig.md)
+[Baru-KonfigIpGatewayJaringanVirtualAz](./New-AzVirtualNetworkGatewayIpConfig.md)
 
 [Remove-AzVirtualNetworkGatewayIpConfig](./Remove-AzVirtualNetworkGatewayIpConfig.md)

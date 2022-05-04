@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
-ms.openlocfilehash: 39b6a937b717d0a9ae1ebe6905e90301e496ce13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7d21e705d267343f20f7a33df56a8954740e1690
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171819"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659790"
 ---
 # Set-AzVMADDomainExtension
 
 ## SYNOPSIS
-Menambahkan ekstensi domain AD ke mesin virtual.
+Menambahkan ekstensi domain AD ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmaddomainextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Set-AzVMADDomainExtension -DomainName <String> [-OUPath <String>] [-JoinOption <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMADDomainExtension** menambahkan ekstensi mesin virtual domain Azure Active Directory (AD) ke mesin virtual.
-Ekstensi ini memungkinkan mesin virtual Anda bergabung dengan domain.
+Cmdlet **Set-AzVMADDomainExtension** menambahkan ekstensi komputer virtual domain Azure Active Directory (AD) ke komputer virtual.
+Ekstensi ini memungkinkan komputer virtual Anda bergabung dengan domain.
 
 ## EXAMPLES
 
@@ -51,10 +54,10 @@ RequestId IsSuccessStatusCode StatusCode ReasonPhrase
 
 ## PARAMETERS
 
-### -Kredensial
-Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
+### -Credential
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Menunjukkan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis dari versi minor ekstensi.
+Menunjukkan bahwa cmdlet ini menonaktifkan peningkatan otomatis versi minor ekstensi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
-Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
 Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinOption
-Menentukan opsi gabungan. Untuk opsi gabungan, lihat [JoinOptions](https://docs.microsoft.com/windows/desktop/api/lmjoin/nf-lmjoin-netjoindomain)
+Menentukan opsi gabung. Untuk opsi gabungan lihat [JoinOptions](https://docs.microsoft.com/windows/desktop/api/lmjoin/nf-lmjoin-netjoindomain)
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama ekstensi domain untuk ditambahkan.
+### -Name
+Menentukan nama ekstensi domain yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ### -OUPath
 Menentukan unit organisasi (OU) untuk akun domain.
 Masukkan nama lengkap OU yang dibedakan dalam tanda kutip.
-Nilai defaultnya adalah OU default untuk objek mesin dalam domain.
+Nilai default adalah unit organisasi default untuk objek komputer di domain.
 
 ```yaml
 Type: System.String
@@ -223,8 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -Hidupkan ulang
-Menunjukkan bahwa cmdlet ini memulai ulang mesin virtual.
-Mulai ulang seringkali diperlukan untuk membuat perubahan efektif.
+Menunjukkan bahwa cmdlet ini memulai ulang komputer virtual.
+Mulai ulang sering diperlukan untuk membuat perubahan efektif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -268,8 +271,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

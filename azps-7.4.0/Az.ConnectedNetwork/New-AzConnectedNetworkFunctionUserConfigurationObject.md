@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionUserConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionUserConfigurationObject.md
-ms.openlocfilehash: aab2241ecdaa4914c56d1bda6cf950c3ccce115d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: db123714e41393c8b42998dc0ce353e833ab616c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065078"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626124"
 ---
 # New-AzConnectedNetworkFunctionUserConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk NetworkFunctionUserConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkfunctionuserconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,15 +42,15 @@ PS C:\> $customData = "I2Nsb3VkLWNvbmZpZwp3cml0ZV9maWxlczoKLSBwYXRoOiAvdmFyL2xpY
 PS C:\> $userconf = New-AzConnectedNetworkFunctionUserConfigurationObject -NetworkInterface $ip1,$ip2 -OSProfileCustomData $customData -RoleName "hpehss"
 ```
 
-Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi IP ke IPv4.
-Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan tipe sakelar vm.
-Lalu menggunakannya untuk membuat objek konfigurasi pengguna dengan hpehs nama peran, data kustom dan array antarmuka jaringan.
+Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi ip ke IPv4.
+Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan jenis sakelar vm.
+Kemudian menggunakannya untuk membuat objek konfigurasi pengguna dengan nama peran hpehss, data kustom, dan array antarmuka jaringan.
 
 ## PARAMETERS
 
 ### -NetworkInterface
 Konfigurasi antarmuka jaringan.
-Untuk membangun, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan membuat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti NETWORKINTERFACE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkInterface[]
@@ -62,20 +65,20 @@ Accept wildcard characters: False
 ```
 
 ### -OSProfileCustomData
-Menentukan string data kustom berkode basis 64.
-String berkode basis 64 didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
+Menentukan string data kustom yang dikodekan base-64.
+String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai file pada komputer virtual.
 Panjang maksimum array biner adalah 65535 byte.
 
 
- **Catatan: Jangan berikan rahasia atau kata sandi apa pun dalam properti customData** 
+ **Catatan: Jangan meneruskan rahasia atau kata sandi apa pun di properti customData** 
 
  Properti ini tidak dapat diperbarui setelah VM dibuat.
 
 
- customData dialihkan ke VM untuk disimpan sebagai file.
-Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
+ customData diteruskan ke VM untuk disimpan sebagai file.
+Untuk informasi selengkapnya lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
 
- Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk mengkustomisasi VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+ Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -147,7 +150,7 @@ NETWORKINTERFACE <INetworkInterface[]>: Konfigurasi antarmuka jaringan.
     - `[Subnet <String>]`: Nilai subnet.
   - `[MacAddress <String>]`: Alamat MAC antarmuka jaringan.
   - `[Name <String>]`: Nama antarmuka jaringan.
-  - `[VMSwitchType <VMSwitchType?>]`: Tipe sakelar VM.
+  - `[VMSwitchType <VMSwitchType?>]`: Jenis sakelar VM.
 
 ## RELATED LINKS
 

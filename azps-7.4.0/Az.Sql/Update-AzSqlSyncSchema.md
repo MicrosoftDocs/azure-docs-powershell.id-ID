@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncSchema.md
-ms.openlocfilehash: 4c16d8a0dce0a47c74c218a474de5e7668d51823
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c2526216a1481bd87ca9155aad83848a68fd9bf7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058095"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660888"
 ---
 # Update-AzSqlSyncSchema
 
 ## SYNOPSIS
 Perbarui skema sinkronisasi untuk database anggota sinkronisasi atau database hub sinkronisasi.
-Ini akan mendapatkan skema database terbaru dari database riil lalu menggunakannya merefresh skema singgahan oleh database metadata Sinkronisasi.
-Jika "SyncMemberName" ditentukan, skema database anggota akan direfresh; jika tidak, ini akan merefresh skema database hub.
+Ini akan mendapatkan skema database terbaru dari database nyata dan kemudian menggunakannya untuk menyegarkan skema yang di-cache oleh database metadata Sinkronisasi.
+Jika "SyncMemberName" ditentukan, itu akan merefresh skema database anggota; jika tidak, itu akan merefresh skema database hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlsyncschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ Cmdlet **Update-AzSqlSyncSchema** memperbarui skema sinkronisasi untuk database 
 Update-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01"
 ```
 
-Perintah ini memperbarui skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01
+Perintah ini memperbarui skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01
 
 ### Contoh 2: Memperbarui skema sinkronisasi untuk database anggota
 ```powershell
 Update-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01" -SyncMemberName "syncMember01"
 ```
 
-Perintah ini memperbarui skema sinkronisasi untuk database anggota dalam sinkronisasi anggota sinkronisasiMember01
+Perintah ini memperbarui skema sinkronisasi untuk database anggota di sync member syncMember01
 
 ## PARAMETERS
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan Apakah mengembalikan grup sinkronisasi tempat cmdlet ini berfungsi
+Menentukan Apakah grup sinkronisasi tempat cmdlet ini berfungsi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,8 +156,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

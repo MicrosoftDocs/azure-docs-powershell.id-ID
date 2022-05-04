@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
-ms.openlocfilehash: a298c791efe69de240027d3a6a60c344c5014690
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f4b67b40c9ad8154b9f6032e525a229e408c5469
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745542"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657918"
 ---
 # Get-AzActivityLogAlert
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
+Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,18 +36,18 @@ Get-AzActivityLogAlert [[-ResourceGroupName] <String>] [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzActivityLogAlert** mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
+Cmdlet **Get-AzActivityLogAlert** mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemberitahuan log aktivitas menurut ID langganan
+### Contoh 1: Mendapatkan pemberitahuan log aktivitas berdasarkan ID langganan
 ```powershell
 Get-AzActivityLogAlert
 ```
 
 Perintah ini mencantumkan semua pemberitahuan log aktivitas untuk langganan saat ini.
 
-### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya tertentu
+### Contoh 2: Mendapatkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan
 ```powershell
 Get-AzActivityLogAlert -ResourceGroupName "Default-activityLogAlerts"
 ```
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemberitahuan log aktivitas.
 
 ```yaml
@@ -91,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya peringatan ada.
-Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string yang tidak kosong.
+Nama grup sumber daya tempat sumber daya pemberitahuan berada.
+Jika Nama tidak null atau kosong, parameter ini harus berisi dan string yang tidak kosong.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -135,8 +138,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzActivityLogAlert](./Set-AzActivityLogAlert.md)
 
-[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
-[Grup Baru-AzAction](./New-AzActionGroup.md)
+[New-AzActionGroup](./New-AzActionGroup.md)
 
 [New-AzActivityLogAlertCondition](./New-AzActivityLogAlertCondition.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveNetworkHardening.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveNetworkHardening.md
-ms.openlocfilehash: 3dfff41d42ed49e2ad0e8449b5f7ce4861be1664
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5203e82dc5ad40ef6afd5ff992fff114ced59d50
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801089"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710572"
 ---
 # Get-AzSecurityAdaptiveNetworkHardening
 
 ## SYNOPSIS
-Mendapatkan daftar sumber daya Pengerasan Jaringan Adaptif dalam lingkup sumber daya yang diperluas.
+Mendapatkan daftar sumber daya Hardening Jaringan Adaptif dalam cakupan sumber daya yang diperluas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityadaptivenetworkhardening) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan daftar sumber daya Pengerasan Jaringan Adaptif dalam lingkup sumber 
 Get-AzSecurityAdaptiveNetworkHardening [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 ## DESCRIPTION
-Pengerasan Jaringan Adaptif dihitung secara otomatis dengan Azure Security Center, gunakan cmdlet ini untuk mendapatkan daftar sumber daya Pengerasan Jaringan Adaptif dalam lingkup sumber daya yang diperluas.
+Penguatan Jaringan Adaptif dihitung secara otomatis dengan Azure Security Center, gunakan cmdlet ini untuk mendapatkan daftar sumber daya Hardening Jaringan Adaptif dalam cakupan sumber daya yang diperluas.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Id                                                                              
 /subscriptions/3eeab341-f466-499c-a8be-85427e154baf7612f869/resourceGroups/myService1/providers/Microsoft.Compute/virtualMachines/myResource1/providers/Microsoft.Security/adaptiveNetworkHardenings/default default Microsoft.Security/adaptiveNetworkHardenings Microsoft.Azure.Commands.SecurityCenter.Models…
 ```
 
-Mendapatkan daftar sumber daya Pengerasan Jaringan Adaptif dalam lingkup sumber daya yang diperluas.
+Mendapatkan daftar sumber daya Hardening Jaringan Adaptif dalam cakupan sumber daya yang diperluas.
 
 ### Contoh 2
 ```powershell
@@ -51,7 +54,7 @@ Id                                                                              
 --                                                                                                                                                                                                                      ----    ----                                         ----------
 /subscriptions/3eeab341-f466-499c-a8be-85427e154baf7612f869/resourceGroups/myService1/providers/Microsoft.Compute/virtualMachines/myResource1/providers/Microsoft.Security/adaptiveNetworkHardenings/default default Microsoft.Security/adaptiveNetworkHardenings Microsoft.Azure.Commands.SecurityCenter.Models…
 ```
-Dapatkan satu sumber daya Pengerasan Jaringan Adaptif
+Mendapatkan satu sumber daya Hardening Jaringan Adaptif
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespace
-Ruang Nama sumber daya.
+Namespace sumber daya.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdaptiveNetworkHardeningResourceName
-Nama sumber daya Pengerasan Jaringan Adaptif.
+Nama sumber daya Penguatan Jaringan Adaptif.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

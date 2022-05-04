@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Import-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Import-AzKeyVaultCertificate.md
-ms.openlocfilehash: 29b31fe60b44a28c716ce25edd908e49bb2af81d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4af59f914fb244f8e2b912627bff4050df6dee3b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000585"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706332"
 ---
 # Import-AzKeyVaultCertificate
 
 ## SYNOPSIS
-Mengimpor sertifikat ke kubah kunci.
+Mengimpor sertifikat ke brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/import-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ Import-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String> -FilePath <S
  [<CommonParameters>]
 ```
 
-### ImporWithPrivateKeyFromString
+### ImportWithPrivateKeyFromString
 ```
 Import-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String> -CertificateString <String>
  [-Password <SecureString>] [-Tag <Hashtable>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ImporWithPrivateKeyFromCollection
+### ImportWithPrivateKeyFromCollection
 ```
 Import-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String>
  [-CertificateCollection] <X509Certificate2Collection> [-Tag <Hashtable>]
@@ -42,14 +45,14 @@ Import-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzKeyVaultCertificate** mengimpor sertifikat ke dalam kubah kunci.
-Anda dapat membuat sertifikat untuk diimpor menggunakan salah satu metode berikut:
-- Gunakan `Add-AzKeyVaultCertificate` untuk membuat permintaan penandatanganan sertifikat dan mengirimkannya ke otoritas sertifikat. Melihat https://docs.microsoft.com/azure/key-vault/certificates/create-certificate-signing-request
-- Gunakan file paket sertifikat yang sudah ada, seperti file .pfx atau .p12, yang berisi sertifikat dan kunci privat.
+Cmdlet **Import-AzKeyVaultCertificate** mengimpor sertifikat ke dalam brankas kunci.
+Anda dapat membuat sertifikat untuk diimpor dengan menggunakan salah satu metode berikut:
+- Gunakan `Add-AzKeyVaultCertificate` untuk membuat permintaan penandatanganan sertifikat dan mengirimkannya ke otoritas sertifikat. Lihat https://docs.microsoft.com/azure/key-vault/certificates/create-certificate-signing-request
+- Gunakan file paket sertifikat yang ada, seperti file .pfx atau .p12, yang berisi sertifikat dan kunci privat.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor sertifikat kubah kunci
+### Contoh 1: Mengimpor sertifikat brankas kunci
 ```powershell
 $Password = ConvertTo-SecureString -String "123" -AsPlainText -Force
 Import-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "ImportCert01" -FilePath "C:\Users\contosoUser\Desktop\import.pfx" -Password $Password
@@ -82,13 +85,13 @@ Created     : 2/8/2016 11:50:43 PM
 Updated     : 2/8/2016 11:50:43 PM
 ```
 
-Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk membuat kata sandi aman, lalu menyimpannya dalam variabel $Password.
-Perintah kedua mengimpor sertifikat bernama ImportCert01 ke dalam kubah kunci CosotosoKV01.
+Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk membuat kata sandi yang aman, lalu menyimpannya dalam variabel $Password.
+Perintah kedua mengimpor sertifikat bernama ImportCert01 ke dalam brankas kunci CosotosoKV01.
 
 ## PARAMETERS
 
 ### -CertificateCollection
-Menentukan kumpulan sertifikat untuk ditambahkan ke kubah kunci.
+Menentukan kumpulan sertifikat untuk ditambahkan ke brankas kunci.
 
 ```yaml
 Type: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
@@ -147,8 +150,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama sertifikat. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) sertifikat dari nama kubah kunci, lingkungan yang saat ini dipilih, dan nama sertifikat.
+### -Name
+Menentukan nama sertifikat. Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) sertifikat dari nama brankas kunci, lingkungan yang saat ini dipilih, dan nama sertifikat.
 
 ```yaml
 Type: System.String
@@ -162,8 +165,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Password
-Menentukan kata sandi untuk berkas sertifikat.
+### -Kata sandi
+Menentukan kata sandi untuk file sertifikat.
 
 ```yaml
 Type: System.Security.SecureString
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -193,8 +196,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci tempat cmdlet ini mengimpor sertifikat.
-Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kubah kunci berdasarkan nama dan lingkungan yang dipilih saat ini.
+Menentukan nama brankas kunci tempat cmdlet ini mengimpor sertifikat.
+Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari brankas kunci berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -208,8 +211,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -258,6 +261,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Hapus-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)
+[Remove-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)
 
 [Membuat dan menggabungkan CSR di Key Vault](https://docs.microsoft.com/azure/key-vault/certificates/create-certificate-signing-request)

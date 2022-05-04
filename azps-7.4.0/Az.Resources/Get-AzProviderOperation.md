@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
-ms.openlocfilehash: 5c6a9d49dfcee7ed9683a4a660e03a767fdd72e0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 81ad137cc3e198b864ae00330bcff10cd05b24c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867474"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610358"
 ---
 # Get-AzProviderOperation
 
 ## SYNOPSIS
-Mendapatkan operasi untuk penyedia sumber daya Azure yang dapat disempurnakan menggunakan Azure RBAC.
+Mendapatkan operasi untuk penyedia sumber daya Azure yang dapat diamankan menggunakan Azure RBAC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azprovideroperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzProviderOperation [[-OperationSearchString] <String>] [-DefaultProfile <IA
 ## DESCRIPTION
 Get-AzProviderOperation mendapatkan operasi yang diekspos oleh penyedia sumber daya Azure.
 Operasi dapat dibuat untuk membuat peran kustom di Azure RBAC.
-Perintah diambil sebagai input string pencarian operasi (dengan karakter wildcard(*) yang mungkin, yang menentukan detail operasi untuk ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi untuk semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
+Perintah mengambil sebagai input string pencarian operasi (dengan kemungkinan karakter wildcard(*) yang menentukan detail operasi yang akan ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi untuk semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Get-AzProviderOperation *
 Get-AzProviderOperation Microsoft.Insights/*
 ```
 
-### Contoh 3: Dapatkan semua tindakan yang dapat dilakukan di mesin virtual
+### Contoh 3: Dapatkan semua tindakan yang dapat dilakukan pada komputer virtual
 ```powershell
 Get-AzProviderOperation */virtualMachines/*
 ```
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationSearchString
-String pencarian operasi (dengan karakter wildcard (*) yang memungkinkan)
+String pencarian operasi (dengan kemungkinan karakter kartubebas (*) )
 
 ```yaml
 Type: System.String
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -91,6 +94,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.PSResourceProviderOperation
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainer.md
-ms.openlocfilehash: 176769bd12a6dca740421c721343df8c6271bcb2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a8e93e3b2a3b75d2b7ef39f34e079eb86b8e5847
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059985"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728834"
 ---
 # New-AzRecoveryServicesAsrProtectionContainer
 
 ## SYNOPSIS
-Membuat Azure Site Recovery Protection Container dalam kain yang ditentukan.
+Membuat Kontainer Azure Site Recovery Protection dalam fabric yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectioncontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzRecoveryServicesAsrProtectionContainer -Name <String> -InputObject <ASRFab
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzRecoveryServicesAsrProtectionContainer membuat Wadah Perlindungan di bawah Azure Site Recovery Fabric yang ditentukan.
+Cmdlet New-AzRecoveryServicesAsrProtectionContainer membuat Kontainer Perlindungan di bawah Azure Site Recovery Fabric yang ditentukan.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ $job = New-AzRecoveryServicesAsrProtectionContainer -Name xyz -Fabric $fabric
 Get-ASRJob -name $job.id
 ```
 
-Memulai pembuatan wadah proteksi dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai pembuatan kontainer perlindungan dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Membuat wadah perlindungan replikasi dalam objek input tertentu (Azure Fabric).
+Membuat kontainer perlindungan replikasi dalam Objek input tertentu (Azure Fabric).
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -69,8 +72,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama wadah perlindungan.
+### -Name
+Nama kontainer perlindungan.
 
 ```yaml
 Type: System.String
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

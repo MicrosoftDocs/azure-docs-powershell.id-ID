@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
-ms.openlocfilehash: e427558e10c109b431b34d9531a128b25537e902
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70a0f610dd918898909ec9a8b0ed411b04d25b53
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944785"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648346"
 ---
 # Import-AzApiManagementApi
 
 ## SYNOPSIS
 Mengimpor API dari file atau URL.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/import-azapimanagementapi) untuk informasi terbaru.
+
 ## SYNTAX
 
-### ImporFromLocalFile (Default)
+### ImportFromLocalFile (Default)
 ```
 Import-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-ApiRevision <String>]
  -SpecificationFormat <PsApiManagementApiFormat> -SpecificationPath <String> [-Path <String>]
@@ -29,7 +32,7 @@ Import-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-
  [-ApiVersion <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ImporFromUrl
+### ImportFromUrl
 ```
 Import-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-ApiRevision <String>]
  -SpecificationFormat <PsApiManagementApiFormat> -SpecificationUrl <String> [-Path <String>]
@@ -39,7 +42,7 @@ Import-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzApiManagementApi** mengimpor API Azure API Management dari file atau URL dalam format Web Application Description Language (WADL), Web Services Description Language (WSDL), atau Swagger.
+Cmdlet **Import-AzApiManagementApi** mengimpor AZURE API Management API dari file atau URL dalam Bahasa Deskripsi Aplikasi Web (WADL), Web Services Description Language (WSDL), atau format Swagger.
 
 ## EXAMPLES
 
@@ -100,9 +103,9 @@ ResourceGroupName             : Api-Default-West-US
 ServiceName                   : contoso
 ```
 
-Perintah ini mengimpor API dari tautan spesifikasi Buka 3.0 yang ditentukan.
+Perintah ini mengimpor API dari tautan spesifikasi Open 3.0 yang ditentukan.
 
-### Contoh 5: Mengimpor API dari Open Api Link ke Dalam Set ApiVersion
+### Contoh 5: Mengimpor API dari Open Api Link ke dalam Set ApiVersion
 
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
@@ -144,7 +147,7 @@ Perintah ini mengimpor API dari dokumen spesifikasi Open 3.0 yang ditentukan dan
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID untuk API yang akan diimpor.
+Menentukan ID untuk api yang akan diimpor.
 Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiType
-Parameter ini opsional dengan nilai default Http. Opsi Soap hanya berlaku ketika mengimpor WSDL dan akan membuat API Passthrough SOAP.
+Parameter ini bersifat opsional dengan nilai default Http. Opsi Soap hanya berlaku saat mengimpor WSDL dan akan membuat SOAP Passthrough API.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiType]
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Api Version of the Api to create. Parameter ini bersifat opsional.
+Versi Api dari Api yang akan dibuat. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersionSetId
-Pengidentifikasi sumber daya untuk Kumpulan Versi Api terkait. Parameter ini bersifat opsional.
+Pengidentifikasi sumber daya untuk Set Versi Api terkait. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur API web sebagai bagian terakhir URL publik API.
+Menentukan jalur API web sebagai bagian terakhir dari URL publik API.
 URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web.
 Panjangnya harus 1 hingga 400 karakter.
 Nilai defaultnya adalah $Null.
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Protokol API Web (http, https). Protokol di mana API tersedia. Parameter ini bersifat opsional. Jika disediakan, protokol akan menimpa protokol yang ditentukan dalam dokumen spesifikasi.
+Protokol API Web (http, https). Protokol tempat API tersedia. Parameter ini bersifat opsional. Jika disediakan, itu akan mengambil alih protokol yang ditentukan dalam dokumen spesifikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSchema[]
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-URL layanan web yang mengekspos API. URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan diumumkan ke publik. Parameter ini bersifat opsional. Jika disediakan, serviceUrl akan menimpa ServiceUrl yang ditentukan dalam dokumen Spesifikasi.
+URL layanan web yang mengekspos API. URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan dibuat publik. Parameter ini bersifat opsional. Jika disediakan, itu akan mengambil alih ServiceUrl yang ditentukan dalam dokumen Spesifikasi.
 
 ```yaml
 Type: System.String
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlEndpointName
-Nama lokal Titik Akhir WSDL (port) yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai default adalah $null.
+Nama lokal Titik Akhir WSDL (port) yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlServiceName
-Nama lokal Layanan WSDL yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai default adalah $null.
+Nama lokal Layanan WSDL yang akan diimpor. Panjangnya harus 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -387,7 +390,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiFormat
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiType, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiType, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

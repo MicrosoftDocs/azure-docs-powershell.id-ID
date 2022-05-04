@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewClassificationRuleVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewClassificationRuleVersion.md
-ms.openlocfilehash: 714b30288f94376ce989f9b89ece78c08a7986a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 06dcdefd4bc9e5b10f64cbd242e6edd9262254f0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869310"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604058"
 ---
 # Get-AzPurviewClassificationRuleVersion
 
 ## SYNOPSIS
 Mencantumkan versi aturan aturan klasifikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewclassificationruleversion) untuk informasi terbaru.
 
 ## SYNTAX
 

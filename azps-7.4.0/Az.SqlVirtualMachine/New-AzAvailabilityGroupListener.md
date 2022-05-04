@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
-ms.openlocfilehash: b4c002f25d00d287940086840b35803de36098f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cdcb6f874a283830918a5dfb7b52dd805ed10046
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632114"
 ---
 # New-AzAvailabilityGroupListener
 
 ## SYNOPSIS
-Membuat Pendengar Grup Ketersediaan baru.
+Membuat Listener Grup Ketersediaan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzAvailabilityGroupListener -AvailabilityGroupName <String> [-Port <Int32>]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzAvailabilityGroupListener membuat Pendengar Grup Ketersediaan baru.
+Cmdlet New-AzAvailabilityGroupListener membuat Listener Grup Ketersediaan baru.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Name         ResourceGroupName GroupName    AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 ```
-Membuat Availability Group Listener AgListener01 baru untuk Availability Group AvailabilityGroup01 di SQL Virtual Machine Group SqlVmGroup01.
+Membuat AgListener01 Listener Grup Ketersediaan baru untuk Availability Group AvailabilityGroup01 di SQL Virtual Machine Group SqlVmGroup01.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat IP Pribadi
+Alamat IP Privat
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Pendengar Grup Ketersediaan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Nomor port AG Listener. Nilai Default adalah 1433.
+Nomor port Pendengar AG. Nilai Default adalah 1433.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbePort
-Probe Port
+Port Pemeriksaan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressResourceId
-Id Sumber Daya Alamat Ip Publik
+Id Sumber Daya Alamat IP Publik
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVirtualMachineId
-Daftar ID Sumber Daya VM Sql
+Daftar ID Sumber Daya Sql VM
 
 ```yaml
 Type: System.String[]
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupName
-SQL nama grup mesin virtual.
+SQL nama grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL objek Grup mesin virtual.
+SQL objek Grup komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -266,8 +269,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

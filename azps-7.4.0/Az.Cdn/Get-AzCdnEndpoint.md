@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpoint.md
-ms.openlocfilehash: 861c72e1480ff1b6a128492b67eee9181d030db4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 28ffe75da63760ae31ab1ba6b5ece6bd7b9905c4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128943"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670444"
 ---
 # Get-AzCdnEndpoint
 
 ## SYNOPSIS
 Mendapatkan titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzCdnEndpoint [-EndpointName <String>] -CdnProfile <PSProfile> [-DefaultProf
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzCdnEndpoint** mendapatkan titik akhir Azure Content Delivery Network (CDN) dan data konfigurasi yang terkait.
+Cmdlet **Get-AzCdnEndpoint** mendapatkan titik akhir Azure Content Delivery Network (CDN) dan data konfigurasi terkait.
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -EndpointName
 Menentukan nama titik akhir.
-Nama titik akhir bukanlah nama host titik akhir.
+Nama titik akhir bukan nama host titik akhir.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

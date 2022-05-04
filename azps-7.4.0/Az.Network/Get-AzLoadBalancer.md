@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancer.md
-ms.openlocfilehash: 9fcaf24e97eaeb5cdd727fc4821b63d525f4bffe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a392751a690711783f7afec5f9f88058049823a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872064"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604310"
 ---
-# Get-AzLoadBalancer
+# Dapatkan-AzLoadBalancer
 
 ## SYNOPSIS
-Mendapatkan penyeimbang beban.
+Mendapatkan load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ Get-AzLoadBalancer [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfi
  [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzLoadBalancer -ResourceGroupName <String> -Name <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancer** mendapatkan satu atau beberapa penyeimbang muat Azure yang terdapat dalam grup sumber daya.
+Cmdlet **Get-AzLoadBalancer** mendapatkan satu atau beberapa penyeimbang muatan Azure yang terkandung dalam grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan load balancer
+### Contoh 1: Mendapatkan load balancer
 ```powershell
 Get-AzLoadBalancer -Name "MyLoadBalancer1" -ResourceGroupName "MyResourceGroup"
 ```
@@ -65,9 +68,9 @@ Sku                      : {
 ```
 
 Perintah ini mendapatkan load balancer bernama MyLoadBalancer.
-Penyeimbang beban harus ada sebelum Anda dapat menjalankan cmdlet ini.
+Load balancer harus ada sebelum Anda dapat menjalankan cmdlet ini.
 
-### Contoh 2: Daftar load balancer menggunakan pemfilteran
+### Contoh 2: Mencantumkan load balancer menggunakan pemfilteran
 ```powershell
 Get-AzLoadBalancer -Name MyLoadBalancer*
 ```
@@ -146,7 +149,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: NoExpand
@@ -197,7 +200,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -215,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzLoadBalancer](./Remove-AzLoadBalancer.md)
 
-[Set-AzLoadBalancer](./Set-AzLoadBalancer.md)
+[Atur-AzLoadBalancer](./Set-AzLoadBalancer.md)
 
 

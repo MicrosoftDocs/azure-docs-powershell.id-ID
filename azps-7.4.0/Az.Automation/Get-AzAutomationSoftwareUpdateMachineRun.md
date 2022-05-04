@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateMachineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateMachineRun.md
-ms.openlocfilehash: 16a458c982f513859fc1f196ce57ea9386e41d0c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 32a8899ff19af81b0dc44abb0a4d49802a000a3e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320085"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626268"
 ---
 # Get-AzAutomationSoftwareUpdateMachineRun
 
 ## SYNOPSIS
-Mendapatkan daftar mesin konfigurasi pembaruan perangkat lunak otomatisasi Azure yang berjalan.
+Mendapatkan daftar eksekusi mesin konfigurasi pembaruan perangkat lunak azure automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsoftwareupdatemachinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +50,12 @@ Get-AzAutomationSoftwareUpdateMachineRun [-SoftwareUpdateRun <SoftwareUpdateRun>
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengembalikan daftar mesin yang dijalankan. Setiap pembaruan perangkat lunak yang dijalankan akan memicu mesin berjalan untuk setiap mesin target konfigurasi pembaruan perangkat lunak. Untuk menjalankan mesin tertentu, berikan parameter Id. Anda bisa mencantumkan semua mesin yang berjalan, semua berjalan untuk komputer tertentu, semua berjalan dengan status tertentu dengan melewati parameter yang terkait.
+Cmdlet ini mengembalikan daftar eksekusi komputer. Setiap eksekusi pembaruan perangkat lunak akan memicu eksekusi komputer untuk setiap komputer target konfigurasi pembaruan perangkat lunak. Untuk mendapatkan eksekusi komputer tertentu, lewati parameter Id. Anda dapat mencantumkan semua eksekusi mesin, semua berjalan untuk komputer tertentu, semua berjalan dengan status tertentu dengan melewati parameter yang sesuai.
 
 ## EXAMPLES
 
 ### Contoh 1
-Contoh ini mengembalikan semua mesin yang gagal dijalankan untuk mesin virtual azure yang ditentukan.
+Contoh ini mengembalikan semua eksekusi komputer yang gagal untuk komputer virtual azure yang ditentukan.
 
 
 ```powershell
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id mesin pembaruan perangkat lunak yang dijalankan.
+Id eksekusi komputer pembaruan perangkat lunak.
 
 ```yaml
 Type: System.Guid
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateRun
-Pembaruan perangkat lunak berjalan.
+Eksekusi pembaruan perangkat lunak.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateRun
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateRunId
-Id dari menjalankan pembaruan perangkat lunak.
+Id eksekusi pembaruan perangkat lunak.
 
 ```yaml
 Type: System.Guid
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status mesin berjalan.
+Status eksekusi komputer.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateMachineRunStatus]
@@ -184,8 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetComputer
-target komputer untuk mesin berjalan.
-Dapat berupa nama komputer non-az atau id sumber daya VM azure.
+komputer target untuk eksekusi komputer.
+Dapat berupa nama komputer non-az atau id sumber daya azure VM.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

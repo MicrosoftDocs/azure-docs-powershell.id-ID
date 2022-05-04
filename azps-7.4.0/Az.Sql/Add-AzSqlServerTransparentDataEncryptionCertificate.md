@@ -5,35 +5,38 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: d02966de2c902a0c03aa9058b41d165d1c0cbc05
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2e32d6731edd68fd8caf9d79eeeddbc7764efd4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671526"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709638"
 ---
 # Add-AzSqlServerTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
 Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlservertransparentdataencryptioncertificate) untuk informasi terbaru.
+
 ## SYNTAX
 
-### AddAzureRmSqlServerTransparentDataEncryptionCertificateDefaultParameterSet (Default)
+### TambahkanAzureRmSqlServerTransparentDataEncryptionCertificateDefaultParameterSet (Default)
 ```
 Add-AzSqlServerTransparentDataEncryptionCertificate [-PassThru] [-ResourceGroupName] <String>
  [-ServerName] <String> [-PrivateBlob] <SecureString> [-Password] <SecureString>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlServerTransparentDataEncryptionCertificateInputObjectParameterSet
+### TambahkanAzureRmSqlServerTransparentDataEncryptionCertificateInputObjectParameterSet
 ```
 Add-AzSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServer] <AzureSqlServerModel>
  [-PrivateBlob] <SecureString> [-Password] <SecureString> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlServerTransparentDataEncryptionCertificateResourceIdParameterSet
+### TambahkanAzureRmSqlServerTransparentDataEncryptionCertificateResourceIdParameterSet
 ```
 Add-AzSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServerResourceId] <String>
  [-PrivateBlob] <SecureString> [-Password] <SecureString> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -41,7 +44,7 @@ Add-AzSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServerResou
 ```
 
 ## DESCRIPTION
-Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk contoh SQL Server yang diberikan
+Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ $server = Get-AzSqlServer -ServerName "YourServerName" -ResourceGroupName "YourR
 Add-AzSqlServerTransparentDataEncryptionCertificate -SqlServerResourceId $server.ResourceId -PrivateBlob $securePrivateBlob -Password $securePassword
 ```
 
-Menambahkan sertifikat TDE ke server menggunakan server resourceId
+Menambahkan sertifikat TDE ke server menggunakan resourceId server
 
 ### Contoh 3
 ```powershell
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada eksekusi Berhasil, mengembalikan objek sertifikat yang ditambahkan.
+Pada Eksekusi yang berhasil, mengembalikan objek sertifikat yang ditambahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
-Kata sandi untuk Sertifikat Enkripsi Data Transparan
+### -Kata sandi
+Kata Sandi untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateBlob
-Blob privat untuk Sertifikat Enkripsi Data Transparan
+Blob Privat untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServer
-Objek input sql server
+Objek input server sql
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerResourceId
-Id sumber daya sql server
+Id sumber daya server sql
 
 ```yaml
 Type: System.String
@@ -201,8 +204,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

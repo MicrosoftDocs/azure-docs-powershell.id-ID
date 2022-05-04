@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAuthenticationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAuthenticationCertificate.md
-ms.openlocfilehash: e41ad52b394b59c4c4826923b2c12d690cd59af4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e258e4e5d5a61593b073b2db64b83e1b1de6f54
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679752"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669597"
 ---
 # Get-AzApplicationGatewayAuthenticationCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat autentikasi untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayauthenticationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzApplicationGatewayAuthenticationCertificate** mendapatkan sertifi
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan sertifikat autentikasi yang ditentukan
+### Contoh 1: Mendapatkan sertifikat autentikasi tertentu
 ```powershell
 $appgw = Get-AzApplicationGateway -ResourceGroupName "rg" -Name "appGwName"
 $cert = Get-AzApplicationGatewayAuthenticationCertificate -Name "cert01" -ApplicationGateway $appgw
@@ -42,7 +45,7 @@ Perintah kedua mendapatkan sertifikat autentikasi bernama cert01 dan menyimpanny
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan nama gateway aplikasi di mana cmdlet ini mendapatkan sertifikat autentikasi.
+Menentukan nama gateway aplikasi tempat cmdlet ini mendapatkan sertifikat autentikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat autentikasi yang didapat cmdlet ini.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -98,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAuthenticationCertificate
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

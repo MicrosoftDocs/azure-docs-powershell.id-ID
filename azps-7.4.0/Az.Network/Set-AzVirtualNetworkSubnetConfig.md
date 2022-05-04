@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 64a5fc0d4eabd9c4be9702d8457938a45f7cb980
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36811216d91067daa805f9de05ad79f51947215c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741906"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664284"
 ---
 # Set-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi subnet untuk jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat jaringan virtual dengan satu subnet. Lalu adalah panggilan Set-AzVirtualNetworkSubnetConfig untuk mengubah AddressPrefix subnet. Hal ini hanya memengaruhi representasi dalam memori jaringan virtual. Set-AzVirtualNetwork kemudian dipanggil untuk mengubah jaringan virtual di Azure.
+Contoh ini membuat jaringan virtual dengan satu subnet. Kemudian adalah panggilan Set-AzVirtualNetworkSubnetConfig untuk memodifikasi AddressPrefix subnet. Ini hanya berdampak pada representasi dalam memori jaringan virtual. Set-AzVirtualNetwork kemudian dipanggil untuk memodifikasi jaringan virtual di Azure.
 
 ### 2: Menambahkan grup keamanan jaringan ke subnet
 ```powershell
@@ -82,9 +85,9 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Lalu membuat grup keamanan jaringan dengan aturan yang diperbolehkan untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk mengubah representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork kemudian dipanggil untuk menulis keadaan yang dimodifikasi kembali ke layanan.
+Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Kemudian membuat grup keamanan jaringan dengan aturan izin untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk memodifikasi representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork kemudian dipanggil untuk menulis status yang dimodifikasi kembali ke layanan.
 
-### 3: Melampirkan Gateway Nat ke subnet
+### 3: Melampirkan Nat Gateway ke subnet
 ```powershell
 $pip = New-AzPublicIpAddress -Name "pip" -ResourceGroupName "natgateway_test" `
    -Location "eastus2" -Sku "Standard" -IdleTimeoutInMinutes 4 -AllocationMethod "static"
@@ -179,7 +182,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi subnet yang dikonfigurasi cmdlet ini.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat di subnet.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkServiceNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat di subnet.
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan Id sumber daya GATEWAY NAT yang terkait dengan konfigurasi subnet.
+Menentukan Id sumber daya NAT Gateway yang terkait dengan konfigurasi subnet.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang terkait dengan grup keamanan jaringan.
+Menentukan objek tabel rute yang terkait dengan kelompok keamanan jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

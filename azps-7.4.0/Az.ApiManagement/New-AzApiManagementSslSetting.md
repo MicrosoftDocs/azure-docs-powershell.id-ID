@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
-ms.openlocfilehash: d2536b575ac4209e1cfc3286007ed342bb00912a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59f712434c65999037a485e2dad098d9c993e1c1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320463"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616136"
 ---
 # New-AzApiManagementSslSetting
 
 ## SYNOPSIS
-Membuat contoh PsApiManagementSslSetting
+Membuat instans PsApiManagementSslSetting
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsslsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ New-AzApiManagementSslSetting [-FrontendProtocol <Hashtable>] [-BackendProtocol 
 ```
 
 ## DESCRIPTION
-Perintah Helper untuk membuat contoh PsApiManagementSslSetting.
+Perintah pembantu untuk membuat instans PsApiManagementSslSetting.
 Perintah ini akan digunakan dengan perintah New-AzApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Pengaturan SSL untuk mengaktifkan TLS 1.0 di Backend dan Frontend
+### Contoh 1: Membuat Pengaturan SSL untuk mengaktifkan TLS 1.0 di Backend dan Frontend
 ```powershell
 $enableTls=@{"Tls10" = "True"}
 New-AzApiManagementSslSetting -FrontendProtocol $enableTls -BackendProtocol $enableTls
@@ -43,7 +46,7 @@ FrontendProtocols BackendProtocols CipherSuites ServerProtocols
 {Tls10}           {Tls10}
 ```
 
-Buat contoh baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) ApiManagement Gateway.
+Buat instans baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) ApiManagement Gateway.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -CipherSuite
-Pengaturan rangkaian sandi Ssl dalam urutan yang ditentukan. Parameter ini bersifat opsional.
+Pengaturan suite sandi Ssl dalam urutan yang ditentukan. Parameter ini bersifat opsional.
 Pengaturan yang valid adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
 
 ```yaml
@@ -128,11 +131,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzRelayHybridConnection.md
-ms.openlocfilehash: 9bab02be837e1be4b96ac8ecdc59e5a0ae78c364
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 414ad9c9870073a6ecea006835488cb7836cb81a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276111"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708670"
 ---
 # Set-AzRelayHybridConnection
 
 ## SYNOPSIS
-Memperbarui deskripsi HibridConnection dalam ruang nama Relai yang ditentukan.
+Memperbarui deskripsi HybridConnection di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/set-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzRelayHybridConnection [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzRelayHybridConnection memperbarui deskripsi untuk HybridConnection dalam ruang nama Relay yang ditentukan.
+Cmdlet Set-AzRelayHybridConnection memperbarui deskripsi untuk HybridConnection di namespace Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Name                        : TestHybirdConnection1
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Memperbarui HybridConnection tertentu dengan deskripsi baru dalam ruang nama yang ditentukan.
+Memperbarui HybridConnection yang ditentukan dengan deskripsi baru di namespace yang ditentukan.
 Contoh ini memperbarui properti UserMetadata dengan nilai baru.
 
 ## PARAMETERS
@@ -110,7 +113,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama HybridConnections.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
+Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

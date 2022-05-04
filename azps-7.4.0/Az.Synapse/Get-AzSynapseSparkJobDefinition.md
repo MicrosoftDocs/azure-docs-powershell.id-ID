@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: e7d6dbf5130db0a033d6b5ab23538306b2b3e838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82af3fba68e17ba862c52f7e323f95a43998a19f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863244"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611744"
 ---
 # Get-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi pekerjaan Spark di ruang kerja.
+Mendapatkan definisi kerja Spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseSparkJobDefinition -WorkspaceObject <PSSynapseWorkspace> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi pekerjaan Spark di ruang kerja. Jika Anda menentukan nama definisi pekerjaan Spark, cmdlet ini mendapatkan informasi tentang definisi pekerjaan Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi pekerjaan Spark di ruang kerja.
+Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi kerja Spark di ruang kerja. Jika Anda menentukan nama definisi kerja Spark, cmdlet ini mendapatkan informasi tentang definisi kerja Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi kerja Spark di ruang kerja.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definis
 Get-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua definisi pekerjaan Spark di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua definisi kerja Spark di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoJobDefinition
 ```
 
-Perintah ini mendapatkan informasi tentang definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang definisi kerja Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSparkJobDefinition -Name ContosoSparkJobDefinition
 ```
 
-Perintah ini mendapatkan informasi tentang definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang definisi kerja Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama definisi pekerjaan Spark.
+### -Name
+Nama definisi kerja Spark.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

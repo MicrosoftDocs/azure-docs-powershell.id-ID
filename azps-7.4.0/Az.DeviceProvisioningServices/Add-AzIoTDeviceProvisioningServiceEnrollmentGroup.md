@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
-ms.openlocfilehash: 86b82d45a1601142904ecbd23d61e4c0e18261d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3275f7a0771235211b5e62f79497942b8518d64c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061605"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644388"
 ---
 # Add-AzIoTDeviceProvisioningServiceEnrollmentGroup
 
 ## SYNOPSIS
-Buat grup pendaftaran perangkat.
+Membuat grup pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningserviceenrollmentgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Add-AzIoTDeviceProvisioningServiceEnrollmentGroup [-ResourceId] <String> -Name <
 ```
 
 ## DESCRIPTION
-Buat grup pendaftaran di Layanan Penyediaan Perangkat Azure IoT Hub.
+Buat grup pendaftaran di Azure IoT Hub Device Provisioning Service.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Buat grup pendaftaran di Layanan Penyediaan Perangkat Azure IoT Hub.
 Add-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1" -AttestationType SymmetricKey
 ```
 
-Membuat pendaftaran dengan tipe pengesahan SymmetricKey
+Membuat pendaftaran dengan jenis pengesahan SymmetricKey
 
 ### Contoh 2
 ```powershell
@@ -80,12 +83,12 @@ $desired.add("version_dps", "dps1")
 Add-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1" -AttestationType SymmetricKey -tag $tag -Desired $desired
 ```
 
-Buat pendaftaran dengan tipe pengesahan SymmetricKey dan status kembar awal.
+Buat pendaftaran dengan jenis pengesahan SymmetricKey dan status kembar awal.
 
 ## PARAMETERS
 
 ### -AllocationPolicy
-Tipe alokasi untuk perangkat yang ditetapkan ke Hub.
+Jenis alokasi untuk perangkat yang ditetapkan ke Hub.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSAllocationPolicy
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Versi API dari layanan penyediaan dalam permintaan alokasi kustom.
+Versi API dari layanan provisi dalam permintaan alokasi kustom.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AttestationType
-Mekanisme Attesasi.
+Mekanisme Pengesahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSAttestationMechanismType
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dikehendaki
-Properti awal yang diinginkan kembar.
+Properti kembar awal yang diinginkan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsName
-Nama Layanan Penyediaan Perangkat IoT
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeEnabled
-Bendera menunjukkan pengaktifan edge.
+Bendera yang menunjukkan pengaktifan tepi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -IotHub
 Nama host IoT Hub target.
-Gunakan daftar yang dipisahkan spasi untuk beberapa Hub IoT.
+Gunakan daftar yang dipisahkan spasi untuk beberapa IoT Hub.
 
 ```yaml
 Type: System.String[]
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubHostName
-Nama host target IoT Hub.
+Nama host IoT Hub target.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup pendaftaran.
 
 ```yaml
@@ -253,8 +256,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryCAName
-Nama sertifikat CA akar utama.
-Jika penetapan dengan sertifikat CA akar diinginkan, maka nama ca akar harus disediakan.
+Nama sertifikat OS akar utama.
+Jika pengesahan dengan sertifikat OS akar diinginkan, maka nama ca akar harus disediakan.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 
 ### -PrimaryCertificate
 Jalur ke file yang berisi sertifikat utama.
-Representasi dasar 64 dari file .cer sertifikat X509 atau jalur file .pem.
+Representasi base-64 dari file .cer sertifikat X509 atau jalur file .pem.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReprovisionPolicy
-Data perangkat yang akan ditangani pada penyediaan ulang ke Iot Hub yang berbeda.
+Data perangkat yang akan ditangani pada provisi ulang ke Iot Hub yang berbeda.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSReprovisionType
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -377,8 +380,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryCAName
-Nama sertifikat CA akar sekunder.
-Jika penetapan dengan sertifikat CA akar diinginkan, maka nama ca akar harus disediakan.
+Nama sertifikat OS akar sekunder.
+Jika pengesahan dengan sertifikat OS akar diinginkan, maka nama ca akar harus disediakan.
 
 ```yaml
 Type: System.String
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 
 ### -SecondaryCertificate
 Jalur ke file yang berisi sertifikat sekunder.
-Representasi dasar 64 dari file .cer sertifikat X509 atau jalur file .pem.
+Representasi base-64 dari file .cer sertifikat X509 atau jalur file .pem.
 
 ```yaml
 Type: System.String
@@ -453,8 +456,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -469,7 +472,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -485,7 +488,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

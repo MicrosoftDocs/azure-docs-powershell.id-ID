@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
-ms.openlocfilehash: f7ecad86acc269d715761766daa7f12ab3464a64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63ede3f444bfa55be8069f7a2ee40765f1a4a9ae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314001"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657738"
 ---
 # Get-AzRouteFilter
 
 ## SYNOPSIS
 Mendapatkan filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutefilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRouteFilter [-Name <String>] [-ResourceGroupName <String>] [-DefaultProfil
  [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzRouteFilter -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -54,7 +57,7 @@ Rules             : []
 Peerings          : []
 ```
 
-Perintah ini mendapatkan filter rute bernama RouteFilter01 milik grup sumber daya bernama ResourceGroup01.
+Perintah ini mendapatkan filter rute bernama RouteFilter01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
 
 ### Contoh 2
 ```powershell
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -188,9 +191,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Filter AzRoute Baru](./New-AzRouteFilter.md)
+[New-AzRouteFilter](./New-AzRouteFilter.md)
 
-[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)
 

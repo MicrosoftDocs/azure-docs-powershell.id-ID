@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleManagementPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleManagementPolicyAssignment.md
-ms.openlocfilehash: bb62d4a8b1726d8807a6c57d1ed4d5f1714d4ede
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8cff900102e0731da29d1ed4a163a3929cb629e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801576"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646060"
 ---
 # New-AzRoleManagementPolicyAssignment
 
 ## SYNOPSIS
 Membuat penetapan kebijakan manajemen peran
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azrolemanagementpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

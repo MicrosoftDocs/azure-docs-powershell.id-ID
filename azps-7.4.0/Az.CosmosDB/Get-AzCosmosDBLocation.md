@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBLocation.md
-ms.openlocfilehash: a9098031e5e8eb698b4e7acf3dbf5e90b2ed68aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ffaffecf83129e45c8acfcfa2fa2a0de97797c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876258"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694084"
 ---
 # Get-AzCosmosDBLocation
 
 ## SYNOPSIS
-Daftar lokasi Azure Cosmos DB dan propertinya.
+Mencantumkan lokasi Azure Cosmos DB dan propertinya.
 Dapatkan properti lokasi Azure Cosmos DB untuk lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdblocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzCosmosDBLocation [-Location <String>] [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Daftar lokasi Azure Cosmos DB dengan properti lokasinya. Ini termasuk Id Lokasi, Nama, Tipe, DukunganAvailabilityZone, IsResidencyRestricted dan BackupStorageRedundancies.
+Mencantumkan lokasi Azure Cosmos DB dengan properti lokasinya. Ini termasuk Id Lokasi, Nama, Jenis, SupportsAvailabilityZone, IsResidencyRestricted dan BackupStorageRedundancies.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Properti Lokasi Akun Azure Cosmos DB untuk Lokasi Tertentu
+### Contoh 1: Mendapatkan Properti Lokasi Akun Azure Cosmos DB untuk Lokasi Tertentu
 ```powershell
 Get-AzCosmosDBLocation -Location "Central US"
 
@@ -55,7 +58,7 @@ Get-AzCosmosDBLocation -Location "Central US" | ConvertTo-Json
 }
 ```
 
-### Contoh 2: Daftar Lokasi Akun Azure Cosmos DB dan propertinya
+### Contoh 2: Mencantumkan Lokasi Akun Azure Cosmos DB dan propertinya
 ```powershell
 Get-AzCosmosDBLocation
 
@@ -134,11 +137,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
-ms.openlocfilehash: 246cf964bdc760823f745e6c80b38497ce47d7bc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d12c2acffec91298431b0ac2c61a1623ae64ed49
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276075"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621390"
 ---
 # Set-AzWcfRelay
 
 ## SYNOPSIS
-Memperbarui deskripsi WcfRelay dalam ruang nama Relay yang ditentukan.
+Memperbarui deskripsi WcfRelay di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/set-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzWcfRelay memperbarui deskripsi untuk WcfRelay dalam ruang nama Relay yang ditentukan.
+Cmdlet Set-AzWcfRelay memperbarui deskripsi untuk WcfRelay di namespace Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Name                        : TestWCFRelay
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Memperbarui WcfRelay yang ditentukan dengan deskripsi baru dalam ruang nama yang ditentukan.
+Memperbarui WcfRelay yang ditentukan dengan deskripsi baru di namespace yang ditentukan.
 Contoh ini memperbarui properti UserMetadata dengan nilai baru.
 
 ## PARAMETERS
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WcfRelay.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Gets or sets usermetadata is a placeholder to store user-defined string data for the WcfRelay endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
+Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir WcfRelay. misalnya ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -176,8 +179,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

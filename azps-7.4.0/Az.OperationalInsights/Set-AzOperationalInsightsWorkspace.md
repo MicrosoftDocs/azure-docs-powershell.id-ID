@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: 6ef313462d2140730a2d52b639f65a3e8e4d54f6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1cea7170247db913c6ec0af4eebb22143456f6d6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223767"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707842"
 ---
 # Set-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,19 +50,19 @@ Cmdlet **Set-AzOperationalInsightsWorkspace** mengubah konfigurasi ruang kerja.
 Set-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" -Sku Standard -Tags @{ "Department" = "IT" }
 ```
 
-Perintah ini mengubah SKU dan tag ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini memodifikasi SKU dan tag ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Memperbarui ruang kerja menggunakan saluran
+### Contoh 2: Memperbarui ruang kerja dengan menggunakan alur
 ```powershell
 Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Set-AzOperationalInsightsWorkspace -Sku "Premium"
 ```
 
-Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu mengirimkannya ke cmdlet **Set-AzOperationalInsightsWorkspace** menggunakan operator pipeline untuk mengatur SKU ke Premium.
+Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu meneruskannya ke cmdlet **Set-AzOperationalInsightsWorkspace** dengan menggunakan operator alur untuk mengatur SKU ke Premium.
 
 ## PARAMETERS
 
 ### -DailyQuotaGb
-Batas volume harian untuk konsumsi - angka
+Batas volume harian untuk penyerapan - angka
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceCmkForQuery
-Dapatkan atau kumpulan menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
+Dapatkan atau set menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses penyerapan ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses penyerapan ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForQuery
-Tipe akses jaringan untuk mengakses kueri ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses kueri ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Penyimpanan data ruang kerja dalam hari. 730 hari adalah maksimum yang diperbolehkan untuk semua Sku lainnya
+Retensi data ruang kerja dalam beberapa hari. 730 hari adalah maksimum yang diizinkan untuk semua Sku lainnya
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku, nilai perlu kelipatan 100 dan di atas 0.
+Kapasitas Sku, nilai harus kelipatan 100 dan di atas 0.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -239,7 +242,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja yang akan diperbarui.
 
 ```yaml
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

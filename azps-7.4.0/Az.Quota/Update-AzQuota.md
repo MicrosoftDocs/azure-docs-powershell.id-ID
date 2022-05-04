@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/update-azq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
-ms.openlocfilehash: 0a88e67f4702fc5d50c7f084693d1515148118d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c4bc206753c179d71ce183e05e0ba1027074a8e8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802800"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665746"
 ---
 # Update-AzQuota
 
 ## SYNOPSIS
 Perbarui batas kuota untuk sumber daya tertentu ke nilai yang ditentukan:\n1.
-Gunakan operasi Usages-GET dan Quota-GET untuk menentukan sisa kuota sumber daya tertentu dan menghitung batas kuota baru.
-Langkah-langkah ini dirinci dalam [contoh ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).\n2.
+Gunakan operasi Usages-GET dan Quota-GET untuk menentukan kuota yang tersisa untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
+Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
 Silakan periksa URI di header lokasi untuk status detail permintaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/update-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Update-AzQuota -InputObject <IQuotaIdentity> [-Limit <ILimitJsonObject>] [-Name 
 
 ## DESCRIPTION
 Perbarui batas kuota untuk sumber daya tertentu ke nilai yang ditentukan:\n1.
-Gunakan operasi Usages-GET dan Quota-GET untuk menentukan sisa kuota sumber daya tertentu dan menghitung batas kuota baru.
-Langkah-langkah ini dirinci dalam [contoh ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).\n2.
+Gunakan operasi Usages-GET dan Quota-GET untuk menentukan kuota yang tersisa untuk sumber daya tertentu dan untuk menghitung batas kuota baru.
+Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
 Silakan periksa URI di header lokasi untuk status detail permintaan.
 
@@ -60,7 +63,7 @@ PublicIPAddresses Public IP Addresses - Basic                 0
 
 Perintah ini memperbarui batas kuota untuk sumber daya tertentu ke nilai yang ditentukan.
 
-### Contoh 2: Memperbarui batas kuota untuk sumber daya tertentu ke nilai tertentu menurut pipeline
+### Contoh 2: Memperbarui batas kuota untuk sumber daya tertentu ke nilai yang ditentukan berdasarkan alur
 ```powershell
 $limit = New-AzQuotaLimitObject -Value 1007
 Get-AzQuota -Scope "subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Network/locations/eastus2" -ResourceName "PublicIPAddresses" | Update-AzQuota -Name "PublicIPAddresses" -Limit $limit
@@ -72,12 +75,12 @@ Name              NameLocalizedValue          UsageUsagesType UsageValue ETag
 PublicIPAddresses Public IP Addresses - Basic                 0
 ```
 
-Perintah ini memperbarui batas kuota untuk sumber daya tertentu ke nilai tertentu menurut pipeline.
+Perintah ini memperbarui batas kuota untuk sumber daya tertentu ke nilai yang ditentukan menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Quota.Models.IQuotaIdentity
@@ -121,7 +124,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Limit
+### -Batas
 Properti batas kuota sumber daya.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -ResourceName
 Nama sumber daya untuk penyedia sumber daya tertentu.
-Misalnya:
+Contohnya:
 - Nama SKU untuk Microsoft.Compute
 - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Nama tipe sumber daya.
+Nama jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -199,11 +202,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
+### -Cakupan
 Target URI sumber daya Azure.
-Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi List GET.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
+`{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -272,7 +275,7 @@ INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
   - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: Target URI sumber daya Azure. Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi List GET. Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/` Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
-ms.openlocfilehash: ffb0197f82741ea631101b55f34e2cdc39968678
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82a027f3fea28bb57c4399a90acc1f8b14be2558
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878400"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670372"
 ---
 # Get-AzCdnProfileResourceUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan sumber daya profil CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofileresourceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ ResourceType Unit  CurrentValue Limit
 endpoint     count            2    25
 ```
 
-Contoh ini memperlihatkan batas sumber daya dan penggunaan profil saat ini dengan nama 'profil1'.
+Contoh ini menunjukkan batas sumber daya dan penggunaan profil saat ini dengan nama 'profile1'.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

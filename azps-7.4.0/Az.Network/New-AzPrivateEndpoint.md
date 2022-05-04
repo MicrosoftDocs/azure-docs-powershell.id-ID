@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateEndpoint.md
-ms.openlocfilehash: a7d4c5e05d9101a0b68ab34ceb5103fb9fb29d68
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 19518847e51213c1b25aec3bdb63cfda97885c09
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313623"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709048"
 ---
 # New-AzPrivateEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ New-AzPrivateEndpoint -Name <String> -ResourceGroupName <String> -Location <Stri
 
 ## DESCRIPTION
 
-Cmdlet **New-AzPrivateEndpoint** membuat titik akhir pribadi.
+Cmdlet **New-AzPrivateEndpoint** membuat titik akhir privat.
 
 ## EXAMPLES
 
 ### Contoh 1: Membuat titik akhir privat
 
-Contoh berikut membuat titik akhir privat dengan ID layanan tautan privat tertentu dalam subnet tertentu dalam jaringan virtual.
+Contoh berikut membuat titik akhir privat dengan ID layanan tautan privat tertentu di subnet yang ditentukan dalam jaringan virtual.
 
 ```powershell
 $virtualNetwork = Get-AzVirtualNetwork -ResourceName 'myVirtualNetwork' -ResourceGroupName 'myResourceGroup'
@@ -47,7 +50,7 @@ New-AzPrivateEndpoint -Name 'MyPrivateEndpoint' -ResourceGroup 'myResourceGroup'
 ## PARAMETERS
 
 ### -ApplicationSecurityGroup
-Grup keamanan aplikasi
+Kelompok keamanan aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -139,7 +142,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 
 Jangan meminta konfirmasi untuk menimpa sumber daya.
 
@@ -186,7 +189,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 Nama titik akhir privat.
 
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -Tag
 
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0='value0';key1=$null;key2='value2'}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0='value0';key1=$null;key2='value2'}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -266,9 +269,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -320,6 +323,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzPrivateEndpoint](./Get-AzPrivateEndpoint.md)
 
-[Hapus-AzPrivateEndpoint](./Remove-AzPrivateEndpoint.md)
+[Remove-AzPrivateEndpoint](./Remove-AzPrivateEndpoint.md)
 
 [New-AzPrivateLinkServiceConnection](./New-AzPrivateLinkServiceConnection.md)

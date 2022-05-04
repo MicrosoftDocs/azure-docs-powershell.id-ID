@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: f317ac952fcfb74f7af3248b1bedf08bbfc556c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62ae224724b37a920ad0008ba5612c7f6e9c2a29
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872442"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665836"
 ---
 # Add-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
-Menambahkan kumpulan alamat ujung belakang ke gateway aplikasi.
+Menambahkan kumpulan alamat back-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaybackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,31 +30,31 @@ Add-AzApplicationGatewayBackendAddressPool -ApplicationGateway <PSApplicationGat
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayBackendAddressPool** menambahkan kumpulan alamat ujung belakang ke gateway aplikasi.
-Alamat ujung belakang dapat ditentukan menggunakan alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
+Cmdlet **Add-AzApplicationGatewayBackendAddressPool** menambahkan kumpulan alamat back-end ke gateway aplikasi.
+Alamat back-end dapat ditentukan menggunakan alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kumpulan alamat back-end menggunakan FQDN server back-end
+### Contoh 1: Menambahkan kumpulan alamat back-end dengan menggunakan FQDN server back-end
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $AppGw = Add-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name "Pool02" -BackendFqdns "contoso1.com", " contoso1.com"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan kumpulan alamat ujung belakang gateway aplikasi yang disimpan di $AppGw menggunakan FQDN.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan kumpulan alamat back-end gateway aplikasi yang disimpan di $AppGw dengan menggunakan FQDN.
 
-### Contoh 2: Menambahkan kumpulan alamat ujung belakang dengan menggunakan alamat IP server backend
+### Contoh 2: Menambahkan kumpulan alamat back-end dengan menggunakan alamat IP server backend
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $AppGw = Add-AzApplicationGatewayBackendAddressPool -ApplicationGateway $ AppGw -Name "Pool02" -BackendIPAddresses "10.10.10.10", "10.10.10.11"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan kumpulan alamat ujung belakang gateway aplikasi yang disimpan di $AppGw menggunakan alamat IP.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan kumpulan alamat back-end gateway aplikasi yang disimpan di $AppGw dengan menggunakan alamat IP.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menambahkan kumpulan alamat ujung belakang.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan kumpulan alamat back-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendFqdns
-Menentukan daftar FQDN backend yang ditambahkan cmdlet ini sebagai kumpulan server ujung-belakang.
+Menentukan daftar FQDN backend yang ditambahkan cmdlet ini sebagai kumpulan server back-end.
 
 ```yaml
 Type: System.String[]
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendIPAddresses
-Menentukan daftar alamat IP ujung-belakang yang ditambahkan cmdlet ini sebagai kumpulan server ujung-belakang.
+Menentukan daftar alamat IP back-end yang ditambahkan cmdlet ini sebagai kumpulan server back-end.
 
 ```yaml
 Type: System.String[]
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan server ujung-belakang yang ditambahkan cmdlet ini.
+### -Name
+Menentukan nama kumpulan server back-end yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: e832cd16c6d393aba3b5c3854b6b9fa868570de8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a2c4603679b86853fa9c6f0c6bdb2cddb1e2fff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994897"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668608"
 ---
 # Get-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk wadah penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses tersimpan untuk kontainer penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragecontainerstoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,29 +30,29 @@ Get-AzStorageContainerStoredAccessPolicy [-Container] <String> [[-Policy] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageContainerStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses yang disimpan untuk wadah penyimpanan Azure.
+Cmdlet **Get-AzStorageContainerStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses tersimpan untuk kontainer penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan akses yang disimpan dalam wadah penyimpanan
+### Contoh 1: Mendapatkan kebijakan akses tersimpan dalam kontainer penyimpanan
 ```
 PS C:\>Get-AzStorageContainerStoredAccessPolicy -Container "Container07" -Policy "Policy22"
 ```
 
-Perintah ini mendapatkan kebijakan akses bernama Policy22 dalam wadah penyimpanan bernama Container07.
+Perintah ini mendapatkan kebijakan akses bernama Policy22 dalam kontainer penyimpanan bernama Container07.
 
-### Contoh 2: Dapatkan semua kebijakan akses yang disimpan dalam wadah penyimpanan
+### Contoh 2: Mendapatkan semua kebijakan akses tersimpan dalam kontainer penyimpanan
 ```
 PS C:\>Get-AzStorageContainerStoredAccessPolicy -Container "Container07"
 ```
 
-Perintah ini mendapatkan semua kebijakan akses dalam wadah penyimpanan bernama Container07.
+Perintah ini mendapatkan semua kebijakan akses dalam kontainer penyimpanan bernama Container07.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -65,9 +68,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Menentukan nama wadah penyimpanan Azure Anda.
+Menentukan nama kontainer penyimpanan Azure Anda.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses azure yang disimpan.
+Menentukan kebijakan akses tersimpan Azure.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

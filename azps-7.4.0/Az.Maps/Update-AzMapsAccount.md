@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
-ms.openlocfilehash: 4366ce1cd77121c5399112cd0b84679c885dd1b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc5f96b446d7f71e1d20105e4b141946c54529ea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873324"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625278"
 ---
 # Update-AzMapsAccount
 
 ## SYNOPSIS
 Memperbarui Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/update-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 Perintah ini memperbarui Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
-### Contoh 2: Memperbarui Akun Peta menurut saluran
+### Contoh 2: Memperbarui Akun Peta menurut alur
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 | Update-AzMapsAccount -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -64,7 +67,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini memperbarui akun Peta menurut saluran.
+Perintah ini memperbarui Akun Peta menurut alur.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## PARAMETERS
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-Memungkinkan pengalihkan fungsionalitas pada Azure Policy untuk menonaktifkan dukungan autentikasi lokal Azure Maps.
-Tindakan ini akan menonaktifkan autentikasi Kunci Bersama dari penggunaan apa pun.
+Memungkinkan pengalih fungsionalitas pada Azure Policy menonaktifkan dukungan autentikasi lokal Azure Maps.
+Ini akan menonaktifkan autentikasi Kunci Bersama dari penggunaan apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
-Dapatkan atau Atur properti Kind.
+### -Kind
+Mendapatkan atau Mengatur properti Jenis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Support.Kind
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Akun Peta.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Mendapatkan atau mengatur daftar pasangan nilai kunci yang menjelaskan sumber daya.
+Mendapatkan atau menetapkan daftar pasangan nilai kunci yang menjelaskan sumber daya.
 Tag ini dapat digunakan dalam menampilkan dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
 Maksimal 15 tag dapat disediakan untuk sumber daya.
 Setiap tag harus memiliki kunci yang tidak lebih besar dari 128 karakter dan nilai tidak lebih besar dari 256 karakter.
@@ -209,8 +212,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -264,7 +267,7 @@ INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS
