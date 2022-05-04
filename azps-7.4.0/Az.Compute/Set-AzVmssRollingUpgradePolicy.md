@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssRollingUpgradePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssRollingUpgradePolicy.md
-ms.openlocfilehash: f110baa409222f699e3ee9cc44755d08adf8f1e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ba5b9c89694946a26907caccf65a78f4f614035
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005211"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585776"
 ---
 # Set-AzVmssRollingUpgradePolicy
 
 ## SYNOPSIS
-Mengatur properti kebijakan pemutakhiran bergulir VMSS.
+Mengatur properti kebijakan peningkatan bergulir VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssrollingupgradepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzVmssRollingUpgradePolicy [-VirtualMachineScaleSet] <PSVirtualMachineScaleS
 ```
 
 ## DESCRIPTION
-Mengatur properti kebijakan pemutakhiran bergulir VMSS.
+Mengatur properti kebijakan peningkatan bergulir VMSS.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Mengatur properti kebijakan pemutakhiran bergulir VMSS.
 Set-AzVmssRollingUpgradePolicy -VirtualMachineScaleSet $vmss -VirtualMachineScaleSet $vmss -MaxBatchInstancePercent 40 -MaxUnhealthyInstancePercent 35 -MaxUnhealthyUpgradedInstancePercent 30 -PauseTimeBetweenBatches "PT30S"
 ```
 
-Perintah ini menetapkan 40 persen untuk MaxBatchInstance, 35 persen untuk MaxUnhealthyInstance, 30 persen untuk MaxUnhealthyUpgradedInstance dan 30 waktu jeda kedua antar kumpulan untuk objek lokal VMSS $vmss.
+Perintah ini menetapkan 40 persen untuk MaxBatchInstance, 35 persen untuk MaxUnhealthyInstance, 30 persen untuk MaxUnhealthyUpgradedInstance dan 30 detik waktu jeda antara batch untuk objek lokal VMSS $vmss.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCrossZoneUpgrade
-Izinkan VMSS mengabaikan batas AZ saat menyusun kumpulan pemutakhiran. Pertimbangkan Perbarui Domain dan maxBatchInstancePercent untuk menentukan ukuran batch.
+Izinkan VMSS untuk mengabaikan batas AZ saat membuat batch peningkatan. Pertimbangkan Domain Pembaruan dan maxBatchInstancePercent untuk menentukan ukuran batch.
 
 ```yaml
 Type: System.Boolean
@@ -72,8 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxBatchInstancePercent
-Persen maksimum dari total instans mesin virtual yang akan dimutakhirkan secara bersamaan dengan pemutakhiran bergulir dalam satu batch.
-Karena ini adalah instans maksimum yang tidak sehat dalam kumpulan sebelumnya atau yang akan datang dapat menyebabkan persentase instans dalam kumpulan berkurang untuk memastikan keandalan yang lebih tinggi.
+Persentase maksimum dari total instans komputer virtual yang akan ditingkatkan secara bersamaan dengan peningkatan bergulir dalam satu batch.
+Karena ini adalah instans maksimum yang tidak sehat dalam batch sebelumnya atau di masa mendatang dapat menyebabkan persentase instans dalam batch berkurang untuk memastikan keandalan yang lebih tinggi.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyInstancePercent
-Persentase maksimum dari total instans mesin virtual dalam kumpulan skala yang bisa secara bersamaan tidak sehat, baik sebagai akibat dari dimutakhirkan, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan mesin virtual sebelum pemutakhiran bergulir dibatalkan.
-Batasan ini akan diperiksa sebelum memulai kumpulan apa pun.
+Persentase maksimum dari total instans komputer virtual dalam set skala yang dapat secara bersamaan tidak sehat, baik sebagai akibat dari peningkatan, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan komputer virtual sebelum peningkatan bergulir dibatalkan.
+Batasan ini akan diperiksa sebelum memulai batch apa pun.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -106,9 +109,9 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyUpgradedInstancePercent
-Persentase maksimum instans mesin virtual yang dimutakhirkan yang dapat ditemukan dalam keadaan tidak sehat.
-Pemeriksaan ini akan terjadi setelah setiap kumpulan dimutakhirkan.
-Jika persentase ini pernah melebihi, pembaruan bergulir akan dibatalkan.
+Persentase maksimum instans komputer virtual yang ditingkatkan yang dapat ditemukan dalam keadaan tidak sehat.
+Pemeriksaan ini akan terjadi setelah setiap batch ditingkatkan.
+Jika persentase ini pernah terlampaui, pembaruan bergulir akan dibatalkan.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PauseTimeBetweenBatches
-Waktu tunggu antara menyelesaikan pembaruan untuk semua mesin virtual dalam satu kumpulan dan memulai kumpulan berikutnya.
+Waktu tunggu antara menyelesaikan pembaruan untuk semua komputer virtual dalam satu batch dan memulai batch berikutnya.
 Durasi waktu harus ditentukan dalam format ISO 8601.
 Nilai defaultnya adalah 0 detik (PT0S).
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrioritizeUnhealthyInstance
-Mutakhirkan semua instans yang tidak sehat dalam skala yang ditetapkan sebelum instans sehat apa pun.
+Tingkatkan semua instans yang tidak sehat dalam set skala sebelum instans sehat apa pun.
 
 ```yaml
 Type: System.Boolean
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

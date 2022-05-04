@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: eeab93ec25bdaf4f88ceb8988bf140c28f40ce2e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00b19d5c01184b450b2acd0cfc3d8e1d94c14a00
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677880"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638324"
 ---
 # New-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
-Perintah ini memungkinkan pengguna untuk membuat objek parameter Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek parameter Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzVpnClientIpsecParameter [-SALifeTime <Int32>] [-SADataSize <Int32>] [-Ipse
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk membuat objek parameter Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek parameter Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang ada.
 
 ## EXAMPLES
 
@@ -36,8 +39,8 @@ $vpnclientipsecparams1 = New-AzVpnClientIpsecParameter -IpsecEncryption AES256 -
 $setvpnIpsecParams = Set-AzVpnClientIpsecParameter -VirtualNetworkGatewayName $rname -ResourceGroupName $rgname -VpnClientIPsecParameter $vpnclientipsecparams1
 ```
 
-cmdlet New-AzVpnClientIpsecParameter digunakan untuk membuat objek parameter ipsec vpn menggunakan nilai satu atau semua parameter yang dilewati yang dapat diatur pengguna untuk gateway jaringan Virtual yang sudah ada di ResourceGroup.
-Objek VpnClientIPsecParameters yang dibuat ini dialihkan ke perintah Set-AzVpnClientIpsecParameter untuk mengatur kebijakan kustom Ipsec Vpn tertentu pada gateway jaringan virtual seperti yang diperlihatkan dalam contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter yang ditetapkan.
+cmdlet New-AzVpnClientIpsecParameter digunakan untuk membuat objek parameter ipsec vpn dari menggunakan nilai yang diteruskan satu atau semua parameter yang dapat diatur pengguna untuk gateway jaringan Virtual yang ada di ResourceGroup.
+Objek VpnClientIPsecParameters yang dibuat ini diteruskan ke perintah Set-AzVpnClientIpsecParameter untuk mengatur kebijakan kustom Vpn ipsec yang ditentukan pada gateway jaringan Virtual seperti yang ditunjukkan dalam contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang menunjukkan parameter yang ditetapkan.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-VpnClient DH Groups digunakan di IKE Fase 1 untuk awal SA.
+Grup VpnClient DH yang digunakan dalam IKE Fase 1 untuk SA awal.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeIntegrity
-Algoritma integritas VpnClient IKE (Fase IKE 2)
+Algoritma integritas IKE VpnClient (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi VpnClient IPSec (Tahap 1 IKE)
+Algoritma enkripsi VPNClient IPSec (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas VpnClient IPSec (Tahap 1 IKE)
+Algoritma integritas VPNClient IPSec (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup PFS VpnClient yang digunakan di IKE Fase 2 untuk anak baru SA
+Grup PFS VpnClient yang digunakan dalam IKE Fase 2 untuk SA anak baru
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSize
-Ukuran muatan VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran payload VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTime
-VpnClient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
+Asosiasi Keamanan VPNClient IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam hitungan detik
 
 ```yaml
 Type: System.Int32
@@ -183,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

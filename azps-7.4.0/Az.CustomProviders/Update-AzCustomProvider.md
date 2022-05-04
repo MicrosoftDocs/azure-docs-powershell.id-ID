@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
-ms.openlocfilehash: 979b8aaa4c12bf152c7f74f743951759ea0411e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8633dac42f37eea7bb0cb2bf8900c7121b08356e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229041"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586262"
 ---
 # Update-AzCustomProvider
 
 ## SYNOPSIS
-Memperbarui penyedia sumber daya kustom yang sudah ada.
+Memperbarui penyedia sumber daya kustom yang ada.
 Satu-satunya nilai yang dapat diperbarui melalui PATCH saat ini adalah tag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/update-azcustomprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzCustomProvider -InputObject <ICustomProvidersIdentity> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Memperbarui penyedia sumber daya kustom yang sudah ada.
+Memperbarui penyedia sumber daya kustom yang ada.
 Satu-satunya nilai yang dapat diperbarui melalui PATCH saat ini adalah tag.
 
 ## EXAMPLES
@@ -57,7 +60,7 @@ Validation        :
 
 Perbarui tag penyedia kustom.
 
-### Contoh 2: Memperbarui penyedia kustom dengan perpipaan
+### Contoh 2: Memperbarui penyedia kustom dengan pipa
 ```powershell
 Get-AzCustomProvider -ResourceGroupName myRg -Name Namespace.Type | Update-AzCustomProvider -Tag @{MyTag="MyValue"}
 ```
@@ -68,7 +71,7 @@ Location  Name             Type
 West US 2 Namespace.Type   Microsoft.CustomProviders/resourceproviders
 ```
 
-Memperbarui penyedia kustom menggunakan pipa.
+Perbarui penyedia kustom menggunakan pipa.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyedia sumber daya.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -219,8 +222,8 @@ INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
-  - `[Scope <String>]`: Lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[Scope <String>]`: Ruang lingkup asosiasi.
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

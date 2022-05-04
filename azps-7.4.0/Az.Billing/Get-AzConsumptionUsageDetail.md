@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
-ms.openlocfilehash: 81bed6a265677b07a366e5aa0aac16032ba85221
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2e22edce66765e37445012cee205390a6207f4a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750222"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609656"
 ---
 # Get-AzConsumptionUsageDetail
 
 ## SYNOPSIS
 Dapatkan detail penggunaan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionusagedetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ UsageQuantity:  0.0006
 UsageStart:  10/2/2017 12:00:00 AM
 ```
 
-### Contoh 3: Dapatkan detail penggunaan BillingPeriodName dengan filter InstanceName
+### Contoh 3: Mendapatkan detail penggunaan BillingPeriodName dengan filter InstanceName
 ```powershell
 Get-AzConsumptionUsageDetail -BillingPeriodName 201710 -InstanceName 1c2052westus -Top 10
 ```
@@ -126,7 +129,7 @@ UsageStart:  10/1/2017 12:00:00 AM
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan detail penggunaan yang terkait.
+Nama periode penagihan tertentu untuk mendapatkan detail penggunaan yang terkait.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal akhir (dalam UTC) dari penggunaan untuk memfilter.
+Tanggal akhir (dalam UTC) penggunaan untuk memfilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeMeterDetails
-Sertakan detail meter dalam penggunaan.
+Sertakan detail meteran dalam penggunaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Id instans dari penggunaan yang akan difilter.
+Id instans penggunaan untuk difilter.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama instans penggunaan yang akan difilter.
+Nama instans penggunaan untuk difilter.
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Grup sumber daya dari penggunaan untuk memfilter.
+Grup sumber daya penggunaan untuk difilter.
 
 ```yaml
 Type: System.String
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (di UTC) penggunaan untuk memfilter.
+Tanggal mulai (dalam UTC) penggunaan untuk memfilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag penggunaan yang akan difilter.
+Tag penggunaan untuk difilter.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
@@ -321,11 +324,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

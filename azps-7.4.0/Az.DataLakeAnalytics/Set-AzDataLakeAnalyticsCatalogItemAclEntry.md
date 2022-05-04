@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
-ms.openlocfilehash: ebed5462fc9a2fb0ae0bfe3d610950afd7cc01f3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e1ea2fbc9f6833d923cc00bda6ba854d7c6523b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942229"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620474"
 ---
 # Set-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
-Mengubah entri dalam ACL item katalog atau katalog di Data Lake Analytics.
+Memodifikasi entri di ACL katalog atau item katalog di Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -87,7 +90,7 @@ Set-AzDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-GroupOwner] -It
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeAnalyticsCatalogItemAclEntry** menambahkan atau mengubah entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog dalam Data Lake Analytics.
+Cmdlet **Set-AzDataLakeAnalyticsCatalogItemAclEntry** menambahkan atau memodifikasi entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog di Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -105,7 +108,7 @@ Other 00000000-0000-0000-0000-000000000000        None
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini mengubah katalog ACE untuk Patti Fuller agar memiliki izin baca.
+Perintah ini memodifikasi katalog ACE agar Patti Fuller memiliki izin baca.
 
 ### Contoh 2: Mengubah Izin pengguna untuk database
 ```powershell
@@ -121,7 +124,7 @@ Other 00000000-0000-0000-0000-000000000000        None
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini mengubah database ACE untuk Patti Fuller agar memiliki izin baca.
+Perintah ini memodifikasi database ACE agar Patti Fuller memiliki izin baca.
 
 ### Contoh 3: Mengubah izin lain untuk katalog
 ```powershell
@@ -137,7 +140,7 @@ Other 00000000-0000-0000-0000-000000000000        Read
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini mengubah katalog ACE agar orang lain memiliki izin baca.
+Perintah ini memodifikasi katalog ACE agar yang lain memiliki izin baca.
 
 ### Contoh 4: Mengubah Izin lain untuk database
 ```powershell
@@ -164,7 +167,7 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc        Read
 ```
 
-Perintah ini mengatur izin pemilik untuk akun tersebut ke Baca.
+Perintah ini mengatur izin pemilik untuk akun ke Baca.
 
 ### Contoh 6: Mengubah Izin pemilik pengguna untuk database
 ```powershell
@@ -177,7 +180,7 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc        Read
 ```
 
-Perintah ini mengatur izin pemilik untuk database menjadi Dibaca.
+Perintah ini mengatur izin pemilik untuk database ke Baca.
 
 ## PARAMETERS
 
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Atur entri ACL katalog untuk grup.
+Atur entri katalog ACL untuk grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupOwner
-Atur entri ACL katalog untuk pemilik grup.
+Atur entri katalog ACL untuk pemilik grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe katalog atau item katalog. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan jenis katalog atau item katalog. Nilai yang dapat diterima untuk parameter ini adalah:
 - Katalog
 - Database
 
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lainnya
-Atur entri ACL katalog untuk yang lain.
+Atur entri katalog ACL untuk katalog lainnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 
 ### -Jalur
 Menentukan jalur Data Lake Analytics item katalog atau katalog.
-Bagian jalur harus dipisahkan oleh tanda titik (.).
+Bagian-bagian jalur harus dipisahkan oleh titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -307,8 +310,8 @@ Accept wildcard characters: False
 ### -Izin
 Menentukan izin untuk ACE.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
-- Membaca
+- Tidak ada
+- Baca
 - ReadWrite
 
 ```yaml
@@ -324,8 +327,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pengguna
-Atur entri ACL katalog untuk pengguna.
+### -User
+Atur entri katalog ACL untuk pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserOwner
-Atur entri ACL katalog untuk pemilik pengguna.
+Atur entri katalog ACL untuk pemilik pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,8 +357,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -386,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -410,4 +413,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzDataLakeAnalyticsCatalogItemAclEntry](Remove-AzDataLakeAnalyticsCatalogItemAclEntry.md)
 
-[U-SQL kini menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)
+[U-SQL sekarang menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)

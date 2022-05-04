@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
-ms.openlocfilehash: 3cbf6f732e2b67ce4f080c94cc88bd16800c9975
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 35560e4421e90895a888cd16cda38c7b4ab924fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600386"
 ---
 # New-AzServiceBusTopic
 
 ## SYNOPSIS
-Membuat topik Bus Layanan baru dalam ruang nama Bus Layanan yang ditentukan.
+Membuat topik Bus Layanan baru di namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebustopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzServiceBusTopic [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusTopic** membuat topik Bus Layanan baru dalam ruang nama Bus Layanan yang ditentukan.
+Cmdlet **New-AzServiceBusTopic** membuat topik Bus Layanan baru di namespace Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -60,11 +63,11 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Membuat topik `SB-Topic_exampl1` Bus Layanan baru dalam ruang `SB-Example1`nama Bus Layanan yang ditentukan.
+Membuat topik `SB-Topic_exampl1` Bus Layanan baru di namespace `SB-Example1`Bus Layanan yang ditentukan .
 
 ### Contoh 2
 
-Membuat topik Bus Layanan baru dalam ruang nama Bus Layanan yang ditentukan. (autogenerasi)
+Membuat topik Bus Layanan baru di namespace Bus Layanan yang ditentukan. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzServiceBusTopic -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Topic_exampl1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
@@ -73,7 +76,7 @@ New-AzServiceBusTopic -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Nam
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) diam setelah topik dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval idle [TimeSpan](https://msdn.microsoft.com/library/system.timespan.aspx) setelah topik dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DuplicateDetectionHistoryTimeWindow
-Menentukan struktur [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai defaultnya adalah 10 menit.
+Menentukan struktur [TimeSpan](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai defaultnya adalah 10 menit.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBatchedOperations
-Menunjukkan apakah operasi kumpulan sisi server diaktifkan.
+Menunjukkan apakah operasi batch sisi server diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableExpress
-Menunjukkan apakah Entitas Ekspres diaktifkan. Antrean ekspres menyimpan pesan dalam memori untuk sementara sebelum menulisnya ke penyimpanan tetap.
+Menunjukkan apakah Entitas Ekspres diaktifkan. Antrean ekspres menyimpan pesan dalam memori untuk sementara sebelum menulisnya ke penyimpanan persisten.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePartitioning
-Menentukan apakah akan mengaktifkan topik untuk dipartisi di beberapa broker pesan. 
+Menentukan apakah akan mengaktifkan topik yang akan dipartisi di beberapa broker pesan. 
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -195,7 +198,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Topik.
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -287,8 +290,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -327,7 +330,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

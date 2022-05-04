@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: d45fd6b6d970de5d224a5d927c7296392d66c71c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 001515e72c1bf2d149745b708bc5fe219552395e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744156"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638504"
 ---
 # Get-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Mendapatkan port ujung depan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,32 +29,32 @@ Get-AzApplicationGatewayFrontendPort [-Name <String>] -ApplicationGateway <PSApp
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayFrontendPort** mendapatkan port ujung depan gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayFrontendPort** mendapatkan port front-end gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan port front-end yang ditentukan
+### Contoh 1: Mendapatkan port front-end tertentu
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $FrontEndPort = Get-AzApplicationGatewayFrontendPort -Name "FrontEndPort01" -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan port ujung depan bernama FrontEndPort01 dari $AppGw dan menyimpannya dalam variabel $FrontEndPort.
+Perintah kedua mendapatkan port front-end bernama FrontEndPort01 dari $AppGw dan menyimpannya dalam variabel $FrontEndPort.
 
-### Contoh 2: Dapatkan daftar port ujung-depan
+### Contoh 2: Mendapatkan daftar port front-end
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $FrontEndPorts = Get-AzApplicationGatewayFrontendPort  -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan daftar port ujung depan dari $AppGw dan menyimpannya dalam variabel $FrontEndPorts.
+Perintah kedua mendapatkan daftar port front-end dari $AppGw dan menyimpannya dalam variabel $FrontEndPorts.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi yang berisi port ujung depan.
+Menentukan objek gateway aplikasi yang berisi port front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -80,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama port ujung-depan yang akan didapatkan.
+### -Name
+Menentukan nama port front-end yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

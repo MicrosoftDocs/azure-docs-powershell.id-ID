@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementProduct.md
-ms.openlocfilehash: 38513542d3f2d99192947bc9bbc68f564374bb13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 96dde8aa6ffc08d65751b68b296dcdb4f865e14f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879390"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590004"
 ---
 # Set-AzApiManagementProduct
 
 ## SYNOPSIS
 Mengatur detail produk API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzApiManagementProduct -Context <PsApiManagementContext> -ProductId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementProduct** mengatur detail produk API Management.
+Cmdlet **Set-AzApiManagementProduct** menetapkan detail produk API Management.
 
 ## EXAMPLES
 
@@ -42,9 +45,9 @@ Perintah ini memperbarui detail produk API Management, memerlukan langganan, lal
 
 ## PARAMETERS
 
-### -PersetujuanDiperlukan
+### -ApprovalRequired
 Menunjukkan apakah langganan produk memerlukan persetujuan.
-Nilai defaultnya **adalah $False**.
+Nilai defaultnya adalah **$False**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -58,8 +61,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan pengidentifikasi produk yang sudah ada.
+Menentukan pengidentifikasi produk yang ada.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status produk.
 psdx_paramvalues
 - NotPublished
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionRequired
 Menunjukkan apakah produk memerlukan langganan.
-Nilai default untuk parameter ini **adalah $True**.
+Nilai default untuk parameter ini adalah **$True**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionsLimit
-Menentukan jumlah maksimum langganan bersamaan.
+Menentukan jumlah maksimum langganan simultan.
 Nilai default untuk parameter ini adalah Tidak Ada.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Menentukan judul produk kumpulan cmdlet ini.
+Menentukan judul produk yang ditetapkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -214,8 +217,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -257,7 +260,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ### System.Management.Automation.SwitchParameter
 

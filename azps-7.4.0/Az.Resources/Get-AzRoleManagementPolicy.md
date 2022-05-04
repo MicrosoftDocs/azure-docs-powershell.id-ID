@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleManagementPolicy.md
-ms.openlocfilehash: 3657ab3fc0286d52ce0cf808d527d1b1f5ae342e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c2b0ee80d00f6d2b4fa4042abe8519f999b6562
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275481"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591937"
 ---
 # Get-AzRoleManagementPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan manajemen peran tertentu untuk lingkup sumber daya
+Mendapatkan kebijakan manajemen peran yang ditentukan untuk cakupan sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azrolemanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan kebijakan manajemen peran tertentu untuk lingkup sumber daya
 Get-AzRoleManagementPolicy -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzRoleManagementPolicy -Name <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -36,11 +39,11 @@ Get-AzRoleManagementPolicy -InputObject <IAuthorizationIdentity> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Dapatkan kebijakan manajemen peran tertentu untuk lingkup sumber daya
+Mendapatkan kebijakan manajemen peran yang ditentukan untuk cakupan sumber daya
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua kebijakan manajemen peran di bawah lingkup sumber daya
+### Contoh 1: Mencantumkan semua kebijakan manajemen peran di bawah cakupan sumber daya
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/"
 PS C:\> Get-AzRoleManagementPolicy -Scope $scope
@@ -54,7 +57,7 @@ Name                                 Type                                       
 
 Mengembalikan semua `roleManagementPolicies` untuk `scope`
 
-### Contoh 2: Dapatkan kebijakan manajemen peran menurut Lingkup dan Nama
+### Contoh 2: Mendapatkan kebijakan manajemen peran berdasarkan Cakupan dan Nama
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/"
 PS C:\> $name = "33b520ea-3544-4abc-8565-3588deb8e68e"
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama (guid) kebijakan manajemen peran yang akan didapatkan.
+### -Name
+Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup kebijakan manajemen peran.
+### -Cakupan
+Cakupan kebijakan manajemen peran.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -153,12 +156,12 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
-  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran yang akan dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleEligibilityScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) dari jadwal kelayakan peran yang akan didapatkan.
+  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
-  - `[RoleManagementPolicyName <String>]`: Nama (guid) kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Lingkup kebijakan manajemen peran.
+  - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
+  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
 
 ## RELATED LINKS

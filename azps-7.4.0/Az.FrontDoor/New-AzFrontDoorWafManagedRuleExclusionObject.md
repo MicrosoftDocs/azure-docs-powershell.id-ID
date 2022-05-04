@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleExclusionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleExclusionObject.md
-ms.openlocfilehash: 71311a733ee39f87c542d18a2c52d8905bd09365
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4f7343bd71abac6103c3edf8b7268169d0ac5abf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747952"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601124"
 ---
 # New-AzFrontDoorWafManagedRuleExclusionObject
 
 ## SYNOPSIS
-Membuat objek pengecualian aturan terkelola untuk kumpulan aturan terkelola WAF, grup, atau aturan.
+Buat objek pengecualian aturan terkelola untuk seperangkat aturan, grup, atau aturan terkelola WAF.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleexclusionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFrontDoorWafManagedRuleExclusionObject -Variable <String> -Operator <Strin
 ```
 
 ## DESCRIPTION
-Membuat objek pengecualian aturan terkelola untuk kumpulan aturan terkelola WAF, grup, atau aturan.
+Buat objek pengecualian aturan terkelola untuk seperangkat aturan, grup, atau aturan terkelola WAF.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Operator yang digunakan saat mencocokkan pemilih, EqualsAny berarti tidak ada pemilih (semua variabel yang cocok dengan tipe yang ditentukan)
+Operator yang digunakan saat mencocokkan pemilih, EqualsAny berarti tidak ada pemilih (semua variabel yang cocok dengan jenis yang ditentukan)
 
 ```yaml
 Type: System.String
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Selector
-Pola pemilih untuk dicocokkan menggunakan operator (jika operator tidak Sama DenganSany)
+### -Pemilih
+Pola pemilih untuk dicocokkan menggunakan operator (jika operator bukan EqualsAny)
 
 ```yaml
 Type: System.String
@@ -88,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -Variabel
-Variabel yang cocok. Nilai yang mungkin adalah RequestHeaderNames, RequestCookieNames, QueryStringArgNames, RequestBodyPostArgNames.
-Misalnya, QueryStringArgNames adalah pengecualian parameter GET yang cocok dengan pemilih dengan operator tertentu.
+Mencocokkan variabel. Nilai yang mungkin adalah RequestHeaderNames, RequestCookieNames, QueryStringArgNames, RequestBodyPostArgNames.
+Misalnya, QueryStringArgNames adalah pengecualian parameter GET yang cocok dengan pemilih dengan operator yang diberikan.
 
 ```yaml
 Type: System.String
@@ -104,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

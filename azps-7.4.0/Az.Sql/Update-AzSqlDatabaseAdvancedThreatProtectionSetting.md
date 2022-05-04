@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Update-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: a5c7b2cc304eccc0d742b43be61e923146f0211b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b867b42c515b4fd08a4be2ff72346c69bb6a08b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223083"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618224"
 ---
 # Update-AzSqlDatabaseAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Mengatur pengaturan proteksi ancaman tingkat lanjut pada database.
+Mengatur pengaturan perlindungan ancaman tingkat lanjut pada database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqldatabaseadvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,18 +31,18 @@ Update-AzSqlDatabaseAdvancedThreatProtectionSetting [-PassThru] [-NotificationRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlDatabaseAdvancedThreatProtectionSetting** mengatur pengaturan perlindungan ancaman tingkat lanjut pada database Azure SQL.
+Cmdlet **Update-AzSqlDatabaseAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada database Azure SQL.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName*, *ServerName* , dan *DatabaseName* untuk mengidentifikasi database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur pengaturan proteksi ancaman tingkat lanjut untuk database
+### Contoh 1: Mengatur pengaturan perlindungan ancaman tingkat lanjut untuk database
 ```powershell
 Update-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGroup11" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengatur pengaturan proteksi ancaman tingkat lanjut untuk database bernama Database01 di server bernama Server01.
+Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk database bernama Database01 di server bernama Server01.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAdmins
-Menentukan apakah pengaturan proteksi ancaman tingkat lanjut menghubungi administrator dengan menggunakan email. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi peringatan, mengonfigurasi pemberitahuan dan menangani peredaman
+Menentukan apakah pengaturan perlindungan ancaman tingkat lanjut menghubungi administrator dengan menggunakan email. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -89,11 +92,11 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Menentukan array tipe deteksi untuk dikecualikan dari pengaturan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan dan menangani peredaman Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan array jenis deteksi yang akan dikecualikan dari pengaturan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql_Injection
 - Sql_Injection_Vulnerability
 - Access_Anomaly
-- Tidak
+- Tidak ada
 
 ```yaml
 Type: System.String[]
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationRecipientsEmails
-Menentukan daftar alamat email yang dipisahkan titik koma tempat pengaturan mengirim pemberitahuan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi peringatan, mengonfigurasi pemberitahuan dan menangani peredaman
+Menentukan daftar alamat email yang dipisahkan titik koma tempat pengaturan mengirim pemberitahuan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Jumlah hari penyimpanan untuk log audit. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani penyempurnaan.
+Jumlah hari retensi untuk log audit. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan yang akan digunakan. Wildcard tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang ditetapkan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut database. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani penyempurnaan.
+Menentukan nama akun penyimpanan yang akan digunakan. Kartubebas tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang didefinisikan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut dari database. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
 
 ```yaml
 Type: System.String
@@ -198,8 +201,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -240,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.DetectionType[]
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

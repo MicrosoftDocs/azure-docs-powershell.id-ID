@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilterRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilterRuleConfig.md
-ms.openlocfilehash: 56f7c1a732ed2c2594792733328a3a72060f9c83
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2cc484390fb661a14e66b95448ed47ef567da69c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312705"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590508"
 ---
 # Set-AzRouteFilterRuleConfig
 
 ## SYNOPSIS
-Mengubah aturan filter rute filter rute.
+Memodifikasi aturan filter rute dari filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutefilterruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzRouteFilterRuleConfig -RouteFilter <PSRouteFilter> [-Force] -Name <String>
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzRouteFilterRuleConfig** mengubah aturan filter rute filter rute.
+Cmdlet **Set-AzRouteFilterRuleConfig memodifikasi** aturan filter rute filter rute.
 
 ## EXAMPLES
 
@@ -38,14 +41,14 @@ Set-AzRouteFilter -RouteFilter $rf
 ```
 
 Perintah pertama mendapatkan filter rute bernama RouteFilter01 dan menyimpannya dalam variabel $rf.
-Perintah kedua mengubah aturan filter rute bernama Rule01 dan menyimpan filter rute yang diperbarui dalam variabel $rf.
+Perintah kedua memodifikasi aturan filter rute bernama Rule01 dan menyimpan filter rute yang diperbarui dalam variabel $rf.
 Perintah ketiga menyimpan filter rute yang diperbarui.
 
 ## PARAMETERS
 
 ### -Access
-Tipe akses aturan.
-Nilai yang memungkinkan adalah: 'Izinkan', 'Tolak'
+Jenis akses aturan.
+Nilai yang mungkin adalah: 'Izinkan', 'Tolak'
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan filter rute
 
 ```yaml
@@ -136,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -RouteFilterRuleType
-Tipe aturan filter rute aturan.
-Nilai yang memungkinkan adalah: 'Komunitas'
+Jenis aturan filter rute aturan.
+Nilai yang mungkin adalah: 'Komunitas'
 
 ```yaml
 Type: System.String
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,8 +210,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRouteFilter](./Get-AzRouteFilter.md)
 
-[Filter AzRoute Baru](./New-AzRouteFilter.md)
+[New-AzRouteFilter](./New-AzRouteFilter.md)
 
-[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)

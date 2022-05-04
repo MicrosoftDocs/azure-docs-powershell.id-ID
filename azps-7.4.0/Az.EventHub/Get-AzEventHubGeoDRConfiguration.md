@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubGeoDRConfiguration.md
-ms.openlocfilehash: dfce170e55c1cba4a5e71eb8c666e552d9144ac6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13329a8e39f87f6b3bcd2979ba9135483519f10f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227781"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590886"
 ---
 # Get-AzEventHubGeoDRConfiguration
 
 ## SYNOPSIS
-Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+Mengambil Alias (konfigurasi Pemulihan Bencana) untuk namespace primer atau sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzEventHubGeoDRConfiguration [-ResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-**Get-AzEventHubGeoDRConfiguration** Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+**Get-AzEventHubGeoDRConfiguration** Mengambil Alias (konfigurasi Pemulihan Bencana) untuk namespace primer atau sekunder
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Role              : Primary
 PendingReplicationOperationsCount : 0
 ```
 
-Mengambil alias konfigurasi "SampleDRConfigName" untuk ruang nama utama "SampleNamespace_Primary"
+Mengambil konfigurasi alias "SampleDRConfigName" untuk namespace primer "SampleNamespace_Primary"
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi DR
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama
+Id Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

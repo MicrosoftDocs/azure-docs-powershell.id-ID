@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: e726750d0ff261ef019228aeb0bb0e564f7d08d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d104064031913cf66a3405cb763de1a757fe1f9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802782"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608325"
 ---
 # Disable-AzRecoveryServicesBackupAutoProtection
 
 ## SYNOPSIS
-Menonaktifkan pencadangan otomatis untuk item yang dapat diproteksi.
+Menonaktifkan pencadangan otomatis untuk item yang dapat dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackupautoprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ $container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVMAppCont
 Get-AzRecoveryServicesBackupProtectableItem -Container $container -WorkloadType "MSSQL" -ItemType "SQLInstance" -Name "MSSQLInstance"| Disable-AzRecoveryServicesBackupAutoProtection -BackupManagementType "AzureWorkload" -WorkloadType "MSSQL"
 ```
 
-Cmdlet pertama mendapatkan wadah Cadangan tipe AzureVMAppContainer.  Cmdlet kedua mendapatkan BackupItem yang dapat dilindungi dan menonaktifkan proteksi otomatis.
+Cmdlet pertama mendapatkan kontainer Cadangan jenis AzureVMAppContainer.  Cmdlet kedua mendapatkan BackupItem yang dapat dilindungi dan menonaktifkan perlindungan otomatis.
 
 ### Contoh 2
 
-Menonaktifkan pencadangan otomatis untuk item yang dapat diproteksi. (autogenerasi)
+Menonaktifkan pencadangan otomatis untuk item yang dapat dilindungi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Disable-AzRecoveryServicesBackupAutoProtection -BackupManagementType AzureVM -InputItem <ProtectableItemBase> -VaultId $vault.ID -WorkloadType AzureVM
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputItem
-Item Id
+ID Item
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan hasil untuk proteksi otomatis.
+Mengembalikan hasil untuk perlindungan otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkloadType
-Tipe beban kerja sumber daya. Nilai yang didukung saat ini adalah "MSSQL"
+Jenis beban kerja sumber daya. Nilai yang didukung saat ini adalah "MSSQL"
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

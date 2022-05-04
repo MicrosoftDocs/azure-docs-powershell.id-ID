@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignmentScheduleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignmentScheduleInstance.md
-ms.openlocfilehash: e6d3470a7c7a84dcccb0daad33c49e7931aaefdd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0eaf65f6bfc72895a6a9506517d0dec1e58458c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275625"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618656"
 ---
 # Get-AzRoleAssignmentScheduleInstance
 
 ## SYNOPSIS
 Mendapatkan instans jadwal penetapan peran yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroleassignmentscheduleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ Filter yang didukung:
 |
 | `asTarget()` | Mencantumkan penetapan peran untuk pengguna atau perwakilan layanan saat ini, termasuk yang diwarisi dari grup.
 |
-| `assignedTo('{objectId}')+and+atScope()` | Mencantumkan penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup hanya untuk cakupan yang ditentukan, tidak termasuk penetapan peran pada subskop.|
+| `assignedTo('{objectId}')+and+atScope()` | Mencantumkan penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup hanya untuk cakupan yang ditentukan, tidak termasuk penetapan peran pada sub-cakupan.|
 
 ### Contoh 4: Mendapatkan instans jadwal penetapan peran berdasarkan cakupan dan nama
 ```powershell
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.IAuthorizationIdentity
@@ -227,6 +230,6 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
   - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
+  - `[Scope <String>]`: Ruang lingkup kebijakan manajemen peran.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroup.md
-ms.openlocfilehash: fc6f2c51bd72e79e09e41ca580ad2adf65d9687d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f1f50dbafc6e9b9549a9d4486eb5dd1a2450ed65
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738342"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590364"
 ---
 # Get-AzSqlSyncGroup
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Azure SQL Database Sinkronkan Grup.
+Mengembalikan informasi tentang Grup Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Tentukan nama grup sinkronisasi untuk melihat informasi hanya untuk grup sinkron
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua contoh Grup Sinkronisasi Azure SQL ditetapkan ke Azure SQL Database
+### Contoh 1: Mendapatkan semua instans Grup Sinkronisasi Azure SQL yang ditetapkan ke Azure SQL Database
 ```powershell
 Get-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Format-List
 ```
@@ -65,7 +68,7 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database Grup Sinkronisasi yang ditetapkan ke Azure SQL Database.
+Perintah ini mendapatkan informasi tentang semua Grup Sinkronisasi Azure SQL Database yang ditetapkan ke Azure SQL Database.
 
 ### Contoh 2: Mendapatkan informasi tentang Grup Sinkronisasi Azure SQL Database
 ```powershell
@@ -88,9 +91,9 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini mendapatkan informasi tentang grup sinkronisasi Azure SQL Database dengan nama "SyncGroup01"
+Perintah ini mendapatkan informasi tentang Grup Sinkronisasi Azure SQL Database dengan nama "SyncGroup01"
 
-### Contoh 3: Dapatkan semua contoh Grup Sinkronisasi Azure SQL ditetapkan ke Azure SQL Database menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua instans Grup Sinkronisasi Azure SQL yang ditetapkan ke Azure SQL Database menggunakan pemfilteran
 ```powershell
 Get-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -Name "SyncGroup*" | Format-List
 ```
@@ -125,7 +128,7 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database Sinkronkan Grup yang ditetapkan ke Azure SQL Database yang dimulai dengan "GrupSinkronkan".
+Perintah ini mendapatkan informasi tentang semua Grup Sinkronisasi Azure SQL Database yang ditetapkan ke Azure SQL Database yang dimulai dengan "SyncGroup".
 
 ## PARAMETERS
 
@@ -159,7 +162,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup sinkronisasi.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

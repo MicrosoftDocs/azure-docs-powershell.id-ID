@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceLink.md
-ms.openlocfilehash: 7ace1ccc77ea7b1e14eeccf6da90fb52eb24277b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c9c330daf29008176eaf30b7a03b498a5bf5119
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738126"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650038"
 ---
 # New-AzSqlInstanceLink
 
 ## SYNOPSIS
 Membuat tautan instans baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzSqlInstanceLink [-Name] <String> -PrimaryAvailabilityGroupName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstanceLink** membuat tautan Azure SQL Managed Instance dengan bergabung dalam grup ketersediaan terdistribusi pada SQL Server berdasarkan parameter yang dilewati.
+Cmdlet **New-AzSqlInstanceLink** membuat tautan Azure SQL Managed Instance dengan bergabung dengan grup ketersediaan terdistribusi pada SQL Server berdasarkan parameter yang dilewati.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ LastHardenedLsn                :
 
 Perintah ini membuat tautan instans baru menggunakan objek instans terkelola sebagai parameter.
 
-### Contoh 3: Membuat tautan instans baru dengan mempipa objek instans
+### Contoh 3: Membuat tautan instans baru dengan menyalurkan objek instans
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01"
 PS C:\> $instance | New-AzSqlInstanceLink -Name "Link01" -PrimaryAvailabilityGroupName "Link01PrimaryAG" -SecondaryAvailabilityGroupName "Link01SecondaryAG" -TargetDatabase "Database01" -SourceEndpoint "TCP://SERVER01:5022"     
@@ -106,7 +109,7 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini membuat tautan instans baru dengan memipakan objek instans.
+Perintah ini membuat tautan instans baru dengan menyalurkan objek instans.
 
 ## PARAMETERS
 
@@ -170,7 +173,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan instans.
 
 ```yaml
@@ -260,8 +263,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

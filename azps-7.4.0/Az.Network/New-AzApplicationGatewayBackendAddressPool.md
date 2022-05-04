@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: c5e7bd997415575e4ae4e2c872f8128fda02a072
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8ae191a846e73a08788021efc494b467ecb4c592
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281691"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650668"
 ---
 # New-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
-Membuat kumpulan alamat ujung belakang untuk gateway aplikasi.
+Membuat kumpulan alamat back-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaybackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,29 +30,29 @@ New-AzApplicationGatewayBackendAddressPool -Name <String> [-BackendIPAddresses <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayBackendAddressPool** membuat kumpulan alamat ujung belakang untuk gateway aplikasi Azure.
-Alamat ujung belakang dapat ditentukan sebagai alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
+Cmdlet **New-AzApplicationGatewayBackendAddressPool** membuat kumpulan alamat back-end untuk gateway aplikasi Azure.
+Alamat back-end dapat ditentukan sebagai alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kumpulan alamat back-end menggunakan FQDN server back-end
+### Contoh 1: Membuat kumpulan alamat back-end dengan menggunakan FQDN server back-end
 ```powershell
 $Pool = New-AzApplicationGatewayBackendAddressPool -Name "Pool01" -BackendFqdns "contoso1.com", "contoso2.com"
 ```
 
-Perintah ini membuat kumpulan alamat back-end bernama Pool01 menggunakan FQDN server ujung belakang, dan menyimpannya dalam variabel $Pool.
+Perintah ini membuat kumpulan alamat back-end bernama Pool01 dengan menggunakan FQDN server back-end, dan menyimpannya dalam variabel $Pool.
 
-### Contoh 2: Membuat kumpulan alamat ujung belakang menggunakan alamat IP server back-end
+### Contoh 2: Membuat kumpulan alamat back-end dengan menggunakan alamat IP server back-end
 ```powershell
 $Pool = New-AzApplicationGatewayBackendAddressPool -Name "Pool02" -BackendFqdns "10.10.10.10", "10.10.10.11"
 ```
 
-Perintah ini membuat kumpulan alamat ujung belakang bernama Pool02 dengan menggunakan alamat IP server ujung belakang, dan menyimpannya dalam variabel $Pool.
+Perintah ini membuat kumpulan alamat back-end bernama Pool02 dengan menggunakan alamat IP server back-end, dan menyimpannya dalam variabel $Pool.
 
 ## PARAMETERS
 
 ### -BackendFqdns
-Menentukan daftar FQDN ujung-belakang yang dikaitkan cmdlet ini dengan kumpulan server ujung-belakang.
+Menentukan daftar FQDN back-end yang dikaitkan cmdlet ini dengan kumpulan server back-end.
 
 ```yaml
 Type: System.String[]
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendIPAddresses
-Menentukan daftar alamat IP ujung-belakang yang dikaitkan cmdlet ini dengan kumpulan server ujung-belakang.
+Menentukan daftar alamat IP back-end yang dikaitkan cmdlet ini dengan kumpulan server back-end.
 
 ```yaml
 Type: System.String[]
@@ -93,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan server ujung-belakang yang dibuat cmdlet ini.
+### -Name
+Menentukan nama kumpulan server back-end yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -140,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

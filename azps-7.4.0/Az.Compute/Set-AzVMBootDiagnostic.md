@@ -6,48 +6,51 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
-ms.openlocfilehash: b93eed9d9331a14d289c08515941462f80124eda
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c35bd10763fecbd0856954b141fef363e3bb0a9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686916"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649624"
 ---
 # Set-AzVMBootDiagnostic
 
 ## SYNOPSIS
-Mengubah properti diagnostik boot mesin virtual.
+Memodifikasi properti diagnostik boot komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmbootdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
-### EnableBootDiagnostics
+### AktifkanBootDiagnostics
 ```
 Set-AzVMBootDiagnostic [-VM] <PSVirtualMachine> [-Enable] [[-ResourceGroupName] <String>]
  [[-StorageAccountName] <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### DisableBootDiagnostics
+### NonaktifkanBootDiagnostics
 ```
 Set-AzVMBootDiagnostic [-VM] <PSVirtualMachine> [-Disable] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMBootDiagnostic** memodifikasi properti diagnostik boot mesin virtual.
+Cmdlet **Set-AzVMBootDiagnostic** memodifikasi properti diagnostik boot komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan diagnostik boot
+### Contoh 1: Mengaktifkan diagnostik boot
 ```powershell
 $VM = Get-AzVM -ResourceGroupName "ResourceGroup11" -Name "ContosoVM07"
 Set-AzVMBootDiagnostic -VM $VM -Enable -ResourceGroupName "ResourceGroup11" -StorageAccountName "DiagnosticStorage"
 Update-AzVM -VM $VM -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
+Perintah pertama mendapatkan komputer virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
 Perintah menyimpannya dalam variabel $VM.
-Perintah kedua memungkinkan diagnostik boot untuk mesin virtual di $VM.
-Data diagnostik disimpan dalam akun tertentu.
+Perintah kedua memungkinkan diagnostik boot untuk komputer virtual di $VM.
+Data diagnostik disimpan di akun yang ditentukan.
 
 ## PARAMETERS
 
@@ -66,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Non-fungsikan
-Menunjukkan bahwa cmdlet ini menonaktifkan diagnostik boot untuk mesin virtual.
+### -Nonaktifkan
+Menunjukkan bahwa cmdlet ini menonaktifkan diagnostik boot untuk komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa cmdlet ini mengaktifkan diagnostik boot untuk mesin virtual.
+Menunjukkan bahwa cmdlet ini memungkinkan diagnostik boot untuk komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual di mana cmdlet ini mengubah diagnostik boot.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
+Menentukan komputer virtual tempat cmdlet ini mengubah diagnostik boot.
+Untuk mendapatkan objek komputer virtual, gunakan cmdlet Get-AzVM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -159,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [Get-AzVMBootDiagnosticsData](./Get-AzVMBootDiagnosticsData.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
-ms.openlocfilehash: 86aefc93af5bbce05e9be2806cec3e901e7eb901
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 96a94b10bbb3aafa81a5e81aeaf7e3261a249665
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121653"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608882"
 ---
 # Invoke-AzIotHubQuery
 
 ## SYNOPSIS
-Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL.
+Buat kueri IoT Hub menggunakan bahasa seperti SQL yang kuat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Invoke-AzIotHubQuery [-ResourceId] <String> [-Query] <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perutean perangkat dan modul, pekerjaan, dan perutean pesan.
-Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi selengkapnya.
+Kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perangkat dan modul kembar, pekerjaan, dan perutean pesan.
+Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -48,14 +51,14 @@ Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language u
 Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices"
 ```
 
-Buat kueri semua data kembar perangkat dalam Azure IoT Hub.
+Mengkueri semua data kembar perangkat dalam Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices.modules where devices.deviceId = 'myDevice1'" -Top 2
 ```
 
-Kueri 2 modul data kembar teratas di perangkat target.
+Kueri 2 data kembar modul teratas pada perangkat target.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri pengguna yang akan dijalankan.
 
 ```yaml
@@ -149,9 +152,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Jumlah maksimum elemen yang akan dikembalikan.
-Secara default kueri tidak memiliki huruf kapital.
+Secara default kueri tidak memiliki batas.
 
 ```yaml
 Type: System.Int32
@@ -165,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

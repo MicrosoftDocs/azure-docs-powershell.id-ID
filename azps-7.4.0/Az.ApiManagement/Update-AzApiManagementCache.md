@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
-ms.openlocfilehash: d73fa4e0e9968d1137e5a45d7e7f28eb952e1769
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9982e2d104bda1252b078d87f96eb53048329036
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687888"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591588"
 ---
 # Update-AzApiManagementCache
 
 ## SYNOPSIS
-memperbarui cache di layanan Manajemen Api.
+memperbarui cache di layanan Api Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Update-AzApiManagementCache -ResourceId <String> [-ConnectionString <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzApiManagementCache** memperbarui cache dalam layanan ApiManagement.
+Cmdlet **Update-AzApiManagementCache** memperbarui cache di layanan ApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1 : Memperbarui Deskripsi Singgahan di centralus
+### Contoh 1 : Memperbarui Deskripsi Cache di centralus
 ```powershell
 $context=New-AzApiManagementContext -ResourceGroupName Api-Default-Central-US -ServiceName contoso
 Update-AzApiManagementCache -Context $context -CacheId centralus -Description "Team new cache" -PassThru
@@ -62,12 +65,12 @@ ResourceGroupName    : Api-Default-Central-US
 ServiceName          : contoso
 ```
 
-Memperbarui deskripsi Singgahan di AS Tengah.
+Memperbarui deskripsi Cache di AS Tengah.
 
 ## PARAMETERS
 
 ### -AzureRedisResourceId
-Arm ResourceId dari instans Cache Azure Redis.
+Arm ResourceId dari instans Azure Redis Cache.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheId
-Pengidentifikasi singgahan baru.
+Pengidentifikasi cache baru.
 Parameter ini diperlukan.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionString
-Redis String Koneksi.
+String Koneksi Redis.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi Singgahan.
+Deskripsi Cache.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementCache.
+Instans PsApiManagementCache.
 Parameter ini diperlukan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache type yang mewakili cache yang dimodifikasi akan ditulis ke output.
+Jika ditentukan, instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache yang mewakili cache yang dimodifikasi akan ditulis ke output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseFromLocation
-Cache UseFromLocation. Parameter ini opsional, nilai default 'default'.
+Cache UseFromLocation. Parameter ini bersifat opsional, nilai default 'default'.
 
 ```yaml
 Type: System.String
@@ -223,8 +226,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

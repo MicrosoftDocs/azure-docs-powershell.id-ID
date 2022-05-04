@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: a3d5fdae7b26ab1b43a760f1992bdfb813ec4289
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15a9da8eec6fe44fa11ad96ae7640efbd06a413c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282121"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592128"
 ---
 # Get-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi aturan untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

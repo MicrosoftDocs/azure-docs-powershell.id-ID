@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
-ms.openlocfilehash: 10d211480fdb9ecc6926868f370d22b4e2d83838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 32f8d612387f2aeb59a615e92f292ae858965926
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063243"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619340"
 ---
 # New-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kubah cadangan baru
+### Contoh 1: Membuat vault cadangan baru
 ```powershell
 $sub = "xxxx-xxxx-xxxxx"
 $storagesetting = New-AzDataProtectionBackupVaultStorageSettingObject -DataStoreType VaultStore -Type LocallyRedundant
@@ -44,7 +47,7 @@ ETag IdentityPrincipalId IdentityTenantId IdentityType Location Name    Type
                                                        westus   MyVault Microsoft.DataProtection/backupVaults
 ```
 
-Perintah ini membuat kubah cadangan baru.
+Perintah ini membuat vault cadangan baru.
 
 ## PARAMETERS
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya dari kubah cadangan
+Nama Grup Sumber Daya dari vault cadangan
 
 ```yaml
 Type: System.String
@@ -154,9 +157,9 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSetting
-Storage Pengaturan kubah.
-Gunakan Cmdlet New-AzDataProtectionBackupVaultStorageSetting untuk Membuat.
-Untuk membangun, lihat bagian CATATAN untuk properti STORAGESETTING dan membuat tabel hash.
+Storage Pengaturan brankas.
+Gunakan cmdlet New-AzDataProtectionBackupVaultStorageSetting untuk Membuat.
+Untuk membuat, lihat bagian CATATAN untuk STORAGESETTING properti dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IStorageSetting[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan kubah
+Id Langganan vault
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan
+Nama brankas cadangan
 
 ```yaml
 Type: System.String
@@ -215,8 +218,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -264,9 +267,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-STORAGESETTING <IStorageSetting[]>: Storage Pengaturan kubah. Gunakan Cmdlet New-AzDataProtectionBackupVaultStorageSetting untuk Membuat.
-  - `[DatastoreType <StorageSettingStoreTypes?>]`: Mendapatkan atau mengatur tipe datastore.
-  - `[Type <StorageSettingTypes?>]`: Mendapatkan atau mengatur tipe.
+STORAGESETTING <IStorageSetting[]>: Storage Pengaturan vault. Gunakan cmdlet New-AzDataProtectionBackupVaultStorageSetting untuk Membuat.
+  - `[DatastoreType <StorageSettingStoreTypes?>]`: Mendapatkan atau mengatur jenis datastore.
+  - `[Type <StorageSettingTypes?>]`: Mendapatkan atau mengatur jenisnya.
 
 ## RELATED LINKS
 

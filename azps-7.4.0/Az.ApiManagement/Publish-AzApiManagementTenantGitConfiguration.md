@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/pu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Publish-AzApiManagementTenantGitConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Publish-AzApiManagementTenantGitConfiguration.md
-ms.openlocfilehash: d5870819cead227d426581c7172a9d7d44363cd5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 012eacf4c7031f1217860753e194648330b8d467
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067599"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586639"
 ---
 # Publish-AzApiManagementTenantGitConfiguration
 
 ## SYNOPSIS
 Menerbitkan perubahan dari cabang Git ke database konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/publish-azapimanagementtenantgitconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Publish-AzApiManagementTenantGitConfiguration -Context <PsApiManagementContext> 
 
 ## DESCRIPTION
 Cmdlet **Publish-AzApiManagementTenantGitConfiguration** menerbitkan perubahan dari cabang Git ke database konfigurasi.
-Anda juga dapat memvalidasi perubahan dalam cabang Git tanpa menerbitkan.
+Anda dapat memvalidasi perubahan di cabang Git tanpa menerbitkan.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Publish-AzApiManagementTenantGitConfiguration -Context $apimContext -Branch 'master' -PassThru
 ```
 
-Perintah ini menerbitkan perubahan dari cabang tertentu ke database konfigurasi.
+Perintah ini menerbitkan perubahan dari cabang yang ditentukan ke database konfigurasi.
 
 ### Contoh 2: Memvalidasi perubahan Git
 ```powershell
@@ -46,12 +49,12 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Publish-AzApiManagementTenantGitConfiguration -Context $apimContext -Branch 'master' -ValidateOnly -PassThru
 ```
 
-Perintah ini memvalidasi perubahan dalam cabang Git terhadap database konfigurasi.
-Artikel ini tidak menerbitkan perubahan.
+Perintah ini memvalidasi perubahan di cabang Git terhadap database konfigurasi.
+Ini tidak menerbitkan perubahan.
 
 ## PARAMETERS
 
-### -Branch
+### -Cabang
 Menentukan nama cabang Git tempat cmdlet ini menyebarkan konfigurasi ke database konfigurasi.
 
 ```yaml
@@ -66,7 +69,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menghapus langganan untuk produk yang dihapus dalam pembaruan ini.
+### -Force
+Menunjukkan bahwa cmdlet ini menghapus langganan ke produk yang dihapus dalam pembaruan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -ValidateOnly
-Menunjukkan bahwa cmdlet ini memvalidasi perubahan dalam cabang Git yang ditentukan.
-Tidak diterbitkan ke database konfigurasi.
+Menunjukkan bahwa cmdlet ini memvalidasi perubahan di cabang Git yang ditentukan.
+Ini tidak menerbitkan ke database konfigurasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

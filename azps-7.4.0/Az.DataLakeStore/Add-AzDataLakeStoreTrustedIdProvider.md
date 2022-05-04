@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: d0d6c50e284f43c28882bb83295af3132c1797f3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9ce1b7db40be4b27adc735d17ee202dacd34fa50
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601394"
 ---
 # Add-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
 Menambahkan IdP tepercaya ke akun Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Add-AzDataLakeStoreTrustedIdProvider [-Account] <String> [-Name] <String> [-Prov
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDataLakeStoreTrustedIdProvider** menambahkan penyedia identitas tepercaya ke akun Data Lake Store yang ditentukan.
+Cmdlet **Add-AzDataLakeStoreTrustedIdProvider** menambahkan IdP tepercaya ke akun Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat akun untuk menambahkan IdP tepercaya berada.
+Nama grup sumber daya di mana akun untuk menambahkan IdP tepercaya berada.
 
 ```yaml
 Type: System.String

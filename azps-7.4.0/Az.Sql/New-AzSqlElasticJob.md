@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
-ms.openlocfilehash: 9e42422e5ef22b96c9cdd2ff13d65dc7a77dc0de
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba97e93f07a99c898209a3fc4e16b0d5c1c925d6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307251"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618422"
 ---
 # New-AzSqlElasticJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ New-AzSqlElasticJob [-ParentResourceId] <String> [-Name] <String> -IntervalType 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSqlElasticJob menciptakan pekerjaan baru
+Cmdlet New-AzSqlElasticJob membuat pekerjaan baru
 
 ## EXAMPLES
 
@@ -102,7 +105,7 @@ Membuat pekerjaan baru
 
 ### Contoh 2
 
-Membuat pekerjaan baru. (autogenerasi)
+Membuat pekerjaan baru. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu berakhir jadwal pekerjaan
+Waktu selesai jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalType
-Tipe interval jadwal berulang - Dapat berupa Menit, Jam, Hari, Minggu, Bulan
+Jenis interval jadwal berulang - Bisa Menit, Jam, Hari, Minggu, Bulan
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan
 
 ```yaml
@@ -321,8 +324,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

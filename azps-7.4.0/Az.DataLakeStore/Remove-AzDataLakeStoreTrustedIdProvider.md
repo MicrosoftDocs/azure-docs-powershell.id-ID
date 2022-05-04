@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: 89d9301cd9cfedc47963f9842cb424c71fc69286
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8ceaa1d057de1ac055202af619499748f0486083
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749124"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602978"
 ---
 # Remove-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
-Menghapus penyedia identitas tepercaya tertentu di Penyimpanan Data Lake tertentu.
+Menghapus IdP tepercaya yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Remove-AzDataLakeStoreTrustedIdProvider [-Account] <String> [[-Name] <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataLakeStoreTrustedIdProvider** menghapus penyedia identitas tepercaya tertentu dalam Data Lake Store yang ditentukan.
+Cmdlet **Remove-AzDataLakeStoreTrustedIdProvider** menghapus IdP tepercaya yang ditentukan di Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus penyedia identitas tepercaya.
+### Contoh 1: Menghapus IdP tepercaya.
 ```powershell
 Remove-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL" -Name MyProvider
 ```
@@ -41,7 +44,7 @@ Menghapus penyedia "MyProvider" dari akun "ContosoADL"
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk menghapus penyedia identitas tepercaya dari
+Akun Data Lake Store untuk menghapus idP tepercaya dari
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama penyedia identitas tepercaya.
+### -Name
+Nama IdP tepercaya.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

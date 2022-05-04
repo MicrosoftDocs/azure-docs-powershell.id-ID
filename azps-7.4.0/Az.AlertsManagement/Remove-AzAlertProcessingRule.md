@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzAlertProcessingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzAlertProcessingRule.md
-ms.openlocfilehash: 5e2137820e8d50b26c4983775f44906921a11805
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ca7eb92a5fb30fda701f40bcbe58d974aa99a346
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879966"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609926"
 ---
 # Remove-AzAlertProcessingRule
 
 ## SYNOPSIS
 Menghapus aturan pemrosesan pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/remove-azalertprocessingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzAlertProcessingRule -InputObject <PSActionRule> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAlertProcessingRule** menghapus aturan pemrosesan peringatan.
+**Cmdlet Remove-AzAlertProcessingRule** menghapus aturan pemrosesan pemberitahuan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzAlertProcessingRule** menghapus aturan pemrosesan peringatan.
 PS C:\> Remove-AzAlertProcessingRule -ResourceGroupName "test-rg" -Name "AlertProcessingRuleName"
 ```
 
-Cmdlet ini menghapus aturan pemrosesan peringatan dengan nama AlertProcessingRuleName dalam test-rg grup sumber daya
+Cmdlet ini menghapus aturan pemrosesan pemberitahuan dengan nama AlertProcessingRuleName dalam grup sumber daya test-rg
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan pemrosesan pemberitahuan
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-PassThru mengembalikan True jika aturan hapus pemberitahuanProcessing berhasil. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+PassThru mengembalikan True jika aturan hapus alertProcessing berhasil. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Dapatkan aturan Pemrosesan Pemberitahuan menurut id sumber daya.
+Mendapatkan aturan Pemrosesan Pemberitahuan dengan id sumber daya.
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

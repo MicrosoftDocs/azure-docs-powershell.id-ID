@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
-ms.openlocfilehash: a403228a594828bc1a6b0c9e9fb39b4d9a025165
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3a3700e3016206a845cfe74a30d25f0b2912f45c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319797"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601827"
 ---
 # Set-AzAutomationConnectionFieldValue
 
 ## SYNOPSIS
-Mengubah nilai bidang dalam koneksi Otomatisasi.
+Memodifikasi nilai bidang dalam koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationconnectionfieldvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzAutomationConnectionFieldValue [-Name] <String> -ConnectionFieldName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationConnectionFieldValue** mengubah nilai bidang dalam koneksi di Azure Automation.
+Cmdlet **Set-AzAutomationConnectionFieldValue** memodifikasi nilai bidang dalam koneksi di Azure Automation.
 
 ## EXAMPLES
 
@@ -36,12 +39,12 @@ Cmdlet **Set-AzAutomationConnectionFieldValue** mengubah nilai bidang dalam kone
 PS C:\>Set-AzAutomationConnectionFieldValue -Name "ContosoConnection" -ConnectionFieldName "SubscriptionID" -Value "b53ec456-3494-4847-8f2b-180901c51050" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini mengubah ID langganan untuk koneksi Azure bernama ContosoConnection di akun Otomatisasi bernama AutomationAccount01.
+Perintah ini mengubah ID langganan untuk koneksi Azure bernama ContosoConnection di akun Automation bernama AutomationAccount01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah bidang dalam koneksi.
+Menentukan nama akun Automation tempat cmdlet ini memodifikasi bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk koneksi di mana cmdlet ini mengubah bidang.
+### -Name
+Menentukan nama untuk koneksi yang cmdlet ini memodifikasi bidang.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah bidang dalam koneksi.
+Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
-Menentukan nilai untuk diubah dalam bidang koneksi.
+### -Nilai
+Menentukan nilai yang akan diubah di bidang koneksi.
 
 ```yaml
 Type: System.Object
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

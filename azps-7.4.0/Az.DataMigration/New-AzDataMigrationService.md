@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationService.md
-ms.openlocfilehash: 1b5843e1a7037227ae3f51f1f48440df0464e8c5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8aa50897d962815d2825919b5974b562a8ca09c2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685044"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609008"
 ---
 # New-AzDataMigrationService
 
 ## SYNOPSIS
-Membuat contoh baru Azure Database Migration Service.
+Membuat instans baru Azure Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataMigrationService -ResourceGroupName <String> -Name <String> -Location 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationService membuat contoh baru Azure Database Migration Service. Cmdlet ini mengatasnamakan Azure Resource Group yang sudah ada, nama unik untuk contoh baru Azure Database Migration Service yang akan dibuat, kawasan tempat instans disediakan, nama SKU Pekerja DMS, dan nama Azure Virtual Subnet tempat layanan berada. Tidak ada parameter untuk nama langganan, karena diharapkan pengguna menentukan langganan default sesi masuk Azure atau menjalankan Get-AzSubscription -SubscriptionName "MySubscription" | Select-AzSubscription untuk memilih langganan lain.
+Cmdlet New-AzDataMigrationService membuat instans baru Azure Database Migration Service. Cmdlet ini mengambil nama Azure Resource Group yang ada, nama unik untuk instans baru Azure Database Migration Service yang akan dibuat, wilayah tempat instans disediakan, nama SKU Pekerja DMS, dan nama Azure Virtual Subnet tempat layanan berada. Tidak ada parameter untuk nama langganan, karena pengguna diharapkan untuk menentukan langganan default sesi masuk Azure atau menjalankan Get-AzSubscription -SubscriptionName "MySubscription" | Select-AzSubscription untuk memilih langganan lain.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet New-AzDataMigrationService membuat contoh baru Azure Database Migration S
 New-AzDataMigrationService -ResourceGroupName myResourceGroup -Name TestService -Location "Central US" -Sku Basic_2vCores -VirtualSubnetId $virtualSubNetId
 ```
 
-Contoh di atas memperlihatkan cara membuat contoh baru Azure Database Migration Service bernama TestService di kawasan AS Tengah.
+Contoh di atas menunjukkan cara membuat instans baru Azure Database Migration Service bernama TestService di wilayah US Tengah.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi instans Azure Database Migration Service yang akan dibuat, yang terkait dengan kawasan Azure.
+Lokasi instans Azure Database Migration Service yang akan dibuat, yang sesuai dengan wilayah Azure.
 
 ```yaml
 Type: System.String
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama Database Migration Service.
 
 ```yaml
@@ -128,8 +131,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,11 +162,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

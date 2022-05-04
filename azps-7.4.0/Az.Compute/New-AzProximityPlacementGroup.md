@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzProximityPlacementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzProximityPlacementGroup.md
-ms.openlocfilehash: 18130f24c80a72ed1ef8fc192d6c62b9272a707b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a807648d0fa2d692d48e590b6e1cc70198cc4c28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319563"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589824"
 ---
 # New-AzProximityPlacementGroup
 
 ## SYNOPSIS
 Buat sumber daya Grup Penempatan Kedekatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azproximityplacementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Location                    : westcentralus
 Tags                        : {"key1":"val1"}
 ```
 
-Perintah ini membuat grup tempat yang berdekatan di lokasi tertentu.
+Perintah ini membuat grup tempat kedekatan di lokasi tertentu.
 
 ### Contoh 2
 
-Buat sumber daya Grup Penempatan Kedekatan. (autogenerasi)
+Buat sumber daya Grup Penempatan Kedekatan. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzProximityPlacementGroup -Location westus -Name 'AgentPool01' -ProximityPlacementGroupType <String> -ResourceGroupName myresourcegroup
@@ -58,7 +61,7 @@ New-AzProximityPlacementGroup -Location westus -Name 'AgentPool01' -ProximityPla
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup penempatan kedekatan.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupType
-Menentukan tipe grup penempatan kedekatan.  Nilai yang memungkinkan adalah: Standar atau Ultra
+Menentukan jenis grup penempatan kedekatan.  Nilai yang mungkin adalah: Standar atau Ultra
 
 ```yaml
 Type: System.String
@@ -162,8 +165,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

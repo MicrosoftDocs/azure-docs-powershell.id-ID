@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/stop-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Stop-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Stop-AzAutomationDscNodeConfigurationDeployment.md
-ms.openlocfilehash: 7b7229e46bc14ec0ea0a25c193a3da45c4cfeba7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85cc9ee618df61d9e56642801aac30263a9d581c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609620"
 ---
 # Stop-AzAutomationDscNodeConfigurationDeployment
 
 ## SYNOPSIS
-Menghentikan penyebaran konfigurasi Node DSC dalam Otomatisasi. Ini hanya menghentikan pekerjaan penyebaran saat ini tetapi tidak menghapus penetapan konfigurasi node yang sudah ditetapkan.
+Menghentikan penyebaran konfigurasi Simpul DSC di Automation. Ini hanya menghentikan pekerjaan penyebaran saat ini tetapi tidak membatalkan penetapan konfigurasi simpul yang sudah ditetapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/stop-azautomationdscnodeconfigurationdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,21 +38,21 @@ Stop-AzAutomationDscNodeConfigurationDeployment [-PassThru] -InputObject <NodeCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzAutomationDscNodeConfigurationDeployment** menghentikan penyebaran konfigurasi node Desired State Configuration (DSC) dalam Azure Automation. Ini menghentikan penetapan konfigurasi simpul ke grup simpul, jika ada yang tersisa untuk ditetapkan, tetapi tidak menghapus penetapan node yang sudah ditetapkan. Untuk membatalkan pendaftaran pekerjaan terjadwal, silakan gunakan [Unregister-AzAutomationScheduledRunbook](./Unregister-AzAutomationScheduledRunbook.md) dengan JobScheduleId untuk menghapus penetapan tugas terjadwal yang sudah ada.
+Cmdlet **Stop-AzAutomationDscNodeConfigurationDeployment** menghentikan penyebaran konfigurasi node Desired State Configuration (DSC) di Azure Automation. Ini menghentikan penugasan konfigurasi simpul ke grup simpul, jika ada yang tersisa untuk ditetapkan, tetapi tidak membatalkan penetapan simpul yang sudah ditetapkan. Untuk membatalkan pendaftaran pekerjaan terjadwal, silakan gunakan [Unregister-AzAutomationScheduledRunbook](./Unregister-AzAutomationScheduledRunbook.md) dengan JobScheduleId untuk membatalkan penetapan pekerjaan terjadwal yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menyebarkan konfigurasi simpul DSC Azure dalam Otomatisasi
+### Contoh 1: Menyebarkan konfigurasi simpul Azure DSC di Automation
 ```
 PS C:\> Stop-AzAutomationDscNodeConfigurationDeployment -AutomationAccountName "Contoso01" -ResourceGroupName "ResourceGroup01" -JobId 00000000-0000-0000-0000-000000000000
 ```
 
-Perintah di atas menghentikan pekerjaan penyebaran konfigurasi node DSC dengan jobId yang dikirimkan.
+Perintah di atas menghentikan pekerjaan penyebaran konfigurasi simpul DSC dengan jobId yang diteruskan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini
+Menentukan nama akun Automation yang berisi konfigurasi DSC yang dikompilasi cmdlet ini
 
 ```yaml
 Type: System.String
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan id Pekerjaan dari pekerjaan penyebaran yang sudah ada.
+Menentukan id Pekerjaan dari pekerjaan penyebaran yang ada.
 
 ```yaml
 Type: System.Guid
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini mengkompilasi konfigurasi.
 
 ```yaml
 Type: System.String
@@ -154,8 +157,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

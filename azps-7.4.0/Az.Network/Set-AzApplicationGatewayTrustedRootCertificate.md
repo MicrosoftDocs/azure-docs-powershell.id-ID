@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 38656eb4a2408567d20cfb937fc39d13f7560e2c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0f8cf14c2a05196ccb6694d37095a189043dd136
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938143"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592002"
 ---
 # Set-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
-Memperbarui Sertifikat Akar Tepercaya gateway aplikasi.
+Memperbarui Sertifikat Akar Tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway <PSApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayTrustedRootCertificate** mengubah sertifikat akar tepercaya yang sudah ada dari Application Gateway.
+Cmdlet **Set-AzApplicationGatewayTrustedRootCertificate** memodifikasi sertifikat akar tepercaya yang ada dari Application Gateway.
 
 ## EXAMPLES
 
@@ -36,9 +39,9 @@ $gw = Set-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Na
 $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Contoh skenario di atas memperlihatkan cara memperbarui sertifikat akar tepercaya yang sudah ada saat sertifikat akar digulung.
+Contoh skenario di atas menunjukkan cara memperbarui sertifikat akar tepercaya yang ada saat sertifikat akar digulung.
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
-Perintah kedua mengubah sertifikat akar tepercaya yang sudah ada dengan sertifikat akar baru.
+Perintah kedua memodifikasi sertifikat akar tepercaya yang ada dengan sertifikat akar baru.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sertifikat TrustedRoot
 
 ```yaml
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

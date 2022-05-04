@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
-ms.openlocfilehash: 70852e91a1c91fafab65d078936e44d6f56f4f88
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ece508702cc6b7bcbbe6682afad68e1b1b0739e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120015"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650920"
 ---
 # Get-AzDataCollectionRule
 
 ## SYNOPSIS
 Mendapatkan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,11 +57,11 @@ Get-AzDataCollectionRule
 ## DESCRIPTION
 Cmdlet **Get-AzDataCollectionRule** mendapatkan satu atau beberapa aturan pengumpulan data.
 
-Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan di mana data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview) lengkap.
+Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan lokasi data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview) lengkap.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan pengumpulan data menurut ID langganan
+### Contoh 1: Mendapatkan aturan pengumpulan data menurut ID langganan
 ```powershell
 Get-AzDataCollectionRule
 ```
@@ -79,7 +82,7 @@ Tags              : {[tag2, value2], [tag1, value1]}
 
 Perintah ini mencantumkan semua aturan pengumpulan data untuk langganan saat ini.
 
-### Contoh 2: Dapatkan aturan pengumpulan data untuk grup sumber daya tertentu
+### Contoh 2: Mendapatkan aturan pengumpulan data untuk grup sumber daya yang diberikan
 ```powershell
 Get-AzDataCollectionRule -ResourceGroup "testgroup"
 ```
@@ -98,7 +101,7 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini mencantumkan aturan pengumpulan data untuk grup sumber daya tertentu.
+Perintah ini mencantumkan aturan pengumpulan data untuk grup sumber daya yang diberikan.
 
 ### Contoh 3: Mendapatkan aturan pengumpulan data
 ```powershell
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
