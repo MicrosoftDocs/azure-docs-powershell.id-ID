@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
-ms.openlocfilehash: d94d0a621d9fae872542e656dfeff1d2901bb418
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b9d0bda79d9bed6a3ae26805949a650b1f75f3e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230422"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721620"
 ---
 # Get-AzADGroupMember
 
 ## SYNOPSIS
 Mencantumkan anggota dari grup.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -42,6 +44,9 @@ Get-AzADGroupMember [-Expand <String[]>] [-Filter <String>] [-Orderby <String[]>
 
 ## DESCRIPTION
 Mencantumkan anggota dari grup.
+
+> [!IMPORTANT]
+> Karena keterbatasan dengan API Graph saat ini, perwakilan layanan tidak dikembalikan oleh Get-AzAdGroupMember di Az 7.x. Untuk solusi sementara, lihat [Memecahkan masalah modul Azure Az PowerShell](/powershell/azure/troubleshooting#get-azadgroupmember-doesnt-return-service-principals).
 
 ## EXAMPLES
 

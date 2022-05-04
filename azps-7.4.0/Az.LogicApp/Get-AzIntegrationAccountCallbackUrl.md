@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountCallbackUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountCallbackUrl.md
-ms.openlocfilehash: c90da6d91e80233032cf7c41d6ee2bff15458bd9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91322ce4d8f961ffe0732e8bc8b862ea5f87e970
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999595"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735598"
 ---
 # Get-AzIntegrationAccountCallbackUrl
 
 ## SYNOPSIS
 Mendapatkan URL panggilan balik akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountcallbackurl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,17 +29,17 @@ Get-AzIntegrationAccountCallbackUrl -ResourceGroupName <String> -Name <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountCallbackUrl** mendapatkan URL callback akun integrasi dari grup sumber daya.
-Cmdlet ini mengembalikan objek **CallbackUrl** yang mewakili URL callback akun integrasi.
+Cmdlet **Get-AzIntegrationAccountCallbackUrl** mendapatkan URL panggilan balik akun integrasi dari grup sumber daya.
+Cmdlet ini mengembalikan objek **CallbackUrl** yang mewakili URL panggilan balik akun integrasi.
 Tentukan nama akun integrasi dan nama grup sumber daya.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan URL callback akun integrasi
+### Contoh 1: Mendapatkan URL panggilan balik akun integrasi
 ```powershell
 Get-AzIntegrationAccountCallbackUrl -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -NotAfter "03/25/2016 18:23:22"
 ```
@@ -65,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotAfter
-Menentukan tanggal kedaluwarsa untuk URL callback.
+Menentukan tanggal kedaluwarsa untuk URL panggilan balik.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

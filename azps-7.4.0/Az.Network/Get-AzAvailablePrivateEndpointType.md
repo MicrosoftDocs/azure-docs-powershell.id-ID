@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailablePrivateEndpointType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailablePrivateEndpointType.md
-ms.openlocfilehash: e868f7a8f8e5480f20880c28e8d4915df3d68d85
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 216cc9fe9c4643d294cddfad7e74fda75add0f1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314127"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699206"
 ---
 # Get-AzAvailablePrivateEndpointType
 
 ## SYNOPSIS
-Mengembalikan tipe titik akhir privat yang tersedia di lokasi.
+Mengembalikan jenis titik akhir privat yang tersedia di lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azavailableprivateendpointtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzAvailablePrivateEndpointType -Location <String> [-ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAvailablePrivateEndpointType** mengembalikan semua tipe titik akhir privat yang tersedia di lokasi.
+Cmdlet **Get-AzAvailablePrivateEndpointType** mengembalikan semua jenis titik akhir privat yang tersedia di lokasi.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Get-AzAvailablePrivateEndpointType -Location eastus
 ]
 ```
 
-Contoh ini mengembalikan semua tipe titik akhir privat yang tersedia di lokasi.
+Contoh ini mengembalikan semua jenis titik akhir privat yang tersedia di lokasi.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
-ms.openlocfilehash: f5399749ff0f7b0c64b010ac773ffc35f54cf11d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f5d99500d786b5c704f2684e971e23c6c639cbcf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271233"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684426"
 ---
 # Get-AzStorageBlobCopyState
 
 ## SYNOPSIS
 Mendapatkan status salinan blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobcopystate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,41 +46,41 @@ Get-AzStorageBlobCopyState -CloudBlobContainer <CloudBlobContainer> [-Blob] <Str
 
 ## DESCRIPTION
 Cmdlet **Get-AzStorageBlobCopyState** mendapatkan status salinan blob Azure Storage.
-Ini harus berjalan pada blob tujuan salinan.
+Ini harus berjalan pada blob tujuan salin.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status salinan blob
+### Contoh 1: Mendapatkan status penyalinan blob
 ```
 C:\PS>Get-AzStorageBlobCopyState -Blob "ContosoPlanning2015" -Container "ContosoUploads"
 ```
 
 Perintah ini mendapatkan status salinan blob bernama ContosoPlanning2015 dalam kontainer ContosoUploads.
 
-### Contoh 2: Dapatkan status salinan untuk blob menggunakan pipeline
+### Contoh 2: Dapatkan status salin untuk blob dengan menggunakan alur
 ```
 C:\PS>Get-AzStorageBlob -Blob "ContosoPlanning2015" -Container "ContosoUploads" | Get-AzStorageBlobCopyState
 ```
 
-Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam wadah bernama ContosoUploads dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasil ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet **Get-AzStorageBlobCopyState** mendapatkan status salinan untuk blob tersebut.
+Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam kontainer bernama ContosoUploads dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet **Get-AzStorageBlobCopyState** mendapatkan status salin untuk blob tersebut.
 
-### Contoh 3: Dapatkan status salinan untuk blob dalam wadah menggunakan pipeline
+### Contoh 3: Dapatkan status salin untuk blob dalam kontainer dengan menggunakan alur
 ```
 C:\PS>Get-AzStorageContainer -Name "ContosoUploads" | Get-AzStorageBlobCopyState -Blob "ContosoPlanning2015"
 ```
 
-Perintah ini mendapatkan kontainer yang dinamai menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini.
-Cmdlet **Get-AzStorageContainer** mendapatkan status salinan untuk blob bernama ContosoPlanning2015 dalam wadah tersebut.
+Perintah ini mendapatkan kontainer bernama dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini.
+Cmdlet **Get-AzStorageContainer** mendapatkan status salin untuk blob bernama ContosoPlanning2015 dalam kontainer tersebut.
 
-### Contoh 4: Mulai Salin dan pipeline untuk mendapatkan status salin
+### Contoh 4: Mulai Salin dan alur untuk mendapatkan status salin
 ```
 C:\PS> $destBlob = Start-AzStorageBlobCopy -SrcContainer "contosouploads" -SrcBlob "ContosoPlanning2015" -DestContainer "contosouploads2" -DestBlob "ContosoPlanning2015_copy"
 
 C:\PS> $destBlob | Get-AzStorageBlobCopyState
 ```
 
-Perintah pertama memulai salin blob "ContosoPlanning2015" ke "ContosoPlanning2015_copy", dan menghasilkan objek blob destiansi. Pipa perintah kedua objek blob destiansi ke Get-AzStorageBlobCopyState, untuk mendapatkan status salinan blob. 
+Perintah pertama mulai menyalin blob "ContosoPlanning2015" ke "ContosoPlanning2015_copy", dan menghasilkan objek blob destiansi. Perintah kedua menyalurkan objek blob destiansi ke Get-AzStorageBlobCopyState, untuk mendapatkan status salinan blob. 
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -131,8 +134,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
-Cmdlet ini mendapatkan status salinan blob dalam wadah yang ditentukan parameter ini.
+Menentukan objek **CloudBlobContainer** dari pustaka Klien Azure Storage.
+Cmdlet ini mendapatkan status salinan blob dalam kontainer yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer.
 
 ```yaml
@@ -148,9 +151,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Menentukan nama wadah.
-Cmdlet ini mendapatkan status salinan untuk blob dalam wadah yang ditentukan parameter ini.
+Menentukan nama kontainer.
+Cmdlet ini mendapatkan status salin untuk blob dalam kontainer yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga salinan selesai.
+Menunjukkan bahwa cmdlet ini menunggu salinan selesai.
 Jika Anda tidak menentukan parameter ini, cmdlet ini akan segera mengembalikan hasil.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

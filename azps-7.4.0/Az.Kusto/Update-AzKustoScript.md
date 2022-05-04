@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoScript.md
-ms.openlocfilehash: 5e11a60047607db83996fd27b6982747c238f7c5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b52e51ac1039e97e0e5163a15df17096284ff4ac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284607"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690974"
 ---
 # Update-AzKustoScript
 
 ## SYNOPSIS
 Memperbarui skrip database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/update-azkustoscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Memperbarui skrip database.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui skrip kusto yang ada menurut nama
+### Contoh 1: Memperbarui skrip kusto yang ada berdasarkan nama
 ```powershell
 Update-AzKustoScript -DatabaseName mykustodatabase -Name newkustoscript -ClusterName testnewkustocluster -ResourceGroupName testrg -ScriptUrl $BlobSASURL -ScriptUrlSasToken $BlobSASToken
 ```
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -340,7 +343,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[DatabaseName <String>]`: Nama database di kluster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
-  - `[OperationId <String>]`: Panduan ID operasi
+  - `[OperationId <String>]`: Guid ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
@@ -353,7 +356,7 @@ PARAMETER <IScript>: Kelas yang mewakili skrip database.
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[Url <String>]`: Url ke file blob skrip KQL.
   - `[UrlSasToken <String>]`: Token SaS.

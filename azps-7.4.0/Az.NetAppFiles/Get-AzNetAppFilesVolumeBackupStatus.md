@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeBackupStatus.md
-ms.openlocfilehash: 4f4bfb334eb615ff3e72c1fd6079986a1c79822a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e80f061791d29b7240ae7c220e103ca7fbcfb1c1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119205"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696728"
 ---
 # Get-AzNetAppFilesVolumeBackupStatus
 
 ## SYNOPSIS
-Dapatkan status cadangan volume
+Mendapatkan status pencadangan volume
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumebackupstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzNetAppFilesVolumeBackupStatus -InputObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-CmdLet **Get-AzNetAppFilesVolumeBackupStatus** mendapatkan status pencadangan untuk volume
+CmdLet **Get-AzNetAppFilesVolumeBackupStatus** mendapatkan status cadangan untuk volume
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume untuk mendapatkan status cadangan untuk
+Objek volume untuk mendapatkan status pencadangan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama volume ANF
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool yang berisi volume yang akan dikembalikan
+Objek kumpulan yang berisi volume yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

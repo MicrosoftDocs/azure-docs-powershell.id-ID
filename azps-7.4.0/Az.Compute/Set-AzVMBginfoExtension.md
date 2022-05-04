@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBginfoExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBginfoExtension.md
-ms.openlocfilehash: 6c0a4653989c202c51b417f632b9bee21e610081
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a9598170940c30a6893f3bdb5a530a10fbe32571
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876978"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689642"
 ---
 # Set-AzVMBginfoExtension
 
 ## SYNOPSIS
-Menambahkan ekstensi BGInfo ke mesin virtual.
+Menambahkan ekstensi BGInfo ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmbginfoextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,17 +30,17 @@ Set-AzVMBginfoExtension [-ResourceGroupName] <String> [-VMName] <String> -Name <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMBGInfoExtension** menambahkan ekstensi BGInfo ke mesin virtual.
+Cmdlet **Set-AzVMBGInfoExtension** menambahkan ekstensi BGInfo ke komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan ekstensi BGInfo untuk mesin virtual
+### Contoh 1: Menambahkan ekstensi BGInfo untuk komputer virtual
 ```powershell
 Set-AzVMBgInfoExtension -ResourceGroupName "ContosoRG" -VMName "ContosoVM" -Name "ExtensionName" -TypeHandlerVersion "2.1" -Location "West Europe"
 ```
 
-Perintah ini menambahkan ekstensi BGInfo ke mesin virtual bernama ContosoVM.
-Perintah menentukan grup sumber daya dan lokasi mesin virtual.
+Perintah ini menambahkan ekstensi BGInfo ke komputer virtual bernama ContosoVM.
+Perintah menentukan grup sumber daya dan lokasi komputer virtual.
 Perintah menentukan nama dan versi ekstensi.
 
 ## PARAMETERS
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menentukan bahwa ekstensi harus dijalankan kembali dengan pengaturan publik atau terproteksi yang sama.
-Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Menentukan bahwa ekstensi harus dijalankan lagi dengan pengaturan publik atau terproteksi yang sama.
+Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
 Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama ekstensi BGInfo yang ditambahkan cmdlet ini ke mesin virtual.
+### -Name
+Menentukan nama ekstensi BGInfo yang ditambahkan cmdlet ini ke komputer virtual.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual tempat cmdlet ini menambahkan ekstensi.
+Menentukan nama grup sumber daya komputer virtual tempat cmdlet ini menambahkan ekstensi.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi yang ditambahkan cmdlet ini ke mesin virtual.
+Menentukan versi ekstensi yang ditambahkan cmdlet ini ke komputer virtual.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menambahkan ekstensi BGInfo.
+Menentukan nama komputer virtual tempat cmdlet ini menambahkan ekstensi BGInfo.
 
 ```yaml
 Type: System.String
@@ -180,8 +183,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: 023f32cc3e609fad17c14f35046733d25ccdaf86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bb2491ee49de9b817d75f480302ac36e2a2195b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808056"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735670"
 ---
 # Get-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Mendapatkan perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Get-AzIntegrationAccountAgreement [-ResourceGroupName <String>] [-Name <String>]
 Cmdlet **Get-AzIntegrationAccountAgreement** mendapatkan perjanjian akun integrasi dari grup sumber daya Azure.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama perjanjian.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan perjanjian akun integrasi
+### Contoh 1: Mendapatkan perjanjian akun integrasi
 ```powershell
 Get-AzIntegrationAccountAgreement -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -AgreementName "IntegrationAccountAgreement06"
 ```
@@ -60,7 +63,7 @@ Content                : {"AS2":{"ReceiveAgreement":{"SenderBusinessIdentity":{"
 
 Perintah ini mendapatkan perjanjian akun integrasi bernama IntegrationAccountAgreement06.
 
-### Contoh 2: Dapatkan perjanjian akun integrasi menurut nama grup sumber daya
+### Contoh 2: Mendapatkan perjanjian akun integrasi berdasarkan nama grup sumber daya
 ```powershell
 Get-AzIntegrationAccountAgreement -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31"
 ```
@@ -83,7 +86,7 @@ Content                : {"AS2":{"ReceiveAgreement":{"SenderBusinessIdentity":{"
                          . . .
 ```
 
-Perintah ini mendapatkan perjanjian akun integrasi menurut nama grup sumber daya.
+Perintah ini mendapatkan perjanjian akun integrasi berdasarkan nama grup sumber daya.
 
 ## PARAMETERS
 
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

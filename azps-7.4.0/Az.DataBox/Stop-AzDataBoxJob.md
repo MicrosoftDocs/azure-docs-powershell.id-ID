@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/stop-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
-ms.openlocfilehash: 820925cc19d1472dba31022561a71ae12844b324
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7a720217ef1e9bbf9123e056f9d47d15d814ed6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749538"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689588"
 ---
 # Stop-AzDataBoxJob
 
 ## SYNOPSIS
 CancelJob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/stop-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ CancelJob.
 
 ## EXAMPLES
 
-### Contoh 1: Batalkan Pekerjaan 
+### Contoh 1: Membatalkan Pekerjaan 
 ```powershell
 Stop-AzDataBoxJob -Name "Powershell10" -ResourceGroupName "resourceGroupName" -Reason "Powershell demo job"
 Get-AzDataBoxJob -Name "Powershell10" -ResourceGroupName "resourceGroupName"
@@ -60,9 +63,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+panjang nama pekerjaan harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -136,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

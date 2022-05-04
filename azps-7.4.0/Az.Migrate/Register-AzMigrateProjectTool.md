@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/register
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Register-AzMigrateProjectTool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Register-AzMigrateProjectTool.md
-ms.openlocfilehash: 9f0155bc7b9a4cc8d4958b3192c145d6c6e77a68
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05e2041464008cf10a80922617b1fcbce0ebebdf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681174"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677428"
 ---
 # Register-AzMigrateProjectTool
 
 ## SYNOPSIS
 Mendaftarkan alat dengan proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/register-azmigrateprojecttool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Mendaftarkan alat dengan proyek migrasi.
 
 ### -AcceptLanguage
 Header permintaan standar.
-Digunakan oleh layanan untuk merespons klien dalam bahasa yang sesuai.
+Digunakan oleh layanan untuk menanggapi klien dalam bahasa yang sesuai.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrateProjectName
-Nama proyek Migrasi Azure.
+Nama proyek Azure Migrate.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Azure Resource Group yang melakukan migrasi proyek adalah bagian dari.
+Nama Grup Sumber Daya Azure yang memigrasikan proyek adalah bagian darinya.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Alat
-Dapatkan atau atur alat untuk didaftarkan.
+Mendapatkan atau mengatur alat yang akan didaftarkan.
 
 ```yaml
 Type: System.String
@@ -134,8 +137,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

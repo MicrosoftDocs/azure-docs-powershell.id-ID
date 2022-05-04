@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 156d6a955a6cb3615d47847b9e0c430e5f0eaba3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d0fb7f138acdc41b00e9d325da2966216e77114
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670050"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698720"
 ---
 # Export-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Mengekspor konfigurasi spark Synapse ke folder output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ Export-AzSynapseSparkConfiguration -InputObject <PSSparkConfigurationResource> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzSynapseSparkConfiguration mengekspor** konfigurasi spark Synapse ke file configuration(.json).
-Nama konfigurasi percikan menjadi nama file yang diekspor. Jika Anda menentukan nama konfigurasi percikan api, cmdlet akan mengekspor konfigurasi percikan tersebut. Jika Anda tidak menentukan nama, cmdlet mengekspor semua konfigurasi percikan dalam ruang kerja.
+Cmdlet **Export-AzSynapseSparkConfiguration mengekspor** konfigurasi spark Synapse ke file konfigurasi (.json).
+Nama konfigurasi spark menjadi nama file yang diekspor. Jika Anda menentukan nama konfigurasi spark, cmdlet akan mengekspor konfigurasi spark tersebut. Jika Anda tidak menentukan nama, cmdlet mengekspor semua konfigurasi spark di ruang kerja.
 
 ## EXAMPLES
 
@@ -48,14 +51,14 @@ Nama konfigurasi percikan menjadi nama file yang diekspor. Jika Anda menentukan 
 Export-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -OutputFolder "C:\SparkConfiguration"
 ```
 
-Mengekspor semua konfigurasi percikan api di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration".
+Mengekspor semua konfigurasi spark di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration".
 
 ### Contoh 2
 ```powershell
 Export-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContoSparkConfiguration -OutputFolder "C:\SparkConfiguration"
 ```
 
-Mengekspor konfigurasi percikan api tunggal bernama ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration".
+Mengekspor konfigurasi spark tunggal bernama ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration".
 
 ### Contoh 3
 ```powershell
@@ -63,7 +66,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Export-AzSynapseSparkConfiguration -Name ContoSparkConfiguration -OutputFolder "C:\SparkConfiguration"
 ```
 
-Mengekspor konfigurasi percikan api tunggal bernama ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration" melalui pipeline.
+Mengekspor konfigurasi spark tunggal bernama ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration" melalui alur.
 
 ### Contoh 4
 ```powershell
@@ -71,12 +74,12 @@ $sparkConfiguration = Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWork
 $sparkConfiguration | Export-AzSynapseSparkConfiguration -OutputFolder "C:\SparkConfiguration"
 ```
 
-Mengekspor konfigurasi spark tunggal yang disebut ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration" melalui pipeline.
+Mengekspor konfigurasi spark tunggal yang disebut ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration" melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi Spark.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder tempat konfigurasi percikan api harus ditempatkan.
+Folder tempat konfigurasi spark harus ditempatkan.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

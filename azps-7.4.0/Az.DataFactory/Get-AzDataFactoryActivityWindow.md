@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryActivityWindow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryActivityWindow.md
-ms.openlocfilehash: eb1702cb71296d2211ceb8056ff847626600a33b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 37a51b38f7100ae4d96517e14c3e2481250c98fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942715"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683706"
 ---
 # Get-AzDataFactoryActivityWindow
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jendela aktivitas yang terkait dengan pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryactivitywindow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzDataFactoryActivityWindow [-DataFactory] <PSDataFactory> [[-DatasetName] <
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzDataFactoryActivityWindow** mendapatkan informasi tentang jendela aktivitas yang terkait dengan pabrik data.
+Cmdlet **Get-AzDataFactoryActivityWindow** mendapatkan informasi tentang jendela aktivitas yang terkait dengan pabrik data.
 
 ## EXAMPLES
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** yang dikembalikan oleh cmdlet.
-Cmdlet ini mendapatkan jendela aktivitas yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan jendela aktivitas milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mendapatkan jendela aktivitas yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan jendela aktivitas milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -DatasetName
-Menentukan nama kumpulan data.
-Cmdlet ini mendapatkan jendela aktivitas yang termasuk dalam kumpulan data yang ditentukan parameter ini.
+Menentukan nama himpunan data.
+Cmdlet ini mendapatkan jendela aktivitas milik himpunan data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan jendela aktivitas yang dinyatakan dengan menggunakan tata bahasa filter Pencarian Azure.
+Menentukan jendela aktivitas yang dinyatakan dengan menggunakan tata bahasa filter Azure Search.
 Untuk informasi tentang tata bahasa, lihat Sintaks Ekspresi OData untuk Pencarianhttps://msdn.microsoft.com/en-us/library/azure/dn798921.aspx Azure (https://msdn.microsoft.com/en-us/library/azure/dn798921.aspx) di MSDN.
 Daftar jendela aktivitas difilter oleh string pencarian yang ditentukan parameter ini.
 
@@ -207,11 +210,11 @@ Accept wildcard characters: False
 ```
 
 ### -OrderBy
-Menentukan untuk memesan respons oleh salah satu parameter daftar jendela aktivitas.
+Menentukan untuk mengurutkan respons oleh salah satu parameter daftar jendela aktivitas.
 Ini adalah daftar properti yang dipisahkan koma.
 Misalnya: WindowStart, PercentComplete.
 Secara default, urutannya adalah urutan naik (ASC).
-Tentukan DESC jika Anda ingin mengurutkan daftar dalam urutan menurun.
+Tentukan DESC jika Anda ingin mengurutkan daftar dalam urutan turun.
 
 ```yaml
 Type: System.String
@@ -226,8 +229,8 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Menentukan nama garis pipa.
-Cmdlet ini mendapatkan jendela aktivitas yang termasuk dalam pipeline yang ditentukan parameter ini.
+Menentukan nama alur.
+Cmdlet ini mendapatkan jendela aktivitas milik alur yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -258,8 +261,8 @@ Accept wildcard characters: False
 ```
 
 ### -RunEnd
-Menentukan waktu akhir berjalannya jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktu prosesnya jatuh antara *waktu RunStart* dan *RunEnd* .
+Menentukan waktu akhir eksekusi jendela aktivitas.
+Cmdlet ini mendapatkan jendela aktivitas yang durasinya jatuh antara *waktu RunStart* dan *RunEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -274,8 +277,8 @@ Accept wildcard characters: False
 ```
 
 ### -RunStart
-Menentukan waktu mulai berjalannya jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktu prosesnya jatuh antara *waktu RunStart* dan *RunEnd* .
+Menentukan waktu mulai eksekusi jendela aktivitas.
+Cmdlet ini mendapatkan jendela aktivitas yang durasinya jatuh antara *waktu RunStart* dan *RunEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -289,7 +292,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Menentukan jumlah maksimum jendela aktivitas yang dikembalikan cmdlet ini.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 
 ### -WindowEnd
 Menentukan waktu akhir jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *WindowStart* dan *windowEnd* kali.
+Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *Waktu WindowStart* dan *WindowEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -320,9 +323,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WindowMulai
+### -WindowStart
 Menentukan waktu mulai jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *WindowStart* dan *windowEnd* kali.
+Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *Waktu WindowStart* dan *WindowEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -339,12 +342,12 @@ Accept wildcard characters: False
 ### -WindowState
 Menentukan status jendela aktivitas.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
+- Tidak ada
 - Menunggu
-- InProgress
+- SedangBerlangsung
 - Siap
 - Gagal
-- Dilewati Cmdlet ini mendapatkan jendela aktivitas yang berada dalam keadaan yang ditentukan parameter ini.
+- Dilewati Cmdlet ini mendapatkan jendela aktivitas yang dalam keadaan yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -361,9 +364,9 @@ Accept wildcard characters: False
 ### -WindowSubstate
 Menentukan substat jendela aktivitas.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Dibatalkan
+- Batal
 - timedOut
-- Memvalidasi Cmdlet ini mendapatkan jendela aktivitas yang berada di substansi yang ditentukan parameter ini.
+- Memvalidasi Cmdlet ini mendapatkan jendela aktivitas yang berada di substate yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

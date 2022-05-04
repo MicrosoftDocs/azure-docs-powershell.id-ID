@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
-ms.openlocfilehash: 64aafff4e74e70e76722b27c7e797b54e63e8a25
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91333abf0af8adac68b76b5c32b5a6472b3ba63b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231237"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685648"
 ---
 # Get-AzVMDscExtension
 
 ## SYNOPSIS
-Mendapatkan pengaturan ekstensi DSC pada mesin virtual tertentu.
+Mendapatkan pengaturan ekstensi DSC pada komputer virtual tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdscextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzVMDscExtension [-Status] [-VM <PSVirtualMachine>] [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Desired State Configuration (DSC) pada mesin virtual tertentu.
+Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Desired State Configuration (DSC) pada komputer virtual tertentu.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzVMDscExtension** mendapatkan pengaturan ekstensi Desired State Co
 Get-AzVMDscExtension -ResourceGroupName "ResourceGroup002" -VMName "VM07" -Name "DSC"
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada mesin virtual bernama VM07.
+Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada komputer virtual bernama VM07.
 
 ## PARAMETERS
 
@@ -61,10 +64,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
 Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzVMDscExtension**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDscExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDscExtension** atau gunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin maya tempat ekstensi diaktifkan.
+Menentukan objek komputer virtual tempat ekstensi diaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi DSC.
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan ekstensi DSC.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

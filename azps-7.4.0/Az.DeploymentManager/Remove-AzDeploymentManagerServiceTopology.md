@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: e2275329611d5bf9836bc72022e99442e8fd042a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 391c004cc8908cf924bdd9a26a37f38c3fe63055
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287991"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715250"
 ---
 # Remove-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Menghapus topologi layanan. Semua layanan yang dibuat di bawah topologi layanan perlu dihapus sebelum menghapus topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerservicetopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Remove-AzDeploymentManagerServiceTopology [-InputObject] <PSServiceTopologyResou
 ## DESCRIPTION
 Cmdlet **Remove-AzDeploymentManagerServiceTopology** menghapus topologi layanan.
 
-Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceTopology atau ResourceId.
+Tentukan topologi layanan berdasarkan namanya dan nama grup sumber daya. Secara bergantian, Anda dapat menyediakan objek ServiceTopology atau ResourceId.
 
 ## EXAMPLES
 
@@ -49,21 +52,21 @@ Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifn
 Remove-AzDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology
 ```
 
-Perintah ini menghapus topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
+Perintah ini menghapus topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 2: Hapus topologi layanan menggunakan pengidentifikasi sumber daya.
+### Contoh 2: Menghapus topologi layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 Remove-AzDeploymentManagerServiceTopology -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology"
 ```
 
-Perintah ini menghapus topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
+Perintah ini menghapus topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 3: Hapus topologi layanan menggunakan objek topologi layanan.
+### Contoh 3: Menghapus topologi layanan menggunakan objek topologi layanan.
 ```powershell
 Remove-AzDeploymentManagerService -InputObject $serviceTopologyObject
 ```
 
-Perintah ini menghapus topologi layanan yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
+Perintah ini menghapus topologi layanan yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $serviceTopologyObject.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama topologi layanan.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

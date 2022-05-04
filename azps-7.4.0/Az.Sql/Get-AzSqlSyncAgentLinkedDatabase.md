@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
-ms.openlocfilehash: 8cacc3f3d17877f5d7ad71ce53c2d09ebdc9c7a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e836f6b13a9577eb591a73b72be70d6a79c921f9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995563"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706692"
 ---
 # Get-AzSqlSyncAgentLinkedDatabase
 
 ## SYNOPSIS
 Mengembalikan informasi tentang database SQL Server yang ditautkan oleh agen sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncagentlinkeddatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzSqlSyncAgentLinkedDatabase** mengembalikan informasi tentang data
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan database SQL Server tertaut untuk agen sinkronisasi Azure SQL.
+### Contoh 1: Dapatkan database SQL Server yang ditautkan untuk agen sinkronisasi Azure SQL.
 
 Contoh berikut mengembalikan database SQL Server tertaut yang ditautkan oleh agen sinkronisasi Azure SQL.
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat agen sinkronisasi berada.
+Nama Azure SQL Server tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprint.md
-ms.openlocfilehash: 5101c3d9343570ddf40c9bacde84ce49f5bf31fb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9dda72bd78d4fec46f0214c7d3cce0b4e5d11520
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128979"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689840"
 ---
 # Set-AzBlueprint
 
 ## SYNOPSIS
 Memperbarui definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzBlueprint -Name <String> -ManagementGroupId <String> -BlueprintFile <Strin
 ```
 
 ## DESCRIPTION
-Perbarui definisi cetak biru dan simpan dalam grup manajemen atau langganan tertentu.
+Perbarui definisi cetak biru dan simpan dalam langganan atau grup manajemen yang ditentukan.
 
 ## EXAMPLES
 
@@ -53,12 +56,12 @@ Parameters        : {enforcetaganditsvalue_tagName, enforcetaganditsvalue_tagVal
 ResourceGroups    : {AppNetworkRG}
 ```
 
-Memperbarui definisi cetak biru dengan parameter baru.
+Perbarui definisi cetak biru dengan parameter baru.
 
 ## PARAMETERS
 
 ### -BlueprintFile
-Jalur ke file Blueprint JSON di disk.
+Jalur ke file JSON Cetak Biru pada disk.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi cetak biru.
 
 ```yaml
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

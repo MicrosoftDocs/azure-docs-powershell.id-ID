@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: 9c534f3959d2850b9a9e929c678e97cd54292fa2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4cae763b853ba72e994017d34413f9d71d6c125f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999667"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735616"
 ---
 # Get-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
-Mendapatkan konfigurasi kumpulan akun integrasi.
+Mendapatkan konfigurasi batch akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountbatchconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzIntegrationAccountBatchConfiguration -ParentResourceId <String> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountBatchConfiguration** mendapatkan konfigurasi kumpulan dari akun integrasi.
+Cmdlet **Get-AzIntegrationAccountBatchConfiguration** mendapatkan konfigurasi batch dari akun integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi kumpulan menurut parameter
+### Contoh 1: Mendapatkan konfigurasi batch berdasarkan parameter
 ```powershell
 Get-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig"
 ```
@@ -56,9 +59,9 @@ Location   :
 Tags       :
 ```
 
-Dapatkan konfigurasi kumpulan bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
+Dapatkan konfigurasi batch bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
 
-### Contoh 2: Mencantumkan semua konfigurasi kumpulan dalam akun integrasi menurut parameter
+### Contoh 2: Mencantumkan semua konfigurasi batch dalam akun integrasi menurut parameter
 ```powershell
 Get-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount"
 ```
@@ -79,7 +82,7 @@ Location   :
 Tags       :
 ```
 
-Dapatkan semua konfigurasi kumpulan yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
+Dapatkan semua konfigurasi batch yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi kumpulan akun integrasi.
+### -Name
+Nama konfigurasi batch akun integrasi.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

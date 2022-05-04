@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
-ms.openlocfilehash: a61b923a51412278da84cc105f2fa5c9d8deb465
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4addcfb307d971f4ef9bf685f1cf3f7744cbad36
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806148"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706170"
 ---
 # Get-AzExpressRouteCircuit
 
 ## SYNOPSIS
 Mendapatkan sirkuit Azure ExpressRoute dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ AllowClassicOperations           : False
 GatewayManagerEtag               :
 ```
 
-Dapatkan sirkuit ExpressRoute tertentu dengan Name "testrg" dan ResourceGroupName "test"
+Dapatkan sirkuit ExpressRoute tertentu dengan Nama "testrg" dan ResourceGroupName "test"
 
 ### Contoh 2: Mencantumkan sirkuit ExpressRoute menggunakan pemfilteran
 ```powershell
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sirkuit ExpressRoute.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceLocation.md
-ms.openlocfilehash: d7f478c486d5ba3dbefd55ddb03397415e7c9334
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc54ec190b5af41b50118657aa0bef0c8dabae58
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803826"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688940"
 ---
 # Get-AzPeeringServiceLocation
 
 ## SYNOPSIS
 Mendapatkan daftar lokasi layanan peering yang ditawarkan oleh Microsoft.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringservicelocation) untuk informasi terbaru.
 
 ## SYNTAX
 

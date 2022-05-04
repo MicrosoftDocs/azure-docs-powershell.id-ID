@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
-ms.openlocfilehash: a734fe3aacc734c63f4122233fd7d71131d55b5d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d1d80fc9ceb7f05388fa30481d488b3c58bbe01d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123543"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714370"
 ---
 # Get-AzIoTDeviceProvisioningServiceRegistration
 
 ## SYNOPSIS
-Dapatkan status registrasi perangkat.
+Mendapatkan status pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzIoTDeviceProvisioningServiceRegistration [-ResourceId] <String> [-Registra
 ```
 
 ## DESCRIPTION
-Dapatkan status pendaftaran perangkat atau status pendaftaran perangkat di bawah pendaftaranGroup dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Dapatkan status pendaftaran perangkat atau status pendaftaran perangkat di bawah enrollmentGroup di Azure IoT Hub Device Provisioning Service.
 
 ## EXAMPLES
 
@@ -49,14 +52,14 @@ Dapatkan status pendaftaran perangkat atau status pendaftaran perangkat di bawah
 Get-AzIoTDeviceProvisioningServiceRegistration -ResourceGroupName "myresourcegroup" -DpsName "mydps" -RegistrationId "enroll1"
 ```
 
-Dapatkan detail status pendaftaran perangkat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Dapatkan detail status pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningServiceRegistration -ResourceGroupName "myresourcegroup" -DpsName "mydps" -EnrollmentId "grp-enroll1"
 ```
 
-Cantumkan semua status pendaftaran perangkat dalam pendaftaran iniGroup.
+Cantumkan semua status pendaftaran perangkat dalam pendaftaranGroup ini.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsName
-Nama Layanan Penyediaan Perangkat IoT
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Id Pendaftaran
+### -EnrollmentId
 ID grup pendaftaran.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri Sql.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

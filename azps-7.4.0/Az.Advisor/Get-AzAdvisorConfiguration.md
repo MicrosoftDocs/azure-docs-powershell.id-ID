@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
-ms.openlocfilehash: 16b9c62960479dd249cef077c9627b808535ba00
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 19b601b894586bfe6e7d571929352870600fd409
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068157"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690002"
 ---
 # Get-AzAdvisorConfiguration
 
 ## SYNOPSIS
-Dapatkan konfigurasi Azure Advisor untuk langganan atau grup sumber daya tertentu.
+Dapatkan konfigurasi Azure Advisor untuk langganan atau grup sumber daya yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzAdvisorConfiguration [-ResourceGroupName <String>] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Konfigurasi yang terkait dengan langganan memiliki dua tipe:
+Konfigurasi yang terkait dengan langganan memiliki dua jenis:
 
-Konfigurasi tingkat langganan: Hanya ada satu konfigurasi tipe ini untuk langganan. LowCpuThreshold dan Exclude adalah satu-satunya properti dari tipe konfigurasi ini.
+Konfigurasi tingkat langganan: Hanya ada satu konfigurasi jenis ini untuk langganan. LowCpuThreshold dan Exclude adalah satu-satunya properti dari jenis konfigurasi ini.
 
-Konfigurasi tingkat ResourceGroup: Hanya ada satu konfigurasi untuk setiap ResourceGroup dalam langganan. Tidak termasuk adalah satu-satunya properti dari tipe konfigurasi ini.
+Konfigurasi tingkat ResourceGroup: Hanya ada satu konfigurasi untuk setiap ResourceGroup dalam langganan. Kecualikan adalah satu-satunya properti dari jenis konfigurasi ini.
 
 ## EXAMPLES
 
@@ -84,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

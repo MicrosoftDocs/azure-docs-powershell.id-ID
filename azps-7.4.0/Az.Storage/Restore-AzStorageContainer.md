@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageContainer.md
-ms.openlocfilehash: 49038e651e54c49bcd4ec7fcef90a6dbcf0e1306
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8fb08b53cb4a1bd8b1baadee8574925f22104adb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721728"
 ---
 # Restore-AzStorageContainer
 
 ## SYNOPSIS
-Memulihkan wadah blob penyimpanan Azure yang dihapus sebelumnya.
+Memulihkan kontainer blob penyimpanan Azure yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Restore-AzStorageContainer [-Name] <String> [-VersionId] <String> [-Context <ISt
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzStorageContainer** memulihkan wadah blob penyimpanan Azure yang dihapus sebelumnya.
-Cmdlet ini hanya berfungsi setelah softdelete Container yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
+Cmdlet **Restore-AzStorageContainer memulihkan kontainer** blob penyimpanan Azure yang dihapus sebelumnya.
+Cmdlet ini hanya berfungsi setelah softdelete Kontainer yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
 
 ## EXAMPLES
 
-### Contoh 1: Wadah daftar menyertakan wadah yang dihapus, dan memulihkan semua wadah yang dihapus dengan pipeline
+### Contoh 1: Mencantumkan kontainer termasuk kontainer yang dihapus, dan memulihkan semua kontainer yang dihapus dengan alur
 ```
 PS C:\> Get-AzStorageContainer -IncludeDeleted -Context $ctx | ? { $_.IsDeleted } | Restore-AzStorageContainer
 
@@ -42,9 +45,9 @@ container1           Off
 container2           Off
 ```
 
-Perintah ini mencantumkan semua kontainer termasuk wadah yang dihapus, memfilter semua wadah yang dihapus, lalu memulihkan semua wadah yang dihapus ke nama wadah yang sama dengan pipeline.
+Perintah ini mencantumkan semua kontainer termasuk kontainer yang dihapus, memfilter semua kontainer yang dihapus, lalu memulihkan semua kontainer yang dihapus ke nama kontainer yang sama dengan alur.
 
-### Contoh 2: Memulihkan wadah tunggal yang dihapus
+### Contoh 2: Memulihkan satu kontainer yang dihapus
 ```
 PS C:\> Get-AzStorageContainer -IncludeDeleted -Context $ctx | ? { $_.IsDeleted } 
 
@@ -64,12 +67,12 @@ Name                 PublicAccess         LastModified                   IsDelet
 container1           Off
 ```
 
-Perintah pertama ini mencantumkan semua wadah dan memfilter wadah yang dihapus.
-Perintah sekunder memulihkan wadah yang dihapus dengan memasukkan parameter secara manual.
+Perintah pertama ini mencantumkan semua kontainer dan memfilter kontainer yang dihapus.
+Perintah sekunder memulihkan kontainer yang dihapus dengan memasukkan parameter secara manual.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -99,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama wadah yang dihapus sebelumnya.
+### -Name
+Nama kontainer yang dihapus sebelumnya.
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

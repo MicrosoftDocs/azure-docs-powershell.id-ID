@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
-ms.openlocfilehash: 95757222b5a7c958a8b9664a8933fff9bd9f8de1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e6b7980af5cdab62c102e10a907dbfa9e3cac7ec
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057411"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690326"
 ---
 # Set-AzStorageBlobLegalHold
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan penahanan legal pada blob Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragebloblegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,8 +55,8 @@ Set-AzStorageBlobLegalHold [-Blob] <String> [-Container] <String> [-DisableLegal
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageBlobLegalHold** mengaktifkan atau menonaktifkan pembekuan hukum pada blob Storage.
-Cmdlet hanya berfungsi ketika wadah blob telah mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+**Cmdlet Set-AzStorageBlobLegalHold** memungkinkan atau menonaktifkan penahanan legal pada blob Storage.
+Cmdlet hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ## EXAMPLES
 
@@ -73,10 +76,10 @@ PS C:\> $blob.BlobProperties.HasLegalHold
 True
 ```
 
-Perintah ini memungkinkan penahanan legal pada Storage blob, lalu memperlihatkan hasilnya.
-Perintah hanya berfungsi ketika wadah blob telah mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah ini memungkinkan penahanan legal pada blob Storage, lalu menampilkan hasilnya.
+Perintah hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
-### Contoh 2: Disable legal hold on a Storage blob with pipeline.
+### Contoh 2: Nonaktifkan penahanan legal pada blob Storage dengan alur.
 ```
 PS C:\> $blob = Get-AzStorageBlob -Container $containerName -Blob $blobname | Set-AzStorageBlobLegalHold -DisableLegalHold
 
@@ -92,8 +95,8 @@ PS C:\> $blob.BlobProperties.HasLegalHold
 False
 ```
 
-Perintah ini menonaktifkan penahanan legal pada Storage blob dengan pipeline, lalu memperlihatkan hasilnya.
-Perintah hanya berfungsi ketika wadah blob telah mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah ini menonaktifkan penahanan legal pada blob Storage dengan alur, lalu menampilkan hasilnya.
+Perintah hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLegalHold
-Nonaktifkan LegalHold di Blob.
+Nonaktifkan LegalHold pada Blob.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableLegalHold
-Aktifkan LegalHold di Blob.
+Aktifkan LegalHold pada Blob.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: cfd8841970f67bd2be11ae11e1ddfe3b65b336ab
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b62f12180d08c6ad05376fe6c9d947744cd281a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933859"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721764"
 ---
 # Get-AzSqlDatabaseSensitivityClassification
 
 ## SYNOPSIS
-Mendapatkan tipe informasi saat ini dan label sensitivitas kolom dalam database.
+Mendapatkan jenis informasi saat ini dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +50,11 @@ Get-AzSqlDatabaseSensitivityClassification -DatabaseObject <AzureSqlDatabaseMode
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlDatabaseSensitivityClassification mengembalikan tipe informasi saat ini dan label sensitivitas kolom dalam database Azure SQL.
+Cmdlet Get-AzSqlDatabaseSensitivityClassification mengembalikan jenis informasi saat ini dan label sensitivitas kolom dalam database Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi saat ini dan label sensitivitas Azure SQL Database.
+### Contoh 1: Dapatkan jenis informasi saat ini dan label sensitivitas Azure SQL Database.
 ```powershell
 Get-AzSqlDatabaseSensitivityClassification -ResourceGroupName resourceGroup -ServerName server -DatabaseName database
 ```
@@ -81,7 +84,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi saat ini dan label sensitivitas Azure SQL Database dengan Piping.
+### Contoh 2: Dapatkan jenis informasi saat ini dan label sensitivitas Azure SQL Database dengan Piping.
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Get-AzSqlDatabaseSensitivityClassification
 ```
@@ -111,7 +114,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 3: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari Azure SQL Database.
+### Contoh 3: Dapatkan jenis informasi saat ini dan label sensitivitas kolom tertentu dari Azure SQL Database.
 ```powershell
 Get-AzSqlDatabaseSensitivityClassification -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 ```
@@ -130,7 +133,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 4: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari Azure SQL Database menggunakan Piping.
+### Contoh 4: Dapatkan jenis informasi saat ini dan label sensitivitas kolom tertentu dari Azure SQL Database menggunakan Piping.
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Get-AzSqlDatabaseSensitivityClassification -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 ```
@@ -152,7 +155,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

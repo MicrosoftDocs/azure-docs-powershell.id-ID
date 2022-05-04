@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 1e74c19def6b049ce3d09940a3be589a2ea89ec5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 14005c4c0f420d47cf8915bcb0dfe7b9b2d68461
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270585"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729914"
 ---
 # Start-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Memulai pekerjaan streaming.
-Setelah pekerjaan dimulai, proses akan mulai memproses kejadian input dan menghasilkan output.
+Setelah pekerjaan dimulai, pekerjaan akan mulai memproses peristiwa input dan menghasilkan output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/start-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ Start-AzStreamAnalyticsJob -InputObject <IStreamAnalyticsIdentity> [-OutputStart
 
 ## DESCRIPTION
 Memulai pekerjaan streaming.
-Setelah pekerjaan dimulai, proses akan mulai memproses kejadian input dan menghasilkan output.
+Setelah pekerjaan dimulai, pekerjaan akan mulai memproses peristiwa input dan menghasilkan output.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai pekerjaan Stream Analytics
+### Contoh 1: Memulai pekerjaan Azure Stream Analytics
 ```powershell
 Start-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal
 
@@ -48,18 +51,18 @@ Start-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-porta
 
 Perintah ini memulai pekerjaan StreamingJob.
 
-### Contoh 2: Memulai pekerjaan Stream Analytics menurut pipeline
+### Contoh 2: Memulai pekerjaan Azure Stream Analytics menurut alur
 ```powershell
 Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal | Start-AzStreamAnalyticsJob
 
 ```
 
-Perintah ini memulai pekerjaan StreamingJob menurut saluran.
+Perintah ini memulai pekerjaan StreamingJob menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan streaming.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputStartMode
-Value may be JobStartTime, CustomTime, or LastOutputEventTime to indicate whether the starting point of the output event stream should start whenever the job is started, start at a custom user time stamp specified via outputStartTime property, or start from the last event output time.
+Nilainya mungkin JobStartTime, CustomTime, atau LastOutputEventTime untuk menunjukkan apakah titik awal aliran peristiwa output harus dimulai setiap kali pekerjaan dimulai, mulai dari stempel waktu pengguna kustom yang ditentukan melalui properti outputStartTime, atau mulai dari waktu output peristiwa terakhir.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Support.OutputStartMode
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputStartTime
-Nilai adalah stempel waktu yang diformat ISO-8601 yang menunjukkan titik awal aliran kejadian output, atau null untuk menunjukkan bahwa streaming kejadian output akan dimulai setiap kali pekerjaan streaming dimulai.
+Nilai adalah stempel waktu berformat ISO-8601 yang menunjukkan titik awal aliran peristiwa output, atau null untuk menunjukkan bahwa aliran peristiwa output akan dimulai setiap kali pekerjaan streaming dimulai.
 Properti ini harus memiliki nilai jika outputStartMode diatur ke CustomTime.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -210,8 +213,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -266,10 +269,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

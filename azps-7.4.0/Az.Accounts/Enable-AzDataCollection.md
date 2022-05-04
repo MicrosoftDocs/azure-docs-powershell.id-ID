@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzDataCollection.md
-ms.openlocfilehash: dec05e96149fea4e405eb13af0ed48988b17b29b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2750e32988f0813ceb0d6fbfe179be0b7acd1e43
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690110"
 ---
 # Enable-AzDataCollection
 
 ## SYNOPSIS
-Memungkinkan Azure PowerShell mengumpulkan data untuk meningkatkan pengalaman pengguna dengan cmdlet Azure PowerShell. Menjalankan cmdlet ini memilih pengumpulan data untuk pengguna saat ini di komputer saat ini. Data dikumpulkan secara default kecuali Anda menolak secara eksplisit.
+Memungkinkan Azure PowerShell mengumpulkan data untuk meningkatkan pengalaman pengguna dengan cmdlet Azure PowerShell. Mengeksekusi cmdlet ini memilih untuk pengumpulan data untuk pengguna saat ini pada komputer saat ini. Data dikumpulkan secara default kecuali Anda secara eksplisit memilih keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/enable-azdatacollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,14 +28,14 @@ Enable-AzDataCollection [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-C
 
 ## DESCRIPTION
 
-`Enable-AzDataCollection` Cmdlet digunakan untuk memilih pengumpulan data. Azure PowerShell secara otomatis mengumpulkan data telemetri secara default. Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, mengidentifikasi masalah umum, dan untuk meningkatkan pengalaman Azure PowerShell.
-Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau pribadi apa pun. Untuk menonaktifkan pengumpulan data, Anda harus menolak secara eksplisit dengan menjalankan `Disable-AzDataCollection`.
+`Enable-AzDataCollection` Cmdlet digunakan untuk ikut serta dalam pengumpulan data. Azure PowerShell secara otomatis mengumpulkan data telemetri secara default. Microsoft mengagregasi kumpulan data untuk mengidentifikasi pola penggunaan, mengidentifikasi masalah umum, dan meningkatkan pengalaman Azure PowerShell.
+Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau personal apa pun. Untuk menonaktifkan pengumpulan data, Anda harus secara eksplisit memilih keluar dengan mengeksekusi `Disable-AzDataCollection`.
 
 ## EXAMPLES
 
 ### Contoh 1: Mengaktifkan pengumpulan data untuk pengguna saat ini
 
-Contoh berikut ini memperlihatkan cara mengaktifkan pengumpulan data untuk pengguna saat ini.
+Contoh berikut menunjukkan cara mengaktifkan pengumpulan data untuk pengguna saat ini.
 
 ```powershell
 Enable-AzDataCollection
@@ -56,9 +59,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,11 +92,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
