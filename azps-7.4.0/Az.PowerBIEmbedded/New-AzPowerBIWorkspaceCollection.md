@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIWorkspaceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIWorkspaceCollection.md
-ms.openlocfilehash: 7f71f2958ed48378c36e27803a168dd0294f0ae8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c33f8384b1184ed24d7990b42da97b3d554febbe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936973"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590436"
 ---
 # New-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
 Membuat kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/new-azpowerbiworkspacecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ New-AzPowerBIWorkspaceCollection [-ResourceGroupName] <String> [-WorkspaceCollec
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPowerBIWorkspaceCollection** membuat kumpulan ruang kerja Power BI untuk langganan Azure Anda di grup sumber daya dan lokasi tertentu.
+Cmdlet **New-AzPowerBIWorkspaceCollection** membuat kumpulan ruang kerja Power BI untuk langganan Azure Anda di grup dan lokasi sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kumpulan ruang kerja
+### Contoh 1: Membuat koleksi ruang kerja
 ```powershell
 New-AzPowerBIWorkspaceCollection -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11" -Location "Japan West"
 ```
 
-Perintah ini membuat kumpulan ruang kerja bernama WCN11 dalam grup sumber daya tertentu di lokasi yang ditentukan.
+Perintah ini membuat kumpulan ruang kerja bernama WCN11 di grup sumber daya yang ditentukan di lokasi yang ditentukan.
 
 ## PARAMETERS
 
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

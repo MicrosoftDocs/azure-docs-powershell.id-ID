@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 5c8a62c6397f1d6193d951be18ab53855ea72c75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 810ead1f12781f6cdd24f2fcf81a52f5749169f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669312"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615020"
 ---
 # Set-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,10 +31,10 @@ Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint>
 ## DESCRIPTION
 Cmdlet **Set-AzTrafficManagerEndpoint** memperbarui titik akhir di Azure Traffic Manager.
 Cmdlet ini memperbarui pengaturan dari objek titik akhir lokal.
-Anda bisa menentukan objek titik akhir baik dengan menggunakan parameter *TrafficManagerEndpoint* atau dengan menggunakan pipeline.
+Anda dapat menentukan objek titik akhir baik dengan menggunakan parameter *TrafficManagerEndpoint* atau dengan menggunakan alur.
 
-Anda bisa mendapatkan objek lokal yang mewakili titik akhir dengan menggunakan cmdlet Get-AzTrafficManagerEndpoint.
-Ubah objek secara lokal lalu gunakan **Set-AzTrafficManagerEndpoint** untuk melakukan perubahan Anda.
+Anda dapat memperoleh objek lokal yang mewakili titik akhir dengan menggunakan cmdlet Get-AzTrafficManagerEndpoint.
+Ubah objek secara lokal lalu gunakan **Set-AzTrafficManagerEndpoint** untuk menerapkan perubahan Anda.
 
 ## EXAMPLES
 
@@ -42,11 +45,11 @@ $TrafficManagerEndpoint.Weight = 20
 Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama mendapatkan titik akhir Azure Traffic Manager menggunakan cmdlet **Get-AzTrafficManagerEndpoint**.
+Perintah pertama mendapatkan titik akhir Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerEndpoint**.
 Perintah menyimpan titik akhir secara lokal dalam variabel $TrafficManagerEndpoint.
 
-Perintah kedua mengubah titik akhir secara lokal.
-Perintah ini mengubah berat titik akhir menjadi 20.
+Perintah kedua mengubah titik akhir tersebut secara lokal.
+Perintah ini mengubah bobot titik akhir menjadi 20.
 
 Perintah ketiga memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

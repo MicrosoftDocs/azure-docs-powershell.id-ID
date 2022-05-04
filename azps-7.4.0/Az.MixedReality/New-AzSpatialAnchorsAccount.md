@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
-ms.openlocfilehash: 39845cfe39ade47172882ea76a078684429415ab
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7b16235e074b4344743fcbe380ec5df95d1ff97
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745632"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607010"
 ---
 # New-AzSpatialAnchorsAccount
 
 ## SYNOPSIS
-Membuat Akun Jangkar Spasial
+Membuat Akun Spatial Anchors
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSpatialAnchorsAccount -ResourceGroupName <String> -Name <String> -Location
 ```
 
 ## DESCRIPTION
-Buat Akun Jangkar Spasial baru di Langganan, Grup Sumber Daya, dan Kawasan tertentu.
+Buat Akun Spatial Anchors baru di Langganan, Grup Sumber Daya, dan Wilayah tertentu.
 
 ## EXAMPLES
 
@@ -46,12 +49,12 @@ Name                : example
 Type                : Microsoft.MixedReality/SpatialAnchorsAccounts
 ```
 
-Buat "contoh" Akun Jangkar Spasial baru dalam Langganan saat ini, Grup Sumber Daya "rg1" dan AS Pusat.
+Buat "contoh" Akun Spatial Anchors baru di Langganan saat ini, Grup Sumber Daya "rg1" dan AS Tengah.
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Akun Jangkar Spasial.
+Lokasi Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -95,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Jangkar Spasial.
+### -Name
+Nama Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -142,12 +145,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

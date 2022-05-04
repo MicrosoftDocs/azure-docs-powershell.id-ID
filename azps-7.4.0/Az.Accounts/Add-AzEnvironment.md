@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Add-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Add-AzEnvironment.md
-ms.openlocfilehash: 83e06daec3eb3cdd5c765a24eb9fc9dbbc51227a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 585721aa5881b424380b53402a00824bd65a6b5d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142880165"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590022"
 ---
 # Add-AzEnvironment
 
 ## SYNOPSIS
 Menambahkan titik akhir dan metadata untuk instans Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/add-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,12 +62,12 @@ Add-AzEnvironment [-AutoDiscover] [-Uri <Uri>] [-Scope <ContextModificationScope
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzEnvironment menambahkan titik akhir dan metadata untuk memungkinkan cmdlet Azure Resource Manager terhubung dengan instans baru Azure Resource Manager.
-Lingkungan bawaan AzureCloud dan AzureChinaCloud menargetkan instans publik Azure Resource Manager yang sudah ada.
+Cmdlet Add-AzEnvironment menambahkan titik akhir dan metadata untuk mengaktifkan cmdlet Azure Resource Manager untuk terhubung dengan instans baru Azure Resource Manager.
+Lingkungan bawaan AzureCloud dan AzureChinaCloud menargetkan instans publik Azure Resource Manager yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan mengubah lingkungan baru
+### Contoh 1: Membuat dan memodifikasi lingkungan baru
 ```powershell
 Add-AzEnvironment -Name TestEnvironment `
         -ActiveDirectoryEndpoint TestADEndpoint `
@@ -114,7 +117,7 @@ ExtendedProperties                                : {}
 BatchEndpointResourceId                           :
 ```
 
-Dalam contoh ini, kami membuat lingkungan Azure baru dengan titik akhir sampel menggunakan Add-AzEnvironment, lalu kami mengubah nilai atribut ActiveDirectoryEndpoint dan GraphEndpoint lingkungan yang dibuat menggunakan cmdlet Set-AzEnvironment.
+Dalam contoh ini kita membuat lingkungan Azure baru dengan titik akhir sampel menggunakan Add-AzEnvironment, dan kemudian kita mengubah nilai atribut ActiveDirectoryEndpoint dan GraphEndpoint dari lingkungan yang dibuat menggunakan cmdlet Set-AzEnvironment.
 
 ### Contoh 2: Menemukan lingkungan baru melalui Uri
 ```powershell
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoDiscover
-Menemukan lingkungan melalui titik akhir default atau yang dikonfigurasi.
+Menemukan lingkungan melalui titik akhir default atau dikonfigurasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAnalysisServicesEndpointResourceId
-Pengidentifikasi sumber daya sumber daya sumber daya Azure Analysis Services.
+Pengidentifikasi sumber daya dari sumber daya Azure Analysis Services.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAnalysisServicesEndpointSuffix
-Titik akhir yang digunakan saat berkomunikasi dengan API Azure Log Analytics.
+Titik akhir yang digunakan saat berkomunikasi dengan AZURE Log Analytics API.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAttestationServiceEndpointResourceId
-Pengidentifikasi sumber daya layanan Azure Attestation penerima token yang diminta.
+Pengidentifikasi sumber daya dari layanan Azure Attestation yang merupakan penerima token yang diminta.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix
-Akhiran Dns azure Data Lake Analytics pekerjaan dan layanan katalog
+Akhiran Dns layanan pekerjaan dan katalog Azure Data Lake Analytics
 
 ```yaml
 Type: System.String
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureKeyVaultDnsSuffix
-Akhiran dns layanan azure Key Vault. Contohnya adalah vault-int.azure-int.net
+Akhiran dns layanan Azure Key Vault. Contohnya adalah vault-int.azure-int.net
 
 ```yaml
 Type: System.String
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureOperationalInsightsEndpoint
-Titik akhir yang digunakan saat berkomunikasi dengan API Azure Log Analytics.
+Titik akhir yang digunakan saat berkomunikasi dengan AZURE Log Analytics API.
 
 ```yaml
 Type: System.String
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureOperationalInsightsEndpointResourceId
-Audiens untuk token yang diautentikasi dengan API Azure Log Analytics.
+Audiens untuk token yang mengautentikasi dengan AZURE Log Analytics API.
 
 ```yaml
 Type: System.String
@@ -425,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -BatchEndpointResourceId
-Pengidentifikasi sumber daya layanan Azure Batch penerima token yang diminta
+Pengidentifikasi sumber daya layanan Azure Batch yang merupakan penerima token yang diminta
 
 ```yaml
 Type: System.String
@@ -485,7 +488,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAdfsAuthentication
-Menunjukkan bahwa autentikasi lokal Active Directory Federation Services (ADFS) diperbolehkan.
+Menunjukkan bahwa autentikasi lokal Active Directory Federation Services (ADFS) diizinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -515,7 +518,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang diautentikasi dengan Titik Akhir ad Graph.
+Audiens untuk token yang mengautentikasi dengan Ad Graph Endpoint.
 
 ```yaml
 Type: System.String
@@ -575,7 +578,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftGraphUrl
-Url Graph Microsoft
+Url Microsoft Graph
 
 ```yaml
 Type: System.String
@@ -589,7 +592,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama lingkungan yang akan ditambahkan.
 
 ```yaml
@@ -620,7 +623,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceManagerEndpoint
-Menentukan URL untuk permintaan Resource Manager Azure.
+Menentukan URL untuk permintaan azure Resource Manager.
 
 ```yaml
 Type: System.String
@@ -634,8 +637,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
+### -Cakupan
+Menentukan cakupan perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -666,7 +669,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlDatabaseDnsSuffix
-Menentukan akhiran nama-domain untuk server Azure SQL Database.
+Menentukan akhiran nama domain untuk server Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -696,7 +699,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerDnsSuffix
-Menentukan akhiran nama-domain untuk layanan Azure Traffic Manager.
+Menentukan akhiran nama domain untuk layanan Azure Traffic Manager.
 
 ```yaml
 Type: System.String
@@ -725,8 +728,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -741,7 +744,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -756,7 +759,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -774,7 +777,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzEnvironment](./Get-AzEnvironment.md)
 
-[Hapus-AzEnvironment](./Remove-AzEnvironment.md)
+[Remove-AzEnvironment](./Remove-AzEnvironment.md)
 
 [Set-AzEnvironment](./Set-AzEnvironment.md)
 

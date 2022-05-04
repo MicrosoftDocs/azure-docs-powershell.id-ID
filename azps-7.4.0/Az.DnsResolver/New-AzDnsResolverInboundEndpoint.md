@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverInboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverInboundEndpoint.md
-ms.openlocfilehash: 6a79e15ddb9cf0f9e95362f0f102941b25356515
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2baecc73cfb7dacdfa58070b3061e25ebfed1abb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748494"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607334"
 ---
 # New-AzDnsResolverInboundEndpoint
 
 ## SYNOPSIS
-Membuat atau memperbarui titik akhir masuk untuk penyelesaian DNS.
+Membuat atau memperbarui titik akhir masuk untuk pemecah masalah DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsresolverinboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzDnsResolverInboundEndpoint -DnsResolverName <String> -Name <String> -Resou
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui titik akhir masuk untuk penyelesaian DNS.
+Membuat atau memperbarui titik akhir masuk untuk pemecah masalah DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Titik Akhir Masuk untuk Pemecah DNS
+### Contoh 1: Membuat Titik Akhir Masuk untuk Pemecah Masalah DNS
 ```powershell
 $ipConfiguration = New-AzDnsResolverIPConfigurationObject -PrivateIPAllocationMethod Dynamic -SubnetId /subscriptions/0e5a46b1-de0b-4ec3-a5d7-dda908b4e076/resourceGroups/powershell-test-rg/providers/Microsoft.Network/virtualNetworks/psvirtualnetworkname31ur3isx/subnets/pssubnetname311tqweg
 
@@ -44,9 +47,9 @@ Name                  Type                                            Etag
 sampleInboundEndpoint Microsoft.Network/dnsResolvers/inboundEndpoints "0b008451-0000-0800-0000-60402b960000"
 ```
 
-Perintah ini membuat Titik Akhir Masuk untuk Pemecah DNS.
+Perintah ini membuat Titik Akhir Masuk untuk Pemecah Masalah DNS.
 
-### Contoh 2: Membuat Titik Akhir Masuk untuk Resolver DNS dengan Metadata
+### Contoh 2: Membuat Titik Akhir Masuk untuk Pemecah Masalah DNS dengan Metadata
 ```powershell
 New-AzDnsResolverInboundEndpoint -DnsResolverName pstestdnsresolvername -Name sampleInboundEndpoint1 -ResourceGroupName powershell-test-rg -IPConfiguration $ipConfiguration  -Metadata @{"key0" = "value0"}
 ```
@@ -57,12 +60,12 @@ Name                   Type                                            Etag
 sampleInboundEndpoint1 Microsoft.Network/dnsResolvers/inboundEndpoints "0b0071aa-0000-0800-0000-60406a2d0000"
 ```
 
-Perintah ini membuat Titik Akhir Masuk untuk Resolver DNS dengan Metadata.
+Perintah ini membuat Titik Akhir Masuk untuk Pemecah Masalah DNS dengan Metadata.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsResolverName
-Nama penuntas DNS.
+Nama pemecah masalah DNS.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag sumber daya.
 Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
+Atur ke '*' untuk mengizinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang ada.
 Nilai lain akan diabaikan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -IPConfiguration
 Konfigurasi IP untuk titik akhir masuk.
-Untuk membangun, lihat bagian CATATAN untuk properti IPCONFIGURATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti IPCONFIGURATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.IIPConfiguration[]
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama titik akhir masuk untuk penyelesaian DNS.
+### -Name
+Nama titik akhir masuk untuk pemecah masalah DNS.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -246,8 +249,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -296,7 +299,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 IPCONFIGURATION <IIPConfiguration[]>: Konfigurasi IP untuk titik akhir masuk.
-  - `[PrivateIPAddress <String>]`: Alamat IP pribadi konfigurasi IP.
+  - `[PrivateIPAddress <String>]`: Alamat IP privat konfigurasi IP.
   - `[PrivateIPAllocationMethod <IPAllocationMethod?>]`: Metode alokasi alamat IP privat.
   - `[SubnetId <String>]`: ID Sumber Daya.
 

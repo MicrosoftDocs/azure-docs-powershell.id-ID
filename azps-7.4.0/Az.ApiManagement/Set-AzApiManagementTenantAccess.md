@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementTenantAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementTenantAccess.md
-ms.openlocfilehash: 470a3f064ab05ed27e457e4381a23ad88371287e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ead106a169a4d8a84674d0669d6e78bdb9093caa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067293"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607748"
 ---
 # Set-AzApiManagementTenantAccess
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan akses penyewa.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementtenantaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApiManagementTenantAccess -Context <PsApiManagementContext> -Enabled <Bool
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementTenantAccess** mengaktifkan atau menonaktifkan akses penyewa.
+Cmdlet **Set-AzApiManagementTenantAccess** memungkinkan atau menonaktifkan akses penyewa.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Perintah ini memungkinkan akses penyewa dalam konteks yang ditentukan.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan akses penyewa.
 Tentukan nilai $True untuk diaktifkan atau $False untuk dinonaktifkan.
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementAccessInformation** yang diubah cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementAccessInformation** yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

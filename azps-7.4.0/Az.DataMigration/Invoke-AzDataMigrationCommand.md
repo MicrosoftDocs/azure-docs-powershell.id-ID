@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/In
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCommand.md
-ms.openlocfilehash: 4cd2193c127781e73ce892ffda3c749bc02927a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 30cc8009d672fd23870086eb67c490f2d59c3b69
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685134"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589734"
 ---
 # Invoke-AzDataMigrationCommand
 
 ## SYNOPSIS
-Membuat perintah baru untuk dijalankan pada tugas DMS yang sudah ada.
+Membuat perintah baru untuk dijalankan pada tugas DMS yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/invoke-azdatamigrationcommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet Invoke-AzDataMigrationCommand membuat tugas perintah baru untuk dijalanka
 $command = Invoke-AzDataMigrationCommand -CommandType CompleteSqlDBSync -ResourceGroupName $rg.ResourceGroupName -ServiceName $service.Name -ProjectName -TaskName $taskName
 ```
 
-Contoh di atas menggunakan cmdlet Invoke-AzDataMigrationCommand untuk membuat perintah untuk layanan, proyek, dan tugas yang sudah ada
+Contoh di atas menggunakan cmdlet Invoke-AzDataMigrationCommand untuk membuat perintah untuk layanan, proyek, dan tugas yang ada
 
 ## PARAMETERS
 
 ### -CommandType
-Tipe Perintah.
+Jenis Perintah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.CommandTypeEnum
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

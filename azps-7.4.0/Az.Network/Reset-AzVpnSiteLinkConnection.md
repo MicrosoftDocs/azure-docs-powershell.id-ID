@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
-ms.openlocfilehash: a4f62a880fd66a334487ee62e179b78e226fadc2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f872829173ef610d0d8ce92f7dd97a0aa00be1b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118287"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604148"
 ---
 # Reset-AzVpnSiteLinkConnection
 
 ## SYNOPSIS
 Mereset Koneksi Tautan Situs VPN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvpnsitelinkconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Reset-AzVpnSiteLinkConnection -ResourceId <String> [-AsJob] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzVpnSiteLinkConnection** mereset Vpn Link Connection Anda berdasarkan Vpn Site Link Connection Name, VPN Connection Name, VPN Gateway Name and Resource Group Name.
+Cmdlet **Reset-AzVpnSiteLinkConnection** mengatur ulang Koneksi Tautan VPN Anda berdasarkan Nama Koneksi Tautan Situs VPN, Nama Koneksi VPN, Nama VPN Gateway dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Cmdlet **Reset-AzVpnSiteLinkConnection** mereset Vpn Link Connection Anda berdas
 Reset-AzVpnSiteLinkConnection -ResourceGroupName test-rg -VpnGatewayName test-gateway -VpnConnectionName test-connection -ResourceName test-linkConnection
 ```
 
-Mereset Vpn Site Link Connection dengan nama "test-linkConnection" dalam grup sumber daya "test-rg"
+Mengatur ulang Koneksi Tautan Situs VPN dengan nama "test-linkConnection" dalam grup sumber daya "test-rg"
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koneksi tautan situs Vpn.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

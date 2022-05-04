@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateDnsZoneGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateDnsZoneGroup.md
-ms.openlocfilehash: 4cdc449dccaa9881fcaaa1d80f3f65d35d6461e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a0a993a169269f2bd80e3716a1a4264bf5fc0474
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743724"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625170"
 ---
 # Get-AzPrivateDnsZoneGroup
 
 ## SYNOPSIS
-Mendapatkan grup zona DNS pribadi
+Mendapatkan grup zona DNS privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azprivatednszonegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzPrivateDnsZoneGroup -ResourceGroupName <String> -PrivateEndpointName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateDnsZoneGroup** mendapatkan satu atau beberapa grup zona DNS pribadi.
+Cmdlet **Get-AzPrivateDnsZoneGroup** mendapatkan satu atau beberapa grup zona DNS privat.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil grup zona DNS pribadi
+### Contoh 1: Mengambil grup zona DNS privat
 ```powershell
 Get-AzPrivateDnsZoneGroup -ResourceGroupName "rg" -PrivateEndpointName "test-pr-endpoint" -name "dnsgroup1"
 ```
@@ -54,7 +57,7 @@ PrivateDnsZoneConfigs : [
                         ]
 ```
 
-Contoh di atas mendapatkan grup zona DNS pribadi bernama dnsgroup1 di grup sumber daya rg.
+Contoh di atas mendapatkan grup zona DNS privat bernama dnsgroup1 di grup sumber daya rg.
 
 ## PARAMETERS
 
@@ -73,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama grup zona dns pribadi.
+### -Name
+Nama grup zona dns privat.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

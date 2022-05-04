@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssGalleryApplication.md
-ms.openlocfilehash: 76f542811b1f014280885dc2a393d99ee7f1fafd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 093b787edf0498baf42fe4bcb9f51258e9dba96b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319509"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627690"
 ---
 # New-AzVmssGalleryApplication
 
 ## SYNOPSIS
 Buat objek PSVMGalleryApplication lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Contoh ini membuat objek VMGalleryApplication lokal dan menambahkannya ke objek 
 ## PARAMETERS
 
 ### -ConfigReferenceId
-Id Referensi Konfigurasi dari Aplikasi Galeri.
+Id Referensi Konfigurasi Aplikasi Galeri.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageReferenceId
-Id Referensi Paket Dari Aplikasi Galeri.
+Id Referensi Paket Aplikasi Galeri.
 
 ```yaml
 Type: System.String
@@ -86,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

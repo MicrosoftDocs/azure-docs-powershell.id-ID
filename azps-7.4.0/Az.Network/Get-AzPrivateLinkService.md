@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkService.md
-ms.openlocfilehash: 0cda38779358d6f3d31a74b3c0978df78a9d07d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5084bbc562df9ef1b317f88a0ba8e85033583500
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743634"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602564"
 ---
 # Get-AzPrivateLinkService
 
 ## SYNOPSIS
-Dapatkan layanan tautan privat
+Mendapatkan layanan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,14 +28,14 @@ Get-AzPrivateLinkService [-Name <String>] [-ResourceGroupName <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzPrivateLinkService -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateLinkService** mendapatkan satu atau beberapa layanan tautan pribadi.
+Cmdlet **Get-AzPrivateLinkService** mendapatkan satu atau beberapa layanan tautan privat.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ NetworkInterfaces                    : [
                                        ]
 ```
 
-Commandlet ini mendapatkan layanan tautan privat dalam grup sumber daya.
+Commandlet ini mendapatkan layanan tautan privat di grup sumber daya.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

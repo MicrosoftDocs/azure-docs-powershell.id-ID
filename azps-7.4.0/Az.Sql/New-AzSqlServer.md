@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
-ms.openlocfilehash: 66d52316292fbd347ccd36b7226591ae558a1823
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0472a6dd1bca98b4984b36c41035e115d3c672e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272187"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588816"
 ---
 # New-AzSqlServer
 
 ## SYNOPSIS
 Membuat server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Tags                     :
 
 Perintah ini membuat server Azure SQL Database versi 12.
 
-### Contoh 2: Membuat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tanpa SqlAdministratorCredentials
+### Contoh 2: Buat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tanpa SqlAdministratorCredentials
 ```powershell
 New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "Central US" -ServerName "server01" -ServerVersion "12.0" -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication
 ResourceGroupName        : resourcegroup01
@@ -84,12 +87,12 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini membuat server Azure SQL Database versi 12 dengan properti administrator eksternal dan autentikasi azure active directory saja yang diaktifkan.
+Perintah ini membuat server Azure SQL Database versi 12 dengan properti administrator eksternal dan autentikasi khusus azure active directory diaktifkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveDirectoryOnlyAuthentication
-Aktifkan Autentikasi Direktori Aktif Saja pada server.
+Aktifkan Autentikasi Khusus Direktori Aktif pada server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalAdminsID
+### -ExternalAdminSID
 Menentukan ID objek pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -FederatedClientId
-Menentukan ID klien Federasi server saat menggunakan CMK Penyewa Silang, Jangan atur nilai ini jika Anda tidak berniat menggunakan CMK Penyewa Silang
+Menentukan ID klien Federasi server saat menggunakan CMK Lintas Penyewa, Jangan atur nilai ini jika Anda tidak berniat menggunakan CMK Lintas Penyewa
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Jenis identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal yang diterapkan untuk Sql Server
+Versi TLS minimal yang akan diberlakukan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -270,8 +273,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
-Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Tautan Privat yang dapat menjangkau server ini.
+Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diizinkan atau tidak.
+Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Private Link yang dapat menjangkau server ini.
 
 ```yaml
 Type: System.String
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictOutboundNetworkAccess
-Saat diaktifkan, hanya koneksi keluar yang diperbolehkan oleh aturan firewall keluar yang akan berhasil.
+Ketika diaktifkan, hanya koneksi keluar yang diizinkan oleh aturan firewall keluar yang akan berhasil.
 
 ```yaml
 Type: System.String
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2,0 dan 12,0.
+Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
 Tentukan 2.0 untuk membuat server versi 11, atau 12.0 untuk membuat server versi 12.
 
 ```yaml
@@ -347,8 +350,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorCredentials
-Menentukan kredensial administrator server SQL Database untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik .`Get-Help
-Get-Credential`
+Menentukan kredensial administrator server SQL Database untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
+Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -392,8 +395,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -408,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -438,11 +441,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlServer](./Get-AzSqlServer.md)
+[Dapatkan-AzSqlServer](./Get-AzSqlServer.md)
 
-[Remove-AzSqlServer](./Remove-AzSqlServer.md)
+[Hapus-AzSqlServer](./Remove-AzSqlServer.md)
 
-[Set-AzSqlServer](./Set-AzSqlServer.md)
+[Atur-AzSqlServer](./Set-AzSqlServer.md)
 
 [New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 

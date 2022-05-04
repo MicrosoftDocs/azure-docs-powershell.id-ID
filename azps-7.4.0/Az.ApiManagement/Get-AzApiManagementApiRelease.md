@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRelease.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRelease.md
-ms.openlocfilehash: 1b634073df2b8dc06d57bc8ffc5f13eebc893708
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c2bd974881532d1450a6b13ee617fc1242354dd2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320805"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601934"
 ---
 # Get-AzApiManagementApiRelease
 
 ## SYNOPSIS
 Dapatkan Rilis API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapirelease) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzApiManagementApiRelease -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementApiRelease** mendapatkan satu atau beberapa rilis API API Management Azure.
+Cmdlet **Get-AzApiManagementApiRelease** mendapatkan satu atau beberapa rilis Azure API Management API.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua rilis API
+### Contoh 1: Mendapatkan semua rilis API
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApiRelease -Context $ApiMgmtContext -ApiId 5adf6fbf0faadf3ad8558065
@@ -55,7 +58,7 @@ ServiceName       : contoso
 
 Perintah ini mendapatkan semua rilis `echo-api` API untuk konteks yang ditentukan.
 
-### Contoh 2: Dapatkan informasi rilis rilis API tertentu
+### Contoh 2: Mendapatkan informasi rilis rilis rilis API tertentu
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApiRelease -Context $ApiMgmtContext -ApiId 5adf6fbf0faadf3ad8558065 -ReleaseId 5afccaf6b89fd067426d402e
@@ -79,7 +82,7 @@ Perintah ini mendapatkan informasi rilis API tertentu dengan releaseId yang dite
 ## PARAMETERS
 
 ### -ApiId
-PENGIDENTIFIKASI API untuk dicari.
+Pengidentifikasi API untuk dicari.
 Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
@@ -94,8 +97,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari Rilis Api. Jika ditentukan akan mencoba menemukan rilis api oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari Rilis Api. Jika ditentukan akan mencoba menemukan rilis api oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

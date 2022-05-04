@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySku.md
-ms.openlocfilehash: ce672adc32bc60d98610dc5f1477e59e38e5b545
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f7810fcd8f858c64aec2386b79b4d7caf604fac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872273"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606938"
 ---
 # Get-AzApplicationGatewaySku
 
 ## SYNOPSIS
 Mendapatkan SKU gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzApplicationGatewaySku** mendapatkan stock keeping unit (SKU) gate
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan SKU gateway aplikasi
+### Contoh 1: Mendapatkan SKU gateway aplikasi
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $SKU = Get-AzApplicationGatewaySku -ApplicationGateway $AppGW
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

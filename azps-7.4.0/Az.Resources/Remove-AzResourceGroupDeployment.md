@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
-ms.openlocfilehash: 338febc60a45221b0d799aa169c90ff938720cf1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c28eba90b14f662f5deab6bb67612f94e687a5a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274959"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618601"
 ---
 # Remove-AzResourceGroupDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran grup sumber daya dan operasi apa pun yang terkait.
+Menghapus penyebaran grup sumber daya dan operasi terkait apa pun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzResourceGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 
-Cmdlet **Remove-AzResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan semua operasi terkait.
+Cmdlet **Remove-AzResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan operasi terkait.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Remove-AzResourceGroupDeployment -ResourceId /subscriptions/{subId}/resourceGrou
 True
 ```
 
-Perintah ini menghapus penyebaran grup sumber daya dengan Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Perintah ini menghapus penyebaran grup sumber daya dengan Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 Penghapusan berhasil mengembalikan true.
 
 ### Contoh 2: Menghapus penyebaran grup sumber daya dengan ResourceGroupName dan ResourceName
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID penyebaran grup sumber daya untuk dihapus.
+Menentukan ID penyebaran grup sumber daya yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyebaran grup sumber daya untuk dihapus.
+### -Name
+Menentukan nama penyebaran grup sumber daya yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk dihapus.
+Menentukan nama grup sumber daya yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

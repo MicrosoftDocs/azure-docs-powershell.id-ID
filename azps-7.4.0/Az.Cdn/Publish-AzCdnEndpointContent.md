@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/publish-azcd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
-ms.openlocfilehash: 74dbed90356719deff99ab985f96b8e79a573e93
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 891d10435274a75d81ed242467edffb8dc81d9fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944172"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604850"
 ---
 # Publish-AzCdnEndpointContent
 
 ## SYNOPSIS
 Memuat konten ke titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/publish-azcdnendpointcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

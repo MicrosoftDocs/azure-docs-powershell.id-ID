@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicket.md
-ms.openlocfilehash: 52e41eca379fda67d5adaf69cebdb2d7ef4dc143
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cdfc18a73ea8f5a80919a17577c7f26fb6fdbcb4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994087"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608018"
 ---
 # Get-AzSupportTicket
 
 ## SYNOPSIS
 Dapatkan tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,20 +35,20 @@ Get-AzSupportTicket -Name <String> [-DefaultProfile <IAzureContextContainer>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar tiket dukungan. Ini akan mengambil semua tiket dukungan jika Anda tidak menentukan parameter apa pun. Anda juga dapat memfilter tiket dukungan menurut Status atau TanggalDijadikan menggunakan parameter Filter. Berikut adalah beberapa contoh nilai filter yang bisa Anda tentukan.
+Mendapatkan daftar tiket dukungan. Ini akan mengambil semua tiket dukungan jika Anda tidak menentukan parameter apa pun. Anda juga dapat memfilter tiket dukungan berdasarkan Status atau CreatedDate menggunakan parameter Filter. Berikut adalah beberapa contoh nilai filter yang bisa Anda tentukan.
 
 | Skenario                                                         | Filter                                           |
 |------------------------------------------------------------------|--------------------------------------------------|
-| Dapatkan tiket yang dalam status terbuka                               | "Status eq 'Buka'"                               |
-| Dapatkan tiket yang dalam keadaan tertutup                             | "Status eq 'Tertutup'"                             |
+| Dapatkan tiket yang dalam status terbuka                               | "Status eq 'Open'"                               |
+| Dapatkan tiket yang dalam status tertutup                             | "Status eq 'Closed'"                             |
 | Dapatkan tiket yang dibuat pada atau setelah 20 Des 2019         | "CreatedDate ge 2019-12-20"                      |
 | Dapatkan tiket yang dibuat setelah 20 Des 2019               | "CreatedDate gt 2019-12-20"                      |
-| Dapatkan tiket yang dibuat setelah 20 Des 2019 yang dalam status terbuka | "CreatedDate gt 2019-12-20 dan Status eq 'Buka'" |
+| Mendapatkan tiket yang dibuat setelah 20 Des 2019 yang dalam status terbuka | "CreatedDate gt 2019-12-20 dan Status eq 'Open'" |
 
 
 Cmdlet ini mendukung paging melalui parameter Pertama dan Lewati.
 
-Anda juga dapat mengambil tiket dukungan tunggal dengan menentukan nama tiket. 
+Anda juga dapat mengambil satu tiket dukungan dengan menentukan nama tiket. 
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Minimal  Virtual Machine running Linux Closed 2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Dapatkan 2 tiket dukungan pertama yang difilter menurut status
+### Contoh 4: Dapatkan 2 tiket dukungan pertama yang difilter berdasarkan status
 ```powershell
 Get-AzSupportTicket -Filter "Status eq 'Closed'" -First 2
 ```
@@ -92,7 +95,7 @@ test1 test title1                  150010521000317 Minimal  Virtual Machine runn
 test2 test title2                  150010521000318 Minimal  Billing                       Closed 2/5/2020 1:33:53 AM
 ```
 
-### Contoh 5: Dapatkan semua tiket dukungan yang berada dalam Status terbuka dan dibuat setelah 20 Des 2019
+### Contoh 5: Dapatkan semua tiket dukungan yang dalam status Terbuka dan dibuat setelah 20 Des 2019
 ```powershell
 Get-AzSupportTicket -Filter "Status eq 'Open' and CreatedDate gt 2019-12-20"
 ```
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan ke hasil cmdlet ini.
+Filter yang akan diterapkan ke hasil cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tiket dukungan yang didapat cmdlet ini.
 
 ```yaml
@@ -151,9 +154,9 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah total objek dalam kumpulan data (bilangan bulat) diikuti dengan objek yang dipilih.
-Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan menampilkan "Jumlah total tidak diketahui." Bilangan bulat memiliki properti Akurasi yang menunjukkan keandalan nilai total hitungan.
-Nilai Akurasi berkisar dari 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak dapat menghitung objek, 1,0 berarti bahwa hitungan tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
+Melaporkan jumlah total objek dalam himpunan data (bilangan bulat) diikuti oleh objek yang dipilih.
+Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan menampilkan "Jumlah total tidak diketahui." Bilangan bulat memiliki properti Akurasi yang menunjukkan keandalan nilai jumlah total.
+Nilai Akurasi berkisar antara 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak dapat menghitung objek, 1,0 berarti bahwa hitungannya tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hanya mendapatkan jumlah objek yang ditentukan.
 Masukkan jumlah objek yang akan didapatkan.
 
@@ -200,11 +203,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

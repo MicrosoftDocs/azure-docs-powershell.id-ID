@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageServiceProperty.md
-ms.openlocfilehash: 774637cab56646125f178b2e545c61ac405d72a0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6f7195948734e2dce3c8566fcc4e07464c981dab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116541"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608036"
 ---
 # Update-AzStorageServiceProperty
 
 ## SYNOPSIS
-Mengubah properti untuk layanan Azure Storage.
+Memodifikasi properti untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Cmdlet **Update-AzStorageServiceProperty** memodifikasi properti untuk layanan A
 C:\PS>Update-AzStorageServiceProperty -ServiceType Blob -DefaultServiceVersion 2017-04-17
 ```
 
-Perintah ini Mengatur DefaultServiceVersion layanan Blob ke 2017-04-17
+Perintah ini Mengatur DefaultServiceVersion dari Blob Service ke 2017-04-17
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceVersion
-DefaultServiceVersion menunjukkan versi default yang digunakan untuk permintaan ke layanan Blob jika versi permintaan masuk tidak ditentukan. Nilai yang memungkinkan mencakup versi 2008-10-27 dan semua versi terbaru.
+DefaultServiceVersion menunjukkan versi default yang akan digunakan untuk permintaan ke layanan Blob jika versi permintaan masuk tidak ditentukan. Nilai yang mungkin termasuk versi 2008-10-27 dan semua versi terbaru.
 Lihat detail selengkapnya di https://docs.microsoft.com/rest/api/storageservices/versioning-for-the-azure-storage-services
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menampilkan ServiceProperties
+Tampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,12 +105,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
+Menentukan jenis layanan penyimpanan.
+Cmdlet ini mendapatkan properti pengelogan untuk jenis layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan
-- Meja
-- Antrian
+- Blob
+- Tabel
+- Antrean
 - File
 
 ```yaml
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

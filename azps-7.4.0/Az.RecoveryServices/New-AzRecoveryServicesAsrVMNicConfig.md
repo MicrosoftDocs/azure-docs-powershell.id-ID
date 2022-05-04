@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicConfig.md
-ms.openlocfilehash: 511adb2ecf0afa1586e5b083f50788a92d2d9392
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a62b8306fd284cfb2edb711755614cd79a2538ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117244"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608270"
 ---
 # New-AzRecoveryServicesAsrVMNicConfig
 
 ## SYNOPSIS
-Membuat konfigurasi ASR NIC yang berisi failover dan menguji failover detail konfigurasi terkait.
+Membuat konfigurasi ASR NIC yang berisi failover dan detail konfigurasi terkait failover pengujian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvmnicconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,10 +33,10 @@ New-AzRecoveryServicesAsrVMNicConfig -NicId <String> -ReplicationProtectedItem <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrVMNicConfig** membuat objek konfigurasi ASR NIC yang berisi failover dan menguji detail terkait failover. Jika informasi apa pun tidak dikirimkan, nilai terkait dipilih dari item yang diproteksi replikasi untuk menghindari nilai ini diperbarui menjadi null.
+Cmdlet **New-AzRecoveryServicesAsrVMNicConfig** membuat objek konfigurasi ASR NIC yang berisi detail terkait failover dan pengujian failover. Jika informasi apa pun tidak diteruskan, nilai terkait dipilih dari item yang dilindungi replikasi untuk menghindari nilai-nilai ini diperbarui ke null.
 
 > [!IMPORTANT]
-> Kami telah menghapus parameter yang terkait dengan IP Configs dari cmdlet, dan merangkumnya ke dalam objek cmdlet baru. Buat objek baru menggunakan cmdlet **New-AzRecoveryServicesAsrVMNicIPConfig** dan berikan sebagai parameter. Silakan lihat contoh di bawah ini untuk penjelasan selengkapnya.
+> Kami telah menghentikan parameter yang sesuai dengan Konfigurasi IP dari cmdlet, dan merangkumnya ke dalam objek cmdlet baru. Buat objek baru menggunakan cmdlet **New-AzRecoveryServicesAsrVMNicIPConfig** dan teruskan sebagai parameter. Silakan lihat contoh di bawah ini untuk lebih jelasnya.
 
 ## EXAMPLES
 
@@ -48,14 +51,14 @@ $nicConfig = New-AzRecoveryServicesAsrVMNicConfig -NicId $AsrNicGuid -Replicatio
     -TfoVMNetworkId $tfoNetworkId -IPConfig $ipConfigs
 ```
 
-Membuat objek ASRVmNicConfig dengan failover dan menguji pengaturan jaringan failover yang dikonfigurasi untuk NIC. Properti apa pun yang tidak lolos di atas akan diperoleh dari item terproteksi yang dilewati.
+Membuat objek ASRVmNicConfig dengan pengaturan jaringan failover dan pengujian failover yang dikonfigurasi untuk NIC. Properti apa pun yang tidak diteruskan di atas diambil dari item yang dilindungi yang diteruskan.
 
 ### Contoh 2
 ```powershell
 $nicConfig = New-AzRecoveryServicesAsrVMNicConfig -NicId $AsrNicGuid -ReplicationProtectedItem $Rpi -TfoNicName $TfoNicName -TfoNicResourceGroupName $TfoNicRgName -TfoReuseExistingNic
 ```
 
-Membuat objek ASRVmNicConfig dengan pengaturan jaringan faiover uji yang dikonfigurasi untuk penggantian nama NIC. Properti apa pun yang tidak lolos di atas akan diperoleh dari item terproteksi yang dilewati.
+Membuat objek ASRVmNicConfig dengan pengaturan jaringan faiover pengujian yang dikonfigurasi untuk penggantian nama NIC. Properti apa pun yang tidak diteruskan di atas diambil dari item yang dilindungi yang diteruskan.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAcceleratedNetworkingOnRecovery
-Menentukan apakah jaringan yang dipercepat diaktifkan pada pemulihan NIC.
+Menentukan apakah jaringan yang dipercepat diaktifkan pada NIC pemulihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAcceleratedNetworkingOntfo
+### -EnableAcceleratedNetworkingOnTfo
 Menentukan apakah jaringan yang dipercepat diaktifkan pada uji failover NIC.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPConfig
-Menentukan pengaturan failover/failover uji NIC IP configs.
+Menentukan pengaturan failover/failover pengujian konfigurasi IP NIC.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.PSIPConfigInputDetails[]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryNetworkSecurityGroupId
-Menentukan ID NSG yang terkait dengan NIC pemulihan.
+Menentukan ID NSG yang terkait dengan pemulihan NIC.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Tentukan Item Terproteksi Replikasi ASR.
+Tentukan Item yang Dilindungi Replikasi ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReuseExistingNic
-Menentukan apakah NIC yang sudah ada bisa digunakan selama failover.
+Menentukan apakah NIC yang ada dapat digunakan selama failover.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoNetworkSecurityGroupId
-Menentukan ID NSG yang terkait dengan NIC failover pengujian.
+Menentukan ID NSG yang terkait dengan uji failover NIC.
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoNicResourceGroupName
-Menentukan nama grup sumber daya NIC failover uji.
+Menentukan nama grup sumber daya NIC failover pengujian.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoReuseExistingNic
-Menentukan apakah NIC yang sudah ada dapat digunakan selama kegagalan pengujian.
+Menentukan apakah NIC yang ada dapat digunakan selama pengujian failover.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoVMNetworkId
-Menentukan ID jaringan virtual failover uji coba.
+Menentukan ID jaringan virtual failover pengujian.
 
 ```yaml
 Type: System.String
@@ -299,8 +302,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -331,11 +334,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

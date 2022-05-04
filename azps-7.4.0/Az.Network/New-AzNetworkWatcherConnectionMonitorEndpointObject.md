@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorEndpointObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorEndpointObject.md
-ms.openlocfilehash: b3fe56b36820813da4cfa88751af019aa7b9a9b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 27462bb8363048b2ed79bc35877f461b861d1ac0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871398"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589374"
 ---
 # New-AzNetworkWatcherConnectionMonitorEndpointObject
 
 ## SYNOPSIS
-Membuat titik akhir monitor koneksi.
+Membuat titik akhir pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorendpointobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ New-AzNetworkWatcherConnectionMonitorEndpointObject -Name <String> [-MMAWorkspac
 ```
 
 ## DESCRIPTION
-cmdlet New-AzNetworkWatcherConnectionMonitorEndpointObject membuat titik akhir monitor koneksi.
+New-AzNetworkWatcherConnectionMonitorEndpointObject cmdlet membuat titik akhir pemantau koneksi.
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ Scope     : {
 ## PARAMETERS
 
 ### -Alamat
-Alamat titik akhir monitor koneksi (IP atau nama domain).
+Alamat titik akhir pemantau koneksi (IP atau nama domain).
 
 ```yaml
 Type: System.String
@@ -161,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -CoverageLevel
-Cakupan uji untuk titik akhir.
-Nilai yang didukung adalah Default, Rendah, Di BawahAverage, Average, AboveAvergae, Full.
+Cakupan pengujian untuk titik akhir.
+Nilai yang didukung adalah Default, Rendah, Di BawahAverage, Rata-rata, AboveAvergae, Penuh.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeItem
-Daftar item yang perlu dikecualikan dari lingkup titik akhir.
+Daftar item yang perlu dikecualikan dari cakupan titik akhir.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorEndpointScopeItem[]
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeItem
-Daftar item yang perlu disertakan ke dalam lingkup endpont.
+Daftar item yang perlu disertakan ke dalam cakupan endpont.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorEndpointScopeItem[]
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -MMAWorkspaceMachine
-Tombol titik akhir Mesin Ruang Kerja MMA.
+Sakelar titik akhir Mesin Ruang Kerja MMA.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,8 +281,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama titik akhir monitor koneksi.
+### -Name
+Nama titik akhir pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya titik akhir monitor koneksi.
+ID sumber daya titik akhir pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -308,8 +311,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -340,11 +343,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

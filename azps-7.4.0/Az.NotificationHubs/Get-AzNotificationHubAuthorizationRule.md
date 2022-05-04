@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: dade85cdcc23851495435818f86badaaad12d977
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6d2332819b892026d92f1f691957ed08d2ebbbcd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803952"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628752"
 ---
 # Get-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan otorisasi yang terkait dengan hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzNotificationHubAuthorizationRule [-ResourceGroup] <String> [-Namespace] <S
 Cmdlet **Get-AzNotificationHubAuthorizationRule** mendapatkan informasi tentang aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang terkait dengan hub pemberitahuan.
 Cmdlet mengembalikan informasi tentang semua aturan yang terkait dengan hub atau, dengan menyertakan parameter *AuthorizationRule* , mendapatkan informasi tentang aturan tertentu.
 Aturan otorisasi mengelola akses ke hub pemberitahuan Anda.
-Aturan otorisasi akan membuat link, sebagai URI, berdasarkan tingkat izin yang berbeda.
+Aturan otorisasi akan membuat tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien dengan izin Dengar akan diarahkan ke URI untuk izin tersebut.
 Cmdlet **Get-AzNotificationHubAuthorizationRule** hanya mendapatkan informasi tentang aturan otorisasi yang terkait dengan hub pemberitahuan.
@@ -38,27 +41,27 @@ Untuk mendapatkan informasi tentang hub itu sendiri, gunakan Get-AzNotificationH
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan
+### Contoh 1: Mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan
 ```powershell
 Get-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -NotificationHub "ContosoInternalHub"
 ```
 
-Perintah ini mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoInternalHub di ruang nama ContosoNamespace.
-Anda harus menentukan ruang nama tempat hub berada serta grup sumber daya tempat hub telah ditetapkan.
+Perintah ini mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoInternalHub di namespace ContosoNamespace.
+Anda harus menentukan namespace tempat hub berada serta grup sumber daya tempat hub ditetapkan.
 
 ### Contoh 2: Mendapatkan informasi untuk aturan otorisasi yang ditetapkan ke hub pemberitahuan
 ```powershell
 Get-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -NotificationHub "ContosoInternalHub" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoInternalHub di ruang nama ContosoNamespace.
+Perintah ini mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan bernama ContosoInternalHub di namespace ContosoNamespace.
 Perintah menggunakan parameter *AuthorizationRule* untuk membatasi data yang dikembalikan ke satu aturan otorisasi bernama ListenRule.
 
 ## PARAMETERS
 
 ### -AuthorizationRule
 Menentukan nama aturan autentikasi SAS.
-Aturan ini menentukan tipe akses yang dimiliki pengguna ke hub pemberitahuan.
+Aturan ini menentukan jenis akses yang dimiliki pengguna ke hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -88,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu menyederhanakan manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu menyederhanakan manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -154,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNotificationHubAuthorizationRule](./New-AzNotificationHubAuthorizationRule.md)
 
-[Hapus-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
+[Remove-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
 
 [Set-AzNotificationHubAuthorizationRule](./Set-AzNotificationHubAuthorizationRule.md)
 

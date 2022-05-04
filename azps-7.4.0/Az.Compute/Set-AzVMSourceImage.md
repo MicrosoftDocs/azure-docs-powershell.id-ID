@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSourceImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSourceImage.md
-ms.openlocfilehash: b104d3171ea87341edbb97d19d1f269db4e53879
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f334a772a7b813ba20f345868ae450b35fc09fa4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230751"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607532"
 ---
 # Set-AzVMSourceImage
 
 ## SYNOPSIS
-Menentukan gambar untuk mesin virtual.
+Menentukan gambar untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsourceimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzVMSourceImage [-VM] <PSVirtualMachine> [-Id] <String> [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMSourceImage** menentukan gambar platform yang akan digunakan untuk mesin virtual.
+Cmdlet **Set-AzVMSourceImage** menentukan gambar platform yang akan digunakan untuk komputer virtual.
 
 ## EXAMPLES
 
@@ -44,11 +47,11 @@ $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1
 Set-AzVMSourceImage -VM $VirtualMachine -PublisherName "MicrosoftWindowsServer" -Offer "WindowsServer" -Skus "2012-R2-Datacenter" -Version "latest"
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
-Perintah menetapkan nama dan ukuran ke mesin virtual.
-Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Perintah terakhir mengatur nilai untuk nama penerbit, penawaran, SKU, dan versi.
+Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet03 di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke komputer virtual.
+Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Perintah akhir menetapkan nilai untuk nama penerbit, penawaran, SKU, dan versi.
 Cmdlet **Get-AzVMImagePublisher**, **Get-AzVMImageOffer**, **Get-AzVMImageSku**, dan **Get-AzVMImage** dapat menemukan pengaturan ini.
 
 ## PARAMETERS
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-Menentukan tipe penawaran VMImage.
+Menentukan jenis penawaran VMImage.
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skus
-Menentukan VMImage SKU.
+Menentukan SKU VMImage.
 Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru alih-alih versi tertentu.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin maya lokal untuk dikonfigurasi.
+Menentukan objek komputer virtual lokal yang akan dikonfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

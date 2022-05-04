@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: caae974d064a80001560be6d55ae0f79a8fd37aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc0b99dc5363af398149883d514b6ba829717267
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311445"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628653"
 ---
 # Set-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
-Pembaruan/Mengatur tautan jaringan virtual yang terkait dengan zona privat dan grup sumber daya.
+Memperbarui/Mengatur tautan jaringan virtual yang terkait dengan zona privat dan grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ Set-AzPrivateDnsVirtualNetworkLink -ResourceId <String> [-IsRegistrationEnabled 
 
 ## DESCRIPTION
 Cmdlet **Set-AzPrivateDnsVirtualNetworkLink** memperbarui tautan yang terkait dengan zona dari grup sumber daya tertentu.
-Anda dapat melewati objek **PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau menggunakan operator pipeline, atau menentukan parameter *Name* *ZoneName* dan *ResourceGroupName* .
-Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
-Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (yang dilewatkan melalui pipeline atau parameter *Link* ), tautan tidak diperbarui jika telah diubah di AZURE DNS sejak objek **PSPrivateDnsVirtualNetworkLink** lokal diambil. Ini menyediakan proteksi untuk perubahan tautan serentak. Hal ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui tautan terlepas dari perubahan bersamaan.
+Anda dapat meneruskan objek **PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Tautan* atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *Name* *ZoneName* dan *ResourceGroupName* .
+Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (diteruskan melalui parameter alur atau *Tautan* ), tautan tidak diperbarui jika telah diubah di Azure DNS karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil. Ini memberikan perlindungan untuk perubahan tautan bersamaan. Ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui tautan terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Perintah ini mengatur IsRegistrationEnabled ke True untuk link bernama mylink, yang ditautkan ke zona bernama myzone.com dari grup sumber daya bernama MyResourceGroup.
+Perintah ini mengatur IsRegistrationEnabled ke True untuk tautan bernama mylink, yang ditautkan ke zona bernama myzone.com dari grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek tautan jaringan virtual untuk diatur.
+Objek tautan jaringan virtual yang akan diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsVirtualNetworkLink
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRegistrationEnabled
-Boolean yang menyatakan apakah pendaftaran diaktifkan pada tautan jaringan virtual.
+Boolean yang mewakili apakah pendaftaran diaktifkan pada tautan jaringan virtual.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -118,10 +121,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tautan yang dihapus cmdlet ini.
 Anda juga harus menentukan parameter *ResourceGroupName* dan *ZoneName* .
-Alternatifnya, Anda dapat menentukan link DNS pribadi menggunakan parameter *tautan* .
+Atau, Anda dapat menentukan tautan DNS privat menggunakan parameter *tautan* .
 
 ```yaml
 Type: System.String
@@ -136,9 +139,9 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Saat menentukan tautan menggunakan objek **PSPrivateDnsVirtualNetworkLink** (yang dilewatkan melalui pipeline atau parameter *Link* ), tautan tidak dihapus jika telah diubah di Azure DNS sejak objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
-Ini menyediakan proteksi untuk perubahan tautan serentak.
-Hal ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus tautan terlepas dari perubahan bersamaan.
+Saat menentukan tautan menggunakan objek **PSPrivateDnsVirtualNetworkLink** (diteruskan melalui parameter alur atau *Tautan* ), tautan tidak dihapus jika telah diubah di Azure DNS karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
+Ini memberikan perlindungan untuk perubahan tautan bersamaan.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus tautan terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi tautan untuk dihapus.
 Anda juga harus menentukan parameter *ZoneName* dan *Name* .
-Alternatifnya, Anda dapat menentukan tautan jaringan virtual menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang dilewati melalui pipeline atau parameter *Link* .
+Atau, Anda dapat menentukan tautan jaringan virtual menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang diteruskan melalui alur atau parameter *Tautan* .
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Zona DNS Pribadi.
+ResourceID Zona DNS Privat.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ### -ZoneName
 Menentukan nama zona DNS yang dihapus cmdlet ini.
 Anda juga harus menentukan parameter *Nama* dan *ResourceGroupName* .
-Alternatifnya, Anda dapat menentukan link DNS pribadi menggunakan parameter *tautan* .
+Atau, Anda dapat menentukan tautan DNS privat menggunakan parameter *tautan* .
 
 ```yaml
 Type: System.String
@@ -216,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

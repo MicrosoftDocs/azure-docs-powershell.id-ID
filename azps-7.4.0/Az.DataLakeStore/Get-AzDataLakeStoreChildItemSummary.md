@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreChildItemSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreChildItemSummary.md
-ms.openlocfilehash: 494b981470922ab9ab01876c65db83361cdfde0d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 46f81caee6e7258f0d99ba96030e90811f194bf4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063945"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599648"
 ---
 # Get-AzDataLakeStoreChildItemSummary
 
 ## SYNOPSIS
-Mendapatkan ringkasan ukuran total, file dan direktori yang terdapat dalam jalur yang ditentukan
+Mendapatkan ringkasan ukuran total, file, dan direktori yang terkandung dalam jalur yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorechilditemsummary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDataLakeStoreChildItemSummary [-Account] <String> [-Path] <DataLakeStorePa
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeStoreChildItemSummary** mengambil ringkasan konten untuk jalur tertentu. Ini secara rekurif menghitung jumlah total file, direktori dan ukuran total semua file di bawah jalur tertentu.
+**Get-AzDataLakeStoreChildItemSummary** mengambil ringkasan konten untuk jalur tertentu. Ini secara rekursif menghitung jumlah total file, direktori, dan ukuran total semua file di bawah jalur yang diberikan.
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Get-AzDataLakeStoreChildItemSummary [-Account] <String> [-Path] <DataLakeStorePa
 Get-AzDataLakeStoreChildItemSummary -Account ContosoADL -Path /a -Concurrency 128
 ```
 
-Daftar ini mencantumkan jumlah total direktori, file, dan ukurannya yang terdapat di bawah /a.
+Ini mencantumkan jumlah total direktori, file, dan ukurannya yang terkandung di bawah /a.
 
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk menjalankan operasi filesystem di
+Akun Data Lake Store untuk menjalankan operasi sistem file di
 
 ```yaml
 Type: System.String
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam akun Data Lake tertentu yang harus diambil.
-Bisa berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
+Jalur di akun Data Lake yang ditentukan yang harus diambil.
+Dapat berupa file atau folder Dalam format '/folder/file.txt', di mana '/' pertama setelah DNS menunjukkan akar sistem file.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -100,8 +103,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

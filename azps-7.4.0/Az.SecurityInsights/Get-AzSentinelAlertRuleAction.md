@@ -5,20 +5,23 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: f6a8536c3cf7338f61bbb0a25b1bfe6e257414aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 58af84642df3fa83f421f55b42290078817b417c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059013"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615200"
 ---
 # Get-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
-Mendapatkan Respons Otomatis (Tindakan Aturan Peringatan) untuk Aturan Analitik, seperti Playbook Azure Logic Apps.<br/>
+Mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) untuk Aturan Analitik, seperti playbook Azure Logic Apps.<br/>
 Aturan Otomatisasi Azure Sentinel akan didukung di masa mendatang.
 
 *Catatan: Ini memerlukan nilai parameter "AlertRuleId"*
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,10 +38,10 @@ Get-AzSentinelAlertRuleAction -ResourceGroupName <String> -WorkspaceName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelAlertRuleAction** mendapatkan Respons Otomatis (Tindakan Aturan Peringatan) dari ruang kerja tertentu.
-Jika Anda menentukan parameter *ActionId* dan *AlertRuleId* , sebuah objek **AlertRuleAction** dikembalikan.<br/>
-Jika Anda tidak menentukan parameter *ActionId* , array yang berisi semua Tindakan untuk Aturan Peringatan tertentu dalam ruang kerja tertentu akan dikembalikan.
-Anda bisa menggunakan objek **Tindakan** untuk memperbarui Tindakan, misalnya Anda bisa mengubah **Tindakan** untuk Aturan Peringatan.
+Cmdlet **Get-AzSentinelAlertRuleAction** mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *ActionId* dan *AlertRuleId* , satu objek **AlertRuleAction** dikembalikan.<br/>
+Jika Anda tidak menentukan parameter *ActionId* , array yang berisi semua Tindakan untuk Aturan Pemberitahuan tertentu di ruang kerja yang ditentukan dikembalikan.
+Anda bisa menggunakan objek **Tindakan** untuk memperbarui Tindakan, misalnya Anda bisa mengubah **Tindakan** untuk Aturan Pemberitahuan.
 
 ## EXAMPLES
 
@@ -47,16 +50,16 @@ Anda bisa menggunakan objek **Tindakan** untuk memperbarui Tindakan, misalnya An
 $AlertRuleActions = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "29d2523f-84ce-42d3-b5f1-9e63c85aaed1"
 ```
 
-Contoh ini mendapatkan semua **Tindakan** untuk Aturan Peringatan tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRuleActions.<br/><br/>
+Contoh ini mendapatkan semua **Tindakan** untuk Aturan Pemberitahuan yang ditentukan di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRuleActions.<br/><br/>
 
-*Catatan: **Bidang LogicAppResourceID** berisi ID Azure Resource Manager (ARM) lengkap, yang berisi nama playbook Azure Logic Apps.*
+*Catatan: bidang **LogicAppResourceID** berisi ID Azure Resource Manager (ARM) lengkap, yang berisi nama Azure Logic Apps Playbook.*
 
 ### Contoh 2
 ```powershell
 $AlertRuleAction = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId"
 ```
 
-Contoh ini mendapatkan **AlertRuleAction** untuk Aturan Peringatan tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRuleAction.
+Contoh ini mendapatkan **AlertRuleAction** untuk Aturan Pemberitahuan yang ditentukan di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRuleAction.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Id Aturan Peringatan.
+Id Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Actions.PSSentinelActionResponse

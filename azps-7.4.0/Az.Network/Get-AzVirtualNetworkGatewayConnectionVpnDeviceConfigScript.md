@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md
-ms.openlocfilehash: 6ba9ee8aa78c800fca6c39ea3282628ea500a856
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13b9fd038755a8f7fc9db0049a5b456ac366a8f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224415"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599414"
 ---
-# Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript
+# Dapatkan-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript
 
 ## SYNOPSIS
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang dapat diterapkan langsung oleh pelanggan di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci terowongan VPN yang telah dibagikan sebelumnya, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionvpndeviceconfigscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript -Name <String> -Resou
 ```
 
 ## DESCRIPTION
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang dapat diterapkan langsung oleh pelanggan di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci terowongan VPN yang telah dibagikan sebelumnya, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript -ResourceGroupName Te
 ```
 
 Contoh di atas menggunakan Get-AzVirtualNetworkGatewaySupportedVpnDevice untuk mendapatkan merek, model, dan versi firmware Perangkat VPN yang didukung.
-Lalu menggunakan salah satu informasi model yang dikembalikan untuk menghasilkan skrip konfigurasi Perangkat VPN untuk VirtualNetworkGatewayConnection "TestConnection". Perangkat yang digunakan dalam contoh ini memiliki DeviceFamily "IOS-Test", DeviceVendor "Cisco-Test" dan FirmwareVersion 20.
+Kemudian menggunakan salah satu informasi model yang dikembalikan untuk menghasilkan skrip konfigurasi Perangkat VPN untuk VirtualNetworkGatewayConnection "TestConnection". Perangkat yang digunakan dalam contoh ini memiliki DeviceFamily "IOS-Test", DeviceVendor "Cisco-Test" dan FirmwareVersion 20.
 
 ## PARAMETERS
 
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya koneksi tempat konfigurasi akan dihasilkan.
+### -Name
+Nama sumber daya koneksi yang konfigurasinya akan dihasilkan.
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

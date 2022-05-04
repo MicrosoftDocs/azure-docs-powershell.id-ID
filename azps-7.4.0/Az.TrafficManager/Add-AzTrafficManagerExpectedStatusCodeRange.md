@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
-ms.openlocfilehash: aa45b4e2ed1170ddbbac185c3be5ae9d9085f20c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b9519b38c816f7a679ea15722f04bb47c11600c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669420"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588366"
 ---
 # Add-AzTrafficManagerExpectedStatusCodeRange
 
 ## SYNOPSIS
 Menambahkan rentang kode status yang diharapkan ke objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerexpectedstatuscoderange) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Add-AzTrafficManagerExpectedStatusCodeRange** menambahkan rentang kode 
 Anda bisa mendapatkan profil dengan menggunakan cmdlet New-AzTrafficManagerProfile atau Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
+Terapkan perubahan Anda ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
 Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 Perintah kedua menambahkan rentang kode status yang diharapkan ke profil yang disimpan di $TrafficManagerProfile.
-Perintah terakhir memperbarui profil di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
+Perintah akhir memperbarui profil di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Max
+### -Maks
 Menentukan nilai tertinggi dalam rentang kode status yang akan ditambahkan.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini mengubah objek lokal ini.
+Cmdlet ini memodifikasi objek lokal ini.
 Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
@@ -111,8 +114,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
-ms.openlocfilehash: 450e8b62fe03753def07c833f4a80aa1f0fdc7d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c9fb08c5e8170faaef92f13a232b04059a790e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877536"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588042"
 ---
 # New-AzGalleryApplication
 
 ## SYNOPSIS
-Membuat atau memperbarui Galeri Definisi Aplikasi.
+Membuat atau memperbarui Definisi Aplikasi galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzGalleryApplication -GalleryName <String> -Name <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui Galeri Definisi Aplikasi.
+Membuat atau memperbarui Definisi Aplikasi galeri.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Membuat Aplikasi Galeri di Galeri.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryName
-Nama Galeri Aplikasi Bersama tempat Definisi Aplikasi akan dibuat.
+Nama Shared Application Gallery tempat Definisi Aplikasi akan dibuat.
 
 ```yaml
 Type: System.String
@@ -116,9 +119,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Galeri Definisi Aplikasi yang akan dibuat atau diperbarui.
-Karakter yang diperbolehkan adalah abjad dan angka dengan titik-titik, garis putus-putus, dan titik yang diperbolehkan di tengah.
+Karakter yang diizinkan adalah alfabet dan angka dengan titik, tanda hubung, dan titik yang diizinkan di tengah.
 Panjang maksimum adalah 80 karakter.
 
 ```yaml
@@ -164,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -180,10 +183,10 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedOSType
-Properti ini memungkinkan Anda menentukan tipe OS yang didukung untuk aplikasi yang dibuat.
+Properti ini memungkinkan Anda menentukan jenis OS yang didukung yang dibuat aplikasinya.
 
 
- Nilai yang memungkinkan adalah:
+ Kemungkinan nilainya adalah:
 
  **Windows**
 
@@ -216,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

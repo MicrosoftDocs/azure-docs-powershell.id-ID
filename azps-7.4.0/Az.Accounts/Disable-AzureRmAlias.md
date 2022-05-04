@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzureRmAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzureRmAlias.md
-ms.openlocfilehash: c6b3beaa661a1b3f41b88f9662a719b8a1e9852f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eaa01a23fb1f7bf171a4f6808d59747f46700ad6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143321417"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588294"
 ---
 # Disable-AzureRmAlias
 
 ## SYNOPSIS
-Menonaktifkan alias prefiks AzureRm untuk modul Az.
+Menonaktifkan alias awalan AzureRm untuk modul Az.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azurermalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzureRmAlias [-Scope <String>] [-Module <String[]>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Menonaktifkan alias prefiks AzureRm untuk modul Az. Jika -Module ditentukan, hanya modul yang tercantum yang akan memiliki alias nonaktif. Jika tidak, semua alias AzureRm dinonaktifkan.
+Menonaktifkan alias awalan AzureRm untuk modul Az. Jika -Module ditentukan, hanya modul yang tercantum yang akan menonaktifkan alias. Jika tidak, semua alias AzureRm dinonaktifkan.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Menonaktifkan alias prefiks AzureRm untuk modul Az. Jika -Module ditentukan, han
 Disable-AzureRmAlias
 ```
 
-Menonaktifkan semua prefiks AzureRm untuk sesi PowerShell saat ini.
+Menonaktifkan semua awalan AzureRm untuk sesi PowerShell saat ini.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 
 ### -Module
 Menunjukkan modul mana yang akan dinonaktifkan aliasnya.
-Jika tidak ada yang ditentukan, default semua modul diaktifkan.
+Jika tidak ada yang ditentukan, defaultnya adalah semua modul yang diaktifkan.
 
 ```yaml
 Type: System.String[]
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, cmdlet akan mengembalikan semua alias nonaktif
+Jika ditentukan, cmdlet akan mengembalikan semua alias yang dinonaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menunjukkan alias lingkup apa yang harus dinonaktifkan. Defaultnya adalah 'Proses'
+### -Cakupan
+Menunjukkan alias cakupan apa yang harus dinonaktifkan. Defaultnya adalah 'Proses'
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

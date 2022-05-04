@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncGroup.md
-ms.openlocfilehash: 6d14ea14d50c4ad36ddb5df70a93483337868397
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 22b5315a82751f24615757c0253fb9bcc29faff8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798948"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588708"
 ---
 # Update-AzSqlSyncGroup
 
 ## SYNOPSIS
 Memperbarui Grup Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlsyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzSqlSyncGroup [-Name] <String> [-IntervalInSeconds <Int32>] [-DatabaseCr
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlSyncGroup** mengubah properti grup sinkronisasi Azure SQL Database.
+Cmdlet **Update-AzSqlSyncGroup** memodifikasi properti grup sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini memperbarui grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi muatan skema dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
+Perintah ini memperbarui grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi payload skema dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-SQL Database nama.
+nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup sinkronisasi.
 
 ```yaml
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

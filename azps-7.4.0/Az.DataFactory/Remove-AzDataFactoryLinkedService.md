@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 566685cc2fb3e93dfb0c4191de4555c3fc54a838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 879e15ea9f1527a3be47c179577a107bfa871d0e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003375"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601520"
 ---
 # Remove-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactorylinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa cmdlet ini menghapus layanan tertaut tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
@@ -117,8 +120,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama layanan yang ditautkan untuk dihapus.
+### -Name
+Menentukan nama layanan tertaut yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -148,8 +151,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

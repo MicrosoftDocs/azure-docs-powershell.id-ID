@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
-ms.openlocfilehash: 3da64985050a29a9692ff85313559bf4673c6fba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e8d3eae6181acd6103cc71bc59a03705a73211b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874278"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625782"
 ---
 # Register-AzDataMigrationIntegrationRuntime
 
 ## SYNOPSIS
-Mendaftarkan Layanan Migrasi Sql di Integration Runtime
+Mendaftarkan Sql Migration Service di Integration Runtime
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/register-azdatamigrationintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Register-AzDataMigrationIntegrationRuntime -AuthKey <String> [-IntegrationRuntim
 ```
 
 ## DESCRIPTION
-Mendaftarkan Layanan Migrasi Sql di Integration Runtime
+Mendaftarkan Sql Migration Service di Integration Runtime
 
 ## EXAMPLES
 
-### Contoh 1: Daftarkan Layanan Migrasi Sql di Integration Runtime Yang Dihosting Sendiri
+### Contoh 1: Mendaftarkan Sql Migration Service di Integration Runtime yang Dihost Sendiri
 ```powershell
 $authKeys = Get-AzDataMigrationSqlMigrationServiceAuthKey -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 Register-AzDataMigrationIntegrationRuntime -AuthKey $authKeys.AuthKey1
@@ -40,9 +43,9 @@ Start to register IR with key: IR@abcd1-efgh2-jklmn3-opqr4@mysqlms@eastus@stuv5/
 Integration Runtime registration is successful!
 ```
 
-Perintah ini mendaftarkan Layanan Migrasi Sql di Integration Runtime Yang Dihosting Sendiri.
+Perintah ini mendaftarkan Sql Migration Service di Integration Runtime yang Dihost sendiri.
 
-### Contoh 2: Menginstal Integration Runtime dan mendaftarkan Layanan Migrasi Sql di dalamnya
+### Contoh 2: Instal Integration Runtime dan daftarkan Sql Migration Service di dalamnya
 ```powershell
 $authKeys = Get-AzDataMigrationSqlMigrationServiceAuthKey -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 Register-AzDataMigrationIntegrationRuntime -AuthKey $authKeys.AuthKey1 -IntegrationRuntimePath "C:\Users\user\Downloads\IntegrationRuntime.msi"
@@ -55,12 +58,12 @@ Start to register IR with key: IR@abcd1-efgh2-jklmn3-opqr4@mysqlms@eastus@stuv5/
 Integration Runtime registration is successful!
 ```
 
-Perintah ini menginstal Integration Runtime dan mendaftarkan Layanan Migrasi Sql di dalamnya.
+Perintah ini menginstal Integration Runtime dan mendaftarkan Sql Migration Service di dalamnya.
 
 ## PARAMETERS
 
 ### -AuthKey
-AuthKey dari Layanan Migrasi Sql
+AuthKey dari Sql Migration Service
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntegrationRuntimePath
-Jalur msi SHIR
+Jalur SHIR msi
 
 ```yaml
 Type: System.String
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

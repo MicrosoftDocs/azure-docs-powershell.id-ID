@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
-ms.openlocfilehash: 90f7fcff1154a41ac6b1150cc701a358cfaf4eca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 11dafaa4dc180aeb2ae07b8b228b1be4fc792080
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270387"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603608"
 ---
 # Update-AzSupportTicket
 
 ## SYNOPSIS
 Memperbarui tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/update-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Update-AzSupportTicket -InputObject <PSSupportTicket> [-Severity <Severity>] [-S
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk memperbarui tingkat keparahan, status, atau detail kontak pelanggan tiket dukungan. Perhatikan bahwa memperbarui tingkat keparahan atau status tiket dukungan tidak diperbolehkan saat tiket ditetapkan ke teknisi dukungan. Jika Anda ingin memperbarui tingkat keparahan atau status setelah penetapan tiket, hubungi teknisi dukungan dengan mengirimkan komunikasi pada tiket.
+Gunakan cmdlet ini untuk memperbarui tingkat keparahan tiket dukungan, status, atau detail kontak pelanggan. Perhatikan bahwa memperbarui tingkat keparahan atau status tiket dukungan tidak diizinkan saat tiket ditetapkan ke teknisi dukungan. Jika Anda ingin memperbarui tingkat keparahan atau status setelah penetapan tiket, hubungi teknisi dukungan dengan mengirim komunikasi pada tiket.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Closed   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 3: Memperbarui detail kontak tiket dukungan dengan menentukan objek kontak.
+### Contoh 3: Perbarui detail kontak tiket dukungan dengan menentukan objek kontak.
 ```powershell
 $contactDetail = new-object Microsoft.Azure.Commands.Support.Models.PSContactProfile
 $contactDetail.FirstName = "first name updated"
@@ -88,7 +91,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Perbarui tingkat keparahan tiket dukungan dengan objek tiket dukungan perpipaan.
+### Contoh 4: Perbarui tingkat keparahan tiket dukungan dengan mempipa objek tiket dukungan.
 ```powershell
 Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Severity "moderate"
 ```
@@ -98,7 +101,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 5: Memperbarui detail kontak tiket dukungan dengan menentukan parameter kontak individual.
+### Contoh 5: Perbarui detail kontak tiket dukungan dengan menentukan parameter kontak individual.
 ```powershell
 Update-AzSupportTicket -Name "test1" -CustomerFirstName "first name updated" -CustomerLastName "last name updated" -AdditionalEmailAddress @("user2@contoso.com") 
 ```
@@ -108,7 +111,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 6: Memperbarui status tiket dukungan dengan objek tiket dukungan perpipaan.
+### Contoh 6: Memperbarui status tiket dukungan dengan piping objek tiket dukungan.
 ```powershell
 Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Status "Closed"
 ```
@@ -122,7 +125,7 @@ test1 test title1                  150010521000317 Moderate Virtual Machine runn
 
 ### -AdditionalEmailAddress
 Alamat email tambahan.
-Alamat email yang tercantum di sini akan disalin pada setiap korespondensi tentang tiket dukungan.
+Alamat email yang tercantum di sini akan disalin pada korespondensi apa pun tentang tiket dukungan.
 
 ```yaml
 Type: System.String[]
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 
 ### -CustomerCountry
 Negara pelanggan.
-Kode ini harus berupa kode negara ISO Alpha-3 yang valid (ISO 3166).
+Ini harus berupa kode negara ISO Alpha-3 yang valid (ISO 3166).
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 
 ### -CustomerPhoneNumber
 Nomor telepon pelanggan.
-Ini diperlukan jika metode kontak pilihan adalah telepon.
+Ini diperlukan jika metode kontak yang disukai adalah telepon.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -CustomerPreferredSupportLanguage
 Bahasa dukungan pilihan pelanggan.
-Kode ini harus merupakan kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
+Ini harus berupa kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya SupportTicket yang diperbarui cmdlet ini.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredContactMethod
-Metode kontak pilihan.
+Metode kontak yang disukai.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.ContactMethod
@@ -321,7 +324,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keparahan
+### -Tingkat keparahan
 Perbarui Tingkat Keparahan SupportTicket.
 
 ```yaml
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Perbarui Status DukunganTicket.
+Perbarui Status SupportTicket.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.Status
@@ -353,8 +356,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

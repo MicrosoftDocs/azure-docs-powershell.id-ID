@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
-ms.openlocfilehash: c205c6baeca08c371a6385803f075b2535508cb4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 021086eda4ab1a4ae9ea3364d8cfc5053c9f800c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628626"
 ---
 # Set-AzPrivateDnsZone
 
 ## SYNOPSIS
-Memperbarui zona DNS Pribadi dari grup sumber daya.
+Memperbarui zona DNS Privat dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ Set-AzPrivateDnsZone -PrivateZone <PSPrivateDnsZone> [-Tag <Hashtable>] [-Overwr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPrivateDnsZone** secara permanen memperbarui zona Sistem Nama Domain (DNS) pribadi dari grup sumber daya tertentu.
-Anda dapat melewati objek **PrivateDnsZone** menggunakan parameter *PrivateZone* atau menggunakan operator pipeline, atau anda dapat menentukan parameter *Name* and *ResourceGroupName* .
-Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
-Saat menentukan zona menggunakan objek **PrivateDnsZone** (yang dilewati melalui pipeline atau parameter *Zona* ), zona tidak diperbarui jika telah diubah di Azure DNS karena objek **PrivateDnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan di dalam zona tidak).
-Ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Cmdlet **Set-AzPrivateDnsZone** memperbarui zona Sistem Nama Domain (DNS) privat secara permanen dari grup sumber daya tertentu.
+Anda dapat meneruskan objek **PrivateDnsZone** menggunakan parameter *PrivateZone* atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *Nama* dan *ResourceGroupName* .
+Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Saat menentukan zona menggunakan objek **PrivateDnsZone** (diteruskan melalui parameter alur atau *Zona* ), zona tidak diperbarui jika telah diubah di Azure DNS karena objek **PrivateDnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan dalam zona tidak).
+Ini memberikan perlindungan untuk perubahan zona bersamaan.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -83,10 +86,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama zona DNS Privat yang diperbarui cmdlet ini.
 Anda juga harus menentukan parameter *ResourceGroupName* .
-Atau, Anda dapat menentukan zona DNS pribadi menggunakan parameter *Zona* .
+Atau, Anda dapat menentukan zona DNS privat menggunakan parameter *Zona* .
 
 ```yaml
 Type: System.String
@@ -101,9 +104,9 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Saat menentukan zona menggunakan objek **PrivateDnsZone** (yang dilewatkan melalui pipeline atau parameter *Zona* ), zona tidak diperbarui jika telah diubah di Azure DNS karena objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan di dalam zona tidak).
-Ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Saat menentukan zona menggunakan objek **PrivateDnsZone** (diteruskan melalui parameter alur atau *Zona* ), zona tidak diperbarui jika telah diubah di Azure DNS sejak objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan dalam zona tidak).
+Ini memberikan perlindungan untuk perubahan zona bersamaan.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi zona yang akan diperbarui.
 Anda juga harus menentukan parameter *ZoneName* .
-Alternatifnya, Anda bisa menentukan zona DNS pribadi menggunakan objek **DnsZone** , yang dilewati melalui pipeline atau parameter *Zona* .
+Atau, Anda dapat menentukan zona DNS privat menggunakan objek **DnsZone** , yang diteruskan melalui alur atau parameter *Zona* .
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Zona DNS Pribadi.
+ResourceID Zona DNS Privat.
 
 ```yaml
 Type: System.String
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

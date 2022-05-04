@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
-ms.openlocfilehash: fc744c10b22f52af65725663c81a1161b90ef5f6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf0c133d54f033638bb42666c7d7094cd029ce60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992593"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607784"
 ---
 # New-AzVMwarePrivateCloud
 
 ## SYNOPSIS
-Membuat atau memperbarui awan pribadi
+Membuat atau memperbarui cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareprivatecloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzVMwarePrivateCloud -Name <String> -ResourceGroupName <String> -Location <S
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui awan pribadi
+Membuat atau memperbarui cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat awan pribadi
+### Contoh 1: Membuat cloud privat
 ```powershell
 New-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group -NetworkBlock 192.168.48.0/22 -Sku av36 -ManagementClusterSize 3 -Location australiaeast
 ```
@@ -41,12 +44,12 @@ Location      Name            Type                        ResourceGroupName
 australiaeast azps_test_cloud Microsoft.AVS/privateClouds azps_test_group
 ```
 
-Membuat awan pribadi
+Membuat cloud privat
 
 ## PARAMETERS
 
 ### -AcceptEULA
-Terima EULA dari AVS, istilah hukum akan muncul tanpa parameter ini disediakan
+Terima EULA AVS, jangka waktu hukum akan muncul tanpa parameter ini disediakan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama awan pribadi
+### -Name
+Nama cloud privat
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkBlock
-Blok alamat harus unik di seluruh VNet dalam langganan Serta lokal.
-Pastikan format CIDR sesuai dengan (A.B.C.D/X) di mana A,B,C,D berada di antara 0 dan 255, dan X berada di antara 0 dan 22
+Blok alamat harus unik di seluruh VNet dalam langganan Anda serta lokal.
+Pastikan format CIDR sesuai dengan (A.B.C.D/X) di mana A,B,C,D berada di antara 0 dan 255, dan X antara 0 dan 22
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -NsxtPassword
-Secara opsional, atur kata sandi Pengelola NSX-T saat awan privat dibuat
+Secara opsional, atur kata sandi NSX-T Manager saat cloud privat dibuat
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama SKU.
+Nama SKUnya.
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -VcenterPassword
-Secara opsional, atur kata sandi admin vCenter saat awan privat dibuat
+Secara opsional, atur kata sandi admin vCenter Server saat cloud privat dibuat
 
 ```yaml
 Type: System.String
@@ -272,8 +275,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

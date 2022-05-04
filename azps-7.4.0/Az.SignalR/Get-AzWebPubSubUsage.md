@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
-ms.openlocfilehash: 34dc4fa0d293b3b913b038c29f28e121073f45b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2321b8868f506e0028973deb6e4b73a0a3083bba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671652"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588924"
 ---
 # Get-AzWebPubSubUsage
 
 ## SYNOPSIS
 Cantumkan kuota penggunaan sumber daya menurut lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsubusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cantumkan kuota penggunaan sumber daya menurut lokasi.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar penggunaan Web PubSub di kawasan AS timur.
+### Contoh 1: Mencantumkan penggunaan Web PubSub di wilayah AS timur.
 ```powershell
 Get-AzWebPubSubUsage -Location eastus | Format-List
 ```
@@ -50,7 +53,7 @@ NameValue          : SignalRTotalUnits
 Unit               : Count
 ```
 
-Contoh menyalurkan hasil `Get-AzWebPubSubUsage -Location eastus` untuk `Format-list` menampilkan nilai semua properti hasil.
+Contoh menyalurkan hasil `Get-AzWebPubSubUsage -Location eastus` untuk `Format-list` melihat nilai semua properti hasil.
 
 ## PARAMETERS
 
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

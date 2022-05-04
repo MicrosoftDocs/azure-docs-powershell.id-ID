@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreVirtualNetworkRule.md
-ms.openlocfilehash: 449428dccdf907dacd3884edbe27739c3030f87b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c5fc808af166ab29a2be47825b881794731ef9a6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125163"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589806"
 ---
 # Add-AzDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
 Menambahkan aturan jaringan virtual ke akun Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ IgnoreMissingVnetServiceEndpoint :
 State                            :
 ```
 
-Ini membuat aturan jaringan virtual baru yang disebut "myVNET" dalam akun "dls" dengan id subnet "testId"
+Ini membuat aturan jaringan virtual baru yang disebut "myVNET" di akun "dls" dengan id subnet "testId"
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan jaringan virtual.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-SubnetId aturan jaringan virtual
+SubnetId dari aturan jaringan virtual
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

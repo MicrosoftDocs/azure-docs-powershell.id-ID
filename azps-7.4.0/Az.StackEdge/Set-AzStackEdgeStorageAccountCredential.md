@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeStorageAccountCredential.md
-ms.openlocfilehash: 3d1e09235bf64bc3e5b5c4a06e9fd4c02fcee283
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f0476fe07de052803b9fbccc203835740c109f66
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798570"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588654"
 ---
 # Set-AzStackEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Mengatur kredensial akun penyimpanan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/set-azstackedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzStackEdgeStorageAccountCredential -StorageAccountAccessKey <SecureString> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStackEdgeStorageAccountCredential** memperbarui kredensial akun penyimpanan yang terkait dengan akun penyimpanan di perangkat Stack Edge.
+Cmdlet **Set-AzStackEdgeStorageAccountCredential** memperbarui kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat Stack Edge.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Membantu dalam memutar kunci akses untuk akun penyimpanan
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input
+Objek input
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccountCredential
@@ -135,7 +138,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun penyimpanan yang akan digunakan
 
 ```yaml
@@ -195,8 +198,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

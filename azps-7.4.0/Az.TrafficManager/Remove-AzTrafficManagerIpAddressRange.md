@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
-ms.openlocfilehash: 43dcbfbf8887f16b43d0c8b1094d77c8812f25d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8df3bf63d526d451ea546ba87353841cd88d6fe7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615056"
 ---
 # Remove-AzTrafficManagerIpAddressRange
 
 ## SYNOPSIS
 Menghapus rentang alamat atau subnet dari objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanageripaddressrange) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Remove-AzTrafficManagerIpAddressRange** menghapus rentang alamat IP dar
 Anda bisa mendapatkan titik akhir dengan menggunakan cmdlet New-AzTrafficManagerEndpoint atau Get-AzTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
-Lakukan perubahan anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint.
+Terapkan perubahan Anda ke titik akhir untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -41,9 +44,9 @@ Remove-AzTrafficManagerIpAddressRange -TrafficManagerEndpoint $TrafficManagerEnd
 Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
+Perintah pertama mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
 Perintah kedua menghapus rentang alamat IP dari titik akhir yang disimpan di $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah akhir memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
-Cmdlet ini mengubah objek lokal ini.
+Cmdlet ini memodifikasi objek lokal ini.
 Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint atau New-AzTrafficManagerEndpoint.
 
 ```yaml
@@ -79,8 +82,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Menentukan alamat IP pertama dalam rentang yang akan dihapus.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

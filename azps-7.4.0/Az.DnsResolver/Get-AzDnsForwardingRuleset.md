@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
-ms.openlocfilehash: ce51ed8d5170d27831f0dbd4561e78183dade8b3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2cc054a3fe865cc66d4eb2cedfb888eec28210af
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589572"
 ---
 # Get-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsforwardingruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDnsForwardingRuleset [-SubscriptionId <String[]>] [-Top <Int32>] [-Default
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDnsForwardingRuleset -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -51,7 +54,7 @@ Get-AzDnsForwardingRuleset -ResourceGroupName <String> -VirtualNetworkName <Stri
 ```
 
 ## DESCRIPTION
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -83,9 +86,9 @@ Location Name                 Type                                    Etag
 westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-0000-0800-0000-60e7ec170000"
 ```
 
-Perintah ini mendapatkan satu aturan penerusan DNS berdasarkan nama.
+Perintah ini mendapatkan aturan penerusan DNS tunggal berdasarkan nama.
 
-### Contoh 3: Mencantumkan semua aturan penerusan DNS di bawah grup alokasi ulang
+### Contoh 3: Mencantumkan semua aturan penerusan DNS di bawah grup sumber daya
 ```powershell
 Get-AzDnsForwardingRuleset -ResourceGroupName sampleRG
 ```
@@ -98,7 +101,7 @@ westus2  pw-dnsForwardingRuleset  Microsoft.Network/dnsForwardingRulesets "08009
 westus2  pw-dnsForwardingRuleset1 Microsoft.Network/dnsForwardingRulesets "08007ccc-0000-0800-0000-60e3846a0000"
 ```
 
-Perintah ini mendapatkan semua aturan penerusan DNS di bawah grup alokasi ulang.
+Perintah ini mendapatkan semua aturan penerusan DNS di bawah grup sumber daya.
 
 ### Contoh 4: Mencantumkan semua aturan penerusan DNS di bawah jaringan virtual
 ```powershell
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -158,8 +161,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aturan penerusan DNS.
+### -Name
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -204,8 +207,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah hasil maksimum yang akan dikembalikan.
+### -Atas
+Jumlah maksimum hasil yang akan dikembalikan.
 Jika tidak ditentukan, mengembalikan hingga 100 hasil.
 
 ```yaml
@@ -235,8 +238,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -289,13 +292,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama penuntas DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

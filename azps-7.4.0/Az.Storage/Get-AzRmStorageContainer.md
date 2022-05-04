@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
-ms.openlocfilehash: b38f046655fbc0f2714ac25ca0dc94c87cf09a6a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6625511ad1ed64b709ffba6239de61fe5402e832
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737028"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602132"
 ---
 # Get-AzRmStorageContainer
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan Storage wadah blob
+Mendapatkan atau mencantumkan Storage kontainer blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,33 +35,33 @@ Get-AzRmStorageContainer -StorageAccount <PSStorageAccount> [-Name <String>] [-I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageContainer** mendapatkan atau mencantumkan Storage wadah blob
+Cmdlet **Get-AzRmStorageContainer** mendapatkan atau mencantumkan Storage kontainer blob
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan wadah blob Storage dengan nama akun dan nama kontainer Storage
+### Contoh 1: Dapatkan kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan wadah blob Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini mendapatkan kontainer blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Mencantumkan semua wadah blob Storage dari akun Storage
+### Contoh 2: Mencantumkan semua kontainer blob Storage dari akun Storage
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 ```
 
-Perintah ini mencantumkan semua wadah blob Storage akun Storage dengan nama akun Storage.
+Perintah ini mencantumkan semua kontainer blob Storage dari akun Storage dengan nama akun Storage.
 
-### Contoh 3: Dapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
+### Contoh 3: Dapatkan kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Get-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini mendapatkan kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 4: Daftar Storage wadah blob dari akun Storage, menyertakan wadah yang dihapus.
+### Contoh 4: Mencantumkan Storage kontainer blob dari akun Storage, sertakan kontainer yang dihapus.
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -IncludeDeleted
 
@@ -70,13 +73,13 @@ testcon      None         2020-08-28 10:18:13Z False        False               
 testcon2     None         2020-09-04 12:52:37Z False        False                 True    01D67D248986B6DA
 ```
 
-Contoh ini mencantumkan semua wadah akun penyimpanan, termasuk wadah yang dihapus.
-Kontainer yang dihapus hanya akan ada setelah softdelete Container yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
+Contoh ini mencantumkan semua kontainer akun penyimpanan, termasuk kontainer yang dihapus.
+Kontainer yang dihapus hanya akan ada setelah softdelete Kontainer yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDeleted
-Sertakan wadah yang dihapus, secara default wadah daftar tidak akan menyertakan kontainer yang dihapus
+Menyertakan kontainer yang dihapus, secara default, kontainer daftar tidak akan menyertakan kontainer yang dihapus
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

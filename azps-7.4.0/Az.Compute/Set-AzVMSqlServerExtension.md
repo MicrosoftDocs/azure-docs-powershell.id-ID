@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
-ms.openlocfilehash: d542c1779f038efef0b039936f695e2300e3be3b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 890b308fb7bf6994166fc28b1b4b2cbeaca5ce2f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230697"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627654"
 ---
 # Set-AzVMSqlServerExtension
 
 ## SYNOPSIS
-Mengatur ekstensi Server Azure SQL pada mesin virtual.
+Mengatur ekstensi Azure SQL Server pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,55 +31,55 @@ Set-AzVMSqlServerExtension [[-Version] <String>] [-ResourceGroupName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMSqlServerExtension** mengatur ekstensi AzureSQL Server pada mesin virtual.
+Cmdlet **Set-AzVMSqlServerExtension** mengatur ekstensi AzureSQL Server pada komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur pengaturan patch otomatis pada mesin virtual
+### Contoh 1: Mengatur pengaturan patching otomatis pada komputer virtual
 ```powershell
 $AutoPatchingConfig = New-AzVMSqlServerAutoPatchingConfig -Enable -DayOfWeek "Thursday" -MaintenanceWindowStartingHour 11 -MaintenanceWindowDuration 120 -PatchCategory "Important"
 Get-AzVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzVMSqlServerExtension -AutoPatchingSettings $AutoPatchingConfig | Update-AzVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzVMSqlServerAutoPatchingConfig** .
+Perintah pertama membuat objek konfigurasi dengan menggunakan cmdlet **New-AzVMSqlServerAutoPatchingConfig** .
 Perintah menyimpan konfigurasi dalam variabel $AutoPatchingConfig.
-Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 pada layanan bernama Service02 dengan menggunakan cmdlet Get-AzVM.
-Perintah melewati objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini mengatur pengaturan patch otomatis di $AutoPatchingConfig untuk mesin virtual.
-Perintah melewati mesin virtual ke cmdlet Update-AzVM.
+Perintah kedua mendapatkan komputer virtual bernama VirtualMachine11 pada layanan bernama Service02 dengan menggunakan cmdlet Get-AzVM.
+Perintah meneruskan objek tersebut ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet saat ini mengatur pengaturan patching otomatis di $AutoPatchingConfig untuk komputer virtual.
+Perintah meneruskan komputer virtual ke cmdlet Update-AzVM.
 
-### Contoh 2: Mengatur pengaturan pencadangan otomatis pada mesin virtual
+### Contoh 2: Mengatur pengaturan pencadangan otomatis pada komputer virtual
 ```powershell
 $AutoBackupConfig = New-AzVMSqlServerAutoBackupConfig -Enable -RetentionPeriod 10 -StorageUri $StorageUrl -StorageKey $StorageAccountKeySecure
 Get-AzVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzVMSqlServerExtension -AutoBackupSettings $AutoBackupConfig | Update-AzVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzVMSqlServerAutoBackupConfig** .
+Perintah pertama membuat objek konfigurasi dengan menggunakan cmdlet **New-AzVMSqlServerAutoBackupConfig** .
 Perintah menyimpan konfigurasi dalam variabel $AutoBackupConfig.
-Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 pada layanan bernama Service02, lalu meneruskannya ke cmdlet saat ini.
-Cmdlet saat ini mengatur pengaturan cadangan otomatis di $AutoBackupConfig untuk mesin virtual.
-Perintah melewati mesin virtual ke cmdlet Update-AzVM.
+Perintah kedua mendapatkan komputer virtual bernama VirtualMachine11 pada layanan bernama Service02, lalu meneruskannya ke cmdlet saat ini.
+Cmdlet saat ini mengatur pengaturan pencadangan otomatis di $AutoBackupConfig untuk komputer virtual.
+Perintah meneruskan komputer virtual ke cmdlet Update-AzVM.
 
-### Contoh 3: Menonaktifkan ekstensi SQL Server di mesin virtual
+### Contoh 3: Menonaktifkan ekstensi SQL Server pada komputer virtual
 ```powershell
 Get-AzVM -ServiceName "Service03" -Name "VirtualMachine08" | Set-AzVMSqlServerExtension -Disable
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu mengirimkannya ke cmdlet saat ini.
-Perintah menonaktifkan SQL Server ekstensi mesin virtual pada mesin virtual tersebut.
+Perintah ini mendapatkan komputer virtual bernama VirtualMachine08 di Service03, lalu meneruskannya ke cmdlet saat ini.
+Perintah menonaktifkan SQL Server ekstensi komputer virtual pada komputer virtual tersebut.
 
-### Contoh 4: Menghapus instalan ekstensi SQL Server di mesin virtual tertentu
+### Contoh 4: Menghapus instalan ekstensi SQL Server pada komputer virtual tertentu
 ```powershell
 Get-AzVM -ServiceName "Service03" -Name "VirtualMachine08" | Set-AzVMSqlServerExtension -Uninstall
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine08 di Service03, lalu mengirimkannya ke cmdlet saat ini.
-Perintah menghapus instalan SQL Server ekstensi mesin virtual pada mesin virtual tersebut.
+Perintah ini mendapatkan komputer virtual bernama VirtualMachine08 di Service03, lalu meneruskannya ke cmdlet saat ini.
+Perintah menghapus instalan ekstensi komputer virtual SQL Server pada komputer virtual tersebut.
 
 ## PARAMETERS
 
 ### -AutoBackupSettings
-Menentukan setelan pencadangan SQL Server otomatis.
+Menentukan pengaturan pencadangan SQL Server otomatis.
 Untuk membuat objek **AutoBackupSettings** , gunakan cmdlet New-AzVMSqlServerAutoBackupConfig.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama SQL Server ekstensi.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini mengatur ekstensi SQL Server.
+Menentukan nama komputer virtual tempat cmdlet ini mengatur ekstensi SQL Server.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -231,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [Get-AzVMSqlServerExtension](./Get-AzVMSqlServerExtension.md)
 
@@ -241,6 +244,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzVMSqlServerExtension](./Remove-AzVMSqlServerExtension.md)
 
-[Perbarui-AzVM](./Update-AzVM.md)
+[Update-AzVM](./Update-AzVM.md)
 
 

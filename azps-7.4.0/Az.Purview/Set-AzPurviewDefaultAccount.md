@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Set-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Set-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 19cb3cbcd567026a1d06c14a33d87ec700032a8f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fcd10f07c9c6ccc16c00367772bdaf78c7ec32fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868734"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628536"
 ---
 # Set-AzPurviewDefaultAccount
 
 ## SYNOPSIS
-Mengatur akun default untuk lingkup.
+Menetapkan akun default untuk cakupan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/set-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzPurviewDefaultAccount -AccountName <String> -ResourceGroupName <String> -S
 ```
 
 ## DESCRIPTION
-Mengatur akun default untuk lingkup.
+Menetapkan akun default untuk cakupan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur akun default untuk lingkup.
+### Contoh 1: Mengatur akun default untuk cakupan.
 ```powershell
 Set-AzPurviewDefaultAccount -AccountName test-pa -ResourceGroupName test-rg -ScopeTenantId xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a
 ```
@@ -41,12 +44,12 @@ AccountName ResourceGroupName Scope                                ScopeTenantId
 test-pa      test-rg            xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a Tenant    xxxxxxxx-1bf0-4dda-aec3
 ```
 
-`test-pa` Mengatur sebagai akun default untuk lingkup.
+`test-pa` Mengatur sebagai akun default untuk cakupan.
 
 ## PARAMETERS
 
 ### -AccountName
-Nama akun yang diatur sebagai default.
+Nama akun yang ditetapkan sebagai default.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun yang diatur sebagai default.
+Nama grup sumber daya akun yang ditetapkan sebagai default.
 
 ```yaml
 Type: System.String
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-ID objek lingkup.
+### -Cakupan
+ID objek cakupan.
 Misalnya, sub ID atau ID penyewa.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeTenantId
-Penyewa lingkup tempat akun default diatur.
+Penyewa cakupan tempat akun default diatur.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-Lingkup di mana akun default diatur.
+Cakupan tempat akun default diatur.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Support.ScopeType
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan akun yang diatur sebagai default.
+ID langganan akun yang ditetapkan sebagai default.
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
