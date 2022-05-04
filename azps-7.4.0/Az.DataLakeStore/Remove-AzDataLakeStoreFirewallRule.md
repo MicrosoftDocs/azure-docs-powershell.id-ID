@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreFirewallRule.md
-ms.openlocfilehash: e9067cc4e1ea9c34277f53af9e2be27f10bfe7fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbbbf2e5b7b3c14f6b068e488714b01cbd4a07a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318033"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624198"
 ---
 # Remove-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Menghapus aturan firewall yang ditentukan dalam Penyimpanan Data Lake tertentu.
+Menghapus aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzDataLakeStoreFirewallRule [-Account] <String> [[-Name] <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataLakeStoreFirewallRule** menghapus aturan firewall tertentu dalam Data Lake Store yang ditentukan.
+Cmdlet **Remove-AzDataLakeStoreFirewallRule** menghapus aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall yang akan dihapus.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

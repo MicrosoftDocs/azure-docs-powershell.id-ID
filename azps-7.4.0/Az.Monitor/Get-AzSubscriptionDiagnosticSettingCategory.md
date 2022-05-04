@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzSubscriptionDiagnosticSettingCategory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzSubscriptionDiagnosticSettingCategory.md
-ms.openlocfilehash: 2a08df993fb06d06f3ac32c8c7fc75db1a283bd6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c4a9e024d02a6988a30b23c2659f7536848cccd3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745488"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673792"
 ---
 # Get-AzSubscriptionDiagnosticSettingCategory
 
 ## SYNOPSIS
-Dapatkan kategori pengaturan diagnostik untuk langganan.
+Mendapatkan kategori pengaturan diagnostik untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azsubscriptiondiagnosticsettingcategory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzSubscriptionDiagnosticSettingCategory [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Dapatkan kategori pengaturan diagnostik untuk langganan.
+Mendapatkan kategori pengaturan diagnostik untuk langganan.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Autoscale               Logs
 ResourceHealth          Logs
 ```
 
-Dapatkan kategori pengaturan diagnostik.
+Mendapatkan kategori pengaturan diagnostik.
 
 ## PARAMETERS
 
@@ -66,15 +69,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Insights.OutputClasses.PSSubscriptionDiagnosticSettingCategory
+### Microsoft.Azure.Commands. Insights. OutputClasses.PSSubscriptionDiagnosticSettingCategory
 
 ## NOTES
 

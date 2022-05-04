@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
-ms.openlocfilehash: 66e6e6a54d2d6bfb93352832785b1e6c7bcf778c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa3fcae7de34eff2960aa1d10d233d28f66eae35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285453"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674008"
 ---
 # Add-AzKeyVaultNetworkRule
 
 ## SYNOPSIS
-Menambahkan aturan yang dimaksudkan untuk membatasi akses ke kubah kunci berdasarkan alamat internet klien.
+Menambahkan aturan yang dimaksudkan untuk membatasi akses ke brankas kunci berdasarkan alamat internet klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +44,9 @@ Add-AzKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzKeyVaultNetworkRule** memberikan atau membatasi akses ke kubah kunci ke sekumpulan penelepon yang ditunjuk oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses bagi pengguna, aplikasi, atau grup keamanan lain yang telah diberi izin melalui kebijakan akses.
+Cmdlet **Add-AzKeyVaultNetworkRule** memberikan atau membatasi akses ke brankas kunci ke sekumpulan penelepon yang ditunjuk oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses untuk pengguna, aplikasi, atau grup keamanan lain yang telah diberikan izin melalui kebijakan akses.
 
-Harap diperhatikan bahwa rentang IP apa pun di dalam `10.0.0.0-10.255.255.255` (alamat IP pribadi) tidak dapat digunakan untuk menambahkan aturan jaringan.
+Harap dicatat bahwa rentang IP apa pun di dalam `10.0.0.0-10.255.255.255` (alamat IP privat) tidak dapat digunakan untuk menambahkan aturan jaringan.
 
 ## EXAMPLES
 
@@ -95,7 +98,7 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini menambahkan aturan jaringan ke kubah yang ditentukan, memungkinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
+Perintah ini menambahkan aturan jaringan ke vault yang ditentukan, memungkinkan akses ke alamat IP yang ditentukan dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek brankas kunci yang diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan brankas kunci yang aturan jaringannya sedang dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
+Menentukan nama brankas kunci yang aturan jaringannya sedang dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan virtual yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -237,8 +240,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

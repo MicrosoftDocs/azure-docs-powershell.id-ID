@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
-ms.openlocfilehash: af25a9779a5ee4775ca2e9e7c923ef33b0adac86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eba9b0a22539cb82c1a72dfa8cc79ba83d8749c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801702"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603896"
 ---
 # New-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Menambahkan penyebaran Azure ke grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -178,21 +181,21 @@ New-AzResourceGroupDeployment [-Name <String>] -ResourceGroupName <String> [-Mod
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzResourceGroupDeployment** menambahkan penyebaran ke grup sumber daya yang sudah ada.
+Cmdlet **New-AzResourceGroupDeployment** menambahkan penyebaran ke grup sumber daya yang ada.
 Ini termasuk sumber daya yang diperlukan penyebaran.
-Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, situs web, mesin virtual, atau akun Storage.
-Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit, seperti situs web, server database, dan database yang diperlukan untuk situs web keuangan.
+Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, situs web, komputer virtual, atau akun Storage.
+Grup sumber daya Azure adalah kumpulan sumber daya Azure yang disebarkan sebagai unit, seperti situs web, server database, dan database yang diperlukan untuk situs web keuangan.
 Penyebaran grup sumber daya menggunakan templat untuk menambahkan sumber daya ke grup sumber daya dan menerbitkannya sehingga tersedia di Azure.
 Untuk menambahkan sumber daya ke grup sumber daya tanpa menggunakan templat, gunakan cmdlet New-AzResource.
 Untuk menambahkan penyebaran grup sumber daya, tentukan nama grup sumber daya yang sudah ada dan templat grup sumber daya.
-Templat grup sumber daya adalah string JSON yang mewakili grup sumber daya untuk layanan berbasis awan yang kompleks, seperti portal web.
-Templat menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
-Anda bisa menemukan banyak templat di galeri templat Azure atau Anda bisa membuat templat Anda sendiri.
+Templat grup sumber daya adalah string JSON yang mewakili grup sumber daya untuk layanan berbasis cloud yang kompleks, seperti portal web.
+Templat mencakup tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
+Anda dapat menemukan banyak templat di galeri templat Azure atau Anda dapat membuat templat Anda sendiri.
 Untuk menggunakan templat kustom untuk membuat grup sumber daya, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
 Untuk menentukan nilai untuk parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
-Alternatifnya, Anda bisa menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
-Untuk menggunakan parameter dinamis, ketikkan parameter di prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan menggunakan tombol Tab untuk menelusuri parameter yang tersedia.
+Atau, Anda dapat menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
+Untuk menggunakan parameter dinamis, ketikkan pada prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan gunakan tombol Tab untuk menelusuri parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan daripada nilai dalam objek atau file parameter templat.
 
 ## EXAMPLES
@@ -202,8 +205,8 @@ Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan d
 New-AzResourceGroupDeployment -ResourceGroupName "ContosoEngineering" -TemplateFile "D:\Azure\Templates\EngineeringSite.json" -TemplateParameterFile "D:\Azure\Templates\EngSiteParms.json" -Tag @{"key1"="value1"; "key2"="value2";}
 ```
 
-Perintah ini membuat penyebaran baru dengan menggunakan templat kustom dan file templat di disk, dengan parameter tag yang ditentukan.
-Perintah menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
+Perintah ini membuat penyebaran baru dengan menggunakan templat kustom dan file templat pada disk, dengan parameter tag yang ditentukan.
+Perintah ini menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 
 ### Contoh 2: Menggunakan objek templat kustom dan file parameter untuk membuat penyebaran
 ```powershell
@@ -212,13 +215,13 @@ $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 New-AzResourceGroupDeployment -ResourceGroupName "ContosoEngineering" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json"
 ```
 
-Perintah ini membuat penyebaran baru dengan menggunakan file templat dan kustom pada disk yang telah dikonversi menjadi hashtable dalam memori.
-Dua perintah pertama membaca teks untuk file templat di disk dan mengonversinya menjadi hashtable dalam memori.
-Perintah terakhir menggunakan parameter *TemplateObject* untuk menentukan hashtable dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
+Perintah ini membuat penyebaran baru dengan menggunakan file kustom dan templat pada disk yang telah dikonversi ke hashtable dalam memori.
+Dua perintah pertama membaca teks untuk file templat pada disk dan mengonversinya menjadi hashtable dalam memori.
+Perintah terakhir menggunakan parameter *TemplateObject* untuk menentukan parameter hashtable dan *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 
 ### Contoh 3
 
-Menambahkan penyebaran Azure ke grup sumber daya. (autogenerasi)
+Menambahkan penyebaran Azure ke grup sumber daya. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -234,12 +237,12 @@ New-AzResourceGroupDeployment -ResourceGroupName "RGName" -TemplateUri "https://
 
 Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak publik dan memerlukan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
 Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo`.
-Ini bisa digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai QueryString
+Ini dapat digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai QueryString
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +277,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - RequestContent
 - ResponseContent
 - Semua
-- Tidak
+- Tidak ada
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -306,8 +309,8 @@ Accept wildcard characters: False
 
 ### -Mode
 Menentukan mode penyebaran. Nilai yang dapat diterima untuk parameter ini adalah:
-- Selesai: Dalam mode lengkap, Resource Manager menghapus sumber daya yang ada dalam grup sumber daya tetapi tidak ditentukan dalam templat.
-- Inkremental: Dalam mode penambahan, Resource Manager meninggalkan sumber daya yang tidak berubah yang ada dalam grup sumber daya tetapi tidak ditentukan dalam templat.
+- Selesai: Dalam mode lengkap, Resource Manager menghapus sumber daya yang ada di grup sumber daya tetapi tidak ditentukan dalam templat.
+- Inkremental: Dalam mode inkremental, Resource Manager meninggalkan sumber daya yang tidak berubah yang ada di grup sumber daya tetapi tidak ditentukan dalam templat.
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.DeploymentMode
@@ -322,7 +325,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran yang akan dibuatnya. Jika tidak ditentukan, default ke nama file templat saat file templat disediakan; default ke waktu saat ini ketika objek templat disediakan, misalnya "20131223140835".
 
 ```yaml
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProceedIfNoChange
-Jangan meminta konfirmasi jika tidak ada perubahan dalam hasil What-If. Berlaku saat sakelar -Konfirmasi diatur.
+Jangan meminta konfirmasi jika tidak ada perubahan dalam hasil What-If. Berlaku ketika sakelar -Confirm diatur.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryString
-String kueri (misalnya, token SAS) untuk digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
+String kueri (misalnya, token SAS) yang akan digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
 
 ```yaml
 Type: System.String
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk digunakan.
+Menentukan nama grup sumber daya yang akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollBackDeploymentName
-Pembatalan ke penyebaran yang berhasil dengan nama tertentu dalam grup sumber daya, tidak boleh digunakan jika -RollbackToLastDeployment digunakan.
+Putar kembali ke penyebaran yang berhasil dengan nama yang diberikan dalam grup sumber daya, tidak boleh digunakan jika -RollbackToLastDeployment digunakan.
 
 ```yaml
 Type: System.String
@@ -413,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollbackToLastDeployment
-Pembatalan ke penyebaran terakhir yang berhasil dalam grup sumber daya, seharusnya tidak ada jika -RollBackDeploymentName digunakan.
+Putar kembali ke penyebaran terakhir yang berhasil di grup sumber daya, seharusnya tidak ada jika -RollBackDeploymentName digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
+Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -458,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateFile
-Menentukan jalur lengkap file templat kustom. Tipe file templat yang didukung: json dan bicep.
+Menentukan jalur lengkap file templat kustom. Jenis file templat yang didukung: json dan bicep.
 
 ```yaml
 Type: System.String
@@ -507,7 +510,7 @@ Accept wildcard characters: False
 
 ### -TemplateParameterObject
 Menentukan tabel hash nama dan nilai parameter templat.
-Untuk bantuan terkait tabel hash di Windows PowerShell, ketik .`Get-Help about_Hash_Tables`
+Untuk bantuan terkait tabel hash di Windows PowerShell, ketik `Get-Help about_Hash_Tables`.
 Jika templat memiliki parameter, Anda harus menentukan nilai parameter.
 Parameter templat ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
 
@@ -524,7 +527,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterUri
-Menentukan URI file parameter templat. Saat menggunakan TemplateParameterUri setiap parameter dinamis yang Anda gunakan diabaikan. Untuk menggunakan parameter dinamis, Anda harus menggunakan parameter *TemplateParameterFile*
+Menentukan URI file parameter templat. Saat menggunakan TemplateParameterUri parameter dinamis apa pun yang Anda gunakan diabaikan. Untuk menggunakan parameter dinamis, Anda harus menggunakan parameter *TemplateParameterFile*
 
 ```yaml
 Type: System.String
@@ -539,7 +542,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID sumber daya templatSpec yang akan digunakan.
+ID sumber daya templatSpec yang akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -569,7 +572,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Jenis perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]
@@ -599,8 +602,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -615,7 +618,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -631,7 +634,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -653,7 +656,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzResource](./New-AzResource.md)
 
-[AzResourceGroup baru](./New-AzResourceGroup.md)
+[Baru-AzResourceGroup](./New-AzResourceGroup.md)
 
 [Remove-AzResourceGroupDeployment](./Remove-AzResourceGroupDeployment.md)
 

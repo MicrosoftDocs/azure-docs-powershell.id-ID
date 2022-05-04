@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADSpCredential.md
-ms.openlocfilehash: ee36e0db103228954fc5b20663ac8876d185f7bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b4bea015d6bd04abefd074114a446a19bc142523
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309708"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641922"
 ---
 # New-AzADSpCredential
 
@@ -18,6 +18,9 @@ ms.locfileid: "143309708"
 Membuat kredensial kunci atau kredensial kata sandi untuk perwakilan layanan.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azadspcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -112,9 +115,9 @@ $credential = New-Object -TypeName "Microsoft.Azure.PowerShell.Cmdlets.Resources
 New-AzADSpCredential -ObjectId $Id -KeyCredentials $credential
 ```
 
-Membuat kredensial kunci untuk perwakilan layanan
+Membuat kredensial utama untuk perwakilan layanan
 
-### Contoh 2: Membuat info masuk kata sandi untuk perwakilan layanan
+### Contoh 2: Membuat kredensial kata sandi untuk perwakilan layanan
 ```powershell
 Get-AzADServicePrincipal -ApplicationId $appId | New-AzADSpCredential -StartDate $startDate -EndDate $endDate
 ```
@@ -125,7 +128,7 @@ Membuat kredensial kata sandi untuk perwakilan layanan
 
 ### -CertValue
 Nilai jenis kredensial 'asimetris'.
-Ini mewakili sertifikat dasar yang dikodekan 64.
+Ini mewakili sertifikat dasar 64 yang dikodekan.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredentials
-kredensial kunci yang terkait dengan perwakilan layanan.
+kredensial utama yang terkait dengan perwakilan layanan.
 Untuk membuat, lihat bagian CATATAN untuk properti KEYCREDENTIALS dan buat tabel hash.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ID objek aplikasi.
+Id objek aplikasi.
 
 ```yaml
 Type: System.String
@@ -324,26 +327,26 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 KEYCREDENTIALS <MicrosoftGraphKeyCredential[]>: kredensial kunci yang terkait dengan perwakilan layanan.
   - `[CustomKeyIdentifier <Byte[]>]`: Pengidentifikasi kunci kustom
   - `[DisplayName <String>]`: Nama yang mudah diingat untuk kunci. Opsional.
-  - `[EndDateTime <DateTime?>]`: Tanggal dan waktu kedaluwarsa kredensial. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
-  - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus menjadi nilai dasar 64 yang dikodekan.
+  - `[EndDateTime <DateTime?>]`: Tanggal dan waktu kedaluwarsa kredensial. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
+  - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus berupa nilai dasar 64 yang dikodekan.
   - `[KeyId <String>]`: Pengidentifikasi unik (GUID) untuk kunci.
-  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
   - `[Type <String>]`: Jenis kredensial kunci; misalnya, 'Simetris'.
   - `[Usage <String>]`: String yang menjelaskan tujuan kunci dapat digunakan; misalnya, 'Verifikasi'.
 
 PASSWORDCREDENTIALS <MicrosoftGraphPasswordCredential[]>: Info masuk kata sandi yang terkait dengan perwakilan layanan.
   - `[CustomKeyIdentifier <Byte[]>]`: Jangan gunakan.
-  - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Pilihan.
-  - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
+  - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Opsional.
+  - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
   - `[KeyId <String>]`: Pengidentifikasi unik untuk kata sandi.
-  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
+  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
 
 SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layanan, dapat digunakan sebagai input alur.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[AccountEnabled <Boolean?>]`: true jika akun perwakilan layanan diaktifkan; jika tidak, salah. Mendukung $filter (eq, ne, NOT, in).
-  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan layanan yang menggunakan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'- nya. Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang digarap pengguna.
+  - `[AccountEnabled <Boolean?>]`: benar jika akun perwakilan layanan diaktifkan; jika tidak, salah. Mendukung $filter (eq, ne, NOT, in).
+  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan layanan yang menggunakan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'-nya. Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang di kerjakan pengguna.
     - `[Id <String>]`: 
     - `[Property <IMicrosoftGraphKeyValue[]>]`: 
       - `[Key <String>]`: Kunci.
@@ -427,10 +430,10 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[Value <String>]`: Menentukan nilai yang akan disertakan dalam klaim scp (cakupan) dalam token akses. Panjang tidak boleh melebihi 120 karakter. Karakter yang diizinkan adalah : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _ { } ~, serta karakter dalam rentang 0-9, A-Z dan a-z. Karakter lainnya, termasuk karakter spasi, tidak diperbolehkan. Mungkin tidak dimulai dengan ..
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]`: Pengumpulan kredensial kata sandi yang terkait dengan perwakilan layanan. Tidak dapat diubah ke null.
     - `[CustomKeyIdentifier <Byte[]>]`: Jangan gunakan.
-    - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Pilihan.
-    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
+    - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Opsional.
+    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
     - `[KeyId <String>]`: Pengidentifikasi unik untuk kata sandi.
-    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
+    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
   - `[PreferredSingleSignOnMode <String>]`: Menentukan mode akses menyeluruh yang dikonfigurasi untuk aplikasi ini. Azure AD menggunakan mode akses menyeluruh pilihan untuk meluncurkan aplikasi dari Microsoft 365 atau Azure AD Aplikasi Saya. Nilai yang didukung adalah kata sandi, saml, notSupported, dan oidc.
   - `[PreferredTokenSigningKeyThumbprint <String>]`: Hanya dicadangkan untuk penggunaan internal. Jangan menulis atau mengandalkan properti ini. Dapat dihapus dalam versi yang akan datang.
   - `[ReplyUrl <String[]>]`: URL yang dikirim token pengguna untuk masuk dengan aplikasi terkait, atau URI pengalihan tempat kode otorisasi OAuth 2.0 dan token akses dikirim untuk aplikasi terkait. Tidak dapat diubah ke null.

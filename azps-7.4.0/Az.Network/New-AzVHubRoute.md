@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
-ms.openlocfilehash: e61fbd55782ba389c22212bc0901578995cf71b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 14c695459407de46e41246fd1261d8dadeab9830
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280773"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602546"
 ---
 # New-AzVHubRoute
 
 ## SYNOPSIS
 Membuat objek VHubRoute yang dapat diteruskan sebagai parameter ke perintah New-AzVHubRouteTable.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvhubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ NextHopType     : ResourceId
 NextHop         : /subscriptions/testSub/resourceGroups/testRg/providers/Microsoft.Network/azureFirewalls/testFirewall
 ```
 
-Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai Firewall tertentu yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
+Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai Firewall yang ditentukan yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
 
 ### Contoh 2
 
@@ -66,7 +69,7 @@ NextHopType     : ResourceId
 NextHop         : /subscriptions/testSub/resourceGroups/testRg/providers/Microsoft.Network/virtualHubs/testHub/hubVirtualNetworkConnections/testHubVnetConn
 ```
 
-Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai hubVnetConnection tertentu yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
+Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai hubVnetConnection yang ditentukan yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
 
 
 ### Contoh 3
@@ -131,7 +134,7 @@ VnetRoutes            : {
 
 Update-AzVirtualHubVnetConnection -InputObject $hubVnetConn -RoutingConfiguration $routingConfig
 ```
-Perintah di atas akan mendapatkan Konfigurasi Perutean dari AzVHubRoute yang sudah ada lalu menambahkan rute statis pada koneksi. Atau, jika Anda ingin membuat koneksi baru dengan rute statis di dalamnya, silakan lihat Contoh 1 [di sini.](New-AzRoutingConfiguration.md)
+Perintah di atas akan mendapatkan RoutingConfiguration dari AzVHubRoute yang sudah ada lalu menambahkan rute statis pada koneksi. Atau, jika Anda berharap untuk membuat koneksi baru dengan rute statis di dalamnya, silakan lihat Contoh 1 [di sini.](New-AzRoutingConfiguration.md)
 ## PARAMETERS
 
 ### -DefaultProfile
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
+### -Destination
 Daftar Tujuan.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationType
-Tipe Tujuan.
+Jenis Tujuan.
 
 ```yaml
 Type: String
@@ -179,7 +182,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama rute.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHop
-Lompat berikutnya.
+Lompatan berikutnya.
 
 ```yaml
 Type: String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopType
-Tipe Hop Berikutnya.
+Jenis Hop Berikutnya.
 
 ```yaml
 Type: String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

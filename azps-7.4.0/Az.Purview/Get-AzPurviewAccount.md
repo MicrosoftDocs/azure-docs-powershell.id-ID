@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewAccount.md
-ms.openlocfilehash: 6f948f2f4f660b8b31c9fd08f80805df1dd6a193
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5b3fb871a6d8ccf26f43defe9bf30b196ee3d8f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278001"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708868"
 ---
 # Get-AzPurviewAccount
 
 ## SYNOPSIS
-Dapatkan akun
+Mendapatkan akun
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPurviewAccount [-SubscriptionId <String[]>] [-SkipToken <String>] [-Defaul
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzPurviewAccount -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,11 +46,11 @@ Get-AzPurviewAccount -InputObject <IPurviewIdentity> [-DefaultProfile <PSObject>
 ```
 
 ## DESCRIPTION
-Dapatkan akun
+Mendapatkan akun
 
 ## EXAMPLES
 
-### Contoh 1: Daftar Semua Akun Purview
+### Contoh 1: Mencantumkan Semua Akun Purview
 ```powershell
 Get-AzPurviewAccount
 ```
@@ -60,9 +63,9 @@ xxxxxxxx-bbe7-4506-a9c4-4d602d8e4e1c xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a System
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa       8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User
 ```
 
-Daftar semua akun gambaran umum.
+Mencantumkan semua akun purview.
 
-### Contoh 2: Dapatkan Akun Purview menurut Nama dan Nama Grup Sumber Daya
+### Contoh 2: Dapatkan Akun Purview berdasarkan Nama dan Nama Grup Sumber Daya
 ```powershell
 Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 ```
@@ -73,9 +76,9 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5…
 ```
 
-Dapatkan test-rg nama akun purview dalam uji-pa grup sumber daya
+Mendapatkan nama akun purview test-rg dalam grup sumber daya test-pa
 
-### Contoh 3: Daftar Akun Purview dalam Grup Sumber Daya Tertentu
+### Contoh 3: Mencantumkan Akun Purview dalam Grup Sumber Daya tertentu
 ```powershell
 Get-AzPurviewAccount -ResourceGroupName test-rg
 ```
@@ -86,9 +89,9 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5…
 ```
 
-Mencantumkan akun gambaran umum dalam uji-pa grup sumber daya
+Mencantumkan akun purview dalam uji-pa grup sumber daya
 
-### Contoh 4: Dapatkan Akun Purview oleh InputObject
+### Contoh 4: Dapatkan Akun Purview dengan InputObject
 ```powershell
 $got = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 Get-AzADDomainService -InputObject $got
@@ -100,7 +103,7 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5…
 ```
 
-Dapatkan akun purview dengan InputObject
+Mendapatkan akun purview dengan InputObject
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lompat.
+Token lewati.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualApplianceSite.md
-ms.openlocfilehash: 75bd0de3f917a1ec814a795321fd6c7e67843340
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62e9439db451a0b254ed62d70d9a6eabd55aee9d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741816"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623856"
 ---
 # Update-AzVirtualApplianceSite
 
 ## SYNOPSIS
-Mengubah atau Mengubah situs Peralatan Virtual yang tersambung ke sumber daya Peralatan Virtual Jaringan.
+Ubah atau Ubah situs Virtual Appliance yang terhubung ke sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzVirtualApplianceSite -Name <String> -ResourceGroupName <String> -Networ
 ```
 
 ## DESCRIPTION
-Perintah Update-AzVirtualApplianceSite mengubah sumber daya situs Alat Virtual.
+Perintah Update-AzVirtualApplianceSite memodifikasi sumber daya situs Appliance Virtual.
 
 ## EXAMPLES
 
@@ -36,12 +39,12 @@ $nva=Get-AzNetworkVirtualAppliance -ResourceGroupName testrg -Name nva
 Update-AzVirtualApplianceSite -Name testsite -ResourceGroupName testrg -AddresssPrefix 10.0.4.0/24 -NetworkVirtualApplianceId $nva.Id
 ```
 
-Ubah prefiks alamat untuk sumber daya situs Alat Virtual.
+Ubah awalan alamat untuk sumber daya situs Appliance Virtual.
 
 ## PARAMETERS
 
 ### -AddresssPrefix
-Prefiks alamat untuk situs.
+Awalan alamat untuk situs.
 
 ```yaml
 Type: System.String
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkVirtualApplianceId
-Alat virtual jaringan tempat situs ini dilampirkan.
+Appliance virtual jaringan tempat situs ini dilampirkan.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Office 365 kebijakan terpisah.
+Office 365 kebijakan breakout.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSOffice365PolicyProperties
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -175,8 +178,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -219,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Situs Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
+### Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
 
 ## NOTES
 

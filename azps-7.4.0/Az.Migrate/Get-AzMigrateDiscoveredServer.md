@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
-ms.openlocfilehash: cd5a40c8f792bd117d8b7a40f5a56a9f141af95b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f055c28869657c9822620d2c0fd8045c96bce9cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998515"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602726"
 ---
 # Get-AzMigrateDiscoveredServer
 
 ## SYNOPSIS
-Dapatkan Semua server yang ditemukan dalam proyek migrasi.
+Mendapatkan Semua server yang ditemukan dalam proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratediscoveredserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMigrateDiscoveredServer -ProjectName <String> -ResourceGroupName <String> 
  [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMigrateDiscoveredServer -Name <String> -ProjectName <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -37,7 +40,7 @@ Get-AzMigrateDiscoveredServer -ApplianceName <String> -Name <String> -ProjectNam
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Situs Web ListIn
+### ListInSite
 ```
 Get-AzMigrateDiscoveredServer -ApplianceName <String> -ProjectName <String> -ResourceGroupName <String>
  [-DisplayName <String>] [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -69,7 +72,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029cc18-ef
 
 ```
 
-Dapatkan Semua server dalam proyek yang dimigrasikan.
+Mendapatkan Semua server dalam proyek migrasi.
 
 ### Contoh 2: Dapatkan
 ```powershell
@@ -83,10 +86,10 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 
 ```
 
-Dapatkan server dalam migrasi proyek menurut nama.
-Nama adalah penerjun unik untuk server.
+Dapatkan server dalam proyek migrasi berdasarkan nama.
+Nama adalah paramenter unik untuk server.
 
-### Contoh 3: Daftar dalam alat
+### Contoh 3: Daftar dalam appliance
 ```powershell
 Get-AzMigrateDiscoveredServer  -ApplianceName BBVMwareAVS -SubscriptionId xxx-xxx-xxx -ResourceGroupName julytest -ProjectName julytest
 ```
@@ -107,9 +110,9 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029cc18-ef
 
 ```
 
-Mencantumkan semua server untuk peralatan dalam sebuah proyek.
+Mencantumkan semua server untuk appliance dalam proyek.
 
-### Contoh 4: Get in an appliance
+### Contoh 4: Dapatkan di appliance
 ```powershell
 Get-AzMigrateDiscoveredServer -Name idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31d2-a6c3-5316-aa39f47c49fc -ApplianceName BBVMwareAVS -SubscriptionId xxx-xxx-xxx -ResourceGroupName julytest -ProjectName julytest
 ```
@@ -121,10 +124,10 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 
 ```
 
-Dapatkan server untuk peralatan dalam proyek.
-Nama adalah penerjun unik untuk server.
+Dapatkan server untuk appliance dalam proyek.
+Nama adalah paramenter unik untuk server.
 
-### Contoh 5: Daftar dan filter menurut nama tampilan
+### Contoh 5: Mencantumkan dan memfilter menurut nama tampilan
 ```powershell
 Get-AzMigrateDiscoveredServer  -SubscriptionId xxx-xxx-xxx -ResourceGroupName BugBashAVSVMware -ProjectName BugBashAVSVMware -DisplayName Contoso | Format-Table DisplayName,Name,Type
 ```
@@ -142,9 +145,9 @@ ContosoAppSrv1                10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_5
 
 ```
 
-Server daftar dalam proyek yang dimigrasikan dan filter respons dengan nama tampilan.
+Mencantumkan server dalam proyek migrasi dan memfilter respons dengan nama tampilan.
 
-### Contoh 6: Daftar dalam alat dan filter menurut nama tampilan
+### Contoh 6: Daftar dalam appliance dan filter menurut nama tampilan
 ```powershell
 Get-AzMigrateDiscoveredServer  -SubscriptionId xxx-xxx-xxx -ResourceGroupName BugBashAVSVMware -ProjectName BugBashAVSVMware -ApplianceName BBVMwareAVS -DisplayName Contoso | Format-Table DisplayName,Name,Type
 ```
@@ -162,12 +165,12 @@ ContosoAppSrv1                10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_5
 Contoso-DataTier3             10-150-8-52-b090bef3-b733-5e34-bc8f-eb6f2701432a_500986e5-7720-471e-11d7-d4e8ae9edc45 Microsoft.OffAzure/VMwareSites/machines
 ```
 
-Server daftar untuk peralatan dalam migrasi proyek dan memfilter respons dengan nama tampilan.
+Mencantumkan server untuk appliance dalam proyek migrasi dan memfilter respons dengan nama tampilan.
 
 ## PARAMETERS
 
 ### -ApplianceName
-Menentukan nama alat.
+Menentukan nama appliance.
 Ini secara internal memetakan ke situs.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan mesin VMware.
+Menentukan nama tampilan komputer VMware.
 
 ```yaml
 Type: System.String
@@ -197,8 +200,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama mesin VMware.
+### -Name
+Menentukan nama komputer VMware.
 Ini adalah Nama internal.
 Untuk pengguna, gunakan nama tampilan.
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Menentukan nama proyek yang dimigrasikan.
+Menentukan nama proyek migrasi.
 
 ```yaml
 Type: System.String
@@ -259,8 +262,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

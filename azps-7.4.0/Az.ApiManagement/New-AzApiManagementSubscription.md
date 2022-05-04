@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
-ms.openlocfilehash: 653c8a65a912c61ada6a6ff35cc381f33eb575e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ee5efcb46749d8ad9e9414859e647cde76386f4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944623"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603392"
 ---
 # New-AzApiManagementSubscription
 
 ## SYNOPSIS
 Membuat langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,13 +50,13 @@ New-AzApiManagementSubscription -Context $apimContext -UserId "777" -ProductId "
 
 Perintah ini berlangganan pengguna yang sudah ada ke produk.
 
-### Contoh 2: Membuat langganan untuk semua Lingkup Api
+### Contoh 2: Membuat langganan untuk semua Cakupan Api
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementSubscription -Context $apimContext -Scope "/apis" -Name "GlobalApiScope"
 ```
 
-### Contoh 3: Membuat langganan untuk Lingkup Produk
+### Contoh 3: Membuat langganan untuk Cakupan Produk
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementSubscription -Context $apimContext -Scope "/products/starter" -Name "UnlimitedProductSub"
@@ -62,7 +65,7 @@ New-AzApiManagementSubscription -Context $apimContext -Scope "/products/starter"
 ## PARAMETERS
 
 ### -AllowTracing
-Benderai yang menentukan apakah Penelusuran dapat diaktifkan di Tingkat Langganan. Ini adalah parameter opsional dan defaultnya $null.
+Bendera yang menentukan apakah Pelacakan dapat diaktifkan di Tingkat Langganan. Ini adalah parameter opsional dan defaultnya adalah $null.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +79,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama langganan.
 
 ```yaml
@@ -122,9 +125,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Menentukan kunci utama langganan.
-Jika parameter ini tidak ditentukan, kunci akan dihasilkan secara otomatis.
-Parameter ini harus panjangnya 1 hingga 300 karakter.
+Menentukan kunci primer langganan.
+Jika parameter ini tidak ditentukan, kunci dihasilkan secara otomatis.
+Panjang parameter ini harus 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup Langganan, baik itu Lingkup Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau lingkup Global /. Parameter ini diperlukan.
+### -Cakupan
+Cakupan Langganan, baik itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ### -SecondaryKey
 Menentukan kunci sekunder langganan.
 Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
-Parameter ini harus panjangnya 1 hingga 300 karakter.
+Panjang parameter ini harus 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status langganan.
 Nilai defaultnya adalah $Null.
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -254,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

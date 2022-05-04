@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
-ms.openlocfilehash: a7b9d638fae6b4ea8bdba14e0d10d45a263a09f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 218c3cfeddbc6ee535b2c23fd665edbf61c7906c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867906"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626628"
 ---
 # New-AzRelayHybridConnection
 
 ## SYNOPSIS
-Membuat HybridConnection di ruang nama Relay tertentu.
+Membuat HybridConnection di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzRelayHybridConnection [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzRelayHybridConnection membuat HybridConnection dalam ruang nama Relay yang ditentukan.
+Cmdlet New-AzRelayHybridConnection membuat HybridConnection di namespace Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Name                        : TestHybirdConnection2
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HybirdConnection \`TestHybirdConnection2\` baru dalam ruang \`nama Relay yang ditentukan TestNameSpace-HybirdConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection2\` baru di ruang nama \`Relay yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ### Contoh 2 - Properti
 ```powershell
@@ -79,7 +82,7 @@ Name                        : TestHybirdConnection1
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HybirdConnection \`TestHybirdConnection1\` baru dalam ruang \`nama Relai yang ditentukan TestNameSpace-HybirdConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection1\` baru di namespace \`Relay yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama HybridConnections.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresClientAuthorization
-true jika otorisasi klien diperlukan untuk HybridConnections ini; jika tidak, false
+true jika otorisasi klien diperlukan untuk HybridConnections ini; jika tidak, salah
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
+Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

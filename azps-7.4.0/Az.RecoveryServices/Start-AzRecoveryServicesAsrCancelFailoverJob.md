@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
-ms.openlocfilehash: d725fa4b6628f14261fc1b409a00e69f310fe7a0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd07071c01b055c332b59c9c011d40b6ca79575c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936001"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671002"
 ---
 # Start-AzRecoveryServicesAsrCancelFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan cancel failover untuk objek Site Recovery.
+Memulai tindakan failover pembatalan untuk objek Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcancelfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Start-AzRecoveryServicesAsrCancelFailoverJob -RecoveryPlan <ASRRecoveryPlan>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrCancelFailoverJob** memulai proses failover pembatalan untuk objek azure Site Recovery.
+Cmdlet **Start-AzRecoveryServicesAsrCancelFailoverJob** memulai proses failover pembatalan untuk objek Azure Site Recovery.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Memulai failover pembatalan untuk rencana pemulihan yang ditentukan dan mengemba
 
 ### Contoh 2
 
-Memulai tindakan cancel failover untuk objek Site Recovery. (autogenerasi)
+Memulai tindakan failover pembatalan untuk objek Site Recovery. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek rencana pemulihan ASR yang terkait dengan rencana pemulihan yang akan gagal.
+Menentukan objek rencana pemulihan ASR yang sesuai dengan rencana pemulihan yang akan di-failover.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item terproteksi replikasi ASR yang terkait dengan item yang diproteksi replikasi agar gagal.
+Menentukan objek item yang dilindungi replikasi ASR yang terkait dengan item yang dilindungi replikasi yang akan di-failover.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

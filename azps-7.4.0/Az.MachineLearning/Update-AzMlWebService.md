@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlWebService.md
-ms.openlocfilehash: 4ec8a4cdc9c2cbb5fe0b9a8197039e884f056c81
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 108254cbbeaf71417ed46ee2adf82a1e55b9b505
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681804"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673846"
 ---
 # Update-AzMlWebService
 
 ## SYNOPSIS
-Memperbarui properti sumber daya layanan web yang sudah ada.
+Memperbarui properti sumber daya layanan web yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/update-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 
-### PembaruanFromParameters
+### UpdateFromParameters
 ```
 Update-AzMlWebService -ResourceGroupName <String> -Name <String> [-Title <String>] [-Description <String>]
  [-IsReadOnly] [-Keys <WebServiceKeys>] [-StorageAccountKey <String>] [-Diagnostics <DiagnosticsConfiguration>]
@@ -29,7 +32,7 @@ Update-AzMlWebService -ResourceGroupName <String> -Name <String> [-Title <String
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PembaruanFromObject
+### UpdateFromObject
 ```
 Update-AzMlWebService -ResourceGroupName <String> -Name <String> -ServiceUpdates <WebService> [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,8 +40,8 @@ Update-AzMlWebService -ResourceGroupName <String> -Name <String> -ServiceUpdates
 
 ## DESCRIPTION
 Cmdlet Update-AzMlWebService memungkinkan Anda memperbarui properti non-statis layanan web.
-Cmdlet bekerja sebagai operasi patch.
-Hanya lewati properti yang ingin Anda ubah.
+Cmdlet berfungsi sebagai operasi patch.
+Teruskan hanya properti yang ingin Anda ubah.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Hanya lewati properti yang ingin Anda ubah.
 Update-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Description "new update to description" -Keys @{Primary='changed primary key'} -Diagnostics @{Level='All'}
 ```
 
-Di sini, kami mengubah deskripsi, kunci akses utama, dan mengaktifkan kumpulan diagnostik untuk semua jejak selama runtime untuk layanan web.
+Di sini, kami mengubah deskripsi, kunci akses utama, dan mengaktifkan koleksi diagnostik untuk semua jejak selama runtime untuk layanan web.
 
 ### Contoh 2: Pembaruan berdasarkan instans layanan web
 ```powershell
@@ -56,12 +59,12 @@ $updates = @{ Properties = @{ Title="New Title"; RealtimeConfiguration = @{ MaxC
 Update-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -ServiceUpdates $updates
 ```
 
-Contoh pertama membuat definisi layanan web, yang hanya berisi bidang yang akan diperbarui, lalu memanggil Update-AzMlWebService untuk menerapkannya menggunakan parameter ServiceUpdates.
+Contoh pertama-tama membuat definisi layanan web, yang hanya berisi bidang yang akan diperbarui, lalu memanggil Update-AzMlWebService untuk menerapkannya menggunakan parameter ServiceUpdates.
 
 ## PARAMETERS
 
 ### -Aset
-Kumpulan aset (misalnya modul, kumpulan data) yang menyusun layanan web.
+Kumpulan aset (misalnya modul, himpunan data) yang membentuk layanan web.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 
 ### -Deskripsi
 Nilai baru untuk deskripsi layanan web.
-Hal ini terlihat dalam skema Swagger API layanan.
+Ini terlihat dalam skema Swagger API layanan.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsReadOnly
-Menentukan bahwa layanan web ini sudah dibaca.
+Menentukan bahwa layanan web ini dibaca secara baca-saja.
 Setelah diatur, layanan web dapat diperbarui lebih lama, termasuk mengubah nilai properti ini, dan hanya dapat dihapus.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keys
+### -Kunci
 Memperbarui satu atau kedua kunci akses yang digunakan untuk mengautentikasi panggilan ke API runtime layanan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya layanan web yang akan diperbarui.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paket
-Definisi paket grafik yang menentukan layanan web ini.
+Definisi paket grafik yang mendefinisikan layanan web ini.
 
 ```yaml
 Type: Microsoft.Azure.Management.MachineLearning.WebServices.Models.GraphPackage
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUpdates
-Sekumpulan pembaruan untuk diterapkan ke layanan web yang disediakan sebagai contoh definisi layanan web.
+Serangkaian pembaruan untuk diterapkan ke layanan web yang disediakan sebagai instans definisi layanan web.
 Hanya bidang non-statis yang dimodifikasi.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 
 ### -Judul
 Nilai baru untuk judul layanan web.
-Hal ini terlihat dalam skema Swagger API layanan.
+Ini terlihat dalam skema Swagger API layanan.
 
 ```yaml
 Type: System.String
@@ -320,8 +323,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

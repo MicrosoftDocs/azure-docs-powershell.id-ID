@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedExtension.md
-ms.openlocfilehash: ab8e324acf3fcec495a8504b41b4ebfbf9d5a108
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c172364811ba855f1c3c524c35d191551a3ae3f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876870"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603140"
 ---
 # Update-AzConnectedExtension
 
 ## SYNOPSIS
-Operasi untuk Memutakhirkan Ekstensi Mesin.
+Operasi untuk Meningkatkan Ekstensi Mesin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzConnectedExtension -MachineName <String> -ResourceGroupName <String> [-
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Upgrade
+### Mutakhirkan
 ```
 Update-AzConnectedExtension -MachineName <String> -ResourceGroupName <String>
  -ExtensionUpgradeParameter <IMachineExtensionUpgrade> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -47,7 +50,7 @@ Update-AzConnectedExtension -InputObject <IConnectedMachineIdentity> [-Extension
 ```
 
 ## DESCRIPTION
-Operasi untuk Memutakhirkan Ekstensi Mesin.
+Operasi untuk Meningkatkan Ekstensi Mesin.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ Memperbarui ekstensi di komputer ke versi tertentu
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionUpgradeParameter
-Menjelaskan Properti Pemutakhiran Ekstensi Mesin Untuk dibangun, lihat bagian CATATAN untuk properti EXTENSIONUPGRADEPARAMETER dan membuat tabel hash.
+Menjelaskan Properti Peningkatan Ekstensi Mesin Untuk membangun, lihat bagian CATATAN untuk properti EXTENSIONUPGRADEPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IMachineExtensionUpgrade
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -MachineName
-Nama mesin hibrid.
+Nama komputer hibrid.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -216,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -269,19 +272,19 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONUPGRADEPARAMETER <IMachineExtensionUpgrade>: Menjelaskan Properti Pemutakhiran Ekstensi Mesin
+EXTENSIONUPGRADEPARAMETER <IMachineExtensionUpgrade>: Menjelaskan Properti Peningkatan Ekstensi Mesin
   - `[ExtensionTarget <IExtensionTarget>]`: Menjelaskan Properti Target Ekstensi.
     - `[(Any) <IExtensionTargetProperties>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
-  - `[ExtensionName <String>]`: Nama ekstensi mesin.
+  - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya target.
-  - `[MachineName <String>]`: Nama mesin hibrid.
+  - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya PrivateLinkScope Azure Arc.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

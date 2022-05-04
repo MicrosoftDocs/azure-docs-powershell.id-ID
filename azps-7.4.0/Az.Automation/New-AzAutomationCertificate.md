@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCertificate.md
-ms.openlocfilehash: 9c99310755fc3a481cef5dcfcd073e10ecfc9f16
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2059ce34b6ce0ac77c4c9d5136439df3956eec0d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007479"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625710"
 ---
 # New-AzAutomationCertificate
 
 ## SYNOPSIS
-Membuat sertifikat Otomatisasi.
+Membuat sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzAutomationCertificate [-Name] <String> [-Description <String>] [-Password 
 
 ## DESCRIPTION
 Cmdlet **New-AzAutomationCertificate** membuat sertifikat di Azure Automation.
-Sediakan jalur ke file sertifikat untuk diunggah.
+Berikan jalur ke file sertifikat untuk diunggah.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ PS C:\>$Password = ConvertTo-SecureString -String "Password" -AsPlainText -Force
 PS C:\> New-AzAutomationCertificate -AutomationAccountName "Contoso17" -Name "ContosoCertificate" -Path "./cert.pfx" -Password $Password -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
+Perintah pertama mengonversi kata sandi teks biasa menjadi string aman dengan menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah kedua membuat sertifikat bernama ContosoCertificate.
 Perintah menggunakan kata sandi yang disimpan di $Password.
@@ -47,7 +50,7 @@ Perintah menentukan nama akun dan jalur file yang diunggahnya.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menyimpan sertifikat.
+Menentukan nama akun Automation tempat cmdlet ini menyimpan sertifikat.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dapat diekspor
-Menentukan apakah sertifikat bisa diekspor.
+Menentukan apakah sertifikat dapat diekspor.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk sertifikat.
 
 ```yaml
@@ -121,8 +124,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Password
-Menentukan kata sandi untuk berkas sertifikat.
+### -Kata sandi
+Menentukan kata sandi untuk file sertifikat.
 
 ```yaml
 Type: System.Security.SecureString
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 
-Perintah ini harus dijalankan di komputer yang menjadi administrator Anda, serta dalam sesi PowerShell yang ditinggikan; sebelum sertifikat diunggah, cmdlet ini menggunakan bursa lokal X.509 untuk mengambil sidik jari dan kunci, dan jika cmdlet ini dijalankan di luar sesi PowerShell yang ditinggikan, Anda akan menerima kesalahan "Access denied".
+Perintah ini harus dijalankan pada komputer tempat Anda menjadi administrator, serta dalam sesi PowerShell yang ditinggikan; sebelum sertifikat diunggah, cmdlet ini menggunakan penyimpanan X.509 lokal untuk mengambil thumbprint dan kunci, dan jika cmdlet ini dijalankan di luar sesi PowerShell yang ditingkatkan, Anda akan menerima kesalahan "Akses ditolak".
 
 ## RELATED LINKS
 

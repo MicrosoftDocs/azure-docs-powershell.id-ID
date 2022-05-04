@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementResourceLocationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementResourceLocationObject.md
-ms.openlocfilehash: 9d9994b9d127bd534bdc5448bd1c3d83860763e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33915c0cd59b3d733764d0e6ee87377e39449d85
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067617"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672694"
 ---
 # New-AzApiManagementResourceLocationObject
 
 ## SYNOPSIS
-Membuat kontrak lokasi sumber daya baru (digunakan di Gateway).
+Buat kontrak lokasi sumber daya baru (digunakan di Gateway).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementresourcelocationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApiManagementResourceLocationObject -Name <String> [-City <String>] [-Dist
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementResourceLocationObject** membuat kontrak lokasi sumber daya baru (digunakan dalam Gateway).
+Cmdlet **New-AzApiManagementResourceLocationObject** membuat kontrak lokasi sumber daya baru (digunakan di Gateway).
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountryOrRegion
-Negara atau Kawasan Lokasi.
+Negara atau Wilayah Lokasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -District
+### -Distrik
 Distrik Lokasi.
 Parameter ini bersifat opsional.
 
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Lokasi.
 Parameter ini diperlukan.
 
@@ -118,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

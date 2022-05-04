@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSelectedDBObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSelectedDBObject.md
-ms.openlocfilehash: 0a5890fafe01769db7c27104f5e481ef1fb04a80
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ae9ba3ef8d25c0d29a1c9fa989283f186938acd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063585"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674296"
 ---
 # New-AzDataMigrationSelectedDBObject
 
 ## SYNOPSIS
 Membuat objek input database yang berisi informasi tentang database sumber dan target untuk migrasi.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationselecteddbobject) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Melakukan migrasiSqlServerSqlDb (Default)
+### MigrateSqlServerSqlDb (Default)
 ```
 New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabaseName <String>
  [-MigrateSqlServerSqlDb] [-MakeSourceDbReadOnly]
@@ -27,7 +30,7 @@ New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabase
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Melakukan migrasiSqlServerSqlDbMi
+### MigrateSqlServerSqlDbMi
 ```
 New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabaseName <String>
  [-MigrateSqlServerSqlDbMi] [-BackupFileShare <FileShare>] [-DefaultProfile <IAzureContextContainer>]
@@ -65,7 +68,7 @@ HR   HRTest              Microsoft.Azure.Management.DataMigration.Models.FileSha
 
 ### -BackupFileShare
 Berbagi file tempat file database server sumber untuk database ini harus dicadangkan.
-Gunakan pengaturan ini untuk menimpa informasi berbagi file untuk setiap database.
+Gunakan pengaturan ini untuk mengambil alih informasi berbagi file untuk setiap database.
 Gunakan nama domain yang sepenuhnya memenuhi syarat untuk server.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -MakeSourceDbReadOnly
-Mengatur Database agar dibacakan sebelum migrasi
+Atur Database ke readonly sebelum migrasi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MigrasiSqlServerSqlDb
-Atur tipe migrasi ke SQL Server ke SQL Migrasi DB.
+### -MigrateSqlServerSqlDb
+Atur jenis migrasi ke SQL Server ke Migrasi DB SQL.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,8 +128,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MigrasiSqlServerSqlDbMi
-Atur tipe migrasi ke SQL Server ke SQL Migrasi DB MI.
+### -MigrateSqlServerSqlDbMi
+Atur jenis migrasi ke SQL Server ke SQL Migrasi MI DB.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableMap
-pemetaan tabel sumber ke target
+pemetaan sumber ke tabel target
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

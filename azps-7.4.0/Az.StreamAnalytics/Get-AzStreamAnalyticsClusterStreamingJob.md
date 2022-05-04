@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsClusterStreamingJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsClusterStreamingJob.md
-ms.openlocfilehash: 6b344a60bdd8b2adf839777d87157c1b3e77aa18
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 227859ca4fc63dbe4d6976a78071a2f4db63480e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863927"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672766"
 ---
 # Get-AzStreamAnalyticsClusterStreamingJob
 
 ## SYNOPSIS
-Mencantumkan semua pekerjaan streaming dalam kluster tertentu.
+Mencantumkan semua pekerjaan streaming di kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsclusterstreamingjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzStreamAnalyticsClusterStreamingJob -ClusterName <String> -ResourceGroupNam
 ```
 
 ## DESCRIPTION
-Mencantumkan semua pekerjaan streaming dalam kluster tertentu.
+Mencantumkan semua pekerjaan streaming di kluster tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua pekerjaan di bawah kluster analitik stream
+### Contoh 1: Dapatkan semua pekerjaan di bawah kluster analisis aliran
 ```powershell
 Get-AzStreamAnalyticsClusterStreamingJob -ResourceGroupName pwshaz-rg-test -ClusterName sac-m-test01
 ```
@@ -39,7 +42,7 @@ JobState StreamingUnit
 Created  3
 ```
 
-Perintah ini mendapatkan semua pekerjaan di bawah kluster analitik streaming
+Perintah ini mendapatkan semua pekerjaan di bawah kluster analisis aliran
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -104,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
