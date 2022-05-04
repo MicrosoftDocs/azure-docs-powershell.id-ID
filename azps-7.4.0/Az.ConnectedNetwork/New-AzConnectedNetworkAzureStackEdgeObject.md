@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkAzureStackEdgeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkAzureStackEdgeObject.md
-ms.openlocfilehash: 627a5c4a93ca039ca673f4b11bbe2a808a4985b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c3ef173e53bc026213b4414f22f575513940ca5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876726"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607460"
 ---
 # New-AzConnectedNetworkAzureStackEdgeObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk AzureStackEdgeFormat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkazurestackedgeobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Membuat objek dalam memori untuk AzureStackEdgeFormat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek AzureStackEdgeFormat dalam memori yang disimpan untuk membuat perangkat
+### Contoh 1: Membuat objek AzureStackEdgeFormat yang disimpan dalam memori untuk membuat perangkat
 ```powershell
 PS C:\> New-AzConnectedNetworkAzureStackEdgeObject -AzureStackEdgeId "/subscriptions/xxxxx-00000-xxxxx-00000/resourcegroups/myResources/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices/myAse1"
 
@@ -37,7 +40,7 @@ eviceType     ProvisioningState Status
 AzureStackEdge
 ```
 
-Membuat objek AzureStackEdgeFormat dalam memori yang disimpan untuk membuat perangkat
+Membuat objek AzureStackEdgeFormat yang disimpan dalam memori untuk membuat perangkat
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

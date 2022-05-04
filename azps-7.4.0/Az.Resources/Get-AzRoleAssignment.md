@@ -6,21 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
-ms.openlocfilehash: 90f519741a261ec900e14d3b9c5bbe09f8d4662a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5823c96b336eac3fb75b108a051b9665752ae919
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935425"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639726"
 ---
 # Get-AzRoleAssignment
 
 ## SYNOPSIS
-Mencantumkan penetapan peran Azure RBAC pada lingkup yang ditentukan.
-Secara default mencantumkan semua penetapan peran dalam langganan Azure yang dipilih.
-Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu, atau untuk mencantumkan penetapan pada grup sumber daya atau sumber daya tertentu.
+Mencantumkan penetapan peran Azure RBAC pada cakupan yang ditentukan.
+Secara default mencantumkan semua penetapan peran di langganan Azure yang dipilih.
+Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu, atau untuk mencantumkan penugasan pada grup sumber daya atau sumber daya tertentu.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /users/{id}
 - GET /servicePrincipals/{id}
@@ -28,7 +28,10 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
 
-Harap perhatikan bahwa cmdlet ini akan ditandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini memiliki hak istimewa yang tidak cukup untuk mendapatkan tipe objek.
+Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Get-AzRoleAssignment -ObjectId <String> -ResourceGroupName <String> -ResourceNam
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupWithObjectIdParameterSet
+### ScopeWithObjectIdParameterSet
 ```
 Get-AzRoleAssignment -ObjectId <String> [-RoleDefinitionName <String>] -Scope <String>
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -82,7 +85,7 @@ Get-AzRoleAssignment -SignInName <String> -ResourceGroupName <String> -ResourceN
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupWithSignInNameParameterSet
+### ScopeWithSignInNameParameterSet
 ```
 Get-AzRoleAssignment -SignInName <String> [-RoleDefinitionName <String>] -Scope <String>
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -107,7 +110,7 @@ Get-AzRoleAssignment -ServicePrincipalName <String> -ResourceGroupName <String> 
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupWithSPNParameterSet
+### ScopeWithSPNParameterSet
 ```
 Get-AzRoleAssignment -ServicePrincipalName <String> [-RoleDefinitionName <String>] -Scope <String>
  [-IncludeClassicAdministrators] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -132,32 +135,32 @@ Get-AzRoleAssignment -ResourceGroupName <String> -ResourceName <String> -Resourc
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### LingkupParameterSet
+### ScopeParameterSet
 ```
 Get-AzRoleAssignment [-RoleDefinitionName <String>] -Scope <String> [-IncludeClassicAdministrators]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzRoleAssignment untuk mencantumkan semua penetapan peran yang efektif pada lingkup.
+Gunakan perintah Get-AzRoleAssignment untuk mencantumkan semua penetapan peran yang efektif pada cakupan.
 Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan peran yang dibuat di bawah langganan.
-Daftar ini dapat difilter menggunakan parameter pemfilteran untuk prinsipal, peran, dan lingkup.
-Subjek tugas harus ditentukan.
-Untuk menentukan pengguna, gunakan SignInName atau parameter ObjectId Azure AD.
-Untuk menentukan grup keamanan, gunakan parameter ObjectId Azure AD.
+Daftar ini dapat difilter menggunakan parameter pemfilteran untuk prinsipal, peran, dan cakupan.
+Subjek penugasan harus ditentukan.
+Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
+Untuk menentukan grup keamanan, gunakan parameter objectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ServicePrincipalName atau ObjectId.
 Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
-Lingkup akses yang diberikan mungkin ditentukan.
-Ini secara default ke langganan yang dipilih. Lingkup tugas dapat ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\>.
-Ini akan memfilter tugas yang efektif pada lingkup tertentu tersebut, yaitu semua tugas pada lingkup tersebut ke atas.
-B.
+Cakupan di mana akses diberikan dapat ditentukan.
+Ini default ke langganan yang dipilih. Cakupan penugasan dapat ditentukan menggunakan salah satu kombinasi parameter berikut.
+Cakupan - Ini adalah cakupan yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\>.
+Ini akan memfilter penugasan yang efektif pada cakupan tertentu, yaitu semua penugasan pada cakupan tersebut ke atas.
+b.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
-Ini akan memfilter tugas yang efektif pada grup sumber daya c yang ditentukan.
-ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu dalam langganan dan akan memfilter tugas yang efektif pada lingkup sumber daya tersebut.
+Ini akan memfilter penugasan yang efektif pada grup sumber daya yang ditentukan c.
+ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu di bawah langganan dan akan memfilter penugasan yang efektif pada cakupan sumber daya tersebut.
 Untuk menentukan akses apa yang dimiliki pengguna tertentu dalam langganan, gunakan sakelar ExpandPrincipalGroups.
-Ini akan mencantumkan semua peran yang ditetapkan kepada pengguna, dan ke grup tempat pengguna menjadi anggotanya.
-Gunakan pengalih IncludeClassicAdministrators untuk menampilkan admin dan rekan admin langganan.
+Ini akan mencantumkan semua peran yang ditetapkan untuk pengguna, dan ke grup tempat pengguna menjadi anggotanya.
+Gunakan pengalih IncludeClassicAdministrators untuk juga menampilkan admin langganan dan rekan admin.
 
 ## EXAMPLES
 
@@ -166,28 +169,28 @@ Gunakan pengalih IncludeClassicAdministrators untuk menampilkan admin dan rekan 
 Get-AzRoleAssignment
 ```
 
-Mencantumkan semua tugas peran dalam langganan
+Mencantumkan semua penetapan peran dalam langganan
 
 ### Contoh 2
 ```powershell
 Get-AzRoleAssignment -ResourceGroupName testRG -SignInName john.doe@contoso.com
 ```
 
-Mendapatkan semua tugas peran yang dibuat untuk pengguna john.doe@contoso.com, dan grup yang menjadi anggotanya, pada lingkup testRG atau di atasnya.
+Mendapatkan semua penetapan peran yang dibuat untuk pengguna john.doe@contoso.com, dan grup yang menjadi anggotanya, pada cakupan testRG atau di atasnya.
 
 ### Contoh 3
 ```powershell
 Get-AzRoleAssignment -ServicePrincipalName "http://testapp1.com"
 ```
 
-Mendapatkan semua penetapan peran dari prinsipal layanan yang ditentukan
+Mendapatkan semua penetapan peran dari perwakilan layanan yang ditentukan
 
 ### Contoh 4
 ```powershell
 Get-AzRoleAssignment -Scope "/subscriptions/96231a05-34ce-4eb4-aa6a-70759cbb5e83/resourcegroups/rg1/providers/Microsoft.Web/sites/site1"
 ```
 
-Mendapatkan tugas peran di lingkup situs web 'site1'.
+Mendapatkan penetapan peran di lingkup situs web 'site1'.
 
 ## PARAMETERS
 
@@ -207,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandPrincipalGroups
-Jika ditentukan, mengembalikan peran yang ditetapkan secara langsung kepada pengguna dan ke grup di mana pengguna adalah anggota (secara transitif).
-Didukung hanya untuk prinsipal pengguna.
+Jika ditentukan, mengembalikan peran yang secara langsung ditetapkan kepada pengguna dan ke grup di mana pengguna adalah anggota (secara transitif).
+Hanya didukung untuk prinsipal pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IncludeClassicAdministrators
+### -SertakanClassicAdministrators
 Jika ditentukan, juga mencantumkan penetapan peran administrator klasik langganan (rekan admin, admin layanan, dll.).
 
 ```yaml
@@ -238,8 +241,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
-Memfilter semua tugas yang dibuat untuk pokok tertentu.
+ObjectId Azure AD Pengguna, Grup, atau Perwakilan Layanan.
+Memfilter semua penugasan yang dibuat ke prinsipal yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -283,8 +286,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Mencantumkan penetapan peran yang efektif di grup sumber daya tertentu.
-Ketika digunakan bersama dengan parameter ResourceName, ResourceType, dan ParentResource, perintah mencantumkan tugas yang efektif pada sumber daya dalam grup sumber daya.
+Mencantumkan penetapan peran yang efektif di grup sumber daya yang ditentukan.
+Saat digunakan bersama dengan parameter ResourceName, ResourceType, dan ParentResource, perintah mencantumkan penetapan yang efektif pada sumber daya dalam grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -316,9 +319,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 Misalnya Microsoft.Network/virtualNetworks.
-Harus digunakan bersamaan dengan parameter ResourceGroupName, ResourceName, dan (opsional)ParentResource.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional) ParentResource.
 
 ```yaml
 Type: System.String
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id dari Peran yang ditetapkan untuk pokok.
+Id Peran yang ditetapkan ke prinsipal.
 
 ```yaml
 Type: System.Guid
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Peran yang ditetapkan untuk prinsipal yaitu Pembaca, Kontributor, administrator Virtual Network, dll.
+Peran yang ditetapkan ke prinsipal yaitu Pembaca, Kontributor, Virtual Network Administrator, dll.
 
 ```yaml
 Type: System.String
@@ -362,12 +365,12 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup penetapan peran.
+### -Cakupan
+Cakupan penetapan peran.
 Dalam format URI relatif.
 Misalnya /subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG.
 Ini harus dimulai dengan "/subscriptions/{id}".
-Perintah memfilter semua tugas yang efektif pada lingkup tersebut.
+Perintah memfilter semua penugasan yang efektif pada cakupan tersebut.
 
 ```yaml
 Type: System.String
@@ -394,8 +397,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName dari prinsipal layanan.
-Memfilter semua tugas yang dibuat ke aplikasi Azure AD yang ditentukan.
+ServicePrincipalName dari perwakilan layanan.
+Memfilter semua penugasan yang dibuat ke aplikasi Azure AD yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -411,7 +414,7 @@ Accept wildcard characters: False
 
 ### -SignInName
 Alamat email atau nama utama pengguna pengguna.
-Memfilter semua tugas yang dibuat untuk pengguna tertentu.
+Memfilter semua penugasan yang dibuat untuk pengguna yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -426,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -439,13 +442,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 
 [New-AzRoleAssignment](./New-AzRoleAssignment.md)
 
-[Hapus-AzRoleAssignment](./Remove-AzRoleAssignment.md)
+[Remove-AzRoleAssignment](./Remove-AzRoleAssignment.md)
 
 [Get-AzRoleDefinition](./Get-AzRoleDefinition.md)
 

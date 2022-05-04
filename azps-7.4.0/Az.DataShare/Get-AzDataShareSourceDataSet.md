@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSourceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSourceDataSet.md
-ms.openlocfilehash: 4598788f9dcba9932b58fba16aed773d9a1739b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 544d0ae099102cd5e0e3a9813366dd31591b9542
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002817"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608990"
 ---
 # Get-AzDataShareSourceDataSet
 
 ## SYNOPSIS
-Mendapatkan informasi tentang kumpulan data sumber dalam berbagi langganan.
+Mendapatkan informasi tentang himpunan data sumber dalam langganan berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesourcedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareSourceDataSet -ShareSubscriptionResourceId <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareSourceDataSet** menyediakan informasi tentang kumpulan data sumber dalam langganan berbagi. 
+Cmdlet **Get-AzDataShareSourceDataSet** menyediakan informasi tentang himpunan data sumber dalam langganan berbagi. 
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Name        : AdsDataSets
 Type        : Microsoft.DataShare/ConsumerSourceDataSet
 ```
 
-Menyediakan kumpulan data dalam berbagi sumber
+Mendapatkan himpunan data yang tersedia di berbagi sumber
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

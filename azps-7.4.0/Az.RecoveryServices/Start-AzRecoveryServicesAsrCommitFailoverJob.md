@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
-ms.openlocfilehash: d8bd44256ff88730adaa5ab8bf81ef180f04c08c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 98670b4b7d1cfd0f9d60051c6502bd9e7adae02d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310527"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615398"
 ---
 # Start-AzRecoveryServicesAsrCommitFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan penerapan failover untuk objek Site Recovery.
+Memulai tindakan failover penerapan untuk objek Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcommitfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Start-AzRecoveryServicesAsrCommitFailoverJob -RecoveryPlan <ASRRecoveryPlan>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrCommitFailoverJob** memulai proses failover penerapan untuk objek Azure Site Recovery setelah operasi failover.
+Cmdlet **Start-AzRecoveryServicesAsrCommitFailoverJob** memulai proses penerapan failover untuk objek Azure Site Recovery setelah operasi failover.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Memulai failover penerapan untuk rencana pemulihan yang ditentukan dan mengembal
 
 ### Contoh 2
 
-Memulai tindakan penerapan failover untuk objek Site Recovery. (dibuat otomatis)
+Memulai tindakan failover penerapan untuk objek Site Recovery. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Start-AzRecoveryServicesAsrCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem

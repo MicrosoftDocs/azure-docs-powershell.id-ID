@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
-ms.openlocfilehash: cd2cc8b7a65274dd539a7abc1fce80af50250ace
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 081c52118e91c65ca9b4c2b78411d9a9790b6ceb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229689"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636479"
 ---
 # Get-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Mendapatkan webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzContainerRegistryWebhook [-IncludeConfiguration] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryWebhook mendapatkan webhook tertentu dari registri kontainer atau semua webhook dari registri kontainer.
+Cmdlet Get-AzContainerRegistryWebhook mendapatkan webhook registri kontainer tertentu atau semua webhook registri kontainer.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ webhook001      westus     enabled                    {push, delete}  Succeeded
 
 Mendapatkan webhook tertentu dari registri kontainer
 
-### Contoh 2: Dapatkan semua webhook dari registri kontainer
+### Contoh 2: Mendapatkan semua webhook registri kontainer
 ```powershell
 Get-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry"
 ```
@@ -82,9 +85,9 @@ webhook05       westus     disabled                   {push, delete}  Succeeded
 wh003           westus     enabled                    delete          Succeeded
 ```
 
-Dapatkan semua webhook dari registri kontainer
+Mendapatkan semua webhook registri kontainer
 
-### Contoh 3: Dapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
+### Contoh 3: Mendapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
 ```powershell
 Get-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "webhook001" -IncludeConfiguration
 ```
@@ -96,7 +99,7 @@ Name            Location   Status     Scope           Actions         Provisioni
 webhook001      westus     enabled                    {push, delete}  Succeeded  http://www.test.com/
 ```
 
-Dapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
+Mendapatkan webhook tertentu dari registri kontainer dengan detail konfigurasi
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Webhook.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Registri
-Objek Registri Kontainer.
+Objek Container Registry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer.
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya webhook registri kontainer
+Id sumber daya Webhook registri kontainer
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -228,4 +231,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzContainerRegistryWebhook](Remove-AzContainerRegistryWebhook.md)
 
-[Uji-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)
+[Test-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)

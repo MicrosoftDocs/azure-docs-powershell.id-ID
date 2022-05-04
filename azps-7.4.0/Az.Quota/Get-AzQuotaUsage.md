@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaUsage.md
-ms.openlocfilehash: dd4f6b88ae6af17e4cab69ecc94cd5404804353a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33252836969cc13277ca0d5a62acfa76d9fb3d45
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802836"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606704"
 ---
 # Get-AzQuotaUsage
 
 ## SYNOPSIS
 Dapatkan penggunaan sumber daya saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquotausage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan penggunaan sumber daya saat ini.
 Get-AzQuotaUsage -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzQuotaUsage -Name <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -61,7 +64,7 @@ RouteFilters                                                                    
 
 Perintah ini mencantumkan penggunaan sumber daya saat ini
 
-### Contoh 2: Dapatkan penggunaan sumber daya saat ini
+### Contoh 2: Mendapatkan penggunaan sumber daya saat ini
 ```powershell
 Get-AzQuotaUsage -Scope "subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Network/locations/eastus" -Name "MinPublicIpInterNetworkPrefixLength"
 ```
@@ -91,9 +94,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya untuk penyedia sumber daya tertentu.
-Misalnya:
+Contohnya:
 - Nama SKU untuk Microsoft.Compute
 - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
 
@@ -109,11 +112,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Target URI sumber daya Azure.
-Misalnya, `/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
-Ini adalah URI sumber daya Azure target untuk operasi List GET.
-Jika ditambahkan `{resourceName}` setelah `/quotas`, maka ini adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+### -Cakupan
+URI sumber daya Azure target.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
+`{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

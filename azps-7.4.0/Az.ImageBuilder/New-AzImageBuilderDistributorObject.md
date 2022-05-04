@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
-ms.openlocfilehash: ebc4917c95d846f8f6a1eafb216c4d1132728379
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d7b977894a8c11411516a7d31bcf8e9c270b56f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683334"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607298"
 ---
 # New-AzImageBuilderDistributorObject
 
 ## SYNOPSIS
 Objek distribusi generik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageId
-Id Sumber Daya dari Citra Disk terkelola.
+Id Sumber Daya dari Gambar Disk Terkelola.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk gambar, akan cocok jika gambar sudah ada.
+Lokasi Azure untuk gambar, harus cocok jika gambar sudah ada.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedImageDistributor
-Distribusikan sebagai Citra Disk terkelola.
+Distribusikan sebagai Citra Disk Terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Storage tipe akun yang akan digunakan untuk menyimpan gambar bersama.
+Storage jenis akun yang akan digunakan untuk menyimpan gambar bersama.
 Hilangkan untuk menggunakan default (Standard_LRS).
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdDistributor
-Distribusikan melalui VHD dalam akun penyimpanan.
+Distribusikan melalui VHD di akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

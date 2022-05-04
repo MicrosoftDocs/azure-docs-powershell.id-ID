@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItem.md
-ms.openlocfilehash: 9abf7c5b6e1daabcfca851346ef91e7d38ab22cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc2b2b48e8a2fc285e1c8f361928b64b81e73ada
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942211"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631126"
 ---
 # Get-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
-Mendapatkan Data Lake Analytics item katalog atau tipe item.
+Mendapatkan item katalog Data Lake Analytics atau jenis item.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzDataLakeAnalyticsCatalogItem [-Account] <String> [-ItemType] <CatalogItemT
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsCatalogItem** mendapatkan item katalog Azure Data Lake Analytics tertentu, atau mendapatkan item katalog dari tipe tertentu.
+**Get-AzDataLakeAnalyticsCatalogItem** mendapatkan item katalog Azure Data Lake Analytics tertentu, atau mendapatkan item katalog dari jenis tertentu.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Perintah ini mendapatkan database yang ditentukan.
 Get-AzDataLakeAnalyticsCatalogItem -AccountName "contosoadla" -ItemType Table -Path "databaseName.schemaName"
 ```
 
-Perintah ini mendapatkan daftar tabel dalam database tertentu.
+Perintah ini mendapatkan daftar tabel dalam database yang ditentukan.
 
 ## PARAMETERS
 
@@ -77,19 +80,19 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe item katalog item yang sedang disambungkan atau dicantumkan.
+Menentukan tipe item katalog dari item yang diambil atau dicantumkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Database
 - Skema
-- Majelis
-- Meja
-- TableValuedFungction
+- Rakitan
+- Tabel
+- TableValuedFunction
 - TableStatistics
 - ExternalDataSource
-- Lihat
+- Tampilan
 - Prosedur
 - Rahasia
-- Credential
+- Informasi masuk
 - Jenis
 - TablePartition
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Jalur
 Menentukan jalur multi-bagian ke item yang akan diambil, atau ke item induk item yang akan dicantumkan.
-Bagian jalur harus dipisahkan oleh tanda titik (.).
+Bagian-bagian jalur harus dipisahkan oleh titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

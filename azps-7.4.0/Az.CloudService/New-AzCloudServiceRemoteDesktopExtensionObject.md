@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRemoteDesktopExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRemoteDesktopExtensionObject.md
-ms.openlocfilehash: ce892873a88e39dfc21ceccbd50ff2c860e6af71
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa8185474aaf53b2fca89dbbf34e1c7b93b5b4e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006633"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585884"
 ---
 # New-AzCloudServiceRemoteDesktopExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi Desktop Jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceremotedesktopextensionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,13 +40,13 @@ $expiration = (Get-Date).AddYears(1)
 $extension = New-AzCloudServiceRemoteDesktopExtensionObject -Name 'RDPExtension' -Credential $credential -Expiration $expiration -TypeHandlerVersion '1.2.1'
 ```
 
-Perintah ini membuat objek ekstensi desktop jarak jauh yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek ekstensi desktop jarak jauh yang digunakan untuk membuat atau memperbarui layanan cloud.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Pemutakhiran otomatis versi minor.
+Peningkatan otomatis versi minor.
 
 ```yaml
 Type: System.Boolean
@@ -57,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Kredensial untuk Ekstensi Desktop Jauh.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Ekstensi Desktop Jauh.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Versi Ekstensi Desktop Jarak Jauh.
+Versi Ekstensi Desktop Jauh.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

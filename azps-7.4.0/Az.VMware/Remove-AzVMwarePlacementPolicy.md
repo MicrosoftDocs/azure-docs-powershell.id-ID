@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwarePlacementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwarePlacementPolicy.md
-ms.openlocfilehash: d69b92f2d50597f20851ba8732bbc82404a444b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e01d830aa64ac90740f01dd5b63c6d9130197546
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930727"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588312"
 ---
 # Remove-AzVMwarePlacementPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan penempatan di kluster cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwareplacementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Menghapus kebijakan penempatan di kluster cloud privat
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster di awan pribadi
+Nama kluster di cloud privat
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan pribadi
+Nama cloud privat
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -258,31 +261,31 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
-  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
-  - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
+  - `[AddonName <String>]`: Nama addon untuk cloud privat
+  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
+  - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud
+  - `[ClusterName <String>]`: Nama kluster di cloud privat
   - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
+  - `[DhcpId <String>]`: Pengidentifikasi NSX DHCP. Umumnya sama dengan nama tampilan DHCP
   - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
   - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
   - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
+  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di cloud privat
+  - `[HcxEnterpriseSiteName <String>]`: Nama Situs Perusahaan HCX di cloud privat
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Kawasan Azure
+  - `[Location <String>]`: Wilayah Azure
   - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
   - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
-  - `[PrivateCloudName <String>]`: Nama awan pribadi
+  - `[PrivateCloudName <String>]`: Nama cloud privat
   - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
-  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di cloud privat
+  - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang dipanggil pengguna
+  - `[ScriptPackageName <String>]`: Nama paket skrip di cloud privat
+  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segment
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
-  - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
+  - `[VMGroupId <String>]`: Pengidentifikasi NSX VM Group. Umumnya sama dengan nama tampilan Grup VM
+  - `[VirtualMachineId <String>]`: Pengidentifikasi Komputer Virtual
 
 ## RELATED LINKS
 

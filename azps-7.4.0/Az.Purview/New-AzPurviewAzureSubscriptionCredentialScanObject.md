@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSubscriptionCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSubscriptionCredentialScanObject.md
-ms.openlocfilehash: 3f1c3eaf386396e761010322b4b2c02ba23af9df
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3ace6fb756bb526b129357392366f9032ec885e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223695"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597560"
 ---
 # New-AzPurviewAzureSubscriptionCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSubscriptionCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresubscriptioncredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

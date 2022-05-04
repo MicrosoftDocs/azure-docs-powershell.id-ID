@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
-ms.openlocfilehash: 752e049860f0db18b58fd5f1a8fa11a17ceffacb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 647a9eea556d682408c13482c9bfcd96d83717c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116649"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637748"
 ---
 # Set-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunggah file lokal ke blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageblobcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,44 +63,44 @@ Cmdlet **Set-AzStorageBlobContent** mengunggah file lokal ke blob Azure Storage.
 PS C:\>Set-AzStorageBlobContent -Container "ContosoUpload" -File ".\PlanningData" -Blob "Planning2015"
 ```
 
-Perintah ini mengunggah file yang bernama PlanningData ke blob bernama Planning2015.
+Perintah ini mengunggah file yang diberi nama PlanningData ke blob bernama Planning2015.
 
 ### Contoh 2: Upload semua file di bawah folder saat ini
 ```
 PS C:\>Get-ChildItem -File -Recurse | Set-AzStorageBlobContent -Container "ContosoUploads"
 ```
 
-Perintah ini menggunakan cmdlet inti Windows PowerShell Get-ChildItem untuk mendapatkan semua file dalam folder saat ini dan di subfolder, lalu meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet **Set-AzStorageBlobContent** mengunggah file ke wadah bernama ContosoUploads.
+Perintah ini menggunakan cmdlet Windows PowerShell inti Get-ChildItem untuk mendapatkan semua file di folder saat ini dan di subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet **Set-AzStorageBlobContent** mengunggah file ke kontainer bernama ContosoUploads.
 
-### Contoh 3: Menimpa blob yang sudah ada
+### Contoh 3: Menimpa blob yang ada
 ```
 PS C:\>Get-AzStorageBlob -Container "ContosoUploads" -Blob "Planning2015" | Set-AzStorageBlobContent -File "ContosoPlanning"
 ```
 
-Perintah ini mendapatkan blob bernama Planning2015 dalam wadah ContosoUploads dengan menggunakan cmdlet Get-AzStorageBlob, lalu meneruskan blob tersebut ke cmdlet saat ini.
+Perintah ini mendapatkan blob bernama Planning2015 dalam kontainer ContosoUploads dengan menggunakan cmdlet Get-AzStorageBlob, lalu meneruskan blob tersebut ke cmdlet saat ini.
 Perintah mengunggah file yang bernama ContosoPlanning sebagai Planning2015.
-Perintah ini tidak menentukan parameter *Force* .
+Perintah ini tidak menentukan parameter *Paksa* .
 Perintah meminta konfirmasi kepada Anda.
-Jika Anda mengonfirmasi perintah, cmdlet menimpa blob yang sudah ada.
+Jika Anda mengonfirmasi perintah, cmdlet akan menimpa blob yang ada.
 
-### Contoh 4: Upload file ke wadah menggunakan pipeline
+### Contoh 4: Upload file ke kontainer dengan menggunakan alur
 ```
 PS C:\>Get-AzStorageContainer -Container "ContosoUpload*" | Set-AzStorageBlobContent -File "ContosoPlanning" -Blob "Planning2015"
 ```
 
-Perintah ini mendapatkan wadah yang dimulai dengan string ContosoUpload menggunakan cmdlet **Get-AzStorageContainer** , lalu meneruskan blob tersebut ke cmdlet saat ini.
+Perintah ini mendapatkan kontainer yang dimulai dengan string ContosoUpload dengan menggunakan cmdlet **Get-AzStorageContainer** , lalu meneruskan blob tersebut ke cmdlet saat ini.
 Perintah mengunggah file yang bernama ContosoPlanning sebagai Planning2015.
 
-### Contoh 5: Upload blob file ke halaman dengan metadata dan PremiumPageBlobTier sebagai P10
+### Contoh 5: Upload file ke blob halaman dengan metadata dan PremiumPageBlobTier sebagai P10
 ```
 PS C:\>$Metadata = @{"key" = "value"; "name" = "test"}
 PS C:\> Set-AzStorageBlobContent -File "ContosoPlanning" -Container "ContosoUploads" -Metadata $Metadata -BlobType Page -PremiumPageBlobTier P10
 ```
 
 Perintah pertama membuat tabel hash yang berisi metadata untuk blob, dan menyimpan tabel hash dalam variabel $Metadata.
-Perintah kedua mengunggah file yang bernama ContosoPlanning ke wadah bernama ContosoUploads.
-Blob mencakup metadata yang disimpan di $Metadata, dan memiliki PremiumPageBlobTier sebagai P10.
+Perintah kedua mengunggah file bernama ContosoPlanning ke kontainer bernama ContosoUploads.
+Blob mencakup metadata yang disimpan dalam $Metadata, dan memiliki PremiumPageBlobTier sebagai P10.
 
 ### Contoh 6: Upload file ke blob dengan properti blob tertentu, dan atur StandardBlobTier sebagai Cool
 ```
@@ -111,10 +114,10 @@ Name                 BlobType  Length          ContentType                    La
 index.html           BlockBlob 403116          text/html                      2020-09-22 08:06:53Z Cool                                    False
 ```
 
-Perintah ini mengunggah file c:\temp\index.html ke kontainer bernama contosoupload dengan properti blob tertentu, dan mengatur StandardBlobTier sebagai Cool.
+Perintah ini mengunggah file c:\temp\index.html ke kontainer bernama contosouploads dengan properti blob tertentu, dan mengatur StandardBlobTier sebagai Cool.
 Perintah ini mendapatkan nilai ContentType yang diatur ke properti blob oleh [System.Web.MimeMapping]::GetMimeMapping() API.
 
-### Contoh 7: Upload file ke blob dengan Lingkup Enkripsi
+### Contoh 7: Upload file ke blob dengan Cakupan Enkripsi
 ```
 PS C:\> $blob = Set-AzStorageBlobContent  -File "mylocalfile" -Container "mycontainer" -Blob "myblob"  -EncryptionScope "myencryptscope"
 
@@ -158,10 +161,10 @@ Accept wildcard characters: False
 ```
 
 ### -BlobType
-Menentukan tipe untuk blob yang diunggah cmdlet ini.
+Menentukan jenis untuk blob yang diunggah cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blok
-- Halaman
+- Blokir
+- Halaman 
 - Tambahkan Nilai default adalah Blokir.
 
 ```yaml
@@ -178,8 +181,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
-Cmdlet ini mengunggah konten ke blob dalam wadah yang ditentukan parameter ini.
+Cmdlet ini mengunggah konten ke blob dalam kontainer yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer.
 
 ```yaml
@@ -228,9 +231,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -247,8 +250,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Menentukan nama wadah.
-Cmdlet ini mengunggah file ke blob dalam wadah yang ditentukan parameter ini.
+Menentukan nama kontainer.
+Cmdlet ini mengunggah file ke blob dalam kontainer yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -262,10 +265,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
-Untuk menggunakan konteks penyimpanan yang dibuat dari Token SAS tanpa izin baca, perlu add -Force parameter untuk melewati pemeriksaan keberadaan blob.
+Untuk menggunakan konteks penyimpanan yang dibuat dari Token SAS tanpa izin baca, perlu tambahkan parameter -Force untuk melewati pemeriksaan keberadaan blob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScope
-Lingkup enkripsi yang akan digunakan saat membuat permintaan ke blob.
+Cakupan enkripsi yang akan digunakan saat membuat permintaan ke blob.
 
 ```yaml
 Type: System.String
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur file lokal untuk file yang diunggah sebagai konten blob.
+Menentukan jalur file lokal untuk file yang akan diunggah sebagai konten blob.
 
 ```yaml
 Type: System.String
@@ -336,8 +339,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menimpa blob yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menimpa blob yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -414,8 +417,8 @@ Accept wildcard characters: False
 ```
 
 ### -StandardBlobTier
-Block Blob Tier, nilai yang valid adalah Hot/Cool/Archive.
-Lihat detailnya di https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers
+Tingkat Blob Blok, nilai yang valid adalah Panas/Dingin/Arsip.
+Lihat detail di https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers
 
 ```yaml
 Type: System.String
@@ -446,8 +449,8 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
+Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -461,8 +464,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -477,7 +480,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -493,7 +496,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -515,6 +518,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzStorageBlobContent](./Get-AzStorageBlobContent.md)
 
-[Get-AzStorageBlob](./Get-AzStorageBlob.md)
+[Dapatkan-BlobPenyimpananAz](./Get-AzStorageBlob.md)
 
 [Remove-AzStorageBlob](./Remove-AzStorageBlob.md)

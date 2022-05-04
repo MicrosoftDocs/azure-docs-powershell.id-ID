@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 4031e43428234f66e18998da550efb39b2c1081c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: caba56e38bac509d0f24d62e562d01c332956e1a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865512"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605318"
 ---
 # Enable-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
-Memungkinkan pengunggahan pencernaan buku besar ke akun Azure Storage atau ke Azure Confidential Ledger.
+Memungkinkan pengunggahan hash ledger ke akun Azure Storage atau ke Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Enable-AzSqlDatabaseLedgerDigestUpload [-Endpoint] <String> [-ResourceId] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Enable-AzSqlDatabaseLedgerDigestUpload memungkinkan pengunggahan pencernaan buku besar ke penyimpanan Azure Blob atau Azure Confidential Ledger. Untuk menggunakan cmdlet, tentukan titik akhir akun penyimpanan Blob Azure atau buku besar di Azure Confidential Ledger, dan identifikasi database. Jika pengunggahan pencernaan ledger sudah diaktifkan, cmdlet akan mengatur ulang titik akhir penyimpanan digest ke nilai baru.
+Cmdlet Enable-AzSqlDatabaseLedgerDigestUpload memungkinkan pengunggahan hash ledger ke penyimpanan Azure Blob atau Azure Confidential Ledger. Untuk menggunakan cmdlet, tentukan titik akhir akun penyimpanan Azure Blob atau ledger di Azure Confidential Ledger, dan identifikasi database. Jika mengunggah hash ledger sudah diaktifkan, cmdlet mengatur ulang titik akhir penyimpanan hash ke nilai baru.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ ResourceGroup01   Server01   Database01   Enabled https://mystorage.blob.core.wi
 ## PARAMETERS
 
 ### -DatabaseName
-SQL Database nama.
+nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Titik akhir Unggahan Azure Sql Database Ledger Digest.
+Titik akhir Azure Sql Database Ledger Digest Uploads.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database untuk menonaktifkan unggahan digest.
+Objek database untuk menonaktifkan unggahan hash.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya database untuk menonaktifkan unggahan digest.
+Id sumber daya database untuk menonaktifkan unggahan hash.
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

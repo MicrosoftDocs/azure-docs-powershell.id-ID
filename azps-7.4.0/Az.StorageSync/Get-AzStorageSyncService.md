@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncService.md
-ms.openlocfilehash: 9b97ae923001265b4f55cba5579d80fe60e78a30
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b70926a583a74c278b4d528088464e5bcb4ab94b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863982"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144588528"
 ---
 # Get-AzStorageSyncService
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua layanan sinkronisasi penyimpanan dalam lingkup grup langganan/sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzStorageSyncService [-ResourceGroupName] <String> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua layanan sinkronisasi penyimpanan dalam lingkup grup langganan/sumber daya tertentu. Fitur ini juga dapat digunakan untuk mencantumkan atribut setiap layanan sinkronisasi penyimpanan.
+Perintah ini mencantumkan semua layanan sinkronisasi penyimpanan dalam lingkup grup langganan/sumber daya tertentu. Ini dapat digunakan untuk juga mencantumkan atribut dari setiap layanan sinkronisasi penyimpanan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah ini mencantumkan semua layanan sinkronisasi penyimpanan dalam lingkup g
 Get-AzStorageSyncService -ResourceGroupName "myResourceGroup"
 ```
 
-Perintah ini mencantumkan semua sumber daya layanan sinkronisasi penyimpanan dalam grup sumber daya tertentu. Fitur ini juga dapat digunakan untuk mencantumkan atribut setiap layanan sinkronisasi penyimpanan. Tentukan -StorageSyncServiceName untuk mengembalikan yang spesifik.
+Perintah ini mencantumkan semua sumber daya layanan sinkronisasi penyimpanan dalam grup sumber daya tertentu. Ini dapat digunakan untuk juga mencantumkan atribut dari setiap layanan sinkronisasi penyimpanan. Tentukan -StorageSyncServiceName untuk mengembalikan yang spesifik.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan sinkronisasi penyimpanan.
 
 ```yaml
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

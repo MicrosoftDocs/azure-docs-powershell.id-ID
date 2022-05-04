@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssVaultCertificateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssVaultCertificateConfig.md
-ms.openlocfilehash: 52f7d580b20bcdc93912da27ada78bf47b85a93d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2790d7f13fa6bba5ba09295b40deda7c4d125d58
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127845"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617864"
 ---
-# New-AzVmssVaultCertificateConfig
+# Baru-AzVmssVaultCertificateConfig
 
 ## SYNOPSIS
 Membuat konfigurasi sertifikat Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssvaultcertificateconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzVmssVaultCertificateConfig [[-CertificateUrl] <String>] [[-CertificateStor
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVmsVaultCertificateConfig** menentukan rahasia yang perlu ditempatkan pada mesin virtual Virtual Machine Scale Set (VMSS).
+Cmdlet **New-AzVmssVaultCertificateConfig** menentukan rahasia yang perlu ditempatkan pada komputer virtual Virtual Machine Scale Set (VMSS).
 Output cmdlet ini dimaksudkan untuk digunakan dengan cmdlet Add-AzVmssSecret.
 
 ## EXAMPLES
@@ -41,8 +44,8 @@ Perintah ini membuat konfigurasi sertifikat Key Vault yang menggunakan penyimpan
 ## PARAMETERS
 
 ### -CertificateStore
-Menentukan penyimpanan sertifikat pada mesin virtual dalam kumpulan skala tempat sertifikat ditambahkan.
-Ini hanya berlaku untuk Windows Virtual Machine Scale Set.
+Menentukan penyimpanan sertifikat pada komputer virtual dalam set skala tempat sertifikat ditambahkan.
+Ini hanya berlaku untuk Windows Virtual Machine Scale Sets.
 
 ```yaml
 Type: System.String
@@ -57,8 +60,8 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateUrl
-Menentukan URI sertifikat yang disimpan dalam Kubah Kunci.
-Ini adalah pengodean base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: { "data}\<Base64-encoded-certificate\>", "dataType}pfx", "password}\<pfx-file-password\>" }
+Menentukan URI sertifikat yang disimpan dalam Key Vault.
+Ini adalah pengodean base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: { "data":"\<Base64-encoded-certificate\>", "dataType":"pfx", "password":"\<pfx-file-password\>" }
 
 ```yaml
 Type: System.String
@@ -87,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -132,4 +135,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzVmssSecret](./Add-AzVmssSecret.md)
+[Tambahkan-AzVmssSecret](./Add-AzVmssSecret.md)

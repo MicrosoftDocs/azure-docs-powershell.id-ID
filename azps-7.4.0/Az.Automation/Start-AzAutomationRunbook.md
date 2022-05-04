@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
-ms.openlocfilehash: 4a2e5750d56a24caa52e5e683822114e0fa9cb9e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1b4e5515c8fabac4a2b4c80b22909c1376e520aa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617900"
 ---
 # Start-AzAutomationRunbook
 
 ## SYNOPSIS
 Memulai pekerjaan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/start-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Start-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -Re
 
 Perintah ini memulai pekerjaan runbook untuk runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
 Perintah ini menentukan parameter _Tunggu_ .
-Oleh karena itu, mengembalikan hasil setelah pekerjaan selesai.
+Oleh karena itu, ia mengembalikan hasil setelah pekerjaan selesai.
 Cmdlet menunggu hingga 1000 detik untuk hasilnya.
 
 ## PARAMETERS
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunOn
-Menentukan Grup Pekerja Hibrid mana yang menjalankan runbook.
+Menentukan Grup Hybrid Worker mana yang akan menjalankan runbook.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroup.md
-ms.openlocfilehash: 801b0336625707aff3bc5c7025b0b93a13239999
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e84f582f5d9118d7567e0494b17efa463451de83
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673523"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605390"
 ---
 # Remove-AzADGroup
 
@@ -18,6 +18,9 @@ ms.locfileid: "142673523"
 Menghapus entitas dari grup.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

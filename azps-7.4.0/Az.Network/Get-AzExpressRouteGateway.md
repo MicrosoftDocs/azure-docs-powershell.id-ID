@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
-ms.openlocfilehash: 790d74143c4dd7203c82d1696eadf5d7aa18187a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fddd6a4996a159e109758b7e0e3e26e5f5fdbbf7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602618"
 ---
 # Get-AzExpressRouteGateway
 
 ## SYNOPSIS
-Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzExpressRouteGateway -ResourceId <String> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
 
 ## EXAMPLES
 
@@ -62,9 +65,9 @@ Type                : Microsoft.Network/ExpressRouteGateways
 ProvisioningState   : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di As Tengah Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di US Tengah Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Lalu mendapatkan ExpressRouteGateway menggunakan resourceGroupName dan nama gateway.
+Kemudian mendapatkan ExpressRouteGateway menggunakan resourceGroupName dan nama gatewaynya.
 
 ### Contoh 2
 
@@ -94,7 +97,7 @@ Type                : Microsoft.Network/ExpressRouteGateways
 ProvisioningState   : Succeeded
 ```
 
-Perintah ini akan mendapatkan semua ExpressRouteGateway yang dimulai dengan "uji"
+Perintah ini akan mendapatkan semua ExpressRouteGateways yang dimulai dengan "uji"
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk expressRouteGateway dihapus.
+ID sumber daya Azure untuk expressRouteGateway yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

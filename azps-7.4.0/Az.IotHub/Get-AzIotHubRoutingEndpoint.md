@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
-ms.openlocfilehash: b00d416feef1fcc3f8ae7d844ed0e048fc9326ac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa4b6e4200bfac2c86957df2bfbbf506f6345492
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620186"
 ---
 # Get-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
-Dapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
+Mendapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointType <PSEndpointTyp
 ```
 
 ## DESCRIPTION
-Dapatkan informasi di titik akhir.
+Dapatkan informasi tentang titik akhir.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E1
 resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E2
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub". 
+Dapatkan semua titik akhir jenis EventHub dari IoT Hub "myiothub". 
 
 ### Contoh 3
 ```powershell
@@ -83,7 +86,7 @@ EndpointName      : E1
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Dapatkan semua titik akhir tipe EventHub dari IoT Hub "myiothub".
+Dapatkan semua titik akhir jenis EventHub dari IoT Hub "myiothub".
 
 ### Contoh 4
 ```powershell
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointType
-Tipe Titik Akhir Perutean
+Jenis Titik Akhir Perutean
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSEndpointType
@@ -162,8 +165,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSet.md
-ms.openlocfilehash: bec609d579016015f2a8fc9d90520475ce130ef5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da6174bdfc5918fb715c27e8ab6cfa85af6f06cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063117"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605750"
 ---
 # Get-AzDataShareDataSet
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Kumpulan Data di Azure berbagi data.
+Mendapatkan informasi tentang Himpunan Data di berbagi data Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzDataShareDataSet -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareDataSet** mendapatkan informasi tentang kumpulan data yang ditambahkan dalam berbagi di akun berbagi data Azure. Jika Anda menentukan nama kumpulan data, cmdlet ini mendapatkan informasi tentang kumpulan data. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua kumpulan data dalam berbagi. I
+Cmdlet **Get-AzDataShareDataSet** mendapatkan informasi tentang himpunan data yang ditambahkan dalam berbagi di akun berbagi data Azure. Jika Anda menentukan nama himpunan data, cmdlet ini mendapatkan informasi tentang himpunan data. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua himpunan data dalam berbagi. I
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Name           : AdsDataSet
 Type           : Microsoft.DataShare/DataSets
 ```
 
-Perintah ini menampilkan informasi tentang kumpulan data AdsDataSet dalam berbagi AdsShare di akun berbagi data Azure WikiAdsAccount dan grup sumber daya ADS.
+Perintah ini menampilkan informasi tentang himpunan data AdsDataSet di berbagi AdsShare di akun berbagi data Azure WikiAdsAccount dan grup sumber daya ADS.
 
 ## PARAMETERS
 
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data Azure.
+### -Name
+Nama himpunan data Azure.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure.
+Nama grup sumber daya akun berbagi data azure.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya kumpulan data azure.
+Id sumber daya himpunan data azure.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantAccess.md
-ms.openlocfilehash: fe4b7ff7eeb10bfa3528ed1f90f132f2f6c515da
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff4ae0bf6929607b49788147f51003dc6a38b609
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752148"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623370"
 ---
 # Get-AzApiManagementTenantAccess
 
 ## SYNOPSIS
 Mendapatkan konfigurasi akses untuk penyewa.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementtenantaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Kunci tidak akan disertakan ke dalam detail hasil. Untuk mendapatkan rahasia kli
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi akses penyewa
+### Contoh 1: Mendapatkan konfigurasi akses penyewa
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementTenantAccess -Context $apimContext
@@ -41,7 +44,7 @@ Perintah ini mendapatkan konfigurasi akses penyewa untuk konteks yang ditentukan
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

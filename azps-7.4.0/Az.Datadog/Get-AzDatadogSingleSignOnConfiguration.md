@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: 3fed63d4bb8026291e55bfa7a52930584d018116
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b875477a7a41483388de2fd36e6c87bf8206a2c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062505"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605703"
 ---
 # Get-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
-Mendapatkan sumber daya masuk tunggal datadog untuk Monitor yang diberikan.
+Mendapatkan sumber daya akses menyeluruh datadog untuk Monitor yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogsinglesignonconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDatadogSingleSignOnConfiguration -MonitorName <String> -ResourceGroupName 
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDatadogSingleSignOnConfiguration -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzDatadogSingleSignOnConfiguration -InputObject <IDatadogIdentity> [-Default
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya masuk tunggal datadog untuk Monitor yang diberikan.
+Mendapatkan sumber daya akses menyeluruh datadog untuk Monitor yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan sumber daya masuk tunggal Datadog untuk Monitor yang diberikan
+### Contoh 1: Mencantumkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan
 ```powershell
 Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog
 ```
@@ -53,9 +56,9 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mencantumkan sumber daya masuk tunggal Datadog untuk Monitor tertentu.
+Perintah ini mencantumkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan.
 
-### Contoh 2: Mendapatkan sumber daya masuk tunggal Datadog untuk Monitor yang diberikan
+### Contoh 2: Mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan
 ```powershell
 Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default'
 ```
@@ -66,9 +69,9 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mendapatkan sumber daya masuk tunggal Datadog untuk Monitor yang diberikan.
+Perintah ini mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan.
 
-### Contoh 3: Mendapatkan sumber daya masuk tunggal Datadog untuk Monitor menurut pipeline
+### Contoh 3: Mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor berdasarkan alur yang diberikan
 ```powershell
 New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000 | Get-AzDatadogSingleSignOnConfiguration
 ```
@@ -79,7 +82,7 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mendapatkan sumber daya masuk tunggal Datadog untuk Monitor menurut saluran.
+Perintah ini mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor berdasarkan alur yang diberikan.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -198,8 +201,8 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RuleSetName <String>]`: Nama kumpulan aturan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayClientAuthConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayClientAuthConfiguration.md
-ms.openlocfilehash: 106f77ce836fd868e17b9c65d90f5110e616be9c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c20b9c19a61c7ebc573e897d65a5d0a9fdde0e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313839"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597722"
 ---
 # New-AzApplicationGatewayClientAuthConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi autentikasi klien baru untuk profil SSL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **New-AzApplicationGatewayClientAuthConfiguration** membuat konfigurasi a
 $clientAuthConfig = New-AzApplicationGatewayClientAuthConfiguration -VerifyClientCertIssuerDN
 ```
 
-Perintah membuat konfigurasi auth klien baru dan menyimpannya dalam variabel $clientAuthConfig untuk digunakan dalam profil SSL.
+Perintah membuat konfigurasi autentikasi klien baru dan menyimpannya dalam variabel $clientAuthConfig yang akan digunakan dalam profil SSL.
 
 ## PARAMETERS
 
@@ -69,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

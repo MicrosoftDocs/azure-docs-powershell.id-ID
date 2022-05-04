@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/set
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
-ms.openlocfilehash: ab3deeb5aef0df0241a059801df2a35507136e40
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 509bc7a9454d029274fe8a6885771251cad5eba6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231669"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606038"
 ---
 # Set-AzCloudServiceUpdateDomain
 
 ## SYNOPSIS
-Memperbarui contoh peran dalam domain pembaruan tertentu.
+Memperbarui instans peran di domain pembaruan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/set-azcloudserviceupdatedomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Set-AzCloudServiceUpdateDomain -CloudServiceName <String> -ResourceGroupName <St
 ```
 
 ## DESCRIPTION
-Memperbarui contoh peran dalam domain pembaruan tertentu.
+Memperbarui instans peran di domain pembaruan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui contoh peran dalam memperbarui domain
+### Contoh 1: Memperbarui instans peran di domain pembaruan
 ```powershell
 Set-AzCloudServiceUpdateDomain -CloudServiceName "ContosoCS" -ResourceGroupName "ContosOrg" -UpdateDomain 0
 ```
 
-Perintah ini memperbarui contoh peran dalam memperbarui domain 0 layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini memperbarui instans peran dalam memperbarui domain 0 dari layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -UpdateDomain
 Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan.
-Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
+Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ```yaml
 Type: System.Int32
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

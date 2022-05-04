@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: 308c7961f74637142ac2702fd9ad470f02bd47b3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1100e63076fde68b3fb9378644821afef71eb9bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938467"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606758"
 ---
 # New-AzVpnClientRevokedCertificate
 
 ## SYNOPSIS
-Membuat sertifikat pembatalan klien VPN baru.
+Membuat sertifikat pencabutan klien VPN baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientrevokedcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ New-AzVpnClientRevokedCertificate -Name <String> -Thumbprint <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVpnClientRevokedCertificate** membuat sertifikat pembatalan klien (VPN) jaringan privat virtual baru untuk digunakan di gateway jaringan virtual.
-Sertifikat pembatalan klien mencegah komputer klien menggunakan sertifikat tertentu untuk autentikasi.
-Cmdlet ini membuat sertifikat mandiri yang tidak ditetapkan ke gateway virtual.
-Sebagai gantinya, sertifikat yang dibuat oleh **New-AzVpnClientRevokedCertificate** digunakan bersama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
+Cmdlet **New-AzVpnClientRevokedCertificate** membuat sertifikat pencabutan klien jaringan privat maya (VPN) baru untuk digunakan pada gateway jaringan virtual.
+Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
+Cmdlet ini membuat sertifikat yang berdiri sendiri yang tidak ditetapkan ke gateway virtual.
+Sebaliknya, sertifikat yang dibuat oleh **New-AzVpnClientRevokedCertificate** digunakan bersama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
 Misalnya, Anda membuat sertifikat baru dan menyimpannya dalam variabel bernama $Certificate.
-Anda kemudian bisa menggunakan objek sertifikat itu saat Anda membuat gateway virtual baru.
-Misalnya, `New-AzVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRevokedCertificates $Certificate`
+Anda kemudian dapat menggunakan objek sertifikat tersebut saat membuat gateway virtual baru.
+Contohnya, `New-AzVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRevokedCertificates $Certificate`
 Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzVirtualNetworkGateway.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sertifikat klien baru yang dicabut
+### Contoh 1: Membuat sertifikat baru yang dicabut kliennya
 ```powershell
 $Certificate = New-AzVpnClientRevokedCertificate -Name "ContosoClientRevokedCertificate" -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama unik untuk sertifikat pembatalan klien baru.
+### -Name
+Menentukan nama unik untuk sertifikat pencabutan klien baru.
 
 ```yaml
 Type: System.String
@@ -77,9 +80,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
+### -Thumbprint
 Menentukan pengidentifikasi unik sertifikat yang ditambahkan.
-Anda bisa mengembalikan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell seperti ini:`Get-ChildItem -Path Cert:\LocalMachine\Root`
+Anda dapat mengembalikan informasi thumbprint untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell yang mirip dengan ini:`Get-ChildItem -Path Cert:\LocalMachine\Root`
 Perintah sebelumnya mengembalikan informasi untuk semua sertifikat Komputer Lokal yang ditemukan di penyimpanan sertifikat Akar.
 
 ```yaml
@@ -95,11 +98,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

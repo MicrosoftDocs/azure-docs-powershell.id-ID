@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImageType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImageType.md
-ms.openlocfilehash: 6d1d4860a2d284fbf9b30b7fdea13e2e6d7b3130
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 08f9524e12c47ffabcaa8d44f489afec3509ffcc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687061"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607694"
 ---
 # Get-AzVMExtensionImageType
 
 ## SYNOPSIS
-Mendapatkan tipe ekstensi Azure.
+Mendapatkan jenis ekstensi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmextensionimagetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzVMExtensionImageType -Location <String> -PublisherName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMExtensionImageType** mendapatkan tipe ekstensi Azure.
+Cmdlet **Get-AzVMExtensionImageType** mendapatkan jenis ekstensi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe gambar ekstensi
+### Contoh 1: Mendapatkan jenis gambar ekstensi
 ```powershell
 Get-AzVMExtensionImageType -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini mendapatkan tipe gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
+Perintah ini mendapatkan jenis gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi ekstensi.
-Cmdlet ini mendapatkan tipe ekstensi di lokasi yang ditentukan parameter ini.
+Cmdlet ini mendapatkan jenis untuk ekstensi di lokasi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ### -PublisherName
 Menentukan nama penerbit ekstensi.
 Untuk mendapatkan penerbit ekstensi, gunakan cmdlet Get-AzVMImagePublisher.
-Cmdlet ini mendapatkan tipe ekstensi dari penerbit yang ditentukan parameter ini.
+Cmdlet ini mendapatkan jenis untuk ekstensi dari penerbit yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

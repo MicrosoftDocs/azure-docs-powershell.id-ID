@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azbg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzBgpServiceCommunity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzBgpServiceCommunity.md
-ms.openlocfilehash: 0a2f90c5e67f1411ce23ac618dee11de726e25d5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3d69f52282d046689f903039f68b723a318781a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606884"
 ---
 # Get-AzBgpServiceCommunity
 
 ## SYNOPSIS
-Menyediakan daftar semua layanan / kawasan, komunitas BGP, dan prefiks terkait.
+Menyediakan daftar semua layanan/ wilayah, komunitas BGP, dan awalan terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azbgpservicecommunity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzBgpServiceCommunity [-DefaultProfile <IAzureContextContainer>] [<CommonPar
 ```
 
 ## DESCRIPTION
-Cmdlet ini menyediakan daftar semua layanan / kawasan, komunitas BGP, dan prefiks terkait.
+Cmdlet ini menyediakan daftar semua layanan/ wilayah, komunitas BGP, dan awalan terkait.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ BgpCommunities : [
 ...
 ```
 
-Cmdlet ini menyediakan daftar semua layanan / kawasan, komunitas BGP, dan prefiks terkait.
+Cmdlet ini menyediakan daftar semua layanan/ wilayah, komunitas BGP, dan awalan terkait.
 
 ## PARAMETERS
 
@@ -96,11 +99,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -122,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRouteFilterRuleConfig](Get-AzRouteFilterRuleConfig.md)
 
-[Hapus-AzRouteFilter](Remove-AzRouteFilter.md)
+[Remove-AzRouteFilter](Remove-AzRouteFilter.md)
 
 [Remove-AzRouteFilterRuleConfig](Remove-AzRouteFilterRuleConfig.md)
 
@@ -130,6 +133,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzRouteFilterRuleConfig](Set-AzRouteFilterRuleConfig.md)
 
-[Filter AzRoute Baru](New-AzRouteFilter.md)
+[New-AzRouteFilter](New-AzRouteFilter.md)
 
 [New-AzRouteFilterRuleConfig](New-AzRouteFilterRuleConfig.md)

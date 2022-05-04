@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesVault.md
-ms.openlocfilehash: 2a551339bf863186b3966d8a580227b03f164953
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3817c357f1b5d3154b9cd2fe34baea899b136983
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608180"
 ---
 # New-AzRecoveryServicesVault
 
 ## SYNOPSIS
-Membuat kubah Layanan Pemulihan baru.
+Membuat vault Layanan Pemulihan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzRecoveryServicesVault -Name <String> -ResourceGroupName <String> -Location
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesVault** membuat kubah Layanan Pemulihan baru.
+Cmdlet **New-AzRecoveryServicesVault** membuat vault Layanan Pemulihan baru.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzRecoveryServicesVault** membuat kubah Layanan Pemulihan baru.
 New-AzRecoveryServicesVault -Name "vaultName" -ResourceGroupName "rg" -Location "eastasia"
 ```
 
-Buat kubah layanan pemulihan dalam grup sumber daya dan lokasi tertentu.
+Buat vault layanan pemulihan di grup sumber daya dan lokasi tertentu.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan nama lokasi geografis kubah.
+Menentukan nama lokasi geografis vault.
 
 ```yaml
 Type: System.String
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kubah untuk dibuat.
+### -Name
+Menentukan nama vault yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya Azure tempat untuk membuat atau dari mana untuk mengambil objek Layanan Pemulihan yang ditentukan.
+Menentukan nama grup sumber daya Azure untuk membuat atau dari mana mengambil objek Layanan Pemulihan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 
 ### -Tag
 
-Menentukan Tag untuk ditambahkan ke Vault Layanan Pemulihan
+Menentukan Tag yang akan ditambahkan ke Vault Layanan Pemulihan
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -115,8 +118,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,11 +149,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

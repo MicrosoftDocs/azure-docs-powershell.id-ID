@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/set-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
-ms.openlocfilehash: a89b924f7b70e47fe9d214f2f7aa3e2384d28bd0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 991f514e59cf9d5e0dca63968882422961ddbe00
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278793"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628652"
 ---
 # Set-AzPortalDashboard
 
 ## SYNOPSIS
 Membuat atau memperbarui Dasbor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/set-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,13 +43,13 @@ Location Name       Type
 eastasia dashbase03 Microsoft.Portal/dashboards
 ```
 
-Memperbarui definisi dasbor menggunakan file templat dasbor.
+Perbarui definisi dasbor menggunakan file templat dasbor.
 
 ## PARAMETERS
 
 ### -DashboardPath
 Jalur ke templat dasbor yang sudah ada.
-Templat dasbor mungkin diunduh dari portal.
+Templat dasbor dapat diunduh dari portal.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 
 ```yaml
@@ -120,8 +123,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

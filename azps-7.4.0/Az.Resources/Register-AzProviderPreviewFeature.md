@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderPreviewFeature.md
-ms.openlocfilehash: eaac6f86507dbf9bdbf37e49a091513f14f6a77c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1aefb745bd7f39af4b349792d3125add9688e850
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608198"
 ---
 # Register-AzProviderPreviewFeature
 
 ## SYNOPSIS
 Membuat pendaftaran fitur di akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/register-azproviderpreviewfeature) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Register-AzProviderPreviewFeature** membuat pendaftaran fitur di akun A
 Register-AzProviderPreviewFeature -FeatureName AllowApplicationSecurityGroups -ProviderNamespace Microsoft.Network
 ```
 
-Tindakan ini menambahkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network ke akun Anda.
+Ini menambahkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network ke akun Anda.
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fitur.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Ruang nama penyedia sumber daya.
+Namespace layanan penyedia sumber daya.
 
 ```yaml
 Type: System.String
@@ -83,8 +86,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -131,4 +134,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzProviderPreviewFeature](./Get-AzProviderPreviewFeature.md)
 
-[Unregister-AzProviderPreviewFeature](./Unregister-AzProviderPreviewFeature.md)
+[Batalkan pendaftaran-AzProviderPreviewFeature](./Unregister-AzProviderPreviewFeature.md)

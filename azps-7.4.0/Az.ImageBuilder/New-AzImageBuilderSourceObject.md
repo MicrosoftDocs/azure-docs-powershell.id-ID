@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
-ms.openlocfilehash: efd98c69c07ee3dcd96b74e95caceebc31045459
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83129b2bc041c4fd2a5e1bc86f6ebe644faf6297
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001161"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607244"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
-Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ New-AzImageBuilderSourceObject -SourceTypeSharedImageVersion [-ImageVersionId <S
 ```
 
 ## DESCRIPTION
-Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
 
 ## EXAMPLES
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Gambar sku dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
+Sku gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceTypeSharedImageVersion
-Menjelaskan sumber gambar yang merupakan versi gambar dalam galeri gambar bersama.
+Menjelaskan sumber gambar yang merupakan versi gambar di galeri gambar bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

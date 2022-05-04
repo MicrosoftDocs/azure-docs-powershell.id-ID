@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
-ms.openlocfilehash: 8ec15fb38903517964a894a5ca6c82f49b8e5c55
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23b15dfa8b5ffa2019ac86c474234c323b3ac1a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006651"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585866"
 ---
 # New-AzCloudService
 
 ## SYNOPSIS
 Membuat atau memperbarui layanan awan.
 Harap dicatat bahwa beberapa properti hanya dapat diatur selama pembuatan layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 

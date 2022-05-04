@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 8dc0349d580cd42ad0bae9607edb094e069d73b1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d558f3be5f33f8d80e11e825f4f757b2d75b0dfb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740502"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630460"
 ---
 # Get-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan replikasi ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzRecoveryServicesAsrPolicy -FriendlyName <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Azure Site Recovery yang dikonfigurasi atau kebijakan replikasi tertentu menurut nama.
+Cmdlet **Get-AzRecoveryServicesAsrPolicy** mendapatkan daftar kebijakan replikasi Azure Site Recovery yang dikonfigurasi atau kebijakan replikasi tertentu berdasarkan nama.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ ReplicationProvider         : HyperVReplicaAzure
 ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRHyperVReplicaAzurePolicyDetails
 ```
 
-Mengembalikan kebijakan replikasi dengan nama yang bersahabat yang ditentukan.
+Mengembalikan kebijakan replikasi dengan nama bersahabat yang ditentukan.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama yang mudah dikenali dari kebijakan replikasi ASR.
+Menentukan nama yang mudah diingat dari kebijakan replikasi ASR.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama kebijakan replikasi ASR.
 
 ```yaml
@@ -128,11 +131,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

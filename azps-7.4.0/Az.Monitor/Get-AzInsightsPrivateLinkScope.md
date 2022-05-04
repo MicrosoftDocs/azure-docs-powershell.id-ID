@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: cccef30a0fbb4e68c063d164cfc2e164a59f9e78
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a00d58e456aad05a0cbd3aeb22bbbc82d49f500f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638576"
 ---
 # Get-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
-Dapatkan lingkup tautan privat
+Mendapatkan cakupan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzInsightsPrivateLinkScope -ResourceId <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Daftar atau dapatkan lingkup tautan privat 
+Mencantumkan atau mendapatkan cakupan tautan privat 
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Daftar atau dapatkan lingkup tautan privat
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name"
 ```
 
-Mencantumkan lingkup tautan privat di bawah grup sumber daya "rg_name"
+Mencantumkan cakupan tautan privat di bawah grup sumber daya "rg_name"
 
 ### Contoh 2
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name"
 ```
 
-Dapatkan lingkup tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
+Dapatkan cakupan tautan privat dengan nama "scope_name" di bawah grup sumber daya "rg_name"
 
 ## PARAMETERS
 
@@ -73,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Lingkup Private Link
+### -Name
+Nama Cakupan Private Link
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya
+ID sumber daya
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
