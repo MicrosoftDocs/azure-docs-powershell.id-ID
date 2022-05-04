@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerProfile.md
-ms.openlocfilehash: c6ba1f28c3fa47fabb725a06be97d52ed2a570e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62f7f76dd1c03993385f0bb5e27daefecc364e5c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269001"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612950"
 ---
 # New-AzTrafficManagerProfile
 
 ## SYNOPSIS
-Membuat profil Traffic Manager.
+Membuat profil Microsoft Azure Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/new-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,9 +40,9 @@ Tentukan parameter *Nama* dan pengaturan yang diperlukan.
 Cmdlet ini mengembalikan objek lokal yang mewakili profil baru.
 
 Cmdlet ini tidak mengonfigurasi titik akhir Traffic Manager.
-Anda dapat memperbarui objek profil lokal menggunakan cmdlet Add-AzTrafficManagerEndpointConfig.
-Lalu unggah perubahan ke Traffic Manager menggunakan cmdlet Set-AzTrafficManagerProfile.
-Atau, Anda dapat menambahkan titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint.
+Anda dapat memperbarui objek profil lokal dengan menggunakan cmdlet Add-AzTrafficManagerEndpointConfig.
+Kemudian unggah perubahan pada Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile.
+Atau, Anda dapat menambahkan titik akhir dengan menggunakan cmdlet New-AzTrafficManagerEndpoint.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ FQDN DNS contosoapp.trafficmanager.net.
 ## PARAMETERS
 
 ### -CustomHeader
-Daftar nama header kustom dan pasangan nilai untuk permintaan probe.
+Daftar nama header kustom dan pasangan nilai untuk permintaan pemeriksaan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerCustomHeader]
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpectedStatusCodeRange
-Daftar rentang kode status HTTP yang diharapkan untuk permintaan penyelidikan.
+Daftar rentang kode status HTTP yang diharapkan untuk permintaan pemeriksaan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerExpectedStatusCodeRange]
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxReturn
-Jumlah maksimum jawaban yang dikembalikan untuk profil dengan metode perutean MultiValue.
+Jumlah maksimum jawaban yang dikembalikan untuk profil dengan metode perutean MultiNilai.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -MonitorPort
 Menentukan port TCP yang digunakan untuk memantau kesehatan titik akhir.
-Nilai yang valid adalah bilangan bulat dari 1 sampai 65535.
+Nilai yang valid adalah bilangan bulat dari 1 hingga 65535.
 
 ```yaml
 Type: System.UInt32
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorProtocol
-Menentukan protokol yang digunakan untuk memantau kesehatan titik akhir.
+Menentukan protokol yang akan digunakan untuk memantau kesehatan titik akhir.
 Nilai yang valid adalah:
 
 - HTTP
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorTimeoutInSeconds
-Waktu (dalam detik) yang Traffic Manager memungkinkan titik akhir di profil ini untuk merespons pemeriksaan kesehatan. Defaultnya adalah 10.
+Waktu (dalam detik) yang Traffic Manager memungkinkan titik akhir di profil ini merespons pemeriksaan kesehatan. Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorToleratedNumberOfFailures
-Jumlah pemeriksaan kesehatan gagal berturut-turut yang Traffic Manager toleransi sebelum mendeklarasikan titik akhir di profil ini Terdegradasi setelah pemeriksaan kesehatan gagal berturut-turut berikutnya. Defaultnya adalah 3.
+Jumlah pemeriksaan kesehatan gagal berturut-turut yang Traffic Manager toleransi sebelum menyatakan titik akhir di profil ini Terdegradasi setelah pemeriksaan kesehatan gagal berturut-turut berikutnya. Defaultnya adalah 3.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -211,7 +214,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk profil Traffic Manager yang dibuat cmdlet ini.
 
 ```yaml
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server. Misalnya:
+Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag di server. Contohnya:
 
 @{key0="value0";key1=$null;key2="value2"}
 
@@ -297,7 +300,7 @@ Menentukan metode perutean lalu lintas.
 Metode ini menentukan titik akhir mana yang Traffic Manager kembalikan sebagai respons terhadap kueri DNS masuk.
 Nilai yang valid adalah:
 
-- Kinerja
+- Performa
 - Tertimbang
 - Prioritas
 - Geografis
@@ -331,11 +334,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

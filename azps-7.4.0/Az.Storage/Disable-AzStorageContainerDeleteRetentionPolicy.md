@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageContainerDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageContainerDeleteRetentionPolicy.md
-ms.openlocfilehash: 2c7eecd069ec700c43eb4d6bd548e4e4510c4a2c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2da587f109016cbbafe52fae09cde29e04c8b5af
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932833"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606475"
 ---
 # Disable-AzStorageContainerDeleteRetentionPolicy
 
 ## SYNOPSIS
-Nonaktifkan kebijakan penghapusan penyimpanan untuk kontainer blob Azure Storage.
+Nonaktifkan kebijakan penyimpanan penghapusan untuk kontainer blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragecontainerdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Disable-AzStorageContainerDeleteRetentionPolicy [-ResourceId] <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageContainerDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk kontainer Azure Storage blob.
+Cmdlet **Disable-AzStorageContainerDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk kontainer blob Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan kebijakan penyimpanan penghapusan untuk wadah blob
+### Contoh 1: Menonaktifkan kebijakan penyimpanan penghapusan untuk kontainer blob
 ```
 C:\PS>Disable-AzStorageContainerDeleteRetentionPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -PassThru
 
@@ -51,7 +54,7 @@ Enabled Days
   False
 ```
 
-Perintah ini menonaktifkan kebijakan penghapusan penyimpanan untuk wadah blob.
+Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk kontainer blob.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menampilkan ServiceProperties
+Tampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti Blob service.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -145,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

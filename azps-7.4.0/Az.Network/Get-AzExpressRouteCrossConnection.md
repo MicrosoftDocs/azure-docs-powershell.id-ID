@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnection.md
-ms.openlocfilehash: 0706c3f8c43253925e1a7c6ae98a4246bf4883a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 73e35844e7db7bd3fdacb09541e4f8f14cea3317
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143225171"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630784"
 ---
 # Get-AzExpressRouteCrossConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi silang Azure ExpressRoute dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ AzureRmExpressRouteCrossConnection
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan koneksi silang ExpressRoute
+### Contoh 1: Mendapatkan koneksi silang ExpressRoute
 ```powershell
 Get-AzExpressRouteCrossConnection -Name $CrossConnectionName -ResourceGroupName $rg
 ```
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koneksi silang ExpressRoute.
 
 ```yaml
@@ -91,11 +94,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 2e9b592c78bba289394c0da1a2cee6f8f5588519
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51d25f5dc236481bc34bb588489341ce632212d0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281619"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630712"
 ---
 # New-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Membuat pemeriksaan kesehatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzApplicationGatewayProbeConfig -Name <String> -Protocol <String> [-HostName
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzApplicationGatewayProbeConfig membuat pemeriksaan kesehatan.
+Cmdlet New-AzApplicationGatewayProbeConfig menciptakan pemeriksaan kesehatan.
 
 ## EXAMPLES
 
-### Contoh 1: Contoh1: Membuat pemeriksaan kesehatan
+### Contoh 1: Example1: Membuat pemeriksaan kesehatan
 ```powershell
 New-AzApplicationGatewayProbeConfig -Name "Probe03" -Protocol Http -HostName "contoso.com" -Path "/path/custompath.htm" -Interval 30 -Timeout 120 -UnhealthyThreshold 8
 ```
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cocok
-Tubuh yang harus terkandung dalam respons kesehatan.
+Isi yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur relatif pemeriksaan.
+Menentukan jalur relatif probe.
 Jalur yang valid dimulai dengan karakter garis miring (/).
 Pemeriksaan dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu habis
-Menentukan batas waktu pemeriksaan dalam detik.
+Menentukan batas waktu pemeriksaan dalam hitung detik.
 Cmdlet ini menandai pemeriksaan sebagai gagal jika respons yang valid tidak diterima dengan periode batas waktu ini.
 Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
@@ -210,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah coba lagi pemeriksaan.
-Server backend ditandai ke bawah setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang tidak sehat.
+Menentukan jumlah percobaan kembali probe.
+Server backend ditandai tidak berfungsi setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang batas yang tidak sehat.
 Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan porta yang digunakan untuk memeriksa server ujung belakang.
+Menentukan port yang digunakan untuk memeriksa server ujung belakang.
 
 ```yaml
 Type: System.Int32

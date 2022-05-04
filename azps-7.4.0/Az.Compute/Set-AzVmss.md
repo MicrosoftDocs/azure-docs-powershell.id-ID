@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
-ms.openlocfilehash: b5fab1d249e137b349802c0a9e1622f11683d845
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c4172e50dc3d028e451dccb6f374eccd34a04cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687024"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612680"
 ---
 # Set-AzVmss
 
 ## SYNOPSIS
 Mengatur tindakan tertentu pada VMSS tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,21 +49,21 @@ Set-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-InstanceI
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmss** mengatur tindakan tertentu pada Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet **Set-AzVmss** menetapkan tindakan tertentu pada Virtual Machine Scale Set (VMSS).
 Satu-satunya tindakan yang didukung cmdlet ini adalah Reimage.
 
 ## EXAMPLES
 
-### Contoh 1: Menginisiasi ulang VMSS
+### Contoh 1: Menggambar Ulang VMSS
 ```powershell
 Set-AzVmss -Reimage -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini mengoptimalkan VMSS bernama ContosoVMSS yang termasuk dalam grup sumber daya bernama ContosoGroup.
+Perintah ini menggambar ulang VMSS bernama ContosoVMSS yang termasuk dalam grup sumber daya bernama ContosoGroup.
 
 ### Contoh 2
 
-Mengatur tindakan tertentu pada VMSS tertentu. (autogenerasi)
+Mengatur tindakan tertentu pada VMSS tertentu. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,7 +73,7 @@ Set-AzVmss -ReimageAll -ResourceGroupName 'ContosoGroup' -VMScaleSetName 'Contos
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-ID instans mesin virtual.
+ID instans komputer virtual.
 
 ```yaml
 Type: System.String[]
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformMaintenance
-Menunjukkan bahwa cmdlet ini melakukan pemeliharaan satu atau beberapa mesin virtual dalam VMSS.
+Menunjukkan bahwa cmdlet ini melakukan pemeliharaan satu atau beberapa komputer virtual di VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Redeploy
-Menunjukkan bahwa cmdlet mendandani satu atau beberapa mesin virtual dalam VMSS.
+### -Penyebaran ulang
+Menunjukkan bahwa cmdlet menyebarkan ulang satu atau beberapa komputer virtual di VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reimage
-Menunjukkan bahwa cmdlet mereimageS VMSS.
+Menunjukkan bahwa cmdlet menggambar ulang VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReimageSemua
-Menunjukkan bahwa cmdlet mereimage semua disk dalam VMSS.
+### -ReimageAll
+Menunjukkan bahwa cmdlet menggambar ulang semua disk di VMSS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -TempDisk
-Menentukan apakah akan mengolah ulang cakram sementara.
+Menentukan apakah akan mengganti nama disk sementara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS tempat cmdlet ini mengatur tindakan.
+Spesies nama VMSS tempat cmdlet ini menetapkan tindakan.
 
 ```yaml
 Type: System.String
@@ -219,8 +222,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -266,18 +269,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVmss](./Get-AzVmss.md)
+[Dapatkan-AzVmss](./Get-AzVmss.md)
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)
 
-[Hapus-AzVms](./Remove-AzVmss.md)
+[Hapus-AzVmss](./Remove-AzVmss.md)
 
-[Mulai ulang-AzVms](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

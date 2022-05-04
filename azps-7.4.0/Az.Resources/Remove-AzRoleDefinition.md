@@ -6,19 +6,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
-ms.openlocfilehash: 77876d4fe9df94870ee413a7a98432ff071c7b85
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b52cb4cbd6ba7d9e01de45a0ccddb78b8d13bdb4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274941"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654554"
 ---
 # Remove-AzRoleDefinition
 
 ## SYNOPSIS
 Menghapus peran kustom di Azure RBAC.
-Peran yang akan dihapus ditentukan menggunakan properti Id peran tersebut.
-Hapus akan gagal jika ada penetapan peran yang sudah ada yang dibuat untuk peran kustom.
+Peran yang akan dihapus ditentukan menggunakan properti Id peran.
+Penghapusan akan gagal jika ada penetapan peran yang dibuat untuk peran kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,10 +45,10 @@ Remove-AzRoleDefinition -InputObject <PSRoleDefinition> [-Force] [-PassThru]
 
 ## DESCRIPTION
 Cmdlet Remove-AzRoleDefinition menghapus peran kustom di Azure Role-Based Access Control.
-Berikan parameter Id dari peran kustom yang sudah ada untuk menghapus peran kustom tersebut.
-Secara default, Remove-AzRoleDefinition meminta konfirmasi.
-Untuk menyembunyikan perintah, gunakan parameter Paksa.
-Jika ada penetapan peran yang dibuat untuk peran kustom yang akan dihapus, penghapusan akan gagal.
+Berikan parameter Id dari peran kustom yang ada untuk menghapus peran kustom tersebut.
+Secara default, Remove-AzRoleDefinition meminta konfirmasi kepada Anda.
+Untuk menekan perintah, gunakan parameter Paksa.
+Jika ada penetapan peran yang ada yang dibuat untuk peran kustom yang akan dihapus, penghapusan akan gagal.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jika diatur, tidak meminta konfirmasi sebelum menghapus peran kustom
 
 ```yaml
@@ -121,7 +124,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi Peran yang akan dihapus.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup definisi peran.
+### -Cakupan
+Cakupan definisi peran.
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -208,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 

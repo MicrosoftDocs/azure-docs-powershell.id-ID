@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: e57edf7752dab3b8939cb4782b5ca7f0d3273b0a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 745f69e299f586191353f766bbfd32ba7bd034ae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273069"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630298"
 ---
 # Enable-AzSqlServerActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Mengaktifkan Azure AD hanya autentikasi untuk SQL Server tertentu.
+Mengaktifkan autentikasi Azure AD hanya untuk SQL Server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlserveractivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Enable-AzSqlServerActiveDirectoryOnlyAuthentication [-ResourceGroupName] <String
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GunakanInputObjectParameterSet
+### UseInputObjectParameterSet
 ```
 Enable-AzSqlServerActiveDirectoryOnlyAuthentication -InputObject <AzureSqlServerModel>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Enable-AzSqlServerActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSqlServerActiveDirectoryOnlyAuthentication** mengaktifkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk AzureSQL Server dalam langganan saat ini.
+Cmdlet **Enable-AzSqlServerActiveDirectoryOnlyAuthentication memungkinkan persyaratan autentikasi** Azure Active Directory (Azure AD) hanya untuk AzureSQL Server dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ ResourceGroupName ServerName AzureADOnlyAuthentication
 ResourceGroup01   Server01   True
 ```
 
-Perintah ini mengaktifkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk server AzureSQL bernama Server01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
+Perintah ini memungkinkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk server AzureSQL bernama Server01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek server SQL untuk digunakan.
+Objek server SQL yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,6 +187,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlServerActiveDirectoryAdministrator](./Set-AzSqlServerActiveDirectoryAdministrator.md)
 
-[Get-AzSqlServerActiveDirectoryAdministrator](./Get-AzSqlServerActiveDirectoryAdministrator.md)
+[Set-AzSqlServerActiveDirectoryAdministrator](./Get-AzSqlServerActiveDirectoryAdministrator.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

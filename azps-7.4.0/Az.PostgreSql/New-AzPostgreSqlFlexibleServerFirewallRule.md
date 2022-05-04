@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: c831269e21de49ed5fb3d7188e5910827b5e25d2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2ef59b78b38ef41b39935998186aa360b7c98a9c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869598"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619808"
 ---
 # New-AzPostgreSqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzPostgreSqlFlexibleServerFirewallRule -ResourceGroupName <String> -ServerNa
 ```
 
 ## DESCRIPTION
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ ClientIPAddress_2020-08-11_18-19-27 0.0.0.1        0.0.0.1
 
 Cmdlet ini membuat Aturan Firewall PostgreSql menggunakan -ClientIPAddress.
 
-### Contoh 3: Membuat Aturan PostgreSql Firewall baru untuk memperbolehkan semua IP
+### Contoh 3: Membuat Aturan Firewall PostgreSql baru untuk mengizinkan semua IP
 ```powershell
  New-AzPostgreSqlFlexibleServerFirewallRule -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test -AllowAll
 ```
@@ -87,7 +90,7 @@ Cmdlet ini membuat Aturan Firewall PostgreSql baru untuk mengizinkan semua IP.
 ## PARAMETERS
 
 ### -AllowAll
-Sajikan untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
+Hadir untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal aturan firewall server.
-Harus berupa format IPv4.
+Klien menentukan IP tunggal dari aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus berupa format IPv4.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -163,10 +166,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall server.
 Jika tidak ditentukan, defaultnya tidak ditentukan.
-Jika AllowAll ada, nama defaultnya AllowAll_yyyy-MM-dd_HH-mm-ss.
+Jika AllowAll ada, nama defaultnya adalah AllowAll_yyyy-MM-dd_HH-mm-ss.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -227,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartIPAddress
-Alamat IP mulai aturan firewall server.
-Harus berupa format IPv4.
+Alamat IP awal aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -257,8 +260,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

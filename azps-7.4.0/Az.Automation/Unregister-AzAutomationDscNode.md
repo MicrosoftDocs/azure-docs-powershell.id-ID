@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/unreg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Unregister-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Unregister-AzAutomationDscNode.md
-ms.openlocfilehash: bf4c574a138357da96cd8b241348180361780181
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09d54b751e3de18f6ec3205c41c3de6b782276e8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614732"
 ---
 # Unregister-AzAutomationDscNode
 
 ## SYNOPSIS
-Menghapus simpul DSC dari manajemen oleh akun Otomatisasi.
+Menghapus simpul DSC dari manajemen oleh akun Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/unregister-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,21 +30,21 @@ Unregister-AzAutomationDscNode -Id <Guid> [-Force] [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Unregister-AzAutomationDscNode** menghapus simpul APS Desired State Configuration (DSC) dari manajemen oleh akun Azure Automation.
+Cmdlet **Unregister-AzAutomationDscNode** menghapus simpul Konfigurasi Status yang Diinginkan (DSC) APS dari manajemen oleh akun Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus simpul DSC Azure dari manajemen oleh akun Otomatisasi
+### Contoh 1: Menghapus simpul Azure DSC dari manajemen oleh akun Automation
 ```
 PS C:\>Unregister-AzAutomationDscNode -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -Id 064a8929-c98b-25e4-80hh-111ca86067j8
 ```
 
-Perintah ini menghapus simpul DSC yang memiliki GUID tertentu dari manajemen oleh akun Otomatisasi bernama Contoso17.
+Perintah ini menghapus simpul DSC yang memiliki GUID yang ditentukan dari manajemen oleh akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menghapus simpul DSC.
+Menentukan nama akun Automation tempat cmdlet ini menghapus simpul DSC.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membatalkan pendaftaran simpul DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini membatalkan pendaftaran simpul DSC.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

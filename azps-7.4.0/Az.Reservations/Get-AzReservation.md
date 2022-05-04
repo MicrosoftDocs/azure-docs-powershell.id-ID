@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
-ms.openlocfilehash: 374df43c52226cf22c1df2cfed86a94f7245d954
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 94a0a6f16c6b3d923f004bd0a472cd8f20c32fbc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276021"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606595"
 ---
 # Get-AzReservation
 
 ## SYNOPSIS
-Dapatkan `Reservation`pesanan dalam pemesanan tertentu
+Dapatkan `Reservation`dalam Pesanan reservasi tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzReservation [-ReservationOrderPage <PSReservationOrderPage>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Daftar `Reservation`s dalam satu `ReservationOrder`.
+Daftar `Reservation`dalam satu `ReservationOrder`.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Daftar `Reservation`s dalam satu `ReservationOrder`.
 Get-AzReservation -ReservationOrderId "1111aaaa-b1b2-c0c2-d0d2-00000fffff"
 ```
 
-Daftar `Reservation`s dalam .`ReservationOrder`
+Daftar `Reservation`s dalam yang ditentukan `ReservationOrder`.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Id dari untuk `Reservation` melihat
+Id dari yang `Reservation` akan dilihat
 
 ```yaml
 Type: System.Guid
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-Id dari `ReservationOrder` yang berisi `Reservation`. Diperlukan.
+Id yang `ReservationOrder` berisi `Reservation`. Wajib diisi.
 
 ```yaml
 Type: System.Guid
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

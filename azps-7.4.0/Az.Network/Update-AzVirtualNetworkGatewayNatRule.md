@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualNetworkGatewayNatRule.md
-ms.openlocfilehash: 770318dd01cce4e4fab8f0190c8754ace0a1b72f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3e6980862b0ff652ac7978e823705ada85968f74
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870372"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619844"
 ---
 # Update-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
 Memperbarui Virtual Network Gateway NatRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzVirtualNetworkGatewayNatRule -InputObject <PSVirtualNetworkGatewayNatRu
 ```
 
 ## DESCRIPTION
-**Pembaruan-AzVirtualNetworkGatewayNatRule** cmdlet mengatur atau memperbarui aturan nat gateway jaringan virtual.
+**Cmdlet Update-AzVirtualNetworkGatewayNatRule** mengatur atau memperbarui aturan nat gateway jaringan virtual.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Etag              : W/"5150d788-e165-42ba-99c4-8138a545fce9"
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalMapping
-Daftar pemetaan eksternal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan eksternal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VirtualNetworkGatewayNatRule untuk diperbarui.
+Objek VirtualNetworkGatewayNatRule yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayNatRule
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalMapping
-Daftar pemetaan internal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan internal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigurationId
-ID Konfigurasi IP aturan NAT ini berlaku untuk
+ID Konfigurasi IP yang berlaku untuk aturan NAT ini
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VirtualNetworkGatewayNatRule untuk diperbarui.
+Id sumber daya objek VirtualNetworkGatewayNatRule yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -256,8 +259,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

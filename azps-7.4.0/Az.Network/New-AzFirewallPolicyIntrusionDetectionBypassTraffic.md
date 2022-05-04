@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
-ms.openlocfilehash: f5a695f67447b4b34e297d3bc6cdd261d51bb6cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b26380c3fe261272eddbf3fcc674b39b71f4e8de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996913"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144620006"
 ---
 # New-AzFirewallPolicyIntrusionDetectionBypassTraffic
 
 ## SYNOPSIS
-Membuat Azure Firewall Deteksi Penyusupan Kebijakan baru Melewati Pengaturan Lalu Lintas
+Membuat Pengaturan Lalu Lintas Bypass Deteksi Penyusupan Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetectionbypasstraffic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name <String> [-Description
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicyIntrusionDetectionBypassTraffic** membuat Azure Firewall Deteksi Intrusi Kebijakan Melewati Objek Lalu Lintas.
+Cmdlet **New-AzFirewallPolicyIntrusionDetectionBypassTraffic** membuat Deteksi Intrusi Kebijakan Azure Firewall Melewati Objek Lalu Lintas.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ $bypass = New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name "bypass-sett
 New-AzFirewallPolicyIntrusionDetection -Mode "Deny" -BypassTraffic $bypass
 ```
 
-Contoh ini membuat deteksi gangguan dengan melewati pengaturan lalu lintas
+Contoh ini membuat deteksi intrusi dengan melewati pengaturan lalu lintas
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddress
-Daftar alamat IP tujuan atau rentang.
+Daftar alamat atau rentang IP tujuan.
 
 ```yaml
 Type: String[]
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Melewati nama pengaturan.
+### -Name
+Lewati nama pengaturan.
 
 ```yaml
 Type: String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceAddress
-Daftar alamat IP sumber atau rentang.
+Daftar alamat atau rentang IP sumber.
 
 ```yaml
 Type: String[]
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Daftar IpGroups sumber.
+Daftar IpGroup sumber.
 
 ```yaml
 Type: String[]
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,11 +212,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
-ms.openlocfilehash: 4f73ab66aed8ea8b03a1493f12c7163aca4329b3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15c60a91520e8ee224da23921a8c38dfe4f382a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275066"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654572"
 ---
 # Remove-AzPolicyDefinition
 
 ## SYNOPSIS
 Menghapus definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,14 +58,14 @@ Cmdlet **Remove-AzPolicyDefinition** menghapus definisi kebijakan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus definisi kebijakan menurut nama
+### Contoh 1: Menghapus definisi kebijakan berdasarkan nama
 ```powershell
 Remove-AzPolicyDefinition -Name 'VMPolicyDefinition'
 ```
 
 Perintah ini menghapus definisi kebijakan yang ditentukan.
 
-### Contoh 2: Hapus definisi kebijakan menurut ID sumber daya
+### Contoh 2: Menghapus definisi kebijakan menurut ID sumber daya
 ```powershell
 $PolicyDefinition = Get-AzPolicyDefinition -Name 'VMPolicyDefinition' 
 Remove-AzPolicyDefinition -Id $PolicyDefinition.ResourceId -Force
@@ -70,12 +73,12 @@ Remove-AzPolicyDefinition -Id $PolicyDefinition.ResourceId -Force
 
 Perintah pertama mendapatkan definisi kebijakan bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzPolicyDefinition.
 Perintah menyimpannya dalam variabel $PolicyDefinition.
-Perintah kedua menghapus definisi kebijakan yang diidentifikasi oleh properti **ResourceId** dari $PolicyDefinition.
+Perintah kedua menghapus definisi kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicyDefinition.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek definisi kebijakan untuk menghapus yang merupakan output dari cmdlet lain.
+Objek definisi kebijakan untuk dihapus yang merupakan output dari cmdlet lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyDefinition
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan untuk dihapus.
+Nama grup manajemen definisi kebijakan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama definisi kebijakan yang dihapus cmdlet ini.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,8 +225,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

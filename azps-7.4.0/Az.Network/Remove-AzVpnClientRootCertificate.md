@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 4a1c386233abfed11e943a7175c8aa16aaf9083e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b01be66293876bd567dc50388aa9398ed29cbdeb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938287"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619898"
 ---
 # Remove-AzVpnClientRootCertificate
 
 ## SYNOPSIS
-Menghapus sertifikat akar klien VPN yang sudah ada.
+Menghapus sertifikat akar klien VPN yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,10 +30,10 @@ Remove-AzVpnClientRootCertificate -VpnClientRootCertificateName <String> -Virtua
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVpnClientRootCertificate** menghapus sertifikat akar tertentu dari gateway jaringan virtual.
-Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
-Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi tersambung ke gateway.
-Saat Anda menggunakan **Remove-AzVpnClientRootCertificate**, Anda harus memasukkan nama sertifikat dan representasi teks data sertifikat.
+Cmdlet **Remove-AzVpnClientRootCertificate** menghapus sertifikat akar yang ditentukan dari gateway jaringan virtual.
+Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan pada gateway mempercayai sertifikat akar.
+Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan lagi dapat tersambung ke gateway.
+Saat Anda menggunakan **Remove-AzVpnClientRootCertificate**, Anda harus menyediakan nama sertifikat dan representasi teks data sertifikat.
 Untuk informasi selengkapnya tentang representasi teks sertifikat, lihat deskripsi parameter *PublicCertData* .
 
 ## EXAMPLES
@@ -44,7 +47,7 @@ Remove-AzVpnClientRootCertificate -PublicCertData $CertificateText -ResourceGrou
 
 Contoh ini menghapus sertifikat akar klien bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
 Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan dalam variabel bernama $Text.
-Perintah kedua kemudian menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali baris pertama dan baris terakhir.
+Perintah kedua kemudian menggunakan perulangan for untuk mengekstrak semua teks dalam $Text kecuali untuk baris pertama dan baris terakhir.
 Teks yang diekstrak ini disimpan dalam variabel bernama $CertificateText.
 Perintah ketiga menggunakan informasi yang disimpan dalam variabel $CertificateText bersama dengan cmdlet **Remove-AzVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
 
@@ -67,9 +70,9 @@ Accept wildcard characters: False
 
 ### -PublicCertData
 Menentukan representasi teks sertifikat akar yang akan dihapus.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan Base64), lalu buka file yang dihasilkan dalam editor teks.
-Anda akan melihat output yang mirip dengan yang berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- The PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam pengodean .cer (menggunakan Base64), lalu buka file yang dihasilkan di editor teks.
+Anda akan melihat output yang mirip dengan berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang ditunjukkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell yang mirip dengan ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = untuk ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
 Type: System.String
@@ -84,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan virtual ditetapkan.
+Grup sumber daya mengategorikan item untuk membantu menyederhanakan manajemen inventarisasi dan administrasi Azure umum.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

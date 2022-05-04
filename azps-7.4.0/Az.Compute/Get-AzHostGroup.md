@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
-ms.openlocfilehash: 4dc325d39b08ce7b107e1d45ad3332e95f078131
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8437f37fb4be91e9884ef843713913150d57bbda
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809989"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636740"
 ---
 # Get-AzHostGroup
 
 ## SYNOPSIS
-Dapatkan atau daftar host.
+Mendapatkan atau mencantumkan host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azhostgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,9 +34,9 @@ Get-AzHostGroup [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan mendapatkan grup tuan rumah.
+Cmdlet ini akan mendapatkan grup host.
 Cmdlet ini juga mencantumkan semua grup host dalam grup sumber daya jika nama grup host tidak diberikan.
-Cmdlet ini juga mencantumkan semua grup host dalam langganan jika nama grup host maupun nama grup sumber daya tidak diberikan.
+Cmdlet ini juga mencantumkan semua grup host dalam langganan jika nama grup host atau nama grup sumber daya tidak diberikan.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ myrg01                     myhostgroup01   eastus {[key1, val1]}       1
 myrg01                     myhostgroup02   eastus {[key1, val1]}       2
 ```
 
-Perintah ini mengembalikan semua grup host dalam grup sumber daya tertentu.
+Perintah ini mengembalikan semua grup host dalam grup sumber daya yang diberikan.
 
 ### Contoh 3
 ```powershell
@@ -116,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup host.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageVersion.md
-ms.openlocfilehash: bb8a0bf72697ca5bdb9620027773393bb08d8464
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 094ef9f640a5781c0e478d83c1f0a35ae3934eb6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687186"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636920"
 ---
 # Get-AzGalleryImageVersion
 
 ## SYNOPSIS
-Dapatkan atau cantumkan versi gambar galeri.
+Mendapatkan atau mencantumkan versi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgalleryimageversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzGalleryImageVersion [-ResourceId] <String> [-ExpandReplicationStatus]
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan versi gambar galeri.
+Mendapatkan atau mencantumkan versi gambar galeri.
 
 ## EXAMPLES
 
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandReplicationStatus
-Memperlihatkan status replikasi.
+Tampilkan status replikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama versi gambar galeri.
 
 ```yaml
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

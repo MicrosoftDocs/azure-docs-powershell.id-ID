@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/save-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzDeploymentScriptLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzDeploymentScriptLog.md
-ms.openlocfilehash: ef25ec43aea3988c9f56073fa027428fb8a2229e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd684b50b235082f224f95f959ccb4b19c8db783
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867222"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606578"
 ---
 # Save-AzDeploymentScriptLog
 
 ## SYNOPSIS
 Menyimpan log eksekusi skrip penyebaran ke disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/save-azdeploymentscriptlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,14 +52,14 @@ Save-AzDeploymentScriptLog [-DeploymentScriptObject] <PsDeploymentScript> [-Outp
 Save-AzDeploymentScriptLog -Name MyDeploymentScript -ResourceGroupName DS-TestRg -OutputPath C:\Workspace
 ```
 
-Menyimpan log skrip penyebaran dengan nama dan grup sumber daya tertentu.
+Menyimpan log skrip penyebaran dengan nama dan grup sumber daya yang diberikan.
 
 ### Contoh 2
 ```powershell
 Save-AzDeploymentScriptLog -Name MyDeploymentScript -ResourceGroupName DS-TestRg -OutputPath C:\Workspace -Tail 3
 ```
 
-Menyimpan 3 baris terakhir dari log skrip penyebaran dengan nama dan grup sumber daya tertentu.
+Menyimpan 3 baris terakhir dari log skrip penyebaran dengan nama dan grup sumber daya yang diberikan.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentScriptObject
-Skrip penyebaran objek PowerShell.
+Objek PowerShell skrip penyebaran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript
@@ -106,8 +109,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa timpa file yang sudah ada.
+### -Force
+Memaksa penimpaan file yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama skrip penyebaran.
 
 ```yaml
@@ -166,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tail
-Batasi output ke n baris terakhir
+### -Ekor
+Batasi output ke baris n terakhir
 
 ```yaml
 Type: System.Int32
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

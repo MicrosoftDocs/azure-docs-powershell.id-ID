@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: df7df8a7a6a2c148e58bb948294716d77fc4c910
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a2e4f5220c4e545e9fdaf9c4d449ce19121ece20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128889"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629760"
 ---
 # Get-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
-Dapatkan asal-usulnya.
+Mendapatkan asalnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzFrontDoorCdnOrigin -ResourceId <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Dapatkan asal-usulnya.
+Mendapatkan asalnya.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Dapatkan asal-usulnya.
 Get-AzFrontDoorCdnOrigin -OriginGroupName $originGroupName -OriginName $originName -ProfileName $profileName -ResourceGroupName $resourceGroupName
 ```
 
-Dapatkan asal-usulnya.
+Mendapatkan asalnya.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroup
-Objek grup asal Pintu Depan Azure.
+Objek grup asal Azure Front Door.
 
 ```yaml
 Type: PSAfdOriginGroup
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup asal Pintu Depan Azure.
+Nama grup asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Nama asal Pintu Depan Azure.
+Nama asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccountKey.md
-ms.openlocfilehash: 6798ed7635c18472ff41a49fa5882e770f772aec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c75fbfc1b6224c52c7c44cde95e7520b0aa4bc07
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686034"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609386"
 ---
 # New-AzCosmosDBAccountKey
 
 ## SYNOPSIS
-Meregenerasi Kunci Akun CosmosDB tertentu.
+Regenerasi Kunci Akun CosmosDB tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzCosmosDBAccountKey [-KeyKind <String>] -InputObject <PSDatabaseAccountGetR
 ```
 
 ## DESCRIPTION
-Buat Akun CosmosDB baru di ResourceGroup tertentu.
+Buat Akun CosmosDB baru di ResourceGroup yang diberikan.
 
 ## EXAMPLES
 
@@ -47,11 +50,11 @@ Buat Akun CosmosDB baru di ResourceGroup tertentu.
 New-AzCosmosDBAccountKey -ResourceGroupName rg -Name dbname
 ```
 
-Kunci baru dibuat untuk Akun dengan nama akun dbname di ResourceGroup rg.
+Kunci baru dihasilkan untuk Akun dengan nama akun dbname di ResourceGroup rg.
 
 ### Contoh 2
 
-Meregenerasi Kunci Akun CosmosDB tertentu. (autogenerasi)
+Regenerasi Kunci Akun CosmosDB tertentu. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -63,7 +66,7 @@ New-AzCosmosDBAccountKey -KeyKind <String> -Name dbname -ResourceGroupName rg
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -KeyKind
 Kunci akses untuk meregenerasi.
-Nilai yang diterima: primer, primaryReadonly, secondary, secondaryReadonly
+Nilai yang diterima: primer, primaryReadonly, sekunder, secondaryReadonly
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -200,11 +203,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

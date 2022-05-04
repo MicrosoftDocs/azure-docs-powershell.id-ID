@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/resume-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Resume-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Resume-AzSqlDatabase.md
-ms.openlocfilehash: e4cf2f94be96a8ae1add6443fe6cc7f2622584ea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d5dc9ff3eb880d72703ba2a6c429c6750a54844
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271917"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630118"
 ---
-# Resume-AzSqlDatabase
+# Melanjutkan-AzSqlDatabase
 
 ## SYNOPSIS
-Melanjutkan database SQL Data Warehouse.
+Melanjutkan database Gudang Data SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/resume-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Resume-AzSqlDatabase** melanjutkan database Gudang Data Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Melanjutkan database Azure SQL Data Warehouse
+### Contoh 1: Melanjutkan database Gudang Data Azure SQL
 ```powershell
 Resume-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
@@ -40,7 +43,7 @@ Perintah ini melanjutkan database Gudang Data Azure SQL yang ditangguhkan.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database yang dilanjutkan cmdlet ini.
+Menentukan nama server yang menghosting database yang dilanjutkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -157,19 +160,19 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## NOTES
-* Cmdlet **Resume-AzSqlDatabase** hanya berfungsi pada database Azure SQL Data Warehouse. Operasi ini tidak didukung pada edisi Azure SQL Database Basic, Standard, dan Premium.
+* Cmdlet **Resume-AzSqlDatabase** hanya berfungsi pada database Gudang Data Azure SQL. Operasi ini tidak didukung pada edisi dasar, standar, dan Premium Azure SQL Database.
 
 ## RELATED LINKS
 
 [Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
-[New-AzSqlDatabase](./New-AzSqlDatabase.md)
+[Baru-AzSqlDatabase](./New-AzSqlDatabase.md)
 
-[Remove-AzSqlDatabase](./Remove-AzSqlDatabase.md)
+[Hapus-AzSqlDatabase](./Remove-AzSqlDatabase.md)
 
 [Set-AzSqlDatabase](./Set-AzSqlDatabase.md)
 
-[Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
+[Menangguhkan-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

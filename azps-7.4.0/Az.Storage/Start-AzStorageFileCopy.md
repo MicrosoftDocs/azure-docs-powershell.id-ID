@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
-ms.openlocfilehash: 2fa7c68031a7fdd8bc39b1cc4287d3b4b7516fd6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd8ef26cc612f02626eaa949e83ef46679678285
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994411"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606506"
 ---
 # Start-AzStorageFileCopy
 
 ## SYNOPSIS
 Mulai menyalin file sumber.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/start-azstoragefilecopy) untuk informasi terbaru.
+
 ## SYNTAX
 
-### NamaPengguna
+### ContainerName
 ```
 Start-AzStorageFileCopy -SrcBlobName <String> -SrcContainerName <String> -DestShareName <String>
  -DestFilePath <String> [-Context <IStorageContext>] [-DestContext <IStorageContext>] [-Force]
@@ -101,11 +104,11 @@ Start-AzStorageFileCopy -AbsoluteUri <String> -DestFile <CloudFile> [-Force] [-S
 
 ## DESCRIPTION
 Cmdlet **Start-AzStorageFileCopy** mulai menyalin file sumber ke file tujuan.
-Cmdlet ini akan memicu asinkron blob copy, proses salin ditangani oleh server. Jika ini adalah salinan blob lintas akun, tidak ada SLA untuk salinan blob.
+Cmdlet ini akan memicu salinan blob asinkron, proses penyalinan ditangani oleh server. Jika ini adalah salinan blob lintas akun, tidak ada SLA untuk salinan blob.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai operasi salin dari file ke file menggunakan nama berbagi dan nama file
+### Contoh 1: Mulai salin operasi dari file ke file dengan menggunakan nama berbagi dan nama file
 ```
 PS C:\>Start-AzStorageFileCopy -SrcShareName "ContosoShare01" -SrcFilePath "FilePath01" -DestShareName "ContosoShare02" -DestFilePath "FilePath02"
 ```
@@ -124,7 +127,7 @@ Perintah menentukan nama kontainer dan nama blob
 ## PARAMETERS
 
 ### -AbsoluteUri
-Menentukan URI dari file sumber.
+Menentukan URI file sumber.
 Jika lokasi sumber memerlukan kredensial, Anda harus menyediakannya.
 
 ```yaml
@@ -140,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -157,9 +160,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
 
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 
 ### -DestFile
 Menentukan objek **CloudFile** .
-Anda dapat membuat file cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageFile.
+Anda dapat membuat file cloud atau mendapatkannya dengan menggunakan cmdlet Get-AzStorageFile.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestFilePath
-Menentukan jalur berkas tujuan relatif terhadap berbagi tujuan.
+Menentukan jalur file tujuan relatif terhadap berbagi tujuan.
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 
 ### -SrcBlob
 Menentukan objek **CloudBlob** .
-Anda dapat membuat blob cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageBlob.
+Anda dapat membuat blob cloud atau mendapatkannya dengan menggunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcContainerName
-Menentukan nama wadah sumber.
+Menentukan nama kontainer sumber.
 
 ```yaml
 Type: System.String
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 
 ### -SrcFile
 Menentukan objek **CloudFile** .
-Anda dapat membuat file cloud atau mendapatkannya menggunakan **Get-AzStorageFile**.
+Anda dapat membuat file cloud atau mendapatkannya dengan menggunakan **Get-AzStorageFile**.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFilePath
-Menentukan jalur file sumber yang relatif terhadap direktori sumber atau sumber berbagi.
+Menentukan jalur file sumber yang relatif terhadap direktori sumber atau berbagi sumber.
 
 ```yaml
 Type: System.String
@@ -392,8 +395,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcShare
-Menentukan objek berbagi file awan.
-Anda dapat membuat berbagi file cloud atau mendapatkannya menggunakan cmdlet Get-AzStorageShare.
+Menentukan objek berbagi file cloud.
+Anda dapat membuat berbagi file cloud atau mendapatkannya dengan menggunakan cmdlet Get-AzStorageShare.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -422,8 +425,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -438,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -472,9 +475,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageBlob](./Get-AzStorageBlob.md)
+[Dapatkan-BlobPenyimpananAz](./Get-AzStorageBlob.md)
 
-[Get-AzStorageContainer](./Get-AzStorageContainer.md)
+[Dapatkan-AzStorageContainer](./Get-AzStorageContainer.md)
 
 [Get-AzStorageFile](./Get-AzStorageFile.md)
 

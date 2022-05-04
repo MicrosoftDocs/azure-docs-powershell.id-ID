@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
-ms.openlocfilehash: a9f88b028c117cd011a749556274a2b33acf61d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: caa309d1ebfc959d8c9db5450bb8cf9243b8c934
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270802"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613238"
 ---
 # New-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzStorageSyncGroup [-ParentResourceId] <String> -Name <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menjelaskan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan file apa pun yang disimpan dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir awan, yang mereferensikan berbagi file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu di server terdaftar.
+Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menggambarkan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan file apa pun yang disimpan dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir cloud, yang mereferensikan berbagi file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu di server terdaftar.
 
 ## EXAMPLES
 
@@ -66,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama GrupSinkronkan.
+### -Name
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-StorageSyncService Parent Resource Id
+Id Sumber Daya Induk StorageSyncService
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

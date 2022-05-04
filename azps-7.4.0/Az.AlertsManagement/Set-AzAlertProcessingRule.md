@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzAlertProcessingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzAlertProcessingRule.md
-ms.openlocfilehash: 4e469a570915550c8d7409e11ecea24e3630b8ea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d28f1f2318c6d32847d928b201d0c7ad115089e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688608"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605984"
 ---
 # Set-AzAlertProcessingRule
 
 ## SYNOPSIS
 Membuat atau memperbarui aturan pemrosesan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/set-azalertprocessingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Set-AzAlertProcessingRule -InputObject <PSAlertProcessingRule> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-**Set-AzAlertProcessingRule** membuat atau memperbarui aturan pemrosesan peringatan.
+**Set-AzAlertProcessingRule** membuat atau memperbarui aturan pemrosesan pemberitahuan.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ Set-AzAlertProcessingRule -ResourceGroupName "test-rg" -Name "AddActionGroupsByS
 /subscriptions/MySubscriptionId/resourceGroups/MyResourceGroup2/providers/microsoft.insights/actionGroups/MyActionGroup2" -MonitorServiceCondition "Equals:Sev0,Sev1"
 ```
 
-Cmdlet ini membuat aturan yang menambahkan dua grup tindakan ke semua peringatan Sev0 dan Sev1
+Cmdlet ini membuat aturan yang menambahkan dua grup tindakan ke semua pemberitahuan Sev0 dan Sev1
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Aturan Pemrosesan Pemberitahuan
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertProcessingRuleType
-Tipe aturan Pemrosesan Pemberitahuan. Nilai yang diperbolehkan: AddActionGroups, RemoveAllActionGroups.
+Jenis aturan Pemrosesan Pemberitahuan. Nilai yang diizinkan: AddActionGroups, RemoveAllActionGroups.
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Daftar ID sumber daya, Daftar nilai yang dipisahkan koma Aturan akan berlaku untuk pemberitahuan yang diterapkan pada sumber daya dalam lingkup tersebut
+### -Cakupan
+Daftar ID sumber daya, daftar nilai yang dipisahkan koma Aturan akan berlaku untuk pemberitahuan yang diaktifkan pada sumber daya dalam cakupan tersebut
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActionGroupId
-Id Grup Tindakan yang akan diberi tahu, Koma memisahkan daftar nilai Diperlukan hanya jika tipe aturan pemrosesan pemberitahuan adalah AddActionGroups.
+Id Grup Tindakan yang akan diberi tahu, Daftar nilai yang dipisahkan koma Diperlukan hanya jika jenis aturan pemrosesan pemberitahuan adalah AddActionGroups.
 
 
 ```yaml
@@ -169,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Menunjukkan apakah aturan pemrosesan pemberitahuan yang diberikan diaktifkan atau dinonaktifkan (default diaktifkan).  Nilai yang diperbolehkan: False, True.
+### -Diaktifkan
+Tunjukkan apakah aturan pemrosesan pemberitahuan yang diberikan diaktifkan atau dinonaktifkan (default diaktifkan).  Nilai yang diizinkan: False, True.
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept wildcard characters: False
 
 ### -Tag
 Tag aturan Pemrosesan Pemberitahuan.
-Misalnya.
-@{"tag1" = "key1";" tag2" = "key2"} Gunakan {} untuk menghapus tag yang sudah ada. 
+Misalnya
+@{"tag1" = "key1";" tag2" = "key2"} Gunakan {} untuk menghapus tag yang ada. 
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterAlertContext
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya. Berisi:smartgroups
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg. Berisi:smartgroups
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterAlertRuleId
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
-Sama dengan:/subscriptions/MySubscriptionId/resourceGroups/abvarma/providers/microsoft.insights/metricAlerts/test-mrmc-vm-abvarma
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
+Equals:/subscriptions/MySubscriptionId/resourceGroups/abvarma/providers/microsoft.insights/metricAlerts/test-mrmc-vm-abvarma
 
 ```yaml
 Type: System.String
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterAlertRuleName
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
-Sama dengan:ARM Name Test1,ARM Name Test2
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
+Equals:ARM Name Test1,ARM Name Test2
 ```yaml
 Type: System.String
 Parameter Sets: BySimplifiedFormatActionGroupAlertProcessingRule, BySimplifiedFormatSuppressionAlertProcessingRule
@@ -248,8 +251,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterDescription
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
-Berisi:Peringatan Uji
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
+Contains:Test Alert
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterMonitorCondition
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
 NotEquals:Resolved
 
 ```yaml
@@ -280,8 +283,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterMonitorService
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
-Sama dengan:Platform,Log Analytics
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
+Equals:Platform,Log Analytics
 
 ```yaml
 Type: System.String
@@ -296,8 +299,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterSeverity
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} keparahan: salah satu <Sev0, Sev1, Sev2, Sev3, Sev4>.
-Misalnya.
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} tingkat keparahan: salah satu <Sev0, Sev1, Sev2, Sev3, Sev4>.
+Misalnya
 Sama dengan:Sev0,Sev1
 
 ```yaml
@@ -313,8 +316,8 @@ Accept wildcard characters: False
 ```
 
 ### -FilterTargetResource
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
-Sama dengan:mySQLDataBaseName
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
+Equals:mySQLDataBaseName
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterTargetResourceType
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
 Berisi:Virtual Machines,akun Storage
 
 ```yaml
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterTargetResourceGroup
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
 NotEquals:/subscriptions/\<subscriptionID\>/resourceGroups/test
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilterSignalType
-Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Sama Dengan, NotEquals, Berisi, DoesNotContain> Untuk misalnya.
+Format yang diharapkan - operasi {\<operation\>:\<comma separated list of values\>}: salah satu dari <Equals, NotEquals, Contains, DoesNotContain> For eg.
 Sama dengan:Metrik
 
 ```yaml
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleStartDateTime
-Waktu Mulai Tanggal. Format 2022-09-21 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Tanggal Mulai. Format 2022-09-21 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleEndDateTime
-Waktu Tanggal Berakhir. Format 2022-09-21 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Tanggal Selesai. Format 2022-09-21 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -439,8 +442,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurenceDaysOfWeek
-Daftar nilai pola pengulangan Format yang diharapkan Untuk tipe pengulangan mingguan.
-daftar nilai yang dipisahkan koma Untuk misalnya. Senin,Sabtu
+Daftar nilai pola pengulangan Format yang diharapkan Untuk jenis pengulangan mingguan.
+daftar nilai yang dipisahkan koma Misalnya. Senin, Sabtu
 
 ```yaml
 Type: System.String
@@ -455,8 +458,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurenceDaysOfMonth
-Daftar nilai pola pengulangan Format yang diharapkan Untuk tipe pengulangan bulanan.
-daftar nilai yang dipisahkan koma Untuk misalnya. 1,3,12
+Daftar nilai pola pengulangan Format yang diharapkan Untuk jenis pengulangan bulanan.
+daftar nilai yang dipisahkan koma Misalnya. 1,3,12
 
 ```yaml
 Type: System.String
@@ -471,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurenceStartTime
-Waktu Mulai Pengulangan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Mulai Ketepatan Ulang di zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurenceEndTime
-Waktu Mulai Pengulangan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Mulai Ketepatan Ulang di zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -517,8 +520,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2DaysOfWeek
-Daftar nilai pola pengulangan Format yang diharapkan Untuk tipe pengulangan mingguan.
-daftar nilai yang dipisahkan koma Untuk misalnya. Senin,Sabtu
+Daftar nilai pola pengulangan Format yang diharapkan Untuk jenis pengulangan mingguan.
+daftar nilai yang dipisahkan koma Misalnya. Senin, Sabtu
 
 ```yaml
 Type: System.String
@@ -533,8 +536,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2DaysOfMonth
-Daftar nilai pola pengulangan Format yang diharapkan Untuk tipe pengulangan bulanan.
-daftar nilai yang dipisahkan koma Untuk misalnya. 1,3,12
+Daftar nilai pola pengulangan Format yang diharapkan Untuk jenis pengulangan bulanan.
+daftar nilai yang dipisahkan koma Misalnya. 1,3,12
 
 ```yaml
 Type: System.String
@@ -549,7 +552,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2StartTime
-Waktu Mulai Pengulangan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Mulai Keakuratan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan, atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -564,7 +567,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2EndTime
-Waktu Mulai Pengulangan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
+Waktu Mulai Keakuratan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan, atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -609,8 +612,8 @@ Accept wildcard characters: False
 ```
 
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -625,7 +628,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -640,7 +643,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

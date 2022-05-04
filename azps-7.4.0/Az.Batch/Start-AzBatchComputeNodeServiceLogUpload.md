@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/Start-AzBa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
-ms.openlocfilehash: dbc0441b9e0ea1b52a0ee2584a048a8be02e30d3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fb85b891837967b0e21ef99538c3bebd1400f52e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232389"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589968"
 ---
 # Start-AzBatchComputeNodeServiceLogUpload
 
 ## SYNOPSIS
-Upload file log layanan simpul komputasi ke wadah Azure Storage.
+Upload file log layanan simpul komputasi ke kontainer Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/start-azbatchcomputenodeservicelogupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Start-AzBatchComputeNodeServiceLogUpload [-ComputeNode] <PSComputeNode> [-Contai
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengumpulkan file log layanan Azure Batch dari simpul komputasi jika Anda mengalami kesalahan dan ingin meningkatkan ke dukungan Azure. File log layanan Azure Batch harus dibagikan dengan dukungan Azure untuk membantu dalam men-debug masalah dengan layanan Batch. 
+Cmdlet ini mengumpulkan Azure Batch file log layanan dari simpul komputasi jika Anda mengalami kesalahan dan ingin meningkatkan ke dukungan Azure. File log layanan Azure Batch harus dibagikan dengan dukungan Azure untuk membantu dalam men-debug masalah dengan layanan Batch. 
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     4 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id pool dari pool tempat simpul komputasi berada, dan id node komputasi.
+Upload log layanan simpul komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id kumpulan dari kumpulan tempat simpul komputasi berada, dan id simpul komputasi.
 
 ### Contoh 2
 ```powershell
@@ -77,7 +80,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id kumpulan dari kumpulan tempat simpul komputasi berada, dan id node komputasi.
+Upload log layanan simpul komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id kumpulan kumpulan tempat simpul komputasi berada, dan id simpul komputasi.
 
 ### Contoh 3
 ```powershell
@@ -94,15 +97,15 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek simpul komputasi.
+Upload log layanan simpul komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek simpul komputasi.
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
-Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Instans BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
+Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
+Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai log layanan untuk diunggah.
+Waktu mulai log layanan yang akan diunggah.
 
 ```yaml
 Type: System.DateTime
@@ -222,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: aa9c63fb4a490593d744e054e16996438b39cc14
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3f1ea596db8fd57309fcbe90d3d19cb5441e5e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613292"
 ---
 # Set-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
-Mengubah konfigurasi Grup failover Azure SQL Database.
+Memodifikasi konfigurasi Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzSqlDatabaseFailoverGroup [-ServerName] <String> [-FailoverGroupName] <Stri
 ```
 
 ## DESCRIPTION
-Perintah ini mengubah konfigurasi Grup Failover Azure SQL Database.
+Perintah ini memodifikasi konfigurasi Grup Failover Azure SQL Database.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 Untuk mengontrol kumpulan database dalam grup, gunakan 'Add-AzSqlDatabaseToFailoverGroup' dan 'Remove-AzSqlDatabaseFromFailoverGroup' sebagai gantinya.
 Selama pratinjau fitur Grup Failover, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
@@ -46,12 +49,12 @@ Mengatur kebijakan failover Grup Failover ke 'Otomatis.'
 $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg | Set-AzSqlDatabaseFailoverGroup -FailoverPolicy Manual
 ```
 
-Mengatur kebijakan failover Grup Failover ke 'Manual' dengan mempipa dalam Grup Failover.
+Mengatur kebijakan failover Grup Failover ke 'Manual' dengan melakukan piping di Grup Failover.
 
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary
-Apakah pemadaman pada server sekunder harus memicu failover otomatis titik akhir baca-saja.
+Apakah pemadaman pada server sekunder harus memicu failover otomatis dari titik akhir baca-saja.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AllowReadOnlyFailoverToPrimary
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup failover Azure SQL Database.
+Nama Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover grup Azure SQL Database Failover.
+Kebijakan failover grup failover Azure SQL Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.FailoverPolicy
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika terjadi pemadaman di server utama. Ini menunjukkan bahwa Azure SQL Database tidak akan memulai failover otomatis sebelum masa tenggang kedaluwarsa. Harap diperhatikan bahwa operasi failover dengan opsi AllowDataLoss dapat menyebabkan hilangnya data karena sifat sinkronisasi asinkron.
+Interval sebelum failover otomatis dimulai jika pemadaman terjadi di server utama. Ini menunjukkan bahwa Azure SQL Database tidak akan memulai failover otomatis sebelum masa tenggang berakhir. Harap dicatat bahwa operasi failover dengan opsi AllowDataLoss dapat menyebabkan hilangnya data karena sifat sinkronisasi asinkron.
 
 ```yaml
 Type: System.Int32
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -172,15 +175,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
+[Baru-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
 
-[Get-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
+[Dapatkan-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
 
-[Add-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
+[Tambahkan-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFromFailoverGroup](./Remove-AzSqlDatabaseFromFailoverGroup.md)
 
-[Switch-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
+[Alihkan-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
-ms.openlocfilehash: 2bc466dfea54e7201147cfe88d8782bdd83467f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8d4242ba9fadd7c7d889a999578e5f7e5e77bfa0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285327"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144608828"
 ---
 # Get-AzKeyVaultKey
 
 ## SYNOPSIS
-Mendapatkan kunci Key Vault. Harap diperhatikan bahwa informasi mendetail tentang kunci, seperti tipe kunci atau ukuran kunci, hanya tersedia saat membuat kueri versi kunci tertentu.
+Mendapatkan kunci Key Vault. Harap dicatat bahwa informasi terperinci tentang kunci, seperti jenis kunci atau ukuran kunci, hanya tersedia saat mengkueri versi kunci tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,12 +132,12 @@ Get-AzKeyVaultKey -HsmResourceId <String> [-Name] <String> [-IncludeVersions] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultKey** mendapatkan tombol Key Vault Azure.
-Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** dalam kubah kunci atau versi.
+Cmdlet **Get-AzKeyVaultKey** mendapatkan kunci Azure Key Vault.
+Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** dalam brankas kunci atau versi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kunci dalam kubah kunci
+### Contoh 1: Dapatkan semua kunci dalam brankas kunci
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso'
 ```
@@ -165,9 +168,9 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mendapatkan semua kunci di kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua kunci di brankas kunci bernama Contoso.
 
-### Contoh 2: Dapatkan versi kunci saat ini
+### Contoh 2: Mendapatkan versi kunci saat ini
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso' -KeyName 'test1'
 ```
@@ -188,9 +191,9 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mendapatkan versi saat ini dari kunci bernama test1 di kubah kunci bernama Contoso.
+Perintah ini mendapatkan versi kunci saat ini bernama test1 di brankas kunci bernama Contoso.
 
-### Contoh 3: Dapatkan semua versi kunci
+### Contoh 3: Mendapatkan semua versi kunci
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso' -KeyName 'test1' -IncludeVersions
 ```
@@ -221,7 +224,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mendapatkan semua versi kunci bernama ITPfx dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua versi kunci bernama ITPfx di brankas kunci bernama Contoso.
 
 ### Contoh 4: Mendapatkan versi kunci tertentu
 ```powershell
@@ -244,10 +247,10 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mendapatkan versi tertentu dari kunci bernama test1 di kubah kunci bernama Contoso.
+Perintah ini mendapatkan versi tertentu dari kunci bernama test1 di brankas kunci bernama Contoso.
 Setelah menjalankan perintah ini, Anda dapat memeriksa berbagai properti kunci dengan menavigasi objek $Key.
 
-### Contoh 5: Dapatkan semua kunci yang telah dihapus tetapi tidak dihapus untuk kubah kunci ini
+### Contoh 5: Dapatkan semua kunci yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso' -InRemovedState
 ```
@@ -267,9 +270,9 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini mendapatkan semua kunci yang telah dihapus sebelumnya, tetapi tidak dibersihkan, dalam kubah kunci bernama Contoso.
+Perintah ini mendapatkan semua kunci yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
 
-### Contoh 6: Mendapatkan kunci ITPfx yang telah dihapus tetapi tidak dibersihkan untuk kubah kunci ini.
+### Contoh 6: Mendapatkan ITPfx kunci yang telah dihapus tetapi tidak dihapus menyeluruh untuk brankas kunci ini.
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso' -KeyName 'test3' -InRemovedState
 ```
@@ -289,10 +292,10 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini mendapatkan uji kunci3 yang telah dihapus sebelumnya, tetapi tidak dibersihkan, di kubah kunci bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal kunci yang dihapus ini.
+Perintah ini mendapatkan uji kunci3 yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal dari kunci yang dihapus ini.
 
-### Contoh 7: Dapatkan semua kunci dalam kubah kunci menggunakan pemfilteran
+### Contoh 7: Dapatkan semua kunci dalam brankas kunci menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultKey -VaultName 'contoso' -KeyName "test*"
 ```
@@ -323,7 +326,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mendapatkan semua kunci di kubah kunci bernama Contoso yang dimulai dengan "test".
+Perintah ini mendapatkan semua kunci di brankas kunci bernama Contoso yang dimulai dengan "test".
 
 ### Contoh 8: Mengunduh kunci publik sebagai file .pem
 
@@ -332,8 +335,8 @@ $path = "D:\public.pem"
 Get-AzKeyVaultKey -VaultName $vaultName -KeyName $keyName -OutFile $path
 ```
 
-Anda dapat mengunduh kunci publik kunci RSA dengan menentukan `-OutFile` parameter.
-Ini adalah salah satu langkah mengimpor kunci yang dilindungi HSM ke Azure Key Vault. Melihat https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys
+Anda dapat mengunduh kunci publik kunci RSA dengan menentukan `-OutFile` parameter .
+Ini adalah salah satu langkah mengimpor kunci yang dilindungi HSM ke Azure Key Vault. Lihat https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys
 
 ## PARAMETERS
 
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
+Nama HSM. Cmdlet membangun FQDN dari HSM terkelola berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -399,9 +402,9 @@ Accept wildcard characters: False
 
 ### -IncludeVersions
 Menunjukkan bahwa cmdlet ini mendapatkan semua versi kunci.
-Versi kunci saat ini adalah versi pertama dalam daftar.
-Jika menentukan parameter ini, Anda juga harus menentukan parameter *Name* dan *VaultName* .
-Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini akan mendapatkan versi kunci saat ini dengan *Nama* yang ditentukan.
+Versi kunci saat ini adalah yang pertama dalam daftar.
+Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter *Nama* dan *VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini mendapatkan versi kunci saat ini dengan *Nama* yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan menampilkan tombol yang dihapus sebelumnya dalam output
+Menentukan apakah akan menampilkan kunci yang dihapus sebelumnya dalam output
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -445,7 +448,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama bundel kunci yang akan didapatkan.
 
 ```yaml
@@ -473,7 +476,7 @@ Accept wildcard characters: True
 ```
 
 ### -OutFile
-Menentukan berkas output tempat cmdlet ini menyimpan kunci. Kunci publik disimpan dalam format PEM secara default.
+Menentukan file output tempat cmdlet ini menyimpan kunci. Kunci umum disimpan dalam format PEM secara default.
 
 ```yaml
 Type: System.String
@@ -503,8 +506,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci tempat cmdlet ini mendapatkan kunci.
-Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan yang Anda pilih.
+Menentukan nama brankas kunci tempat cmdlet ini mendapatkan kunci.
+Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari brankas kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan yang Anda pilih.
 
 ```yaml
 Type: System.String
@@ -520,7 +523,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi kunci.
-Cmdlet ini menyusun FQDN kunci berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama kunci, dan versi kunci.
+Cmdlet ini membangun FQDN kunci berdasarkan nama brankas kunci, lingkungan yang saat ini Anda pilih, nama kunci, dan versi kunci.
 
 ```yaml
 Type: System.String
@@ -535,7 +538,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -559,6 +562,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzKeyVaultKey](./Add-AzKeyVaultKey.md)
 
-[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 
 [Batalkan-AzKeyVaultKeyRemoval](./Undo-AzKeyVaultKeyRemoval.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
-ms.openlocfilehash: cf21cba82a5db7f1a02575845cae7d5f2e84cd0d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 281fc6781b396cf7674c382f9df21b4a133e56b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800388"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630406"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMSecret
 
 ## SYNOPSIS
 Tambahkan rahasia sertifikat ke jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Add-AzServiceFabricManagedNodeTypeVMSecret [-ResourceGroupName] <String> [-Clust
 ```
 
 ## DESCRIPTION
-Tambahkan rahasia sertifikat ke jenis node. Rahasia harus disimpan dalam Key Vault Azure. Untuk informasi selengkapnya terkait Key Vault, lihat Apa itu Azure Key Vault? (https://azure.microsoft.com/en-us/documentation/articles/key-vault-whatis/). Untuk informasi selengkapnya tentang cmdlet, lihat Cmdlet Azure Key Vault (/powershell/module/az.keyvault/) di pustaka Microsoft Developer Network atau cmdlet Set-AzKeyVaultSecret.
+Tambahkan rahasia sertifikat ke jenis node. Rahasia harus disimpan dalam Key Vault Azure. Untuk informasi selengkapnya yang berkaitan dengan Key Vault, lihat Apa itu Azure Key Vault? (https://azure.microsoft.com/en-us/documentation/articles/key-vault-whatis/). Untuk informasi selengkapnya tentang cmdlet, lihat Cmdlet Azure Key Vault (/powershell/module/az.keyvault/) di pustaka Microsoft Developer Network atau cmdlet Set-AzKeyVaultSecret.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ### -CertificateUrl
 Ini adalah URL sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
 Untuk menambahkan rahasia ke Key Vault, lihat \[Menambahkan kunci atau rahasia ke brankas\] kunci(https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add).
-Dalam hal ini, sertifikat Anda harus Berupa Pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\>\<br\> {\<br\>  "data":"\<Base64-encoded-certificate\>",\<br\>  "dataType":"pfx",\<br\>  "password":"\<pfx-file-password\>"\<br\>}/
+Dalam hal ini, sertifikat Anda harus berupa Pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\>\<br\> {\<br\>  "data":"\<Base64-encoded-certificate\>",\<br\>  "dataType":"pfx",\<br\>  "password":"\<pfx-file-password\>"\<br\>}/
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Tentukan nama jenis node.
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyRetentionRuleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyRetentionRuleClientObject.md
-ms.openlocfilehash: cd48c464bb0c965bc1d64dc1820ce9edc11058f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bb6d8f2d13dab0b6076a9d788a87c9d55e9f0875
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288261"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636380"
 ---
 # Edit-AzDataProtectionPolicyRetentionRuleClientObject
 
 ## SYNOPSIS
 Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicyretentionruleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 

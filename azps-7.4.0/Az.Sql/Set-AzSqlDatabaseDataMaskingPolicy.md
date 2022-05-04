@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingPolicy.md
-ms.openlocfilehash: 96296421eff723624c46b524b810c845a2f8edf9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3e570afec4eee69efd4e43dcb92aa4e9fbe819ce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306657"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654374"
 ---
-# Set-AzSqlDatabaseDataMaskingPolicy
+# Get-AzSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
 Mengatur masking data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasedatamaskingpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,16 +30,16 @@ Set-AzSqlDatabaseDataMaskingPolicy [-PassThru] [-PrivilegedUsers <String>] [-Dat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseDataMaskingPolicy** mengatur kebijakan masking data untuk database Azure SQL.
+Cmdlet **Set-AzSqlDatabaseDataMaskingPolicy** menetapkan kebijakan masking data untuk database Azure SQL.
 Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
 Anda dapat mengatur parameter *DataMaskingState* untuk menentukan apakah operasi masking data diaktifkan atau dinonaktifkan.
-Jika cmdlet berhasil dan parameter *PassThru* digunakan, cmdlet mengembalikan objek yang menjelaskan kebijakan masking data saat ini selain pengidentifikasi database.
-Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
+Jika cmdlet berhasil dan parameter *PassThru* digunakan, itu mengembalikan objek yang menjelaskan kebijakan masking data saat ini selain pengidentifikasi database.
+Pengidentifikasi database mencakup, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kebijakan penyembunyian data untuk database
+### Contoh 1: Mengatur kebijakan masking data untuk database
 ```powershell
 Set-AzSqlDatabaseDataMaskingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -PrivilegedUsers "public" -DataMaskingState "Enabled"
 ```
@@ -46,7 +49,7 @@ Perintah ini mengatur kebijakan masking data untuk database bernama database01 d
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database tempat kebijakan diatur.
+Menentukan nama database tempat kebijakan ditetapkan.
 
 ```yaml
 Type: System.String
@@ -61,10 +64,10 @@ Accept wildcard characters: False
 ```
 
 ### -DataMaskingState
-Menentukan apakah operasi penyempurnaan data diaktifkan atau dinonaktifkan.
+Menentukan apakah operasi masking data diaktifkan atau dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan
-- Dinonaktifkan Nilai default diaktifkan.
+- Aktif
+- Dinonaktifkan Nilai default Diaktifkan.
 
 ```yaml
 Type: System.String
@@ -111,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivilegedUsers
-Menentukan daftar ID pengguna yang dipisahkan titik koma.
-Pengguna ini diizinkan untuk menampilkan data masking.
+Menentukan daftar ID pengguna istimewa yang dipisahkan titik koma.
+Pengguna ini diizinkan untuk melihat data masking.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,13 +207,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzSqlDatabaseDataMaskingPolicy](./Get-AzSqlDatabaseDataMaskingPolicy.md)
 
-[Get-AzSqlDatabaseDataMaskingRule](./Get-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./Get-AzSqlDatabaseDataMaskingRule.md)
 
-[New-AzSqlDatabaseDataMaskingRule](./New-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./New-AzSqlDatabaseDataMaskingRule.md)
 
-[Remove-AzSqlDatabaseDataMaskingRule](./Remove-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./Remove-AzSqlDatabaseDataMaskingRule.md)
 
-[Set-AzSqlDatabaseDataMaskingRule](./Set-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./Set-AzSqlDatabaseDataMaskingRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

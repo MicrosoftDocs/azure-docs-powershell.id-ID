@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPathIndex.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPathIndex.md
-ms.openlocfilehash: 0e1b6a5cfed27d93126eef87bd8f8c3f7b22f63f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82ebfcffdb8172ee559f4111c6089914483ee59f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126513"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144609242"
 ---
 # New-AzCosmosDBGremlinIncludedPathIndex
 
 ## SYNOPSIS
-Membuat objek baru tipe PSIndexes. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBGremlinIncludedPath.
+Membuat objek baru jenis PSIndexes. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBGremlinIncludedPath.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinincludedpathindex) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBGremlinIncludedPathIndex -DataType <String> [-Precision <Int32>] -
 ```
 
 ## DESCRIPTION
-Objek yang terkait dengan Gremlin API IncludedPath's Indexes.
+Objek yang sesuai dengan Indeks IncludedPath Gremlin API.
 
 ## EXAMPLES
 
@@ -42,9 +45,9 @@ String          -1 Hash
 
 ## PARAMETERS
 
-### -TipeData
-Tipedata tempat perilaku pengindeksan diterapkan.
-Kemungkinan nilai meliputi: 'String', 'Angka', 'Titik', 'Poligon', 'LineString', 'MultiPolygon'
+### -DataType
+Jenis data tempat perilaku pengindeksan diterapkan.
+Nilai yang mungkin termasuk: 'String', 'Number', 'Point', 'Polygon', 'LineString', 'MultiPolygon'
 
 ```yaml
 Type: System.String
@@ -73,9 +76,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
-Menunjukkan tipe indeks.
-Nilai yang memungkinkan termasuk: 'Hash', 'Rentang', 'Spasial'
+### -Kind
+Menunjukkan jenis indeks.
+Nilai yang mungkin termasuk: 'Hash', 'Range', 'Spatial'
 
 ```yaml
 Type: System.String
@@ -106,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
-ms.openlocfilehash: a5477324950939656b2b9764ad6dfbbd6692fb9d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7bc68bac932b911f4236c01bc45d041631d7fb41
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801756"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587214"
 ---
 # Get-AzResourceProvider
 
 ## SYNOPSIS
 Mendapatkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Locations         : {}
 
 Perintah ini mendapatkan semua penyedia sumber daya dari langganan.
 
-### Contoh 2: Dapatkan semua detail penyedia sumber daya dari ProviderNamespace yang diberikan
+### Contoh 2: Mendapatkan semua detail penyedia sumber daya dari ProviderNamespace yang diberikan
 
 ```powershell
 Get-AzResourceProvider -ProviderNamespace Microsoft.Compute
@@ -149,7 +152,7 @@ Locations         : {East US, East US 2, West US, Central US…}
 
 Perintah ini Mendapatkan semua penyedia sumber daya di bawah "Microsoft.Compute".
 
-### Contoh 3: Dapatkan semua detail penyedia sumber daya dari array ProviderNamespace yang diberikan
+### Contoh 3: Mendapatkan semua detail penyedia sumber daya dari array ProviderNamespace yang diberikan
 
 ```powershell
 Get-AzResourceProvider -ProviderNamespace Microsoft.Compute,Microsoft.Network
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Menentukan ruang nama penyedia sumber daya.
+Menentukan namespace penyedia sumber daya.
 
 ```yaml
 Type: System.String[]
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -331,6 +334,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Register-AzResourceProvider](./Register-AzResourceProvider.md)
 
-[Unregister-AzResourceProvider](./Unregister-AzResourceProvider.md)
+[Batalkan pendaftaran-AzResourceProvider](./Unregister-AzResourceProvider.md)
 
 

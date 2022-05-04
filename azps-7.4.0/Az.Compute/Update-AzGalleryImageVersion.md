@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageVersion.md
-ms.openlocfilehash: 0fac9ec303a8f13bf0c910efd52d16ec6a9a4ae7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 848d2999e18dc67d81a279846f6467f69622f740
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171693"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612626"
 ---
 # Update-AzGalleryImageVersion
 
 ## SYNOPSIS
 Memperbarui versi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azgalleryimageversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Memperbarui versi gambar galeri.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah kawasan replikasi dan jumlah replika
+### Contoh 1: Mengubah wilayah replikasi dan jumlah replika
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -61,9 +64,9 @@ $targetRegions = @($region1,$region2,$region3)
 Update-AzGalleryImageVersion -ResourceGroupName $rgname -GalleryName $galleryName -GalleryImageDefinitionName $imageName -Name $versionName -ReplicaCount 2 -TargetRegion $targetRegions
 ```
 
-Perbarui kawasan versi gambar galeri.
+Memperbarui wilayah versi gambar galeri.
 
-### Contoh 2: Ubah apakah versi gambar harus dipertimbangkan untuk terbaru.
+### Contoh 2: Ubah apakah versi gambar harus dipertimbangkan untuk yang terbaru.
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -73,9 +76,9 @@ $versionName = "1.0.0"
 Update-AzGalleryImageVersion -ResourceGroupName $rgname -GalleryName $galleryName -GalleryImageDefinitionName $imageName -Name $versionName -PublishingProfileExcludeFromLatest:$false
 ```
 
-Perbarui versi gambar galeri dikecualikan dari status terbaru. Untuk menyertakan versi gambar dalam pertimbangan terbaru, gunakan `-PublishingProfileExcludeFromLatest:$false`. Untuk mengecualikan versi gambar dari pertimbangan untuk terbaru, gunakan `-PublishingProfileExcludeFromLatest`.
+Perbarui pengecualian versi gambar galeri dari status terbaru. Untuk menyertakan versi gambar dalam pertimbangan terbaru, gunakan `-PublishingProfileExcludeFromLatest:$false`. Untuk mengecualikan versi gambar dari pertimbangan untuk yang terbaru, gunakan `-PublishingProfileExcludeFromLatest`.
 
-### Contoh 3: Mengubah tanggal berakhir untuk versi gambar.
+### Contoh 3: Ubah tanggal akhir masa pakai untuk versi gambar.
 
 ```powershell
 $rgName = "myResourceGroup"
@@ -86,13 +89,13 @@ $endOfLifeDate = "2024-08-02T00:00:00+00:00"
 Update-AzGalleryImageVersion -ResourceGroupName $rgname -GalleryName $galleryName -GalleryImageDefinitionName $imageName -Name $versionName -PublishingProfileEndOfLifeDate $endOfLifeDate
 ```
 
-Perbarui tanggal berakhirnya versi gambar galeri. Versi gambar masih dapat digunakan untuk membuat mesin virtual setelah tanggal masa berakhir.
+Perbarui tanggal akhir masa pakai versi gambar galeri. Versi gambar masih dapat digunakan untuk membuat komputer virtual setelah tanggal akhir masa pakai.
 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama versi gambar galeri.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileEndOfLifeDate
-Tanggal berakhirnya galeri Versi Gambar.
+Tanggal akhir masa pakai galeri Versi Gambar.
 
 ```yaml
 Type: System.DateTime
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishingProfileExcludeFromLatest
-Jika diatur, Virtual Machines disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
+Jika diatur, Virtual Machines yang disebarkan dari versi terbaru Definisi Gambar tidak akan menggunakan Versi Gambar ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaCount
-Jumlah replika Versi Gambar yang akan dibuat per kawasan.
+Jumlah replika Versi Gambar yang akan dibuat per wilayah.
 
 ```yaml
 Type: System.Int32
@@ -286,8 +289,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
