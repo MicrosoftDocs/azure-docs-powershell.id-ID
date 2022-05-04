@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
-ms.openlocfilehash: b1b6ebe1d7b0572a4eb1b96d3dc0f82f306a691c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6093684cfbe149ee33d24c731984b31ab5b53ebf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940879"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696800"
 ---
 # Get-AzSapMonitor
 
 ## SYNOPSIS
-Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya tertentu.
+Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/get-azsapmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sum
 Get-AzSapMonitor [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzSapMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -36,11 +39,11 @@ Get-AzSapMonitor -InputObject <IHanaOnAzureIdentity> [-DefaultProfile <PSObject>
 ```
 
 ## DESCRIPTION
-Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya tertentu.
+Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua monitor SAP di bawah langganan
+### Contoh 1: Mendapatkan semua monitor SAP di bawah langganan
 ```powershell
 Get-AzSapMonitor
 ```
@@ -54,7 +57,7 @@ westus2  ps-spamonitor-t01 Microsoft.HanaOnAzure/sapMonitors
 
 Perintah ini mendapatkan monitor SAP di bawah langganan.
 
-### Contoh 2: Dapatkan monitor SAP berdasarkan nama
+### Contoh 2: Mendapatkan monitor SAP berdasarkan nama
 ```powershell
 Get-AzSapMonitor -ResourceGroupName nancyc-hn1 -Name ps-spamonitor-t01
 ```
@@ -81,7 +84,7 @@ westus2  ps-spamonitor-t01 Microsoft.HanaOnAzure/sapMonitors
 
 Perintah ini mendapatkan monitor SAP berdasarkan objek.
 
-### Contoh 4: Dapatkan monitor SAP menurut pipeline
+### Contoh 4: Mendapatkan monitor SAP menurut alur
 ```powershell
 @{Id='/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/nancyc-hn1/providers/Microsoft.HanaOnAzure/sapMonitors/ps-spamonitor-t01'} | Get-AzSapMonitor
 ```
@@ -92,7 +95,7 @@ Location Name              Type
 westus2  ps-spamonitor-t01 Microsoft.HanaOnAzure/sapMonitors
 ```
 
-Perintah ini mendapatkan monitor SAP berdasarkan saluran.
+Perintah ini mendapatkan monitor SAP berdasarkan alur.
 
 ## PARAMETERS
 
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya monitor SAP.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -194,15 +197,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi kubah yang dihapus.
+  - `[Location <String>]`: Lokasi vault yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi
   - `[ProviderInstanceName <String>]`: Nama instans penyedia.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya identitas.
   - `[SapMonitorName <String>]`: Nama sumber daya monitor SAP.
-  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
-  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[VaultName <String>]`: Nama kubah
+  - `[Scope <String>]`: Cakupan penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
+  - `[SubscriptionId <String>]`: ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[VaultName <String>]`: Nama vault
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: 42494de4f0525819198c588d0d77ee40d4b8c866
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f7690ce8e9cef43647cfc7a7022fc5465710e297
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628050"
 ---
 # Update-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
 Memperbarui koneksi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopooldataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ Memperbarui koneksi data.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui koneksi data EventHub yang sudah ada
+### Contoh 1: Memperbarui koneksi data EventHub yang ada
 ```powershell
 Update-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name eventhubdc -Location eastus2 -Kind EventHub -EventHubResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.EventHub/namespaces/testeventhubns/eventhubs/testeventhub" -DataFormat "JSON" -ConsumerGroup '$Default' -Compression "None" -TableName "Events" -MappingRuleName "EventsMapping"
 ```
@@ -92,9 +95,9 @@ Kind     Location  Name
 EventHub East US 2 testws/testkustopool/testdatabase/eventhubdc
 ```
 
-Perintah di atas memperbarui koneksi data EventHub yang sudah ada bernama "eventhubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data EventHub yang ada bernama "eventhubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
-### Contoh 2: Memperbarui koneksi data EventGrid yang sudah ada
+### Contoh 2: Memperbarui koneksi data EventGrid yang ada
 ```powershell
 Update-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name eventgriddc -Location eastus2 -Kind EventGrid -EventHubResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.EventHub/namespaces/testeventhubns/eventhubs/testeventhub" -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Storage/storageAccounts/teststorage" -DataFormat "JSON" -ConsumerGroup '$Default' -TableName "Events" -MappingRuleName "EventsMapping"
 ```
@@ -105,9 +108,9 @@ Kind      Location  Name
 EventGrid East US 2 testws/testkustopool/testdatabase/eventgriddc
 ```
 
-Perintah di atas memperbarui koneksi data EventGrid yang sudah ada bernama "eventgriddc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data EventGrid yang ada bernama "eventgriddc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
-### Contoh 3: Memperbarui koneksi data IotHub yang sudah ada
+### Contoh 3: Memperbarui koneksi data IotHub yang ada
 ```powershell
 Update-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name iothubdc -Location eastus2 -Kind IotHub -IotHubResourceId "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/ywtest/providers/Microsoft.Devices/IotHubs/ywtestiothub" -SharedAccessPolicyName registryRead -DataFormat "JSON" -ConsumerGroup '$Default' -TableName "Events" -MappingRuleName "EventsMapping"
 ```
@@ -118,9 +121,9 @@ Kind   Location  Name
 IotHub East US 2 testws/testkustopool/testdatabase/iothubdc
 ```
 
-Perintah di atas memperbarui koneksi data IotHub yang sudah ada bernama "iothubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data IotHub yang ada bernama "iothubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
-### Contoh 4: Memperbarui koneksi data EventHub yang sudah ada melalui identitas
+### Contoh 4: Memperbarui koneksi data EventHub yang ada melalui identitas
 ```powershell
 $dataConnection = Get-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name eventhubdc
 Update-AzSynapseKustoPoolDataConnection -InputObject $dataConnection -Location eastus2 -Kind EventHub -EventHubResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.EventHub/namespaces/testeventhubns/eventhubs/testeventhub" -DataFormat "JSON" -ConsumerGroup '$Default' -Compression "None" -TableName "Events" -MappingRuleName "EventsMapping"
@@ -132,9 +135,9 @@ Kind     Location  Name
 EventHub East US 2 testws/testkustopool/testdatabase/eventhubdc
 ```
 
-Perintah di atas memperbarui koneksi data EventHub yang sudah ada bernama "eventhubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data EventHub yang ada bernama "eventhubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
-### Contoh 5: Memperbarui koneksi data EventGrid yang sudah ada melalui identitas
+### Contoh 5: Memperbarui koneksi data EventGrid yang ada melalui identitas
 ```powershell
 $dataConnection = Get-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name eventgriddc
 Update-AzSynapseKustoPoolDataConnection -InputObject $dataConnection -Location eastus2 -Kind EventGrid -EventHubResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.EventHub/namespaces/testeventhubns/eventhubs/testeventhub" -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Storage/storageAccounts/teststorage" -DataFormat "JSON" -ConsumerGroup '$Default' -TableName "Events" -MappingRuleName "EventsMapping"
@@ -146,9 +149,9 @@ Kind      Location  Name
 EventGrid East US 2 testws/testkustopool/testdatabase/eventgriddc
 ```
 
-Perintah di atas memperbarui koneksi data EventGrid yang sudah ada bernama "eventgriddc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data EventGrid yang ada bernama "eventgriddc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
-### Contoh 6: Memperbarui koneksi data IotHub yang sudah ada melalui identitas
+### Contoh 6: Memperbarui koneksi data IotHub yang ada melalui identitas
 ```powershell
 $dataConnection = Get-AzSynapseKustoPoolDataConnection -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -DatabaseName testdatabase -Name iothubdc
 Update-AzSynapseKustoPoolDataConnection -InputObject $dataConnection -Location eastus2 -Kind IotHub -IotHubResourceId "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/ywtest/providers/Microsoft.Devices/IotHubs/ywtestiothub" -SharedAccessPolicyName registryRead -DataFormat "JSON" -ConsumerGroup '$Default' -TableName "Events" -MappingRuleName "EventsMapping"
@@ -160,12 +163,12 @@ Kind   Location  Name
 IotHub East US 2 testws/testkustopool/testdatabase/iothubdc
 ```
 
-Perintah di atas memperbarui koneksi data IotHub yang sudah ada bernama "iothubdc" untuk database "testdatabase" dalam kusto pool "testkustopool".
+Perintah di atas memperbarui koneksi data IotHub yang ada bernama "iothubdc" untuk database "testdatabase" di kumpulan kusto "testkustopool".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BlobstorageEventType
-Nama tipe kejadian penyimpanan blob untuk diproses.
+### -BlobStorageEventType
+Nama jenis peristiwa penyimpanan blob yang akan diproses.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.BlobStorageEventType
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kompresi
-Tipe pemadatan pesan hub kejadian.
+Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.Compression
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsumerGroup
-Grup konsumen acara/iot hub.
+Grup konsumen event/iot hub.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kumpulan Kusto.
+Nama database di kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional, format data bisa ditambahkan ke setiap pesan.
+Secara opsional, format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.EventGridDataFormat
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubResourceId
-ID sumber daya hub kejadian yang akan digunakan untuk membuat koneksi data / kisi kejadian dikonfigurasi untuk mengirim kejadian.
+ID sumber daya pusat aktivitas yang akan digunakan untuk membuat koneksi data/kisi peristiwa dikonfigurasi untuk mengirim peristiwa.
 
 ```yaml
 Type: System.String
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem hub acara/iot.
+Properti sistem dari hub peristiwa/iot.
 
 ```yaml
 Type: System.String[]
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan catatan pertama setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -406,8 +409,8 @@ Accept wildcard characters: False
 ```
 
 ### -MappingRuleName
-Aturan pemetaan yang akan digunakan untuk mencerna data.
-Secara opsional, informasi pemetaan bisa ditambahkan ke setiap pesan.
+Aturan pemetaan yang akan digunakan untuk menyerap data.
+Secara opsional, informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -438,7 +441,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -498,8 +501,8 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Tabel tempat data harus dicerna.
-Secara opsional, informasi tabel bisa ditambahkan ke setiap pesan.
+Tabel tempat data harus diserap.
+Secara opsional informasi tabel dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -513,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -528,8 +531,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -544,7 +547,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -560,7 +563,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -580,14 +583,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAlertRule.md
-ms.openlocfilehash: 774f9563593f7b15675d7e2179fbde5bdfb68650
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77c06ddaa33a0853ce888437aa985d8c5e56d9ce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119817"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657864"
 ---
 # Remove-AzAlertRule
 
 ## SYNOPSIS
 Menghapus aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Remove-AzAlertRule -ResourceGroupName <String> -Name <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAlertRule** menghapus aturan peringatan.
-Anda harus menentukan nama aturan pemberitahuan dan grup sumber daya yang ditetapkan.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Remove-AzAlertRule** menghapus aturan pemberitahuan.
+Anda harus menentukan nama aturan pemberitahuan dan grup sumber daya tempat aturan tersebut ditetapkan.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ RequestId                                                                       
 2c6c159b-0e73-4a01-a67b-c32c1a0008a3                                                                                 OK
 ```
 
-Perintah ini menghapus aturan peringatan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8 dalam grup sumber daya Default-Web-CentralUS.
+Perintah ini menghapus aturan pemberitahuan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8 di grup sumber daya Default-Web-CentralUS.
 
 ## PARAMETERS
 
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama aturan pemberitahuan untuk dihapus.
+### -Name
+Menentukan nama aturan pemberitahuan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -92,8 +95,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubCluster.md
-ms.openlocfilehash: 3724b70f18a337ba450d0329425588c623d11a75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3625b6ab1a798378103a13c3439aefd05600bef
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808956"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630964"
 ---
 # Get-AzEventHubCluster
 
 ## SYNOPSIS
-Mendapatkan detail satu Cluster Event Hub , atau mendapatkan daftar Cluster Hub Acara.
+Mendapatkan detail dari satu Kluster Pusat Aktivitas , atau mendapatkan daftar Kluster Pusat Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,9 +28,9 @@ Get-AzEventHubCluster [-ResourceGroupName] <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubCluster mengembalikan detail Klaster Hub Kejadian, atau daftar semua Kluster Hub Kejadian dalam grup sumber daya tertentu.
-Jika nama kluster disediakan, detail dari satu kluster akan dikembalikan.
-Jika nama kluster tidak disediakan, daftar semua kluster dalam grup sumber daya yang ditentukan akan dikembalikan.
+Cmdlet Get-AzEventHubCluster mengembalikan detail Kluster Pusat Aktivitas, atau daftar semua Kluster Pusat Aktivitas dalam grup sumber daya tertentu.
+Jika nama kluster disediakan, detail satu kluster dikembalikan.
+Jika nama kluster tidak disediakan, daftar semua kluster dalam grup sumber daya yang ditentukan dikembalikan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Tags      : {[ClusterTag2, Tag4], [ClusterTag1, Tag3]}
 
 ```
 
-Mengembalikan nilai detial kluster 'Eventhub-Cluster-5557' dari grup sumber daya 'RSG-Cluster27651'
+Mengembalikan detial kluster 'Eventhub-Cluster-5557' dari grup sumber daya 'RSG-Cluster27651'
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kluster
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

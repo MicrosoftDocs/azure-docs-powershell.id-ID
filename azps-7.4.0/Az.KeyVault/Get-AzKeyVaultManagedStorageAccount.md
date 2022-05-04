@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: ca858d2caee5c447fd65a63be4110f97fe6020fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f80e985a4974e869aa86cf1251fd894849c1e88f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682974"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714208"
 ---
 # Get-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Mendapatkan akun Azure Storage terkelola Key Vault.
+Mendapatkan Akun Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzKeyVaultManagedStorageAccount [-ResourceId] <String> [-InRemovedState]
 ```
 
 ## DESCRIPTION
-Mendapatkan akun Azure Storage terkelola Key Vault jika nama akun ditentukan dan kunci akun dikelola oleh kubah yang ditentukan. Jika nama akun tidak ditentukan, maka semua akun yang kuncinya dikelola oleh kubah tertentu akan dicantumkan.
+Mendapatkan akun Azure Storage terkelola Key Vault jika nama akun ditentukan dan kunci akun dikelola oleh vault yang ditentukan. Jika nama akun tidak ditentukan, maka semua akun yang kuncinya dikelola oleh vault tertentu akan dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua akun Storage dikelola Key Vault
+### Contoh 1: Mencantumkan semua Akun Storage terkelola Key Vault
 ```powershell
 Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault'
 ```
@@ -59,9 +62,9 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Mencantumkan semua akun yang kuncinya dikelola oleh kubah 'myvault'
+Mencantumkan semua akun yang kuncinya dikelola oleh vault 'myvault'
 
-### Contoh 2: Dapatkan akun Storage terkelola Key Vault
+### Contoh 2: Mendapatkan Akun Storage terkelola Key Vault
 ```powershell
 Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -Name 'mystorageaccount'
 ```
@@ -81,9 +84,9 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Mendapatkan detail Key Vault dikelola Storage Akun dari 'mystorageaccount' jika kuncinya dikelola oleh 'myvault' kubah
+Mendapatkan detail Key Vault akun Storage terkelola dari 'mystorageaccount' jika kuncinya dikelola oleh vault 'myvault'
 
-### Contoh 3: Mencantumkan semua akun Storage yang dikelola Key Vault menggunakan pemfilteran
+### Contoh 3: Mencantumkan semua Akun Storage terkelola Key Vault menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -Name "test*"
 ```
@@ -110,12 +113,12 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Mencantumkan semua akun yang kuncinya dikelola oleh 'myvault' kubah yang dimulai dengan "uji"
+Mencantumkan semua akun yang kuncinya dikelola oleh vault 'myvault' yang dimulai dengan "uji"
 
 ## PARAMETERS
 
 ### -AccountName
-Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
+Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama brankas, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -190,8 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

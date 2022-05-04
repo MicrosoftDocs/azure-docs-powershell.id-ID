@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVHubRouteTable.md
-ms.openlocfilehash: 1390b9f8dbb6baac4a489f6c79a4e0ef06e8c3ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b03430f9b8c7bee7bde90393769e7263a4c60b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685002"
 ---
 # Get-AzVHubRouteTable
 
 ## SYNOPSIS
 Mengambil sumber daya tabel rute hub yang terkait dengan VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzVHubRouteTable -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Mendapatkan tabel rute hub tertentu yang terkait dengan hub virtual tertentu.
+Mendapatkan tabel rute hub yang ditentukan yang terkait dengan hub virtual yang ditentukan.
 
 ## EXAMPLES
 
@@ -105,12 +108,12 @@ AssociatedConnections  : []
 PropagatingConnections : []
 ```
 
-Perintah ini mencantumkan semua tabel rute hub dalam VirtualHub yang ditentukan.
+Perintah ini mencantumkan semua tabel rute hub di VirtualHub yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +142,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek hub maya induk sumber daya ini.
+Objek hub virtual induk dari sumber daya ini.
 
 ```yaml
 Type: PSVirtualHub
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya sumber daya vhubroutetable ke Get.
+Id sumber daya dari sumber daya vhubroutetable ke Get.
 
 ```yaml
 Type: String
@@ -214,8 +217,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

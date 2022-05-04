@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/disconne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
-ms.openlocfilehash: d059d05151c468c4890c9a8c9954cd5aad5e0586
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0dddb3f7abfaf8e406c5a4da1f5329b73d8fa9b7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590670"
 ---
 # Disconnect-AzP2sVpnGatewayVpnConnection
 
 ## SYNOPSIS
-Putuskan sambungan sambungan klien vpn tersambung dengan gateway vpn p2s yang diberikan
+Putuskan sambungan koneksi klien vpn tersambung yang diberikan dengan gateway vpn p2s tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/disconnect-azp2svpngatewayvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Disconnect-AzP2sVpnGatewayVpnConnection -ResourceId <String> -VpnConnectionId <V
 ```
 
 ## DESCRIPTION
-Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda memutuskan sambungan yang diberikan saat ini ke koneksi situs dari P2SVpnGateway.
+Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda untuk memutuskan koneksi titik saat ini ke koneksi situs dari P2SVpnGateway.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ P2SConnectionConfigurations    : [
 ## PARAMETERS
 
 ### -InputObject
-Objek gateway vpn p2s yang akan diubah
+Objek gateway vpn p2s yang akan dimodifikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
@@ -91,7 +94,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnConnectionId
-Vpn Connection Ida
+Ida Koneksi Vpn
 
 ```yaml
 Type: String[]
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: e493bec3bf4e7e5eea08f5bdbcedabbf03c80cd2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 38f1dd11afb7182e454e0a422ff4e66f2d2fb867
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868572"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679784"
 ---
 # Get-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
 Mendapatkan SCDPM dan server manajemen Azure Backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupmanagementserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,19 +29,19 @@ Get-AzRecoveryServicesBackupManagementServer [[-Name] <String>] [-VaultId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupManagementServer** mendapatkan daftar server manajemen cadangan yang terdaftar dalam kubah.
-Ada dua tipe server manajemen cadangan: System Center Data Protection Manager (SCDPM) dan server manajemen Azure Backup.
-Server manajemen cadangan diinstal secara terpisah untuk mengelola orkestrasi Cadangan.
-Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzRecoveryServicesBackupManagementServer** mendapatkan daftar server manajemen Cadangan yang terdaftar di vault.
+Ada dua jenis server manajemen Cadangan: System Center Data Protection Manager (SCDPM) dan server manajemen Azure Backup.
+Server manajemen cadangan diinstal secara terpisah untuk mengelola orkestrasi Backup.
+Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua server manajemen pencadangan
+### Contoh 1: Mendapatkan semua server manajemen Cadangan
 ```powershell
 Get-AzRecoveryServicesBackupManagementServer
 ```
 
-Perintah ini membuat semua server manajemen cadangan terdaftar dengan kubah.
+Perintah ini mendapatkan semua server manajemen Cadangan yang terdaftar di brankas.
 
 ## PARAMETERS
 
@@ -57,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama server manajemen Cadangan untuk didapatkan.
+### -Name
+Menentukan nama server manajemen Cadangan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

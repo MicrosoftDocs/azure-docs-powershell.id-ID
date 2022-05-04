@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/restart-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Restart-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Restart-AzBatchComputeNode.md
-ms.openlocfilehash: 5f3900341ab13e3b595d237bf53ac6c9e06b3731
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4278c3535b3cf5d5fedc4e5ade0bbca781a35319
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066843"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688328"
 ---
 # Restart-AzBatchComputeNode
 
 ## SYNOPSIS
-Boot ulang simpul komputasi yang ditentukan.
+Mereboot node komputasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/restart-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Restart-AzBatchComputeNode [[-ComputeNode] <PSComputeNode>] [[-RebootOption] <Co
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzBatchComputeNode** melakukan boot ulang simpul komputasi yang ditentukan.
+Cmdlet **Restart-AzBatchComputeNode** me-reboot simpul komputasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -42,20 +45,20 @@ Cmdlet **Restart-AzBatchComputeNode** melakukan boot ulang simpul komputasi yang
 Restart-AzBatchComputeNode -PoolId "MyPool" -Id "tvm-3257026573_2-20150813t200938z" -BatchContext $Context
 ```
 
-Perintah ini me-reboot simpul komputasi dengan ID "tvm-3257026573_2-20150813t200938z" di pool MyPool.
+Perintah ini me-reboot simpul komputasi dengan ID "tvm-3257026573_2-20150813t200938z" di kumpulan MyPool.
 
-### Contoh 2: Hidupkan ulang setiap simpul komputasi dalam kumpulan
+### Contoh 2: Menghidupkan ulang setiap simpul komputasi dalam kumpulan
 ```powershell
 Get-AzBatchComputeNode -PoolId "MyPool" -BatchContext $Context | Restart-AzBatchComputeNode -BatchContext $Context
 ```
 
-Perintah ini me-reboot setiap simpul komputasi di kolam MyPool.
+Perintah ini me-reboot setiap simpul komputasi di kumpulan MyPool.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan objek **PSComputeNode** yang mewakili simpul komputasi untuk melakukan boot ulang.
+Menentukan objek **PSComputeNode** yang mewakili simpul komputasi yang akan di-boot ulang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID simpul komputasi untuk boot ulang.
+Menentukan ID simpul komputasi yang akan di-boot ulang.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootOption
-Menentukan kapan melakukan boot ulang simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan.
+Menentukan kapan harus me-reboot simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan.
 Defaultnya adalah Antrean Ulang.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -165,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchComputeNode](./Get-AzBatchComputeNode.md)
 
-[Atur Ulang-AzBatchComputeNode](./Reset-AzBatchComputeNode.md)
+[Reset-AzBatchComputeNode](./Reset-AzBatchComputeNode.md)
 
 [Cmdlet Azure Batch](/powershell/module/Az.Batch/)

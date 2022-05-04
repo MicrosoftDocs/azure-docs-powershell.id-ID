@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccountKey.md
-ms.openlocfilehash: b33fd2933b0fa1890aa9699a0a0ba91e3af109e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d9e65ab7cdb9d66577e7c0dc8209e190cd8d0d2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876294"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653116"
 ---
 # Get-AzCosmosDBAccountKey
 
 ## SYNOPSIS
-Dapatkan Keys{"ConnectionKeys", "PrimaryReadOnly" atau "Keys"} untuk Akun CosmosDB tertentu. 
+Dapatkan Keys{"ConnectionKeys", "PrimaryReadOnly" atau "Keys"} untuk Akun CosmosDB yang diberikan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ PrimaryReadonlyMasterKey       qjw0ISW1WNN0BIVPeaI7Tm3H8uZ1h7ESQjxaUendxHmIUNQow
 SecondaryReadonlyMasterKey     9YRcTABuOHcKyHAKf0lmCeHsrcXu02aeID1g3wjXjlX8SU4s2WNlEB5htJoy3xqxNDqIyGfnq3dblLbrZDbesg==
 ```
 
-Mencantumkan kunci untuk Akun CosmosDB. Tipe Kunci dapat berupa nilai dari : ConnectionStrings, Keys, dan ReadOnlyKeys. Defaultnya adalah Kunci.
+Mencantumkan kunci untuk Akun CosmosDB. Jenis Kunci dapat berupa nilai dari : ConnectionStrings, Keys, dan ReadOnlyKeys. Defaultnya adalah Kunci.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Nilai dari: {ConnectionStrings, Keys, ReadOnlyKeys}.
 Defaultnya adalah Kunci.
 
@@ -150,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

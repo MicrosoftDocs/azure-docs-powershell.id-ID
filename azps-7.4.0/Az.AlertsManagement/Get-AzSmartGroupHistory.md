@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroupHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroupHistory.md
-ms.openlocfilehash: 36363b969e3495a0e56fb06dbbf5d118e1af875a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d0833bb0b217f4f2d15fe016cb0c57d2f7d8878b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752523"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677968"
 ---
 # Get-AzSmartGroupHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat grup cerdas
+Mendapatkan riwayat grup pintar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azsmartgrouphistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzSmartGroupHistory -InputObject <PSSmartGroup> [-DefaultProfile <IAzureCont
 Get-AzSmartGroupHistory -SmartGroupId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529"
 ```
 
-Mendapatkan detail riwayat grup cerdas.
+Mendapatkan detail riwayat grup pintar.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Input objek dari pipeline.
+Masukkan objek dari alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSSmartGroup
@@ -90,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

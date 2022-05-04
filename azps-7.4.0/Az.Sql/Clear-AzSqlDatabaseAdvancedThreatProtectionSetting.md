@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Clear-AzSqlD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Clear-AzSqlDatabaseAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Clear-AzSqlDatabaseAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: bc6062051721b044097cce26116226acc62ff48e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d15098e748a01f46a526b2e22e5005b2fb7fa936
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058761"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696008"
 ---
 # Clear-AzSqlDatabaseAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Menghapus pengaturan proteksi ancaman tingkat lanjut dari database.
+Menghapus pengaturan perlindungan ancaman tingkat lanjut dari database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/clear-azsqldatabaseadvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Clear-AzSqlDatabaseAdvancedThreatProtectionSetting [-PassThru] [-ServerName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Clear-AzSqlDatabaseAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari database SQL AzureAzure.
+Cmdlet **Clear-AzSqlDatabaseAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari database AzureAzure SQL.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi database tempat cmdlet ini menghapus pengaturan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pengaturan proteksi ancaman tingkat lanjut untuk database
+### Contoh 1: Menghapus pengaturan perlindungan ancaman tingkat lanjut untuk database
 ```powershell
 Clear-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGroup11" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini menghapus pengaturan proteksi ancaman tingkat lanjut dari database bernama Database01 di server bernama Server01.
+Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari database bernama Database01 di server bernama Server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database tempat pengaturan proteksi ancaman tingkat lanjut harus dihapus.
+Menentukan nama database tempat pengaturan perlindungan ancaman tingkat lanjut harus dihapus.
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

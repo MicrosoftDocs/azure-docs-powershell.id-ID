@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
-ms.openlocfilehash: 81cb21752326ddfa79fb00f9adf16aa894599a54
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ad0c7c3aadc03edb31f0580ddae78ae629c85bf5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309681"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606614"
 ---
 # New-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Membuat penyebaran di grup manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azmanagementgroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -168,18 +171,18 @@ Cmdlet **New-AzManagementGroupDeployment** menambahkan penyebaran di grup manaje
 
 Untuk menambahkan penyebaran di grup manajemen, tentukan grup manajemen, lokasi, dan templat.
 Lokasi memberi tahu Azure Resource Manager tempat menyimpan data penyebaran. Templat adalah string JSON yang berisi sumber daya individual yang akan disebarkan.
-Templat menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
+Templat mencakup tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 
 Untuk menggunakan templat kustom untuk penyebaran, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
+Untuk menentukan nilai untuk parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
 Atau, Anda dapat menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
 Untuk menggunakan parameter dinamis, ketikkan pada prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan gunakan tombol Tab untuk menelusuri parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan daripada nilai dalam objek atau file parameter templat.
 
 Untuk menambahkan sumber daya ke grup sumber daya, gunakan **New-AzResourceGroupDeployment** yang membuat penyebaran di grup sumber daya.
 Untuk menambahkan sumber daya ke langganan, gunakan **New-AzSubscriptionDeployment** yang membuat penyebaran pada cakupan langganan, yang menyebarkan sumber daya tingkat langganan.
-Untuk menambahkan sumber daya pada cakupan penyewa, gunakan **New-AzTenantDeployment** yang membuat penyebaran di cakupan penyewa.
+Untuk menambahkan sumber daya di cakupan penyewa, gunakan **New-AzTenantDeployment** yang membuat penyebaran pada cakupan penyewa.
 
 ## EXAMPLES
 
@@ -191,12 +194,12 @@ New-AzManagementGroupDeployment -ManagementGroupId "myMG" -Location "West US" -T
 Perintah ini membuat penyebaran baru di grup manajemen "myMG" dengan menggunakan templat kustom dan file templat pada disk, dengan parameter tag yang ditentukan.
 Perintah ini menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 
-### Contoh 2: Menyebarkan templat yang disimpan di akun penyimpanan non-publik menggunakan token uri dan SAS
+### Contoh 2: Menyebarkan templat yang disimpan di akun penyimpanan non publik menggunakan token uri dan SAS
 ```powershell
 New-AzManagementGroupDeployment -ManagementGroupId "myMG" -Location "West US" -TemplateUri "https://example.com/example.json" -QueryString "foo"
 ```
 
-Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak bersifat publik dan memerlukan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
+Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak publik dan memerlukan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
 Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo`.
 Ini dapat digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai QueryString
 
@@ -303,8 +306,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -349,8 +352,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
-Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
+Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
+Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
 Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Jenis perubahan sumber daya yang dipisahkan koma yang akan dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Jenis perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]

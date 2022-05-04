@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
-ms.openlocfilehash: ef97e6c0daa4a49fd6219194c16a52b4da893e04
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 781d1f1d49628750bc64bbbaff5ed7ff6e8ff738
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065404"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627593"
 ---
 # Set-AzVMUefi
 
 ## SYNOPSIS
-Memodifikasi properti UEFI dari mesin virtual gen 2
+Memodifikasi properti UEFI dari komputer virtual gen 2
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmuefi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzVMUefi [-VM] <PSVirtualMachine> [-EnableVtpm <Boolean>] [-EnableSecureBoot
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMUefi** memodifikasi properti UEFI dari mesin virtual.
+Cmdlet **Set-AzVMUefi** memodifikasi properti UEFI dari komputer virtual.
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ $VM = Get-AzVM -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM07"
 Set-AzVMUefi -VM $VM -EnableVtpm $true -EnableSecureBoot $true
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
+Perintah pertama mendapatkan komputer virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
 Perintah menyimpannya dalam variabel $VM.
-Perintah kedua mengubah pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada mesin virtual di $VM.
-Perintah melewati hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
-Perubahan pada mode kas menyebabkan mesin virtual dimulai ulang.
+Perintah kedua memodifikasi pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada komputer virtual di $VM.
+Perintah meneruskan hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
+Perubahan pada mode kasir menyebabkan komputer virtual dimulai ulang.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableSecureBoot
-Parameter untuk mengaktifkan boot aman pada VM
+Parameter untuk beralih boot aman pada VM
 
 ```yaml
 Type: Boolean
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableVtpm
-Parameter untuk mengalihkan vTPM pada VM
+Parameter untuk beralih vTPM pada VM
 
 ```yaml
 Type: Boolean
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Profil mesin virtual.
+Profil komputer virtual.
 
 ```yaml
 Type: PSVirtualMachine
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

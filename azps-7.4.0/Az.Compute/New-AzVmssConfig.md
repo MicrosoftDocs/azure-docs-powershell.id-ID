@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
-ms.openlocfilehash: f11a483dcce45f26f02a20a592bd183439731902
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 922e91569fc6f75328859e6a84a2e6c9f5eee8c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172053"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627672"
 ---
 # New-AzVmssConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Cmdlet **New-AzVmssConfig** membuat objek Virtual Manager Scale Set (VMSS) lokal
 - Set-AzVmssOsProfile
 - Set-AzVmssStorageProfile
 - Add-AzVmssNetworkInterfaceConfiguration
-- Add-AzVmssExtension
+- Tambahkan-EkstensiAzVmss
 
 ## EXAMPLES
 
@@ -82,11 +85,11 @@ $VMSS = New-AzVmssConfig -Location $Loc -SkuCapacity 2 -SkuName "Standard_A0" -U
 New-AzVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $VMSS;
 ```
 
-Contoh ini membuat objek konfigurasi VMSS. Perintah pertama menggunakan cmdlet **New-AzVmsConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS. Perintah kedua menggunakan cmdlet **New-AzVmss** untuk membuat VMSS yang menggunakan objek konfigurasi VMSS yang dibuat dalam perintah pertama.
+Contoh ini membuat objek konfigurasi VMSS. Perintah pertama menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS. Perintah kedua menggunakan cmdlet **New-AzVmss** untuk membuat VMSS yang menggunakan objek konfigurasi VMSS yang dibuat di perintah pertama.
 
 ### Contoh 2
 
-Membuat objek konfigurasi VMSS. (autogenerasi)
+Membuat objek konfigurasi VMSS. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -95,7 +98,7 @@ New-AzVmssConfig -Location <String> -Overprovision $false -SkuCapacity 2 -SkuNam
 
 ### Contoh 3
 
-Membuat objek konfigurasi VMSS. (autogenerasi)
+Membuat objek konfigurasi VMSS. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -107,7 +110,7 @@ New-AzVmssConfig -Location <String> -SkuCapacity 2 -SkuName 'Standard_A0' -Upgra
 ## PARAMETERS
 
 ### -AutomaticRepairAction
-Jenis tindakan perbaikan (ganti, hidupkan ulang, reimage) yang akan digunakan untuk memperbaiki mesin virtual yang tidak sehat dalam kumpulan skala. Nilai default adalah ganti.
+Jenis tindakan perbaikan (ganti, hidupkan ulang, reimage) yang akan digunakan untuk memperbaiki komputer virtual yang tidak sehat dalam set skala. Nilai default adalah ganti.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomaticRepairGracePeriod
-Jumlah waktu perbaikan otomatis ditangguhkan karena perubahan status pada VM. Waktu tenggang dimulai setelah perubahan negara telah selesai. Ini membantu menghindari perbaikan prematur atau tidak disengaja. Durasi waktu harus ditentukan dalam format ISO 8601. Masa tenggang minimum yang diperbolehkan adalah 30 menit (PT30M), yang juga merupakan nilai default. Masa tenggang maksimum yang diizinkan adalah 90 menit (PT90M).
+Jumlah waktu di mana perbaikan otomatis ditangguhkan karena perubahan status pada VM. Waktu tenggang dimulai setelah perubahan status selesai. Ini membantu menghindari perbaikan prematur atau tidak disengaja. Durasi waktu harus ditentukan dalam format ISO 8601. Masa tenggang minimum yang diizinkan adalah 30 menit (PT30M), yang juga merupakan nilai default. Masa tenggang maksimum yang diizinkan adalah 90 menit (PT90M).
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoOSUpgrade
-Mengatur apakah peningkatan OS harus diterapkan secara otomatis ke instance kumpulan skala secara bergulir saat versi gambar yang lebih baru tersedia.
+Mengatur apakah peningkatan OS harus secara otomatis diterapkan ke instans set skala secara bergulir saat versi gambar yang lebih baru tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootDiagnostic
-Menentukan profil diagnostik boot kumpulan skala mesin virtual.
+Menentukan profil diagnostik boot set skala komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.BootDiagnostics
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoRollback
-Menonaktifkan Pembatalan Otomatis untuk Kebijakan Pemutakhiran OS Otomatis
+Nonaktifkan Putar Kembali Otomatis untuk Kebijakan Peningkatan OS Otomatis
 
 ```yaml
 Type: System.Boolean
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan, bukan kawasan utama.
+Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan alih-alih wilayah utama.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticRepair
-Mengaktifkan perbaikan otomatis pada kumpulan skala mesin virtual.
+Mengaktifkan perbaikan otomatis pada set skala komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableSpotRestore
-Mengaktifkan fitur Spot-Try-Restore di mana instans SPOT VMSS yang diusir akan dicoba untuk dipulihkan secara oportunistik berdasarkan ketersediaan kapasitas dan batasan harga
+Mengaktifkan fitur Spot-Try-Restore di mana instans SPOT VMSS yang dikeluarkan akan mencoba dipulihkan secara oportunistik berdasarkan ketersediaan kapasitas dan batasan harga
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,9 +259,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassd
-Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada kumpulan skala mesin virtual.
-Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke VMSS hanya jika properti ini diaktifkan.
+### -EnableUltrassD
+Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan jenis akun penyimpanan UltraSSD_LRS pada set skala komputer virtual.
+Disk terkelola dengan jenis akun penyimpanan UltraSSD_LRS dapat ditambahkan ke VMSS hanya jika properti ini diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Parameter ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
+Parameter ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Resource/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Menentukan kebijakan penggulangan untuk mesin virtual dalam kumpulan skala.
+Menentukan kebijakan pengeluaran untuk komputer virtual dalam set skala.
 
 ```yaml
 Type: System.String
@@ -318,8 +321,8 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeId
-Menentukan ID probe load balancer yang digunakan untuk menentukan kesehatan instans dalam kumpulan skala mesin virtual.
-HealthProbeId berupa '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}/probes/{probeName}'.
+Menentukan ID pemeriksaan load balancer yang digunakan untuk menentukan kesehatan instans dalam set skala komputer virtual.
+HealthProbeId dalam bentuk '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}/probes/{probeName}'.
 
 ```yaml
 Type: System.String
@@ -334,8 +337,8 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan daftar identitas pengguna yang terkait dengan set skala komputer virtual.
+Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -350,14 +353,14 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Menentukan tipe identitas yang digunakan untuk kumpulan skala mesin virtual.
-Tipe 'SystemAssignedUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
-Tipe 'Tidak Ada' akan menghapus identitas apa pun dari kumpulan skala mesin virtual.
+Menentukan jenis identitas yang digunakan untuk set skala komputer virtual.
+Jenis 'SystemAssignedUserAssigned' mencakup identitas yang dibuat secara implisit dan sekumpulan identitas yang ditetapkan pengguna.
+Jenis 'Tidak Ada' akan menghapus identitas apa pun dari set skala komputer virtual.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - SystemAssigned
 - UserAssigned
 - SystemAssignedUserAssigned
-- Tidak
+- Tidak ada
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ResourceIdentityType]
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tentukan tipe lisensi, yang untuk membawa skenario lisensi Anda sendiri.
+Tentukan jenis lisensi, yang untuk membawa skenario lisensi Anda sendiri.
 
 ```yaml
 Type: System.String
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS Spot. Harga ini adalah dalam Dolar AS. Harga ini akan dibandingkan dengan harga Spot saat ini untuk ukuran VM. Juga, harga dibandingkan pada saat membuat / memperbarui Spot VM / VMSS dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga Spot saat ini. MaxPrice juga akan digunakan untuk meningkatkan VM/VMSS Spot jika harga Spot saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang memungkinkan adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0.01538.  -1 menunjukkan bahwa VM/VMSS Spot tidak boleh diusir karena alasan harga. Selain itu, harga maks default adalah -1 jika tidak disediakan oleh Anda.
+Menentukan harga maksimum yang ingin Anda bayar untuk Spot VM/VMSS. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga Spot saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat membuat/memperbarui Spot VM/VMSS dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga Spot saat ini. maxPrice juga akan digunakan untuk mengusir Spot VM/VMSS jika harga Spot saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa Spot VM/VMSS tidak boleh dikeluarkan karena alasan harga. Selain itu, harga maksimum default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrchestrationMode
-Menentukan mode orkestrasi untuk kumpulan skala mesin virtual. Nilai yang memungkinkan: Seragam, Fleksibel
+Menentukan mode orkestrasi untuk set skala komputer virtual. Nilai yang mungkin: Seragam, Fleksibel
 
 ```yaml
 Type: System.String
@@ -464,8 +467,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overprovision
-Menunjukkan apakah cmdlet melebihi provisi VMSS.
+### -Provisi berlebih
+Menunjukkan apakah cmdlet melakukan provisi berlebih pada VMSS.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanName
-Menentukan nama rencana.
+Menentukan nama paket.
 
 ```yaml
 Type: System.String
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Menentukan kode promosi rencana.
+Menentukan kode promosi paket.
 
 ```yaml
 Type: System.String
@@ -525,7 +528,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Menentukan penerbit rencana.
+Menentukan penerbit paket.
 
 ```yaml
 Type: System.String
@@ -555,10 +558,10 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk machien virtual dalam kumpulan skala.  Hanya nilai yang didukung adalah 'Reguler', 'Titik' dan 'Rendah'.
-'Reguler' adalah untuk mesin virtual reguler.
-'Spot' adalah untuk mesin virtual spot.
-'Rendah' juga untuk mesin virtual spot tetapi digantikan dengan 'Spot'. Silakan gunakan 'Spot' dan bukan 'Rendah'.
+Prioritas untuk machien virtual dalam set skala.  Hanya nilai yang didukung adalah 'Reguler', 'Spot' dan 'Rendah'.
+'Reguler' adalah untuk komputer virtual reguler.
+'Spot' adalah untuk komputer virtual spot.
+'Rendah' juga untuk komputer virtual spot tetapi digantikan oleh 'Spot'. Silakan gunakan 'Spot' alih-alih 'Rendah'.
 
 ```yaml
 Type: System.String
@@ -573,7 +576,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProximityPlacementGroupId
-Id sumber daya dari Grup Penempatan Kedekatan untuk digunakan dengan kumpulan skala ini.
+Id sumber daya Grup Penempatan Kedekatan untuk digunakan dengan set skala ini.
 
 ```yaml
 Type: System.String
@@ -588,7 +591,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollingUpgradePolicy
-Menentukan kebijakan pemutakhiran bergulir.
+Menentukan kebijakan peningkatan bergulir.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.RollingUpgradePolicy
@@ -603,7 +606,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleInPolicy
-Aturan yang harus diikuti ketika penskalakan-dalam kumpulan skala mesin virtual.  Nilai yang memungkinkan adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika kumpulan skala mesin virtual diskalakan, kumpulan skala akan lebih dulu diseimbangkan di seluruh zona jika kumpulan skala zona.  Kemudian, ini akan seimbang di seluruh Domain Kesalahan sejauh mungkin.  Di dalam setiap Domain Kesalahan, mesin virtual yang dipilih untuk penghapusan akan menjadi yang terbaru yang tidak dilindungi dari scale-in.  'OldestVM' ketika kumpulan skala mesin virtual sedang diskalakan, mesin virtual tertua yang tidak dilindungi dari scale-in akan dipilih untuk penghapusan.  Untuk kumpulan skala mesin virtual zonal, kumpulan skala akan lebih dulu seimbang di seluruh zona.  Dalam setiap zona, mesin virtual tertua yang tidak dilindungi akan dipilih untuk penghapusan.  'NewestVM' ketika kumpulan skala mesin virtual sedang diskalakan, mesin virtual terbaru yang tidak dilindungi dari scale-in akan dipilih untuk penghapusan.  Untuk kumpulan skala mesin virtual zonal, kumpulan skala akan lebih dulu seimbang di seluruh zona.  Di dalam setiap zona, mesin virtual terbaru yang tidak dilindungi akan dipilih untuk penghapusan.
+Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala pertama-tama akan seimbang di seluruh zona jika itu adalah set skala zona.  Kemudian, ini akan diseimbangkan di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual tertua yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak dilindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
 
 ```yaml
 Type: System.String[]
@@ -633,7 +636,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipExtensionsOnOverprovisionedVMs
-Menentukan bahwa ekstensi tidak berjalan pada VM ekstra overprovisioned.
+Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang kelebihan provisi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -663,7 +666,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan ukuran semua contoh VMSS.
+Menentukan ukuran semua instans VMSS.
 
 ```yaml
 Type: System.String
@@ -679,7 +682,7 @@ Accept wildcard characters: False
 
 ### -SkuTier
 Menentukan tingkat VMSS. Nilai yang dapat diterima untuk parameter ini adalah:
-- Standar
+- Standard
 - Dasar
 
 ```yaml
@@ -726,7 +729,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -741,7 +744,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminateScheduledEventNotBeforeTimeoutInMinutes
-Durasi waktu yang dapat dikonfigurasi (dalam menit) Mesin Virtual yang dihapus harus berpotensi menyetujui Acara Terjadwal Berakhir sebelum acara disetujui otomatis (waktu habis).
+Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Acara Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
 
 ```yaml
 Type: System.Int32
@@ -756,7 +759,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminateScheduledEvents
-Aktifkan acara Terhentikan
+Mengaktifkan Aktivitas Terjadwal Penghentian
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -771,7 +774,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradePolicyMode
-Menentukan mode pemutakhiran ke mesin virtual dalam kumpulan skala.
+Menentukan mode peningkatan ke komputer virtual dalam set skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Otomatis
 - Manual
@@ -790,7 +793,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserData
-UserData untuk VM, yang akan dikodekan basis 64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk VM, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.String
@@ -805,7 +808,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Menentukan daftar zona untuk kumpulan skala mesin virtual.
+Menentukan daftar zona untuk set skala komputer virtual.
 
 ```yaml
 Type: System.String[]
@@ -820,7 +823,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneBalance
-Apakah akan memaksa distribusi Mesin Virtual yang benar-benar bahkan lintas zona x jika terjadi pemadaman zona.
+Apakah akan memaksa distribusi Virtual Machine secara ketat melintasi x-zona jika terjadi pemadaman zona.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -834,8 +837,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -850,7 +853,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -865,7 +868,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -911,6 +914,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzVmssNetworkInterfaceConfiguration](./Add-AzVmssNetworkInterfaceConfiguration.md)
 
-[Add-AzVmssExtension](./Add-AzVmssExtension.md)
+[Tambahkan-EkstensiAzVmss](./Add-AzVmssExtension.md)
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)

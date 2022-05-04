@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/enter-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
-ms.openlocfilehash: 623ca45187d86e2d1fa965074c8cbaa89096a56f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d58ccc649978a8b41198b1e573315350fc2b4c3b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669096"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630028"
 ---
 # Enter-AzWebAppContainerPSSession
 
 ## SYNOPSIS
-Membuka sesi PowerShell jarak jauh ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
+Membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/enter-azwebappcontainerpssession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Enter-AzWebAppContainerPSSession [-PassThru] [-Force] [-WebApp] <PSSite>
 ```
 
 ## DESCRIPTION
-membuka sesi PowerShell jarak jauh ke dalam wadah jendela yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
+membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Buat sesi PowerShell tanpa meminta konfirmasi.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi web.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan
+Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,8 +153,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,13 +184,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

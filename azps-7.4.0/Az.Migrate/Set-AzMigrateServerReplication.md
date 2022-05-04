@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/set-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
-ms.openlocfilehash: 4c7e397edaf9aa97b929503924e84c5872c4fd40
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc17f24bcbaf42b6e344bdaf0a9de9d3a830d345
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283653"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627222"
 ---
 # Set-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memperbarui properti target untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/set-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Task                             : {DisableProtectionOnPrimary, UpdateDraState}
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Dengan id.
+Berdasarkan id.
 
 ### Contoh 2: Memperbarui beberapa nama disk menurut id
 ```powershell
@@ -135,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskToUpdate
-Memperbarui disk agar Azure VM dibuat.
-Untuk membangun, lihat bagian CATATAN untuk properti DISKTOUPDATE dan membuat tabel hash.
+Memperbarui disk untuk Azure VM yang akan dibuat.
+Untuk membuat, lihat bagian CATATAN untuk properti DISKTOUPDATE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtUpdateDiskInput[]
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ### -InputObject
 Menentukan server replikasi yang propertinya perlu diperbarui.
 Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -NicToUpdate
 Memperbarui NIC untuk Azure VM yang akan dibuat.
-Untuk membuat, lihat bagian CATATAN untuk properti NICTOUPDATE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NICTOUPDATE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtNicInput[]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Menentukan apakah manfaat Azure Hybrid untuk SQL Server berlaku bagi server yang akan dimigrasikan.
+Menentukan apakah manfaat Azure Hybrid untuk SQL Server berlaku untuk server yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAvailabilitySet
-Menentukan Kumpulan Ketersediaan yang akan digunakan untuk pembuatan VM.
+Menentukan Set Ketersediaan yang akan digunakan untuk pembuatan VM.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAvailabilityZone
-Menentukan Availability Zone yang akan digunakan untuk pembuatan VM.
+Menentukan Zona Ketersediaan yang akan digunakan untuk pembuatan VM.
 
 ```yaml
 Type: System.String
@@ -351,8 +354,8 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateDiskTag
-Menentukan tag yang akan digunakan untuk pembuatan diska.
-Untuk membuat, lihat bagian CATATAN untuk properti UPDATEDISKTAG dan membuat tabel hash.
+Menentukan tag yang akan digunakan untuk pembuatan disk.
+Untuk membuat, lihat bagian CATATAN untuk properti UPDATEDISKTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetDiskTags
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateDiskTagOperation
-Menentukan operasi tag diska pembaruan.
+Menentukan operasi perbarui tag disk.
 
 ```yaml
 Type: System.String
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 
 ### -UpdateNicTag
 Menentukan tag yang akan digunakan untuk pembuatan NIC.
-Untuk membuat, lihat bagian CATATAN untuk properti UPDATENICTAG dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti UPDATENICTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetNicTags
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateNicTagOperation
-Menentukan operasi tag NIC pembaruan.
+Menentukan operasi NIC tag pembaruan.
 
 ```yaml
 Type: System.String
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateTagOperation
-Menentukan operasi tag pembaruan.
+Menentukan operasi perbarui tag.
 
 ```yaml
 Type: System.String
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 
 ### -UpdateVMTag
 Menentukan tag yang akan digunakan untuk pembuatan VM.
-Untuk membangun, lihat bagian CATATAN untuk properti UPDATEVMTAG dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti UPDATEVMTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetVmtags
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateVMTagOperation
-Menentukan operasi tag VM pembaruan.
+Menentukan operasi perbarui tag VM.
 
 ```yaml
 Type: System.String
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -491,7 +494,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DISKTOUPDATE <IVMwareCbtUpdateDiskInput[]>: Memperbarui disk untuk VM Azure yang akan dibuat.
+DISKTOUPDATE <IVMwareCbtUpdateDiskInput[]>: Memperbarui disk untuk Azure VM yang akan dibuat.
   - `DiskId <String>`: Id disk.
   - `[TargetDiskName <String>]`: Nama disk target.
 
@@ -500,10 +503,10 @@ INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang propertinya perlu
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 
 NICTOUPDATE <IVMwareCbtNicInput[]>: Memperbarui NIC agar Azure VM dibuat.
-  - `IsPrimaryNic <String>`: Nilai yang mengindikasikan apakah ini adalah NIC utama.
+  - `IsPrimaryNic <String>`: Nilai yang menunjukkan apakah ini adalah NIC utama.
   - `NicId <String>`: Id NIC.
   - `[IsSelectedForMigration <String>]`: Nilai yang menunjukkan apakah NIC ini dipilih untuk migrasi.
-  - `[TargetNicName <String>]`: Target nama NIC.
+  - `[TargetNicName <String>]`: Nama NIC target.
   - `[TargetStaticIPAddress <String>]`: Alamat IP statis.
   - `[TargetSubnetName <String>]`: Nama subnet target.
 

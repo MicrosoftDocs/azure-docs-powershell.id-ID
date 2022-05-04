@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/revoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Revoke-AzSnapshotAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Revoke-AzSnapshotAccess.md
-ms.openlocfilehash: 5636a9ccd17bc22adee51b8b47d14cc50a37a0bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: af651f6978bd9af7400049c95ef08043a4edd6b6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289629"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636614"
 ---
 # Revoke-AzSnapshotAccess
 
 ## SYNOPSIS
-Mencabut akses ke snapshot.
+Mencabut akses ke rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/revoke-azsnapshotaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Revoke-AzSnapshotAccess [-ResourceGroupName] <String> [-SnapshotName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Revoke-AzSnapshotAccess** mencabut akses ke snapshot.
+Cmdlet **Revoke-AzSnapshotAccess** mencabut akses ke rekam jepret.
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Cmdlet **Revoke-AzSnapshotAccess** mencabut akses ke snapshot.
 Revoke-AzSnapshotAccess -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01'
 ```
 
-Mencabut akses ke snapshot bernama 'Snapshot01' dalam grup sumber daya bernama 'ResourceGroup01'
+Cabut akses ke rekam jepret bernama 'Snapshot01' di grup sumber daya bernama 'ResourceGroup01'
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotName
-Menentukan nama snapshot.
+Menentukan nama rekam jepret.
 
 ```yaml
 Type: System.String
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

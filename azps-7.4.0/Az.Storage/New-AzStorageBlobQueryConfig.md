@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobQueryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobQueryConfig.md
-ms.openlocfilehash: 28d3a10a26328745387a5e0be3b2df82abb8534e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24822e3a46377593dd9198ccca81eca6d41a78cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671058"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712354"
 ---
 # New-AzStorageBlobQueryConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi kueri blob, yang dapat digunakan di Get-AzStorageBlobQueryResult.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageblobqueryconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ New-AzStorageBlobQueryConfig [-AsJson] [-RecordSeparator <String>] [-AsJob] [<Co
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageBlobQueryConfig** membuat objek konfigurasi kueri blob, yang dapat digunakan dalam Get-AzStorageBlobQueryResult.
+Cmdlet **New-AzStorageBlobQueryConfig** membuat objek konfigurasi kueri blob, yang dapat digunakan di Get-AzStorageBlobQueryResult.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kueri blob mengonfigurasi , dan membuat kueri blob
+### Contoh 1: Membuat kueri blob mengonfigurasi , dan mengkueri blob
 ```powershell
 PS C:\> $inputconfig = New-AzStorageBlobQueryConfig -AsCsv -ColumnSeparator "," -QuotationCharacter """" -EscapeCharacter "\" -RecordSeparator "`n" -HasHeader
 
@@ -52,7 +55,7 @@ BytesScanned FailureCount BlobQueryError
          449            0
 ```
 
-Perintah ini terlebih dahulu membuat objek konfigurasi input sebagai csv, dan objek konfigurasi output sebagai json, lalu gunakan 2 konfigurasi untuk mengkueri blob.
+Perintah ini pertama-tama membuat objek konfigurasi input sebagai csv, dan objek konfigurasi output sebagai json, lalu gunakan 2 konfigurasi untuk mengkueri blob.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -EscapeCharacter
 Opsional.
-Karakter digunakan sebagai karakter escape.
+Karakter yang digunakan sebagai karakter escape.
 
 ```yaml
 Type: System.Nullable`1[System.Char]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -HasHeader
 Opsional.
-Menunjukkan bahwa data tersebut memiliki header.
+Menunjukkan bahwa data memiliki header.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

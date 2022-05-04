@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerFirewallRule.md
-ms.openlocfilehash: c96d658b5874f646abcdda8839af0737cef87135
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 088278a2c3411c8e676c5f1eda37c12565effa68
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933193"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626538"
 ---
-# Set-AzSqlServerFirewallRule
+# Atus-AzSqlServerFirewallRule
 
 ## SYNOPSIS
-Mengubah aturan firewall di server Azure SQL Database.
+Memodifikasi aturan firewall di server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzSqlServerFirewallRule [-FirewallRuleName] <String> -StartIpAddress <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlServerFirewallRule** mengubah aturan firewall di server Azure SQL Database.
+Cmdlet **Set-AzSqlServerFirewallRule** memodifikasi aturan firewall di server Azure SQL Database.
 
 ## EXAMPLES
 
@@ -44,8 +47,8 @@ EndIpAddress      : 192.168.0.200
 FirewallRuleName  : Rule01
 ```
 
-Perintah ini mengubah aturan firewall bernama Rule01 di server bernama Server01.
-Perintah mengubah alamat IP mulai dan akhir.
+Perintah ini memodifikasi aturan firewall bernama Rule01 di server bernama Server01.
+Perintah memodifikasi alamat IP awal dan akhir.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartIpAddress
-Menentukan nilai mulai rentang alamat IP untuk aturan firewall.
+Menentukan nilai awal rentang alamat IP untuk aturan firewall.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -185,11 +188,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlServerFirewallRule](./Get-AzSqlServerFirewallRule.md)
+[Dapatkan-AzSqlServerFirewallRule](./Get-AzSqlServerFirewallRule.md)
 
 [New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 
-[Remove-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
+[Hapus-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

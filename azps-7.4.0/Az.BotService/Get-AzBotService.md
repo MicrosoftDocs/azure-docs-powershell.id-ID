@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
-ms.openlocfilehash: 57221c049e838ded62c0375e68d6ac4268db7c5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb7358477f8a6bdb5a8b08b507010afbaf24bf0d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007047"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653944"
 ---
 # Get-AzBotService
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/get-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mengembalikan BotService yang ditentukan oleh parameter.
 Get-AzBotService [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzBotService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -61,7 +64,7 @@ Etag                                   Kind Location Name             SkuName Sk
 
 Dapatkan semua BotServices
 
-### Contoh 2: Dapatkan BotService menurut ResourceGroupName and Name
+### Contoh 2: Dapatkan BotService menurut ResourceGroupName dan Nama
 ```powershell
 Get-AzBotService -Name 'youri-bot1' -ResourceGroupName 'youriBotTest'
 ```
@@ -71,9 +74,9 @@ Etag                                   Kind Location Name       SkuName SkuTier 
 "060085fb-0000-1800-0000-5fd71d7c0000" bot  global   youri-bot F0              Microsoft.BotService/botServices
 ```
 
-Dapatkan BotService dengan ResourceGroupName dan Name
+Dapatkan BotService menurut ResourceGroupName dan Nama
 
-### Contoh 3: Dapatkan semua BotServices menurut ResourceGroupName
+### Contoh 3: Dapatkan semua BotServices dengan ResourceGroupName
 ```powershell
 Get-AzBotService -ResourceGroupName 'youriBotTest'
 ```
@@ -86,7 +89,7 @@ Etag                                   Kind Location Name             SkuName Sk
 "0600ef2b-0000-0200-0000-5fd727a70000" sdk  global   youritest1314    S1              Microsoft.BotService/botServices
 ```
 
-Dapatkan semua BotServices dengan ResourceGroupName
+Mendapatkan semua BotServices menurut ResourceGroupName
 
 ### Contoh 4: Dapatkan BotService dengan inputObject
 ```powershell
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.IBotServiceIdentity
@@ -133,7 +136,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Bot.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

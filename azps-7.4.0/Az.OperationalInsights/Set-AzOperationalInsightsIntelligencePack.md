@@ -6,19 +6,22 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
-ms.openlocfilehash: 56675ec59f9a764ea00e904e0d8962190c28b8d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 477907f28f2f2a5572dba14f0081c43c5c50c7d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741438"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144590490"
 ---
 # Set-AzOperationalInsightsIntelligencePack
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan Paket Kecerdasan yang ditentukan.
 > [!NOTE]
-> Solusi ditolak, silakan gunakan [solusi log-analitik monitor az](https://docs.microsoft.com/en-us/cli/azure/monitor/log-analytics/solution?view=azure-cli-latest) dan [Get-AzMonitorLogAnalyticsSolution sebagai gantinya](https://docs.microsoft.com/en-us/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution?view=azps-5.9.0) jika perintah ini.
+> Solusi tidak digunakan lagi, gunakan [solusi log-analytics monitor az](https://docs.microsoft.com/en-us/cli/azure/monitor/log-analytics/solution?view=azure-cli-latest) dan [Get-AzMonitorLogAnalyticsSolution sebagai gantinya](https://docs.microsoft.com/en-us/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution?view=azps-5.9.0) jika perintah ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsintelligencepack) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,16 +32,16 @@ Set-AzOperationalInsightsIntelligencePack [-ResourceGroupName] <String> [-Worksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzOperationalInsightsIntelligencePack** memungkinkan Paket *Kecerdasan* tertentu jika Diaktifkan diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
+Cmdlet **Set-AzOperationalInsightsIntelligencePack** memungkinkan Paket *Kecerdasan* yang ditentukan jika Diaktifkan diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
 
 ## EXAMPLES
 
-### Contoh 1: Atur Paket Kecerdasan
+### Contoh 1: Mengatur Paket Kecerdasan
 ```powershell
 Set-AzOperationalInsightsIntelligencePack -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -IntelligencePackName "ContosoWorkspace" -Enabled $True
 ```
 
-Perintah ini mengaktifkan Paket Kecerdasan yang ditentukan.
+Perintah ini memungkinkan Paket Kecerdasan yang ditentukan.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 ```yaml
 Type: System.Boolean
 Parameter Sets: (All)
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

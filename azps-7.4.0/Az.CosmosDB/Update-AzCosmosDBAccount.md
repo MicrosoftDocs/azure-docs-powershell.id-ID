@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
-ms.openlocfilehash: a05bcbe8d9aa73b15e485c5ac2dd8bec9fdf0abd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15dee36f7c933d1d42ec59d609c118c0845f3e48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004023"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680270"
 ---
 # Update-AzCosmosDBAccount
 
 ## SYNOPSIS
-Perbarui atribut akun CosmosDB.
+Memperbarui atribut akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Update-AzCosmosDBAccount -InputObject <PSDatabaseAccountGetResults> [-EnableAuto
 ```
 
 ## DESCRIPTION
-Perbarui properti akun CosmosDB. Tidak dapat memperbarui Kawasan Akun secara bersamaan dengan properti lain.
+Perbarui properti akun CosmosDB. Tidak dapat memperbarui Wilayah Akun secara simulasi dengan properti lain.
 
 ## EXAMPLES
 
@@ -95,12 +98,12 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-Diperbarui DefaultConsistencyLevel to "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations dan Enabled VirtualNetwork for CosmosDB Account with name accountName. 
+DefaultConsistencyLevel yang Diperbarui ke "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations, dan Enabled VirtualNetwork for CosmosDB Account dengan nama accountName. 
 
 ## PARAMETERS
 
 ### -AnalyticalStorageSchemaType
-Tipe skema untuk penyimpanan analitik. Nilai yang valid meliputi: 'WellDefined' dan 'FullFidelity'.
+Jenis skema untuk penyimpanan analitis. Nilai yang valid meliputi: 'WellDefined' dan 'FullFidelity'.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupIntervalInMinutes
-Interval(dalam menit) dengan cadangan yang diambil (hanya untuk akun dengan cadangan mode berkala)
+Interval(dalam menit) yang cadangannya diambil (hanya untuk akun dengan cadangan mode berkala)
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupPolicyType
-Tipe cadangan pada akun Cosmos DB. Nilai yang diterima: Periodik, Berkelanjutan
+Jenis cadangan pada akun Cosmos DB. Nilai yang diterima: Berkala, Berkelanjutan
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Tipe redundansi dari akun Storage cadangan
+Jenis redundansi akun Storage cadangan
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableKeyBasedMetadataWriteAccess
-Menonaktifkan operasi penulisan pada sumber daya metadata (database, wadah, throughput) melalui kunci akun
+Menonaktifkan operasi tulis pada sumber daya metadata (database, kontainer, throughput) melalui kunci akun
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticFailover
-Mengaktifkan failover otomatis dari wilayah tulis dalam kejadian langka bahwa kawasan tidak tersedia karena pemadaman.
+Mengaktifkan failover otomatis wilayah tulis jika wilayah tersebut tidak tersedia karena pemadaman.
 Failover otomatis akan menghasilkan wilayah tulis baru untuk akun dan dipilih berdasarkan prioritas failover yang dikonfigurasi untuk akun tersebut.
 Nilai yang diterima: false, true
 
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableVirtualNetwork
-Mengaktifkan jaringan virtual di akun database Cosmos DB.
+Mengaktifkan jaringan virtual pada akun database Cosmos DB.
 Nilai yang diterima: false, true
 
 ```yaml
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Dukungan firewall. Menentukan kumpulan alamat IP atau rentang alamat IP dalam formulir CIDR untuk disertakan sebagai daftar IP klien yang diperbolehkan untuk akun database tertentu.
+Dukungan firewall. Menentukan sekumpulan alamat IP atau rentang alamat IP dalam formulir CIDR untuk disertakan sebagai daftar IP klien yang diizinkan untuk akun database tertentu.
 
 ```yaml
 Type: System.String[]
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultKeyUri
-URI dari KeyVault
+URI of the KeyVault
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessIntervalInSeconds
-Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah ketokohan waktu (dalam jangka waktu) yang ditoleransi.
+Ketika digunakan dengan konsistensi Keusangan Terikat, nilai ini menunjukkan jumlah waktu kedaluarsa (dalam jangka waktu) yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 5-86400.
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah permintaan basi yang ditoleransi.
+Saat digunakan dengan konsistensi Keusangan Terikat, nilai ini menunjukkan jumlah permintaan kedaluarsa yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -376,7 +379,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypass
-Apakah Bypass Acl Jaringan diaktifkan atau tidak untuk akun ini untuk Tautan Sinapsis. Nilai yang memungkinkan meliputi: 'Tidak ada', 'AzureServices'.
+Apakah Bypass Acl Jaringan diaktifkan atau tidak untuk akun ini untuk Synapse Link. Nilai yang mungkin termasuk: 'None', 'AzureServices'.
 
 ```yaml
 Type: System.String
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypassResourceId
-Daftar Id Sumber Daya untuk memperbolehkan Bypass Acl Jaringan untuk Tautan Synapse.
+Daftar Id Sumber Daya untuk mengizinkan Bypass Acl Jaringan untuk Synapse Link.
 
 ```yaml
 Type: System.String[]
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses titik akhir publik diperbolehkan atau tidak untuk server ini. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'
+Apakah akses titik akhir publik diizinkan atau tidak untuk server ini. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -482,8 +485,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable tag sebagai pasangan nilai kunci.
-Gunakan string kosong untuk menghapus tag yang sudah ada.
+Hashtable tag sebagai pasangan kunci-nilai.
+Gunakan string kosong untuk menghapus tag yang ada.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -527,8 +530,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -543,7 +546,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -559,7 +562,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

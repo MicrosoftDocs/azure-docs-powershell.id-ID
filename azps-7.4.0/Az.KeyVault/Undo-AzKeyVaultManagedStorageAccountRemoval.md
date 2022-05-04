@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageAccountRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageAccountRemoval.md
-ms.openlocfilehash: 90b1b479a3d59816aabaf91ec63e3997777e3922
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 614d0b48087c7a6538d5c3c54c3027b0be869ef0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226683"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655868"
 ---
 # Undo-AzKeyVaultManagedStorageAccountRemoval
 
 ## SYNOPSIS
-Memulihkan akun penyimpanan terkelola KeyVault yang sebelumnya dihapus.
+Memulihkan akun penyimpanan yang dikelola KeyVault yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultmanagedstorageaccountremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Undo-AzKeyVaultManagedStorageAccountRemoval [-InputObject] <PSDeletedKeyVaultMan
 ```
 
 ## DESCRIPTION
-Perintah **Batalkan-AzKeyVaultManagedStorageAccountRemoval** memulihkan akun penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan lunak diaktifkan untuk kubah ini, dan upaya untuk memulihkan terjadi selama interval pemulihan.
+Perintah **Undo-AzKeyVaultManagedStorageAccountRemoval** memulihkan akun penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan sementara diaktifkan untuk vault ini, dan bahwa upaya untuk memulihkan terjadi selama interval pemulihan.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Urutan perintah ini menentukan apakah akun penyimpanan tertentu ada dalam kubah dalam status dihapus; perintah berikutnya memulihkan akun penyimpanan yang dihapus, mengembalikannya ke status aktif.
+Urutan perintah ini menentukan apakah akun penyimpanan yang ditentukan ada di vault dalam status dihapus; perintah berikutnya memulihkan akun penyimpanan yang dihapus, membawanya kembali ke status aktif.
 
 ## PARAMETERS
 
@@ -91,9 +94,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun penyimpanan terkelola KeyVault.
-Cmdlet menyusun FQDN target dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
+Cmdlet membangun FQDN target dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

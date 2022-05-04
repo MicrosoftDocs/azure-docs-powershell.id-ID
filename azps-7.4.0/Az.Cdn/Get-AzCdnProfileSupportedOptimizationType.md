@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
-ms.openlocfilehash: e5e2d048462494d32494170d37f0818e579a7860
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a3c4b015da6253c9acbd131eb6a0650aeb77940
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749988"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670336"
 ---
 # Get-AzCdnProfileSupportedOptimizationType
 
 ## SYNOPSIS
-Mendapatkan tipe optimisasi yang didukung untuk profil CDN.
+Mendapatkan jenis pengoptimalan yang didukung untuk profil CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofilesupportedoptimizationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCdnProfileSupportedOptimizationType -CdnProfile <PSProfile> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzCdnProfileSupportedOptimizationType** mendapatkan tipe optimisasi yang didukung untuk profil saat ini. Pengguna dapat membuat titik akhir dengan tipe pengoptimalan dari nilai yang tercantum.
+**Cmdlet Get-AzCdnProfileSupportedOptimizationType** mendapatkan jenis pengoptimalan yang didukung untuk profil saat ini. Pengguna dapat membuat titik akhir dengan jenis pengoptimalan dari nilai yang tercantum.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ OptimizationType: GeneralWebDelivery
 OptimizationType: DynamicSiteAcceleration
 ```
 
-Dapatkan tipe optimisasi yang didukung untuk profil CDN.
+Dapatkan jenis pengoptimalan yang didukung untuk profil CDN.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

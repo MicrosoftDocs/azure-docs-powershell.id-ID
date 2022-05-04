@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/revoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Revoke-AzStorageAccountUserDelegationKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Revoke-AzStorageAccountUserDelegationKeys.md
-ms.openlocfilehash: 2a78b47156b4b22f96e56439b880a79fbcf44f46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 25cfe377680119bce5503eae498d891a94836803
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670608"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658728"
 ---
 # Revoke-AzStorageAccountUserDelegationKeys
 
 ## SYNOPSIS
-Cabut semua kunci Delegasi Pengguna akun Storage.
+Mencabut semua kunci Delegasi Pengguna dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/revoke-azstorageaccountuserdelegationkeys) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Revoke-AzStorageAccountUserDelegationKeys [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Revoke-AzStorageAccountUserDelegationKeys** mencabut semua kunci Delegasi Pengguna akun Storage, sehingga semua token IDENTITY SAS akun Storage juga akan dicabut.
+Cmdlet **Revoke-AzStorageAccountUserDelegationKeys** mencabut semua kunci Delegasi Pengguna dari akun Storage, sehingga semua token SAS Identitas akun Storage juga akan dicabut.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Revoke-AzStorageAccountUserDelegationKeys** mencabut semua kunci Delega
 PS C:\>Revoke-AzStorageAccountUserDelegationKeys -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"
 ```
 
-Contoh ini mencabut semua kunci Delegasi Pengguna akun Storage, sehingga semua token IDENTITAS SAS yang dihasilkan dari kunci Delegasi Pengguna juga akan dicabut.
+Contoh ini mencabut semua kunci Delegasi Pengguna dari akun Storage, sehingga semua token SAS Identitas yang dihasilkan dari kunci Delegasi Pengguna juga akan dicabut.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-id sumber daya akun Storage.
+Storage Id Sumber Daya Akun.
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

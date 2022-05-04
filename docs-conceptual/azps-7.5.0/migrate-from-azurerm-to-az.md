@@ -1,17 +1,17 @@
 ---
 description: Pelajari langkah dan alat untuk memigrasikan skrip Azure PowerShell dari AzureRM ke modul Az PowerShell yang baru.
 ms.custom: devx-track-azurepowershell, contperf-fy21q2
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Memigrasikan skrip Azure PowerShell dari AzureRM ke Az
-ms.openlocfilehash: 514f9c678f29d87d449a1ba78ae936001e3b499c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed6266a2f0ee9a0e8f22b5662d74a1abc204b342
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593458"
 ---
 # <a name="migrate-azure-powershell-from-azurerm-to-az"></a>Memigrasikan Azure PowerShell dari AzureRM ke Az
 
@@ -49,7 +49,7 @@ Untuk memeriksa versi AzureRM mana yang telah Anda terinstal, jalankan contoh be
 Get-Module -Name AzureRM -ListAvailable -All
 ```
 
-Rilis **AzureRM terbaru** yang tersedia adalah **6.13.2**. Jika Anda tidak menginstal versi ini, skrip yang ada mungkin memerlukan modifikasi tambahan untuk bekerja dengan modul Az di luar cakupan apa yang dijelaskan dalam artikel ini dan dalam [daftar perubahan yang melanggar](migrate-az-1.0.0.md).
+Rilis **terbaru** yang tersedia dari AzureRM adalah **6.13.2**. Jika Anda tidak menginstal versi ini, skrip yang ada mungkin memerlukan modifikasi tambahan untuk bekerja dengan modul Az di luar cakupan apa yang dijelaskan dalam artikel ini dan dalam [daftar perubahan yang melanggar](migrate-az-1.0.0.md).
 
 Jika skrip Anda tidak berfungsi dengan AzureRM 6.13.2, perbarui skrip sesuai [dengan panduan migrasi AzureRM 5.x hingga 6.x](/powershell/azure/azurerm/migration-guide.6.0.0). Jika Anda menggunakan versi modul AzureRM yang lebih lama, ada panduan migrasi yang tersedia untuk setiap versi utama.
 

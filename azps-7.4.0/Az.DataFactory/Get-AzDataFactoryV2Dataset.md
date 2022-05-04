@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Dataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Dataset.md
-ms.openlocfilehash: 6e909f41c727f489fe1b4e61c27e335daf965159
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 048def3e0b5d13178bb4f6cbf36c65d6c3db7e2c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228645"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659574"
 ---
 # Get-AzDataFactoryV2Dataset
 
 ## SYNOPSIS
-Mendapatkan informasi tentang kumpulan data di Pabrik Data.
+Mendapatkan informasi tentang himpunan data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ Get-AzDataFactoryV2Dataset [-ResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2Dataset mendapatkan informasi tentang kumpulan data dalam Azure Data Factory.
-Jika Anda menentukan nama kumpulan data, cmdlet ini akan mendapatkan informasi tentang kumpulan data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua kumpulan data di pabrik data.
+Cmdlet Get-AzDataFactoryV2Dataset mendapatkan informasi tentang himpunan data dalam Azure Data Factory.
+Jika Anda menentukan nama himpunan data, cmdlet ini mendapatkan informasi tentang himpunan data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua himpunan data di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang semua kumpulan data
+### Contoh 1: Mendapatkan informasi tentang semua himpunan data
 ```powershell
 Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 ```
@@ -69,9 +72,9 @@ Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
     Properties        : Microsoft.Azure.Management.DataFactory.Models.AzureBlobDataset
 ```
 
-Perintah ini mendapatkan informasi tentang semua kumpulan data di pabrik data bernama WikiADF.
+Perintah ini mendapatkan informasi tentang semua himpunan data di pabrik data bernama WikiADF.
 
-### Contoh 2: Mendapatkan informasi tentang kumpulan data tertentu
+### Contoh 2: Mendapatkan informasi tentang himpunan data tertentu
 ```powershell
 Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents"
 ```
@@ -84,13 +87,13 @@ Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -
     Properties        : Microsoft.Azure.Management.DataFactory.Models.AzureBlobDataset
 ```
 
-Perintah ini mendapatkan informasi tentang kumpulan data bernama DAWikipediaClickEvents di pabrik data bernama WikiADF.
+Perintah ini mendapatkan informasi tentang himpunan data bernama DAWikipediaClickEvents di pabrik data bernama WikiADF.
 
 ## PARAMETERS
 
 ### -DataFactory
 Menentukan objek PSDataFactory.
-Cmdlet ini mendapatkan kumpulan data yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan himpunan data milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mendapatkan kumpulan data yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan himpunan data milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -135,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan data untuk mendapatkan informasi.
+### -Name
+Menentukan nama himpunan data yang akan mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mendapatkan kumpulan data yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini mendapatkan himpunan data yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

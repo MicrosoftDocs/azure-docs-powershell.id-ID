@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/test-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationTrialAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationTrialAvailability.md
-ms.openlocfilehash: 2c23a47ce8d846f19cdaf746722b7c5e290ffdc4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89e5c9217c52856a8769bca936bbbae80ab7f713
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597002"
 ---
 # Test-AzVMwareLocationTrialAvailability
 
 ## SYNOPSIS
-Mengembalikan status uji coba untuk langganan menurut kawasan
+Mengembalikan status uji coba untuk langganan menurut wilayah
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/test-azvmwarelocationtrialavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzVMwareLocationTrialAvailability -Location <String> [-SubscriptionId <Stri
 ```
 
 ## DESCRIPTION
-Mengembalikan status uji coba untuk langganan menurut kawasan
+Mengembalikan status uji coba untuk langganan menurut wilayah
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure
+Wilayah Azure
 
 ```yaml
 Type: System.String
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

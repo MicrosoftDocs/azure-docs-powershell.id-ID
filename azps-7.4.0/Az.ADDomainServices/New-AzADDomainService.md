@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainService.md
-ms.openlocfilehash: 564e703b0317dd973e7f347c803348167f97b3d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8915899a0d2bdf70d0a42c49b9e4344e4535e6b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068427"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654177"
 ---
 # New-AzADDomainService
 
 ## SYNOPSIS
 Operasi Buat Layanan Domain membuat layanan domain baru dengan parameter yang ditentukan.
-Jika layanan tertentu sudah ada, properti patchable apa pun akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+Jika layanan tertentu sudah ada, properti apa pun yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/new-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzADDomainService -Name <String> -ResourceGroupName <String> -DomainName <St
 
 ## DESCRIPTION
 Operasi Buat Layanan Domain membuat layanan domain baru dengan parameter yang ditentukan.
-Jika layanan tertentu sudah ada, properti patchable apa pun akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+Jika layanan tertentu sudah ada, properti apa pun yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Membuat ADDomainService baru
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainConfigurationType
-Tipe Konfigurasi Domain
+Jenis Konfigurasi Domain
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-Nama domain Azure yang ingin digunakan pengguna untuk menyebarkan Layanan Domain.
+Nama domain Azure tempat pengguna ingin menyebarkan Domain Services.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingNtlmV1
-Bendera untuk menentukan apakah NtlmV1 diaktifkan atau tidak dinonaktifkan.
+Bendera untuk menentukan apakah NtlmV1 diaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingSyncKerberosPassword
-Bendera untuk menentukan apakah SyncKerberosPasswords diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah SyncKerberosPasswords diaktifkan atau dinonaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingSyncNtlmPassword
-Bendera untuk menentukan apakah SyncNtlmPasswords diaktifkan atau tidak.
+Bendera untuk menentukan apakah SyncNtlmPasswords diaktifkan atau dinonaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingSyncOnPremPassword
-Bendera untuk menentukan apakah SyncOnPremPasswords diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah SyncOnPremPasswords diaktifkan atau dinonaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingTlsV1
-Bendera untuk menentukan apakah TlsV1 diaktifkan atau tidak dinonaktifkan.
+Bendera untuk menentukan apakah TlsV1 diaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilteredSync
-Bendera Diaktifkan atau Dinonaktifkan untuk mengaktifkan sinkronisasi terfilter berbasis grup
+Bendera Diaktifkan atau Dinonaktifkan untuk mengaktifkan sinkronisasi terfilter berbasis Grup
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForestTrust
-Daftar pengaturan untuk Hutan Sumber Daya Untuk membangun, lihat bagian CATATAN untuk properti FORESTTRUST dan membuat tabel hash.
+Daftar pengaturan untuk Pembuatan Forest Sumber Daya, lihat bagian CATATAN untuk properti FORESTTRUST dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IForestTrust[]
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingExternalAccess
-Bendera untuk menentukan apakah akses LDAP Aman atau tidak melalui internet diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah akses LDAP Aman melalui internet diaktifkan atau dinonaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingLdaps
-Bendera untuk menentukan apakah LDAP Aman diaktifkan atau tidak dinonaktifkan.
+Bendera untuk menentukan apakah LDAP Aman diaktifkan atau dinonaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -251,8 +254,8 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingPfxCertificate
-Sertifikat yang diperlukan untuk mengonfigurasi LDAP Aman.
-Parameter yang lolos di sini harus berupa representasi base64encoded dari file pfx sertifikat.
+Sertifikat yang diperlukan untuk mengonfigurasi Secure LDAP.
+Parameter yang diteruskan di sini harus menjadi representasi base64encoded dari file pfx sertifikat.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan domain.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationSettingNotifyDcAdmin
-Haruskah admin pengontrol domain diberi tahu
+Jika admin pengontrol domain akan diberi tahu
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaSet
-Daftar ReplicaSet Untuk dibangun, lihat bagian CATATAN untuk properti REPLICASET dan membuat tabel hash.
+Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IReplicaSet[]
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya dalam langganan pengguna.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tipe Sku
+Jenis Sku
 
 ```yaml
 Type: System.String
@@ -418,8 +421,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -448,8 +451,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -464,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -497,16 +500,16 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Hutan Sumber Daya
-  - `[FriendlyName <String>]`: Nama bersahabat
+FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Resource Forest
+  - `[FriendlyName <String>]`: Nama Akrab
   - `[RemoteDnsIP <String>]`: Ip Dns Jarak Jauh
   - `[TrustDirection <String>]`: Arah Kepercayaan
   - `[TrustPassword <String>]`: Kata Sandi Kepercayaan
   - `[TrustedDomainFqdn <String>]`: FQDN Domain Tepercaya
 
-REPLICASET <IReplicaSet[]>: Daftar ReplicaSet
+REPLICASET <IReplicaSet[]>: Daftar ReplicaSets
   - `[Location <String>]`: Lokasi jaringan virtual
-  - `[SubnetId <String>]`: Nama jaringan virtual tempat Layanan Domain akan digunakan. Id subnet tempat Layanan Domain akan digunakan. /virtualNetwork/vnetName/subnets/subnetName.
+  - `[SubnetId <String>]`: Nama jaringan virtual tempat Domain Services akan disebarkan. Id subnet tempat Domain Services akan disebarkan. /virtualNetwork/vnetName/subnets/subnetName.
 
 ## RELATED LINKS
 

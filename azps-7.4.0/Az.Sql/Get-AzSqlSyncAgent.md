@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgent.md
-ms.openlocfilehash: f2fa5e1ad750526664d8824f6460cde6307ec360
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70d9ece74ed226b6da1448cfbb812d275b1f4b9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799452"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605282"
 ---
 # Get-AzSqlSyncAgent
 
 ## SYNOPSIS
 Mengembalikan informasi tentang agen sinkronisasi Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncagent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Get-AzSqlSyncAgent [[-Name] <String>] [-ServerName] <String> [-ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlSyncAgent** mengembalikan informasi tentang satu atau beberapa agen sinkronisasi Azure SQL.
+Cmdlet **Get-AzSqlSyncAgent** mengembalikan informasi tentang satu atau beberapa Agen Sinkronisasi Azure SQL.
 Tentukan nama agen sinkronisasi untuk melihat informasi hanya untuk agen sinkronisasi tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua contoh Agen Sinkronisasi Azure SQL yang ditetapkan ke Server Azure SQL
+### Contoh 1: Dapatkan semua instans Agen Sinkronisasi Azure SQL yang ditetapkan ke server Azure SQL
 ```powershell
 Get-AzSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Format-List
 ```
@@ -61,9 +64,9 @@ ExpiryTime                  :
 State                       : Online
 ```
 
-Perintah ini mendapatkan informasi tentang semua Agen Sinkronisasi Azure SQL yang ditetapkan ke Server Azure SQL.
+Perintah ini mendapatkan informasi tentang semua Agen Sinkronisasi Azure SQL yang ditetapkan ke server Azure SQL.
 
-### Contoh 2: Dapatkan informasi tentang agen sinkronisasi Azure SQL
+### Contoh 2: Mendapatkan informasi tentang Agen Sinkronisasi Azure SQL
 ```powershell
 Get-AzSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -Name "SyncAgent01" | Format-List
 ```
@@ -84,7 +87,7 @@ State                       : Online
 
 Perintah ini mendapatkan informasi tentang Agen Sinkronisasi Azure SQL Database dengan nama "SyncAgent01"
 
-### Contoh 3: Dapatkan semua contoh Agen Sinkronisasi Azure SQL yang ditetapkan ke Server Azure SQL menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua instans Agen Sinkronisasi Azure SQL yang ditetapkan ke server Azure SQL menggunakan pemfilteran
 ```powershell
 Get-AzSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -Name SyncAgent* | Format-List
 ```
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama agen sinkronisasi.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat agen sinkronisasi berada.
+Nama Azure SQL Server tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

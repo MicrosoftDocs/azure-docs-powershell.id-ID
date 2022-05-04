@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryManifest.md
-ms.openlocfilehash: 723d158c6f5b5fb1be01d5b584f1611e9c57d8b1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b022cd880ae3573d840d776877635ab9863f39cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064935"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144656552"
 ---
 # Get-AzContainerRegistryManifest
 
 ## SYNOPSIS
-Dapatkan atau cantumkan manifes ACR. 
+Mendapatkan atau mencantumkan manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Get-AzContainerRegistryManifest -RepositoryName <String> -Name <String> -Registr
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan manifes ACR.
-Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -ReadEnable $true -ListEnable $true`
+Mendapatkan atau mencantumkan manifes ACR.
+Untuk menggunakan cmdlet ini, silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -ReadEnable $true -ListEnable $true`
 Pertama.
 
 ## EXAMPLES
@@ -49,7 +52,7 @@ Registry                    ImageName                   ManifestsAttributes
 registry.azurecr.io         alpine         {Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase, Microsoft.Azure.Comm…}
 ```
 
-Daftar manifes untuk repository alpine di bawah registri.
+Mencantumkan manifes untuk alpine repositori di bawah registri.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ Registry                    ImageName Attributes
 registry.azurecr.io         alpine    Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase
 ```
 
-Dapatkan manifes sha256:a5426f084c755f4d6c1d1562a2d456a574a24a61706f6806415627360c06ac0 untuk repository alpine di bawah registri.
+Dapatkan manifes sha256:a5426f084c755f4d6c1d1562a2d456aa574a24a61706f6806415627360c06ac0 untuk alpine repositori di bawah registri.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Referensi manifes.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama Penyimpanan.
+Nama Repositori.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
-ms.openlocfilehash: 6743329d9f77c8f197c0c3448f899742d018dab1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: deada1ac27ee19eeb31ac0437396a63df5ce73b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800082"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713614"
 ---
 # Update-AzServiceFabricVmImage
 
 ## SYNOPSIS
 
-Perbarui pengaturan vmImage sumber daya kluster yang memetakan paket runtime yang sesuai untuk dikirim berdasarkan sistem operasi target.
+Perbarui pengaturan vmImage sumber daya kluster yang memetakan paket runtime yang sesuai untuk dikirimkan berdasarkan sistem operasi target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Update-AzServiceFabricVmImage [-ResourceGroupName] <String> [-Name] <String> -Vm
 
 Gunakan **Update-AzServiceFabricVmImage** untuk memperbarui pengaturan vmImage kluster, yang bertanggung jawab atas pengiriman paket runtime.
 
-Catatan Penting: VmImage 'Linux' serta peta 'Ubuntu' untuk pengiriman paket Ubuntu 16.04, jadi jika tujuannya adalah untuk menjalankan Ubuntu18+, gunakan Ubuntu18_04.
+Catatan Penting: VmImage 'Linux' serta peta 'Ubuntu' ke pengiriman paket Ubuntu 16.04, jadi jika niatnya adalah menjalankan Ubuntu18+, gunakan Ubuntu18_04.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Catatan Penting: VmImage 'Linux' serta peta 'Ubuntu' untuk pengiriman paket Ubun
 Update-AzServiceFabricVmImage -ResourceGroupName 'Group1' -ClusterName 'Contoso01SFCluster' -VmImage Ubuntu18_04
 ```
 
-Perintah ini mengubah vmImage dari kluster 'Contoso01SFCluster' menjadi 'Ubuntu18_04', untuk tujuan melakukan migrasi pemutakhiran di masa mendatang untuk menggunakan paket runtime deb Ubuntu 18 SF.
+Perintah ini mengubah vmImage dari kluster 'Contoso01SFCluster' menjadi 'Ubuntu18_04', untuk tujuan memigrasikan peningkatan di masa mendatang untuk menggunakan paket deb runtime Ubuntu 18 SF.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 Tentukan nama kluster, jika tidak diberikan akan sama dengan nama grup sumber daya
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmImage
-Tentukan vmImage target umum yang akan digunakan untuk kluster.
+Tentukan target umum vmImage yang akan digunakan untuk kluster.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.VmImageKind
@@ -107,9 +110,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 
-Meminta konfirmasi sebelum menjalankan cmdlet.
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

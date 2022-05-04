@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceLink.md
-ms.openlocfilehash: db2df50adb31fc90c4bc2e1d60564e4f2ae662d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 816c70a6e226c2f7097733cec52b223579961962
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995889"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713416"
 ---
 # Get-AzSqlInstanceLink
 
 ## SYNOPSIS
 Mengembalikan informasi tentang fitur tautan untuk Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,11 +46,11 @@ Get-AzSqlInstanceLink [-ResourceId] <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceLink** mengembalikan informasi tentang satu atau beberapa contoh tautan Azure SQL Managed Instance. Tentukan nama link untuk melihat informasi untuk tautan tersebut saja.
+Cmdlet **Get-AzSqlInstanceLink** mengembalikan informasi tentang satu atau beberapa instans tautan Azure SQL Managed Instance. Tentukan nama tautan untuk melihat informasi untuk tautan tersebut saja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang tautan aktif di Azure SQL Managed Instance
+### Contoh 1: Mendapatkan informasi tentang tautan aktif di Azure SQL Managed Instance
 ```powershell
 PS C:\> Get-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01"
 ```
@@ -70,7 +73,7 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01" pada instance "Instance01" dan grup sumber daya "ResourceGroup01".
+Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01" pada instans "Instance01" dan grup sumber daya "ResourceGroup01".
 
 ### Contoh 2: Dapatkan informasi tentang semua tautan aktif di Azure SQL Managed Instance
 ```powershell
@@ -196,7 +199,7 @@ LastHardenedLsn                :
 
 Perintah ini mendapatkan informasi tentang semua tautan instans untuk instans "ManagedInstance01".
 
-### Contoh 5: Dapatkan tautan instans menggunakan pengidentifikasi sumber dayanya
+### Contoh 5: Mendapatkan tautan instans menggunakan pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Get-AzSqlInstanceLink -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance01/distributedAvailabilityGroups/Link01"
 ```
@@ -221,7 +224,7 @@ LastHardenedLsn                :
 
 Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01".
 
-### Contoh 6: Dapatkan semua tautan instans untuk Instans Terkelola dengan memipakan objek instans
+### Contoh 6: Mendapatkan semua tautan instans untuk Instans Terkelola dengan menyalurkan objek instans
 ```powershell
 PS C:\> Get-AzSqlInstance -Name "ManagedInstance01" -ResourceGroupName "ResourceGroup01" | Get-AzSqlInstanceLink
 ```
@@ -262,7 +265,7 @@ LastHardenedLsn                :
 
 Perintah ini mendapatkan informasi tentang semua tautan instans dalam instans "ManagedInstance01".
 
-### Contoh 7: Dapatkan tautan instans tertentu untuk instans dengan mempipa objek instans dan menentukan nama tautan
+### Contoh 7: Dapatkan tautan instans tertentu untuk instans dengan menyalurkan objek instans dan menentukan nama tautan
 ```powershell
 PS C:\> Get-AzSqlInstance -Name "ManagedInstance01" -ResourceGroupName "ResourceGroup01" | Get-AzSqlInstanceLink -Name "Link01"
 ```
@@ -287,7 +290,7 @@ LastHardenedLsn                :
 
 Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01: dalam instans "Instance01".
 
-### Contoh 8: Dapatkan informasi tentang tautan instans menggunakan parameter posisi
+### Contoh 8: Mendapatkan informasi tentang tautan instans menggunakan parameter posisi
 ```powershell
 PS C:\> Get-AzSqlInstanceLink "ResourceGroup01" "ManagedInstance01" "Link01"
 ```
@@ -310,7 +313,7 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01" pada instance "Instance01" dan grup sumber daya "ResourceGroup01".
+Perintah ini mendapatkan informasi tentang tautan instans bernama "Link01" pada instans "Instance01" dan grup sumber daya "ResourceGroup01".
 
 ## PARAMETERS
 
@@ -374,7 +377,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan instans.
 
 ```yaml
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/new-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticTagRule.md
-ms.openlocfilehash: 50d6ecf947606141071c8434fc7c69e7eaa5283f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8862f72214da41759e15fadba1173672a0b1b356
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316413"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696962"
 ---
 # New-AzElasticTagRule
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/new-azelastictagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzElasticTagRule -MonitorName <String> -ResourceGroupName <String> [-Subscri
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 1: Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu
 ```powershell
 New-AzElasticTagRule -ResourceGroupName azps-elastic-test -MonitorName elastic-pwsh02 -LogRuleSendActivityLog
 ```
@@ -41,7 +44,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         azps-elastic-test
 ```
 
-Perintah ini membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## PARAMETERS
 
@@ -61,12 +64,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleFilteringTag
-Daftar pemfilteran tag yang akan digunakan untuk mengambil log.
+Daftar tag pemfilteran yang akan digunakan untuk menangkap log.
 Ini hanya berlaku jika bendera SendActivityLogs diaktifkan.
-Jika kosong, semua sumber daya akan direkam.
-Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
-Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-Untuk membangun, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan membuat tabel hash.
+Jika kosong, semua sumber daya akan ditangkap.
+Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
+Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+Untuk membuat, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IFilteringTag[]
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis berada.
+Nama grup sumber daya tempat sumber daya Elastic berada.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -220,9 +223,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk mengambil log. Ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan direkam. Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-  - `[Action <TagAction?>]`: Tindakan valid untuk tag pemfilteran.
-  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) tag.
+LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk menangkap log. Ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan ditangkap. Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+  - `[Action <TagAction?>]`: Tindakan yang valid untuk tag pemfilteran.
+  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) dari tag.
   - `[Value <String>]`: Nilai tag.
 
 ## RELATED LINKS

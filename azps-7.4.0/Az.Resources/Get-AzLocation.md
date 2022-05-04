@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzLocation.md
-ms.openlocfilehash: 8ff8f30a1a8268597679dfed3b44b0fc8ec62313
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b104b2da54fd473fff7d94d5a4a732c95e6c9363
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674280"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713830"
 ---
 # Get-AzLocation
 
 ## SYNOPSIS
 Mendapatkan semua lokasi dan penyedia sumber daya yang didukung untuk setiap lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,14 +32,14 @@ Cmdlet **Get-AzLocation** mendapatkan semua lokasi dan penyedia sumber daya yang
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua lokasi dan penyedia sumber daya yang didukung
+### Contoh 1: Mendapatkan semua lokasi dan penyedia sumber daya yang didukung
 ```powershell
 Get-AzLocation
 ```
 
 Perintah ini mendapatkan semua lokasi dan penyedia sumber daya yang didukung untuk setiap lokasi.
 
-### Contoh 2: Dapatkan semua lokasi yang mendukung penyedia sumber daya Microsoft.AppConfiguration
+### Contoh 2: Mendapatkan semua lokasi yang mendukung penyedia sumber daya Microsoft.AppConfiguration
 ```powershell
 Get-AzLocation | Where-Object {$_.Providers -contains "Microsoft.AppConfiguration"}
 ```
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,11 +110,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationType.md
-ms.openlocfilehash: c38f093302448a13264bccad2b1734e2f524ae33
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85e5fa072ac1688d2a8ad43a6feef7a37dd5daa5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934363"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630352"
 ---
 # Remove-AzServiceFabricApplicationType
 
 ## SYNOPSIS
-Hapus Service fabric tipe aplikasi dari kluster. Tindakan ini akan menghapus semua versi tipe di bawah sumber daya ini. Hanya mendukung ARM tipe aplikasi yang digunakan.
+Hapus Service fabric jenis aplikasi dari kluster. Ini akan menghapus semua versi jenis di bawah sumber daya ini. Hanya mendukung jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzServiceFabricApplicationType -InputObject <PSApplicationType> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus tipe aplikasi dari kluster dan akan menghapus semua versi tipe di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
+Cmdlet ini menghapus jenis aplikasi yang membentuk kluster dan akan menghapus semua versi jenis di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ $appTypeName = "testAppType"
 Remove-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Verbose
 ```
 
-Contoh ini akan menghapus tipe aplikasi "testAppType" dan semua versi di bawahnya. Jika ada aplikasi yang dibuat dengan tipe ini, perintah akan memberikan pengecualian.
+Contoh ini akan menghapus jenis aplikasi "testAppType" dan semua versi di bawahnya. Jika ada aplikasi yang dibuat dengan jenis ini, perintah akan memberikan pengecualian.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Hapus tanpa perintah.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe aplikasi.
+Sumber daya jenis aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSApplicationType
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe aplikasi.
+### -Name
+Tentukan nama jenis aplikasi.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari tipe aplikasi.
+Arm ResourceId dari jenis aplikasi.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

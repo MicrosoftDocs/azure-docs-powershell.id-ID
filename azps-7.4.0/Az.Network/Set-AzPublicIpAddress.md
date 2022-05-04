@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpAddress.md
-ms.openlocfilehash: 5305fe436cf8a1ac04a38bebe2a1f15c82e84413
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d84df69fbe2c0ec4d76efd0dea08b25c90bf6a10
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312741"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657666"
 ---
 # Set-AzPublicIpAddress
 
 ## SYNOPSIS
 Memperbarui alamat IP publik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzPublicIpAddress -PublicIpAddress <PSPublicIpAddress> [-AsJob] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPublicIpAddress** memperbarui alamat IP publik.
+**Cmdlet Set-AzPublicIpAddress** memperbarui alamat IP publik.
 
 ## EXAMPLES
 
@@ -41,9 +44,9 @@ Set-AzPublicIpAddress -PublicIpAddress $publicIp
 Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
- Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
-Perintah kedua mengatur metode alokasi objek alamat IP publik menjadi "Statis".
-Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui, dan mengubah metode alokasi menjadi 'Statis'. Alamat IP publik langsung dialokasikan.
+ Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName di grup sumber daya $rgName.
+Perintah kedua mengatur metode alokasi objek alamat IP publik ke "Statis".
+Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui, dan memodifikasi metode alokasi menjadi 'Statis'. Alamat IP publik segera dialokasikan.
 
 ### 2: Menambahkan label domain DNS dari alamat IP publik
 ```powershell
@@ -56,9 +59,9 @@ Set-AzPublicIpAddress -PublicIpAddress $publicIp
 $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
-Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
-Perintah kedua mengatur properti DomainNameLabel ke prefiks dns yang diperlukan.
-Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn diubah seperti yang diharapkan.
+Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName di grup sumber daya $rgName.
+Perintah kedua mengatur properti DomainNameLabel ke awalan dns yang diperlukan.
+Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
     
 ### 3: Mengubah label domain DNS dari alamat IP publik
 ```powershell
@@ -71,14 +74,14 @@ Set-AzPublicIpAddress -PublicIpAddress $publicIp
 $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 ```
 
-Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam $rgName grup sumber daya.
-Perintah kedua mengatur properti DomainNameLabel ke prefiks dns yang diperlukan.
-Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn diubah seperti yang diharapkan.
+Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName di grup sumber daya $rgName.
+Perintah kedua mengatur properti DomainNameLabel ke awalan dns yang diperlukan.
+Set-AzPublicIPAddress perintah memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek alamat IP publik yang mewakili status yang harus diatur alamat IP publiknya.
+Menentukan objek alamat IP publik yang mewakili status tempat alamat IP publik harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzPublicIpAddress](./Get-AzPublicIpAddress.md)
+[Dapatkan-AzPublicIpAddress](./Get-AzPublicIpAddress.md)
 
 [New-AzPublicIpAddress](./New-AzPublicIpAddress.md)
 
