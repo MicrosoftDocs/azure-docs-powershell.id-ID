@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
-ms.openlocfilehash: 2129a584dc7e57ae7f8b9efcd6b35e72ecd8fe26
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2549471f14096895fb4c42471936536e4436e0e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059301"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725256"
 ---
-# New-AzResourceGroup
+# Baru-AzResourceGroup
 
 ## SYNOPSIS
 Membuat grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ New-AzResourceGroup [-Name] <String> [-Location] <String> [-Tag <Hashtable>] [-F
 
 ## DESCRIPTION
 Cmdlet **New-AzResourceGroup** membuat grup sumber daya Azure.
-Anda bisa membuat grup sumber daya hanya dengan menggunakan nama dan lokasi, lalu gunakan cmdlet New-AzResource untuk membuat sumber daya untuk ditambahkan ke grup sumber daya.
-Untuk menambahkan penyebaran ke grup sumber daya yang sudah ada, gunakan cmdlet New-AzResourceGroupDeployment. Untuk menambahkan sumber daya ke grup sumber daya yang sudah ada, gunakan cmdlet **New-AzResource** . Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang disebarkan sebagai unit.
+Anda dapat membuat grup sumber daya hanya dengan menggunakan nama dan lokasi, lalu menggunakan cmdlet New-AzResource untuk membuat sumber daya untuk ditambahkan ke grup sumber daya.
+Untuk menambahkan penyebaran ke grup sumber daya yang ada, gunakan cmdlet New-AzResourceGroupDeployment. Untuk menambahkan sumber daya ke grup sumber daya yang ada, gunakan cmdlet **New-AzResource** . Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang disebarkan sebagai unit.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ New-AzResourceGroup -Name RG01 -Location "South Central US"
 
 Perintah ini membuat grup sumber daya yang tidak memiliki sumber daya. Anda dapat menggunakan cmdlet **New-AzResource** atau **New-AzResourceGroupDeployment** untuk menambahkan sumber daya dan penyebaran ke grup sumber daya ini.
 
-### Contoh 2: Membuat grup sumber daya kosong menggunakan parameter posisi
+### Contoh 2: Membuat grup sumber daya kosong menggunakan parameter posisional
 ```powershell
 New-AzResourceGroup RG01 "South Central US"
 ```
@@ -51,7 +54,7 @@ Perintah ini membuat grup sumber daya yang tidak memiliki sumber daya.
 New-AzResourceGroup -Name RG01 -Location "South Central US" -Tag @{Empty=$null; Department="Marketing"}
 ```
 
-Perintah ini membuat grup sumber daya kosong. Perintah ini sama dengan perintah dalam Contoh 1, kecuali bahwa perintah menetapkan tag ke grup sumber daya. Tag pertama, bernama Kosong, bisa digunakan untuk mengidentifikasi grup sumber daya yang tidak memiliki sumber daya. Tag kedua dinamai Departemen dan memiliki nilai Pemasaran. Anda bisa menggunakan tag seperti ini untuk mengkategorikan grup sumber daya untuk administrasi atau penganggaran.
+Perintah ini membuat grup sumber daya kosong. Perintah ini sama dengan perintah di Contoh 1, kecuali bahwa perintah menetapkan tag ke grup sumber daya. Tag pertama, bernama Kosong, dapat digunakan untuk mengidentifikasi grup sumber daya yang tidak memiliki sumber daya. Tag kedua diberi nama Departemen dan memiliki nilai Pemasaran. Anda dapat menggunakan tag seperti ini untuk mengategorikan grup sumber daya untuk administrasi atau anggaran.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -102,8 +105,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi grup sumber daya. Tentukan lokasi pusat data Azure, seperti AS Barat atau Asia Tenggara. Anda bisa menempatkan grup sumber daya di lokasi mana pun. Grup sumber daya tidak harus berada di lokasi yang sama dengan langganan Azure Anda atau di lokasi yang sama dengan sumber dayanya.
-Untuk menentukan lokasi mana yang mendukung setiap tipe sumber daya, gunakan cmdlet Get-AzResourceProvider dengan parameter *ProviderNamespace* .
+Menentukan lokasi grup sumber daya. Tentukan lokasi pusat data Azure, seperti US Barat atau Asia Tenggara. Anda dapat menempatkan grup sumber daya di lokasi mana pun. Grup sumber daya tidak harus berada di lokasi yang sama dengan langganan Azure Anda atau di lokasi yang sama dengan sumber dayanya.
+Untuk menentukan lokasi mana yang mendukung setiap jenis sumber daya, gunakan cmdlet Get-AzResourceProvider dengan parameter *ProviderNamespace* .
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk grup sumber daya. Nama sumber daya harus unik dalam langganan. Jika grup sumber daya yang memiliki nama tersebut sudah ada, perintah akan meminta konfirmasi sebelum mengganti grup sumber daya yang sudah ada.
+### -Name
+Menentukan nama untuk grup sumber daya. Nama sumber daya harus unik dalam langganan. Jika grup sumber daya yang memiliki nama tersebut sudah ada, perintah akan meminta konfirmasi sebelum mengganti grup sumber daya yang ada.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,9 +151,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya.
-Setelah menetapkan tag ke sumber daya dan grup, Anda bisa menggunakan parameter *Tag* Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup menurut nama tag atau menurut nama dan nilai. Anda bisa menggunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya.
-Untuk mendapatkan tag yang sudah ditentukan sebelumnya, gunakan cmdlet Get-AzTag.
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya.
+Setelah menetapkan tag ke sumber daya dan grup, Anda dapat menggunakan parameter *Tag* Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup menurut nama tag atau berdasarkan nama dan nilai. Anda dapat menggunakan tag untuk mengategorikan sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya.
+Untuk mendapatkan tag yang telah ditentukan sebelumnya, gunakan cmdlet Get-AzTag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -220,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzResourceGroupDeployment](./New-AzResourceGroupDeployment.md)
 
-[Hapus-AzResourceGroup](./Remove-AzResourceGroup.md)
+[Remove-AzResourceGroup](./Remove-AzResourceGroup.md)
 
 [Set-AzResourceGroup](./Set-AzResourceGroup.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
-ms.openlocfilehash: 6779373727113667687750192dc5a59b7c27f4b1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 159c2818ba623cad28b42a37c9279866b3c9ade2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123147"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719426"
 ---
 # Update-AzDnsForwardingRulesetForwardingRule
 
 ## SYNOPSIS
-Memperbarui aturan penerusan dalam aturan penerusan DNS.
+Memperbarui aturan penerusan dalam kumpulan aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsforwardingrulesetforwardingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Update-AzDnsForwardingRulesetForwardingRule -InputObject <IDnsResolverIdentity> 
 ```
 
 ## DESCRIPTION
-Memperbarui aturan penerusan dalam aturan penerusan DNS.
+Memperbarui aturan penerusan dalam kumpulan aturan penerusan DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui aturan penerusan menurut nama (menambahkan metadata)
+### Contoh 1: Memperbarui aturan penerusan berdasarkan nama (menambahkan metadata)
 ```powershell
 Update-AzDnsForwardingRulesetForwardingRule -DnsForwardingRulesetName dnsForwardingRuleset -Name sampleForwardingRule -ResourceGroupName sampleRG -Metadata @{"key0" = "value0"}
 ```
@@ -50,7 +53,7 @@ Location Name                 Type                                    Etag
 westus2  forwardingRule Microsoft.Network/dnsForwardingRulesets/forwardingRule "04005592-0000-0800-0000-60e7ec170000"
 ```
 
-Perintah ini memperbarui aturan penerusan menurut nama (menambahkan metadata)
+Perintah ini memperbarui aturan penerusan berdasarkan nama (menambahkan metadata)
 
 ### Contoh 2: Memperbarui aturan penerusan menurut identitas
 ```powershell
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag sumber daya.
 Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan penerusan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -207,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetDnsServer
-Server DNS untuk meneruskan kueri DNS ke.
-Untuk membangun, lihat bagian CATATAN untuk properti TARGETDNSSERVER dan membuat tabel hash.
+Server DNS untuk meneruskan kueri DNS.
+Untuk membuat, lihat bagian CATATAN untuk properti TARGETDNSSERVER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.ITargetDnsServer[]
@@ -222,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -274,18 +277,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama penuntas DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.
 
-TARGETDNSSERVER <ITargetDnsServer[]>: Server DNS untuk meneruskan kueri DNS ke dalamnya.
+TARGETDNSSERVER <ITargetDnsServer[]>: Server DNS untuk meneruskan kueri DNS.
   - `[IPAddress <String>]`: Alamat IP server DNS.
   - `[Port <Int32?>]`: Port server DNS.
 

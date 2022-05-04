@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
-ms.openlocfilehash: be9ce45b0b1b7ecfa09a04b0d597237c4d9a44ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5f11b66d05daca0002dfc92b07ff99342df7a6f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864270"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700880"
 ---
 # New-AzStorageAccountSASToken
 
 ## SYNOPSIS
 Membuat token SAS tingkat akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ New-AzStorageAccountSASToken -Service <SharedAccessAccountServices>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageAccountSASToken** membuat token tanda tangan akses bersama (SAS) tingkat akun untuk akun Penyimpanan Azure.
-Anda bisa menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
+Cmdlet **New-AzStorageAccountSASToken** membuat token tanda tangan akses bersama (SAS) tingkat akun untuk akun Azure Storage.
+Anda dapat menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
 
 ## EXAMPLES
 
@@ -40,23 +43,23 @@ PS C:\> New-AzStorageAccountSASToken -Service Blob,File,Table,Queue -ResourceTyp
 
 Perintah ini membuat token SAS tingkat akun dengan izin penuh.
 
-### Contoh 2: Membuat token SAS tingkat akun untuk rentang alamat IP dan EnkripsiSkop
+### Contoh 2: Membuat token SAS tingkat akun untuk berbagai alamat IP dan EncryptionScope
 ```
 PS C:\> New-AzStorageAccountSASToken -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission "racwdlup" -Protocol HttpsOnly -IPAddressOrRange 168.1.5.60-168.1.5.70 -EncryptionScope scopename
 ```
 
-Perintah ini membuat token SAS tingkat akun untuk permintaan HTTPS saja dari rentang alamat IP tertentu, dengan EncryptionScope tertentu.
+Perintah ini membuat token SAS tingkat akun untuk permintaan khusus HTTPS dari rentang alamat IP yang ditentukan, dengan EncryptionScope tertentu.
 
-### Contoh 3: Membuat token SAS tingkat akun yang valid selama 24 jam
+### Contoh 3: Membuat token SAS tingkat akun yang berlaku selama 24 jam
 ```
 PS C:\> New-AzStorageAccountSASToken -Service Blob -ResourceType Service,Container,Object -Permission "rl" -ExpiryTime (Get-Date).AddDays(1)
 ```
 
-Perintah ini membuat token SAS tingkat akun baca-saja yang valid selama 24 jam. 
+Perintah ini membuat token SAS tingkat akun baca-saja yang berlaku selama 24 jam. 
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Anda dapat menggunakan cmdlet New-AzStorageContext untuk mendapatkan objek **AzureStorageContext** .
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScope
-Lingkup enkripsi untuk digunakan saat mengirimkan permintaan yang diizinkan dengan URI SAS ini.
+Cakupan enkripsi untuk digunakan saat mengirim permintaan yang diotorisasi dengan URI SAS ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu ketika tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Menentukan alamat IP atau rentang alamat IP tempat menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
 Rentangnya inklusif.
 
 ```yaml
@@ -134,10 +137,10 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin untuk akun Penyimpanan.
-Izin hanya valid jika cocok dengan tipe sumber daya yang ditentukan.
-Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
-Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Menyusun Akun SAS http://go.microsoft.com/fwlink/?LinkId=799514
+Menentukan izin untuk akun Storage.
+Izin hanya valid jika cocok dengan jenis sumber daya yang ditentukan.
+Penting untuk dicatat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
+Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Membuat SAS Akun http://go.microsoft.com/fwlink/?LinkId=799514
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 Menentukan protokol yang diizinkan untuk permintaan yang dibuat dengan AKUN SAS.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - HttpsOnly
-- HttpsOrHttp The default value is HttpsOrHttp.
+- HttpsOrHttp Nilai defaultnya adalah HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Storage.SharedAccessProtocol]
@@ -171,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya yang tersedia dengan token SAS.
+Menentukan jenis sumber daya yang tersedia dengan token SAS.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
+- Tidak ada
 - Layanan
-- Wadah
+- Kontainer
 - Objek
 
 ```yaml
@@ -191,14 +194,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Layanan
+### -Service
 Menentukan layanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
-- Gumpalan
+- Tidak ada
+- Blob
 - File
-- Antrian
-- Meja
+- Antrean
+- Tabel
 
 ```yaml
 Type: Microsoft.Azure.Storage.SharedAccessAccountServices
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

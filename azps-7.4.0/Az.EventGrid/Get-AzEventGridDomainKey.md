@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
-ms.openlocfilehash: b886b7a25619fc89e3df91ddf2c52208add985ad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99ab7033e15161cbeb04f0520aec70b9a4397e35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726119"
 ---
 # Get-AzEventGridDomainKey
 
 ## SYNOPSIS
-Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke domain Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan peristiwa ke domain Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomainkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ Get-AzEventGridDomainKey [-DomainResourceId] <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke domain Kisi Acara.
+Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan peristiwa ke domain Event Grid.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan kunci akses bersama domain Kisi \`Kejadian Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan kunci akses bersama domain \`Event Grid Domain1\` di grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 Get-AzEventGridDomainKey -ResourceGroup MyResourceGroupName -Name Domain1
@@ -58,7 +61,7 @@ Key1                                         Key2
 
 ### Contoh 2
 
-Mendapatkan kunci akses bersama domain Kisi \`Kejadian Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Mendapatkan kunci akses bersama domain \`Event Grid Domain1\` di grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 Get-AzEventGridDomain -ResourceGroup MyResourceGroupName -Name Domain1 | Get-AzEventGridDomainKey
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainResourceId
-Pengidentifikasi Sumber Daya yang mewakili Domain Kisi Kejadian.
+Pengidentifikasi Sumber Daya yang mewakili Domain Event Grid.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama domain EventGrid.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

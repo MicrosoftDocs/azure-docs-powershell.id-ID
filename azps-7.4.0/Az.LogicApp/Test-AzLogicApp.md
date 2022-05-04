@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
-ms.openlocfilehash: 626a84e1410ecf13ed28d5848893b2905bc259ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 25cbf4b5852193cf72c13821589b18b2cda5d8d8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682056"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719246"
 ---
 # Test-AzLogicApp
 
 ## SYNOPSIS
 Memvalidasi definisi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/test-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Test-AzLogicApp -ResourceGroupName <String> -Name <String> -Location <String> [-
 Cmdlet **Test-AzLogicApp** memvalidasi definisi aplikasi logika dalam grup sumber daya.
 Tentukan nama aplikasi logika, nama grup sumber daya, lokasi, status, ID akun integrasi, atau parameter.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -50,7 +53,7 @@ Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Locatio
 ```
 
 Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
-Perintah menentukan jalur file definisi dan parameter.
+Perintah menentukan definisi dan jalur file parameter.
 
 ### Contoh 2: Memvalidasi aplikasi logika dengan menggunakan objek
 ```powershell
@@ -62,7 +65,7 @@ Perintah menentukan definisi dan objek parameter.
 
 ### Contoh 3
 
-Memvalidasi definisi aplikasi logika. (autogenerasi)
+Memvalidasi definisi aplikasi logika. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Test-AzLogicApp -DefinitionFilePath 'd:\workflows\Definition.json' -IntegrationAccountId <String> -Location 'westus' -Name 'LogicApp01' -ParameterFilePath 'd:\workflows\Parameters.json' -ResourceGroupName 'ResourceGroup11'
@@ -147,7 +150,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aplikasi logika.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter JSON yang diformat.
+Menentukan jalur file parameter berformat JSON.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-Menentukan objek pengumpulan parameter dari aplikasi logika.
+Menentukan objek pengumpulan parameter aplikasi logika.
 Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status aplikasi logika.
 Nilai yang dapat diterima untuk parameter ini adalah: Diaktifkan dan Dinonaktifkan.
 
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -244,7 +247,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzLogicApp](./New-AzLogicApp.md)
 
-[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
+[Remove-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Set-AzLogicApp](./Set-AzLogicApp.md)
 

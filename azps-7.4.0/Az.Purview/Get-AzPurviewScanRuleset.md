@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScanRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScanRuleset.md
-ms.openlocfilehash: 21463aa05b5894ae36ca7cec68ad58e033e0d0ac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6cc7f9bc2dccdf33a2f61276d580abc8bb169a20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725436"
 ---
 # Get-AzPurviewScanRuleset
 
 ## SYNOPSIS
 Mendapatkan aturan pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewscanruleset) untuk informasi terbaru.
 
 ## SYNTAX
 

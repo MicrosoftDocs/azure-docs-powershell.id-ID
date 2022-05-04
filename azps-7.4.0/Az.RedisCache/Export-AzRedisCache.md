@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Export-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Export-AzRedisCache.md
-ms.openlocfilehash: 2dd577165d667013a99c8d9caea926fbbe9491fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4090a194d3686d251f09f19b8b98c147f7c376cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694802"
 ---
 # Export-AzRedisCache
 
 ## SYNOPSIS
 Mengekspor data dari Azure Redis Cache ke kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/export-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 

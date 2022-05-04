@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubModuleTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubModuleTwin.md
-ms.openlocfilehash: b4154c2c8b17fe3aeadbaa47dadc507ff1d9ec4e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 953720d49c3a44b62ff2b043b2e823ce5114a2d6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226917"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699458"
 ---
 # Update-AzIotHubModuleTwin
 
 ## SYNOPSIS
-Memperbarui tag dan properti yang diinginkan dari modul perangkat IoT kembar.
+Memperbarui tag dan properti yang diinginkan dari kembar modul perangkat IoT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/update-aziothubmoduletwin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzIotHubModuleTwin [-ResourceId] <String> [-DeviceId] <String> -ModuleId 
 ```
 
 ## DESCRIPTION
-Memperbarui atau mengganti perangkat kembar. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-module-twins untuk informasi selengkapnya.
+Memperbarui atau mengganti kembar perangkat. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-module-twins untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dikehendaki
+### -Desired
 Tambahkan atau perbarui properti yang diinginkan dalam modul kembar.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -165,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sebagian
-Memungkinkan untuk hanya memperbarui sebagian tag dan properti yang diinginkan dari modul kembar.
+### -Parsial
+Memungkinkan untuk hanya memperbarui sebagian tag dan properti yang diinginkan dari kembar modul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

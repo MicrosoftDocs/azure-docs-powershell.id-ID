@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 0342f14c2931f59246c7bd5a22a2a3141f50a1a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2dad4428b0006a2c17694c9047f4a70e84ebede0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679392"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739936"
 ---
 # Get-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi kumpulan alamat backend untuk penyeimbang beban.
+Mendapatkan konfigurasi kumpulan alamat backend untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ $loadbalancer = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "My
 Get-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan load balancer yang sudah ada bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $loadbalancer.
-Perintah kedua mendapatkan konfigurasi kumpulan alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muatan di $loadbalancer.
+Perintah pertama mendapatkan load balancer yang ada bernama MyLoadBalancer di grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $loadbalancer.
+Perintah kedua mendapatkan konfigurasi kumpulan alamat backend terkait bernama BackendAddressPool02 untuk load balancer di $loadbalancer.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muatan yang terkait dengan kumpulan alamat backend yang akan didapatkan.
+Menentukan load balancer yang terkait dengan kumpulan alamat backend yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -71,8 +74,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyeimbang muatan yang berisi kumpulan alamat backend untuk didapatkan.
+### -Name
+Menentukan nama load balancer yang berisi kumpulan alamat backend yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -103,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzLoadBalancerBackendAddressPoolConfig](./Add-AzLoadBalancerBackendAddressPoolConfig.md)
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [New-AzLoadBalancerBackendAddressPoolConfig](./New-AzLoadBalancerBackendAddressPoolConfig.md)
 

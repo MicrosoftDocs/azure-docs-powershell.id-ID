@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
-ms.openlocfilehash: 6f685b8bcb25df0c9fb39fb5220cdbd744e12f27
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ffd29e4b43acf8cccf9aac1de1d0a9b43a3dd158
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143173025"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687032"
 ---
 # Get-AzBatchLocationQuota
 
 ## SYNOPSIS
 Mendapatkan kuota layanan Batch untuk langganan Anda di lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchlocationquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzBatchLocationQuota [-Location] <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mendapatkan kuota layanan Batch untuk langganan tertentu di lokasi tertentu.
+Mendapatkan kuota layanan Batch untuk langganan yang ditentukan di lokasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kuota layanan Batch untuk langganan di kawasan AS Barat
+### Contoh 1: Dapatkan kuota layanan Batch untuk langganan di wilayah US Barat
 ```powershell
 Get-AzBatchLocationQuota -Location "westus"
 ```
@@ -40,8 +43,8 @@ Get-AzBatchLocationQuota -Location "westus"
           1            westus
 ```
 
-Perintah ini mendapatkan kuota untuk langganan saat ini di kawasan AS Barat.
-Nilai yang dikembalikan menunjukkan bahwa langganan ini hanya dapat membuat satu akun Batch di kawasan tersebut.
+Perintah ini mendapatkan kuota untuk langganan saat ini di wilayah US Barat.
+Nilai yang dikembalikan menunjukkan bahwa langganan ini hanya dapat membuat satu akun Batch di wilayah tersebut.
 
 ## PARAMETERS
 
@@ -61,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan di mana cmdlet ini memeriksa kuota.
-Untuk informasi selengkapnya, lihat Kawasan Azure (https://azure.microsoft.com/regions).
+Menentukan wilayah tempat cmdlet ini memeriksa kuota.
+Untuk informasi selengkapnya, lihat Wilayah Azure (https://azure.microsoft.com/regions).
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

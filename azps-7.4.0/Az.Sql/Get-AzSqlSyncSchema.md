@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncSchema.md
-ms.openlocfilehash: 47752d2a9830d4f8f5f83dc81dfb3370a7353783
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb4cc316af4b36fd4c41f29749898deea5aafe4d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865026"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740332"
 ---
 # Get-AzSqlSyncSchema
 
 ## SYNOPSIS
 Mengembalikan informasi tentang skema sinkronisasi database anggota atau database hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzSqlSyncSchema** mengembalikan informasi tentang skema sinkronisas
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan skema sinkronisasi untuk database hub
+### Contoh 1: Mendapatkan skema sinkronisasi untuk database hub
 ```powershell
 Get-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01"
 ```
@@ -41,7 +44,7 @@ Tables                     LastUpdateTime
 {dbo.Table_1, dbo.Table_2} 6/13/2017 10:03:44 AM
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01.
 
 ### Contoh 2: Dapatkan skema sinkronisasi untuk database hub, dan perluas Tabel
 ```powershell
@@ -62,9 +65,9 @@ Name       : dbo.Table_2
 QuotedName : [dbo].[Table_2]
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database hub dalam sinkronisasi grup sinkronisasiGroup01 dan memperluas properti Tabel.
+Perintah ini mendapatkan skema sinkronisasi untuk database hub di grup sinkronisasi syncGroup01 dan memperluas properti Tabel.
 
-### Contoh 3: Dapatkan skema sinkronisasi untuk database anggota
+### Contoh 3: Mendapatkan skema sinkronisasi untuk database anggota
 ```powershell
 Get-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01" -SyncMemberName "syncMember01"
 ```
@@ -73,7 +76,7 @@ Get-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" 
 The schema payload is the same as Example 1.
 ```
 
-Perintah ini mendapatkan skema sinkronisasi untuk database anggota dalam sinkronisasi anggota sinkronisasiMember01.
+Perintah ini mendapatkan skema sinkronisasi untuk database anggota di sync member syncMember01.
 
 ## PARAMETERS
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

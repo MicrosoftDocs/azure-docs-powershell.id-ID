@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslPolicy.md
-ms.openlocfilehash: 6f08690ed6b978d84f45299397c4bebce1d0baf8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59ab6cbaa949bed4eae1966ec8372ae72b4543f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804438"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738568"
 ---
 # Set-AzApplicationGatewaySslPolicy
 
 ## SYNOPSIS
-Mengubah kebijakan SSL gateway aplikasi.
+Memodifikasi kebijakan SSL gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzApplicationGatewaySslPolicy -ApplicationGateway <PSApplicationGateway> [-D
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewaySslPolicy** mengubah kebijakan SSL gateway aplikasi.
+Cmdlet **Set-AzApplicationGatewaySslPolicy** memodifikasi kebijakan SSL gateway aplikasi.
 
 ## EXAMPLES
 
@@ -38,11 +41,11 @@ $AppGw = Set-AzApplicationGatewaySslPolicy -ApplicationGateway $getgw -PolicyTyp
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua ini mengubah kebijakan ssl menjadi jenis kebijakan Yang sudah ditentukan sebelumnya dan nama kebijakan AppGwSslPolicy20170401.
+Perintah kedua ini memodifikasi kebijakan ssl menjadi jenis kebijakan Yang telah ditentukan sebelumnya dan nama kebijakan AppGwSslPolicy20170401.
 
 ### Contoh 2
 
-Mengubah kebijakan SSL gateway aplikasi. (autogenerasi)
+Memodifikasi kebijakan SSL gateway aplikasi. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -52,7 +55,7 @@ Set-AzApplicationGatewaySslPolicy -ApplicationGateway <PSApplicationGateway> -Ci
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi kebijakan SSL yang diubah cmdlet ini.
+Menentukan gateway aplikasi dari kebijakan SSL yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -CipherSuite
-Rangkaian sandi Ssl untuk diaktifkan dalam urutan yang ditentukan untuk gateway aplikasi
+Rangkaian sandi Ssl yang akan diaktifkan dalam urutan yang ditentukan ke gateway aplikasi
 
 ```yaml
 Type: System.String[]
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledSslProtocols
-Menentukan protokol mana yang dinon-fungsikan.
+Menentukan protokol mana yang dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - TLSv1_0 
 - TLSv1_1 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinProtocolVersion
-Versi minimum protokol Ssl untuk didukung di gateway aplikasi
+Versi minimum protokol Ssl yang akan didukung pada gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-Nama kebijakan Ssl yang sudah ditentukan sebelumnya
+Nama kebijakan Ssl yang telah ditentukan sebelumnya
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,7 +209,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

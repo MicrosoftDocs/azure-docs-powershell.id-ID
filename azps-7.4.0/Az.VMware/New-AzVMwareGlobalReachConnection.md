@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
-ms.openlocfilehash: 436e400ef93ff68db2979adbe8f52d31ab80d582
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c7985e4cb8d677db95db09b6dd2e275c58cd8d59
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143268839"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732718"
 ---
 # New-AzVMwareGlobalReachConnection
 
 ## SYNOPSIS
-Membuat atau memperbarui koneksi jangkauan global di awan pribadi
+Membuat atau memperbarui koneksi jangkauan global di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareglobalreachconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzVMwareGlobalReachConnection -Name <String> -PrivateCloudName <String> -Res
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui koneksi jangkauan global di awan pribadi
+Membuat atau memperbarui koneksi jangkauan global di cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Membuat koneksi jangkauan global di awan privat
+### Contoh 1: Membuat koneksi jangkauan global di cloud privat
 ```powershell
 New-AzVMwareGlobalReachConnection -Name azps_test_grc -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -AuthorizationKey "df530ffb-5a57-4437-a3eb-08e4c73ce011" -PeerExpressRouteResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tnt16-cust-mp01-mock01/providers/Microsoft.Network/expressRouteCircuits/tnt16-cust-mp01-mock01-er"
 ```
@@ -41,12 +44,12 @@ Name          Type                                               ResourceGroupNa
 azps_test_grc Microsoft.AVS/privateClouds/globalReachConnections azps_test_group
 ```
 
-Membuat koneksi jangkauan global di awan pribadi
+Membuat koneksi jangkauan global di cloud privat
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationKey
-Kunci otorisasi dari rute peer express yang digunakan untuk koneksi jangkauan global
+Kunci otorisasi dari rute ekspres serekan yang digunakan untuk koneksi jangkauan global
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama koneksi jangkauan global di awan privat
+### -Name
+Nama koneksi jangkauan global di cloud privat
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerExpressRouteResourceId
-Pengidentifikasi Sirkuit ExpressRoute ke peer dengan koneksi jangkauan global
+Pengidentifikasi Sirkuit ExpressRoute untuk melakukan peering dalam koneksi jangkauan global
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan pribadi.
+Nama cloud privat.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -196,8 +199,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

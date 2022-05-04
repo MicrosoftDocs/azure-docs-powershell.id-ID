@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJobDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJobDetail.md
-ms.openlocfilehash: c9176525c287e02c1686dce733ae46677275e3bb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 66b1bf628b65820afef006c47b82db42f19c9b17
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276993"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708724"
 ---
 # Get-AzRecoveryServicesBackupJobDetail
 
 ## SYNOPSIS
 
 Mendapatkan detail untuk pekerjaan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjobdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Get-AzRecoveryServicesBackupJobDetail [-JobId] <String> [-UseSecondaryRegion] [-
 ## DESCRIPTION
 
 Cmdlet **Get-AzRecoveryServicesBackupJobDetail** mendapatkan detail pekerjaan Azure Backup untuk pekerjaan tertentu.
-Mengatur konteks kubah menggunakan parameter -VaultId.
+Atur konteks vault dengan menggunakan parameter -VaultId.
 
-Peringatan: **Get-AzRecoveryServicesBackupJobDetails** alias akan dihapus dalam rilis perubahan yang akan datang.
+Peringatan: **Get-AzRecoveryServicesBackupJobDetails** alias akan dihapus dalam rilis perubahan yang melanggar di masa mendatang.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail pekerjaan Cadangan untuk pekerjaan yang gagal
+### Contoh 1: Mendapatkan detail pekerjaan Pencadangan untuk pekerjaan yang gagal
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -51,7 +54,7 @@ $JobDetails = Get-AzRecoveryServicesBackupJobDetail -Job $Jobs[0] -VaultId $vaul
 $JobDetails.ErrorDetails
 ```
 
-Perintah pertama mengambil kubah yang relevan. Perintah kedua mendapatkan array pekerjaan yang gagal di kubah, lalu menyimpannya di array $Jobs.
+Perintah pertama mengambil vault yang relevan. Perintah kedua mendapatkan array pekerjaan yang gagal di vault, lalu menyimpannya di array $Jobs.
 Perintah ketiga mendapatkan detail pekerjaan untuk pekerjaan pertama yang gagal di $Jobs, lalu menyimpannya dalam variabel $JobDetails.
 Perintah akhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 
 Menentukan pekerjaan yang akan didapatkan.
 Untuk mendapatkan objek **BackupJob** , gunakan cmdlet **Get-AzRecoveryServicesBackupJob** .
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSecondaryRegion
-Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
+Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

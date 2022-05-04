@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNamespace.md
-ms.openlocfilehash: b1f6b35f2dd6287c5781338fcd6a5aa4d01eeb3f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d579294a541f5041fe6348a2cf9913336321ebc3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672228"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710590"
 ---
 # Get-AzServiceBusNamespace
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
+Mendapatkan deskripsi untuk namespace Bus Layanan yang ditentukan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzServiceBusNamespace [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusNamespace** mendapatkan deskripsi untuk ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
+Cmdlet **Get-AzServiceBusNamespace** mendapatkan deskripsi untuk namespace Bus Layanan yang ditentukan dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -65,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama.
+### -Name
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

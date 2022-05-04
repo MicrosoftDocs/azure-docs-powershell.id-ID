@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
-ms.openlocfilehash: 4a6dcfb53d113f1c3e7df59be3e61967eeceed10
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e7cee41fd51e3be467e234fc1fca8770baee3d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312219"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717986"
 ---
 # Get-AzOperationalInsightsPurgeWorkspaceStatus
 
 ## SYNOPSIS
 Mendapatkan status operasi pembersihan yang sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightspurgeworkspacestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Mendapatkan status operasi pembersihan yang sedang berlangsung.
 Get-AzOperationalInsightsPurgeWorkspaceStatus -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -PurgeId "cd944bc7-ba11-447e-910c-c6393ac020a9"
 ```
 
-Perintah ini mendapatkan status operasi pembersihan berkelanjutan menurut nama grup sumber daya, nama ruang kerja dan id pembersihan yang dikembalikan dari perintah New-AzOperationalInsightsPurgeWorkspace.
+Perintah ini mendapatkan status operasi pembersihan yang sedang berlangsung berdasarkan nama grup sumber daya, nama ruang kerja, dan id pembersihan yang dikembalikan dari perintah New-AzOperationalInsightsPurgeWorkspace.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurgeId
-Dalam permintaan status pembersihan, ini adalah Id operasi yang statusnya dikembalikan.
+Dalam permintaan status penghapusan menyeluruh, ini adalah Id operasi yang statusnya dikembalikan.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLocalNetworkGateway.md
-ms.openlocfilehash: 6ebc3d3a5f989eb17aa6f9b63da2ad6117da1e8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e7efdf80e11e550f96b6d7746ca543a8ce82210
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872081"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732218"
 ---
 # Get-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Mendapatkan Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Get-AzLocalNetworkGateway [-Name <String>] -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Di Tempat.
+Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Secara Lokal.
 Cmdlet **Get-AzLocalNetworkGateway** mengembalikan objek yang mewakili gateway lokal Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Gateway Jaringan Lokal
+### Contoh 1: Mendapatkan Gateway Jaringan Lokal
 ```powershell
 Get-AzLocalNetworkGateway -Name myLocalGW1 -ResourceGroupName myRG
 ```
@@ -55,7 +58,7 @@ BgpSettings              : null
 
 Mengembalikan objek Gateway Jaringan Lokal dengan nama "myLocalGW1" dalam grup sumber daya "myRG"
 
-### Contoh 2: Dapatkan Gateway Jaringan Lokal menggunakan pemfilteran
+### Contoh 2: Mendapatkan Gateway Jaringan Lokal menggunakan pemfilteran
 ```powershell
 Get-AzLocalNetworkGateway -Name myLocalGW* -ResourceGroupName myRG
 ```
@@ -92,7 +95,7 @@ LocalNetworkAddressSpace : {
 BgpSettings              : null
 ```
 
-Mengembalikan objek Gateway Jaringan Lokal dengan nama dimulai dengan "myLocalGW" dalam grup sumber daya "myRG"
+Mengembalikan objek Gateway Jaringan Lokal dengan nama yang dimulai dengan "myLocalGW" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -138,7 +141,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

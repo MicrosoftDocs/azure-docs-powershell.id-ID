@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
-ms.openlocfilehash: 461f5c7f2e6f057e8ff0be073519ed69b40b0331
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c6ba98df21ebd21b47fff55f5ec5c2ec69d32fe9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870318"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725634"
 ---
 # Update-AzVirtualRouter
 
 ## SYNOPSIS
 Memperbarui Router Virtual. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualrouter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzVirtualRouter [-AllowBranchToBranchTraffic] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Update Virtual Router untuk mengaktifkan atau menonaktifkan cabang ke lalu lintas cabang.
+Memperbarui Router Virtual untuk mengaktifkan atau menonaktifkan lalu lintas cabang ke cabang.
 
 ## EXAMPLES
 
@@ -41,19 +44,19 @@ Update Virtual Router untuk mengaktifkan atau menonaktifkan cabang ke lalu linta
 Update-AzVirtualRouter -ResourceGroupName $rgname -RouterName $virtualRouterName -AllowBranchToBranchTraffic
 ```
 
-Memperbarui Virtual Router untuk memungkinkan cabang untuk cabang lalu lintas cabang
+Memperbarui Router Virtual untuk memungkinkan lalu lintas cabang ke cabang
 
 ### Contoh 2
 ```powershell
 Update-AzVirtualRouter -ResourceGroupName $rgname -RouterName $virtualRouterName
 ```
 
-Memperbarui Virtual Router untuk memblokir cabang ke lalu lintas cabang
+Memperbarui Router Virtual untuk memblokir cabang ke lalu lintas cabang
 
 ## PARAMETERS
 
 ### -AllowBranchToBranchTraffic
-Tandai untuk mengizinkan cabang untuk cabang lalu lintas untuk router virtual.
+Bendera untuk mengizinkan lalu lintas cabang ke cabang untuk router virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya perute virtual.
+Nama grup sumber daya router virtual.
 
 ```yaml
 Type: String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId router virtual.
+ResourceId dari router virtual.
 
 ```yaml
 Type: String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouterName
-Nama perute virtual.
+Nama router virtual.
 
 ```yaml
 Type: String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

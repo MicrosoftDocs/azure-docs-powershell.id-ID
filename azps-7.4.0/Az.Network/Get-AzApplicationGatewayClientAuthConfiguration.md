@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayClientAuthConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayClientAuthConfiguration.md
-ms.openlocfilehash: 7d2558d028b8787a1878bafaa2c066eebbda3313
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18552809f18b38fb95a034447b62fc0f6892de40
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679699"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699260"
 ---
 # Get-AzApplicationGatewayClientAuthConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi autentikasi klien dari objek profil SSL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewayClientAuthConfiguration -SslProfile <PSApplicationGatewa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayClientAuthConfiguration** mendapatkan konfigurasi autentikasi klien objek profil SSL.
+Cmdlet **Get-AzApplicationGatewayClientAuthConfiguration** mendapatkan konfigurasi autentikasi klien dari objek profil SSL.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ $SslProfile  = Get-AzApplicationGatewaySslProfile -Name "SslProfile01" -Applicat
 $ClientAuthConfig = Get-AzApplicationGatewayClientAuthConfiguration -SslProfile $SslProfile
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama SslProfile01 untuk $AppGw dan menyimpannya $SslProfile variabel. Perintah terakhir mendapatkan konfigurasi autentikasi klien dari $SslProfile profil SSL dan menyimpannya dalam variabel $ClientAuthConfig.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama SslProfile01 untuk $AppGw dan menyimpannya $SslProfile variabel. Perintah terakhir mendapatkan konfigurasi autentikasi klien dari profil SSL $SslProfile dan menyimpannya dalam variabel $ClientAuthConfig.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

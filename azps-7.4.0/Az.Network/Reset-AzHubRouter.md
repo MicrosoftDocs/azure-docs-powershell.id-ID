@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzHubRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzHubRouter.md
-ms.openlocfilehash: 846937f6702ef9d573b717415d414e3b54a671c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 882a7eb249a2ec397a1d023931dcc305176e00e5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118269"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732020"
 ---
 # Reset-AzHubRouter
 
 ## SYNOPSIS
-Mereset RoutingState sumber daya VirtualHub.
+Mengatur ulang RoutingState sumber daya VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azhubrouter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Reset-AzHubRouter -InputObject <PSVirtualHub> [-AsJob]
 ```
 
 ## DESCRIPTION
-Mengatur ulang Status Perutean sumber daya VirtualHub yang sudah ada hanya jika Status Perutean hub virtual tidak Disediakan.
+Mengatur ulang Status Perutean sumber daya VirtualHub yang ada hanya jika Status Perutean hub virtual tidak Disediakan.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Mengatur ulang Status Perutean sumber daya VirtualHub yang sudah ada hanya jika 
 Reset-AzHubRouter -ResourceGroupName "testRG" -Name "westushub"
 ```
 
-Mengatur ulang status perutean hub virtual menggunakan ResourceGroupName dan ResourceName.
+Reset status perutean hub virtual menggunakan ResourceGroupName dan ResourceName.
 
 ### Contoh 2
 
@@ -56,7 +59,7 @@ Mengatur ulang status perutean hub virtual menggunakan ResourceGroupName dan Res
 Reset-AzHubRouter -ResourceId "/subscriptions/testSub/resourceGroups/testRG/providers/Microsoft.Network/virtualHubs/westushub"
 ```
 
-Mengatur ulang status perutean hub virtual menggunakan ResourceId-nya.
+Reset status perutean hub virtual menggunakan ResourceId-nya.
 
 ### Contoh 3
 
@@ -64,7 +67,7 @@ Mengatur ulang status perutean hub virtual menggunakan ResourceId-nya.
 Reset-AzHubRouter -InputObject $virtualHub
 ```
 
-Mengatur ulang status perutean hub virtual menggunakan objek input. Objek input adalah tipe PSVirtualHub.
+Reset status perutean hub virtual menggunakan objek input. Objek input berjenis PSVirtualHub.
 
 ### Contoh 4
 
@@ -72,12 +75,12 @@ Mengatur ulang status perutean hub virtual menggunakan objek input. Objek input 
 Get-AzVirtualHub -ResourceGroupName "testRG" -Name "westushub" | Reset-AzHubRouter
 ```
 
-Objek hub virtual yang sudah ada dapat diambil dan diteruskan sebagai objek input ke Reset-AzHubRouter.
+Objek hub virtual yang ada dapat diambil dan kemudian diteruskan sebagai objek input ke Reset-AzHubRouter.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek hub virtual yang akan diubah.
+Objek Hub virtual yang akan dimodifikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -136,7 +139,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

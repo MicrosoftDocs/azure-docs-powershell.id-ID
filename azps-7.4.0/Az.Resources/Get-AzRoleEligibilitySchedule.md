@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilitySchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilitySchedule.md
-ms.openlocfilehash: 0bfc3d974d4f5576f1f7a4ee932aac784a07ba3c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 513ad798304efa03b773243d4df781e2aa6ee546
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674064"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740584"
 ---
 # Get-AzRoleEligibilitySchedule
 
 ## SYNOPSIS
-Dapatkan jadwal kelayakan peran tertentu untuk lingkup sumber daya
+Mendapatkan jadwal kelayakan peran yang ditentukan untuk cakupan sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroleeligibilityschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRoleEligibilitySchedule -Scope <String> [-Filter <String>] [-DefaultProfil
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzRoleEligibilitySchedule -Name <String> -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -37,7 +40,7 @@ Get-AzRoleEligibilitySchedule -InputObject <IAuthorizationIdentity> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Dapatkan jadwal kelayakan peran tertentu untuk lingkup sumber daya
+Mendapatkan jadwal kelayakan peran yang ditentukan untuk cakupan sumber daya
 
 ## EXAMPLES
 
@@ -55,9 +58,9 @@ f402cab4-83ab-4361-8725-2190bbe1ea6b Microsoft.Authorization/roleEligibilitySche
 ```
 
 Mengembalikan semua `roleEligibilitySchedules` untuk `scope`.
-Untuk menghubungi API, Anda harus memiliki akses ke `Microsoft.Authorization/roleAssignments/read` operasi pada lingkup yang ditentukan.
+Untuk memanggil API, Anda harus memiliki akses ke `Microsoft.Authorization/roleAssignments/read` operasi pada cakupan yang ditentukan.
 
-### Contoh 2: Daftar semua jadwal yang memenuhi syarat peran saya untuk sumber daya
+### Contoh 2: Mencantumkan semua jadwal peran saya yang memenuhi syarat untuk sumber daya
 ```powershell
 PS C:\> $scope = "/" # "/" stands for tenant level resource
 Get-AzRoleEligibilitySchedule -Scope $scope -Filter "asTarget()"
@@ -89,21 +92,21 @@ d8daef6c-75da-42eb-9291-7cbc466d5b4b Microsoft.Authorization/roleEligibilitySche
 Filter yang didukung:
 | Filter | Deskripsi |
 | --- | --- |
-| `atScope()` | Daftar penetapan peran hanya untuk lingkup yang ditentukan, tidak termasuk penetapan peran pada subskop.
+| `atScope()` | Cantumkan penetapan peran hanya untuk cakupan yang ditentukan, tidak termasuk penetapan peran pada sub-cakupan.
 |
-| `principalId eq '{objectId}'` | Mencantumkan penetapan peran untuk pengguna, grup, atau prinsipal layanan tertentu.
+| `principalId eq '{objectId}'` | Mencantumkan penetapan peran untuk pengguna, grup, atau perwakilan layanan tertentu.
 |
 | `roleDefinitionId eq '{roleDefinitionId}'` | Mencantumkan penetapan peran untuk definisi peran tertentu.
 |
 | `status eq '{status}'` | Mencantumkan penetapan peran untuk status tertentu.
 |
-| `assignedTo('{objectId}')` | Daftar penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup.
+| `assignedTo('{objectId}')` | Mencantumkan penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup.
 |
-| `asTarget()` | Mencantumkan penetapan peran untuk pengguna atau prinsipal layanan saat ini, termasuk yang diwarisi dari grup.
+| `asTarget()` | Mencantumkan penetapan peran untuk pengguna atau perwakilan layanan saat ini, termasuk yang diwarisi dari grup.
 |
-| `assignedTo('{objectId}')+and+atScope()` | Daftar penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup hanya untuk lingkup yang ditentukan, tidak termasuk penetapan peran pada subskop.|
+| `assignedTo('{objectId}')+and+atScope()` | Mencantumkan penetapan peran untuk pengguna tertentu, termasuk yang diwarisi dari grup hanya untuk cakupan yang ditentukan, tidak termasuk penetapan peran pada subskop.|
 
-### Contoh 4: Dapatkan jadwal yang memenuhi syarat peran menurut lingkup dan nama
+### Contoh 4: Mendapatkan jadwal yang memenuhi syarat peran berdasarkan cakupan dan nama
 ```powershell
 PS C:\> $scope = "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
 Get-AzRoleEligibilitySchedule -Scope $scope -Name "4cd7e26b-8eca-425c-969d-ec708c88bf18"
@@ -131,9 +134,9 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan pada operasi.
-Gunakan $filter=atScope() untuk mengembalikan semua jadwal kelayakan peran pada atau di atas lingkup.
-Gunakan $filter=principalId eq {id} untuk mengembalikan semua jadwal kelayakan peran pada, di atas atau di bawah lingkup untuk prinsipal yang ditentukan.
+Filter yang akan diterapkan pada operasi.
+Gunakan $filter=atScope() untuk mengembalikan semua jadwal kelayakan peran pada atau di atas cakupan.
+Gunakan $filter=principalId eq {id} untuk mengembalikan semua jadwal kelayakan peran pada, di atas atau di bawah cakupan untuk prinsipal yang ditentukan.
 Gunakan $filter=assignedTo('{userId}') untuk mengembalikan semua jadwal kelayakan peran untuk pengguna.
 Gunakan $filter=asTarget() untuk mengembalikan semua jadwal kelayakan peran yang dibuat untuk pengguna saat ini.
 
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama (guid) jadwal kelayakan peran yang akan didapatkan.
+### -Name
+Nama (guid) dari jadwal kelayakan peran yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup jadwal kelayakan peran.
+### -Cakupan
+Cakupan jadwal kelayakan peran.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -218,12 +221,12 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
-  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleAssignmentScheduleRequestName <String>]`: Nama penetapan peran yang akan dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleEligibilityScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) jadwal kelayakan peran untuk mendapatkan.
-  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa berupa GUID apa pun yang valid.
+  - `[RoleEligibilityScheduleName <String>]`: Nama (guid) dari jadwal kelayakan peran yang akan didapatkan.
+  - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
-  - `[RoleManagementPolicyName <String>]`: Nama (guid) kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Lingkup kebijakan manajemen peran.
+  - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
+  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
 
 ## RELATED LINKS

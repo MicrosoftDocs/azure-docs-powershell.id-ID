@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
-ms.openlocfilehash: 502fd7544043b946aec4b8a66871ff53e91fa105
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dbd4de45bb9662303b9336c4ea4a1cc8be9bdaaf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142736884"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733690"
 ---
 # Update-AzSynapseKustoPool
 
 ## SYNOPSIS
-Perbarui Kumpulan Kusto Kusto.
+Memperbarui Kumpulan Kusto Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Update-AzSynapseKustoPool -InputObject <ISynapseIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Perbarui Kumpulan Kusto Kusto.
+Memperbarui Kumpulan Kusto Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui klaster yang sudah ada menurut nama
+### Contoh 1: Memperbarui kluster yang ada berdasarkan nama
 ```powershell
 Update-AzSynapseKustoPool -ResourceGroupName testrg -WorkspaceName testws -Name testnewkustopool -SkuName "Storage optimized" -SkuSize Medium
 ```
@@ -54,12 +57,12 @@ Location  Name                    Type                                    Etag
 East US 2 testws/testnewkustopool Microsoft.Synapse/workspaces/kustoPools 
 ```
 
-Perintah di atas memperbarui sku Kusto pool "testnewkustopool" yang ditemukan di ruang kerja "testws".
+Perintah di atas memperbarui sku kumpulan Kusto "testnewkustopool" yang ditemukan di ruang kerja "testws".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurge
-Nilai boolean yang menunjukkan jika operasi pembersihan diaktifkan.
+Nilai boolean yang menunjukkan apakah operasi pembersihan diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableStreamingIngest
-Nilai boolean yang menunjukkan jika penyetelan streaming diaktifkan.
+Nilai boolean yang menunjukkan apakah penyerapan streaming diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag Kusto Pool.
 Hilangkan nilai ini untuk selalu menimpa Kumpulan Kusto saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan Kusto.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMaximum
-Jumlah instans maksimum yang diperbolehkan.
+Jumlah instans maksimum yang diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizedAutoscaleMinimum
-Jumlah instans minimum yang diperbolehkan.
+Jumlah instans minimum yang diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -286,7 +289,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skusize
+### -SkuSize
 Ukuran SKU.
 
 ```yaml
@@ -331,7 +334,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -361,8 +364,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -393,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -413,14 +416,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

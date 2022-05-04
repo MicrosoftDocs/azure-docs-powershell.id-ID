@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
-ms.openlocfilehash: fa48c2bcc6040cb1df3e2da6b480e36dab6d0c6c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54c6bd8b747855336a495044e875c80b98c2709f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061245"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696854"
 ---
 # New-AzFrontDoorBackendObject
 
 ## SYNOPSIS
 Membuat objek PSBackend
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzFrontDoorBackendObject -Address <String> [-HttpPort <Int32>] [-HttpsPort <
 ```
 
 ## DESCRIPTION
-Membuat objek PSBackend untuk pembuatan Pintu Depan
+Membuat objek PSBackend untuk pembuatan Front Door
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ BackendHostHeader :
 EnabledState      : Enabled
 ```
 
-Membuat objek PSBackend untuk pembuatan Pintu Depan
+Membuat objek PSBackend untuk pembuatan Front Door
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHostHeader
-Nilai untuk digunakan sebagai header host yang dikirim ke backend. Nilai default adalah alamat backend.
+Nilai yang digunakan sebagai header host yang dikirim ke backend. Nilai default adalah alamat backend.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah mengaktifkan penggunaan backend ini. Nilai default diaktifkan
+Apakah akan mengaktifkan penggunaan backend ini. Nilai default Diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -146,9 +149,9 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk digunakan untuk penyeimbangan beban.
+Prioritas yang digunakan untuk penyeimbangan beban.
 Harus antara 1 dan 5.
-Nilai default adalah 1
+Nilai defaultnya adalah 1
 
 ```yaml
 Type: System.Int32
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkApprovalMessage
-Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk tersambung ke Private Link
+Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Private Link
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Berat
-Berat titik akhir ini untuk tujuan penyeimbangan beban.
+Bobot titik akhir ini untuk tujuan penyeimbangan beban.
 Harus antara 1 dan 1000.
 Nilai defaultnya adalah 50
 
@@ -240,11 +243,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

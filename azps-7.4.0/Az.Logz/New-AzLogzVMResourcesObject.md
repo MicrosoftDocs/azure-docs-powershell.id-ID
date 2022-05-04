@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Logz/new-AzLogzV
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzVMResourcesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzVMResourcesObject.md
-ms.openlocfilehash: 8e74505d12d1bd2c8fc4b7945fce83efb326acba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e9ec15fc0ef607cc4bfac43b763c54c50b90f5b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807768"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705234"
 ---
 # New-AzLogzVMResourcesObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk VMResources
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzvmresourcesobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Membuat objek dalam memori untuk VMResources
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek dalam memori untuk VMResources yang dikirimkan ke parameter VMResource saat memperbarui host vm sumber daya monitor
+### Contoh 1: Membuat objek dalam memori untuk VMResources yang diteruskan ke parameter VMResource saat memperbarui host vm sumber daya monitor
 ```powershell
 $vmResource = New-AzLogzVMResourcesObject -AgentVersion '1.0' -Id '/SUBSCRIPTIONS/CE37D538-DFA3-49C3-B3CD-149B4B7DB48A/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1'
 Update-AzLogzMonitorVMHost -ResourceGroupName logz-rg-test -Name pwsh-logz04 -State 'Install' -VMResource $vmResource
@@ -40,12 +43,12 @@ AgentVersion Id
 1.0          /SUBSCRIPTIONS/CE37D538-DFA3-49C3-B3CD-149B4B7DB48A/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1
 ```
 
-Perintah ini membuat objek dalam memori untuk VMResources yang dikirim ke parameter VMResource ketika memperbarui vm host sumber daya monitor.
+Perintah ini membuat objek dalam memori untuk VMResources yang diteruskan ke parameter VMResource saat memperbarui host vm sumber daya monitor.
 
 ## PARAMETERS
 
 ### -AgentVersion
-Versi agen Logz yang terinstal di VM.
+Versi agen Logz yang diinstal pada VM.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

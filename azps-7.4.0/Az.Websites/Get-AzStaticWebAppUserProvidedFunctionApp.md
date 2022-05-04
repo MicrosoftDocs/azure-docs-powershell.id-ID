@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppUserProvidedFunctionApp.md
-ms.openlocfilehash: 110d8c33dbe3b7a6d805f5e3ddcc4016704165d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 196181f0db45aa0b4d3fff85dec7be2f355f3f7a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741106"
 ---
 # Get-AzStaticWebAppUserProvidedFunctionApp
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azstaticwebappuserprovidedfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzStaticWebAppUserProvidedFunctionApp -EnvironmentName <String> -Name <Strin
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzStaticWebAppUserProvidedFunctionApp -EnvironmentName <String> -FunctionAppName <String> -Name <String>
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -54,7 +57,7 @@ Deskripsi untuk Mendapatkan detail aplikasi fungsi yang disediakan pengguna yang
 
 ## EXAMPLES
 
-### Contoh 1: Daftar detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan situs statis
+### Contoh 1: Mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar di situs statis
 ```powershell
 Get-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName resourceGroup -Name staticweb00
 ```
@@ -67,7 +70,7 @@ Kind Name               Type
 
 Perintah ini mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar di situs statis
 
-### Contoh 2: Daftar detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis
+### Contoh 2: Mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis
 ```powershell
 Get-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName resourceGroup -Name staticweb00 -EnvironmentName 'default'
 ```
@@ -80,7 +83,7 @@ Kind Name               Type
 
 Perintah ini mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis.
 
-### Contoh 3: Daftar detail aplikasi fungsi yang disediakan pengguna yang terdaftar
+### Contoh 3: Mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar
 ```powershell
 Get-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName resourceGroup -Name staticweb00 -FunctionAppName $env.functionAppName01
 ```
@@ -93,7 +96,7 @@ Kind Name               Type
 
 Perintah ini mencantumkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar.
 
-### Contoh 4: Dapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis
+### Contoh 4: Mendapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis
 ```powershell
 Get-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName resourceGroup -Name staticweb00 -EnvironmentName 'default' -FunctionAppName $env.functionAppName01
 ```
@@ -104,9 +107,9 @@ Kind Name               Type
      functionApp-5enjko Microsoft.Web/staticSites/builds/userProvidedFunctionApps
 ```
 
-Perintah ini mendapatkan detail aplikasi fungsi yang disediakan pengguna terdaftar dengan build situs statis.
+Perintah ini mendapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis.
 
-### Contoh 5: Dapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis menurut saluran
+### Contoh 5: Dapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis berdasarkan alur
 ```powershell
 Register-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName lucas-rg-test -Name staticweb-pwsh02 -FunctionAppName functionapp-portal02 -FunctionAppResourceId '/subscriptions/xxxxxx-xx-xxx-xxxx-xxxxx/resourcegroups/xxx-xx-xxxx/providers/Microsoft.Web/sites/functionapp-portal02' -FunctionAppRegion 'Central US' -EnvironmentName 5 | Get-AzStaticWebAppUserProvidedFunctionApp
 ```
@@ -117,7 +120,7 @@ Kind Name               Type
      functionApp-5enjko Microsoft.Web/staticSites/builds/userProvidedFunctionApps
 ```
 
-Perintah ini mendapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis menurut saluran.
+Perintah ini mendapatkan detail aplikasi fungsi yang disediakan pengguna yang terdaftar dengan build situs statis berdasarkan alur.
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAppName
-Nama aplikasi fungsi yang terdaftar dengan build situs statis.
+Nama aplikasi fungsi yang terdaftar di build situs statis.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -181,7 +184,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama situs statis.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String[]
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -248,19 +251,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobHistoryId <String>]`: ID Riwayat.
-  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
-  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
-  - `[WebJobName <String>]`: Nama Web Job.
+  - `[WebJobName <String>]`: Nama Pekerjaan Web.
 
 ## RELATED LINKS

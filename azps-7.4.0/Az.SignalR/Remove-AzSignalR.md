@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzSignalR.md
-ms.openlocfilehash: fc2183c4aed1547b53a9feb3c04426e8b5303029
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be1da12caeb26dd16236fc59139ee2746d906daf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799884"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717806"
 ---
 # Remove-AzSignalR
 
 ## SYNOPSIS
 Menghapus layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/remove-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 

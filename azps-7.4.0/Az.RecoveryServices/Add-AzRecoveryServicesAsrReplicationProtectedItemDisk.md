@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Add-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Add-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 80642dba9777dd94fa5425477037f09f4d5373fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c1593db76ce495297af0436f8415b4c00a146c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723168"
 ---
 # Add-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
-Tambahkan disk untuk perlindungan untuk mesin virtual azure yang sudah dilindungi.
+Tambahkan disk untuk perlindungan untuk komputer virtual azure yang sudah dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/add-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Add-AzRecoveryServicesAsrReplicationProtectedItemDisk -InputObject <ASRReplicati
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzRecoveryServicesAsrReplicationProtectedItemDisk** menambahkan disk untuk perlindungan untuk mesin virtual azure yang sudah dilindungi.
+Cmdlet **Add-AzRecoveryServicesAsrReplicationProtectedItemDisk** menambahkan disk untuk perlindungan untuk komputer virtual azure yang sudah dilindungi.
 
 ## EXAMPLES
 
@@ -42,12 +45,12 @@ Mulai operasi untuk menambahkan konfigurasi disk yang ditentukan untuk perlindun
 $ReplicationProtectedItem |Add-AzRecoveryServicesAsrReplicationProtectedItemDisk -AzureToAzureDiskReplicationConfiguration $disk1,$disk2
 ```
 
-Mulai operasi untuk menambahkan konfigurasi disk yang ditentukan untuk perlindungan. Item terproteksi replikasi input perpipaan.
+Mulai operasi untuk menambahkan konfigurasi disk yang ditentukan untuk perlindungan. Item yang dilindungi replikasi input pipa.
 
 ## PARAMETERS
 
 ### -AzureToAzureDiskReplicationConfiguration
-Menentukan konfigurasi disk yang akan digunakan untuk proteksi disk untuk Azure ke Azure skenario pemulihan bencana.
+Menentukan konfigurasi disk yang akan digunakan untuk perlindungan disk untuk skenario pemulihan bencana Azure ke Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAzuretoAzureDiskReplicationConfig[]
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek item yang dilindungi replikasi ASR yang terkait dengan disk baru yang harus dilindungi.
+Objek input ke cmdlet: Objek item yang dilindungi replikasi ASR yang sesuai dengan disk baru mana yang harus dilindungi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

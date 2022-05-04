@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: ee200fd3e6f63bbdc46706d5136d15041f18827a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c5c49b6c6093a329d3e723120947a156c6dac608
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804906"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724158"
 ---
 # New-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,11 +111,11 @@ RoutingConfiguration : {
                         }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah di grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan melakukan peering Virtual Network ke Hub Virtual.
 
 ### Contoh 2
 
-Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub. (autogenerasi)
+Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -157,12 +160,12 @@ VnetRoutes            : {
                         }
 New-AzVirtualHubVnetConnection -ResourceGroupName $rgName -VirtualHubName $virtualHubName -Name "testvnetconnection" -RemoteVirtualNetwork $remoteVirtualNetwork -RoutingConfiguration $routingconfig
 ```
-Hal di atas akan membuat konfigurasi perutean baru dan membuat rute statis dalam konfigurasi perutean dengan hop berikutnya sebagai alamat IP tertentu. Konfigurasi perutean ini kemudian dapat dimasukkan ke perintah New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
+Hal di atas akan membuat konfigurasi perutean baru dan membuat rute statis dalam konfigurasi perutean dengan hop berikutnya sebagai alamat IP tertentu. Konfigurasi perutean ini kemudian dapat diteruskan ke perintah New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurity
-Fungsikan keamanan internet untuk koneksi ini
+Aktifkan keamanan internet untuk sambungan ini
 
 ```yaml
 Type: SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurityFlag
-Fungsikan keamanan internet untuk koneksi ini
+Aktifkan keamanan internet untuk sambungan ini
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -221,7 +224,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetwork
-Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
+Jaringan virtual jarak jauh tempat koneksi jaringan virtual hub ini tersambung.
 
 ```yaml
 Type: PSVirtualNetwork
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetworkId
-Jaringan maya jauh tempat koneksi jaringan maya hub ini tersambung.
+Jaringan virtual jarak jauh tempat koneksi jaringan virtual hub ini tersambung.
 
 ```yaml
 Type: String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingConfiguration
-Merutekan konfigurasi untuk koneksi ini
+Konfigurasi perutean untuk koneksi ini
 
 ```yaml
 Type: PSRoutingConfiguration
@@ -341,8 +344,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -393,4 +396,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzVirtualHubVnetConnection](./Remove-AzVirtualHubVnetConnection.md)
 
-[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)
+[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)

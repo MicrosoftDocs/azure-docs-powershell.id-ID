@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/submit
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Submit-AzHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Submit-AzHDInsightScriptAction.md
-ms.openlocfilehash: 5ec25705ddc114a920d5c83538d304af91400de7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dfd8ac7de657fb4863198cce426ba0aec5de22e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315927"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720326"
 ---
 # Submit-AzHDInsightScriptAction
 
 ## SYNOPSIS
 Mengirimkan tindakan skrip baru ke kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/submit-azhdinsightscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Submit-AzHDInsightScriptAction [-ClusterName] <String> [-Name] <String> [-Uri] <
 
 ## DESCRIPTION
 Cmdlet **Submit-AzHDInsightScriptAction** mengirimkan tindakan skrip baru ke kluster Azure HDInsight.
-Gunakan *PersistOnSuccess* agar tindakan skrip dijalankan setiap kali kluster diskalakan, selama tindakan skrip awalnya berhasil.
+Gunakan *PersistOnSuccess* agar tindakan skrip berjalan setiap kali kluster ditingkatkan skalanya, selama tindakan skrip awalnya berhasil.
 
 ## EXAMPLES
 
-### Contoh 1: Kirim tindakan skrip baru ke kluster HDInsight yang berjalan
+### Contoh 1: Mengirimkan tindakan skrip baru ke kluster HDInsight yang sedang berjalan
 ```powershell
 Submit-AzHDInsightScriptAction `
             -ClusterName "your-hadoop-001" `
@@ -42,13 +45,13 @@ Submit-AzHDInsightScriptAction `
             -NodeTypes Worker -PersistOnSuccess
 ```
 
-Perintah ini mengirimkan tindakan skrip ke kluster HDInsight yang berjalan.
+Perintah ini mengirimkan tindakan skrip ke kluster HDInsight yang sedang berjalan.
 
 ## PARAMETERS
 
 ### -ApplicationName
 Menentukan nama aplikasi untuk tindakan skrip.
-Ketika *ApplicationName* ditentukan, *PersistOnSuccess* harus diatur ke False, node harus berisi hanya edgenode, dan jumlah tindakan skrip harus sama dengan 1.
+Ketika *ApplicationName* ditentukan, *PersistOnSuccess* harus diatur ke False, simpul hanya boleh berisi edgenode, dan jumlah tindakan skrip harus sama dengan 1.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tindakan skrip.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeTypes
-Menentukan tipe simpul untuk menjalankan tindakan skrip.
+Menentukan jenis simpul untuk menjalankan tindakan skrip.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.Management.RuntimeScriptActionClusterNodeType[]
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersistOnSuccess
-Menunjukkan bahwa tindakan skrip harus dijalankan setiap kali kluster diskalakan.
+Menunjukkan bahwa tindakan skrip harus berjalan setiap kali kluster ditingkatkan skalanya.
 Parameter sakelar ini diabaikan jika tindakan skrip awalnya gagal.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
