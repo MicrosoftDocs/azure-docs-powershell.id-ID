@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/remove-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: cb30b4a158b8b94e1b81a88eb4ad790e38cdd14a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eba93c1c5bcd6cf1313e5d8dbde250b3ac04b4e1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142797809"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566356"
 ---
-# Remove-AzStorageAccountManagementPolicy
+# Hapus-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan manajemen akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageaccountmanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Cmdlet **Remove-AzStorageAccountManagementPolicy** menghapus kebijakan manajemen
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kebijakan manajemen akun Storage.
+### Contoh 1: Menghapus kebijakan manajemen akun Storage.
 ```
 PS C:\>Remove-AzStorageAccountManagementPolicy -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount"
 ```
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Manajemen untuk Dihapus
+Objek Manajemen yang Akan Dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSManagementPolicy
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-id sumber daya akun Storage.
+id Sumber Daya Akun Storage.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

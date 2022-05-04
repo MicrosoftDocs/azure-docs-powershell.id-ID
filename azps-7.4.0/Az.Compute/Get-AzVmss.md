@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmss.md
-ms.openlocfilehash: 2c986d5b1611cbed822cc7b039a756d53d752ea7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09048745454c1bff47ed39c7345b5e8dafb5d3b2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877572"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571520"
 ---
-# Get-AzVmss
+# Dapatkan-AzVmss
 
 ## SYNOPSIS
 Mendapatkan properti VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,14 +42,14 @@ Get-AzVmss [[-ResourceGroupName] <String>] [[-VMScaleSetName] <String>] [-OSUpgr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVmss** mendapatkan model dan tampilan instans Kumpulan Skala Mesin Virtual (VMSS).
-Tampilan model adalah properti yang ditentukan pengguna dari kumpulan skala mesin virtual.
-Tampilan instans adalah status tingkat instans dari kumpulan skala mesin virtual.
-Tentukan parameter *InstanceView* untuk mendapatkan hanya tampilan instans kumpulan skala mesin virtual.
+Cmdlet **Get-AzVmss** mendapatkan model dan tampilan instans Virtual Machine Scale Set (VMSS).
+Tampilan model adalah properti yang ditentukan pengguna dari set skala komputer virtual.
+Tampilan instans adalah status tingkat instans dari set skala komputer virtual.
+Tentukan parameter *InstanceView* untuk mendapatkan hanya tampilan instans set skala komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti VMSS
+### Contoh 1: Mendapatkan properti VMSS
 ```powershell
 Get-AzVmss -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
@@ -115,9 +118,9 @@ Tags                                        : {}
 ```
 
 Perintah ini mendapatkan properti VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
-Karena perintah tidak menentukan parameter switch *InstanceView* , cmdlet mendapatkan tampilan model kumpulan skala mesin virtual.
+Karena perintah tidak menentukan parameter sakelar *InstanceView* , cmdlet mendapatkan tampilan model dari set skala komputer virtual.
 
-### Contoh 2: Dapatkan semua Vmss dalam grup sumber daya
+### Contoh 2: Mendapatkan semua Vm dalam grup sumber daya
 ```powershell
 Get-AzVmss -ResourceGroupName "Group001"
 ```
@@ -129,9 +132,9 @@ Group001                                       VMSS001      eastus Standard_DS1_
 Group001                                       VMSS002      eastus     Standard_A1        2         Succeeded
 ```
 
-Dapatkan semua Vmss dalam grup sumber daya "Group001"
+Dapatkan semua Vm dalam grup sumber daya "Group001"
 
-### Contoh 3: Dapatkan semua Vmss dalam langganan
+### Contoh 3: Mendapatkan semua Vm dalam langganan
 ```powershell
 Get-AzVmss
 ```
@@ -145,9 +148,9 @@ Group002                                       VMSS003      eastus     Standard_
 Group002                                       VMSS004      eastus Standard_DS1_v2        2         Succeeded
 ```
 
-Dapatkan semua Vmss dalam langganan.
+Dapatkan semua Vm dalam langganan.
 
-### Contoh 4: Dapatkan semua Vms menggunakan pemfilteran
+### Contoh 4: Mendapatkan semua Vm menggunakan pemfilteran
 ```powershell
 Get-AzVmss -Name VMSS00*
 ```
@@ -161,9 +164,9 @@ Group002                                       VMSS003      eastus     Standard_
 Group002                                       VMSS004      eastus Standard_DS1_v2        2         Succeeded
 ```
 
-Dapatkan semua Vmss dalam langganan yang dimulai dengan "VMSS00".
+Dapatkan semua Vm dalam langganan yang dimulai dengan "VMSS00".
 
-### Contoh 5: Dapatkan Vmss dengan nilai UserData
+### Contoh 5: Dapatkan Vm dengan nilai UserData
 ```powershell
 Get-AzVmss -ResourceGroupName <RESOURCE GROUP NAME> -VMScaleSetName <VMSS NAME> -InstanceView:$false -UserData;
 ```
@@ -245,7 +248,7 @@ VirtualMachineProfile                       :
   UserData                                  : dQBwAGQAYQB0AGUAIAB2AG0AcwBzAA==
 ```
 
-Nilai UserData harus dikodekan dengan Base64. Perintah ini mengasumsikan Anda telah membuat Vmss dengan nilai UserData. 
+Nilai UserData harus dikodekan Base64. Perintah ini mengasumsikan Anda telah membuat Vmss dengan nilai UserData. 
 
 ## PARAMETERS
 
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans kumpulan skala mesin virtual.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans dari set skala komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSUpgradeHistory
-Menunjukkan bahwa cmdlet ini mencantumkan riwayat pemutakhiran os dari kumpulan skala mesin virtual.
+Menunjukkan bahwa cmdlet ini mencantumkan riwayat peningkatan os dari set skala komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya dari VMSS.
+Menentukan nama Grup Sumber Daya VMSS.
 
 ```yaml
 Type: System.String
@@ -310,7 +313,7 @@ Accept wildcard characters: True
 ```
 
 ### -UserData
-UserData untuk Vmss, yang akan dikodekan basis 64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk Vmss, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -354,18 +357,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)
 
-[Hapus-AzVms](./Remove-AzVmss.md)
+[Remove-AzVmss](./Remove-AzVmss.md)
 
-[Mulai ulang-AzVms](./Restart-AzVmss.md)
+[Mulai ulang-AzVmss](./Restart-AzVmss.md)
 
-[Set-AzVms](./Set-AzVmss.md)
+[Set-AzVmss](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

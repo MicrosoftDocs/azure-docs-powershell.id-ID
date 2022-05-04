@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: d01aacee052d6ae8349375562a87f0edda070e6f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bdda4d37d372073b91ad8bf5036593d3932ca1f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747558"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574454"
 ---
 # New-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
-Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/new-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ New-AzSapMonitorProviderInstance -Name <String> -ResourceGroupName <String> -Sap
 ```
 
 ## DESCRIPTION
-Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya tertentu.
+Membuat instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat contoh monitor SAP menurut string untuk HANA
+### Contoh 1: Membuat instans monitor SAP berdasarkan string untuk HANA
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -Name ps-sapmonitorins-t01 -SapMonitorName yemingmonitor -ProviderType SapHana -HanaHostname 'hdb1-0' -HanaDatabaseName 'SYSTEMDB' -HanaDatabaseSqlPort 30015 -HanaDatabaseUsername SYSTEM -HanaDatabasePassword (ConvertTo-SecureString "Manager1" -AsPlainText -Force)
 ```
@@ -60,9 +63,9 @@ Name                 Type
 ps-sapmonitorins-t01 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut string untuk HANA.
+Perintah ini membuat instans monitor SAP berdasarkan string untuk HANA.
 
-### Contoh 2: Membuat contoh monitor SAP menurut kubah kunci untuk HANA
+### Contoh 2: Membuat instans monitor SAP menurut brankas kunci untuk HANA
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName sapMonitor-vayh7q-test -ProviderType SapHana -HanaHostname 'hdb1-0' -HanaDatabaseName 'SYSTEMDB' -HanaDatabaseSqlPort 30015 -HanaDatabaseUsername SYSTEM -HanaDatabasePasswordSecretId https://kv-9gosjc-test.vault.azure.net/secrets/hanaPassword/bf516d1dfcc144138e5cf55114f3344b -HanaDatabasePasswordKeyVaultResourceId /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/costmanagement-rg-8p50xe/providers/Microsoft.KeyVault/vaults/kv-9gosjc-test -Name sapins-kv-test
 ```
@@ -73,9 +76,9 @@ Name           Type
 sapins-kv-test Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut kubah kunci untuk HANA.
+Perintah ini membuat instans monitor SAP dengan brankas kunci untuk HANA.
 
-### Contoh 3: Membuat contoh monitor SAP menurut kamus untuk PrometheusHaCluster
+### Contoh 3: Membuat instans monitor SAP berdasarkan kamus untuk PrometheusHaCluster
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName donaliu-HN1 -Name dolauli-instance-promclt   -SapMonitorName dolauli-test04 -ProviderType PrometheusHaCluster -InstanceProperty @{prometheusUrl='http://10.4.1.10:9664/metrics'}
 ```
@@ -86,9 +89,9 @@ Name                     Type
 dolauli-instance-promclt Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut kamus untuk PrometheusHaCluster.
+Perintah ini membuat instans monitor SAP berdasarkan kamus untuk PrometheusHaCluster.
 
-### Contoh 4: Membuat contoh monitor SAP menurut kamus untuk PrometheusOS
+### Contoh 4: Membuat instans monitor SAP berdasarkan kamus untuk PrometheusOS
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName donaliu-HN1 -Name dolauli-instance-prom   -SapMonitorName dolauli-test04 -ProviderType PrometheusOS -InstanceProperty @{prometheusUrl='http://10.3.1.6:9100/metrics'}
 ```
@@ -99,9 +102,9 @@ Name                  Type
 dolauli-instance-prom Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut kamus untuk PrometheusOS.
+Perintah ini membuat instans monitor SAP berdasarkan kamus untuk PrometheusOS.
 
-### Contoh 5: Membuat contoh monitor SAP menurut kamus untuk MsSqlServer
+### Contoh 5: Membuat instans monitor SAP berdasarkan kamus untuk MsSqlServer
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName donaliu-HN1 -Name dolauli-instance-ms   -SapMonitorName dolauli-test04 -ProviderType MsSqlServer -InstanceProperty @{sqlHostname="10.4.8.90";sqlPort=1433;sqlUsername="AMFSS";sqlPassword="fakepassword"}
 ```
@@ -112,9 +115,9 @@ Name                Type
 dolauli-instance-ms Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut kamus untuk MsSqlServer.
+Perintah ini membuat instans monitor SAP berdasarkan kamus untuk MsSqlServer.
 
-### Contoh 6: Membuat contoh monitor SAP menurut kamus untuk SapHana
+### Contoh 6: Membuat instans monitor SAP berdasarkan kamus untuk SapHana
 ```powershell
 New-AzSapMonitorProviderInstance -ResourceGroupName donaliu-HN1 -Name dolauli-instance-hana   -SapMonitorName dolauli-test04 -ProviderType SapHana -InstanceProperty @{hanaHostname="10.1.2.6";hanaDbName="SYSTEMDB";hanaDbSqlPort=30113;hanaDbUsername="SYSTEM"; hanaDbPassword="Manager1"}
 ```
@@ -125,12 +128,12 @@ Name                  Type
 dolauli-instance-hana Microsoft.HanaOnAzure/sapMonitors/providerInstances
 ```
 
-Perintah ini membuat contoh monitor SAP menurut kamus untuk SapHana.
+Perintah ini membuat instans monitor SAP berdasarkan kamus untuk SapHana.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -HanaDatabasePasswordKeyVaultResourceId
-ID sumber daya dari Key Vault yang berisi kredensial HANA.
+ID sumber daya Key Vault yang berisi kredensial HANA.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama instans penyedia.
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderType
-Tipe instans penyedia.
+Jenis instans penyedia.
 Nilai yang didukung adalah: "SapHana".
 
 ```yaml
@@ -371,8 +374,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -386,8 +389,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

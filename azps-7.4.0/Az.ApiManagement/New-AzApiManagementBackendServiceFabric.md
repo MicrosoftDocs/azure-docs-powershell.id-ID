@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
-ms.openlocfilehash: 93a08ba82f20583197bdc69be21d6401a2aa176e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 80f0d5e307f6746d338105f9e5aedc85d862b351
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944695"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575264"
 ---
 # New-AzApiManagementBackendServiceFabric
 
 ## SYNOPSIS
-Membuat objek `PsApiManagementServiceFabric`
+Membuat objek dari `PsApiManagementServiceFabric`
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendservicefabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzApiManagementBackendServiceFabric -ManagementEndpoint <String[]> [-ClientC
 
 ## DESCRIPTION
 
-Cmdlet **New-AzApiManagementBackendServiceFabric** menciptakan objek `PsApiManagementServiceFabric` yang akan digunakan dalam cmdlet **New-AzApiManagementBackend** dan **Set-AzApiManagementBackend**.
+Cmdlet **New-AzApiManagementBackendServiceFabric** membuat objek yang `PsApiManagementServiceFabric` akan digunakan dalam cmdlet **New-AzApiManagementBackend** dan **Set-AzApiManagementBackend**.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificateThumbprint
-Sidik Jari Sertifikat Klien untuk titik akhir manajemen.
+Thumbprint Sertifikat Klien untuk titik akhir manajemen.
 Parameter ini diperlukan.
 
 ```yaml
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPartitionResolutionRetry
-Jumlah maksimum percobaan ulang ketika menyelesaikan partisi Service Fabric.
-Parameter ini opsional dan nilai defaultnya adalah 5.
+Jumlah maksimum percobaan ulang saat menyelesaikan partisi Service Fabric.
+Parameter ini bersifat opsional dan nilai default adalah 5.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerCertificateThumbprint
-Sidik jari layanan manajemen kluster sertifikat digunakan untuk komunikasi tls. Parameter ini bersifat opsional.
+Thumbprint layanan manajemen kluster sertifikat digunakan untuk komunikasi tls. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String[]
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

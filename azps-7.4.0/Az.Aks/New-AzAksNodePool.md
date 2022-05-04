@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/new-azaksnod
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
-ms.openlocfilehash: 7ae64e31c6f728a1552c388d584bf8c1a29f5517
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f57042e504e3b380e26931a6010880200e8e1941
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143321219"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581906"
 ---
 # New-AzAksNodePool
 
 ## SYNOPSIS
-Buat kumpulan node baru di kluster yang ditentukan.
+Buat kumpulan simpul baru di kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/new-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzAksNodePool -Name <String> -ClusterObject <PSKubernetesCluster> [-Count <I
 ```
 
 ## DESCRIPTION
-Buat kumpulan node baru di kluster yang ditentukan.
+Buat kumpulan simpul baru di kluster tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Buat kumpulan node baru di kluster yang ditentukan.
 New-AzAksNodePool -ResourceGroupName myResouceGroup -ClusterName myCluster -Name mydefault
 ```
 
-### Membuat wadah Server Windows di AKS
+### Membuat kontainer Windows Server pada AKS
 ```powershell
 $cred = ConvertTo-SecureString -AsPlainText "Password!!123" -Force
 New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterObject
-Tentukan objek kluster tempat untuk membuat kumpulan simpul.
+Tentukan objek kluster untuk membuat kumpulan simpul.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Jumlah node default untuk kumpulan simpul.
+Jumlah default simpul untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoScaling
-Apakah mengaktifkan penskalakan otomatis
+Apakah akan mengaktifkan auto-scaler
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableNodePublicIp
-Apakah mengaktifkan IP publik untuk node.
+Apakah akan mengaktifkan IP publik untuk simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Buat kumpulan simpul bahkan jika sudah ada
+### -Force
+Membuat kumpulan simpul meskipun sudah ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Jumlah node maksimum untuk penskalaan otomatis
+Jumlah maksimum simpul untuk penskalaan otomatis
 
 ```yaml
 Type: System.Int32
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPodCount
-Jumlah maksimum pod yang dapat dijalankan pada node.
+Jumlah maksimum pod yang dapat berjalan pada simpul.
 
 ```yaml
 Type: System.Int32
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinCount
-Jumlah node minimum untuk penskalaan otomatis.
+Jumlah minimum simpul untuk penskalaan otomatis.
 
 ```yaml
 Type: System.Int32
@@ -239,8 +242,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kolam simpul.
+### -Name
+Nama kumpulan node.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskSize
-Jumlah node default untuk kumpulan simpul.
+Jumlah default simpul untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsType
-OsType yang akan digunakan untuk menentukan tipe os.
+OsType yang akan digunakan untuk menentukan jenis os.
 Pilih dari Linux dan Windows.
 Default ke Linux.
 
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleSetEvictionPolicy
-ScaleSetEvictionPolicy yang akan digunakan untuk menentukan kebijakan penggusuran untuk kumpulan skala mesin virtual prioritas rendah.
+ScaleSetEvictionPolicy yang akan digunakan untuk menentukan kebijakan pengeluaran untuk set skala komputer virtual prioritas rendah.
 Default ke Hapus.
 
 ```yaml
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleSetPriority
-ScaleSetPriority yang akan digunakan untuk menentukan prioritas rangkaian skala mesin virtual.
+ScaleSetPriority yang akan digunakan untuk menentukan prioritas set skala komputer virtual.
 Default ke reguler.
 
 ```yaml
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -366,8 +369,8 @@ Accept wildcard characters: False
 ```
 
 ### -VmSetType
-Mewakili tipe kumpulan simpul.
-Nilai yang memungkinkan termasuk: 'VirtualMachineScaleSets', 'AvailabilitySet'
+Mewakili jenis kumpulan simpul.
+Nilai yang mungkin termasuk: 'VirtualMachineScaleSets', 'AvailabilitySet'
 
 ```yaml
 Type: System.String
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmSize
-Ukuran Mesin Virtual. Nilai default adalah Standard_D2_v2.
+Ukuran Komputer Virtual. Nilai defaultnya adalah Standard_D2_v2.
 
 ```yaml
 Type: System.String
@@ -411,8 +414,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -427,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

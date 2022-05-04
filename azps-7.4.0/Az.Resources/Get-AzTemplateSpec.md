@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTemplateSpec.md
-ms.openlocfilehash: 11733e128be5802d73b3da03359f55e7d9e05925
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9ffeb6df11cfa66ab4d472619cb19d1be21a506
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673866"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558508"
 ---
 # Get-AzTemplateSpec
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Spesifikasi Templat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,34 +41,34 @@ Get-AzTemplateSpec [[-Version] <String>] [-ResourceId] <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet ini dapat digunakan untuk mencantumkan Spesifikasi Templat dalam grup langganan/sumber daya atau mendapatkan Spesifikasi Templat tertentu berdasarkan nama atau id. Ketika mendapatkan Spesifikasi Templat tertentu menurut nama/id, versi tertentu dapat diambil secara opsional dengan menentukan nama versi melalui parameter **-Version** . Ketika **-Version** digunakan, hanya detail versi tertentu yang akan ada dalam **. Versi* pada objek Spesifikasi Templat yang dikembalikan. Jika tidak ada versi tertentu yang ditentukan saat mengambil Spesifikasi Templat menurut nama/id, semua versi akan ada dalam **. Properti versi* objek yang dikembalikan.
+Cmdlet ini dapat digunakan untuk mencantumkan Spesifikasi Templat dalam grup langganan/sumber daya atau mendapatkan Spesifikasi Templat tertentu menurut nama atau id. Saat mendapatkan Spesifikasi Templat tertentu berdasarkan nama/id, versi tertentu dapat diambil secara opsional dengan menentukan nama versi melalui parameter **-Version** . Ketika **-Version** digunakan, hanya detail versi tertentu yang akan ada dalam **. Versi* pada objek Spesifikasi Templat yang dikembalikan. Jika tidak ada versi tertentu yang ditentukan saat mengambil Spesifikasi Templat berdasarkan nama/id, semua versi akan ada dalam **. Properti versi* dari objek yang dikembalikan.
 
-**Catatan**: Ketika mencantumkan semua Spesifikasi Templat dalam langganan atau grup sumber daya, setiap Spesifikasi Templat yang dikembalikan *". Properti Versions"* akan *null*. Informasi versi hanya disertakan ketika parameter -Name atau -ResourceId disediakan (misalnya: Anda meminta spesifikasi/versi templat tertentu).
+**Catatan**: Saat mencantumkan semua Spesifikasi Templat dalam langganan atau grup sumber daya, masing-masing menampilkan Spesifikasi Templat *". Properti versi"* akan *null*. Informasi versi hanya disertakan ketika parameter -Name atau -ResourceId disediakan (misalnya: Anda meminta spesifikasi/versi templat tertentu).
 
 ## EXAMPLES
 
-### Contoh 1: Spesifikasi Templat Daftar dalam langganan saat ini
+### Contoh 1: Mencantumkan Spesifikasi Templat dalam langganan saat ini
 ```powershell
 Get-AzTemplateSpec
 ```
 
 Mencantumkan semua Spesifikasi Templat dalam langganan saat ini.
 
-### Contoh 2: Spesifikasi Templat Daftar dalam grup sumber daya
+### Contoh 2: Mencantumkan Spesifikasi Templat dalam grup sumber daya
 ```powershell
 Get-AzTemplateSpec -ResourceGroupName 'myRG'
 ```
 
-Mencantumkan semua Spesifikasi Templat dalam grup sumber daya 'myRG' langganan saat ini.
+Mencantumkan semua Spesifikasi Templat di grup sumber daya 'myRG' dari langganan saat ini.
 
-### Contoh 3: Dapatkan Spesifikasi Templat (dengan semua versi) menurut nama
+### Contoh 3: Dapatkan Spesifikasi Templat (dengan semua versi) berdasarkan nama
 ```powershell
 Get-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'MyTemplateSpec'
 ```
 
 Mendapatkan informasi tentang Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG'.
 
-**Catatan**: Semua versi Spesifikasi Templat akan hadir dalam "*. Properti versi*" dari objek yang dikembalikan.
+**Catatan**: Semua versi Spesifikasi Templat akan ada dalam "*. Properti versi*" dari objek yang dikembalikan.
 
 ### Contoh 4: Dapatkan Spesifikasi Templat (versi tertentu) menurut nama
 ```powershell
@@ -83,7 +86,7 @@ Get-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/provi
 
 Mendapatkan informasi tentang Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' subId\} langganan\{.
 
-**Catatan**: Semua versi Spesifikasi Templat akan hadir dalam "*. Properti versi*" dari objek yang dikembalikan.
+**Catatan**: Semua versi Spesifikasi Templat akan ada dalam "*. Properti versi*" dari objek yang dikembalikan.
 
 ### Contoh 6: Dapatkan Spesifikasi Templat (versi tertentu) menurut id sumber daya
 ```powershell
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama spesifikasi templat.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

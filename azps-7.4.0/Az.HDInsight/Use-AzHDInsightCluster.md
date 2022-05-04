@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/use-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Use-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Use-AzHDInsightCluster.md
-ms.openlocfilehash: d622495b359290d613218a8758f3fe28cfe3ae97
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ee475a1d75df7475be8f3f382277d8d19a44aa2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001359"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571268"
 ---
 # Use-AzHDInsightCluster
 
 ## SYNOPSIS
 Memilih kluster yang akan digunakan dengan cmdlet Invoke-RmAzureHDInsightHiveJob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/use-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Use-AzHDInsightCluster [-ClusterName] <String> [-HttpCredential] <PSCredential> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Use-AzHDInsightCluster** memilih cluster Azure HDInsight untuk cmdlet Invoke-AzHDInsightHiveJob yang akan digunakan untuk mengirimkan pekerjaan Hive.
+Cmdlet **Use-AzHDInsightCluster** memilih kluster Azure HDInsight untuk cmdlet Invoke-AzHDInsightHiveJob digunakan untuk mengirimkan pekerjaan Apache Hive.
 
 ## EXAMPLES
 
-### Contoh 1: Pilih kluster untuk pengiriman kueri Sarang
+### Contoh 1: Pilih kluster untuk pengiriman kueri Apache Hive
 ```powershell
 # Cluster info
 $clusterName = "your-hadoop-001"
@@ -41,7 +44,7 @@ Use-AzHDInsightCluster `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini memilih kluster untuk pengiriman kueri Sarang.
+Perintah ini memilih kluster untuk pengiriman kueri Apache Hive.
 
 ## PARAMETERS
 
@@ -106,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -122,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzHDInsightCluster](./Get-AzHDInsightCluster.md)
 
-[Hapus-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
+[Remove-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
 
 

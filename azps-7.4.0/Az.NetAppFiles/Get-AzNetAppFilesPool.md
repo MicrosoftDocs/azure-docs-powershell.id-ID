@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
-ms.openlocfilehash: 6d8594eef669bab7d7f5aec152ac42341e6219c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d4f6a095410531408be3a47376d5afd0c4e2e7dc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119277"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583418"
 ---
 # Get-AzNetAppFilesPool
 
 ## SYNOPSIS
-Dapatkan detail kumpulan Azure NetApp Files (ANF).
+Mendapatkan detail kumpulan Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Get-AzNetAppFilesPool -AccountObject <PSNetAppFilesAccount> [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesPool** mendapatkan detail pool ANF.
+Cmdlet **Get-AzNetAppFilesPool** mendapatkan detail kumpulan ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kumpulan ANF
+### Contoh 1: Mendapatkan kumpulan ANF
 ```powershell
 Get-AzNetAppFilesPool -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -Name "MyAnfPool"
 ```
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Objek akun yang berisi kumpulan untuk dikembalikan
+Objek akun yang berisi kumpulan yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan ANF
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

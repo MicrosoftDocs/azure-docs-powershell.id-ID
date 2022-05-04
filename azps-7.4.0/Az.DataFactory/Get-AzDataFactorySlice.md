@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
-ms.openlocfilehash: 6cd99b1ce14705c4dafd601387e983ebee6cad45
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d556d557db29ed207d252c4cf2cc1a6b8d071ac4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685512"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571466"
 ---
 # Get-AzDataFactorySlice
 
 ## SYNOPSIS
-Mendapatkan irisan data untuk kumpulan data dalam Azure Data Factory.
+Mendapatkan irisan data untuk himpunan data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryslice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,34 +37,34 @@ Get-AzDataFactorySlice [[-EndDateTime] <DateTime>] [-DataFactory] <PSDataFactory
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactorySlice** mendapatkan irisan data untuk kumpulan data di Azure Data Factory.
-Tentukan waktu mulai dan waktu akhir untuk menentukan rentang irisan data untuk ditampilkan.
-Status pemangkasan data adalah salah satu nilai berikut ini: 
+Cmdlet **Get-AzDataFactorySlice** mendapatkan irisan data untuk himpunan data di Azure Data Factory.
+Tentukan waktu mulai dan waktu akhir untuk menentukan rentang irisan data yang akan dilihat.
+Status iringan data adalah salah satu nilai berikut: 
 - PendingExecution.
 Pemrosesan data belum dimulai. 
 - InProgress.
 Pemrosesan data sedang berlangsung. 
 - Siap.
 Pemrosesan data selesai.
-Irisan data siap untuk irisan dependen untuk mengkonsumsinya. 
+Irisan data siap untuk irisan dependen untuk mengonsumsinya. 
 - Gagal.
-Pelarian yang menghasilkan iringan gagal. 
+Eksekusi yang menghasilkan iringan gagal. 
 - Melewatkan.
-Pabrik Data melewatkan pemrosesan potong. 
-- Pengulangan.
-Pabrik Data mencoba kembali proses yang menghasilkan ikatan. 
-- Waktu Habis. Pemrosesan data telah kehabisan waktu. 
-- TertundaValidasi.
-Pemisah data menunggu validasi sebelum diproses. 
-- Coba lagi Validasi.
-Pabrik Data mencoba kembali validasi dari potong. 
+Data Factory melewati pemrosesan iringan. 
+- Coba lagi.
+Data Factory mencoba kembali eksekusi yang menghasilkan ikatan. 
+- Waktu Habis. Waktu pemrosesan data habis. 
+- PendingValidation.
+Iringan data sedang menunggu validasi sebelum diproses. 
+- Coba Lagi Validasi.
+Data Factory mencoba kembali validasi ikatan. 
 - Validasi Gagal.
-Validasi dari iringan gagal.
-Untuk setiap irisan, Anda dapat melihat informasi selengkapnya tentang lari yang menghasilkan irisan menggunakan cmdlet Get-AzDataFactoryRun.
+Validasi irama gagal.
+Untuk setiap irisan, Anda dapat melihat informasi selengkapnya tentang eksekusi yang menghasilkan irisan dengan menggunakan cmdlet Get-AzDataFactoryRun.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan irisan data untuk kumpulan data
+### Contoh 1: Mendapatkan irisan data untuk himpunan data
 ```powershell
 Get-AzDataFactorySlice -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -DatasetName "DAWikiAggregatedData" -StartDateTime 2014-05-20T10:00:00Z
 ```
@@ -104,17 +107,17 @@ Status            : PendingExecution
 . . .
 ```
 
-Perintah ini mendapatkan semua irisan data untuk kumpulan data bernama WikiAggregatedData di pabrik data bernama WikiADF.
+Perintah ini mendapatkan semua irisan data untuk himpunan data bernama WikiAggregatedData di pabrik data bernama WikiADF.
 Perintah mendapatkan irisan yang dihasilkan setelah waktu yang ditentukan parameter StartDateTime.
-Kode contoh berikut mengatur ketersediaan untuk kumpulan data ini setiap jam dalam file JavaScript Object Notation (JSON).
-ketersediaan: { period: "Hour", periodMultiplier: 1 } Beberapa hasil siap dan lainnya adalah PendingExecution.
+Contoh kode berikut mengatur ketersediaan untuk himpunan data ini setiap jam dalam file JavaScript Object Notation (JSON).
+availability: { period: "Hour", periodMultiplier: 1 } Beberapa hasilnya Adalah Ready dan lainnya adalah PendingExecution.
 Irisan siap telah dijalankan.
-Irisan tertunda menunggu untuk dijalankan pada akhir setiap jam dalam interval yang ditentukan cmdlet Set-AzDataFactoryPipelineActivePeriod.
-Dalam contoh ini, baik periode mulai maupun akhir untuk pipeline dan iringan memiliki nilai satu hari (24 jam).
+Irisan yang tertunda menunggu untuk berjalan pada akhir setiap jam dalam interval yang ditentukan cmdlet Set-AzDataFactoryPipelineActivePeriod.
+Dalam contoh ini, periode mulai dan berakhir untuk alur dan iringan memiliki nilai satu hari (24 jam).
 
 ### Contoh 2
 
-Mendapatkan irisan data untuk kumpulan data dalam Azure Data Factory. (autogenerasi)
+Mendapatkan irisan data untuk himpunan data di Azure Data Factory. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzDataFactorySlice -DataFactoryName 'WikiADF' -DatasetName 'DAWikiAggregatedData' -EndDateTime 2014-05-22T16:00:00Z -ResourceGroupName 'ADF' -StartDateTime 2014-05-20T10:00:00Z
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasetName
-Menentukan nama kumpulan data tempat cmdlet ini mendapatkan irisan.
+Menentukan nama himpunan data tempat cmdlet ini mendapatkan irisan.
 
 ```yaml
 Type: System.String
@@ -187,8 +190,8 @@ Accept wildcard characters: False
 ### -EndDateTime
 Menentukan akhir periode waktu sebagai objek **DateTime** .
 Cmdlet ini mendapatkan irisan yang dihasilkan sebelum waktu yang ditentukan parameter ini.
-Untuk informasi selengkapnya tentang objek **DateTime**, ketik .`Get-Help Get-Date`
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-0101T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
+Untuk informasi selengkapnya tentang objek **DateTime** , ketik `Get-Help Get-Date`.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-201501T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 
 ### -StartDateTime
 Menentukan awal periode waktu sebagai objek **DateTime** .
-Cmdlet ini mendapatkan irisan yang dihasilkan setelah waktu yang ditentukan parameter ini.
+Cmdlet ini akan menghasilkan irisan setelah waktu yang ditentukan parameter ini.
 
 ```yaml
 Type: System.DateTime
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,7 +251,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataSlice
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

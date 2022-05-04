@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWan.md
-ms.openlocfilehash: 57492ecdf88f14509634a9edeeff0dba0cd9dd4f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1dacdcf340f652ab57fb3e8ca80957d5acfe46d5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743436"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585290"
 ---
 # Get-AzVirtualWan
 
 ## SYNOPSIS
 Mendapatkan Virtual WAN atau semua WAN Virtual dalam grup sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Type                       : Microsoft.Network/virtualWans
 ProvisioningState          : Succeeded
 ```
 
-Perintah ini mendapatkan Virtual WAN bernama myVirtualWAN dalam testRG grup sumber daya.
+Perintah ini mendapatkan Virtual WAN bernama myVirtualWAN di testRG grup sumber daya.
 
 ### Contoh 2
 
@@ -79,7 +82,7 @@ Type                       : Microsoft.Network/virtualWans
 ProvisioningState          : Succeeded
 ```
 
-Perintah ini mendapatkan semua WAN Virtual yang dimulai dengan "test".
+Perintah ini mendapatkan semua WAN Virtual yang dimulai dengan "uji".
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -129,11 +132,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -145,6 +148,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVirtualWan](./New-AzVirtualWan.md)
 
-[Hapus-AzVirtualWan](./Remove-AzVirtualWan.md)
+[Remove-AzVirtualWan](./Remove-AzVirtualWan.md)
 
 [Update-AzVirtualWan](./Update-AzVirtualWan.md)

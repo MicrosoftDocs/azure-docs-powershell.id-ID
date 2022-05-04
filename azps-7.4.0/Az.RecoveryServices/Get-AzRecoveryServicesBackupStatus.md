@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
-ms.openlocfilehash: b3de131f21f72981fd6f8cccba1f6e0defdd56c8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d3c8eb90b2ca4ea0af5821eb20dad50dc2c7763
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117423"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560326"
 ---
 # Get-AzRecoveryServicesBackupStatus
 
 ## SYNOPSIS
 Memeriksa apakah sumber daya ARM Anda dicadangkan atau tidak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ Get-AzRecoveryServicesBackupStatus -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah kubah Layanan Pemulihan apa pun dalam langganan. Jika dilindungi, detail kubah yang relevan akan dikembalikan.
+Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah vault Layanan Pemulihan apa pun dalam langganan. Jika dilindungi, detail vault yang relevan akan dikembalikan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Memeriksa apakah sumber daya ARM Anda dicadangkan atau tidak. (autogenerasi)
+Memeriksa apakah sumber daya ARM Anda dicadangkan atau tidak. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya Azure yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+### -Name
+Nama Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectableObjectName
-Nama Sumber Daya Azure yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+Nama Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure Resource yang item representatifnya perlu diperiksa jika item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+Nama grup sumber daya Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa RecoveryServices Vault dalam langganan.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Azure yang item representatifnya perlu diperiksa apakah item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+ID Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa RecoveryServices Vault dalam langganan.
 
 ```yaml
 Type: System.String
@@ -128,8 +131,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe Sumber Daya Azure yang item representatifnya perlu diperiksa apakah item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+### -Type
+Jenis Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

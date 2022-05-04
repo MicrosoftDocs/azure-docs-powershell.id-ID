@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/suspe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
-ms.openlocfilehash: 90c7ccfeb8662822359aa48d397d5a90ff939019
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54d958f47162b20dd9acc0bb8aed6b0ca080e320
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574994"
 ---
 # Suspend-AzAutomationJob
 
 ## SYNOPSIS
-Menangguhkan pekerjaan Otomatisasi.
+Menangguhkan pekerjaan Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/suspend-azautomationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Suspend-AzAutomationJob [-Id] <Guid> [-ResourceGroupName] <String> [-AutomationA
 
 ## DESCRIPTION
 **Cmdlet Suspend-AzAutomationJob** menangguhkan pekerjaan Azure Automation.
-Tentukan tugas Otomatisasi yang berjalan.
+Tentukan pekerjaan Automation yang sedang berjalan.
 Untuk melanjutkan pekerjaan yang ditangguhkan, gunakan cmdlet Resume-AzAutomationJob.
 
 ## EXAMPLES
@@ -42,7 +45,7 @@ Perintah ini menangguhkan pekerjaan yang memiliki ID yang ditentukan.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menangguhkan pekerjaan.
+Menentukan nama akun Automation tempat cmdlet ini menangguhkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

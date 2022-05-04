@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Register-AzModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Register-AzModule.md
-ms.openlocfilehash: dd897f0f2f0577f173b2f3783dc093d8765e0ad2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e47a5c584a73d12ffcfbd92b252d574c4b6887fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752733"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144568263"
 ---
 # Register-AzModule
 
 ## SYNOPSIS
-HANYA UNTUK PENGGUNAAN INTERNAL - Menyediakan Dukungan Runtime untuk cmdlet Yang Dihasilkan AutoRest
+HANYA UNTUK PENGGUNAAN INTERNAL - Berikan Dukungan Runtime untuk cmdlet Yang Dihasilkan AutoRest
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/register-azmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Register-AzModule [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-HANYA UNTUK PENGGUNAAN INTERNAL - Menyediakan Dukungan Runtime untuk cmdlet Yang Dihasilkan AutoRest
+HANYA UNTUK PENGGUNAAN INTERNAL - Berikan Dukungan Runtime untuk cmdlet Yang Dihasilkan AutoRest
 
 ## EXAMPLES
 
@@ -37,8 +40,8 @@ Digunakan Secara Internal oleh cmdlet yang dihasilkan AutoRest
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,11 +71,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

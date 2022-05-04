@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
-ms.openlocfilehash: 37bdab35ef1ad09fbe5942b416f6a8b2e553a811
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b97e7606866376c3efdf8a28f8e2f4d21b4eae6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003699"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576200"
 ---
 # New-AzDataBoxShippingAddressObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk ShippingAddress.
+Buat objek dalam memori untuk ShippingAddress.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxshippingaddressobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxShippingAddressObject -Country <String> -StreetAddress1 <String> [-
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk ShippingAddress.
+Buat objek dalam memori untuk ShippingAddress.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Membuat objek alamat pengiriman dalam memori
 ## PARAMETERS
 
 ### -AddressType
-Tipe alamat.
+Jenis alamat.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Support.AddressType
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreetAddress1
-Baris Alamat Jalan 1.
+Alamat Jalan baris 1.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreetAddress2
-Baris Alamat Jalan 2.
+Alamat Jalan baris 2.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreetAddress3
-Baris Alamat Jalan 3.
+Alamat Jalan baris 3.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZipExtendedCode
-Kode Pos Diperpanjang.
+Kode Pos yang Diperluas.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

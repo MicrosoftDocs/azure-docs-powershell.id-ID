@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
-ms.openlocfilehash: 6cf3a1f514257698f0b5c26573e8c96e94acb811
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c4d0aa7ec82818a6da8e80887e2e70c55df581fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309771"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575858"
 ---
 # Get-AzRoleDefinition
 
 ## SYNOPSIS
 Mencantumkan semua peran Azure RBAC yang tersedia untuk penugasan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCapability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCapability.md
-ms.openlocfilehash: 780db02d5eeadd1f999b421c24d0914df56e0f62
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d4aee08227573f27859a47bd14293dc31c32528e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319059"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565996"
 ---
 # Get-AzContainerInstanceCapability
 
 ## SYNOPSIS
-Dapatkan daftar kapabilitas CPU/memori/GPU suatu kawasan.
+Dapatkan daftar kemampuan CPU/memori/GPU suatu wilayah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancecapability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzContainerInstanceCapability -Location <String> [-SubscriptionId <String[]>
 ```
 
 ## DESCRIPTION
-Dapatkan daftar kapabilitas CPU/memori/GPU suatu kawasan.
+Dapatkan daftar kemampuan CPU/memori/GPU suatu wilayah.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar kapabilitas lokasi
+### Contoh 1: Mendapatkan daftar kemampuan lokasi
 ```powershell
 Get-AzContainerInstanceCapability -Location eastus
 ```
@@ -47,7 +50,7 @@ V100 Public        EASTUS   Linux        containerGroups
 None Public        EASTUS   Windows      containerGroups
 ```
 
-Perintah ini mendapatkan daftar kapabilitas CPU/memori/GPU kawasan `eastus`.
+Perintah ini mendapatkan daftar kemampuan CPU/memori/GPU wilayah `eastus`.
 
 ## PARAMETERS
 
@@ -82,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

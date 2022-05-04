@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLocalNetworkGateway.md
-ms.openlocfilehash: 298c48503d4ceb0b17ae7fb934865d1a106120da
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c872cb4ed544872e08df3ab2a53e7da0302810a3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871488"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585182"
 ---
 # New-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Membuat Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ New-AzLocalNetworkGateway -Name <String> -ResourceGroupName <String> -Location <
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Di Tempat.
-Cmdlet **New-AzLocalNetworkGateway** membuat objek yang mewakili gateway lokal Anda berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan Alamat IP gateway, serta Prefiks Alamat jaringan Lokal yang akan tersambung ke Azure.
+Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Secara Lokal.
+Cmdlet **New-AzLocalNetworkGateway** membuat objek yang mewakili gateway lokal Anda berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan Alamat IP gateway, serta Awalan Alamat jaringan Lokal yang akan tersambung ke Azure.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **New-AzLocalNetworkGateway** membuat objek yang mewakili gateway lokal A
 New-AzLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG -Location "West US" -GatewayIpAddress 23.99.221.164 -AddressPrefix "10.5.51.0/24"
 ```
 
-Membuat objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" di lokasi "AS Barat" dengan alamat IP "23.99.221.164" dan prefiks alamat "10.5.51.0/24" di awal.
+Membuat objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" di lokasi "US Barat" dengan alamat IP "23.99.221.164" dan awalan alamat "10.5.51.0/24" lokal.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: System.String
 Parameter Sets: (All)
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -232,8 +235,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

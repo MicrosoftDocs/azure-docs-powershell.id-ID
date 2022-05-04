@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicySetDefinition.md
-ms.openlocfilehash: 78d163524e2e5af117320d2f7479004255904d93
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d598af5435ac0551bcd0dbdcb587c854e7d27f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867564"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574022"
 ---
 # Get-AzPolicySetDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi kumpulan kebijakan.
+Mendapatkan definisi set kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicysetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,50 +59,50 @@ Get-AzPolicySetDefinition [-ManagementGroupName <String>] [-SubscriptionId <Guid
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicySetDefinition** mendapatkan kumpulan definisi kumpulan kebijakan atau definisi kumpulan kebijakan tertentu yang diidentifikasi menurut nama atau ID.
+Cmdlet **Get-AzPolicySetDefinition** mendapatkan kumpulan definisi kumpulan kebijakan atau definisi kumpulan kebijakan tertentu yang diidentifikasi berdasarkan nama atau ID.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua definisi kumpulan kebijakan
+### Contoh 1: Mendapatkan semua definisi set kebijakan
 ```powershell
 Get-AzPolicySetDefinition
 ```
 
-Perintah ini mendapatkan semua definisi kumpulan kebijakan.
+Perintah ini mendapatkan semua definisi set kebijakan.
 
-### Contoh 2: Dapatkan definisi kumpulan kebijakan dari langganan saat ini menurut nama
+### Contoh 2: Mendapatkan definisi kumpulan kebijakan dari langganan saat ini menurut nama
 ```powershell
 Get-AzPolicySetDefinition -Name 'VMPolicySetDefinition'
 ```
 
-Perintah ini mendapatkan definisi kumpulan kebijakan bernama VMPolicySetDefinition dari langganan default saat ini.
+Perintah ini mendapatkan definisi set kebijakan bernama VMPolicySetDefinition dari langganan default saat ini.
 
-### Contoh 3: Dapatkan definisi kumpulan kebijakan dari langganan menurut nama
+### Contoh 3: Mendapatkan definisi kumpulan kebijakan dari langganan menurut nama
 ```powershell
 Get-AzPolicySetDefinition -Name 'VMPolicySetDefinition' -subscriptionId '3bf44b72-c631-427a-b8c8-53e2595398ca'
 ```
 
 Perintah ini mendapatkan definisi kebijakan bernama VMPolicySetDefinition dari langganan dengan ID 3bf44b72-c631-427a-b8c8-53e2595398ca.
 
-### Contoh 4: Dapatkan semua definisi kumpulan kebijakan kustom dari grup manajemen
+### Contoh 4: Mendapatkan semua definisi kumpulan kebijakan kustom dari grup manajemen
 ```powershell
 Get-AzPolicySetDefinition -ManagementGroupName 'Dept42' -Custom
 ```
 
 Perintah ini mendapatkan semua definisi kumpulan kebijakan kustom dari grup manajemen bernama Dept42.
 
-### Contoh 5: Dapatkan definisi kumpulan kebijakan dari kategori tertentu
+### Contoh 5: Mendapatkan definisi set kebijakan dari kategori tertentu
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Virtual Machine"}
 ```
 
-Perintah ini mendapatkan semua definisi kumpulan kebijakan dalam kategori "Mesin Virtual".
+Perintah ini mendapatkan semua definisi set kebijakan dalam kategori "Komputer Virtual".
 
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id definisi kumpulan kebijakan yang sepenuhnya memenuhi syarat, termasuk langganan.
+Id definisi set kebijakan yang sepenuhnya memenuhi syarat, termasuk langganan.
 misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kumpulan kebijakan yang akan didapatkan.
+Nama grup manajemen definisi set kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi kumpulan kebijakan.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan definisi kumpulan kebijakan yang akan didapatkan.
+ID langganan definisi set kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

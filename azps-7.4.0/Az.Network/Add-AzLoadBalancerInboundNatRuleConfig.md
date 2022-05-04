@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: 6495167056342a8e239301fda76195fca709f0f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82e24c4b7446d3b36cd517e8e720424391bc134c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806490"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565510"
 ---
 # Add-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muatan.
+Menambahkan konfigurasi aturan NAT masuk ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Add-AzLoadBalancerInboundNatRuleConfig -LoadBalancer <PSLoadBalancer> -Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerInboundNatRuleConfig** menambahkan konfigurasi aturan terjemahan alamat jaringan masuk (NAT) ke penyeimbang muatan Azure.
+Cmdlet **Add-AzLoadBalancerInboundNatRuleConfig** menambahkan konfigurasi aturan terjemahan alamat jaringan masuk (NAT) ke load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan konfigurasi aturan NAT masuk ke penyeimbang muat
+### Contoh 1: Menambahkan konfigurasi aturan NAT masuk ke load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 $slb | Add-AzLoadBalancerInboundNatRuleConfig -Name "NewNatRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350 -EnableFloatingIP
@@ -51,10 +54,10 @@ $slb | Set-AzLoadBalancer
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyloadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua menggunakan operator pipeline untuk mengirimkan load balancer dalam $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi aturan NAT masuk ke load balancer.
-Perintah terakhir mengatur konfigurasi ke loadbalancer, jika Anda tidak menjalankan Set-AzLoadBalancer, perubahan Anda tidak akan diterapkan ke loadbalancer.
+Perintah kedua menggunakan operator alur untuk meneruskan load balancer di $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi aturan NAT masuk ke load balancer.
+Perintah terakhir mengatur konfigurasi ke loadbalancer, jika Anda tidak melakukan Set-AzLoadBalancer, perubahan Anda tidak akan diterapkan ke loadbalancer.
 
-### Contoh 2: Menambahkan konfigurasi V2 aturan NAT masuk ke penyeimbang muat
+### Contoh 2: Menambahkan konfigurasi aturan NAT masuk V2 ke load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 $slb | Add-AzLoadBalancerInboundNatRuleConfig -Name "NewNatRuleV2" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -IdleTimeoutInMinutes 10 -FrontendPortRangeStart 3389 -FrontendPortRangeEnd 4000 -BackendAddressPool $slb.BackendAddressPools[0] -BackendPort 3389
@@ -62,8 +65,8 @@ $slb | Set-AzLoadBalancer
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyloadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua menggunakan operator pipeline untuk mengirimkan load balancer dalam $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi V2 aturan NAT masuk ke load balancer.
-Perintah terakhir mengatur konfigurasi ke loadbalancer, jika Anda tidak menjalankan Set-AzLoadBalancer, perubahan Anda tidak akan diterapkan ke loadbalancer.
+Perintah kedua menggunakan operator alur untuk meneruskan load balancer di $slb ke **Add-AzLoadBalancerInboundNatRuleConfig**, yang menambahkan konfigurasi NAT rule V2 masuk ke load balancer.
+Perintah terakhir mengatur konfigurasi ke loadbalancer, jika Anda tidak melakukan Set-AzLoadBalancer, perubahan Anda tidak akan diterapkan ke loadbalancer.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau penghentian koneksi yang tidak terduga. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan NAT masuk.
+Menentukan daftar alamat IP front-end untuk dikaitkan dengan konfigurasi aturan NAT masuk.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung depan.
+Menentukan ID untuk konfigurasi alamat IP front-end.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung depan yang cocok dengan konfigurasi aturan.
+Menentukan port front-end yang cocok dengan konfigurasi aturan.
 
 ```yaml
 Type: System.Int32
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang beban.
+Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang muatan.
 
 ```yaml
 Type: System.Int32
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 Menentukan objek **LoadBalancer** .
-Cmdlet ini menambahkan konfigurasi aturan NAT masuk ke penyeimbang beban yang ditentukan parameter ini.
+Cmdlet ini menambahkan konfigurasi aturan NAT masuk ke load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -203,8 +206,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi aturan NAT masuk untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi aturan NAT masuk yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -294,8 +297,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -347,14 +350,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [Get-AzLoadBalancerInboundNatRuleConfig](./Get-AzLoadBalancerInboundNatRuleConfig.md)
 
-[New-AzLoadBalancerInboundNatRuleConfig](./New-AzLoadBalancerInboundNatRuleConfig.md)
+[Baru-AzLoadBalancerInboundNatRuleConfig](./New-AzLoadBalancerInboundNatRuleConfig.md)
 
 [Remove-AzLoadBalancerInboundNatRuleConfig](./Remove-AzLoadBalancerInboundNatRuleConfig.md)
 
-[Set-AzLoadBalancer](./Set-AzLoadBalancer.md)
+[Atur-AzLoadBalancer](./Set-AzLoadBalancer.md)
 
 [Set-AzLoadBalancerInboundNatRuleConfig](./Set-AzLoadBalancerInboundNatRuleConfig.md)

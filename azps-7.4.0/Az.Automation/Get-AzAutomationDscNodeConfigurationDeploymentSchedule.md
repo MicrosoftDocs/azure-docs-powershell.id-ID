@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeploymentSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeploymentSchedule.md
-ms.openlocfilehash: 7239d46401b19cdacbf04eb15356049624af2e8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 368d71aa26f5412cfd2fe030b7faac3bc3a14687
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751302"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578342"
 ---
 # Get-AzAutomationDscNodeConfigurationDeploymentSchedule
 
 ## SYNOPSIS
-Mendapatkan jadwal pekerjaan penyebaran konfigurasi Node DSC di Otomatisasi.
+Mendapatkan jadwal pekerjaan penyebaran konfigurasi DSC Node di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeploymentschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzAutomationDscNodeConfigurationDeploymentSchedule -JobScheduleId <Guid> [-R
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
+Cmdlet **Get-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua jadwal penyebaran
+### Contoh 1: Mendapatkan semua jadwal penyebaran
 ```
 PS C:\> Get-AzAutomationDscNodeConfigurationDeploymentSchedule `
             -AutomationAccountName "Contoso01"  `
@@ -56,7 +59,7 @@ JobSchedule           : Microsoft.Azure.Commands.Automation.Model.JobSchedule
 RunbookName           : Deploy-NodeConfigurationToAutomationDscNodesV1
 ```
 
-### Contoh 2: Dapatkan jadwal penggunaan
+### Contoh 2: Mendapatkan jadwal penyebaran
 ```
 PS C:\> $js= Get-AzAutomationDscNodeConfigurationDeploymentSchedule `
                  -AutomationAccountName "Contoso01" `
@@ -83,12 +86,12 @@ Parameters            : {AutomationAccountName, NodeConfigurationName, ResourceG
 HybridWorker          :
 ```
 
-Perintah di atas menyebarkan konfigurasi node DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap.
+Perintah di atas menyebarkan konfigurasi simpul DSC bernama "Config01.Node1" ke array dua dimensi yang diberikan dari Nama Simpul. Penyebaran terjadi secara bertahap.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
+Menentukan nama akun Automation yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan id Jadwal Pekerjaan dari pekerjaan penyebaran terjadwal yang sudah ada.
+Menentukan id Jadwal Pekerjaan dari pekerjaan penyebaran terjadwal yang ada.
 
 ```yaml
 Type: System.Guid
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini mengkompilasi konfigurasi.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

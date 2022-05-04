@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGroup.md
-ms.openlocfilehash: 740a3c0c328f8670a252eadb1716a683abe66035
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70552e00e29ec60f096d1aff091169dcc466d89c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570260"
 ---
 # Get-AzApiManagementGroup
 
 ## SYNOPSIS
 Mendapatkan semua atau grup manajemen API tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Cmdlet **Get-AzApiManagementGroup** mendapatkan semua atau grup manajemen API te
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua grup
+### Contoh 1: Mendapatkan semua grup
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGroup -Context $apimContext
@@ -73,7 +76,7 @@ Get-AzApiManagementGroup -Context $apimContext -Name "Group0002"
 
 Perintah ini mendapatkan grup bernama Group0002.
 
-### Contoh 4: Dapatkan semua grup pengguna
+### Contoh 4: Mendapatkan semua grup pengguna
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGroup -Context $apimContext -UserId "0123456789"
@@ -83,8 +86,8 @@ Perintah ini mendapatkan semua grup pengguna dengan ID pengguna bernama 01234567
 
 ## PARAMETERS
 
-### -Konteks
-Menentukan contoh PsApiManagementContext.
+### -Context
+Menentukan instans PsApiManagementContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -GroupId
 Menentukan ID grup.
-Jika ditentukan, cmdlet berusaha menemukan grup oleh pengidentifikasi.
+Jika ditentukan, cmdlet mencoba menemukan grup menurut pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama grup manajemen.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Pengidentifikasi produk yang sudah ada.
+Pengidentifikasi produk yang ada.
 Jika ditentukan akan mengembalikan semua grup tempat produk ditetapkan.
 Parameter ini bersifat opsional.
 
@@ -162,8 +165,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-Menentukan pengidentifikasi produk yang sudah ada.
-Jika ditentukan cmdlet akan mengembalikan semua grup tempat produk ditetapkan.
+Menentukan pengidentifikasi produk yang ada.
+Jika ditentukan, cmdlet akan mengembalikan semua grup yang ditetapkan produk.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

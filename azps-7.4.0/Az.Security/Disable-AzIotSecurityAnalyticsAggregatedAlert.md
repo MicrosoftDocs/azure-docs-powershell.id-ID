@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
-ms.openlocfilehash: 71f39b124a0dd70d8b991a59d840df61acb27725
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 836af7c1b515157ff28fc64765c0a28cc9ff06e8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801144"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573986"
 ---
 # Disable-AzIotSecurityAnalyticsAggregatedAlert
 
 ## SYNOPSIS
 Mematikan pemberitahuan agregat Iot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/disable-aziotsecurityanalyticsaggregatedalert) untuk informasi terbaru.
 
 ## SYNTAX
 

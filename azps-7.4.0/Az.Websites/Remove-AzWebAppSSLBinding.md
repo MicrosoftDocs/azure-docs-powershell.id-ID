@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
-ms.openlocfilehash: 383f0dc49ead2ebba340f369e5b8079ed4661dde
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e560e7aad1441a760b5f416964a55891110ca119
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143055791"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584786"
 ---
 # Remove-AzWebAppSSLBinding
 
 ## SYNOPSIS
-Menghapus pengikat SSL dari sertifikat yang diunggah.
+Menghapus pengikatan SSL dari sertifikat yang diunggah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,16 +38,16 @@ Remove-AzWebAppSSLBinding [-Name] <String> [[-DeleteCertificate] <Boolean>] [-Fo
 
 ## DESCRIPTION
 Cmdlet **Remove-AzWebAppSSLBinding** menghapus pengikatan Secure Sockets Layer (SSL) dari Azure Web App.
-Pengikat SSL digunakan untuk mengaitkan Aplikasi Web dengan sertifikat.
+Pengikatan SSL digunakan untuk mengaitkan Aplikasi Web dengan sertifikat.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pengikat SSL untuk aplikasi web
+### Contoh 1: Menghapus pengikatan SSL untuk aplikasi web
 ```powershell
 Remove-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppName "ContosoWebApp" -Name "www.contoso.com"
 ```
 
-Perintah ini menghapus pengikat SSL untuk aplikasi web ContosoWebApp.
+Perintah ini menghapus pengikatan SSL untuk aplikasi web ContosoWebApp.
 Karena parameter *DeleteCertificate* tidak disertakan, sertifikat akan dihapus jika tidak lagi memiliki pengikatan SSL.
 
 ### Contoh 2: Menghapus pengikatan SSL tanpa menghapus sertifikat
@@ -52,20 +55,20 @@ Karena parameter *DeleteCertificate* tidak disertakan, sertifikat akan dihapus j
 Remove-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppName "ContosoWebApp" -Name "www.contoso.com" -DeleteCertificate $False
 ```
 
-Mirip dengan Contoh 1, perintah ini juga menghapus pengikat SSL untuk ContosoWebApp Aplikasi Web.
+Mirip dengan Contoh 1, perintah ini juga menghapus pengikatan SSL untuk Aplikasi Web ContosoWebApp.
 Namun, dalam hal ini, parameter *DeleteCertificate* disertakan, dan nilai parameter diatur ke $False.
-Itu berarti bahwa sertifikat tidak akan dihapus terlepas apakah sertifikat tersebut memiliki pengikat SSL atau tidak.
+Itu berarti bahwa sertifikat tidak akan dihapus terlepas dari apakah sertifikat tersebut memiliki pengikatan SSL atau tidak.
 
-### Contoh 3: Menggunakan referensi objek untuk menghapus pengikat SSL
+### Contoh 3: Gunakan referensi objek untuk menghapus pengikatan SSL
 ```powershell
 $WebApp = Get-AzWebApp -Name "ContosoWebApp"
 Remove-AzWebAppSSLBinding -WebApp $WebApp -Name "www.contoso.com"
 ```
 
-Contoh ini menggunakan referensi objek ke situs web Web App untuk menghapus pengikat SSL untuk Aplikasi Web.
-Perintah pertama menggunakan cmdlet Get-AzWebApp untuk membuat referensi objek ke Web App bernama ContosoWebApp.
+Contoh ini menggunakan referensi objek ke situs web Web App untuk menghapus pengikatan SSL untuk Aplikasi Web.
+Perintah pertama menggunakan cmdlet Get-AzWebApp untuk membuat referensi objek ke Aplikasi Web bernama ContosoWebApp.
 Referensi objek tersebut disimpan dalam variabel bernama $WebApp.
-Perintah kedua menggunakan referensi objek dan cmdlet **Remove-AzWebAppSSLBinding** untuk menghapus pengikat SSL.
+Perintah kedua menggunakan referensi objek dan cmdlet **Remove-AzWebAppSSLBinding** untuk menghapus pengikatan SSL.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -DeleteCertificate
 Menentukan tindakan yang akan dilakukan jika pengikatan SSL yang dihapus adalah satu-satunya pengikatan yang digunakan oleh sertifikat.
-Jika *DeleteCertificate* diatur ke $False, sertifikat tidak akan dihapus saat penjilidan dihapus.
+Jika *DeleteCertificate* diatur ke $False, sertifikat tidak akan dihapus saat pengikatan dihapus.
 Jika *DeleteCertificate* diatur ke $True atau tidak disertakan dalam perintah, sertifikat akan dihapus bersama dengan pengikatan SSL.
 Sertifikat hanya akan dihapus jika pengikatan SSL yang dihapus adalah satu-satunya pengikatan yang digunakan oleh sertifikat.
 Jika sertifikat memiliki lebih dari satu pengikatan, sertifikat tidak akan dihapus terlepas dari nilai parameter *DeleteCertificate* .
@@ -103,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Web App.
+### -Name
+Menentukan nama Aplikasi Web.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan slot penyebaran Web App.
+Menentukan slot penyebaran Aplikasi Web.
 Untuk mendapatkan slot penyebaran, gunakan cmdlet Get-AzWebAppSlot.
 
 ```yaml
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 
 ### -WebApp
 Menentukan Aplikasi Web.
-Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
-Anda tidak dapat menggunakan parameter *WebApp* dalam perintah yang sama seperti parameter *ResourceGroupName* dan/atau *WebAppName*.
+Untuk mendapatkan Aplikasi Web, gunakan cmdlet Get-AzWebApp.
+Anda tidak dapat menggunakan parameter *WebApp* dalam perintah yang sama dengan parameter *ResourceGroupName* dan/atau *WebAppName*.
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebAppName
-Menentukan nama Web App.
+Menentukan nama Aplikasi Web.
 Anda tidak dapat menggunakan parameter *WebAppName* dan parameter *WebApp* dalam perintah yang sama.
 
 ```yaml
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,8 +217,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan. Menunjukkan apa yang akan terjadi jika cmdlet berjalan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -231,11 +234,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

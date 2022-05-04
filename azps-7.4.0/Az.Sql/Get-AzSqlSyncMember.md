@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncMember.md
-ms.openlocfilehash: cce9287d905b068d0ec1b5e17cba53a0d74e7cca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd8600e303127eb65c82f57cc6ff220f8377566b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272439"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565132"
 ---
 # Get-AzSqlSyncMember
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Azure SQL Database Sinkronkan Anggota.
+Mengembalikan informasi tentang Anggota Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Get-AzSqlSyncMember [-Name <String>] [-SyncGroupName] <String> [-ServerName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlSyncMember** mengembalikan informasi tentang satu atau beberapa anggota sinkronisasi Azure SQL Database.
+Cmdlet **Get-AzSqlSyncMember** mengembalikan informasi tentang satu atau beberapa anggota Sinkronisasi Azure SQL Database.
 Tentukan nama anggota sinkronisasi untuk melihat informasi hanya untuk anggota sinkronisasi tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua contoh Azure SQL Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi
+### Contoh 1: Mendapatkan semua instans Azure SQL Sync Member yang ditetapkan ke grup sinkronisasi
 ```powershell
 Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" | Format-List
 ```
@@ -69,9 +72,9 @@ MemberDatabasePassword      :
 SyncState                   : Good
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi SyncGroup01.
+Perintah ini mendapatkan informasi tentang semua Anggota Sinkronisasi Azure SQL Database yang ditetapkan ke grup sinkronisasi SyncGroup01.
 
-### Contoh 2: Dapatkan informasi tentang Anggota Sinkronisasi Azure SQL Database
+### Contoh 2: Mendapatkan informasi tentang Anggota Sinkronisasi Azure SQL Database
 ```powershell
 Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" | Format-List
 ```
@@ -96,7 +99,7 @@ SyncState                   : Good
 
 Perintah ini mendapatkan informasi tentang Anggota Sinkronisasi Azure SQL Database dengan nama "SyncMember01"
 
-### Contoh 3: Dapatkan semua contoh Azure SQL Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua instans Azure SQL Sync Member yang ditetapkan ke grup sinkronisasi menggunakan pemfilteran
 ```powershell
 Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember*" | Format-List
 ```
@@ -135,7 +138,7 @@ MemberDatabasePassword      :
 SyncState                   : Good
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi SyncGroup01 yang dimulai dengan "SyncMember".
+Perintah ini mendapatkan informasi tentang semua Anggota Sinkronisasi Azure SQL Database yang ditetapkan ke grup sinkronisasi SyncGroup01 yang dimulai dengan "SyncMember".
 
 ## PARAMETERS
 
@@ -169,7 +172,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama anggota sinkronisasi.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

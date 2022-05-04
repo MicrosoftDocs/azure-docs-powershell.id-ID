@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
-ms.openlocfilehash: fe5e91b37bd81a3b0a7545779a200fa85cc8729d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 23e4dabd2dec74c560213190f4ab08af70b0d89c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275031"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558400"
 ---
 # Remove-AzResource
 
 ## SYNOPSIS
 Menghapus sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzResource [-AsJob] -ResourceName <String> -ResourceType <String> [-Exten
  [<CommonParameters>]
 ```
 
-### ByTenantLevel
+### OlehTenantLevel
 ```
 Remove-AzResource [-AsJob] -ResourceName <String> -ResourceType <String> [-ExtensionResourceName <String>]
  [-ExtensionResourceType <String>] [-ODataQuery <String>] [-TenantLevel] [-Force] [-ApiVersion <String>] [-Pre]
@@ -52,14 +55,14 @@ Remove-AzResource -ResourceId "/subscriptions/00000000-0000-0000-0000-0000000000
 ```
 
 Perintah ini menghapus sumber daya situs web bernama ContosoSite.
-Contoh menggunakan nilai placeholder untuk ID langganan.
-Perintah menentukan parameter *Paksa* .
-Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
+Contoh menggunakan nilai tempat penampung untuk ID langganan.
+Perintah menentukan parameter *Force* .
+Oleh karena itu, ini tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi sumber daya yang dihapus cmdlet ini.
-Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
+Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
 
 ```yaml
 Type: System.String
@@ -121,9 +124,9 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceType
-Menentukan tipe sumber daya untuk sumber daya ekstensi.
-Menentukan tipe sumber daya ekstensi untuk sumber daya.
-Misalnya: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya untuk sumber daya ekstensi.
+Menentukan jenis sumber daya ekstensi untuk sumber daya.
+Contohnya: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,8 +234,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya yang dihapus cmdlet ini.
-Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya yang dihapus cmdlet ini.
+Misalnya, untuk database, jenis sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi di tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,8 +264,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

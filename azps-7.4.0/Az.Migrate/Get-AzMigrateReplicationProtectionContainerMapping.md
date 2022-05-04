@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainerMapping.md
-ms.openlocfilehash: 8ed7c86a09d29e0bee4e235ab04bfe7f74202b4e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f54679ff8abbe2177823a914db83e548c56445d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873198"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569450"
 ---
 # Get-AzMigrateReplicationProtectionContainerMapping
 
 ## SYNOPSIS
-Mendapatkan detail pemetaan wadah perlindungan.
+Mendapatkan detail pemetaan kontainer perlindungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMigrateReplicationProtectionContainerMapping -ResourceGroupName <String> -
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMigrateReplicationProtectionContainerMapping -FabricName <String> -MappingName <String>
  -ProtectionContainerName <String> -ResourceGroupName <String> -ResourceName <String>
@@ -40,7 +43,7 @@ Get-AzMigrateReplicationProtectionContainerMapping -FabricName <String> -Protect
 ```
 
 ## DESCRIPTION
-Mendapatkan detail pemetaan wadah perlindungan.
+Mendapatkan detail pemetaan kontainer perlindungan.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama kain.
+Nama Fabric.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MappingName
-Nama pemetaan Kontainer Proteksi.
+Nama pemetaan Kontainer Perlindungan.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerName
-Nama wadah proteksi.
+Nama kontainer perlindungan.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah layanan pemulihan ada.
+Nama grup sumber daya tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama kubah layanan pemulihan.
+Nama vault layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

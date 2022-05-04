@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 8e97c06e6185ddd918c4e645b17e1730f9e9b567
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4c09bfaf9e88a09ac73cbc9cc932312364ee68e1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118179"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580538"
 ---
 # Set-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Mengubah konfigurasi koneksi yang menguras objek pengaturan HTTP ujung-belakang.
+Memodifikasi konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzApplicationGatewayConnectionDraining -BackendHttpSettings <PSApplicationGa
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayWebApplicationFirewallConfiguration** mengubah konfigurasi koneksi yang menguras objek pengaturan HTTP ujung belakang.
+Cmdlet **Set-AzApplicationGatewayWebApplicationFirewallConfiguration memodifikasi** konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
 
 ## EXAMPLES
 
@@ -37,8 +40,8 @@ Set-AzApplicationGatewayConnectionDraining -BackendHttpSettings $poolSetting02 -
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah terakhir mengubah konfigurasi koneksi yang menguras objek pengaturan HTTP ujung belakang yang disimpan dalam $Pengaturan dengan mengatur Diaktifkan ke False dan DrainTimeoutInSec ke 3600.
+Perintah kedua mendapatkan pengaturan HTTP back-end bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah terakhir memodifikasi konfigurasi pengurasan koneksi objek pengaturan HTTP back-end yang disimpan dalam $Pengaturan dengan mengatur Diaktifkan ke False dan DrainTimeoutInSec ke 3600.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DrainTimeoutInSec
+### -DrainTimeoutInsec
 Jumlah detik pengurasan koneksi aktif.
 Nilai yang dapat diterima adalah dari 1 detik hingga 3600 detik.
 
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Apakah koneksi menguras daya diaktifkan atau tidak.
+### -Diaktifkan
+Apakah pengurasan koneksi diaktifkan atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

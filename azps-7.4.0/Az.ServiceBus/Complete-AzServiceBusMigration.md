@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/compl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Complete-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Complete-AzServiceBusMigration.md
-ms.openlocfilehash: ef0a1ddb07b47caea70c236213c67e87ec3aad5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18cc4be9bb045e95664cf7732fd23db8a9c6fed3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934561"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583130"
 ---
 # Complete-AzServiceBusMigration
 
 ## SYNOPSIS
-Cmdlet mengatur ruang nama Migrasi dari Standar ke premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke ruang nama Premium
+Cmdlet mengatur Migrasi dari namespace standar ke premium sebagai lengkap dan string koneksi namespace standar sekarang menunjuk ke namespace Premium
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/complete-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Complete-AzServiceBusMigration [-ResourceId] <String> [-PassThru] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Complete-AzServiceBusMigration** mengatur Migrasi dari Standar ke ruang nama premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke Premium ruang nama
+Cmdlet **Complete-AzServiceBusMigration** mengatur Migrasi dari namespace standar ke premium sebagai lengkap dan string koneksi namespace standar sekarang menunjuk ke namespace layanan Premium
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Complete-AzServiceBusMigration** mengatur Migrasi dari Standar ke ruang
 Complete-AzServiceBusMigration -ResourceGroupName ResourceGroup -Name NamespaceStandardMigration
 ```
 
-Mengatur Migrasi ruang nama 'NamespaceStandardMigration' sebagai selesai.
+Mengatur Migrasi namespace layanan 'NamespaceStandardMigration' sebagai selesai.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-konfigurasi Bus Layanan Migrasi - Objek Ruang Nama Standar
+konfigurasi Bus Layanan Migration - Objek Namespace Standar
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -81,8 +84,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama Standar
+### -Name
+Nama Namespace Standar
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Migrasi Bus Layanan - Id Sumber Daya Ruang Nama Standar
+Bus Layanan Migration - Id Sumber Daya Namespace Standar
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

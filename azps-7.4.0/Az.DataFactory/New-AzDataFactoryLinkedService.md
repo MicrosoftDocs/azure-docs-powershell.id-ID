@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 7c14c80b2726a88d79a01779d9677dc1579c03dd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9cdea2d7a8cc1b625943719fcb9aab483df83618
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942499"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584318"
 ---
 # New-AzDataFactoryLinkedService
 
 ## SYNOPSIS
-Menautkan penyimpanan data atau layanan awan ke Azure Data Factory.
+Menautkan penyimpanan data atau layanan cloud ke Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactorylinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,14 +37,14 @@ New-AzDataFactoryLinkedService [-DataFactory] <PSDataFactory> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryLinkedService menautkan** penyimpanan data atau layanan awan ke Azure Data Factory.
-Jika Anda menentukan nama untuk layanan tertaut yang sudah ada, cmdlet ini meminta konfirmasi sebelum menggantikan layanan yang ditautkan.
-Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan layanan tertaut yang sudah ada tanpa konfirmasi.
+Cmdlet **New-AzDataFactoryLinkedService menautkan** penyimpanan data atau layanan cloud ke Azure Data Factory.
+Jika Anda menentukan nama untuk layanan tertaut yang sudah ada, cmdlet ini akan meminta konfirmasi sebelum menggantikan layanan tertaut.
+Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan layanan tertaut yang ada tanpa konfirmasi.
 Lakukan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
-- Membuat layanan tertaut. 
-- Membuat kumpulan data. 
-- Membuat saluran.
+- Buat layanan tertaut. 
+- Membuat himpunan data. 
+- Buat alur.
 
 ## EXAMPLES
 
@@ -58,10 +61,10 @@ Properties        : Microsoft.DataFactories.AzureStorageLinkedService
 ```
 
 Perintah ini membuat layanan tertaut bernama LinkedServiceCuratedWikiData di pabrik data bernama WikiADF.
-Layanan yang ditautkan ini menautkan penyimpanan blob Azure yang ditentukan dalam file ke pabrik data bernama WikiADF.
-Perintah melewati hasil ke cmdlet Format-List menggunakan operator pipeline.
-Cmdlet Windows PowerShell itu memformat hasil.
-Untuk informasi selengkapnya, ketik .`Get-Help Format-List`
+Layanan tertaut ini menautkan penyimpanan blob Azure yang ditentukan dalam file ke pabrik data bernama WikiADF.
+Perintah meneruskan hasil ke cmdlet Format-List dengan menggunakan operator alur.
+Cmdlet Windows PowerShell memformat hasilnya.
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi layanan yang ditautkan.
+Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi layanan tertaut.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan layanan tertaut yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan layanan tertaut yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama layanan yang ditautkan untuk dibuat.
+### -Name
+Menentukan nama layanan tertaut yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -173,8 +176,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSLinkedService
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

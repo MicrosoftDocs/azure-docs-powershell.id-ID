@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
-ms.openlocfilehash: 768b20cdaa3e446506d87fc1a880d69d0ebf5fa7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1c69ccdc71adb8715813d61a3f795224c5ea5154
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681624"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583616"
 ---
 # Get-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Dapatkan identitasnya.
+Mendapatkan identitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/get-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan identitasnya.
 Get-AzUserAssignedIdentity [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzUserAssignedIdentity -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,7 +46,7 @@ Get-AzUserAssignedIdentity -ResourceGroupName <String> [-SubscriptionId <String[
 ```
 
 ## DESCRIPTION
-Dapatkan identitasnya.
+Mendapatkan identitas.
 
 ## EXAMPLES
 
@@ -58,9 +61,9 @@ eastus        uai-pwsh01                          azure-rg-test
 eastus2       AzSecPackAutoConfigUA-eastus2       AzSecPackAutoConfigRG
 ```
 
-Perintah ini mencantumkan identitas pengguna yang ditetapkan di bawah langganan.
+Perintah ini mencantumkan identitas yang ditetapkan pengguna di bawah langganan.
 
-### Contoh 2: Cantumkan identitas yang ditetapkan pengguna di bawah grup sumber daya
+### Contoh 2: Mencantumkan identitas yang ditetapkan pengguna di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzUserAssignedIdentity -ResourceGroupName azure-rg-test
 
@@ -82,7 +85,7 @@ eastus   uai-pwsh01 azure-rg-test
 
 Perintah ini mendapatkan identitas yang ditetapkan pengguna.
 
-### Contoh 4: Mendapatkan identitas yang ditetapkan pengguna menurut pipeline
+### Contoh 4: Mendapatkan identitas yang ditetapkan pengguna berdasarkan alur
 ```powershell
 PS C:\> New-AzUserAssignedIdentity -ResourceGroupName azure-rg-test -Name uai-pwsh01 -Location eastus
  | Get-AzUserAssignedIdentity
@@ -92,7 +95,7 @@ Location Name       ResourceGroupName
 eastus   uai-pwsh01 azure-rg-test
 ```
 
-Perintah ini mendapatkan identitas pengguna yang ditetapkan menurut saluran.
+Perintah ini mendapatkan identitas yang ditetapkan pengguna berdasarkan alur.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServiceIdentity.Models.IManagedServiceIdentity
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya identitas.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,7 +198,7 @@ INPUTOBJECT <IManagedServiceIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat identitas berada.
   - `[ResourceName <String>]`: Nama sumber daya identitas.
-  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
+  - `[Scope <String>]`: Cakupan penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
   - `[SubscriptionId <String>]`: Id Langganan tempat identitas berada.
 
 ## RELATED LINKS

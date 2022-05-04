@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
-ms.openlocfilehash: 398efb46a74db3afe1f49b149a46ffc5645702ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17da7ed277d1f014576d611503b92176c5ec1b47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006111"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584462"
 ---
 # Get-AzSnapshot
 
 ## SYNOPSIS
-Mendapatkan properti snapshot
+Mendapatkan properti rekam jepret
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSnapshot [[-ResourceGroupName] <String>] [[-SnapshotName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSnapshot** mendapatkan properti snapshot.
+Cmdlet **Get-AzSnapshot** mendapatkan properti rekam jepret.
 
 ## EXAMPLES
 
@@ -84,7 +87,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua snapshot langganan.
+Perintah ini mendapatkan properti semua rekam jepret langganan.
 
 ### Contoh 2
 ```powershell
@@ -125,7 +128,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua snapshot dalam grup sumber daya bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti semua rekam jepret dalam grup sumber daya bernama "ResourceGroupName1"
 
 ### Contoh 3
 ```powershell
@@ -150,7 +153,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti snapshot bernama "SnapshotName1" dalam grup sumber daya bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti rekam jepret bernama "SnapshotName1" di grup sumber daya bernama "ResourceGroupName1"
 
 ### Contoh 4
 ```powershell
@@ -207,7 +210,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan semua snapshot yang dimulai dengan "SnapshotName"
+Perintah ini mendapatkan semua rekam jepret yang dimulai dengan "SnapshotName"
 
 ## PARAMETERS
 
@@ -242,7 +245,7 @@ Accept wildcard characters: True
 ```
 
 ### -SnapshotName
-Menentukan nama snapshot.
+Menentukan nama rekam jepret.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

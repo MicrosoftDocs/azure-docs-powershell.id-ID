@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
-ms.openlocfilehash: 0850661f8aa125ca8921c9621c74d310dcafb458
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6d019da032bd3995ad986b0ff0beaf70fe60afe3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116595"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570476"
 ---
 # Set-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
-Mengubah properti metrik untuk layanan Azure Storage.
+Memodifikasi properti metrik untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageservicemetricsproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Set-AzStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Metric
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageServiceMetricsProperty** mengubah properti metrik untuk layanan Azure Storage.
+Cmdlet **Set-AzStorageServiceMetricsProperty** memodifikasi properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah properti metrik untuk layanan Blob
+### Contoh 1: Mengubah properti metrik untuk Blob service
 ```
 C:\PS>Set-AzStorageServiceMetricsProperty -ServiceType Blob -MetricsType Hour -MetricsLevel Service -PassThru -RetentionDays 10 -Version 1.0
 ```
 
-Perintah ini mengubah metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
+Perintah ini memodifikasi metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
 Azure Storage metrik layanan mempertahankan entri selama 10 hari.
-Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti metrik yang diubah.
+Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti metrik yang dimodifikasi.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ### -MetricsLevel
 Menentukan tingkat metrik yang Azure Storage gunakan untuk layanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
+- Tidak ada
 - Layanan
 - ServiceAndApi
 
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricsType
-Menentukan tipe metrik.
-Cmdlet ini mengatur tipe metrik layanan Azure Storage ke nilai yang ditentukan parameter ini.
+Menentukan jenis metrik.
+Cmdlet ini mengatur jenis metrik layanan Azure Storage ke nilai yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionDays
-Menentukan jumlah hari layanan Azure Storage mempertahankan informasi metrik.
+Menentukan jumlah hari layanan Azure Storage menyimpan informasi metrik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -143,12 +146,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan penyimpanan.
-Cmdlet ini mengubah properti metrik untuk tipe layanan yang ditentukan parameter ini.
+Menentukan jenis layanan penyimpanan.
+Cmdlet ini memodifikasi properti metrik untuk jenis layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan 
-- Meja
-- Antrian
+- Blob 
+- Tabel
+- Antrean
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

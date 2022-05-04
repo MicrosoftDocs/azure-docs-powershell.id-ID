@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
-ms.openlocfilehash: 582be03c4b4ded460dc7589f7d6407d52711af05
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd299e8aef4f1b4af8e63564245906a4319e59a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875106"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584354"
 ---
 # Get-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
-Mendapatkan informasi tentang jalur pipa yang berjalan.
+Mendapatkan informasi tentang eksekusi alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Get-AzDataFactoryV2PipelineRun [-ResourceGroupName] <String> [-DataFactoryName] 
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzDataFactoryV2PipelineRun** mengembalikan informasi tentang jalankan untuk pipeline yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId memperlihatkan detail untuk dijalankan dengan ID tersebut. Jika PipelineRunId tidak ditentukan, pipelineRunId memperlihatkan informasi tentang semua alur yang terjadi antara nilai LastUpdatedAfter dan LastUpdatedBefore.
+Perintah **Get-AzDataFactoryV2PipelineRun** mengembalikan informasi tentang eksekusi untuk alur yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId akan menampilkan detail untuk eksekusi dengan ID tersebut. Jika PipelineRunId tidak ditentukan, maka itu menunjukkan informasi tentang semua eksekusi untuk alur yang terjadi antara nilai LastUpdatedAfter dan LastUpdatedBefore.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk proses pipeline
+### Contoh 1: Mendapatkan informasi untuk eksekusi alur
 ```powershell
 Get-AzDataFactoryV2PipelineRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId "61eb095a-fe23-4591-8a97-fade6c65ca72"
 ```
@@ -69,7 +72,7 @@ Get-AzDataFactoryV2PipelineRun -ResourceGroupName "ADF" -DataFactoryName "WikiAD
     Message           :
 ```
 
-Perintah ini mendapatkan detail tentang pipeline run dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
+Perintah ini mendapatkan detail tentang eksekusi alur dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
 
 ## PARAMETERS
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedAfter
-Waktu pada atau setelah proses saluran diperbarui dalam format ISO8601.
+Waktu pada atau setelah eksekusi alur diperbarui dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedBefore
-Waktu di atau sebelum alur dijalankan diperbarui dalam format ISO8601.
+Waktu pada atau sebelum eksekusi alur diperbarui dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Nama saluran.
+Nama alur.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-ID Jalankan dari pipeline.
+ID Eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

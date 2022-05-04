@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
-ms.openlocfilehash: 86c194fddd2beb69652f4c4ab930c348bdf41d2e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e11c13904dc960974b96176caa7ba214d405e006
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803988"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560596"
 ---
 # Update-AzVpnGateway
 
 ## SYNOPSIS
 Memperbarui gateway VPN yang dapat diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Update-AzVpnGateway -ResourceId <String> [-VpnConnection <PSVpnConnection[]>]
 
 ## DESCRIPTION
 Cmdlet **Update-AzVpnGateway** memperbarui gateway VPN yang dapat diskalakan.  
-Gateway VPN Azure adalah konektivitas yang ditentukan perangkat lunak untuk koneksi situs ke situs di dalam VirtualHub. Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan oleh pengguna. Koneksi bisa disetel dari cabang/situs yang dikenal sebagai situs VPN ke gateway yang dapat diskalakan. Setiap koneksi terdiri dari 2 terowongan Active-Active
+Gateway VPN Azure adalah konektivitas yang ditentukan perangkat lunak untuk koneksi situs ke situs di dalam VirtualHub. Gateway ini mengubah ukuran dan menskalakan berdasarkan unit skala yang ditentukan oleh pengguna. Koneksi dapat disiapkan dari cabang/situs yang dikenal sebagai situs VPN ke gateway yang dapat diskalakan. Setiap koneksi terdiri dari 2 terowongan Active-Active
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ ProvisioningState   : Succeeded
 
 Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway menggunakan Update-AzVpnGateway untuk memutakhirkan gateway ke 3 unit skala.
+Setelah gateway dibuat, gateway menggunakan Update-AzVpnGateway untuk meningkatkan gateway menjadi 3 unit skala.
 
 ### Contoh 2
 
@@ -114,7 +117,7 @@ Setelah gateway dibuat, gateway menggunakan Set-AzVpnGateway untuk memperbarui B
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -BgpPeeringAddress
-Alamat peering BGP untuk VpnGateway bgpsettings ini.
+Alamat peering BGP untuk bgpsettings VpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpConfigurationBgpPeeringAddress[]
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgpRouteTranslationForNat
-Tandai untuk mengaktifkan/menonaktifkan terjemahan rute Bgp untuk NAT di VpnGateway ini.
+Benderai untuk mengaktifkan/menonaktifkan terjemahan rute Bgp untuk NAT di VpnGateway ini.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway vpn yang akan diubah
+Objek gateway vpn yang akan dimodifikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -188,7 +191,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway vpn.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari VpnGateway untuk diubah.
+ID sumber daya Azure dari VpnGateway yang akan dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -293,8 +296,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -345,4 +348,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVpnGateway](./New-AzVpnGateway.md)
 
-[Hapus-AzVpnGateway](./Remove-AzVpnGateway.md)
+[Remove-AzVpnGateway](./Remove-AzVpnGateway.md)

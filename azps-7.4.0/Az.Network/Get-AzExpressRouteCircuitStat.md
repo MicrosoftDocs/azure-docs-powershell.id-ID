@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitStat.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitStat.md
-ms.openlocfilehash: 00b88ef917453f2796f80d686f4077ec94d45533
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 656fbf28707038f54488eb673a2427ec398a76c2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805986"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565528"
 ---
 # Get-AzExpressRouteCircuitStat
 
 ## SYNOPSIS
 Mendapatkan statistik penggunaan sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitstat) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzExpressRouteCircuitStat -ResourceGroupName <String> -ExpressRouteCircuitNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCircuitStat** mengambil statistik lalu lintas untuk sirkuit ExpressRoute. Statistik ini mencakup jumlah byte yang dikirim dan diterima baik melalui rute utama maupun sekunder.
+Cmdlet **Get-AzExpressRouteCircuitStat** mengambil statistik lalu lintas untuk sirkuit ExpressRoute. Statistik ini mencakup jumlah byte yang dikirim dan diterima melalui rute primer dan sekunder.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute sedang diperiksa.
+Nama sirkuit ExpressRoute yang sedang diperiksa.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolLanguageExtension.md
-ms.openlocfilehash: 3ddac2f40aff4cb8538be9889730903f5c77bd80
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 538ecbc815c7c38d04a8fd87eb5e23ae53e5db68
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670032"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561604"
 ---
 # Get-AzSynapseKustoPoolLanguageExtension
 
 ## SYNOPSIS
-Mengembalikan daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
+Mengembalikan daftar ekstensi bahasa yang bisa berjalan dalam kueri KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoollanguageextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzSynapseKustoPoolLanguageExtension -KustoPoolName <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
+Mengembalikan daftar ekstensi bahasa yang bisa berjalan dalam kueri KQL.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua ekstensi bahasa yang diatur untuk ruang kerja
+### Contoh 1: Mencantumkan semua ekstensi bahasa yang ditetapkan untuk ruang kerja
 ```powershell
 Get-AzSynapseKustoPoolLanguageExtension -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testpool
 ```
@@ -41,7 +44,7 @@ Name
 PYTHON
 ```
 
-Perintah di atas mengembalikan daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
+Perintah di atas mengembalikan daftar ekstensi bahasa yang dapat berjalan dalam kueri KQL.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -121,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

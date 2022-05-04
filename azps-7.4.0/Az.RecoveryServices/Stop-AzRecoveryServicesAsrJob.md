@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 6426982ae045c41f04a6d316da8ac4c2f7b4d879
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa3cc3a6f8f5697c66d304a09a57e00c900e652d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310455"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569143"
 ---
 # Stop-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 

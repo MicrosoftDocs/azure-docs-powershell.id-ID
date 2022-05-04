@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: 5164f801345ae77de06ceff52862c6f5f822d688
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b83471a8ee54e12df819eb31aa90ae5172adf0f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683172"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583922"
 ---
 # Get-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
-Mendapatkan semua grup pelanggan eventhub.
+Mendapatkan semua grup konsumen eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,16 +28,16 @@ Get-AzIotHubEventHubConsumerGroup [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan semua grup pelanggan eventhub untuk Berbagai EventHubs yang digunakan oleh IotHub.
+Mendapatkan semua grup konsumen eventhub untuk Berbagai EventHubs yang digunakan oleh IotHub.
 
 ## EXAMPLES
 
-### Contoh 1 Mendapatkan semua grup pelanggan genap untuk eventhub telemetri
+### Contoh 1 Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri
 ```powershell
 Get-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan semua grup pelanggan eventhub untuk eventhub telemetri untuk iothub bernama myiothub
+Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri untuk iothub bernama myiothub
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

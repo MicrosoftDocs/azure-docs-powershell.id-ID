@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: a506c8a1840bb5c6e50fd0282e0224a92b9d72eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e987aa4ce07230188a4d85856eb907d36107e809
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808560"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569522"
 ---
 # New-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
-Membuat objek yang tidak tetap yang menjelaskan konfigurasi skala otomatis dari kluster Azure HDInsight.
+Membuat objek yang tidak bertahan yang menjelaskan konfigurasi skala otomatis kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,18 +37,18 @@ New-AzHDInsightClusterAutoscaleConfiguration -TimeZone <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightClusterAutoscaleConfiguration** membuat objek tidak tetap yang menjelaskan konfigurasi skala otomatis dari cluster Azure HDInsight.
+Cmdlet **New-AzHDInsightClusterAutoscaleConfiguration** membuat objek yang tidak bertahan yang menjelaskan konfigurasi skala otomatis kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis muat
+### Contoh 1: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis beban
 ```powershell
 New-AzHDInsightClusterAutoscaleConfiguration -MinWorkerNodeCount 3 -MaxWorkerNodeCount 5
 ```
 
-Perintah ini membuat objek yang menjelaskan konfigurasi skala otomatis berbasis muat.
+Perintah ini membuat objek yang menjelaskan konfigurasi skala otomatis berbasis beban.
 
-### Contoh 2: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis jadwal
+### Contoh 2: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis Jadwal
 ```powershell
 # Create an autoscale condition firstly
 $condition=New-AzHDInsightClusterAutoscaleScheduleCondition -Day Monday -Time 09:00 -WorkerNodeCount 5
@@ -53,7 +56,7 @@ New-AzHDInsightClusterAutoscaleConfiguration -TimeZone ([System.TimeZoneInfo]::L
         -Condition $condition
 ```
 
-Perintah ini membuat objek yang menjelaskan konfigurasi skala otomatis berbasis jadwal.
+Perintah ini membuat objek yang menjelaskan konfigurasi skala otomatis berbasis Jadwal.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWorkerNodeCount
-Mendapatkan atau mengatur jumlah workernode maksimal dari skala otomatis berbasis beban.
+Mendapatkan atau mengatur jumlah simpul pekerja maksimal dari skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinWorkerNodeCount
-Mendapatkan atau mengatur jumlah workernode minimal dari skala otomatis berbasis beban.
+Mendapatkan atau mengatur jumlah simpul pekerja minimal skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32
@@ -133,11 +136,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

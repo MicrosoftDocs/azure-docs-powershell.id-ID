@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
-ms.openlocfilehash: 81de16797413f13f5448e93469506d09c1418b11
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2fd24213f320b3869e8743e6cb9af83979dfe3fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939943"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558886"
 ---
 # New-AzAlertRuleEmail
 
 ## SYNOPSIS
 Membuat tindakan email untuk aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azalertruleemail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,25 +29,25 @@ New-AzAlertRuleEmail [[-CustomEmail] <String[]>] [-SendToServiceOwner]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAlertRuleEmail** membuat tindakan email untuk aturan peringatan.
+Cmdlet **New-AzAlertRuleEmail** membuat tindakan email untuk aturan pemberitahuan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tindakan email aturan peringatan untuk pemilik layanan
+### Contoh 1: Membuat tindakan email aturan pemberitahuan untuk pemilik layanan
 ```powershell
 New-AzAlertRuleEmail -SendToServiceOwners
 ```
 
-Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirimkan bagi pemilik layanannya saat aturan peringatan ditembakkan.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk dikirimkan bagi pemilik layanannya saat aturan pemberitahuan diaktifkan.
 
-### Contoh 2: Membuat tindakan email aturan peringatan untuk pemilik non-layanan
+### Contoh 2: Membuat tindakan email aturan pemberitahuan untuk pemilik non-layanan
 ```powershell
 New-AzAlertRuleEmail -CustomEmail pattif@contoso.com,davidchew@contoso.net
 ```
 
-Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat email tertentu, tetapi tidak untuk pemilik layanan.
+Perintah ini membuat tindakan email aturan pemberitahuan untuk alamat email yang ditentukan, tetapi tidak untuk pemilik layanan.
 
-### Contoh 3: Membuat tindakan email aturan peringatan untuk pemilik layanan dan pemilik non-layanan
+### Contoh 3: Membuat tindakan email aturan pemberitahuan untuk pemilik layanan dan pemilik non-layanan
 ```powershell
 New-AzAlertRuleEmail -CustomEmail pattif@contoso.net -SendToServiceOwners
 ```
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendToServiceOwner
-Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan ketika aturan diterapkan.
+Menunjukkan bahwa operasi ini mengirim email ke pemilik layanan ketika aturan diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

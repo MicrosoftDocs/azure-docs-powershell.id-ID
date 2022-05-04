@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeRole.md
-ms.openlocfilehash: 25bcb01ccc237dde605770621f4f2d08ffcad3cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ed1fb513c2a9ffbefc2885e1b15e8cc14a2883c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125685"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584390"
 ---
 # New-AzDataBoxEdgeRole
 
 ## SYNOPSIS
 Membuat Peran baru untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDataBoxEdgeRole [-ResourceGroupName] <String> [-DeviceName] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeRole** membuat Peran baru untuk perangkat Box Edge Data.
+Cmdlet **New-AzDataBoxEdgeRole** membuat Peran baru untuk perangkat Data Box Edge.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ iotrole ehub.azure-devices.net Linux    Enabled iotEdgeDeviceId   iotDeviceId  r
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotDeviceId
-Id Perangkat perangkat Perangkat Iot
+Id Perangkat dari Perangkat Iot
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotEdgeDeviceAccessKey
-Tombol akses perangkat Iot Edge
+Kunci akses perangkat Iot Edge
 
 ```yaml
 Type: System.Security.SecureString
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHostHub
-Alamat hosthub
+Alamat Hosthub
 
 ```yaml
 Type: System.String
@@ -251,8 +254,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleStatus
-Sediakan status aktif/nonaktifkan
+Berikan status aktifkan/nonaktifkan
 
 ```yaml
 Type: System.String
@@ -311,8 +314,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,11 +345,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

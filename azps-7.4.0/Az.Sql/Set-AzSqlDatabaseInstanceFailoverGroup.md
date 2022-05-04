@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 9897c3d12ce24b368564360902036ff72ae3ea35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b3674cae16f19647210b5ff2d919d3550ad7fff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737658"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566518"
 ---
 # Set-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
-Mengubah konfigurasi Grup Failover Instans.
+Memodifikasi konfigurasi Grup Failover Instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +44,9 @@ Set-AzSqlDatabaseInstanceFailoverGroup [-InputObject] <AzureSqlInstanceFailoverG
 ```
 
 ## DESCRIPTION
-Perintah ini mengubah konfigurasi Grup Failover Instans.
+Perintah ini memodifikasi konfigurasi Grup Failover Instans.
 
-Kawasan utama Grup Failover Instans harus digunakan untuk menjalankan perintah.
+Wilayah utama Grup Failover Instans harus digunakan untuk menjalankan perintah.
 
 Selama pratinjau fitur Grup Failover Instans, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -70,12 +73,12 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Mengatur kebijakan failover Instance Failover Group menjadi 'Manual' dengan piping dalam Grup Failover.
+Mengatur kebijakan failover Grup Failover Instans ke 'Manual' dengan menyalurkan di Grup Failover.
 
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary
-Apakah pemadaman pada server sekunder harus memicu failover otomatis titik akhir baca-saja.
+Apakah pemadaman pada server sekunder harus memicu failover otomatis dari titik akhir baca-saja.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover Grup Failover Instans.
+Kebijakan failover dari Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika terjadi pemadaman pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
+Interval sebelum failover otomatis dimulai jika pemadaman terjadi pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
 
 ```yaml
 Type: System.Int32
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Grup Failover Instans.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Grup Failover Instans untuk diatur.
+ID Sumber Daya dari Grup Failover Instans yang akan diatur.
 
 ```yaml
 Type: System.String
@@ -209,8 +212,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

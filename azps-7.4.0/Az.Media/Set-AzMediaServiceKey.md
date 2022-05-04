@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaServiceKey.md
-ms.openlocfilehash: 7a4304142e52bf23f8001380e23c7ca7f2c55884
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 913c797d5a82fd4313f657d91b205aec8c61cafc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283851"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574436"
 ---
 # Set-AzMediaServiceKey
 
 ## SYNOPSIS
 Meregenerasi kunci yang digunakan untuk mengakses titik akhir REST yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/set-azmediaservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,14 +33,14 @@ Cmdlet **Set-AzMediaServiceKey meregenerasi** kunci yang digunakan untuk mengaks
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kunci utama yang digunakan untuk mengakses Layanan Media
+### Contoh 1: Meregenerasi kunci primer yang digunakan untuk mengakses Media Service
 ```powershell
 Set-AzMediaServiceKey -ResourceGroupName "ResourceGroup004" -AccountName "MediaService001" -KeyType Primary
 ```
 
-Perintah ini meregenerasi kunci utama untuk layanan media bernama MediaService001 yang termasuk dalam grup sumber daya bernama ResourceGroup004.
+Perintah ini meregenerasi kunci primer untuk layanan media bernama MediaService001 yang termasuk dalam grup sumber daya bernama ResourceGroup004.
 
-### Contoh 2: Meregenerasi kunci sekunder yang digunakan untuk mengakses Layanan Media
+### Contoh 2: Meregenerasi kunci sekunder yang digunakan untuk mengakses Media Service
 ```powershell
 Set-AzMediaServiceKey -ResourceGroupName "Resourcegroup123" -AccountName "MediaService002" -KeyType Secondary
 ```
@@ -77,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci layanan media.
-Nilai yang dapat diterima untuk parameter ini adalah: Utama atau Sekunder.
+Menentukan jenis kunci layanan media.
+Nilai yang dapat diterima untuk parameter ini adalah: Primer atau Sekunder.
 
 ```yaml
 Type: Microsoft.Azure.Management.Media.Models.KeyType
@@ -108,8 +111,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

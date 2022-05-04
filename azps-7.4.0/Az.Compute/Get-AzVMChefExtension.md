@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
-ms.openlocfilehash: 3af9ab7b35e4158535f403a57c227017976c1997
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: daa64b83ac96ad2f2db9e65116069fc4c87e6316
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582248"
 ---
 # Get-AzVMChefExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi Chef.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmchefextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,23 +36,23 @@ Get-AzVMChefExtension [-ResourceGroupName] <String> [-VMName] <String> [[-Name] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMChefExtension** mendapatkan informasi tentang ekstensi Chef yang diinstal pada mesin virtual.
+Cmdlet **Get-AzVMChefExtension** mendapatkan informasi tentang ekstensi Chef yang diinstal pada komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail ekstensi Chef untuk mesin virtual Windows
+### Contoh 1: Dapatkan detail ekstensi Chef untuk komputer virtual Windows
 ```powershell
 Get-AzVMChefExtension -ResourceGroupName "ResourceGroup001" -VMName "WindowsVM001" -Windows
 ```
 
-Perintah ini mendapatkan ekstensi Chef dari mesin virtual Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
+Perintah ini mendapatkan ekstensi Chef dari komputer virtual Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
 
-### Contoh 2: Dapatkan detail ekstensi Chef untuk mesin virtual Linux
+### Contoh 2: Mendapatkan detail ekstensi Chef untuk komputer virtual Linux
 ```powershell
 Get-AzVMChefExtension -ResourceGroupName "ResourceGroup002" -VMName "LinuxVM001" -Linux
 ```
 
-Perintah ini mendapatkan ekstensi Chef dari mesin virtual Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
+Perintah ini mendapatkan ekstensi Chef dari komputer virtual Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa cmdlet ini berfungsi pada mesin virtual Linux.
+Menunjukkan bahwa cmdlet ini berfungsi pada komputer virtual Linux.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi Chef.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi mesin virtual.
+Menentukan nama grup sumber daya yang berisi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa cmdlet ini untuk mesin virtual Windows.
+Menunjukkan bahwa cmdlet ini untuk komputer virtual Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

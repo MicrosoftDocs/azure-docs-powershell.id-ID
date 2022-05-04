@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
-ms.openlocfilehash: 765389f6f9ba0ad72577f781a36aae14094633a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba8a71582aca4ff82c7c53dd7ed11350ebf49192
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750870"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581708"
 ---
 # Set-AzAutomationModule
 
 ## SYNOPSIS
-Memperbarui modul dalam Otomatisasi.
+Memperbarui modul di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Set-AzAutomationModule [-Name] <String> [-ContentLinkUri <Uri>] [-ContentLinkVer
 ## DESCRIPTION
 Cmdlet **Set-AzAutomationModule** memperbarui modul dalam Azure Automation.
 Perintah ini menerima file terkompresi yang memiliki ekstensi nama file .zip.
-File berisi folder yang menyertakan file yang merupakan salah satu tipe berikut ini: 
-- modul wps_2, yang memiliki ekstensi nama file .psm1 atau .dll 
+File berisi folder yang menyertakan file yang merupakan salah satu jenis berikut: 
+- wps_2 modul, yang memiliki ekstensi nama file .psm1 atau .dll 
 - wps_2 manifes modul, yang memiliki ekstensi nama file .psd1 Nama file .zip, nama folder, dan nama file dalam folder harus sama.
-Tentukan file .zip sebagai URL yang dapat diakses oleh layanan Otomatisasi.
-Jika Anda mengimpor modul wps_2 ke Dalam Otomatisasi menggunakan cmdlet ini atau cmdlet New-AzAutomationModule, operasinya tidak sinkron.
+Tentukan file .zip sebagai URL yang dapat diakses oleh layanan Automation.
+Jika Anda mengimpor modul wps_2 ke Automation dengan menggunakan cmdlet ini atau cmdlet New-AzAutomationModule, operasinya tidak sinkron.
 Perintah selesai apakah impor berhasil atau gagal.
 Untuk memeriksa apakah berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
 
@@ -44,12 +47,12 @@ Untuk memeriksa apakah berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleIn
 PS C:\>Set-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLinkUri "http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip" -ContentLinkVersion "1.1" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mengimpor versi terbaru modul yang sudah ada bernama ContosoModule ke akun Otomatisasi bernama Contoso17.  Modul disimpan dalam blob Azure di akun penyimpanan bernama contosostorage dan kontainer bernama modul.
+Perintah ini mengimpor versi terbaru dari modul yang sudah ada bernama ContosoModule ke akun Automation bernama Contoso17.  Modul disimpan dalam blob Azure di akun penyimpanan bernama contosostorage dan kontainer bernama modul.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini memperbarui modul.
+Menentukan nama akun Automation tempat cmdlet ini memperbarui modul.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLinkVersion
-Menentukan versi modul tempat cmdlet ini memperbarui Otomatisasi.
+Menentukan versi modul tempat cmdlet ini memperbarui Automation.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama modul yang diimpor cmdlet ini.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memperbarui modul.
+Menentukan nama grup sumber daya tempat cmdlet ini memperbarui modul.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

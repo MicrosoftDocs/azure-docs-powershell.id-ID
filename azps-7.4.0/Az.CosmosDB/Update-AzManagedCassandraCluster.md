@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
-ms.openlocfilehash: 2ebbceff47c428dfa65218f9856682a538245730
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e54582b0f64ff12e3f71e54edaf89728d894a33
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125955"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567796"
 ---
 # Update-AzManagedCassandraCluster
 
 ## SYNOPSIS
-Perbarui Instans Terkelola Azure yang sudah ada untuk klaster Apache Cassandra.
+Perbarui kluster Azure Managed Instances for Apache Cassandra yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Update-AzManagedCassandraCluster -InputObject <PSClusterResource> [-Tag <Hashtab
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzManagedCassandraCluster** mengubah kluster Cassandra terkelola yang sudah ada.
+**Cmdlet Update-AzManagedCassandraCluster** mengubah kluster Cassandra terkelola yang ada.
 
 ## EXAMPLES
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificate
-Daftar sertifikat TLS untuk digunakan untuk mengautentikasi klien. Jika ini dihilangkan, semua koneksi klien masih terhubung dengan TLS, tetapi tidak diharuskan untuk menyediakan sertifikat klien yang valid. Jika ini disediakan, klien paling banyak menyediakan sertifikat klien TLS yang valid untuk menyambungkan ke kluster.
+Daftar sertifikat TLS yang akan digunakan untuk mengautentikasi klien. Jika ini dihilangkan, semua koneksi klien masih terhubung dengan TLS, tetapi tidak diperlukan untuk memberikan sertifikat klien yang valid. Jika ini disediakan, klien paling banyak menyediakan sertifikat klien TLS yang valid untuk terhubung ke kluster.
 
 ```yaml
 Type: System.String[]
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Cassandra yang dikelola.
+Nama kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalGossipCertificate
-Daftar sertifikat TLS tambahan yang akan digunakan kluster Cassandra yang dikelola untuk mengautentikasi gosip.
+Daftar sertifikat TLS tambahan yang akan digunakan kluster Cassandra terkelola untuk mengautentikasi gosip.
 
 ```yaml
 Type: System.String[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSeedNode
-Daftar alamat IP dari node benih eksternal untuk menjemput kluster ini.
+Daftar alamat IP node benih eksternal untuk menjemput kluster ini.
 
 ```yaml
 Type: System.String[]
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cluster Cassandra terkelola
+Objek Kluster Cassandra Terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepairEnabled
-Jika benar, Cassandra yang dikelola akan menjalankan reaper untuk memperbaiki database secara rutin. Ini seharusnya hanya dinonaktifkan untuk kluster hibrid yang menjalankan proses perbaikan mereka sendiri di luar Azure.
+Jika true, Cassandra yang dikelola akan menjalankan reaper untuk memperbaiki database secara teratur. Ini hanya boleh dinonaktifkan untuk kluster hibrid yang menjalankan proses perbaikan mereka sendiri di luar Azure.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeBetweenBackupInHours
-Jam antara mengambil cadangan penuh dari kluster.
+Jam antara mengambil cadangan penuh kluster.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -275,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

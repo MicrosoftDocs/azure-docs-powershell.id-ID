@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
-ms.openlocfilehash: 370c00a7b21fe20384f78f941b9862a3a7c539ca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b4f20491e33d34b8e38073fa4b86c500415a0de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127946"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564466"
 ---
 # New-AzDiskPurchasePlanConfig
 
 ## SYNOPSIS
 Membuat Objek PurchasePlan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskpurchaseplanconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDisk -ResourceGroupName 'ResourceGroup02' -DiskName 'Disk02' -Disk $diskCo
 $disk = Get-AzDisk -ResourceGroupName 'ResourceGroup02' -DiskName 'Disk02'
 ```
 
-Pelanggan dapat mengatur PurchasePlan di Disk Terkelola.
+Pelanggan dapat mengatur PurchasePlan pada Disk Terkelola.
 
 ## PARAMETERS
 
@@ -56,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Config
+### -Name
+Nama Konfigurasi
 
 ```yaml
 Type: String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PromotionCode
-Kode Promosi untuk Paket Pembelian
+PromotionCode untuk Paket Pembelian
 
 ```yaml
 Type: String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

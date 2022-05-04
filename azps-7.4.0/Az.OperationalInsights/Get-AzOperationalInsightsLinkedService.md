@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedService.md
-ms.openlocfilehash: 79e64f410331917bb80fe6006713285a5e1f2ca3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 808dfb1ecb748eb5589684af30b64489076b4f80
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279387"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585048"
 ---
 # Get-AzOperationalInsightsLinkedService
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan layanan tertaut untuk ruang kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightslinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsLinkedService [-ResourceGroupName] <String> [-Workspace
 ```
 
 ## DESCRIPTION
-Mendapatkan atau mencantumkan layanan tertaut untuk ruang kerja, daftar ketika "-LinkedServiceName" tidak disediakan
+Mendapatkan atau mencantumkan layanan tertaut untuk ruang kerja, daftar saat "-LinkedServiceName" tidak disediakan
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ ProvisioningState     : ProvisioningAccount
 Tags                  :
 ```
 
-Dapatkan layanan tertaut untuk ruang kerja
+Mendapatkan layanan tertaut untuk ruang kerja
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedServiceName
-Nama layanan yang ditautkan.
+Nama layanan tertaut.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja.
 
 ```yaml
@@ -109,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

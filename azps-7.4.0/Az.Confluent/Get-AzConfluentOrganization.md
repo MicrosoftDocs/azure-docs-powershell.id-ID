@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
-ms.openlocfilehash: 01590d2050a6679b39ffde153bfef101075163c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24a42378931b73918691209c91682dc771b80d4f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065241"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566086"
 ---
 # Get-AzConfluentOrganization
 
 ## SYNOPSIS
-Dapatkan properti sumber daya Organisasi tertentu.
+Mendapatkan properti sumber daya Organisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/get-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan properti sumber daya Organisasi tertentu.
 Get-AzConfluentOrganization [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzConfluentOrganization -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,11 +46,11 @@ Get-AzConfluentOrganization -ResourceGroupName <String> [-SubscriptionId <String
 ```
 
 ## DESCRIPTION
-Dapatkan properti sumber daya Organisasi tertentu.
+Mendapatkan properti sumber daya Organisasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua organisasi konferensi di bawah langganan
+### Contoh 1: Mencantumkan semua organisasi confluent di bawah langganan
 ```powershell
 Get-AzConfluentOrganization
 ```
@@ -68,9 +71,9 @@ westus2       dri-02-02                Microsoft.Confluent/organizations
 westcentralus RohitWCUS88              Microsoft.Confluent/organizations
 ```
 
-Perintah ini mencantumkan semua organisasi konferensi di bawah langganan.
+Perintah ini mencantumkan semua organisasi confluent di bawah langganan.
 
-### Contoh 2: Mencantumkan semua organisasi konferensi di bawah grup sumber daya
+### Contoh 2: Mencantumkan semua organisasi konfluen di bawah grup sumber daya
 ```powershell
 Get-AzConfluentOrganization -ResourceGroupName azure-rg-test
 ```
@@ -81,9 +84,9 @@ Location    Name          Type
 eastus2euap ppe-metrics-2 Microsoft.Confluent/organizations
 ```
 
-Perintah ini mencantumkan semua organisasi konferensi di bawah grup sumber daya.
+Perintah ini mencantumkan semua organisasi konfluen di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan organisasi konferensi berdasarkan nama
+### Contoh 3: Mendapatkan organisasi konfluen berdasarkan nama
 ```powershell
 Get-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-01-portal
 ```
@@ -94,9 +97,9 @@ Location Name                   Type
 eastus   confluentorg-01-portal Microsoft.Confluent/organizations
 ```
 
-Perintah ini mendapatkan organisasi konferensi berdasarkan nama.
+Perintah ini mendapatkan organisasi konfluen berdasarkan nama.
 
-### Contoh 4: Dapatkan organisasi konferensi menurut pipeline
+### Contoh 4: Mendapatkan organisasi konfluen menurut alur
 ```powershell
 New-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh -Location eastus -OfferDetailId "confluent-cloud-azure-prod" -OfferDetailPlanId "confluent-cloud-azure-payg-prod" -OfferDetailPlanName "Confluent Cloud - Pay as you Go" -OfferDetailPublisherId "confluentinc" -OfferDetailTermUnit "P1M" | Get-AzConfluentOrganization
 ```
@@ -107,7 +110,7 @@ Location Name                   Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini mendapatkan organisasi konferensi menurut saluran.
+Perintah ini mendapatkan organisasi konfluen berdasarkan alur.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Confluent.Models.IConfluentIdentity
@@ -141,7 +144,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya organisasi
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

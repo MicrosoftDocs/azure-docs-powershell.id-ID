@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: af2a7478f34bcfa868fcaf395fc68e29719118dd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b1c02d831392f91c7951eb20ecc99e43e4f20dc9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580178"
 ---
 # Get-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
-Dapatkan detail versi tipe aplikasi terkelola Service Fabric. Hanya mendukung ARM versi tipe aplikasi yang digunakan.
+Dapatkan detail versi jenis aplikasi terkelola Service Fabric. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk mendapatkan detail versi tipe aplikasi yang dikelola dalam grup dan kluster sumber daya yang ditentukan.
+Gunakan cmdlet ini untuk mendapatkan detail versi jenis aplikasi terkelola dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ $appTypeVersion = "v1"
 Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Version $appTypeVersion
 ```
 
-Contoh ini mendapatkan tipe aplikasi terkelola "testAppType" dengan versi "v1", jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini mendapatkan jenis aplikasi terkelola "testAppType" dengan versi "v1", jika tidak menemukan sumber daya yang akan dilemparkan pengecualian.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ $appTypeName = "testAppType"
 Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-Contoh ini mendapatkan daftar versi tipe aplikasi terkelola yang ditentukan di bawah kluster dan tipe yang ditentukan.
+Contoh ini mendapatkan daftar versi jenis aplikasi terkelola yang ditentukan di bawah kluster dan jenis yang ditentukan.
 
 ### Contoh 3
 ```powershell
@@ -69,7 +72,7 @@ $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroup
 Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail versi tipe aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini akan mendapatkan detail versi jenis aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya, itu akan melemparkan pengecualian.
 
 ## PARAMETERS
 
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe aplikasi yang dikelola.
+### -Name
+Tentukan nama jenis aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari versi tipe aplikasi yang dikelola.
+Arm ResourceId dari versi jenis aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Tentukan versi tipe aplikasi yang dikelola.
+Tentukan versi jenis aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

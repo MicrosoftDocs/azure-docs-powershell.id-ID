@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: c6bc589c8b8d80aa6093e2b70a296e19e0aaf9d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5bf75b6f3dc96f1599874354dd8d27f34086069a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806436"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565492"
 ---
-# Add-AzLoadBalancerProbeConfig
+# Tambahkan-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi probe ke penyeimbang muatan.
+Menambahkan konfigurasi probe ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Add-AzLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> -Name <String> [-Pr
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerProbeConfig** menambahkan konfigurasi probe ke load balancer Azure.
+Cmdlet **Add-AzLoadBalancerProbeConfig** menambahkan konfigurasi pemeriksaan ke load balancer Azure.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ Cmdlet **Add-AzLoadBalancerProbeConfig** menambahkan konfigurasi probe ke load b
 Get-AzLoadBalancer -Name "myLb" -ResourceGroupName "myRg" | Add-AzLoadBalancerProbeConfig -Name "probeName" -RequestPath healthcheck2.aspx -Protocol http -Port 81 -IntervalInSeconds 16 -ProbeCount 3 | Set-AzLoadBalancer
 ```
 
-Perintah ini mendapatkan load balancer bernama myLb, menambahkan konfigurasi probe tertentu ke dalamnya, lalu menggunakan cmdlet **Set-AzLoadBalancer** untuk memperbarui load balancer.
+Perintah ini mendapatkan load balancer bernama myLb, menambahkan konfigurasi pemeriksaan yang ditentukan ke dalamnya, lalu menggunakan cmdlet **Set-AzLoadBalancer** untuk memperbarui load balancer.
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam detik, antara probe untuk setiap instans layanan yang seimbang muat.
+Menentukan interval, dalam hitungan detik, antara pemeriksaan ke setiap instans layanan dengan beban seimbang.
 
 ```yaml
 Type: System.Int32
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 Menentukan objek **LoadBalancer** .
-Cmdlet ini menambahkan konfigurasi probe ke load balancer yang ditentukan parameter ini.
+Cmdlet ini menambahkan konfigurasi pemeriksaan ke load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -86,8 +89,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi probe untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi probe yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port tempat probe harus tersambung ke layanan seimbang-muat.
+Menentukan port tempat pemeriksaan harus tersambung ke layanan yang seimbang.
 
 ```yaml
 Type: System.Int32
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeCount
-Menentukan jumlah kegagalan berturut-turut per instans yang dianggap tidak sehat.
+Menentukan jumlah kegagalan berturut-turut per instans agar instans dianggap tidak sehat.
 
 ```yaml
 Type: System.Int32
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang akan digunakan untuk probe.
+Menentukan protokol yang akan digunakan untuk pemeriksaan.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Http.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestPath
-Menentukan jalur dalam layanan load-balanced untuk pemeriksaan guna menentukan kesehatan.
+Menentukan jalur dalam layanan dengan beban seimbang untuk pemeriksaan untuk menentukan kesehatan.
 
 ```yaml
 Type: System.String
@@ -162,8 +165,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,13 +214,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
+[Dapatkan-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
 
 [New-AzLoadBalancerProbeConfig](./New-AzLoadBalancerProbeConfig.md)
 
 [Remove-AzLoadBalancerProbeConfig](./Remove-AzLoadBalancerProbeConfig.md)
 
-[Set-AzLoadBalancer](./Set-AzLoadBalancer.md)
+[Atur-AzLoadBalancer](./Set-AzLoadBalancer.md)
 
 [Set-AzLoadBalancerProbeConfig](./Set-AzLoadBalancerProbeConfig.md)
 

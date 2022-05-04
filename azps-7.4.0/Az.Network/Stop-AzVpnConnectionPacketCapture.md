@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVpnConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVpnConnectionPacketCapture.md
-ms.openlocfilehash: 4c6b2659e9712446d650d09f67598c947e18c485
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e7527f63dbd36aff04f7b3e423ab76d59375572a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804060"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574076"
 ---
 # Stop-AzVpnConnectionPacketCapture
 
 ## SYNOPSIS
-Menghentikan Operasi Penangkapan Paket pada koneksi Vpn
+Menghentikan Operasi Pengambilan Paket pada koneksi Vpn
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-azvpnconnectionpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzVpnConnectionPacketCapture -ResourceId <String> -LinkConnectionName <Stri
 ```
 
 ## DESCRIPTION
-Menghentikan Operasi Penangkapan Paket pada koneksi Vpn dan akan mengunggah hasilnya pada SasUrl kontainer penyimpanan tertentu.
+Menghentikan Operasi Pengambilan Paket pada koneksi Vpn dan akan mengunggah hasilnya pada SasUrl kontainer penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasUrl
-URL SAS untuk menghentikan pengambilan paket di Vpn.
+Url SAS untuk menghentikan pengambilan paket di Vpn.
 
 ```yaml
 Type: System.String

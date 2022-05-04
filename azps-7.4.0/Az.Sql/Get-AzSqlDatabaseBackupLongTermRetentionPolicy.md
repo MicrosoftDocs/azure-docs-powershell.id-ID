@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: c0dbfc49fbe1fad96180e6f2d9c3940a721b5328
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3aeef302b200787f203f7dd6c6d3ff40c2ccdda6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933985"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583004"
 ---
 # Get-AzSqlDatabaseBackupLongTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka panjang database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasebackuplongtermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzSqlDatabaseBackupLongTermRetentionPolicy [-ServerName] <String> [-Database
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang terdaftar pada database ini.
-Kebijakan ini merupakan sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Cmdlet **Get-AzSqlDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang terdaftar ke database ini.
+Kebijakan ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ RecoveryServicesBackupPolicyResourceId :
 Location                               :
 ```
 
-Perintah ini mendapatkan versi kebijakan penyimpanan jangka panjang untuk database01 saat ini
+Perintah ini mendapatkan versi kebijakan penyimpanan jangka panjang saat ini untuk database01
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Azure SQL Database untuk digunakan.
+Nama Azure SQL Database yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat database berada.
+Nama server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

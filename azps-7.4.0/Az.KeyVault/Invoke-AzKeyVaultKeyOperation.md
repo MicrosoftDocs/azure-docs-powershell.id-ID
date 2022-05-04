@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyOperation.md
-ms.openlocfilehash: 2d17593210eb4a27f7b35bd0f213dd10052f2fcb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9f363e2df2d492166b83582098be2b3203abee7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574490"
 ---
 # Invoke-AzKeyVaultKeyOperation
 
 ## SYNOPSIS
-Melakukan operasi seperti "Enkripsi", "Dekripsi", "Bungkus" atau "Bungkus" menggunakan kunci tertentu yang disimpan dalam kubah kunci atau hsm yang dikelola.
+Melakukan operasi seperti "Encrypt", "Decrypt", "Wrap" atau "Unwrap" menggunakan kunci tertentu yang disimpan dalam brankas kunci atau hsm terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/invoke-azkeyvaultkeyoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Invoke-AzKeyVaultKeyOperation -Operation <String> -Algorithm <String> -Value <Se
 ```
 
 ## DESCRIPTION
-cmdlet Invoke-AzKeyVaultKeyOperation mendukung
-1. Mengenkripsi urutan byte yang semena-mena menggunakan kunci enkripsi.
+Invoke-AzKeyVaultKeyOperation cmdlet mendukung
+1. Mengenkripsi urutan byte arbitrer menggunakan kunci enkripsi.
 2. Mendekripsi satu blok data terenkripsi.
-3. Membungkus kunci simetris menggunakan kunci yang ditentukan.
-4. Membuka pembungkusan kunci simetris menggunakan kunci tertentu yang awalnya digunakan untuk membungkus kunci tersebut.
+3. Membungkus kunci konten menggunakan kunci tertentu.
+4. Membongkar kunci konten menggunakan kunci yang ditentukan yang awalnya digunakan untuk membungkus kunci tersebut.
 
 ## EXAMPLES
 
@@ -61,9 +64,9 @@ Result    : e01HmkipqwCZyQd2QZ5XOTSA3rlZ719qqHHadzepFGtvTSoDwr+sBPmODVqScvq5/MBS
 Algorithm : RSA1_5
 ```
 
-Mengenkripsi string "uji" menggunakan test-key yang disimpan di test-kv. Hasil yang dikembalikan adalah format string Base64.
+Mengenkripsi string "uji" menggunakan test-key yang disimpan dalam test-kv. Hasil yang dikembalikan adalah format string Base64.
 
-### Mendekripsi data yang dienkripsi
+### Mendekripsi data terenkripsi
 ```powershell
 $result
 $result = Invoke-AzKeyVaultKeyOperation -Operation Decrypt -Algorithm RSA1_5 -VaultName test-kv -Name test-key -Value (ConvertTo-SecureString -String $result.Result -AsPlainText -Force) ult
@@ -76,7 +79,7 @@ Result    : test
 Algorithm : RSA1_5
 ```
 
-Mendekripsi data terenkripsi yang dienkripsi menggunakan test-key yang disimpan di test-kv. 
+Mendekripsi data terenkripsi yang dienkripsi menggunakan test-key yang disimpan dalam test-kv. 
 
 ### Mengenkripsi menggunakan kunci enkripsi
 ```powershell
@@ -91,9 +94,9 @@ Result    : e01HmkipqwCZyQd2QZ5XOTSA3rlZ719qqHHadzepFGtvTSoDwr+sBPmODVqScvq5/MBS
 Algorithm : RSA1_5
 ```
 
-Mengenkripsi string "uji" menggunakan test-key yang disimpan di test-kv. Hasil yang dikembalikan adalah format string Base64.
+Mengenkripsi string "uji" menggunakan test-key yang disimpan dalam test-kv. Hasil yang dikembalikan adalah format string Base64.
 
-### Membungkus kunci simetris menggunakan kunci tertentu
+### Membungkus kunci konten menggunakan kunci tertentu
 ```powershell
 $result = Invoke-AzKeyVaultKeyOperation -Operation Wrap -Algorithm RSA1_5 -VaultName test-kv -Name test-key -Value (ConvertTo-SecureString -String "ovQIlbB0DgWhZA7sgkPxbg9H-Ly-VlNGPSgGrrZvlIo" -AsPlainText -Force) 
 
@@ -106,9 +109,9 @@ Result    : e01HmkipqwCZyQd2QZ5XOTSA3rlZ719qqHHadzepFGtvTSoDwr+sBPmODVqScvq5/MBS
 Algorithm : RSA1_5
 ```
 
-Membungkus kunci simetris menggunakan kunci bernama test-key yang disimpan di test-kv. Hasil yang dikembalikan adalah string Base64.
+Membungkus kunci simetris menggunakan kunci bernama test-key yang disimpan dalam test-kv. Hasil yang dikembalikan adalah string Base64.
 
-### Membongkar kunci simetris menggunakan kunci yang ditentukan
+### Membongkar kunci simetris menggunakan kunci tertentu
 ```powershell
 Invoke-AzKeyVaultKeyOperation -Operation Unwrap -Algorithm RSA1_5 -VaultName test-kv -Name test-key -Value (ConvertTo-SecureString -String $result.Result -AsPlainText -Force) 
 ```
@@ -119,7 +122,7 @@ Result    : ovQIlbB0DgWhZA7sgkPxbg9H-Ly-VlNGPSgGrrZvlIo
 Algorithm : RSA1_5
 ```
 
- Membongkar kunci simetris menggunakan kunci uji kunci tertentu yang disimpan di test-kv. 
+ Membongkar kunci konten menggunakan kunci uji kunci tertentu yang disimpan dalam test-kv. 
 
 ## PARAMETERS
 
@@ -183,7 +186,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kunci.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai yang akan dioperasikan
 
 ```yaml
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
+Nama vault.
 
 ```yaml
 Type: System.String
@@ -258,8 +261,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

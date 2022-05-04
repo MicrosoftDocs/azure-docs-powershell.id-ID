@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareTrigger.md
-ms.openlocfilehash: 712b4dfb32f53aecc6d88587624cbfe80d98bfd5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 420d98d943855ac83c3a6d840d5fdd4430dccec8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684666"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584156"
 ---
 # New-AzDataShareTrigger
 
 ## SYNOPSIS
-Membuat pemicu untuk berbagi langganan.
+Membuat pemicu untuk langganan berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataShareTrigger -ResourceGroupName <String> -AccountName <String> [-Share
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareTrigger** membuat pemicu untuk berbagi langganan untuk interval pengulangan dan waktu sinkronisasi yang ditentukan di bawah akun berbagi data Azure.
+Cmdlet **New-AzDataShareTrigger** membuat pemicu untuk berbagi langganan untuk interval pengulangan dan waktu sinkronisasi yang ditentukan di bawah akun berbagi data azure.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Name                : AdsTrigger
 Type                : Microsoft.DataShare/Triggers
 ```
 
-Perintah ini membuat pemicu baru AdsTrigger untuk berbagi langganan AdsShareSubscription dengan interval pengulangan harian 9 pagi.
+Perintah ini membuat pemicu baru AdsTrigger untuk berbagi langganan AdsShareSubscription dengan interval pengulangan harian jam 9 pagi.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu berbagi data Azure
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,11 +207,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

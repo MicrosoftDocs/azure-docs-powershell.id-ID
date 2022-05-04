@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: c190f9dec002774c17e3a1b81547ba70bba8e9eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a90331b36c1ba70f646dc2202e43dfa64ac0743c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308943"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576956"
 ---
 # Get-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
-Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceBusNetworkRuleSet [-ResourceId] <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {1.1.1.1, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
 ```
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan parameter ResourceGroup dan Namespace. 
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan parameter ResourceGroup dan Namespace. 
 
 ### Contoh 2
 ```powershell
@@ -70,7 +73,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {1.1.1.1, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
 ```
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Namespace yang ada dalam langganan saat ini.
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Namespace layanan yang ada di langganan saat ini.
 
 ### Contoh 3
 ```powershell
@@ -85,7 +88,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {1.1.1.1, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
 ```
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Id Sumber Daya ruang Nama lainnya 
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Id Sumber Daya namespace layanan lainnya 
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama
+Id Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlServiceAuthKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlServiceAuthKey.md
-ms.openlocfilehash: 471cca155e205510a1baf71217d62039411fdb5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 69a176bf93b2b9e042105d4ef3249354a91db715
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288333"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574672"
 ---
 # New-AzDataMigrationSqlServiceAuthKey
 
 ## SYNOPSIS
-Meregenerasi sekumpulan Kunci Autentikasi baru untuk Integration Runtime yang Dihosting Sendiri.
+Regenerasi sekumpulan Kunci Autentikasi baru untuk Integration Runtime yang Dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationsqlserviceauthkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzDataMigrationSqlServiceAuthKey -ResourceGroupName <String> -SqlMigrationSe
 ```
 
 ## DESCRIPTION
-Meregenerasi sekumpulan Kunci Autentikasi baru untuk Integration Runtime yang Dihosting Sendiri.
+Regenerasi sekumpulan Kunci Autentikasi baru untuk Integration Runtime yang Dihost sendiri.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi AuthKeys untuk Layanan Migrasi Sql tertentu
+### Contoh 1: Meregenerasi AuthKeys untuk Sql Migration Service tertentu
 ```powershell
 New-AzDataMigrationSqlServiceAuthKey -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" -KeyName AuthKey2
 ```
@@ -41,7 +44,7 @@ AuthKey1 AuthKey2                                                   KeyName
          IR@abcd7-efgh8-jklmn9-opqr10@mysqlms@eastus@stuv2/wxyz1=
 ```
 
-Perintah ini meregenerasi AuthKeys untuk Layanan Migrasi Sql tertentu.
+Perintah ini meregenerasi AuthKeys untuk Sql Migration Service tertentu.
 Di sini kita telah meregenerasi AuthKey2.
 
 ## PARAMETERS
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlMigrationServiceName
-Nama Layanan Migrasi SQL.
+Nama SQL Migration Service.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

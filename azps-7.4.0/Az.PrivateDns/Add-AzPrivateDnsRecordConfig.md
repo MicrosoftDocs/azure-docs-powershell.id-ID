@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/add-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Add-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Add-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: 87d5b82e0857ccf36abc7f8f16a4d54289db1f42
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3910b54e0222ab0311a5b0fff04b7ce43e2d8ed7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311589"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583310"
 ---
 # Add-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
-Menambahkan catatan DNS Pribadi ke objek kumpulan catatan lokal.
+Menambahkan catatan DNS Privat ke objek kumpulan catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/add-azprivatednsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Add-AzPrivateDnsRecordConfig -RecordSet <PSPrivateDnsRecordSet> -Cname <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzPrivateDnsRecordConfig menambahkan catatan Private Domain Name System (DNS) ke objek RecordSet. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk tetap melakukan perubahan ke layanan DNS pribadi Microsoft Azure. Catatan SOA dibuat saat zona DNS Pribadi dibuat, dan dihapus saat zona DNS Pribadi dihapus. Anda tidak bisa menambahkan atau menghapus catatan SOA, tapi Anda bisa mengeditnya. Anda dapat mengirimkan objek RecordSet ke cmdlet ini sebagai parameter atau menggunakan operator pipeline.
+Cmdlet Add-AzPrivateDnsRecordConfig menambahkan catatan Sistem Nama Domain Privat (DNS) ke objek RecordSet. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga setelah Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Privat Microsoft Azure. Catatan SOA dibuat saat zona DNS Privat dibuat, dan dihapus saat zona DNS Privat dihapus. Anda tidak dapat menambahkan atau menghapus rekaman SOA, tetapi Anda bisa mengeditnya. Anda dapat meneruskan objek RecordSet ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
 
 ## EXAMPLES
 
@@ -120,7 +123,7 @@ IsAutoRegistered  :
 
 Contoh ini menambahkan catatan AAAAA ke kumpulan catatan yang sudah ada.
 
-### Contoh 3: Menambahkan catatan CNAME ke kumpulan catatan
+### Contoh 3: Menambahkan data CNAME ke kumpulan catatan
 ```powershell
  $RecordSet = Get-AzPrivateDnsRecordSet -Name www -RecordType CNAME -ResourceGroupName MyResourceGroup -ZoneName myzone.com
  Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Cname contoso.com
@@ -145,7 +148,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menambahkan catatan CNAME ke kumpulan catatan yang sudah ada.
+Contoh ini menambahkan data CNAME ke kumpulan catatan yang sudah ada.
 
 ### Contoh 4: Menambahkan catatan MX ke kumpulan catatan
 ```powershell
@@ -258,9 +261,9 @@ Contoh ini menambahkan catatan TXT ke kumpulan catatan yang sudah ada.
 ## PARAMETERS
 
 ### -Cname
-Nama kanonis untuk catatan CNAME untuk ditambahkan.
+Nama kanonis untuk data CNAME yang akan ditambahkan.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -290,9 +293,9 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Host pertukaran email untuk catatan MX ditambahkan.
+Host pertukaran email untuk catatan MX yang akan ditambahkan.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv4Address
-Alamat IPv4 untuk catatan A untuk ditambahkan.
+Alamat IPv4 untuk catatan A yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Alamat IPv6 untuk catatan AAAA untuk ditambahkan.
+Alamat IPv6 untuk catatan AAAA yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Nomor port untuk catatan SRV yang ditambahkan.
+Nomor port untuk catatan SRV yang akan ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -Preferensi
-Nilai preferensi untuk catatan MX untuk ditambahkan.
+Nilai preferensi untuk catatan MX yang akan ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Catatan SRV nilai prioritas untuk ditambahkan.
+Nilai prioritas catatan SRV untuk ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -382,9 +385,9 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Host target untuk catatan PTR untuk ditambahkan.
+Host target untuk catatan PTR yang akan ditambahkan.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -414,9 +417,9 @@ Accept wildcard characters: False
 ```
 
 ### -Target
-Host target untuk catatan SRV untuk ditambahkan.
+Host target untuk catatan SRV yang akan ditambahkan.
 Tidak boleh relatif terhadap nama zona.
-Tidak boleh memiliki titik penghentian
+Tidak boleh memiliki titik yang mengakhiri
 
 ```yaml
 Type: System.String
@@ -430,8 +433,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai teks untuk catatan TXT untuk ditambahkan.
+### -Nilai
+Nilai teks untuk catatan TXT yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -445,8 +448,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Berat
-Nilai bobot catatan SRV untuk ditambahkan.
+### -Bobot
+Nilai bobot untuk catatan SRV yang akan ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

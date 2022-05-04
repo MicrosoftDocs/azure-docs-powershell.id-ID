@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyMetadata.md
-ms.openlocfilehash: 3d50adbd9b96fc1cd8a9767cfffa0e6549d442c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aebb1c95f97490085a692ac3e4a13d798eb12971
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311715"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579046"
 ---
 # Get-AzPolicyMetadata
 
 ## SYNOPSIS
 Mendapatkan sumber daya Metadata Kebijakan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicymetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,26 +32,26 @@ Cmdlet **Get-AzPolicyRemediation** mendapatkan semua sumber daya metadata kebija
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua sumber daya metadata kebijakan
+### Contoh 1: Mendapatkan semua sumber daya metadata kebijakan
 ```powershell
 Get-AzPolicyMetadata
 ```
 
 Perintah ini mendapatkan semua sumber daya metadata kebijakan
 
-### Contoh 2: Dapatkan kumpulan 10 sumber daya metadata kebijakan
+### Contoh 2: Mendapatkan kumpulan 10 sumber daya metadata kebijakan
 ```powershell
 Get-AzPolicyMetadata -Top 10
 ```
 
 Perintah ini mendapatkan kumpulan 10 sumber daya metadata kebijakan
 
-### Contoh 3: Dapatkan sumber daya metadata kebijakan tunggal dengan nama 'ACF1348'
+### Contoh 3: Dapatkan satu sumber daya metadata kebijakan dengan nama 'ACF1348'
 ```powershell
 Get-AzPolicyMetadata -Name ACF1348
 ```
 
-Perintah ini mendapatkan sumber daya metadata kebijakan tunggal dengan nama 'ACF1348'
+Perintah ini mendapatkan satu sumber daya metadata kebijakan dengan nama 'ACF1348'
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -82,8 +85,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah maksimum sumber daya metadata kebijakan untuk dikembalikan.
+### -Atas
+Jumlah maksimum sumber daya metadata kebijakan yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

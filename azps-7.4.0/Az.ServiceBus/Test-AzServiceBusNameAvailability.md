@@ -5,34 +5,37 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
-ms.openlocfilehash: f2115311fbc2e2ca78212e0b7823952e488c3127
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02feecc3de869edcb51c9753e9ffe4cd6ddf0015
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934435"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576938"
 ---
 # Test-AzServiceBusNameAvailability
 
 ## SYNOPSIS
-Memeriksa Ketersediaan Nama Antrean atau Topik tertentu
+Memeriksa Ketersediaan Antrean atau Nama Topik yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/test-azservicebusnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
-### AntreanCheckNameAvailabilitySet (Default)
+### QueueCheckNameAvailabilitySet (Default)
 ```
 Test-AzServiceBusNameAvailability [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String> [-Queue]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopikCheckNameAvailabilitySet
+### TopicCheckNameAvailabilitySet
 ```
 Test-AzServiceBusNameAvailability [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <String> [-Topic]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-**Cmdlet Test-AzServiceBusNameAvailability** Memeriksa Ketersediaan Nama Antrean atau Topik yang disediakan
+Cmdlet **Test-AzServiceBusNameAvailability** Memeriksa Ketersediaan Nama Antrean atau Topik yang disediakan
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Antrean untuk memeriksa Ketersediaan Nama
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama Servicebus
+Nama Namespace Servicebus
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2ItemAclObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2ItemAclObject.md
-ms.openlocfilehash: 9e0bd10918adfe46871bec4d9f59815cce136aa9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c7a174ef4c14bec5f5d98df64ec831fe6b5c2462
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670518"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578864"
 ---
 # Set-AzDataLakeGen2ItemAclObject
 
 ## SYNOPSIS
 Membuat/Memperbarui objek ACL item DataLake gen2, yang dapat digunakan dalam cmdlet Update-AzDataLakeGen2Item.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azdatalakegen2itemaclobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzDataLakeGen2ItemAclObject [-EntityId <String>] [-DefaultScope] -Permission
 
 ## DESCRIPTION
 Cmdlet **Set-AzDataLakeGen2ItemAclObject** membuat/memperbarui objek ACL item DataLake gen2, yang dapat digunakan dalam cmdlet Update-AzDataLakeGen2Item.
-Jika entri ACL baru dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada di ACL input, akan membuat entri ACL baru, izin pembaruan lain dari entri ACL yang sudah ada.
+Jika entri ACL baru dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada di input ACL, akan membuat entri ACL baru, atau memperbarui izin entri ACL yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek ACL dengan entri 3 ACL, dan memperbarui ACL di direktori
+### Contoh 1: Membuat objek ACL dengan entri 3 ACL, dan memperbarui ACL pada direktori
 ```
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType user -Permission rwx -DefaultScope
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType group -Permission rw- -InputObject $acl 
@@ -44,9 +47,9 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir1/dir3            True                         2020-03-23 09:34:31Z rwxrw-rw-+   $superuser           $superuser
 ```
 
-Perintah ini membuat objek ACL dengan 3 entri ACL (gunakan parameter -InputObject untuk menambahkan entri acl ke objek acl yang sudah ada), dan memperbarui ACL pada direktori.
+Perintah ini membuat objek ACL dengan 3 entri ACL (gunakan parameter -InputObject untuk menambahkan entri acl ke objek acl yang ada), dan memperbarui ACL pada direktori.
 
-### Contoh 2: Membuat objek ACL dengan 4 entri ACL, dan memperbarui izin entri ACL yang sudah ada
+### Contoh 2: Membuat objek ACL dengan 4 entri ACL, dan memperbarui izin entri ACL yang ada
 ```
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType user -Permission rwx -DefaultScope
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType group -Permission rw- -InputObject $acl 
@@ -72,13 +75,13 @@ False        Other                                                  rw-
 False        User              ********-****-****-****-************ r-x
 ```
 
-Perintah ini terlebih dahulu membuat objek ACL dengan 4 entri ACL, lalu jalankan cmdlet lagi dengan izin berbeda namun AccessControlType/EntityId/DefaultScope entri ACL yang sudah ada.
-Lalu izin entri ACL diperbarui, tetapi tidak ada entri ACL baru yang ditambahkan.
+Perintah ini pertama-tama membuat objek ACL dengan 4 entri ACL, lalu jalankan cmdlet lagi dengan izin yang berbeda tetapi AccessControlType/EntityId/DefaultScope yang sama dari entri ACL yang ada.
+Kemudian izin entri ACL diperbarui, tetapi tidak ada entri ACL baru yang ditambahkan.
 
 ## PARAMETERS
 
 ### -AccessControlType
-Ada empat tipe: "pengguna" memberikan hak kepada pemilik atau pengguna bernama, "grup" memberikan hak kepada grup pemilik atau grup bernama, "masker" membatasi hak yang diberikan kepada pengguna bernama dan anggota grup, dan "lainnya" memberikan hak kepada semua pengguna yang tidak ditemukan dalam entri lain.
+Ada empat jenis: "pengguna" memberikan hak kepada pemilik atau pengguna bernama, "grup" memberikan hak kepada grup pemilik atau grup bernama, "masker" membatasi hak yang diberikan kepada pengguna bernama dan anggota grup, dan "lainnya" memberikan hak kepada semua pengguna yang tidak ditemukan di entri lain.
 
 ```yaml
 Type: Azure.Storage.Files.DataLake.Models.AccessControlType
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultScope
-Atur parameter ini untuk menunjukkan bahwa ACE adalah milik ACL default untuk direktori; jika tidak, lingkupnya implisit dan ACE termasuk dalam ACL akses.
+Atur parameter ini untuk menunjukkan ACE milik ACL default untuk direktori; jika tidak, cakupan bersifat implisit dan ACE milik ACL akses.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -EntityId
 Pengidentifikasi pengguna atau grup.
-Ini dihilangkan untuk entri AccessControlType "mask" dan "other".
+Ini dihilangkan untuk entri AccessControlType "mask" dan "lainnya".
 Pengidentifikasi pengguna atau grup juga dihilangkan untuk pemilik dan grup pemilik.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Jika memasukkan objek PSPathAccessControlEntry\[\] , akan menambahkan ACL baru sebagai elemen baru dari objek PSPathAccessControlEntry\[\] .
+Jika memasukkan objek PSPathAccessControlEntry\[\] , akan menambahkan ACL baru sebagai elemen baru dari input objek PSPathAccessControlEntry\[\] .
 
 ```yaml
 Type: Microsoft.WindowsAzure.Commands.Storage.Model.ResourceModel.PSPathAccessControlEntry[]
@@ -157,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

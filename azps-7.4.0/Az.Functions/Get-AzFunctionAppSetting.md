@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
-ms.openlocfilehash: c08f65b50f72755265f57266d1adf4eace0fb307
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 397ba406f1554887925dbf6d9f230f6d5c8eec67
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227457"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565786"
 ---
 # Get-AzFunctionAppSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan aplikasi untuk aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

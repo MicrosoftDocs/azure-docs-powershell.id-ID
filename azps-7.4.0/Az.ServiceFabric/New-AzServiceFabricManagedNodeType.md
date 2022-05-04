@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 7bc1f1c516ec6d75df691a688e35b5d3bc5cc2e6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a2077267c69ace61e8027c82a6aea9c2f73228b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739152"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570764"
 ---
 # New-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Buat sumber daya tipe simpul baru.
+Buat sumber daya jenis node baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] 
 ```
 
 ## DESCRIPTION
-Buat sumber daya tipe simpul baru untuk kluster tertentu.
+Buat sumber daya jenis node baru untuk kluster tertentu.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ $NodeTypeName = "nt1"
 New-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName -Primary -InstanceCount 3
 ```
 
-Membuat tipe simpul utama dengan 3 node.
+Buat jenis simpul utama dengan 3 simpul.
 
 ### Contoh 2
 ```powershell
@@ -52,7 +55,7 @@ $NodeTypeName = "nt1"
 New-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName -InstanceCount 5 -Primary -PlacementProperty @{NodeColor="Green";SomeProperty="5";} -Capacity @{ClientConnections="65536";} -ApplicationStartPort 20575 -ApplicationEndPort 20605 -EphemeralStartPort 20606 -EphemeralEndPort 20861
 ```
 
-Buat tipe simpul utama dengan 5 node dan tentukan properti penempatan, kapasitas, port aplikasi dan ephemeral.
+Buat jenis node utama dengan 5 simpul dan tentukan properti penempatan, kapasitas, aplikasi, dan port sementara.
 
 ### Contoh 3
 ```powershell
@@ -62,7 +65,7 @@ $NodeTypeName = "nt2"
 New-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName -InstanceCount 10 -DiskType Premium_LRS -VmSize "Standard_DS2" -MultiplePlacementGroup
 ```
 
-Buat tipe node non primer dengan 10 node, tipe disk premium, dan beberapa grup penempatan.
+Buat jenis node non primer dengan 10 simpul, jenis disk premium, dan beberapa grup penempatan.
 
 ### Contoh 4
 ```powershell
@@ -73,12 +76,12 @@ $identityId = "/subscriptions/00000000-0000-0000-0000-00000000/resourceGroups/te
 New-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName -InstanceCount 5 -VmUserAssignedIdentity $identityId -IsStateless
 ```
 
-Buat tipe simpul dengan identitas yang ditetapkan pengguna dan ditandai untuk menghosting beban kerja tanpa status.
+Buat jenis node dengan identitas yang ditetapkan pengguna dan ditandai untuk menghosting beban kerja tanpa status.
 
 ## PARAMETERS
 
 ### -ApplicationEndPort
-Port Application End dari rentang port.
+Port Akhir Aplikasi dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationStartPort
-Port mulai aplikasi dari rentang port.
+Port awal aplikasi dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Tag kapasitas diterapkan ke simpul dalam tipe simpul sebagai pasangan kunci/nilai, manajer sumber daya kluster menggunakan tag ini untuk memahami berapa banyak sumber daya yang dimiliki simpul.
-Memperbarui ini akan menimpa nilai saat ini.
+Tag kapasitas diterapkan ke simpul dalam jenis node sebagai pasangan kunci/nilai, manajer sumber daya kluster menggunakan tag ini untuk memahami berapa banyak sumber daya yang dimiliki simpul.
+Memperbarui ini akan menggantikan nilai saat ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disksize
-Ukuran disk untuk setiap vm dalam tipe simpul dalam GB.
+### -DiskSize
+Ukuran disk untuk setiap vm dalam jenis node dalam GB.
 Default 100.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskType
-Tipe disk data terkelola. IOPS dan throughput diberikan oleh ukuran disk, untuk melihat informasi selengkapnya masuk ke https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types. Default StandardSSD_LRS
+Jenis disk data terkelola. IOPS dan throughput diberikan oleh ukuran disk, untuk melihat informasi selengkapnya, buka https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types. Default StandardSSD_LRS
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSDiskType
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -EphemeralEndPort
-Port akhir yang bersifat ephemeral dari berbagai port.
+Port akhir Ephemeral dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -EphemeralStartPort
-Port mulai Ephemeral dari berbagai port.
+Port awal Ephemeral dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Jumlah node dalam tipe simpul.
+Jumlah simpul dalam jenis node.
 
 ```yaml
 Type: System.Int32
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsStateless
-Menunjukkan apakah tipe simpul hanya dapat menghosting beban kerja Tanpa Status.
+Menunjukkan apakah jenis node hanya dapat menghosting beban kerja Stateless.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiplePlacementGroup
-Menunjukkan apakah kumpulan skala yang terkait dengan tipe simpul dapat terdiri dari beberapa grup penempatan.
+Menunjukkan apakah set skala yang terkait dengan jenis node dapat terdiri dari beberapa grup penempatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe simpul.
+### -Name
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String
@@ -291,8 +294,8 @@ Accept wildcard characters: False
 ```
 
 ### -PlacementProperty
-Tag penempatan diterapkan ke node dalam tipe simpul sebagai pasangan kunci/nilai, yang dapat digunakan untuk menunjukkan tempat layanan tertentu (beban kerja) harus berjalan.
-Memperbarui ini akan menimpa nilai saat ini.
+Tag penempatan diterapkan ke simpul dalam jenis node sebagai pasangan kunci/nilai, yang dapat digunakan untuk menunjukkan di mana layanan tertentu (beban kerja) harus berjalan.
+Memperbarui ini akan menggantikan nilai saat ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -307,10 +310,10 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Tentukan apakah tipe simpul adalah yang utama.
-Pada tipe simpul ini akan menjalankan layanan sistem.
-Hanya satu tipe simpul yang harus ditandai sebagai utama.
-Tipe node utama tidak dapat dihapus atau diubah untuk kluster yang sudah ada.
+Tentukan apakah jenis node adalah primer.
+Pada jenis simpul ini akan menjalankan layanan sistem.
+Hanya satu jenis node yang harus ditandai sebagai primer.
+Jenis node primer tidak dapat dihapus atau diubah untuk kluster yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmImageOffer
-Tipe penawaran gambar Azure Virtual Machines Marketplace.
+Jenis penawaran gambar Azure Virtual Machines Marketplace.
 Default: WindowsServer.
 
 ```yaml
@@ -372,8 +375,8 @@ Accept wildcard characters: False
 ```
 
 ### -VmImageSku
-Gambar SKU Azure Virtual Machines Marketplace.
-Default: 2019-Datacenter.
+SKU gambar Azure Virtual Machines Marketplace.
+Default: 2019-Pusat Data.
 
 ```yaml
 Type: System.String
@@ -404,8 +407,8 @@ Accept wildcard characters: False
 ```
 
 ### -VmSize
-Ukuran mesin virtual di kolam renang.
-Semua mesin virtual dalam kolam renang berukuran sama.
+Ukuran komputer virtual di kumpulan.
+Semua komputer virtual dalam satu kumpulan berukuran sama.
 Default: Standard_D2.
 
 ```yaml
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmUserAssignedIdentity
-Daftar identitas pengguna assigend yang terkait dengan skala mesin virtual yang diatur di bawah tipe simpul. Setiap entri akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'. Ikuti langkah-langkah untuk membuat identitas dan menambahkan penetapan peran dengan Penyedia Sumber Daya Service Fabric sebelumnya di sini:https://docs.microsoft.com/en-us/azure/service-fabric/how-to-managed-identity-managed-cluster-virtual-machine-scale-sets
+Daftar identitas assigend pengguna yang terkait dengan set skala komputer virtual di bawah jenis node. Setiap entri akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'. Ikuti langkah-langkah untuk membuat identitas dan menambahkan penetapan peran dengan penyedia sumber Service Fabric sebelumnya di sini:https://docs.microsoft.com/en-us/azure/service-fabric/how-to-managed-identity-managed-cluster-virtual-machine-scale-sets
 
 ```yaml
 Type: System.String[]
@@ -435,8 +438,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -451,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

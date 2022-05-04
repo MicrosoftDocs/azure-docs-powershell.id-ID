@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
-ms.openlocfilehash: 50ddf643d6309c05c678087feff12a83b6a10d07
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eddadb5b704009c881ae1d38a46cca38b03f3296
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865170"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570746"
 ---
 # Get-AzSqlInstanceDatabaseGeoBackup
 
 ## SYNOPSIS
-Mengembalikan informasi tentang pencadangan database Azure SQL Managed Instance yang berlebihan.
+Mengembalikan informasi tentang pencadangan redundan database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasegeobackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzSqlInstanceDatabaseGeoBackup [[-Name] <String>] [-InstanceName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceDatabaseGeoBackup** mendapatkan satu atau beberapa database Azure SQL cadangan berlebihan dari Instans terkelola Azure SQL Database.
+Cmdlet **Get-AzSqlInstanceDatabaseGeoBackup** mendapatkan satu atau beberapa cadangan redundan database Azure SQL dari instans terkelola Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua cadangan database yang berlebihan pada instans
+### Contoh 1: Mendapatkan semua cadangan redundan database pada instans
 ```powershell
 Get-AzSqlInstanceDatabaseGeoBackup -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01"
 ```
@@ -50,9 +53,9 @@ LastAvailableBackupDate  : 01/31/2019 20:44:57
 RecoverableDatabaseId   : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/managedInstance1/recoverableDatabases/managedDatabase2
 ```
 
-Perintah ini mendapatkan semua cadangan database yang berlebihan pada instans bernama managedInstance1.
+Perintah ini mendapatkan semua cadangan redundan database pada instans bernama managedInstance1.
 
-### Contoh 2: Mendapatkan pencadangan database yang berlebihan menurut nama pada instans Terkelola
+### Contoh 2: Mendapatkan cadangan redundan database berdasarkan nama pada instans Terkelola
 ```powershell
 Get-AzSqlInstanceDatabaseGeoBackup -Name "managedDatabase1" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01"
 ```
@@ -66,9 +69,9 @@ LastAvailableBackupDate  : 01/31/2019 20:44:57
 RecoverableDatabaseId   : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/managedInstance1/recoverableDatabases/managedDatabase1
 ```
 
-Perintah ini mendapatkan pencadangan berlebih database bernama managedDatabase1 dari instans bernama managedInstance1.
+Perintah ini mendapatkan cadangan redundan database bernama managedDatabase1 dari instans bernama managedInstance1.
 
-### Contoh 3: Mendapatkan semua cadangan database yang berlebihan pada instans menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua cadangan redundan database pada instans menggunakan pemfilteran
 ```powershell
 Get-AzSqlInstanceDatabaseGeoBackup -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01" -Name "managedDatabase*"
 ```
@@ -89,7 +92,7 @@ LastAvailableBackupDate  : 01/31/2019 20:44:57
 RecoverableDatabaseId   : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/managedInstance1/recoverableDatabases/managedDatabase2
 ```
 
-Perintah ini mendapatkan semua cadangan database yang berlebihan pada instans bernama managedInstance1 yang dimulai dengan "managedDatabase".
+Perintah ini mendapatkan semua cadangan redundan database pada instans bernama managedInstance1 yang dimulai dengan "managedDatabase".
 
 ## PARAMETERS
 
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama database instans untuk diambil.
+### -Name
+Nama database instans yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -154,11 +157,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

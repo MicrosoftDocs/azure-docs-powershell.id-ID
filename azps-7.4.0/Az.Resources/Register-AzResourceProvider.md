@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
-ms.openlocfilehash: 1632e2f6c0529028ccc4aafc1e1b4254683a1d57
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8c7ad8d13a503d8b09984bb5393af12fdd3686ed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673488"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574004"
 ---
 # Register-AzResourceProvider
 
 ## SYNOPSIS
 Mendaftarkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/register-azresourceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,12 +34,12 @@ Cmdlet **Register-AzResourceProvider** mendaftarkan penyedia sumber daya Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Daftarkan penyedia
+### Contoh 1: Mendaftarkan penyedia
 ```powershell
 Register-AzResourceProvider -ProviderNamespace Microsoft.Network
 ```
 
-Tindakan ini mendaftarkan penyedia Microsoft.Network untuk akun Anda.
+Ini mendaftarkan penyedia Microsoft.Network untuk akun Anda.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsentToPermissions
-Nilai yang mengindikasikan apakah izin disetujui atau tidak.
+Nilai yang menunjukkan apakah izin disetujui atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Menentukan ruang nama penyedia sumber daya.
+Menentukan namespace penyedia sumber daya.
 
 ```yaml
 Type: System.String
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -164,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzResourceProvider](./Get-AzResourceProvider.md)
 
-[Unregister-AzResourceProvider](./Unregister-AzResourceProvider.md)
+[Batalkan pendaftaran-AzResourceProvider](./Unregister-AzResourceProvider.md)
 
 

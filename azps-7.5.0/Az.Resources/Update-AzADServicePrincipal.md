@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
-ms.openlocfilehash: 6b517139883fd549e2a89a63bc72b8714f2a1380
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b8adba371eaa35fba85683dc6b2f0d6842bc4d8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216926"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582446"
 ---
 # Update-AzADServicePrincipal
 
 ## SYNOPSIS
 Memperbarui entitas di perwakilan layanan
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -127,7 +129,7 @@ Update-AzADServicePrincipal -DisplayName $name -IdentifierUri $uri
 
 Memperbarui perwakilan layanan dan aplikasi terkait dengan nama tampilan, 'IdentifierUri', 'PasswordCredential', 'KeyCredential' akan ditetapkan ke aplikasi
 
-### Contoh 2: Memperbarui perwakilan layanan berdasarkan input alur
+### Contoh 2: Memperbarui perwakilan layanan menurut input alur
 ```powershell
 Get-AzADServicePrincipal -ObjectId $id | Update-AzADServicePrincipal -Note $note
 ```
@@ -154,9 +156,9 @@ Accept wildcard characters: False
 
 ### -AddIn
 Mendefinisikan perilaku khusus yang layanan yang memanfaatkan dapat gunakan untuk memanggil aplikasi dalam konteks tertentu.
-Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'- nya.
-Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang digarap pengguna.
-Untuk membuat, lihat bagian CATATAN untuk properti ADDIN dan buat tabel hash.
+Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'-nya.
+Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang di kerjakan pengguna.
+Untuk membuat, lihat bagian CATATAN untuk properti ADDIN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphAddIn[]
@@ -217,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppOwnerOrganizationId
-Berisi id penyewa tempat aplikasi terdaftar.
+Berisi id penyewa tempat aplikasi didaftarkan.
 Ini hanya berlaku untuk perwakilan layanan yang didukung oleh aplikasi. Mendukung $filter (eq, ne, NOT, ge, le).
 
 ```yaml
@@ -284,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignmentRequired
-Menentukan apakah pengguna atau perwakilan layanan lain perlu diberikan penetapan peran aplikasi untuk perwakilan layanan ini sebelum pengguna dapat masuk atau aplikasi bisa mendapatkan token.
+Menentukan apakah pengguna atau perwakilan layanan lainnya perlu diberikan penetapan peran aplikasi untuk perwakilan layanan ini sebelum pengguna dapat masuk atau aplikasi bisa mendapatkan token.
 Nilai defaultnya adalah false.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT).
@@ -336,7 +338,7 @@ Accept wildcard characters: False
 ### -DelegatedPermissionClassification
 Klasifikasi izin untuk izin yang didelegasikan yang diekspos oleh aplikasi yang diwakili oleh perwakilan layanan ini.
 Mendukung $expand.
-Untuk membuat, lihat bagian CATATAN untuk properti DELEGATEDPERMISSIONCLASSIFICATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DELEGATEDPERMISSIONCLASSIFICATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphDelegatedPermissionClassification[]
@@ -366,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Bidang teks gratis untuk memberikan deskripsi internal yang dihadapi pengguna akhir dari perwakilan layanan.
+Bidang teks gratis untuk memberikan deskripsi internal yang dihadapi pengguna akhir tentang perwakilan layanan.
 Portal pengguna akhir seperti MyApps akan menampilkan deskripsi aplikasi di bidang ini.
 Ukuran maksimum yang diizinkan adalah 1024 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, startsWith) dan $search.
@@ -385,7 +387,7 @@ Accept wildcard characters: False
 
 ### -DisabledByMicrosoftStatus
 Menentukan apakah Microsoft telah menonaktifkan aplikasi terdaftar.
-Nilai yang mungkin adalah: null (nilai default), NotDisabled, dan DisabledDueToViolationOfServicesAgreement (alasannya mungkin termasuk aktivitas yang mencurigakan, kasar, atau berbahaya, atau pelanggaran Perjanjian Layanan Microsoft).
+Nilai yang mungkin adalah: null (nilai default), NotDisabled, dan DisabledDueToViolationOfServicesAgreement (alasannya mungkin termasuk aktivitas yang mencurigakan, melecehkan, atau berbahaya, atau pelanggaran Perjanjian Layanan Microsoft).
 Mendukung $filter (eq, ne, NOT).
 
 ```yaml
@@ -418,7 +420,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 Titik akhir tersedia untuk penemuan.
-Layanan seperti Sharepoint mengisi properti ini dengan penyewa tertentu SharePoint titik akhir yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
+Layanan seperti Sharepoint mengisi properti ini dengan titik akhir SharePoint spesifik penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
 Untuk membuat, lihat bagian CATATAN untuk properti TITIK AKHIR dan membuat tabel hash.
 
 ```yaml
@@ -485,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -Info
-informationalUrl To construct, lihat bagian NOTES untuk properti INFO dan buat tabel hash.
+informationalUrl To construct, lihat bagian NOTES untuk properti INFO dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphInformationalUrl
@@ -500,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek perwakilan layanan Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+objek perwakilan layanan Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal
@@ -515,7 +517,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredential
-Pengumpulan kredensial kunci yang terkait dengan aplikasi.
+Kumpulan kredensial utama yang terkait dengan aplikasi.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, NOT, ge, le).
 Untuk membuat, lihat bagian CATATAN untuk properti KEYCREDENTIALS dan buat tabel hash.
@@ -939,18 +941,18 @@ CLAIMSMAPPINGPOLICY <IMicrosoftGraphClaimsMappingPolicy[]>: ClaimsMappingPolicie
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+  - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
   - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
   - `[Description <String>]`: Deskripsi untuk kebijakan ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
 
-DELEGATEDPERMISSIONCLASSIFICATION <IMicrosoftGraphDelegatedPermissionClassification[]>: Klasifikasi izin untuk izin yang didelegasikan yang diekspos oleh aplikasi yang diwakili perwakilan layanan ini. Mendukung $expand.
+DELEGATEDPERMISSIONCLASSIFICATION <IMicrosoftGraphDelegatedPermissionClassification[]>: Klasifikasi izin untuk izin yang didelegasikan yang diekspos oleh aplikasi yang diwakili oleh perwakilan layanan ini. Mendukung $expand.
   - `[Classification <String>]`: permissionClassificationType
   - `[PermissionId <String>]`: Pengidentifikasi unik (id) untuk izin yang didelegasikan yang tercantum dalam koleksi servicePrincipal yang diterbitkan. Diperlukan untuk membuat. Tidak mendukung $filter.
   - `[PermissionName <String>]`: Nilai klaim (nilai) untuk izin yang didelegasikan yang tercantum dalam kumpulan servicePrincipal yang diterbitkan. Tidak mendukung $filter.
 
-ENDPOINT <IMicrosoftGraphEndpoint[]>: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan penyewa tertentu SharePoint titik akhir yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
+TITIK AKHIR <IMicrosoftGraphEndpoint[]>: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan titik akhir SharePoint spesifik penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
 
@@ -958,7 +960,7 @@ HOMEREALMDISCOVERYPOLICY <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>: HomeRealmD
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+  - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
   - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
   - `[Description <String>]`: Deskripsi untuk kebijakan ini.
   - `[DeletedDateTime <DateTime?>]`: 
@@ -966,17 +968,17 @@ HOMEREALMDISCOVERYPOLICY <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>: HomeRealmD
 
 INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[MarketingUrl <String>]`: Tautan ke halaman pemasaran aplikasi. Misalnya, https://www.contoso.com/app/marketing
-  - `[PrivacyStatementUrl <String>]`: Tautan ke pernyataan privasi aplikasi. Misalnya, https://www.contoso.com/app/privacy
-  - `[SupportUrl <String>]`: Tautan ke halaman dukungan aplikasi. Misalnya, https://www.contoso.com/app/support
-  - `[TermsOfServiceUrl <String>]`: Tautkan ke pernyataan ketentuan layanan aplikasi. Misalnya, https://www.contoso.com/app/termsofservice
+  - `[MarketingUrl <String>]`: Tautkan ke halaman pemasaran aplikasi. Misalnya, https://www.contoso.com/app/marketing
+  - `[PrivacyStatementUrl <String>]`: Tautkan ke pernyataan privasi aplikasi. Misalnya, https://www.contoso.com/app/privacy
+  - `[SupportUrl <String>]`: Tautkan ke halaman dukungan aplikasi. Misalnya, https://www.contoso.com/app/support
+  - `[TermsOfServiceUrl <String>]`: Tautkan ke ketentuan pernyataan layanan aplikasi. Misalnya, https://www.contoso.com/app/termsofservice
 
 INPUTOBJECT <IMicrosoftGraphServicePrincipal>: objek perwakilan layanan
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[AccountEnabled <Boolean?>]`: true jika akun perwakilan layanan diaktifkan; jika tidak, salah. Mendukung $filter (eq, ne, NOT, in).
-  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan layanan yang menggunakan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'- nya. Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang digarap pengguna.
+  - `[AccountEnabled <Boolean?>]`: benar jika akun perwakilan layanan diaktifkan; jika tidak, salah. Mendukung $filter (eq, ne, NOT, in).
+  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan layanan yang menggunakan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat merender aliran file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'-nya. Ini akan memungkinkan layanan seperti Microsoft 365 memanggil aplikasi dalam konteks dokumen yang sedang di kerjakan pengguna.
     - `[Id <String>]`: 
     - `[Property <IMicrosoftGraphKeyValue[]>]`: 
       - `[Key <String>]`: Kunci.
@@ -989,7 +991,7 @@ INPUTOBJECT <IMicrosoftGraphServicePrincipal>: objek perwakilan layanan
   - `[AppOwnerOrganizationId <String>]`: Berisi id penyewa tempat aplikasi terdaftar. Ini hanya berlaku untuk perwakilan layanan yang didukung oleh aplikasi. Mendukung $filter (eq, ne, NOT, ge, le).
   - `[AppRole <IMicrosoftGraphAppRole[]>]`: Peran yang diekspos oleh aplikasi yang diwakili oleh perwakilan layanan ini. Untuk informasi selengkapnya, lihat definisi properti appRoles pada entitas aplikasi. Tidak dapat diubah ke null.
     - `[AllowedMemberType <String[]>]`: Menentukan apakah peran aplikasi ini dapat ditetapkan ke pengguna dan grup (dengan mengatur ke ['Pengguna']), ke aplikasi lain (dengan mengatur ke ['Aplikasi'], atau keduanya (dengan mengatur ke ['Pengguna', 'Aplikasi']). Peran aplikasi yang mendukung penugasan ke perwakilan layanan aplikasi lain juga dikenal sebagai izin aplikasi. Nilai 'Aplikasi' hanya didukung untuk peran aplikasi yang ditentukan pada entitas aplikasi.
-    - `[Description <String>]`: Deskripsi untuk peran aplikasi. Ini ditampilkan ketika peran aplikasi sedang ditetapkan dan, jika peran aplikasi berfungsi sebagai izin aplikasi, selama pengalaman persetujuan.
+    - `[Description <String>]`: Deskripsi untuk peran aplikasi. Ini ditampilkan saat peran aplikasi ditetapkan dan, jika peran aplikasi berfungsi sebagai izin aplikasi, selama pengalaman persetujuan.
     - `[DisplayName <String>]`: Nama tampilan untuk izin yang muncul dalam penetapan peran aplikasi dan pengalaman persetujuan.
     - `[Id <String>]`: Pengidentifikasi peran unik di dalam koleksi appRoles. Saat membuat peran aplikasi baru, pengidentifikasi Guid baru harus disediakan.
     - `[IsEnabled <Boolean?>]`: Saat membuat atau memperbarui peran aplikasi, ini harus diatur ke true (yang merupakan default). Untuk menghapus peran, ini harus terlebih dahulu diatur ke false.  Pada saat itu, dalam panggilan berikutnya, peran ini dapat dihapus.
@@ -1094,9 +1096,9 @@ KEYCREDENTIAL <IMicrosoftGraphKeyCredential[]>: Pengumpulan kredensial kunci yan
   - `[CustomKeyIdentifier <Byte[]>]`: Pengidentifikasi kunci kustom
   - `[DisplayName <String>]`: Nama yang mudah diingat untuk kunci. Opsional.
   - `[EndDateTime <DateTime?>]`: Tanggal dan waktu kedaluwarsa kredensial. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
-  - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus menjadi nilai dasar 64 yang dikodekan.
+  - `[Key <Byte[]>]`: Nilai untuk kredensial kunci. Harus berupa nilai dasar 64 yang dikodekan.
   - `[KeyId <String>]`: Pengidentifikasi unik (GUID) untuk kunci.
-  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
   - `[Type <String>]`: Jenis kredensial kunci; misalnya, 'Simetris'.
   - `[Usage <String>]`: String yang menjelaskan tujuan kunci dapat digunakan; misalnya, 'Verifikasi'.
 
@@ -1111,7 +1113,7 @@ OAUTH2PERMISSIONSCOPE <IMicrosoftGraphPermissionScope[]>: Izin yang didelegasika
   - `[UserConsentDisplayName <String>]`: Judul untuk izin, dimaksudkan untuk dibaca oleh pengguna yang memberikan izin atas nama mereka sendiri. Teks ini muncul dalam pengalaman persetujuan di mana pengguna hanya menyetujui atas nama mereka sendiri.
   - `[Value <String>]`: Menentukan nilai yang akan disertakan dalam klaim scp (cakupan) dalam token akses. Panjang tidak boleh melebihi 120 karakter. Karakter yang diizinkan adalah : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _ { } ~, serta karakter dalam rentang 0-9, A-Z dan a-z. Karakter lainnya, termasuk karakter spasi, tidak diperbolehkan. Mungkin tidak dimulai dengan ..
 
-PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential[]>: Pengumpulan kredensial kata sandi yang terkait dengan aplikasi. Tidak dapat diubah ke null. Untuk membuat, lihat bagian CATATAN untuk properti PASSWORDCREDENTIALS dan buat tabel hash.
+PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential[]>: Kumpulan kredensial kata sandi yang terkait dengan aplikasi. Tidak dapat diubah ke null. Untuk membuat, lihat bagian CATATAN untuk properti PASSWORDCREDENTIALS dan buat tabel hash.
   - `[CustomKeyIdentifier <Byte[]>]`: Jangan gunakan.
   - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Opsional.
   - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
@@ -1120,13 +1122,13 @@ PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential[]>: Pengumpulan kredensial
 
 SAMLSINGLESIGNONSETTING <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[RelayState <String>]`: URI relatif yang akan dialihkan penyedia layanan setelah menyelesaikan alur akses menyeluruh.
+  - `[RelayState <String>]`: URI relatif yang akan dialihkan penyedia layanan setelah penyelesaian alur akses menyeluruh.
 
 TOKENISSUANCEPOLICY <IMicrosoftGraphTokenIssuancePolicy[]>: TokenIssuancePolicies yang ditetapkan untuk perwakilan layanan ini. Mendukung $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+  - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
   - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
   - `[Description <String>]`: Deskripsi untuk kebijakan ini.
   - `[DeletedDateTime <DateTime?>]`: 
@@ -1136,7 +1138,7 @@ TOKENLIFETIMEPOLICY <IMicrosoftGraphTokenLifetimePolicy[]>: TokenLifetimePolicie
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
-  - `[Definition <String[]>]`: Kumpulan string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
+  - `[Definition <String[]>]`: Koleksi string yang berisi string JSON yang menentukan aturan dan pengaturan untuk kebijakan. Sintaks untuk definisi berbeda untuk setiap jenis kebijakan turunan. Wajib diisi.
   - `[IsOrganizationDefault <Boolean?>]`: Jika diatur ke true, mengaktifkan kebijakan ini. Mungkin ada banyak kebijakan untuk jenis kebijakan yang sama, tetapi hanya satu yang dapat diaktifkan sebagai default organisasi. Opsional, nilai default adalah false.
   - `[Description <String>]`: Deskripsi untuk kebijakan ini.
   - `[DeletedDateTime <DateTime?>]`: 

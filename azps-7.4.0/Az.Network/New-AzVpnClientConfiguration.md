@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientConfiguration.md
-ms.openlocfilehash: 8407246e7d4c6de2f4e91e69c28b8b9da01f1af4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb735e6c6d5d779c3d69e955606ae02a99353a15
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565448"
 ---
 # New-AzVpnClientConfiguration
 
 ## SYNOPSIS
 Perintah ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya pada gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzVpnClientConfiguration [-Name <String>] -ResourceGroupName <String> [-Proc
 ```
 
 ## DESCRIPTION
-ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya di gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
+ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya pada gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
 
 ## EXAMPLES
 
@@ -36,12 +39,12 @@ ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan 
 New-AzVpnClientConfiguration -ResourceGroupName "ContosoResourceGroup" -Name "ContosoVirtualNetworkGateway" -AuthenticationMethod "EAPTLS" -RadiusRootCertificateFile "C:\Users\Test\Desktop\VpnProfileRadiusCert.cer"
 ```
 
-Cmdlet ini digunakan untuk membuat file zip profil klien VPN untuk "ContosoVirtualNetworkGateway" di ResourceGroup "ContosoResourceGroup". Profil dibuat untuk server radius prakonfigurasi yang dikonfigurasi untuk menggunakan metode autentikasi "EAPTLS" dengan file sertifikat VpnProfileRadiusCert.
+Cmdlet ini digunakan untuk membuat file zip profil klien VPN untuk "ContosoVirtualNetworkGateway" di ResourceGroup "ContosoResourceGroup". Profil dibuat untuk server radius yang telah dikonfigurasi sebelumnya yang dikonfigurasi untuk menggunakan metode autentikasi "EAPTLS" dengan file sertifikat VpnProfileRadiusCert.
 
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Metode Autentikasi Dapat mengambil nilai EAPMSCHAPv2 atau EAPTLS. Ketika EAPMSCHAPv2 ditentukan, cmdlet menghasilkan penginstal konfigurasi klien untuk autentikasi nama pengguna/kata sandi yang menggunakan protokol autentikasi EAP-MSCHAPv2. Jika EAPTLS ditentukan, cmdlet akan menghasilkan penginstal konfigurasi klien untuk autentikasi sertifikat yang menggunakan protokol EAP-TLS. Opsi "EapTls" bisa digunakan untuk autentikasi sertifikat berbasis RADIUS dan autentikasi sertifikasi yang dilakukan oleh Gateway Virtual Network dengan mengunggah akar tepercaya. Cmdlet secara otomatis mendeteksi apa yang dikonfigurasi.
+Metode Autentikasi Dapat mengambil nilai EAPMSCHAPv2 atau EAPTLS. Ketika EAPMSCHAPv2 ditentukan, cmdlet menghasilkan penginstal konfigurasi klien untuk autentikasi nama pengguna/kata sandi yang menggunakan protokol autentikasi EAP-MSCHAPv2. Jika EAPTLS ditentukan, cmdlet menghasilkan alat penginstal konfigurasi klien untuk autentikasi sertifikat yang menggunakan protokol EAP-TLS. Opsi "EapTls" dapat digunakan untuk autentikasi sertifikat berbasis RADIUS dan autentikasi sertifikasi yang dilakukan oleh gateway Virtual Network dengan mengunggah akar tepercaya. Cmdlet secara otomatis mendeteksi apa yang dikonfigurasi.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -RadiusRootCertificateFile
-Jalur sertifikat akar server radius. Ini adalah parameter wajib yang harus ditentukan ketika EAP-TLS dengan autentikasi RADIUS digunakan. Ini adalah nama jalur lengkap file .cer yang berisi sertifikat akar RADIUS yang digunakan klien untuk memvalidasi server RADIUS selama autentikasi.
+Jalur sertifikat akar server Radius. Ini adalah parameter wajib yang harus ditentukan ketika EAP-TLS dengan autentikasi RADIUS digunakan. Ini adalah nama jalur lengkap file .cer yang berisi sertifikat akar RADIUS yang digunakan klien untuk memvalidasi server RADIUS selama autentikasi.
 
 ```yaml
 Type: System.String
@@ -147,8 +150,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

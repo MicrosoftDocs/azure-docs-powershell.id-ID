@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
-ms.openlocfilehash: 4213141ed4bb96bf610c92e50906072e32031e86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 44dc591d9e9e41f6006323e209f0dc8741432dfc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001467"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583976"
 ---
 # New-AzHDInsightStreamingMapReduceJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Streaming MapReduce.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightstreamingmapreducejobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzHDInsightStreamingMapReduceJobDefinition [-Arguments <String[]>] [-File <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightStreamingMapReduceJobDefinition** menentukan objek pekerjaan Streaming MapReduce untuk digunakan dengan cluster Azure HDInsight.
+Cmdlet **New-AzHDInsightStreamingMapReduceJobDefinition** menentukan objek pekerjaan Streaming MapReduce untuk digunakan dengan kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Streaming MapReduce job definition
+### Contoh 1: Membuat definisi kerja Streaming MapReduce
 ```powershell
 # Cluster info
 $clusterName = "your-hadoop-001"
@@ -49,13 +52,13 @@ New-AzHDInsightStreamingMapReduceJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini membuat definisi pekerjaan Streaming MapReduce.
+Perintah ini membuat definisi kerja Streaming MapReduce.
 
 ## PARAMETERS
 
 ### -Argumen
 Menentukan array argumen untuk pekerjaan tersebut.
-Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
+Argumen diteruskan sebagai argumen baris-perintah untuk tiap pekerjaan.
 
 ```yaml
 Type: System.String[]
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommandEnvironment
-Menentukan array variabel lingkungan baris perintah untuk diatur ketika pekerjaan berjalan pada node pekerja.
+Menentukan array variabel lingkungan baris perintah untuk diatur saat pekerjaan berjalan pada simpul pekerja.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -99,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Defines
-Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
+### -Mendefinisikan
+Menentukan nilai konfigurasi Hadoop yang akan diatur saat pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -115,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur ke file yang berisi kueri untuk dijalankan.
-Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
+Menentukan jalur ke file yang berisi kueri yang akan dijalankan.
+Anda bisa menggunakan parameter ini alih-alih parameter *Kueri* .
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Files
-Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
+Menentukan kumpulan file yang terkait dengan pekerjaan Apache Hive.
 
 ```yaml
 Type: System.String[]
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Mapper
+### -Pemeta
 Menentukan nama file Mapper.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
 
 ```yaml
 Type: System.String
@@ -221,11 +224,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

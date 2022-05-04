@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
-ms.openlocfilehash: a9e6c5702246d27e3799e234dbf3c777e773137f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fdc97d6225af37406ab8f0ba9bd9c17178661fde
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234639"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564718"
 ---
 # Get-AzDefault
 
 ## SYNOPSIS
-Dapatkan default yang diatur oleh pengguna dalam konteks saat ini.
+Dapatkan default yang ditetapkan oleh pengguna dalam konteks saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azdefault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ ManagedBy  :
 Tags       :
 ```
 
-Perintah ini mengembalikan default saat ini jika ada kumpulan default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
+Perintah ini mengembalikan default saat ini jika ada set default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ ManagedBy  :
 Tags       :
 ```
 
-Perintah ini mengembalikan Grup Sumber Daya default saat ini jika ada kumpulan default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
+Perintah ini mengembalikan Grup Sumber Daya default saat ini jika ada set default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

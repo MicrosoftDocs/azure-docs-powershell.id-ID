@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
-ms.openlocfilehash: 3c1a81dc101ea82496b09c0f129e3f1ce030fee1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bac4c331624f8ffc538f722a17660ce39b20e50e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931735"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564862"
 ---
 # Get-AzSynapseWorkspaceKey
 
 ## SYNOPSIS
 Mendapatkan kunci ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Cmdlet **Get-AzSynapseWorkspaceKey** mendapatkan kunci ruang kerja.
 Get-AzSynapseWorkspaceKey -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan informasi tentang semua tombol ruang kerja di ruang kerja bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang semua kunci ruang kerja di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseWorkspaceKey -Name ContosoWorkspaceKey
 ```
 
-Perintah ini mendapatkan informasi tentang tombol ruang kerja bernama ContosoWorkspaceKey di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang kunci ruang kerja bernama ContosoWorkspaceKey di ruang kerja bernama ContosoWorkspace melalui alur.
 
 ### Contoh 4
 ```powershell
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kunci enkripsi ruang kerja.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya Synapse SQL Pool.
+Pengidentifikasi sumber daya Kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 81d70eec26ba4b8ebc32815693b66060015b8140
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee573b2b99ff3b7a158b51e97655968f170d88b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744264"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562396"
 ---
 # Add-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat akar klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +32,12 @@ Add-AzVpnClientRootCertificate -VpnClientRootCertificateName <String> -VirtualNe
 ## DESCRIPTION
 Cmdlet **Add-AzVpnClientRootCertificate** menambahkan sertifikat akar ke gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda.
-Secara desain, semua sertifikat yang digunakan di gateway mempercayai sertifikat akar.
+Secara desain, semua sertifikat yang digunakan pada gateway mempercayai sertifikat akar.
 Cmdlet ini menetapkan sertifikat yang sudah ada sebagai sertifikat akar gateway.
-Jika tidak memiliki sertifikat X.509 yang tersedia, Anda dapat membuatnya melalui infrastruktur kunci publik atau menggunakan generator sertifikat seperti makecert.exe.
-Untuk menambahkan sertifikat akar, Anda harus menentukan nama sertifikat dan menyediakan representasi sertifikat teks saja (lihat parameter *PublicCertData* untuk informasi selengkapnya).
+Jika Anda tidak memiliki sertifikat X.509 yang tersedia, Anda dapat membuatnya melalui infrastruktur kunci publik Anda atau menggunakan generator sertifikat seperti makecert.exe.
+Untuk menambahkan sertifikat akar, Anda harus menentukan nama sertifikat dan memberikan representasi sertifikat khusus teks (lihat parameter *PublicCertData* untuk informasi selengkapnya).
 Azure memungkinkan Anda menetapkan lebih dari satu sertifikat akar ke gateway.
-Beberapa sertifikat akar sering digunakan oleh organisasi yang menyertakan pengguna dari lebih dari satu perusahaan.
+Beberapa sertifikat akar sering disebarkan oleh organisasi yang menyertakan pengguna dari lebih dari satu perusahaan.
 
 ## EXAMPLES
 
@@ -46,8 +49,8 @@ Add-AzVpnClientRootCertificate -PublicCertData $CertificateText -ResourceGroupNa
 ```
 
 Contoh ini menambahkan sertifikat akar klien ke gateway virtual bernama ContosoVirtualGateway.
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks yang sebelumnya diekspor dari sertifikat akar dan menyimpan data teks yang diberi nama $Text.
-Perintah kedua kemudian menggunakan sebuah untuk pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks yang diekspor sebelumnya dari sertifikat akar dan menyimpan data teks tersebut dengan variabel bernama $Text.
+Perintah kedua kemudian menggunakan perulangan for untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir.
 Teks yang diekstrak disimpan dalam variabel bernama $CertificateText.
 Perintah ketiga kemudian menggunakan teks yang disimpan di $CertificateText dengan cmdlet **Add-AzVpnClientRootCertificate** untuk menambahkan sertifikat akar ke gateway.
 
@@ -70,9 +73,9 @@ Accept wildcard characters: False
 
 ### -PublicCertData
 Menentukan representasi teks sertifikat akar yang akan ditambahkan.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan dalam editor teks.
-Saat Anda melakukannya, Anda akan melihat output yang mirip dengan yang berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- The PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda dapat mengambil data ini menggunakan perintah Windows PowerShell seperti ini:`$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer"`
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
+Ketika Anda melakukannya, Anda akan melihat output yang mirip dengan yang berikut ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang ditunjukkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- SERTIFIKAT AKHIR ----- PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda dapat mengambil data ini dengan menggunakan perintah Windows PowerShell yang mirip dengan ini:`$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer"`
 `$CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}`
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya tempat sertifikat akar ditetapkan.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
+Grup sumber daya mengategorikan item untuk membantu menyederhanakan manajemen inventarisasi dan administrasi Azure umum.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

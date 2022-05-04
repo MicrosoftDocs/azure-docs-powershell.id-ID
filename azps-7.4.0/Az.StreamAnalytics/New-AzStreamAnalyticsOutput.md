@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
-ms.openlocfilehash: d4ec549f8e746ee78cd2376a22b5c9a5a45ceff5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4f15a46eaff2740b363aad4c78ea3362f98fd601
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863802"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576596"
 ---
 # New-AzStreamAnalyticsOutput
 
 ## SYNOPSIS
-Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsoutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzStreamAnalyticsOutput -File <String> -JobName <String> -Name <String> -Res
 ```
 
 ## DESCRIPTION
-Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat output ke pekerjaan analitik streaming
+### Contoh 1: Membuat output ke pekerjaan analisis aliran
 ```powershell
 New-AzStreamAnalyticsOutput -ResourceGroupName azure-rg-test -JobName sajob-02-pwsh -Name output-01 -File .\test\template-json\StroageAccount.json
 ```
@@ -40,9 +43,9 @@ Name      Type                                            ETag
 output-01 Microsoft.StreamAnalytics/streamingjobs/outputs 3819fb65-07f5-4dc3-83e1-d3149596f8d0
 ```
 
-Perintah ini membuat output baru dalam pekerjaan analitik stream.
+Perintah ini membuat output baru dalam pekerjaan analisis aliran.
 
-(di bawah ini adalah contoh untuk "StroageAccount.json") { "properties": { "serialization": { "type": "Json", "properties": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properties": { "storageAccounts": [ { "accountName": "xxxx", "accountKey": "xxxxx" } ], "container": "xxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } } } }
+(di bawah ini adalah contoh untuk "StroageAccount.json") { "properties": { "serialization": { "type": "Json", "properties": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properties": { "storageAccounts": [ { "accountName": "xxxxxx", "accountKey": "xxxxx" } ], "container": "xxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } } } }
 
 ## PARAMETERS
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag output.
 Hilangkan nilai ini untuk selalu menimpa output saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memperbolehkan output baru dibuat, tetapi untuk mencegah pembaruan output yang sudah ada.
-Nilai lain akan menghasilkan respons Gagal Pra-kondisi 412.
+Atur ke '*' untuk memungkinkan output baru dibuat, tetapi untuk mencegah pembaruan output yang ada.
+Nilai lain akan menghasilkan respons 412 Pra-kondisi Gagal.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama output.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

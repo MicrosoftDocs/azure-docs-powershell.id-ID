@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightPersistedScriptAction.md
-ms.openlocfilehash: c082402c3fb4f9decf17f87f196989f46c8523bc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 31bbab81451b28905ea709b94d4d5bb7e12abbd8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683532"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569558"
 ---
 # Get-AzHDInsightPersistedScriptAction
 
 ## SYNOPSIS
-Mendapatkan tindakan skrip tetap untuk sebuah kluster dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip tetap tertentu.
+Mendapatkan tindakan skrip yang bertahan untuk kluster dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip yang bertahan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightpersistedscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzHDInsightPersistedScriptAction [-ClusterName] <String> [[-Name] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightPersistedScriptAction** mendapatkan tindakan skrip tetap untuk kluster Azure HDInsight dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip tetap tertentu.
+Cmdlet **Get-AzHDInsightPersistedScriptAction** mendapatkan tindakan skrip yang bertahan untuk kluster Azure HDInsight dan mencantumkannya dalam urutan kronologis, atau mendapatkan detail untuk tindakan skrip persisten tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tindakan skrip yang tetap di kluster
+### Contoh 1: Mendapatkan tindakan skrip yang dipertahankan pada kluster
 ```powershell
 Get-AzHDInsightPersistedScriptAction -ClusterName "your-hadoop-001"
 ```
 
-Perintah ini mendapatkan tindakan skrip tetap pada kluster bernama your-hadoop-001.
+Perintah ini mendapatkan tindakan skrip yang bertahan pada kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama aksi skrip yang tetap.
+### -Name
+Menentukan nama tindakan skrip yang bertahan.
 
 ```yaml
 Type: System.String
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

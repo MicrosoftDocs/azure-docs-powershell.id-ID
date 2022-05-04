@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
-ms.openlocfilehash: c3bf1904904878adc6ab18cd93d91eabb74645cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 34635ba83066ee6aeba972d6a50d7b5e68f05cc7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574832"
 ---
 # New-AzVMDataDisk
 
 ## SYNOPSIS
-Membuat objek disk data lokal untuk mesin virtual atau VM VM.
+Membuat objek disk data lokal untuk komputer virtual atau VM Vmss.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ New-AzVMDataDisk [-Lun] <Int32> [-CreateOption] <String> [-Name <String>] [-Cach
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVMDataDisk** membuat objek disk data lokal untuk mesin virtual atau VM Vmss.
+Cmdlet **New-AzVMDataDisk** membuat objek disk data lokal untuk komputer virtual atau VM Vmss.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan disk data terkelola ke VM VM.
+### Contoh 1: Tambahkan disk data terkelola ke VM Vmss.
 ```powershell
 $disk = Get-AzDisk -ResourceGroupName $rgname -DiskName $diskname0
 $datadisk = New-AzVMDataDisk -Caching 'ReadOnly' -Lun 2 -CreateOption Attach -StorageAccountType Standard_LRS -ManagedDiskId $disk.Id
@@ -47,14 +50,14 @@ $VmssVM = Get-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -Insta
 Update-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0 -DataDisk $datadisk
 ```
 
-Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya membuat objek disk data dengan disk yang dikelola.
-Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah terakhir memperbarui VM VM dengan menambahkan disk data baru.
+Perintah pertama mendapatkan disk terkelola yang ada.
+Perintah berikutnya membuat objek disk data dengan disk terkelola.
+Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
+Perintah akhir memperbarui VM Vmss dengan menambahkan disk data baru.
 
 ### Contoh 2
 
-Membuat objek disk data lokal untuk mesin virtual atau VM VM. (autogenerasi)
+Membuat objek disk data lokal untuk komputer virtual atau VM Vmss. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzVMDataDisk -Caching None -CreateOption Attach -DiskSizeInGB 1 -Lun 2 -Name 'AgentPool01'
@@ -62,8 +65,8 @@ New-AzVMDataDisk -Caching None -CreateOption Attach -DiskSizeInGB 1 -Lun 2 -Name
 
 ## PARAMETERS
 
-### -Caching
-Cache disk data mesin virtual.
+### -Penembolokan
+Penembolokan disk data komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.CachingTypes
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateOption
-Opsi buat disk data mesin virtual.
+Opsi buat disk data komputer virtual.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Id rangkaian enkripsi disk yang dikelola mesin virtual.
+Id set enkripsi disk terkelola komputer virtual.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskSizeInGB
-Ukuran disk data mesin virtual dalam GB.
+Ukuran disk data komputer virtual dalam GB.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Disk data mesin virtual Lun.
+Lun disk data komputer virtual.
 
 ```yaml
 Type: System.Int32
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-Id disk terkelola mesin virtual.
+Id disk terkelola komputer virtual.
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama disk data mesin virtual.
+### -Name
+Nama disk data komputer virtual.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceImageUri
-Sumber gambar sumber disk OS mesin virtual Uri.
+Uri gambar sumber disk OS komputer virtual.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk yang dikelola mesin virtual.
+Jenis akun disk yang dikelola komputer virtual.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Disk data mesin virtual Vhd Uri.
+Vhd Uri disk data komputer virtual.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data yang dikelola.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

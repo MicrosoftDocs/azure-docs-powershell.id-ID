@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightIPConfiguration.md
-ms.openlocfilehash: 329194310d6aaaa10cdcbad1a837c100511edb39
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb373643788ffa63678b85da4598fcd18c1873e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683478"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583994"
 ---
 # New-AzHDInsightIPConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi IP konfigurasi tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzHDInsightIPConfiguration [-Name <String>] [-Primary] [-PrivateIPAddress <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Ini New-AzHDInsightIPConfiguration** membuat konfigurasi ip dalam memeori.
+Cmdlet **New-AzHDInsightIPConfiguration** ini membuat konfigurasi ip dalam memeori.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ $subnetId=$vnetId+"/subnets/"+$subnetName
 $ipConfiguration= New-AzHDInsightIPConfiguration -Name $ipConfigName PrivateIPAllocationMethod $privateIPAllocationMethod -SubnetId $subnetId -Primary
 ```
 
-Ini akan membuat objek konfigurasi ip dalam memori.
+Ini membuat objek konfigurasi ip dalam memori.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Mendapatkan atau mengatur nama konfigurasi ip.
 
 ```yaml
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Mendapatkan atau mengatur bendera menunjukkan apakah konfigurasi IP ini utama untuk NIC terkait.
+Mendapatkan atau mengatur bendera menunjukkan apakah konfigurasi IP ini utama untuk NIC yang sesuai.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Mendapatkan atau mengatur alamat ip pribadi.
+Mendapatkan atau mengatur alamat IP privat.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAllocationMethod
-Mendapatkan atau mengatur metode alokasi ip pribadi.
+Mendapatkan atau mengatur metode alokasi ip privat.
 
 ```yaml
 Type: System.String
@@ -137,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

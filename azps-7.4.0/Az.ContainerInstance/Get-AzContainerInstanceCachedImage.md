@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCachedImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCachedImage.md
-ms.openlocfilehash: d41ea67c7a4b79cbd5c94fb58740ffc8ee119c71
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 559ac9d3582575fe054c55b66594d79b8e0a2fcb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573284"
 ---
 # Get-AzContainerInstanceCachedImage
 
 ## SYNOPSIS
-Dapatkan daftar gambar singgahan pada tipe OS tertentu untuk langganan di suatu kawasan.
+Dapatkan daftar gambar yang di-cache pada jenis OS tertentu untuk langganan di suatu wilayah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancecachedimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzContainerInstanceCachedImage -Location <String> [-SubscriptionId <String[]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar gambar singgahan pada tipe OS tertentu untuk langganan di suatu kawasan.
+Dapatkan daftar gambar yang di-cache pada jenis OS tertentu untuk langganan di suatu wilayah.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar gambar singgahan untuk langganan saat ini di kawasan.
+### Contoh 1: Dapatkan daftar gambar yang di-cache untuk langganan saat ini di suatu wilayah.
 ```powershell
 Get-AzContainerInstanceCachedImage -Location eastus
 ```
@@ -43,7 +46,7 @@ microsoft/dotnet-framework:4.7.2-runtime-20190212-windowsservercore-ltsc2016    
 ...
 ```
 
-Perintah ini mendapatkan daftar gambar singgahan untuk langganan saat ini di kawasan `eastus`.
+Perintah ini mendapatkan daftar gambar yang di-cache untuk langganan saat ini di wilayah `eastus`.
 
 ## PARAMETERS
 
@@ -78,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

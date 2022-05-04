@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseNotebook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseNotebook.md
-ms.openlocfilehash: 0330ce3b4c07ca9cde891b18470cb9747b447560
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba3eba5d5365c7ecee9fbb5911ec8bc5c21010c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270207"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144571898"
 ---
 # Get-AzSynapseNotebook
 
 ## SYNOPSIS
 Mendapatkan informasi tentang buku catatan di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsenotebook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseNotebook -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseNotebook** mendapatkan informasi tentang buku catatan di ruang kerja. Jika Anda menentukan nama buku catatan, cmdlet akan mendapatkan informasi tentang buku catatan tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua buku catatan di ruang kerja.
+Cmdlet **Get-AzSynapseNotebook** mendapatkan informasi tentang buku catatan di ruang kerja. Jika Anda menentukan nama buku catatan, cmdlet mendapatkan informasi tentang buku catatan tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua buku catatan di ruang kerja.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Mendapatkan daftar semua buku catatan di ruang kerja ContosoWorkspace.
 Get-AzSynapseNotebook -WorkspaceName ContosoWorkspace -Name ContosoNotebook
 ```
 
-Mendapatkan satu buku catatan bernama ContosoNotebook di ruang kerja ContosoWorkspace.
+Mendapatkan satu buku catatan yang disebut ContosoNotebook di ruang kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -63,7 +66,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseNotebook -Name ContosoNotebook
 ```
 
-Mendapatkan satu buku catatan bernama ContosoNotebook di ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan satu buku catatan yang disebut ContosoNotebook di ruang kerja ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama buku catatan.
 
 ```yaml
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

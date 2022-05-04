@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
-ms.openlocfilehash: 7e4f78990e944d29b8903c0d1789b1e7bb22fc8c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 44a8787eff848368e2ee096650823abac51281f6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683568"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569630"
 ---
 # Add-AzHDInsightScriptAction
 
 ## SYNOPSIS
 Menambahkan tindakan skrip ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,9 +31,9 @@ Add-AzHDInsightScriptAction [-Config] <AzureHDInsightConfig> [-NodeType] <Cluste
 ## DESCRIPTION
 Cmdlet **Add-AzHDInsightScriptAction** menambahkan tindakan skrip ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 Tindakan skrip menyediakan fungsionalitas yang digunakan untuk menginstal perangkat lunak tambahan atau untuk mengubah konfigurasi aplikasi yang berjalan pada kluster Hadoop dengan menggunakan skrip Windows PowerShell atau Bash (untuk kluster Windows atau Linux).
-Tindakan skrip berjalan pada simpul kluster saat kluster HDInsight digunakan, dan dijalankan setelah node di kluster selesai konfigurasi HDInsight.
-Tindakan skrip berjalan di bawah hak istimewa akun administrator sistem dan menyediakan hak akses penuh ke node kluster.
-Anda dapat menyediakan daftar tindakan skrip kepada setiap kluster untuk dijalankan dalam urutan yang ditentukan.
+Tindakan skrip berjalan pada node kluster saat kluster HDInsight disebarkan, dan dijalankan setelah node di kluster menyelesaikan konfigurasi HDInsight.
+Tindakan skrip berjalan di bawah hak istimewa akun administrator sistem dan memberikan hak akses penuh ke node kluster.
+Anda dapat menyediakan setiap kluster dengan daftar tindakan skrip untuk dijalankan dalam urutan tertentu.
 
 ## EXAMPLES
 
@@ -84,12 +87,12 @@ New-AzHDInsightClusterConfig  `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan tindakan skrip untuk simpul Head dan Worker dari klaster your-hadoop-001, untuk dijalankan di akhir pembuatan kluster.
+Perintah ini menambahkan tindakan skrip untuk simpul Head dan Worker dari kluster your-hadoop-001, untuk dijalankan di akhir pembuatan kluster.
 
 ## PARAMETERS
 
-### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+### -Konfigurasi
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -119,7 +122,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tindakan skrip.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Menentukan tipe node untuk menjalankan tindakan skrip.
+Menentukan jenis node untuk menjalankan tindakan skrip.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - HeadNode
 - WorkerNode
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

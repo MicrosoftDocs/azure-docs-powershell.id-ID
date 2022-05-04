@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlow.md
-ms.openlocfilehash: 559661a6c41a8a7127ed5c00cdc90a9773bfad8a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43b099660f16c5c169b9c9e33baaa50d9a871a4a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228663"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576146"
 ---
 # Get-AzDataFactoryV2DataFlow
 
 ## SYNOPSIS
-Mendapatkan informasi tentang alur data di Pabrik Data.
+Mendapatkan informasi tentang aliran data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataflow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Get-AzDataFactoryV2DataFlow [-ResourceId] <String> [-DefaultProfile <IAzureConte
 
 ## DESCRIPTION
 Cmdlet Get-AzDataFactoryV2DataFlow mendapatkan informasi tentang aliran data dalam Azure Data Factory.
-Jika Anda menentukan nama alur data, cmdlet ini akan mendapatkan informasi tentang alur data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua alur data di pabrik data.
+Jika Anda menentukan nama aliran data, cmdlet ini mendapatkan informasi tentang aliran data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua aliran data di pabrik data.
 
 ## EXAMPLES
-### Contoh 1: Dapatkan informasi tentang semua alur data
+### Contoh 1: Mendapatkan informasi tentang semua aliran data
 ```powershell
 Get-AzDataFactoryV2DataFlow -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 ```
@@ -56,9 +59,9 @@ dataflow1                      WikiADF               adf Microsoft.Azure.Managem
 dataflow3                      WikiADF               adf Microsoft.Azure.Management.DataFactory.Models.MappingDataFlow
 ```
 
-Perintah ini mendapatkan informasi tentang semua alur data di pabrik data bernama WikiADF.
+Perintah ini mendapatkan informasi tentang semua aliran data di pabrik data bernama WikiADF.
 
-### Contoh 2: Mendapatkan informasi tentang alur data tertentu
+### Contoh 2: Mendapatkan informasi tentang aliran data tertentu
 ```powershell
 Get-AzDataFactoryV2DataFlow -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "dataflow1"
 ```
@@ -69,7 +72,7 @@ DataFlowName           DataFactoryName ResourceGroupName                        
 TaxiDemo1                      WikiADF               adf Microsoft.Azure.Management.DataFactory.Models.MappingDataFlow
 ```
 
-Perintah ini mendapatkan informasi tentang alur data bernama alur data1 di pabrik data bernama WikiADF.
+Perintah ini mendapatkan informasi tentang aliran data bernama dataflow1 di pabrik data bernama WikiADF.
 
 ## PARAMETERS
 
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama alur data.
+### -Name
+Nama aliran data.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -177,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlow
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

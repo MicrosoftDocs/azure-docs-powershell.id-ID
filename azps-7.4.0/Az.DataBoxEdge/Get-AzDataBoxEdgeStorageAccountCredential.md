@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: f66cf08b5b0d76e56315ecb84c8ada22fc29d2ea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8539f71a840ffec2bae24d32e0011c124a12b077
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003717"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574796"
 ---
 # Get-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan di perangkat.
+Mendapatkan kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzDataBoxEdgeStorageAccountCredential [[-Name] <String>] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait di perangkat Box Edge Data. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
+Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan yang sesuai pada perangkat Azure Data Box Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun penyimpanan yang akan digunakan
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

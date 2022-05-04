@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
-ms.openlocfilehash: c21ef44e6d57b255eab4db2c160899bfb3607afc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c1ef5eafe6d8a647924d09899f1e150b52840c1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275751"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558526"
 ---
 # Get-AzADAppPermission
 
 ## SYNOPSIS
-Mencantumkan izin API yang telah diminta oleh aplikasi.
+Mencantumkan izin API yang diminta aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzADAppPermission -ApplicationId <Guid> [-DefaultProfile <PSObject>] [<Commo
 ```
 
 ## DESCRIPTION
-Mencantumkan izin API yang telah diminta oleh aplikasi.
+Mencantumkan izin API yang diminta aplikasi.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

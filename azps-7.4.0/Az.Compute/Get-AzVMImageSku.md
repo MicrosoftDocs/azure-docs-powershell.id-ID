@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageSku.md
-ms.openlocfilehash: e649483cea8ca57f45a22da6a70747f7e217ffee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e372317858d4d337f07d493d4ead4adfcfe94263
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687087"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144570044"
 ---
 # Get-AzVMImageSku
 
 ## SYNOPSIS
 Mendapatkan SKU VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimagesku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzVMImageSku -Location <String> [-EdgeZone <String>] -PublisherName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMImageSku** mendapatkan VMImage SKU.
+Cmdlet **Get-AzVMImageSku mendapatkan SKU** VMImage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan VMImage SKU
+### Contoh 1: Dapatkan SKU VMImage
 ```powershell
 Get-AzVMImageSku -Location "Central US" -PublisherName "Fabrikam" -Offer "LinuxServer"
 ```
 
-Perintah ini mendapatkan SKU untuk penerbit dan penawaran tertentu.
+Perintah ini mendapatkan SKU untuk penerbit dan penawaran yang ditentukan.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, sku Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, pesan akan dikueri dari lokasi yang diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, Sku Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, itu akan dikueri dari lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-Menentukan tipe penawaran VMImage.
+Menentukan jenis penawaran VMImage.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

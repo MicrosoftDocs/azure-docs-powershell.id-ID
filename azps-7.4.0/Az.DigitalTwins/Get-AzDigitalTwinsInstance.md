@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
-ms.openlocfilehash: da76af4ed6b4e0d9c548bc6b313513b1f406b32e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2dcfe5833ff50f613d8fb044e326a2857f52555d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061551"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579404"
 ---
 # Get-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Dapatkan sumber daya DigitalTwinsInstances.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan sumber daya DigitalTwinsInstances.
 Get-AzDigitalTwinsInstance [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -86,7 +89,7 @@ Location Name             Type
 eastus   youriDigitalTwin Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan AzDigitalTwinsInstance yang ditentukan oleh Object
+Dapatkan AzDigitalTwinsInstance yang ditentukan berdasarkan Objek
 
 ### Contoh 4: List1
 ```powershell
@@ -100,7 +103,7 @@ eastus   youriDigitalTwinsTest   Microsoft.DigitalTwins/digitalTwinsInstances
 eastus   youriDigitalTwin        Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan semua DigitalTwinsInstance dengan ResourceGroupName
+Mendapatkan semua DigitalTwinsInstance oleh ResourceGroupName
 
 ## PARAMETERS
 
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

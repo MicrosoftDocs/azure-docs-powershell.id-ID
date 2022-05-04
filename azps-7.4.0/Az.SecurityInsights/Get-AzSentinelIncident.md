@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncident.md
-ms.openlocfilehash: 073e8c8a7398d5e19191c51bc579ae0edbd8168b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c23f2eeae0135dc9964a1d20880c42896e2fac2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934723"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577046"
 ---
 # Get-AzSentinelIncident
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa Insiden Azure Sentinel.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelincident) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Ruang KerjaScope (Default)
+### WorkspaceScope (Default)
 ```
 Get-AzSentinelIncident -ResourceGroupName <String> -WorkspaceName <String> [-Filter <String>]
  [-OrderBy <String>] [-Max <Int32>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -37,13 +40,13 @@ Get-AzSentinelIncident -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelIncident** mendapatkan Insiden tertentu atau beberapa insiden dari ruang kerja tertentu.
-Jika Anda menentukan parameter *IncidentId* , sebuah objek **Insiden** dikembalikan.
-Jika Anda tidak menentukan parameter *IncidentId* , array yang berisi Insiden dalam ruang kerja tertentu akan dikembalikan.
+Cmdlet **Get-AzSentinelIncident** mendapatkan atau beberapa Insiden tertentu dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *IncidentId* , satu objek **Insiden** dikembalikan.
+Jika Anda tidak menentukan parameter *IncidentId* , array yang berisi Insiden di ruang kerja yang ditentukan akan dikembalikan.
 Default, modul mengembalikan 1000 insiden. Untuk mengambil lebih dari 1000, gunakan parameter -Max.
-Anda dapat menggunakan objek **Insiden** untuk memperbarui Insiden. Misalnya, Anda dapat menambahkan komentar, mengubah tingkat keparahan, menetapkan pemilik, dll. ke **Insiden**.
+Anda dapat menggunakan objek **Insiden** untuk memperbarui Insiden. Misalnya Anda dapat menambahkan komentar, mengubah tingkat keparahan, menetapkan pemilik, dll. ke **Insiden**.
 
-*Catatan: Id Insiden berada dalam format berikut: c464bcd7-daee-47ff-ac58-1fbb73cf1d6b dan tidak sama dengan ID Insiden (angka) seperti dalam tampilan Insiden Azure Sentinel. IncidentId dapat ditemukan dalam tampilan detail insiden, dalam bidang "Tautan insiden", yang dinyatakan di bagian terakhir tautan https.*
+*Catatan: IncidentId dalam format berikut: c464bcd7-daee-47ff-ac58-1fbb73cf1d6b dan tidak sama dengan ID Insiden (angka) seperti dalam tampilan Insiden Azure Sentinel. IncidentId dapat ditemukan dalam tampilan detail insiden, di bidang "Tautan insiden", yang diwakili di bagian terakhir tautan https.*
 
 ## EXAMPLES
 
@@ -66,15 +69,15 @@ Contoh ini mendapatkan semua Insiden menggunakan objek koneksi
 $Incidents = Get-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua Insiden dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $Incidents.
+Contoh ini mendapatkan semua Insiden di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $Incidents.
 
 ### Contoh 3
 ```powershell
 $Incident = Get-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -IncidentId "myIncidentId"
 ```
 
-Contoh ini mendapatkan Insiden tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $Incident.<br/>
-*Harap diperhatikan bahwa IncidentId dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
+Contoh ini mendapatkan Insiden tertentu di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $Incident.<br/>
+*Harap dicatat bahwa IncidentId dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
 
 ### Contoh 4
 ```powershell
@@ -82,7 +85,7 @@ Get-AzSentinelIncident @SentinelConnection | Where-Object {$_.Title -eq "Failed 
 ```
 
 Contoh ini menggunakan objek koneksi dan mengembalikan insiden dengan judul tertentu. <br/>
-Menggunakan kondisi **Where-Object** , Anda dapat mengambil insiden dengan judul, status, tingkat keparahan, pemilik tertentu, dll.
+Dengan menggunakan kondisi **Where-Object** , Anda dapat mengambil insiden dengan judul, status, tingkat keparahan, pemilik, dll.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Memfilter hasil, berdasarkan kondisi Boolean.
+Memfilter hasilnya, berdasarkan kondisi Boolean.
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Max
-Jumlah maksimum rekaman untuk dikembalikan
+### -Maks
+Jumlah maksimum rekaman yang akan dikembalikan
 
 ```yaml
 Type: System.Int32
@@ -191,7 +194,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

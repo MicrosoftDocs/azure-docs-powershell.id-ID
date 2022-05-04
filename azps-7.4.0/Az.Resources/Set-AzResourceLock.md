@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceLock.md
-ms.openlocfilehash: 8a88f90bfb64c187c927a93bd0dc9e38acb59c03
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 880c66db620b3699ea6b4cfb446ba327f341a034
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580304"
 ---
 # Set-AzResourceLock
 
 ## SYNOPSIS
-Mengubah kunci sumber daya.
+Memodifikasi kunci sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azresourcelock) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Set-AzResourceLock -LockLevel <LockLevel> [-LockNotes <String>] [-Force] -LockId
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzResourceLock** mengubah kunci sumber daya.
+Cmdlet **Set-AzResourceLock** memodifikasi kunci sumber daya.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Perintah ini memperbarui catatan untuk kunci bernama ContosoSiteLock.
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockId
-Menentukan ID kunci yang diubah cmdlet ini.
+Menentukan ID kunci yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya tempat kunci diterapkan.
+Menentukan nama sumber daya yang kuncinya berlaku.
 Misalnya, untuk menentukan database, gunakan format berikut: ServerDatabase`/`
 
 ```yaml
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya yang akan diterapkan kunci.
+Menentukan jenis sumber daya yang kuncinya diterapkan.
 
 ```yaml
 Type: System.String
@@ -245,9 +248,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup yang diterapkan kunci.
-Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama nameserver`/databases/` namedatabase`/providers/Microsoft.Sql/servers/` nama Untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama grup
+### -Cakupan
+Menentukan cakupan tempat kunci diterapkan.
+Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`langganan IDresource`/resourceGroups/` nama grup namedatabase`/providers/Microsoft.Sql/servers/` nameDatabase`/databases/` Untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`nama grup IDresource`/resourceGroups/` langganan
 
 ```yaml
 Type: System.String
@@ -261,8 +264,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -313,6 +316,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzResourceLock](./New-AzResourceLock.md)
 
-[Hapus-AzResourceLock](./Remove-AzResourceLock.md)
+[Remove-AzResourceLock](./Remove-AzResourceLock.md)
 
 
