@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpPrefix.md
-ms.openlocfilehash: fbbd1111e284b9afe49725a517dc8355fb5bee74
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0bcb0153d70a1a076e825a5161bf643e492afb8f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804996"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655058"
 ---
 # New-AzPublicIpPrefix
 
 ## SYNOPSIS
-Membuat Prefiks IP Publik
+Membuat Awalan IP Publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azpublicipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,27 +30,27 @@ New-AzPublicIpPrefix -Name <String> -ResourceGroupName <String> [-Location <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPublicIpPrefix** membuat prefiks IP publik.
+Cmdlet **New-AzPublicIpPrefix** membuat awalan IP publik.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat prefiks Ip publik baru
+### Contoh 1: Membuat awalan IP publik baru
 ```powershell
 $publicIpPrefix = New-AzPublicIpPrefix -Name $prefixName -ResourceGroupName $rgName -PrefixLength 30
 ```
 
-Perintah ini membuat sumber daya prefiks IP publik baru. 
+Perintah ini membuat sumber daya awalan IP publik baru. 
 
-### Contoh 2: Membuat prefiks Ip publik global baru
+### Contoh 2: Membuat awalan IP publik global baru
 ```powershell
 $publicIpPrefix = New-AzPublicIpPrefix -ResourceGroupName $rgname -name $rname -location $location -Tier Global -PrefixLength 30
 ```
 
-Perintah ini membuat sumber daya prefiks IP publik global yang baru. 
+Perintah ini membuat sumber daya awalan IP publik global baru. 
 
 ### Contoh 3
 
-Membuat Prefiks IP Publik. (autogenerasi)
+Membuat Awalan IP Publik. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -57,7 +60,7 @@ New-AzPublicIpPrefix -CustomIpPrefix <PSCustomIpPrefix> -Location 'West US' -Nam
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Zona tepi prefiks IP publik
+Zona tepi awalan IP publik
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi prefiks IP publik.
+Lokasi awalan IP publik.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama Prefiks IP publik Sku.
+Nama Sku Awalan IP publik.
 
 ```yaml
 Type: System.String
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Prefiks IP publik tingkat Sku.
+Tingkat Sku Prefiks IP publik.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: System.String[]
@@ -284,8 +287,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

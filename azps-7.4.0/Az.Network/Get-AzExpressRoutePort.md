@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePort.md
-ms.openlocfilehash: a2b462cec90a9237aed4cb18c842b7c4de93a94d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c526e1f95c155dc4155a215cdfffce369478b78e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939349"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701528"
 ---
 # Get-AzExpressRoutePort
 
 ## SYNOPSIS
 Mendapatkan sumber daya Azure ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,21 +43,21 @@ Cmdlet **Get-AzExpressRoutePort** digunakan untuk mengambil objek ExpressRoutePo
 Get-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
 ```
 
-Mendapatkan objek ExpressRoutePort dengan nama $PortName dalam grup sumber daya $rg dalam langganan Anda.
+Mendapatkan objek ExpressRoutePort dengan nama $PortName di grup sumber daya $rg di langganan Anda.
 
 ### Contoh 2
 ```powershell
 Get-AzExpressRoutePort -Name test*
 ```
 
-Mendapatkan semua objek ExpressRoutePort yang namanya dimulai dengan "test".
+Mendapatkan semua objek ExpressRoutePort yang namanya dimulai dengan "uji".
 
 ### Contoh 3
 ```powershell
 Get-AzExpressRoutePort -ResourceId $id
 ```
 
-Mendapatkan objek ExpressRoutePort dengan $id ResourceId. 
+Mendapatkan objek ExpressRoutePort dengan ResourceId $id. 
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ExpressRoutePort.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccountKey.md
-ms.openlocfilehash: 5d1c0eb803cd9d710d607914df1ce7739a83496e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8c4e921bffe1c5ad9183c4833f9c2993e06268bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120983"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655580"
 ---
 # Update-AzKeyVaultManagedStorageAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci akun Azure Storage terkelola Key Vault yang ditentukan.
+Meregenerasi kunci yang ditentukan dari Akun Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedstorageaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzKeyVaultManagedStorageAccountKey [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci akun Azure Storage terkelola Key Vault yang ditentukan dan mengatur kunci sebagai kunci aktif. Key Vault melakukan panggilan ke Azure Resource Manager untuk meregenerasi kunci. Penelepon harus memberikan izin untuk meregenerasi kunci pada Akun Azure Storage yang diberikan.
+Meregenerasi kunci yang ditentukan dari Akun Azure Storage terkelola Key Vault dan mengatur kunci sebagai kunci aktif. Key Vault proksi panggilan ke Azure Resource Manager untuk meregenerasi kunci. Pemanggil harus memiliki izin untuk meregenerasi kunci pada Akun Azure Storage yang diberikan.
 
 ## EXAMPLES
 
@@ -57,12 +60,12 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Meregenerasi 'key1' akun 'mystorageaccount' dan mengatur 'key1' sebagai aktif Key Vault dikelola akun Azure Storage.
+Meregenerasi 'key1' akun 'mystorageaccount' dan menetapkan 'key1' sebagai aktif dari Akun Azure Storage yang dikelola Key Vault.
 
 ## PARAMETERS
 
 ### -AccountName
-Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
+Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci akun penyimpanan untuk meregenerasi dan mengaktifkan.
+Nama kunci akun penyimpanan untuk meregenerasi dan membuat aktif.
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

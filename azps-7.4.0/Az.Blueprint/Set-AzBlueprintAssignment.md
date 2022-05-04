@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
-ms.openlocfilehash: 9170f172cacb494862d693c253eafe4fe5277c58
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6531a992d15d5eeb9ab27fb44b5156d965d21d85
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944299"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654087"
 ---
 # Set-AzBlueprintAssignment
 
 ## SYNOPSIS
-Perbarui tugas cetak biru yang sudah ada.
+Perbarui penetapan cetak biru yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Set-AzBlueprintAssignment -Name <String> [-Blueprint <PSBlueprintBase>] [-Assign
 ```
 
 ## DESCRIPTION
-Perbarui tugas cetak biru yang sudah ada.
+Perbarui penetapan cetak biru yang ada.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Parameters        : {applytaganditsdefaultvalue_tagName, applytaganditsdefaultva
 ResourceGroups    : ResourceGroup
 ```
 
-Perbarui penetapan cetak biru yang sudah ada dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan, memperbarui parameter. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan kawasan untuk membuat identitas terkelola.
+Perbarui penetapan cetak biru yang ada dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan, memperbarui parameter. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan wilayah untuk membuat identitas terkelola.
 
 ### Contoh 2
 ```powershell
@@ -78,7 +81,7 @@ Parameters        : {applytaganditsdefaultvalue_tagName, applytaganditsdefaultva
 ResourceGroups    : ResourceGroup
 ```
 
-Perbarui tugas cetak biru yang sudah ada melalui file tugas. Format file tugas dapat ditemukan dalam sampel permintaan/respons di: https://github.com/Azure/azure-rest-api-specs/tree/master/specification/blueprint/resource-manager/Microsoft.Blueprint/preview/2018-11-01-preview/examples
+Perbarui penetapan cetak biru yang ada melalui file penugasan. Format file penugasan dapat ditemukan dalam sampel permintaan/respons di: https://github.com/Azure/azure-rest-api-specs/tree/master/specification/blueprint/resource-manager/Microsoft.Blueprint/preview/2018-11-01-preview/examples
 
 ### Contoh 3
 ```powershell
@@ -86,12 +89,12 @@ $blueprintObject =  Get-AzBlueprint -ManagementGroupId "myManagementGroup" -Name
 Set-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -ManagementGroupId "myManagementGroup" -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"}
 ```
 
-Perbarui penetapan cetak biru yang sudah ada dari definisi `$blueprintObject` cetak biru yang menargetkan langganan yang ditentukan dalam grup manajemen yang ditentukan menggunakan parameter yang ditentukan.
+Perbarui penetapan cetak biru yang ada dari definisi `$blueprintObject` cetak biru yang menargetkan langganan yang ditentukan dalam grup manajemen yang ditentukan menggunakan parameter yang ditentukan.
 
 ## PARAMETERS
 
 ### -AssignmentFile
-Lokasi file tugas dalam format JSON pada disk.
+Lokasi file penugasan dalam format JSON pada disk.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Blueprint
-Objek Blueprint.
+### -Cetak biru
+Objek cetak biru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Blueprint.Models.PSBlueprintBase
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan untuk identitas terkelola yang akan dibuat.
+Wilayah untuk identitas terkelola yang akan dibuat.
 Pelajari selengkapnya di aka.ms/blueprintmsi
 
 ```yaml
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lock
-Mengunci sumber daya.
+### -Kunci
+Kunci sumber daya.
 Pelajari selengkapnya di aka.ms/blueprintlocks
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupId
-ID grup manajemen tempat penetapan Blueprint akan disimpan.
+ID grup manajemen tempat penetapan Cetak Biru akan disimpan.
 
 ```yaml
 Type: System.String
@@ -207,8 +210,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama tugas cetak biru.
+### -Name
+Nama penetapan cetak biru.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupParameter
-Hashtable parameter untuk lolos ke artefak grup sumber daya.
+Hashtable parameter untuk diteruskan ke artefak grup sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecureStringParameter
-Parameter string aman untuk id sumber daya KeyVault, nama dan versi.
+Parameter string aman untuk id sumber daya KeyVault, nama, dan versi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-SubscriptionId untuk menetapkan Blueprint.
+SubscriptionId untuk menetapkan Cetak Biru.
 Dapat berupa daftar string subscriptionId yang dibatasi koma.
 
 ```yaml
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-System assigned identity(MSI) untuk menyebarkan artefak.
+Identitas yang ditetapkan sistem (MSI) untuk menyebarkan artefak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-User assigned identity(MSI) untuk menyebarkan artefak.
+Identitas yang ditetapkan pengguna (MSI) untuk menyebarkan artefak.
 
 ```yaml
 Type: System.String
@@ -337,8 +340,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

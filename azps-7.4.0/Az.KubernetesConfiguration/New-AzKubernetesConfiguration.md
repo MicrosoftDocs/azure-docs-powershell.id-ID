@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
-ms.openlocfilehash: 101832f53ab56de02a7c82fe2b0c377bcdc692d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 567fee94ea9b2bb678068378aa38de4beb57d9de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120897"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655364"
 ---
 # New-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Buat Konfigurasi Kontrol Sumber Kubernetes baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ azpstestk8s01 Microsoft.KubernetesConfiguration/sourceControlConfigurations
 
 Perintah ini membuat konfigurasi untuk kluster kubernetes.
 
-### Contoh 2: Membuat konfigurasi untuk kluster kubernetes dengan menentukan paramter OperatorNamespace
+### Contoh 2: Membuat konfigurasi untuk kluster kubernetes dengan menentukan operatorNamespace paramter
 ```powershell
 New-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -Name azpstestk8s02 -RepositoryUrl http://github.com/xxxx -OperatorNamespace namespace-t01
 ```
@@ -58,7 +61,7 @@ azpstestk8s02 Microsoft.KubernetesConfiguration/sourceControlConfigurations
 ```
 
 Perintah ini membuat konfigurasi di namespace operator baru untuk kluster kubernetes.
-Catatan, Tidak dapat membuat konfigurasi di ruang nama operator yang sudah ada.
+Catatan, Tidak dapat membuat konfigurasi di namespace operator yang ada.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterScoped
-Jika lolos, atur lingkup Konfigurasi ke Kluster (defaultnya adalah nameSpace).
+Jika diteruskan, atur cakupan Konfigurasi ke Kluster (defaultnya adalah nameSpace).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationProtectedSetting
-Pasangan nilai nama dari pengaturan konfigurasi yang diproteksi untuk konfigurasi
+Pasangan nilai nama dari pengaturan konfigurasi yang dilindungi untuk konfigurasi
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelmOperatorChartValue
-Nilai akan ditimpa untuk bagan Helm operator.
+Nilai ditimpa untuk bagan Helm operator.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi Kontrol Sumber.
 
 ```yaml
@@ -213,8 +216,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperatorNamespace
-Ruang nama tempat operator ini diinstal.
-Maksimal 253 karakter alfanumerik huruf kecil, tanda hubung dan titik saja.
+Namespace tempat operator ini diinstal.
+Maksimum 253 karakter alfanumerik huruf kecil, tanda hubung, dan titik saja.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryUrl
-Url Repository SourceControl.
+Url Repositori SourceControl.
 
 ```yaml
 Type: System.String
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -SshKnownHost
-Jika lolos, atur lingkup Konfigurasi ke Kluster (defaultnya adalah nameSpace).
+Jika diteruskan, atur cakupan Konfigurasi ke Kluster (defaultnya adalah nameSpace).
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -303,8 +306,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/New-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/New-AzBotService.md
-ms.openlocfilehash: 4123767a84429f8e85b384ba39278ea96e3fda94
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e37fb94403b3528aef8eae67c5a943275a85b670
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811098"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653908"
 ---
 # New-AzBotService
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/new-azbotservice) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Registrasi (Default)
+### Pendaftaran (Default)
 ```
 New-AzBotService -ApplicationId <String> -Location <String> [-BotTemplateType <String>]
  [-Description <String>] [-DisplayName <String>] [-Endpoint <String>] [-Language <String>] [-Name <String>]
@@ -27,7 +30,7 @@ New-AzBotService -ApplicationId <String> -Location <String> [-BotTemplateType <S
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Webapp
+### WebApp
 ```
 New-AzBotService -ApplicationId <String> -ApplicationSecret <SecureString> -Location <String>
  [-BotTemplateType <String>] [-Description <String>] [-ExistingServerFarmId <String>] [-Language <String>]
@@ -50,9 +53,9 @@ Etag                                   Kind Location Name       SkuName SkuTier 
 "060085fb-0000-1800-0000-5fd71d7c0000" bot  global   youri-bot1 F0              Microsoft.BotService/botServices
 ```
 
-Membuat Bot baru menurut ResourceGroupName dan ApplicationId
+Membuat Bot baru dengan ResourceGroupName dan ApplicationId
 
-### Contoh 2: Membuat Web App baru
+### Contoh 2: Membuat Aplikasi Web baru
 ```powershell
 New-AzBotService -resourcegroupname youriBotTest -name youri-apptest14 -ApplicationId "b1ab1727-0465-4255-a1bb-976210af972c" -Location eastus -Sku F0 -Description "123134" -Webapp
 ```
@@ -62,7 +65,7 @@ Etag                                   Kind Location Name            SkuName Sku
 "06008351-0000-0200-0000-5fd732870000" sdk  global   youri-apptest14 F0              Microsoft.BotService/botServices
 ```
 
-Membuat Aplikasi Web baru menurut ResourceGroupName dan ApplicationId
+Membuat Aplikasi Web baru dengan ResourceGroupName dan ApplicationId
 
 ## PARAMETERS
 
@@ -216,7 +219,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Bot.
 
 ```yaml
@@ -231,7 +234,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registrasi
+### -Pendaftaran
 
 
 ```yaml
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: d8d8f298d36bc06645ed109c52caf61e2822424a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91d29a5a2b9123b339012b282d358297428d081f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803628"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701312"
 ---
 # Reset-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
-Mengatur ulang kunci akses yang ditentukan.
+Mereset kunci akses yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/reset-azpowerbiworkspacecollectionaccesskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Reset-AzPowerBIWorkspaceCollectionAccessKey [-ResourceGroupName] <String> [-Work
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzPowerBIWorkspaceCollectionAccessKey** mengatur ulang kunci akses yang ditentukan dalam kumpulan ruang kerja Power BI Anda.
+Cmdlet **Reset-AzPowerBIWorkspaceCollectionAccessKey** mengatur ulang kunci akses yang ditentukan dalam koleksi ruang kerja Power BI Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Mereset kunci akses utama
+### Contoh 1: Mengatur ulang kunci akses utama
 ```powershell
 Reset-AzPowerBIWorkspaceCollectionAccessKey -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11" -Key1
 ```
 
-Perintah ini mereset kunci akses utama untuk kumpulan ruang kerja bernama WCN11 dalam grup sumber daya yang ditentukan.
+Perintah ini mengatur ulang kunci akses utama untuk koleksi ruang kerja bernama WCN11 dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya kumpulan.
+Menentukan nama grup sumber daya koleksi.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

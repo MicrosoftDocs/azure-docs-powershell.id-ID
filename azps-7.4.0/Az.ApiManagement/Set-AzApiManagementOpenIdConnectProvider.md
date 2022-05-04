@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 5af854559130fd9550a13462b8a940ae60db2a30
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4409d880eb9a2c405666bd0d154034b3d80e1bbe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320265"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662436"
 ---
 # Set-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Mengubah penyedia Koneksi OpenID.
+Memodifikasi penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzApiManagementOpenIdConnectProvider -Context <PsApiManagementContext> -Open
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Azure API Management.
+Cmdlet **Set-AzApiManagementOpenIdConnectProvider** memodifikasi penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
@@ -38,12 +41,12 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Set-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvider01" -ClientSecret "q2w3e43r45" -PassThru
 ```
 
-Perintah ini mengubah penyedia yang memiliki ID OICProvider01.
+Perintah ini memodifikasi penyedia yang memiliki ID OICProvider01.
 Perintah menentukan rahasia klien untuk penyedia.
 
 ### Contoh 2
 
-Mengubah penyedia Koneksi OpenID. (autogenerasi)
+Memodifikasi penyedia Koneksi OpenID. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -82,7 +85,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama yang mudah dikenali untuk penyedia.
+### -Name
+Menentukan nama yang mudah diingat untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang diubah cmdlet ini.
+Menunjukkan bahwa cmdlet ini mengembalikan **PsApiManagementOpenIdConnectProvider** yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
-ms.openlocfilehash: 83f633c3fd3958874534aea5270410a03ea2c4fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d055f69e6eac259db1aaa9454a593d263299c9b0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740034"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654590"
 ---
 # Get-AzReservationQuote
 
 ## SYNOPSIS
-Dapatkan penawaran untuk pemesanan. Ini dialihkan untuk `New-AzReservation` membeli.
+Dapatkan penawaran harga untuk reservasi. Ini diteruskan ke `New-AzReservation` untuk membeli.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationquote) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzReservationQuote -ReservedResourceType <String> -Sku <String> [-Location <
 ```
 
 ## DESCRIPTION
-Hitung harga untuk membuat pesanan reservasi.
+Hitung harga untuk menempatkan pesanan reservasi.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Setelah mendapatkan katalog, pelanggan bisa mendapatkan produk yang berbeda berd
 ## PARAMETERS
 
 ### -AppliedScope
-Langganan yang akan diterapkan manfaat tersebut. Diperlukan jika --applied-scope-type adalah Single. Jangan tentukan apakah --applied-scope-type adalah Shared.
+Langganan yang akan diterapkan manfaatnya. Diperlukan jika --applied-scope-type adalah Tunggal. Jangan tentukan apakah --applied-scope-type dibagikan.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppliedScopeType
-Tipe Lingkup Yang Diterapkan untuk memperbarui reservasi dengan "Tunggal" atau "Dibagikan"
+Jenis Cakupan yang Diterapkan untuk memperbarui reservasi dengan "Tunggal" atau "Dibagikan"
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingPlan
-Opsi paket tagihan tersedia untuk SKU ini. "Bulanan" atau "Dimuka"
+Opsi paket penagihan tersedia untuk SKU ini. "Bulanan" atau "Di Muka"
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingScopeId
-Langganan yang akan dikenakan biaya untuk pembelian Reservasi.
+Langganan yang akan dikenakan untuk membeli Reservasi.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama yang mudah dikenali oleh pengguna untuk mengidentifikasi reservasi dengan mudah.
+Nama yang mudah diingat bagi pengguna untuk mengidentifikasi reservasi dengan mudah.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceFlexibility
-Jenis Fleksibilitas Instans untuk memperbarui reservasi dengan.
+Jenis Fleksibilitas Instans untuk memperbarui reservasi.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kuantitas
-Jumlah produk untuk menghitung harga atau pembelian.
+Kuantitas produk untuk menghitung harga atau pembelian.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Perpanjang
-Atur ke true akan secara otomatis membeli reservasi baru pada tanggal kedaluwarsa.
+### -Perbarui
+Atur ini ke true akan secara otomatis membeli reservasi baru pada waktu tanggal kedaluwarsa.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservedResourceType
-Tipe sumber daya yang harus disediakan skus.
+Jenis sumber daya tempat sku harus disediakan.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama Sku, dapatkan daftar sku menggunakan katalog reservasi az perintah
+Nama Sku, dapatkan daftar sku dengan menggunakan perintah az reservations catalog show
 
 ```yaml
 Type: System.String
@@ -221,8 +224,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Term
-Syarat reservasi yang tersedia untuk sumber daya ini.
+### -Istilah
+Ketentuan reservasi yang tersedia untuk sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -237,11 +240,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

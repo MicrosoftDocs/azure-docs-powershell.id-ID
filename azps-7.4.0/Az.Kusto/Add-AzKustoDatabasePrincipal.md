@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/add-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoDatabasePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoDatabasePrincipal.md
-ms.openlocfilehash: 4cba92ea4279c9915f6eaf08c0069731c7e4a699
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d004ded36fed3ab48067b3f94cda4c0b03b4df90
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284804"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655184"
 ---
 # Add-AzKustoDatabasePrincipal
 
 ## SYNOPSIS
-Tambahkan izin prinsipal database.
+Tambahkan izin Prinsipal database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/add-azkustodatabaseprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Add-AzKustoDatabasePrincipal -InputObject <IKustoIdentity> [-Value <IDatabasePri
 ```
 
 ## DESCRIPTION
-Tambahkan izin prinsipal database.
+Tambahkan izin Prinsipal database.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan izin prinsipal database
+### Contoh 1: Menambahkan izin Prinsipal database
 ```powershell
 Add-AzKustoDatabasePrincipal -ResourceGroupName testrg -ClusterName testnewkustocluster -DatabaseName mykustodatabase -Value (@{Name="Some User"; Role="Admin"; Type="User"; Email="someuser@microsoft.com"})
 ```
@@ -49,12 +52,12 @@ AppId Email                   Fqn                                               
       otheruser@microsoft.com aaduser=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Other User  Admin Microsoft  User
 ```
 
-Perintah di atas menambahkan izin prinsipal database
+Perintah di atas menambahkan izin Prinsipal database
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam klaster Kusto.
+Nama database di kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -144,9 +147,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Daftar Kusto prinsipal database.
-Untuk membangun, lihat bagian CATATAN untuk properti VALUE dan membuat tabel hash.
+### -Nilai
+Daftar prinsipal database Kusto.
+Untuk membuat, lihat bagian CATATAN untuk properti VALUE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IDatabasePrincipal[]
@@ -160,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -212,25 +215,25 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama klaster Kusto.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
+  - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
+  - `[DatabaseName <String>]`: Nama database di kluster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid of the operation ID
+  - `[Location <String>]`: Nama lokasi (wilayah) Azure.
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 VALUE <IDatabasePrincipal[]>: Daftar prinsipal database Kusto.
   - `Name <String>`: Nama prinsipal database.
-  - `Role <DatabasePrincipalRole>`: Peran pokok database.
-  - `Type <DatabasePrincipalType>`: Tipe prinsipal database.
-  - `[AppId <String>]`: Id aplikasi - relevan hanya untuk jenis prinsipal aplikasi.
-  - `[Email <String>]`: Email prinsipal database jika ada.
-  - `[Fqn <String>]`: Database principal fully qualified name.
+  - `Role <DatabasePrincipalRole>`: Peran utama database.
+  - `Type <DatabasePrincipalType>`: Jenis prinsipal database.
+  - `[AppId <String>]`: Id aplikasi - hanya relevan untuk jenis perwakilan aplikasi.
+  - `[Email <String>]`: Email utama database jika ada.
+  - `[Fqn <String>]`: Nama prinsipal database yang sepenuhnya memenuhi syarat.
 
 ## RELATED LINKS
 

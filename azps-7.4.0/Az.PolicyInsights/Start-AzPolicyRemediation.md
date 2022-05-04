@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyRemediation.md
-ms.openlocfilehash: 90aab0c93166f97774e12125e979571e825deb32
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 900b7d3f9ea62058e5b542d80393b149a87c0ace
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278847"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701384"
 ---
 # Start-AzPolicyRemediation
 
 ## SYNOPSIS
-Membuat dan memulai perbaikan kebijakan untuk penetapan kebijakan.
+Membuat dan memulai remediasi kebijakan untuk penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/start-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,36 +40,36 @@ Start-AzPolicyRemediation -ResourceId <String> -PolicyAssignmentId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzPolicyRemediation** membuat perbaikan kebijakan untuk penetapan kebijakan tertentu. Semua sumber daya yang tidak sesuai pada atau di bawah lingkup perbaikan akan dipulihkan. Remediation hanya didukung untuk kebijakan dengan efek 'deployIfNotExists'.
+Cmdlet **Start-AzPolicyRemediation** membuat remediasi kebijakan untuk penetapan kebijakan tertentu. Semua sumber daya yang tidak sesuai pada atau di bawah cakupan remediasi akan diperbaiki. Remediasi hanya didukung untuk kebijakan dengan efek 'deployIfNotExists'.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai perbaikan pada lingkup langganan
+### Contoh 1: Memulai remediasi pada cakupan langganan
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription "My Subscription"
 Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remediation1"
 ```
 
-Perintah ini membuat perbaikan kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan tertentu.
+Perintah ini membuat remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan.
 
-### Contoh 2: Memulai perbaikan di lingkup grup manajemen dengan filter opsional
+### Contoh 2: Memulai remediasi di cakupan grup manajemen dengan filter opsional
 ```powershell
 $policyAssignmentId = "/providers/Microsoft.Management/managementGroups/mg1/providers/Microsoft.Authorization/policyAssignments/pa1"
 Start-AzPolicyRemediation -ManagementGroupName "mg1" -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -LocationFilter "westus","eastus"
 ```
 
-Perintah ini membuat perbaikan kebijakan baru dalam grup manajemen 'mg1' untuk penetapan kebijakan tertentu. Hanya sumber daya di lokasi 'westus' atau 'eastus' yang akan dipulihkan.
+Perintah ini membuat remediasi kebijakan baru di grup manajemen 'mg1' untuk penetapan kebijakan yang diberikan. Hanya sumber daya di lokasi 'westus' atau 'eastus' yang akan diperbaiki.
 
-### Contoh 3: Memulai perbaikan di lingkup grup sumber daya untuk penetapan definisi kumpulan kebijakan
+### Contoh 3: Memulai remediasi di cakupan grup sumber daya untuk penetapan definisi kumpulan kebijakan
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/resourceGroups/myRG/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Start-AzPolicyRemediation -ResourceGroupName "myRG" -PolicyAssignmentId $policyAssignmentId -PolicyDefinitionReferenceId "0349234412441" -Name "remediation1"
 ```
 
-Perintah ini membuat perbaikan kebijakan baru dalam grup sumber daya 'myRG' untuk penetapan kebijakan tertentu. Penetapan kebijakan menetapkan definisi kumpulan kebijakan (juga dikenal sebagai inisiatif). ID referensi definisi kebijakan menunjukkan kebijakan mana dalam inisiatif yang harus dipulihkan.
+Perintah ini membuat remediasi kebijakan baru di grup sumber daya 'myRG' untuk penetapan kebijakan yang diberikan. Penetapan kebijakan menetapkan definisi yang ditetapkan kebijakan (juga dikenal sebagai inisiatif). ID referensi definisi kebijakan menunjukkan kebijakan mana dalam inisiatif yang harus diperbaiki.
 
-### Contoh 4: Mulai perbaikan dan tunggu hingga selesai di latar belakang
+### Contoh 4: Mulai remediasi dan tunggu hingga selesai di latar belakang
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription f0710c27-9663-4c05-19f8-1b4be01e86a5
@@ -75,32 +78,32 @@ $job | Wait-Job
 $remediation = $job | Receive-Job
 ```
 
-Perintah ini memulai perbaikan kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan tertentu. Proses ini akan menunggu perbaikan selesai sebelum mengembalikan status perbaikan akhir.
+Perintah ini memulai remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan. Ini akan menunggu remediasi selesai sebelum mengembalikan status remediasi akhir.
 
-### Contoh 5: Memulai perbaikan yang akan menemukan sumber daya yang tidak sesuai sebelum melakukan perbaikan
+### Contoh 5: Memulai remediasi yang akan menemukan sumber daya yang tidak sesuai sebelum memulihkan
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription "My Subscription"
 Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -ResourceDiscoveryMode ReEvaluateCompliance
 ```
 
-Perintah ini membuat perbaikan kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan tertentu. Status kepatuhan sumber daya dalam langganan akan dievaluasi ulang terhadap penetapan kebijakan dan sumber daya yang tidak sesuai akan dipulihkan.
+Perintah ini membuat remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan. Status kepatuhan sumber daya dalam langganan akan dievaluasi kembali terhadap penetapan kebijakan dan sumber daya yang tidak patuh akan diperbaiki.
 
-### Contoh 6: Memulai perbaikan yang akan memulihkan hingga 10.000 sumber daya yang tidak sesuai
+### Contoh 6: Memulai remediasi yang akan memulihkan hingga 10.000 sumber daya yang tidak patuh
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription "My Subscription"
 Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -ResourceCount 10000
 ```
 
-### Contoh 7: Memulai perbaikan yang akan memulihkan 30 sumber daya secara paralel
+### Contoh 7: Memulai remediasi yang akan memulihkan 30 sumber daya secara paralel
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription "My Subscription"
 Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -ParallelDeployments 30
 ```
 
-### Contoh 8: Memulai perbaikan yang akan berakhir jika lebih dari setengah penyebaran perbaikan gagal
+### Contoh 8: Mulai remediasi yang akan berakhir jika lebih dari setengah penyebaran remediasi gagal
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Select-AzSubscription -Subscription "My Subscription"
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailureThreshold
-Angka antara 0,0 hingga 1,0 yang menyatakan ambang batas kegagalan persentase. Perbaikan akan gagal jika persentase operasi perbaikan yang gagal (misalnya penyebaran yang gagal) melebihi ambang batas ini.
+Angka antara 0,0 hingga 1,0 yang menunjukkan ambang kegagalan persentase. Remediasi akan gagal jika persentase operasi remediasi yang gagal (yaitu penyebaran yang gagal) melebihi ambang batas ini.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -155,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -LocationFilter
-Lokasi sumber daya yang harus disertakan dalam perbaikan.
-Sumber daya yang tidak berada di lokasi ini tidak akan dipulihkan.
+Lokasi sumber daya yang harus disertakan dalam remediasi.
+Sumber daya yang tidak berada di lokasi ini tidak akan diperbaiki.
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParallelDeploymentCount
-Berapa banyak sumber daya untuk dipulihkan pada waktu tertentu. Dapat digunakan untuk mengontrol kecepatan perbaikan. Jika tidak disediakan, nilai penyebaran paralel default digunakan.
+Berapa banyak sumber daya yang akan diperbaiki pada waktu tertentu. Dapat digunakan untuk mengontrol laju remediasi. Jika tidak disediakan, nilai penyebaran paralel default digunakan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 
 ### -PolicyAssignmentId
 ID penetapan kebijakan.
-Misalnya.
+Mis.
 '/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyAssignments/{assignmentName}'.
 
 ```yaml
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionReferenceId
-Mendapatkan ID referensi definisi kebijakan dari definisi individual yang sedang dipulihkan.
-Diperlukan saat penetapan kebijakan menetapkan definisi kumpulan kebijakan.
+Mendapatkan ID referensi definisi kebijakan dari definisi individu yang sedang diperbaiki.
+Diperlukan saat penetapan kebijakan menetapkan definisi yang ditetapkan kebijakan.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceCount
-Jumlah maksimum sumber daya yang tidak sesuai yang akan dipulihkan. Jika tidak disediakan, jumlah sumber daya default digunakan.
+Jumlah maksimum sumber daya yang tidak sesuai yang akan diperbaiki. Jika tidak disediakan, jumlah sumber daya default digunakan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -264,8 +267,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceDiscoveryMode
-Menjelaskan bagaimana tugas perbaikan akan menemukan sumber daya yang perlu dipulihkan.
-ReEvaluateCompliance tidak didukung ketika memulihkan lingkup grup manajemen.
+Menjelaskan bagaimana tugas remediasi akan menemukan sumber daya yang perlu diperbaiki.
+ReEvaluateCompliance tidak didukung saat memulihkan cakupan grup manajemen.
 
 ```yaml
 Type: System.String
@@ -310,9 +313,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup sumber daya.
-Misalnya.
+### -Cakupan
+Cakupan sumber daya.
+Mis.
 '/subscriptions/{subscriptionId}/resourceGroups/{rgName}'.
 
 ```yaml
@@ -327,8 +330,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

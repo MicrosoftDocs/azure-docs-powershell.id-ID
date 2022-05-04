@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 4def16ca71e48d08c8ad51279f126c9e8e782821
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99eb875443ea1e0aaece7c8f2e77b7f6de85186b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940825"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701636"
 ---
 # Set-AzIntegrationAccountPartner
 
 ## SYNOPSIS
-Mengubah mitra akun integrasi.
+Memodifikasi mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,17 +30,17 @@ Set-AzIntegrationAccountPartner -ResourceGroupName <String> -Name <String> -Part
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzIntegrationAccountPartner** mengubah mitra akun integrasi.
+Cmdlet **Set-AzIntegrationAccountPartner** memodifikasi mitra akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili mitra akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama mitra.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi mitra akun integrasi
+### Contoh 1: Mengubah mitra akun integrasi
 ```powershell
 $BusinessIdentities = @("ZZ","AA"),@("XX","GG")
 Set-AzIntegrationAccountPartner -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -PartnerName "IntegrationAccountPartner22" -PartnerType "B2B" -BusinessIdentities $BusinessIdentities
@@ -58,7 +61,7 @@ Perintah ini mengubah mitra akun integrasi bernama IntegrationAccountPartner22 d
 
 ### Contoh 2
 
-Mengubah mitra akun integrasi. (autogenerasi)
+Memodifikasi mitra akun integrasi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzIntegrationAccountPartner -BusinessIdentities <Object> -Metadata <Object> -Name 'IntegrationAccount31' -PartnerName 'IntegrationAccountPartner22' -PartnerType B2B -ResourceGroupName 'ResourceGroup11'
@@ -66,8 +69,8 @@ Set-AzIntegrationAccountPartner -BusinessIdentities <Object> -Metadata <Object> 
 
 ## PARAMETERS
 
-### -BisnisIdentitas
-Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah array bertumpuk, dengan array dalam yang berisi Pengualifikasi sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
+### -BisnisIdentities
+Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah array berlapis, dengan array dalam yang berisi Kualifikasi sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
 
 ```yaml
 Type: System.Object
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerType
-Menentukan tipe akun integrasi.
-Parameter ini mendukung tipe B2B.
+Menentukan jenis akun integrasi.
+Parameter ini mendukung jenis B2B.
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
