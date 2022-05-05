@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountMap.md
-ms.openlocfilehash: aaaf786db91de4e9a42e8b4f5e29b62b3302aa3a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c71e5c202b8ce5d648ee5163e11a6a9466645d49
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999577"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735526"
 ---
 # Get-AzIntegrationAccountMap
 
 ## SYNOPSIS
 Mendapatkan peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Get-AzIntegrationAccountMap [-ResourceGroupName <String>] [-Name <String>] [-Map
 Cmdlet **Get-AzIntegrationAccountMap** mendapatkan peta akun integrasi dari grup sumber daya.
 Menentukan nama akun integrasi, nama grup sumber daya, dan nama peta.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan peta akun integrasi
+### Contoh 1: Mendapatkan peta akun integrasi
 ```powershell
 Get-AzIntegrationAccountMap -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -MapName "IntegrationAccountMap47"
 ```
@@ -54,9 +57,9 @@ ContentSize          : 3056
 Metadata             :
 ```
 
-Perintah ini mendapatkan peta akun integrasi bernama IntegrationAccountMap47 dalam grup sumber daya tertentu.
+Perintah ini mendapatkan peta akun integrasi bernama IntegrationAccountMap47 dalam grup sumber daya yang ditentukan.
 
-### Contoh 2: Dapatkan peta akun integrasi menurut nama akun integrasi
+### Contoh 2: Mendapatkan peta akun integrasi berdasarkan nama akun integrasi
 ```powershell
 Get-AzIntegrationAccountMap -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31"
 ```
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -MapType
-Tipe peta akun integrasi.
+Jenis peta akun integrasi.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk akun integrasi.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

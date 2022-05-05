@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIAttestation.md
-ms.openlocfilehash: 9f8bad84711e6841619e799681af8765224b0b9b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9314db862aae95a4815d319b007311eccf819106
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306027"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724878"
 ---
 # Enable-AzStackHCIAttestation
 
 ## SYNOPSIS
-Enable-AzStackHCIAttestation mengonfigurasi host dan memungkinkan tamu tertentu untuk mengesankan IMDS.
+Enable-AzStackHCIAttestation mengonfigurasi host dan mengaktifkan tamu tertentu untuk pengesahan IMDS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/enable-azstackhciattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Enable-AzStackHCIAttestation [[-ComputerName] <String>] [-Credential <PSCredenti
 ```
 
 ## DESCRIPTION
-Enable-AzStackHCIAttestation mengonfigurasi host dan memungkinkan tamu tertentu untuk mengesankan IMDS.
+Enable-AzStackHCIAttestation mengonfigurasi host dan mengaktifkan tamu tertentu untuk pengesahan IMDS.
 
 ## EXAMPLES
 
@@ -34,19 +37,19 @@ Enable-AzStackHCIAttestation mengonfigurasi host dan memungkinkan tamu tertentu 
 Enable-AzStackHCIAttestation -AddVM
 ```
 
-Memanggil salah satu simpul kluster.
+Memanggil pada salah satu node kluster.
 
 ### CONTOH 2
 ```powershell
 Enable-AzStackHCIAttestation -ComputerName "host1" -AddVM
 ```
 
-Invoking from WAC/Management node and adding all existing VMs cluster-wide
+Memanggil dari node WAC/Management dan menambahkan semua VM yang ada di seluruh kluster
 
 ## PARAMETERS
 
 ### -AddVM
-Setelah mengaktifkan setiap simpul kluster untuk Pengesahan, tambahkan semua tamu di setiap simpul.
+Setelah mengaktifkan setiap node kluster untuk Pengesahan, tambahkan semua tamu di setiap simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,9 +79,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan kredensial untuk ComputerName.
-Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini yang menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Tidak ada konfirmasi.
 
 ```yaml
@@ -107,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -148,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Kluster: Nama kluster
 ### Node: Nama host.
-### Atestation: Status Attesasi IMDS.
+### Pengesahan: Status Pengesahan IMDS.
 ## NOTES
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheFirewallRule.md
-ms.openlocfilehash: fcf5f0fae7560e8f502b6eae4fc49ad597e783d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ddbd9f1e62cf0318d2364ab7692cae7936f48823
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310185"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725310"
 ---
 # Get-AzRedisCacheFirewallRule
 
 ## SYNOPSIS
 Dapatkan aturan firewall yang ditetapkan di Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/get-azrediscachefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 

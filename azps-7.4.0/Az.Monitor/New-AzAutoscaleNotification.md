@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleNotification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleNotification.md
-ms.openlocfilehash: b4841c39f1d168c264a516870d0e976865c8569c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be7c653304f80929f5deaefdeeda09f4cba48ea4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745506"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741772"
 ---
 # New-AzAutoscaleNotification
 
 ## SYNOPSIS
 Membuat pemberitahuan email Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalenotification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzAutoscaleNotification [[-Webhook] <WebhookNotification[]>] [[-CustomEmail]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutoscaleNotification** membuat pemberitahuan email untuk Skala Otomatis.
+Cmdlet **New-AzAutoscaleNotification** membuat pemberitahuan email untuk Autoscale.
 
 ## EXAMPLES
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webhook
-Menentukan daftar webhook Skala Otomatis yang dipisahkan koma.
+Menentukan daftar webhook Autoscale yang dipisahkan koma.
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

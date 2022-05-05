@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-AzLo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
-ms.openlocfilehash: a8b318177014fe772849be65f688644ceb0d181c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c432c50250877ec50f264f869f8e222dbdaa9f8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938773"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734374"
 ---
 # New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig
 
 ## SYNOPSIS
-Membuat antarmuka terowongan dalam kumpulan alamat backend penyeimbang beban.
+Membuat antarmuka terowongan di kumpulan alamat backend load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspooltunnelinterfaceconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,10 +28,10 @@ New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig [-Type <String>] [-Pro
 ```
 
 ## DESCRIPTION
-Membuat antarmuka terowongan dalam kumpulan alamat backend penyeimbang beban. Ini digunakan untuk Load Balancer Gateway
+Membuat antarmuka terowongan di kumpulan alamat backend load balancer. Ini digunakan untuk gateway Load Balancer
 ## EXAMPLES
 
-### Contoh 1: Menambahkan antarmuka tunnel ke konfigurasi kumpulan alamat backend ke load balancer
+### Contoh 1: Menambahkan antarmuka terowongan ke konfigurasi kumpulan alamat backend ke load balancer
 ```powershell
 ## Get loadbalancer
 $lb = Get-AzLoadBalancer -ResourceGroupName $resourceGroup -Name $loadBalancerName
@@ -40,7 +43,7 @@ $tunnelInterface2 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -P
 ## Set backend address pool
 $pool = Set-AzLoadBalancerBackendAddressPool -Name "BackendAddressPool02" -TunnelInterface $tunnelInterface1, $tunnelInterface2
 ```
-Jika properti tidak disediakan, properti akan diganti dengan nilai default.
+Jika properti tidak disediakan maka properti akan diganti dengan nilai default.
 
 ## PARAMETERS
 
@@ -59,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe antarmuka terowongan.
+### -Type
+Menentukan jenis antarmuka terowongan.
 
 ```yaml
 Type: System.String

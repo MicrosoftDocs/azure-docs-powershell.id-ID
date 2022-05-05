@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
-ms.openlocfilehash: 1720e47e2581fafde0e5441a776d1d68ebe0c0be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 060be6157483211d9f310399d33b179d899eb1e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940977"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144742060"
 ---
 # New-AzFrontDoorRulesEngineMatchConditionObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesenginematchconditionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ NegateCondition          : False
 Transform                : {Lowercase, Uppercase}
 ```
 
-Cocokkan objek PSRulesEngineMatchCondition baru.
+Agungkan objek PSRulesEngineMatchCondition baru.
 
 ## PARAMETERS
 
@@ -64,9 +67,9 @@ Accept wildcard characters: False
 ```
 
 ### -MatchValue
-Mencocokkan nilai untuk dicocokkan dengan.
+Cocokkan nilai untuk dicocokkan.
 Operator akan berlaku untuk setiap nilai di sini dengan semantik OR.
-Jika salah satunya cocok dengan variabel dengan operator tertentu, kondisi kecocokan ini dianggap cocok.
+Jika salah satu dari mereka cocok dengan variabel dengan operator yang diberikan, kondisi kecocokan ini dianggap cocok.
 
 ```yaml
 Type: System.String[]
@@ -129,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Selector
-Nama pemilih di RequestHeader atau RequestBody agar cocok
+### -Pemilih
+Nama pemilih di RequestHeader atau RequestBody yang akan dicocokkan
 
 ```yaml
 Type: System.String
@@ -161,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: b130b61a6de0531de0d3e6b2c24de684830ca035
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e7af18194e6d2ad15a5f2010ff75d21d35466f83
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932527"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740278"
 ---
 # New-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Membuat kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Membuat kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-Perm
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageTableStoredAccessPolicy** membuat kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Cmdlet **New-AzStorageTableStoredAccessPolicy** membuat kebijakan akses tersimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kebijakan akses yang disimpan dalam tabel
+### Contoh 1: Membuat kebijakan akses tersimpan dalam tabel
 ```
 PS C:\>New-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy02"
 ```
@@ -40,7 +43,7 @@ Perintah ini membuat kebijakan akses bernama Policy02 dalam tabel penyimpanan be
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -87,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses tabel penyimpanan.
-Penting untuk diperhatikan bahwa ini adalah string, seperti `raud` (untuk Baca, Tambahkan, Perbarui, dan Hapus).
+Menentukan izin dalam kebijakan akses tersimpan untuk mengakses tabel penyimpanan.
+Penting untuk dicatat bahwa ini adalah string, seperti `raud` (untuk Baca, Tambahkan, Perbarui, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan nama untuk kebijakan akses yang disimpan.
+Menentukan nama untuk kebijakan akses tersimpan.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Table
+### -Tabel
 Menentukan nama tabel penyimpanan Azure.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

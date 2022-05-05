@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: fa414d35f2c9dc6c59f60cae53d6e4ded42cac46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cabef2ee79f8145aa0df87ce943f4d92f355dd3f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735112"
 ---
 # New-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Membuat perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,10 +34,10 @@ New-AzIntegrationAccountAgreement -ResourceGroupName <String> -Name <String> -Ag
 ## DESCRIPTION
 Cmdlet **New-AzIntegrationAccountAgreement** membuat perjanjian akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili perjanjian akun integrasi.
-Tentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, tipe, nama mitra, pengualifikasi mitra, dan konten perjanjian.
+Tentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, jenis, nama mitra, kualifikasi mitra, dan konten perjanjian.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -64,11 +67,11 @@ Content                : {"AS2":null,"X12":{"ReceiveAgreement":{"SenderBusinessI
                          . . .
 ```
 
-Perintah ini membuat perjanjian akun integrasi dalam grup sumber daya Azure yang ditentukan.
+Perintah ini membuat perjanjian akun integrasi di grup sumber daya Azure yang ditentukan.
 
 ### Contoh 2
 
-Membuat perjanjian akun integrasi. (autogenerasi)
+Membuat perjanjian akun integrasi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzIntegrationAccountAgreement -AgreementContent <String> -AgreementName 'IntegrationAccountAgreement06' -AgreementType X12 -GuestIdentityQualifier 'BB' -GuestIdentityQualifierValue <String> -GuestPartner 'GuestPartner' -HostIdentityQualifier 'AA' -HostIdentityQualifierValue <String> -HostPartner 'HostPartner' -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -124,9 +127,9 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Menentukan tipe perjanjian akun integrasi. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan jenis perjanjian akun integrasi. Nilai yang dapat diterima untuk parameter ini adalah:
 - X12 
-- AS2
+- Applicability Statement 2
 - Edifact
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifier
-Menentukan nama pengualifikasi identitas bisnis untuk mitra tamu.
+Menentukan kualifikasi identitas bisnis nama untuk mitra tamu.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifierValue
-Nilai kualifikasi identitas tamu persetujuan akun integrasi.
+Nilai kualifikasi identitas tamu perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostIdentityQualifier
-Menentukan pengualifikasi identitas bisnis nama untuk mitra host.
+Menentukan kualifikasi identitas bisnis nama untuk mitra host.
 
 ```yaml
 Type: System.String
@@ -262,7 +265,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -292,8 +295,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

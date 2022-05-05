@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessment.md
-ms.openlocfilehash: f4a17b352a92d1b4511aca3e4b7ac4bbd9d878a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c971d42f3471f69ef5b2ef1c7541192884c80fc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672912"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694730"
 ---
 # Get-AzSecurityAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian keamanan dan hasilnya pada langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzSecurityAssessment -ResourceId <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mendapatkan penilaian keamanan dan hasilnya pada langganan. Penilaian keamanan akan memberi tahu Anda praktik terbaik mana yang diterima oleh Azure Security Center yang akan dimitigasi pada langganan Azure Anda.
+Mendapatkan penilaian keamanan dan hasilnya pada langganan. Penilaian keamanan akan memberi tahu Anda praktik terbaik mana yang direkomendasikan oleh Azure Security Center untuk dimitigasi pada langganan Azure Anda.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Mendapatkan semua penilaian keamanan dalam langganan
 ## PARAMETERS
 
 ### -AssessedResourceId
-ID sumber daya lengkap sumber daya yang dihitung penilaiannya.
+ID sumber daya lengkap dari sumber daya tempat penilaian dihitung.
 
 ```yaml
 Type: String
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

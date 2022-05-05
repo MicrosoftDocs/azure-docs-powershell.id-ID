@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
-ms.openlocfilehash: f03e8950b7b83c045cf47f2d71c68fa25b172767
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a76dfbf8724a218cf791dfe5cb0264b2067216e4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284157"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734734"
 ---
 # Update-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Perbarui identitas dalam grup sumber daya dan langganan tertentu.
+Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/update-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzUserAssignedIdentity -InputObject <IManagedServiceIdentity> [-Location 
 ```
 
 ## DESCRIPTION
-Perbarui identitas dalam grup sumber daya dan langganan tertentu.
+Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ eastus   uai-pwsh01 azure-rg-test
 
 Perintah ini memperbarui identitas yang ditetapkan pengguna.
 
-### Contoh 2: Memperbarui identitas yang ditetapkan pengguna menurut saluran
+### Contoh 2: Memperbarui identitas yang ditetapkan pengguna berdasarkan alur
 ```powershell
 PS C:\> Get-AzUserAssignedIdentity -ResourceGroupName azure-rg-test -Name uai-pwsh01 | Update-AzUserAssignedIdentity -Tag @{'key01'='value01'; 'key02'='value02'}
 
@@ -57,7 +60,7 @@ Location Name       ResourceGroupName
 eastus   uai-pwsh01 azure-rg-test
 ```
 
-Perintah ini memperbarui identitas yang ditetapkan pengguna menurut saluran.
+Perintah ini memperbarui identitas yang ditetapkan pengguna berdasarkan alur.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya identitas.
 
 ```yaml
@@ -166,8 +169,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -221,7 +224,7 @@ INPUTOBJECT <IManagedServiceIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat identitas berada.
   - `[ResourceName <String>]`: Nama sumber daya identitas.
-  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
+  - `[Scope <String>]`: Cakupan penyedia sumber daya sumber daya. Sumber daya induk diperluas oleh Identitas Terkelola.
   - `[SubscriptionId <String>]`: Id Langganan tempat identitas berada.
 
 ## RELATED LINKS

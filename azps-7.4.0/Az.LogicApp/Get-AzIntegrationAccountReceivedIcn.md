@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
-ms.openlocfilehash: fdfd5115f8e001375d9ce89d879d13fd0a83cafe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 39863a841f7880a2a069cb2ed33c72261dfee6de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226269"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735472"
 ---
 # Get-AzIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
-Cmdlet ini mengambil nomor kontrol per pertukaran yang diterima tertentu per perjanjian dan nilai angka kontrol.
+Cmdlet ini mengambil nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountreceivedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzIntegrationAccountReceivedIcn -ResourceGroupName <String> -Name <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk memvalidasi kehadiran nomor kontrol pertukaran yang diterima dan secara opsional untuk menghapus entitas tersebut dengan Remove-AzIntegrationAccountReceivedIcn.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
+Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk memvalidasi keberadaan nomor kontrol pertukaran yang diterima dan secara opsional untuk menghapus entitas tersebut dengan Remove-AzIntegrationAccountReceivedIcn.
+Harap berikan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed: False
 ```
 
-Perintah ini mendapatkan akun integrasi X12 yang diterima pertukaran nomor kontrol menurut nama perjanjian dan nilai nomor kontrol.
+Perintah ini mendapatkan akun integrasi X12 yang menerima nomor kontrol pertukaran berdasarkan nama perjanjian dan nilai nomor kontrol.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed: False
 ```
 
-Perintah ini mendapatkan akun integrasi Edifact menerima nomor kontrol pertukaran menurut nama perjanjian dan nilai nomor kontrol.
+Perintah ini mendapatkan akun integrasi Edifact yang menerima nomor kontrol pertukaran berdasarkan nama perjanjian dan nilai nomor kontrol.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Tipe perjanjian akun integrasi.
+Jenis perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun integrasi.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

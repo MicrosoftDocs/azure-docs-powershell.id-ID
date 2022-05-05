@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
-ms.openlocfilehash: 0bbeb78508c76097587825cefa45bde51fb4b990
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 26b2a7b7b29da131b8d29a09e277f6118e2ab13b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273969"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710482"
 ---
 # Remove-AzServiceBusQueue
 
 ## SYNOPSIS
-Menghapus antrean dari ruang nama Bus Layanan yang ditentukan.
+Menghapus antrean dari namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusqueue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzServiceBusQueue [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusQueue** menghapus antrean dari ruang nama Bus Layanan yang ditentukan.
+Cmdlet **Remove-AzServiceBusQueue** menghapus antrean dari namespace Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzServiceBusQueue** menghapus antrean dari ruang nama Bus Layana
 Remove-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_exampl1
 ```
 
-Menghapus antrean `SB-Queue_exampl1` Bus Layanan dari ruang `SB-Example1`nama .
+Menghapus antrean `SB-Queue_exampl1` Bus Layanan dari namespace `SB-Example1`.
 
 ### Contoh 2: InputObject - Menggunakan variabel:
 ```powershell
@@ -57,12 +60,12 @@ Remove-AzServiceBusQueue -InputObject $inputobject
 
 Menghapus antrean Bus Layanan yang disediakan dalam $inputobject untuk parameter -InputObject
 
-### Contoh 3: InputObject - Using Piping:
+### Contoh 3: InputObject - Menggunakan Piping:
 ```powershell
 Get-AzServiceBusQueue <params> | Remove-AzServiceBusQueue
 ```
 
-### Contoh 4: ResourceId - Using variable:
+### Contoh 4: ResourceId - Menggunakan variabel:
 ```powershell
 $resourceid = Get-AzServiceBusQueue <params>
 Remove-AzServiceBusQueue -ResourceId $resourceid.Id
@@ -70,7 +73,7 @@ Remove-AzServiceBusQueue -ResourceId $resourceid.Id
 
 Menghapus antrean Bus Layanan yang disediakan dalam id ARM dalam $resourceid/string untuk parameter -ResourceId
 
-### Contoh 5: ResourceId - passing as string:
+### Contoh 5: ResourceId - meneruskan sebagai string:
 ```powershell
 Remove-AzServiceBusQueue -ResourceId "/subscriptions/xxxx-xxxxx-xxxxx-xxxxxx-xxxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.ServiceBus/namespaces/NamespaceName/queues/QueueName"
 ```
@@ -78,7 +81,7 @@ Remove-AzServiceBusQueue -ResourceId "/subscriptions/xxxx-xxxxx-xxxxx-xxxxxx-xxx
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Antrean
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -197,8 +200,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: fd31b5a2a9d852c0e4f3087a799bd8250d0b5f7b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d5b698f2b019b25bd2f010ee8a30298b97845780
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709030"
 ---
 # Get-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Mendapatkan aturan perutean permintaan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzApplicationGatewayRequestRoutingRule** mendapatkan aturan perutea
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan perutean permintaan tertentu
+### Contoh 1: Mendapatkan aturan perutean permintaan tertentu
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Rule = Get-AzApplicationGatewayRequestRoutingRule -Name "Rule01" -ApplicationGateway $AppGW
@@ -39,7 +42,7 @@ $Rule = Get-AzApplicationGatewayRequestRoutingRule -Name "Rule01" -ApplicationGa
 Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
 Perintah kedua mendapatkan aturan perutean permintaan bernama Rule01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
-### Contoh 2: Dapatkan daftar aturan perutean permintaan
+### Contoh 2: Mendapatkan daftar aturan perutean permintaan
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Rules = Get-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGW
@@ -80,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama aturan perutean permintaan yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama aturan perutean permintaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

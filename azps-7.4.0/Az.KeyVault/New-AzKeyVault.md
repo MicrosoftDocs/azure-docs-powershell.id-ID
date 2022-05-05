@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
-ms.openlocfilehash: 1996a5de4a9f74563088d363d76f72a7bbc559f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ac18b1be7b5ee5c5f5b00059b46691d0cb6934ea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285237"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705306"
 ---
 # New-AzKeyVault
 
 ## SYNOPSIS
-Membuat kubah kunci.
+Menghapus brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,10 +32,10 @@ New-AzKeyVault [-Name] <String> [-ResourceGroupName] <String> [-Location] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzKeyVault** membuat kubah kunci dalam grup sumber daya yang ditentukan. Cmdlet ini juga memberikan izin kepada pengguna yang saat ini masuk untuk menambahkan, menghapus, atau mencantumkan kunci dan rahasia dalam kubah kunci.
-Catatan: Jika Anda melihat kesalahan **Langganan tidak terdaftar untuk menggunakan ruang nama 'Microsoft.KeyVault'** saat Anda mencoba membuat kubah kunci baru, **jalankan Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"** lalu jalankan kembali perintah **New-AzKeyVault** Anda. Untuk informasi selengkapnya, lihat Register-AzResourceProvider.
+Cmdlet **New-AzKeyVault** membuat brankas kunci dalam grup sumber daya yang ditentukan. Cmdlet ini juga memberikan izin kepada pengguna yang saat ini masuk untuk menambahkan, menghapus, atau mencantumkan kunci dan rahasia di brankas kunci.
+Catatan: Jika Anda melihat kesalahan **Langganan tidak terdaftar untuk menggunakan namespace 'Microsoft.KeyVault'** saat Anda mencoba membuat brankas kunci baru, **jalankan Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"** lalu jalankan kembali perintah **New-AzKeyVault** Anda. Untuk informasi selengkapnya, lihat Register-AzResourceProvider.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /directoryObjects/{id}
 - GET /users/{id}
@@ -42,7 +45,7 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kubah kunci Standar
+### Contoh 1: Membuat brankas kunci Standar
 ```powershell
 New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US'
 ```
@@ -78,9 +81,9 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini membuat kubah kunci bernama Contoso03Vault, di kawasan Azure AS Timur. Perintah menambahkan kubah kunci ke grup sumber daya bernama Group14. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah akan membuat kubah kunci Standar.
+Perintah ini membuat brankas kunci bernama Contoso03Vault, di wilayah Azure US Timur. Perintah menambahkan brankas kunci ke grup sumber daya bernama Group14. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat brankas kunci Standar.
 
-### Contoh 2: Membuat kubah kunci Premium
+### Contoh 2: Membuat brankas kunci Premium
 ```powershell
 New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US' -Sku 'Premium'
 ```
@@ -116,7 +119,7 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini membuat kubah kunci, sama seperti contoh sebelumnya. Namun, parameter ini menentukan nilai Premium untuk parameter *SKU* untuk membuat kubah kunci Premium.
+Perintah ini membuat brankas kunci, sama seperti contoh sebelumnya. Namun, ini menentukan nilai Premium untuk parameter *SKU* untuk membuat brankas kunci Premium.
 
 ### Contoh 3
 ```powershell
@@ -127,7 +130,7 @@ $ruleSet = New-AzKeyVaultNetworkRuleSetObject -DefaultAction Allow -Bypass Azure
 New-AzKeyVault -ResourceGroupName "myRg" -VaultName "myVault" -NetworkRuleSet $ruleSet
 ```
 
-Membuat kubah kunci dan menentukan aturan jaringan untuk mengizinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId. Lihat `New-AzKeyVaultNetworkRuleSetObject` untuk informasi selengkapnya.
+Membuat brankas kunci dan menentukan aturan jaringan untuk memungkinkan akses ke alamat IP yang ditentukan dari jaringan virtual yang diidentifikasi oleh $myNetworkResId. Lihat `New-AzKeyVaultNetworkRuleSetObject` untuk informasi lebih lanjut.
 
 ## PARAMETERS
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDeployment
-Memungkinkan penyedia sumber daya Microsoft.Compute untuk mengambil rahasia dari kubah kunci ini ketika kubah kunci ini dirujuk dalam pembuatan sumber daya, misalnya saat membuat mesin virtual.
+Memungkinkan penyedia sumber daya Microsoft.Compute untuk mengambil rahasia dari brankas kunci ini ketika brankas kunci ini direferensikan dalam pembuatan sumber daya, misalnya saat membuat komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDiskEncryption
-Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan menghapus kunci dari kubah kunci ini.
+Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan membuka kunci dari brankas kunci ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari kubah kunci ini ketika kubah kunci ini dirujuk dalam penyebaran templat.
+Memungkinkan Azure Resource Manager mendapatkan rahasia dari brankas kunci ini saat brankas kunci ini direferensikan dalam penyebaran templat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurgeProtection
-Jika ditentukan, perlindungan terhadap penghapusan segera diaktifkan untuk kubah ini; memerlukan penghapusan lunak untuk diaktifkan juga.
+Jika ditentukan, perlindungan terhadap penghapusan segera diaktifkan untuk vault ini; memerlukan penghapusan sementara untuk diaktifkan juga.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbacAuthorization
-Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data menurut Access Control Berbasis Peran (RBAC), lalu kebijakan akses yang ditentukan dalam properti kubah akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
+Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data berdasarkan Access Control Berbasis Peran (RBAC), dan kemudian kebijakan akses yang ditentukan dalam properti vault akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure untuk membuat kubah kunci. Gunakan perintah [Get-AzLocation](/powershell/module/az.resources/get-azlocation) untuk melihat pilihan Anda.
+Menentukan wilayah Azure untuk membuat brankas kunci. Gunakan perintah [Get-AzLocation](/powershell/module/az.resources/get-azlocation) untuk melihat pilihan Anda.
 
 ```yaml
 Type: System.String
@@ -236,8 +239,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kubah kunci untuk dibuat. Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun. Nama harus dimulai dan diakhiri dengan huruf atau digit. Nama harus unik secara universal.
+### -Name
+Menentukan nama brankas kunci yang akan dibuat. Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun. Nama harus dimulai dan diakhbungi dengan huruf atau digit. Nama harus unik secara universal.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-Menentukan kumpulan aturan jaringan kubah. Ini mengatur aksesibilitas kubah kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject`.
+Menentukan seperangkat aturan jaringan vault. Ini mengatur aksesibilitas brankas kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject`.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleSet
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang sudah ada untuk membuat kubah kunci.
+Menentukan nama grup sumber daya yang ada untuk membuat brankas kunci.
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU instans kubah kunci. Untuk informasi tentang fitur mana yang tersedia untuk setiap SKU, lihat situs web Azure Key Vault Harga (https://go.microsoft.com/fwlink/?linkid=512521).
+Menentukan SKU instans brankas kunci. Untuk informasi tentang fitur mana yang tersedia untuk setiap SKU, lihat situs web Harga Azure Key Vault (https://go.microsoft.com/fwlink/?linkid=512521).
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeleteRetentionInDays
-Menentukan berapa lama sumber daya yang dihapus dipertahankan, dan berapa lama hingga kubah atau objek dalam status yang dihapus dapat dibersihkan. Defaultnya adalah 90 hari.
+Menentukan berapa lama sumber daya yang dihapus dipertahankan, dan berapa lama hingga vault atau objek dalam status dihapus dapat dihapus menyeluruh. Defaultnya 90 hari.
 
 ```yaml
 Type: System.Int32
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -343,8 +346,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -397,4 +400,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzKeyVault](./Get-AzKeyVault.md)
 
-[Hapus-AzKeyVault](./Remove-AzKeyVault.md)
+[Remove-AzKeyVault](./Remove-AzKeyVault.md)

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
-ms.openlocfilehash: 89e325eef9c51ea0c0eed12830ee69cc6a629e92
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c9c80ef3961b63d4379583f6680bd877feba4008
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999523"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735274"
 ---
 # Get-AzLogicAppRunHistory
 
 ## SYNOPSIS
 
-Mendapatkan riwayat jalankan aplikasi logika.
+Mendapatkan riwayat eksekusi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapprunhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,17 +31,17 @@ Get-AzLogicAppRunHistory -ResourceGroupName <String> -Name <String> [-RunName <S
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzLogicAppRunHistory** mendapatkan riwayat berjalan dari aplikasi logika.
+Cmdlet **Get-AzLogicAppRunHistory** mendapatkan riwayat eksekusi aplikasi logika.
 Cmdlet ini mengembalikan kumpulan objek **WorkflowRun** .
 Tentukan aplikasi logika dan grup sumber daya.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan riwayat jalankan aplikasi logika
+### Contoh 1: Mendapatkan riwayat eksekusi aplikasi logika
 
 ```powershell
 Get-AzLogicAppRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03"
@@ -68,9 +71,9 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini mendapatkan riwayat jalankan aplikasi logika bernama LogicApp03.
+Perintah ini mendapatkan riwayat eksekusi aplikasi logika bernama LogicApp03.
 
-### Contoh 2: Menjalankan aplikasi logika
+### Contoh 2: Mendapatkan eksekusi aplikasi logika
 
 ```powershell
 Get-AzLogicAppRunHistory -ResourceGroupName "Resourcegroup11" -Name "LogicApp03" -RunName "08587489104702792076"
@@ -89,7 +92,7 @@ LogicAppName     : LogicApp03
 LogicAppVersion  : 08587489107859952120
 ```
 
-Perintah ini akan menjalankan aplikasi logika tertentu untuk aplikasi logika bernama LogicApp03.
+Perintah ini mendapatkan aplikasi logika tertentu yang dijalankan untuk aplikasi logika bernama LogicApp03.
 
 ### Contoh 3
 
@@ -97,7 +100,7 @@ Perintah ini akan menjalankan aplikasi logika tertentu untuk aplikasi logika ber
 Get-AzLogicAppRunHistory -Name 'LogicApp03' -ResourceGroupName MyResourceGroup -FollowNextPageLink
 ```
 
-Perintah ini mendapatkan seluruh riwayat proses aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink.
+Perintah ini mendapatkan seluruh riwayat eksekusi aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink.
 
 ### Contoh 4
 
@@ -105,7 +108,7 @@ Perintah ini mendapatkan seluruh riwayat proses aplikasi logika bernama LogicApp
 Get-AzLogicAppRunHistory -Name 'LogicApp03' -ResourceGroupName MyResourceGroup -FollowNextPageLink -MaximumFollowNextPageLink 1
 ```
 
-Perintah ini mendapatkan dua halaman pertama riwayat jalankan aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
+Perintah ini mendapatkan dua halaman pertama riwayat eksekusi aplikasi logika bernama LogicApp03 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
 Setiap halaman berisi tiga puluh hasil.
 
 ## PARAMETERS
@@ -158,9 +161,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
-Menentukan nama aplikasi logika tempat cmdlet ini menjalankan riwayat.
+Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan riwayat eksekusi.
 
 ```yaml
 Type: System.String
@@ -192,8 +195,8 @@ Accept wildcard characters: False
 
 ### -RunName
 
-Menentukan nama jalankan aplikasi logika.
-Cmdlet ini akan menjalankan alur kerja yang ditentukan cmdlet ini.
+Menentukan nama eksekusi aplikasi logika.
+Cmdlet ini mendapatkan alur kerja yang ditentukan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

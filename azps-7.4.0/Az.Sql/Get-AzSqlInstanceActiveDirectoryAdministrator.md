@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: c858413e66e3f2515713028362589692a9dc6394
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 282f4826fe7fdc350637138c9396704b006343ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865260"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726442"
 ---
-# Get-AzSqlInstanceActiveDirectoryAdministrator
+# Remove-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Mendapatkan informasi tentang administrator Azure AD untuk SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSqlInstanceActiveDirectoryAdministrator [-ResourceGroupName] <String> [-In
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### GunakanInputObjectParameterSet
+### UseInputObjectParameterSet
 ```
 Get-AzSqlInstanceActiveDirectoryAdministrator -InputObject <AzureSqlManagedInstanceModel>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -38,7 +41,7 @@ Get-AzSqlInstanceActiveDirectoryAdministrator [-ResourceId] <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceActiveDirectoryAdministrator** mendapatkan informasi tentang administrator Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
+Cmdlet **Get-AzSqlInstanceActiveDirectoryAdministrator** mendapatkan informasi tentang administrator Azure Active Directory (Azure AD) untuk AzureSQL Managed Instance dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans yang dikelola untuk digunakan.
+Objek instans terkelola yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Managed Instance nama.
+nama SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
-ms.openlocfilehash: c625cf2a16254faa6d05664547822ff8bf0d6c8e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d974e958afc64de06b849a1282fb0201188c70d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142937603"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734212"
 ---
 # New-AzNotificationHub
 
 ## SYNOPSIS
 Membuat hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ New-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String>
 ## DESCRIPTION
 Cmdlet **New-AzNotificationHub** membuat hub pemberitahuan.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
-Hub pemberitahuan kira-kira setara dengan aplikasi individual: setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
+Hub pemberitahuan kira-kira setara dengan aplikasi individual: masing-masing aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet **New-AzNotificationHub** menyediakan dua cara untuk membuat hub pemberitahuan baru.
-Anda dapat membuat contoh objek **NotificationHubAttributes** lalu mengonfigurasi objek tersebut.
-Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj* .
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut menggunakan parameter *InputFile* .
-Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON sebelumnya membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data AS Barat.
+Anda dapat membuat instans objek **NotificationHubAttributes** lalu mengonfigurasi objek tersebut.
+Anda kemudian dapat menyalin nilai properti tersebut ke hub baru Anda dengan melalui parameter *NotificationHubObj* .
+Atau, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut dengan menggunakan parameter *InputFile* .
+Saat digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON sebelumnya membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data US Barat.
 
 ## EXAMPLES
 
@@ -50,9 +53,9 @@ Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON s
 New-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -InputFile "C:\Configurations\InternalHub.json"
 ```
 
-Perintah ini membuat hub pemberitahuan di ruang nama ContosoNamespace.
+Perintah ini membuat hub pemberitahuan di namespace ContosoNamespace.
 Hub baru akan ditetapkan ke ContosoNotificationsGroup.
-Anda tidak perlu menentukan nama atau informasi konfigurasi lain untuk hub; informasi tersebut akan diambil dari file input C:\Configurations\InternalHub.json.
+Anda tidak perlu menentukan nama atau informasi konfigurasi lainnya untuk hub; informasi tersebut akan diambil dari file input C:\Configurations\InternalHub.json.
 
 ## PARAMETERS
 
@@ -87,10 +90,10 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan akan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
-Hub pemberitahuan harus ditetapkan ke ruang nama yang sudah ada.
-Cmdlet **New-AzNotificationHub** tidak dapat membuat ruang nama baru.
+Menentukan namespace tempat hub pemberitahuan akan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
+Hub pemberitahuan harus ditetapkan ke namespace yang ada.
+Cmdlet **New-AzNotificationHub** tidak dapat membuat namespace baru.
 
 ```yaml
 Type: System.String
@@ -121,8 +124,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan akan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
-Anda harus menggunakan grup sumber daya yang sudah ada.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
+Anda harus menggunakan grup sumber daya yang ada.
 Cmdlet **New-AzNotificationHub** tidak dapat membuat grup sumber daya baru.
 
 ```yaml
@@ -137,8 +140,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

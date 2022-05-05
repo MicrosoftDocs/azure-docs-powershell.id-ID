@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
-ms.openlocfilehash: b63b8546ab96d3be781c2f293750549d9516dd25
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 716c9ca3b10d150c9bf1b7dfa991392abcaf7220
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059355"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725292"
 ---
 # New-AzResource
 
 ## SYNOPSIS
 Membuat sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzResource [-Location <String>] [-Kind <String>] [-Properties <PSObject>] [-
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByTenantLevel
+### OlehTenantLevel
 ```
 New-AzResource [-Location <String>] [-Kind <String>] [-Properties <PSObject>] [-Plan <Hashtable>]
  [-Sku <Hashtable>] [-Tag <Hashtable>] [-IsFullObject] [-AsJob] -ResourceName <String> -ResourceType <String>
@@ -58,7 +61,7 @@ New-AzResource -Location "West US" -Properties @{test="test"} -ResourceName Test
 
 Perintah ini membuat sumber daya yang merupakan situs web di ResourceGroup11.
 
-### Contoh 2: Membuat sumber daya menggunakan splatting
+### Contoh 2: Membuat sumber daya menggunakan percikan
 ```powershell
 $prop = @{
     Location          = "West US"
@@ -77,7 +80,7 @@ Perintah ini membuat sumber daya yang merupakan situs web di ResourceGroup11.
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan. Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
+Menentukan versi API penyedia sumber daya yang akan digunakan. Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceName
-Menentukan nama sumber daya ekstensi untuk sumber daya. Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
+Menentukan nama sumber daya ekstensi untuk sumber daya. Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
 
 ```yaml
 Type: System.String
@@ -137,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceType
-Menentukan tipe sumber daya untuk sumber daya ekstensi.
-Misalnya, jika sumber daya ekstensi adalah database, tentukan tipe berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya untuk sumber daya ekstensi.
+Misalnya, jika sumber daya ekstensi adalah database, tentukan jenis berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsFullObject
-Menunjukkan bahwa objek yang ditentukan parameter *Properti* adalah objek penuh.
+Menunjukkan bahwa objek yang ditentukan parameter *Properti* adalah objek lengkap.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ### -Lokasi
 Menentukan lokasi sumber daya.
 Tentukan lokasi pusat data, seperti AS Tengah atau Asia Tenggara.
-Anda dapat menempatkan sumber daya di lokasi mana pun yang mendukung sumber daya tipe tersebut. Grup sumber daya bisa berisi sumber daya dari lokasi yang berbeda. Untuk menentukan lokasi mana yang mendukung setiap tipe sumber daya, gunakan cmdlet Get-AzLocation.
+Anda dapat menempatkan sumber daya di lokasi mana pun yang mendukung sumber daya jenis tersebut. Grup sumber daya dapat berisi sumber daya dari lokasi yang berbeda. Untuk menentukan lokasi mana yang mendukung setiap jenis sumber daya, gunakan cmdlet Get-AzLocation.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-Menentukan properti sumber daya untuk sumber daya. Gunakan parameter ini untuk menentukan nilai properti yang spesifik untuk tipe sumber daya.
+Menentukan properti sumber daya untuk sumber daya. Gunakan parameter ini untuk menentukan nilai properti yang khusus untuk jenis sumber daya.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -320,8 +323,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya.
-Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Menentukan jenis sumber daya.
+Misalnya, untuk database, jenis sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi di tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -380,8 +383,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -396,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -432,6 +435,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Move-AzResource](./Move-AzResource.md)
 
-[Hapus-AzResource](./Remove-AzResource.md)
+[Remove-AzResource](./Remove-AzResource.md)
 
 [Set-AzResource](./Set-AzResource.md)

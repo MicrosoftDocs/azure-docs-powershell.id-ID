@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleOverride.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleOverride.md
-ms.openlocfilehash: c536a021c341d4b7920393f09cb6c44aa11645b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59b4b7c5055a40a13af04a08a0233afda875e962
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743202"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733402"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRuleOverride
 
 ## SYNOPSIS
-Membuat entri ManagedRuleOverride untuk entri RuleGroupOverrideGroup.
+Membuat entri managedRuleOverride untuk entri RuleGroupOverrideGroup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedruleoverride) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzApplicationGatewayFirewallPolicyManagedRuleOverride -RuleId <String> [-Sta
 $ruleOverrideEntry = New-AzApplicationGatewayFirewallPolicyManagedRuleOverride -RuleId $ruleId -State Disabled
 ```
 
-Membuat entriPengalih aturan dengan RuleId sebagai $ruleId dan Status sebagai Dinonaktifkan.
+Membuat Entri ruleOverride dengan RuleId sebagai $ruleId dan Status sebagai Dinonaktifkan.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleId
-Tentukan entri Aturan dalam mengesampingkan aturan.
+Tentukan RuleId dalam entri aturan penggantian.
 
 ```yaml
 Type: System.String
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
-Tentukan entri Aturan dalam mengesampingkan aturan.
+### -State
+Tentukan RuleId dalam entri aturan penggantian.
 
 ```yaml
 Type: System.String
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

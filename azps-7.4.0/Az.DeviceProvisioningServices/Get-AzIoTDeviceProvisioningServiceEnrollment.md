@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceEnrollment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceEnrollment.md
-ms.openlocfilehash: d8ec38e16f5e6fd967cc75d53d769ddf55b07030
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c4cb39673b03bc24c7bcdc2dd7eb604109bb4adc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123597"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717338"
 ---
 # Get-AzIoTDeviceProvisioningServiceEnrollment
 
 ## SYNOPSIS
 Dapatkan catatan pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceenrollment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIoTDeviceProvisioningServiceEnrollment [-ResourceId] <String> [-Registrati
 ```
 
 ## DESCRIPTION
-Dapatkan detail pendaftaran perangkat atau Daftar pendaftaran perangkat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Dapatkan detail pendaftaran perangkat atau Daftar pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
 
 ## EXAMPLES
 
@@ -47,14 +50,14 @@ Dapatkan detail pendaftaran perangkat atau Daftar pendaftaran perangkat dalam La
 Get-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup" -DpsName "mydps" -RegistrationId "enroll1"
 ```
 
-Dapatkan detail pendaftaran perangkat di Layanan Penyediaan Perangkat Azure IoT Hub.
+Dapatkan detail pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup" -DpsName "mydps"
 ```
 
-Daftar pendaftaran perangkat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Mencantumkan pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsName
-Nama Layanan Penyediaan Perangkat IoT
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationId
-Id pendaftaran individu.
+Id pendaftaran pendaftaran individu.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

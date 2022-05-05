@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenancePublicConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenancePublicConfiguration.md
-ms.openlocfilehash: 43d9e672036a515952a6c3b9a6210b91805f3f81
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c96451a3bdc5162066f1f719d2f14d76b38f599a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741016"
 ---
 # Get-AzMaintenancePublicConfiguration
 
 ## SYNOPSIS
-Dapatkan catatan Konfigurasi Pemeliharaan Publik
+Mendapatkan catatan Konfigurasi Pemeliharaan Publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenancepublicconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMaintenancePublicConfiguration [[-ResourceGroupName] <String>] [[-Name] <S
 ```
 
 ## DESCRIPTION
-Dapatkan catatan Konfigurasi Pemeliharaan Publik
+Mendapatkan catatan Konfigurasi Pemeliharaan Publik
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Name                : workervmscentralus
 Type                : Microsoft.Maintenance/publicMaintenanceConfigurations
 ```
 
-Dapatkan catatan konfigurasi Pemeliharaan Publik
+Mendapatkan catatan konfigurasi Pemeliharaan Publik
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi pemeliharaan publik.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

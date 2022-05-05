@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayAuthorizationRule.md
-ms.openlocfilehash: ae559fd474c42fb8bf255b535064282e3b9fc8f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a3f9b87f7840292323fc0779769c953650f7dc7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276363"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734158"
 ---
 # Get-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan deskripsi aturan otorisasi tertentu untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRelayAuthorizationRule** mendapatkan deskripsi aturan otorisasi tertentu dalam entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Cmdlet **Get-AzRelayAuthorizationRule** mendapatkan deskripsi aturan otorisasi yang ditentukan dalam entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1: Ruang nama
+### Contoh 1: Namespace
 ```powershell
 Get-AzRelayNamespaceAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 ```
@@ -55,7 +58,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          hoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk ruang nama tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk namespace tertentu.
 
 ### Contoh 2: WcfRelay
 ```powershell
@@ -70,7 +73,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          1/authorizationRules/AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk WcfRelay tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk WcfRelay tertentu.
 
 ### Contoh 3: HybridConnection
 ```powershell
@@ -85,7 +88,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
          HybridConnection/authorizationRules/AuthoRule1
 ```
 
-Mengembalikan deskripsi aturan otorisasi tertentu untuk HybridConnection tertentu.
+Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk HybridConnection tertentu.
 
 ## PARAMETERS
 
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

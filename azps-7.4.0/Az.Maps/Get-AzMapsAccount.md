@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
-ms.openlocfilehash: d0cc2734dc073357128a37ae92e6486d09b001ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 38875e04e3880e1c0df6df0d75bc01ebf533aa2a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284085"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734500"
 ---
 # Get-AzMapsAccount
 
 ## SYNOPSIS
-Dapatkan Akun Peta.
+Mendapatkan Akun Azure Maps.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan Akun Peta.
 Get-AzMapsAccount [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMapsAccount -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,11 +45,11 @@ Get-AzMapsAccount -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Dapatkan Akun Peta.
+Mendapatkan Akun Azure Maps.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua akun Peta di bawah langganan
+### Contoh 1: Mencantumkan semua Akun Peta di bawah langganan
 ```powershell
 Get-AzMapsAccount
 ```
@@ -59,7 +62,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mencantumkan semua Akun Peta di bawah langganan.
 
-### Contoh 2: Daftar semua akun Peta di bawah grup sumber daya
+### Contoh 2: Mencantumkan semua Akun Peta di bawah grup sumber daya
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test
 ```
@@ -70,7 +73,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini mencantumkan semua akun Peta di bawah grup sumber daya.
+Perintah ini mencantumkan semua Akun Peta di bawah grup sumber daya.
 
 ### Contoh 3: Dapatkan Akun Peta
 ```powershell
@@ -85,7 +88,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mendapatkan Akun Peta.
 
-### Contoh 4: Dapatkan Akun Peta menurut pipeline
+### Contoh 4: Mendapatkan Akun Peta berdasarkan alur
 ```powershell
 New-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -SkuName S0 -Location eastus | Get-AzMapsAccount
 ```
@@ -96,7 +99,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini mendapatkan Peta Akun menurut saluran.
+Perintah ini mendapatkan Akun Peta berdasarkan alur.
 
 ## PARAMETERS
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -130,7 +133,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Akun Peta.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -200,7 +203,7 @@ INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

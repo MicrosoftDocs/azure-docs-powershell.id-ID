@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/new-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
-ms.openlocfilehash: b03ac393196a259c8b55878021ee7684bf3b6126
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: abc2d8db9cc06f784cb7afa5cd47bb9c03486343
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863658"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732844"
 ---
 # New-AzSupportContactProfileObject
 
 ## SYNOPSIS
 Membuat objek profil kontak dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/new-azsupportcontactprofileobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzSupportContactProfileObject -FirstName <String> -LastName <String>
 ```
 
 ## DESCRIPTION
-Ini adalah cmdlet helper yang bisa Anda gunakan untuk membuat objek profil kontak dukungan saat membuat atau memperbarui tiket dukungan. Anda harus menentukan parameter berikut yang wajib untuk membuat tiket dukungan: 
+Ini adalah cmdlet pembantu yang dapat Anda gunakan untuk membuat objek profil kontak dukungan saat membuat atau memperbarui tiket dukungan. Anda harus menentukan parameter berikut yang wajib untuk membuat tiket dukungan: 
 
     • FirstName
     • LastName
@@ -52,7 +55,7 @@ First     Last     Email                  user@contoso.com                 Pacif
 ## PARAMETERS
 
 ### -AdditionalEmailAddress
-Alamat email yang tercantum di sini akan disalin pada setiap korespondensi tentang tiket dukungan.
+Alamat email yang tercantum di sini akan disalin pada korespondensi apa pun tentang tiket dukungan.
 
 ```yaml
 Type: System.String[]
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 
 ### -Negara
 Negara pelanggan.
-Kode ini harus berupa kode negara ISO Alpha-3 yang valid (ISO 3166).
+Ini harus berupa kode negara ISO Alpha-3 yang valid (ISO 3166).
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -PhoneNumber
 Nomor telepon pelanggan.
-Ini diperlukan jika metode kontak pilihan adalah telepon.
+Ini diperlukan jika metode kontak yang disukai adalah telepon.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredContactMethod
-Metode kontak pilihan.
+Metode kontak yang disukai.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.ContactMethod
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -PreferredSupportLanguage
 Bahasa dukungan pilihan pelanggan.
-Kode ini harus merupakan kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
+Ini harus berupa kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PreferredTimezone
+### -PreferredTimeZone
 Zona waktu pilihan pelanggan.
 Ini harus berupa nilai System.TimeZoneInfo.Id yang valid.
 
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,11 +241,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ManagedServices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleApproverObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleApproverObject.md
-ms.openlocfilehash: fbda106471f0302e2de5bfe4ccdb57ebf84b26dc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e004bc825edcdd420a39ff81e6af5e6552ae3f4d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807480"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727954"
 ---
 # New-AzManagedServicesEligibleApproverObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk EligibleApprover.
+Buat objek dalam memori untuk EligibleApprover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedserviceseligibleapproverobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzManagedServicesEligibleApproverObject -PrincipalId <String> [-PrincipalIdD
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk EligibleApprover.
+Buat objek dalam memori untuk EligibleApprover.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek penyetuju otorisasi Azure Lighthouse yang memenuhi syarat
+### Contoh 1: Membuat objek pemberi izin otorisasi yang memenuhi syarat Azure Lighthouse
 ```powershell
 New-AzManagedServicesEligibleApproverObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Approvers group"
 ```
@@ -40,7 +43,7 @@ PrincipalId                          PrincipalIdDisplayName
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Approvers group
 ```
 
-Membuat objek penyetuju otorisasi Azure Lighthouse yang memenuhi syarat.
+Membuat objek pemberi izin otorisasi Azure Lighthouse yang memenuhi syarat.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

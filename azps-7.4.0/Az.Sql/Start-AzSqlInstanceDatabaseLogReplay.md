@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Start-AzSqlI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: afba5ca59f09683f33f322d08e593bb2abe25b5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da5444fa87194186798bc59ab74f906e0ce1a85f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306297"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726820"
 ---
 # Start-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
-Memulai layanan Pemutaran Ulang Log dengan parameter tertentu.
+Memulai layanan Pemutaran Ulang Log dengan parameter yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqlinstancedatabaselogreplay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Start-AzSqlInstanceDatabaseLogReplay -StorageContainerUri <String> -StorageConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzSqlInstanceDatabaseLogReplay** memulai mulai layanan pemutaran log.
+Cmdlet **Start-AzSqlInstanceDatabaseLogReplay** memulai dimulainya layanan pemutaran ulang log.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Start-AzSqlInstanceDatabaseLogReplay -ResourceGroupName "ResourceGroup01" -Insta
     -AutoComplete -LastBackupName "last_backup.bak"
 ```
 
-Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari wadah tertentu hingga last_backup.bak dipulihkan.
+Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari kontainer yang diberikan hingga last_backup.bak dipulihkan.
 
 ### Contoh 2
 ```powershell
@@ -57,11 +60,11 @@ Start-AzSqlInstanceDatabaseLogReplay -ResourceGroupName "ResourceGroup01" -Insta
     -StorageContainerSasToken "sv=2019-02-02&ss=b&srt=sco&sp=rl&se=2023-12-02T00:09:14Z&st=2019-11-25T16:09:14Z&spr=https&sig=92kAe4QYmXaht%2Fgjocqwerqwer41s%3D"
 ```
 
-Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari wadah tertentu hingga Complete-AzSqlInstanceDatabaseLogReplay dipanggil dengan cadangan terakhir yang diinginkan.
+Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari kontainer yang diberikan sampai Complete-AzSqlInstanceDatabaseLogReplay dipanggil dengan cadangan terakhir yang diinginkan.
 
 ### Contoh 3
 
-Memulai layanan Pemutaran Ulang Log dengan parameter tertentu. (autogenerasi)
+Memulai layanan Pemutaran Ulang Log dengan parameter yang diberikan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -73,7 +76,7 @@ Start-AzSqlInstanceDatabaseLogReplay -AutoCompleteRestore -Collation <String> -I
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoCompleteRestore
-Indikator apakah akan menyelesaikan pemulihan secara otomatis atau tidak setelah selesai.
+Indikator apakah akan menyelesaikan pemulihan secara otomatis setelah selesai atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,8 +105,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Collation
-Kolatasi database instans yang akan digunakan.
+### -Kolabasi
+Kolae database instans yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastBackupName
-Nama berkas cadangan terakhir yang akan dipulihkan.
+Nama file cadangan terakhir yang akan dipulihkan.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database instans.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerSasToken
-Wadah penyimpanan sas token.
+Token Sas kontainer penyimpanan.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerUri
-URI wadah penyimpanan.
+URI kontainer penyimpanan.
 
 ```yaml
 Type: System.String
@@ -252,8 +255,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

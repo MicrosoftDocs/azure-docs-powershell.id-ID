@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 5105759b2a7ab8380efde0749de7810a1541ba90
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 453f46184a7445bf18a3360cae1ad63a40a5c459
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993493"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733744"
 ---
 # New-AzSynapseKustoPoolAttachedDatabaseConfiguration
 
 ## SYNOPSIS
-Membuat atau memperbarui konfigurasi database yang dilampirkan.
+Membuat atau memperbarui konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ New-AzSynapseKustoPoolAttachedDatabaseConfiguration -AttachedDatabaseConfigurati
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui konfigurasi database yang dilampirkan.
+Membuat atau memperbarui konfigurasi database terlampir.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat AttachedDatabaseConfiguration baru
+### Contoh 1: Buat AttachedDatabaseConfiguration baru
 ```powershell
 New-AzSynapseKustoPoolAttachedDatabaseConfiguration -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testfollowerkustopool -Name followerconfiguration -KustoPoolResourceId /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Synapse/workspaces/testws/kustoPools/testkustopool -DatabaseName testdatabase -DefaultPrincipalsModificationKind Union -Location eastus2
 ```
@@ -48,13 +51,13 @@ Name                                               Type                         
 testws/testfollowerkustopool/followerconfiguration Microsoft.Synapse/workspaces/kustoPools/AttachedDatabaseConfigurations East US 2
 ```
 
-Perintah di atas membuat database ReadOnly "testdatabase" dalam cluster "testfollowerkustopool".
+Perintah di atas membuat database ReadOnly "testdatabase" dalam kluster "testfollowerkustopool".
 Ini mengikuti database "testdatabase" dari kluster "testkustopool"
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AttachedDatabaseConfigurationName
-Nama konfigurasi database yang dilampirkan.
+Nama konfigurasi database terlampir.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyExternalTablesToExclude
-Daftar tabel eksternal dikecualikan dari database pengikut
+Daftar tabel eksternal yang dikecualikan dari database pengikut
 
 ```yaml
 Type: System.String[]
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyExternalTablesToInclude
-Daftar tabel eksternal untuk disertakan dalam database pengikut
+Daftar tabel eksternal yang akan disertakan dalam database pengikut
 
 ```yaml
 Type: System.String[]
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyMaterializedViewsToExclude
-Daftar tampilan terwujud dikecualikan dari database pengikut
+Daftar tampilan materialisasi yang dikecualikan dari database pengikut
 
 ```yaml
 Type: System.String[]
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyMaterializedViewsToInclude
-Daftar tampilan terwujud untuk disertakan dalam database pengikut
+Daftar tampilan materialisasi yang akan disertakan dalam database pengikut
 
 ```yaml
 Type: System.String[]
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyTablesToInclude
-Daftar tabel yang disertakan dalam database pengikut
+Daftar tabel yang akan disertakan dalam database pengikut
 
 ```yaml
 Type: System.String[]
@@ -309,7 +312,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -324,8 +327,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

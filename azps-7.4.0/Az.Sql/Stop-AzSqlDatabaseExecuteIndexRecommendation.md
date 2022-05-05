@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseExecuteIndexRecommendation.md
-ms.openlocfilehash: 7e7ac1c0673b03efd8670c192ca8be7de12ad74c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 86d9243236eae0bd18faf87898859db3f4961636
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058167"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733006"
 ---
 # Stop-AzSqlDatabaseExecuteIndexRecommendation
 
 ## SYNOPSIS
 Menghentikan alur kerja yang menjalankan operasi indeks yang direkomendasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqldatabaseexecuteindexrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Stop-AzSqlDatabaseExecuteIndexRecommendation -ServerName <String> -DatabaseName 
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSqlDatabaseExecuteIndexRecommendation** menghentikan alur kerja yang menjalankan operasi indeks yang direkomendasikan.
+**Cmdlet Stop-AzSqlDatabaseExecuteIndexRecommendation** menghentikan alur kerja yang menjalankan operasi indeks yang direkomendasikan.
 
 ## EXAMPLES
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

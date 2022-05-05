@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: 3e2921484874626dc567889477b477e48065905a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5924e888ce5703f30a5711364482156df048df8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799038"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727018"
 ---
 # Set-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
 Mengalihkan database sekunder menjadi utama untuk memulai failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasesecondary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,10 +38,10 @@ Set-AzSqlDatabaseSecondary [-DatabaseName] <String> -PartnerResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseSecondary** mengalihkan database sekunder menjadi utama untuk memulai failover.
+Cmdlet **Set-AzSqlDatabaseSecondary** mengalihkan database sekunder menjadi primer untuk memulai failover.
 Cmdlet ini dirancang sebagai perintah konfigurasi umum, tetapi saat ini terbatas pada memulai failover.
 Tentukan parameter *AllowDataLoss* untuk memulai failover paksa selama pemadaman.
-Anda tidak perlu menentukan parameter ini saat Anda melakukan operasi yang direncanakan, seperti bor pemulihan.
+Anda tidak perlu menentukan parameter ini ketika Anda melakukan operasi yang direncanakan, seperti latihan pemulihan.
 Dalam kasus terakhir, database sekunder disinkronkan dengan database utama sebelum dialihkan.
 
 ## EXAMPLES
@@ -58,7 +61,7 @@ $database | Set-AzSqlDatabaseSecondary -PartnerResourceGroupName $primaryResourc
 ## PARAMETERS
 
 ### -AllowDataLoss
-Menunjukkan bahwa operasi failover ini memungkinkan hilangnya data.
+Menunjukkan bahwa operasi failover ini memungkinkan kehilangan data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama Azure SQL Database Secondary.
+Menentukan nama Azure SQL Database Sekunder.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat Azure SQL Database Secondary ditetapkan.
+Menentukan nama grup sumber daya tempat Azure SQL Database Sekunder ditetapkan.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server yang menjadi host Azure SQL Database Secondary.
+Menentukan nama SQL Server yang menghosting Azure SQL Database Sekunder.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -227,4 +230,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlDatabaseSecondary](./Remove-AzSqlDatabaseSecondary.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

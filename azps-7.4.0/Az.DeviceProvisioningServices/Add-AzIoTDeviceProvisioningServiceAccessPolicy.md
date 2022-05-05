@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceAccessPolicy.md
-ms.openlocfilehash: 590cc28d2232eb5e03ba8bb4a141cfe685157ffe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a1bcdc6cb9b0347bf6977dd6c0843a1f3cbfac2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061641"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726173"
 ---
 # Add-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub.
+Tambahkan kebijakan akses bersama baru di layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-KeyName]
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : ServiceConfig, EnrollmentWrite
 ```
 
-Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub dengan hak PendaftaranWrite dan ServiceConfig.
+Tambahkan kebijakan akses bersama baru dalam layanan provisi perangkat Azure IoT Hub dengan hak EnrollmentWrite dan ServiceConfig.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ mypolicy1   ServiceConfig, EnrollmentWrite
 mypolicy2   EnrollmentRead
 ```
 
-Tambahkan kebijakan akses bersama baru di layanan penyediaan perangkat Azure IoT Hub dengan DaftarBayar langsung.
+Tambahkan kebijakan akses bersama baru di layanan provisi perangkat Azure IoT Hub dengan hak EnrollmentRead.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpsObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci kebijakan akses Layanan Penyediaan Perangkat IoT
+Nama kunci kebijakan akses IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -121,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Izin kebijakan akses Layanan Penyediaan Perangkat IoT
+Izin kebijakan akses IoT Device Provisioning Service
 
 ```yaml
 Type: System.String[]
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -182,8 +185,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

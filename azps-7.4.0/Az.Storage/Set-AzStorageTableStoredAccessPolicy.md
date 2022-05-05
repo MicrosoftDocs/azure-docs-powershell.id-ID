@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: 10e003442f42595afecf7c98218f7bfdc6262328
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 901b029a645b7f3597f6a2cd9cb46deca28c2abb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057429"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741268"
 ---
 # Set-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,20 +30,20 @@ Set-AzStorageTableStoredAccessPolicy [-Table] <String> [-Policy] <String> [-Perm
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageTableStoredAccessPolicy** mengatur kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Cmdlet **Set-AzStorageTableStoredAccessPolicy** mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kebijakan akses yang disimpan dalam tabel dengan izin penuh
+### Contoh 1: Mengatur kebijakan akses tersimpan dalam tabel dengan izin penuh
 ```
 PS C:\>Set-AzStorageTableStoredAccessPolicy -Table "MyTable" -Policy "Policy08" -Permission raud
 ```
 
-Perintah ini mengatur kebijakan akses bernama Policy08 untuk tabel penyimpanan bernama MyTable.
+Perintah ini menetapkan kebijakan akses bernama Policy08 untuk tabel penyimpanan bernama MyTable.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsa kebijakan akses yang disimpan.
+Menentukan waktu kedaluwarsa kebijakan akses tersimpan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -117,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses tabel penyimpanan.
-Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
+Menentukan izin dalam kebijakan akses tersimpan untuk mengakses tabel penyimpanan.
+Penting untuk dicatat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan nama untuk kebijakan akses yang disimpan.
+Menentukan nama untuk kebijakan akses tersimpan.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -162,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Table
+### -Tabel
 Menentukan nama tabel penyimpanan Azure.
 
 ```yaml
@@ -177,8 +180,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

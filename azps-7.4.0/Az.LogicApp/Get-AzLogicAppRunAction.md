@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunAction.md
-ms.openlocfilehash: 5cf666c12d87908efcb6f6f0753810488c87a3f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 40285727fd8ae49c47c8ad1816bcd1a4964f5a47
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315081"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735292"
 ---
 # Get-AzLogicAppRunAction
 
 ## SYNOPSIS
 
-Mendapatkan tindakan dari aplikasi logika yang dijalankan.
+Mendapatkan tindakan dari eksekusi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapprunaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,13 +36,13 @@ Cmdlet **Get-AzLogicAppRunAction** mendapatkan tindakan dari aplikasi logika yan
 Cmdlet ini mengembalikan objek **WorkflowRunAction** .
 Tentukan aplikasi logika, grup sumber daya, dan jalankan.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tindakan dari menjalankan Aplikasi Logika
+### Contoh 1: Mendapatkan tindakan dari eksekusi Aplikasi Logika
 
 ```powershell
 Get-AzLogicAppRunAction -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -RunName "08585925184423369718380498702CU26" -ActionName "LogicAppAction01"
@@ -60,19 +63,19 @@ Type        :
 
 Perintah ini mendapatkan tindakan Aplikasi Logika tertentu dari aplikasi logika bernama LogicApp05 untuk dijalankan dengan pengidentifikasi 08585925184423369718380498702CU26.
 
-### Contoh 2: Dapatkan semua tindakan dari aplikasi logika yang dijalankan
+### Contoh 2: Dapatkan semua tindakan dari Aplikasi Logika yang dijalankan
 
 ```powershell
 Get-AzLogicAppRunAction -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -RunName "08585925184423369718380498702CU26" -FollowNextPageLink
 ```
 
-Perintah ini mendapatkan semua tindakan Aplikasi Logika dari run dengan pengidentifikasi 08585925184423369718380498702CU26 dari aplikasi logika bernama LogicApp05.
+Perintah ini mendapatkan semua tindakan Aplikasi Logika dari eksekusi dengan pengidentifikasi 08585925184423369718380498702CU26 dari aplikasi logika bernama LogicApp05.
 
 ## PARAMETERS
 
 ### -ActionName
 
-Menentukan nama tindakan dalam aplikasi logika yang dijalankan.
+Menentukan nama tindakan dalam eksekusi aplikasi logika.
 Cmdlet ini mendapatkan tindakan yang ditentukan parameter ini.
 
 ```yaml
@@ -135,9 +138,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
-Menentukan nama aplikasi logika di mana cmdlet ini mendapatkan tindakan.
+Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan tindakan.
 
 ```yaml
 Type: System.String
@@ -169,8 +172,8 @@ Accept wildcard characters: False
 
 ### -RunName
 
-Menentukan nama aplikasi logika yang dijalankan.
-Cmdlet ini mendapatkan tindakan untuk menjalankan yang ditentukan parameter ini.
+Menentukan nama eksekusi aplikasi logika.
+Cmdlet ini mendapatkan tindakan untuk eksekusi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

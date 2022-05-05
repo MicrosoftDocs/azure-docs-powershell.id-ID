@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
-ms.openlocfilehash: b51a69d9358352695db1b3e424bd6b2c03d3d702
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9795950dc700e028376351d11251b02be24128d4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805554"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732128"
 ---
 # New-AzApplicationGateway
 
 ## SYNOPSIS
 Membuat gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -130,12 +133,12 @@ Cmdlet **New-AzApplicationGateway** membuat gateway aplikasi Azure.
 Gateway aplikasi memerlukan hal berikut:
 - Grup sumber daya.
 - Jaringan virtual.
-- Kumpulan server ujung-belakang, yang berisi alamat IP server back-end.
-- Pengaturan kumpulan server ujung-belakang. Setiap pool memiliki pengaturan seperti port, protokol dan affinity berbasis cookie, yang diterapkan ke semua server dalam pool.
-- Alamat IP ujung-depan, yang merupakan alamat IP yang dibuka di gateway aplikasi. Alamat IP front-end bisa berupa alamat IP publik atau alamat IP internal.
-- Port ujung depan, yang merupakan port publik yang dibuka di gateway aplikasi. Lalu lintas yang mengenai port ini dialihkan ke server ujung belakang.
-- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server ujung-belakang. Aturan ini menentukan kumpulan server ujung-belakang mana yang harus diarahkan ke lalu lintas ketika menyentuh pendengar tertentu.
-Pendengar memiliki port ujung depan, alamat IP ujung depan, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
+- Kumpulan server back-end, yang berisi alamat IP server back-end.
+- Pengaturan kumpulan server back-end. Setiap kumpulan memiliki pengaturan seperti port, protokol, dan afinitas berbasis cookie, yang diterapkan ke semua server dalam kumpulan.
+- Alamat IP front-end, yang merupakan alamat IP yang dibuka di gateway aplikasi. Alamat IP front-end dapat berupa alamat IP publik atau alamat IP internal.
+- Port front-end, yang merupakan port publik yang dibuka di gateway aplikasi. Lalu lintas yang mengenai port ini dialihkan ke server back-end.
+- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server back-end. Aturan menentukan kumpulan server back-end mana yang harus diarahkan ke lalu lintas ketika mencapai pendengar tertentu.
+Pendengar memiliki port ujung depan, alamat IP front-end, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
 
 ## EXAMPLES
 
@@ -159,28 +162,28 @@ $Sku = New-AzApplicationGatewaySku -Name "Standard_Small" -Tier Standard -Capaci
 $Gateway = New-AzApplicationGateway -Name "AppGateway01" -ResourceGroupName "ResourceGroup01" -Location "West US" -BackendAddressPools $Pool -BackendHttpSettingsCollection $PoolSetting -FrontendIpConfigurations $FrontEndIpConfig  -GatewayIpConfigurations $GatewayIpConfig -FrontendPorts $FrontEndPort -HttpListeners $Listener -RequestRoutingRules $Rule -Sku $Sku
 ```
 
-Contoh berikut ini membuat gateway aplikasi dengan membuat grup sumber daya dan jaringan virtual terlebih dahulu, serta yang berikut ini:
-- Kumpulan server ujung-belakang
-- Pengaturan kumpulan server ujung-belakang
+Contoh berikut membuat gateway aplikasi dengan terlebih dahulu membuat grup sumber daya dan jaringan virtual, serta yang berikut ini:
+- Kumpulan server back-end
+- Pengaturan kumpulan server back-end
 - Port ujung depan
-- Alamat IP ujung-depan
+- Alamat IP front-end
 - Aturan perutean permintaan Empat perintah ini membuat jaringan virtual.
 Perintah pertama membuat konfigurasi subnet.
 Perintah kedua membuat jaringan virtual.
 Perintah ketiga memverifikasi konfigurasi subnet dan perintah keempat memverifikasi bahwa jaringan virtual berhasil dibuat.
-Perintah berikut ini membuat gateway aplikasi.
+Perintah berikut membuat gateway aplikasi.
 Perintah pertama membuat konfigurasi IP bernama GatewayIp01 untuk subnet yang dibuat sebelumnya.
-Perintah kedua membuat kumpulan server back-end bernama Pool01 dengan daftar alamat IP ujung-belakang dan menyimpan kumpulan dalam variabel $Pool.
+Perintah kedua membuat kumpulan server back-end bernama Pool01 dengan daftar alamat IP back-end dan menyimpan kumpulan dalam variabel $Pool.
 Perintah ketiga membuat pengaturan untuk kumpulan server back-end dan menyimpan pengaturan dalam variabel $PoolSetting.
-Perintah keempat membuat port ujung depan pada port 80, menamainya FrontEndPort01, dan menyimpan port dalam variabel $FrontEndPort.
-Perintah kelima membuat alamat IP publik menggunakan New-AzPublicIpAddress.
-Perintah keenam membuat konfigurasi IP ujung depan menggunakan $PublicIp, menamainya FrontEndPortConfig01, dan menyimpannya dalam variabel $FrontEndIpConfig.
+Perintah forth membuat port front-end pada port 80, menamainya FrontEndPort01, dan menyimpan port dalam variabel $FrontEndPort.
+Perintah kelima membuat alamat IP publik dengan menggunakan New-AzPublicIpAddress.
+Perintah keenam membuat konfigurasi IP front-end menggunakan $PublicIp, menamainya FrontEndPortConfig01, dan menyimpannya dalam variabel $FrontEndIpConfig.
 Perintah ketujuh membuat pendengar menggunakan $FrontEndIpConfig $FrontEndPort yang dibuat sebelumnya.
 Perintah kedelapan membuat aturan untuk pendengar.
-Perintah kesembilan mengatur SKU.
+Perintah kesembilan menetapkan SKU.
 Perintah kesepuluh membuat gateway menggunakan objek yang diatur oleh perintah sebelumnya.
 
-### Contoh 2: Membuat gateway aplikasi dengan Identitas yang DitetapkanPengguna
+### Contoh 2: Membuat gateway aplikasi dengan UserAssigned Identity
 ```powershell
 $ResourceGroup = New-AzResourceGroup -Name "ResourceGroup01" -Location "West US" -Tag @{Name = "Department"; Value = "Marketing"} 
 $Subnet = New-AzVirtualNetworkSubnetConfig -Name "Subnet01" -AddressPrefix 10.0.0.0/24
@@ -205,7 +208,7 @@ $Gateway = New-AzApplicationGateway -Name "AppGateway01" -ResourceGroupName "Res
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPools
-Menentukan daftar kumpulan alamat ujung-belakang untuk gateway aplikasi.
+Menentukan daftar kumpulan alamat back-end untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool[]
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettingsCollection
-Menentukan daftar pengaturan HTTP ujung-belakang untuk gateway aplikasi.
+Menentukan daftar pengaturan HTTP back-end untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings[]
@@ -324,7 +327,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AktifkanHttp2
+### -EnableHttp2
 Apakah HTTP2 diaktifkan.
 
 ```yaml
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallPolicy
-Konfigurasi firewall
+Konfigurasi Firewall
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallPolicy
@@ -369,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceFirewallPolicyAssociation
-Apakah Paksa firewallPolicy asosiasi diaktifkan.
+Apakah asosiasi Force firewallPolicy diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfigurations
-Menentukan daftar konfigurasi IP ujung depan untuk gateway aplikasi.
+Menentukan daftar konfigurasi IP front-end untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration[]
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPorts
-Menentukan daftar port ujung depan untuk gateway aplikasi.
+Menentukan daftar port front-end untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort[]
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListeners
-Menentukan daftar pendengar HTTP untuk gateway aplikasi.
+Menentukan daftar listener HTTP untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener[]
@@ -460,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-Application Gateway Identitas untuk ditetapkan ke Application Gateway.
+Application Gateway Identitas yang akan ditetapkan ke Application Gateway.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
@@ -475,7 +478,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat untuk membuat gateway aplikasi.
+Menentukan wilayah untuk membuat gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -489,7 +492,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama gateway aplikasi.
 
 ```yaml
@@ -505,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkConfiguration
-Daftar Konfigurasi PrivateLink
+Daftar Konfigurasi privateLink
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPrivateLinkConfiguration[]
@@ -520,7 +523,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probes
-Menentukan probe untuk gateway aplikasi.
+Menentukan pemeriksaan untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe[]
@@ -655,7 +658,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -670,7 +673,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedClientCertificates
-Daftar rantai sertifikat CA klien tepercaya
+Daftar rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayTrustedClientCertificate[]
@@ -745,7 +748,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan asal gateway aplikasi.
+Daftar zona ketersediaan yang menunjukkan dari mana gateway aplikasi perlu berasal.
 
 ```yaml
 Type: System.String[]
@@ -759,8 +762,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -775,7 +778,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -791,7 +794,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
-ms.openlocfilehash: e4022133c6f71b57224f2eea5f8e7963b78f5358
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2cd0650e197b48b79d43b5d839ec0eae154a3534
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315027"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735094"
 ---
 # New-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
-Membuat perakitan akun integrasi.
+Membuat rakitan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,11 +80,11 @@ New-AzIntegrationAccountAssembly -ParentResourceId <String> -Name <String> -Asse
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountAssembly** membuat perakitan baru dalam akun integrasi.
+Cmdlet **Get-AzIntegrationAccountAssembly** membuat rakitan baru di akun integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat perakitan baru menggunakan file lokal
+### Contoh 1: Membuat assembly baru menggunakan file lokal
 ```powershell
 New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -AssemblyFilePath $localAssemblyFilePath
 ```
@@ -95,7 +98,7 @@ Location   :
 Tags       :
 ```
 
-Membuat perakitan baru menggunakan file lokal yang terletak di jalur file yang terdapat dalam "$localAssemblyFilePath".
+Membuat rakitan baru menggunakan file lokal yang terletak di jalur file yang terkandung dalam "$localAssemblyFilePath".
 
 ### Contoh 2: Membuat perakitan baru menggunakan data byte
 ```powershell
@@ -111,9 +114,9 @@ Location   :
 Tags       :
 ```
 
-Membuat perakitan baru menggunakan array byte yang terdapat dalam "$assemblyContent".
+Membuat rakitan baru menggunakan array byte yang terkandung dalam "$assemblyContent".
 
-### Contoh 3: Membuat perakitan baru menggunakan tautan konten
+### Contoh 3: Membuat assembly baru menggunakan tautan konten
 ```powershell
 New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -ContentLink $assemblyUrl
 ```
@@ -127,7 +130,7 @@ Location   :
 Tags       :
 ```
 
-Membuat perakitan baru menggunakan data byte yang terletak di URL "$assemblyUrl". Ini adalah metode yang disarankan untuk membuat rakitan berukuran besar.
+Membuat rakitan baru menggunakan data byte yang terletak di URL "$assemblyUrl". Ini adalah metode yang disarankan untuk membuat rakitan berukuran besar.
 
 ## PARAMETERS
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssemblyFilePath
-Jalur file perakitan akun integrasi.
+Jalur file rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLink
-Tautan yang dapat diakses secara publik ke data perakitan akun integrasi.
+Tautan yang dapat diakses publik ke data rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata perakitan akun integrasi.
+Metadata rakitan akun integrasi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama perakitan akun integrasi.
+### -Name
+Nama rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -281,8 +284,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroup.md
-ms.openlocfilehash: 068a1f146b21671968d244379e0ee96ba8bef34d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24c45eb1c43a5c4f3c5c3a4d6adca3fa7e05269d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059266"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727180"
 ---
 # Remove-AzManagementGroup
 
 ## SYNOPSIS
 Menghapus Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet **Remove-AzManagementGroup** menghapus Grup Manajemen.
 Remove-AzManagementGroup -GroupName "TestGroup"
 ```
 
-### Contoh 2: Hapus Grup Manajemen dengan mempipa Objek PSManagementGroup
+### Contoh 2: Menghapus Grup Manajemen dengan mempipa Objek PSManagementGroup
 ```powershell
 Get-AzManagementGroup -GroupName "TestGroup" | Remove-AzManagementGroup
 ```
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input dari Dapatkan panggilan
+Objek Input dari panggilan Dapatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pengembalian `true` eksekusi yang berhasil
+Kembali `true` pada eksekusi yang berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

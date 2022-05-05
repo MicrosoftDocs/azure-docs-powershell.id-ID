@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 5b7016a5e840dafb2ef32493ccd917e3f890ec5c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d4122638a4e551deeed0bc5314f0b954cd5dbba6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682272"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734914"
 ---
 # New-AzIntegrationAccountPartner
 
 ## SYNOPSIS
 Membuat mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet ini mengembalikan objek yang mewakili mitra akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, nama mitra, dan identitas mitra.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -59,8 +62,8 @@ Perintah ini membuat mitra akun integrasi bernama IntegrationAccountPartner22 da
 
 ## PARAMETERS
 
-### -BisnisIdentitas
-Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah array bertumpuk, dengan array dalam yang berisi Pengualifikasi sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
+### -BisnisIdentities
+Menentukan identitas bisnis untuk mitra akun integrasi. Ini adalah array berlapis, dengan array dalam yang berisi Kualifikasi sebagai objek/string pertama dan Nilai sebagai objek/string kedua.
 
 ```yaml
 Type: System.Object
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -135,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerType
-Menentukan tipe akun integrasi.
-Parameter ini mendukung tipe B2B.
+Menentukan jenis akun integrasi.
+Parameter ini mendukung jenis B2B.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

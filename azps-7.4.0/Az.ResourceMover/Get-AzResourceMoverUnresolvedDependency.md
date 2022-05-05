@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverUnresolvedDependency.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverUnresolvedDependency.md
-ms.openlocfilehash: 238df4a284b8103eaaa3b5d29ceeaa7bd71abd29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: af07f7676e0e70d087c51d672b50d7d50df31c7a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059625"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733186"
 ---
 # Get-AzResourceMoverUnresolvedDependency
 
 ## SYNOPSIS
-Mendapatkan daftar dependensi yang belum diatasi.
+Mendapatkan daftar dependensi yang belum terselesaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemoverunresolveddependency) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzResourceMoverUnresolvedDependency -MoveCollectionName <String> -ResourceGr
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar dependensi yang belum diatasi.
+Mendapatkan daftar dependensi yang belum terselesaikan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar sumber daya dependen yang belum diatasi untuk Koleksi Pemindahan.
+### Contoh 1: Dapatkan daftar sumber daya dependen yang belum terselesaikan untuk Kumpulan Pemindahan.
 ```powershell
 Get-AzResourceMoverUnresolvedDependency -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -ResourceGroupName "RG-MoveCollection-demoRMS" -DependencyLevel Descendant
 ```
@@ -44,7 +47,7 @@ Count Id
     3 /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/psdemorm
 ```
 
-Dapatkan daftar sumber daya dependen yang belum diatasi untuk Koleksi Pemindahan.
+Mendapatkan daftar sumber daya dependen yang belum terselesaikan untuk Kumpulan Pemindahan.
 
 ## PARAMETERS
 
@@ -79,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan pada operasi.
-Misalnya, $apply=filter(count eq 2).
+Filter yang akan diterapkan pada operasi.
+Misalnya, $apply=filter(hitungan eq 2).
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveCollectionName
-Nama Pindahkan Koleksi.
+Nama Kumpulan Pemindahan.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

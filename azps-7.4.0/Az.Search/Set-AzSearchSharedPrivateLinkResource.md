@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/set-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchSharedPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchSharedPrivateLinkResource.md
-ms.openlocfilehash: 93e7c954ac46f303aa1a7c76d01a9edede296ac7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e233390d1ebaea73e7a54959c64708c62dd760b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866952"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719858"
 ---
 # Set-AzSearchSharedPrivateLinkResource
 
 ## SYNOPSIS
-Perbarui sumber daya tautan pribadi bersama untuk layanan Azure Cognitive Search.
+Perbarui sumber daya tautan privat bersama untuk layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/set-azsearchsharedprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Set-AzSearchSharedPrivateLinkResource -RequestMessage <String> -InputObject <PSS
 ```
 
 ## DESCRIPTION
-**Set-AzSearchSharedPrivateLinkResource** ini memperbarui sumber daya tautan pribadi bersama untuk layanan Azure Cognitive Search.
+**Set-AzSearchSharedPrivateLinkResource** ini memperbarui sumber daya tautan privat bersama untuk layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -66,12 +69,12 @@ RequestMessage        : Please kindly approve
 ResourceRegion        :
 ```
 
-Contoh ini memperbarui pesan permintaan untuk sumber daya tautan pribadi bersama yang tertunda untuk layanan Azure Cognitive Search.
+Contoh ini memperbarui pesan permintaan untuk sumber daya tautan privat bersama yang tertunda untuk layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input sumber daya tautan pribadi bersama
+Objek input sumber daya tautan privat bersama
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSharedPrivateLinkResource
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-sumber daya tautan pribadi bersama Azure Cognitive Search
+### -Name
+Azure Cognitive Search Sumber daya tautan privat bersama
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestMessage
-Pesan permintaan sumber daya tautan pribadi bersama
+Pesan permintaan sumber daya tautan privat bersama
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya tautan pribadi bersama
+Id sumber daya tautan privat bersama
 
 ```yaml
 Type: System.String
@@ -205,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,11 +240,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

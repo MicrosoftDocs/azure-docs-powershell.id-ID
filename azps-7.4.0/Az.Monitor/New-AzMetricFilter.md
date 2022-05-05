@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricFilter.md
-ms.openlocfilehash: 53381b0626b27146e9e483f58f86e1721294bbc8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 12a5c3f58b9a8487550ea49165f29ad3f44991fb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283455"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724536"
 ---
 # New-AzMetricFilter
 
 ## SYNOPSIS
-Membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
+Membuat filter dimensi metrik yang dapat digunakan untuk mengkueri metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricfilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzMetricFilter [-Dimension] <String> [-Operator] <String> [-Value] <String[]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricFilter** membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
+Cmdlet **New-AzMetricFilter** membuat filter dimensi metrik yang dapat digunakan untuk mengkueri metrik.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dimension
+### -Dimensi
 Nama dimensi metrik. 
 
 ```yaml
@@ -84,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan array nilai dimensi metrik.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

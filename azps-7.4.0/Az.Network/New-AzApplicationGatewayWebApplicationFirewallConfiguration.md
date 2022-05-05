@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
-ms.openlocfilehash: 4b2891b54e5d4d4503a1be7b09bb28ce07fbd9a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 379d119fb798857c4381c821d726f6dfe364cd04
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805374"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733348"
 ---
 # New-AzApplicationGatewayWebApplicationFirewallConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi WAF untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaywebapplicationfirewallconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ $firewallConfig = New-AzApplicationGatewayWebApplicationFirewallConfiguration -E
 
 Perintah pertama membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 dinonaktifkan.
 Perintah kedua membuat konfigurasi grup aturan lain yang dinonaktifkan untuk grup aturan bernama "REQUEST-921-PROTOCOL-ATTACK". Tidak ada aturan yang diteruskan secara khusus dan dengan demikian semua aturan grup aturan akan dinonaktifkan.
-Perintah terakhir kemudian membuat konfigurasi WAF dengan aturan firewall yang dinonaktifkan seperti yang dikonfigurasi di $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan dalam variabel $firewallConfig.
+Perintah terakhir kemudian membuat konfigurasi WAF dengan aturan firewall dinonaktifkan seperti yang dikonfigurasi di $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan dalam variabel $firewallConfig.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Menunjukkan apakah WAF diaktifkan.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadLimitInMb
-Batas pengunggaan file maks dalam MB.
+Batas unggahan file maks dalam MB.
 
 ```yaml
 Type: System.Int32
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxRequestBodySizeInKb
-Ukuran bodi permintaan maks dalam KB.
+Ukuran isi permintaan maks dalam KB.
 
 ```yaml
 Type: System.Int32
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetType
-Tipe kumpulan aturan firewall aplikasi web. Nilai yang dapat diterima untuk parameter ini adalah: 
+Jenis seperangkat aturan firewall aplikasi web. Nilai yang dapat diterima untuk parameter ini adalah: 
 - OWASP
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetVersion
-Versi tipe kumpulan aturan.
+Versi jenis seperangkat aturan.
 
 ```yaml
 Type: System.String
@@ -203,8 +206,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,11 +237,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
