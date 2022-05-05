@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicApp.md
-ms.openlocfilehash: ec23191bc3637490989d5524f49ab3826b3177f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 53fb8394d034db9900d1494cdd77aaf33c4051e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226215"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735310"
 ---
 # Get-AzLogicApp
 
 ## SYNOPSIS
 Mendapatkan aplikasi logika dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Get-AzLogicApp -ResourceGroupName <String> -Name <String> -Version <String>
 Cmdlet **Get-AzLogicApp** mendapatkan aplikasi logika.
 Cmdlet ini mengembalikan objek **Alur Kerja** .
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aplikasi logika dari grup sumber daya
+### Contoh 1: Mendapatkan aplikasi logika dari grup sumber daya
 ```powershell
 Get-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp03"
 ```
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama aplikasi logika yang didapat cmdlet ini.
+### -Name
+Menentukan nama aplikasi logika yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama untuk grup sumber daya di mana cmdlet ini mendapatkan aplikasi logika.
+Menentukan nama untuk grup sumber daya tempat cmdlet ini mendapatkan aplikasi logika.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzLogicApp](./New-AzLogicApp.md)
 
-[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
+[Remove-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Set-AzLogicApp](./Set-AzLogicApp.md)
 

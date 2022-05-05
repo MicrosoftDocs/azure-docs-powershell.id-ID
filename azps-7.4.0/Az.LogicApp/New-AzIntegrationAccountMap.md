@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
-ms.openlocfilehash: 537a18bfd6c22724819ba0c2e51870f100e05164
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d1819ce6ae297adbc73b7ac8523597084272ec5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999325"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734950"
 ---
 # New-AzIntegrationAccountMap
 
 ## SYNOPSIS
 Membuat peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet ini mengembalikan objek yang mewakili peta akun integrasi.
 Menentukan nama akun integrasi, nama grup sumber daya, nama peta, dan definisi peta.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -56,12 +59,12 @@ ContentSize : 3056
 Metadata    :
 ```
 
-Perintah ini membuat peta akun integrasi dalam grup sumber daya tertentu.
+Perintah ini membuat peta akun integrasi dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh perintah sebelumnya.
 
 ### Contoh 2
 
-Membuat peta akun integrasi. (autogenerasi)
+Membuat peta akun integrasi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMap47' -MapType Xslt -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -70,7 +73,7 @@ New-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMa
 ## PARAMETERS
 
 ### -ContentType
-Menentukan tipe konten untuk peta akun integrasi.
+Menentukan jenis konten untuk peta akun integrasi.
 Cmdlet ini mendukung aplikasi/xml sebagai tipe konten peta.
 
 ```yaml
@@ -147,8 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -MapType
-Menentukan tipe untuk peta akun integrasi.
-Cmdlet ini mendukung Xslt sebagai tipe peta.
+Menentukan jenis untuk peta akun integrasi.
+Cmdlet ini mendukung Xslt sebagai jenis peta.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk akun integrasi.
 
 ```yaml
@@ -208,8 +211,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
