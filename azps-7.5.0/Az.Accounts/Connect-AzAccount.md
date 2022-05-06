@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/connect
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
-ms.openlocfilehash: 22a0a4da498feccf9292a1e61c21ec8767ba5dad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e7b43639eaa07f1e6534fadb750b83750f506ba1
+ms.sourcegitcommit: b30367cf7752ecec16cdb98aa94322a69487bdf6
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205763"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144795625"
 ---
 # Connect-AzAccount
 
@@ -157,6 +157,7 @@ Contoh ini terhubung menggunakan Identitas Layanan Terkelola (MSI) lingkungan ho
 
 ```powershell
 Connect-AzAccount -Identity
+Set-AzContext -Subscription Subscription1
 ```
 
 ```Output
@@ -559,7 +560,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendCertificateChain
-Menentukan apakah klaim x5c (kunci umum sertifikat) harus dikirim ke STS untuk mencapai rollover sertifikat yang mudah di Azure AD.
+Menentukan apakah klaim x5c (kunci umum sertifikat) harus dikirim ke STS untuk mencapai rollover sertifikat yang mudah dalam Azure AD.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -654,7 +655,7 @@ Accept wildcard characters: False
 Nama atau ID penyewa opsional.
 
 > [!NOTE]
-> Karena keterbatasan API saat ini, Anda harus menggunakan ID penyewa alih-alih nama penyewa saat terhubung dengan akun business-to-business (B2B).
+> Karena keterbatasan API saat ini, Anda harus menggunakan ID penyewa alih-alih nama penyewa saat menyambungkan dengan akun business-to-business (B2B).
 
 ```yaml
 Type: System.String

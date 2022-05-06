@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/connect
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
-ms.openlocfilehash: d791a8839a728ef81cf0b6442d6c894ae5042e7c
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 116ea8f6529bbd80d178764e08acf01abeed0ee5
+ms.sourcegitcommit: b30367cf7752ecec16cdb98aa94322a69487bdf6
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144602042"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144795624"
 ---
 # Connect-AzAccount
 
@@ -160,6 +160,7 @@ Contoh ini terhubung menggunakan Identitas Layanan Terkelola (MSI) lingkungan ho
 
 ```powershell
 Connect-AzAccount -Identity
+Set-AzContext -Subscription Subscription1
 ```
 
 ```Output
