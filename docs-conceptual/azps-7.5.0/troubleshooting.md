@@ -1,17 +1,17 @@
 ---
 description: Memecahkan masalah modul Azure Az PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Pemecahan masalah modul Azure Az PowerShell
-ms.openlocfilehash: d87ba7f16a5a18cfa5de64196f13040acfe16149
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: b21f0d18ddafc23b469c35c7b389b87bb622f789
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144701922"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957592"
 ---
 # <a name="troubleshooting-the-azure-az-powershell-module"></a>Pemecahan masalah modul Azure Az PowerShell
 
@@ -27,7 +27,7 @@ Get-AzResource -Name 'DoesNotExist' -Debug
 
 Untuk mengaktifkan pengelogan debug untuk seluruh sesi PowerShell, Anda menetapkan nilai variabel **DebugPreference** menjadi `Continue`.
 
-```azurepowershell-interactive
+```powershell-interactive
 $DebugPreference = 'Continue'
 ```
 
@@ -77,7 +77,7 @@ DeviceCodeCredential authentication failed: Persistence check failed. Reason: Ke
 
 Sebagai solusi untuk masalah ini, Anda dapat menonaktifkan penyimpanan kredensial antar sesi dengan menjalankan perintah berikut. Namun, setelah membuat perubahan ini, Anda harus menjalankan `Connect-AzAccount` setiap kali memulai sesi PowerShell baru.
 
-```powershell
+```azurepowershell
 Disable-AzContextAutosave
 ```
 

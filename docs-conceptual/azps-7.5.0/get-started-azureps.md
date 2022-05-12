@@ -1,17 +1,17 @@
 ---
 description: Mulai menggunakan Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: get-started-article
 title: Mulai menggunakan Azure PowerShell
-ms.openlocfilehash: d9aa9af6d709b10114f5ed00279f92a19fcad9d7
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 18524a520d39bd05248650fa9207800d6b8021b0
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144568316"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957264"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 
@@ -30,7 +30,7 @@ Begitu Anda siap menginstal Azure PowerShell di komputer lokal, ikuti petunjuk d
 
 Masuk secara interaktif dengan cmdlet [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount). Lewati langkah ini jika Anda menggunakan Cloud Shell. Sesi Azure Cloud Shell Anda sudah diautentikasi untuk lingkungan, langganan, dan penyewa yang meluncurkan sesi Cloud Shell.
 
-```azurepowershell-interactive
+```azurepowershell
 Connect-AzAccount
 ```
 

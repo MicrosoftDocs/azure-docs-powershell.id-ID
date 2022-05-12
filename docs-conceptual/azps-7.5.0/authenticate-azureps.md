@@ -1,17 +1,17 @@
 ---
 description: Cara masuk dengan Azure PowerShell sebagai pengguna, perwakilan layanan, atau dengan identitas terkelola untuk sumber daya Azure.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Masuk dengan Azure PowerShell
-ms.openlocfilehash: 13146d57a3d6a9abce8d584620fe562ad86e69a4
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 2a02272e7db28f02b0c5aef34ee828efccb08072
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144586818"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957320"
 ---
 # <a name="sign-in-with-azure-powershell"></a>Masuk dengan Azure PowerShell
 
@@ -27,7 +27,7 @@ Awalnya, Anda masuk ke langganan pertama yang kembali Azure jika Anda memiliki a
 
 Untuk masuk secara interaktif, gunakan cmdlet [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount).
 
-```azurepowershell-interactive
+```azurepowershell
 Connect-AzAccount
 ```
 
@@ -97,15 +97,15 @@ Skrip berikut menunjukkan kepada Anda cara mengimpor sertifikat yang ada ke peny
 
 #### <a name="import-a-certificate-in-powershell-51"></a>Mengimpor sertifikat di PowerShell 5.1
 
-```azurepowershell-interactive
+```powershell-interactive
 # Import a PFX
-$credentials = Get-Credential -Message "Provide PFX private key password"
+$credentials = Get-Credential -Message 'Provide PFX private key password'
 Import-PfxCertificate -FilePath <path to certificate> -Password $credentials.Password -CertStoreLocation cert:\CurrentUser\My
 ```
 
 #### <a name="import-a-certificate-in-powershell-core-6x-and-later"></a>Mengimpor sertifikat di PowerShell Core 6.x dan versi lebih baru
 
-```azurepowershell-interactive
+```powershell-interactive
 # Import a PFX
 $storeName = [System.Security.Cryptography.X509Certificates.StoreName]::My
 $storeLocation = [System.Security.Cryptography.X509Certificates.StoreLocation]::CurrentUser

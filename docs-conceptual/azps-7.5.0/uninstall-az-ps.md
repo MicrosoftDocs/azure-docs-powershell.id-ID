@@ -1,17 +1,17 @@
 ---
 description: Cara melakukan penghapusan instalan Azure PowerShell secara menyeluruh
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menghapus instalan Azure PowerShell
-ms.openlocfilehash: 9bd7a7ee102e5fcda063d456fc8b23f2e6cb344e
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: df121a09a5e7c1cc3f76f88eabb13ab2fa7971d7
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144685743"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957575"
 ---
 # <a name="how-to-uninstall-azure-powershell-modules"></a>Cara menghapus instalan modul Azure PowerShell
 
@@ -47,13 +47,13 @@ Untuk menghapus instalan modul Az PowerShell, Anda dapat menggunakan cmdlet [Uni
 
 Pertama, Anda memerlukan daftar semua versi modul Az PowerShell yang terinstal di sistem Anda.
 
-```azurepowershell-interactive
+```powershell
 Get-InstalledModule -Name Az -AllVersions -OutVariable AzVersions
 ```
 
 Anda dapat menggunakan contoh berikut untuk membuat daftar semua modul Az PowerShell yang perlu dihapus instalannya selain modul Az.
 
-```azurepowershell-interactive
+```powershell
 ($AzVersions |
   ForEach-Object {
     Import-Clixml -Path (Join-Path -Path $_.InstalledLocation -ChildPath PSGetModuleInfo.xml)
@@ -62,7 +62,7 @@ Anda dapat menggunakan contoh berikut untuk membuat daftar semua modul Az PowerS
 
 Hapus modul Az dari memori lalu hapus instalannya.
 
-```azurepowershell-interactive
+```powershell
 $AzModules |
   ForEach-Object {
     Remove-Module -Name $_ -ErrorAction SilentlyContinue
@@ -73,7 +73,7 @@ $AzModules |
 
 Langkah terakhir adalah menghapus modul Az PowerShell.
 
-```azurepowershell-interactive
+```powershell
 Remove-Module -Name Az -ErrorAction SilentlyContinue
 Uninstall-Module -Name Az -AllVersions
 ```
@@ -99,12 +99,12 @@ Jika Anda menginstal AzureRM dengan PowerShellGet, Anda dapat menghapus modul de
 
 Untuk menggunakan `Uninstall-AzureRM` dari modul `Az.Accounts`, Anda harus menginstal modul Az PowerShell. Modul AzureRM dan Az yang diinstal pada saat yang sama tidak didukung, namun modul Az dapat digunakan untuk segera menghapus instalan modul AzureRM. Anda dapat menginstal modul Az dan melewati peringatan modul AzureRM dengan perintah berikut jika Anda belum menginstal modul Az:
 
-```powershell-interactive
+```powershell
 Install-Module -Name Az -AllowClobber -Scope CurrentUser
 ```
 
 Setelah modul Az diinstal, perintah berikut menghapus _semua_ modul AzureRM dari komputer Anda. Tindakan ini memerlukan hak istimewa administrator.
 
-```powershell-interactive
+```powershell
 Uninstall-AzureRm
 ```

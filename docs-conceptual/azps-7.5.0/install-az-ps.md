@@ -1,17 +1,17 @@
 ---
 description: Cara menginstal Azure Az PowerShell dengan PowerShellGet
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menginstal modul Azure Az PowerShell
-ms.openlocfilehash: 49ce5753a7bc06ffa3414f7809154d04a9fedb87
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 81095a4e38a04045a53a5aa159cb27b427ba6686
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144698379"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957609"
 ---
 # <a name="install-the-azure-az-powershell-module"></a>Menginstal modul Azure Az PowerShell
 
@@ -32,7 +32,7 @@ Azure PowerShell tidak memiliki persyaratan tambahan saat dijalankan di PowerShe
 
 Untuk memeriksa versi PowerShell Anda, jalankan perintah berikut dari dalam sesi PowerShell:
 
-```azurepowershell
+```powershell
 $PSVersionTable.PSVersion
 ```
 
@@ -65,8 +65,8 @@ Modul Azure Az PowerShell juga didukung untuk penggunaan dengan PowerShell 5.1 d
 
 1. Perbarui ke [Windows PowerShell 5.1](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
    Jika menggunakan Windows 10 versi 1607 atau lebih tinggi, Anda telah menginstal PowerShell 5.1.
-2. Instal [.NET Framework 4.7.2 or versi lebih baru](/dotnet/framework/install).
-3. Pastikan Anda telah menginstal PowerShellGet versi terbaru. Jalankan `Install-Module -Name PowerShellGet -Force`.
+1. Instal [.NET Framework 4.7.2 or versi lebih baru](/dotnet/framework/install).
+1. Pastikan Anda telah menginstal PowerShellGet versi terbaru. Jalankan `Install-Module -Name PowerShellGet -Force`.
 
 ### <a name="offline-installation"></a>Penginstalan Offline
 
@@ -81,7 +81,7 @@ Di beberapa lingkungan, tidak mungkin untuk terhubung ke Galeri PowerShell. Dala
 
 Untuk mulai bekerja dengan Azure PowerShell, masuk dengan info masuk Azure Anda.
 
-```powershell
+```azurepowershell
 Connect-AzAccount
 ```
 

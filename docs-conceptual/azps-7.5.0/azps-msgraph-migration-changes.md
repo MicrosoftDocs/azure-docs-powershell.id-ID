@@ -1,17 +1,17 @@
 ---
 description: Panduan migrasi berisi daftar perubahan Azure PowerShell untuk migrasi Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Migrasi Azure AD ke Microsoft Graph di Azure PowerShell
-ms.openlocfilehash: 045550f851021c1751310388c6b7c899ca904fd7
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 7aa13cd579a0f8286be5c994ec8c2aef0b4947dc
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144698409"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957337"
 ---
 # <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Migrasi Azure AD ke Microsoft Graph di Azure PowerShell
 
@@ -20,7 +20,7 @@ Untuk informasi selengkapnya, lihat [migrasi Azure AD ke Microsoft Graph untuk a
 
 Contoh berikut menginstal versi terbaru modul `Az.Resources` Azure PowerShell.
 
-```azurepowershell
+```powershell
 Install-Module -Name Az.Resources -Repository PSGallery -Scope CurrentUser
 ```
 

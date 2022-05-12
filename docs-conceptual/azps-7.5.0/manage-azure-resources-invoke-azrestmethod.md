@@ -1,17 +1,17 @@
 ---
 description: Cara menggunakan Azure PowerShell untuk mengelola sumber daya dengan cmdlet Invoke-AzRestMethod.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Mengelola sumber daya Azure dengan Invoke-AzRestMethod
-ms.openlocfilehash: 3d5f72847b549da771b8540fef3d543bca148ca1
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 659d93ddcb63818c00f3c3e9ff6fea2a3e73a485
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144694370"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957541"
 ---
 # <a name="manage-azure-resources-with-invoke-azrestmethod"></a>Mengelola sumber daya Azure dengan Invoke-AzRestMethod
 
@@ -109,6 +109,6 @@ Jika Anda sudah terbiasa dengan cmdlet `*-AzResource`, Anda dapat terus mengguna
 
 ## <a name="see-also"></a>Lihat juga
 
-* [Mendapatkan-AzResource](/powershell/module/az.resources/get-azresource)
-* [Baru-AzResource](/powershell/module/az.resources/new-azresource)
-* [Remove-AzResource](/powershell/module/az.resources/remove-azresource)
+- [Mendapatkan-AzResource](/powershell/module/az.resources/get-azresource)
+- [Baru-AzResource](/powershell/module/az.resources/new-azresource)
+- [Remove-AzResource](/powershell/module/az.resources/remove-azresource)

@@ -1,17 +1,17 @@
 ---
 description: Pelajari langkah dan alat untuk memigrasikan skrip Azure PowerShell dari AzureRM ke modul Az PowerShell yang baru.
 ms.custom: devx-track-azurepowershell, contperf-fy21q2
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Memigrasikan skrip Azure PowerShell dari AzureRM ke Az
-ms.openlocfilehash: ed6266a2f0ee9a0e8f22b5662d74a1abc204b342
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: c5ce0804958185c158b699c6eda644a08fa9c686
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144593458"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957269"
 ---
 # <a name="migrate-azure-powershell-from-azurerm-to-az"></a>Memigrasikan Azure PowerShell dari AzureRM ke Az
 
@@ -45,11 +45,11 @@ Melakukan hal itu memungkinkan Anda memastikan skrip sudah berjalan pada rilis t
 
 Untuk memeriksa versi AzureRM mana yang telah Anda terinstal, jalankan contoh berikut:
 
-```azurepowershell
+```powershell
 Get-Module -Name AzureRM -ListAvailable -All
 ```
 
-Rilis **terbaru** yang tersedia dari AzureRM adalah **6.13.2**. Jika Anda tidak menginstal versi ini, skrip yang ada mungkin memerlukan modifikasi tambahan untuk bekerja dengan modul Az di luar cakupan apa yang dijelaskan dalam artikel ini dan dalam [daftar perubahan yang melanggar](migrate-az-1.0.0.md).
+Rilis **AzureRM terbaru** yang tersedia adalah **6.13.2**. Jika Anda tidak menginstal versi ini, skrip yang ada mungkin memerlukan modifikasi tambahan untuk bekerja dengan modul Az di luar cakupan apa yang dijelaskan dalam artikel ini dan dalam [daftar perubahan yang melanggar](migrate-az-1.0.0.md).
 
 Jika skrip Anda tidak berfungsi dengan AzureRM 6.13.2, perbarui skrip sesuai [dengan panduan migrasi AzureRM 5.x hingga 6.x](/powershell/azure/azurerm/migration-guide.6.0.0). Jika Anda menggunakan versi modul AzureRM yang lebih lama, ada panduan migrasi yang tersedia untuk setiap versi utama.
 
@@ -59,7 +59,7 @@ Opsi yang disarankan ini meminimalkan upaya yang diperlukan untuk memigrasikan s
 
 ### <a name="install-the-azurerm-to-az-migration-toolkit"></a>Menginstal toolkit migrasi AzureRM ke Az
 
-```azurepowershell
+```powershell
 Install-Module -Name Az.Tools.Migration
 ```
 
@@ -85,11 +85,11 @@ Instal [ekstensi Azure PowerShell untuk VSCode](https://marketplace.visualstudio
 ### <a name="convert-your-scripts-manually"></a>Mengonversi skrip Anda secara manual
 
 1. Memuat skrip AzureRM Anda di VSCode
-2. Mulai migrasi dengan membuka palet perintah `Ctrl+Shift+P` dan pilih `Migrate Azure PowerShell script`
-3. Pilih versi sumber `AzureRM`
-4. Ikuti tindakan yang disarankan untuk setiap perintah atau parameter yang digarisbawahi.
+1. Mulai migrasi dengan membuka palet perintah `Ctrl+Shift+P` dan pilih `Migrate Azure PowerShell script`
+1. Pilih versi sumber `AzureRM`
+1. Ikuti tindakan yang disarankan untuk setiap perintah atau parameter yang digarisbawahi.
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
-* [Menghapus instalan AzureRM](uninstall-az-ps.md#uninstall-the-azurerm-module)
-* [Instal Azure PowerShell](install-az-ps.md).
+- [Menghapus instalan AzureRM](uninstall-az-ps.md#uninstall-the-azurerm-module)
+- [Instal Azure PowerShell](install-az-ps.md).

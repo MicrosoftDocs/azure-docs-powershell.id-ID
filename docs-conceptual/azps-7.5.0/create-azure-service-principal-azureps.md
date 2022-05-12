@@ -1,17 +1,17 @@
 ---
 description: Pelajari cara membuat dan menggunakan perwakilan layanan dengan Azure PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menggunakan perwakilan layanan Azure dengan Azure PowerShell
-ms.openlocfilehash: b64551ca7e27e10c43e51afbc5575c9238d8e784
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 9ab86114b0b79530a29509e26db5ddffeecf832d
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144732664"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957405"
 ---
 # <a name="create-an-azure-service-principal-with-azure-powershell"></a>Membuat prinsipal layanan Azure dengan Microsoft Azure PowerShell
 

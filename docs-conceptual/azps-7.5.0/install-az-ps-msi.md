@@ -1,17 +1,17 @@
 ---
 description: Cara menginstal Azure PowerShell tanpa PowerShellGet menggunakan MSI
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menginstal Azure PowerShell dengan MSI
-ms.openlocfilehash: 47d61dac17b87c5516afbc1cfee663ed8248949b
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: ed28f2f8f79e4595175b8086f51519beed09b000
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144726262"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957388"
 ---
 # <a name="install-azure-powershell-on-windows-with-msi"></a>Menginstal Azure PowerShell di Windows dengan MSI
 
@@ -28,7 +28,7 @@ $PSVersionTable.PSVersion
 Untuk menggunakan Azure PowerShell di PowerShell 5.1, Anda harus:
 
 1. Perbarui ke [Windows PowerShell 5.1](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell) jika diperlukan. Jika Anda menggunakan Windows 10, PowerShell 5.1 sudah terinstal di dalamnya.
-2. Instal [.NET Framework 4.7.2 or versi lebih baru](/dotnet/framework/install).
+1. Instal [.NET Framework 4.7.2 or versi lebih baru](/dotnet/framework/install).
 
 ## <a name="install-or-update-on-windows-using-the-msi-package"></a>Menginstal atau memperbarui di Windows menggunakan Paket MSI
 
@@ -43,7 +43,7 @@ Jika Anda telah menginstal versi Azure PowerShell yang lebih lama menggunakan MS
 
 Untuk mulai bekerja dengan Azure PowerShell, masuk dengan info masuk Azure Anda.
 
-```powershell-interactive
+```azurepowershell
 # Connect to Azure with an interactive dialog for sign-in
 Connect-AzAccount
 ```

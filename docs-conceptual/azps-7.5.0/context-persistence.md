@@ -1,17 +1,17 @@
 ---
 description: Pelajari cara menggunakan kembali info masuk Azure dan informasi lainnya di beberapa sesi PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Konteks Azure dan informasi masuk
-ms.openlocfilehash: 49e1f0f4b7cd0575f1588f4915425c490731dabf
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 9d1196da4d90bd435a8a931768b2ad6100882022
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144728312"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957303"
 ---
 # <a name="azure-powershell-context-objects"></a>Objek konteks Azure PowerShell
 
@@ -23,9 +23,9 @@ Artikel ini membahas pengelolaan konteks Azure, bukan manajemen langganan atau a
 
 Konteks Azure adalah objek PowerShell yang mewakili langganan aktif Anda untuk menjalankan perintah, dan informasi autentikasi yang diperlukan untuk tersambung ke cloud Azure. Dengan konteks Azure, Azure PowerShell tidak perlu mengautentikasi ulang akun Anda setiap kali beralih langganan. Konteks Azure terdiri dari:
 
-* _Akun_ yang digunakan untuk masuk ke Azure dengan [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount). Konteks Azure memperlakukan pengguna, ID aplikasi, dan perwakilan layanan secara sama dari perspektif akun.
-* _Langganan_ aktif, perjanjian layanan dengan Microsoft untuk membuat dan menjalankan sumber daya Azure, yang terkait dengan _penyewa_. Penyewa sering disebut sebagai _organisasi_ dalam dokumentasi atau ketika bekerja dengan Active Directory.
-* Referensi ke _cache token_, token autentikasi yang disimpan untuk mengakses cloud Azure. Di mana token ini disimpan dan berapa lama token ini bertahan ditentukan oleh [pengaturan penyimpanan otomatis konteks](#save-azure-contexts-across-powershell-sessions).
+- _Akun_ yang digunakan untuk masuk ke Azure dengan [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount). Konteks Azure memperlakukan pengguna, ID aplikasi, dan perwakilan layanan secara sama dari perspektif akun.
+- _Langganan_ aktif, perjanjian layanan dengan Microsoft untuk membuat dan menjalankan sumber daya Azure, yang terkait dengan _penyewa_. Penyewa sering disebut sebagai _organisasi_ dalam dokumentasi atau ketika bekerja dengan Active Directory.
+- Referensi ke _cache token_, token autentikasi yang disimpan untuk mengakses cloud Azure. Di mana token ini disimpan dan berapa lama token ini bertahan ditentukan oleh [pengaturan penyimpanan otomatis konteks](#save-azure-contexts-across-powershell-sessions).
 
 Untuk informasi selengkapnya mengenai istilah-istilah ini, lihat [Terminologi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis#terminology).
 Token autentikasi yang digunakan oleh konteks Azure sama dengan token lainnya yang disimpan yang merupakan bagian dari sesi persisten.
@@ -98,17 +98,17 @@ Penggunaan utama lain dari konteks dengan cmdlet Azure PowerShell adalah untuk m
 
 Secara default, konteks Azure disimpan untuk digunakan di antara sesi PowerShell. Anda mengubah perilaku ini dengan cara berikut:
 
-* Masuk menggunakan `-Scope Process` dengan `Connect-AzAccount`.
+- Masuk menggunakan `-Scope Process` dengan `Connect-AzAccount`.
 
   ```azurepowershell
   Connect-AzAccount -Scope Process
   ```
 
   Konteks Azure yang dikembalikan sebagai bagian dari proses masuk ini _hanya_ berlaku untuk sesi saat ini dan tidak akan disimpan secara otomatis, terlepas dari pengaturan simpan-otomatis konteks Azure PowerShell.
-* Nonaktifkan simpan-otomatis konteks di Azure PowerShell dengan cmdlet [Disable-AzContextAutosave](/powershell/module/az.accounts/disable-azcontextautosave).
+- Nonaktifkan simpan-otomatis konteks di Azure PowerShell dengan cmdlet [Disable-AzContextAutosave](/powershell/module/az.accounts/disable-azcontextautosave).
   Menonaktifkan simpan-otomatis konteks __tidak__ menghapus token yang disimpan. Untuk mempelajari cara menghapus informasi konteks Azure yang disimpan, lihat [Menghapus konteks dan info masuk Azure](#remove-azure-contexts-and-stored-credentials).
-* Mengaktifkan simpan-otomatis konteks Azure secara eksplisit dapat diaktifkan dengan cmdlet [Enable-AzContextAutosave](/powershell/module/az.accounts/enable-azcontextautosave). Dengan diaktifkannya simpan-otomatis, semua konteks pengguna disimpan secara lokal untuk sesi PowerShell di kemudian hari.
-* Simpan konteks secara manual dengan [Save-AzContext](/powershell/module/az.accounts/save-azcontext) untuk digunakan di sesi PowerShell mendatang, di mana mereka dapat dimuat dengan [Import-AzContext](/powershell/module/az.accounts/import-azcontext):
+- Mengaktifkan simpan-otomatis konteks Azure secara eksplisit dapat diaktifkan dengan cmdlet [Enable-AzContextAutosave](/powershell/module/az.accounts/enable-azcontextautosave). Dengan diaktifkannya simpan-otomatis, semua konteks pengguna disimpan secara lokal untuk sesi PowerShell di kemudian hari.
+- Simpan konteks secara manual dengan [Save-AzContext](/powershell/module/az.accounts/save-azcontext) untuk digunakan di sesi PowerShell mendatang, di mana mereka dapat dimuat dengan [Import-AzContext](/powershell/module/az.accounts/import-azcontext):
 
   ```azurepowershell
   Save-AzContext -Path current-context.json # Save the current context
@@ -132,7 +132,7 @@ Informasi konteks dan token disimpan di direktori `$env:USERPROFILE\.Azure` pada
 
 Untuk menghapus konteks dan info masuk Azure:
 
-* Keluar dari akun menggunakan [Disconnect-AzAccount](/powershell/module/az.accounts/disconnect-azaccount). Anda dapat keluar dari akun apa pun baik melalui akun atau konteks:
+- Keluar dari akun menggunakan [Disconnect-AzAccount](/powershell/module/az.accounts/disconnect-azaccount). Anda dapat keluar dari akun apa pun baik melalui akun atau konteks:
 
   ```azurepowershell-interactive
   Disconnect-AzAccount # Disconnect active account
@@ -143,8 +143,8 @@ Untuk menghapus konteks dan info masuk Azure:
   ```
 
   Memutuskan sambungan selalu menghapus token autentikasi yang disimpan dan menghapus konteks yang disimpan yang terkait dengan pengguna atau konteks yang terputus.
-* Gunakan [Clear-AzContext](/powershell/module/az.accounts/Clear-AzContext). Cmdlet ini selalu menghapus konteks yang tersimpan, token autentikasi, dan mengeluarkan Anda.
-* Hapus konteks dengan [Remove-AzContext](/powershell/module/az.accounts/remove-azcontext):
+- Gunakan [Clear-AzContext](/powershell/module/az.accounts/Clear-AzContext). Cmdlet ini selalu menghapus konteks yang tersimpan, token autentikasi, dan mengeluarkan Anda.
+- Hapus konteks dengan [Remove-AzContext](/powershell/module/az.accounts/remove-azcontext):
 
   ```azurepowershell-interactive
   Remove-AzContext -Name 'mycontext' # Remove by name
@@ -155,6 +155,6 @@ Untuk menghapus konteks dan info masuk Azure:
 
 ## <a name="see-also"></a>Lihat juga
 
-* [Menjalankan cmdlet Azure PowerShell di Pekerjaan PowerShell](using-psjobs.md)
-* [Terminologi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis#terminology)
-* [Referensi Az.Accounts](/powershell/module/az.accounts)
+- [Menjalankan cmdlet Azure PowerShell di Pekerjaan PowerShell](using-psjobs.md)
+- [Terminologi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis#terminology)
+- [Referensi Az.Accounts](/powershell/module/az.accounts)

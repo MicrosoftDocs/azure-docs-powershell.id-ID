@@ -1,17 +1,17 @@
 ---
 description: Memperkenalkan modul Az PowerShell, yang direkomendasikan untuk berinteraksi dengan Azure, dan penggantian modul AzureRM PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Memperkenalkan modul Azure Az PowerShell
-ms.openlocfilehash: d83ed18f99f4ed11f8e8e9da02feea2540121bad
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 32830d370cf9cbfdff9a5d91db26b5217064300d
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144631880"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957371"
 ---
 # <a name="introducing-the-azure-az-powershell-module"></a>Memperkenalkan modul Azure Az PowerShell
 
@@ -24,28 +24,28 @@ Modul Az PowerShell adalah pengganti AzureRM dan merupakan versi yang disarankan
 
 Anda dapat menggunakan modul Az PowerShell dengan salah satu metode berikut:
 
-* [Menginstal modul Az PowerShell melalui PowerShellGet](install-az-ps.md) (opsi yang disarankan).
-* [Meninstal modul Azure PowerShell dengan MSI](install-az-ps-msi.md).
-* [Menggunakan Azure Cloud Shell](/azure/cloud-shell/overview).
-* [Menggunakan kontainer Az PowerShell Docker](azureps-in-docker.md).
+- [Menginstal modul Az PowerShell melalui PowerShellGet](install-az-ps.md) (opsi yang disarankan).
+- [Meninstal modul Azure PowerShell dengan MSI](install-az-ps-msi.md).
+- [Menggunakan Azure Cloud Shell](/azure/cloud-shell/overview).
+- [Menggunakan kontainer Az PowerShell Docker](azureps-in-docker.md).
 
 ## <a name="features"></a>Fitur
 
 Modul Az PowerShell memiliki manfaat berikut:
 
-* Keamanan dan stabilitas
-  * Enkripsi cache token
-  * Pencegahan jenis serangan man-in-the-middle
-  * Mendukung autentikasi dengan ADFS 2019
-  * Autentikasi kata sandi dan nama pengguna di PowerShell 7
-  * Dukungan untuk fitur seperti evaluasi akses berkelanjutan
-* Dukungan untuk semua layanan Azure
-  * Semua layanan Azure yang tersedia secara umum memiliki modul PowerShell sesuai yang didukung
-  * Beberapa perbaikan bug dan peningkatan versi API sejak AzureRM
-* Kapabilitas baru
-  * Dukungan di Cloud Shell dan lintas platform
-  * Bisa mendapatkan dan menggunakan token akses untuk mengakses sumber daya Azure
-  * Cmdlet tersedia untuk operasi REST tingkat lanjut dengan sumber daya Azure
+- Keamanan dan stabilitas
+  - Enkripsi cache token
+  - Pencegahan jenis serangan man-in-the-middle
+  - Mendukung autentikasi dengan ADFS 2019
+  - Autentikasi kata sandi dan nama pengguna di PowerShell 7
+  - Dukungan untuk fitur seperti evaluasi akses berkelanjutan
+- Dukungan untuk semua layanan Azure
+  - Semua layanan Azure yang tersedia secara umum memiliki modul PowerShell sesuai yang didukung
+  - Beberapa perbaikan bug dan peningkatan versi API sejak AzureRM
+- Kapabilitas baru
+  - Dukungan di Cloud Shell dan lintas platform
+  - Bisa mendapatkan dan menggunakan token akses untuk mengakses sumber daya Azure
+  - Cmdlet tersedia untuk operasi REST tingkat lanjut dengan sumber daya Azure
 
 > [!NOTE]
 > PowerShell 7.0.6 LTS, PowerShell 7.1.3, atau lebih tinggi adalah versi PowerShell yang direkomendasikan untuk digunakan dengan modul Azure Az PowerShell di semua platform.
@@ -58,8 +58,8 @@ Kami berkomitmen untuk menghadirkan dukungan Azure pada semua platform dan semua
 
 Untuk mengikuti fitur Azure terbaru di PowerShell, Anda harus bermigrasi ke modul Az. Jika Anda belum siap untuk menginstal modul Az sebagai pengganti AzureRM, Anda memiliki beberapa opsi yang tersedia untuk bereksperimen dengan Az:
 
-* Gunakan lingkungan `PowerShell` dengan [Azure Cloud Shell](/azure/cloud-shell/overview). Azure Cloud Shell adalah lingkungan shell berbasis browser yang dilengkapi dengan modul Az yang diinstal dan alias kompatibilitas `Enable-AzureRM` yang diaktifkan.
-* Instal modul AzureRM di Windows PowerShell 5.1 dan instal modul Az di PowerShell 7 atau versi lebih baru. Windows PowerShell 5.1 dan PowerShell 7 dan yang lebih baru menggunakan koleksi modul terpisah. Ikuti petunjuk untuk menginstal [powershell versi terbaru](/powershell/scripting/install/installing-powershell) kemudian [instal modul Az](install-az-ps.md) dari PowerShell 7 atau versi lebih baru.
+- Gunakan lingkungan `PowerShell` dengan [Azure Cloud Shell](/azure/cloud-shell/overview). Azure Cloud Shell adalah lingkungan shell berbasis browser yang dilengkapi dengan modul Az yang diinstal dan alias kompatibilitas `Enable-AzureRM` yang diaktifkan.
+- Instal modul AzureRM di Windows PowerShell 5.1 dan instal modul Az di PowerShell 7 atau versi lebih baru. Windows PowerShell 5.1 dan PowerShell 7 dan yang lebih baru menggunakan koleksi modul terpisah. Ikuti petunjuk untuk menginstal [powershell versi terbaru](/powershell/scripting/install/installing-powershell) kemudian [instal modul Az](install-az-ps.md) dari PowerShell 7 atau versi lebih baru.
 
 Untuk meningkatkan dari penginstalan AzureRM yang ada:
 
@@ -71,9 +71,9 @@ Untuk meningkatkan dari penginstalan AzureRM yang ada:
 
 Jika skrip Anda masih berbasis modul AzureRM, kami memiliki beberapa sumber daya untuk membantu Anda bermigrasi:
 
-* [Mulai migrasi dari AzureRM ke Az](migrate-from-azurerm-to-az.md)
-* [Daftar lengkap perubahan berisiko dari AzureRM ke Az 1.0.0](migrate-az-1.0.0.md)
-* Cmdlet [Enable-AzureRmAlias](/powershell/module/az.accounts/enable-azurermalias)
+- [Mulai migrasi dari AzureRM ke Az](migrate-from-azurerm-to-az.md)
+- [Daftar lengkap perubahan berisiko dari AzureRM ke Az 1.0.0](migrate-az-1.0.0.md)
+- Cmdlet [Enable-AzureRmAlias](/powershell/module/az.accounts/enable-azurermalias)
 
 ## <a name="supportability"></a>Dukungan
 

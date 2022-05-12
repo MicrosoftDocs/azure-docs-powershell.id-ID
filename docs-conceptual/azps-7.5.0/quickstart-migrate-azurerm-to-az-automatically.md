@@ -3,16 +3,16 @@ author: mikefrobbins
 description: Pelajari cara memigrasikan skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell.
 ms.author: mirobb
 ms.custom: devx-track-azurepowershell, mode-api
-ms.date: 04/26/2022
+ms.date: 05/11/2022
 ms.service: azure-powershell
 ms.topic: quickstart
 title: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
-ms.openlocfilehash: bf822f5671c05b9bce779cb2906a8a5ee3378b29
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 09fca941a429efd26ab064cbff23c7b6aa09f86f
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144654194"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957559"
 ---
 # <a name="quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module"></a>Mulai cepat: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
 
@@ -20,8 +20,8 @@ Pada artikel ini, Anda akan mempelajari cara menggunakan modul Az.Tools.Migratio
 
 ## <a name="requirements"></a>Persyaratan
 
-* Perbarui skrip PowerShell Anda yang sudah ada ke versi terbaru [modul AzureRM PowerShell (6.13.2)](https://www.powershellgallery.com/packages/AzureRM/).
-* Instal modul Az.Tools.Migration PowerShell.
+- Perbarui skrip PowerShell Anda yang sudah ada ke versi terbaru [modul AzureRM PowerShell (6.13.2)](https://www.powershellgallery.com/packages/AzureRM/).
+- Instal modul Az.Tools.Migration PowerShell.
 
   ```powershell
   Install-Module -Name Az.Tools.Migration
@@ -158,9 +158,9 @@ Replacement            :
 
 ## <a name="limitations"></a>Batasan
 
-* Operasi I/O file menggunakan pengkodean default. Situasi pengkodean file yang tidak biasa dapat menyebabkan masalah.
-* Cmdlet AzureRM yang diteruskan sebagai argumen ke pernyataan tiruan uji unit Pester tidak terdeteksi.
-* Saat ini, hanya modul Az PowerShell versi 5.2.0 yang didukung sebagai target.
+- Operasi I/O file menggunakan pengkodean default. Situasi pengkodean file yang tidak biasa dapat menyebabkan masalah.
+- Cmdlet AzureRM yang diteruskan sebagai argumen ke pernyataan tiruan uji unit Pester tidak terdeteksi.
+- Saat ini, hanya modul Az PowerShell versi 5.2.0 yang didukung sebagai target.
 
 ## <a name="how-to-report-issues"></a>Cara melaporkan masalah
 

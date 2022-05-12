@@ -1,17 +1,17 @@
 ---
 description: Mengelola langganan Azure dengan Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 05/03/2022
+ms.date: 05/11/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Mengelola langganan Azure dengan Azure PowerShell
-ms.openlocfilehash: a546ce52a14bebd7e5204340f77229f33a2616f3
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 4dc4987c3e7a49688026f89007c1f66268e7242b
+ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144691493"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144957354"
 ---
 # <a name="use-multiple-azure-subscriptions"></a>Menggunakan beberapa langganan Azure
 
