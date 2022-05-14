@@ -3,14 +3,14 @@ title: Menginstal dan mengonfigurasi modul Manajemen Layanan Azure PowerShell | 
 description: Cara menginstal dan mengonfigurasi Azure PowerShell untuk penggunaan pertama kali.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 10/05/2021
+ms.date: 05/12/2022
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: f8a77db1c4e7ed9d0ec2ef70531ea8e7c2068464
-ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: HT
+ms.openlocfilehash: 8d7b5f55e93925635375e12f235a41c56932ecc9
+ms.sourcegitcommit: 57e693903ba68d32aa816ae20d0dc19be2ad3594
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "132429339"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "145027482"
 ---
 # <a name="installing-the-azure-powershell-service-management-module"></a>Menginstal modul Manajemen Layanan Azure PowerShell
 
@@ -18,12 +18,15 @@ ms.locfileid: "132429339"
 
 Menginstal Azure PowerShell dari [Galeri PowerShell](https://www.powershellgallery.com/) adalah metode penginstalan yang diutamakan.
 
+> [!IMPORTANT]
+> Modul Azure PowerShell Service Management hanya berfungsi dengan Windows PowerShell. Ini bukan lintas platform dan tidak berjalan di Linux atau macOS.
+
 ## <a name="step-1-install-powershellget"></a>Langkah 1: Instal PowerShellGet
 
 Menginstal item dari Galeri PowerShell memerlukan modul PowerShellGet. Pastikan Anda memiliki versi PowerShellGet yang sesuai dan persyaratan sistem lainnya. Jalankan perintah berikut untuk melihat apakah Anda telah menginstal PowerShellGet di sistem Anda.
 
 ```powershell
-Get-InstalledModule PowerShellGet -AllVersions |
+Get-InstalledModule -Name PowerShellGet -AllVersions |
   Select-Object -Property Name, Version, Path
 ```
 
