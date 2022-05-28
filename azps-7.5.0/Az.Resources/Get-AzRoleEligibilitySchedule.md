@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilitySchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilitySchedule.md
-ms.openlocfilehash: 0bfc3d974d4f5576f1f7a4ee932aac784a07ba3c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 513ad798304efa03b773243d4df781e2aa6ee546
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208718"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642220"
 ---
 # Get-AzRoleEligibilitySchedule
 
 ## SYNOPSIS
 Mendapatkan jadwal kelayakan peran yang ditentukan untuk cakupan sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroleeligibilityschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
