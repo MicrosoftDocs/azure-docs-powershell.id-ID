@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroup.md
-ms.openlocfilehash: f0943a94a382aeb8eb89badbefa4fcf0b56f3f11
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ced5f3b112f70e3c9e378e8e5fda66a8500f97d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230240"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642634"
 ---
 # Get-AzResourceGroup
 
 ## SYNOPSIS
 Mendapatkan grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 

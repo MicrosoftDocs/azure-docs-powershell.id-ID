@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDataWarehouseScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDataWarehouseScanRulesetObject.md
-ms.openlocfilehash: 9c84096dfb3d72d934fa25a9c7d309891016ddf8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf39be03c0fed467614f7b4e1ab409fbe50c8124
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215102"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653322"
 ---
 # New-AzPurviewAzureSqlDataWarehouseScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSqlDataWarehouseScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresqldatawarehousescanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

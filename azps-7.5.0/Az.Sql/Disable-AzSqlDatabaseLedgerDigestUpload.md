@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 2e28872a8b7b104c3a6653738e6f5ee918839e8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9251aa1b74493efccc354ff73fa8d9de819540ae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233569"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628468"
 ---
 # Disable-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
 Menonaktifkan pengunggahan hash ledger ke penyimpanan Azure Blob atau ke Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 

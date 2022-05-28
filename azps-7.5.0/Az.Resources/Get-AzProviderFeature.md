@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderFeature.md
-ms.openlocfilehash: 792f0ed0334f1c3098352e7d43a60b79b383a062
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a44af32cdfd408195d1fa9d593548286b2c361b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230265"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642796"
 ---
 # Get-AzProviderFeature
 
 ## SYNOPSIS
 Mendapatkan informasi tentang fitur penyedia Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azproviderfeature) untuk informasi terbaru.
 
 ## SYNTAX
 

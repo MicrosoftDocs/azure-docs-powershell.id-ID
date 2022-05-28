@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityTask.md
-ms.openlocfilehash: 3d7920fd9656c487a053767ce5a4c0120d8a931c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1139fcb0298c8854669a78ebb24dc16b3c83cb7d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220154"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636028"
 ---
 # Get-AzSecurityTask
 
 ## SYNOPSIS
 Mendapatkan tugas keamanan yang Azure Security Center merekomendasikan Anda untuk melakukan untuk memperkuat postur keamanan Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritytask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Id                                                                              
 
 Mendapatkan semua tugas keamanan yang ditemukan pada sumber daya di dalam grup sumber daya.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSecurityTask -ResourceGroupName "myService1" -Name "22ef553d-f13a-5227-ee4c-7cc861d28c96"
 ```

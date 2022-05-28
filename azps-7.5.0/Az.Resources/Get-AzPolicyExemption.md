@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyExemption.md
-ms.openlocfilehash: a48d6a4c0473808d5a5d2d1b12cd04ee32af21d3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb68d5a8e3fd829a307d8c58b522ef619b732d65
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111365"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642922"
 ---
 # Get-AzPolicyExemption
 
 ## SYNOPSIS
 Mendapatkan pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Get-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk cakupan yang diidentifikasi properti **ResourceId** $ResourceGroup.
+Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk cakupan yang diidentifikasi properti **ResourceId** dari $ResourceGroup.
 
 ### Contoh 3: Mendapatkan semua pengecualian kebijakan yang terkait dengan penetapan kebijakan
 ```powershell
@@ -161,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

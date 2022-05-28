@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubKey.md
-ms.openlocfilehash: 7ad82f8438ed034cf11a834a4ea0fbadb797d918
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 45e050804c65b6fd79db7fb00463022fd4d5418c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242364"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629800"
 ---
 # Get-AzWebPubSubKey
 
 ## SYNOPSIS
 Dapatkan kunci akses sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsubkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.IWebPubSubIdentity
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupDataSourceObject.md
-ms.openlocfilehash: d01202fbb6fa00dd26f1f87ae5fa4a79262b3996
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8bcea954b54097f9ab6f7732db40254735357a2e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224126"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653628"
 ---
 # New-AzPurviewAzureResourceGroupDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureResourceGroupDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazureresourcegroupdatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

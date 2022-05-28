@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPrivateLinkAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPrivateLinkAssociation.md
-ms.openlocfilehash: 67068503760795caa712f3481cbb2d00bb2e9084
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7719cc611e47f46afbbcb1142832bfb71493f768
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111356"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642832"
 ---
 # Get-AzPrivateLinkAssociation
 
 ## SYNOPSIS
 Mendapatkan semua Asosiasi Private Link Azure Resource Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azprivatelinkassociation) untuk informasi terbaru.
 
 ## SYNTAX
 

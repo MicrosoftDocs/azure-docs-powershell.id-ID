@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzurePostgreSqlDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzurePostgreSqlDataSourceObject.md
-ms.openlocfilehash: 3800260d3070bde87b939ba4e55fb170c85c09f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3813c0b7f6b291ff54f139e209a238b5246916f9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230828"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653664"
 ---
 # New-AzPurviewAzurePostgreSqlDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzurePostgreSqlDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurepostgresqldatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

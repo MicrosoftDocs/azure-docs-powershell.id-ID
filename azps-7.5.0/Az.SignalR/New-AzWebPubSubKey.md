@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubKey.md
-ms.openlocfilehash: e2b44df462cb1edc73e4fcc46c3a0dac795aafb2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 294742c959bbbb746828db0d0d4d1b05c8518e47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242291"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629494"
 ---
 # New-AzWebPubSubKey
 
 ## SYNOPSIS
 Regenerasi kunci akses untuk sumber daya.
 PrimaryKey dan SecondaryKey tidak dapat diregenerasi secara bersamaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azwebpubsubkey) untuk informasi terbaru.
 
 ## SYNTAX
 

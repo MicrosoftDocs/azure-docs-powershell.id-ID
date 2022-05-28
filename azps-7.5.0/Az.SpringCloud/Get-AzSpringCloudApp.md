@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudApp.md
-ms.openlocfilehash: 351506835fe47ea1889ccfdefebf1bee6155ed99
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c30a80fa81a619d4983d33dc5abfd5ba30af436f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629116"
 ---
 # Get-AzSpringCloudApp
 
 ## SYNOPSIS
 Mendapatkan Aplikasi dan propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/get-azspringcloudapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Property                : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.
 TemporaryDisk           : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.TemporaryDisk
 ```
 
-Dapatkan Aplikasi Spring Cloud berdasarkan nama.
+Dapatkan Spring Cloud App berdasarkan nama.
 
 ### Contoh 2: Mencantumkan semua aplikasi di bawah layanan spring cloud tertentu.
 ```powershell
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity

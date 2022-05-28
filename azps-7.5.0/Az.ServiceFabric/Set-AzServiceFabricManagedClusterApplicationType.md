@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: 8f1562ae54d9ee86aa4608982913547d9a5064c3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78e32a76a0d430414e830a48995bc7b6a0a73bc3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195949"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630250"
 ---
 # Set-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
 Memperbarui jenis aplikasi yang dikelola service fabric. Ini memungkinkan Anda memperbarui tag. Hanya mendukung jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ $appType | Set-AzServiceFabricManagedClusterApplicationType -Tags $newTags -Verb
 
 Contoh ini akan memperbarui tag "testAppType" jenis aplikasi terkelola.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $newTags = @{new="tags"}
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applicationTypes/testAppType"

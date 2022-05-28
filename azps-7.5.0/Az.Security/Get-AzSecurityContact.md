@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityContact.md
-ms.openlocfilehash: 5e5ddac07dcf793fc8fcfedba130caac9fd23a2b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e38ad6b4ebe0515b75d6841806a848494532b097
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235126"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636406"
 ---
 # Get-AzSecurityContact
 
 ## SYNOPSIS
 Mendapatkan kontak keamanan yang dikonfigurasi pada langganan ini
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritycontact) untuk informasi terbaru.
 
 ## SYNTAX
 

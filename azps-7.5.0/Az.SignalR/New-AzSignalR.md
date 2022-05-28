@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
-ms.openlocfilehash: d851ab014cdd41b7a5733440c5f16970378758b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1c422b38410b8ff40a4cb0c042d1fd0a301b12d0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242336"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629638"
 ---
 # New-AzSignalR
 
 ## SYNOPSIS
-Buat layanan SignalR.
+Membuat layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzSignalR [-ResourceGroupName <String>] [-Name] <String> [-Location <String>
 ```
 
 ## DESCRIPTION
-Buat layanan SignalR.
+Membuat layanan SignalR.
 Nilai berikut akan digunakan untuk parameter jika tidak ditentukan:
 * `ResourceGroupName`: grup sumber daya default yang ditetapkan oleh `Set-AzDefault -ResourceGroupName`.
 * `Location`: lokasi grup sumber daya

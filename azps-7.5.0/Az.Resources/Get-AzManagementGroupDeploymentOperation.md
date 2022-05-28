@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
-ms.openlocfilehash: 168888e7d89873c45d8d2429785b8aeea2ef4e81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e5a81f93693831685e6a0236ab11938c21034c3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230321"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643048"
 ---
 # Get-AzManagementGroupDeploymentOperation
 
 ## SYNOPSIS
 Mendapatkan operasi penyebaran untuk penyebaran grup manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeploymentoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,12 +35,12 @@ Get-AzManagementGroupDeploymentOperation -DeploymentObject <PSDeployment> [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagementGroupDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran grup manajemen untuk membantu Anda mengidentifikasi dan memberikan informasi lebih lanjut tentang operasi yang tepat yang gagal untuk penyebaran tertentu.
+Cmdlet **Get-AzManagementGroupDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran grup manajemen untuk membantu Anda mengidentifikasi dan memberikan informasi lebih lanjut tentang operasi persis yang gagal untuk penyebaran tertentu.
 Ini adalah informasi yang sama yang disediakan dalam detail penyebaran di portal.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan operasi penyebaran yang diberi nama penyebaran
+### Contoh 1: Mendapatkan operasi penyebaran dengan nama penyebaran
 ```powershell
 Get-AzManagementGroupDeploymentOperation -ManagementGroupId myMG -DeploymentName Deploy01
 ```
@@ -128,8 +131,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

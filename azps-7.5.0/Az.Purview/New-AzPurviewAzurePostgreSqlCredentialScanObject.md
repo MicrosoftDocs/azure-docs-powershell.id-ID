@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzurePostgreSqlCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzurePostgreSqlCredentialScanObject.md
-ms.openlocfilehash: 44b283b1ad3f1138d3c9b96f5e1d0f2c77211135
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 33ee416e29457fcddf4ce51a267d1b8b4a06df6f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224147"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653646"
 ---
 # New-AzPurviewAzurePostgreSqlCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzurePostgreSqlCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurepostgresqlcredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
