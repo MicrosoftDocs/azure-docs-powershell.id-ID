@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/export
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
-ms.openlocfilehash: 979f17df6c73bc25990a5817bf841119ec8347e5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef91c8cf6a8741f64f89c70740e10c0a0e6b2e41
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230531"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643836"
 ---
 # Export-AzResourceGroup
 
 ## SYNOPSIS
 Mengambil grup sumber daya sebagai templat dan menyimpannya ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/export-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,10 +32,10 @@ Export-AzResourceGroup -ResourceGroupName <String> [-Path <String>] [-IncludePar
 
 ## DESCRIPTION
 Cmdlet **Export-AzResourceGroup** menangkap grup sumber daya yang ditentukan sebagai templat dan menyimpannya ke file JSON. Ini dapat berguna dalam skenario di mana Anda telah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan manfaat menggunakan penyebaran yang didukung templat.
-Cmdlet ini memberi Anda awal yang mudah dengan membuat templat untuk sumber daya yang ada di grup sumber daya.
+Cmdlet ini memberi Anda awal yang mudah dengan menghasilkan templat untuk sumber daya yang ada di grup sumber daya.
 Mungkin ada beberapa kasus di mana cmdlet ini gagal menghasilkan beberapa bagian templat.
 Pesan peringatan akan memberi tahu Anda tentang sumber daya yang gagal.
-Templat masih akan dihasilkan untuk bagian-bagian yang berhasil.
+Templat akan tetap dihasilkan untuk bagian-bagian yang berhasil.
 
 ## EXAMPLES
 
@@ -153,7 +156,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini menggunakan versi API pra-rilis saat secara otomatis menentukan versi API mana yang akan digunakan.
 
 ```yaml
