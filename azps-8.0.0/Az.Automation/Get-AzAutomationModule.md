@@ -1,0 +1,137 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Automation.dll-Help.xml
+Module Name: Az.Automation
+ms.assetid: A73B388A-E859-40D3-BA63-0E231CF1E81D
+online version: https://docs.microsoft.com/powershell/module/az.automation/get-azautomationmodule
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
+ms.openlocfilehash: 08ea3761066b07e9dbc241292fd5defe9cdeddea
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145518982"
+---
+# Get-AzAutomationModule
+
+## SYNOPSIS
+Mendapatkan metadata untuk modul dari Automation.
+
+## SYNTAX
+
+### ByAll (Default)
+```
+Get-AzAutomationModule [-ResourceGroupName] <String> [-AutomationAccountName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByName
+```
+Get-AzAutomationModule [-Name] <String> [-ResourceGroupName] <String> [-AutomationAccountName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzAutomationModule** mendapatkan metadata untuk modul dari Azure Automation.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan semua modul
+```powershell
+Get-AzAutomationModule -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
+```
+
+Perintah ini mendapatkan semua modul di akun Automation bernama Contoso17.
+
+### Contoh 2: Mendapatkan modul
+```powershell
+Get-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ResourceGroupName "ResourceGroup01"
+```
+
+Perintah ini mendapatkan modul bernama ContosoModule di akun Automation bernama Contoso17.
+
+## PARAMETERS
+
+### -AutomationAccountName
+Menentukan nama akun Automation yang cmdlet ini mendapatkan metadata modul.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama modul tempat cmdlet ini mendapatkan metadata.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya yang cmdlet ini mendapatkan metadata modul.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Automation.Model.Module
+
+## NOTES
+
+## RELATED LINKS
+
+[New-AzAutomationModule](./New-AzAutomationModule.md)
+
+[Remove-AzAutomationModule](./Remove-AzAutomationModule.md)
+
+[Set-AzAutomationModule](./Set-AzAutomationModule.md)
+
+
