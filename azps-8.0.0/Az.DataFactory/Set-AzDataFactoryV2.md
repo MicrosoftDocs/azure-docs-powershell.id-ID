@@ -1,0 +1,673 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataFactoryV2.dll-Help.xml
+Module Name: Az.DataFactory
+online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-azdatafactoryv2
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
+ms.openlocfilehash: 54198afe10d1f035c57802e98f183f1b91b5ed35
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145557293"
+---
+# Set-AzDataFactoryV2
+
+## SYNOPSIS
+Membuat pabrik data.
+
+## SYNTAX
+
+### ByFactoryName (Default)
+```
+Set-AzDataFactoryV2 [-ResourceGroupName] <String> [-Name] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByResourceId
+```
+Set-AzDataFactoryV2 [-ResourceId] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByResourceIdFactoryRepoVstsConfig
+```
+Set-AzDataFactoryV2 [-ResourceId] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ -AccountName <String> -RepositoryName <String> -CollaborationBranch <String> -RootFolder <String>
+ [-LastCommitId <String>] -ProjectName <String> [-TenantId <String>] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByResourceIdFactoryRepoGitConfig
+```
+Set-AzDataFactoryV2 [-ResourceId] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ -AccountName <String> -RepositoryName <String> -CollaborationBranch <String> -RootFolder <String>
+ [-LastCommitId <String>] -HostName <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### ByFactoryNameFactoryRepoGitConfig
+```
+Set-AzDataFactoryV2 [-ResourceGroupName] <String> [-Name] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ -AccountName <String> -RepositoryName <String> -CollaborationBranch <String> -RootFolder <String>
+ [-LastCommitId <String>] -HostName <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### ByFactoryNameFactoryRepoVstsConfig
+```
+Set-AzDataFactoryV2 [-ResourceGroupName] <String> [-Name] <String> [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] [-Location] <String> [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ -AccountName <String> -RepositoryName <String> -CollaborationBranch <String> -RootFolder <String>
+ [-LastCommitId <String>] -ProjectName <String> [-TenantId <String>] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByInputObject
+```
+Set-AzDataFactoryV2 [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] -InputObject <PSDataFactory> [[-Location] <String>]
+ [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByInputObjectFactoryRepoVstsConfig
+```
+Set-AzDataFactoryV2 [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] -InputObject <PSDataFactory> [[-Location] <String>]
+ [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ [-AccountName <String>] [-RepositoryName <String>] [-CollaborationBranch <String>] [-RootFolder <String>]
+ [-LastCommitId <String>] -ProjectName <String> [-TenantId <String>] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByInputObjectFactoryRepoGitConfig
+```
+Set-AzDataFactoryV2 [-IdentityType <String>]
+ [-UserAssignedIdentity <System.Collections.Generic.IDictionary`2[System.String,System.Object]>]
+ [-EncryptionVaultBaseUrl <String>] [-EncryptionKeyName <String>] [-EncryptionKeyVersion <String>]
+ [-EncryptionUserAssignedIdentity <String>] -InputObject <PSDataFactory> [[-Location] <String>]
+ [[-Tag] <Hashtable>] [-Force]
+ [-GlobalParameterDefinition <System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]>]
+ [-AccountName <String>] [-RepositoryName <String>] [-CollaborationBranch <String>] [-RootFolder <String>]
+ [-LastCommitId <String>] -HostName <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Set-AzDataFactoryV2** membuat pabrik data dengan nama dan lokasi grup sumber daya yang ditentukan.
+Lakukan operasi ini dalam urutan berikut: -- Buat pabrik data.
+-- Buat layanan tertaut.
+-- Buat himpunan data.
+-- Buat alur.
+
+## EXAMPLES
+
+### Contoh 1: Membuat pabrik data
+```powershell
+Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location "WestUS"
+```
+
+```output
+    DataFactoryName   : WikiADF
+    DataFactoryId     : /subscriptions/3e8e61b5-9a7d-4952-bfae-545ab997b9ea/resourceGroups/adf/providers/Microsoft.DataFactory/factories/wikiadf
+    ResourceGroupName : ADF
+    Location          : EastUS
+    Tags              : {}
+    Identity          : Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity
+    ProvisioningState : Succeeded
+    RepoConfiguration :
+```
+
+### Contoh 2: Buat pabrik data dengan detail konfigurasi repositori menggunakan objek pabrik yang ada.
+```powershell
+Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDataFactoryV2 -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder / -ProjectName "Azure Data Factory"
+```
+
+```output
+    DataFactoryName   : WikiADF
+    DataFactoryId     : /subscriptions/3e8e61b5-9a7d-4952-bfae-545ab997b9ea/resourceGroups/adf/providers/Microsoft.DataFactory/factories/wikiadf
+    ResourceGroupName : ADF
+    Location          : EastUS
+    Tags              : {}
+    Identity          : Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity
+    ProvisioningState : Succeeded
+    RepoConfiguration : Microsoft.Azure.Management.DataFactory.Models.FactoryVSTSConfiguration
+```
+
+Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama ADF di lokasi EastUS dengan konfigurasi kontrol sumber Azure DevOps.
+
+### Contoh 3: Buat pabrik data dengan detail konfigurasi repositori GitHub menggunakan objek pabrik baru.
+```powershell
+Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location 'EastUS' -HostName 'https://github.com' -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder /
+```
+
+```output
+    DataFactoryName   : WikiADF
+    DataFactoryId     : /subscriptions/3e8e61b5-9a7d-4952-bfae-545ab997b9ea/resourceGroups/adf/providers/Microsoft.DataFactory/factories/wikiadf
+    ResourceGroupName : ADF
+    Location          : EastUS
+    Tags              : {}
+    Identity          : Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity
+    ProvisioningState : Succeeded
+    RepoConfiguration : Microsoft.Azure.Management.DataFactory.Models.FactoryGitHubConfiguration
+```
+
+Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama ADF di lokasi EastUS dengan konfigurasi kontrol sumber GitHub..
+
+## PARAMETERS
+
+### -AccountName
+Nama akun untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CollaborationBranch
+Cabang kolaborasi untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EncryptionKeyName
+Nama kunci di Azure Key Vault untuk digunakan sebagai Kunci Terkelola Pelanggan untuk enkripsi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EncryptionKeyVersion
+Versi kunci yang digunakan untuk CMK. Jika tidak disediakan, versi terbaru akan digunakan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EncryptionUserAssignedIdentity
+Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi ke brankas kunci pelanggan. Jika tidak disediakan, Identitas Layanan Terkelola akan digunakan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EncryptionVaultBaseUrl
+Url Key Vault Azure yang digunakan untuk enkripsi dengan CMK.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Menjalankan cmdlet tanpa meminta konfirmasi.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GlobalParameterDefinition
+Kamus yang berisi parameter global pabrik data.
+
+```yaml
+Type: System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.GlobalParameterSpecification]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HostName
+Nama host untuk konfigurasi repositori GitHub.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityType
+Jenis Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublicNetworkAccess
+Apakah akses jaringan publik diizinkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+Required: False
+Position: Named
+Default value: Enabled
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek pabrik data.
+
+```yaml
+Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
+Parameter Sets: ByInputObject, ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -LastCommitId
+Id penerapan terakhir untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig, ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Pabrik data dibuat di wilayah ini.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName, ByResourceId, ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObject, ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Name
+Nama pabrik data.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases: DataFactoryName
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ProjectName
+Nama proyek Azure DevOps untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByFactoryNameFactoryRepoVstsConfig, ByInputObjectFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RepositoryName
+Nama repositori untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceId
+ID sumber daya Azure dari pabrik data V2.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceId, ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig
+Aliases: Id, DataFactoryId
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RootFolder
+Folder akar untuk konfigurasi repositori.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Tag pabrik data.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: ByFactoryName, ByResourceId, ByResourceIdFactoryRepoVstsConfig, ByResourceIdFactoryRepoGitConfig, ByFactoryNameFactoryRepoGitConfig, ByFactoryNameFactoryRepoVstsConfig
+Aliases:
+
+Required: False
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: ByInputObject, ByInputObjectFactoryRepoVstsConfig, ByInputObjectFactoryRepoGitConfig
+Aliases:
+
+Required: False
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -TenantId
+Id penyewa untuk konfigurasi repositori Azure DevOps.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceIdFactoryRepoVstsConfig, ByFactoryNameFactoryRepoVstsConfig, ByInputObjectFactoryRepoVstsConfig
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserAssignedIdentity
+Kamus yang berisi identitas yang ditetapkan pengguna dari pabrik data.
+
+```yaml
+Type: System.Collections.Generic.IDictionary`2[System.String,System.Object]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
+
+### System.Collections.Hashtable
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
+
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
+
+## RELATED LINKS
+
+[Get-AzDataFactoryV2]()
+
+[Remove-AzDataFactoryV2]()
