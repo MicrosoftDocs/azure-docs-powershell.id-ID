@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
-ms.openlocfilehash: b9d0bda79d9bed6a3ae26805949a650b1f75f3e0
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 03ac7db4e9f602e52cdfc1b62c20e0d0b936b760
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144721620"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643642"
 ---
 # Get-AzADGroupMember
 
@@ -18,6 +18,9 @@ ms.locfileid: "144721620"
 Mencantumkan anggota dari grup.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadgroupmember) untuk informasi terbaru.
 
 ## SYNTAX
 

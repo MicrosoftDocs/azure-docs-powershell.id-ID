@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnConnectionPacketCapture.md
-ms.openlocfilehash: c5657425f86af1db982d03529610371efc5e9058
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 975c074a40ff3f6d46fa8af66b1692adcbfe3cc8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210563"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664572"
 ---
 # Start-AzVpnConnectionPacketCapture
 
 ## SYNOPSIS
 Memulai Operasi Pengambilan Paket pada Koneksi Vpn.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/start-azvpnconnectionpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 

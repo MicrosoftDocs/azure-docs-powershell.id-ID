@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusSubscription.md
-ms.openlocfilehash: fad7a7df95f5c8a7ccc7ced0478ae96ee5c9ac52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85c1f6e847922158ab7c98f4e6b4ea8188a8b712
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240961"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633346"
 ---
 # Get-AzServiceBusSubscription
 
 ## SYNOPSIS
 Mengembalikan deskripsi langganan untuk topik yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebussubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,9 +61,9 @@ Mengembalikan deskripsi langganan untuk topik Bus Layanan yang ditentukan.
 Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1
 ```
 
-Mengembalikan daftar langganan untuk topik Bus Layanan yang ditentukan. Secara default 100 langganan akan dikembalikan, untuk jumlah langganan, silakan gunakan -MaxCount Parameter
+Mengembalikan daftar langganan untuk topik Bus Layanan tertentu. Secara default 100 langganan akan dikembalikan, untuk jumlah langganan, silakan gunakan Parameter -MaxCount
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -MaxCount 150
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzBastion.md
-ms.openlocfilehash: 379ed3f3a28a99a916fc8b8727703ca2e9d9944c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8dccec088c8fb547bca4b99a6944222b63fdaa6e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247541"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671016"
 ---
 # Remove-AzBastion
 
 ## SYNOPSIS
 Menghapus sumber daya bastion.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 

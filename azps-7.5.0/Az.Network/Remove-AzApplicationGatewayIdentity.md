@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: e5e927bedf5ac7ef20bc9519e870c05f3eeb537c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d53239ce9468b7fa9dee2e94240bcd32ef6fd6cb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189887"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671520"
 ---
 # Remove-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Menghapus identitas dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRuleSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRuleSASToken.md
-ms.openlocfilehash: 7b7f0055646b24d5eb48c3dd9b5558cfb9797412
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b79f47a6be4506cdf668e6dce907ae8aa023b66a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188151"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633094"
 ---
 # New-AzServiceBusAuthorizationRuleSASToken
 
 ## SYNOPSIS
 Menghasilkan tolen SAS untuk aturan otorisasi azure servicebus namespace/antrean/topik. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrulesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplication.md
-ms.openlocfilehash: 9c7b904cb2b2cb37094bdc0ec6ac7ae714f281c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 251ac443f9e69bdb9fa35feb7f709ea56d06a7d0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230363"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643246"
 ---
 # Baru-AzManagedApplication
 
 ## SYNOPSIS
 Mendapatkan aplikasi terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagedapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

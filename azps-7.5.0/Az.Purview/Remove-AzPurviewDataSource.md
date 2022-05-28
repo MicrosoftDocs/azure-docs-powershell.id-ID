@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDataSource.md
-ms.openlocfilehash: a728b43a1ad49b67fb9c788920e9387214da37ab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 22ffed101981f88c3f49457a7d21fc8004a1f030
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246480"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651738"
 ---
 # Remove-AzPurviewDataSource
 
 ## SYNOPSIS
 Menghapus sumber data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Menghapus sumber data
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber data berdasarkan nama
+### Contoh 1: Menghapus sumber data menurut nama
 ```powershell
 PS C:\> Remove-AzPurviewDataSource -Endpoint 'https://rs-2.purview.azure.com/' -Name 'NewDataSource'
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

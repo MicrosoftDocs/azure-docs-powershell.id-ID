@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 66ecfc0d07577daf3d9126141ca35c5bc49c98bd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5aa571acc79fd2a464e34b8766fd3bb83107dfc9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246477"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651774"
 ---
 # Remove-AzPurviewDefaultAccount
 
 ## SYNOPSIS
 Menghapus akun default dari cakupan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Menghapus akun default dari cakupan.
 Remove-AzPurviewDefaultAccount -ScopeTenantId xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a -ScopeType Tenant
 ```
 
-Menghapus akun default dari penyewa cakupan.
+Menghapus akun default dari lingkup Penyewa.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

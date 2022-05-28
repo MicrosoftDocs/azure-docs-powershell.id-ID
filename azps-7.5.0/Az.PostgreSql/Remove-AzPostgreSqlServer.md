@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlServer.md
-ms.openlocfilehash: a44b9445e914dab086182a46237f38bafcf47846
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9975ccd0a251fffc4366022606cec445befc8d0b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208811"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658056"
 ---
 # Remove-AzPostgreSqlServer
 
 ## SYNOPSIS
 Menghapus server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/remove-azpostgresqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 

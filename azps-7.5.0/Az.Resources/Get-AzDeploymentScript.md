@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
-ms.openlocfilehash: 70065c5a7266f501462740c70a8ccd6fae0c2690
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 619a5cd59a38760a568e2e9c2e3ad2e63a95f149
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230391"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643372"
 ---
 # Get-AzDeploymentScript
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeploymentscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Get-AzDeploymentScript -ResourceGroupName DS-TestRg
 
 Mencantumkan skrip penyebaran dalam grup sumber daya DS-TestRg.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzDeploymentScript -Name MyDeploymentScript -ResourceGroupName DS-TestRg
 ```

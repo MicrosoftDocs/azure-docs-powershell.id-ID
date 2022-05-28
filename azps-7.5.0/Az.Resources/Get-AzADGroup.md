@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
-ms.openlocfilehash: a2d528da646c3a59077e193331f47b74e56076eb
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 04c043e648dc93c8dc54033e03e40d78411d1ebd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144660528"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643660"
 ---
 # Get-AzADGroup
 
@@ -18,6 +18,9 @@ ms.locfileid: "144660528"
 Mencantumkan entitas dari grup atau mendapatkan entitas dari grup menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,14 +55,14 @@ Mencantumkan entitas dari grup atau mendapatkan entitas dari grup menurut kunci
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan grup menurut nama tampilan
+### Contoh 1: Dapatkan grup menurut nama tampilan
 ```powershell
 Get-AzADGroup -DisplayName $gname
 ```
 
 Mendapatkan grup menurut nama tampilan
 
-### Contoh 2: Mencantumkan grup
+### Contoh 2: Daftar grup
 ```powershell
 Get-AzADGroup -First 10
 ```
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cari
-Cari item menurut frasa pencarian
+Mencari item menurut frasa pencarian
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusEncryptionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusEncryptionConfig.md
-ms.openlocfilehash: fe0a71c32328e87078ddecaae3f418b6b14ab2a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c077eb2ecb2ffd781e9fe7c05904898904db3114
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220118"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633147"
 ---
 # New-AzServiceBusEncryptionConfig
 
 ## SYNOPSIS
 Membuat instans objek dalam memori PSEncryptionConfigAttributes yang kemudian dapat diberikan sebagai input ke New-AzServiceBusNamespace dan Set-AzServiceBusNamespace untuk mengaktifkan enkripsi 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusencryptionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

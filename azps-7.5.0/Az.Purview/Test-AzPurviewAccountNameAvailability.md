@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/test-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Test-AzPurviewAccountNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Test-AzPurviewAccountNameAvailability.md
-ms.openlocfilehash: 0947733be224b262b39a0f7127b8c29679a891bd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a324f5ae7afae2e77c1e59a1dd912c35857c0c4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109784"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651468"
 ---
 # Test-AzPurviewAccountNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama akun tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/test-azpurviewaccountnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Jenis sumber daya yang sepenuhnya memenuhi syarat yang mencakup namespace penyedia
+Jenis sumber daya yang sepenuhnya memenuhi syarat yang mencakup namespace layanan penyedia
 
 ```yaml
 Type: System.String

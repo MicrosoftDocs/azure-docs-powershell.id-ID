@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
-ms.openlocfilehash: cda14c12b7e7df2310a40a2afb030a9676f8ccf8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 45efe1527912bad8cb876ed3e35e4982e3ad15df
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183293"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664896"
 ---
 # Set-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Mengonfigurasi peering jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ $myVnet1TomyVnet2.AllowGatewayTransit = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 4: Menggunakan gateway jarak jauh dalam peering jaringan virtual
+### Contoh 4: Menggunakan gateway jarak jauh di peering jaringan virtual
 ```powershell
 # Get the virtual network peering 
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "ResourceGroup001" -Name "myVnet1TomyVnet2"

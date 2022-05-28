@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplicationDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagedApplicationDefinition.md
-ms.openlocfilehash: 1d18fe46ef448027b13e12c5814b2e06bf1358e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f5d09262fa2bd35dfcd4ef23d4fb9c53004b932
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244646"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643174"
 ---
 # Get-AzManagedApplicationDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi aplikasi terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagedapplicationdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

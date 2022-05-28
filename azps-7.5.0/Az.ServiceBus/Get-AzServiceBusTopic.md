@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
-ms.openlocfilehash: 66db8fc1bc7302284fc2dfe393aad40e70ec327c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a77e04f2cf198c38d4c46699c4b9fd3e201b7523
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220139"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633328"
 ---
 # Get-AzServiceBusTopic
 
 ## SYNOPSIS
 Mengembalikan deskripsi untuk topik Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebustopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,9 +66,9 @@ Mengembalikan deskripsi topik yang ditentukan untuk namespace Bus Layanan yang d
 Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
-Mengembalikan daftar topik untuk namespace Bus Layanan tertentu. Secara default 100 topik akan dikembalikan, jika lebih dari 100 topik yang akan dikembalikan, silakan gunakan Parameter -MaxCount.
+Mengembalikan daftar topik untuk namespace Bus Layanan tertentu. Secara default 100 topik akan dikembalikan, jika lebih dari 100 topik dikembalikan, silakan gunakan -MaxCount Parameter.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -MaxCount 150
 ```

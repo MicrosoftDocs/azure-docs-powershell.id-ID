@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: c831269e21de49ed5fb3d7188e5910827b5e25d2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ef59b78b38ef41b39935998186aa360b7c98a9c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208871"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658200"
 ---
 # New-AzPostgreSqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 

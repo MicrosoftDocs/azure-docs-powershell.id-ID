@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
-ms.openlocfilehash: 56f61ac813971e9b3e905296a720db4348ccfad1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6992d0b09bac50517d1df30821ef0f15824003ac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111437"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643480"
 ---
 # Get-AzDenyAssignment
 
@@ -23,6 +23,9 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
 
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdenyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -256,7 +259,7 @@ ExcludePrincipals       : {}
 IsSystemProtected       : True
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Mendapatkan semua penugasan penolakan dari perwakilan layanan yang ditentukan
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 629adfe46e781b35e07a7a3e21746f111b922d47
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c236e5d1a5207479a45cd029f39da5e09985042b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208823"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658074"
 ---
 # Remove-AzPostgreSqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Menghapus aturan firewall server PostgreSQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/remove-azpostgresqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Menghapus aturan firewall server PostgreSQL.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Aturan Firewall PostgreSql menurut nama
+### Contoh 1: Hapus Aturan Firewall PostgreSql berdasarkan nama
 ```powershell
 Remove-AzPostgreSqlFlexibleServerFirewallRule -Name firewall-rule-test -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test
 
@@ -45,7 +48,7 @@ Remove-AzPostgreSqlFlexibleServerFirewallRule -Name firewall-rule-test -Resource
 
 Cmdlet ini menghapus Aturan Firewall PostgreSql berdasarkan nama.
 
-### Contoh 2: Hapus Aturan Firewall PostgreSql menurut identitas
+### Contoh 2: Menghapus Aturan Firewall PostgreSql berdasarkan identitas
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgresql-test/firewallRules/firewall-rule-test"
  Remove-AzPostgreSqlFlexibleServerFirewallRule -InputObject $ID
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

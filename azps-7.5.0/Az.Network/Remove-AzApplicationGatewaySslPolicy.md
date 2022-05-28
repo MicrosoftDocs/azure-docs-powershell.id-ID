@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslPolicy.md
-ms.openlocfilehash: 4c0bff9faf2f63e5246e2e4f65ac6fc9b39492a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2522fe0a6519b9c3a4675c8bcab6e0ce6fd5dbe3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196229"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671304"
 ---
 # Remove-AzApplicationGatewaySslPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan SSL dari gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaysslpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

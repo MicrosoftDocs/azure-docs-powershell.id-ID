@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/stop-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Stop-AzPurviewScanResultScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Stop-AzPurviewScanResultScan.md
-ms.openlocfilehash: 220103207f29f6c9dcbb2acd574f2e92c73146d3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 023ba9732ade15e3a5a24ae1016bf685e5228b53
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242630"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651450"
 ---
 # Stop-AzPurviewScanResultScan
 
 ## SYNOPSIS
 Membatalkan pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/stop-azpurviewscanresultscan) untuk informasi terbaru.
 
 ## SYNTAX
 

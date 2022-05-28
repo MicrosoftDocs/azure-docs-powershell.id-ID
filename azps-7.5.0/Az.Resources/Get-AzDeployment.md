@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeployment.md
-ms.openlocfilehash: 0c3675d4f3a8e41e416db83dbe3a88546da70074
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a20478c617a872eb413c2f73f0f536e96d9072e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230394"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643408"
 ---
 # Get-AzDeployment
 
 ## SYNOPSIS
 Mendapatkan penyebaran
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,9 +33,9 @@ Get-AzDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureContextContainer>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeployment** mendapatkan penyebaran di cakupan langganan saat ini.
+Cmdlet **Get-AzDeployment** mendapatkan penyebaran pada cakupan langganan saat ini.
 Tentukan parameter *Nama* atau *Id* untuk memfilter hasilnya.
-Secara default, **Get-AzDeployment** mendapatkan semua penyebaran di cakupan langganan saat ini.
+Secara default, **Get-AzDeployment** mendapatkan semua penyebaran pada cakupan langganan saat ini.
 
 ## EXAMPLES
 
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

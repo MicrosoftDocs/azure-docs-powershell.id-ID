@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/resto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 35f3ac11dcfa291b203b5bf1b5df6fd42648bc9c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: acac5c846c76a66b1c774c7b8752e3a0a24d8ac1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238189"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657984"
 ---
 # Restore-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Memulihkan server dari cadangan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/restore-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ pg-restore     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 
 Cmdlet ini memulihkan server PostgreSql menggunakan Pemulihan PointInTime.
 
-### Contoh 1: Memulihkan server PostgreSql menggunakan Pemulihan PointInTime dengan sumber daya jaringan yang berbeda
+### Contoh 1: Memulihkan server PostgreSql menggunakan PointInTime Restore dengan sumber daya jaringan yang berbeda
 ```powershell
 
 $Subnet = '/subscriptions/00000000-0000-0000-0000-0000000000/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.Network/virtualNetworks/vnetname/subnets/subnetname'
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Id Subnet yang ada yang akan dibuat oleh server akses privat.
+Id Subnet yang ada tempat server akses privat akan dibuat.
 Harap dicatat bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
 Setelah delegasi, subnet ini tidak dapat digunakan untuk jenis sumber daya Azure lainnya.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
-ms.openlocfilehash: 7909c21b99c5d59d24b1e68762733343510c4146
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62f6721e106b8dfd65fd7b796cdc5f6b5b497466
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220115"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633058"
 ---
 # New-AzServiceBusNamespace
 
 ## SYNOPSIS
 Membuat namespace Bus Layanan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

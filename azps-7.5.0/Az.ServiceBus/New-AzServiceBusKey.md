@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusKey.md
-ms.openlocfilehash: 2b0da2897e6bc31e7b86fecb0ff6a7fa3b669281
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c68dfa0c113e34f72a8eb6f1687edcacebf7ab32
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243761"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633112"
 ---
 # New-AzServiceBusKey
 
 ## SYNOPSIS
 Meregenerasi string koneksi primer atau sekunder untuk namespace layanan atau antrean atau topik Bus Layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi primer atau sekunder baru untuk namespace atau antrean atau aturan topik dan otorisasi yang ditentukan.
+Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi primer atau sekunder baru untuk namespace layanan atau antrean atau topik dan aturan otorisasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Examp
 
 Meregenerasi string koneksi primer atau sekunder dengan nilai Kunci yang disediakan untuk namespace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```

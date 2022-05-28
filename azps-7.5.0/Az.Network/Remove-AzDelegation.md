@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDelegation.md
-ms.openlocfilehash: 881e50b397f31e5d89da280ce8d9c48c82a8f262
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1e50b3b8e8a20fb69d702f342c522a554194363
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194538"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670926"
 ---
 # Remove-AzDelegation
 
 ## SYNOPSIS
 Menghapus delegasi layanan dari subnet yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 

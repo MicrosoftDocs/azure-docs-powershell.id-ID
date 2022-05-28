@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
-ms.openlocfilehash: fede5506e4bcdb76e306938c4d58066016cc87b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a41c18f838035b9678d22ed123d88208524e685e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111413"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643300"
 ---
 # Get-AzDeploymentScriptLog
 
 ## SYNOPSIS
 Mendapatkan log eksekusi skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeploymentscriptlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzDeploymentScriptLog -Name MyDeploymentScript -ResourceGroupName DS-TestRg 
 
 Mendapatkan 3 baris terakhir dari log skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ds = Get-AzDeploymentScript -Name MyDeploymentScript -ResourceGroupName DS-TestRg
 Get-AzDeploymentScriptLog -DeploymentScriptInputObject $ds

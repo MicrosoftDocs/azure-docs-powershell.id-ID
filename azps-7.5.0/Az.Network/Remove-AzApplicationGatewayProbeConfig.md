@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 87e9365d315b9f162792aa33e3b31f91437893f5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8463c0a06ea432dd804e57e3e67c2988e8ef6f79
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189876"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671412"
 ---
 # Remove-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

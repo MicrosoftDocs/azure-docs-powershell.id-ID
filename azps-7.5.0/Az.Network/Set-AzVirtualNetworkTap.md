@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkTap.md
-ms.openlocfilehash: 44cc1fa687d54791c3e5ac2c59796765c497bc68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c6c97c6caa832864a32baa658e1f8814568297b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109826"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664806"
 ---
 # Set-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Memperbarui ketukan jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 

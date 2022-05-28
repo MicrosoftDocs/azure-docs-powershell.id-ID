@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 1beb3c892034b0120aa19dd1244633b4fb4e9666
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a41afa9b7ddd55f247d202c4d7f2d8742f8b5c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214799"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632806"
 ---
 # Remove-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi namespace Bus Layanan atau antrean atau topik dari grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi namespace Bus Layanan atau antrean atau topik untuk grup sumber daya yang ditentukan.
+Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi namespace layanan atau antrean atau topik Bus Layanan untuk grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi names
 Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-Menghapus aturan `SBAuthoRule1` otorisasi namespace `SB-Example1` dari grup sumber daya yang ditentukan.
+Menghapus aturan `SBAuthoRule1` otorisasi namespace `SB-Example1` layanan dari grup sumber daya yang ditentukan.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +62,7 @@ Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -N
 
 Menghapus aturan `SBAuthoRule1` otorisasi antrean `SBQueue` dari grup sumber daya yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

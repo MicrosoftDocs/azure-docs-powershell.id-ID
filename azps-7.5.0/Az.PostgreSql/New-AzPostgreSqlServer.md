@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlServer.md
-ms.openlocfilehash: a119af21eccce12dfb2df171e6f0d9672aad1432
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c7ad57a592c9c585ff6f2d61c86934ca641712c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208847"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658164"
 ---
 # New-AzPostgreSqlServer
 
 ## SYNOPSIS
 Membuat server baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat sumber daya berada.
+Lokasi sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Pertumbuhan Otomatis.
+Aktifkan Storage Tumbuh Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.StorageAutogrow
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maksimum yang diizinkan untuk server.
+Penyimpanan maks yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32

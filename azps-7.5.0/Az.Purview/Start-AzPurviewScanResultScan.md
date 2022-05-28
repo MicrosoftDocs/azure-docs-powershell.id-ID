@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Start-AzPurviewScanResultScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Start-AzPurviewScanResultScan.md
-ms.openlocfilehash: 2fe58106223cee41bfef015b8307f65d9986914f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 08917c9ac3b6d1237c633225b4fe657c951cddd1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109795"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651522"
 ---
 # Start-AzPurviewScanResultScan
 
 ## SYNOPSIS
 Menjalankan pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/start-azpurviewscanresultscan) untuk informasi terbaru.
 
 ## SYNTAX
 

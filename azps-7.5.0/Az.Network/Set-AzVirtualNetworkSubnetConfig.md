@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 64a5fc0d4eabd9c4be9702d8457938a45f7cb980
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 36811216d91067daa805f9de05ad79f51947215c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183282"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664788"
 ---
 # Set-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi subnet untuk jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 9b6afdfafc3d8061b5b968984678cae71e52793b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7898d44cc96e73a69cffe0c2e3703b6d69a29a35
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240947"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633130"
 ---
 # New-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Membuat aturan otorisasi baru untuk Bus Layanan tertentu yang diberikan Namespace atau Antrean atau Topik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Name
 
 `AuthoRule1` Membuat dengan hak **Dengar** dan **Kirim** untuk antrean `SBQueue`.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -Rights @("Listen","Send")
 ```

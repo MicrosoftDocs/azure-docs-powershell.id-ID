@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusRule.md
-ms.openlocfilehash: c4788e68f1a89742a6d6b69e94e47b4df29f7cc7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b87b8d4394ffd64e99f3d66dd4c7249fa2684689
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188193"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633364"
 ---
 # Get-AzServiceBusRule
 
 ## SYNOPSIS
 Mengambil definisi aturan yang ada dalam Langganan Topik tertentu. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExamp
 
 Mengembalikan daftar deskripsi aturan untuk langganan tertentu.  Secara default 100 aturan akan dikembalikan, jika lebih dari 100 aturan yang akan dikembalikan, silakan gunakan -MaxCount Parameter.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -MaxCount 150
 ```

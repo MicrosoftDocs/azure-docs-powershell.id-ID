@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
-ms.openlocfilehash: 07a384d6bb697dc90d7b1cece4cf565971213ea2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 53e69591c9baebde21cd6bd2c75a68830293daef
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214814"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632986"
 ---
 # New-AzServiceBusSubscription
 
 ## SYNOPSIS
 Membuat langganan ke topik Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebussubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnMessageExpiration
-Surat Gagal Pada Kedaluwarsa Pesan
+Surat Gagal Saat Kedaluwarsa Pesan
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -MaxDeliveryCount
 MaxDeliveryCount - jumlah pengiriman maksimum.
-Pesan secara otomatis mengalami deadletter setelah jumlah pengiriman ini.
+Pesan secara otomatis dihentikan setelah jumlah pengiriman ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -331,7 +334,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

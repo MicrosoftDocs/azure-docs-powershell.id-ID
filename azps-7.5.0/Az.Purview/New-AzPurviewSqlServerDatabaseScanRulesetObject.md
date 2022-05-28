@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSqlServerDatabaseScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSqlServerDatabaseScanRulesetObject.md
-ms.openlocfilehash: 345e69c25ad76605e345dbdfbe552e5a0569bc8a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfe7cd2fd21fd39eb14fc90848361b6b28787edb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189624"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652008"
 ---
 # New-AzPurviewSqlServerDatabaseScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk SqlServerDatabaseScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewsqlserverdatabasescanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

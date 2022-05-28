@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
-ms.openlocfilehash: 7dd832a81c15662a4db448baebc091b378e0b480
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 5a8fccb8f18ddc1056ced8c7f94c0ac3ef830c9b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144701976"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643696"
 ---
 # Get-AzADApplication
 
@@ -18,6 +18,9 @@ ms.locfileid: "144701976"
 Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi berdasarkan kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Mencantumkan 10 aplikasi pertama
 Get-AzADApplication -DisplayNameStartsWith $prefix
 ```
 
-Cari nama tampilan aplikasi dimulai dengan
+Mencari nama tampilan aplikasi dimulai dengan
 
 ### Contoh 4: Dapatkan aplikasi menurut ID objek
 ```powershell
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-key: id aplikasi
+kunci: id aplikasi
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cari
-Cari item menurut frasa pencarian
+Mencari item menurut frasa pencarian
 
 ```yaml
 Type: System.String

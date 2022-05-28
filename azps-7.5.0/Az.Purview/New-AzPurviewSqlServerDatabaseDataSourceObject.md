@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSqlServerDatabaseDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSqlServerDatabaseDataSourceObject.md
-ms.openlocfilehash: 52ec18724a47c36a579a9006d1d25fbc9113fab6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 67d2916b64e76cea92c821c2b4f219893047261a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144113068"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652026"
 ---
 # New-AzPurviewSqlServerDatabaseDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk SqlServerDatabaseDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewsqlserverdatabasedatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat objek dalam memori untuk SqlServerDatabaseDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek sumber data database SQL Server
+### Contoh 1: Membuat objek sumber data Database SQL Server
 ```powershell
 PS C:\> New-AzPurviewSqlServerDatabaseDataSourceObject -Kind 'SqlServerDatabase' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ServerEndpoint '12.13.14.12'
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

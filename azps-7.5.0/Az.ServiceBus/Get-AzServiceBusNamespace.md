@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNamespace.md
-ms.openlocfilehash: b1f6b35f2dd6287c5781338fcd6a5aa4d01eeb3f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d579294a541f5041fe6348a2cf9913336321ebc3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188224"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633454"
 ---
 # Get-AzServiceBusNamespace
 
 ## SYNOPSIS
 Mendapatkan deskripsi untuk namespace Bus Layanan yang ditentukan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

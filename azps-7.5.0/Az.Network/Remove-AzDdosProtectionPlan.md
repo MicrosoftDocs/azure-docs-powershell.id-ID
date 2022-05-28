@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
-ms.openlocfilehash: dda85df94e828da82117e8653eb631681b5a7fbf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 00c7163d77176acf5ac24c8cfa151c176cfbffc1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197590"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671034"
 ---
 # Remove-AzDdosProtectionPlan
 
 ## SYNOPSIS
 Menghapus paket perlindungan DDoS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,9 +85,9 @@ EnableVmProtection     : false
 Remove-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlan
 ```
 
-Paket perlindungan DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan paket, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak boleh benar tanpa rencana).
-Kemudian, kita mempertahankan status baru dengan membagi variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
-Jika ini adalah yang terakhir terkait dengan paket, kita dapat menghapus rencana perlindungan DDoS dengan menggunakan perintah Remove-AzDdosProtectionPlan.
+Paket perlindungan DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan paket, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak dapat benar tanpa rencana).
+Kemudian, kita mempertahankan status baru dengan membagi variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, paket tidak lagi terkait dengan jaringan virtual.
+Jika ini adalah yang terakhir yang terkait dengan paket, kita dapat menghapus rencana perlindungan DDoS dengan menggunakan perintah Remove-AzDdosProtectionPlan.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama rencana perlindungan DDoS yang akan dihapus.
+Menentukan nama paket perlindungan DDoS yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
