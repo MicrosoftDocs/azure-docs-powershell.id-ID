@@ -1,0 +1,222 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.KeyVault.dll-Help.xml
+Module Name: Az.KeyVault
+ms.assetid: 89299823-3382-402D-9458-519466748051
+online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultcertificate
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
+ms.openlocfilehash: e75d1386872a0510682ef95d311386cb434ee869
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145537945"
+---
+# Tambahkan-AzKeyVaultCertificate
+
+## SYNOPSIS
+Menambahkan sertifikat ke brankas kunci.
+
+## SYNTAX
+
+```
+Add-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String>
+ [-CertificatePolicy] <PSKeyVaultCertificatePolicy> [-Tag <Hashtable>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Add-AzKeyVaultCertificate** memulai proses pendaftaran sertifikat di brankas kunci di Azure Key Vault.
+
+## EXAMPLES
+
+### Contoh 1: Menambahkan sertifikat
+```powershell
+$Policy = New-AzKeyVaultCertificatePolicy -SecretContentType "application/x-pkcs12" -SubjectName "CN=contoso.com" -IssuerName "Self" -ValidityInMonths 6 -ReuseKeyOnRenewal
+Add-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01" -CertificatePolicy $Policy
+
+Status                    : inProgress
+CancellationRequested     : False
+CertificateSigningRequest : MIICpjCCAY4CAQAwFjEUMBIGA1UEAxMLY29udG9zby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC73w3VRBOlgJ5Od1PjDh+2ytngNZp+ZP4fkuX8K1Ti5LA6Ih7eWx1fgAN/iTb6l
+                            5K6LvAIJvsTNVePMNxfSdaEIJ70Inm45wVU4A/kf+UxQWAYVMsBrLtDFWxnVhzf6n7RGYke6HLBj3j5ASb9g+olSs6eON25ibF0t+u6JC+sIR0LmVGar9Q0eZys1rdfzJBIKq+laOM7z2pJijb5ANqve9
+                            i7rH5mnhQk4V8WsRstOhYR9jgLqSSxokDoeaBClIOidSBYqVc1yNv4ASe1UWUCR7ZK6OQXiecNWSWPmgWEyawu6AR9eb1YotCr2ScheMOCxlm3103luitxrd8A7kMjAgMBAAGgSzBJBgkqhkiG9w0BCQ4
+                            xPDA6MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAQEAIHhsDJV37PKi8hor5eQf7+Tct1preIvSwqV0NF6Uo7O6
+                            YnC9Py7Wp7CHfKzuqeptUk2Tsu7B5dHB+o9Ypeeqw8fWhTN0GFGRKO7WjZQlDqL+lRNcjlFSaP022oIP0kmvVhBcmZqRQlALXccAaxEclFA/3y/aNj2gwWeKpH/pwAkZ39zMEzpQCaRfnQk7e3l4MV8cf
+                            eC2HPYdRWkXxAeDcNPxBuVmKy49AzYvly+APNVDU3v66gxl3fIKrGRsKi2Cp/nO5rBxG2h8t+0Za4l/HJ7ZWR9wKbd/xg7JhdZZFVBxMHYzw8KQ0ys13x8HY+PXU92Y7yD3uC2Rcj+zbAf+Kg==
+ErrorCode                 :
+ErrorMessage              : 
+
+Get-AzKeyVaultCertificateOperation -VaultName "ContosoKV01" -Name "TestCert01"
+Status                    : completed
+CancellationRequested     : False
+CertificateSigningRequest : MIICpjCCAY4CAQAwFjEUMBIGA1UEAxMLY29udG9zby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC73w3VRBOlgJ5Od1PjDh+2ytngNZp+ZP4fkuX8K1Ti5LA6Ih7eWx1fgAN/iTb6l
+                            5K6LvAIJvsTNVePMNxfSdaEIJ70Inm45wVU4A/kf+UxQWAYVMsBrLtDFWxnVhzf6n7RGYke6HLBj3j5ASb9g+olSs6eON25ibF0t+u6JC+sIR0LmVGar9Q0eZys1rdfzJBIKq+laOM7z2pJijb5ANqve9
+                            i7rH5mnhQk4V8WsRstOhYR9jgLqSSxokDoeaBClIOidSBYqVc1yNv4ASe1UWUCR7ZK6OQXiecNWSWPmgWEyawu6AR9eb1YotCr2ScheMOCxlm3103luitxrd8A7kMjAgMBAAGgSzBJBgkqhkiG9w0BCQ4
+                            xPDA6MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAQEAIHhsDJV37PKi8hor5eQf7+Tct1preIvSwqV0NF6Uo7O6
+                            YnC9Py7Wp7CHfKzuqeptUk2Tsu7B5dHB+o9Ypeeqw8fWhTN0GFGRKO7WjZQlDqL+lRNcjlFSaP022oIP0kmvVhBcmZqRQlALXccAaxEclFA/3y/aNj2gwWeKpH/pwAkZ39zMEzpQCaRfnQk7e3l4MV8cf
+                            eC2HPYdRWkXxAeDcNPxBuVmKy49AzYvly+APNVDU3v66gxl3fIKrGRsKi2Cp/nO5rBxG2h8t+0Za4l/HJ7ZWR9wKbd/xg7JhdZZFVBxMHYzw8KQ0ys13x8HY+PXU92Y7yD3uC2Rcj+zbAf+Kg==
+ErrorCode                 :
+ErrorMessage              : 
+
+Get-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01"
+
+Name        : testCert01
+Certificate : [Subject]
+                CN=contoso.com
+
+              [Issuer]
+                CN=contoso.com
+
+              [Serial Number]
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+              [Not Before]
+                2/8/2016 3:11:45 PM
+
+              [Not After]
+                8/8/2016 4:21:45 PM
+
+              [Thumbprint]
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Thumbprint  : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Tags        :
+Enabled     : True
+Created     : 2/8/2016 11:21:45 PM
+Updated     : 2/8/2016 11:21:45 PM
+```
+
+Perintah pertama menggunakan cmdlet New-AzKeyVaultCertificatePolicy untuk membuat kebijakan sertifikat, lalu menyimpannya dalam variabel $Policy.
+Perintah kedua menggunakan **Add-AzKeyVaultCertificate** untuk memulai proses untuk membuat sertifikat.
+Perintah ketiga menggunakan cmdlet Get-AzKeyVaultCertificateOperation untuk melakukan polling operasi untuk memverifikasi bahwa operasi selesai.
+Perintah akhir menggunakan cmdlet Get-AzKeyVaultCertificate untuk mendapatkan sertifikat.
+
+## PARAMETERS
+
+### -CertificatePolicy
+Menentukan objek **KeyVaultCertificatePolicy** .
+
+```yaml
+Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificatePolicy
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama sertifikat yang akan ditambahkan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: CertificateName
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases: Tags
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VaultName
+Menentukan nama brankas kunci.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificatePolicy
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateOperation
+
+## NOTES
+
+## RELATED LINKS
+
+[Get-AzKeyVaultCertificate](./Get-AzKeyVaultCertificate.md)
+
+[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+
+[Remove-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)

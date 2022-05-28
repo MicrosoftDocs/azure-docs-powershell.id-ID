@@ -1,0 +1,399 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+ms.assetid: 81D55C43-C9A3-4DA7-A469-A3A7550FE9A4
+online version: https://docs.microsoft.com/powershell/module/az.network/new-azvirtualnetwork
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetwork.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetwork.md
+ms.openlocfilehash: 88caaefb69b0530e0a1e2c8f08d1b24d74dd5d7e
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145546093"
+---
+# New-AzVirtualNetwork
+
+## SYNOPSIS
+Membuat jaringan virtual.
+
+## SYNTAX
+
+```
+New-AzVirtualNetwork -Name <String> -ResourceGroupName <String> -Location <String> -AddressPrefix <String[]>
+ [-DnsServer <String[]>] [-FlowTimeout <Int32>] [-Subnet <PSSubnet[]>] [-BgpCommunity <String>]
+ [-EnableEncryption <String>] [-EncryptionEnforcementPolicy <String>] [-Tag <Hashtable>]
+ [-EnableDdosProtection] [-DdosProtectionPlanId <String>] [-IpAllocation <PSIpAllocation[]>]
+ [-EdgeZone <String>] [-Force] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzVirtualNetwork** membuat jaringan virtual Azure.
+
+## EXAMPLES
+
+### Contoh 1: Membuat jaringan virtual dengan dua subnet
+```powershell
+New-AzResourceGroup -Name TestResourceGroup -Location centralus
+$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
+$backendSubnet  = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -AddressPrefix "10.0.2.0/24"
+New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
+```
+
+Contoh ini membuat jaringan virtual dengan dua subnet. Pertama, grup sumber daya baru dibuat di wilayah centralus. Kemudian, contoh membuat representasi dalam memori dari dua subnet. Cmdlet New-AzVirtualNetworkSubnetConfig tidak akan membuat subnet apa pun di sisi server. Ada satu subnet yang disebut frontendSubnet dan satu subnet yang disebut backendSubnet. Cmdlet New-AzVirtualNetwork kemudian membuat jaringan virtual menggunakan CIDR 10.0.0.0/16 sebagai awalan alamat dan dua subnet.
+
+### Contoh 2: Membuat jaringan virtual dengan pengaturan DNS
+```powershell
+New-AzResourceGroup -Name TestResourceGroup -Location centralus
+$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
+$backendSubnet  = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -AddressPrefix "10.0.2.0/24"
+New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet -DnsServer 10.0.1.5,10.0.1.6
+```
+
+Contoh ini membuat jaringan virtual dengan dua subnet dan dua server DNS. Efek menentukan server DNS pada jaringan virtual adalah bahwa NIC/VM yang disebarkan ke dalam jaringan virtual ini mewarisi server DNS ini sebagai default. Default ini dapat ditimpa per NIC melalui pengaturan tingkat NIC. Jika tidak ada server DNS yang ditentukan di VNET dan tidak ada server DNS di NIC, maka server Azure DNS default digunakan untuk resolusi DNS.
+
+### Contoh 3: Membuat jaringan virtual dengan subnet yang mereferensikan kelompok keamanan jaringan
+```powershell
+New-AzResourceGroup -Name TestResourceGroup -Location centralus
+$rdpRule              = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
+$networkSecurityGroup = New-AzNetworkSecurityGroup -ResourceGroupName TestResourceGroup -Location centralus -Name "NSG-FrontEnd" -SecurityRules $rdpRule
+$frontendSubnet       = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24" -NetworkSecurityGroup $networkSecurityGroup
+$backendSubnet        = New-AzVirtualNetworkSubnetConfig -Name backendSubnet  -AddressPrefix "10.0.2.0/24" -NetworkSecurityGroup $networkSecurityGroup
+New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
+```
+
+Contoh ini membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan. Pertama, contoh membuat grup sumber daya sebagai kontainer untuk sumber daya yang akan dibuat. Kemudian, kelompok keamanan jaringan dibuat yang memungkinkan akses RDP masuk, tetapi sebaliknya memberlakukan aturan grup keamanan jaringan default. Cmdlet New-AzVirtualNetworkSubnetConfig kemudian membuat representasi dalam memori dari dua subnet yang keduanya mereferensikan grup keamanan jaringan yang dibuat. Perintah New-AzVirtualNetwork kemudian membuat jaringan virtual.
+
+## PARAMETERS
+
+### -AddressPrefix
+Menentukan rentang alamat IP untuk jaringan virtual.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BgpCommunity
+Komunitas BGP diiklankan melalui ExpressRoute.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DdosProtectionPlanId
+Referensi ke sumber daya paket perlindungan DDoS yang terkait dengan jaringan virtual.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DnsServer
+Menentukan server DNS untuk subnet.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -EdgeZone
+{{ Fill EdgeZone Description }}
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -EnableDdosProtection
+Parameter sakelar yang menunjukkan apakah perlindungan DDoS diaktifkan atau tidak.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnableEncryption
+Menunjukkan apakah enkripsi diaktifkan pada jaringan virtual. Nilai harus benar untuk mengaktifkan enkripsi pada jaringan virtual, false untuk menonaktifkan enkripsi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -EncryptionEnforcementPolicy
+Atur Encryption EnforcementPolicy. Nilai harus allowUnencrypted untuk memungkinkan VM tanpa kemampuan enkripsi di dalam jaringan virtual terenkripsi, atau dropUnencrypted untuk menonaktifkan VM apa pun tanpa kemampuan enkripsi agar tidak ditambahkan ke jaringan virtual terenkripsi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -FlowTimeout
+FlowTimeout memungkinkan pelacakan koneksi untuk alur intra-VM. Nilai harus antara 4 dan 30 menit (inklusif) untuk mengaktifkan pelacakan, atau null untuk menonaktifkan pelacakan.
+
+```yaml
+Type: System.Nullable`1[System.Int32]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Force
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IpAllocation
+Menentukan IpAllocations untuk jaringan virtual.
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSIpAllocation[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Menentukan wilayah untuk jaringan virtual.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama jaringan virtual yang dibuat cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: ResourceName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya untuk memuat jaringan virtual.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Subnet
+Menentukan daftar subnet yang akan dikaitkan dengan jaringan virtual.
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSSubnet[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Tag
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+### System.String[]
+
+### Microsoft.Azure.Commands.Network.Models.PSSubnet[]
+
+### System.Collections.Hashtable
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
+
+## NOTES
+
+## RELATED LINKS
+
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)
+
+[Remove-AzVirtualNetwork](./Remove-AzVirtualNetwork.md)
+
+[Set-AzVirtualNetwork](./Set-AzVirtualNetwork.md)
+
+[New-AzDdosProtectionPlan](./New-AzDdosProtectionPlan.md)
