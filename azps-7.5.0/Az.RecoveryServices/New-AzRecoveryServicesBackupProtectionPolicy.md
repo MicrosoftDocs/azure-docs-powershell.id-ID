@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 4c8fbe7f2d1ffc9c1f220c0bbf2cb71f375c66ae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3ed1b2bc598dc8433516eb9d2e4a0e42c707509e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212171"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648786"
 ---
 # Baru-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Membuat kebijakan perlindungan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Perintah kedelapan mendapatkan objek **RetentionPolicy** per jam dasar, lalu men
 Perintah kesembilan menetapkan kebijakan durasi retensi menjadi 10 hari.
 Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan retensi yang dibuat oleh perintah sebelumnya.
 
-### Contoh 3
+### Contoh: 3
 
 Membuat kebijakan perlindungan Pencadangan. (dibuat otomatis)
 

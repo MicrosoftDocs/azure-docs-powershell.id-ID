@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 4031e43428234f66e18998da550efb39b2c1081c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: caba56e38bac509d0f24d62e562d01c332956e1a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216758"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628402"
 ---
 # Enable-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
 Memungkinkan pengunggahan hash ledger ke akun Azure Storage atau ke Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 

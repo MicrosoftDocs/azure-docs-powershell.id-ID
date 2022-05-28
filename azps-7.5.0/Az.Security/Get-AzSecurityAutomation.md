@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutomation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutomation.md
-ms.openlocfilehash: 9f3035462aafaa29d0cc981a3b14e2acb5e0189e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 828948d171154cf9c43660893b8db2e707ed9aeb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243845"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636460"
 ---
 # Get-AzSecurityAutomation
 
 ## SYNOPSIS
 Mendapatkan otomatisasi keamanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityautomation) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: a6c35e13a49d04a975b73e6c31f347d092d7ba18
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e94d137476505e433d0c93e1737f8010b51f8e26
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195938"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630232"
 ---
 # Set-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Memperbarui versi jenis aplikasi terkelola service fabric. Ini memungkinkan Anda memperbarui tag dan Url paket. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ $appType | Set-AzServiceFabricManagedClusterApplicationTypeVersion -Tags $newTag
 
 Contoh ini akan memperbarui tag dan packageUrl versi aplikasi terkelola versi "v1".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $newTags = @{new="tags"}
 $packageUrl = "https://sftestapp.blob.core.windows.net/sftestapp/testAppType_v1.sfpkg"

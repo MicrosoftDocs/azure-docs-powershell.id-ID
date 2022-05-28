@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesVault.md
-ms.openlocfilehash: 2a551339bf863186b3966d8a580227b03f164953
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3817c357f1b5d3154b9cd2fe34baea899b136983
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189610"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648732"
 ---
 # New-AzRecoveryServicesVault
 
 ## SYNOPSIS
 Membuat vault Layanan Pemulihan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzRecoveryServicesVault** membuat vault Layanan Pemulihan baru.
 New-AzRecoveryServicesVault -Name "vaultName" -ResourceGroupName "rg" -Location "eastasia"
 ```
 
-Buat brankas layanan pemulihan dalam grup sumber daya dan lokasi tertentu.
+Buat vault layanan pemulihan di grup sumber daya dan lokasi tertentu.
 
 ## PARAMETERS
 

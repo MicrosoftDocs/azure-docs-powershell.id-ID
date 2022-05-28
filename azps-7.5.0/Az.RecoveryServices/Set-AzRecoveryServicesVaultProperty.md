@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 5a57fc66544ddeb9b12b64ac09141be0243eeb51
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cac9bb3405cd6c7fc3dfb4f2dc225f7c54a061d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196145"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647976"
 ---
 # Set-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Memperbarui properti Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Set-AzRecoveryServicesVaultProperty [-VaultId <String>] [-DefaultProfile <IAzure
 
 ## DESCRIPTION
 Cmdlet **Set-AzRecoveryServicesVaultProperty** memperbarui properti vault layanan Pemulihan. Cmdlet ini dapat digunakan untuk mengaktifkan/menonaktifkan penghapusan sementara atau mengatur enkripsi CMK untuk vault dengan dua set parameter yang berbeda. 
-Properti **SoftDeleteFeatureState** dari vault hanya dapat dinonaktifkan jika tidak ada kontainer terdaftar di vault. InfrastructurEncryption hanya dapat diatur saat pertama kali pengguna memperbarui vault CMK.
+**Properti SoftDeleteFeatureState** dari vault hanya dapat dinonaktifkan jika tidak ada kontainer terdaftar di vault. InfrastructurEncryption hanya dapat diatur saat pertama kali pengguna memperbarui vault CMK.
 
 ## EXAMPLES
 
@@ -47,10 +50,10 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultNam
 $props = Set-AzRecoveryServicesVaultProperty -VaultId $vault.Id -SoftDeleteFeatureState Enable
 ```
 
-Perintah pertama mendapatkan objek Vault lalu menyimpannya dalam variabel $vault.
+Perintah pertama mendapatkan objek Vault dan kemudian menyimpannya dalam variabel $vault.
 Perintah kedua Memperbarui properti SoftDeleteFeatureState dari vault ke status "Diaktifkan".
 
-### Contoh 2: Memperbarui enkripsi CMK vault untuk menggunakan SystemAssigned MSIdentity
+### Contoh 2: Memperbarui enkripsi CMK dari vault untuk menggunakan SystemAssigned MSIdentity
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName"
@@ -59,7 +62,7 @@ $key = Get-AzKeyVaultKey -VaultName "keyVaultName" -Name "keyName"
 Set-AzRecoveryServicesVaultProperty -EncryptionKeyId $key.ID -InfrastructureEncryption -VaultId $vault.ID -UseSystemAssignedIdentity $true
 ```
 
-Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan brankas kunci azure. Cmdlet ketiga mendapatkan kunci dari brankas kunci.
+Cmdlet pertama membuat RSVault memperbarui properti enkripsi. Cmdlet kedua mendapatkan brankas kunci azure. Cmdlet ketiga mendapatkan kunci dari brankas kunci.
 Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault untuk diakses melalui identitas SystemAssigned. Gunakan param -InfrastructureEncryption untuk mengaktifkan enkripsi infrastruktur untuk pembaruan pertama kali. 
 
 ### Contoh 3: Memperbarui enkripsi CMK vault untuk menggunakan userAssigned MSIdentity
@@ -71,7 +74,7 @@ $key = Get-AzKeyVaultKey -VaultName "keyVaultName" -Name "keyName"
 Set-AzRecoveryServicesVaultProperty -EncryptionKeyId $key.ID -VaultId $vault.ID -UseSystemAssignedIdentity $false -UserAssignedIdentity $vault.Identity.UserAssignedIdentities.Keys[0]
 ```
 
-Cmdlet pertama mendapatkan RSVault untuk memperbarui properti enkripsi. Cmdlet kedua mendapatkan brankas kunci azure. Cmdlet ketiga mendapatkan kunci dari brankas kunci.
+Cmdlet pertama membuat RSVault memperbarui properti enkripsi. Cmdlet kedua mendapatkan brankas kunci azure. Cmdlet ketiga mendapatkan kunci dari brankas kunci.
 Cmdlet keempat memperbarui kunci enkripsi yang dikelola pelanggan dalam RSVault untuk diakses melalui identitas UserAssigned.
 
 ### Contoh 4: Memperbarui HybridBackupSecurityFeature dari vault
@@ -81,8 +84,8 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultNam
 $prop = Set-AzRecoveryServicesVaultProperty -VaultId $vault.Id -DisableHybridBackupSecurityFeature $false
 ```
 
-Perintah pertama mendapatkan objek Vault lalu menyimpannya dalam variabel $vault.
-Perintah kedua menonaktifkan HybridBackupSecurityFeature dari vault, mengatur $true untuk mengaktifkannya lagi.
+Perintah pertama mendapatkan objek Vault dan kemudian menyimpannya dalam variabel $vault.
+Perintah kedua menonaktifkan HybridBackupSecurityFeature dari vault, atur $true untuk mengaktifkannya lagi.
 
 ## PARAMETERS
 

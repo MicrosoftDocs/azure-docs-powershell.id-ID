@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 75ba2aa6f943eb80684b5d38e17a76e1b8d6332b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 686bb78222e0086af4b0b8c902682720d7bbd7e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195924"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630196"
 ---
 # Set-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Mengatur properti sumber daya jenis node atau menjalankan tindakan reimage pada nde tertentu dari jenis node dengan parameter -Reimage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Set-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clus
 
 Memperbarui properite penempatan dari jenis node. Ini akan menimpa tempat penempatan yang lebih lama jika ada.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRG"
 $clusterName = "testCluster"

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
-ms.openlocfilehash: c272a0b0d63bc2c905a3bc5b9e212c50a565be77
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e167f7c319480160129c1cd71d9405f6f5a29bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233485"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628432"
 ---
 # Enable-AzSqlServerAdvancedDataSecurity
 
 ## SYNOPSIS
-Mengaktifkan Advanced Data Security pada server.
+Mengaktifkan Advanced Data Security di server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlserveradvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Enable-AzSqlServerAdvancedDataSecurity** memungkinkan Advanced Data Sec
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan Keamanan Data Tingkat Lanjut server
+### Contoh 1: Mengaktifkan Keamanan Data Tingkat Lanjut server
 ```powershell
 Enable-AzSqlServerAdvancedDataSecurity `
             -ResourceGroupName "ResourceGroup01" `
@@ -58,9 +61,9 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 3
+### Contoh: 3
 
-Mengaktifkan Advanced Data Security pada server. (dibuat otomatis)
+Mengaktifkan Advanced Data Security di server. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 

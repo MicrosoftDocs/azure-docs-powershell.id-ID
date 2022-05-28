@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Register-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Register-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: bc1e71691bf8d4eca1d1dc2ff4327197007167ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2aa6bb47dcc2bbcd8ac2f060f0bd72ab51516e33
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244688"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648750"
 ---
 # Register-AzRecoveryServicesBackupContainer
 
 ## SYNOPSIS
 Cmdlet **Register-AzRecoveryServicesBackupContainer** mendaftarkan Azure VM untuk AzureWorkloads dengan workloadType tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/register-azrecoveryservicesbackupcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

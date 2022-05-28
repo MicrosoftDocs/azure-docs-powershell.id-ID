@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 4d3994ef7ac05fb55b0304d99d47f8e37b1fd65d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cee0dfba3d0851f9c64081d2dfea5cd3e5274d86
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206255"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648120"
 ---
 # Resume-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Melanjutkan pekerjaan Azure Site Recovery yang ditangguhkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/resume-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -153,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRecoveryServicesAsrJob](./Get-AzRecoveryServicesAsrJob.md)
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Stop-AzRecoveryServicesAsrJob](./Stop-AzRecoveryServicesAsrJob.md)

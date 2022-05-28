@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restart-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restart-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 34d814b277d14ebdf38b57a5527bc65fd3bf38da
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c692ec490f5fdd2fb17c24b39d4b3de2ce320de6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236677"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648210"
 ---
 # Restart-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Memulai ulang pekerjaan Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/restart-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 

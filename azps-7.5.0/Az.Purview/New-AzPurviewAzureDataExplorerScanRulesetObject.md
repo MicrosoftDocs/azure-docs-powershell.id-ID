@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerScanRulesetObject.md
-ms.openlocfilehash: 9eedd11060cbbd262e65c5962b7a19e9a507d2e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c5f3fe892d878a4436a5da00a191ff3cc2c9878
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230923"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653970"
 ---
 # New-AzPurviewAzureDataExplorerScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureDataExplorerScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuredataexplorerscanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

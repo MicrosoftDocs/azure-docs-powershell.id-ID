@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterService.md
-ms.openlocfilehash: 911d7115490e2ca307bc8019b3d5cb87d29334c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 00a14791fe7e1d07caf86c804d27184249f589df
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195935"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630214"
 ---
 # Set-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
 Memperbarui layanan terkelola dari kluster. Hanya mendukung layanan yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Set-AzServiceFabricManagedClusterService -InputObject <PSManagedService> [-State
 ```
 
 ## DESCRIPTION
-Cmdlet ini memperbarui layanan terkelola membentuk kluster.
+Cmdlet ini memperbarui layanan terkelola dari kluster.
 
 ## EXAMPLES
 
@@ -113,7 +116,7 @@ $service | Set-AzServiceFabricManagedClusterService -Stateless -Metric @($statel
 
 Contoh ini akan menghapus layanan terkelola testService1".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $standByReplicaKeepDuration = "00:11:00"
 $servicePlacementTimeLimit = "00:11:00"
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -DefaultMoveCost
 Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
+Biaya yang lebih tinggi membuatnya lebih kecil kemungkinan bahwa Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.MoveCostEnum
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Menentukan jumlah instans untuk layanan terkelola
+Tentukan jumlah instans untuk layanan terkelola
 
 ```yaml
 Type: System.Int32
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaRestartWaitDuration
-Tentukan durasi tunggu mulai ulang replika untuk layanan terkelola.
+Tentukan durasi tunggu hidupkan ulang replika untuk layanan terkelola.
 Durasi yang diwakili dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 
 ### -ServicePackageActivationMode
 Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
+Biaya yang lebih tinggi membuatnya lebih kecil kemungkinan bahwa Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ServicePackageActivationModeEnum
@@ -463,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandByReplicaKeepDuration
-Tentukan durasi replika siaga untuk layanan terkelola.
+Tentukan durasi stand by replica untuk layanan terkelola.
 Durasi yang diwakili dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml

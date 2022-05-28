@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureMySqlDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureMySqlDataSourceObject.md
-ms.openlocfilehash: 104a39b60765f3c0493906f98301857eea1e36f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 47168220de3464a8d633848b820beba511de36f7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109798"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653844"
 ---
 # New-AzPurviewAzureMySqlDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureMySqlDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuremysqldatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 

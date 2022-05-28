@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalRKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalRKey.md
-ms.openlocfilehash: b6656d9805ce83cdf8b35f4c776d0a863f6b0ee0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 336e2fce6b2ad68133b2d0091d7022ddfb6eb105
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242333"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629620"
 ---
 # New-AzSignalRKey
 
 ## SYNOPSIS
-Meregenerasi kunci akses untuk layanan SignalR.
+Regenerasi kunci akses untuk layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azsignalrkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzSignalRKey -InputObject <PSSignalRResource> [-KeyType] <String> [-PassThru
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci akses untuk layanan SignalR.
+Regenerasi kunci akses untuk layanan SignalR.
 
 ## EXAMPLES
 

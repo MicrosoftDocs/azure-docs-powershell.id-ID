@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 3c02c167137ebe6b1b9895145145e0205767ea85
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85a0838c5de7ef5c51af05423ecb226aa20d4f28
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230713"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648426"
 ---
 # Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
 Menghapus disk ke item yang dilindungi replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Cmdlet **Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk** menghapus di
 Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -VhdUri $vhdUri
 ```
 
-Mulai operasi untuk menghapus disk yang ditentukan dari VM perlindungan untuk disk yang tidak Dikelola.
+Mulai operasi untuk menghapus disk tertentu dari VM perlindungan untuk disk yang tidak Dikelola.
 
 ### Contoh 2
 ```powershell
@@ -52,7 +55,7 @@ Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedIt
 
 Mulai operasi untuk menghapus disk tertentu dari VM perlindungan untuk Disk terkelola.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $currentJob = Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -DiskId $diskId
 Get-AzRecoveryServicesAsrJob -name $currentJob.id
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Menentukan daftar vhd Uri.
+Menentukan daftar Uri vhd.
 
 ```yaml
 Type: String[]

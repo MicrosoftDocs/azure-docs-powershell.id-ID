@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: 97cb5db80a4a011555ae9f093c8a79a77bdf849e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7f8f4293bfc8c1756e66420a940723bbb288c3e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230674"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648336"
 ---
 # Remove-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
 Menghapus server vCenter dari fabric ASR dan menghentikan penemuan komputer virtual dari server vCenter Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 

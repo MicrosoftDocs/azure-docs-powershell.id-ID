@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: bec9c3ed23bb546740cd9ad77898276d76e93171
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9f709ffbc9501a05568c13d21e50db100993c776
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233611"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636568"
 ---
 # Get-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
 Mendapatkan jenis penilaian keamanan dan metadta dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityassessmentmetadata) untuk informasi terbaru.
 
 ## SYNTAX
 

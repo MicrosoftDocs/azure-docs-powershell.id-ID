@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureFileServiceScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureFileServiceScanRulesetObject.md
-ms.openlocfilehash: 48d9b6e4d703c4b482a6011ea44058d69d596864
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3fafcc6ae57af524bc5ee8155064aa4c1a2654b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224150"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654006"
 ---
 # New-AzPurviewAzureFileServiceScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureFileServiceScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurefileservicescanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

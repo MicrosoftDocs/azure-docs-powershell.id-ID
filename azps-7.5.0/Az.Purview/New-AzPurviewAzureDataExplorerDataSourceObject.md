@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerDataSourceObject.md
-ms.openlocfilehash: 0e143475ba367320144787275b5ea6624db584d9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b077012102acfc69143180f20fb80ed1b36caff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230926"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654024"
 ---
 # New-AzPurviewAzureDataExplorerDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureDataExplorerDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuredataexplorerdatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 

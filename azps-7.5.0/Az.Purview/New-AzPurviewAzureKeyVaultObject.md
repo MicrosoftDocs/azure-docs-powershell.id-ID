@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureKeyVaultObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureKeyVaultObject.md
-ms.openlocfilehash: a5ef1e4895b038f4f51cd345e1bb1e30f545b60f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e82ac3cdb274647ad0711ed1fd6c199d816b72d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230853"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653736"
 ---
 # New-AzPurviewAzureKeyVaultObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureKeyVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurekeyvaultobject) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: cff3f4a8779d081cd6d3b7fb52649c12c4981646
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb507c05a788e58bb0f33e6a32f4a5b7f5e4f7d8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212174"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648768"
 ---
 # New-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Menambahkan server vCenter server untuk menemukan item yang dapat dilindungi.
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzRecoveryServicesAsrvCenter -Fabric <ASRFabric> -Name <String> -Account <AS
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrvCenter** menambahkan server vCenter Server untuk menemukan item yang dapat dilindungi. Cmdlet ini mendaftarkan server vCenter server untuk penemuan dengan server Konfigurasi.
+Cmdlet **New-AzRecoveryServicesAsrvCenter** menambahkan server vCenter untuk menemukan item yang dapat dilindungi. Cmdlet ini mendaftarkan server vCenter untuk penemuan dengan server Konfigurasi.
 
 ## EXAMPLES
 
@@ -38,11 +41,11 @@ New-AzRecoveryServicesAsrvCenterServer -Account $ConfigServer.FabricSpecificDeta
 Asr Job for vCenter creation.
 ```
 
-Menambahkan server vCenter server untuk menemukan item yang dapat dilindungi.
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi.
 
 ### Contoh 2
 
-Menambahkan server vCenter server untuk menemukan item yang dapat dilindungi. (dibuat otomatis)
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzRecoveryServicesAsrvCenter -Account $fabric.FabricSpecificDetails.RunAsAccounts[0] -Fabric $Fabric -IpOrHostName <String> -Name 'V2VM' -Port <Int32>
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama yang mudah diingat untuk server vCenter Server.
+Nama yang mudah diingat untuk server vCenter.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP di server vCenter Server yang digunakan untuk penemuan.
+Port TCP pada server vCenter server yang digunakan untuk penemuan.
 
 ```yaml
 Type: System.Int32

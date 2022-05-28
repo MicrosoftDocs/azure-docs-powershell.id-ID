@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/rest
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Restart-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Restart-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: 966e852193545c8ec727421fb3664b534a39aaa0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b41bbc35c8725eacc442a139116e9d70b580f6ad
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239046"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629062"
 ---
 # Restart-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Mulai ulang penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/restart-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomationRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomationRuleObject.md
-ms.openlocfilehash: 5f9758982ec4fc304515b7635a89cca86f73262e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3365ce1095b1f920e087b5067c4f1d486f308cd3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228532"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635614"
 ---
 # New-AzSecurityAutomationRuleObject
 
 ## SYNOPSIS
 Membuat objek aturan otomatisasi keamanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azsecurityautomationruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
