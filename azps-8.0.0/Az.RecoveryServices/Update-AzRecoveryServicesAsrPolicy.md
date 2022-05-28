@@ -1,0 +1,482 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteRecovery.dll-Help.xml
+Module Name: Az.RecoveryServices
+online version: https://docs.microsoft.com/powershell/module/az.recoveryservices/update-azrecoveryservicesasrpolicy
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
+ms.openlocfilehash: 3bc724a7518822cb896b8d2303a27f3b3717561b
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145502736"
+---
+# Update-AzRecoveryServicesAsrPolicy
+
+## SYNOPSIS
+Memperbarui kebijakan replikasi Azure Site Recovery.
+
+## SYNTAX
+
+### Default (Default)
+```
+Update-AzRecoveryServicesAsrPolicy -InputObject <ASRPolicy> [-ReplicationMethod <String>]
+ [-ReplicationFrequencyInSeconds <String>] [-NumberOfRecoveryPointsToRetain <Int32>]
+ [-ApplicationConsistentSnapshotFrequencyInHours <Int32>] [-Compression <String>] [-ReplicationPort <UInt16>]
+ [-Authentication <String>] [-ReplicationStartTime <TimeSpan>] [-ReplicaDeletion <String>]
+ [-RecoveryAzureStorageAccountId <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### VMwareToAzure
+```
+Update-AzRecoveryServicesAsrPolicy [-VMwareToAzure] -InputObject <ASRPolicy>
+ [-RecoveryPointRetentionInHours <Int32>] [-ApplicationConsistentSnapshotFrequencyInHours <Int32>]
+ [-MultiVmSyncStatus <String>] [-RPOWarningThresholdInMinutes <Int32>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AzureToAzure
+```
+Update-AzRecoveryServicesAsrPolicy [-AzureToAzure] -InputObject <ASRPolicy>
+ [-RecoveryPointRetentionInHours <Int32>] [-ApplicationConsistentSnapshotFrequencyInHours <Int32>]
+ [-MultiVmSyncStatus <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### AzureToVMware
+```
+Update-AzRecoveryServicesAsrPolicy [-AzureToVMware] -InputObject <ASRPolicy>
+ [-RecoveryPointRetentionInHours <Int32>] [-ApplicationConsistentSnapshotFrequencyInHours <Int32>]
+ [-MultiVmSyncStatus <String>] [-RPOWarningThresholdInMinutes <Int32>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### HyperVToAzure
+```
+Update-AzRecoveryServicesAsrPolicy [-HyperVToAzure] -InputObject <ASRPolicy>
+ [-ReplicationFrequencyInSeconds <String>] [-NumberOfRecoveryPointsToRetain <Int32>]
+ [-ApplicationConsistentSnapshotFrequencyInHours <Int32>] [-ReplicationStartTime <TimeSpan>]
+ [-RecoveryAzureStorageAccountId <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### EnterpriseToEnterprise
+```
+Update-AzRecoveryServicesAsrPolicy [-VmmToVmm] -InputObject <ASRPolicy> [-ReplicationMethod <String>]
+ [-ReplicationFrequencyInSeconds <String>] [-NumberOfRecoveryPointsToRetain <Int32>]
+ [-ApplicationConsistentSnapshotFrequencyInHours <Int32>] [-Compression <String>] [-ReplicationPort <UInt16>]
+ [-Authentication <String>] [-ReplicationStartTime <TimeSpan>] [-ReplicaDeletion <String>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplicateVMwareToAzure
+```
+Update-AzRecoveryServicesAsrPolicy [-ReplicateVMwareToAzure] -InputObject <ASRPolicy>
+ [-RecoveryPointRetentionInHours <Int32>] [-ApplicationConsistentSnapshotFrequencyInHours <Int32>]
+ [-MultiVmSyncStatus <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Update-AzRecoveryServicesAsrPolicy** memperbarui kebijakan replikasi Azure Site Recovery yang ditentukan.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+$currentJob = Update-AzRecoveryServicesAsrPolicy -Policy $Policy -ReplicationFrequencyInSeconds 900
+```
+
+Memulai operasi kebijakan replikasi pembaruan menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+
+### Contoh 2
+```powershell
+Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -ReplicationFrequencyInSeconds 900
+```
+
+Memulai operasi kebijakan pembaruan azure ke azure replikasi menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+
+### Contoh: 3
+```powershell
+$currentJob = Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -RecoveryPointRetentionInHours 20
+```
+
+Memulai kebijakan pembaruan azure ke replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+
+## PARAMETERS
+
+### -ApplicationConsistentSnapshotFrequencyInHours
+Menentukan frekuensi(dalam jam) untuk membuat titik pemulihan aplikasi yang konsisten.
+
+```yaml
+Type: System.Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Autentikasi
+Menentukan jenis autentikasi yang digunakan.
+
+```yaml
+Type: System.String
+Parameter Sets: Default, EnterpriseToEnterprise
+Aliases:
+Accepted values: Certificate, Kerberos
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AzureToAzure
+Menentukan pemulihan bencana Azure ke Azure.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AzureToAzure
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AzureToVMware
+Menentukan pemulihan bencana Azure ke vMWare.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AzureToVMware
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Pemadatan
+Menentukan apakah pemadatan harus diaktifkan.
+
+```yaml
+Type: System.String
+Parameter Sets: Default, EnterpriseToEnterprise
+Aliases:
+Accepted values: Enable, Disable
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HyperVToAzure
+Parameter switch yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual Hyper-V ke Azure.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: HyperVToAzure
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek input untuk cmdlet: Menentukan objek kebijakan replikasi ASR yang sesuai dengan kebijakan replikasi yang akan diperbarui.
+
+```yaml
+Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
+Parameter Sets: (All)
+Aliases: Policy
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MultiVmSyncStatus
+Menentukan status sinkronisasi multiVm untuk kebijakan.
+
+```yaml
+Type: System.String
+Parameter Sets: VMwareToAzure, AzureToAzure, AzureToVMware, ReplicateVMwareToAzure
+Aliases:
+Accepted values: Enable, Disable
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NumberOfRecoveryPointsToRetain
+Menentukan titik pemulihan angka yang akan dipertahankan.
+
+```yaml
+Type: System.Int32
+Parameter Sets: Default, HyperVToAzure, EnterpriseToEnterprise
+Aliases: RecoveryPoints
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecoveryAzureStorageAccountId
+Menentukan ID akun penyimpanan Azure dari target replikasi. Digunakan sebagai akun penyimpanan target untuk replikasi jika alternatif tidak disediakan saat mengaktifkan replikasi menggunakan cmdlet New-AzRecoveryServicesASRReplicationProtectedItem.
+
+
+```yaml
+Type: System.String
+Parameter Sets: Default, HyperVToAzure
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecoveryPointRetentionInHours
+Waktu dalam jam untuk mempertahankan titik pemulihan setelah pembuatan.
+
+```yaml
+Type: System.Int32
+Parameter Sets: VMwareToAzure, AzureToAzure, AzureToVMware, ReplicateVMwareToAzure
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicaDeletion
+Menentukan apakah komputer virtual replika harus dihapus saat menonaktifkan replikasi dari situs terkelola VMM ke situs lain.
+
+```yaml
+Type: System.String
+Parameter Sets: Default, EnterpriseToEnterprise
+Aliases:
+Accepted values: Required, NotRequired
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicateVMwareToAzure
+Alihkan parameter yang menentukan skenario replikasi VMware ke Azure.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ReplicateVMwareToAzure
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicationFrequencyInSeconds
+Menentukan interval frekuensi replikasi dalam hitungan detik.
+Nilai yang valid adalah:
+
+- 30
+- 300
+- 900
+
+```yaml
+Type: System.String
+Parameter Sets: Default, HyperVToAzure, EnterpriseToEnterprise
+Aliases:
+Accepted values: 30, 300, 900
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicationMethod
+Menentukan metode replikasi.
+
+```yaml
+Type: System.String
+Parameter Sets: Default, EnterpriseToEnterprise
+Aliases:
+Accepted values: Online, Offline
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicationPort
+Menentukan porta yang digunakan untuk replikasi.
+
+```yaml
+Type: System.UInt16
+Parameter Sets: Default, EnterpriseToEnterprise
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicationStartTime
+Menentukan waktu mulai replikasi.
+Ini harus tidak lebih dari 24 jam sejak awal pekerjaan.
+
+```yaml
+Type: System.Nullable`1[System.TimeSpan]
+Parameter Sets: Default, HyperVToAzure, EnterpriseToEnterprise
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RPOWarningThresholdInMinutes
+Nilai ambang BATAS RPO dalam hitungan menit untuk diperingatkan.
+
+```yaml
+Type: System.Int32
+Parameter Sets: VMwareToAzure, AzureToVMware
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VmmToVmm
+Parameter switch yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual Hyper-V terkelola VMM antara dua situs Hyper-V.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: EnterpriseToEnterprise
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VMwareToAzure
+Parameter switch yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual VMware ke Azure.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: VMwareToAzure
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
+
+## NOTES
+
+## RELATED LINKS
