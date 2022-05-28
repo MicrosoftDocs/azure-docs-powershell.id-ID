@@ -1,0 +1,156 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Automation.dll-Help.xml
+Module Name: Az.Automation
+ms.assetid: 6429C564-1995-4D9B-BF9B-963B4F5FB3BD
+online version: https://docs.microsoft.com/powershell/module/az.automation/set-azautomationschedule
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationSchedule.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationSchedule.md
+ms.openlocfilehash: 4639fbdeb2d512a773147f677702c59ee902cee2
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145555221"
+---
+# Set-AzAutomationSchedule
+
+## SYNOPSIS
+Memodifikasi jadwal Automation.
+
+## SYNTAX
+
+```
+Set-AzAutomationSchedule [-Name] <String> [-IsEnabled <Boolean>] [-Description <String>]
+ [-ResourceGroupName] <String> [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Set-AzAutomationSchedule** memodifikasi jadwal dalam Azure Automation.
+
+## EXAMPLES
+
+### Contoh 1: Mengubah jadwal
+```powershell
+Set-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -Description "Automation Schedule" -ResourceGroupName "ResourceGroup01"
+```
+
+Perintah ini memodifikasi deskripsi jadwal bernama Schedule01.
+
+## PARAMETERS
+
+### -AutomationAccountName
+Menentukan nama akun Automation yang cmdlet ini memodifikasi jadwal.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Deskripsi
+Menentukan deskripsi untuk jadwal.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -IsEnabled
+Menentukan apakah cmdlet ini mengaktifkan jadwal.
+
+```yaml
+Type: System.Nullable`1[System.Boolean]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama untuk jadwal yang diubah cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya yang cmdlet ini memodifikasi jadwal.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Automation.Model.Schedule
+
+## NOTES
+
+## RELATED LINKS
+
+[Get-AzAutomationSchedule](./Get-AzAutomationSchedule.md)
+
+[New-AzAutomationSchedule](./New-AzAutomationSchedule.md)
+
+[Remove-AzAutomationSchedule](./Remove-AzAutomationSchedule.md)
+
+
