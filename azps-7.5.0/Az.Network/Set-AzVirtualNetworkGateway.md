@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 4fe2a98b8310c98f629421242c2f91a4dee9ff49
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f14ed63605b6548f32b0e0ada4a1b10628c25d4e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665022"
 ---
 # Set-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Memperbarui gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -203,7 +206,7 @@ BgpSettings            : {
 Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -VpnClientRootCertificates $rootCert -RemoveAadAuthentication
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan parameter konfigurasi autentikasi AAD:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan param konfigurasi autentikasi AAD:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
 Perintah ketiga menghapus konfigurasi autentikasi AAD dari VpnClient gateway jaringan virtual.
 
 ### Contoh 5: Menambahkan/Memperbarui IpConfigurationBgpPeeringAddresses ke gateway jaringan virtual yang ada
@@ -386,7 +389,7 @@ Perintah keenam menghapus sertifikat akar yang kedaluwarsa dengan menggunakan in
 ## PARAMETERS
 
 ### -AadAudienceId
-P2S AAD opsi autentikasi:AadAudienceId.
+Opsi autentikasi AAD P2S:AadAudienceId.
 
 ```yaml
 Type: System.String

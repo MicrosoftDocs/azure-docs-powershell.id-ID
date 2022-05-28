@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 7d59ea949e5be0089bd4e9947dfbb77696cc5161
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9cce1873da346c7033d08f6ea4588e3d873f7316
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208910"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658290"
 ---
 # New-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Membuat server baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat sumber daya berada.
+Lokasi sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maksimum yang diizinkan untuk server.
+Penyimpanan maks yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Nama atau Id Subnet atau nama baru yang sudah ada untuk dibuat.
+Nama atau Id subnet atau nama baru yang sudah ada untuk dibuat.
 Harap dicatat bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
 Setelah delegasi, subnet ini tidak dapat digunakan untuk jenis sumber daya Azure lainnya.
 
@@ -509,7 +512,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vnet
-Nama atau Id jaringan virtual atau nama baru yang sudah ada untuk dibuat.
+Nama atau Id jaringan virtual yang ada atau nama yang baru untuk dibuat.
 Nama harus antara 2 hingga 64 karakter.
 Nama harus diawali dengan huruf atau angka, diakhiri dengan huruf, angka atau garis bawah, dan hanya boleh berisi huruf, angka, garis bawah, titik, atau tanda hubung.
 
