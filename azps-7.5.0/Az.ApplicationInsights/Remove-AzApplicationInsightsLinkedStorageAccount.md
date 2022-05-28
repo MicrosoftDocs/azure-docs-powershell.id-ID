@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: cac2fdc439370b24bb49743b2c5544c8f7916845
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea8e1fbb48c6a6e1e262441aed2ab744d1785ee9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237223"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685038"
 ---
 # Remove-AzApplicationInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Menghapus akun penyimpanan tertaut application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: b49e8f13e590298eb866e75ea3cbb23536ca9daa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e3a4d2174411cf1fc83c9fe7d0bb044b9e7233b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189092"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685668"
 ---
 # Get-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
 Mendapatkan kunci api application insights untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringReceivedRoute.md
-ms.openlocfilehash: 599d84cd379b05bf0fe6ade6e3b01199fd775de3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: daef54327acf5a3cf1d7a0c48c02e0d8a597e566
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194468"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660162"
 ---
 # Get-AzPeeringReceivedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang diterima untuk Peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringreceivedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginAsValidationState
-Filter menurut status validasi AS asal.
+Filter menurut asal status validasi AS.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPKIValidationState
-Filter berdasarkan status validasi RPKI.
+Filter menurut status validasi RPKI.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: af2a7478f34bcfa868fcaf395fc68e29719118dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1c02d831392f91c7951eb20ecc99e43e4f20dc9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109515"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631564"
 ---
 # Get-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Dapatkan detail versi jenis aplikasi terkelola Service Fabric. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $reso
 
 Contoh ini mendapatkan daftar versi jenis aplikasi terkelola yang ditentukan di bawah kluster dan jenis yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applicationTypes/testAppType/versions/v1"
 Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceId $resourceId

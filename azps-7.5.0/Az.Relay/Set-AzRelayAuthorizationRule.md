@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzRelayAuthorizationRule.md
-ms.openlocfilehash: 628f1e4420d78b43e1baefa400b81ce1d30a8b98
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b1b4ddd7c4b4504ab21784201d55bf0ac19fe4d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232060"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645186"
 ---
 # Set-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Memperbarui deskripsi aturan otorisasi yang ditentukan untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/set-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -104,7 +107,7 @@ Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Defa
 
 Menambahkan **Kirim** ke hak akses aturan `AuthoRule1` otorisasi WcfRelay `TestWCFRelay1`.
 
-### Contoh 2.2 - WcfRelay dengan parameter Rights
+### Contoh 2.2 - WcfRelay dengan parameter Hak
 ```powershell
 Set-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWCFRelay1 -Name AuthoRule1 -Rights "Send"
 ```
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Relay AuthorizationRule.
+Objek AuthorizationRule Relay.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsDataExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsDataExport.md
-ms.openlocfilehash: e321aa2baa1f3dac401fd9e13414bea1cdb12472
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 142384253fb9529e0d917214ed1f67c40ee1f6b7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235473"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661386"
 ---
 # New-AzOperationalInsightsDataExport
 
 ## SYNOPSIS
 Buat ekspor data untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsdataexport) untuk informasi terbaru.
 
 ## SYNTAX
 

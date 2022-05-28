@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageCredentialScanObject.md
-ms.openlocfilehash: eab75044556f81b80adf643c2b7fa5e80ae35206
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf1d0baefefa6e625bc16d511d9ed3809f797905
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215030"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653052"
 ---
 # New-AzPurviewAzureStorageCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureStorageCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurestoragecredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

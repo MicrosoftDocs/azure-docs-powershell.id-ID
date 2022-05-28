@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualRouter.md
-ms.openlocfilehash: a80fe9b0d98913558c7ee232b3590849bfbef0ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f0a5c8ca758bc759a6cf2ca44efbec28b200e63
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220394"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672528"
 ---
 # New-AzVirtualRouter
 
 ## SYNOPSIS
 Membuat Azure VirtualRouter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualrouter) untuk informasi terbaru.
 
 ## SYNTAX
 

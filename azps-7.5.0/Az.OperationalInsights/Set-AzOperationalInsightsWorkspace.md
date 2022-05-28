@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: 6ef313462d2140730a2d52b639f65a3e8e4d54f6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1cea7170247db913c6ec0af4eebb22143456f6d6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660467"
 ---
 # Set-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 

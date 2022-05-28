@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
-ms.openlocfilehash: 30145a5b3fc7cdb91ed1ed9ef234ddfab604e4aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a7a259cae0f5a20007034470d97333b5160cbad4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215555"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632050"
 ---
 # Test-AzServiceBusName
 
 ## SYNOPSIS
 Memeriksa Ketersediaan Nama NameSpace atau Alias yang diberikan (Nama Konfigurasi DR) 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/test-azservicebusname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Cmdlet **Test-AzServiceBusName** Memeriksa Ketersediaan Nama NameSpace atau Alia
 Test-AzServiceBusName -Namespace MyNameSpaceName
 ```
 
-Mengembalikan status ketersediaan nama namespace 'MyNameSpaceName' sebagai True
+Mengembalikan status pada ketersediaan nama namespace 'MyNameSpaceName' sebagai True
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ Test-AzServiceBusName -Namespace MyNameSpaceName
 
 Mengembalikan status ketersediaan nama namespace 'MyNameSpaceName' sebagai False dengan Alasan
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Test-AzServiceBusName -ResourceGroupName MyResourceGroup -Namespace Test123 -AliasName myAliasName
 ```

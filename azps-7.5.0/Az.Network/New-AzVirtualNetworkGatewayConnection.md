@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: 739b1904316079290dd5140eb4edc3fb4a1b8fcb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ccb83a33441e74baced06d0050097a7e60608be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239141"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672780"
 ---
 # Baru-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Membuat koneksi VPN Situs-ke-Situs antara gateway jaringan virtual dan perangkat VPN lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

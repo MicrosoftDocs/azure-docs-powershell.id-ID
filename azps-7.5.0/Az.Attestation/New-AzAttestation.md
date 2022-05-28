@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
-ms.openlocfilehash: ec51b599d9f2ade21453ddf270f10505aff38092
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7353cf3d724884283c551dd804230f7f93c96a70
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214451"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684624"
 ---
 # New-AzAttestation
 
 ## SYNOPSIS
 Membuat pengesahan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/new-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ### -Name
 Menentukan nama Instans yang akan dibuat.
 Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun.
-Nama harus dimulai dan diakhir dengan huruf atau digit.
+Nama harus dimulai dan diakhbungi dengan huruf atau digit.
 Nama harus unik secara universal.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySignersCertificateFile
-Menentukan kumpulan kunci penandatanganan tepercaya untuk kebijakan penerbitan dalam satu file sertifikat.
+Menentukan sekumpulan kunci penandatanganan tepercaya untuk kebijakan penerbitan dalam satu file sertifikat.
 
 ```yaml
 Type: System.String

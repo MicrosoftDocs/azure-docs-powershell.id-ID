@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: 869de7146f4843b3b4234a62fa12efcf3bc34bd0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fdd42cff1aed90158499afa278fdc1b9370207c1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192561"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659424"
 ---
 # Remove-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Menghapus atau menghapus ASN terdaftar dari sumber daya peering induk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/remove-azpeeringregisteredasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Memungkinkan penghapusan ASN terdaftar dari sumber daya peering induk.
 Remove-AzPeeringRegisteredAsn -ResourceId $resourceId
 ```
 
-Hapus ASN terdaftar menurut id sumber daya.
+Hapus ASN terdaftar dengan id sumber daya.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Isi Deskripsi PassThru }}
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicy.md
-ms.openlocfilehash: eb7d62a7d3152b16fc47e6bd454d9990e2621508
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 72c899a9eb01573ca063b7c4255ad72e1abbb5ac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223271"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666480"
 ---
 # Set-AzFirewallPolicy
 
 ## SYNOPSIS
 Menyimpan kebijakan firewall azure yang dimodifikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Set-AzFirewallPolicy -Name firewallPolicy1 -ResourceGroupName TestRg -Location w
 
 Contoh ini menetapkan kebijakan firewall dengan mode intel ancaman baru
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $threatIntelWhitelist = New-AzFirewallPolicyThreatIntelWhitelist -IpAddress 23.46.72.91,192.79.236.79 -FQDN microsoft.com
 Set-AzFirewallPolicy -Name firewallPolicy1 -ResourceGroupName TestRg -Location westcentralus -ThreatIntelWhitelist $threatIntelWhitelist
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePolicy
-Kebijakan dasar untuk mewarisi dari
+Kebijakan dasar yang akan diwarisi
 
 ```yaml
 Type: System.String

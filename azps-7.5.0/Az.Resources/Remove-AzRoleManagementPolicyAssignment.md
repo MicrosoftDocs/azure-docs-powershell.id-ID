@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleManagementPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleManagementPolicyAssignment.md
-ms.openlocfilehash: 0ed985049551a31714c1346f3b9d319d3ba8489a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 52bbdd7d6c8604be3c9330c5904d28201c7ac364
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198637"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639556"
 ---
 # Remove-AzRoleManagementPolicyAssignment
 
 ## SYNOPSIS
 Menghapus penetapan kebijakan manajemen peran
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azrolemanagementpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

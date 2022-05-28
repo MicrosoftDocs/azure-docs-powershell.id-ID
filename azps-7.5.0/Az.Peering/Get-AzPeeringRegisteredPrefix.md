@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: b5ae5e74eb7a1194ab6d91978d8ab83ce4b2484b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9714fd6800e9e46e0ec8f42ed670fab51916574e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200163"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660108"
 ---
 # Get-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan awalan terdaftar untuk peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Get-AzPeeringRegisteredPrefix -ResourceGroupName $resourceGroupName -PeeringName
 
 Mencantumkan asn terdaftar.
 
-### Mendapatkan ASN terdaftar untuk peering berdasarkan nama
+### Mendapatkan ASN terdaftar untuk peering menurut nama
 ```powershell
 Get-AzPeeringRegisteredPrefix -ResourceGroupName $resourceGroupName -PeeringName $peeringName -Name $registeredPrefixName
 ```
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

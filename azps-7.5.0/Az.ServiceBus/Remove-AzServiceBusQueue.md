@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
-ms.openlocfilehash: 0bbeb78508c76097587825cefa45bde51fb4b990
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 26b2a7b7b29da131b8d29a09e277f6118e2ab13b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215750"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632698"
 ---
 # Remove-AzServiceBusQueue
 
 ## SYNOPSIS
 Menghapus antrean dari namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusqueue) untuk informasi terbaru.
 
 ## SYNTAX
 

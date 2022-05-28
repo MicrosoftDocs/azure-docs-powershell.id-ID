@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServicePrefix.md
-ms.openlocfilehash: 42d85580d03c97b4ad0803c684e76894c50e74de
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ad8a165b49e211f4a89274fe08f527981d18aa81
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200124"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659939"
 ---
 # Get-AzPeeringServicePrefix
 
 ## SYNOPSIS
 Mendapatkan daftar awalan layanan peering untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringserviceprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -87,7 +90,7 @@ Type                  : Microsoft.Peering/peeringServices/prefixes
 
 Mendapatkan awalan tertentu untuk layanan peering dengan id sumber daya.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzPeeringServicePrefix -ResourceGroupName $rgName -PeeringServiceName $peeringServiceName -Name $prefixName
 ```

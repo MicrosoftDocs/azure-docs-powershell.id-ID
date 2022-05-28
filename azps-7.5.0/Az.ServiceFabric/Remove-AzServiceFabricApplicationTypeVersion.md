@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplicationTypeVersion.md
-ms.openlocfilehash: 72df8eb9b40f62abf7763bc06d112b4c38327d65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d1d7d42072002166ac9d10b8e741dee17f172ed
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237727"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630916"
 ---
 # Remove-AzServiceFabricApplicationTypeVersion
 
 ## SYNOPSIS
 Hapus Service fabric versi jenis aplikasi dari kluster. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 

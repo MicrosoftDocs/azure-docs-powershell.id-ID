@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorObject.md
-ms.openlocfilehash: 8c0a2557df7c73e57091ae8de7b7db9355be6769
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 573b33cf804b1ecc3f788b177f1da13bb1d1a000
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246802"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674346"
 ---
 # New-AzNetworkWatcherConnectionMonitorObject
 
 ## SYNOPSIS
 Buat objek V2 monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzNetworkWatcherConnectionMonitorObject -Location <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorObject membuat objek monitor koneksi V2.
+Cmdlet New-AzNetworkWatcherConnectionMonitorObject membuat objek V2 monitor koneksi.
 
 ## EXAMPLES
 
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengamat jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengamat jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String

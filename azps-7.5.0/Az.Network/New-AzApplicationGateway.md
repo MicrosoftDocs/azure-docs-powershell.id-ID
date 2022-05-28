@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
-ms.openlocfilehash: b51a69d9358352695db1b3e424bd6b2c03d3d702
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9795950dc700e028376351d11251b02be24128d4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678504"
 ---
 # New-AzApplicationGateway
 
 ## SYNOPSIS
 Membuat gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -133,9 +136,9 @@ Gateway aplikasi memerlukan hal berikut:
 - Kumpulan server back-end, yang berisi alamat IP server back-end.
 - Pengaturan kumpulan server back-end. Setiap kumpulan memiliki pengaturan seperti port, protokol, dan afinitas berbasis cookie, yang diterapkan ke semua server dalam kumpulan.
 - Alamat IP front-end, yang merupakan alamat IP yang dibuka di gateway aplikasi. Alamat IP front-end dapat berupa alamat IP publik atau alamat IP internal.
-- Port front-end, yang merupakan port publik yang dibuka di gateway aplikasi. Lalu lintas yang mengenai port ini dialihkan ke server back-end.
-- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server back-end. Aturan menentukan kumpulan server back-end mana yang harus diarahkan ke lalu lintas ketika mencapai pendengar tertentu.
-Pendengar memiliki port ujung depan, alamat IP front-end, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
+- Port front-end, yang merupakan port publik yang dibuka pada gateway aplikasi. Lalu lintas yang mengenai port ini dialihkan ke server back-end.
+- Aturan perutean permintaan yang mengikat pendengar dan kumpulan server back-end. Aturan menentukan kumpulan server back-end mana yang harus diarahkan lalu lintas ketika mencapai pendengar tertentu.
+Listener memiliki port front-end, alamat IP front-end, protokol (HTTP atau HTTPS) dan nama sertifikat Secure Sockets Layer (SSL) (jika mengonfigurasi offload SSL).
 
 ## EXAMPLES
 
@@ -164,7 +167,7 @@ Contoh berikut membuat gateway aplikasi dengan terlebih dahulu membuat grup sumb
 - Pengaturan kumpulan server back-end
 - Port ujung depan
 - Alamat IP front-end
-- Aturan perutean permintaan Empat perintah ini membuat jaringan virtual.
+- Aturan perutean permintaan Keempat perintah ini membuat jaringan virtual.
 Perintah pertama membuat konfigurasi subnet.
 Perintah kedua membuat jaringan virtual.
 Perintah ketiga memverifikasi konfigurasi subnet dan perintah keempat memverifikasi bahwa jaringan virtual berhasil dibuat.
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListeners
-Menentukan daftar listener HTTP untuk gateway aplikasi.
+Menentukan daftar pendengar HTTP untuk gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener[]

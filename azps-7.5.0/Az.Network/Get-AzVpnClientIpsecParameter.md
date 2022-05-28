@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: 0e25f30f113cfd2bc11ead7d1a01d4531f62ffeb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb340a2a1f752ba10bab3d082142f39fd4f2aa4c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222050"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678924"
 ---
 # Get-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
-Mendapatkan parameter vpn Ipsec yang diatur di Virtual Network Gateway untuk koneksi Titik ke situs.
+Mendapatkan parameter ipsec vpn yang diatur di Virtual Network Gateway untuk koneksi Titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzVpnClientIpsecParameter** mengembalikan objek parameter ipsec vpn
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan parameter vpn Ipsec yang diatur pada Virtual Network Gateway untuk koneksi Titik ke situs.
+### Contoh 1: Mendapatkan parameter ipsec vpn yang diatur di Virtual Network Gateway untuk koneksi Titik ke situs.
 ```powershell
 $VpnClientIPsecParameters = Get-AzVpnClientIpsecParameter -Name myGateway -ResourceGroupName myRG
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
-ms.openlocfilehash: eabde3ba0d0304e2e7272ece9bdaec6bba12e94f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 543a209bd6ee3c387b0675f8f2dbe8c330aa1646
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238287"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679620"
 ---
 # Get-AzVirtualNetworkGatewayLearnedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang dipelajari oleh gateway jaringan virtual Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaylearnedroute) untuk informasi terbaru.
 
 ## SYNTAX
 

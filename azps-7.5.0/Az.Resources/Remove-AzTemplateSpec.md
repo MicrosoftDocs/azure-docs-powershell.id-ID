@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
-ms.openlocfilehash: e7f5d1454408575836b9088be2ef1c180c378f28
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e8338516d596ce547a767251fd2f26e439bd0e98
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198612"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639448"
 ---
 # Remove-AzTemplateSpec
 
 ## SYNOPSIS
 Menghapus Spesifikasi Templat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 

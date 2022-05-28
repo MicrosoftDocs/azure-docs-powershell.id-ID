@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: eeab93ec25bdaf4f88ceb8988bf140c28f40ce2e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 00b19d5c01184b450b2acd0cfc3d8e1d94c14a00
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196428"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672456"
 ---
 # New-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
 Perintah ini memungkinkan pengguna untuk membuat objek parameter Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 

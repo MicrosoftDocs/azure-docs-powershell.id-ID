@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzSecurityPartnerProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzSecurityPartnerProvider.md
-ms.openlocfilehash: 84473e0490eecb7c748613ec2798e61f1f9d2dac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 029efd8167dc60c0a53195d799f16099abfd976e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238511"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680232"
 ---
 # Get-AzSecurityPartnerProvider
 
 ## SYNOPSIS
 Mendapatkan Azure SecurityPartnerProvider
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azsecuritypartnerprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

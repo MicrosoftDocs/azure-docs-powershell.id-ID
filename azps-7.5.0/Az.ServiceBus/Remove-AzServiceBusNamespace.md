@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusNamespace.md
-ms.openlocfilehash: b0bb7bd89c56dc080aefc9d271031deef5a3844b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9338f1e5c0942744e272337d33eb124f3318abd7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215774"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632680"
 ---
 # Remove-AzServiceBusNamespace
 
 ## SYNOPSIS
 Menghapus namespace dari grup sumber daya yang ditentukan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzServiceBusNamespace** menghapus namespace dari grup sumber day
 Remove-AzServiceBusNamespace -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
-Menghapus namespace `SB-Example1` Bus Layanan dari grup `Default-ServiceBus-WestUS`sumber daya yang ditentukan .
+Menghapus namespace `SB-Example1` Bus Layanan dari grup `Default-ServiceBus-WestUS`sumber daya yang ditentukan.
 
 ### Contoh 2.1 - InputObject - Menggunakan variabel:
 ```powershell
@@ -70,7 +73,7 @@ $ResourceId = (Get-AzResource -ResourceType Microsoft.ServiceBus/namespaces).Res
 Remove-AzServiceBusNamespace -ResourceId $resourceid
 ```
 
-Menghapus namespace Bus Layanan yang disediakan melalui id ARM di $resourceid untuk parameter -ResourceId atau melalui pipa.
+Menghapus namespace Bus Layanan yang disediakan melalui id ARM di $resourceid untuk parameter -ResourceId atau melalui piping.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Namespace Bus Layanan
+Bus Layanan Namespace Object
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes

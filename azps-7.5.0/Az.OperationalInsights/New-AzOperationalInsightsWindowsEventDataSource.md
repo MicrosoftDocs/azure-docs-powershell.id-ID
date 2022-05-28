@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsEventDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsEventDataSource.md
-ms.openlocfilehash: 7d6633b88ec0c270560058091cb9bb146a87f54b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 897d95517a1d3acc95ac23e5cdde66e5847b6723
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235378"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661152"
 ---
 # New-AzOperationalInsightsWindowsEventDataSource
 
 ## SYNOPSIS
 Mengumpulkan log peristiwa dari komputer yang menjalankan sistem operasi Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowseventdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

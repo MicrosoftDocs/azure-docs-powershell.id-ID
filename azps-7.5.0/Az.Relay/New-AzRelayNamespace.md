@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayNamespace.md
-ms.openlocfilehash: a170c9031b3514102b8913b272813e330256451e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9d7861e39af0449e684bcfdf3302d68ab6683730
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237951"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645366"
 ---
 # New-AzRelayNamespace
 
 ## SYNOPSIS
 Membuat namespace layanan Relay baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelaynamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

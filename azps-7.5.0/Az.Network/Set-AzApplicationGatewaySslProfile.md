@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfile.md
-ms.openlocfilehash: 355164d3081cfcc8d889617c419bfdcba36e5682
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 498180a58b44cad46c4fe6f76aadd626c6ce6955
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194507"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666987"
 ---
 # Set-AzApplicationGatewaySslProfile
 
 ## SYNOPSIS
 Memperbarui profil ssl untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

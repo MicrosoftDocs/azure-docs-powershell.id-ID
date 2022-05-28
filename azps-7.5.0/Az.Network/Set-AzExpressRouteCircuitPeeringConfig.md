@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuitPeeringConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuitPeeringConfig.md
-ms.openlocfilehash: 2d3682e6ec2416df2e02b9234b4cb7f3f06f1705
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 505cabec64f570fc7d602f890076f3163042e3e2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197562"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666624"
 ---
 # Set-AzExpressRouteCircuitPeeringConfig
 
 ## SYNOPSIS
 Menyimpan konfigurasi peering ExpressRoute yang dimodifikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azexpressroutecircuitpeeringconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Cmdlet **Set-AzExpressRouteCircuitPeeringConfig** menyimpan konfigurasi peering 
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi peering yang ada
+### Contoh 1: Mengubah konfigurasi peering yang sudah ada
 ```powershell
 $circuit = Get-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $rg
 $parameters = @{
@@ -80,7 +83,7 @@ Menyimpan konfigurasi peering ExpressRoute yang dimodifikasi. (dibuat otomatis)
 Set-AzExpressRouteCircuitPeeringConfig -ExpressRouteCircuit <PSExpressRouteCircuit> -Name 'cert01' -PeerASN 100 -PeerAddressType IPv4 -PeeringType AzurePrivatePeering -PrimaryPeerAddressPrefix '123.0.0.0/30' -SecondaryPeerAddressPrefix '123.0.0.4/30' -VlanId 300
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Menyimpan konfigurasi peering ExpressRoute yang dimodifikasi. (dibuat otomatis)
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigAdvertisedPublicPrefixes
-Untuk PeeringType microsoftPeering, Anda harus memberikan daftar semua prefiks yang Anda rencanakan untuk diiklankan selama sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda dapat mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan awalan. Awalan ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
+Untuk PeeringType microsoftPeering, Anda harus memberikan daftar semua awalan yang Anda rencanakan untuk diiklankan selama sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda dapat mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan awalan. Awalan ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
 
 ```yaml
 Type: System.String[]
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigRoutingRegistryName
-Nama Registri Perutean (RIR/IRR) tempat nomor dan awalan AS didaftarkan.
+Nama Registri Perutean (RIR/IRR) tempat nomor DAN awalan AS didaftarkan.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String

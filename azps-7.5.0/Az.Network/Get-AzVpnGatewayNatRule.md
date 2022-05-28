@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 4135bf0f0459e743f27b5fae7b14d0c08c9f0eb1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 16f7fefe5ee91d71775202619f75c29ad297875d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186992"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678792"
 ---
 # Get-AzVpnGatewayNatRule
 
 ## SYNOPSIS
 Mendapatkan aturan NAT yang terkait dengan VpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 

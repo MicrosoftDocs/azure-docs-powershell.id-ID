@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
-ms.openlocfilehash: 5ffbc8aa68d549161e5899d8002b1efbe67d4eae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d54c301183f45b16d3c4fd16350fd6172976a6b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198668"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639628"
 ---
 # Remove-AzRoleAssignment
 
@@ -27,6 +27,9 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
 - POST /directoryObjects/getByIds
 
 Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Remove-AzRoleAssignment -ObjectId 36f81fc3-b00f-48cd-8218-3879f51ff39f -RoleDefi
 Menghapus penetapan peran ke prinsipal grup yang diidentifikasi oleh ObjectId dan ditetapkan ke peran Pembaca.
 Default menggunakan langganan saat ini sebagai cakupan untuk menemukan tugas yang akan dihapus.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $roleassignment = Get-AzRoleAssignment |Select-Object -First 1 -Wait
 Remove-AzRoleAssignment -InputObject $roleassignment

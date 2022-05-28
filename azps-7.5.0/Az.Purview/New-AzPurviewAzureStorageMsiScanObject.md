@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageMsiScanObject.md
-ms.openlocfilehash: ecf35b53bd82466c3a0c4094c9e67d40743a436a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6f6a0eebe82a5a3d60d4bc98994036757057cdaf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189635"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652962"
 ---
 # New-AzPurviewAzureStorageMsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureStorageMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurestoragemsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

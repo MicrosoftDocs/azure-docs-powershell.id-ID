@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
-ms.openlocfilehash: 246c62a2181752ecc0fd69468adf6861b01259cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e94f688ffbeb68870ed3a2410cd70afe060148dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226628"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639142"
 ---
 # Set-AzPolicyAssignment
 
 ## SYNOPSIS
 Memodifikasi penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

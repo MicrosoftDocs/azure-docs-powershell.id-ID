@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
-ms.openlocfilehash: 77876d4fe9df94870ee413a7a98432ff071c7b85
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b52cb4cbd6ba7d9e01de45a0ccddb78b8d13bdb4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198665"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639574"
 ---
 # Remove-AzRoleDefinition
 
@@ -19,6 +19,9 @@ ms.locfileid: "144198665"
 Menghapus peran kustom di Azure RBAC.
 Peran yang akan dihapus ditentukan menggunakan properti Id peran.
 Penghapusan akan gagal jika ada penetapan peran yang dibuat untuk peran kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzRoleDefinition -InputObject <PSRoleDefinition> [-Force] [-PassThru]
 Cmdlet Remove-AzRoleDefinition menghapus peran kustom di Azure Role-Based Access Control.
 Berikan parameter Id dari peran kustom yang ada untuk menghapus peran kustom tersebut.
 Secara default, Remove-AzRoleDefinition meminta konfirmasi kepada Anda.
-Untuk menekan prompt, gunakan parameter Force.
+Untuk menekan perintah, gunakan parameter Paksa.
 Jika ada penetapan peran yang ada yang dibuat untuk peran kustom yang akan dihapus, penghapusan akan gagal.
 
 ## EXAMPLES

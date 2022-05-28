@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroupDeployment.md
-ms.openlocfilehash: 338febc60a45221b0d799aa169c90ff938720cf1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c28eba90b14f662f5deab6bb67612f94e687a5a5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245416"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639699"
 ---
 # Remove-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Menghapus penyebaran grup sumber daya dan operasi terkait apa pun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
-ms.openlocfilehash: cd56f20dc7a02407aa8a9620d16b42dcedcb30d7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a579e8d3a4627a9284dd5418e7964f99f3b20cde
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235431"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661242"
 ---
 # New-AzOperationalInsightsPurgeWorkspace
 
 ## SYNOPSIS
-Menghapus menyeluruh data di ruang kerja Analitik Log oleh sekumpulan filter yang ditentukan pengguna
+Menghapus menyeluruh data di ruang kerja Analitik Log dengan sekumpulan filter yang ditentukan pengguna
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightspurgeworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzOperationalInsightsPurgeWorkspace [-ResourceGroupName] <String> [-Workspac
 ```
 
 ## DESCRIPTION
-Menghapus menyeluruh data di ruang kerja Analitik Log oleh sekumpulan filter yang ditentukan pengguna
+Menghapus menyeluruh data di ruang kerja Analitik Log dengan sekumpulan filter yang ditentukan pengguna
 
 ## EXAMPLES
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tabel
-Nama tabel untuk menghapus data secara menyeluruh.
+Nama tabel untuk menghapus menyeluruh data.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nilai
-nilai bagi operator untuk berfungsi.
+nilai bagi operator untuk berfungsi lebih.
 Ini bisa berupa angka (misalnya, \> 100), string (tanda \>waktu = '2017-09-01') atau array nilai.
 
 ```yaml

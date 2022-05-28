@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Test-AzAppConfigurationStoreNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Test-AzAppConfigurationStoreNameAvailability.md
-ms.openlocfilehash: 616cc73c2e6897f185a55da142a4116a494465a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d4164a301bb1dc7df1918552ca58e508e6695fd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685596"
 ---
 # Test-AzAppConfigurationStoreNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama penyimpanan konfigurasi tersedia untuk digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/test-azappconfigurationstorenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

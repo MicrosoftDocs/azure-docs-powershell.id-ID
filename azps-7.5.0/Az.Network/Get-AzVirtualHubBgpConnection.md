@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: 6b62d98aaf3737337f6da92e95668b32fd988510
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d5f41736250a1bb438278e21f177c14b09e3506
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238458"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679980"
 ---
 # Get-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Hub Virtual WAN di hub Virtual WAN atau mencantumkan semua Koneksi BGP Hub Virtual WAN di hub Virtual WAN.
+Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Virtual WAN Hub di hub Virtual WAN atau mencantumkan semua Koneksi BGP Hub Virtual WAN di hub Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzVirtualHubBgpConnection -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Hub Virtual WAN di hub Virtual WAN atau mencantumkan semua Koneksi BGP Hub Virtual WAN di hub Virtual WAN.
+Cmdlet Get-AzVirtualHubBgpConnection mendapatkan Koneksi BGP Virtual WAN Hub di hub Virtual WAN atau mencantumkan semua Koneksi BGP Hub Virtual WAN di hub Virtual WAN.
 
 ## EXAMPLES
 
@@ -65,9 +68,9 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.5
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di US Barat dan menyambungkan Virtual Network ke hub Virtual WAN di grup sumber daya tersebut di Azure. Koneksi BGP hub Virtual WAN akan dibuat setelahnya yang akan mengintip hub Virtual WAN dengan appliance jaringan yang disebarkan di Virtual Network.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di US Barat dan menyambungkan Virtual Network ke Virtual WAN Hub di grup sumber daya tersebut di Azure. Koneksi BGP Virtual WAN Hub akan dibuat setelahnya yang akan melakukan peering Virtual WAN Hub dengan appliance jaringan yang disebarkan di Virtual Network.
 
-Setelah Koneksi BGP Virtual WAN Hub dibuat, Koneksi BGP akan mendapatkan nama grup sumber dayanya, nama Virtual WAN Hub, dan nama Koneksi BGP.
+Setelah Virtual WAN Hub BGP Connection dibuat, ia mendapatkan Koneksi BGP menggunakan nama grup sumber dayanya, nama Virtual WAN Hub, dan nama Koneksi BGP.
 
 ### Contoh 2
 

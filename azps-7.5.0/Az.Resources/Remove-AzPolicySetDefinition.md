@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicySetDefinition.md
-ms.openlocfilehash: d67d7cb99622654dfa35ff00e8fc0d95e6bb44b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c414bb4e8c7da5668c2d63889de3c69e5da11550
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243887"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639916"
 ---
 # Remove-AzPolicySetDefinition
 
 ## SYNOPSIS
 Menghapus definisi kumpulan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicysetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ $PolicySetDefinition = Get-AzPolicySetDefinition -ResourceId '/subscriptions/myS
 Remove-AzPolicySetDefinition -Id $PolicySetDefinition.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan definisi kumpulan kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition.
+Perintah pertama mendapatkan definisi set kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition.
 Perintah menyimpannya dalam variabel $PolicySetDefinition.
 Perintah kedua menghapus definisi kumpulan kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicySetDefinition.
 
@@ -185,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan dari definisi kumpulan kebijakan yang akan dihapus.
+ID langganan definisi set kebijakan yang akan dihapus.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]

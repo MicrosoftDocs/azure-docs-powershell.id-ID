@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnConfiguration.md
-ms.openlocfilehash: 722724c238c48f82536e0ebc56d82810cd76499d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ad5f10f5a94ceb26e4b8eecf3de32997181fd2bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222098"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679134"
 ---
 # Get-AzVirtualWanVpnConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi Vpn untuk subset VpnSites yang terhubung ke WAN ini melalui VpnConnections. Mengunggah konfigurasi Vpn yang dihasilkan ke blob penyimpanan yang ditentukan oleh pelanggan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

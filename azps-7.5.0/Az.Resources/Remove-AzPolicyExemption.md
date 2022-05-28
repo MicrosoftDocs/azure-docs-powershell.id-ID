@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
-ms.openlocfilehash: be185869052a7d5285673ad2c84b4d7670fa168f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60b5e8e9a43499208e5fdb51259745a8a564e41d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639934"
 ---
 # Remove-AzPolicyExemption
 
 ## SYNOPSIS
 Menghapus pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,9 +64,9 @@ Remove-AzPolicyExemption -Id $PolicyExemption.ResourceId -Confirm
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan pengecualian kebijakan di tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyExemption.
+Perintah kedua mendapatkan pengecualian kebijakan pada tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyExemption.
 Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
-Perintah akhir menghapus pengecualian kebijakan yang diidentifikasi oleh properti **ResourceId** dari $PolicyExemption.
+Perintah akhir menghapus pengecualian kebijakan yang diidentifikasi properti **ResourceId** dari $PolicyExemption.
 
 ## PARAMETERS
 
@@ -158,8 +161,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

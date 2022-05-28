@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
-ms.openlocfilehash: e35344a7d12c913f416ac1313626b0532f0457fb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9dfc3d2c90f26a2f55d5e972780aba1ea77f1b25
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246575"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666498"
 ---
 # Set-AzExpressRouteGateway
 
 ## SYNOPSIS
 Memperbarui Gateway ExpressRoute yang Dapat Diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 

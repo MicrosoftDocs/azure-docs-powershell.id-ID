@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
-ms.openlocfilehash: 519ec6687a0dc4f3e0e85ff98481f87640efb55c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d345a491a05f8372584fd67ee223959d678a1ca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111497"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646140"
 ---
 # Get-AzRedisEnterpriseCache
 
 ## SYNOPSIS
 Mendapatkan informasi tentang kluster Redis Enterprise dan database terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/get-azredisenterprisecache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Mendapatkan informasi tentang kluster Redis Enterprise dan database terkait.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan cache Redis Enterprise berdasarkan nama
+### Contoh 1: Mendapatkan cache Redis Enterprise berdasarkan nama
 ```powershell
 Get-AzRedisEnterpriseCache -ResourceGroupName "MyGroup" -Name "MyCache"
 ```
@@ -55,7 +58,7 @@ West US  MyCache Microsoft.Cache/redisEnterprise      {default}
 
 Perintah ini mendapatkan informasi tentang cache Redis Enterprise bernama MyCache.
 
-### Contoh 2: Mencantumkan setiap cache Perusahaan Redis dalam grup sumber daya
+### Contoh 2: Mencantumkan setiap cache Redis Enterprise dalam grup sumber daya
 ```powershell
 Get-AzRedisEnterpriseCache -ResourceGroupName "MyGroup"
 ```
@@ -68,7 +71,7 @@ East US  MyCache2 Microsoft.Cache/redisEnterprise {1, 2, 3} {default}
 
 ```
 
-Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise di grup sumber daya yang ditentukan.
+Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise dalam grup sumber daya yang ditentukan.
 
 ### Contoh 3: Mencantumkan setiap cache Redis Enterprise dalam langganan
 ```powershell
@@ -85,7 +88,7 @@ Central US  MyCache4 Microsoft.Cache/redisEnterprise {1, 2, 3} {default}
 
 ```
 
-Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise di langganan saat ini.
+Perintah ini mendapatkan informasi tentang setiap cache Redis Enterprise dalam langganan saat ini.
 
 ## PARAMETERS
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

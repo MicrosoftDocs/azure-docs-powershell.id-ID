@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
-ms.openlocfilehash: cf21cba82a5db7f1a02575845cae7d5f2e84cd0d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 281fc6781b396cf7674c382f9df21b4a133e56b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214778"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632014"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMSecret
 
 ## SYNOPSIS
 Tambahkan rahasia sertifikat ke jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

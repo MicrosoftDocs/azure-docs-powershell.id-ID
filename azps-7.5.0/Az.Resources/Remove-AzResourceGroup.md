@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResourceGroup.md
-ms.openlocfilehash: 41e81c95cff9e2a955de4059cfd117c8ec170748
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ecd386ef1a664a9f84f9686313e69ebb1a1af9e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226656"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639682"
 ---
 # Remove-AzResourceGroup
 
 ## SYNOPSIS
 Menghapus kunci sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 

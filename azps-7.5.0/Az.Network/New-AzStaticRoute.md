@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzStaticRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzStaticRoute.md
-ms.openlocfilehash: e4c0a960730dbb2683198d4e82f52964a86802ce
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51b52204f3201dc05b2b588b33052aedf3f96c37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215195"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673194"
 ---
 # New-AzStaticRoute
 
 ## SYNOPSIS
 Membuat objek StaticRoute yang kemudian dapat ditambahkan ke objek RoutingConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azstaticroute) untuk informasi terbaru.
 
 ## SYNTAX
 

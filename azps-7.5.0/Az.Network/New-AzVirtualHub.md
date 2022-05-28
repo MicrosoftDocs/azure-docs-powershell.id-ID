@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHub.md
-ms.openlocfilehash: 3394910b1a07697d44a23f58f1d365de68b46ad4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1627b1369025aa6aa3c3fdccf394b3c454ed5583
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227087"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672942"
 ---
 # New-AzVirtualHub
 
 ## SYNOPSIS
 Membuat sumber daya Azure VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual 
 
 Contoh ini mirip dengan Contoh 1, tetapi menggunakan Id sumber daya untuk mereferensikan Virtual WAN yang diperlukan untuk membuat Hub virtual.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 New-AzResourceGroup -Location "West US" -Name "testRG"

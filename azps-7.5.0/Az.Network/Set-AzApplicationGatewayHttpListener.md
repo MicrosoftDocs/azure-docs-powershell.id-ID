@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 43f7664640e5beb279f4a8759c850867e5c0d03a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd625e5af31988cfc8e4b3ece5e75333d3981fd0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246617"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667416"
 ---
 # Set-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Memodifikasi pendengar HTTP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ $AppGw = Set-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mengatur pendengar HTTP untuk gateway agar menggunakan konfigurasi front-end yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
+Perintah kedua mengatur pendengar HTTP untuk gateway untuk menggunakan konfigurasi front-end yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
 
 ### Contoh 2: Menambahkan pendengar HTTPS dengan SSL dan HostNames
 ```powershell
@@ -63,7 +66,7 @@ $AppGw = Set-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menambahkan listener, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan HostNames, ke gateway aplikasi.
+Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan HostNames, ke gateway aplikasi.
 
 ## PARAMETERS
 
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 
 ### -RequireServerNameIndication
 Menentukan apakah cmdlet memerlukan indikasi nama server.
-Nilai yang dapat diterima untuk parameter ini adalah: benar atau salah.
+Nilai yang dapat diterima untuk parameter ini adalah: true atau false.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientConfiguration.md
-ms.openlocfilehash: 9fba01063ceeb5d174243f6ea04d2d258540f1a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d50d49853bfc9a0f1361637146bae8fb392d7f60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222062"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678928"
 ---
 # Get-AzVpnClientConfiguration
 
 ## SYNOPSIS
 Memungkinkan pengguna untuk dengan mudah mengunduh paket Profil Vpn yang dihasilkan menggunakan commandlet New-AzVpnClientConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
-ms.openlocfilehash: 7cc05d29af2d91c816fe17eb7d84941562c8749a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6529302b1be6fb4e436b5113789ca34db428225
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246746"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674220"
 ---
 # New-AzNetworkWatcherConnectionMonitorTestConfigurationObject
 
 ## SYNOPSIS
-Membuat konfigurasi pengujian pemantau koneksi.
+Membuat konfigurasi pengujian monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitortestconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama konfigurasi pengujian pemantau koneksi.
+Nama konfigurasi pengujian monitor koneksi.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtocolConfiguration
-Parameter yang digunakan untuk melakukan evaluasi pengujian melalui beberapa protokol.
+Parameter yang digunakan untuk melakukan evaluasi pengujian atas beberapa protokol.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorProtocolConfiguration
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdChecksFailedPercent
-Persentase maksimum pemeriksaan yang gagal diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
+Persentase maksimum pemeriksaan gagal yang diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdRoundTripTimeMs
-Waktu round-trip maksimum dalam milidetik yang diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
+Waktu pulang-pergi maksimum dalam milidetik yang diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
 
 ```yaml
 Type: System.Nullable`1[System.Double]

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnConnection.md
-ms.openlocfilehash: 777a1dfb372e84f84e762d0ab84cf043946b1f18
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a5edbe165ac0787688c827c714b2caa79cc24b95
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111637"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678810"
 ---
 # Get-AzVpnConnection
 
@@ -19,6 +19,9 @@ Mendapatkan koneksi vpn berdasarkan nama atau mencantumkan semua koneksi vpn yan
 
 >[!NOTE]
 > Perintah Powershell ini hanya untuk pelanggan yang menggunakan VPN Gateway situs-ke-situs Virtual WAN. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

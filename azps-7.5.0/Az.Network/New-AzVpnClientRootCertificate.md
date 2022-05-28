@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 9df8679005709d430e64e2e56431f624e6de3dc8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f511cdfe9d00ea75930d6ecf3f4784fdc2958bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196397"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672348"
 ---
 # New-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Membuat sertifikat akar klien VPN baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ### -PublicCertData
 Menentukan representasi teks sertifikat akar yang akan ditambahkan.
 Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output yang mirip dengan ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang ditampilkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda dapat mengambil PublicCertData dengan menggunakan perintah Windows PowerShell yang mirip dengan ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = untuk ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
+Anda akan melihat output yang mirip dengan ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang ditunjukkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- SERTIFIKAT AKHIR ----- PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda dapat mengambil PublicCertData dengan menggunakan perintah Windows PowerShell yang mirip dengan ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
 Type: System.String

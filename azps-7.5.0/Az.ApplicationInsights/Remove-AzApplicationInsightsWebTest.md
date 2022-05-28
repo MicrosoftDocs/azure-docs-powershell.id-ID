@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 28f8aa5670da56c60fae547b03a43acc07e71713
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 345854cfe62495e876647cf74687f1cf2e204516
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221090"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685002"
 ---
 # Remove-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
 Menghapus pengujian web Insights Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightswebtest) untuk informasi terbaru.
 
 ## SYNTAX
 

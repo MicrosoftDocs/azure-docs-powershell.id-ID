@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: 0da45e55279a5eda1d40310bd23b56b53f7db64e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9936cbde0b68f25a08a3c5a618b34483f40dddee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215639"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632320"
 ---
 # Set-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
 Perbarui NetworkruleSet dari Namespace yang diberikan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan parameter -IPRule dan -VirtualNetworkRule
+Perbarui Parameter NetworkRuleSet menggunakan parameter -IPRule dan -VirtualNetworkRule
 
 ### Contoh 2
 ```powershell
@@ -76,10 +79,10 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Memperbarui NetworkRuleSet menggunakan -InputObject
+Perbarui NetworkRuleSet menggunakan -InputObject
 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzServiceBusNetworkRuleSet -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-1375 -ResourceId /subscriptions/SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace1-1375
 ```
@@ -92,7 +95,7 @@ Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
 IpRules             : {4.4.4.4, Allow, 3.3.3.3, Allow}
 VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, True}
 ```
-Perbarui NetworkRuleSet menggunakan -ResourceId dari namespace lainnya.
+Perbarui NetworkRuleSet menggunakan -ResourceId dari namespace layanan lain.
 
 ## PARAMETERS
 

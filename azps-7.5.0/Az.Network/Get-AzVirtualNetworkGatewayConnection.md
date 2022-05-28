@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: 819653361c1babc57fe23f59cc085551e6cf8000
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c8e791581ad117b4e7d45256f5408557b1cc27f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238332"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679656"
 ---
 # Get-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Mendapatkan Koneksi Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

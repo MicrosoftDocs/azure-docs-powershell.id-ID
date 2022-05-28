@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
-ms.openlocfilehash: e7b653440ee790e0f3f585ff4b75711c58e1cd14
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba03ae337fbd3ad49161760e0144046625135792
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233163"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684516"
 ---
 # Remove-AzAttestationPolicySigner
 
 ## SYNOPSIS
 Menghapus penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/remove-azattestationpolicysigner) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
-ms.openlocfilehash: a1e4c07606a0ff65033ed6546b12a0ca44f18adb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0fab14d3e2006cc02e8657c220288599fb5cff72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201048"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678558"
 ---
 # Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic
 
 ## SYNOPSIS
 Panggil sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/invoke-aznetworkwatchernetworkconfigurationdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 

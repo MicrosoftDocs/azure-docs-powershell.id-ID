@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
-ms.openlocfilehash: edbb0ebe73b23625cfb4c04b134962467746bc10
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dee38582d7e49fd4eb2dff6ff8a887d4726b51d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185746"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679512"
 ---
 # Dapatkan-AzVirtualNetworkGatewaySupportedVpnDevice
 
 ## SYNOPSIS
 Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaysupportedvpndevice) untuk informasi terbaru.
 
 ## SYNTAX
 

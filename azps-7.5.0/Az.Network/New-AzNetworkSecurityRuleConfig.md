@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: 6ff6f7a3e227f6e4120ab442f2f482dbce5dbb71
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48a486083e3658b42825d8fe812e99b08f91451a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200317"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674580"
 ---
 # New-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
 Membuat konfigurasi aturan keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

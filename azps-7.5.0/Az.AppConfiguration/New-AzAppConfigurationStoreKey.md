@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
-ms.openlocfilehash: 8925843a758092add01bf960b3511cfeddabbfad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd5634269ef81c9dba8e5f7a149d8ebfe9badaaf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211082"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685686"
 ---
 # New-AzAppConfigurationStoreKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstorekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity

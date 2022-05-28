@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySku.md
-ms.openlocfilehash: dc2090d65fd7c7ef5b0b3c9dd840359f67b60f8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f4ec9fa48d1db932593374e2f4a083fc8eff1f03
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200219"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667074"
 ---
 # Set-AzApplicationGatewaySku
 
 ## SYNOPSIS
 Memodifikasi SKU gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysku) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: 0980ede6eee9b2c1c3d3eca1aacc7e72ab5f505c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: acd3afc90404f88b37ec8f14cb683156c3ba3e0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221102"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685218"
 ---
 # Remove-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Menghapus kunci api wawasan aplikasi untuk sumber daya application insights
+Menghapus kunci api application insights untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Remove-AzApplicationInsightsApiKey [-ResourceId] <String> [-ApiKeyId] <String> [
 ```
 
 ## DESCRIPTION
-Menghapus kunci api wawasan aplikasi untuk sumber daya application insights
+Menghapus kunci api application insights untuk sumber daya application insights
 
 ## EXAMPLES
 
-### Contoh 1 Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+### Contoh 1 Menghapus kunci api application insights untuk sumber daya application insights
 ```powershell
 Remove-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test" -ApiKeyId dd173f38-4fd1-4c75-8af5-99c29aa0f867 -PassThru
 ```
@@ -51,7 +54,7 @@ Remove-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test" -
 True
 ```
 
-Hapus kunci api wawasan aplikasi tertentu yang idnya adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "pengujian" dalam grup sumber daya "testGroup".
+Hapus kunci api application insights tertentu yang idnya adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 

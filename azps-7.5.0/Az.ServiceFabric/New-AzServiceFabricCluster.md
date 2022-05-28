@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricCluster.md
-ms.openlocfilehash: d9a025a35181616cab1ebf4d2fe025d592b88228
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9da0b4037b81082eb9403a348f3e81d9b0b89ba7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200768"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631276"
 ---
 # Baru-AzServiceFabricCluster
 
 ## SYNOPSIS
 
 Perintah ini menggunakan sertifikat yang Anda berikan atau sertifikat yang ditandatangani sendiri yang dihasilkan sistem untuk menyiapkan kluster service fabric baru. Ini dapat menggunakan templat default atau templat kustom yang Anda sediakan. Anda memiliki opsi untuk menentukan folder untuk mengekspor sertifikat yang ditandatangani sendiri ke atau mengambilnya nanti dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabriccluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ $secretId = "https://test1.vault.azure.net:443/secrets/testcertificate4/56ec774d
 New-AzServiceFabricCluster -ResourceGroupName $resourceGroupName -TemplateFile $templateFile -ParameterFile $templateParameterFile -SecretIdentifier $secretId
 ```
 
-Perintah ini menentukan sumber daya Sertifikat yang ada di brankas kunci dan templat kustom untuk menyebarkan kluster.
+Perintah ini menentukan sumber daya Sertifikat yang ada dalam brankas kunci dan templat kustom untuk menyebarkan kluster.
 
 ### Contoh 3: Buat kluster baru menggunakan templat kustom. Tentukan nama grup sumber daya yang berbeda untuk brankas kunci dan minta sistem mengunggah sertifikat baru ke dalamnya
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -CertificateIssuerThumbprint
 
-Thumbprint penerbit sertifikat, dipisahkan oleh koma jika lebih dari satu
+Thumbprint penerbit sertifikat, dipisahkan dengan koma jika lebih dari satu
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Secretidentifier
+### -SecretIdentifier
 
 URL rahasia brankas kunci Azure yang ada, misalnya 'https://mykv.vault.azure.net:443/secrets/mysecrets/55ec7c4dc61a462bbc645ffc9b4b225f'
 

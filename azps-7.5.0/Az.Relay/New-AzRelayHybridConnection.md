@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayHybridConnection.md
-ms.openlocfilehash: 0e7680dc0d2f7a37bf691cb276914558582d47f7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2406a5696e955546397c381a5389265fbbdc58b0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645456"
 ---
 # New-AzRelayHybridConnection
 
 ## SYNOPSIS
 Membuat HybridConnection di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Name                        : TestHybirdConnection2
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HybirdConnection \`TestHybirdConnection2\` baru di ruang \`nama Relay yang ditentukan TestNameSpace-HybirdConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection2\` baru di ruang nama \`Relay yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ### Contoh 2 - Properti
 ```powershell
@@ -79,7 +82,7 @@ Name                        : TestHybirdConnection1
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Membuat HybirdConnection \`TestHybirdConnection1\` baru di ruang \`nama Relay yang ditentukan TestNameSpace-HybirdConnection\`.
+Membuat HybirdConnection \`TestHybirdConnection1\` baru di namespace \`Relay yang ditentukan TestNameSpace-HybirdConnection\`.
 
 ## PARAMETERS
 
