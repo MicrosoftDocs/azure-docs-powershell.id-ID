@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzSignalRName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzSignalRName.md
-ms.openlocfilehash: 225205575fe79dae5dfab37647927d9a36f15f71
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b962ce6ef80b50365de1a2709b27aed6b9ee8cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242193"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629242"
 ---
 # Test-AzSignalRName
 
 ## SYNOPSIS
 Periksa ketersediaan nama. Alias: Test-AzSignal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/test-azsignalrname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Test-AzSignalRName -Name existedsignalr -Location eastus
 False
 ```
 
-### Periksa nama yang tidak ada.
+### Periksa nama yang belum ada.
 ```powershell
 Test-AzSignalRName -Name unexistedsignalr -Location eastus
 ```

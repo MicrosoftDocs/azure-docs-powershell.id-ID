@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: 61007ecfb6a519dfb5a504388629f6b10f3be3f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a44f834362bd8186e0ab3306e70fed4bfce9efd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195952"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630358"
 ---
 # Set-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
 Memperbarui aplikasi yang dikelola service fabric. Ini memungkinkan untuk memperbarui parameter aplikasi dan/atau meningkatkan versi jenis aplikasi yang akan memicu peningkatan aplikasi atau pembaruan konfigurasi lainnya saja. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Set-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupNa
 
 Contoh ini akan memperbarui FailureAction dan mengatur ForceRestart ke false.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceGroupName = "testRG"
 $clusterName = "testCluster"

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzSecurityAdvancedThreatProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzSecurityAdvancedThreatProtection.md
-ms.openlocfilehash: 1ea0366711f9db09a23ab36fdca64373b7fabf64
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb6990d4964f6c3099e67da8d361dfe9fddecbba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111188"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637288"
 ---
 # Disable-AzSecurityAdvancedThreatProtection
 
 ## SYNOPSIS
 Menonaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk akun penyimpanan/cosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/disable-azsecurityadvancedthreatprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzSecurityAdvancedThreatProtection -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-`Disable-AzSecurityAdvancedThreatProtection` Cmdlet menonaktifkan kebijakan perlindungan ancaman untuk akun penyimpanan/cosmosDB.
+`Disable-AzSecurityAdvancedThreatProtection` Cmdlet menonaktifkan kebijakan perlindungan ancaman untuk akun penyimpanan /cosmosDB.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceId* .
 
 ## EXAMPLES

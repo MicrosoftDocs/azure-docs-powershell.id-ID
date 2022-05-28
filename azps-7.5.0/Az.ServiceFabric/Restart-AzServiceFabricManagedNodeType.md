@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 5c12e3eb698c563ddbb9b5c52383fa9f1fffaa9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b2eb7033617b6b757fbe1826fab0848b63ccfc6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195977"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630448"
 ---
 # Restart-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Hidupkan ulang simpul tertentu dari jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/restart-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Restart-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterNa
 ```
 
 ## DESCRIPTION
-Hidupkan ulang simpul tertentu dari jenis node. Ini akan menonaktifkan node service fabric sebelum memulai ulang vm dan mengaktifkannya kembali setelah mereka kembali. Jika ini dilakukan pada jenis node utama, mungkin perlu waktu cukup lama karena mungkin tidak memulai ulang semua simpul secara bersamaan. Gunakan -ForceRestart memaksa operasi meskipun service fabric tidak dapat menonaktifkan node tetapi gunakan dengan hati-hati karena ini dapat menyebabkan kehilangan data jika beban kerja stateful berjalan pada node.
+Hidupkan ulang simpul tertentu dari jenis node. Ini akan menonaktifkan node service fabric sebelum memulai ulang vm dan mengaktifkannya kembali setelah mereka kembali. Jika ini dilakukan pada jenis node utama, mungkin perlu beberapa saat karena mungkin tidak memulai ulang semua simpul secara bersamaan. Gunakan -ForceRestart memaksa operasi meskipun service fabric tidak dapat menonaktifkan node tetapi gunakan dengan hati-hati karena ini dapat menyebabkan kehilangan data jika beban kerja stateful berjalan pada node.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ $NodeTypeName = "nt1"
 Restart-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName -NodeName nt1_0, nt1_3
 ```
 
-Mulai ulang node 0 dan 3 pada jenis node.
+Mulai ulang simpul 0 dan 3 pada jenis node.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRestart
-Menggunakan bendera ini akan memaksa simpul untuk memulai ulang meskipun service fabric tidak dapat menonaktifkan node.
+Menggunakan bendera ini akan memaksa node untuk memulai ulang meskipun service fabric tidak dapat menonaktifkan node.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Tentukan nama jenis simpul.
+Tentukan nama jenis node.
 
 ```yaml
 Type: System.String

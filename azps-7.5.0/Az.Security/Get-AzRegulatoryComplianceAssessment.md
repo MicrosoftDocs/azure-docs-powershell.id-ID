@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
-ms.openlocfilehash: f95fdf7c2efe481d9714931be365fce92f63f726
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 700e08a9912e7a64e3f63f12ead2097a1121fb19
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109532"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636856"
 ---
 # Get-AzRegulatoryComplianceAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycomplianceassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -168,7 +171,7 @@ SkippedResources      : 0
 
 Dapatkan penilaian tertentu di bawah kontrol dan standar tertentu sesuai dengan id penilaian.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRegulatoryComplianceAssessment -ResourceId "/subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/regulatoryComp
                         lianceStandards/SOC-TSP/regulatoryComplianceControls/CC5.8/regulatoryComplianceAssessments/fe48038b-f73a-4264-b499-0ff9dfaab05c"

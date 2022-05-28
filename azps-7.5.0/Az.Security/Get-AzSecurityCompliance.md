@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityCompliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityCompliance.md
-ms.openlocfilehash: cf8d2a47197fde03a87350128445d1bc7fe58aa3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b11a8a7c677ae6d5d5ec836cfe39c69415b1e622
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235151"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636442"
 ---
 # Get-AzSecurityCompliance
 
 ## SYNOPSIS
 Mendapatkan kepatuhan keamanan langganan dari waktu ke waktu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritycompliance) untuk informasi terbaru.
 
 ## SYNTAX
 

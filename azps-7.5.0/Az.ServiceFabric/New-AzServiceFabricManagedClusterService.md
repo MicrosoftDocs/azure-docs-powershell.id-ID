@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterService.md
-ms.openlocfilehash: 7255b3a379a9632a11d5e45f5110ceb038cd75f6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90bd9e2ec98fbe91bf08d95b4ba2020a05397b31
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237783"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631132"
 ---
 # New-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
 Buat layanan terkelola service fabric baru di bawah aplikasi dan kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ New-AzServiceFabricManagedClusterService [-ResourceGroupName] <String> [-Cluster
 ```
 
 ## DESCRIPTION
-Cmdlet ini memungkinkan untuk membuat layanan terkelola stateless atau stateful di bawah aplikasi yang ditentukan. Layanan harus keluar dalam manifes aplikasi dan jenisnya harus sama dengan yang ada dalam manifes. Nama aplikasi harus merupakan awalan dari nama layanan.
+Cmdlet ini memungkinkan pembuatan layanan terkelola stateless atau stateful di bawah aplikasi yang ditentukan. Layanan harus keluar dalam manifes aplikasi dan jenisnya harus sama dengan yang ada dalam manifes. Nama aplikasi harus merupakan awalan dari nama layanan.
 
 ## EXAMPLES
 
@@ -125,7 +128,7 @@ New-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -
 
 Contoh ini akan membuat layanan terkelola stateful baru "testService2" dengan target 5 simpul.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceGroupName = "testRG"
 $clusterName = "testCluster"
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -DefaultMoveCost
 Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
+Biaya yang lebih tinggi membuatnya lebih kecil kemungkinan bahwa Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.MoveCostEnum
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Menentukan jumlah instans untuk layanan terkelola
+Tentukan jumlah instans untuk layanan terkelola
 
 ```yaml
 Type: System.Int32
@@ -495,7 +498,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaRestartWaitDuration
-Tentukan durasi tunggu mulai ulang replika untuk layanan terkelola.
+Tentukan durasi tunggu hidupkan ulang replika untuk layanan terkelola.
 Durasi yang diwakili dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml
@@ -527,7 +530,7 @@ Accept wildcard characters: False
 
 ### -ServicePackageActivationMode
 Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
+Biaya yang lebih tinggi membuatnya lebih kecil kemungkinan bahwa Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ServicePackageActivationModeEnum
@@ -559,7 +562,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandByReplicaKeepDuration
-Tentukan durasi replika siaga untuk layanan terkelola.
+Tentukan durasi stand by replica untuk layanan terkelola.
 Durasi yang diwakili dalam format ISO 8601 'hh:mm:ss'
 
 ```yaml

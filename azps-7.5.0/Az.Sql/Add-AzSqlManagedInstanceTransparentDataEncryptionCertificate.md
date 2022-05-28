@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlMan
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: 1355c39e54511bdf02c6e4209627b758cc4c89c1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa0c2aad27c1262c8ca1071278304c156441467a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211799"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628792"
 ---
 # Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
 Menambahkan Sertifikat Enkripsi Data Transparan untuk instans terkelola yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlmanagedinstancetransparentdataencryptioncertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan objek sertifikat yang ditambahkan.
+Pada Eksekusi berhasil, mengembalikan objek sertifikat yang ditambahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

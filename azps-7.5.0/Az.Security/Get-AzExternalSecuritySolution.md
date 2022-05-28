@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzE
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzExternalSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzExternalSecuritySolution.md
-ms.openlocfilehash: b6057129f2a6f7cd26d7f73b3f9bd497691e6552
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d51d46ccdb0b0cd215be76a3de3fb02c2bf6d4f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206222"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637090"
 ---
 # Get-AzExternalSecuritySolution
 
 ## SYNOPSIS
 Mendapatkan solusi keamanan eksternal 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azexternalsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 

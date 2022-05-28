@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
-ms.openlocfilehash: 7de95eeb99b66b26fb1878e0c6dfe7ededb04815
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82052ca5c10c6776b0f224026e35e785a13dead7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216911"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629152"
 ---
 # Update-AzWebPubSub
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/update-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.IWebPubSubIdentity
@@ -248,7 +251,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NetworkAcLDefaultAction
+### -NetworkAclDefaultAction
 Tindakan default saat tidak ada aturan lain yang cocok
 
 ```yaml
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -530,7 +533,7 @@ INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[SharedPrivateLinkResourceName <String>]`: Nama sumber daya tautan privat bersama
   - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau menetapkan daftar konfigurasi kategori.
+LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
   - `[Enabled <String>]`: Menunjukkan apakah atau kategori pelacakan langsung diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar/kecil.
   - `[Name <String>]`: Mendapatkan atau mengatur nama kategori pelacakan langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar/kecil.
 

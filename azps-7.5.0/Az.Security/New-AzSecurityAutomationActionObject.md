@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomationActionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomationActionObject.md
-ms.openlocfilehash: 53b0ae6f26e7951c7e694ac80554bee8aaa327e5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 480a66e2697de47b375a85d948d6fb64996b6526
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228557"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635650"
 ---
 # New-AzSecurityAutomationActionObject
 
 ## SYNOPSIS
 Membuat objek tindakan otomatisasi keamanan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azsecurityautomationactionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ PS C:\> New-AzSecurityAutomationActionObject -LogicAppResourceId '/subscriptions
 
 Membuat tindakan otomatisasi keamanan baru dengan jenis logicApp
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\> New-AzSecurityAutomationActionObject -EventHubResourceId 'subscriptions/03b601f1-7eca-4496-8f8d-355219eee254/resourceGroups/sampleResourceGroup/providers/Microsoft.EventHub/namespaces/cus-wsp-fake-assessment/eventhubs/cus-wsp-fake-assessment' -ConnectionString 'Endpoint=sb://dummy/;SharedAccessKeyName=dummy;SharedAccessKey=dummy;EntityPath=dummy'
 ```

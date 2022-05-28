@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: 69105ae0066b2bdb41c2ac3d43a0545d725fbfbc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c1c279d092cc489d7db4150ba8d67de408f20812
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228529"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630808"
 ---
 # Remove-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
 Menghapus jenis aplikasi terkelola dari kluster. Ini akan menghapus semua versi jenis di bawah sumber daya ini. Hanya mendukung jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceFabricManagedClusterApplicationType -InputObject <PSManagedAppli
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus jenis aplikasi terkelola membentuk kluster dan akan menghapus semua versi jenis di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
+Cmdlet ini menghapus jenis aplikasi terkelola dari kluster dan akan menghapus semua versi jenis di bawah sumber daya ini, tetapi semua aplikasi di bawahnya harus dihapus sebelum menjalankan perintah ini.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ $appType | Remove-AzServiceFabricManagedClusterApplicationType -Verbose
 
 Contoh ini akan menghapus jenis aplikasi terkelola "testAppType" dan semua versi di bawahnya. Jika ada aplikasi yang dibuat dengan jenis ini, perintah akan memberikan pengecualian.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applicationTypes/testAppType"
 Remove-AzServiceFabricManagedClusterApplicationType -ResourceId $resourceId
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
