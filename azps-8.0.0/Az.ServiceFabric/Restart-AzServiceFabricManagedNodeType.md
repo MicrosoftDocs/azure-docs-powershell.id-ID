@@ -1,0 +1,209 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.dll-Help.xml
+Module Name: Az.ServiceFabric
+online version: https://docs.microsoft.com/powershell/module/az.servicefabric/restart-azservicefabricmanagednodetype
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Restart-AzServiceFabricManagedNodeType.md
+ms.openlocfilehash: 5c12e3eb698c563ddbb9b5c52383fa9f1fffaa9f
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145534837"
+---
+# Restart-AzServiceFabricManagedNodeType
+
+## SYNOPSIS
+Hidupkan ulang simpul tertentu dari jenis node.
+
+## SYNTAX
+
+```
+Restart-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] <String> [-Name] <String>
+ -NodeName <String[]> [-ForceRestart] [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Hidupkan ulang simpul tertentu dari jenis node. Ini akan menonaktifkan node service fabric sebelum memulai ulang vm dan mengaktifkannya kembali setelah mereka kembali. Jika ini dilakukan pada jenis node utama, mungkin perlu beberapa saat karena mungkin tidak memulai ulang semua simpul secara bersamaan. Gunakan -ForceRestart memaksa operasi meskipun service fabric tidak dapat menonaktifkan node tetapi gunakan dengan hati-hati karena ini dapat menyebabkan kehilangan data jika beban kerja stateful berjalan pada node.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+$rgName = "testRG"
+$clusterName = "testCluster"
+$NodeTypeName = "nt1"
+Restart-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName -NodeName nt1_0, nt1_3
+```
+
+Mulai ulang simpul 0 dan 3 pada jenis node.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClusterName
+Tentukan nama kluster.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ForceRestart
+Menggunakan bendera ini akan memaksa node untuk memulai ulang meskipun service fabric tidak dapat menonaktifkan node.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Tentukan nama jenis node.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: NodeTypeName
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -NodeName
+Daftar nama simpul untuk operasi.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Mengembalikan $True jika perintah berhasil dan $False jika gagal. Secara default, cmdlet ini tidak mengembalikan output apa pun.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Tentukan nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### System.Boolean
+
+## NOTES
+
+## RELATED LINKS
