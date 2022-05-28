@@ -1,0 +1,469 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
+Module Name: Az.Sql
+ms.assetid: 7039528F-42AE-45DB-BF81-FE5003F8AEE2
+online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlserver
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
+ms.openlocfilehash: ab22c26ff7e343c27921957200a3dbab2c0068f9
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145500101"
+---
+# Baru-AzResourceGroup
+
+## SYNOPSIS
+Membuat server SQL Database.
+
+## SYNTAX
+
+```
+New-AzSqlServer -ServerName <String> [-SqlAdministratorCredentials <PSCredential>] -Location <String>
+ [-Tags <Hashtable>] [-ServerVersion <String>] [-AssignIdentity] [-PublicNetworkAccess <String>]
+ [-RestrictOutboundNetworkAccess <String>] [-MinimalTlsVersion <String>]
+ [-PrimaryUserAssignedIdentityId <String>] [-KeyId <String>]
+ [-UserAssignedIdentityId <System.Collections.Generic.List`1[System.String]>] [-IdentityType <String>] [-AsJob]
+ [-EnableActiveDirectoryOnlyAuthentication] [-ExternalAdminName <String>] [-ExternalAdminSID <Guid>]
+ [-FederatedClientId <Guid>] [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzSqlServer** membuat server Azure SQL Database.
+
+## EXAMPLES
+
+### Contoh 1: Membuat server Azure SQL Database baru
+```powershell
+New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "Central US" -ServerName "server01" -ServerVersion "12.0" -SqlAdministratorCredentials (Get-Credential)
+```
+
+```output
+ResourceGroupName        : resourcegroup01
+ServerName               : server01
+Location                 : Central US
+SqlAdministratorLogin    : adminLogin
+SqlAdministratorPassword :
+ServerVersion            : 12.0
+Tags                     :
+```
+
+Perintah ini membuat server Azure SQL Database versi 12.
+
+### Contoh 2: Buat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tanpa SqlAdministratorCredentials
+```powershell
+New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "Central US" -ServerName "server01" -ServerVersion "12.0" -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication
+ResourceGroupName        : resourcegroup01
+ServerName               : server01
+Location                 : Central US
+SqlAdministratorLogin    : adminLogin
+SqlAdministratorPassword :
+ServerVersion            : 12.0
+Tags                     :
+Administrators           :
+
+$val = Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "server01" -ExpandActiveDirectoryAdministrator
+ResourceGroupName        : resourcegroup01
+ServerName               : server01
+Location                 : Central US
+SqlAdministratorLogin    : randomLogin
+SqlAdministratorPassword :
+ServerVersion            : 12.0
+Tags                     :
+Administrators           : Microsoft.Azure.Management.Sql.Models.ServerExternalAdministrator
+
+$val.Administrators
+AdministratorType         : ActiveDirectory
+PrincipalType             : Group
+Login                     : DummyLogin
+Sid                       : df7667b8-f9fd-4029-a0e3-b43c75ce9538
+TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
+AzureADOnlyAuthentication : True
+```
+
+Perintah ini membuat server Azure SQL Database versi 12 dengan properti administrator eksternal dan autentikasi khusus azure active directory diaktifkan.
+
+### Contoh 3: Membuat server Azure SQL Database baru dengan TDE CMK
+```powershell
+New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "East US" -ServerName "server01" -ServerVersion "12.0" -SqlAdministratorCredentials (Get-Credential) -AssignIdentity -IdentityType "UserAssigned" -PrimaryUserAssignedIdentityId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identity01" -UserAssignedIdentityId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identity01" -KeyId "https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901"
+```
+
+```output
+ResourceGroupName        : resourcegroup01
+ServerName               : server01
+Location                 : East US
+SqlAdministratorLogin    : adminLogin
+SqlAdministratorPassword :
+ServerVersion            : 12.0
+Tags                     :
+Identity                 : Microsoft.Azure.Management.Sql.Models.ResourceIdentity
+KeyId                    : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
+PrimaryUserAssignedIdentityId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identity01
+```
+
+Perintah ini membuat server Azure SQL Database versi 12 dengan TDE CMK diaktifkan.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignIdentity
+Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnableActiveDirectoryOnlyAuthentication
+Aktifkan Autentikasi Hanya Direktori Aktif pada server.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalAdminName
+Menentukan nama tampilan pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory untuk server. Nama tampilan ini harus ada di direktori aktif yang terkait dengan langganan saat ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalAdminSID
+Menentukan ID objek pengguna, grup, atau aplikasi yang merupakan administrator Azure Active Directory.
+
+```yaml
+Type: System.Nullable`1[System.Guid]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FederatedClientId
+Menentukan ID klien Federasi server saat menggunakan CMK Lintas Penyewa, Jangan atur nilai ini jika Anda tidak berniat menggunakan CMK Lintas Penyewa
+
+```yaml
+Type: System.Nullable`1[System.Guid]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityType
+Jenis identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -KeyId
+Azure Key Vault URI yang digunakan untuk enkripsi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Menentukan lokasi pusat data tempat cmdlet ini membuat server.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimalTlsVersion
+Versi TLS minimal yang akan diterapkan untuk Sql Server
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+Accepted values: 1.0, 1.1, 1.2
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrimaryUserAssignedIdentityId
+Id Identitas Terkelola Pengguna (UMI) utama.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublicNetworkAccess
+Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diizinkan atau tidak.
+Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Private Link yang dapat menjangkau server ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya tempat cmdlet ini menetapkan server.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RestrictOutboundNetworkAccess
+Ketika diaktifkan, hanya koneksi keluar yang diizinkan oleh aturan firewall keluar yang akan berhasil.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServerName
+Menentukan nama server baru.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: Name
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServerVersion
+Menentukan versi server baru. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
+Tentukan 2.0 untuk membuat server versi 11, atau 12.0 untuk membuat server versi 12.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SqlAdministratorCredentials
+Menentukan kredensial administrator server SQL Database untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
+Get-Credential`.
+
+```yaml
+Type: System.Management.Automation.PSCredential
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tags
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases: Tag
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserAssignedIdentityId
+Daftar identitas yang ditetapkan pengguna.
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
+
+## NOTES
+
+## RELATED LINKS
+
+[Dapatkan-AzSqlServer](./Get-AzSqlServer.md)
+
+[Hapus-AzSqlServer](./Remove-AzSqlServer.md)
+
+[Atur-AzSqlServer](./Set-AzSqlServer.md)
+
+[Baru-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
+
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
