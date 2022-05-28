@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
-ms.openlocfilehash: 24d5af736e1e28bddd0d5ca136a82305d5098995
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ae95b0040669093db18432768f22c063c7508222
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233821"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642544"
 ---
 # Get-AzResourceGroupDeploymentWhatIfResult
 
 ## SYNOPSIS
 Mendapatkan templat What-If hasil untuk penyebaran di cakupan grup sumber daya. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentwhatifresult) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Get-AzResourceGroupDeploymentWhatIfResult [-Name <String>] -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** mendapatkan templat ARM What-If hasil untuk penyebaran templat pada cakupan grup sumber daya yang ditentukan. Ini mengembalikan daftar perubahan yang menunjukkan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya nyata. Untuk menentukan format untuk hasil yang dikembalikan, gunakan parameter *ResultFormat* .
+Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** mendapatkan templat ARM What-If hasil untuk penyebaran templat pada cakupan grup sumber daya yang ditentukan. Ini mengembalikan daftar perubahan yang menunjukkan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan apa pun pada sumber daya nyata. Untuk menentukan format untuk hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
@@ -162,9 +165,9 @@ Perintah ini mendapatkan hasil What-If pada cakupan grup sumber daya yang ditent
 Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan disebarkan.
 Perintah menggunakan parameter *TemplateFile* untuk menentukan file templat.
 Perintah menggunakan parameter *TemplateParameterFile* untuk menentukan file parameter templat.
-Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If untuk menyertakan payload sumber daya penuh.
+Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If untuk menyertakan payload sumber daya lengkap.
 
-### Contoh 2: Mendapatkan hasil What-If di cakupan grup sumber daya dengan ResourceIdOnly
+### Contoh 2: Dapatkan hasil What-If di cakupan grup sumber daya dengan ResourceIdOnly
 ```powershell
 Get-AzResourceGroupDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeChangeType
-Jenis perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If.
+Jenis perubahan sumber daya yang dipisahkan koma yang akan dikecualikan dari hasil What-If.
 
 ```yaml
 Type: System.String[]
@@ -243,8 +246,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,8 +293,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
-Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
+Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
 Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml

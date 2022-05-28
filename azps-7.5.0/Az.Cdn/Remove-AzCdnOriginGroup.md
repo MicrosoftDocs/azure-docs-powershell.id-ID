@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
-ms.openlocfilehash: dbee257acccb539290e19dcb3f3665b69b4c7a5a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3392c81bcfc2d4828910387d8cb7a25756ff6423
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236246"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145627766"
 ---
 # Remove-AzCdnOriginGroup
 
 ## SYNOPSIS
 Menghapus grup asal CDN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 

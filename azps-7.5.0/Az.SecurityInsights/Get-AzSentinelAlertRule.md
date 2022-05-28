@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
-ms.openlocfilehash: 0ada96cf5729b24295ffa344dd9f3e53a45a4623
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3475d5676f9a715232d03608aa68a23b0296a6af
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634570"
 ---
 # Get-AzSentinelAlertRule
 
 ## SYNOPSIS
 Mendapatkan atau semua Aturan Analitik tertentu (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ $AlertRule = Get-AzSentinelAlertRule -ResourceGroupName "myResourceGroup" -Works
 Contoh ini mendapatkan AlertRule di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRule.<br/>
 *Harap dicatat bahwa **AlertRuleId** dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSentinelAlertRule -ResourceGroupName $resourceGroupName -WorkspaceName $workspaceName | Where-Object {$_.DisplayName -like "*Azure Security Center*"}
 ```

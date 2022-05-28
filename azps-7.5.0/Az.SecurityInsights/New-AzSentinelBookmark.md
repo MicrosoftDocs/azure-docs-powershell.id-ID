@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelBookmark.md
-ms.openlocfilehash: 9e11b365f15240e2ea0f7299ffc8c7dfd7423cd3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 338fc505ae4b85a5df3e140b2f5db5d65776e71b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185253"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634246"
 ---
 # New-AzSentinelBookmark
 
 ## SYNOPSIS
 Membuat Bookmark untuk insiden tertentu.<br/>
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 

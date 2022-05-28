@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
-ms.openlocfilehash: 37d5597beac4fc37267c89ffa0b3dde21780fff1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7433f4a549920c763ce4a89d307ff487d5851091
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220295"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647580"
 ---
 # Start-AzRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
 Memulai operasi failover yang tidak direncanakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrunplannedfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 

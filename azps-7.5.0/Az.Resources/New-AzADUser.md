@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
-ms.openlocfilehash: 23d0e3c3796a0b0686f3538397b18d13241a16f4
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 9e663c756cd852ccbb2a7a9080750522742a9d7b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144570404"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641536"
 ---
 # New-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "144570404"
 Menambahkan entitas baru ke pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Membuat pengguna
 
 ## PARAMETERS
 
-### -AboutMe
+### -Tentang Saya
 Bidang entri teks bentuk bebas untuk dijelaskan sendiri oleh pengguna.
 Dikembalikan hanya pada $select.
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ### -AgeGroup
 Mengatur grup usia pengguna.
 Nilai yang diizinkan: null, minor, notAdult dan adult.
-Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
+Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ### -ConsentProvidedForMinor
 Mengatur apakah persetujuan telah diperoleh untuk anak di bawah umur.
 Nilai yang diizinkan: null, granted, denied, dan notRequired.
-Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
+Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmployeeHireDate
-Tanggal dan waktu saat pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang.
+Tanggal dan waktu ketika pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang.
 Mendukung $filter (eq, ne, NOT , ge, le, in).
 
 ```yaml
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 
 ### -ExternalUserState
 Untuk pengguna eksternal yang diundang ke penyewa menggunakan API undangan, properti ini mewakili status undangan pengguna yang diundang.
-Untuk pengguna yang diundang, statusnya dapat Berupa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
+Untuk pengguna yang diundang, statusnya bisa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalUserStateChangeDateTime
-Memperlihatkan tanda waktu untuk perubahan terbaru pada properti externalUserState.
+Memperlihatkan tanda waktu untuk perubahan terbaru ke properti externalUserState.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -367,8 +370,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi pada login berhasil berikutnya (benar).
-Perilaku default adalah (false) untuk tidak mengubah kata sandi pada login berikutnya yang berhasil.
+Ini harus ditentukan jika pengguna harus mengubah kata sandi pada login yang berhasil berikutnya (benar).
+Perilaku default adalah (false) untuk tidak mengubah kata sandi pada login yang berhasil berikutnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -HireDate
-Tanggal sewa pengguna.
+Tanggal persewaan pengguna.
 Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
 Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z.
 Dikembalikan hanya pada $select.
@@ -808,8 +811,8 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Kode negara dua huruf (standar ISO 3166).
-Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
-Contohnya meliputi: US, JP, dan GB.
+Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
+Contohnya meliputi: AS, JP, dan GB.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -831,7 +834,7 @@ UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar
 Menurut konvensi, ini harus dipetakan ke nama email pengguna.
 Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa.
 Properti ini diperlukan saat pengguna dibuat.
-Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
+Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
 
 ```yaml
@@ -915,8 +918,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
-  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada log masuk pertama.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna diperlukan untuk terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis diatur ulang ke false. Jika tidak diatur, defaultnya adalah false.
   - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
 
 ## RELATED LINKS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyAssignment.md
-ms.openlocfilehash: ef8b57d5dea44040a4280ee6ad7fcce8942a0c2a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 93417e7b6b5e94afeea55ac31a591ce927410c6f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198805"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641302"
 ---
 # New-AzPolicyAssignment
 
 ## SYNOPSIS
 Membuat penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan men
 Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
 Perintah kedua mendapatkan definisi kebijakan bawaan untuk lokasi yang diizinkan dengan menggunakan cmdlet Get-AzPolicyDefinition.
 Perintah menyimpan objek tersebut dalam variabel $Policy.
-Perintah ketiga dan keempat membuat objek yang berisi semua wilayah Azure dengan "timur" dalam nama.
+Perintah ketiga dan keempat membuat objek yang berisi semua wilayah Azure dengan nama "timur".
 Perintah menyimpan objek tersebut dalam variabel $AllowedLocations.
 Perintah akhir menetapkan kebijakan dalam $Policy pada tingkat grup sumber daya menggunakan objek parameter kebijakan di $AllowedLocations.
 Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
@@ -172,7 +175,7 @@ New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition 
 
 Perintah pertama mendapatkan langganan bernama Subscription01 dengan menggunakan cmdlet Get-AzSubscription dan menyimpannya dalam variabel $Subscription.
 Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy dengan menggunakan cmdlet Get-AzPolicyDefinition dan menyimpannya dalam variabel $Policy.
-Perintah akhir menetapkan kebijakan dalam $Policy pada tingkat langganan yang diidentifikasi oleh string cakupan langganan. Penetapan diatur dengan nilai EnforcementMode _doNotEnforce_ yaitu efek kebijakan tidak diberlakukan selama pembuatan atau pembaruan sumber daya.
+Perintah akhir menetapkan kebijakan dalam $Policy pada tingkat langganan yang diidentifikasi oleh string cakupan langganan. Penugasan diatur dengan nilai EnforcementMode _doNotEnforce_ yaitu efek kebijakan tidak diberlakukan selama pembuatan atau pembaruan sumber daya.
 
 ### Contoh 8: Penetapan kebijakan dengan pesan ketidakpatuhan
 ```powershell
@@ -181,9 +184,9 @@ $NonComplianceMessages = @(@{Message="Only DsV2 SKUs are allowed."; PolicyDefini
 New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicySetDefinition $PolicySet -NonComplianceMessage $NonComplianceMessages
 ```
 
-Perintah pertama mendapatkan definisi set kebijakan bernama VirtualMachinePolicySet dengan menggunakan cmdlet Get-AzPolicySetDefinition dan menyimpannya dalam variabel $PolicySet.
-Perintah kedua membuat array pesan ketidakpatuhan. Satu pesan tujuan umum untuk seluruh penugasan dan satu pesan khusus untuk kebijakan pembatasan SKU dalam definisi yang ditetapkan kebijakan.
-Perintah akhir menetapkan definisi yang ditetapkan kebijakan dalam $PolicySet ke langganan dengan dua pesan ketidakpatuhan yang akan ditampilkan jika sumber daya ditolak oleh kebijakan.
+Perintah pertama mendapatkan definisi kumpulan kebijakan bernama VirtualMachinePolicySet dengan menggunakan cmdlet Get-AzPolicySetDefinition dan menyimpannya dalam variabel $PolicySet.
+Perintah kedua membuat array pesan ketidakpatuhan. Satu pesan tujuan umum untuk seluruh penugasan dan satu pesan khusus untuk kebijakan pembatasan SKU dalam definisi kumpulan kebijakan yang ditetapkan.
+Perintah akhir menetapkan definisi kumpulan kebijakan dalam $PolicySet ke langganan dengan dua pesan ketidakpatuhan yang akan ditampilkan jika sumber daya ditolak oleh kebijakan.
 
 ## PARAMETERS
 
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnforcementMode
-Mode penegakan untuk penetapan kebijakan. Saat ini, nilai yang valid adalah Default, DoNotEnforce.
+Mode penerapan untuk penetapan kebijakan. Saat ini, nilai yang valid adalah Default, DoNotEnforce.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ResourceManager.Cmdlets.Entities.Policy.PolicyAssignmentEnforcementMode]
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk penetapan kebijakan baru. Ini bisa menjadi jalur ke nama file yang berisi metadata, atau metadata sebagai string.
+Metadata untuk penetapan kebijakan baru. Ini bisa berupa jalur ke nama file yang berisi metadata, atau metadata sebagai string.
 
 ```yaml
 Type: System.String
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonComplianceMessage
-Pesan ketidakpatuhan yang menjelaskan mengapa sumber daya tidak mematuhi kebijakan.
+Pesan ketidakpatuh yang menjelaskan mengapa sumber daya tidak mematuhi kebijakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsNonComplianceMessage[]
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySetDefinition
-Objek definisi kumpulan kebijakan.
+Kebijakan menetapkan objek definisi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicySetDefinition
@@ -493,7 +496,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
+### -Pre
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 Menentukan cakupan untuk menetapkan kebijakan.
-Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan yang berikut ini: `/subscriptions/`nama grup IDresource`/resourcegroups/` langganan
+Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan yang berikut ini: `/subscriptions/`nama grup sumber daya ID`/resourcegroups/`langganan
 
 ```yaml
 Type: System.String

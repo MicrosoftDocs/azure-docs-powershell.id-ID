@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
-ms.openlocfilehash: 14d46d9ef8bd2a0338c27616d041aded3217bd65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de1789a809fff0b414cd49bcff34b2d610f7e3be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186796"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633760"
 ---
 # Update-AzSentinelIncident
 
 ## SYNOPSIS
 Memperbarui Insiden
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelincident) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Update-AzSentinelIncident -ResourceId <String> [-Classification <String>] [-Clas
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelIncident** memperbarui Insiden di ruang kerja yang ditentukan.
-Anda dapat meneruskan objek **Insiden** sebagai parameter atau dengan menggunakan operator alur, atau anda dapat menentukan parameter yang diperlukan.
+Anda dapat meneruskan objek **Insiden** sebagai parameter atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter yang diperlukan.
 Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
@@ -71,7 +74,7 @@ Contoh ini pertama-tama membuat "*objek pemilik*" yang berisi informasi pemilik,
 
 *Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatiskan pengambilan ObjectId melalui pembuatan skrip, Anda dapat memanfaatkan modul PowerShell Azure Active Directory, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"  -IncidentID "561c5184-f8da-4d8b-8544-c89e422bbf6f" -Classification FalsePositive -Status "Closed"
 ```
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationComment
-Komentar Insiden Classificaiton.
+Komentar Classificaiton Insiden.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat keparahan
-Tingkat keparahan insiden.
+Tingkat Keparahan Insiden.
 
 ```yaml
 Type: System.String
@@ -358,7 +361,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentOwner
 

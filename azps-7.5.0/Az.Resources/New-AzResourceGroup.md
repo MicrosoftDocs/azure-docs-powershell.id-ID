@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
-ms.openlocfilehash: 2129a584dc7e57ae7f8b9efcd6b35e72ecd8fe26
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b2549471f14096895fb4c42471936536e4436e0e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198696"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641158"
 ---
 # Baru-AzResourceGroup
 
 ## SYNOPSIS
 Membuat grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzResourceGroup -Name RG01 -Location "South Central US"
 
 Perintah ini membuat grup sumber daya yang tidak memiliki sumber daya. Anda dapat menggunakan cmdlet **New-AzResource** atau **New-AzResourceGroupDeployment** untuk menambahkan sumber daya dan penyebaran ke grup sumber daya ini.
 
-### Contoh 2: Membuat grup sumber daya kosong menggunakan parameter posisi
+### Contoh 2: Membuat grup sumber daya kosong menggunakan parameter posisional
 ```powershell
 New-AzResourceGroup RG01 "South Central US"
 ```
@@ -51,7 +54,7 @@ Perintah ini membuat grup sumber daya yang tidak memiliki sumber daya.
 New-AzResourceGroup -Name RG01 -Location "South Central US" -Tag @{Empty=$null; Department="Marketing"}
 ```
 
-Perintah ini membuat grup sumber daya kosong. Perintah ini sama dengan perintah di Contoh 1, kecuali bahwa perintah menetapkan tag ke grup sumber daya. Tag pertama, bernama Kosong, dapat digunakan untuk mengidentifikasi grup sumber daya yang tidak memiliki sumber daya. Tag kedua bernama Departemen dan memiliki nilai Pemasaran. Anda dapat menggunakan tag seperti ini untuk mengategorikan grup sumber daya untuk administrasi atau anggaran.
+Perintah ini membuat grup sumber daya kosong. Perintah ini sama dengan perintah di Contoh 1, kecuali bahwa perintah menetapkan tag ke grup sumber daya. Tag pertama, bernama Kosong, dapat digunakan untuk mengidentifikasi grup sumber daya yang tidak memiliki sumber daya. Tag kedua diberi nama Departemen dan memiliki nilai Pemasaran. Anda dapat menggunakan tag seperti ini untuk mengategorikan grup sumber daya untuk administrasi atau anggaran.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama untuk grup sumber daya. Nama sumber daya harus unik dalam langganan. Jika grup sumber daya yang memiliki nama tersebut sudah ada, perintah akan meminta konfirmasi kepada Anda sebelum mengganti grup sumber daya yang ada.
+Menentukan nama untuk grup sumber daya. Nama sumber daya harus unik dalam langganan. Jika grup sumber daya yang memiliki nama tersebut sudah ada, perintah akan meminta konfirmasi sebelum mengganti grup sumber daya yang ada.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya.
-Setelah menetapkan tag ke sumber daya dan grup, Anda bisa menggunakan parameter *Tag* Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup menurut nama tag atau berdasarkan nama dan nilai. Anda dapat menggunakan tag untuk mengategorikan sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya.
+Setelah menetapkan tag ke sumber daya dan grup, Anda dapat menggunakan parameter *Tag* Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup menurut nama tag atau berdasarkan nama dan nilai. Anda dapat menggunakan tag untuk mengategorikan sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya.
 Untuk mendapatkan tag yang telah ditentukan sebelumnya, gunakan cmdlet Get-AzTag.
 
 ```yaml

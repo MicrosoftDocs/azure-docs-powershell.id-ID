@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
-ms.openlocfilehash: b63b8546ab96d3be781c2f293750549d9516dd25
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 716c9ca3b10d150c9bf1b7dfa991392abcaf7220
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198721"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641122"
 ---
 # New-AzResource
 
 ## SYNOPSIS
 Membuat sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzResource [-Location <String>] [-Kind <String>] [-Properties <PSObject>] [-
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### OlehTenantLevel
+### ByTenantLevel
 ```
 New-AzResource [-Location <String>] [-Kind <String>] [-Properties <PSObject>] [-Plan <Hashtable>]
  [-Sku <Hashtable>] [-Tag <Hashtable>] [-IsFullObject] [-AsJob] -ResourceName <String> -ResourceType <String>
@@ -58,7 +61,7 @@ New-AzResource -Location "West US" -Properties @{test="test"} -ResourceName Test
 
 Perintah ini membuat sumber daya yang merupakan situs web di ResourceGroup11.
 
-### Contoh 2: Membuat sumber daya menggunakan percikan
+### Contoh 2: Membuat sumber daya menggunakan splatting
 ```powershell
 $prop = @{
     Location          = "West US"
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceName
-Menentukan nama sumber daya ekstensi untuk sumber daya. Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
+Menentukan nama sumber daya ekstensi untuk sumber daya. Misalnya, untuk menentukan database, gunakan format berikut: nama database nama`/`server
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Menentukan jenis sumber daya untuk sumber daya.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
+### -Pre
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
-ms.openlocfilehash: e3c66df5cfd1fbdeec32efc10e2335e618e66247
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cdb03005f961e134d4563be780f9465073057027
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198777"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641248"
 ---
 # New-AzPolicyExemption
 
 ## SYNOPSIS
 Membuat pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Tentukan penetapan kebijakan, kategori pengecualian, dan cakupan.
 
 ## EXAMPLES
 
-### Contoh 1: Pembebasan kebijakan di tingkat langganan
+### Contoh 1: Pengecualian kebijakan di tingkat langganan
 ```powershell
 $Subscription = Get-AzSubscription -SubscriptionName 'Subscription01'
 $Assignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment'
@@ -52,7 +55,7 @@ New-AzPolicyExemption -Name 'VirtualMachinePolicyAssignment' -PolicyAssignment $
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
 Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment dengan menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $Assignment.
-Perintah akhir mengecualikan penetapan kebijakan di $Assignment pada tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah akhir mengecualikan penetapan kebijakan dalam $Assignment pada tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
 
 ## PARAMETERS
 
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionReferenceId
-Daftar ID referensi definisi kebijakan saat penetapan kebijakan terkait adalah untuk kumpulan kebijakan (inisiatif).
+Daftar ID referensi definisi kebijakan ketika penetapan kebijakan terkait adalah untuk kumpulan kebijakan (inisiatif).
 
 ```yaml
 Type: System.String[]
@@ -210,8 +213,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

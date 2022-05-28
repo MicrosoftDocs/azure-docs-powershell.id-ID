@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAutomation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAutomation.md
-ms.openlocfilehash: 0acd705dec090bd48e73ffe86d12c1d06ca49815
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cea72fd1b79ce9933fc80b81844c3c626c9e2051
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186810"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635290"
 ---
 # Remove-AzSecurityAutomation
 
 ## SYNOPSIS
 Menghapus otomatisasi keamanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azsecurityautomation) untuk informasi terbaru.
 
 ## SYNTAX
 

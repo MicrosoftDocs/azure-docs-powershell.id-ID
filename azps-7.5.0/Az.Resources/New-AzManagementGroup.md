@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
-ms.openlocfilehash: c93afaeb9506f02a0f7dead41431b42e22b14204
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7f7576b8d74aab098b57c9963117e46181fb807a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198833"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641428"
 ---
 # New-AzManagementGroup
 
 ## SYNOPSIS
 Membuat Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

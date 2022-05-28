@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 6426982ae045c41f04a6d316da8ac4c2f7b4d879
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa3cc3a6f8f5697c66d304a09a57e00c900e652d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220286"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647454"
 ---
 # Stop-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Stop-AzRecoveryServicesAsrJob -Name <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan azure Site Recovery yang ditentukan.
+Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan Azure Site Recovery yang ditentukan.
 
 ## EXAMPLES
 
@@ -138,6 +141,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRecoveryServicesAsrJob](./Get-AzRecoveryServicesAsrJob.md)
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)

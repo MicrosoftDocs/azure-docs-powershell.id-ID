@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResource.md
-ms.openlocfilehash: 6787b3b0eb9af3b81fe34d99cb5a61450a9a07bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2a9d3600bacd6664a8d885d4421fbe7fa686a043
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111329"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642688"
 ---
 # Get-AzResource
 
 ## SYNOPSIS
 
 Mendapatkan sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 

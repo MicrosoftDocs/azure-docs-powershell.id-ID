@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ADDomainServices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceReplicaSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceReplicaSet.md
-ms.openlocfilehash: c63d091eb5fd83b3fa82c26b80dba010d46c3ad9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 86d19224c8e5298dd7a7ed999ea4a146aae624a1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209747"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145627441"
 ---
 # New-AzADDomainServiceReplicaSet
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ReplicaSet
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/new-azaddomainservicereplicaset) untuk informasi terbaru.
 
 ## SYNTAX
 

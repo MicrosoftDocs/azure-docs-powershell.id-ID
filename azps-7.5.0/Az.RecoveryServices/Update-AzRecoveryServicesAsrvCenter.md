@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: 238ef3b7ad62a0f52d371e557ee23a925700c28e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d46d6446fd1a09c486fbd19bd32cc65b5a4c23c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188392"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647004"
 ---
 # Update-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
 Perbarui detail penemuan untuk vCenter Server terdaftar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzRecoveryServicesAsrvCenter -ResourceId <String> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrvCenter** memperbarui detail penemuan untuk vCenter Server terdaftar.
+Cmdlet **Update-AzRecoveryServicesAsrvCenter** adalah memperbarui detail penemuan untuk vCenter Server terdaftar.
 
 ## EXAMPLES
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP pada server vCenter server yang digunakan untuk penemuan.
+Port TCP di server vCenter Server yang digunakan untuk penemuan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: fb14c3298539388022c9cffac95d000771d093da
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90fb1405286472aef7cc26b1f8a257f712dbb5bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211970"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633868"
 ---
 # Update-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Memperbarui Respons Otomatis (Tindakan Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzSentinelAlertRuleAction -LogicAppResourceId <String> -TriggerUri <Strin
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelAlertRuleAction** memperbarui bookmark di ruang kerja yang ditentukan.
-Anda dapat meneruskan objek **AlertRuleAction** sebagai parameter atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *AlertRuleId* dan *ActionId* .
+Anda dapat meneruskan objek **AlertRuleAction** sebagai parameter atau dengan menggunakan operator alur, atau anda dapat menentukan parameter *AlertRuleId* dan *ActionId* .
 Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
@@ -53,7 +56,7 @@ $LogicAppTriggerUri = Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName "MyRes
 Update-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId" -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini memperbarui AlertRuleAction mengganti *Tindakan* yang ada dengan properti baru.
+Contoh ini memperbarui AlertRuleAction yang *menggantikan Tindakan* yang ada dengan properti baru.
 
 ### Contoh 2
 ```powershell

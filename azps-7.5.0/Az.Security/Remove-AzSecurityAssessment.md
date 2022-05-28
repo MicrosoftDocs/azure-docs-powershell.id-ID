@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessment.md
-ms.openlocfilehash: fb63caf1682014ea714f7c589f5ad670de888476
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a0d87ba5cbfb1358e812aee0b1b1bf59d7e38279
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210218"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635272"
 ---
 # Remove-AzSecurityAssessment
 
 ## SYNOPSIS
 Menghapus hasil penilaian keamanan dari langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azsecurityassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzSecurityAssessment -InputObject <PSSecurityAssessment> [-PassThru]
 ```
 
 ## DESCRIPTION
-Menghapus hasil penilaian keamanan dari langganan, biasanya digunakan saat resoruce dihapus atau ketika penilaian tidak relevan untuk sumber daya tertentu lagi
+Menghapus hasil penilaian keamanan dari langganan, biasanya digunakan saat resoruce dihapus atau ketika penilaian tidak relevan lagi untuk sumber daya tertentu
 
 ## EXAMPLES
 

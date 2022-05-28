@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: 5e95910b02671f2d30806dc56cb7310c02b22176
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83a34775d0853eae4ce6596aac0825023d4babac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200905"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647346"
 ---
 # Unregister-AzRecoveryServicesBackupContainer
 
 ## SYNOPSIS
-Membatalkan pendaftaran Windows Server atau kontainer lain dari vault.
+Membatalkan pendaftaran server Windows atau kontainer lain dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,12 +31,12 @@ Unregister-AzRecoveryServicesBackupContainer [-Container] <ContainerBase> [-Pass
 ## DESCRIPTION
 Cmdlet **Unregister-AzRecoveryServicesBackupContainer** membatalkan pendaftaran server Windows atau kontainer Cadangan lainnya dari vault.
 Cmdlet ini menghapus referensi ke kontainer dari vault.
-Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data yang dilindungi yang terkait dengan kontainer tersebut.
+Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data terlindungi yang terkait dengan kontainer tersebut.
 Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan pendaftaran server Windows dari vault
+### Contoh 1: Membatalkan pendaftaran Server Windows dari vault
 ```powershell
 $Cont = Get-AzRecoveryServicesBackupContainer -ContainerType "Windows" -BackupManagementType MAB -Name "server01.contoso.com"
 Unregister-AzRecoveryServicesBackupContainer -Container $Cont
@@ -44,7 +47,7 @@ Perintah kedua membatalkan pendaftaran server Windows yang ditentukan dari vault
 
 ### Contoh 2
 
-Membatalkan pendaftaran Windows Server atau kontainer lain dari vault. (dibuat otomatis)
+Membatalkan pendaftaran server Windows atau kontainer lain dari vault. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
-ms.openlocfilehash: 9b543e9311ae56442c64d794990724903ab520af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c72755bce43014b34434c7966c4e34d9d790bb65
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220271"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647382"
 ---
 # Undo-AzRecoveryServicesBackupItemDeletion
 
 ## SYNOPSIS
 Jika item cadangan dihapus dan ada dalam status dihapus sementara, perintah ini membawa item kembali ke status di mana data disimpan selamanya 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Undo-AzRecoveryServicesBackupItemDeletion [-Item] <ItemBase> [-Force] [-VaultId 
 ```
 
 ## DESCRIPTION
-Cmdlet Undo-AzRecoveryServicesBackupItemDeletion mengembalikan item yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data disimpan selamanya.
+Cmdlet Undo-AzRecoveryServicesBackupItemDeletion mengembalikan item yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data dipertahankan selamanya.
 
 ## EXAMPLES
 
@@ -39,10 +42,10 @@ Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0]
 ```
 
 Perintah pertama mendapatkan array kontainer cadangan, lalu menyimpannya di array $Cont.
-Perintah kedua mendapatkan item Backup yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
-Perintah ketiga menonaktifkan perlindungan Pencadangan untuk item di $PI\[ 0\] dan menempatkan item dalam status dihapus sementara.
+Perintah kedua mendapatkan item Cadangan yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
+Perintah ketiga menonaktifkan perlindungan Cadangan untuk item di $PI\[0\] dan menempatkan item dalam status dihapus sementara.
 Perintah keempat mendapatkan item yang dalam status dihapus sementara.
-Perintah terakhir membawa VM yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data dipertahankan selamanya.
+Perintah terakhir membawa VM yang dihapus sementara ke status di mana perlindungan dihentikan tetapi data disimpan selamanya.
 
 ### Contoh 2
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Paksa menonaktifkan perlindungan pencadangan (mencegah dialog konfirmasi).
+Paksa menonaktifkan perlindungan cadangan (mencegah dialog konfirmasi).
 Parameter ini bersifat opsional.
 
 ```yaml

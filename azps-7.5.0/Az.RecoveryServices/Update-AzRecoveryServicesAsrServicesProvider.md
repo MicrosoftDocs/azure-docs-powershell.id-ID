@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrServicesProvider.md
-ms.openlocfilehash: 75fed2bd1979e82b86a5a1ed368eff0336f94064
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b679a0b8e0d5a6de4016971ce8a17fee0141aa0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214922"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647058"
 ---
 # Update-AzRecoveryServicesAsrServicesProvider
 
 ## SYNOPSIS
 Refresh (Refresh server) informasi yang diterima dari Penyedia Layanan Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrservicesprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: b0b5ef08d99ee8ab7aeb67f3cee4262599957cd4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 060ad44749c1a54d833134a0b10fa1ea9b2c7d6e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212150"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145648066"
 ---
 # Set-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
 Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasralertsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ CustomEmailAddress     EmailSubscriptionOwner Locale
 
 Atur pemberitahuan untuk alamat email kustom dan untuk pemilik langganan.
 
-### Contoh 3
+### Contoh: 3
 
 Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault. (dibuat otomatis)
 

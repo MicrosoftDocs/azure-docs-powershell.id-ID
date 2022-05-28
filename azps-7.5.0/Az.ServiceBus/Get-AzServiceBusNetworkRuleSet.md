@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: c190f9dec002774c17e3a1b81547ba70bba8e9eb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a90331b36c1ba70f646dc2202e43dfa64ac0743c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188221"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633544"
 ---
 # Get-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
 Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/
 ```
 Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Namespace layanan yang ada di langganan saat ini.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389
 ```

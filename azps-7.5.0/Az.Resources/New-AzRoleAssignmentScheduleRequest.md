@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignmentScheduleRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignmentScheduleRequest.md
-ms.openlocfilehash: 538e5f2ab8c8bdfa6b976687d20437641ee6dda6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e6d4ce4643f5134e253ab3d70e100576b9580b6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200891"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640878"
 ---
 # New-AzRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
 Membuat permintaan jadwal penetapan peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroleassignmentschedulerequest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Membuat permintaan jadwal penetapan peran.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat permintaan jadwal penetapan peran baru sebagai Admin
+### Contoh 1: Buat permintaan jadwal penetapan peran baru sebagai Admin
 ```powershell
 PS C:\> $guid = "12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca"
 PS C:\> $startTime = Get-Date -Format o 

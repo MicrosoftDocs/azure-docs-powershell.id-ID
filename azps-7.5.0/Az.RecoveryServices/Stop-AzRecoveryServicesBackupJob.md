@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: eee68a7e44dc801487e373579a7a1ac3d45c00d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a78d0df2a7640dabcdb8ff9beb7fcef2e5e71cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230657"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647420"
 ---
 # Stop-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 Membatalkan pekerjaan yang sedang berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 
 ### -Pekerjaan
 Menentukan pekerjaan yang dibatalkan cmdlet ini.
-Untuk mendapatkan objek **BackupJobs** , gunakan cmdlet Get-AzRecoveryServicesBackupJob.
+Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzRecoveryServicesBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase

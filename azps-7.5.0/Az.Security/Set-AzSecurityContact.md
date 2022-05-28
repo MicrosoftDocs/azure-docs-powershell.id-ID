@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityContact.md
-ms.openlocfilehash: 0dca4963c63ea4239e89b73cc6c960f801a353af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1489c0af393296d629a5b01f4b095ac6d8025e79
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243820"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634876"
 ---
 # Set-AzSecurityContact
 
 ## SYNOPSIS
 Memperbarui kontak keamanan untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecuritycontact) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: 87f407a478220fe88c873e05e2e04e25d96265e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd78e3fb0d4f37b86c9b9f137bbbd0bc780c2566
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210227"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635344"
 ---
 # Hapus-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan akses jaringan JIT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azjitnetworkaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
