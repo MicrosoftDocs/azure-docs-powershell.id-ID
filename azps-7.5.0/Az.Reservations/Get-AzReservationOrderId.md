@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrderId.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrderId.md
-ms.openlocfilehash: 05dafecd0c76fa3901180401330695c77b12857f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87d6df292b19ec73fee1c697b7915a3a76d271bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231962"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644826"
 ---
 # Get-AzReservationOrderId
 
 ## SYNOPSIS
 Dapatkan daftar Id yang berlaku `ReservationOrder` .
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationorderid) untuk informasi terbaru.
 
 ## SYNTAX
 

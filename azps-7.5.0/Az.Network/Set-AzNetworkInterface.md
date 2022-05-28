@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
-ms.openlocfilehash: bdb8479f1a540585d86d77f58db7698361248f36
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: adb2a56a3fd5b4285bd73a1b2d8917dd916e049c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223091"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665850"
 ---
 # Set-AzNetworkInterface
 
 ## SYNOPSIS
 Memperbarui antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpann
 >[!NOTE]
 >Jika antarmuka jaringan memiliki beberapa konfigurasi IP, perintah keempat harus dilakukan untuk semua konfigurasi IP ini sebelum perintah Set-AzNetworkInterface akhir dijalankan. Ini dapat dilakukan seperti pada perintah keempat tetapi dengan mengganti "0" dengan angka yang sesuai. Jika antarmuka jaringan memiliki konfigurasi N IP, maka N-1 dari perintah ini harus ada.
 
-### Contoh 5: Mengaitkan/Memisahkan Grup Keamanan Jaringan ke antarmuka jaringan
+### Contoh 5: Mengaitkan/Memisahkan Kelompok Keamanan Jaringan ke antarmuka jaringan
 ```powershell
 $nic = Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -Name "NetworkInterface1"
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName "ResourceGroup1" -Name "MyNSG"

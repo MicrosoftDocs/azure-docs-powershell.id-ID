@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSite.md
-ms.openlocfilehash: 629c3fd8b006e991ae5d7ab851a28e90ffe5f3a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9f08742743cf68e4fa385fbb8721239f1e46559
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672168"
 ---
 # New-AzVpnSite
 
 ## SYNOPSIS
 Membuat sumber daya Azure VpnSite baru. Ini adalah representasi RM dari cabang pelanggan yang diunggah ke Azure untuk konektivitas S2S dengan hub virtual Cortex.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN di US Timur dalam grup su
 
 Kemudian membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
-Koneksi IPSec kemudian dapat diatur dengan cabang ini dan VpnGateway menggunakan perintah New-AzVpnConnection.
+Koneksi IPSec kemudian dapat disiapkan dengan cabang ini dan VpnGateway menggunakan perintah New-AzVpnConnection.
 
 ### Contoh 2
 ```powershell
@@ -122,9 +125,9 @@ $vpnSiteLink2 = New-AzVpnSiteLink -Name "testVpnSiteLink2" -IpAddress "15.25.35.
 $vpnSite = New-AzVpnSite -ResourceGroupName "multilink" -Name "testVpnSite" -Location "East US" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink1, $vpnSiteLink2)
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, dan VpnSite dengan 1 VpnSiteLinks di US Timur dalam grup sumber daya "multilink" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN dan VpnSite dengan 1 VpnSiteLinks di US Timur dalam grup sumber daya "multilink" di Azure.
 
-### Contoh 3
+### Contoh: 3
 
 Membuat sumber daya Azure VpnSite baru. (dibuat otomatis)
 
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceVendor
-Vendor perangkat perangkat vpn jarak jauh.
+Vendor perangkat perangkat dari perangkat vpn jarak jauh.
 
 ```yaml
 Type: System.String
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Kebijakan breakout lalu lintas Office 365 untuk VpnSite ini.
+Kebijakan breakout lalu lintas office 365 untuk VpnSite ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSO365PolicyProperties

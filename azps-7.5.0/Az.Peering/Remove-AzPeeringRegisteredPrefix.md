@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: 2760776fd2581a6ea5ba79ce788eb6b914e815bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 35522f88976c927cacbae72ce6f63fc1fd3807ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192536"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659352"
 ---
 # Remove-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
 Menghapus atau menghapus awalan terdaftar dari sumber daya peering induk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/remove-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: c5bac2bd0887284f76dda7d733d9087cfcfae919
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: abc82543c693016cffe3c04b9c89180ca628011c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223142"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666066"
 ---
 # Set-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Memperbarui konfigurasi probe untuk load balancer.
+Memperbarui konfigurasi pemeriksaan untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perhatikan bahwa perlu untuk menentukan beberapa parameter yang sama yang ditent
 
 ### Contoh 2
 
-Memperbarui konfigurasi probe untuk load balancer. (dibuat otomatis)
+Memperbarui konfigurasi pemeriksaan untuk load balancer. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam hitungan detik, antara pemeriksaan ke setiap instans layanan dengan beban seimbang.
+Menentukan interval, dalam detik, antara pemeriksaan ke setiap instans layanan yang seimbang.
 
 ```yaml
 Type: System.Int32
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeCount
-Menentukan jumlah kegagalan berturut-turut per instans agar instans dianggap tidak sehat.
+Menentukan jumlah kegagalan berturut-turut per instans untuk instans yang dianggap tidak sehat.
 
 ```yaml
 Type: System.Int32

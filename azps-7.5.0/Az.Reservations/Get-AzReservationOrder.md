@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrder.md
-ms.openlocfilehash: d9d23312157a28ecfdcd272cb62f8bc1f15128dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cbe93ebb1517acecabab79cc18fd1a7f03922d4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230646"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644844"
 ---
 # Get-AzReservationOrder
 
 ## SYNOPSIS
 Dapatkan`ReservationOrder`
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationorder) untuk informasi terbaru.
 
 ## SYNTAX
 

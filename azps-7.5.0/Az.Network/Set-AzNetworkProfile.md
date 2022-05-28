@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkProfile.md
-ms.openlocfilehash: d02c5679c80bc59bdd7855fed226677aaac9f9b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e94260a85fd2c7de4c2201fb315a2d38caefe980
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223058"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665742"
 ---
 # Set-AzNetworkProfile
 
 ## SYNOPSIS
 Memperbarui profil jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

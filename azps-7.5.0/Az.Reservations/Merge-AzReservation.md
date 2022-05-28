@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/mer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
-ms.openlocfilehash: f2463205471a91e59260f3f9c99701748d8e8689
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5113dc6c49c0d5b4909e57bacea3786f401b0795
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212087"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644808"
 ---
 # Merge-AzReservation
 
 ## SYNOPSIS
 Menggabungkan dua `Reservation`s.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/merge-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-ReservationOrderId untuk `ReservationOrder` yang berisi keduanya `Reservation`
+ReservationOrderId untuk `ReservationOrder` yang berisi dua `Reservation`s
 
 ```yaml
 Type: System.Guid[]

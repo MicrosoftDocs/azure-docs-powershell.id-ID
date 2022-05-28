@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationCatalog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationCatalog.md
-ms.openlocfilehash: 60270362affe23755d37ec2384c25ba6b7bdd8d0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5be9475ab8ebcd16419c94b2643ca2c7f4d5502d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239102"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644934"
 ---
 # Get-AzReservationCatalog
 
 ## SYNOPSIS
 Mendapatkan katalog reservasi yang tersedia
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationcatalog) untuk informasi terbaru.
 
 ## SYNTAX
 

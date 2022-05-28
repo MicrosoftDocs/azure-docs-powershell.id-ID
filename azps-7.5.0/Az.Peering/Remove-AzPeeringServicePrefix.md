@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringServicePrefix.md
-ms.openlocfilehash: 5bd50b9dcd15b428dd127638bf287a41d1383f90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13e5a99864c0143deaf65596dd9f5caca6a6bdfd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192533"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659334"
 ---
 # Remove-AzPeeringServicePrefix
 
 ## SYNOPSIS
 Menghapus awalan layanan peering baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/remove-azpeeringserviceprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ True
 
 Hapus awalan dari id sumber daya layanan peering.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzPeeringServicePrefix -ResourceGroupName $peeringServiceGroup -PeeringServiceName $peeringServiceName -Name $prefixName -PassThru
 ```

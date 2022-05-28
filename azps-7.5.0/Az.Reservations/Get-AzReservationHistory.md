@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationHistory.md
-ms.openlocfilehash: a4b591cd09a0808fd1fb9c22fa873b3532c1f684
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cac56998a557e98ac1af4929cabf1ca1e11f7172
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231973"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644880"
 ---
 # Get-AzReservationHistory
 
 ## SYNOPSIS
 Dapatkan `Reservation` riwayat revisi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationhistory) untuk informasi terbaru.
 
 ## SYNTAX
 

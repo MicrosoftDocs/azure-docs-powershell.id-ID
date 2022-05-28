@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: 88132d9573144658dd40f82192e7d776325fc9bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7736de45385120552bad31d44236b0a4b2304954
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192491"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659388"
 ---
 # Set-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
 Mengatur atau memperbarui awalan terdaftar dari sumber daya peering induk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/set-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

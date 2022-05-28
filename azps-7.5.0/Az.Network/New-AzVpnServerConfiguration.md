@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
-ms.openlocfilehash: e6177f436171252c250a97c579856c78437a5c0d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d057e039e7b23b2e5b59a3256176a9d60fad12f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190013"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672240"
 ---
 # New-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Buat VpnServerConfiguration baru untuk konektivitas titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzVpnServerConfiguration -ResourceGroupName <String> -Name <String> -Locatio
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVpnServerConfiguration** memungkinkan Anda membuat VpnServerConfiguration baru dengan VpnProtocols, VpnAuthenticationTypes, IpsecPolicies, dan mengatur parameter terkait jenis autentikasi vpn yang dipilih sesuai persyaratan pelanggan untuk konektivitas Titik ke situs.
+Cmdlet **New-AzVpnServerConfiguration** memungkinkan Anda membuat VpnServerConfiguration baru dengan VpnProtocols yang berbeda, VpnAuthenticationTypes, IpsecPolicies dan untuk mengatur parameter terkait jenis autentikasi vpn yang dipilih sesuai persyaratan pelanggan untuk konektivitas Titik ke situs.
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ New-AzVpnServerConfiguration -AadAudience <String> -AadIssuer <String> -AadTenan
 ## PARAMETERS
 
 ### -AadAudience
-AAD audiens untuk autentikasi AAD P2S.
+Audiens AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadIssuer
-AAD pengeluar sertifikat untuk autentikasi AAD P2S.
+Penerbit AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadTenant
-AAD penyewa untuk autentikasi AAD P2S.
+Penyewa AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRootCertificateFilesList
-Daftar VpnClientRootCertificates yang akan ditambahkan jalur file
+Daftar VpnClientRootCertificates untuk ditambahkan jalur file
 
 ```yaml
 Type: System.String[]

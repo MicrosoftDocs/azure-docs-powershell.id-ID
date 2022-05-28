@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
-ms.openlocfilehash: 09783b467f5b2cb5cf4e2722428ecf7e9849bc60
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4f08e5c517af6cf9e58702d58f65c2c3f08d772e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192519"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659303"
 ---
 # Set-AzPeeringDirectConnectionObject
 
 ## SYNOPSIS
 Mengatur atau memperbarui informasi Koneksi Langsung. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/set-azpeeringdirectconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 

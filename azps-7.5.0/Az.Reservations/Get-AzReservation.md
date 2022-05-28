@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
-ms.openlocfilehash: 374df43c52226cf22c1df2cfed86a94f7245d954
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 94a0a6f16c6b3d923f004bd0a472cd8f20c32fbc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232029"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645006"
 ---
 # Get-AzReservation
 
 ## SYNOPSIS
 Dapatkan `Reservation`dalam Pesanan reservasi tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 

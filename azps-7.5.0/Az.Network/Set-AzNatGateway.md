@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNatGateway.md
-ms.openlocfilehash: 37b067cd554ade6ab52120ba0f3d31b3091d7114
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d37612e7b853722d59481a45fdc966cb798da3f4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223103"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665922"
 ---
 # Set-AzNatGateway
 
 ## SYNOPSIS
 Perbarui Sumber Daya Nat Gateway dengan Alamat IP Publik, Awalan IP Publik, dan IdleTimeoutInMinutes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

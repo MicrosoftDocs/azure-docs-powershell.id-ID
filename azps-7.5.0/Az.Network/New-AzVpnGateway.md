@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
-ms.openlocfilehash: 259645391558a32b7bb2110863d8a94f075f4210
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dae70bacd4c4aeb40800d85d3b7642969865fd53
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196386"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672192"
 ---
 # New-AzVpnGateway
 
 ## SYNOPSIS
 Membuat VPN Gateway yang Dapat Diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 

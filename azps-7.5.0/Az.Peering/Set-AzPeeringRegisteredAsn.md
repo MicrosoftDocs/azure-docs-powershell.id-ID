@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: f716fde882fe6affaf83b4aaff06a35aad15930d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f89c9d3785e8fe4aca284c1a768476a83c07fb03
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192494"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659370"
 ---
 # Set-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Mengatur atau memperbarui ASN terdaftar dari sumber daya peering induk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/set-azpeeringregisteredasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String
