@@ -1,0 +1,204 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement.dll-Help.xml
+Module Name: Az.ApiManagement
+ms.assetid: 329EF130-5CC9-4BFF-8561-DE5274018B09
+online version: https://docs.microsoft.com/powershell/module/az.apimanagement/remove-azapimanagementsubscription
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
+ms.openlocfilehash: 3d4d38f61cc6113f7b422f8b2c554df0d4ac6331
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145530643"
+---
+# Remove-AzApiManagementSubscription
+
+## SYNOPSIS
+Menghapus langganan yang sudah ada.
+
+## SYNTAX
+
+### ExpandedParameter (Default)
+```
+Remove-AzApiManagementSubscription -Context <PsApiManagementContext> -SubscriptionId <String> [-PassThru]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByInputObject
+```
+Remove-AzApiManagementSubscription -Context <PsApiManagementContext> -SubscriptionId <String>
+ -InputObject <PsApiManagementSubscription> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### ByResourceId
+```
+Remove-AzApiManagementSubscription -Context <PsApiManagementContext> -SubscriptionId <String>
+ -ResourceId <String> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Remove-AzApiManagementSubscription** menghapus langganan yang sudah ada.
+
+## EXAMPLES
+
+### Contoh 1: Menghapus langganan
+```powershell
+$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
+Remove-AzApiManagementSubscription -Context $apimContext -SubscriptionId "0123456789"
+```
+
+Perintah ini menghapus langganan yang sudah ada.
+
+## PARAMETERS
+
+### -Context
+Menentukan objek **PsApiManagementContext** .
+
+```yaml
+Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Instans PsApiManagementSubscription. Parameter ini diperlukan.
+
+```yaml
+Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscription
+Parameter Sets: ByInputObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Menunjukkan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai $false, jika tidak.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceId
+Arm ResourceId Langganan. Parameter ini diperlukan.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceId
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+Menentukan ID langganan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
+
+### System.String
+
+### System.Management.Automation.SwitchParameter
+
+## OUTPUTS
+
+### System.Boolean
+
+## NOTES
+
+## RELATED LINKS
+
+[Get-AzApiManagementSubscription](./Get-AzApiManagementSubscription.md)
+
+[New-AzApiManagementSubscription](./New-AzApiManagementSubscription.md)
+
+[Set-AzApiManagementSubscription](./Set-AzApiManagementSubscription.md)
+
+
