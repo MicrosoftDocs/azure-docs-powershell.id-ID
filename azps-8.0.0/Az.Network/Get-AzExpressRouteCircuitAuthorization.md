@@ -1,0 +1,119 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+ms.assetid: 3D80F94B-AF9D-40C2-BE7E-2F32E5E926D2
+online version: https://docs.microsoft.com/powershell/module/az.network/get-azexpressroutecircuitauthorization
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
+ms.openlocfilehash: 2e068028ec952b9f908a7c0eab814b732144cf0b
+ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145561216"
+---
+# Get-AzExpressRouteCircuitAuthorization
+
+## SYNOPSIS
+Mendapatkan informasi tentang otorisasi sirkuit ExpressRoute.
+
+## SYNTAX
+
+```
+Get-AzExpressRouteCircuitAuthorization [-Name <String>] -ExpressRouteCircuit <PSExpressRouteCircuit>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzExpressRouteCircuitAuthorization** mendapatkan informasi tentang otorisasi yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menghubungkan jaringan lokal Anda ke cloud Microsoft dengan menggunakan penyedia konektivitas alih-alih Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). Kunci otorisasi, serta informasi lain tentang otorisasi, dapat dilihat kapan saja dengan menjalankan **Get-AzExpressRouteCircuitAuthorization**.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan semua otorisasi ExpressRoute
+```powershell
+$Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
+Get-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $Circuit
+```
+
+Perintah ini mengembalikan informasi tentang semua otorisasi ExpressRoute yang terkait dengan sirkuit ExpressRoute. Perintah pertama menggunakan cmdlet **Get-AzExpressRouteCircuit** untuk membuat referensi objek sirkuit bernama ContosoCircuit; referensi objek tersebut disimpan dalam variabel $Circuit. Perintah kedua kemudian menggunakan referensi objek tersebut dan cmdlet **Get-AzExpressRouteCircuitAuthorization** untuk mengembalikan informasi tentang otorisasi yang terkait dengan ContosoCircuit.
+
+### Contoh 2: Dapatkan semua otorisasi ExpressRoute menggunakan cmdlet Where-Object
+```powershell
+$Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
+ Get-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
+```
+
+Perintah ini mewakili variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam hal ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan dalam perintah 2 dan disalurkan ke cmdlet **Where-Object** .
+**Where-Object** kemudian hanya memilih otorisasi tersebut di mana properti *AuthorizationUseStatus* diatur ke Tersedia. Untuk mencantumkan otorisasi yang tidak tersedia saja, gunakan sintaks ini untuk klausa Where: `{$_.AuthorizationUseStatus -ne "Available"}`
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpressRouteCircuit
+Menentukan otorisasi sirkuit ExpressRoute.
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama otorisasi sirkuit ExpressRoute yang didapat cmdlet ini.
+-Name "ContosoCircuitAuthorization"
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization
+
+## NOTES
+
+## RELATED LINKS
+
+[Add-AzExpressRouteCircuitAuthorization](./Add-AzExpressRouteCircuitAuthorization.md)
+
+[Get-AzExpressRouteCircuit](./Get-AzExpressRouteCircuit.md)
+
+[New-AzExpressRouteCircuitAuthorization](./New-AzExpressRouteCircuitAuthorization.md)
+
+[Remove-AzExpressRouteCircuitAuthorization](./Remove-AzExpressRouteCircuitAuthorization.md)
