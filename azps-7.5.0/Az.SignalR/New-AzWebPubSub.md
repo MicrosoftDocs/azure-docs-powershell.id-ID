@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
-ms.openlocfilehash: dcee69e3e5916a8ff6372ee22f2af6005795ed63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46bfa7bd0208d41ac1e50e32f4b8889e4988c2ca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242319"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629531"
 ---
 # New-AzWebPubSub
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ psdemo-wps          eastus        Standard_S1
 
 
 
-### Contoh 2: Membuat sumber daya Web PubSub dengan lebih banyak parameter dan menunjukkan hasilnya
+### Contoh 2: Buat sumber daya Web PubSub dengan lebih banyak parameter dan tampilkan hasilnya
 ```powershell
 $wps = New-AzWebPubSub -ResourceGroupName psdemo -Name psdemo-wps `
 -Location eastus -SkuName Standard_S1 -IdentityType SystemAssigned -LiveTraceEnabled true `
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Lokasi GEO sumber daya.
-misalnya US Barat | | AS Timur | US Tengah Utara US Tengah Selatan.
+misalnya | US Barat | AS Timur | US Tengah Utara US Tengah Selatan.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NetworkAclDefaultAction
+### -NetworkAcLDefaultAction
 Tindakan default saat tidak ada aturan lain yang cocok
 
 ```yaml
@@ -436,7 +439,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -530,7 +533,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
+LIVETRACECATEGORY <ILiveTraceCategory[]>: Mendapatkan atau menetapkan daftar konfigurasi kategori.
   - `[Enabled <String>]`: Menunjukkan apakah atau kategori pelacakan langsung diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar/kecil.
   - `[Name <String>]`: Mendapatkan atau mengatur nama kategori pelacakan langsung.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar/kecil.
 
@@ -539,7 +542,7 @@ PRIVATEENDPOINTACL <IPrivateEndpointAcl[]>: ACL untuk permintaan dari titik akhi
   - `[Allow <WebPubSubRequestType[]>]`: Jenis permintaan yang diizinkan. Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
   - `[Deny <WebPubSubRequestType[]>]`: Jenis permintaan yang ditolak. Nilainya bisa satu atau beberapa dari: ClientConnection, ServerConnection, RESTAPI.
 
-RESOURCELOGCATEGORY <IResourceLogCategory[]>: Mendapatkan atau mengatur daftar konfigurasi kategori.
+RESOURCELOGCATEGORY <IResourceLogCategory[]>: Mendapatkan atau menetapkan daftar konfigurasi kategori.
   - `[Enabled <String>]`: Menunjukkan apakah atau kategori log sumber daya diaktifkan.         Nilai yang tersedia: true, false.         Tidak peka huruf besar/kecil.
   - `[Name <String>]`: Mendapatkan atau mengatur nama kategori log sumber daya.         Nilai yang tersedia: ConnectivityLogs, MessagingLogs.         Tidak peka huruf besar/kecil.
 

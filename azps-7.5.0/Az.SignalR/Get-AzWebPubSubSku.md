@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
-ms.openlocfilehash: 5eb7fa602c013fcaf5380d458d266925e0b28a4c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87138838b983bc2f5b48377b5a5d2fc27c75ed96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242361"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629782"
 ---
 # Get-AzWebPubSubSku
 
 ## SYNOPSIS
 Cantumkan semua sku sumber daya yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsubsku) untuk informasi terbaru.
 
 ## SYNTAX
 

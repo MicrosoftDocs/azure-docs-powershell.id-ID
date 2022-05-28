@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
-ms.openlocfilehash: 34dc4fa0d293b3b913b038c29f28e121073f45b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2321b8868f506e0028973deb6e4b73a0a3083bba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242347"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629728"
 ---
 # Get-AzWebPubSubUsage
 
 ## SYNOPSIS
-Cantumkan kuota penggunaan sumber daya menurut lokasi.
+Cantumkan kuota penggunaan sumber daya berdasarkan lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azwebpubsubusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWebPubSubUsage -Location <String> [-SubscriptionId <String[]>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cantumkan kuota penggunaan sumber daya menurut lokasi.
+Cantumkan kuota penggunaan sumber daya berdasarkan lokasi.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ NameValue          : SignalRTotalUnits
 Unit               : Count
 ```
 
-Contoh menyalurkan hasil `Get-AzWebPubSubUsage -Location eastus` untuk `Format-list` melihat nilai semua properti hasil.
+Contoh menyalurkan hasil `Get-AzWebPubSubUsage -Location eastus` ke `Format-list` untuk melihat nilai semua properti hasil.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

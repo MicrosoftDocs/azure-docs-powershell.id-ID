@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/set-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchService.md
-ms.openlocfilehash: 29e500320cb34e30e4a9bb41eda9efb3ca9419ce
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e58d3f80889d4475e4934e1b3da78411107848f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240992"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637486"
 ---
 # Set-AzSearchService
 
 ## SYNOPSIS
 Memperbarui layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/set-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-(Opsional) Azure Cognitive Search Service Identity (None/SystemAssigned)
+(Opsional) Identitas Layanan Azure Cognitive Search (Tidak Ada/SystemAssigned)
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSIdentityType]

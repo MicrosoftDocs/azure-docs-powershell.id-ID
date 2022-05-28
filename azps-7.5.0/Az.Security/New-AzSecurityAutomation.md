@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzSecurityAutomation.md
-ms.openlocfilehash: 4431964d2f6a5c3e8cad1b2e8338568a6dff2236
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b6dc0d71093778d04f9eb306d9b899a8731fea96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197380"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635668"
 ---
 # New-AzSecurityAutomation
 
 ## SYNOPSIS
 Membuat otomatisasi keamanan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azsecurityautomation) untuk informasi terbaru.
 
 ## SYNTAX
 

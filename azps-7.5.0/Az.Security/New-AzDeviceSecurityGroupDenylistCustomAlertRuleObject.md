@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject.md
-ms.openlocfilehash: 960175318f298c6d9afebebed8804539b3a8e97d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9f2921dbbea1eaac7799aea2b907579264400992
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111185"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635830"
 ---
 # New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject
 
 ## SYNOPSIS
 Membuat aturan pemberitahuan kustom daftar tolak baru untuk grup keamanan perangkat (IoT Security)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygroupdenylistcustomalertruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 

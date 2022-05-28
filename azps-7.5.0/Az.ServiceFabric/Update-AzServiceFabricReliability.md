@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
-ms.openlocfilehash: aa7d5115578ac3ad18a7685e788ac9657097a8f7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ceeafd57d25f58df649b73142168e3c0cd5e769
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189372"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629998"
 ---
 # Update-AzServiceFabricReliability
 
 ## SYNOPSIS
 Perbarui tingkat keandalan jenis node utama dalam kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricreliability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Gunakan **Update-AzServiceFabricReliability** untuk memperbarui keandalan jenis 
 Update-AzServiceFabricReliability -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -ReliabilityLevel Silver
 ```
 
-Perintah ini mengubah tingkat keandalan jenis node utama menjadi silver.
+Perintah ini mengubah tingkat keandalan dari jenis node utama menjadi silver.
 
 ### Contoh 2
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
-ms.openlocfilehash: c3caa2bf3396865109c5b958d232eee0540d48bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6b106190c77a01c2a616c52a18973d8bd6b28c4f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242308"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629547"
 ---
 # New-AzWebPubSubHub
 
 ## SYNOPSIS
 Membuat atau memperbarui pengaturan hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azwebpubsubhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -239,9 +242,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 EVENTHANDLER <IEventHandler[]>: Penanganan aktivitas hub.
   - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda dapat menggunakan parameter {hub} dan {event} yang telah ditentukan sebelumnya di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat berupa `http://example.com/api/{hub}/{event}`. Bagian host tidak dapat berisi parameter.
   - `[AuthType <UpstreamAuthType?>]`: Mendapatkan atau mengatur jenis autentikasi. Tidak ada atau ManagedIdentity didukung sekarang.
-  - `[ManagedIdentityResource <String>]`: Sumber Daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Ini juga muncul dalam klaim aud (audiens) dari token yang dikeluarkan.
-  - `[SystemEvent <String[]>]`: Mendapatkan ot menetapkan daftar peristiwa sistem. Nilai yang valid berisi: 'connect', 'connected', 'disconnected'.
-  - `[UserEventPattern <String>]`: Mendapatkan atau mengatur pola pencocokan untuk nama peristiwa.         Ada 3 jenis pola yang didukung: 1. "*", cocok dengan nama kejadian 2. Gabungkan beberapa peristiwa dengan ",", misalnya "event1,event2", cocok dengan peristiwa "event1" dan "event2" 3. Nama peristiwa tunggal, misalnya, "event1", cocok dengan "event1"
+  - `[ManagedIdentityResource <String>]`: Sumber daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Ini juga muncul dalam klaim aud (audiens) dari token yang dikeluarkan.
+  - `[SystemEvent <String[]>]`: Mendapatkan ot menetapkan daftar peristiwa sistem. Nilai yang valid berisi: 'connect', 'connected', 'terputus'.
+  - `[UserEventPattern <String>]`: Mendapatkan atau mengatur pola yang cocok untuk nama peristiwa.         Ada 3 jenis pola yang didukung: 1. "*", agar sesuai dengan nama peristiwa 2. Gabungkan beberapa peristiwa dengan ",", misalnya "event1,event2", cocok dengan peristiwa "event1" dan "event2" 3. Nama peristiwa tunggal, misalnya, "event1", cocok dengan "event1"
 
 ## RELATED LINKS
 

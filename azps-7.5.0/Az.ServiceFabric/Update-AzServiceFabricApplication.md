@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
-ms.openlocfilehash: 378e2031f98f1abb8dd370d49ad31f283099dacd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: efa33ac297c4f9427b9aab182c698d44a5e623be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189467"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630124"
 ---
 # Update-AzServiceFabricApplication
 
 ## SYNOPSIS
 Memperbarui aplikasi service fabric. Ini memungkinkan untuk memperbarui parameter aplikasi dan/atau meningkatkan versi jenis aplikasi yang akan memicu peningkatan aplikasi. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ New-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGroupName 
 Update-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeVersion $version -Name $appName -ApplicationParameter @{key0="value0";key1=$null;key2="value2"}
 ```
 
-Contoh ini akan memulai peningkatan aplikasi untuk memperbarui versi jenis ke "v2" yang dibuat dengan **New-AzServiceFabricApplicationTypeVersion**. Parameter aplikasi yang digunakan harus ditentukan dalam manifes aplikasi.
+Contoh ini akan memulai peningkatan aplikasi untuk memperbarui versi jenis ke "v2" yang dibuat dengan **New-AzServiceFabricApplicationTypeVersion**. Parameter aplikasi yang digunakan harus didefinisikan dalam manifes aplikasi.
 
 ### Contoh 2
 ```powershell
@@ -81,7 +84,7 @@ Update-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -Cluster
 
 Contoh ini akan memperbarui jumlah minimum dan maksimum pembatasan simpul untuk aplikasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceGroupName = "testRG"
 $clusterName = "testCluster"
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition
-Menentukan persentase maksimum replika yang tidak disengaja per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk peningkatan yang dipantau.
+Menentukan persentase maksimum replika yang tidak baik per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk peningkatan yang dipantau.
 
 ```yaml
 Type: System.Int32
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceTypeUnhealthyServicesMaxPercent
-Menentukan persentase maksimum layanan yang tidak disengaja yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang akan digunakan untuk peningkatan yang dipantau.
+Menentukan persentase maksimum layanan yang tidak terbantahkan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang akan digunakan untuk peningkatan yang dipantau.
 
 ```yaml
 Type: System.Int32
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckWaitDurationSec
-Menentukan durasi, dalam hitungan detik, yang Service Fabric tunggu sebelum melakukan pemeriksaan kesehatan awal setelah menyelesaikan peningkatan pada domain peningkatan.
+Menentukan durasi, dalam detik, yang Service Fabric tunggu sebelum melakukan pemeriksaan kesehatan awal setelah menyelesaikan peningkatan pada domain peningkatan.
 
 ```yaml
 Type: System.Int32
@@ -409,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyDeployedApplicationsMaxPercent
-Menentukan persentase maksimum instans aplikasi yang disebarkan pada simpul dalam kluster yang memiliki status kesehatan kesalahan sebelum status kesehatan aplikasi untuk kluster adalah kesalahan.
+Menentukan persentase maksimum instans aplikasi yang disebarkan pada node di kluster yang memiliki status kesehatan kesalahan sebelum status kesehatan aplikasi untuk kluster adalah kesalahan.
 
 ```yaml
 Type: System.Int32
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeReplicaSetCheckTimeoutSec
-Menentukan waktu maksimum yang Service Fabric menunggu layanan dikonfigurasi ulang ke status aman, jika belum dalam keadaan aman, sebelum Service Fabric melanjutkan peningkatan.
+Menentukan waktu maksimum yang Service Fabric menunggu layanan dikonfigurasi ulang ke dalam keadaan aman, jika belum dalam keadaan aman, sebelum Service Fabric melanjutkan peningkatan.
 
 ```yaml
 Type: System.Int32

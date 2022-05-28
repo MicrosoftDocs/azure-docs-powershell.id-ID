@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Confirm-AzSecurityAutomation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Confirm-AzSecurityAutomation.md
-ms.openlocfilehash: 31cf0a01fd29a880bd0fdd2148f354c5f7b0742a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4a17ced1078628734d2f1b9eed4fff8a6365b56
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213395"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637396"
 ---
 # Confirm-AzSecurityAutomation
 
 ## SYNOPSIS
 Memvalidasi model otomatisasi keamanan sebelum membuat atau memperbarui. Setiap kesalahan validasi dikembalikan ke klien
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/confirm-azsecurityautomation) untuk informasi terbaru.
 
 ## SYNTAX
 

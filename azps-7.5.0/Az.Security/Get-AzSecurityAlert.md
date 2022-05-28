@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
-ms.openlocfilehash: f89772e1ff1b6948243ca3c2259582c64250305f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 64db763955cc8449d81eb9017ed1de7057fc9c9f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109529"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636676"
 ---
 # Get-AzSecurityAlert
 
 ## SYNOPSIS
 Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Azure Security Center
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -319,7 +322,7 @@ WorkspaceArmId     : /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourc
 
 Mendapatkan semua pemberitahuan keamanan yang terdeteksi pada sumber daya di dalam grup sumber daya "myService1"
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSecurityAlert -ResourceGroupName "myService1" -Location "westeurope" -Name "2518675235999999999_0cd957d9-8101-47f7-88cc-0c5d0ebdbfd0"
 ```

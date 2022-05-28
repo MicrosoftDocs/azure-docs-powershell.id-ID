@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzIotSecuritySolutionRecommendationConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzIotSecuritySolutionRecommendationConfigurationObject.md
-ms.openlocfilehash: 9161c248c926f43aa4abef0f30cb3d3a848195f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77b72160d1e6b5f9c01a0e2f52a2bc5892908252
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197394"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635704"
 ---
 # New-AzIotSecuritySolutionRecommendationConfigurationObject
 
 ## SYNOPSIS
 Membuat konfigurasi rekomendasi baru untuk solusi keamanan iot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-aziotsecuritysolutionrecommendationconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
