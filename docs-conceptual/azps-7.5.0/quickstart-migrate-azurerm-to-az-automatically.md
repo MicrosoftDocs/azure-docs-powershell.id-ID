@@ -7,12 +7,12 @@ ms.date: 05/11/2022
 ms.service: azure-powershell
 ms.topic: quickstart
 title: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
-ms.openlocfilehash: 09fca941a429efd26ab064cbff23c7b6aa09f86f
-ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
+ms.openlocfilehash: 9b263c957f0f49e247edaaa9b23f449d0f2cb3aa
+ms.sourcegitcommit: 628a63771d31866c9cc0921eb99c2c799bf785ed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "144957559"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145199119"
 ---
 # <a name="quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module"></a>Mulai cepat: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
 
@@ -20,7 +20,7 @@ Pada artikel ini, Anda akan mempelajari cara menggunakan modul Az.Tools.Migratio
 
 ## <a name="requirements"></a>Persyaratan
 
-- Perbarui skrip PowerShell Anda yang sudah ada ke versi terbaru [modul AzureRM PowerShell (6.13.2)](https://www.powershellgallery.com/packages/AzureRM/).
+- Perbarui skrip PowerShell Anda yang ada ke versi terbaru [modul AzureRM PowerShell (6.13.1)](https://www.powershellgallery.com/packages/AzureRM/).
 - Instal modul Az.Tools.Migration PowerShell.
 
   ```powershell
@@ -38,7 +38,7 @@ Contoh berikut menghasilkan rencana untuk semua skrip di folder _`C:\Scripts`_ .
 
 ```powershell
 # Generate an upgrade plan for all the scripts and module files in the specified folder and save it to a variable.
-New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.2 -ToAzVersion 5.2.0 -DirectoryPath 'C:\Scripts' -OutVariable Plan
+New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.2.0 -DirectoryPath 'C:\Scripts' -OutVariable Plan
 ```
 
 Seperti yang ditunjukkan dalam output berikut, rencana peningkatan merinci file tertentu dan titik offset yang memerlukan perubahan saat berpindah dari AzureRM ke cmdlet Az PowerShell.
