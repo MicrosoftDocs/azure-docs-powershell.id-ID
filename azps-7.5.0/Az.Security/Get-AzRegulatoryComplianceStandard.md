@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
-ms.openlocfilehash: 53bb828c0cc3a30b9aac59cc02b795648ffad0d0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cef21265ef2483cd648670e2352e08b00a3bd477
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242473"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636802"
 ---
 # Get-AzRegulatoryComplianceStandard
 
 ## SYNOPSIS
 Mendapatkan standar kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycompliancestandard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ SkippedControls     : 0
 UnsupportedControls : 24
 ```
 
-Dapatkan semua standar kepatuhan terhadap peraturan berdasarkan langganan.
+Dapatkan semua standar kepatuhan terhadap peraturan di bawah langganan.
 
 ### Contoh 2
 ```powershell
@@ -109,7 +112,7 @@ UnsupportedControls : 24
 
 Dapatkan detail standar kepatuhan peraturan tertentu sesuai dengan nama standar.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRegulatoryComplianceStandard -ResourceId "/subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/regulatoryComplianceStandards/SOC-TSP"
 ```

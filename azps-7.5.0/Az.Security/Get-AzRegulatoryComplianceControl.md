@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceControl.md
-ms.openlocfilehash: 046ab9f4078515f38949aca1eb8de542bf06957f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1525a6824b665b7da20e7926776546f1b2a82c50
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636838"
 ---
 # Get-AzRegulatoryComplianceControl
 
 ## SYNOPSIS
 Mendapatkan kontrol kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycompliancecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -113,7 +116,7 @@ SkippedAssessments : 0
 
 Dapatkan detail kontrol tertentu sesuai dengan id kontrol.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRegulatoryComplianceControl -ResourceId "/subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/regulatoryComplia
                      nceStandards/SOC-TSP/regulatoryComplianceControls/C1.2"

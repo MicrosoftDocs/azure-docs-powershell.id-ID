@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
-ms.openlocfilehash: d6417eee7ba878491316dc03e7582dcf79898030
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e7e2afb24846c7e65893a491352ddda49fa12f4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242448"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636730"
 ---
 # Get-AzSecurityAdaptiveApplicationControlGroup
 
 ## SYNOPSIS
 Mendapatkan kontrol aplikasi VM/grup server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityadaptiveapplicationcontrolgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

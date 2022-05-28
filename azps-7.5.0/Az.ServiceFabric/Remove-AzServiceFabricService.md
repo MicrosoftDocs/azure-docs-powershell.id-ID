@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricService.md
-ms.openlocfilehash: 67f719a853233ca30d8f169737483e1c32b84abb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9103fc77faebce415d98304d5f4d32b1c2110ef8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196047"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630513"
 ---
 # Remove-AzServiceFabricService
 
 ## SYNOPSIS
 Menghapus layanan dari kluster. Hanya mendukung layanan yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricservice) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedRecommendation.md
-ms.openlocfilehash: 3bb9b9dc6ceecd47d52da709f2e2aaa0ae8c8aa7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a383a818f0571dd0e0fab4ec34ca145a98a7a262
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237800"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637054"
 ---
 # Get-AzIotSecurityAnalyticsAggregatedRecommendation
 
 ## SYNOPSIS
 Dapatkan rekomendasi agregat keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-aziotsecurityanalyticsaggregatedrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 

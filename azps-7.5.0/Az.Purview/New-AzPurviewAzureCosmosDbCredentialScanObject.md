@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureCosmosDbCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureCosmosDbCredentialScanObject.md
-ms.openlocfilehash: 6fdcb8d17fbabd7734c38b2993896b54a20ee8c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3b3290f54ff7036cb56ffccdf642e104d5a5307e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230940"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654150"
 ---
 # New-AzPurviewAzureCosmosDbCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureCosmosDbCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurecosmosdbcredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

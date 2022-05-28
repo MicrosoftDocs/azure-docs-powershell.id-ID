@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonSqlDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonSqlDataSourceObject.md
-ms.openlocfilehash: 86613cae77251a215608576fd8c23aa701e398fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa1b36f6ecf983719d6f96536f0e75158f3da82d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197475"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654294"
 ---
 # New-AzPurviewAmazonSqlDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AmazonSqlDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewamazonsqldatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat objek dalam memori untuk AmazonSqlDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat amazon SQL objek sumber data
+### Contoh 1: Membuat objek sumber data Amazon SQL
 ```powershell
 PS C:\> New-AzPurviewAmazonSqlDataSourceObject -Kind 'AmazonSql' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -Port 1433 -ServerEndpoint DummyEdnpoint -VpcEndpointServiceName com.amazonaws.ypce.wus.123456789
 
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

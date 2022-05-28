@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureCosmosDbDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureCosmosDbDataSourceObject.md
-ms.openlocfilehash: 011ba9dda7ee709eb4adfbace4a0707d71a3f983
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02a5494b2af6f48c60ccac0f03fa5f06124bce46
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224219"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654168"
 ---
 # New-AzPurviewAzureCosmosDbDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureCosmosDbDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurecosmosdbdatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

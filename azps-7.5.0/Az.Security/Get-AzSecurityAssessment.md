@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessment.md
-ms.openlocfilehash: f97fd89cad5cea38b5dfe11dc7cf0d091354193a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eee80b4ee99f501446e06001b1ba3e400a5ee17e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188347"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636604"
 ---
 # Get-AzSecurityAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian keamanan dan hasilnya pada langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzSecurityAssessment -ResourceId <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mendapatkan penilaian keamanan dan hasilnya pada langganan. Penilaian keamanan akan memberi tahu Anda praktik terbaik mana yang direkomendasikan oleh Azure Security Center yang akan dimitigasi pada langganan Azure Anda.
+Mendapatkan penilaian keamanan dan hasilnya pada langganan. Penilaian keamanan akan memberi tahu Anda praktik terbaik mana yang direkomendasikan oleh Azure Security Center untuk dimitigasi pada langganan Azure Anda.
 
 ## EXAMPLES
 

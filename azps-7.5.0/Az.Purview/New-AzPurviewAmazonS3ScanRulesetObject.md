@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonS3ScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonS3ScanRulesetObject.md
-ms.openlocfilehash: 5f36936a65a2246ae2705acb52f2c329021ae293
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 149dd25e54ac11c573d7f8caae7e77fe8b2710b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192309"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145654276"
 ---
 # New-AzPurviewAmazonS3ScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AmazonS3ScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewamazons3scanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

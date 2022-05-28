@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNode.md
-ms.openlocfilehash: dcaa48e6ab8db8818c81f09a7b8bcb2ac5a4ee29
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e638cf590d1e81d41e2322198a8e3ca72a43e879
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211859"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630508"
 ---
 # Remove-AzServiceFabricNode
 
 ## SYNOPSIS
-Hapus node dari jenis node tertentu dari kluster.
+Hapus simpul dari jenis node tertentu dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzServiceFabricNode -NumberOfNodesToRemove <Int32> [-ResourceGroupName] <
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricNode** untuk menghapus node dari jenis node tertentu dari kluster. Penghapusan hanya berlanjut jika memenuhi metrik kesehatan kluster.
+Gunakan **Remove-AzServiceFabricNode** untuk menghapus simpul dari jenis node tertentu dari kluster. Penghapusan hanya berlanjut jika memenuhi metrik kesehatan kluster.
 
 ## EXAMPLES
 
