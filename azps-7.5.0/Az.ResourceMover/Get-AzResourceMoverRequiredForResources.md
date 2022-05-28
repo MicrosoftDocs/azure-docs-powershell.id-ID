@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
-ms.openlocfilehash: fc08ff4443df2034d07c68bb7c6d03a6b01c6ece
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3b59de790764ba7abee4ab3d3d29b5c8dc94cef2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208742"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644376"
 ---
 # Get-AzResourceMoverRequiredForResources
 
 ## SYNOPSIS
 Daftar sumber daya pemindahan tempat sumber daya arm diperlukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemoverrequiredforresources) untuk informasi terbaru.
 
 ## SYNTAX
 

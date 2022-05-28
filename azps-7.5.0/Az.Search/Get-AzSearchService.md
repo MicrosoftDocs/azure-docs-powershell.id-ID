@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchService.md
-ms.openlocfilehash: e02078226fcb651a4eb57896ad784096238cf62e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eba5dc0ec9886053c7df4b71c460b573baee25c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237828"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637846"
 ---
 # Get-AzSearchService
 
 ## SYNOPSIS
 Mendapatkan layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Azure Cognitive Search.
+Azure Cognitive Search Id Sumber Daya Layanan.
 
 ```yaml
 Type: System.String

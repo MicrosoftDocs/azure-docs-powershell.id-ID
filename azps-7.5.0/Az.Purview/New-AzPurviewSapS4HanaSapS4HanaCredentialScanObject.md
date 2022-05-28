@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject.md
-ms.openlocfilehash: 3eb906994c8059667144e41854d4c8bdd00c92d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 624b82154ad949d4e85511afa63b5654cec27336
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111569"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652152"
 ---
 # New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk SapS4HanaSapS4HanaCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewsaps4hanasaps4hanacredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Buat objek dalam memori untuk SapS4HanaSapS4HanaCredentialScan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Objek Pemindaian Kredensial SAPS4 Hana
+### Contoh 1: Membuat Objek Pemindaian Kredensial Hana SAPS4
 ```powershell
 PS C:\> New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject -Kind 'SapS4HanaSapS4HanaCredential' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ClientId '444' -CredentialReferenceName 'fdsafsdf' -CredentialType 'BasicAuth' -MaximumMemoryAllowedInGb 4 -JCoLibraryPath 'file://asdas' -ConnectedViaReferenceName 'IntegrationRuntime-NJh'
 
@@ -159,7 +162,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.ScanAuthorizationType

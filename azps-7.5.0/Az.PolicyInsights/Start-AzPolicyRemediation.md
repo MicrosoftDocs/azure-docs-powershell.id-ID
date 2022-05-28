@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Start-AzPolicyRemediation.md
-ms.openlocfilehash: e21e6f56b851cef30cc92fd4c65a9c7ba481fd40
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91c8780737f4c8f69cc2d1b664608b04e7b549f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188490"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658920"
 ---
 # Start-AzPolicyRemediation
 
 ## SYNOPSIS
 Membuat dan memulai remediasi kebijakan untuk penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/start-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remedia
 
 Perintah ini membuat remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan.
 
-### Contoh 2: Memulai remediasi di cakupan grup manajemen dengan filter opsional
+### Contoh 2: Memulai remediasi pada cakupan grup manajemen dengan filter opsional
 ```powershell
 $policyAssignmentId = "/providers/Microsoft.Management/managementGroups/mg1/providers/Microsoft.Authorization/policyAssignments/pa1"
 Start-AzPolicyRemediation -ManagementGroupName "mg1" -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -LocationFilter "westus","eastus"
@@ -58,7 +61,7 @@ Start-AzPolicyRemediation -ManagementGroupName "mg1" -PolicyAssignmentId $policy
 
 Perintah ini membuat remediasi kebijakan baru di grup manajemen 'mg1' untuk penetapan kebijakan yang diberikan. Hanya sumber daya di lokasi 'westus' atau 'eastus' yang akan diperbaiki.
 
-### Contoh 3: Memulai remediasi di cakupan grup sumber daya untuk penetapan definisi kumpulan kebijakan
+### Contoh 3: Memulai remediasi di cakupan grup sumber daya untuk penetapan definisi yang ditetapkan kebijakan
 ```powershell
 $policyAssignmentId = "/subscriptions/f0710c27-9663-4c05-19f8-1b4be01e86a5/resourceGroups/myRG/providers/Microsoft.Authorization/policyAssignments/2deae24764b447c29af7c309"
 Start-AzPolicyRemediation -ResourceGroupName "myRG" -PolicyAssignmentId $policyAssignmentId -PolicyDefinitionReferenceId "0349234412441" -Name "remediation1"
@@ -84,7 +87,7 @@ Set-AzContext -Subscription "My Subscription"
 Start-AzPolicyRemediation -PolicyAssignmentId $policyAssignmentId -Name "remediation1" -ResourceDiscoveryMode ReEvaluateCompliance
 ```
 
-Perintah ini membuat remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan. Status kepatuhan sumber daya dalam langganan akan dievaluasi kembali terhadap penetapan kebijakan dan sumber daya yang tidak patuh akan diperbaiki.
+Perintah ini membuat remediasi kebijakan baru dalam langganan 'Langganan Saya' untuk penetapan kebijakan yang diberikan. Status kepatuhan sumber daya dalam langganan akan dievaluasi kembali terhadap penetapan kebijakan dan sumber daya yang tidak sesuai akan diperbaiki.
 
 ### Contoh 6: Memulai remediasi yang akan memulihkan hingga 10.000 sumber daya yang tidak patuh
 ```powershell
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailureThreshold
-Angka antara 0,0 hingga 1,0 yang menunjukkan ambang kegagalan persentase. Remediasi akan gagal jika persentase operasi remediasi yang gagal (yaitu penyebaran yang gagal) melebihi ambang batas ini.
+Angka antara 0,0 hingga 1,0 yang menunjukkan persentase ambang kegagalan. Remediasi akan gagal jika persentase operasi remediasi yang gagal (yaitu penyebaran yang gagal) melebihi ambang batas ini.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionReferenceId
-Mendapatkan ID referensi definisi kebijakan dari definisi individu yang sedang diperbaiki.
+Mendapatkan ID referensi definisi kebijakan dari definisi individual yang sedang diperbaiki.
 Diperlukan saat penetapan kebijakan menetapkan definisi yang ditetapkan kebijakan.
 
 ```yaml

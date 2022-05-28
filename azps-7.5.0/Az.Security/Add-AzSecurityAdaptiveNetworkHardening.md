@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Add-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
-ms.openlocfilehash: f49b900384b903a3780de7eaa347aa1228a68ccf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a1b355642fb6bb1fe63f46d72223ccb5214d68c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215798"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637450"
 ---
 # Add-AzSecurityAdaptiveNetworkHardening
 
 ## SYNOPSIS
 Memberlakukan aturan yang diberikan pada NSG yang tercantum dalam permintaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/add-azsecurityadaptivenetworkhardening) untuk informasi terbaru.
 
 ## SYNTAX
 

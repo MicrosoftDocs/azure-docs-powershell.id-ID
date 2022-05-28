@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilterObject.md
-ms.openlocfilehash: 2bbd6f6169374f7506479df5f4c002cf912e1c50
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 992d9b1088e4ab7f8f64e4c6a5300f10cf8c718d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652494"
 ---
 # New-AzPurviewFilterObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk Filter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewfilterobject) untuk informasi terbaru.
 
 ## SYNTAX
 

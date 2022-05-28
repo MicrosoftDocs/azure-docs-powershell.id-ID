@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADAppPermission.md
-ms.openlocfilehash: 3dad627aa3ce69800d89ef142ab14a433418625e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bcfdbca03504584cb0c9498a51a91d8c4bfe1d98
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230548"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145643962"
 ---
 # Add-AzADAppPermission
 
 ## SYNOPSIS
 Menambahkan izin API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/add-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 

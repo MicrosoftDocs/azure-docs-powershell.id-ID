@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveResource.md
-ms.openlocfilehash: 7f5958477e2311eb34dadc4cc43773f72d09939a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e4ce05d41215aa3d577e193af8a131af03672dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200082"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644340"
 ---
 # Get-AzResourceMoverMoveResource
 
 ## SYNOPSIS
 Mendapatkan Sumber Daya Pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemovermoveresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -249,7 +252,7 @@ Type                              :
 
 Dapatkan detail sumber daya tertentu dalam kumpulan Pindahkan menggunakan nama sumber daya pemindahan .
 
-### Contoh 3:Dapatkan detail sumber daya tertentu dalam kumpulan Pindahkan menggunakan filter seperti : SourceResourceName, SourceId, MoveState, IsResolveRequired, ProvisioningState
+### Contoh 3:Mendapatkan detail sumber daya tertentu dalam kumpulan Pindahkan menggunakan filter seperti : SourceResourceName, SourceId, MoveState, IsResolveRequired, ProvisioningState
 ```powershell
 Get-AzResourceMoverMoveResource -MoveCollectionName "PS-centralus-westcentralus-demoRMS1" -ResourceGroupName "RG-MoveCollection-demoRMS" -Filter "Properties/SourceResourceName eq 'psdemovm111'"
 ```
@@ -291,7 +294,7 @@ Type                              :
 
 ```
 
-Dapatkan detail sumber daya tertentu dalam koleksi Pindahkan menggunakan filter seperti armid, moveStatusMoveState(verifikasi) dll.
+Dapatkan detail sumber daya tertentu dalam kumpulan Pindahkan menggunakan filter seperti armid, moveStatusMoveState(verify) dll.
 
 ## PARAMETERS
 

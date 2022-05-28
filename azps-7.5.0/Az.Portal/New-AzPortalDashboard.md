@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/new-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
-ms.openlocfilehash: 90735a34fc7306d593a019cd6c23fe796eb79d4f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cf043dc940a475333ca5fcabe50e70487e29a43
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199211"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658722"
 ---
 # New-AzPortalDashboard
 
 ## SYNOPSIS
 Membuat atau memperbarui Dasbor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/new-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilter.md
-ms.openlocfilehash: 3c7ca6631fe3651680f7980e3c7fd450ebddcb1c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9cb1f5b762eb4ef791340f75c426f58287de269
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224039"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652530"
 ---
 # New-AzPurviewFilter
 
 ## SYNOPSIS
 Membuat atau memperbarui filter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewfilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Buat filter cakupan pemindaian bernama 'Scan1ForDemo' untuk sumber data 'DataSca
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IFilter
@@ -173,7 +176,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TUBUH <IFilter>: .
+ISI <IFilter>: .
   - `[ExcludeUriPrefix <String[]>]`: 
   - `[IncludeUriPrefix <String[]>]`: 
 

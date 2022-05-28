@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchAdminKeyPair.md
-ms.openlocfilehash: e466afd220d82f419de67620a33334f58adc4e74
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d9ca08c3576747bcf656ff2fe049339ec7bfff2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111224"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638062"
 ---
 # Get-AzSearchAdminKeyPair
 
 ## SYNOPSIS
 Mendapatkan pasangan kunci admin layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchadminkeypair) untuk informasi terbaru.
 
 ## SYNTAX
 

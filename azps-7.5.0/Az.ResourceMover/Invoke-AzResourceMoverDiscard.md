@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
-ms.openlocfilehash: 150122c97eb9ef44d979c58d2a857004819611a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 234ae5571322013478cfcba5034535bdc4c551e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111476"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644160"
 ---
 # Invoke-AzResourceMoverDiscard
 
 ## SYNOPSIS
 Membuang set sumber daya yang disertakan dalam isi permintaan.
-Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverdiscard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +32,8 @@ Invoke-AzResourceMoverDiscard -Name <String> -ResourceGroupName <String> -MoveRe
 
 ## DESCRIPTION
 Membuang set sumber daya yang disertakan dalam isi permintaan.
-Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Status         : Succeeded
 
 ```
 
-Validasi dependecies sebelum Buang sumber daya.
+Validasi dependek sebelum Buang sumber daya.
 
 ### Contoh 2: Membuang pemindahan sumber daya menggunakan "Nama MoveResource" sebagai input.
 ```powershell
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar Id sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar ID sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewSapS4HanaDataSourceObject.md
-ms.openlocfilehash: 018403547c1d33775d64f25a925ec029cc031e25
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 918c91417e5ab786a0211044e7f07296dde4233a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186838"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652206"
 ---
 # New-AzPurviewSapS4HanaDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk SapS4HanaDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewsaps4hanadatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 

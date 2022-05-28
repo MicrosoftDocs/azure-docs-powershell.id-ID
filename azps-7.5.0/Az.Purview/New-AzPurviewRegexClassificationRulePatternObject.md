@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewRegexClassificationRulePatternObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewRegexClassificationRulePatternObject.md
-ms.openlocfilehash: f605a04107a0a8b00ee082b1e664b995ef33094a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60f818390c3079ee9380e444abd88809f12bc4c8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223946"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652296"
 ---
 # New-AzPurviewRegexClassificationRulePatternObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk RegexClassificationRulePattern.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewregexclassificationrulepatternobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Kind  Pattern
 Regex ^col1$
 ```
 
-Membuat Objek Pola Aturan Klasifikasi Regex
+Buat Objek Pola Aturan Klasifikasi Regex
 
 ## PARAMETERS
 

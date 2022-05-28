@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverCommit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverCommit.md
-ms.openlocfilehash: 9f52ed2a4901a2649db58176d9781e9825d244d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: efe56df4ee29028948a4cd97f3e508a7d955de47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230629"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644214"
 ---
 # Invoke-AzResourceMoverCommit
 
 ## SYNOPSIS
 Menerapkan set sumber daya yang disertakan dalam isi permintaan.
-Operasi penerapan dipicu pada moveResources di moveState 'CommitPending' atau 'CommitFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke Committed.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Operasi penerapan dipicu pada moveResources di moveState 'CommitPending' atau 'CommitFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke Penerapan.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemovercommit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +32,8 @@ Invoke-AzResourceMoverCommit -MoveCollectionName <String> -ResourceGroupName <St
 
 ## DESCRIPTION
 Menerapkan set sumber daya yang disertakan dalam isi permintaan.
-Operasi penerapan dipicu pada moveResources di moveState 'CommitPending' atau 'CommitFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke Committed.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Operasi penerapan dipicu pada moveResources di moveState 'CommitPending' atau 'CommitFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke Penerapan.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
@@ -79,7 +82,7 @@ Status         : Succeeded
 
 Terapkan kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input.
 
-### Contoh 3: Terapkan kumpulan sumber daya dalam Koleksi Pemindahan menggunakan "SourceARMID" sebagai input.
+### Contoh 3: Terapkan kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "SourceARMID" sebagai input.
 ```powershell
 Invoke-AzResourceMoverCommit -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/PSDemoRM/providers/Microsoft.Network/networkSecurityGroups/PSDemoVM-nsg') -MoveResourceInputType "MoveResourceSourceId"
 ```
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar Id sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar ID sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]

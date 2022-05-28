@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayClientAuthConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayClientAuthConfiguration.md
-ms.openlocfilehash: c0ff0e0f2eed3232d1ebc1b6bf4e6abf4a99465a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7f8e29ac52375176a22c17104e4928a326617f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196344"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671808"
 ---
 # Remove-AzApplicationGatewayClientAuthConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi autentikasi klien dari objek profil SSL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Remove-AzApplicationGatewayClientAuthConfiguration -SslProfile $profile
 Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya dalam variabel $profile. Perintah berikutnya menghapus konfigurasi autentikasi klien profil ssl yang disimpan di $profile. Perintah terakhir memperbarui gateway aplikasi.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya dalam variabel $profile. Perintah berikutnya menghapus konfigurasi autentikasi klien dari profil ssl yang disimpan di $profile. Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
 

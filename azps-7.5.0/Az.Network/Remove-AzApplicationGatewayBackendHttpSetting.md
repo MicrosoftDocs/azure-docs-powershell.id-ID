@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: d3ac282e87011260e1c4cba9a1a07be3aa4dbe64
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: efad0cec5bf0aafaaf98c76d7c51cc94240bf55b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189918"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671862"
 ---
 # Remove-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Menghapus pengaturan HTTP back-end dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Remove-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw -Name "
 Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 Perintah kedua menghapus pengaturan HTTP back-end bernama BackEndSetting02 dari gateway aplikasi yang disimpan di $AppGw. Terakhir, perintah ketiga memperbarui gateway aplikasi.
 
 ## PARAMETERS

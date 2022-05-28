@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/set-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchPrivateEndpointConnection.md
-ms.openlocfilehash: aba83e41597e4b140e8ff79fa1d5ceb9a409e9fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d0b3d37de1d30229e6b2815fa1d831a9eace41bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221822"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637504"
 ---
 # Set-AzSearchPrivateEndpointConnection
 
 ## SYNOPSIS
 Perbarui koneksi titik akhir privat ke layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/set-azsearchprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status koneksi layanan private link
+Status koneksi layanan tautan privat
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSPrivateLinkServiceConnectionStatus

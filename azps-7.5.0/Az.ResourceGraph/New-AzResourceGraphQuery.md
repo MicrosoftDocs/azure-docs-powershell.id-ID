@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
-ms.openlocfilehash: 392827e99c2d7cde83d9d7ef380055d545713818
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 242585eebb6aec0ab436de9845b4954282041beb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212030"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644556"
 ---
 # New-AzResourceGraphQuery
 
 ## SYNOPSIS
 Buat kueri grafik baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/new-azresourcegraphquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ global   query-t03 microsoft.resourcegraph/queries
 
 Perintah ini membuat kueri grafik sumber daya berdasarkan parameter kueri.
 
-### Contoh 2: Membuat kueri grafik sumber daya menurut parameter file
+### Contoh 2: Membuat kueri grafik sumber daya dengan parameter file
 ```powershell
 New-AzResourceGraphQuery -Name query-t04 -ResourceGroupName azure-rg-test -Location "global" -Description "requesting a subset of resource fields." -File 'D:\azure-service\ResourceGraph.Autorest\azure-powershell\src\ResourceGraph\ResourceGraph.Autorest\test\Query.kql'
 ```
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya kueri Graph.
+Nama sumber daya Graph Query.
 
 ```yaml
 Type: System.String

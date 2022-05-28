@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlConnectionString.md
-ms.openlocfilehash: 8af0ee79c53e531da8779826b0bc98a521a8de60
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3a080db919801a7c7a034c121b21ffb2a0665401
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199102"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658614"
 ---
 # Get-AzPostgreSqlConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 

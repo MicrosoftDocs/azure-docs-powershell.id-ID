@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverBulkRemove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverBulkRemove.md
-ms.openlocfilehash: 45aa258eccc8595477af9490820f4febfc87a297
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ad9094abd1f786223f03e323bcf6274c4d0dced3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247499"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644322"
 ---
 # Invoke-AzResourceMoverBulkRemove
 
 ## SYNOPSIS
 Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari kumpulan pemindahan.
 Orkestrasi dilakukan oleh layanan.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverbulkremove) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Invoke-AzResourceMoverBulkRemove -MoveCollectionName <String> -ResourceGroupName
 ## DESCRIPTION
 Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari kumpulan pemindahan.
 Orkestrasi dilakukan oleh layanan.
-Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
@@ -54,9 +57,9 @@ Status         : Succeeded
 
 ```
 
-Validasi dependek sebelum menghapus sumber daya pemindahan dari Kumpulan Pemindahan.
+Validasi dependecies sebelum menghapus sumber daya pemindahan dari Move Collection.
 
-### Contoh 2: Hapus Pindahkan Sumber Daya dari Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input
+### Contoh 2: Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "Nama MoveResource" sebagai input
 ```powershell
 Invoke-AzResourceMoverBulkRemove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('PSDemoVM') -MoveResourceInputType "MoveResourceId"
 ```
@@ -75,9 +78,9 @@ StartTime      : 2/10/2021 12:57:08 PM
 Status         : Succeeded
 ```
 
-Hapus Pindahkan Sumber Daya dari Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input
+Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "Nama MoveResource" sebagai input
 
-### Contoh 3: Hapus Pindahkan Sumber Daya dari Kumpulan Pemindahan menggunakan "SourceARMID" sebagai input
+### Contoh 3: Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "SourceARMID" sebagai input
 ```powershell
 Invoke-AzResourceMoverBulkRemove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/PSDemoRM/providers/Microsoft.Network/networkSecurityGroups/PSDemoVM-nsg') -MoveResourceInputType "MoveResourceSourceId"
 ```
@@ -96,7 +99,7 @@ StartTime      : 2/10/2021 1:05:00 PM
 Status         : Succeeded
 ```
 
-Hapus Pindahkan Sumber Daya dari Kumpulan Pemindahan menggunakan "SourceARMID" sebagai input
+Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "SourceARMID" sebagai input
 
 ## PARAMETERS
 
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar Id sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar ID sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]

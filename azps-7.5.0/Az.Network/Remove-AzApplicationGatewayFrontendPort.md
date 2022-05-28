@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: 73ed3dd72f748dd9e6c4fcb270853952c431df5e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fcae906c4246f7a0ecf77280df157140672028dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189901"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671718"
 ---
 # Remove-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Menghapus port front-end dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 

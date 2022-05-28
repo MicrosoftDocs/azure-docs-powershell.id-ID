@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFirewallPolicy.md
-ms.openlocfilehash: 25e8f2a14e1d718f94bb427affaaf52171fd9b17
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 011a12ea07fd640c1a3d59d9ace178e25a2145bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189904"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145671772"
 ---
 # Remove-AzApplicationGatewayFirewallPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan firewall gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

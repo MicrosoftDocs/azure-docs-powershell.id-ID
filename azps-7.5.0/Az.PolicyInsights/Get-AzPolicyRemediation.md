@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
-ms.openlocfilehash: 4192836ffa540b3fdeeb791ce688c9df2c9187c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c82de9b311f1bdaf79a2476f168ab9ca363198d2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238203"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659028"
 ---
 # Get-AzPolicyRemediation
 
 ## SYNOPSIS
 Mendapatkan remediasi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 

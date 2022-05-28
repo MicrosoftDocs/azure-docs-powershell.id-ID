@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteConfig.md
-ms.openlocfilehash: 71a9b11ae1cb5d66ef0bfe8aff47fc1e11bc59a0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de980b6eb4c477ed59f310d8c74779088d2678d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221903"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665346"
 ---
 # Set-AzRouteConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi rute untuk tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

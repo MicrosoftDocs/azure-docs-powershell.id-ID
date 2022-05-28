@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveCollection.md
-ms.openlocfilehash: 3f7a8a76fc0f1f90e48d68e1bf348c63d2365d68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 06ae6c47374e4a99038f5d790483f4b0cdc262fd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237839"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644412"
 ---
 # Get-AzResourceMoverMoveCollection
 
 ## SYNOPSIS
 Mendapatkan koleksi pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemovermovecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,9 +60,9 @@ Etag                                   Location      Name                       
 
 ```
 
-Dapatkan detail semua Koleksi pemindahan dalam langganan.
+Dapatkan detail semua koleksi Pindahkan dalam langganan.
 
-### Contoh 2: Mendapatkan detail koleksi Pindahkan dengan nama kumpulan pemindahan tertentu dalam langganan
+### Contoh 2: Mendapatkan detail kumpulan Pindahkan dengan nama kumpulan pemindahan tertentu dalam langganan
 ```powershell
 Get-AzResourceMoverMoveCollection -ResourceGroupName "RG-MoveCollection-demoRMS" -Name "PS-centralus-westcentralus-demoRMS"
 ```

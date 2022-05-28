@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
-ms.openlocfilehash: f5f214aae7a174186dbb7ae9d6dc1f74aaf6f5f7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8b87fe2a7aafa5358a1636d7cf1700a5259df34b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192438"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659136"
 ---
 # Update-AzPeering
 
 ## SYNOPSIS
 Mengatur Peering. Gunakan Perintah ini bersama dengan `Set-AzDirectPeeringConnectionObject` atau `Set-AzExchangePeeringConnectionObject`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/update-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

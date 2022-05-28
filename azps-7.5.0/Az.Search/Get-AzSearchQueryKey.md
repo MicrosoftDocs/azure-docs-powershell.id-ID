@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchQueryKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchQueryKey.md
-ms.openlocfilehash: c5a54f96619640a18dceb08c195e3d017f7d0917
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29f63922207dbd0236a8cef1fcefecdf124b0d82
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185379"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637882"
 ---
 # Get-AzSearchQueryKey
 
 ## SYNOPSIS
 Mendapatkan kunci kueri dari layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchquerykey) untuk informasi terbaru.
 
 ## SYNTAX
 

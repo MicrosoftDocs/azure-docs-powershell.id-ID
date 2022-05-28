@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzDeployment.md
-ms.openlocfilehash: 9b3c8a8b400456c03e1edc337bd0639d9613b0e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0510c29a0bfe165536c714df911a770289d43b6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188350"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638530"
 ---
 # Test-AzDeployment
 
 ## SYNOPSIS
 Memvalidasi penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/test-azdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -148,7 +151,7 @@ Test-AzDeployment -Location "West US" -TemplateObject $TemplateObject -TemplateP
 
 Perintah ini menguji penyebaran pada cakupan langganan saat ini menggunakan hashtable dalam memori yang dibuat dari file templat yang diberikan dan file parameter.
 
-### Contoh 3
+### Contoh: 3
 
 Memvalidasi penyebaran. (dibuat otomatis)
 

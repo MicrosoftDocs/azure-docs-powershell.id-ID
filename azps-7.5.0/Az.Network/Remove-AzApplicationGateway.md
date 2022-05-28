@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGateway.md
-ms.openlocfilehash: 42ac2778061f887cdcdc3ff6db24c9465593326f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 434081ed7de7b3722eb776cf356dad71c370e689
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189946"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672060"
 ---
 # Remove-AzApplicationGateway
 
 ## SYNOPSIS
 Menghapus gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

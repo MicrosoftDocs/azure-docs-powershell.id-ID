@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/set-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
-ms.openlocfilehash: a89b924f7b70e47fe9d214f2f7aa3e2384d28bd0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 991f514e59cf9d5e0dca63968882422961ddbe00
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199186"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658686"
 ---
 # Set-AzPortalDashboard
 
 ## SYNOPSIS
 Membuat atau memperbarui Dasbor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/set-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
-ms.openlocfilehash: d8520c3bbc4f54c4dc8e872e7e094d323bb55ca3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 200edd74bc6326ebd130683047efeb1ac020330f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188378"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644394"
 ---
 # Add-AzResourceMoverMoveResource
 
 ## SYNOPSIS
 Membuat atau memperbarui Pindahkan Sumber Daya dalam kumpulan pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/add-azresourcemovermoveresource) untuk informasi terbaru.
 
 ## SYNTAX
 

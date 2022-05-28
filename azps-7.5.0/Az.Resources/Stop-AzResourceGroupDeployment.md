@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
-ms.openlocfilehash: 72506991c338f56bc4af244afd9de02f6dafe50d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4adef00b09441cbb1f08096a61c7645580919e48
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229551"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638638"
 ---
 # Stop-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Membatalkan penyebaran grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/stop-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,9 +101,9 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama penyebaran grup sumber daya untuk dihentikan.
+Menentukan nama penyebaran grup sumber daya yang akan dihentikan.
 Jika Anda tidak menentukan parameter ini, cmdlet ini mencari penyebaran yang sedang berjalan di grup sumber daya dan menghentikannya.
-Jika menemukan lebih dari satu penyebaran yang sedang berjalan, perintah gagal.
+Jika menemukan lebih dari satu penyebaran yang sedang berjalan, perintah akan gagal.
 Untuk mendapatkan nama penyebaran, gunakan cmdlet Get-AzResourceGroupDeployment.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml

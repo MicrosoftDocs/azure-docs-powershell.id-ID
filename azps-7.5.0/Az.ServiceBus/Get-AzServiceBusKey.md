@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
-ms.openlocfilehash: 2a32f10a4392c46b681b4162358ccfd3215a7475
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a051e020a9c57d31f0598cffe8f1bdb0e22d427b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188238"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633490"
 ---
 # Get-AzServiceBusKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi primer dan sekunder untuk Namespace layanan atau Antrean atau Topik atau Alias yang diberikan (Konfigurasi GeoDR).
+Mendapatkan string koneksi utama dan sekunder untuk Namespace layanan atau Antrean atau Topik atau Alias yang diberikan (Konfigurasi GeoDR).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Examp
 
 String koneksi primer dan sekunder ke antrean yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
@@ -74,7 +77,7 @@ String koneksi primer dan sekunder ke topik yang ditentukan.
 Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -AliasName SBAlias -Name AuthoRule1
 ```
 
-String koneksi primer dan sekunder ke namespace dan alias yang ditentukan.
+String koneksi primer dan sekunder ke namespace layanan dan alias yang ditentukan.
 
 ## PARAMETERS
 

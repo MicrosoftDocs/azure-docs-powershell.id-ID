@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchService.md
-ms.openlocfilehash: 70594597f7e868b3a3a09a19c86c2a5412414e88
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8c66226676c094093aff5e7c0d1cef62f9c4ef4e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221834"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637558"
 ---
 # Remove-AzSearchService
 
 ## SYNOPSIS
 Menghapus layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/remove-azsearchservice) untuk informasi terbaru.
 
 ## SYNTAX
 

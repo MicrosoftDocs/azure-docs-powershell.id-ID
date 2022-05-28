@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
-ms.openlocfilehash: 1b99c5b91da40e8522bf84535d50bbcf25b74478
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 38490ae4ccf3ab14b0e88d41bbd199a314f79208
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199158"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658650"
 ---
 # Update-AzPortalDashboard
 
 ## SYNOPSIS
 Memperbarui Dasbor yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/update-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ eastasia dashbase03 Microsoft.Portal/dashboards
 ```
 
 Perbarui Tag di Dasbor yang dicoba ulang menggunakan Get-AzPortalDashboard.
-Ini dapat digunakan untuk memperbarui tag melalui satu dasbor, atau beberapa dasbor.
+Ini dapat digunakan untuk memperbarui tag melalui satu dasbor, atau beberapa dasborf.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Portal.Models.IPortalIdentity
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ INPUTOBJECT <IPortalIdentity>: Parameter Identitas
   - `[DashboardName <String>]`: Nama dasbor.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

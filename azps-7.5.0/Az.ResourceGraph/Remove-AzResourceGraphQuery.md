@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
-ms.openlocfilehash: 07457d283aba9ace567b427f61d7c5fa3417b95b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 40e6110e28391ff7d66aaba563b07e93ce6994dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211991"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644529"
 ---
 # Remove-AzResourceGraphQuery
 
 ## SYNOPSIS
 Menghapus kueri grafik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/remove-azresourcegraphquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Menghapus kueri grafik.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kueri grafik sumber daya berdasarkan nama
+### Contoh 1: Menghapus kueri grafik sumber daya menurut nama
 ```powershell
 Remove-AzResourceGraphQuery -ResourceGroupName azure-rg-test -Name query-t03
 ```
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceGraph.Models.IResourceGraphIdentity
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya Graph Query.
+Nama sumber daya kueri Graph.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

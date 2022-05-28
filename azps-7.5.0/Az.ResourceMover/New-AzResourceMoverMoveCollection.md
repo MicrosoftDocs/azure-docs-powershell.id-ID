@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/New-AzResourceMoverMoveCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/New-AzResourceMoverMoveCollection.md
-ms.openlocfilehash: 2f665b7b89a68156f4d974b980e3422e7340199f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfd9d4f3911d7db598c75d40fb119f6b12d17cca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111461"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644052"
 ---
 # New-AzResourceMoverMoveCollection
 
 ## SYNOPSIS
 Membuat atau memperbarui koleksi pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/new-azresourcemovermovecollection) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/get-AzSea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Get-AzSearchPrivateLinkResource.md
-ms.openlocfilehash: 16835759c09bff8f15281ede225ce594bf2e03ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 339f0f1c1a95d29e9bd60270bab326d5dd4ef967
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111212"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637936"
 ---
 # Get-AzSearchPrivateLinkResource
 
 ## SYNOPSIS
 Mendapatkan detail sumber daya tautan privat untuk layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/get-azsearchprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 

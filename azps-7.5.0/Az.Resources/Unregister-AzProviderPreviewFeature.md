@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/unregi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Unregister-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Unregister-AzProviderPreviewFeature.md
-ms.openlocfilehash: 8c98a800bdf86e53297b1c5df833c0e891128dc5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b6b268e6ac18394982caee0716afd40702ad5da3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242490"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638350"
 ---
 # Unregister-AzProviderPreviewFeature
 
 ## SYNOPSIS
 Menghapus pendaftaran fitur dari akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/unregister-azproviderpreviewfeature) untuk informasi terbaru.
 
 ## SYNTAX
 

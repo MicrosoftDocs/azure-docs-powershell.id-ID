@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Stop-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Stop-AzPolicyRemediation.md
-ms.openlocfilehash: e1410613f629bdb9df149a484c61c47f7d0ec168
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ac9b1bcac6e3b0b1d0029301df5bc0edf46b8f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200950"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145658938"
 ---
 # Stop-AzPolicyRemediation
 
 ## SYNOPSIS
 Membatalkan remediasi kebijakan yang sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/stop-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Cmdlet **Stop-AzPolicyRemediation** membatalkan remediasi kebijakan yang sedang 
 Stop-AzPolicyRemediation -ResourceGroupName "myRG" -Name "remediation1"
 ```
 
-Perintah ini membatalkan remediasi bernama 'remediation1' di grup sumber daya 'myRG'.
+Perintah ini membatalkan remediasi bernama 'remediation1' dalam grup sumber daya 'myRG'.
 
 ### Contoh 2: Membatalkan remediasi grup manajemen melalui pipa
 ```powershell

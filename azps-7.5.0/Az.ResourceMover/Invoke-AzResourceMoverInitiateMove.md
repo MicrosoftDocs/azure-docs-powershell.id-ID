@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverInitiateMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverInitiateMove.md
-ms.openlocfilehash: c67d9331fe2907a40abde5af31c1a922ea10dc44
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 154911107ee31af84ac56aff1ce31c38eaddb369
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230615"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644178"
 ---
 # Invoke-AzResourceMoverInitiateMove
 
@@ -18,6 +18,9 @@ ms.locfileid: "144230615"
 Memindahkan kumpulan sumber daya yang disertakan dalam isi permintaan.
 Operasi pemindahan dipicu setelah moveResources berada di moveState 'MovePending' atau 'MoveFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke CommitPending.
 Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverinitiatemove) untuk informasi terbaru.
 
 ## SYNTAX
 

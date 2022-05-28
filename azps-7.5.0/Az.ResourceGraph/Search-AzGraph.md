@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Search-AzGraph.md
-ms.openlocfilehash: 21e56a52b44ed3655c3ba40bca56d32f3562feb8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff0db88b95a21cf58f2510f3dc688def1949e9f9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236652"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644528"
 ---
 # Search-AzGraph
 
 ## SYNOPSIS
 Mengkueri sumber daya yang dikelola oleh Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/search-azgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ westus            26
 
 Kueri kompleks tentang sumber daya yang menampilkan pemilihan bidang, pemfilteran, dan ringkasan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $response = Search-AzGraph -Query "project id, name, type, location" -First 2
 Search-AzGraph -Query "project id, name, type, location" -SkipToken $response.SkipToken
@@ -94,7 +97,7 @@ location   : westeurope
 ResourceId : /subscriptions/1ef51df4-f8a9-4b69-9919-1ef51df4eff6/resourceGroups/test/providers/Microsoft.Network/networkSecurityGroups/17nsg
 ```
 
-Kueri dengan token lewati yang diteruskan dari hasil kueri sebelumnya. Harap dicatat bahwa menyimpan id dalam hasil wajib untuk mendapatkan kembali token lompati.
+Kueri dengan token lewati yang diteruskan dari hasil kueri sebelumnya. Harap dicatat bahwa menyimpan id dalam hasil adalah wajib untuk mendapatkan kembali token lompati.
 
 ### Contoh 4
 ```powershell
@@ -123,7 +126,7 @@ N adalah jumlah maksimum langganan yang dapat diproses oleh server.
 ## PARAMETERS
 
 ### -AllowPartialScope
-Menunjukkan apakah kueri harus berhasil ketika hanya sebagian langganan di bawahnya yang dapat diproses oleh server
+Menunjukkan apakah kueri harus berhasil ketika hanya sebagian jumlah langganan di bawahnya yang dapat diproses oleh server
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Token lom yang digunakan untuk mendapatkan halaman hasil berikutnya jika berlaku.
+Token lewati yang digunakan untuk mendapatkan halaman hasil berikutnya jika berlaku.
 
 ```yaml
 Type: System.String

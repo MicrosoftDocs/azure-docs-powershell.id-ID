@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
-ms.openlocfilehash: c273163b2851801184a15b795bd3daf5bcab8540
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 814deb0b0285bf6f42dd1b43d3c15531bc552727
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111473"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644124"
 ---
 # Invoke-AzResourceMoverPrepare
 
 ## SYNOPSIS
-Memulai persiapan untuk set sumber daya yang disertakan dalam isi permintaan.
-Operasi persiapan ada di moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Memulai persiapan untuk serangkaian sumber daya yang disertakan dalam isi permintaan.
+Operasi persiapan ada di moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverprepare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,9 +31,9 @@ Invoke-AzResourceMoverPrepare -MoveCollectionName <String> -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Memulai persiapan untuk set sumber daya yang disertakan dalam isi permintaan.
-Operasi persiapan ada di moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', pada penyelesaian yang berhasil, moveResource moveState melakukan transisi ke MovePending.
-Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
+Memulai persiapan untuk serangkaian sumber daya yang disertakan dalam isi permintaan.
+Operasi persiapan ada di moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', pada penyelesaian yang berhasil moveResource moveState melakukan transisi ke MovePending.
+Untuk membantu pengguna prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ SourceId
 Validasi dependek sebelum menyiapkan sumber daya.
 Dapatkan sumber daya dependen yang diperlukan yang juga perlu disiapkan.
 
-### Contoh 2: Memulai persiapan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input.
+### Contoh 2: Mulai persiapan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input.
 ```powershell
 Invoke-AzResourceMoverPrepare -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('PSDemoVM','psdemovm111', 'PSDemoRM-vnet','PSDemoVM-nsg')
 ```
@@ -88,9 +91,9 @@ StartTime      : 2/9/2021 10:55:53 AM
 Status         : Succeeded
 ```
 
-Mulai persiapan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "Nama MoveResource" sebagai input.
+Mulai bersiaplah untuk kumpulan sumber daya dalam Koleksi Pemindahan menggunakan "Nama MoveResource" sebagai input.
 
-### Contoh 3: Memulai persiapan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "SourceARMID".
+### Contoh 3: Mulai persiapan untuk kumpulan sumber daya dalam Koleksi Pemindahan menggunakan "SourceARMID".
 ```powershell
 Invoke-AzResourceMoverPrepare -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -MoveResourceInputType MoveResourceSourceId  -MoveResource $('/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/PSDemoRMS/providers/Microsoft.Network/networkSecurityGroups/PSDemoVM-nsg')
 ```
@@ -110,7 +113,7 @@ Status         : Succeeded
 
 ```
 
-Mulai persiapan untuk set sumber daya dalam Kumpulan Pemindahan menggunakan "SourceARMID".
+Mulai persiapan untuk kumpulan sumber daya dalam Kumpulan Pemindahan menggunakan "SourceARMID".
 
 ## PARAMETERS
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar ID sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar Id sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]

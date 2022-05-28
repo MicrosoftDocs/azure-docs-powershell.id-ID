@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyMetadata.md
-ms.openlocfilehash: 3d50adbd9b96fc1cd8a9767cfffa0e6549d442c0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aebb1c95f97490085a692ac3e4a13d798eb12971
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210290"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659064"
 ---
 # Get-AzPolicyMetadata
 
 ## SYNOPSIS
 Mendapatkan sumber daya Metadata Kebijakan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicymetadata) untuk informasi terbaru.
 
 ## SYNTAX
 

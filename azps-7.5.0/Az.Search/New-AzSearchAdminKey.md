@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/new-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchAdminKey.md
-ms.openlocfilehash: cacc416389d11813af9003b8e1b44a344bfbd5a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 86fc80abe98fdc707ddabd3a401ffed268e9a68b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185368"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637828"
 ---
 # New-AzSearchAdminKey
 
 ## SYNOPSIS
 Meregenerasi kunci admin layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/new-azsearchadminkey) untuk informasi terbaru.
 
 ## SYNTAX
 

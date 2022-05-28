@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLink.md
-ms.openlocfilehash: f0b1b02bf43b3081e8e231ad6aa31aee234a7ed3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70828eb52c2f2b88a3c172e6e43acc482a185d71
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189971"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672132"
 ---
 # New-AzVpnSiteLink
 
 ## SYNOPSIS
 Membuat objek Azure VpnSiteLink.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsitelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $vpnSiteLink = New-AzVpnSiteLink -Name "testVpnSiteLink1" -IpAddress "15.25.35.4
 $vpnSite = New-AzVpnSite -ResourceGroupName "testRG" -Name "testVpnSite" -Location "West US" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink)
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN dan VpnSite dengan 1 VpnSiteLinks di US Barat dalam grup sumber daya "testRG" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, dan VpnSite dengan 1 VpnSiteLinks di US Barat dalam grup sumber daya "testRG" di Azure.
 
 ### Contoh 2
 
