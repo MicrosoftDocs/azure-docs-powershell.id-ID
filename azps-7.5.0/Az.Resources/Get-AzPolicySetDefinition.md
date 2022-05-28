@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicySetDefinition.md
-ms.openlocfilehash: 78d163524e2e5af117320d2f7479004255904d93
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d598af5435ac0551bcd0dbdcb587c854e7d27f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230282"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642850"
 ---
 # Get-AzPolicySetDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi set kebijakan.
+Mendapatkan definisi kumpulan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicysetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,19 +63,19 @@ Cmdlet **Get-AzPolicySetDefinition** mendapatkan kumpulan definisi kumpulan kebi
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua definisi set kebijakan
+### Contoh 1: Mendapatkan semua definisi kumpulan kebijakan
 ```powershell
 Get-AzPolicySetDefinition
 ```
 
-Perintah ini mendapatkan semua definisi set kebijakan.
+Perintah ini mendapatkan semua definisi kumpulan kebijakan.
 
-### Contoh 2: Mendapatkan definisi kumpulan kebijakan dari langganan saat ini menurut nama
+### Contoh 2: Mendapatkan definisi kumpulan kebijakan dari langganan saat ini berdasarkan nama
 ```powershell
 Get-AzPolicySetDefinition -Name 'VMPolicySetDefinition'
 ```
 
-Perintah ini mendapatkan definisi set kebijakan bernama VMPolicySetDefinition dari langganan default saat ini.
+Perintah ini mendapatkan definisi kumpulan kebijakan bernama VMPolicySetDefinition dari langganan default saat ini.
 
 ### Contoh 3: Mendapatkan definisi kumpulan kebijakan dari langganan menurut nama
 ```powershell
@@ -86,14 +89,14 @@ Perintah ini mendapatkan definisi kebijakan bernama VMPolicySetDefinition dari l
 Get-AzPolicySetDefinition -ManagementGroupName 'Dept42' -Custom
 ```
 
-Perintah ini mendapatkan semua definisi kumpulan kebijakan kustom dari grup manajemen bernama Dept42.
+Perintah ini mendapatkan semua definisi set kebijakan kustom dari grup manajemen bernama Dept42.
 
-### Contoh 5: Mendapatkan definisi set kebijakan dari kategori tertentu
+### Contoh 5: Mendapatkan definisi kumpulan kebijakan dari kategori tertentu
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Virtual Machine"}
 ```
 
-Perintah ini mendapatkan semua definisi set kebijakan dalam kategori "Komputer Virtual".
+Perintah ini mendapatkan semua definisi kumpulan kebijakan dalam kategori "Komputer Virtual".
 
 ## PARAMETERS
 
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi set kebijakan yang akan didapatkan.
+Nama grup manajemen definisi kumpulan kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -216,8 +219,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

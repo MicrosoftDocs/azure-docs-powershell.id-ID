@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
-ms.openlocfilehash: a5477324950939656b2b9764ad6dfbbd6692fb9d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7bc68bac932b911f4236c01bc45d041631d7fb41
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233765"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642472"
 ---
 # Get-AzResourceProvider
 
 ## SYNOPSIS
 Mendapatkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

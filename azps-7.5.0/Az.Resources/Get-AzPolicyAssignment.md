@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
-ms.openlocfilehash: ae798ed937c0165ce5cc43af75fb56c196c68999
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c45067782014e9d8ab375d9242541b8cf9f3a003
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111377"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642976"
 ---
 # Get-AzPolicyAssignment
 
 ## SYNOPSIS
 Mendapatkan penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
