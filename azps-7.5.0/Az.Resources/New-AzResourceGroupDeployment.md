@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
-ms.openlocfilehash: af25a9779a5ee4775ca2e9e7c923ef33b0adac86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eba9b0a22539cb82c1a72dfa8cc79ba83d8749c0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228585"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641104"
 ---
 # New-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Menambahkan penyebaran Azure ke grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -216,7 +219,7 @@ Perintah ini membuat penyebaran baru dengan menggunakan file kustom dan templat 
 Dua perintah pertama membaca teks untuk file templat pada disk dan mengonversinya menjadi hashtable dalam memori.
 Perintah terakhir menggunakan parameter *TemplateObject* untuk menentukan parameter hashtable dan *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 
-### Contoh 3
+### Contoh: 3
 
 Menambahkan penyebaran Azure ke grup sumber daya. (dibuat otomatis)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
-ms.openlocfilehash: 7394c6294eac90e7ea9570bc81d00f2e015506a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: beaadb73b16ab1bb5acb9619eb331aecd216133a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206210"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635110"
 ---
 # Set-AzIotSecuritySolution
 
 ## SYNOPSIS
 Membuat atau memperbarui solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Set-AzIotSecuritySolution -ResourceId <String> [-Tag <Hashtable>] -Location <Str
 
 ## DESCRIPTION
 Cmdlet Set-AzIotSecuritySolution membuat atau memperbarui solusi keamanan iot tertentu. Solusi keamanan IoT mengumpulkan data keamanan dan peristiwa dari perangkat iot dan iot hub untuk membantu mencegah dan mendeteksi ancaman.
-Nama solusi keamanan iot harus identik dengan nama hub iot.
+Nama solusi keamanan iot harus identik dengan nama iot hub.
 
 ## EXAMPLES
 
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnmaskedIpLoggingStatus
-Status pengelogan ip yang tidak dimasuki.
+Status pencatatan ip yang tidak dimasuki.
 
 ```yaml
 Type: System.String

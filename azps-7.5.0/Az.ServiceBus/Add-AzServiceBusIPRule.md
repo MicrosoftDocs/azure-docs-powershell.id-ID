@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/add-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Add-AzServiceBusIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Add-AzServiceBusIPRule.md
-ms.openlocfilehash: 95fdcd1450089d106931156c10af98939b98eb75
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 55b83d099bc5de672140f9361a336004fb07ff02
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186726"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633742"
 ---
 # Add-AzServiceBusIPRule
 
 ## SYNOPSIS
 Menambahkan satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/add-azservicebusiprule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,17 +44,17 @@ Menambahkan satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
 ```powershell
 Add-AzServiceBusIPRule -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-2389 -IpMask "11.22.33.44" -Action Allow
 ```
-Nama : defaultAction : Allow Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Izinkan} VirtualNetworkRules : 
+Nama : default DefaultAction : Allow Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
 
-tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Memungkinkan namespace layanan yang diberikan.
+tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Memungkinkan beku namespace yang diberikan.
 
 ### Contoh 2
 ```powershell
 Add-AzServiceBusIPRule -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-2389 -IpRuleObject $ipruleObject
 ```
-Nama : defaultAction : Allow Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Izinkan} VirtualNetworkRules : 
+Nama : default DefaultAction : Allow Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
 
-tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Memungkinkan namespace layanan yang diberikan.
+tambahkan IPRule dengan IpMask "11.22.33.44" dan Tindakan Memungkinkan beku namespace yang diberikan.
 
 ## PARAMETERS
 

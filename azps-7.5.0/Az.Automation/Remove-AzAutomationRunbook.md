@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationRunbook.md
-ms.openlocfilehash: 7ac1482fc1b259d632dd72df486e6de1d8ea5eeb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3ef5f082d7a4e02039931f39b6559ab05332c835
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186555"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628018"
 ---
 # Remove-AzAutomationRunbook
 
 ## SYNOPSIS
 Menghapus runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroupSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroupSubscription.md
-ms.openlocfilehash: c062008cd9549c1c2c24f6e548442e1b824dc3ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dddae9c6802b196c190ade61f7aa2b7e5b315ca5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189526"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640024"
 ---
 # Remove-AzManagementGroupSubscription
 
 ## SYNOPSIS
 Menghapus Langganan dari Grup Manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azmanagementgroupsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan langganan yang terkait dengan manajemen
+Id Langganan langganan yang terkait dengan manajemen
 
 ```yaml
 Type: System.Guid

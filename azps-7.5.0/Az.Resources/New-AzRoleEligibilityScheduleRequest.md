@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleEligibilityScheduleRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleEligibilityScheduleRequest.md
-ms.openlocfilehash: 2a3fc1171a29bdce9c9c533d08c06596150401d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 934ec877246f3021e8bb4dd16ce516da58ea4f4a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200079"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640834"
 ---
 # New-AzRoleEligibilityScheduleRequest
 
 ## SYNOPSIS
 Membuat permintaan jadwal kelayakan peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroleeligibilityschedulerequest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Membuat permintaan jadwal kelayakan peran.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat permintaan jadwal eligibile peran baru sebagai Admin
+### Contoh 1: Buat permintaan jadwal eligibile peran baru sebagai Admin
 ```powershell
 PS C:\> $guid = "12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca"
 PS C:\> $startTime = Get-Date -Format o 
@@ -46,7 +49,7 @@ Name                                 Type                                       
 12f8978c-5d8d-4fbf-b4b6-2f43eeb43eca Microsoft.Authorization/roleEligibilityScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authori…
 ```
 
-Membuat permintaan untuk menyediakan penugasan `roleDefinition` yang memenuhi syarat pada `scope` untuk yang ditentukan `principal`
+Membuat permintaan untuk memprovisikan penugasan `roleDefinition` yang memenuhi syarat pada `scope` untuk yang ditentukan `principal`
 
 ### Contoh 2: Menghapus permintaan jadwal eligibile peran sebagai Admin
 ```powershell
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationEndDateTime
-Akhiri TanggalWaktu jadwal kelayakan peran.
+Tanggal Selesai dari jadwal kelayakan peran.
 
 ```yaml
 Type: System.DateTime
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Justification
-Pembenaran untuk kelayakan peran
+Justifikasi untuk kelayakan peran
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleInfoStartDateTime
-Mulai DateTime dari jadwal kelayakan peran.
+Mulai TanggalWaktu jadwal kelayakan peran.
 
 ```yaml
 Type: System.DateTime

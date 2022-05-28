@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloud.md
-ms.openlocfilehash: dc8c68e76b77a8b30cabafddeaea281f434365fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7aaba8720f2081773b9aebc33e8c7402e8e7bbbf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214739"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145629188"
 ---
 # New-AzSpringCloud
 
 ## SYNOPSIS
 Buat Layanan baru atau perbarui Layanan yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/new-azspringcloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Trace                                            : Microsoft.Azure.PowerShell.Cm
 TraceError                                       : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.Error
 ```
 
-Buat layanan spring cloud.
+Membuat layanan spring cloud.
 
 ## PARAMETERS
 

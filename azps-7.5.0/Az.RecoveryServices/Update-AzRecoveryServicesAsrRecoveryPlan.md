@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: 989a19900b197ac9bd1a52796c8421fc797dba45
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b78c0466a6cdb968eacb9cb3310b943ddb9580f3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220238"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647094"
 ---
 # Update-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
 Memperbarui konten rencana pemulihan Azure Site.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
 
 ## SYNTAX
 

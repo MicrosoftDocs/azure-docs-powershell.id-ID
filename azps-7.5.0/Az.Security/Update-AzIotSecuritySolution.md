@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Update-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Update-AzIotSecuritySolution.md
-ms.openlocfilehash: 7cda4282f86ec29c26c0085478bfbe7ed654724b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a46806bda858c07038845ecde02e979e077526d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223775"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634606"
 ---
 # Update-AzIotSecuritySolution
 
 ## SYNOPSIS
 Perbarui satu atau beberapa properti berikut dalam solusi keamanan IoT: tag, konfigurasi rekomendasi, sumber daya yang ditentukan pengguna
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/update-aziotsecuritysolution) untuk informasi terbaru.
 
 ## SYNTAX
 

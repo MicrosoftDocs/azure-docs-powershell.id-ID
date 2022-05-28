@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleTemplate.md
-ms.openlocfilehash: f8aee55740b08e6b899c67b826f93d31a88835c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ee7002398d65cbf73782f25031e6b696f5b63cb0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185354"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634516"
 ---
 # Get-AzSentinelAlertRuleTemplate
 
 ## SYNOPSIS
 Mendapatkan Templat Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertruletemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ $AlertRuleTemplate = Get-AzSentinelAlertRuleTemplate -ResourceGroupName "MyResou
 
 Contoh ini mendapatkan **AlertRuleTemplate** tertentu di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRuleTemplate.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSentinelAlertRuleTemplate @SentinelConnection | Where-Object {$_.Kind -eq "Scheduled"}
 ```

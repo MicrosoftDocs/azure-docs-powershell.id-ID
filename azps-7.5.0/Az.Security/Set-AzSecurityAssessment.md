@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessment.md
-ms.openlocfilehash: 3e911649e10091a4b19a5e1d43f7a30237ccffb1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 306c4674a6abf55a713c77123a32abed04c16479
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221786"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634966"
 ---
 # Set-AzSecurityAssessment
 
 ## SYNOPSIS
 Membuat atau memperbarui hasil penilaian keamanan pada sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecurityassessment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Menandai hasil langganan sebagai "Tidak Sehat" untuk penilaian jenis "4FB6C0A0-1
 ## PARAMETERS
 
 ### -AdditionalData
-Data yang melekat pada hasil penilaian untuk penyelidikan atau kejelasan status yang lebih baik.
+Data yang dilampirkan ke hasil penilaian untuk penyelidikan atau kejelasan status yang lebih baik.
 
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]

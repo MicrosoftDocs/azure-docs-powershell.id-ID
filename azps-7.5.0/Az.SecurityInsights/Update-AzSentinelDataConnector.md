@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
-ms.openlocfilehash: d55b604025cd37c2812a3b7dba6a15d5d1f0bdf3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a06ac99d4bd6cd4562beea39450acec78f73cdb8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186807"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633796"
 ---
 # Update-AzSentinelDataConnector
 
 ## SYNOPSIS
 Memperbarui Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentineldataconnector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Konektor Data Exchange
+Exchange Konektor Data
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePoint
-Konektor Data SharePoint
+SharePoint Konektor Data
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Teams
-Konektor Data Teams
+Teams Konektor Data
 
 ```yaml
 Type: System.String

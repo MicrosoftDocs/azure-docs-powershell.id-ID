@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
-ms.openlocfilehash: 8c3ed7bd2120a3df71b8061b605ab8e2089fcc4d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: faf8f23fc864478dcf010905fa232dffef313c88
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634372"
 ---
 # New-AzSentinelAlertRule
 
 ## SYNOPSIS
 Membuat Aturan Analitik (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -Works
 
 Contoh ini membuat **AlertRule** dari jenis *MicrosoftSecurityIncidentCreation* berdasarkan templat untuk *Membuat insiden berdasarkan Azure Security Center untuk pemberitahuan IoT*, lalu menyimpannya di $AlertRule dapat bervariasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Scheduled -Enabled -DisplayName "Powershell Exection Alert (Several Times per Hour)" -Severity Low -Query "SecurityEvent | where EventId == 4688" -QueryFrequency (New-TimeSpan -Hours 1) -QueryPeriod (New-TimeSpan -Hours 1) -TriggerThreshold 10
 ```

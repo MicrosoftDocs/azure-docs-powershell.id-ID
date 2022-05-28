@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: 0093e3ffe31cd10099ef791e672680a063a3ecfe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 41e8f265932f46e52afd99aed6699aef830319c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188333"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635326"
 ---
 # Remove-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
 Menghapus metadata penilaian keamanan dari langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azsecurityassessmentmetadata) untuk informasi terbaru.
 
 ## SYNTAX
 

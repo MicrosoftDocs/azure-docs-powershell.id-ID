@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
-ms.openlocfilehash: 295e8764f8f5db43bc35b1e164911f693992752d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6c7d0b6058f914c7ffcf0f0d11721e267bd570f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220190"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646860"
 ---
 # Get-AzRedisCache
 
 ## SYNOPSIS
 Mendapatkan Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/get-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ Get-AzRedisCache -ResourceGroupName "myGroup"
 
 Perintah ini mendapatkan setiap Redis Cache dalam grup sumber daya yang ditentukan.
 
-### Contoh 3: Mendapatkan setiap Redis Cache dalam langganan saat ini
+### Contoh 3: Dapatkan setiap Redis Cache di langganan saat ini
 ```powershell
 Get-AzRedisCache
 ```

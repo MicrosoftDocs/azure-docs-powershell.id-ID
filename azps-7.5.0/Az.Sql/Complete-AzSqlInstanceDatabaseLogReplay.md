@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Complete-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Complete-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Complete-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: 4c044c03ccc129fa225a56c283e72d1870fae3e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c52e66bc5d7a45b82956b13d8163cdc992b84170
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237601"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628684"
 ---
 # Complete-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
 Menyelesaikan layanan Pemutaran Ulang Log untuk database tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/complete-azsqlinstancedatabaselogreplay) untuk informasi terbaru.
 
 ## SYNTAX
 

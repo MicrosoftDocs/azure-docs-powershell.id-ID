@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
-ms.openlocfilehash: a5b4ca6a7413dce0943bcfee38b8088de8c33687
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23edc8e8b68629ac79150bf5341bb8e34e9d227d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211955"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633815"
 ---
 # Update-AzSentinelBookmark
 
 ## SYNOPSIS
 Memperbarui Bookmark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Update-AzSentinelBookmark -ResourceId <String> [-DisplayName <String>]
 
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelBookmark** memperbarui bookmark di ruang kerja yang ditentukan.
-Anda dapat meneruskan objek **Bookmark** sebagai parameter atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *BookmarkId* yang diperlukan.
+Anda dapat meneruskan objek **Bookmark** sebagai parameter atau dengan menggunakan operator alur, atau anda dapat menentukan parameter *BookmarkId* yang diperlukan.
 Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
@@ -55,7 +58,7 @@ Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Wi
 Update-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceNAme" -BookmarkId "MyBookmarkId" -Notes "Found something interesting"
 ```
 
-Perintah memperbarui Bookmark dengan mengatur properti *Catatan* .  Semua properti lainnya tetap sama.
+Perintah memperbarui Bookmark dengan mengatur properti *Notes* .  Semua properti lainnya tetap sama.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ $Bookmark | Set-AzSentinelBookmark -Notes "Found something interesting"
 ```
 
 Perintah pertama mendapatkan Bookmark by *BookmarkId* dari ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $Bookmark.
-Perintah kedua memperbarui properti Catatan. Semua properti lainnya tetap sama.
+Perintah kedua memperbarui properti Notes. Semua properti lainnya tetap sama.
 
 ## PARAMETERS
 

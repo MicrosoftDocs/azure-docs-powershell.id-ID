@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
-ms.openlocfilehash: 993f3d820a9b25a00bce6eeb2e5d1b02b2e45aa3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87921858d79456655710c98bd589a7aaedcd97d0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196092"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640879"
 ---
 # New-AzRoleDefinition
 
 ## SYNOPSIS
 Membuat peran kustom di Azure RBAC.
 Berikan file definisi peran JSON atau objek PSRoleDefinition sebagai input.
-Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran garis besar.
+Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran dasar.
 Kemudian, ubah propertinya sesuai kebutuhan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,19 +43,19 @@ Berikan definisi peran sebagai input ke perintah sebagai file JSON atau objek PS
 Definisi peran input HARUS berisi properti berikut:
 1) DisplayName: nama peran kustom
 2) Deskripsi: deskripsi singkat tentang peran yang meringkas akses yang diberikan peran.
-3) Tindakan: kumpulan operasi yang diberikan akses oleh peran kustom.
+3) Tindakan: kumpulan operasi tempat peran kustom memberikan akses.
 Gunakan Get-AzProviderOperation untuk mendapatkan operasi untuk penyedia sumber daya Azure yang dapat diamankan menggunakan Azure RBAC.
 Berikut ini adalah beberapa string operasi yang valid:
  - "*/read" memberikan akses ke operasi baca dari semua penyedia sumber daya Azure.
  - "Microsoft.Network/*/read" memberikan akses ke operasi baca untuk semua jenis sumber daya di penyedia sumber daya Microsoft.Network Azure.
  - "Microsoft.Compute/virtualMachines/*" memberikan akses ke semua operasi komputer virtual dan jenis sumber daya anaknya.
 4) AssignableScopes: kumpulan cakupan (langganan Azure atau grup sumber daya) tempat peran kustom akan tersedia untuk penugasan.
-Menggunakan AssignableScopes, Anda dapat membuat peran kustom tersedia untuk penugasan hanya dalam langganan atau grup sumber daya yang membutuhkannya, dan tidak mengacaukan pengalaman pengguna untuk langganan atau grup sumber daya lainnya.
+Menggunakan AssignableScopes, Anda dapat membuat peran kustom tersedia untuk penetapan hanya dalam langganan atau grup sumber daya yang membutuhkannya, dan tidak mengacaukan pengalaman pengguna untuk langganan atau grup sumber daya lainnya.
 Berikut ini adalah beberapa cakupan yang dapat ditetapkan yang valid:
  - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624": membuat peran tersedia untuk penugasan dalam dua langganan.
  - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e": membuat peran tersedia untuk penugasan dalam satu langganan.
- - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": membuat peran tersedia untuk penugasan hanya dalam grup sumber daya Jaringan.
-Definisi peran input MAY berisi properti berikut:
+ - "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network": membuat peran hanya tersedia untuk penugasan di grup sumber daya Jaringan.
+Definisi peran input MUNGKIN berisi properti berikut:
 1) NotActions: kumpulan operasi yang harus dikecualikan dari Tindakan untuk menentukan tindakan efektif untuk peran kustom.
 Jika ada operasi tertentu yang tidak ingin Anda berikan aksesnya dalam peran kustom, lebih mudah untuk menggunakan NotActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
 2) DataActions: kumpulan operasi data tempat peran kustom memberikan akses.
@@ -60,7 +63,7 @@ Jika ada operasi tertentu yang tidak ingin Anda berikan aksesnya dalam peran kus
 Jika ada operasi data tertentu yang tidak ingin Anda berikan aksesnya dalam peran kustom, lebih mudah untuk menggunakan NotDataActions untuk mengecualikannya, daripada menentukan semua operasi selain operasi tertentu dalam Tindakan.
 CATATAN: Jika pengguna diberi peran yang menentukan operasi di NotActions dan juga diberi peran lain memberikan akses ke operasi yang sama - pengguna akan dapat melakukan operasi tersebut.
 NotActions bukan aturan tolak - ini hanyalah cara mudah untuk membuat serangkaian operasi yang diizinkan ketika operasi tertentu perlu dikecualikan.
-Berikut ini adalah contoh definisi peran json yang dapat disediakan sebagai input { "Name": "Updated Role", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang komputer virtual", "Tindakan": \[ "*/baca", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxx"\] }
+Berikut ini adalah contoh definisi peran json yang dapat disediakan sebagai input { "Name": "Updated Role", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang komputer virtual", "Tindakan": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxx"\] }
 
 ## EXAMPLES
 
