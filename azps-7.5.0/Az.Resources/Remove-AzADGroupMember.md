@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
-ms.openlocfilehash: a21f8d78a878144279e81e7f0b0a194a713aaf84
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: b1bbcda3c061d4cbea680861bec04103cebacbba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144676438"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640404"
 ---
 # Remove-AzADGroupMember
 
@@ -21,6 +21,9 @@ Dapat diubah ke null.
 Mendukung $expand.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadgroupmember) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzDeployment.md
-ms.openlocfilehash: 06f0f72a7abcff633e096dd8f7ff276ff774b08b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4b56e35e8aa7678a30d7f8893e3aa6d1c1aaa68
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198864"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641509"
 ---
 # New-AzDeployment
 
 ## SYNOPSIS
 Membuat penyebaran
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -158,7 +161,7 @@ New-AzDeployment [-Name <String>] -Location <String> [-DeploymentDebugLogLevel <
 Cmdlet **New-AzDeployment** menambahkan penyebaran pada cakupan langganan saat ini.
 Ini termasuk sumber daya yang diperlukan penyebaran.
 
-Sumber daya Azure adalah entitas Azure yang dikelola pengguna. Sumber daya dapat hidup dalam grup sumber daya, seperti server database, database, situs web, komputer virtual, atau akun Storage.
+Sumber daya Azure adalah entitas Azure yang dikelola pengguna. Sumber daya dapat berada di grup sumber daya, seperti server database, database, situs web, komputer virtual, atau akun Storage.
 Atau, itu bisa menjadi sumber daya tingkat langganan, seperti definisi peran, definisi kebijakan, dll.
 
 Untuk menambahkan sumber daya ke grup sumber daya, gunakan **New-AzResourceGroupDeployment** yang membuat penyebaran di grup sumber daya.
@@ -166,11 +169,11 @@ Cmdlet **New-AzDeployment** membuat penyebaran di cakupan langganan saat ini, ya
 
 Untuk menambahkan penyebaran di langganan, tentukan lokasi dan templat.
 Lokasi memberi tahu Azure Resource Manager tempat menyimpan data penyebaran. Templat adalah string JSON yang berisi sumber daya individual yang akan disebarkan.
-Templat mencakup tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
+Templat menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 
 Untuk menggunakan templat kustom untuk penyebaran, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai untuk parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
+Untuk menentukan nilai parameter templat, tentukan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
 Atau, Anda dapat menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
 Untuk menggunakan parameter dinamis, ketikkan pada prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan gunakan tombol Tab untuk menelusuri parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan daripada nilai dalam objek atau file parameter templat.
@@ -182,16 +185,16 @@ Nilai parameter templat yang Anda masukkan di prompt perintah lebih diutamakan d
 New-AzDeployment -Location "West US" -TemplateFile "D:\Azure\Templates\EngineeringSite.json" -TemplateParameterFile "D:\Azure\Templates\EngSiteParms.json" -TemplateVersion "2.1" -Tag @{"key1"="value1"; "key2"="value2";}
 ```
 
-Perintah ini membuat penyebaran baru pada cakupan langganan saat ini dengan menggunakan templat kustom dan file templat pada disk, dengan parameter tag yang ditentukan.
+Perintah ini membuat penyebaran baru di cakupan langganan saat ini dengan menggunakan templat kustom dan file templat pada disk, dengan parameter tag yang ditentukan.
 Perintah ini menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 Ini menggunakan parameter *TemplateVersion* untuk menentukan versi templat.
 
-### Contoh 2: Menyebarkan templat yang disimpan di akun penyimpanan non publik menggunakan token uri dan SAS
+### Contoh 2: Menyebarkan templat yang disimpan di akun penyimpanan non-publik menggunakan token uri dan SAS
 ```powershell
 New-AzDeployment -Location "West US" -TemplateUri "https://example.com/example.json" -QueryString "foo"
 ```
 
-Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak publik dan memerlukan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
+Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak bersifat publik dan memerlukan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
 Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo`.
 Ini dapat digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai QueryString
 
@@ -202,7 +205,7 @@ $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 New-AzDeployment -Location "West US" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json" -TemplateVersion "2.1"
 ```
 
-Perintah ini membuat penyebaran baru di cakupan langganan saat ini dengan menggunakan templat kustom dan file templat pada disk yang telah dikonversi ke hashtable dalam memori.
+Perintah ini membuat penyebaran baru pada cakupan langganan saat ini dengan menggunakan templat kustom dan file templat pada disk yang telah dikonversi ke hashtable dalam memori.
 Dua perintah pertama membaca teks untuk file templat pada disk dan mengonversinya menjadi hashtable dalam memori.
 Perintah terakhir menggunakan parameter *TemplateObject* untuk menentukan hashtable ini dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
 Ini menggunakan parameter *TemplateVersion* untuk menentukan versi templat.
@@ -284,8 +287,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat. Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat. Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -465,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Jenis perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Jenis perubahan sumber daya yang dipisahkan koma yang akan dikecualikan dari hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]

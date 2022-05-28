@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTag.md
-ms.openlocfilehash: f4558c56ac72759a1f6cda991b8fb1ba821f99b7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 599d8cf47af90479c8c26693c2a340a8d4ab85d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109644"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642000"
 ---
 # Get-AzTag
 
 ## SYNOPSIS
-Mendapatkan tag Azure yang telah ditentukan sebelumnya | Mendapatkan seluruh set tag pada sumber daya atau langganan.
+Mendapatkan tag Azure yang telah ditentukan sebelumnya | Mendapatkan seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,12 +35,12 @@ Get-AzTag -ResourceId <String> [-DefaultProfile <IAzureContextContainer>] [<Comm
 
 ## DESCRIPTION
 
-**GetPredefinedTagSet**: Cmdlet **Get-AzTag** mendapatkan tag Azure yang telah ditentukan sebelumnya dalam langganan Anda.
+**GetPredefinedTagSet**: Cmdlet **Get-AzTag** mendapatkan tag Azure yang telah ditentukan sebelumnya di langganan Anda.
 Cmdlet ini mengembalikan informasi dasar tentang tag atau informasi terperinci tentang tag dan nilainya.
 Semua objek output menyertakan properti Hitungan yang mewakili jumlah sumber daya dan grup sumber daya tempat tag dan nilai telah diterapkan.
-Modul Azure Tags yang **get-AzTag** adalah bagian dari dapat membantu Anda mengelola tag Azure yang telah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya Azure dan grup sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Modul Tag Azure yang merupakan bagian dari **Get-AzTag** dapat membantu Anda mengelola tag Azure yang telah ditentukan sebelumnya.
+Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag di langganan Anda.
 Untuk membuat tag yang telah ditentukan sebelumnya, gunakan cmdlet New-AzTag.
 Untuk menerapkan tag yang telah ditentukan sebelumnya ke grup sumber daya, gunakan parameter *Tag* cmdlet New-AzTag.
 Untuk mencari grup sumber daya untuk nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* cmdlet Get-AzResourceGroup.
@@ -46,7 +49,7 @@ Untuk mencari grup sumber daya untuk nama atau nama dan nilai tag tertentu, guna
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua tag yang telah ditentukan sebelumnya
+### Contoh 1: Dapatkan semua tag yang telah ditentukan sebelumnya
 ```powershell
 Get-AzTag
 ```
@@ -83,7 +86,7 @@ Values:
 Perintah ini mendapatkan informasi terperinci tentang tag Departemen dan nilainya.
 Properti Hitung memperlihatkan berapa kali tag dan setiap nilainya telah diterapkan ke sumber daya dan grup sumber daya dalam langganan.
 
-### Contoh 3: Mendapatkan nilai dari semua tag
+### Contoh 3: Mendapatkan nilai semua tag
 ```powershell
 Get-AzTag -Detailed
 ```
@@ -136,7 +139,7 @@ Properties :
              tagKey2  tagValue2
 ```
 
-Perintah ini mendapatkan seluruh kumpulan tag pada langganan dengan {subId}.
+Perintah ini mendapatkan seluruh set tag pada langganan dengan {subId}.
 
 ### Contoh 5: Mendapatkan seluruh set tag pada sumber daya
 
@@ -155,7 +158,7 @@ Properties :
              Status   Normal
 ```
 
-Perintah ini mendapatkan seluruh kumpulan tag pada sumber daya dengan {resourceId}.
+Perintah ini mendapatkan seluruh set tag pada sumber daya dengan {resourceId}.
 
 ## PARAMETERS
 

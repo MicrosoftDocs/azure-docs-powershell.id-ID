@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRule.md
-ms.openlocfilehash: cc4476b2d87d23e138feee7b25068112bf03023a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f12697797defb3c1a329e29c0f2a0e41ec5b1323
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211979"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633886"
 ---
 # Update-AzSentinelAlertRule
 
 ## SYNOPSIS
 Memperbarui Aturan Analitik (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Update-AzSentinelAlertRule -InputObject $AlertRule -Disabled
 
 Contoh ini memperbarui **AlertRule** menggunakan pengaturan InputObject ke *Dinonaktifkan*.  Semua properti lainnya akan tetap sama.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $SentinelConnection = @{
     ResourceGroupName = "myResourceGroupName"

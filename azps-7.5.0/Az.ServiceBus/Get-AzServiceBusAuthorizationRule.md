@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: c9540aba45c461a163ebb4b1d2a134468f760888
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 954e38da467b765b9634a3eb42c294194fd3ac8d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188252"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145633652"
 ---
 # Get-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan deskripsi aturan otorisasi yang ditentukan untuk Namespace layanan atau Antrean atau Topik atau Alias tertentu (Konfigurasi GeoDR). 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Get-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Name
 
 Mengembalikan deskripsi aturan otorisasi yang ditentukan untuk antrean tertentu.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
-ms.openlocfilehash: bcf91204420b9623a3c85abce1e7bfaed9566f5a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 144d5bd0d0fbb5fc46cfe279f2d810ec2f32a187
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233656"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641868"
 ---
 # Get-AzTenantDeploymentOperation
 
 ## SYNOPSIS
 Mendapatkan operasi penyebaran untuk penyebaran di cakupan penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztenantdeploymentoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzTenantDeploymentOperation -DeploymentObject <PSDeployment> [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTenantDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran di cakupan penyewa saat ini untuk membantu Anda mengidentifikasi dan memberikan informasi lebih lanjut tentang operasi persis yang gagal untuk penyebaran tertentu.
+Cmdlet **Get-AzTenantDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran di cakupan penyewa saat ini untuk membantu Anda mengidentifikasi dan memberikan informasi lebih lanjut tentang operasi yang tepat yang gagal untuk penyebaran tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan operasi penyebaran dengan nama penyebaran
+### Contoh 1: Mendapatkan operasi penyebaran yang diberi nama penyebaran
 ```powershell
 Get-AzTenantDeploymentOperation -DeploymentName Deploy01
 ```
@@ -48,7 +51,7 @@ Mendapatkan operasi penyebaran dengan nama "Deploy01" di cakupan penyewa saat in
 Get-AzTenantDeployment -Name Deploy01 | Get-AzTenantDeploymentOperation
 ```
 
-Perintah ini mendapatkan penyebaran "Deploy01" di cakupan penyewa saat ini dan mendapatkan operasi penyebarannya.
+Perintah ini mendapatkan penyebaran "Deploy01" pada cakupan penyewa saat ini dan mendapatkan operasi penyebarannya.
 
 ## PARAMETERS
 
@@ -112,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

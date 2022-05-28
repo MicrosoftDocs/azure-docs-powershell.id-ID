@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
-ms.openlocfilehash: 5d81c14c993c5e4f8c9e722839365fa479cf6163
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7422b1124df3d7fcdbd9ab2d0e112a5bac95676e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185242"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634210"
 ---
 # New-AzSentinelDataConnector
 
 ## SYNOPSIS
 Membuat Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentineldataconnector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectory
-Azure Active Directory Konektor Data
+Konektor Data Azure Active Directory
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSecurityCenter
-Azure Security Center Konektor Data
+Konektor Data Azure Security Center
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataConnectorId
-Azure Active Directory Konektor Data
+Konektor Data Azure Active Directory
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Exchange Konektor Data
+Konektor Data Exchange
 
 ```yaml
 Type: System.String
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftCloudAppSecurity
-Microsoft Cloud App Security Konektor Data
+Konektor Data Microsoft Cloud App Security
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -Office365
-Office 365 Konektor Data
+Konektor Data Office 365
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Azure Active Directory Konektor Data
+Konektor Data Azure Active Directory
 
 ```yaml
 Type: System.String
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePoint
-SharePoint Konektor Data
+Konektor Data SharePoint
 
 ```yaml
 Type: System.String
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -Teams
-Teams Konektor Data
+Konektor Data Teams
 
 ```yaml
 Type: System.String
@@ -425,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceName
-Azure Active Directory Konektor Data
+Konektor Data Azure Active Directory
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
-ms.openlocfilehash: 622b85f8d10bca4bfa24a35466864fd0699fe583
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3487a837b1e44e47cf24fe9fe929af79921ac115
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185172"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634102"
 ---
 # Remove-AzSentinelAlertRule
 
 ## SYNOPSIS
 Menghapus Aturan Analitik (AlertRule)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 

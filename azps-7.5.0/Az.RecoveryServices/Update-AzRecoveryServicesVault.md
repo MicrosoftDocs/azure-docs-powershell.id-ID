@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
-ms.openlocfilehash: bd696ad3f2f437877dbccaa0f9459471e52903d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e053dd21d4c220e6ba5710a5190e7702ba065913
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220223"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646950"
 ---
 # Update-AzRecoveryServicesVault
 
 ## SYNOPSIS
 Memperbarui MSIdentity ke vault layanan pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzRecoveryServicesVault [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet ini digunakan untuk menambahkan atau menghapus MSI dari vault layanan pemulihan. Gunakan param -IdentityType untuk menambahkan identitas SystemAssigned/UserAssigned ke RSVault. Gunakan switch RemoveSystemAssigned/RemoveUserAssigned untuk menghapus MSI dari vault.
+Cmdlet ini digunakan untuk menambahkan atau menghapus MSI dari vault layanan pemulihan. Gunakan param -IdentityType untuk menambahkan identitas SystemAssigned/UserAssigned ke RSVault. Gunakan sakelar RemoveSystemAssigned/RemoveUserAssigned untuk menghapus MSI dari vault.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Cmdlet pertama mengambil vault layanan pemulihan.
 Cmdlet kedua menghapus identitas SystemAssigned dari vault.
 Cmdlet ketiga mengambil semua MSI pengguna sebagai daftar dari vault.
 Cmdlet keempat menghapus semua MSI pengguna dari vault. Jika mau, Anda dapat memberikan identitas pengguna yang dipilih untuk dihapus sebagai dipisahkan koma, seperti dalam contoh sebelumnya.
-Cmdlet kelima menunjukkan identitas di brankas, saat kami menghapus semua identitas, Jenis ditampilkan sebagai Tidak Ada.
+Cmdlet kelima menunjukkan identitas di vault, saat kami menghapus semua identitas, Jenis ditampilkan sebagai Tidak Ada.
 
 ## PARAMETERS
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveSystemAssigned
-Berikan sakelar ini untuk menghapus SystemAssigned Identity dari vault.
+Berikan sakelar ini untuk menghapus Identitas SystemAssigned dari vault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 
-Menentukan nama grup sumber daya Azure tempat vault layanan pemulihan berada.
+Menentukan nama grup sumber daya Azure tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String

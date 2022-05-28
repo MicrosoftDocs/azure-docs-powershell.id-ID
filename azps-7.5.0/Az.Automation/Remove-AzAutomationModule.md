@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationModule.md
-ms.openlocfilehash: 5c1545b7fd9057f9398bbf6247457c7f515fb19e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c5d91f345770a86c5255fd141c9571efa2652d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186569"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145627982"
 ---
 # Remove-AzAutomationModule
 
 ## SYNOPSIS
 Menghapus modul dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 

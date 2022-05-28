@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: dbf96c1a6cc879ed3b979aeb43d6433dc8db4704
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2989ffd6bd0a9f4d2ad358a2051a7ae47c32634d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185144"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634057"
 ---
 # Remove-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Menghapus Respons Otomatis dari Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 

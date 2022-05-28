@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
-ms.openlocfilehash: 31bb04d3400f48bad6e3321d5397cd659a49b5ad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c047205548449ebfd0eb4c7b2fbb0a13eacaabd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200894"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640960"
 ---
 # New-AzRoleAssignment
 
@@ -26,6 +26,9 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
 - GET /directoryObjects/{id}
 
 Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Untuk menentukan grup keamanan, gunakan parameter objectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau ObjectId.
 Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
 Cakupan di mana akses diberikan dapat ditentukan.
-Ini default ke langganan yang dipilih. Cakupan penugasan dapat ditentukan menggunakan salah satu kombinasi parameter berikut a.
+Ini default ke langganan yang dipilih. Cakupan penugasan dapat ditentukan menggunakan salah satu kombinasi parameter berikut.
 Cakupan - Ini adalah cakupan yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
 ResourceGroupName - untuk memberikan akses ke grup sumber daya yang ditentukan.
 c.
@@ -132,7 +135,7 @@ ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - u
 New-AzRoleAssignment -ResourceGroupName rg1 -SignInName allen.young@live.com -RoleDefinitionName Reader -AllowDelegation
 ```
 
-Memberikan akses peran Pembaca kepada pengguna di cakupan grup sumber daya dengan Penetapan Peran tersedia untuk delegasi
+Memberikan akses peran Pembaca kepada pengguna di cakupan grup sumber daya dengan Penetapan Peran yang tersedia untuk delegasi
 
 ### Contoh 2
 ```powershell
@@ -147,7 +150,7 @@ New-AzRoleAssignment -ObjectId 2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb -RoleDefinit
 
 Memberikan akses ke grup keamanan
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzRoleAssignment -SignInName john.doe@contoso.com -RoleDefinitionName Owner -Scope "/subscriptions/86f81fc3-b00f-48cd-8218-3879f51ff362/resourcegroups/rg1/providers/Microsoft.Web/sites/site1"
 ```
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResource
-Sumber daya induk dalam hierarki(dari sumber daya yang ditentukan menggunakan parameter ResourceName).
+Sumber daya induk dalam hierarki (sumber daya yang ditentukan menggunakan parameter ResourceName).
 Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Membuat penugasan yang efektif pada grup sumber daya yang ditentukan.
+Membuat penugasan yang efektif di grup sumber daya yang ditentukan.
 Saat digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah membuat cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
@@ -358,8 +361,8 @@ Accept wildcard characters: False
 
 ### -ResourceType
 Jenis sumber daya.
-Misalnya, Microsoft.Network/virtualNetworks.
-Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional)ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+Misalnya Microsoft.Network/virtualNetworks.
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional) ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
 
 ```yaml
 Type: System.String

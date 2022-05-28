@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrResynchronizeReplicationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrResynchronizeReplicationJob.md
-ms.openlocfilehash: 2537c3de043efbeca7e64c6677ccfba69a25e4b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9fce5ebb27335e63f3debeeab88976d243db4004
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214943"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647724"
 ---
 # Start-AzRecoveryServicesAsrResynchronizeReplicationJob
 
 ## SYNOPSIS
 Memulai sinkronisasi ulang replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrresynchronizereplicationjob) untuk informasi terbaru.
 
 ## SYNTAX
 

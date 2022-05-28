@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecurityPolicy.md
-ms.openlocfilehash: ce1a919d5ee7e6aff08ef8d2ef5b24a8c8505732
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd64b0d28ad00a65bf9c628988ebec9a270dfd3b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214118"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145628000"
 ---
 # New-AzFrontDoorCdnSecurityPolicy
 
 ## SYNOPSIS
 Membuat kebijakan keamanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnsecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

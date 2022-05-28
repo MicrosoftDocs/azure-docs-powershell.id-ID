@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 3bc724a7518822cb896b8d2303a27f3b3717561b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89015d749391f91f0ae2823d167e939b2b25e56c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647238"
 ---
 # Update-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan replikasi Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -Replicati
 
 Memulai operasi kebijakan pembaruan azure ke replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $currentJob = Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -RecoveryPointRetentionInHours 20
 ```
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 Menentukan interval frekuensi replikasi dalam hitungan detik.
 Nilai yang valid adalah:
 
--  30
+- 30
 - 300
 - 900
 

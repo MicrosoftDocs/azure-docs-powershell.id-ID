@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
-ms.openlocfilehash: cf5f7d4d598ac007f7869da25703d8fe1472d088
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2fbdd8d136c9d0b41d93971ae8dad16ac059b86a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188364"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640798"
 ---
 # New-AzTemplateSpec
 
 ## SYNOPSIS
 Membuat Spesifikasi Templat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzTemplateSpec [-ResourceGroupName] <String> [-Name] <String> -Version <Stri
 ## DESCRIPTION
 Membuat versi Spesifikasi Templat baru dengan konten Templat ARM yang ditentukan. Konten dapat berasal dari string JSON mentah (menggunakan set parameter **FromJsonStringParameterSet** ) atau dari file JSON/Bicep tertentu (menggunakan set parameter **FromJsonFileParameterSet** ).  
 
-Jika Spesifikasi Templat akar belum ada, spesifikasi templat akan dibuat bersama dengan versi Spesifikasi Templat. Jika Spesifikasi Templat sudah ada dengan nama yang diberikan, itu dan versi yang ditentukan akan diperbarui (versi lain yang ada akan dipertahankan).
+Jika Spesifikasi Templat akar belum ada, spesifikasi templat akan dibuat bersama dengan versi Spesifikasi Templat. Jika Spesifikasi Templat sudah ada dengan nama yang diberikan, spesifikasi tersebut dan versi yang ditentukan akan diperbarui (versi lain yang sudah ada akan dipertahankan).
 
 ## EXAMPLES
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateJson
-Templat Azure Resource Manager JSON.
+JSON templat Azure Resource Manager.
 
 ```yaml
 Type: System.String

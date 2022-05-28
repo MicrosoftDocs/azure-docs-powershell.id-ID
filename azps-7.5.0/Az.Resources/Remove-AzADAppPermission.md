@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
-ms.openlocfilehash: 4eb5d02aa11d92ce490cf8888834aa360f2561f7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51d624807e8cac4a02c1d54ba2a666d48ddd0c7f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216950"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640492"
 ---
 # Remove-AzADAppPermission
 
 ## SYNOPSIS
 Menghapus izin API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 

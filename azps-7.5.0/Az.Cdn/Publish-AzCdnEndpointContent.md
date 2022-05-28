@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/publish-azcd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
-ms.openlocfilehash: 74dbed90356719deff99ab985f96b8e79a573e93
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 891d10435274a75d81ed242467edffb8dc81d9fa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214103"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145627694"
 ---
 # Publish-AzCdnEndpointContent
 
 ## SYNOPSIS
 Memuat konten ke titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/publish-azcdnendpointcontent) untuk informasi terbaru.
 
 ## SYNTAX
 

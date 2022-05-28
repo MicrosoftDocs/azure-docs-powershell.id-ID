@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: a5b666468162792d451af0530bf56264ff3d0ffb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f5c557c38738a6e9293eaa1df71fd3ad1d890899
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236229"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145627730"
 ---
 # Remove-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
 Menghapus asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 

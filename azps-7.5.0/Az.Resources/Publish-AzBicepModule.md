@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/publis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Publish-AzBicepModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Publish-AzBicepModule.md
-ms.openlocfilehash: 56b286d2834c6a3cf727535d04cb0e9e3a4b1e5b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91f345e21811a227fb26a311aa00517eb5e76df0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198682"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640672"
 ---
 # Publish-AzBicepModule
 
 ## SYNOPSIS
 Menerbitkan file Bicep ke registri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/publish-azbicepmodule) untuk informasi terbaru.
 
 ## SYNTAX
 

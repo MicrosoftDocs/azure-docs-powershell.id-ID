@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
-ms.openlocfilehash: 46005ebe80f9de1436cb928fc3e84e760072431d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d382b271d17a85229078935213ac97d4504548f3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109616"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641842"
 ---
 # Invoke-AzResourceAction
 
 ## SYNOPSIS
 Memanggil tindakan pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Invoke-AzResourceAction [-Parameters <Hashtable>] -Action <String> -ResourceName
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByTenantLevel
+### OlehTenantLevel
 ```
 Invoke-AzResourceAction [-Parameters <Hashtable>] -Action <String> -ResourceName <String>
  -ResourceType <String> [-ExtensionResourceName <String>] [-ExtensionResourceType <String>]
@@ -63,14 +66,14 @@ Are you sure you want to invoke the 'start' action on the following resource: /s
 
 Perintah ini memulai Komputer Virtual dengan {ResourceId}.
 
-### Contoh 2: Memanggil pembatasan VM dengan ResourceName
+### Contoh 2: Memanggil poweroffing VM dengan ResourceName
 
 ```powershell
 Invoke-AzResourceAction -ResourceGroupName testGroup -ResourceName testVM -ResourceType Microsoft.Compute/virtualMachines/ -Action Poweroff -Force
 ```
 
 Perintah ini menghentikan Komputer Virtual dengan {ResourceId}.
-Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
+Perintah menentukan parameter *Force* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ### Contoh 3: Memanggil pendaftaran penyedia sumber daya dengan ResourceId
 
@@ -90,7 +93,7 @@ registrationState : Registered
 ```
 
 Perintah ini mendaftarkan penyedia sumber daya "Microsoft.Network".
-Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
+Perintah menentukan parameter *Force* , oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi untuk sumber daya tempat cmdlet ini memanggil tindakan.
-Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
+Misalnya, untuk menentukan database, gunakan format berikut: nama database nama`/`server
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya tempat cmdlet ini memanggil tindakan.
+Menentukan ID sumber daya sumber daya yang sepenuhnya memenuhi syarat tempat cmdlet ini memanggil tindakan.
 ID menyertakan langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml

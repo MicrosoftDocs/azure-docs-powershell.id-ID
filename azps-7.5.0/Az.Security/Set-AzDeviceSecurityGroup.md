@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzDeviceSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzDeviceSecurityGroup.md
-ms.openlocfilehash: f75b8f75199be8b4d78dbcdaeb62ca2c8d4446b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0818cb64768aa9a417ac313921fdc61df5d2bcfa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196061"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635146"
 ---
 # Set-AzDeviceSecurityGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui grup keamanan perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azdevicesecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ AllowlistRules: [
 DenylistRules: []
 ```
 
-Perbarui grup keamanan perangkat yang ada dari IoT Hub "/subscriptions/XXXXXXXX-XXXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub" dengan jenis aturan "ActiveConnectionsNotInAllowedRange"
+Perbarui grup keamanan perangkat yang ada dari IoT Hub "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub" dengan jenis aturan "ActiveConnectionsNotInAllowedRange"
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -HubResourceId
-IoT Hub ID sumber daya.
+IoT Hub Id sumber daya.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Import-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Import-AzRedisCache.md
-ms.openlocfilehash: ab0f99006512961591966f76ce148b5dfc6a639f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c43afe7148bee3910eefd49f49e00e494e7703d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214871"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646662"
 ---
 # Import-AzRedisCache
 
 ## SYNOPSIS
 Mengimpor data dari blob ke Azure Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/import-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 

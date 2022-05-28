@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAlert.md
-ms.openlocfilehash: ed514e87cbe45ab0311c4114daef9e68dc415d83
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1872b7a9060d5cf244bc9a95c3e19c59ae6acbe3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213335"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634984"
 ---
 # Set-AzSecurityAlert
 
 ## SYNOPSIS
 Memperbarui status pemberitahuan keamanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecurityalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Mengatur status pemberitahuan keamanan.
 Set-AzSecurityAlert -Location "centralus" -ResourceGroupName "RSG" -Name "2518710774294070750_FFF23C70-80EF-4A8B-9122-507B0EA8DFFF" -ActionType Dismiss
 ```
 
-Mematikan pemberitahuan keamanan yang dinaikkan.
+Menutup pemberitahuan keamanan yang dimunculkan.
 
 ## PARAMETERS
 

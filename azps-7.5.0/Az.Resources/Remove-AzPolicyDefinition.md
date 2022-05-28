@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
-ms.openlocfilehash: 4f73ab66aed8ea8b03a1493f12c7163aca4329b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15c60a91520e8ee224da23921a8c38dfe4f382a4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189498"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639952"
 ---
 # Remove-AzPolicyDefinition
 
 ## SYNOPSIS
 Menghapus definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

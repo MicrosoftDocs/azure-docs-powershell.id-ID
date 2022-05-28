@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
-ms.openlocfilehash: cb6b2161ed91621c6175a3f9a71195f42eb29916
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 92a08eff80d4a8c0623cda3edc2e7d28503aa23a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245402"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634498"
 ---
 # Get-AzSentinelDataConnector
 
@@ -26,9 +26,12 @@ Harap dicatat bahwa dukungan otomatisasi hanya tersedia untuk konektor data beri
 * OfficeDataConnector
 * TIDataConnector
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentineldataconnector) untuk informasi terbaru.
+
 ## SYNTAX
 
-### WorkspaceScope (Default)
+### Ruang KerjaScope (Default)
 ```
 Get-AzSentinelDataConnector -ResourceGroupName <String> -WorkspaceName <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -49,7 +52,7 @@ Get-AzSentinelDataConnector -ResourceId <String> [-DefaultProfile <IAzureContext
 ## DESCRIPTION
 Cmdlet **Get-AzSentinelDataConnector** mendapatkan Konektor Data dari ruang kerja yang ditentukan.
 Jika Anda menentukan parameter *DataConnectorId* , satu objek **DataConnector** dikembalikan.
-Jika Anda tidak menentukan parameter *DataConnectorId* , array yang berisi semua Konektor Data di ruang kerja yang ditentukan akan dikembalikan.
+Jika Anda tidak menentukan parameter *DataConnectorId* , array yang berisi semua Konektor Data di ruang kerja yang ditentukan dikembalikan.
 Anda dapat menggunakan objek **DataConnector** untuk memperbarui Konektor Data, misalnya Anda dapat menonaktifkan **DataConnector**.
 
 ## EXAMPLES
@@ -68,7 +71,7 @@ $DataConnector = Get-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup
 
 Contoh ini mendapatkan DataConnector di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $DataConnector.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSentinelDataConnector @SentinelConnection | Where-Object {$_.Kind -eq "Office365"}
 ```

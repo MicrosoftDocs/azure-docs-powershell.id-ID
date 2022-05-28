@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrMobilityService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrMobilityService.md
-ms.openlocfilehash: fcad7e7dfde8f40608fd473a2cf9570b82351d47
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bceec7fa46c3c46c4a825167e90f91b4b6c78585
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196106"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647274"
 ---
 # Update-AzRecoveryServicesAsrMobilityService
 
 ## SYNOPSIS
-Dorong pembaruan agen layanan mobilitas ke komputer yang dilindungi.
+Mendorong pembaruan agen layanan mobilitas ke komputer yang dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrmobilityservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Update-AzRecoveryServicesAsrMobilityService** mencoba mendorong pembaru
 Update-AzRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Account $fabric.fabricSpecificDetails.RunAsAccounts[0]
 ```
 
-Pekerjaan untuk melacak Agen Layanan Mobilitas Item yang Dilindungi Replikasi Pembaruan.
+Tugas untuk melacak Agen Layanan Mobilitas Item yang Dilindungi Replikasi Pembaruan.
 
 ## PARAMETERS
 
 ### -Akun
-ID akun jalankan sebagai yang akan digunakan untuk mendorong pembaruan. Harus salah satu dari daftar jalankan sebagai akun dalam fabric ASR yang sesuai dengan mesin yang sedang diperbarui.
+ID akun jalankan sebagai yang akan digunakan untuk mendorong pembaruan. Harus salah satu dari daftar jalankan sebagai akun dalam kain ASR yang sesuai dengan mesin yang sedang diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRunAsAccount

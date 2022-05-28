@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentOwner.md
-ms.openlocfilehash: 45798591ac73e1c11176a2790a299e8674032b4b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dbbd75da86e59c55e94835aab74288008a4426a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185214"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634138"
 ---
 # New-AzSentinelIncidentOwner
 
 ## SYNOPSIS
 Buat objek Pemilik Insiden untuk memperbarui pemilik insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincidentowner) untuk informasi terbaru.
 
 ## SYNTAX
 
