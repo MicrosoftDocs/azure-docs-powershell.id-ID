@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceLock.md
-ms.openlocfilehash: 8a88f90bfb64c187c927a93bd0dc9e38acb59c03
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 880c66db620b3699ea6b4cfb446ba327f341a034
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189484"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638929"
 ---
 # Set-AzResourceLock
 
 ## SYNOPSIS
 Memodifikasi kunci sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azresourcelock) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockId
-Menentukan ID kunci yang diubah cmdlet ini.
+Menentukan ID kunci yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang kuncinya diterapkan.
+Menentukan nama grup sumber daya tempat kunci diterapkan.
 
 ```yaml
 Type: System.String
@@ -215,8 +218,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya yang kuncinya diterapkan.
-Misalnya, untuk menentukan database, gunakan format berikut: ServerDatabase`/`
+Menentukan nama sumber daya yang kuncinya berlaku.
+Misalnya, untuk menentukan database, gunakan format berikut: Database Server`/`
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 Menentukan cakupan tempat kunci diterapkan.
-Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`nama grup IDresource`/resourceGroups/` langganannama`/providers/Microsoft.Sql/servers/` namedatabase`/databases/` nama server untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`nama grup IDresource`/resourceGroups/` langganan
+Misalnya, untuk menentukan database, gunakan format berikut: `/subscriptions/`nama database nama`/databases/`server nama`/providers/Microsoft.Sql/servers/`grup sumber daya ID`/resourceGroups/`langganan Untuk menentukan grup sumber daya, gunakan format berikut: `/subscriptions/`nama grup sumber daya ID`/resourceGroups/`langganan
 
 ```yaml
 Type: System.String

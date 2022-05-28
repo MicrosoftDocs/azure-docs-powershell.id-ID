@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzWcfRelay.md
-ms.openlocfilehash: 3302b906041187fd23f718ccc62a9d8943505dfe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 81a8f3d25be88b1742b9463f008f1ca6a7c16a35
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238052"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645528"
 ---
 # Get-AzWcfRelay
 
 ## SYNOPSIS
 Mengembalikan deskripsi untuk WcfRelay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallMatchVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallMatchVariable.md
-ms.openlocfilehash: 9b56689ef8fb758439dad6619b8563e440b1c8be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f29296fa625f7c5cd119ae3dca087211d76128e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185617"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678108"
 ---
 # New-AzApplicationGatewayFirewallMatchVariable
 
 ## SYNOPSIS
 Membuat variabel kecocokan untuk kondisi firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallmatchvariable) untuk informasi terbaru.
 
 ## SYNTAX
 

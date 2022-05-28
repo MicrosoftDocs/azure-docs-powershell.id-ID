@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCustomRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCustomRule.md
-ms.openlocfilehash: 918f36ddf1cacc3dbc7f0dd1b8cac4e754f2aaeb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 16c2685020e7566a2ace5484818af96f3b2ea54f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228840"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678180"
 ---
 # New-AzApplicationGatewayFirewallCustomRule
 
 ## SYNOPSIS
 Membuat aturan kustom baru untuk kebijakan firewall gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcustomrule) untuk informasi terbaru.
 
 ## SYNTAX
 

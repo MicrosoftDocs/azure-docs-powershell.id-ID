@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringService.md
-ms.openlocfilehash: 69de90a0d20d4d0176bcc7d99a65e52f820e49cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3d2dd679c771cf7074ad02acbde52c38f761580
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183044"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660036"
 ---
 # Get-AzPeeringService
 
 ## SYNOPSIS
 Mendapatkan daftar objek layanan peering dari satu objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Type                   : Microsoft.Peering/peeringServices
 
 Mendapatkan layanan peering untuk grup sumber daya dan nama
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzPeeringService -ResourceId $rid
 ```

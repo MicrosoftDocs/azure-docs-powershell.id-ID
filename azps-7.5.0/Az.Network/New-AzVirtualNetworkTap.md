@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkTap.md
-ms.openlocfilehash: 2a63a354a8a50897b86e7b0b2b483c88d0fcdb9e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f42154071fc72a80aab1f5b172608569adbb7acd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228812"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672582"
 ---
 # New-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Membuat sumber daya VirtualNetworkTap.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 

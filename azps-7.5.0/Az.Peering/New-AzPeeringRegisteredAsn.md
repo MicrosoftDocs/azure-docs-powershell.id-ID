@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: 53a577a0e80a61476df1277434ceb01faf906ffc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bc12ee483ad82789df521271bdd8051d7e0bb97a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192648"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659694"
 ---
 # New-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Membuat ASN terdaftar untuk peering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringregisteredasn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,13 +45,13 @@ Buat ASN terdaftar untuk objek peering.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan peering dan membuat ASN terdaftar
+### Contoh 1: Dapatkan peering dan buat ASN terdaftar
 ```powershell
 $peering = Get-AzPeering -ResourceGroupName $resourceGroupName -Name $name
 $peering | New-AzPeeringRegisteredAsn -Name $asnName -Asn $asn
 ```
 
-Dapatkan peering yang ingin Anda tambahkan ASN terdaftar. Kemudian teruskan itu ke commandlet.
+Dapatkan peering yang ingin Anda tambahkan ASN terdaftar. Kemudian berikan itu ke commandlet.
 
 ### Contoh 2: Gunakan resourceId peering untuk membuat asn terdaftar
 ```powershell
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

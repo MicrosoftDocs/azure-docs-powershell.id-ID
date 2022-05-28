@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicySetDefinition.md
-ms.openlocfilehash: 57259292250600ab02314375263bfde3a6152f16
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f6d87ec88f8797febca45633b292b121c717d1d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200877"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638962"
 ---
 # Set-AzPolicySetDefinition
 
 ## SYNOPSIS
-Memodifikasi definisi kumpulan kebijakan
+Memodifikasi definisi set kebijakan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicysetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ $PolicySetDefinition = Get-AzPolicySetDefinition -ResourceId '/subscriptions/myS
  Set-AzPolicySetDefinition -Id $PolicySetDefinition.ResourceId -Description 'Updated policy to not allow virtual machine creation'
 ```
 
-Perintah pertama mendapatkan definisi kumpulan kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition.
+Perintah pertama mendapatkan definisi set kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition.
 Perintah menyimpan objek tersebut dalam variabel $PolicySetDefinition.
 Perintah kedua memperbarui deskripsi definisi kumpulan kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicySetDefinition.
 
@@ -89,14 +92,14 @@ Properties            : @{displayName=VMPolicySetDefinition; policyType=Custom; 
 PolicySetDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policySetDefinitions/VMPolicySetDefinition
 ```
 
-Perintah ini memperbarui metadata definisi set kebijakan bernama VMPolicySetDefinition untuk menunjukkan kategorinya adalah "Komputer Virtual".
+Perintah ini memperbarui metadata definisi kumpulan kebijakan bernama VMPolicySetDefinition untuk menunjukkan kategorinya adalah "Komputer Virtual".
 
 ### Contoh 3: Memperbarui grup definisi kumpulan kebijakan
 ```powershell
 Set-AzPolicySetDefinition -Name 'VMPolicySetDefinition' -GroupDefinition '[{ "name": "group1", "displayName": "Virtual Machine Security" }, { "name": "group2" }]'
 ```
 
-Perintah ini memperbarui grup definisi set kebijakan bernama VMPolicySetDefinition.
+Perintah ini memperbarui grup definisi kumpulan kebijakan bernama VMPolicySetDefinition.
 
 ### Contoh 4: Memperbarui grup definisi kumpulan kebijakan menggunakan tabel hash
 ```powershell
@@ -104,7 +107,7 @@ $groupsJson = ConvertTo-Json @{ name = "group1", displayName = "Virtual Machine 
 Set-AzPolicySetDefinition -Name 'VMPolicySetDefinition' -GroupDefinition $groupsJson
 ```
 
-Perintah ini memperbarui grup definisi set kebijakan bernama VMPolicySetDefinition menggunakan tabel hash untuk membuat grup.
+Perintah ini memperbarui grup definisi kumpulan kebijakan bernama VMPolicySetDefinition menggunakan tabel hash untuk membangun grup.
 
 ## PARAMETERS
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupDefinition
-Grup definisi kebijakan dari definisi kumpulan kebijakan yang diperbarui. Ini bisa menjadi jalur ke file yang berisi grup, atau grup sebagai string JSON.
+Grup definisi kebijakan dari definisi yang ditetapkan kebijakan yang diperbarui. Ini bisa menjadi jalur ke file yang berisi grup, atau grup sebagai string JSON.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi yang ditetapkan kebijakan untuk diperbarui.
+Nama grup manajemen definisi kumpulan kebijakan yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata definisi kumpulan kebijakan yang diperbarui. Ini bisa berupa jalur ke nama file yang berisi metadata, atau metadata sebagai string JSON.
+Metadata definisi kumpulan kebijakan yang diperbarui. Ini bisa menjadi jalur ke nama file yang berisi metadata, atau metadata sebagai string JSON.
 
 ```yaml
 Type: System.String
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinition
-Definisi kebijakan. Ini dapat berupa jalur ke nama file yang berisi definisi kebijakan, atau definisi kebijakan sebagai string JSON.
+Definisi kebijakan. Ini bisa menjadi jalur ke nama file yang berisi definisi kebijakan, atau definisi kebijakan sebagai string JSON.
 
 ```yaml
 Type: System.String
@@ -290,8 +293,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan dari definisi kumpulan kebijakan yang akan diperbarui.
+ID langganan definisi yang ditetapkan kebijakan untuk diperbarui.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleDefinition.md
-ms.openlocfilehash: c615f09e30da6c03695d4383118f4038742dc011
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f30ed17556bee054b0eead1c5881f7f49a82b8f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189481"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638872"
 ---
 # Set-AzRoleDefinition
 
@@ -21,6 +21,9 @@ Berikan definisi peran yang dimodifikasi baik sebagai file JSON atau sebagai PSR
 Pertama, gunakan perintah Get-AzRoleDefinition untuk mengambil peran kustom yang ingin Anda ubah.
 Kemudian, ubah properti yang ingin Anda ubah.
 Terakhir, simpan definisi peran menggunakan perintah ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Cmdlet Set-AzRoleDefinition memperbarui peran kustom yang ada di Azure Role-Base
 Berikan definisi peran yang diperbarui sebagai input ke perintah sebagai file JSON atau objek PSRoleDefinition.
 Definisi peran untuk peran kustom yang diperbarui HARUS berisi Id dan semua properti peran lain yang diperlukan meskipun tidak diperbarui: DisplayName, Description, Actions, AssignableScopes.
 NotActions, DataActions, NotDataActions bersifat opsional.
-Berikut ini adalah contoh json definisi peran yang diperbarui untuk Set-AzRoleDefinition { "Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e", "Name": "Updated Role", "Description": "Can monitor all resources and start and restart virtual machines", "Actions": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxx"\] }
+Berikut ini adalah contoh json definisi peran yang diperbarui untuk Set-AzRoleDefinition { "Id": "52a6cc13-ff92-47a8-a39b-2a8205c3087e", "Name": "Updated Role", "Description": "Can monitor all resources and start and restart virtual machines", "Actions": \[ "*/read", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxx"\] }
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Nama file yang berisi definisi peran json tunggal yang akan diperbarui.
+Nama file yang berisi satu definisi peran json yang akan diperbarui.
 Hanya sertakan properti yang akan diperbarui di JSON.
 Properti id Diperlukan.
 

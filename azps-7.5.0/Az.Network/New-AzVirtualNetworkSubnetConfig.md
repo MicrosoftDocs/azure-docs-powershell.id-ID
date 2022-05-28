@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 8f6483c7de0353014ea22b92cd213a3ef204f12b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 751bbc5b27810f372953317050404ee4e13430cb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231105"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672600"
 ---
 # New-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Membuat konfigurasi subnet jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Cmdlet **New-AzVirtualNetworkSubnetConfig** membuat konfigurasi subnet jaringan 
 
 ## EXAMPLES
 
-### Contoh 1: Membuat jaringan virtual dengan dua subnet dan grup keamanan jaringan
+### Contoh 1: Membuat jaringan virtual dengan dua subnet dan kelompok keamanan jaringan
 ```powershell
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
 
@@ -75,7 +78,7 @@ New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup
     -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet,$natGatewaySubnet
 ```
 
-Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi subnet dalam memori. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan kelompok keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan kelompok keamanan jaringan yang sama.
+Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan kelompok keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan kelompok keamanan jaringan yang sama.
 
 ## PARAMETERS
 

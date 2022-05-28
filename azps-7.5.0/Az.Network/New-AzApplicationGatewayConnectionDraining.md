@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 90f10d5fd4c444e28f576a60508be1fca5382a9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c690476ca1d5e2666115d0b40ac7e16526253842
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228896"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678306"
 ---
 # New-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
 Membuat konfigurasi pengurasan koneksi baru untuk pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DrainTimeoutInsec
-Jumlah detik pengurasan koneksi aktif.
+### -DrainTimeoutInSec
+Jumlah pengurasan koneksi detik aktif.
 Nilai yang dapat diterima adalah dari 1 detik hingga 3600 detik.
 
 ```yaml

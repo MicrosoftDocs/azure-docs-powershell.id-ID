@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
-ms.openlocfilehash: e00c75c5ff0bfc9723df704a16a0a127015bc22d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a6cc8fda9a2d8da3400a7a47df901bee254fae9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242574"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638854"
 ---
 # Set-AzTemplateSpec
 
 ## SYNOPSIS
 Memodifikasi Spesifikasi Templat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Set-AzTemplateSpec [-ResourceGroupName] <String> [-Name] <String> [-Version] <St
 ## DESCRIPTION
 Memodifikasi Spesifikasi Templace. Jika Spesifikasi Templat dengan nama dan/atau versi tertentu yang ditentukan belum ada, spesifikasi tersebut akan dibuat.
 
-Saat mengubah konten Templat ARM versi Spesifikasi Templat, konten dapat berasal dari string JSON mentah (menggunakan set parameter **UpdateVersionByNameFromJsonParameterSet** ) atau dari file JSON/Bicep tertentu (menggunakan set parameter **UpdateVersionByNameFromJsonFileParameterSet** ).
+Saat memodifikasi konten Templat ARM versi Spesifikasi Templat, konten dapat berasal dari string JSON mentah (menggunakan set parameter **UpdateVersionByNameFromJsonParameterSet** ) atau dari file JSON/Bicep tertentu (menggunakan set parameter **UpdateVersionByNameFromJsonFileParameterSet** ).
 
 ## EXAMPLES
 
@@ -110,12 +113,12 @@ Memodifikasi versi "v2.0" dari Spesifikasi Templat bernama "myTemplateSpec". Ver
 
 **Catatan:** Lokasi hanya diperlukan ketika Spesifikasi Templat belum ada
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec'  -Location 'West US' -Description 'My updated Template Spec'
 ```
 
-Memodifikasi deskripsi Spesifikasi Templat bernama "myTemplateSpec" dalam grup sumber daya "myRG". Jika Spesifikasi Templat belum ada, maka akan dibuat.
+Memodifikasi deskripsi Spesifikasi Templat bernama "myTemplateSpec" dalam grup sumber daya "myRG". Jika Spesifikasi Templat belum ada, Spesifikasi templat akan dibuat.
 
 **Catatan:** Lokasi hanya diperlukan ketika Spesifikasi Templat belum ada
 
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateJson
-Templat Azure Resource Manager JSON.
+JSON templat Azure Resource Manager.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientConfiguration.md
-ms.openlocfilehash: 8407246e7d4c6de2f4e91e69c28b8b9da01f1af4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb735e6c6d5d779c3d69e955606ae02a99353a15
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227062"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672492"
 ---
 # New-AzVpnClientConfiguration
 
 ## SYNOPSIS
 Perintah ini memungkinkan pengguna untuk membuat paket profil Vpn berdasarkan pengaturan vpn yang telah dikonfigurasi sebelumnya pada gateway VPN, selain beberapa pengaturan tambahan yang mungkin perlu dikonfigurasi pengguna, misalnya beberapa sertifikat akar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet ini digunakan untuk membuat file zip profil klien VPN untuk "ContosoVirtu
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Metode Autentikasi Dapat mengambil nilai EAPMSCHAPv2 atau EAPTLS. Ketika EAPMSCHAPv2 ditentukan, cmdlet menghasilkan penginstal konfigurasi klien untuk autentikasi nama pengguna/kata sandi yang menggunakan protokol autentikasi EAP-MSCHAPv2. Jika EAPTLS ditentukan, cmdlet menghasilkan alat penginstal konfigurasi klien untuk autentikasi sertifikat yang menggunakan protokol EAP-TLS. Opsi "EapTls" dapat digunakan untuk autentikasi sertifikat berbasis RADIUS dan autentikasi sertifikasi yang dilakukan oleh gateway Virtual Network dengan mengunggah akar tepercaya. Cmdlet secara otomatis mendeteksi apa yang dikonfigurasi.
+Metode Autentikasi Dapat mengambil nilai EAPMSCHAPv2 atau EAPTLS. Ketika EAPMSCHAPv2 ditentukan, cmdlet menghasilkan alat penginstal konfigurasi klien untuk autentikasi nama pengguna/kata sandi yang menggunakan protokol autentikasi EAP-MSCHAPv2. Jika EAPTLS ditentukan, cmdlet menghasilkan penginstal konfigurasi klien untuk autentikasi sertifikat yang menggunakan protokol EAP-TLS. Opsi "EapTls" dapat digunakan untuk autentikasi sertifikat berbasis RADIUS dan autentikasi sertifikasi yang dilakukan oleh Virtual Network Gateway dengan mengunggah akar tepercaya. Cmdlet secara otomatis mendeteksi apa yang dikonfigurasi.
 
 ```yaml
 Type: System.String

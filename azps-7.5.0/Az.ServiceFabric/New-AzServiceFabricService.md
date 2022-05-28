@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricService.md
-ms.openlocfilehash: 6d707d0c0a172b3e3e48492716f16b0ffcb283bd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 873c41e6211b64a821ff956dc8de522485839f98
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237769"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630970"
 ---
 # New-AzServiceFabricService
 
 ## SYNOPSIS
 Buat layanan service fabric baru di bawah aplikasi dan kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ $serviceTypeName = "testStateless"
 New-AzServiceFabricService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateless -InstanceCount -1 -PartitionSchemaSingleton -Verbose
 ```
 
-Contoh ini akan membuat layanan stateless baru "testApp~testService1" dengan jumlah instans -1 (pada semua node).
+Contoh ini akan membuat layanan stateless baru "testApp~testService1" dengan jumlah instans -1 (pada semua simpul).
 
 ### Contoh 2
 ```powershell
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -DefaultMoveCost
 Tentukan biaya default untuk pemindahan.
-Biaya yang lebih tinggi membuatnya lebih kecil kemungkinan bahwa Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
+Biaya yang lebih tinggi mempermudah Resource Manager Kluster akan memindahkan replika saat mencoba menyeimbangkan kluster
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.MoveCostEnum
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaRestartWaitDuration
-Tentukan durasi tunggu hidupkan ulang replika untuk layanan
+Tentukan durasi tunggu mulai ulang replika untuk layanan
 
 ```yaml
 Type: System.TimeSpan
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandByReplicaKeepDuration
-Tentukan durasi replika stand by untuk layanan
+Tentukan durasi replika siaga untuk layanan
 
 ```yaml
 Type: System.TimeSpan

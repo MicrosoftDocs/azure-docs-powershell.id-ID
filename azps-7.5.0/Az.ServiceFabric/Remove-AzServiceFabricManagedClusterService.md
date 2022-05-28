@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterService.md
-ms.openlocfilehash: 521c6f3d578811401272c830a70b175e52d7fe86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1bd372289fbb99627572747fc7fc28283958910
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211898"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630592"
 ---
 # Remove-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
 Menghapus layanan terkelola dari kluster. Hanya mendukung layanan yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceFabricManagedClusterService -InputObject <PSManagedService> [-Pa
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus layanan terkelola dari kluster.
+Cmdlet ini menghapus layanan terkelola membentuk kluster.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ $service | Remove-AzServiceFabricManagedClusterService
 
 Contoh ini akan menghapus layanan terkelola testService1".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applications/testApp/services/testService"
 Remove-AzServiceFabricManagedClusterService -ResourceId $resourceId
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Isi Deskripsi PassThru }}
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

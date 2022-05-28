@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusion.md
-ms.openlocfilehash: 3847179dbfbd3c71765cc36e78157fefb0bd4d3e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7237db3bf5fe00238a1df601b514ff569310a87d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217202"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678036"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusion
 
 ## SYNOPSIS
 Membuat pengecualian pada Kebijakan Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ $exclusionEntry = New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable
 
 Perintah ini membuat entri pengecualian baru untuk variabel bernama RequestHeaderKeys dan operator bernama Contains and Selector bernama abc. Entri pengecualian disimpan dalam $exclusionEntry.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $exclusionEntry = New-AzApplicationGatewayFirewallPolicyExclusion -MatchVariable "RequestHeaderNames" -SelectorMatchOperator "StartsWith" -Selector "xyz" -ExclusionManagedRuleSet $exclusionManagedRuleSet
 ```

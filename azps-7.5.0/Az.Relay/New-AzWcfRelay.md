@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
-ms.openlocfilehash: bd321e3df9d7161c3980365113a56881a667304c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d5c99588f1d57171b60c6a1f10be6f1e24387bb5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237937"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645312"
 ---
 # New-AzWcfRelay
 
 ## SYNOPSIS
 Membuat WcfRelay di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 

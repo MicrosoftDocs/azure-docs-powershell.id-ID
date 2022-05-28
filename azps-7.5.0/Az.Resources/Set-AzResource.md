@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
-ms.openlocfilehash: bb5a6ccc57826775e1a9339257ba6d839b357502
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aaca03389d1d8c690b7e6147b2cdf587de9e43d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200866"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638928"
 ---
 # Set-AzResource
 
 ## SYNOPSIS
 Mengubah sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi untuk sumber daya.
-Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
+Misalnya, untuk menentukan database, gunakan format berikut: nama database nama`/`server
 
 ```yaml
 Type: System.String

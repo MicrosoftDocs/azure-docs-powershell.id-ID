@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyDefinition.md
-ms.openlocfilehash: 35220548858b8850d11f89ccb42a23ee69ed64dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f2dbb48b3bef41fd66cf842747e2fc6af29c600b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189495"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639088"
 ---
 # Set-AzPolicyDefinition
 
 ## SYNOPSIS
 Memodifikasi definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk definisi kebijakan. Ini bisa berupa jalur ke nama file yang berisi metadata, atau metadata sebagai string.
+Metadata untuk definisi kebijakan. Ini bisa menjadi jalur ke nama file yang berisi metadata, atau metadata sebagai string.
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pre
+### -Pra
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
-ms.openlocfilehash: 9bdbf50c4bfe811881ed8b8405a307a721933aa3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ce999447974fdd581b18cb35c5ff4399f90aa295
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238049"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645582"
 ---
 # Get-AzRelayKey
 
 ## SYNOPSIS
 Mendapatkan string koneksi primer dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelaykey) untuk informasi terbaru.
 
 ## SYNTAX
 

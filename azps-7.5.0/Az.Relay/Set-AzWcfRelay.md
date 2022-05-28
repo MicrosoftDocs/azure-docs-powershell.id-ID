@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
-ms.openlocfilehash: 1522b8ea0adb69a256378ab14f14d13fd103d412
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 30d50f8d6872731ae12dc29a6400e6067a5d3248
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232057"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645060"
 ---
 # Set-AzWcfRelay
 
 ## SYNOPSIS
 Memperbarui deskripsi WcfRelay di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/set-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 

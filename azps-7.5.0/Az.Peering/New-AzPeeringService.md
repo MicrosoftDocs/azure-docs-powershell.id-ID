@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
-ms.openlocfilehash: 26ec9897cfdb9118f746b5e23902a27b5c681c4f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 195a743006a2a0e53cbad9b21783d6dc635f52b7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659676"
 ---
 # New-AzPeeringService
 
 ## SYNOPSIS
 Membuat layanan peering baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringservice) untuk informasi terbaru.
 
 ## SYNTAX
 

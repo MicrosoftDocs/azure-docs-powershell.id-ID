@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeering.md
-ms.openlocfilehash: ab5d434f1042f7afc30b9b4b0ecc6d7a239c212a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ee3763de4d629a791268181fe4d64b6fac5173d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192564"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659460"
 ---
 # Remove-AzPeering
 
 ## SYNOPSIS
 Menghapus atau menghapus peering. Ini akan menghapus semua sumber daya turunan atau pemberitahuan pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/remove-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

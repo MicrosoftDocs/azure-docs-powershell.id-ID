@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
-ms.openlocfilehash: 694dccbf1889284ebc9964f47391311ba77981ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 879e50bf70c952d27c4ad65fd42a74ed48e92540
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200821"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638980"
 ---
 # Set-AzRoleAssignment
 
@@ -26,6 +26,9 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
 - POST /directoryObjects/getByIds
 
 Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

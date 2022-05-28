@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
-ms.openlocfilehash: 350f4d4d9d4bd281fb1b0fcad64deb8426107a50
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 077f63139a69d3ab50775f0d7c040d975b309374
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226600"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145638998"
 ---
 # Set-AzPolicyExemption
 
 ## SYNOPSIS
 Memodifikasi pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 

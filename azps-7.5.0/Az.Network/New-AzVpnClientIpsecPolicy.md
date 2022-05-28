@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnClientIpsecPolicy.md
-ms.openlocfilehash: 921880d3adb5919832e18a10674b873731ae2dc5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9fb62db30a588b06c62851452511929a57e2d617
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672420"
 ---
 # New-AzVpnClientIpsecPolicy
 
 ## SYNOPSIS
-Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur di gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnclientipsecpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzVpnClientIpsecPolicy [-SALifeTime <Int32>] [-SADataSize <Int32>] [-IpsecEn
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur di gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN. Perintah ini memungkinkan objek output digunakan untuk mengatur kebijakan ipsec vpn untuk gateway baru/yang sudah ada.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Perintah ini memungkinkan pengguna untuk membuat objek kebijakan Vpn ipsec yang 
 $vpnclientipsecpolicy = New-AzVpnClientIpsecPolicy -IpsecEncryption AES256 -IpsecIntegrity SHA256 -SALifeTime 86472 -SADataSize 429497 -IkeEncryption AES256 -IkeIntegrity SHA256 -DhGroup DHGroup2 -PfsGroup None
 ```
 
-Cmdlet ini digunakan untuk membuat objek kebijakan vpn ipsec menggunakan nilai satu atau semua parameter yang diteruskan yang dapat diteruskan pengguna ke param:VpnClientIpsecPolicy dari perintah PS memungkinkan: New-AzVirtualNetworkGateway (Pembuatan VPN Gateway baru) / Set-AzVirtualNetworkGateway (pembaruan VPN Gateway yang ada) di ResourceGroup :
+Cmdlet ini digunakan untuk membuat objek kebijakan ipsec vpn menggunakan nilai satu atau semua parameter yang diteruskan yang dapat diteruskan pengguna ke param:VpnClientIpsecPolicy dari perintah PS memungkinkan: New-AzVirtualNetworkGateway (Pembuatan VPN Gateway baru) / Set-AzVirtualNetworkGateway (pembaruan VPN Gateway yang ada) di ResourceGroup :
 
 ### Contoh 2: Buat gateway jaringan virtual baru dengan mengatur kebijakan ipsec kustom vpn:
 ```powershell
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas VPNClient IPSec (IKE Fase 1)
+Algoritma integritas VpnClient IPSec (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTime
-Asosiasi Keamanan VPNClient IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam hitungan detik
+Asosiasi Keamanan VPNClient IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32

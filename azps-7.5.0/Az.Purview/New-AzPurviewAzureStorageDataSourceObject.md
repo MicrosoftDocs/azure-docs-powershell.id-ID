@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureStorageDataSourceObject.md
-ms.openlocfilehash: e238f46bccd25d63d0b34a4d35aea70f7bfb7f8f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bc1249821d754ecd57752ec85c10c6d99e3b0db
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215018"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145652944"
 ---
 # New-AzPurviewAzureStorageDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureStorageDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazurestoragedatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 

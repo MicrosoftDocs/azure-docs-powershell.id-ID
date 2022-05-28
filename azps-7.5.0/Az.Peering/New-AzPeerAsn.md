@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsn.md
-ms.openlocfilehash: 99810c3356b035cebb3a0e6a8a2af097d506b99a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c4853f5f955832cedeb3b8f29e782ef1ed847d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207902"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659857"
 ---
 # New-AzPeerAsn
 
 ## SYNOPSIS
-Membuat ASN Serekan baru 
+Membuat ASN Peer baru 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeerasn) untuk informasi terbaru.
 
 ## SYNTAX
 

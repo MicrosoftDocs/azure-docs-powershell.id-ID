@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringServicePrefix.md
-ms.openlocfilehash: 5069a0d757a5899f7ecc1ecd466086e69e63f636
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 790879333a29dcbda7c26e2c8186db90b4e4e0bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192620"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659604"
 ---
 # New-AzPeeringServicePrefix
 
 ## SYNOPSIS
 Membuat awalan layanan peering baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringserviceprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Type                  : Microsoft.Peering/peeringServices/prefixes
 
 Membuat awalan dari id sumber daya layanan peering.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzPeeringServicePrefix -ResourceGroupName $peeringServiceGroup -PeeringServiceName $peeringServiceName -Name $prefixName -Prefix "10.0.0.0/24"
 ```

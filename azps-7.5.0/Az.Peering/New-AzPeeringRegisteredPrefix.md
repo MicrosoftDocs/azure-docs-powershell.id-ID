@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: 24412bd2a4f7a7c676a14aade1f6f38d753bf8a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a85fe6a5dddbbac452340c2c3e1742f62d522bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192645"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659712"
 ---
 # New-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
 Buat prefiks terdaftar untuk objek peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,13 +45,13 @@ Buat prefiks terdaftar untuk objek peering.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan peering dan membuat awalan terdaftar
+### Contoh 1: Dapatkan peering dan buat awalan terdaftar
 ```powershell
 $peering = Get-AzPeering -ResourceGroupName $resourceGroupName -Name $name
 $peering | New-AzPeeringRegisteredPrefix -Name $asnName -Asn $asn
 ```
 
-Dapatkan peering yang ingin Anda tambahkan awalan terdaftar. Kemudian teruskan itu ke commandlet.
+Dapatkan peering yang ingin Anda tambahkan awalan terdaftar. Kemudian berikan itu ke commandlet.
 
 ### Contoh 2: Gunakan resourceId peering untuk membuat asn terdaftar
 ```powershell
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Membuat atau menggunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

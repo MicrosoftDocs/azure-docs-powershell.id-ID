@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayNamespace.md
-ms.openlocfilehash: f0bd33cb19a13fbfb08d78a3369349918aff914c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6b0b347deeebd64313fdbc0d647077370467f8ce
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238024"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645600"
 ---
 # Get-AzRelayNamespace
 
 ## SYNOPSIS
 Mendapatkan deskripsi untuk namespace Relay yang ditentukan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelaynamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

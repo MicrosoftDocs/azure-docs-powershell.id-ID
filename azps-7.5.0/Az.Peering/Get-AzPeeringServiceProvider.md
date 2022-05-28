@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceProvider.md
-ms.openlocfilehash: f5b988bf99a038ac4933d0d9c7028403b315f78b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10f823c9faf2b47eba7bbddcc1d34a2ddfc874bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200110"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659838"
 ---
 # Get-AzPeeringServiceProvider
 
 ## SYNOPSIS
 Mendapatkan daftar penyedia layanan peering yang bermitra dengan Microsoft.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringserviceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

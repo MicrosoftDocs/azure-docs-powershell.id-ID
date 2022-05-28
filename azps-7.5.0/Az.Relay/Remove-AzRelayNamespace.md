@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayNamespace.md
-ms.openlocfilehash: d6ccaec5d25d19a0ca19a7760440ff1edaade9f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c93d78aa86ec841ca9b8169788c8b16f0fe5d44d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237909"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645240"
 ---
 # Remove-AzRelayNamespace
 
 ## SYNOPSIS
 Menghapus namespace dari grup sumber daya yang ditentukan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/remove-azrelaynamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeering.md
-ms.openlocfilehash: c79c02ff408a8ab30ad0fec677d8f14bddcb2932
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70c65177c5233d6ca0a7f4709319f3045ca53ecf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207899"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659784"
 ---
 # New-AzPeering
 
 ## SYNOPSIS
 Membuat Sumber Daya ARM Peering baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Tags                 : {}
 
 Buat Direct Peering baru dengan satu koneksi di fasilitas Seattle menggunakan PeerAsn 65000
 
-### Membuat Peering Exchange Baru
+### Buat Peering Exchange Baru
 ```powershell
 #Gets the ASN
 $asn = Get-AzPeerAsn -PeerName Contoso
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftNetwork
-Pilih jaringan Microsoft yang ingin Anda peering.
+Pilih jaringan Microsoft yang ingin Anda rekankan.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Pilih Basic_Direct_Free atau Premium_Direct_Free kecuali secara eksplisit diberitahu untuk memilih opsi lain.
+Pilih Basic_Direct_Free atau Premium_Direct_Free kecuali secara eksplisit disuruh memilih opsi lain.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/save-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzResourceGroupDeploymentTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzResourceGroupDeploymentTemplate.md
-ms.openlocfilehash: b63cf7ed7ee983334edd05a49e0bfa117b190a23
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 414d5de02ee0f66f5526298897221a49177bce5a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198542"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639196"
 ---
 # Save-AzResourceGroupDeploymentTemplate
 
 ## SYNOPSIS
 Menyimpan templat penyebaran grup sumber daya ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/save-azresourcegroupdeploymenttemplate) untuk informasi terbaru.
 
 ## SYNTAX
 

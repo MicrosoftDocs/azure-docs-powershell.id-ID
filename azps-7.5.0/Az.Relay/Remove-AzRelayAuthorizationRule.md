@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
-ms.openlocfilehash: a3c0a4d646b5849576a6ff190d69fca3f1a01a4b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1225b46b6bfac8698099f489e007e4c32c4aaf4e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237923"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645276"
 ---
 # Remove-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi HybridConnection dari entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/remove-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Na
 
 Menghapus aturan `AuthoRule1` otorisasi WcfRelay `TestWcfRelay` dari namespace `TestNameSpace-Relay1`.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -HybridConnection TestHybridConnection -Name AuthoRule1
 ```

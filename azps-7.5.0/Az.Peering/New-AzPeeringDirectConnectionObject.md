@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringDirectConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringDirectConnectionObject.md
-ms.openlocfilehash: 311bf3cf6dec24d2437a2e9ad816e447a39c1567
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: baa7594e1989de00db5b635b87e3844ddd05eae5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207878"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145659766"
 ---
 # New-AzPeeringDirectConnectionObject
 
 ## SYNOPSIS
 Membuat PSObject dalam memori yang akan digunakan untuk membuat atau memodifikasi Peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeeringdirectconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ BandwidthInMbps        : 30000
 
 Membuat koneksi peering langsung dengan penggunaan untuk layanan peering diaktifkan dan alamat IP yang disediakan Microsoft
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzPeeringDirectConnectionObject -PeeringDBFacilityId 99999 -BandwidthInMbps 30000 -SessionPrefixV4 192.168.1.0/31 -SessionPrefixV6 fe01::0/127 -UseForPeeringService
 ```

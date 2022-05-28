@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 62e7d4747242dbada7176b9b60ada56da2b6e75c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2db27c83eaf1c7f9f68ef532422e2e3d53ed9cc0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211886"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630609"
 ---
 # Remove-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Hapus jenis node atau node tertentu dalam jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ $nodeType | Remove-AzServiceFabricManagedNodeType
 
 Hapus jenis node, dengan pipa.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRG"
 $clusterName = "testCluster"
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Tentukan nama jenis node.
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

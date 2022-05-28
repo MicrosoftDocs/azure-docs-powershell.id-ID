@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
-ms.openlocfilehash: 15b1667ed874152bc928780999a28e4ee7c729e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 27469a83d1547d73c728d38119bafeeca7cd9171
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238063"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645618"
 ---
 # Get-AzRelayHybridConnection
 
 ## SYNOPSIS
 Mendapatkan deskripsi untuk HybridConnection yang ditentukan dalam namespace layanan Relay.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

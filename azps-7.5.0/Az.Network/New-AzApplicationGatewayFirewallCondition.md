@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
-ms.openlocfilehash: f5c20d2df56613b23b54fbc246bae710aeea0e1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 089ae42e932229163bbb8101c3af07420feaef0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678198"
 ---
 # New-AzApplicationGatewayFirewallCondition
 
 ## SYNOPSIS
 Membuat kondisi kecocokan untuk aturan kustom
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcondition) untuk informasi terbaru.
 
 ## SYNTAX
 

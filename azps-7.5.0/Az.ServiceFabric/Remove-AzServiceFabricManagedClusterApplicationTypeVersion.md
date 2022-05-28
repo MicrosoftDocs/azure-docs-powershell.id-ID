@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: 4edf4b7ca2eb6864bd623013b61ac98e2f163bb1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7fe42a6d553a6eacd6d5b426947708b780f9ef71
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211907"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630718"
 ---
 # Remove-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Menghapus versi jenis aplikasi terkelola dari kluster. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ $appTypeVersion | Remove-AzServiceFabricManagedClusterApplicationTypeVersion -Fo
 
 Contoh ini akan menghapus versi terkelola "v1" di bawah jenis "testAppType". Ini ada aplikasi apa pun di bawah sumber daya ini perintah akan melemparkan pengecualian.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applicationTypes/testAppType/versions/v1"
 Remove-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceId $resourceId

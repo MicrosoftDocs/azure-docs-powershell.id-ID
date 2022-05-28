@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
-ms.openlocfilehash: c860a69988759295c999221906b46c45616aabbc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 423795cab1d4bfe261a3e7e14d217c806632ed6e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238007"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645474"
 ---
 # New-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azrelayauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 

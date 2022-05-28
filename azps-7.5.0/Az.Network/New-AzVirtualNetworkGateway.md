@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 5f359fa4d58494f2e89b0e9999a58c362091f127
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4e7fa4666074771786d9ebdff92fac15ec35174d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213410"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672744"
 ---
 # Baru-GatewayJaringanVirtualAz
 
 ## SYNOPSIS
 Membuat gateway Microsoft Azure Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -173,7 +176,7 @@ Gateway akan disebut "gateway1" dalam grup sumber daya "resourcegroup1resourcegr
 ## PARAMETERS
 
 ### -AadAudienceId
-P2S AAD opsi autentikasi:AadAudienceId.
+Opsi autentikasi AAD P2S:AadAudienceId.
 
 ```yaml
 Type: System.String
