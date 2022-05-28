@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/New-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/New-AzReservation.md
-ms.openlocfilehash: bb4ae9e5170966a54b8a21ae82358e57d30efd5d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f00deb02876f853877563dd7895ec18edf8e235a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212075"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644736"
 ---
 # New-AzReservation
 
 ## SYNOPSIS
 Membeli reservasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/new-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingScopeId
-Langganan yang akan dikenakan untuk membeli Reservasi.
+Langganan yang akan dikenakan biaya untuk membeli Reservasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama yang mudah diingat bagi pengguna untuk mengidentifikasi reservasi dengan mudah.
+Nama yang mudah diingat bagi pengguna untuk dengan mudah mengidentifikasi reservasi.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Perbarui
-Atur ini ke true akan secara otomatis membeli reservasi baru pada waktu tanggal kedaluwarsa.
+### -Perpanjang
+Atur ini ke true akan secara otomatis membeli reservasi baru pada tanggal kedaluwarsa.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]

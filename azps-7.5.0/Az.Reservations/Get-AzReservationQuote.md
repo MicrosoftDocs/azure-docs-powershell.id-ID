@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
-ms.openlocfilehash: 83f633c3fd3958874534aea5270410a03ea2c4fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d055f69e6eac259db1aaa9454a593d263299c9b0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212099"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644772"
 ---
 # Get-AzReservationQuote
 
 ## SYNOPSIS
 Dapatkan kutipan untuk reservasi. Ini diteruskan ke `New-AzReservation` untuk membeli.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationquote) untuk informasi terbaru.
 
 ## SYNTAX
 

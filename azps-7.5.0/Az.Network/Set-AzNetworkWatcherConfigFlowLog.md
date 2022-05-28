@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
-ms.openlocfilehash: c3e8811d30a0044c9896f5633584dde923d8bb60
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8316a69dd647ff98263d86bb3994e8b3ccfdbef1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223022"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665688"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
 ## SYNOPSIS
 Mengonfigurasi pengelogan alur untuk sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconfigflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
-ms.openlocfilehash: 326e0d331d1f5c721ceb3a16013756bf09cc5101
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d8fea154453f7e999f9b6bbb4e1a14346cee383a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212063"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644664"
 ---
 # Update-AzReservation
 
 ## SYNOPSIS
 `Reservation`Perbarui .
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/update-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 

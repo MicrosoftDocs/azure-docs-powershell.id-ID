@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpPrefix.md
-ms.openlocfilehash: 4f46812bb5283ff9c43e7214d5186d6dc31c80ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eaacdb0b5b99116760fe77a37eae10c11fe0c2ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231094"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665373"
 ---
 # Set-AzPublicIpPrefix
 
 ## SYNOPSIS
 Mengatur Tag untuk PublicIpPrefix yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azpublicipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: c43c659f98e536c66d69298f529a6b1ca9fd7056
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfabba618e1e9c82508c4fc8cb203ae2b4db6564
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242812"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665616"
 ---
 # Set-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
 Memperbarui sumber daya log alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 

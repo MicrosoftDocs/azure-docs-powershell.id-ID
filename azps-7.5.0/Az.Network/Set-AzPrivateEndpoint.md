@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpoint.md
-ms.openlocfilehash: ed38ef5f18f9be21d62387e1a83a1f6cd2782c05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e81f63ed278c8baf1b72689cc130383955212550
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199225"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665580"
 ---
 # Set-AzPrivateEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

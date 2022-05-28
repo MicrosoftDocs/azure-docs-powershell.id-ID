@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: f572d35647a1841fbfdf1e6aa5d7711338893246
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3631d0248c95fe38aea0437ba972282d96cd2c20
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223010"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665724"
 ---
 # Set-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
 Memperbarui sumber daya pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Set-AzNetworkWatcherConnectionMonitor -InputObject <PSConnectionMonitorResult> [
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzNetworkWatcherConnectionMonitor memperbarui sumber daya pemantau koneksi.
+Cmdlet Set-AzNetworkWatcherConnectionMonitor memperbarui sumber daya monitor koneksi.
 
 ## EXAMPLES
 
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya network watcher.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama network watcher.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya network watcher.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String

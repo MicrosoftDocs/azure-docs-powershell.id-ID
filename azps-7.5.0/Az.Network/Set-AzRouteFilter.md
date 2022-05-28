@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilter.md
-ms.openlocfilehash: 392384b5d661bb878b10e0bb35dfa11fda8af56f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 901508bfa9eb7629bfcd7c89da57bcfa3bc3e33c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215162"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665400"
 ---
 # Set-AzRouteFilter
 
 ## SYNOPSIS
 Memperbarui filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutefilter) untuk informasi terbaru.
 
 ## SYNTAX
 

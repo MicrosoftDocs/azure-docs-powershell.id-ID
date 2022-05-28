@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 90b3f3b72671ffe07f94ed5af9d296442566ffcc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fea3809e6eb03f3ce55d0604444fd2b70cfb5c1a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197548"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665526"
 ---
 # Set-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Memperbarui status koneksi titik akhir privat pada layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Cmdlet **Set-AzPrivateEndpointConnection** memperbarui status koneksi titik akhi
 Set-AzPrivateEndpointConnection -Name TestPrivateEndpointConnection -ResourceGroupName TestResourceGroup -ServiceName TestPrivateLinkService -PrivateLinkServiceConnectionState "Approved"
 ```
 
-Contoh ini memperbarui status koneksi titik akhir privat menjadi Disetujui.
+Contoh ini memperbarui status koneksi titik akhir privat ke Disetujui.
 
 ## PARAMETERS
 

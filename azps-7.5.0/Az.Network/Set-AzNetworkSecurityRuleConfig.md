@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: 71fc5a135eaaa9f34859e218994a6bd04575268f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 84bace14cb88eed1e711a8fb49f104f8395ba30d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223034"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665706"
 ---
 # Set-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Memperbarui konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan. (
 Set-AzNetworkSecurityRuleConfig -Access Allow -DestinationAddressPrefix * -DestinationPortRange 3389 -Direction Inbound -Name 'rdp-rule' -NetworkSecurityGroup <PSNetworkSecurityGroup> -Priority 1 -Protocol Tcp -SourceAddressPrefix 'Internet' -SourcePortRange *
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Memperbarui konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan. (dibuat otomatis)
 

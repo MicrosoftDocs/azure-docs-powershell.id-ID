@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/spl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Split-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Split-AzReservation.md
-ms.openlocfilehash: 63360cfc37a785b0c9598b77f85bb8a0f0907eba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd157f7596de79ea863b413cebd154fd73a47a93
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212066"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145644718"
 ---
 # Split-AzReservation
 
 ## SYNOPSIS
 `Reservation`Pisahkan .
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/split-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Split-AzReservation -Quantity <Int32[]> -Reservation <PSReservation> [-DefaultPr
 ```
 
 ## DESCRIPTION
-`Reservation` Pisahkan menjadi dua `Reservation`d dengan distribusi kuantitas tertentu.
+Pisahkan `Reservation` menjadi dua `Reservation`d dengan distribusi kuantitas yang ditentukan.
 
 ## EXAMPLES
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-`ReservationOrder` Id yang berisi yang ingin dipisahkan `Reservation` pengguna
+`ReservationOrder` Id yang berisi pengguna yang `Reservation` ingin dipisahkan
 
 ```yaml
 Type: System.Guid

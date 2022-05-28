@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateDnsZoneGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateDnsZoneGroup.md
-ms.openlocfilehash: 9f546b358ccb8cbb6759feab86987f05c2a0320b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 21f43409c07da547ae9eb5a49871e428ec8db1ee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200194"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145665544"
 ---
 # Set-AzPrivateDnsZoneGroup
 
 ## SYNOPSIS
 Memperbarui grup zona DNS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azprivatednszonegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ PrivateDnsZoneConfigs : [
                         ]
 ```
 
-Contoh di atas memperbarui grup zona DNS bernama dnsgroup1 dengan dnsconfig baru yang menautkan ke zona DNS lain.
+Contoh di atas memperbarui grup zona DNS bernama dnsgroup1 dengan konfigurasi dns baru yang tertaut ke zona DNS lain.
 
 ## PARAMETERS
 
