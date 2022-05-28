@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: 9358f8edaa3dea7126a340e9eb48e2e87c4e6b3b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9dbbbc2c2d63ecafb83cdf03aba9d34282249f42
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201020"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666840"
 ---
 # Set-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Mengatur konfigurasi untuk array pemetaan jalur URL ke kumpulan server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayurlpathmapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Perintah ketiga memperbarui gateway aplikasi.
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menetapkan konfigurasi peta jalur URL.
+Menentukan gateway aplikasi tempat cmdlet ini mengatur konfigurasi peta jalur URL.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfiguration
-Konfigurasi Ulang default gateway aplikasi
+Konfigurasi Pengalihan default gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfigurationId
-ID Konfigurasi Ulang default gateway aplikasi
+ID konfigurasi ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRewriteRuleSetId
-ID kumpulan aturan penulisan ulang default gateway aplikasi
+ID seperangkat aturan penulisan ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -PathRules
 Menentukan daftar aturan jalur.
-Perhatikan bahwa aturan jalur bersifat sensitif terhadap pesanan, aturan tersebut diterapkan agar ditentukan.
+Perhatikan bahwa aturan jalur sensitif terhadap pesanan, aturan tersebut diterapkan agar ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule[]

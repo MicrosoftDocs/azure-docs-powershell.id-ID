@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 3e32beb03184c6415fda91991c0021b62c984b8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9d44037d34710105b8539cc7ef676781f737769
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208754"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650100"
 ---
 # Get-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 
 Mendapatkan pekerjaan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,14 +54,14 @@ V2VM             Backup               InProgress           4/23/2016 5:00:30 PM 
 Perintah pertama mendapatkan status pekerjaan yang sedang berlangsung sebagai array, lalu menyimpannya dalam variabel $Joblist.
 Perintah kedua menampilkan item pertama dalam array $Joblist.
 
-### Contoh 2: Dapatkan semua pekerjaan yang gagal dalam 7 hari terakhir
+### Contoh 2: Mendapatkan semua pekerjaan yang gagal dalam 7 hari terakhir
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 Get-AzRecoveryServicesBackupJob -From (Get-Date).AddDays(-7).ToUniversalTime() -Status Failed -VaultId $vault.ID
 ```
 
-Perintah ini mendapatkan pekerjaan yang gagal dari minggu lalu di brankas.
+Perintah ini mendapatkan pekerjaan yang gagal dari minggu lalu di vault.
 Parameter *Dari* menentukan waktu tujuh hari di masa lalu yang ditentukan dalam UTC.
 Perintah tidak menentukan nilai untuk parameter *Kepada* .
 Oleh karena itu, ia menggunakan nilai default dari waktu saat ini.
@@ -95,7 +98,7 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "v
 $Jobs = Get-AzRecoveryServicesBackupJob  -VaultId $vault.ID  -Status Completed -From (Get-Date).AddDays(-2).ToUniversalTime() -BackupManagementType AzureVM
 ```
 
-Cmdlet pertama mengambil objek vault. Cmdlet kedua menyimpan semua pekerjaan AzureVM di vault tertentu yang selesai dalam 2 hari terakhir untuk $jobs. Ubah nilai parameter BackupManagementType menjadi MAB untuk mengambil pekerjaan agen MAB.
+Cmdlet pertama mengambil objek vault. Cmdlet kedua menyimpan semua pekerjaan AzureVM di vault tertentu yang selesai dalam 2 hari terakhir hingga $jobs. Ubah nilai parameter BackupManagementType ke MAB untuk mengambil pekerjaan agen MAB.
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -Dari
 
-Menentukan awal, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapatkan cmdlet ini.
+Menentukan awal, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
 Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
 Untuk informasi selengkapnya tentang objek **DateTime** , ketik `Get-Help Get-Date`.
 Gunakan format UTC untuk tanggal.
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -JobId
 
-Menentukan ID pekerjaan yang didapatkan cmdlet ini.
+Menentukan ID pekerjaan yang didapat cmdlet ini.
 ID adalah properti JobId dari objek **Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase** .
 
 ```yaml
@@ -190,9 +193,9 @@ Menentukan operasi pekerjaan yang didapat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Cadangan
-- KonfigurasikanBackup
+- MengonfigurasiBackup
 - DeleteBackupData
-- NonaktifkanCadangkan
+- NonaktifkanBackup
 - Pulihkan
 - BackupDataMove
 

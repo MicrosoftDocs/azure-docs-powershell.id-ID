@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Invoke-AzProviderHubManifestCheckin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Invoke-AzProviderHubManifestCheckin.md
-ms.openlocfilehash: 1444fbb45ab38012455546deba45a7796acc0424
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f3085b61af31b1ae8a22d812eb1553ff3874df7e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144113152"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657030"
 ---
 # Invoke-AzProviderHubManifestCheckin
 
 ## SYNOPSIS
 Periksa manifes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/invoke-azproviderhubmanifestcheckin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Periksa manifes penyedia sumber daya.
 ## PARAMETERS
 
 ### -BaselineArmManifestLocation
-Lokasi manifes ARM dasar yang disediakan untuk operasi manifes checkin.
+Lokasi manifes ARM dasar disediakan untuk operasi manifes checkin.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkungan
-Lingkungan yang disediakan untuk operasi manifes checkin.
+Lingkungan yang diberikan ke operasi manifes cek masuk.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 7bc1f1c516ec6d75df691a688e35b5d3bc5cc2e6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6a2077267c69ace61e8027c82a6aea9c2f73228b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237772"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145630988"
 ---
 # New-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Buat sumber daya jenis node baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ New-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clus
 
 Buat jenis node utama dengan 5 simpul dan tentukan properti penempatan, kapasitas, aplikasi, dan port sementara.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRG"
 $clusterName = "testCluster"

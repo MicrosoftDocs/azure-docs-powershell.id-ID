@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainer.md
-ms.openlocfilehash: 9c1376d3e4c1d2813afec820f318cb85b5b9ff1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e2549354e3ed62f8626f88cfb41bd011f901a669
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245553"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650550"
 ---
 # Get-AzRecoveryServicesAsrProtectionContainer
 
 ## SYNOPSIS
 Mendapatkan kontainer perlindungan ASR di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,9 +71,9 @@ AvailablePolicies           : {V2aTestPolicy, v2ahydra, v2aswag-failback, v2aswa
 ProtectionContainerMappings : {pcmmapping, v2aPowerold, 636569dc-79bc-4f50-b83d-89f58717f0b2, df7aa204-b0ef-4d62-943e-324551030e5b}
 ```
 
-Kontainer perlindungan dalam $fabric fabric dengan nama.
+Kontainer perlindungan dalam fabric $fabric dengan nama.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRecoveryServicesAsrProtectionContainer -FriendlyName xxxxxxxx  -Fabric $fabric
 ```
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Cari kontainer perlindungan dalam fabric ASR yang ditentukan.
+Cari kontainer perlindungan dalam kain ASR yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
-ms.openlocfilehash: 6f133eb9fda2e01927d31ef4fa63b5f04929e3c0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5ee30fb285164582940769de0a898b7868f0ee24
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184990"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687252"
 ---
 # Get-AzConsumptionMarketplace
 
 ## SYNOPSIS
 Mendapatkan marketplace langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionmarketplace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ UsageEnd:  2018-04-29T00:00:00Z
 UsageStart:  2018-04-28T00:00:00Z
 ```
 
-### Contoh 2: Mendapatkan penggunaan marketplace dengan rentang tanggal
+### Contoh 2: Dapatkan penggunaan marketplace dengan rentang tanggal
 ```powershell
 Get-AzConsumptionMarketplace -StartDate 2018-01-03 -EndDate 2018-01-20 -Top 10
 ```
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Grup sumber daya marketplace untuk difilter.
+Grup sumber daya marketplace yang akan difilter.
 
 ```yaml
 Type: System.String

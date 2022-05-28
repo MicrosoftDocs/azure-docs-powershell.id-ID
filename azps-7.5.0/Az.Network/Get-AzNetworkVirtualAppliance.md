@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualAppliance.md
-ms.openlocfilehash: 26de21330f1ea97d448f01ee98ff40328f545662
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 193de1249b1871acf8166a41c2d8599faa3725c9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681420"
 ---
 # Get-AzNetworkVirtualAppliance
 
 ## SYNOPSIS
 Mendapatkan atau Mencantumkan Appliance Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkvirtualappliance) untuk informasi terbaru.
 
 ## SYNTAX
 

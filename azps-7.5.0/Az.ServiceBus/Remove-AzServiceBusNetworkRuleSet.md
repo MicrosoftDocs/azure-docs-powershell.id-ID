@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: 53daab33e2213485aa7c9aaeebf0050870bb4f2c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b73d38c27c1be8f475aa2e0433c8ead69b459ec8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215759"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632788"
 ---
 # Remove-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
-Menghapus NetworkRuleSet untuk Namespace Yang Diberikan
+Menghapus NetworkRuleSet untuk Namespace yang Diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzServiceBusNetworkRuleSet [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Menghapus NetworkRuleSet untuk Namespace Yang Diberikan
+Menghapus NetworkRuleSet untuk Namespace yang Diberikan
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ VirtualNetworkRules :
 ```
 Menghapus NetworkRuleSet menggunakan InputObject 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace1-1375
 ```

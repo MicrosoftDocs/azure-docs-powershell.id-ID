@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: f1aa669507841a41a63eb25f732d5ec39315cb26
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23c9685d5d8e8a9fe5f683f1c6e8a988f2d4f81c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224663"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694566"
 ---
 # Set-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan untuk sertifikat dalam brankas kunci.
+Membuat atau memperbarui kebijakan untuk sertifikat di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String> [-RenewAt
  [-Curve <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### NilaiDasar
+### Nilai ByValue
 ```
 Set-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String>
  [-InputObject] <PSKeyVaultCertificatePolicy> [-EmailAtNumberOfDaysBeforeExpiry <Int32>]
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtNumberOfDaysBeforeExpiry
-Menentukan jumlah hari sebelum kedaluwarsa ketika perpanjangan otomatis harus dimulai.
+Menentukan jumlah hari sebelum kedaluwarsa saat perpanjangan otomatis harus dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

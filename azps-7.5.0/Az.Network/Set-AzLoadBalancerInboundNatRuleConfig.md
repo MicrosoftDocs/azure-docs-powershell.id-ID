@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: 22a542d4324f803b1a6c733eee60813f1dbe5fd8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d35f74a01ba9319a1f760b2af89b481d43876fc4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223175"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666120"
 ---
 # Set-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Mengatur konfigurasi aturan NAT masuk untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

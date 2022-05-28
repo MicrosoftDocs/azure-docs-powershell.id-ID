@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatPoolConfig.md
-ms.openlocfilehash: 41659683ec9496690140eec02cafe9c183067fec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: adf6a99e6a62e6dd4309e93c2ab816f26f442dee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196467"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674940"
 ---
 # New-AzLoadBalancerInboundNatPoolConfig
 
 ## SYNOPSIS
 Membuat konfigurasi kumpulan NAT masuk untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerinboundnatpoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

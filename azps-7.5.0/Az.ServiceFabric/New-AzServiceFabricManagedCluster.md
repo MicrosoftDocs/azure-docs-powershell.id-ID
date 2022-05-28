@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
-ms.openlocfilehash: e3aeeaddaa8bb7a574eb0dbfe732b04f87854369
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 249e38438a111219b56be4e5df9d60d947d2f0be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229540"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631258"
 ---
 # New-AzServiceFabricManagedCluster
 
 ## SYNOPSIS
 Buat kluster terkelola baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzServiceFabricManagedCluster [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan membuat sumber daya kluster terkelola tanpa jenis node. Untuk bootstrap kluster Jenis node utama perlu ditambahkan, gunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
+Cmdlet ini akan membuat sumber daya kluster terkelola tanpa jenis node. Untuk bootstrap kluster Jenis node utama perlu ditambahkan gunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ New-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Location centralus
 
 Perintah ini membuat sumber daya kluster di centraluseuap dengan sertifikat klien admin awal dan sku standar.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRG"
 $clusterName = "testCluster"
@@ -88,7 +91,7 @@ Perintah ini membuat kluster dengan mode peningkatan manual dan versi kode 7.2.4
 ## PARAMETERS
 
 ### -AdminPassword
-Kata sandi admin yang digunakan untuk komputer virtual.
+Admin kata sandi yang digunakan untuk komputer virtual.
 
 ```yaml
 Type: System.Security.SecureString
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUserName
-Kata sandi admin yang digunakan untuk komputer virtual.
+Admin kata sandi yang digunakan untuk komputer virtual.
 Default: vmadmin.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku kluster, opsinya adalah Dasar: akan memiliki minimal 3 node seed dan hanya memungkinkan 1 jenis node dan Standar: ia akan memiliki minimal 5 node seed dan memungkinkan beberapa jenis node.
+Sku kluster, opsinya adalah Dasar: akan memiliki minimal 3 node seed dan hanya memungkinkan 1 jenis node dan Standar: akan memiliki minimal 5 node seed dan memungkinkan beberapa jenis node.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ManagedClusterSku
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeMode
-Mode peningkatan versi kode service fabric kluster.
+Mode peningkatan versi kode fabric layanan kluster.
 Otomatis atau Manual.
 
 ```yaml

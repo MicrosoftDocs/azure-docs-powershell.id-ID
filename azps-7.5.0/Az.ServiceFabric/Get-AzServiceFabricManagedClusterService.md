@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterService.md
-ms.openlocfilehash: 9edb15eee4a339e35c838fb7ba93af1493f90828
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea72ea26066cd442702cb476f97cc187729395b9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631546"
 ---
 # Get-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
 Dapatkan detail layanan terkelola Service Fabric di bawah aplikasi dan kluster yang ditentukan. Hanya mendukung layanan yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Get-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -
 
 Contoh ini mendapatkan daftar layanan terkelola di bawah aplikasi "testApp".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applications/testApp/services/testService"
 Get-AzServiceFabricManagedClusterService -ResourceId $resourceId

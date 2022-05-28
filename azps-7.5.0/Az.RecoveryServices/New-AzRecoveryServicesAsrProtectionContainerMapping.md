@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainerMapping.md
-ms.openlocfilehash: ccd02408ddd9babfab206f1b185cd9386484bff5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89c5519216fc9a85880cbc14fd2d1fa59b304b38
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194451"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649074"
 ---
 # New-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
 Membuat pemetaan Kontainer Azure Site Recovery Protection dengan mengaitkan kebijakan replikasi yang ditentukan ke kontainer perlindungan ASR yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: f79c3a08610231a7e82eca5a19672d48e8e177b7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 92c2dcd04ef62b48643b3faf0f663a79b5f109fd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235392"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661170"
 ---
 # New-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Membuat Storage Insight di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk men
 Perintah kedua menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $Storage.
 Perintah ketiga meneruskan akun penyimpanan dalam $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator alur untuk mendapatkan kunci yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lain, gunakan Nilai[1] alih-alih Nilai[0].
 Perintah akhir membuat wawasan penyimpanan bernama MyStorageInsight di ruang kerja yang ditentukan dalam $Workspace.
-Storage Insight menggunakan data dari tabel WADWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
+Wawasan Storage menggunakan data dari tabel WADWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
 
 ## PARAMETERS
 
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceName
-Menentukan nama ruang kerja yang ada.
+Menentukan nama ruang kerja yang sudah ada.
 
 ```yaml
 Type: System.String

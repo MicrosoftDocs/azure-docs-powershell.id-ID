@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 466a9af7ac6f977f41564b50fda8e9a3995c3643
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: debf862b08b994de5436cb912548eb4cebbe8825
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208787"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650172"
 ---
 # Get-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
 Mendapatkan item dari kontainer di Backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 

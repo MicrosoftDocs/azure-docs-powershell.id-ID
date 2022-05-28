@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
-ms.openlocfilehash: 56675ec59f9a764ea00e904e0d8962190c28b8d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 477907f28f2f2a5572dba14f0081c43c5c50c7d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660684"
 ---
 # Set-AzOperationalInsightsIntelligencePack
 
@@ -19,6 +19,9 @@ ms.locfileid: "144208919"
 Mengaktifkan atau menonaktifkan Paket Kecerdasan yang ditentukan.
 > [!NOTE]
 > Solusi tidak digunakan lagi, silakan gunakan [solusi log-analytics monitor az](https://docs.microsoft.com/en-us/cli/azure/monitor/log-analytics/solution?view=azure-cli-latest) dan [Get-AzMonitorLogAnalyticsSolution sebagai gantinya](https://docs.microsoft.com/en-us/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution?view=azps-5.9.0) jika perintah ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsintelligencepack) untuk informasi terbaru.
 
 ## SYNTAX
 

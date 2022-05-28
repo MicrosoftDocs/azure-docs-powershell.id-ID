@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzIpGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzIpGroup.md
-ms.openlocfilehash: 16fd1ee975b1cde2a74b9626f28e9fd7aa7d21a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6db6e3770d4e2c49616f1bcdd2e6409220e6f60b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223223"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666264"
 ---
 # Atur-AzIpGroup
 
 ## SYNOPSIS
 Menyimpan Firewall yang dimodifikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azipgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

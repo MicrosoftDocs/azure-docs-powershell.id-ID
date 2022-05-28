@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/disable-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
-ms.openlocfilehash: 1c47dd7ff82596c9a473a97bfbdbfae3add3dd54
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb8214d98cddf094405029b0ce7a0d73a30db5a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243565"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687717"
 ---
 # Disable-AzAksAddOn
 
 ## SYNOPSIS
 Nonaktifkan addon untuk aks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/disable-azaksaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

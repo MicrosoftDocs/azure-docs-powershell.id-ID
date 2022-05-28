@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 5f58ef6a02bb019117443afaae2447a8ac6391b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a14196d7c99eba80789444662660f2c8490a63dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235221"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649848"
 ---
 # Get-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Mengunduh skrip untuk memasang semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprpmountscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ OsType  Password        Filename
 Windows e3632984e51f496 V2VM_wus2_8287309959960546283_451516692429_cbd6061f7fc543c489f1974d33659fed07a6e0c2e08740.exe
 ```
 
-Ketika skrip dijalankan, skrip akan memasang file titik pemulihan $rp\[ 0\]
+Ketika skrip dijalankan, skrip akan memasang file titik pemulihan $rp\[0\]
 
 ### Contoh 2
 

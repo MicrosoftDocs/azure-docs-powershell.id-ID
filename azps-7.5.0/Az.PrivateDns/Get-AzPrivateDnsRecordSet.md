@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 7972d4ff46049ca46f6fc2333ef4dcd3d055af93
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c63177b6019f4105340224d53d9c913f09753480
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182876"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657390"
 ---
 # Get-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Mendapatkan kumpulan catatan dari zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/get-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzPrivateDnsRecordSet -ParentResourceId <String> [-RecordType <RecordType>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzPrivateDnsRecordSet mendapatkan kumpulan catatan Sistem Nama Domain Privat (DNS) dengan nama dan jenis yang ditentukan, di zona privat yang ditentukan. Jika Anda tidak menentukan parameter Nama atau RecordType, cmdlet ini mengembalikan semua kumpulan catatan dari jenis yang ditentukan di zona privat. Jika Anda menentukan parameter RecordType tetapi bukan parameter Nama, cmdlet ini mengembalikan semua kumpulan catatan dari jenis catatan yang ditentukan. Anda dapat menggunakan operator alur untuk meneruskan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat meneruskan objek PSPrivateDnsZone sebagai parameter Zona, atau anda dapat menentukan zona dan grup sumber daya berdasarkan nama. Anda juga dapat menentukan zona privat menggunakan Id Sumber Daya zona privat.
+Cmdlet Get-AzPrivateDnsRecordSet mendapatkan kumpulan catatan Sistem Nama Domain Privat (DNS) dengan nama dan jenis yang ditentukan, di zona privat yang ditentukan. Jika Anda tidak menentukan parameter Nama atau RecordType, cmdlet ini mengembalikan semua kumpulan catatan dari jenis yang ditentukan di zona privat. Jika Anda menentukan parameter RecordType tetapi bukan parameter Nama, cmdlet ini mengembalikan semua kumpulan catatan dari jenis catatan yang ditentukan. Anda dapat menggunakan operator alur untuk meneruskan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat meneruskan objek PSPrivateDnsZone sebagai parameter Zona, atau atau Anda dapat menentukan zona dan grup sumber daya berdasarkan nama. Anda juga dapat menentukan zona privat menggunakan Id Sumber Daya zona privat.
 
 ## EXAMPLES
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik yang mengakhiri).
+Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik penghentian).
 
 ```yaml
 Type: System.String

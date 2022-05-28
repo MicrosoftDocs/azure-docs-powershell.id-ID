@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesDSMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesDSMove.md
-ms.openlocfilehash: 6d9e1e5b565fa6817882d31c5dea6b5564644fed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 626c32406b7fdf9c1979fe0f75ee5cac58c2c469
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236705"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649398"
 ---
 # Initialize-AzRecoveryServicesDSMove
 
 ## SYNOPSIS
 Menginisialisasi pemindahan DS untuk Copy-AzRecoveryServicesVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesdsmove) untuk informasi terbaru.
 
 ## SYNTAX
 

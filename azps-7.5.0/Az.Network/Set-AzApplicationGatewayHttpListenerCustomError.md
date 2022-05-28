@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListenerCustomError.md
-ms.openlocfilehash: 3e90a4d1a91f4e5ce01ac12a5db5fba82bd97f9c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e41a9b92b3a019a98dc419ed15658075a97fd917
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194524"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667344"
 ---
 # Set-AzApplicationGatewayHttpListenerCustomError
 
 ## SYNOPSIS
 Memperbarui kesalahan kustom di pendengar http gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayhttplistenercustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 

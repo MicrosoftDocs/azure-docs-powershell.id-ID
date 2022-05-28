@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDevice.md
-ms.openlocfilehash: 2eeea0e78072a734c3b98cc317c828f2472d3a8f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a1732e045c410b361d5b140f706b7a84109e13b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694800"
 ---
 # Get-AzIotHubDevice
 
 ## SYNOPSIS
 Mencantumkan semua perangkat atau perangkat tertentu yang terkandung dalam Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ device2   Disabled Disconnected     Sas                  False        1/1/0001 1
 device3   Enabled  Disconnected     SelfSigned           False        1/1/0001 12:00:00 AM
 ```
 
-Tampilkan semua perangkat di Iot Hub.
+Menampilkan semua perangkat di Iot Hub.
 
 ### Contoh 2
 ```powershell

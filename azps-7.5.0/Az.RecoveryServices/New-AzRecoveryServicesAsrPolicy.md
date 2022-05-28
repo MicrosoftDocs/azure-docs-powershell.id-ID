@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 0d79bd56b461543804f34936fcb409ea94f4ebeb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 40302497a8bdb30bf44a95918166bec20af8bf4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229635"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649145"
 ---
 # New-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Membuat kebijakan replikasi Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 Menentukan interval frekuensi replikasi dalam hitungan detik.
 Nilai yang valid adalah:
 
--  30
+- 30
 - 300
 - 900
 

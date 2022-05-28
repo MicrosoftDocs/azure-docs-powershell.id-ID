@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeployment.md
-ms.openlocfilehash: 4d4a0e4730b55fce8e2e8c5e3752dfe40dfc2c34
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e7620eeb9e2604a40142583703acf604f9f8ccff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239648"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694818"
 ---
 # Get-AzIotHubDeployment
 
 ## SYNOPSIS
 Mencantumkan semua atau penyebaran IoT Edge tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubRoutingEndpoint.md
-ms.openlocfilehash: afe19888b020f99f0916061a4b0fceadf6c1a399
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 760c895f43305f63a9b2cdfc4b1d202c784c0744
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239729"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695088"
 ---
 # Add-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
 Menambahkan titik akhir ke IoT Hub Anda
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointSubscriptionId
-SubscriptionId sumber daya Titik Akhir
+SubscriptionId dari sumber daya Titik Akhir
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengodean
-Pilih format tempat Anda ingin merutekan data Anda. Anda dapat memilih JSON atau AVRO. Default diatur ke AVRO.
+Pilih format tempat Anda ingin merutekan data Anda. Anda dapat memilih JSON atau AVRO. Defaultnya diatur ke AVRO.
 
 ```yaml
 Type:System.String

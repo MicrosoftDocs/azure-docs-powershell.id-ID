@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
-ms.openlocfilehash: 9d043ac6370e2346d35e3be5f15cea558c42a6e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9bccb4a0d2467424c1b6d3afca57e50d5945b56f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220322"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649758"
 ---
 # Get-AzRecoveryServicesBackupRecoveryPoint
 
 ## SYNOPSIS
 
 Mendapatkan titik pemulihan untuk item yang dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 

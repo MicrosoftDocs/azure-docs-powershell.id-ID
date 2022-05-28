@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
-ms.openlocfilehash: c4d85716e40263b3c464a6eec024f7920e54b309
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1074fdcefe47b1c40a33cf3a0f3c3d6be2e471b3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190055"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681168"
 ---
 # Get-AzNetworkWatcherFlowLogStatus
 
 ## SYNOPSIS
 Mendapatkan status alur masuk pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherflowlogstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetworkWatcherFlowLogStatus -Location <String> -TargetResourceId <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherFlowLogStatus Mendapatkan status pengelogan alur pada sumber daya. Status ini mencakup apakah pengelogan alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Kelompok Keamanan Jaringan didukung untuk pengelogan alur. 
+cmdlet Get-AzNetworkWatcherFlowLogStatus Mendapatkan status pengelogan alur pada sumber daya. Status ini mencakup apakah pengelogan alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Kelompok Keamanan Jaringan didukung untuk pengelogan alur. 
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Properties       : {
 
 Dalam contoh ini kita mendapatkan status pengelogan alur untuk Kelompok Keamanan Jaringan. NSG yang ditentukan mengaktifkan pengelogan alur, format default, dan tidak ada kebijakan penyimpanan yang ditetapkan.
 
-### Contoh 2: Dapatkan Status Pengelogan Flow dan Analitik Lalu Lintas untuk NSG Tertentu
+### Contoh 2: Mendapatkan Status Pengelogan Flow dan Analitik Lalu Lintas untuk NSG tertentu
 ```powershell
 $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -99,7 +102,7 @@ FlowAnalyticsConfiguration : {
           }
 ```
 
-Dalam contoh ini kita mendapatkan pengelogan alur dan status Analitik Lalu Lintas untuk Kelompok Keamanan Jaringan. NSG yang ditentukan memiliki pengelogan alur dan Analitik Lalu Lintas diaktifkan, format default, dan tidak ada kebijakan penyimpanan yang ditetapkan.
+Dalam contoh ini kita mendapatkan pengelogan alur dan status Analitik Lalu Lintas untuk Grup Keamanan Jaringan. NSG yang ditentukan memiliki pengelogan alur dan Analitik Lalu Lintas diaktifkan, format default, dan tidak ada kebijakan penyimpanan yang ditetapkan.
 
 ## PARAMETERS
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya network watcher.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama network watcher.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya network watcher.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, alur, log, flowlog, pengelogan
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, alur, log, flowlog, pengelogan
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorEndpointScopeItemObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorEndpointScopeItemObject.md
-ms.openlocfilehash: b494964da4c03815140804b9adada41852bf6669
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa03852231ddaf4d399b5eb3bfc31ce224cfe2bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246830"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674418"
 ---
 # New-AzNetworkWatcherConnectionMonitorEndpointScopeItemObject
 
 ## SYNOPSIS
 Membuat item cakupan titik akhir monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorendpointscopeitemobject) untuk informasi terbaru.
 
 ## SYNTAX
 

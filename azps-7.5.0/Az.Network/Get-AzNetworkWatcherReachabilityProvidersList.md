@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityProvidersList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityProvidersList.md
-ms.openlocfilehash: b1a2f6f3d664cf966929f35d0f6ae9d604ab44dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 63f21e26897f6a31ccfb212707b480d10c575112
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244016"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681060"
 ---
 # Get-AzNetworkWatcherReachabilityProvidersList
 
 ## SYNOPSIS
 Mencantumkan semua penyedia layanan internet yang tersedia untuk wilayah Azure tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherreachabilityproviderslist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengamat jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengamat jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-Nama negara bagian.
+Nama negara.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableProvidersList
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
 
 ## RELATED LINKS
 

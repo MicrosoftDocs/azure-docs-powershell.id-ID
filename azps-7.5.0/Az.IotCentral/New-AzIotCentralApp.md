@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iotcentral/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/New-AzIotCentralApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/New-AzIotCentralApp.md
-ms.openlocfilehash: 97fdb151b0d2e9b8af4c596e7df778fab4cdd6e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f6092410da6c44a15f96bae1c5f3cf5d0149462
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197940"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695520"
 ---
 # New-AzIotCentralApp
 
 ## SYNOPSIS
 Membuat Aplikasi IoT Central baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iotcentral/new-aziotcentralapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIotCentralApp [-Subdomain] <String> [-DisplayName <String>] [-Template <St
 ```
 
 ## DESCRIPTION
-Membuat Aplikasi IoT Central baru dengan properti dan metadata yang disediakan. Untuk pengenalan IoT Central, lihat https://docs.microsoft.com/azure/iot-central/.
+Membuat Aplikasi IoT Central baru dengan properti dan metadata yang disediakan. Untuk pengantar IoT Central, lihat https://docs.microsoft.com/azure/iot-central/.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ResourceGroupName : MyResourceGroupName
 Identity          : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 ```
-Buat aplikasi IoT Central dengan tingkat harga standar ST2 di wilayah 'westus', dengan nama tampilan kustom, berdasarkan templat iotc-default.
+Buat aplikasi IoT Central dengan st2 tingkat harga standar di wilayah 'westus', dengan nama tampilan kustom, berdasarkan templat iotc-default.
 
 ## PARAMETERS
 

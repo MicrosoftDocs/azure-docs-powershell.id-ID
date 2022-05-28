@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLocalNetworkGateway.md
-ms.openlocfilehash: 298c48503d4ceb0b17ae7fb934865d1a106120da
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c872cb4ed544872e08df3ab2a53e7da0302810a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208019"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674849"
 ---
 # New-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Membuat Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

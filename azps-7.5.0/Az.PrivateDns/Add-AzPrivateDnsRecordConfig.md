@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/add-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Add-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Add-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: 87d5b82e0857ccf36abc7f8f16a4d54289db1f42
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3910b54e0222ab0311a5b0fff04b7ce43e2d8ed7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182901"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657408"
 ---
 # Add-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
 Menambahkan catatan DNS Privat ke objek kumpulan catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/add-azprivatednsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Add-AzPrivateDnsRecordConfig -RecordSet <PSPrivateDnsRecordSet> -Cname <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzPrivateDnsRecordConfig menambahkan catatan Sistem Nama Domain Privat (DNS) ke objek RecordSet. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga setelah Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Privat Microsoft Azure. Catatan SOA dibuat saat zona DNS Privat dibuat, dan dihapus saat zona DNS Privat dihapus. Anda tidak dapat menambahkan atau menghapus rekaman SOA, tetapi Anda bisa mengeditnya. Anda dapat meneruskan objek RecordSet ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
+Cmdlet Add-AzPrivateDnsRecordConfig menambahkan catatan Sistem Nama Domain Privat (DNS) ke objek RecordSet. Objek RecordSet adalah objek offline, dan perubahannya tidak mengubah respons DNS Privat hingga setelah Anda menjalankan cmdlet Set-AzPrivateDnsRecordSet untuk mempertahankan perubahan ke layanan DNS Privat Microsoft Azure. Rekaman SOA dibuat saat zona DNS Privat dibuat, dan dihapus saat zona DNS Privat dihapus. Anda tidak dapat menambahkan atau menghapus rekaman SOA, tetapi Anda bisa mengeditnya. Anda dapat meneruskan objek RecordSet ke cmdlet ini sebagai parameter atau dengan menggunakan operator alur.
 
 ## EXAMPLES
 
@@ -445,7 +448,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Nilai bobot untuk catatan SRV yang akan ditambahkan.
 
 ```yaml

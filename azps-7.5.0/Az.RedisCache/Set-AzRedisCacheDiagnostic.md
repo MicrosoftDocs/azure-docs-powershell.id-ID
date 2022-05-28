@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 95fd2ccded553359e2d406b977818e24a211b634
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95dfc0d23fb0ea297dc8ef137e1b0b751efb0652
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192281"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646320"
 ---
 # Set-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
 Mengaktifkan diagnostik pada Azure Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/set-azrediscachediagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Set-AzRedisCacheDiagnostic -ResourceGroupName "ContosoResourceGroup" -Name "Peak
 ```
 
 Perintah ini memungkinkan diagnostik untuk cache Azure Redis.
-Perintah ini akan mengaktifkan diagnostik atau memperbarui akun penyimpanan untuk semua Azure Redis Caches di wilayah yang sama untuk langganan.
+Perintah ini akan mengaktifkan diagnostik atau memperbarui akun penyimpanan untuk semua Azure Redis Cache di wilayah yang sama untuk langganan.
 
 ## PARAMETERS
 

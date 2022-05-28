@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: 641acc2d6b231f3db19524e04a4e27094e324a27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 56652e2a05df3177e773614654c8017d54dec63f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245948"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694641"
 ---
 # Set-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
 Memberikan atau memodifikasi izin yang ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -143,9 +146,9 @@ Set-AzKeyVaultAccessPolicy [-ResourceId] <String> [-EnabledForDeployment] [-Enab
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzKeyVaultAccessPolicy** memberikan atau memodifikasi izin yang ada bagi pengguna, aplikasi, atau grup keamanan untuk melakukan operasi yang ditentukan dengan brankas kunci. Ini tidak mengubah izin yang dimiliki pengguna, aplikasi, atau grup keamanan lain pada brankas kunci.
+Cmdlet **Set-AzKeyVaultAccessPolicy** memberikan atau memodifikasi izin yang ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi yang ditentukan dengan brankas kunci. Ini tidak mengubah izin yang dimiliki pengguna, aplikasi, atau grup keamanan lain pada brankas kunci.
 Jika Anda mengatur izin untuk grup keamanan, operasi ini hanya memengaruhi pengguna dalam grup keamanan tersebut.
-Direktori berikut harus sama dengan direktori Azure:
+Semua direktori berikut harus sama dengan direktori Azure:
 - Direktori default langganan Azure tempat brankas kunci berada.
 - Direktori Azure yang berisi pengguna atau grup aplikasi tempat Anda memberikan izin.
 Contoh skenario ketika kondisi ini tidak terpenuhi dan cmdlet ini tidak akan berfungsi adalah:
@@ -277,7 +280,7 @@ Contoh ini menentukan aplikasi menggunakan ID objek dari perwakilan layanan apli
 Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -UserPrincipalName 'PattiFuller@contoso.com' -PermissionsToSecrets Get,List,Set
 ```
 
-Perintah ini memberikan izin get, list, dan set untuk nama utama pengguna yang ditentukan untuk akses ke rahasia.
+Perintah ini memberikan izin mendapatkan, mencantumkan, dan mengatur izin untuk nama prinsipal pengguna yang ditentukan untuk akses ke rahasia.
 
 ### Contoh 5: Mengaktifkan rahasia untuk diambil dari brankas kunci oleh penyedia sumber daya Microsoft.Compute
 ```powershell
@@ -293,17 +296,17 @@ Set-AzKeyVaultAccessPolicy -VaultName 'myownvault' -ObjectId (Get-AzADGroup -Sea
 ```
 
 Perintah pertama menggunakan cmdlet Get-AzADGroup untuk mendapatkan semua grup Direktori Aktif. Dari output, Anda akan melihat 3 grup yang dikembalikan, bernama **group1**, **group2**, dan **group3**. Beberapa grup dapat memiliki nama yang sama tetapi selalu memiliki ObjectId yang unik. Ketika lebih dari satu grup yang memiliki nama yang sama dikembalikan, gunakan ObjectId dalam output untuk mengidentifikasi grup yang ingin Anda gunakan.
-Anda kemudian menggunakan output perintah ini dengan Set-AzKeyVaultAccessPolicy untuk memberikan izin ke group2 untuk brankas kunci Anda, bernama **myownvault**. Contoh ini menghitung grup bernama 'group2' sebaris di baris perintah yang sama.
-Mungkin ada beberapa grup dalam daftar yang dikembalikan yang diberi nama 'group2'.
+Anda kemudian menggunakan output perintah ini dengan Set-AzKeyVaultAccessPolicy untuk memberikan izin ke group2 untuk brankas kunci Anda, bernama **myownvault**. Contoh ini menghitung grup bernama 'group2' sebaris dalam baris perintah yang sama.
+Mungkin ada beberapa grup dalam daftar yang dikembalikan yang bernama 'group2'.
 Contoh ini memilih yang pertama, yang ditunjukkan oleh indeks \[0\] dalam daftar yang dikembalikan.
 
-### Contoh 7: Memberikan akses Information Protection Azure ke kunci penyewa yang dikelola pelanggan (BYOK)
+### Contoh 7: Memberikan azure Information Protection akses ke kunci penyewa yang dikelola pelanggan (BYOK)
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName 'Contoso04Vault' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 ```
 
 Perintah ini mengotorisasi Azure Information Protection untuk menggunakan kunci yang dikelola pelanggan (skenario bring your own key, atau "BYOK"), sebagai kunci penyewa Azure Information Protection.
-Saat Anda menjalankan perintah ini, tentukan nama brankas kunci Anda sendiri tetapi Anda harus menentukan parameter *ServicePrincipalName* dengan GUID **00000012-0000-0000-c000-000000000000** dan menentukan izin dalam contoh.
+Saat Anda menjalankan perintah ini, tentukan nama brankas kunci Anda sendiri tetapi Anda harus menentukan parameter *ServicePrincipalName* dengan GUID **00000012-0000-0000-c000-0000000000000** dan tentukan izin dalam contoh.
 
 ## PARAMETERS
 
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 
 ### -BypassObjectIdValidation
 Memungkinkan Anda menentukan ID objek tanpa memvalidasi bahwa objek ada di Azure Active Directory.
-Gunakan parameter ini hanya jika Anda ingin memberikan akses ke brankas kunci Anda ke ID objek yang merujuk ke grup keamanan yang didelegasikan dari penyewa Azure lain.
+Gunakan parameter ini hanya jika Anda ingin memberikan akses ke brankas kunci Anda ke ID objek yang mengacu pada grup keamanan yang didelegasikan dari penyewa Azure lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Menentukan alamat email pengguna pengguna yang akan diberikan izin.
+Menentukan alamat email pengguna dari pengguna yang akan memberikan izin.
 Alamat email ini harus ada di direktori yang terkait dengan langganan saat ini dan unik.
 
 ```yaml
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDiskEncryption
-Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan membuka kunci dari brankas kunci ini.
+Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan membongkar kunci dari brankas kunci ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Memungkinkan Azure Resource Manager mendapatkan rahasia dari brankas kunci ini saat brankas kunci ini direferensikan dalam penyebaran templat.
+Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari brankas kunci ini saat brankas kunci ini direferensikan dalam penyebaran templat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -470,7 +473,7 @@ Menentukan array izin sertifikat untuk diberikan kepada pengguna atau perwakilan
 - Buat
 - Impor
 - Pembaruan
-- Kelolakontact
+- Kelolakontacts
 - Getissuers
 - Listissuers
 - Pengeset
@@ -555,14 +558,14 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsToStorage
-Menentukan izin akun penyimpanan terkelola dan operasi definisi SaS untuk diberikan kepada pengguna atau perwakilan layanan.
+Menentukan izin operasi akun penyimpanan terkelola dan definisi SaS untuk diberikan kepada pengguna atau perwakilan layanan.
 'Semua' akan memberikan semua izin kecuali 'Hapus Menyeluruh' Nilai yang dapat diterima untuk parameter ini:
 - semua
 - get
 - list
 - hapus
 - set
-- update
+- pembaruan
 - regeneratekey
 - getsas
 - listsas
@@ -617,7 +620,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Menentukan nama perwakilan layanan aplikasi yang akan memberikan izin.
+Menentukan nama perwakilan layanan aplikasi yang akan diberikan izin.
 Tentukan ID aplikasi, juga dikenal sebagai ID klien, yang terdaftar untuk aplikasi di AzureActive Directory. Aplikasi dengan nama perwakilan layanan yang ditentukan parameter ini harus terdaftar di direktori Azure yang berisi langganan Anda saat ini.
 
 ```yaml
@@ -635,7 +638,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

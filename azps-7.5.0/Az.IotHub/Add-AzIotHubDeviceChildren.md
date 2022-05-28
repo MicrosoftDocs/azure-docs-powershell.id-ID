@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 400778f9e4b22c094446a6c7c678c96b9c0cd2a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 610c09d67452cfcb34d528448adbb62137af76f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239802"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695286"
 ---
 # Add-AzIotHubDeviceChildren
 
 ## SYNOPSIS
 Tambahkan perangkat non-edge sebagai anak-anak ke perangkat edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 

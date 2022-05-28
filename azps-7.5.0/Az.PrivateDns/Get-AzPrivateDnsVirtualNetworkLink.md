@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 294ba3b11a6fe570dbaa8c29d4e55e2a4a5bb176
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02c16778b04287a42e552572ac8da033f68b5a8b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182834"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657361"
 ---
 # Get-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Privat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/get-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <String
 ## DESCRIPTION
 Cmdlet **Get-AzPrivateDnsVirtualNetworkLink** mendapatkan tautan jaringan virtual yang terkait dengan zona DNS Privat tertentu dari grup sumber daya yang ditentukan.
 Jika Anda menentukan parameter *Nama* , satu objek **PSPrivateDnsVirtualNetworkLink** dikembalikan.
-Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua tautan yang terkait dengan zona dalam grup sumber daya yang ditentukan akan dikembalikan.
+Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua tautan yang terkait dengan zona dalam grup sumber daya yang ditentukan dikembalikan.
 Anda dapat menggunakan objek **PSPrivateDnsVirtualNetworkLink** untuk memperbarui tautan.
 
 ## EXAMPLES
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tautan jaringan virtual yang akan didapatkan.
+Menentukan nama grup sumber daya yang berisi tautan jaringan virtual untuk didapatkan.
 
 ```yaml
 Type: System.String

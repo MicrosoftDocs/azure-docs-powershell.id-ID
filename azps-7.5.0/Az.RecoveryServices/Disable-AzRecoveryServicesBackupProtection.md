@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 7b5b8d7f90bedae058272c15131e95eb4a40ef47
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a835d9b2fc522c400d6d482455e8e2e1b82b10a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223895"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651036"
 ---
 # Disable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
 Menonaktifkan perlindungan untuk item yang dilindungi Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackupprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Disable-AzRecoveryServicesBackupProtection -Item $PI[0]
 
 Perintah pertama mendapatkan array kontainer cadangan, lalu menyimpannya di array $Cont.
 Perintah kedua mendapatkan item Cadangan yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
-Perintah terakhir menonaktifkan perlindungan Cadangan untuk item di $PI\[ 0\], tetapi menyimpan data.
+Perintah terakhir menonaktifkan perlindungan Cadangan untuk item di $PI\[0\], tetapi mempertahankan data.
 
 ### Contoh 2
 

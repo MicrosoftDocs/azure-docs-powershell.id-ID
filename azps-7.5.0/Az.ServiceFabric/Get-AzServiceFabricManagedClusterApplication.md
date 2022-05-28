@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: d3b5df791fe88cae4a0de31e7a7490aa8c446998
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83ce84a7c12eb0bc47e46362970fad7b17da9fa8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194269"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631618"
 ---
 # Get-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
 Dapatkan detail aplikasi terkelola Service Fabric. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Get-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupNa
 
 Contoh ini mendapatkan daftar aplikasi terkelola di bawah kluster "testCluster".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applications/testApp"
 Get-AzServiceFabricManagedClusterApplication -ResourceId $resourceId

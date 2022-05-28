@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: 9ac6abd984b9860a0e8b84cd92123d07728f3b1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e889019dce076550d4f19f61691466e430e3164c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666354"
 ---
 # Set-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 menyimpan grup kumpulan aturan kebijakan azure firewall yang dimodifikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 

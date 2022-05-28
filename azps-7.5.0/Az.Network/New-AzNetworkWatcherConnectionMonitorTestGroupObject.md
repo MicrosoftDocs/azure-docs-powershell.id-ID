@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestGroupObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestGroupObject.md
-ms.openlocfilehash: d4b3ae1d0905a2d7c2ef74c89b1e1b8748c41785
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 134aa889ea122893a56c1407735472170a955013
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246743"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674238"
 ---
 # New-AzNetworkWatcherConnectionMonitorTestGroupObject
 
 ## SYNOPSIS
-Buat grup uji pemantau koneksi.
+Membuat grup uji pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitortestgroupobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzNetworkWatcherConnectionMonitorTestGroupObject -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorTestGroupObject membuat grup pengujian pemantau koneksi.
+Cmdlet New-AzNetworkWatcherConnectionMonitorTestGroupObject membuat grup uji pemantau koneksi.
 
 ## EXAMPLES
 

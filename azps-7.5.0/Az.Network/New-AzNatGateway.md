@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
-ms.openlocfilehash: b0461e29bc0ccf1d5cb27696eea87f9d8de33257
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 47e12edb7b978bb596921f7c045fe18edb31f50d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208007"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674742"
 ---
 # New-AzNatGateway
 
 ## SYNOPSIS
 Buat sumber daya Nat Gateway baru dengan properti Alamat IP Publik/Awalan IP Publik, IdleTimeoutInMinutes, dan Sku.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

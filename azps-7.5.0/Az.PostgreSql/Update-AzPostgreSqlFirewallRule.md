@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFirewallRule.md
-ms.openlocfilehash: c60cd6b71a913ae464963d8ec490a990d3d0d863
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fdb460f5c029557e008534dd42076913e3e93ca6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198959"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657858"
 ---
 # Update-AzPostgreSqlFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ rule 0.0.0.2        0.0.0.3
 
 Cmdlet ini memperbarui Aturan Firewall PostgreSql berdasarkan nama.
 
-### Contoh 2: Perbarui Aturan Firewall PostgreSql menurut identitas.
+### Contoh 2: Perbarui Aturan Firewall PostgreSql berdasarkan identitas.
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/firewallRules/rule"
  Update-AzPostgreSqlFirewallRule -InputObject $ID -EndIPAddress 0.0.0.1 -StartIPAddress 0.0.0.0
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal dari aturan firewall server.
+KLIEN menentukan IP tunggal dari aturan firewall server.
 Harus format IPv4.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -320,7 +323,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

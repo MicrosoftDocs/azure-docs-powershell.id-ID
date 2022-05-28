@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: 0b5adb95ee06bd6e1d0420e5ef0dab532150a1f5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb7a9cf0569c241163958c35798e1ee4895a0888
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201031"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666858"
 ---
 # Set-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
 Memodifikasi rantai sertifikat OS klien tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

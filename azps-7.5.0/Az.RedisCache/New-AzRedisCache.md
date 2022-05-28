@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
-ms.openlocfilehash: a36bba440d976dd341756323cc1a9396c6c513e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60b603a4e8a1aa46fc4d9d3441fb29ac2f5367af
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228644"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646640"
 ---
 # New-AzRedisCache
 
 ## SYNOPSIS
 Membuat Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -292,7 +295,7 @@ Nilai yang valid adalah:
 - US Tengah
 - Eropa Barat
 - Eropa Utara
-- AS Barat
+- US Barat
 - AS Timur
 - US Timur 2
 - Jepang Timur
@@ -527,8 +530,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ID sumber daya lengkap subnet dalam jaringan virtual untuk menyebarkan Azure Cache for Redis.
-Contoh format: /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft. {Jaringan| ClassicNetwork}/VirtualNetworks/{vnetName}/subnets/{subnetName}
+ID sumber daya lengkap subnet di jaringan virtual untuk menyebarkan Azure Cache for Redis.
+Contoh format: /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft. {Network| ClassicNetwork}/VirtualNetworks/{vnetName}/subnets/{subnetName}
 
 ```yaml
 Type: System.String
@@ -573,7 +576,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-Menentukan satu atau beberapa identitas pengguna yang dipisahkan koma untuk dikaitkan dengan Azure Cache for Redis. Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Menentukan satu atau beberapa identitas pengguna yang dipisahkan koma yang akan dikaitkan dengan Azure Cache for Redis. Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -643,7 +646,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.String[]
 

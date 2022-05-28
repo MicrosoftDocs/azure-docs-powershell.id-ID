@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 5d378f702511e9bc832b7fd5b60978696890ec21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1e7f43704852347e26c3967dd651eeb2aa9afe9b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651108"
 ---
 # Backup-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
 Memulai pencadangan untuk item Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/backup-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 

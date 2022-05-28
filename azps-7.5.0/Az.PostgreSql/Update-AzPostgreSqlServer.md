@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
-ms.openlocfilehash: 7909de53f93787666e14924377aac7c2eaf7d343
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff62e19f06e7e77ea02b6e87913c332b7f2e280d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222983"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657822"
 ---
 # Update-AzPostgreSqlServer
 
@@ -18,6 +18,9 @@ ms.locfileid: "144222983"
 Memperbarui server yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzPostSqlConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 

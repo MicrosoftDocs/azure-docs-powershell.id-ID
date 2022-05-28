@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsLinkedStorageAccount.md
-ms.openlocfilehash: e64515482a9c07b71fecaf1e0b677f6cb71f1b0c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f8c7ddb3fd5af03e7e7ff497f30929de89426235
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217007"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660882"
 ---
 # Remove-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Menghapus akun penyimpanan tertaut untuk ruang kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Hapus akun penyimpanan tertaut dengan jenis "CustomLogs" untuk {workspace-name}
 ## PARAMETERS
 
 ### -DataSourceType
-Jenis Sumber Data harus menjadi salah satu dari 'CustomLogs', 'AzureWatson'.
+Jenis Sumber Data harus salah satu dari 'CustomLogs', 'AzureWatson'.
 
 ```yaml
 Type: System.String

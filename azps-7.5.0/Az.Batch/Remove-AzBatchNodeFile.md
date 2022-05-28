@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
-ms.openlocfilehash: b96cea6011ac38911824c38287cee292c889f729
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e5505b4502fcd108b190a237be9b4e53d3ae625
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110756"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687288"
 ---
 # Remove-AzBatchNodeFile
 
 ## SYNOPSIS
 Menghapus file simpul untuk tugas atau simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchnodefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,14 +54,14 @@ Remove-AzBatchNodeFile -JobId "Job-000001" -TaskId "Task26" -Path "wd\testFile.t
 ```
 
 Perintah ini menghapus file simpul yang diberi nama wd\testFile.txt.
-File tersebut dikaitkan dengan tugas yang memiliki TUGAS26 ID di bawah pekerjaan Job-000001.
+File tersebut dikaitkan dengan tugas yang memiliki TUGAS ID26 di bawah pekerjaan Job-000001.
 
 ### Contoh 2: Menghapus file dari simpul komputasi
 ```powershell
 Remove-AzBatchNodeFile -PoolId "Pool07" -ComputeNodeId "tvm-2316545714_1-20150725t213220z" -Path "startup\testFile.txt" -BatchContext $Context
 ```
 
-Perintah ini menghapus file simpul yang diberi nama startup\testFile.txt dari simpul komputasi yang ditentukan di kumpulan yang memiliki KUMPULAN ID07.
+Perintah ini menghapus file simpul yang diberi nama startup\testFile.txt dari simpul komputasi yang ditentukan di kumpulan yang memiliki ID Pool07.
 
 ### Contoh 3: Menghapus file dengan menggunakan alur
 ```powershell
@@ -66,17 +69,17 @@ Get-AzBatchNodeFile -JobId "Job-000001" -TaskId "Task26" -Path "wd\testFile2.txt
 ```
 
 Perintah ini mendapatkan file simpul dengan menggunakan **Get-AzBatchNodeFile**.
-File tersebut dikaitkan dengan tugas yang memiliki TUGAS26 ID di bawah pekerjaan Job-000001.
+File tersebut dikaitkan dengan tugas yang memiliki TUGAS ID26 di bawah pekerjaan Job-000001.
 Perintah meneruskan file tersebut ke cmdlet saat ini dengan menggunakan alur.
 Cmdlet saat ini menghapus file simpul.
-Perintah menentukan parameter *Paksa* .
+Perintah menentukan parameter *Force* .
 Oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

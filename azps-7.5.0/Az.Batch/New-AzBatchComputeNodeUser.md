@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchComputeNodeUser.md
-ms.openlocfilehash: d1104e0711d215a4afedaec05bed7b5a75c45a3f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c52dc6f5442992beead1fc07b95bfd02196a67e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244979"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687492"
 ---
 # New-AzBatchComputeNodeUser
 
 ## SYNOPSIS
 Membuat akun pengguna pada simpul komputasi Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchcomputenodeuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzBatchComputeNodeUser -PoolId "MyPool01" -ComputeNodeId "ComputeNode01" -Na
 
 Perintah ini membuat akun pengguna pada simpul komputasi yang memiliki ID ComputeNode01.
 Simpul berada di kumpulan yang memiliki ID MyPool01.
-Nama pengguna adalah TestUser, kata sandinya adalah Kata Sandi, akun kedaluwarsa dalam tujuh hari, dan akun tersebut memiliki kredensial administratif.
+Nama pengguna adalah TestUser, kata sandi adalah Kata Sandi, akun kedaluwarsa dalam tujuh hari, dan akun memiliki kredensial administratif.
 
 ### Contoh 2: Membuat akun pengguna pada simpul komputasi dengan menggunakan alur
 ```powershell
@@ -62,7 +65,7 @@ Perintah membuat akun pengguna yang memiliki nama pengguna TestUser dan kata san
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

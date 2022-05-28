@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
-ms.openlocfilehash: ef9827210952d88ea9c5ff83bf9fcbfb4176b0ee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7664b7197b0da41a528fe50671e8b9a916adfb44
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239057"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631798"
 ---
 # Add-AzServiceFabricNodeType
 
 ## SYNOPSIS
 Tambahkan jenis node baru ke kluster yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +44,9 @@ Add-AzServiceFabricNodeType -ResourceGroupName 'Group1' -Name 'Contoso01SFCluste
 Perintah ini akan menambahkan NodeType 'n2' baru dengan kapasitas 5, dan nama admin vm adalah 'adminName'.
 
 ### Contoh 2
-Jenis node baru akan menjadi jenis node utama dan akan menyalin referensi gambar VM dari Node Type VMSS pertama yang ditemukan sebelumnya, mengganti imageSku dengan 18.04-LTS.
+Jenis node baru akan menjadi jenis node utama dan akan menyalin referensi gambar VM dari VM Tipe Node yang pertama ditemukan sebelumnya, mengganti ImageSku dengan 18.04-LTS.
 - Referensi gambar jenis node yang ada: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 16.04-LTS, ImageVersion: terbaru
-- Referensi gambar jenis node baru: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 18.04-LTS, ImageVersion: terbaru
+- Referensi gambar jenis node baru: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 18.04-LTS, ImageVersion: latest
 
 
 ```powershell
@@ -54,7 +57,7 @@ $nodeTypeName = "n3"
 Add-AzServiceFabricNodeType -ResourceGroupName $resourceGroup -Name $clusterName -NodeType $nodeTypeName -Capacity 5 -VmUserName 'adminName' -VmPassword $pwd -DurabilityLevel Silver -Verbose -VMImageSku 18.04-LTS -IsPrimaryNodeType $true
 ```
 
-Perintah ini akan menambahkan NodeType 'n3' baru dengan kapasitas 5, nama admin vm adalah 'adminName', Durability level Silver (pekerjaan penyewa dan infrastruktur di-broker dengan aman menggunakan Infrastructure Service), dan VMSS dibuat menggunakan profil gambar VM publisher-offer-sku-version dengan sku yang dipertukarkan dengan '18.04-LTS'.
+Perintah ini akan menambahkan NodeType baru 'n3' dengan kapasitas 5, nama admin vm adalah 'adminName', Durability level Silver (pekerjaan penyewa dan infrastruktur di-broker dengan aman menggunakan Infrastructure Service), dan VMSS dibuat menggunakan profil gambar VM publisher-offer-sku-version dengan sku yang dipertukarkan ke '18.04-LTS'.
 
 ## PARAMETERS
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Tingkat Sku Vm
+Tingkat Vm Sku
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIWorkspaceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIWorkspaceCollection.md
-ms.openlocfilehash: 7f71f2958ed48378c36e27803a168dd0294f0ae8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c33f8384b1184ed24d7990b42da97b3d554febbe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197503"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657624"
 ---
 # New-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
 Membuat kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/new-azpowerbiworkspacecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzPowerBIWorkspaceCollection [-ResourceGroupName] <String> [-WorkspaceCollec
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPowerBIWorkspaceCollection** membuat kumpulan ruang kerja Power BI untuk langganan Azure Anda di grup sumber daya dan lokasi yang ditentukan.
+Cmdlet **New-AzPowerBIWorkspaceCollection** membuat kumpulan ruang kerja Power BI untuk langganan Azure Anda di grup dan lokasi sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzPowerBIWorkspaceCollection** membuat kumpulan ruang kerja Power B
 New-AzPowerBIWorkspaceCollection -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11" -Location "Japan West"
 ```
 
-Perintah ini membuat koleksi ruang kerja bernama WCN11 di grup sumber daya yang ditentukan di lokasi yang ditentukan.
+Perintah ini membuat kumpulan ruang kerja bernama WCN11 di grup sumber daya yang ditentukan di lokasi yang ditentukan.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini membuat koleksi ruang kerja.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat kumpulan ruang kerja.
 
 ```yaml
 Type: System.String

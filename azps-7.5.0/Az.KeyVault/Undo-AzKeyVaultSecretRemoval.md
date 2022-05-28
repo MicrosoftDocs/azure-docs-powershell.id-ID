@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
-ms.openlocfilehash: 2dd4e34af534c327717a2fab84caa0f163fb60b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b964893825afd655f87633ef99ee8be187d69645
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197867"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694440"
 ---
 # Undo-AzKeyVaultSecretRemoval
 
 ## SYNOPSIS
 Memulihkan rahasia yang dihapus dalam brankas kunci ke status aktif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultsecretremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini akan memulihkan rahasia 'MySecret' yang sebelumnya dihapus, ke dalam status aktif dan dapat digunakan.
+Perintah ini akan memulihkan rahasia 'MySecret' yang sebelumnya dihapus, ke status aktif dan dapat digunakan.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama rahasia.
-Cmdlet membangun FQDN rahasia dari nama vault, lingkungan dan nama rahasia yang saat ini dipilih.
+Cmdlet membangun FQDN rahasia dari nama brankas, lingkungan dan nama rahasia yang saat ini dipilih.
 
 ```yaml
 Type: System.String

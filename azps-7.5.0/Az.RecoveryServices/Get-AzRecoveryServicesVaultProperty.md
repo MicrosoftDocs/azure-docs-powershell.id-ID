@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 43c5974aaee897c9fab3fc6e83dccd7bc1cb5496
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8620b9c38e4ed7eeb02edcf95019b89a5c077f84
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243929"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649496"
 ---
 # Get-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Mengembalikan properti Vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ $vaultProperty = Get-AzRecoveryServicesVaultProperty -VaultId $vault.Id
 $vaultProperty.encryptionProperties
 ```
 
-Perintah pertama mendapatkan objek Vault lalu menyimpannya dalam variabel $vault.
-Perintah kedua Mendapatkan Properti Vault. Selanjutnya kita mengakses encryptionProperties vault.
+Perintah pertama mendapatkan objek Vault dan kemudian menyimpannya dalam variabel $vault.
+Perintah kedua Mendapatkan Properti Vault. Selanjutnya kita mengakses encryptionProperties dari vault.
 
 ## PARAMETERS
 

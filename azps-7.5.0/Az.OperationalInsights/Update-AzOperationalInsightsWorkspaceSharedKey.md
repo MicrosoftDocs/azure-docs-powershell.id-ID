@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsWorkspaceSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsWorkspaceSharedKey.md
-ms.openlocfilehash: bb910422a5b29acd347200c7d9ce27ee36b73845
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 284d4c979e436f243a5ac0bbecf808ad488a7e11
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207923"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660414"
 ---
 # Update-AzOperationalInsightsWorkspaceSharedKey
 
 ## SYNOPSIS
 Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menghubungkan agen Operational Insights Microsoft ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/update-azoperationalinsightsworkspacesharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 

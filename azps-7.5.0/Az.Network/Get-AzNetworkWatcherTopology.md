@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
-ms.openlocfilehash: 122cfebd1aaa10e190f0fb9fbadfb9f28fb23063
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5a71e8f39df83234c9ff9066b4cc00214f76b2d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197632"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680952"
 ---
 # Get-AzNetworkWatcherTopology
 
 ## SYNOPSIS
 Mendapatkan tampilan tingkat jaringan sumber daya dan hubungan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchertopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengamat jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengamat jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSTopology
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, tampilan 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, tampilan 
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubModule.md
-ms.openlocfilehash: c6bc6b26abbae1b3eb522fe3c621e1077233249a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db93750e83096455f45495854036ef0495199bff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239746"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695160"
 ---
 # Add-AzIotHubModule
 
 ## SYNOPSIS
 Buat modul pada perangkat IoT target dalam IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryThumbprint
-Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk kunci sekunder.
+Thumbprint sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci sekunder.
 
 ```yaml
 Type:System.String

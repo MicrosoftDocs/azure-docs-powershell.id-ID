@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePort.md
-ms.openlocfilehash: a895417572923dbfbaf1543c4c892b68f7cd2691
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 00ea5c1dbcbf66757c0d889ba78d7e010b068ed8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229649"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666444"
 ---
 # Set-AzExpressRoutePort
 
 ## SYNOPSIS
 Memodifikasi ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azexpressrouteport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Set-AzExpressRoutePort -InputObject $erport
 
 Memodifikasi status admin tautan ExpressRoutePort
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $erport = Get-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
 $erport.Links[0].AdminState = 'Enabled'

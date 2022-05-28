@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWindowsPerformanceCounterDataSource.md
-ms.openlocfilehash: fd24a093958fd8e4acf4b7e33ef87d692e784e66
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7585c793e353f91ba6d6b481b70f2709c528fbf9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217058"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661116"
 ---
 # New-AzOperationalInsightsWindowsPerformanceCounterDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data penghitung kinerja Windows untuk komputer yang terhubung yang menjalankan sistem operasi Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightswindowsperformancecounterdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

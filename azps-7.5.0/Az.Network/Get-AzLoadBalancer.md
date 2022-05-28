@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancer.md
-ms.openlocfilehash: 9fcaf24e97eaeb5cdd727fc4821b63d525f4bffe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a392751a690711783f7afec5f9f88058049823a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229817"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682086"
 ---
 # Dapatkan-AzLoadBalancer
 
 ## SYNOPSIS
 Mendapatkan load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 

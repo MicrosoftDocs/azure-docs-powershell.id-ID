@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/sto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
-ms.openlocfilehash: 83f5b06f4a69ee3b97d49de34e4902b21dece191
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a62b570aaa3a4705efaba579cf1d6ac85aa772ba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244170"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695610"
 ---
 # Stop-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Membatalkan build gambar yang berjalan lama berdasarkan templat gambar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/stop-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 

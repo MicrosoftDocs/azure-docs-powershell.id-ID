@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkServiceTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkServiceTag.md
-ms.openlocfilehash: 2531b18e39ce687651c730f2a96d6b993d5b1bb8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60631cdf73f069800ae8e373ae8acbe6d4dcd08d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681438"
 ---
 # Get-AzNetworkServiceTag
 
 ## SYNOPSIS
 Mendapatkan daftar sumber daya informasi tag layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkservicetag) untuk informasi terbaru.
 
 ## SYNTAX
 

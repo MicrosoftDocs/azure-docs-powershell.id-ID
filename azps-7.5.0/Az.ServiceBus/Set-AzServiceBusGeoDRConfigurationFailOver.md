@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusGeoDRConfigurationFailOver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusGeoDRConfigurationFailOver.md
-ms.openlocfilehash: 34c10317ff47e3574ab0dcba8a509e04820a9d7e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d758f71232880b7ab615da85a8194034a6f9c4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215663"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632338"
 ---
 # Set-AzServiceBusGeoDRConfigurationFailOver
 
 ## SYNOPSIS
 Memanggil failover GEO DR dan mengonfigurasi ulang alias untuk menunjuk ke namespace sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusgeodrconfigurationfailover) untuk informasi terbaru.
 
 ## SYNTAX
 

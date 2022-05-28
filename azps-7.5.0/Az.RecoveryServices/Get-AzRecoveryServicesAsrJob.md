@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 43564bf371463311daabb4c7f6d469aed0ad8914
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3b0ef2504887debb11261ac52df5b30a192eb9ad
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245626"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650694"
 ---
 # Get-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR di vault Layanan P
 $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 ```
 
-Mengembalikan semua pekerjaan pada objek ASR tertentu (referensikan objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.) 
+Mengembalikan semua pekerjaan pada objek ASR tertentu (referensi objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.) 
 
 ### Contoh 2
 
@@ -194,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 0cc36af012fb8e35a7f70cf5e037446f5a0aebd4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c59368aacb70da0cf4c2e31de3fbe2ffa58d5d2d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200208"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667056"
 ---
 # Set-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Memperbarui sertifikat SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultSecretId
-SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
+SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini ketika versi rahasia tertentu perlu digunakan.
 
 ```yaml
 Type: System.String

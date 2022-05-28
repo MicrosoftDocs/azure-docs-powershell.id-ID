@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
-ms.openlocfilehash: 81bed6a265677b07a366e5aa0aac16032ba85221
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b2e22edce66765e37445012cee205390a6207f4a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227801"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687054"
 ---
 # Get-AzConsumptionUsageDetail
 
 ## SYNOPSIS
 Dapatkan detail penggunaan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionusagedetail) untuk informasi terbaru.
 
 ## SYNTAX
 

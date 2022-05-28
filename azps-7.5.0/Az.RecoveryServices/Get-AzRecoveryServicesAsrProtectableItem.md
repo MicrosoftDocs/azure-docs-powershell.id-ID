@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectableItem.md
-ms.openlocfilehash: 5f909deb1d6236c9c0000ca3ed11f1a52eb5ea04
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aad048c7d3c38992d00d2fb7563dcf4f01c772eb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245556"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650532"
 ---
 # Get-AzRecoveryServicesAsrProtectableItem
 
 ## SYNOPSIS
 Dapatkan item yang dapat dilindungi dalam kontainer perlindungan ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ SupportedReplicationProviders : {InMage, InMageAzureV2}
 
 Dapatkan item yang dapat dilindungi dalam kontainer perlindungan ASR tertentu dan dengan nama yang mudah diingat.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-ASRProtectableItem -ProtectionContainer $pc -Name $piName
 ```

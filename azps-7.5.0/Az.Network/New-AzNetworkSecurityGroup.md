@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
-ms.openlocfilehash: 57edd81ccf6b673299842162299afe0ce7be5c3d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 264d4ffb7c12effc562eeaddd5c3ea92af7554eb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223283"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674562"
 ---
 # New-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzNetworkSecurityGroup -Name "nsg1" -ResourceGroupName "rg1"  -Location  "we
 
 Perintah ini membuat grup keamanan jaringan Azure baru bernama "nsg1" dalam grup sumber daya "rg1" di lokasi "westus".
 
-### Contoh 2: Membuat kelompok keamanan jaringan terperinci
+### Contoh 2: Membuat grup keamanan jaringan terperinci
 ```powershell
 $rule1 = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" `
     -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix `

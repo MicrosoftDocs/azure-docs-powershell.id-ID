@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 1d1c87bc2d31636c789559e279e6b1c1c28bc72e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f44f025d5a55693126a5d51b3c2431af15ab46bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182915"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657480"
 ---
 # Test-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Menguji keberadaan instans Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/test-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
