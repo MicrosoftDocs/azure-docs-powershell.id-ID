@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Start-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Start-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Start-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: d9b2fa12e5ad5715bb5a7873dbc41ed33f918849
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b947fca175d9894fc9360ff86d19fca2d8a1ec28
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214823"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634624"
 ---
 # Mulai-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Memanggil permintaan akses jaringan sementara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/start-azjitnetworkaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

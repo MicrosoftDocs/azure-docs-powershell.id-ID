@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecuritySetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecuritySetting.md
-ms.openlocfilehash: 79dff65a8c25f94f2ff4df3c8ff243e881295b29
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9106a33a625a7bce509ea8efd1cc65b68c06c4a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243792"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145634858"
 ---
 # Set-AzSecuritySetting
 
 ## SYNOPSIS
 Memperbarui pengaturan keamanan di Azure Security Center
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecuritysetting) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTag.md
-ms.openlocfilehash: cdea126608ae54dc9d2ab6e083e53e223deeb513
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4f856aa8de004429376e8ab2113ef64ad2c231fc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188375"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145640762"
 ---
 # New-AzTag
 
 ## SYNOPSIS
 Membuat tag Azure yang telah ditentukan sebelumnya atau menambahkan nilai ke tag yang sudah ada | Membuat atau memperbarui seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzJ
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: 5642b6b33781d483ffe9f92b7ba738d0e114d572
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d569ff43756ee50583b09803a3547d4fc526d780
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200779"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145636964"
 ---
 # Dapatkan-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan akses jaringan JIT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azjitnetworkaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzJitNetworkAccessPolicy -ResourceId <String> [-DefaultProfile <IAzureContex
 
 ## DESCRIPTION
 Kebijakan akses jaringan Just In Time (JIT) memungkinkan Anda menentukan kebijakan yang akan memungkinkan pengguna sederhana untuk membuat koneksi jaringan sementara ke VM.
-Kebijakan menentukan port, protokol, dan alamat IP sumber apa yang dapat meminta koneksi ke VM dan durasi maksimum sebelum koneksi akan ditutup secara otomatis.
+Kebijakan ini menentukan port, protokol, dan alamat IP sumber apa yang dapat meminta koneksi ke VM dan durasi maksimum sebelum koneksi akan ditutup secara otomatis.
 Dalam kebijakan, Anda juga dapat melihat permintaan koneksi yang dibuat dengan kebijakan ini. 
 
 ## EXAMPLES
@@ -95,7 +98,7 @@ ProvisioningState : Succeeded
 
 Dapatkan semua kebijakan akses jaringan JIT di grup sumber daya "myService1"
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzJitNetworkAccessPolicy -ResourceGroupName "myService1" -Location "centralus" -Name "default"
 ```

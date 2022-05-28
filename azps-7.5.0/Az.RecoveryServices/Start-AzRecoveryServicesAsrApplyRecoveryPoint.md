@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrApplyRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrApplyRecoveryPoint.md
-ms.openlocfilehash: 693b237b9755dc1fb4b17991bd660b4cff82e3b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cc7bd16bfd7a53367dccca33ee51e2979dbdc262
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185452"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647796"
 ---
 # Start-AzRecoveryServicesAsrApplyRecoveryPoint
 
 ## SYNOPSIS
 Mengubah titik pemulihan untuk item yang diproteksi yang gagal sebelum melakukan operasi failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrapplyrecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: f330b940432cf780700a11485f64d54b4fccb6ad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 604780a11d0269abb46992841377ed80bcee36cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144113054"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647364"
 ---
 # Unregister-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
 Membatalkan pendaftaran server SCDPM atau Server cadangan dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupmanagementserver) untuk informasi terbaru.
 
 ## SYNTAX
 

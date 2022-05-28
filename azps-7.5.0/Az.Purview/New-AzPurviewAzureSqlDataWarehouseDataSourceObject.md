@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDataWarehouseDataSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSqlDataWarehouseDataSourceObject.md
-ms.openlocfilehash: fb8d4bfe25ec476b52f1f9c4ca87888321a7a702
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: df03280f433a45eb0a433fca87aa8c422175dda9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653430"
 ---
 # New-AzPurviewAzureSqlDataWarehouseDataSourceObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSqlDataWarehouseDataSource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresqldatawarehousedatasourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat objek dalam memori untuk AzureSqlDataWarehouseDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek sumber data gudang data Azure SQL
+### Contoh 1: Membuat Azure SQL objek sumber data gudang data
 ```powershell
 PS C:\> New-AzPurviewAzureSqlDataWarehouseDataSourceObject -Kind 'AzureSqlDataWarehouse' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ServerEndpoint 'ause.database.windows.net'
 
@@ -50,7 +53,7 @@ ServerEndpoint           : ause.database.windows.net
 SubscriptionId           :
 ```
 
-Membuat objek sumber data gudang data Azure SQL
+Membuat Azure SQL objek sumber data gudang data
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType

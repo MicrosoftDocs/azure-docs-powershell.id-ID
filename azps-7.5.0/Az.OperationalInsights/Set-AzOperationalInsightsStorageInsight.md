@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: a3daee3c1020e6910d03aa3becd01fd9efe431e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 560e22ac1cff176f6ebac29b7dc40426ecf7a37b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226723"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660612"
 ---
 # Set-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Memperbarui Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: e91d4ea722346b4c0c474b67ebfaf6e3ec2fc3e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e82248b0d708d11564bd5472bdd232d1b223543
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228655"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145647994"
 ---
 # Set-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Memodifikasi kebijakan perlindungan Pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,13 +38,13 @@ Set-AzRecoveryServicesBackupProtectionPolicy [-Policy] <PolicyBase> [-FixForInco
 
 ## DESCRIPTION
 Cmdlet **Set-AzRecoveryServicesBackupProtectionPolicy** memodifikasi kebijakan perlindungan Azure Backup yang ada.
-Anda dapat mengubah komponen Kebijakan pencadangan dan jadwal penyimpanan.
-Setiap perubahan yang Anda buat memengaruhi pencadangan dan retensi item yang terkait dengan kebijakan.
+Anda dapat mengubah jadwal Pencadangan dan komponen kebijakan penyimpanan.
+Setiap perubahan yang Anda buat memengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan.
 Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah kebijakan perlindungan Pencadangan
+### Contoh 1: Mengubah kebijakan perlindungan Cadangan
 ```powershell
 $SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType "AzureVM" 
 $SchPol.ScheduleRunTimes.Clear()
@@ -67,7 +70,7 @@ Set-AzRecoveryServicesBackupProtectionPolicy -Policy $Pol -SchedulePolicy $SchPo
 Berikut adalah deskripsi tingkat tinggi dari langkah-langkah yang harus diikuti untuk memodifikasi kebijakan perlindungan: 
 1.  Dapatkan SchedulePolicyObject dasar dan RetentionPolicyObject dasar. Simpan dalam beberapa variabel.
 2.  Atur parameter objek kebijakan jadwal dan penyimpanan yang berbeda sesuai kebutuhan Anda. Misalnya- Dalam contoh skrip di atas, kami mencoba menetapkan kebijakan perlindungan mingguan. Oleh karena itu, kami mengubah frekuensi jadwal menjadi "Mingguan" dan juga memperbarui durasi jadwal. Dalam objek kebijakan retensi, kami memperbarui durasi retensi mingguan dan mengatur bendera "jadwal mingguan diaktifkan" yang benar. Jika Anda ingin menetapkan kebijakan Harian, atur bendera "jadwal harian diaktifkan" ke true dan tetapkan nilai yang sesuai untuk parameter objek lainnya.
-3.  Dapatkan kebijakan perlindungan cadangan yang ingin Anda ubah dan simpan dalam variabel. Dalam contoh di atas, kami mengambil kebijakan pencadangan dengan nama "TestPolicy" yang ingin kami ubah.
+3.  Dapatkan kebijakan perlindungan cadangan yang ingin Anda ubah dan simpan dalam variabel. Dalam contoh di atas, kami mengambil kebijakan cadangan dengan nama "TestPolicy" yang ingin kami ubah.
 4.  Ubah kebijakan perlindungan cadangan yang diambil pada langkah 3 menggunakan objek kebijakan jadwal yang dimodifikasi dan objek kebijakan penyimpanan.
 
 ### Contoh 2: Mengubah kebijakan fileshare Azure untuk beberapa cadangan per hari
@@ -87,8 +90,8 @@ Set-AzRecoveryServicesBackupProtectionPolicy -Policy $policy -VaultId $vault.ID 
 
 Berikut adalah deskripsi tingkat tinggi dari langkah-langkah yang harus diikuti untuk memodifikasi kebijakan fileshare untuk beberapa cadangan per hari: 
 1.  Dapatkan SchedulePolicyObject dasar per jam dan retensi per jam dasarPolicyObject. Simpan dalam beberapa variabel.
-2.  Atur parameter objek kebijakan jadwal dan penyimpanan yang berbeda sesuai kebutuhan Anda. Misalnya- Dalam skrip sampel di atas, kami mencoba mengatur $timeZone di mana kami ingin menjalankan jadwal, kami mengatur waktu mulai jadwal Per Jam, mengatur interval per jam (dalam jam), setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) di mana jadwal akan berjalan. Selanjutnya kami memodifikasi pengaturan retensi untuk titik pemulihan harian.
-3.  Dapatkan kebijakan perlindungan cadangan yang ingin Anda ubah dan simpan dalam variabel. Dalam contoh di atas, kami mengambil kebijakan pencadangan dengan nama "TestPolicy" yang ingin kami ubah.
+2.  Atur parameter objek kebijakan jadwal dan penyimpanan yang berbeda sesuai kebutuhan Anda. Misalnya- Dalam contoh skrip di atas, kami mencoba mengatur $timeZone di mana kami ingin menjalankan jadwal, kami mengatur waktu mulai jadwal Per Jam, mengatur interval per jam (dalam jam), setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) di mana jadwal akan berjalan. Selanjutnya kami memodifikasi pengaturan retensi untuk titik pemulihan harian.
+3.  Dapatkan kebijakan perlindungan cadangan yang ingin Anda ubah dan simpan dalam variabel. Dalam contoh di atas, kami mengambil kebijakan cadangan dengan nama "TestPolicy" yang ingin kami ubah.
 4.  Ubah kebijakan perlindungan cadangan yang diambil pada langkah 3 menggunakan objek kebijakan jadwal yang dimodifikasi dan objek kebijakan penyimpanan.
 
 ## PARAMETERS
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan perlindungan Pencadangan yang dimodifikasi cmdlet ini.
+Menentukan kebijakan perlindungan Cadangan yang diubah cmdlet ini.
 Untuk mendapatkan objek **BackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy.
 
 ```yaml

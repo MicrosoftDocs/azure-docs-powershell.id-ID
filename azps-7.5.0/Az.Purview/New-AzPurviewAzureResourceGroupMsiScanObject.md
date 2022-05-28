@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupMsiScanObject.md
-ms.openlocfilehash: 73c925925f4461ece5ab28085afded393b299a5a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f01f0e38985ffb82209e90a677756cfe21f7c805
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215135"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653574"
 ---
 # New-AzPurviewAzureResourceGroupMsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureResourceGroupMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazureresourcegroupmsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

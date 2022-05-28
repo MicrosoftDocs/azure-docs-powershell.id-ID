@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityWorkspaceSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzSecurityWorkspaceSetting.md
-ms.openlocfilehash: aa09b7cdf0e681ded216144e8168764e9dc05893
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8bd3ad6d5d52d0ccba36e3bdef17ed93ea41db72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236635"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145635200"
 ---
 # Remove-AzSecurityWorkspaceSetting
 
 ## SYNOPSIS
 Menghapus pengaturan ruang kerja keamanan untuk langganan ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/remove-azsecurityworkspacesetting) untuk informasi terbaru.
 
 ## SYNTAX
 

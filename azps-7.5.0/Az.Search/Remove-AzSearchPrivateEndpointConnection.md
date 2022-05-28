@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchPrivateEndpointConnection.md
-ms.openlocfilehash: 7b0120743d2aaf932cec391d3c3c80292c72ee49
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0f78a2b3fdce1991c8c41579cf59df9e4a24cf6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198486"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145637738"
 ---
 # Remove-AzSearchPrivateEndpointConnection
 
 ## SYNOPSIS
 Hapus koneksi titik akhir privat dari layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/remove-azsearchprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

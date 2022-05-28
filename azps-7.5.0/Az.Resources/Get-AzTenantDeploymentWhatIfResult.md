@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentWhatIfResult.md
-ms.openlocfilehash: 7eeb513b48bf3f07aad8c75b761d27e503d5dda1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 08f2212e0e7b1f03a10b7358ab14edeacb7df7d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208706"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145641869"
 ---
 # Get-AzTenantDeploymentWhatIfResult
 
 ## SYNOPSIS
 Mendapatkan templat What-If hasil untuk penyebaran di cakupan penyewa. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-aztenantdeploymentwhatifresult) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Get-AzTenantDeploymentWhatIfResult [-Name <String>] -Location <String> [-ResultF
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTenantDeploymentWhatIfResult** mendapatkan templat ARM What-If hasil untuk penyebaran templat pada cakupan penyewa yang ditentukan. Ini mengembalikan daftar perubahan yang menunjukkan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya nyata. Untuk menentukan format untuk hasil yang dikembalikan, gunakan parameter *ResultFormat* .
+Cmdlet **Get-AzTenantDeploymentWhatIfResult** mendapatkan templat ARM What-If hasil untuk penyebaran templat di cakupan penyewa yang ditentukan. Ini mengembalikan daftar perubahan yang menunjukkan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan apa pun pada sumber daya nyata. Untuk menentukan format untuk hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
@@ -150,9 +153,9 @@ Perintah ini mendapatkan hasil What-If pada cakupan penyewa dengan menggunakan f
 Perintah menggunakan parameter *Lokasi* untuk menentukan tempat menyimpan data penyebaran.
 Perintah menggunakan parameter *TemplateFile* untuk menentukan file templat.
 Perintah menggunakan parameter *TemplateParameterFile* untuk menentukan file parameter templat.
-Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If untuk menyertakan payload sumber daya penuh.
+Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If untuk menyertakan payload sumber daya lengkap.
 
-### Contoh 2: Mendapatkan hasil What-If di cakupan penyewa dengan ResourceIdOnly
+### Contoh 2: Dapatkan hasil What-If di cakupan penyewa dengan ResourceIdOnly
 ```powershell
 Get-AzTenantDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -231,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,8 +266,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Melewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
-Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan permintaan ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
+Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
 Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml

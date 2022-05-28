@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsDataSource.md
-ms.openlocfilehash: d435a056ac19ef656c2cd39fd814c73206c9356e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c2c81562dbd2405ce3a2009e6a0a40a26104cc3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235294"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660702"
 ---
 # Set-AzOperationalInsightsDataSource
 
 ## SYNOPSIS
 Memperbarui sumber data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

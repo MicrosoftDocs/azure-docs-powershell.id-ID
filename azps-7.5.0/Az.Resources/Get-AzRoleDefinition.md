@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
-ms.openlocfilehash: 6cf3a1f514257698f0b5c26573e8c96e94acb811
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4d0aa7ec82818a6da8e80887e2e70c55df581fa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233723"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145642238"
 ---
 # Get-AzRoleDefinition
 
 ## SYNOPSIS
 Mencantumkan semua peran Azure RBAC yang tersedia untuk penugasan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzRoleDefinition [-Scope <String>] [-Custom] [-DefaultProfile <IAzureContext
 
 ## DESCRIPTION
 Gunakan perintah Get-AzRoleDefinition dengan nama peran tertentu untuk melihat detailnya.
-Untuk memeriksa operasi individu yang diberikan akses peran, tinjau properti Tindakan dan NotActions dari peran tersebut.
+Untuk memeriksa setiap operasi yang diberikan akses oleh peran, tinjau properti Tindakan dan NotActions dari peran tersebut.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Mencantumkan semua definisi peran RBAC
 ## PARAMETERS
 
 ### -Kustom
-Jika ditentukan, hanya menampilkan peran yang dibuat khusus dalam direktori.
+Jika ditentukan, hanya menampilkan peran yang dibuat khusus di direktori.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

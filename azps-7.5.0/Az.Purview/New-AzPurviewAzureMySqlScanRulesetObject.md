@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureMySqlScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureMySqlScanRulesetObject.md
-ms.openlocfilehash: e60282a90606a9071f8d65e55954888a617cf91d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e286800ac6ac3d0a396e1989a71001a13e1d501
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230839"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653601"
 ---
 # New-AzPurviewAzureMySqlScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureMySqlScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuremysqlscanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

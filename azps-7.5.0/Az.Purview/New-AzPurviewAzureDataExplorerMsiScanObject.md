@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerMsiScanObject.md
-ms.openlocfilehash: cec90026cbbf26a7449eeb402b839c363f8d4296
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 01fc060afa720fae0ad4b934069be7cf55a9486e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224183"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145653988"
 ---
 # New-AzPurviewAzureDataExplorerMsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureDataExplorerMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuredataexplorermsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
