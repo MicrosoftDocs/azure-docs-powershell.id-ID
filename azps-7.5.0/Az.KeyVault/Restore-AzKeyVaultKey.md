@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
-ms.openlocfilehash: 701b0c68f85e0b0bb18bddbfb176189ffcc53eac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 665c03bc24cde0e9954f25997c8d782499e72862
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229904"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771662"
 ---
 # Pemulihan-KunciAzKeyVault
 
 ## SYNOPSIS
 Membuat kunci dalam brankas kunci dari kunci yang dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 

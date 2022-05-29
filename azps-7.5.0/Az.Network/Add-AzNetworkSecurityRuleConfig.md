@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: e69d55d0db6321037601e71da6e82b1969551c8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b58e99301cf7095c5e95f993f07d9c2ad99677ba
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209150"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803066"
 ---
 # Tambahkan-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi aturan keamanan jaringan ke grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Add-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access 
 
 Perintah pertama mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". Perintah kedua menambahkan aturan keamanan jaringan bernama "rdp-rule" yang memungkinkan lalu lintas dari internet pada port 3389 ke objek kelompok keamanan jaringan yang diambil. Mempertahankan grup keamanan jaringan Azure yang dimodifikasi.
 
-### Contoh 2: Menambahkan aturan keamanan baru dengan kelompok keamanan aplikasi
+### Contoh 2: Menambahkan aturan keamanan baru dengan grup keamanan aplikasi
 ```powershell
 $srcAsg = New-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name srcAsg -Location "West US"
 $destAsg = New-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name destAsg -Location "West US"
@@ -68,7 +71,7 @@ Add-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access 
 Set-AzNetworkSecurityGroup
 ```
 
-Pertama, kita membuat dua kelompok keamanan aplikasi baru. Kemudian, kami mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". dan tambahkan aturan keamanan jaringan bernama "rdp-rule" ke dalamnya. Aturan ini memungkinkan lalu lintas dari semua konfigurasi IP dalam grup keamanan aplikasi "srcAsg" ke semua konfigurasi IP di "destAsg" pada port 3389. Setelah menambahkan aturan, kami mempertahankan grup keamanan jaringan Azure yang dimodifikasi.
+Pertama, kami membuat dua kelompok keamanan aplikasi baru. Kemudian, kami mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". dan tambahkan aturan keamanan jaringan bernama "rdp-rule" ke dalamnya. Aturan ini memungkinkan lalu lintas dari semua konfigurasi IP dalam kelompok keamanan aplikasi "srcAsg" ke semua konfigurasi IP di "destAsg" pada port 3389. Setelah menambahkan aturan, kami mempertahankan grup keamanan jaringan Azure yang dimodifikasi.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Menentukan awalan alamat tujuan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Alamat Classless Interdomain Routing (CIDR)
 - Rentang alamat IP tujuan
-- Karakter kartubebas (*) untuk mencocokkan alamat IP apa pun.
+- Karakter kartubebas (*) agar sesuai dengan alamat IP apa pun.
 Anda dapat menggunakan tag seperti VirtualNetwork, AzureLoadBalancer, dan Internet.
 
 ```yaml
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 Menentukan prioritas konfigurasi aturan.
 Nilai yang dapat diterima untuk parameter ini adalah: Bilangan bulat antara 100 dan 4096.
 Nomor prioritas harus unik untuk setiap aturan dalam koleksi.
-Semakin rendah angka prioritas, semakin tinggi prioritas aturan.
+Semakin rendah jumlah prioritas, semakin tinggi prioritas aturan.
 
 ```yaml
 Type: System.Int32
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol jaringan tempat konfigurasi aturan diterapkan.
+Menentukan protokol jaringan tempat konfigurasi aturan berlaku.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tcp
 - Udp
@@ -279,7 +282,7 @@ Menentukan awalan alamat sumber.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - A CIDR
 - Rentang IP sumber
-- Karakter kartubebas (*) untuk mencocokkan alamat IP apa pun.
+- Karakter kartubebas (*) agar sesuai dengan alamat IP apa pun.
 Anda juga dapat menggunakan tag seperti VirtualNetwork, AzureLoadBalancer, dan Internet.
 
 ```yaml

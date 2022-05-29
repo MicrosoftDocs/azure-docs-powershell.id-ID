@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzRouteConfig.md
-ms.openlocfilehash: 88e845dd33c53240e368fe99f7a6ff84c81db360
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb389e63e1332fa263655e49821f0f8abfa6512e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185774"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803030"
 ---
 # New-AzRouteConfig
 
 ## SYNOPSIS
 Menambahkan rute ke tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

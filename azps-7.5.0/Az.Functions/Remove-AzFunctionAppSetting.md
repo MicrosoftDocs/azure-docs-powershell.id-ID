@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
-ms.openlocfilehash: 414f7bbd86c9abfab45d25cee6ec2080bacae441
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 651006131fd8f01c6cfaa41d9d5bcd4fd5221682
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238724"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812276"
 ---
 # Remove-AzFunctionAppSetting
 
 ## SYNOPSIS
 Menghapus pengaturan aplikasi dari aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/remove-azfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -251,7 +254,7 @@ INPUTOBJECT <ISite>:
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
       - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan .\nKustom dapat disediakan di ekstensi situs TiPCallback yang URLnya dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
       - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah reroutePercentage yang akan tetap ada.
-      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas reroutePercentage mana yang akan tetap ada.
+      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas mana ReroutePercentage akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang direkomendasikan adalah menunjuk ke slot yang akan menerima lalu lintas dalam eksperimen.
       - `[ReroutePercentage <Double?>]`: Persentase lalu lintas yang akan dialihkan ke <code>ActionHostName</code>.
     - `[FtpsState <FtpsState?>]`: Status layanan FTP/FTPS

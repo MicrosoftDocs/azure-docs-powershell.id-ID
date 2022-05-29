@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementNamedValue.md
-ms.openlocfilehash: e42ad8eab2f95873749b220a530df952767992b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 67190884ae9cb8635d888937c4783188451e2dca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238920"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808664"
 ---
 # Remove-AzApiManagementNamedValue
 
 ## SYNOPSIS
 Menghapus Nilai Bernama API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 

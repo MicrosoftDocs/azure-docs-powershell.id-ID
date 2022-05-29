@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
-ms.openlocfilehash: 2e0bd065dc6b01f2539444bb42a137e5fc3a2629
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: af837a1b6060661d19fa191569d9ce05767ee9d9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201440"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804380"
 ---
 # Set-AzDiagnosticSetting
 
 ## SYNOPSIS
 Mengatur pengaturan log dan metrik untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Logs
    Category : Category4
 ```
 
-Perintah ini menonaktifkan kategori metrik yang disebut Category1 dan Category2.
+Perintah ini menonaktifkan kategori metrik yang disebut Kategori1 dan Kategori2.
 Semua kategori lainnya tetap sama.
 
 ### Contoh 4: Mengaktifkan/menonaktifkan beberapa kategori log
@@ -120,8 +123,8 @@ Logs
    Category : Category4
 ```
 
-Perintah ini mengaktifkan Category1 dan Category2.
-Semua kategori metrik dan log lainnya tetap sama.
+Perintah ini memungkinkan Category1 dan Category2.
+Semua metrik dan kategori log lainnya tetap sama.
 
 ### Contoh 5: Mengaktifkan butir waktu dan beberapa kategori
 ```powershell
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportToResourceSpecific
-Bendera yang menunjukkan bahwa ekspor ke LA harus dilakukan ke tabel khusus sumber daya, alias. tabel skema khusus atau tetap, dibandingkan dengan tabel skema dinamis **default** yang disebut **AzureDiagnostics**.
+Bendera yang menunjukkan bahwa ekspor ke LA harus dilakukan ke tabel sumber daya tertentu, alias. tabel skema khusus atau tetap, dibandingkan dengan tabel skema dinamis **default** yang disebut **AzureDiagnostics**.
 
 Argumen ini hanya efektif ketika argumen **-workspaceId** juga diberikan.
 
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Menentukan kebijakan penyimpanan, dalam hari. Perhatikan bahwa ini hanya berlaku saat menyimpan data ke akun Storage.
+Menentukan kebijakan retensi, dalam hari. Perhatikan bahwa ini hanya berlaku saat menyimpan data ke akun Storage.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceId
-Id sumber daya ruang kerja Log Analytics untuk mengirim log/metrik ke
+Id sumber daya ruang kerja Analitik Log untuk mengirim log/metrik ke
 
 ```yaml
 Type: System.String
@@ -471,11 +474,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

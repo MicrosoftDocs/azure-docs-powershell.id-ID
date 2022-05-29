@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubExportDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubExportDevice.md
-ms.openlocfilehash: 6bba547dd2e747ff492987e9a79c561e420e01ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 959abad12b1c87149c05a5bf28be54ce4f2654a5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213995"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805226"
 ---
 # New-AzIotHubExportDevice
 
 ## SYNOPSIS
 Membuat pekerjaan perangkat ekspor baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubexportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ New-AzIotHubExportDevice [-ResourceGroupName] <String> [-Name] <String> [-Export
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat ekspor baru untuk IotHub.
-Ini akan mengekspor semua perangkat ke kontainer yang ditentukan. Lihat artikel berikut tentang cara membuat URI SAS.
+Ini akan mengekspor semua perangkat ke kontainer yang ditentukan. Lihat artikel berikut tentang cara menghasilkan SAS URI.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
 
-### Contoh 1 Mengeluarkan permintaan perangkat ekspor.
+### Contoh 1 Menerbitkan permintaan perangkat ekspor.
 ```powershell
 New-AzIotHubExportDevice -ResourceGroupName "myresourcegroup" -Name "myiothub" -ExportBlobContainerUri "https://mystorageaccount.blob.core.windows.net/mystoragecontainer?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D" -ExcludeKeys
 ```

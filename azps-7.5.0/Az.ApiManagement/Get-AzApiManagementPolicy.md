@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementPolicy.md
-ms.openlocfilehash: 5d92116e94bd48b3c549c0628fbb7a124757c701
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: efcdfc8df4632a334c7dd62ccdeab52e4d05e493
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211175"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809186"
 ---
 # Get-AzApiManagementPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan cakupan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 
 ### -ProductId
 Menentukan pengidentifikasi produk yang ada.
-Jika Anda menentukan parameter ini, cmdlet mengembalikan kebijakan cakupan produk.
+Jika Anda menentukan parameter ini cmdlet mengembalikan kebijakan cakupan produk.
 
 ```yaml
 Type: System.String

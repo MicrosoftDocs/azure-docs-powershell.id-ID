@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
-ms.openlocfilehash: 257f982aed8dfb403e4adcff7da1d4d1ac5f5597
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a49926a30e38627506ef164919ad2dceb420e9e1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224594"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794878"
 ---
 # Get-AzMlWebServiceKey
 
 ## SYNOPSIS
 Mengambil kunci layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 

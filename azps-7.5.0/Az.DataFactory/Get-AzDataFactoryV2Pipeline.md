@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 11194484f1bd524953fa1c7ef3fb9f48a3540657
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 88853cf1e524b5a5e08bf502f8c888e7985dd565
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204142"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795994"
 ---
 # Get-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang alur di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzDataFactoryV2Pipeline [-ResourceId] <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2Pipeline mendapatkan informasi tentang alur dalam Azure Data Factory.
+Cmdlet Get-AzDataFactoryV2Pipeline mendapatkan informasi tentang alur di Azure Data Factory.
 Jika Anda menentukan nama alur, cmdlet ini mendapatkan informasi tentang alur tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua alur di pabrik data.
 
@@ -139,7 +142,7 @@ Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik dat
 ```
 
 Perintah ini mendapatkan informasi untuk alur bernama DPWikisample di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk melihat properti Aktivitas yang terkait dengan alur tersebut.
-Perintah menampilkan properti Input dari elemen pertama array Aktivitas dengan menggunakan cmdlet Format-List.
+Perintah menampilkan properti Input dari elemen pertama dari array Aktivitas dengan menggunakan cmdlet Format-List.
 
 ## PARAMETERS
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama alur yang akan mendapatkan informasi.
+Menentukan nama alur untuk mendapatkan informasi.
 
 ```yaml
 Type: System.String

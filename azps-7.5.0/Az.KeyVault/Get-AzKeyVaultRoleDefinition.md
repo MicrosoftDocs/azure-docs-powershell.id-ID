@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: d402d690ce14e119fa5ad18ef1d95f6338e83f52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f44f5ce0496f57d251b74f05a13ae339b67ae6a7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213674"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815659"
 ---
 # Get-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Mencantumkan definisi peran dari HSM terkelola tertentu pada cakupan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Microsoft.KeyVault/managedHsm/keys/backup/action
 
 Contohnya mendapatkan peran "Cadangan HSM Terkelola" dan memeriksa izinnya.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzKeyVaultRoleDefinition -HsmName myHsm -Custom
 ```

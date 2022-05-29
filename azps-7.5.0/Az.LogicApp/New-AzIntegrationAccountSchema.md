@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
-ms.openlocfilehash: 38accb2dc3128d98107070e3145ebe210655c38c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4bcbb4e205934f17c3602130a76fcbb8840dde1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217355"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776972"
 ---
 # New-AzIntegrationAccountSchema
 
 ## SYNOPSIS
 Membuat skema akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ ContentLink : https://<baseurl>/integrationaccounts68a13b6b49f14995ba7c5f3aedcbd
 ContentSize : 7901
 ```
 
-Perintah ini membuat skema akun integrasi bernama IntegrationAccountSchema1 dalam grup sumber daya yang ditentukan.
+Perintah ini membuat skema akun integrasi bernama IntegrationAccountSchema1 di grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 

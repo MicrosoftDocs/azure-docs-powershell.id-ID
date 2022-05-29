@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterDiskEncryptionKey.md
-ms.openlocfilehash: a069fd0eb9fe16d3f92ff08a916c69aa1fefe6e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c09431ee3eab05bc9a678ae7817d44e48bdc64e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225046"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795598"
 ---
 # Set-AzHDInsightClusterDiskEncryptionKey
 
 ## SYNOPSIS
 Memutar kunci enkripsi disk dari kluster HDInsight yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclusterdiskencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

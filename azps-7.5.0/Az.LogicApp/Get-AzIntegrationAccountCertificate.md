@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountCertificate.md
-ms.openlocfilehash: 71d8266c1cf77d673fc67556d1d4cb196286c868
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 05c80445cce19af511b4957edc479d093b000990
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185897"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811646"
 ---
 # Get-AzIntegrationAccountCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat akun integrasi dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

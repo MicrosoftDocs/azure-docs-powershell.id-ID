@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultCertificateRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultCertificateRemoval.md
-ms.openlocfilehash: 98f159993f30b324173ac1f8df8ead3d7fe4904c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de2517c91fd8aba1d852ad0ff367da6296ffdf1d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217514"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804884"
 ---
 # Undo-AzKeyVaultCertificateRemoval
 
 ## SYNOPSIS
 Memulihkan sertifikat yang dihapus dalam brankas kunci ke status aktif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultcertificateremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Version       : 7fe415d5518240c1a6fce89986b8d334
 Id            : https://mykeyvault.vault.azure.net:443/certificates/mycertificate/7fe415d5518240c1a6fce89986b8d334
 ```
 
-Perintah ini akan memulihkan sertifikat 'MyCertificate' yang sebelumnya dihapus, ke status aktif dan dapat digunakan.
+Perintah ini akan memulihkan sertifikat 'MyCertificate' yang sebelumnya dihapus, ke dalam status aktif dan dapat digunakan.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama sertifikat.
-Cmdlet membuat FQDN sertifikat dari nama vault, lingkungan dan nama sertifikat yang saat ini dipilih.
+Cmdlet membangun FQDN sertifikat dari nama vault, lingkungan dan nama sertifikat yang saat ini dipilih.
 
 ```yaml
 Type: System.String

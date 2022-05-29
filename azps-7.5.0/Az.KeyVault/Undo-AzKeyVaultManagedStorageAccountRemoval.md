@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageAccountRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageAccountRemoval.md
-ms.openlocfilehash: 90b1b479a3d59816aabaf91ec63e3997777e3922
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 614d0b48087c7a6538d5c3c54c3027b0be869ef0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217466"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811933"
 ---
 # Undo-AzKeyVaultManagedStorageAccountRemoval
 
 ## SYNOPSIS
 Memulihkan akun penyimpanan yang dikelola KeyVault yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultmanagedstorageaccountremoval) untuk informasi terbaru.
 
 ## SYNTAX
 

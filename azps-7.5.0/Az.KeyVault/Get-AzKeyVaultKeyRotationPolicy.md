@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKeyRotationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKeyRotationPolicy.md
-ms.openlocfilehash: aca0b8a625f7e9b6a3b8695a245d34392abf5918
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3db129155b709351283e6a60a07619cc30b71dba
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237086"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804956"
 ---
 # Get-AzKeyVaultKeyRotationPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan rotasi kunci untuk kunci yang ditentukan dalam Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultkeyrotationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

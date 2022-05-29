@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVault.md
-ms.openlocfilehash: 6bd6d7e5f84b064531379dc19ea6c251e7f73f46
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd0ba1106a0b1d021d3d8bc0813099435a54e8f4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206438"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777530"
 ---
 # Backup-AzKeyVault
 
 ## SYNOPSIS
 Mencadangkan HSM terkelola sepenuhnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Backup-AzKeyVault -HsmName myHsm -StorageContainerUri "https://{accountName}.blo
 https://{accountName}.blob.core.windows.net/{containerName}/{backupFolder}
 ```
 
-Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}`) dalam kontainer penyimpanan, menyimpan cadangan di folder tersebut dan menghasilkan URI folder.
+Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}`) dalam kontainer penyimpanan, menyimpan cadangan di folder tersebut dan menghasilkan folder URI.
 
 ## PARAMETERS
 

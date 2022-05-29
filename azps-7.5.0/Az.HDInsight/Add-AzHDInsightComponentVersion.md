@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
-ms.openlocfilehash: 1974980a1532057118aa6b4f6acabb82558269dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7073ea8c09191925b45fa84ecf3a25d4c0ffa6bc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190604"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815822"
 ---
 # Add-AzHDInsightComponentVersion
 
 ## SYNOPSIS
 Menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightcomponentversion) untuk informasi terbaru.
 
 ## SYNTAX
 

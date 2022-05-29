@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 0f6c727552ab8a124968b1b865e28ccadb30ec80
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fcb3540d5981d58907cc2313360ed9158605fc04
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216311"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811916"
 ---
 # Remove-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Menghapus penetapan peran ke prinsipal yang ditentukan yang ditetapkan ke peran tertentu pada cakupan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Remove-AzKeyVaultRoleAssignment [-Scope <String>] [-PassThru] -InputObject <PSKe
 ```
 
 ## DESCRIPTION
-`Remove-AzKeyVaultRoleAssignment` Gunakan cmdlet untuk mencabut akses ke perwakilan mana pun pada cakupan tertentu dan peran yang diberikan. Objek penugasan yaitu prinsipal HARUS ditentukan. Prinsipal dapat menjadi pengguna (gunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (gunakan parameter ObjectId untuk mengidentifikasi grup) atau perwakilan layanan (gunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan prinsipal ke HARUS ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
+`Remove-AzKeyVaultRoleAssignment` Gunakan cmdlet untuk mencabut akses ke perwakilan mana pun pada cakupan tertentu dan peran yang diberikan. Objek penugasan yaitu pokok HARUS ditentukan. Prinsipal dapat menjadi pengguna (gunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (gunakan parameter ObjectId untuk mengidentifikasi grup) atau perwakilan layanan (gunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan utama ke HARUS ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
 
 Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -SignInName
-Pengguna SignInName.
+SignInName pengguna.
 
 ```yaml
 Type: System.String

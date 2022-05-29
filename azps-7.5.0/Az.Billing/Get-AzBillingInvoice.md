@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
-ms.openlocfilehash: 8feec5de235c2616a2803b6edb8d8bc2667d2a08
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c0c7079864fd82679fd1f8e49a3205a15b696cf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193289"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814364"
 ---
 # Get-AzBillingInvoice
 
 ## SYNOPSIS
 Dapatkan faktur tagihan langganan.
-Mendapatkan faktur penagihan akun penagihan dan profil penagihan
+Mendapatkan faktur tagihan akun penagihan dan profil penagihan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillinginvoice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzBillingInvoice [-MaxCount <Int32>] [-GenerateDownloadUrl] [-DefaultProfile
  [<CommonParameters>]
 ```
 
-### Latest
+### terbaru
 ```
 Get-AzBillingInvoice [-Latest] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>] [-BillingAccountName] [-BillingProfileName]
 ```
@@ -56,7 +59,7 @@ Get-AzBillingInvoice -Name 2017-02-18-432543543
 
 Dapatkan faktur langganan dengan nama yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzBillingInvoice
 ```
@@ -89,7 +92,7 @@ Dapatkan faktur dengan nama akun penagihan dan sertakan url unduhan untuk setiap
 Get-AzBillingInvoice -Name 0000000000 -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl
 ```
 
-Dapatkan faktur tertentu berdasarkan nama faktur dan nama akun penagihan dan sertakan url unduhan untuk setiap faktur dalam hasilnya.
+Dapatkan faktur tertentu dengan nama faktur dan nama akun penagihan dan sertakan url unduhan untuk setiap faktur dalam hasilnya.
 
 ### Contoh 8
 ```powershell

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
-ms.openlocfilehash: 768df672afd57dc2c9befdb21c02a7675b4f0dea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4e8a4f1097c80f2acfd1994785ca16162d143445
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209726"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814634"
 ---
 # Disable-AzContextAutosave
 
 ## SYNOPSIS
-Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azcontextautosave) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Nonaktifkan simpan otomatis untuk pengguna saat ini.
 
 ### Contoh 2
 
-Nonaktifkan penyimpanan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
+Nonaktifkan menyimpan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Disable-AzContextAutosave -Scope Process

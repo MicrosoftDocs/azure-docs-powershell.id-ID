@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmss.md
-ms.openlocfilehash: 0dd50df538560ed57449212f2965a6a2f0fd3ea2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e72e27b55683b2309c4c99ef6761299745aa3ae
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193177"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817064"
 ---
 # Stop-AzVmss
 
 ## SYNOPSIS
 Menghentikan VMSS atau sekumpulan komputer virtual dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/stop-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 
 Perintah ini menghentikan semua komputer virtual milik VMSS bernama ContosoVMSS.
 
-### Contoh 2: Hentikan sekumpulan komputer virtual tertentu dalam VMSS
+### Contoh 2: Menghentikan sekumpulan komputer virtual tertentu dalam VMSS
 ```powershell
 Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS" -InstanceId "3","5"
 ```
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipShutdown
-Untuk meminta penonaktifan VM yang tidak baik
+Untuk meminta penonaktifan VM yang tidak anggun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -StayProvisioned
-Jika ditentukan, komputer virtual akan memasuki status berhenti. Jika tidak ditentukan, komputer virtual akan memasuki status dihentikan-dibatalkan alokasinya. Pengguna masih dikenakan biaya untuk VM dalam status berhenti tetapi tidak untuk VM dalam status berhenti-dibatalkan alokasinya.
+Jika ditentukan, komputer virtual akan memasuki status berhenti. Jika tidak ditentukan, komputer virtual akan memasuki status berhenti-dibatalkan alokasinya. Pengguna masih dikenakan biaya untuk VM dalam status berhenti tetapi tidak untuk VM dalam status dihentikan-dibatalkan alokasinya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,9 +230,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Baru-AzVmss](./New-AzVmss.md)
 
-[Hapus-AzVmss](./Remove-AzVmss.md)
+[Remove-AzVmss](./Remove-AzVmss.md)
 
-[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVmss](./Restart-AzVmss.md)
 
 [Set-AzVmss](./Set-AzVmss.md)
 

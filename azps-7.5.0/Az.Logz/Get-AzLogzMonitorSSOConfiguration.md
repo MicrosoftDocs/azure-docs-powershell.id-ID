@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
-ms.openlocfilehash: c5096783d5559c07684a3c10e4ffbb6fa9263d63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: abaee90e65ab0509f7a4b6231e49083d62dfe937
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220694"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811574"
 ---
 # Get-AzLogzMonitorSSOConfiguration
 
 ## SYNOPSIS
 Mendapatkan sumber daya akses menyeluruh Logz untuk Monitor yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitorssoconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ default Succeeded         Existing          https://api-wa.logz.io/auth/azure/32
 
 Perintah ini mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor yang diberikan.
 
-### Contoh 2: Mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor yang diberikan berdasarkan alur
+### Contoh 2: Mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor berdasarkan alur yang diberikan
 ```powershell
 New-AzLogzMonitorSSOConfiguration -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Get-AzLogzMonitorSSOConfiguration
 ```
@@ -60,7 +63,7 @@ Name    ProvisioningState SingleSignOnState SingleSignOnUrl             Resource
 default Succeeded         Disable           https://app.logz.io/        logz-rg-test
 ```
 
-Perintah ini mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor oleh alur yang diberikan.
+Perintah ini mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor berdasarkan alur yang diberikan.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

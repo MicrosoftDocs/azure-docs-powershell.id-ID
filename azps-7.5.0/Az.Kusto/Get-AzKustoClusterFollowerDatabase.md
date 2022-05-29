@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterFollowerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterFollowerDatabase.md
-ms.openlocfilehash: 9f681fa8419f898191f6acbf558e4506914ab78d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e68d1d85344cb2e9b9efc376fa1b9f6729093e3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216242"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811844"
 ---
 # Get-AzKustoClusterFollowerDatabase
 
 ## SYNOPSIS
 Mengembalikan daftar database yang dimiliki oleh kluster ini dan diikuti oleh kluster lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoclusterfollowerdatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

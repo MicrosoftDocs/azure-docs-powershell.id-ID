@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 6e8930764ac261c5ebb24e6427566af852cb2bd5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d48cf5a2f7acf80ee2fc8b238c6dcc5740d6722f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237058"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812132"
 ---
 # Get-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan penetapan peran dari HSM terkelola. Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu atau definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

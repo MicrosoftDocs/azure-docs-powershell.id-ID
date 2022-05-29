@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGatewayHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGatewayHostnameConfiguration.md
-ms.openlocfilehash: 93ee7c23bec1df96dd7d867ff18c319e99af8cbb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de70b8daa758d7a671f7d8248eb92dc775f7f624
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214463"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808808"
 ---
 # Remove-AzApiManagementGatewayHostnameConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi nama host dari Gateway yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementgatewayhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

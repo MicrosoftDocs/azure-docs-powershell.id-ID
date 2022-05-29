@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
-ms.openlocfilehash: 86aefc93af5bbce05e9be2806cec3e901e7eb901
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 96a94b10bbb3aafa81a5e81aeaf7e3261a249665
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239424"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805279"
 ---
 # Invoke-AzIotHubQuery
 
 ## SYNOPSIS
 Buat kueri IoT Hub menggunakan bahasa seperti SQL yang kuat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Invoke-AzIotHubQuery [-ResourceId] <String> [-Query] <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-Mengkueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perangkat dan modul kembar, pekerjaan, dan perutean pesan.
+Kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perangkat dan modul kembar, pekerjaan, dan perutean pesan.
 Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi lebih lanjut.
 
 ## EXAMPLES

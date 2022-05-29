@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 61417529244bd2b3753653b4350dacad8fd8ffc9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0357b88c962459cb0a065d8d0717ebf0d6854f6d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183534"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794158"
 ---
 # Add-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat akar tepercaya ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaytrustedrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

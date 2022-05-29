@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
-ms.openlocfilehash: 1df60b6a66f3fe3931f0826a49765d325343a4c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 666332f2d5ea74697a4c4c726ecfe0559996d7eb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235812"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777260"
 ---
 # Update-AzKubernetesExtension
 
 ## SYNOPSIS
 Patch Ekstensi Kluster Kubernetes yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/update-azkubernetesextension) untuk informasi terbaru.
 
 ## SYNTAX
 

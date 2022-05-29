@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesLabPlan.md
-ms.openlocfilehash: 4b60c31edbdf2abdc1aa6b081a80039a6e27b709
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e3618a77a2f9be9b447cbbec1d4b42217cc1f2b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210890"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771482"
 ---
 # Remove-AzLabServicesLabPlan
 
 ## SYNOPSIS
 Operasi untuk menghapus sumber daya Rencana Lab.
 Menghapus paket lab tidak menghapus lab yang terkait dengan rencana lab, juga tidak menghapus gambar bersama yang ditambahkan ke galeri melalui kontainer izin paket lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/remove-azlabserviceslabplan) untuk informasi terbaru.
 
 ## SYNTAX
 

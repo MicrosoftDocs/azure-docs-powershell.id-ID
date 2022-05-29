@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultSecret.md
-ms.openlocfilehash: 2524f9f0e748cdec0f5f5c96281c066665bdd517
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0aedfd8c7d31f9292caf24b1139e0a4be3008427
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247821"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777296"
 ---
 # Update-AzKeyVaultSecret
 
 ## SYNOPSIS
 Memperbarui atribut rahasia di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

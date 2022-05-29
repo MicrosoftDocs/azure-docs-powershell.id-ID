@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: ba9cea43613b521afa597b6363aa58cfea8766ff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a0afa0930861b2216a8d195ff0afc68602f9c9f3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184217"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794176"
 ---
 # New-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Membuat konfigurasi direktori aktif Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesactivedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapOverTLS
-Ketika LDAP melalui SSL/TLS diaktifkan, tentukan apakah lalu lintas LDAP perlu diamankan melalui TLS atau tidak.
+Ketika LDAP melalui SSL/TLS diaktifkan, menentukan apakah lalu lintas LDAP perlu diamankan melalui TLS atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif yang akan diberikan Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang terus tersedia untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif untuk diberikan Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang tersedia terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Situs
-Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengendali Domain ke
+Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengendali Domain
 
 ```yaml
 Type: System.String

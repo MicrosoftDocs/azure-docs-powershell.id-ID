@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyRotation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyRotation.md
-ms.openlocfilehash: ebd5c1121d6228e5fba1ae0e3eb39adb50d99845
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 63de7406a5bcb395997cfe0940113a6c7f12936f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186037"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812096"
 ---
 # Invoke-AzKeyVaultKeyRotation
 
 ## SYNOPSIS
 Membuat versi kunci baru di Key Vault, menyimpannya, lalu mengembalikan kunci baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/invoke-azkeyvaultkeyrotation) untuk informasi terbaru.
 
 ## SYNTAX
 

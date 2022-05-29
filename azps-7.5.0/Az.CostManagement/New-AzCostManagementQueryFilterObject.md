@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
-ms.openlocfilehash: 12ae43996d5855ba7ce769352bd5d03a93c108cc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4bc1fada3c5a52ae8edc76d2edba480d4c6d642c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205394"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815984"
 ---
 # New-AzCostManagementQueryFilterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk QueryFilter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementqueryfilterobject) untuk informasi terbaru.
 
 ## SYNTAX
 

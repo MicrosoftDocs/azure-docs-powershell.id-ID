@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubSasToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubSasToken.md
-ms.openlocfilehash: 665a54be2aa255ebe6c4d3af8a51e56512ab3496
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 28fccc774c388915377e744ce543f19fadb610f5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239382"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805154"
 ---
 # New-AzIotHubSasToken
 
 ## SYNOPSIS
 Buat token SAS untuk IoT Hub target, perangkat, atau modul.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ New-AzIotHubSasToken -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 
 Buat token SAS IoT Hub menggunakan kebijakan registryRead dan kunci sekunder.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzIotHubSasToken -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1"
 ```

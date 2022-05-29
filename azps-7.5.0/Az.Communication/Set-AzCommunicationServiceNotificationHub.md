@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
-ms.openlocfilehash: b7294f02d5b95d4f91df442ba5927c35e01741a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 684d38ca3bbf51d794751b34d0d18aaed3c95035
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236106"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814310"
 ---
 # Set-AzCommunicationServiceNotificationHub
 
 ## SYNOPSIS
 Menautkan Azure Notification Hub ke layanan komunikasi ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.communication/set-azcommunicationservicenotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -Re
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Tautan
+### Link
 ```
 Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -ResourceGroupName <String>
  -LinkNotificationHubParameter <ILinkNotificationHubParameters> [-SubscriptionId <String>]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

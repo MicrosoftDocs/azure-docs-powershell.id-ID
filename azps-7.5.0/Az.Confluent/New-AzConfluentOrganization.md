@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
-ms.openlocfilehash: 0aa56d8f7d98924d50bafcd5ac0a9efc26a43403
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6d3c0f7d0fb56c788cc9e73b2a747859494fcc7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215306"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817046"
 ---
 # New-AzConfluentOrganization
 
 ## SYNOPSIS
 Membuat sumber daya Organisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/new-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
