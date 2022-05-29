@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/New-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/New-AzBotService.md
-ms.openlocfilehash: 4123767a84429f8e85b384ba39278ea96e3fda94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e37fb94403b3528aef8eae67c5a943275a85b670
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184987"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730314"
 ---
 # New-AzBotService
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/new-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 

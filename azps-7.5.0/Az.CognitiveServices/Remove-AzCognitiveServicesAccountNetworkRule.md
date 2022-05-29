@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
-ms.openlocfilehash: 0e5bf6e65f6da3dc3a12fb3b0c6e2d2f6ac58450
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c13433796c7370eb9c0b40f4cf059d55493a814
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216530"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736812"
 ---
 # Remove-AzCognitiveServicesAccountNetworkRule
 
 ## SYNOPSIS
 Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/remove-azcognitiveservicesaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,14 +54,14 @@ Cmdlet **Remove-AzCognitiveServicesAccountNetworkRule** menghapus IpRules atau V
 
 ## EXAMPLES
 
-### Contoh 1: Hapus beberapa IpRules dengan IPAddressOrRange
+### Contoh 1: Menghapus beberapa IpRules dengan IPAddressOrRange
 ```powershell
 Remove-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -IpAddressOrRange "10.0.0.0/24,28.1.0.0/16"
 ```
 
 Perintah ini menghapus beberapa IpRules dengan IPAddressOrRange.
 
-### Contoh 2: Hapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON
+### Contoh 2: Menghapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON
 ```powershell
 Remove-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount" -VirtualNetworkRule (@{VirtualNetworkReourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"})
 ```

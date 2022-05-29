@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplication.md
-ms.openlocfilehash: e496b8590d188c7b56f12eb3c24825e773108fdc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ebe4836fc0908a4dc6879f26c4ce6a8876d9926
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195098"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731394"
 ---
 # New-AzBatchApplication
 
 ## SYNOPSIS
 Menambahkan aplikasi ke akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

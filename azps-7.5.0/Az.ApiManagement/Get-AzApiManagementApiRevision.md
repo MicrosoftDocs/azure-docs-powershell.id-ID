@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRevision.md
-ms.openlocfilehash: 41558c0ca79a447fdb7c19ac1cf501d6be7983bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0155a260f12bf0c9c83d42868f4d21e21ab3cb4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731538"
 ---
 # Get-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Mendapatkan detail semua Revisi API api
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 
