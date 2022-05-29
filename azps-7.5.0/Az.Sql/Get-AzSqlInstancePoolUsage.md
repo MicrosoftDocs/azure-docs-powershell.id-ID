@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
-ms.openlocfilehash: 45ec352cf29a5f223d42e3dcdb9ae56e9c9d3921
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9227bec3c93ecbe05c772cd81fedc37d662cb0f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246435"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727704"
 ---
 # Get-AzSqlInstancePoolUsage
 
 ## SYNOPSIS
 Mengembalikan informasi tentang penggunaan kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancepoolusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -140,7 +143,7 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 kumpulan Instans Azure SQL menggunakan pengidentifikasi sumber daya kumpulan instans.
+Mendapatkan penggunaan untuk instancepool0 kumpulan instans Azure SQL menggunakan pengidentifikasi sumber daya kumpulan instans.
 
 ### Contoh 3: Mendapatkan penggunaan kumpulan Instans Azure SQL dengan perincian penggunaan instans terkelola dalam kumpulan.
 ```powershell

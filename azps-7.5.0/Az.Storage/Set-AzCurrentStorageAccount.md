@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azcu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzCurrentStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzCurrentStorageAccount.md
-ms.openlocfilehash: 7273e19ba982ce90078905234d1c866f713c55e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51295495a4b1aa7052986860eff61a747e3069fc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243691"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714528"
 ---
 # Set-AzCurrentStorageAccount
 
 ## SYNOPSIS
 Memodifikasi akun Storage saat ini dari langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azcurrentstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/new-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: 5ab9aabe8b97f46b35919e6522a4a778afa44962
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea1607b027bc4ba4dd9e5cc5bafd3afe17bb2ea0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225687"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740844"
 ---
 # New-AzDiskPoolIscsiTarget
 
 ## SYNOPSIS
 Membuat atau Memperbarui Target iSCSI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/new-azdiskpooliscsitarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Lun
 Daftar LUN yang akan diekspos melalui Target iSCSI.
-Untuk membuat, lihat bagian CATATAN untuk properti LUN dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LUN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IIscsiLun[]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticAcl
-Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masking LUN Untuk membangun, lihat bagian NOTES untuk properti STATICACL dan membuat tabel hash.
+Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masking LUN Untuk membangun, lihat bagian CATATAN untuk properti STATICACL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IAcl[]

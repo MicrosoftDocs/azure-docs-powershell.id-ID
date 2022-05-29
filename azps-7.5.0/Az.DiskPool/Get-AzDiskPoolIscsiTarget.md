@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: 5736b808598ceb9355f3a9ed43cc22287538b528
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 18cf785f9a9bc5d18aa835dd674e03eb31511a8b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199368"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741186"
 ---
 # Get-AzDiskPoolIscsiTarget
 
 ## SYNOPSIS
 Dapatkan Target iSCSI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/get-azdiskpooliscsitarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Dapatkan Target iSCSI.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan target iSCSI dalam Kumpulan Disk
+### Contoh 1: Mencantumkan target iSCSI di Kumpulan Disk
 ```powershell
 Get-AzDiskPoolIscsiTarget -ResourceGroupName 'storagepool-rg-test' -DiskPoolName 'disk-pool-5'
 ```
@@ -67,7 +70,7 @@ target0 Microsoft.StoragePool/diskPools/iscsiTargets
 
 Perintah ini mendapatkan target iSCSI.
 
-### Contoh 3: Mendapatkan target iSCSI berdasarkan objek
+### Contoh 3: Mendapatkan target iSCSI menurut objek
 ```powershell
 New-AzDiskPoolIscsiTarget -DiskPoolName 'disk-pool-5' -Name 'target1' -ResourceGroupName 'storagepool-rg-test' -AclMode 'Dynamic' | Get-AzDiskPoolIscsiTarget
 ```
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.IDiskPoolIdentity
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

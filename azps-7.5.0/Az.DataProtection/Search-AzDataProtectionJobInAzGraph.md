@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
-ms.openlocfilehash: 0c48b619304d5a6022266863cf1b943d3eba88aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24aeacc93524477dea27bc96ee962033608d48ac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218747"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748548"
 ---
 # Search-AzDataProtectionJobInAzGraph
 
 ## SYNOPSIS
 Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionjobinazgraph) untuk informasi terbaru.
 
 ## SYNTAX
 

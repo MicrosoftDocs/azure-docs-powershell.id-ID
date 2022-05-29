@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 82c403177e061f059ae4bc887ac7ffdc90dc6b48
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd17bef94c89a46ca8a2a4d341f4f79bd17d339b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218786"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748782"
 ---
 # Remove-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Menghapus backupInstances
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,12 +241,12 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
   - `[VaultName <String>]`: Nama brankas cadangan.

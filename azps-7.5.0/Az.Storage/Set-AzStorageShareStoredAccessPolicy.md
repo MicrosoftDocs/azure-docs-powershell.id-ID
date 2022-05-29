@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: c9605a7d56eb47b00cbaf35edeb96ccd570ea0ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e16f7c2a9ebfe7d7f0c438f1bf54d95bd868e795
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240670"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713844"
 ---
 # Set-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan akses tersimpan pada berbagi Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragesharestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

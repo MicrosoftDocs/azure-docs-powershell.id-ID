@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
-ms.openlocfilehash: 3f8fddf133a4763c623f3f3b73d6ceee1d26b7cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa311b0716631164855488d561b55860d3095a49
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713520"
 ---
 # Update-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Memperbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
+Perbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ### -Jalur
 Jalur dalam Filesystem yang ditentukan yang harus diperbarui.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
-Tidak menentukan parameter ini akan memperbarui direktori akar filesystem.
+Tidak menentukan parameter ini akan memperbarui direktori akar Filesystem.
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 
 ### -Izin
 Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
-Setiap kelas dapat diberikan izin baca, tulis, atau eksekusi.
+Setiap kelas dapat diberikan izin baca, tulis, atau jalankan.
 Simbolis (rwxrw-rw-) didukung.
 Tidak valid bersama dengan Acl.
 

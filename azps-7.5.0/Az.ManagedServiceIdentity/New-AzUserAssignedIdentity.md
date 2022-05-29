@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
-ms.openlocfilehash: ebcefde4e565a0325ec3e1c7a5bf02f0bde7d08d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 31d41524200d0fd7926f6423ac8dda5ee21538fe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112396"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691668"
 ---
 # New-AzUserAssignedIdentity
 
 ## SYNOPSIS
 Membuat atau memperbarui identitas di grup langganan dan sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/new-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 

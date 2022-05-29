@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseSensitivityClassification.md
-ms.openlocfilehash: a78625d72817807f29b582d554ab22ef7cf2b868
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4515b93e31441484c69d76f30c0b19d7f3c70458
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231934"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728046"
 ---
 # Get-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Mendapatkan jenis informasi saat ini dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

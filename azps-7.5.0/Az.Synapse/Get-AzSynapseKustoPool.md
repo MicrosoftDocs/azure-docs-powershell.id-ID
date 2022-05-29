@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPool.md
-ms.openlocfilehash: 0b2910ee7f910ec227b2766a1957a918cd4e79d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: abab6f59f3f3b092acea678e2cfec73f8d9d7e11
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214607"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709812"
 ---
 # Get-AzSynapseKustoPool
 
 ## SYNOPSIS
 Mendapatkan kumpulan Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopool) untuk informasi terbaru.
 
 ## SYNTAX
 

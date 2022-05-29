@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupInstanceAssociatedPolicy.md
-ms.openlocfilehash: 819572e26652b5762b5fbc28bf554c9416a13531
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cbcd9aea1956b56a740f45d0e62876d1f622790a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218735"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748566"
 ---
 # Update-AzDataProtectionBackupInstanceAssociatedPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan terkait untuk instans cadangan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupinstanceassociatedpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan vault
+Id Langganan vault
 
 ```yaml
 Type: System.String

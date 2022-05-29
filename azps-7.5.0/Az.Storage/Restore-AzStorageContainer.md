@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageContainer.md
-ms.openlocfilehash: 49038e651e54c49bcd4ec7fcef90a6dbcf0e1306
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8fb08b53cb4a1bd8b1baadee8574925f22104adb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216602"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714600"
 ---
 # Restore-AzStorageContainer
 
 ## SYNOPSIS
 Memulihkan kontainer blob penyimpanan Azure yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

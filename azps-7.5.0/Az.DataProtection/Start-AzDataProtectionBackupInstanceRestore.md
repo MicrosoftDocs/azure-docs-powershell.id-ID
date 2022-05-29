@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: 2dcf8cac7f2b3503cc2a5073365cb355e13ec960
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e55808b7c1a37e088479bd8648728d0828e294f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218738"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748512"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
 ## SYNOPSIS
 Memicu pemulihan untuk BackupInstance
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/start-azdataprotectionbackupinstancerestore) untuk informasi terbaru.
 
 ## SYNTAX
 

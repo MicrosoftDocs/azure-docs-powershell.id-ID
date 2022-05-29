@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherNextHop.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherNextHop.md
-ms.openlocfilehash: 4eb1c19e51f52604478f3d5df9bb0b78710abd95
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ae026d8100e7dd555ccc03b6b37058cb882279f3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681150"
 ---
 # Get-AzNetworkWatcherNextHop
 
 ## SYNOPSIS
 Mendapatkan hop berikutnya dari VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchernexthop) untuk informasi terbaru.
 
 ## SYNTAX
 
