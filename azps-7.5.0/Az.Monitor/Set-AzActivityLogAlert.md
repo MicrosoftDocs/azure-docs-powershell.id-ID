@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActivityLogAlert.md
-ms.openlocfilehash: ba6c33a5516cbfc40dfaba614fe77edfda3aa090
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 199693b23f4eb35c198dd19095f3e722796851a2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201454"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810890"
 ---
 # Set-AzActivityLogAlert
 
 ## SYNOPSIS
-Membuat baru atau mengatur pemberitahuan log aktivitas yang sudah ada.
+Membuat baru atau menetapkan pemberitahuan log aktivitas yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Set-AzActivityLogAlert [-Scope <System.Collections.Generic.List`1[System.String]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzActivityLogAlert** membuat pemberitahuan log aktivitas baru atau yang sudah ada.
+Cmdlet **Set-AzActivityLogAlert** membuat baru atau mengatur pemberitahuan log aktivitas yang ada.
 Untuk tag, kondisi, dan tindakan objek harus dibuat terlebih dahulu dan diteruskan sebagai parameter dalam panggilan ini sebagai dipisahkan koma (lihat contoh di bawah).
 Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat/memodifikasi sumber daya.
 **CATATAN**: Cmdlet ini dan yang terkait menggantikan **Add-AzLogAlertRule** yang tidak digunakan lagi (November 2017).
@@ -437,13 +440,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
-### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 

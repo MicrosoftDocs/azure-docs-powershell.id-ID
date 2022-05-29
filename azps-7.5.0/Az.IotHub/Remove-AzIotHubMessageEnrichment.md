@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: 860e29d158c0d8d634b15debac0cce689723902e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 94c810aeba5d0ccdac06c698bbefebd414f96e49
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239323"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818090"
 ---
 # Remove-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Menghapus pengayaan pesan di hub IoT Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 

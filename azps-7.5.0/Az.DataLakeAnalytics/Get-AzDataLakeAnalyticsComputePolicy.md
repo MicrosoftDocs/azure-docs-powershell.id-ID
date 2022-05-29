@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 1964aeb80c53e830929d7b4e16cc08e2d1a668ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5179f6666fd20721053f6d88054404f79d8ed155
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203271"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785178"
 ---
 # Get-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan komputasi Data Lake Analytics atau daftar kebijakan komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

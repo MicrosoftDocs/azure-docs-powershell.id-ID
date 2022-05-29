@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationWebhook.md
-ms.openlocfilehash: 4ed3ee607da2b03960f068fd0b633d7763e517e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97f61c13d1e2380ad9c6624145be169771e4b429
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186457"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818486"
 ---
 # Remove-AzAutomationWebhook
 
 ## SYNOPSIS
 Menghapus webhook dari runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 

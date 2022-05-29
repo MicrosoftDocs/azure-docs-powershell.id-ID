@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDelegation.md
-ms.openlocfilehash: 8c87be28c149d0f097feb44cb140602d7416b2ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa0263b67ed18946952bcf8f440e4ca4e395c6d6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220514"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809792"
 ---
 # Get-AzDelegation
 
 ## SYNOPSIS
 Dapatkan delegasi (atau semua delegasi) pada subnet tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 

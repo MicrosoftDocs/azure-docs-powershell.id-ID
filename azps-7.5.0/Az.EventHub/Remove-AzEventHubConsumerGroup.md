@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 306e051824ca7531fac8e5929b780ea0a697ff13
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1cbd79ca4952f7ec6ffeaaf8f9bbb83896832ac3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196624"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788382"
 ---
 # Remove-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Menghapus grup konsumen Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzEventHubConsumerGroup [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen yang ditentukan dari Event Hub yang diberikan.
+Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen yang ditentukan dari Pusat Aktivitas tertentu.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet Remove-AzEventHubConsumerGroup menghapus dan menghapus grup konsumen yang
 Remove-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyConsumerGroupName
 ```
 
-Menghapus grup \`konsumen MyConsumerGroupName\` dari Pusat \`Aktivitas MyEventHubName\`, yang dicakup ke \`namespace layanan MyNamespaceName\` .
+Menghapus grup konsumen MyConsumerGroupName\` dari Event Hub \`MyEventHubName\`, yang dicakup ke \`namespace MyNamespaceName\`.\`
 
 ### Contoh 2: InputObject - Menggunakan Variabel
 ```powershell
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Grup Konsumen
+Nama ConsumerGroup
 
 ```yaml
 Type: System.String

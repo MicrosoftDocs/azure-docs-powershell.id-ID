@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
-ms.openlocfilehash: 7f82106aacd9858262434152a52493c664a0b3cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b28c0c7c6bb52bbd3d0b1d930bc635341b7dddd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194969"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818504"
 ---
 # Get-AzVMSqlServerExtension
 
 ## SYNOPSIS
 Mendapatkan pengaturan untuk ekstensi SQL Server pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 
 Perintah ini mendapatkan pengaturan ekstensi SQL Server pada komputer virtual bernama ContosoVM07.
 
-### Contoh 2: Dapatkan pengaturan dengan menggunakan alur
+### Contoh 2: Mendapatkan pengaturan dengan menggunakan alur
 ```powershell
 Get-AzVM -ResourceGroupName "testrg" -Name "ContosoVM22" | Get-AzVMSqlServerExtension
 ```
@@ -64,7 +67,7 @@ AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 
 Perintah ini mendapatkan komputer virtual bernama ContosoVM22 di testrg Grup Sumber Daya dengan menggunakan cmdlet Get-AzVM.
 Perintah meneruskan hasil ke cmdlet saat ini dengan menggunakan operator alur.
-Perintah saat ini mendapatkan pengaturan agen iaaS SQL Server pada komputer virtual tersebut.
+Perintah saat ini mendapatkan pengaturan Agen IaaS SQL Server pada komputer virtual tersebut.
 
 ## PARAMETERS
 

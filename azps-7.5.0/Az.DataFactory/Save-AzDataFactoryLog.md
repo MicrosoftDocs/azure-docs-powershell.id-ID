@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
-ms.openlocfilehash: c571e9ad26db4f7ee890f40b0b617343d90d3de5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb48507bf955e1dae7a5a480769f395079911118
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203680"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785232"
 ---
 # Save-AzDataFactoryLog
 
 ## SYNOPSIS
 Mengunduh file log dari pemrosesan Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/save-azdatafactorylog) untuk informasi terbaru.
 
 ## SYNTAX
 

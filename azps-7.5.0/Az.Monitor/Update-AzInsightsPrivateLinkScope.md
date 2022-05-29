@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: c46e8f2e5bf7ee6688ee05866482fc0a57dbd62c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 303dcd6e4fb6fb884d724e6cabcca5fe46df1f34
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201367"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810836"
 ---
 # Update-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
 Pembaruan untuk cakupan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/update-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Update-AzInsightsPrivateLinkScope -ResourceId "/subscriptions/{subscriptionId}/r
 
 perbarui cakupan tautan privat dengan Id sumber daya untuk menggunakan tag "key:value"
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name" | Update-AzInsightsPrivateLinkScope -Tags "key:value"
 ```

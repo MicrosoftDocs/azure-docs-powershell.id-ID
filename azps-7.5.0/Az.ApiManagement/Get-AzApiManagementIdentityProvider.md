@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: f4b1dcba40b9ee3c749a61aa310a818c3f58acb3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbf14062f394179479b5848c59d4508def09b209
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226009"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798792"
 ---
 # Get-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Dapatkan detail konfigurasi idP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Get-AzApiManagementIdentityProvider -Context $apimContext
 
 Dapatkan semua Konfigurasi IdP pada layanan.
 
-### Contoh 2: Dapatkan IdP Jenis AAD
+### Contoh 2: Mendapatkan IdP Jenis AAD
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProvider -Context $apimContext -Type Aad
@@ -70,7 +73,7 @@ ServiceName              : contoso
 
 Mendapatkan Konfigurasi Penyedia Identitas Azure Active Directory.
 
-### Contoh 3: Dapatkan IdP Jenis AAD B2C
+### Contoh 3: Mendapatkan IdP Jenis AAD B2C
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProvider -Context $context -Type AadB2C
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -Type
 Pengidentifikasi Penyedia Identitas.
-Jika ditentukan akan mencoba menemukan konfigurasi penyedia identitas oleh pengidentifikasi.
+Jika ditentukan akan mencoba menemukan konfigurasi IdP oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationCertificate.md
-ms.openlocfilehash: 9c99310755fc3a481cef5dcfcd073e10ecfc9f16
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2059ce34b6ce0ac77c4c9d5136439df3956eec0d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237212"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798532"
 ---
 # New-AzAutomationCertificate
 
 ## SYNOPSIS
 Membuat sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

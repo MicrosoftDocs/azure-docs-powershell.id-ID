@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
-ms.openlocfilehash: c899467c43cbe3ce7dd9924f0ae4968020788d72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ecb92b33624b08a70ea6d3d0d08e8cf01aaafa58
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244114"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817514"
 ---
 # New-AzAutoscaleProfile
 
 ## SYNOPSIS
-Membuat profil Autoscale.
+Membuat profil Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscaleprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzAutoscaleProfile -Name <String> -DefaultCapacity <String> -MaximumCapacity
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### CreateWithFixedDateScheduling
+### Penjadwalan CreateWithFixedDateScheduling
 ```
 New-AzAutoscaleProfile -Name <String> -DefaultCapacity <String> -MaximumCapacity <String>
  -MinimumCapacity <String> -StartTimeWindow <DateTime> -EndTimeWindow <DateTime> -TimeWindowTimeZone <String>
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleHour
-Menentukan jam yang dijadwalkan.
+Menentukan jam terjadwal.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.Nullable`1[System.Int32]]
@@ -364,11 +367,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Collections.Generic.List1`1[[System.Nullable`[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List`1[[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

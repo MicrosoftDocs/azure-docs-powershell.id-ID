@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskEncryptionSetConfig.md
-ms.openlocfilehash: ba568ada7198972b1270295ce3a93e00f8becf65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d554dd35203efae16ffb18555b79dec2019375c3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184780"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818324"
 ---
 # New-AzDiskEncryptionSetConfig
 
 ## SYNOPSIS
 Membuat objek set enkripsi disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskencryptionsetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryManifest.md
-ms.openlocfilehash: 1387312e5c9fa64c276c23dada363bd715e97ba2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: be4dfb65912e7ab8859ec582e48b5b2f4de9b1b4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227535"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801304"
 ---
 # Remove-AzContainerRegistryManifest
 
 ## SYNOPSIS
 Menghapus manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 

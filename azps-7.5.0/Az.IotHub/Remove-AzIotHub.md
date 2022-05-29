@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHub.md
-ms.openlocfilehash: 63cb867b06ae47e9529e624e80ea78e13f0b4336
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a066a84bedd6c786cbfe7c3fa9e322d42e4de6cb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213974"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818162"
 ---
 # Remove-AzIotHub
 
 ## SYNOPSIS
 Menghapus IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 

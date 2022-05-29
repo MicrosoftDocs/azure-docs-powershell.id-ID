@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/init
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Initialize-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Initialize-AzNetAppFilesReplication.md
-ms.openlocfilehash: a3d252ccd422b3e07495641acf29bec6549f6fc7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5b70188cab4f2685da6175a95c8ec6567605968c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184234"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810494"
 ---
 # Initialize-AzNetAppFilesReplication
 
 ## SYNOPSIS
 Re-Initializes koneksi replikasi pada volume tujuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/initialize-aznetappfilesreplication) untuk informasi terbaru.
 
 ## SYNTAX
 

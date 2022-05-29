@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryManifest.md
-ms.openlocfilehash: 723d158c6f5b5fb1be01d5b584f1611e9c57d8b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b022cd880ae3573d840d776877635ab9863f39cf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227706"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801358"
 ---
 # Get-AzContainerRegistryManifest
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Registry                    ImageName                   ManifestsAttributes
 registry.azurecr.io         alpine         {Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase, Microsoft.Azure.Comm…}
 ```
 
-Mencantumkan manifes untuk repositori alpine di bawah registri.
+Mencantumkan manifes untuk alpine repositori di bawah registri.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ Registry                    ImageName Attributes
 registry.azurecr.io         alpine    Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttributeBase
 ```
 
-Dapatkan manifes sha256:a5426f084c755f4d6c1d1562a2d456aa574a24a61706f6806415627360c06ac0 untuk repositori alpine di bawah registri.
+Dapatkan manifes sha256:a5426f084c755f4d6c1d1562a2d456aa574a24a61706f6806415627360c06ac0 untuk alpine repositori di bawah registri.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Azure Container Registry.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String

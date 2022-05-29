@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalRNetworkAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalRNetworkAcl.md
-ms.openlocfilehash: f057951f99f39bc6fd6cf70a67f4869d7b047928
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f2baef67cb40caa2fe930474f687bc90bbfbd81b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242154"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809702"
 ---
 # Update-AzSignalRNetworkAcl
 
 ## SYNOPSIS
-Perbarui ACL Jaringan dari layanan SignalR.
+Perbarui ACL Jaringan layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/update-azsignalrnetworkacl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Update-AzSignalRNetworkAcl -InputObject <PSSignalRResource> [-AsJob] [-DefaultAc
 ```
 
 ## DESCRIPTION
-Perbarui ACL Jaringan dari layanan SignalR, termasuk tindakan default dan Acl jaringan untuk koneksi publik dan privat.
+Perbarui ACL Jaringan layanan SignalR, termasuk tindakan default dan Acl jaringan untuk koneksi publik dan privat.
 
 ## EXAMPLES
 
-### Izinkan RESTAPI, ClientConnection untuk jaringan publik dan atur tindakan default ke Tolak
+### Izinkan RESTAPI,ClientConnection untuk jaringan publik dan atur tindakan default ke Tolak
 ```powershell
 $networkAcl = Update-AzSignalRNetworkAcl -Name pssignalr -ResourceGroupName test_resource_group -DefaultAction Deny -PublicNetwork -Allow RESTAPI,ClientConnection
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Tindakan Default ACL jaringan SignalR, baik mengizinkan atau menolak. Ini memutuskan apakah menolak ACL jaringan atau mengizinkan ACL jaringan berlaku. Misalnya, jika tindakan default diizinkan, maka hanya ACL penolakan yang penting.
+Tindakan Default ACL jaringan SignalR, baik izinkan atau tolak. Ini memutuskan apakah menolak ACL jaringan atau memungkinkan ACL jaringan berlaku. Misalnya, jika tindakan default diizinkan, maka hanya ACL penolakan yang penting.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskConfig.md
-ms.openlocfilehash: 3bb7a359fbab3b35b62b3378d0a14ae3994ab5eb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 305d1b9a0cdbc19dc915c8fc01910e62873cf48d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184819"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802078"
 ---
 # New-AzDiskConfig
 
 ## SYNOPSIS
 Membuat objek disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,26 +71,26 @@ Revoke-AzDiskAccess -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01'
 ```
 
 Perintah pertama membuat objek disk lokal untuk Upload.
-Perintah kedua mengambil objek disk dan membuat disk dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah kedua mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 Perintah ketiga mendapatkan Url SAS untuk disk.
 Perintah keempat mendapatkan status disk.
 Jika status disk adalah 'ReadyToUpload', pengguna dapat mengunggah disk dari penyimpanan blob ke Url SAS disk menggunakan AzCopy.
 Selama pengunggahan, status disk diubah menjadi 'ActiveUpload'.
 Perintah terakhir mencabut akses disk untuk Url SAS.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $galleryImageReference = @{Id = '/subscriptions/0296790d-427c-48ca-b204-8b729bbd8670/resourceGroups/swaggertests/providers/Microsoft.Compute/galleries/swaggergallery/images/swaggerimagedef/versions/1.0.0'; Lun=1}
 $diskConfig = New-AzDiskConfig -Location 'West US' -CreateOption 'FromImage' -GalleryImageReference $galleryImageReference;
 New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskConfig
 ```
 
-Membuat disk dari Versi Gambar Galeri Bersama.  Id adalah id dari versi gambar galeri bersama. Lun hanya diperlukan jika sumbernya adalah disk data.
+Membuat disk dari Versi Gambar Galeri Bersama.  Id adalah id dari versi gambar galeri bersama. Lun diperlukan hanya jika sumbernya adalah disk data.
 
 ## PARAMETERS
 
 ### -AcceleratedNetwork
-True jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
+Benar jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -589,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -UploadSizeInBytes
-Menentukan ukuran konten unggahan termasuk footer VHD saat CreateOption Upload.  Nilai ini harus antara 20972032 (20 MiB + 512 byte untuk footer VHD) dan 35183298347520 byte (32 TiB + 512 byte untuk footer VHD).
+Menentukan ukuran konten unggahan termasuk footer VHD saat CreateOption Upload.  Nilai ini harus antara 20972032 (20 MiB + 512 byte untuk footer VHD) dan byte 35183298347520 (32 TiB + 512 byte untuk footer VHD).
 
 ```yaml
 Type: System.Int64

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExportDriveListObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExportDriveListObject.md
-ms.openlocfilehash: 33880cd667d5c49aa71bb65e539e3fc130fce060
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83bf512cac7eacec20d23e5a7c5c5e810f1fa44d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212447"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818180"
 ---
 # New-AzImportExportDriveListObject
 
 ## SYNOPSIS
 Buat Objek DriverList untuk ImportExport.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/new-azimportexportdrivelistobject) untuk informasi terbaru.
 
 ## SYNTAX
 

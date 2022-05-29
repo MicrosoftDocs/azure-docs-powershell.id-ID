@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/sync
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
-ms.openlocfilehash: 34bbee1354ffb126e19b8f1276f7153a332f6a59
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dce624c13b11a67aafa060c7301508d4b31cc91a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203411"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818198"
 ---
 # Sync-AzDataFactoryV2IntegrationRuntimeCredential
 
 ## SYNOPSIS
 Menyinkronkan kredensial di antara simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/sync-azdatafactoryv2integrationruntimecredential) untuk informasi terbaru.
 
 ## SYNTAX
 

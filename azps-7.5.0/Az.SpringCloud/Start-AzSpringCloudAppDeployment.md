@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Start-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Start-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: e72d9fa0e37782a0ea0fc090c314283d4c314b41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 36257ea2dfd9523a1bc7ca16dcbf60ebdcdfa644
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188095"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809720"
 ---
 # Start-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Mulai penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/start-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mulai penyebaran.
 Start-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway -DeploymentName default
 ```
 
-Mulai Layanan Spring Cloud berdasarkan nama.
+Mulai Spring Cloud Service berdasarkan nama.
 
 ### Contoh 2: Mulai Spring Cloud Service dari pipa.
 ```powershell
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

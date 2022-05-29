@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
-ms.openlocfilehash: c4b71e2a08d7a6e48d793e5a4dfcd4a8dcd7591c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4f8104a2bfd7a3145ae2850db4df1fd4383ee02
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240264"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818460"
 ---
 # Get-AzBatchLocationQuota
 
 ## SYNOPSIS
 Mendapatkan kuota layanan Batch untuk langganan Anda di lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchlocationquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ AccountQuota Location
 ```
 
 Perintah ini mendapatkan kuota untuk langganan saat ini di wilayah US Barat.
-Nilai yang dikembalikan menunjukkan bahwa langganan ini hanya dapat membuat satu akun Batch di wilayah tersebut.
+Nilai pengembalian menunjukkan bahwa langganan ini hanya dapat membuat satu akun Batch di wilayah tersebut.
 
 ## PARAMETERS
 

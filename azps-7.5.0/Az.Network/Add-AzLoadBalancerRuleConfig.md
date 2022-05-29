@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: ed7a809f6eb57070a788223ddd4342cf61058e94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f4ca973d1f8c02fce659f6bf45c9700ac57f966f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209174"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810062"
 ---
 # Dapatkan-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi aturan ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,12 +66,12 @@ $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $sl
 $slb | Set-AzLoadBalancer
 ```
 Ini memungkinkan Gateway Load Balancer memiliki beberapa kumpulan backend Perintah pertama akan mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua dan thrid akan mendapatkan kumpulan alamat backend untuk ditambahkan aturan Perintah forth akan menambahkan aturan baru dengan kumpulan backend yang dikonfigurasi perintah kelima akan memperbarui load balancer di azure dengan Konfigurasi Aturan Load Balancer baru.
+Perintah kedua dan thrid akan mendapatkan kumpulan alamat backend untuk ditambahkan aturan Perintah forth akan menambahkan aturan baru dengan kumpulan backend yang dikonfigurasi perintah kelima akan memperbarui load balancer di azure dengan konfigurasi aturan Load Balancer baru.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan kumpulan alamat backend untuk dikaitkan dengan konfigurasi aturan load balancer.
+Menentukan kumpulan alamat backend untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool[]
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probe
-Menentukan pemeriksaan untuk dikaitkan dengan konfigurasi aturan load balancer.
+Menentukan pemeriksaan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSProbe
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeId
-Menentukan ID probe yang akan dikaitkan dengan konfigurasi aturan load balancer.
+Menentukan ID probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: System.String

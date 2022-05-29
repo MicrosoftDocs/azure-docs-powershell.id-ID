@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 2f76902136e5a95c398e4886fe38f4b44fc9d056
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a442a093e44e8b06f840f5ce6aede4b535087e63
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201174"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810746"
 ---
 # Get-AzMySqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mendapatkan informasi tentang aturan firewall server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan firewall menurut nama
+### Contoh 1: Dapatkan aturan firewall berdasarkan nama
 ```powershell
 Get-AzMySqlFlexibleServerFirewallRule -Name firewallrule-test -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -55,7 +58,7 @@ firewallrule-test   12.12.12.12     23.23.23.23
 
 Cmdlet ini mendapatkan aturan firewall berdasarkan nama.
 
-### Contoh 2: Mendapatkan aturan firewall menurut identitas
+### Contoh 2: Mendapatkan aturan firewall berdasarkan identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/servers/mysql-test/firewallRules/firewallrule-test"
 Get-AzMySqlFlexibleServerFirewallRule -InputObject $ID
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

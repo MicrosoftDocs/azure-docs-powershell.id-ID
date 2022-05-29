@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
-ms.openlocfilehash: ab152328b5d082ae7d02310b5b608642a91184d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 26bedc78f95004b8089f0188f1219f13d1b033a3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206342"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811168"
 ---
 # Get-AzDiagnosticSetting
 
 ## SYNOPSIS
 Mendapatkan kategori yang dicatat dan butir waktu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

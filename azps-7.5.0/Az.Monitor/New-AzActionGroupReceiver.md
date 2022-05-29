@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
-ms.openlocfilehash: 189c655674b8fbc175b4a91ae3d2575b1ee343be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4db92e02c281f7b8349566cf9016576557c2c379
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209306"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817594"
 ---
 # New-AzActionGroupReceiver
 
 ## SYNOPSIS
 Membuat penerima grup tindakan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azactiongroupreceiver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionId
-id koneksi itsm dari penerima ini
+id koneksi itsm penerima ini
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUri
-uri Pengidentifikasi untuk autentikasi aad
+uri Pengidentifikasi untuk aad auth
 
 ```yaml
 Type: System.String
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ID objek aplikasi webhook untuk autentikasi aad
+ID objek aplikasi webhook untuk aad auth
 
 ```yaml
 Type: System.String
@@ -548,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-id penyewa untuk autentikasi aad
+id penyewa untuk aad auth
 
 ```yaml
 Type: System.String
@@ -563,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketConfiguration
-Itsm TicketConfiguration dari penerima ini
+itsm TicketConfiguration penerima ini
 
 ```yaml
 Type: System.String
@@ -578,7 +581,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseAadAuth
-bendera untuk menggunakan tambahkan auth
+bendera untuk menggunakan tambahkan autentikasi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -593,7 +596,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseCommonAlertSchema
-Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini akan diabaikanuntuk SMS, Pendorongan Aplikasi Azure, ITSM, dan pengikat Suara.
+Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini akan diabaikanuntuk SMS, Pendorongan Aplikasi Azure, ITSM, dan reciever Suara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
