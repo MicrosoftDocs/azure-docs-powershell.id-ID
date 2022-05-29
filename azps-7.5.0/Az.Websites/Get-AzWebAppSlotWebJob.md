@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotWebJob.md
-ms.openlocfilehash: afa3d3a58cf7c35a6de07272301192caa94839bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 066bb5997065731d0a04651c96d98668fdf690a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205967"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699786"
 ---
 # Get-AzWebAppSlotWebJob
 
 ## SYNOPSIS
 Mencantumkan webjobs untuk slot penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotwebjob) untuk informasi terbaru.
 
 ## SYNTAX
 

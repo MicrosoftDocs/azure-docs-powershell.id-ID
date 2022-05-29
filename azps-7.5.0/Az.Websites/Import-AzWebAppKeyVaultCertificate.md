@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Import-AzWebAppKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Import-AzWebAppKeyVaultCertificate.md
-ms.openlocfilehash: 2e49bad00eb384520f41a48c407e1c71f3b7bc07
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9b3b3cfcdfe4428c12f27753cbde364efb71edfb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112841"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699516"
 ---
 # Import-AzWebAppKeyVaultCertificate
 
 ## SYNOPSIS
 Impor sertifikat SSL ke aplikasi web dari Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/import-azwebappkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

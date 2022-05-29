@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironment.md
-ms.openlocfilehash: 7747ca37403b35ede4647e0a9abba42207e1fa36
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d45f72b2e820967e3fe586ab5ebf205663d41fbc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231889"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699570"
 ---
 # New-AzAppServiceEnvironment
 
 ## SYNOPSIS
 Membuat Lingkungan App Service termasuk Tabel Rute dan Grup Keamanan Jaringan yang direkomendasikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 

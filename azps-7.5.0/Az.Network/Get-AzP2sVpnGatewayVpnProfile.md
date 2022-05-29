@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
-ms.openlocfilehash: d9eb6bb46c2d7b7cfff4521eb417535e610020ab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 900fabcd04778fc5cedbc5d7f0001a50b297bf25
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229803"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680790"
 ---
 # Get-AzP2sVpnGatewayVpnProfile
 
 ## SYNOPSIS
 Menghasilkan dan mengembalikan url SAS bagi pelanggan untuk mengunduh profil Vpn untuk penyiapan klien titik ke situs agar memiliki konektivitas titik ke situs ke P2SVpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewayvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

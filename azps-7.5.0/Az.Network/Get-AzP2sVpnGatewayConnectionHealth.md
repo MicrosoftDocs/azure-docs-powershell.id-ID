@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayConnectionHealth.md
-ms.openlocfilehash: 687471e7657f6570f205722839aca01b4da54569
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 587bc65fc76f46cee426ba3124bdfd1195330099
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183405"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680844"
 ---
 # Get-AzP2sVpnGatewayConnectionHealth
 
 ## SYNOPSIS
 Mendapatkan informasi kesehatan koneksi titik ke situs yang diagregasi saat ini dari P2SVpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewayconnectionhealth) untuk informasi terbaru.
 
 ## SYNTAX
 

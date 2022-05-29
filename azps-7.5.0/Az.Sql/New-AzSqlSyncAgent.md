@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgent.md
-ms.openlocfilehash: e4a9f92a49c14159829b5b82039d10d0e7715b0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f432ef0ccf509ad5f3fb26fd868d980f9936029e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213266"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725472"
 ---
 # New-AzSqlSyncAgent
 
 ## SYNOPSIS
 Membuat Agen Sinkronisasi Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncagent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server tempat agen sinkronisasi berada.
+Nama server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String

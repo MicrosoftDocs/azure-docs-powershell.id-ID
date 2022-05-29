@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncGroup.md
-ms.openlocfilehash: 4eed9352dfcbc3786f5f5dc89418ee9cbdeeeff3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c23cf67b925af4b1d53901299bc580b1e58803d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222803"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712746"
 ---
 # Remove-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini akan menghapus grup sinkronisasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

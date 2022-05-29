@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppWebJob.md
-ms.openlocfilehash: d10c2006a6009e584f8bc1efc266d0b74e665a84
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b9555eda1a1317ea53986b889dce7ba43e79b02
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205922"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699498"
 ---
 # Get-AzWebAppWebJob
 
 ## SYNOPSIS
 Mencantumkan webjobs untuk aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappwebjob) untuk informasi terbaru.
 
 ## SYNTAX
 

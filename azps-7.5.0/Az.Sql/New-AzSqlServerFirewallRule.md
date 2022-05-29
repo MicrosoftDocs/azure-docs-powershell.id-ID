@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
-ms.openlocfilehash: d1814166e160eeb58a3d5bbe3d131f4c78e661c0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b55ef9044b3e85ef63f93b6223c7e56efe7fd42b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199939"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725580"
 ---
-# New-AzSqlServerFirewallRule
+# Baru-AzSqlServerFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall untuk server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Aturan ini mencakup alamat IP awal dan akhir yang ditentukan.
 New-AzSqlServerFirewallRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -AllowAllAzureIPs
 ```
 
-Perintah ini membuat aturan firewall pada server bernama Server01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
+Perintah ini membuat aturan firewall di server bernama Server01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
 Karena parameter *AllowAllAzureIPs* digunakan, aturan firewall memungkinkan semua alamat IP Azure untuk mengakses server.
 
 ## PARAMETERS

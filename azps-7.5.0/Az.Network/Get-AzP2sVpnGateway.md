@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
-ms.openlocfilehash: 0c76544e136f02d210675e2256eec40f0ef2680e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa59220dc0ffeebfe8c863afab26ffabed44d8e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185771"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680934"
 ---
 # Get-AzP2sVpnGateway
 
 ## SYNOPSIS
 Mendapatkan P2SVpnGateway yang ada di bawah VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 

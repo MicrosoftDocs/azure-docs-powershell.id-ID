@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
-ms.openlocfilehash: e095fde66ff3cce1102ccb7620d90e4300658678
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d2969a78c33fce6233751afcd27fa98f063e5c60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247219"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700002"
 ---
 # Get-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Mendapatkan pengikatan SSL sertifikat Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerDnsAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerDnsAlias.md
-ms.openlocfilehash: 60c2af0d215b4b9594abfa5ab028336d02e648d2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02e46e1bba9a91316d0d41b28aa4566c79258249
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199942"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725598"
 ---
 # New-AzSqlServerDnsAlias
 
 ## SYNOPSIS
-Perintah ini membuat Alias DNS Server Azure SQL baru.
+Perintah ini membuat Alias DNS server Azure SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserverdnsalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSqlServerDnsAlias -Name <String> [-AsJob] -ServerName <String> [-ResourceG
 ```
 
 ## DESCRIPTION
-Membuat Alias DNS Server Azure SQL baru yang menunjuk ke server yang ditentukan.
+Membuat Alias DNS server Azure SQL baru yang menunjuk ke server tertentu.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ ResourceGroupName  ServerName   DnsAliasName
 rgname             servername   dnsaliasname
 ```
 
-Perintah ini membuat Alias DNS Server Azure SQL dengan nama aliasName yang menunjuk ke servername
+Perintah ini membuat Azure SQL Alias DNS Server dengan nama aliasName yang menunjuk ke server serverName
 
 ## PARAMETERS
 

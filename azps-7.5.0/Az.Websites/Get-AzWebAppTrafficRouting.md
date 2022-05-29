@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTrafficRouting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTrafficRouting.md
-ms.openlocfilehash: 6c71a4b56dd7aed9a8349636103ba19daaed5b73
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3ba3e19b3f7d816008aa9a04e60d09efe124f34d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205931"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699750"
 ---
 # Get-AzWebAppTrafficRouting
 
 ## SYNOPSIS
 Dapatkan Aturan perutean untuk nama Slot yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapptrafficrouting) untuk informasi terbaru.
 
 ## SYNTAX
 

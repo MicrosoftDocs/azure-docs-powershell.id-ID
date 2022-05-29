@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebApp.md
-ms.openlocfilehash: b5c1ae842473a90f929b3cf418f721afed032882
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a8b0cb64c54bd862202acdb194448b2ed4c4b6eb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231805"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699426"
 ---
 # New-AzStaticWebApp
 
 ## SYNOPSIS
 Deskripsi untuk Membuat situs statis baru di grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azstaticwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 

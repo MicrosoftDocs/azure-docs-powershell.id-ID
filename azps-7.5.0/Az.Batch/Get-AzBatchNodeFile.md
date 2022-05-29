@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
-ms.openlocfilehash: 9515b2da5cd3f9cbee441aaebd3c3cec1f889740
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 16525695d7176756343f2a93a1918ac1f0e6adfc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245038"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687663"
 ---
 # Get-AzBatchNodeFile
 
 ## SYNOPSIS
 Mendapatkan properti file simpul Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchnodefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ IsDirectory Name          Properties                                      Url
 False       StdOut.txt    Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan properti file simpul StdOut.txt yang terkait dengan tugas yang memiliki Tugas ID26 dalam pekerjaan yang memiliki ID Job-000001.
+Perintah ini mendapatkan properti file simpul StdOut.txt yang terkait dengan tugas yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
 ### Contoh 2: Mendapatkan properti file simpul yang terkait dengan tugas dengan menggunakan filter
@@ -95,7 +98,7 @@ False       StdErr.txt  Microsoft.Azure.Commands.Batch.Models.PSFile... https://
 False       StdOut.txt  Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan properti file simpul yang namanya dimulai dengan st dan dikaitkan dengan tugas yang memiliki TUGAS ID26 di bawah pekerjaan yang memiliki ID Job-00002.
+Perintah ini mendapatkan properti file simpul yang namanya dimulai dengan st dan dikaitkan dengan tugas yang memiliki TUGAS26 ID di bawah pekerjaan yang memiliki ID Job-00002.
 
 ### Contoh 3: Secara rekursif mendapatkan properti file simpul yang terkait dengan tugas
 ```powershell
@@ -168,7 +171,7 @@ Perintah ini mendapatkan semua file di folder akar simpul komputasi yang memilik
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

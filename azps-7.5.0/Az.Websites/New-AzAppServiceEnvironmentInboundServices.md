@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
-ms.openlocfilehash: c623542983f019e01a702cca64d957b255bbf838
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8b2d728afc1428126ce6bac4594a90a62d6eb88e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231836"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699462"
 ---
 # New-AzAppServiceEnvironmentInboundServices
 
 ## SYNOPSIS
 Membuat layanan masuk untuk lingkungan App Service. Untuk ASEv2 ILB, ini akan membuat Zona DNS Privat Azure dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, selain itu, pastikan subnet menonaktifkan Kebijakan Jaringan dan akan membuat titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironmentinboundservices) untuk informasi terbaru.
 
 ## SYNTAX
 

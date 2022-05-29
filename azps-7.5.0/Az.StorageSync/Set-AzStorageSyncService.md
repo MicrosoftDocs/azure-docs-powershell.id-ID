@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncService.md
-ms.openlocfilehash: 4eae23264bc71b99ace2e577c795ff7577a7af25
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a77f5913952266e1cb7967179148eec0a78a3cf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229509"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712620"
 ---
 # Set-AzStorageSyncService
 
 ## SYNOPSIS
 Perintah ini mengatur layanan sinkronisasi penyimpanan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/set-azstoragesyncservice) untuk informasi terbaru.
 
 ## SYNTAX
 

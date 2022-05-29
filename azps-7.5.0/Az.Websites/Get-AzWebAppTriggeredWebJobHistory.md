@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTriggeredWebJobHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppTriggeredWebJobHistory.md
-ms.openlocfilehash: 441768a2897c4ffd69511c6424fdcc90e4750c9d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15f658f06eb2e9453cc4c59aa586515df14b4c82
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112855"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699588"
 ---
 # Get-AzWebAppTriggeredWebJobHistory
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan riwayat pekerjaan web yang dipicu untuk aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapptriggeredwebjobhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Kind Name                                                 ResourceGroupName
 
 Perintah ini mencantumkan riwayat pekerjaan web yang dipicu untuk aplikasi.
 
-### Contoh 2: Mendapatkan riwayat pekerjaan web yang dipicu untuk aplikasi
+### Contoh 2: Dapatkan riwayat pekerjaan web yang dipicu untuk aplikasi
 ```powershell
 PS C:\> Get-AzWebAppTriggeredWebJobHistory -ResourceGroupName webjob-rg-test -AppName appService-test01 -Name triggeredjob-01 -Id 202201040236300466
 
@@ -65,7 +68,7 @@ Kind Name                                                 ResourceGroupName
 
 Perintah ini mendapatkan riwayat pekerjaan web yang dipicu untuk aplikasi.
 
-### Contoh 3: Mendapatkan riwayat pekerjaan web yang dipicu untuk aplikasi menurut alur
+### Contoh 3: Dapatkan riwayat pekerjaan web yang dipicu untuk aplikasi berdasarkan alur
 ```powershell
 PS C:\> $logs =  Get-AzWebAppTriggeredWebJobHistory -ResourceGroupName webjob-rg-test -AppName appService-test01 -Name triggeredjob-01
 PS C:\> $logs[0].Id | Get-AzWebAppTriggeredWebJobHistory
@@ -75,7 +78,7 @@ Kind Name                                                 ResourceGroupName
      appService-test01/triggeredjob-01/202201040236300466 webjob-rg-test
 ```
 
-Perintah ini mendapatkan riwayat pekerjaan web yang dipicu untuk aplikasi menurut alur.
+Perintah ini mendapatkan riwayat pekerjaan web yang dipicu untuk aplikasi berdasarkan alur.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String[]
@@ -232,7 +235,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

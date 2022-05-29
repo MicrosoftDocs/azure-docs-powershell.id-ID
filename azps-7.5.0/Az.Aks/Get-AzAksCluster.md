@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksCluster.md
-ms.openlocfilehash: d772da55b3effd0668a2b8cc13cfd4ef3f695d8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d1f56d91041c5023eb0ca85feb17cac6316fed5e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196918"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687681"
 ---
 # Get-AzAksCluster
 
 ## SYNOPSIS
 Mencantumkan kluster terkelola Kubernetes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 

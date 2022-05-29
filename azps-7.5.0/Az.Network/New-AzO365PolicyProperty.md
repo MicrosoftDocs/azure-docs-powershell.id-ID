@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azo3
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzO365PolicyProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzO365PolicyProperty.md
-ms.openlocfilehash: 847e1f2720dea22ded33573998c2f4aa7e43a453
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c151a754eb3ace5e8c70ce5348091695c4c0374f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209075"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674004"
 ---
 # New-AzO365PolicyProperty
 
 ## SYNOPSIS
-Buat objek kebijakan breakout lalu lintas Office 365.
+Buat objek kebijakan perincian lalu lintas office 365.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azo365policyproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzO365PolicyProperty [-Allow] [-Optimize] [-Default] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Buat kebijakan breakout Office 365 untuk digunakan dengan cmdlet New-AzVpnSite dan Update-AzVpnSite.
+Buat kebijakan breakout office 365 untuk digunakan dengan cmdlet New-AzVpnSite dan Update-AzVpnSite.
 ## EXAMPLES
 
 ### Contoh 1
@@ -33,12 +36,12 @@ Buat kebijakan breakout Office 365 untuk digunakan dengan cmdlet New-AzVpnSite d
 $policy = New-AzO365PolicyProperty -Allow -Optimize
 ```
 
-Buat kebijakan breakout lalu lintas Office 365 dengan breakout yang diizinkan untuk memungkinkan dan mengoptimalkan kategori lalu lintas.
+Buat kebijakan breakout lalu lintas Office 365 dengan breakout yang diizinkan untuk mengizinkan dan mengoptimalkan kategori lalu lintas.
 
 ## PARAMETERS
 
 ### -Izinkan
-Breakout izinkan lalu lintas kategori.
+Perincian lalu lintas kategori izinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Default
-Terobosan lalu lintas kategori default.
+Memecah lalu lintas kategori default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Optimalkan
-Breakout mengoptimalkan lalu lintas kategori.
+Perincian lalu lintas kategori pengoptimalan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

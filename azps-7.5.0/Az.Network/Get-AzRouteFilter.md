@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilter.md
-ms.openlocfilehash: f7ecad86acc269d715761766daa7f12ab3464a64
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 63ede3f444bfa55be8069f7a2ee40765f1a4a9ae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238609"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680466"
 ---
 # Get-AzRouteFilter
 
 ## SYNOPSIS
 Mendapatkan filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutefilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Rules             : []
 Peerings          : []
 ```
 
-Perintah ini mendapatkan filter rute bernama RouteFilter01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
+Perintah ini mendapatkan filter rute bernama RouteFilter01 milik grup sumber daya bernama ResourceGroup01.
 
 ### Contoh 2
 ```powershell

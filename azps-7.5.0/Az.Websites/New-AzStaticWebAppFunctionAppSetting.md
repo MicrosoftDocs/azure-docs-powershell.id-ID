@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppFunctionAppSetting.md
-ms.openlocfilehash: c24644b51d68a49c360e6325f36c6e476514866c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4f95278225b66f230ba5f4f97dca891aadaeea88
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231777"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699246"
 ---
 # New-AzStaticWebAppFunctionAppSetting
 
 ## SYNOPSIS
 Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azstaticwebappfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

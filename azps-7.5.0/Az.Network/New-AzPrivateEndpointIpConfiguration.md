@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateEndpointIpConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateEndpointIpConfiguration.md
-ms.openlocfilehash: 91a16eed6b065694bdd3a13fedcddcbad28296e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3dc1e5e9fa145598ffcf8b000526c993a0a07db
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241045"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673734"
 ---
 # New-AzPrivateEndpointIpConfiguration
 
 ## SYNOPSIS
 Membuat objek IpConfiguration untuk titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivateendpointipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

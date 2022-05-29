@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbFirewallRule.md
-ms.openlocfilehash: 015fd07ee32261e453dd78cfc2faf8844acd354e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef28ff7337cb0ac5b2d36ccf8ba704849a68bcd3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190363"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691020"
 ---
 # Get-AzMariaDbFirewallRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/get-azmariadbfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ frname-001 Microsoft.DBforMariaDB/servers/firewallRules
 
 Perintah ini mencantumkan semua aturan girewall di bawah MariaDB.
 
-### Contoh 2: Mendapatkan aturan firewall di bawah MariaDB
+### Contoh 2: Dapatkan aturan firewall di bawah MariaDB
 ```powershell
 Get-AzMariaDbFirewallRule -ResourceGroupName mariadb-test-qu5ov0 -ServerName mariadb-test-4rmtig -Name frname-001
 ```
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity

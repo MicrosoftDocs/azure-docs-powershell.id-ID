@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportSessionHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportSessionHistory.md
-ms.openlocfilehash: 7e28c0bbd5a7b7e46a27c191d8b5f2fb1f913705
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cc2c3873b7673127d2dee89b3a8f108ba9e89041
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192018"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719118"
 ---
 # Get-AzStackHCIRemoteSupportSessionHistory
 
 ## SYNOPSIS
 Mendapatkan Detail Riwayat Sesi Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/get-azstackhciremotesupportsessionhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
