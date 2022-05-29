@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
-ms.openlocfilehash: 9fb65fb8386e3bb4f3f558224e4ea32c242cbebe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2689c303822ea7e2d5c41efc8293732b7581ee96
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206387"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780030"
 ---
 # Get-AzAutoscaleHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat Autoscale.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalehistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Get-AzAutoscaleHistory** mendapatkan riwayat peristiwa yang terkait den
 Get-AzAutoscaleHistory -StartTime 2015-02-09T18:35:00 -EndTime 2015-02-09T18:40:00 -DetailedOutput
 ```
 
-Perintah ini mendapatkan semua peristiwa terkait Autoscale yang terkait dengan langganan saat ini.
+Perintah ini mendapatkan semua peristiwa terkait Skala Otomatis yang terkait dengan langganan saat ini.
 
 ### Contoh 2: GetAutoscaleHistory untuk sumber daya tertentu
 ```powershell
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 
 ### -DetailedOutput
 Menunjukkan bahwa operasi ini menyertakan output terperinci.
-Jika Anda tidak menentukan parameter ini, output akan dirangkum.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Menentukan waktu akhir kueri di waktu lokal.
+Menentukan waktu akhir kueri di waktu setempat.
 Defaultnya adalah waktu saat ini.
 
 ```yaml
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ### -Status
 Menentukan filter menurut status.
 Parameter ini bersifat opsional.
-Kesalahannya adalah string kosong (yaitu tidak ada filter)
+Kesalahan adalah string kosong (yaitu tidak ada filter)
 
 ```yaml
 Type: System.String

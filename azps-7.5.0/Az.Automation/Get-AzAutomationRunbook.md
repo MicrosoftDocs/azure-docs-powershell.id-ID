@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
-ms.openlocfilehash: 81a80af1a4d0da9b29c1e9eb2728f3dd25b32b9a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 826f3b37bc9fba3e57add080d67393b207950ed3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214346"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765721"
 ---
 # Get-AzAutomationRunbook
 
 ## SYNOPSIS
 Mendapatkan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Untuk mendapatkan runbook tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua runbook
+### Contoh 1: Dapatkan semua runbook
 ```
 PS C:\>Get-AzAutomationRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama runbook yang didapat cmdlet ini.
+Menentukan nama runbook yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String

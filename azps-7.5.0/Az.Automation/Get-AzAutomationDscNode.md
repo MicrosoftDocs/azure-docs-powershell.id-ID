@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNode.md
-ms.openlocfilehash: 79a9ec02df9bf8e6de6390cac3d4b29bfb9bf16d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4342f9e05d8d59df71da7da81b85bdbd44b0de8b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233023"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765776"
 ---
 # Get-AzAutomationDscNode
 
 ## SYNOPSIS
 Mendapatkan simpul DSC dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 

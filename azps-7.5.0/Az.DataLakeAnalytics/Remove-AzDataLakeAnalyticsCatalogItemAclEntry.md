@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogItemAclEntry.md
-ms.openlocfilehash: a5b048117403606ee15c42427e92949978f3fef3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ae90faa9b48325fa398237be500b2230f3ffbc43
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203120"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752148"
 ---
 # Remove-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
 Menghapus entri dari ACL katalog atau item katalog di Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Perintah ini menghapus katalog ACL untuk Patti Fuller dari akun contosoadla.
 Remove-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -User -ObjectId (Get-AzADUser -Mail "PattiFuller@contoso.com").Id -ItemType Database -Path "databaseName"
 ```
 
-Perintah ini menghapus ACL database untuk Patti Fuller dari akun contosoadla.
+Perintah ini menghapus database ACL untuk Patti Fuller dari akun contosoadla.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Hapus entri ACL katalog untuk grup.
+Hapus entri katalog ACL untuk grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

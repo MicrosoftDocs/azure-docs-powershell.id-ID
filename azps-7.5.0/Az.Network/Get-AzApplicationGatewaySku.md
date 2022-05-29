@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySku.md
-ms.openlocfilehash: ce672adc32bc60d98610dc5f1477e59e38e5b545
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f7810fcd8f858c64aec2386b79b4d7caf604fac
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194678"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799018"
 ---
 # Get-AzApplicationGatewaySku
 
 ## SYNOPSIS
 Mendapatkan SKU gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzApplicationGatewaySku -ApplicationGateway <PSApplicationGateway>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewaySku** mendapatkan stock keeping unit (SKU) gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewaySku** mendapatkan stock keeping unit (SKU) dari gateway aplikasi.
 
 ## EXAMPLES
 

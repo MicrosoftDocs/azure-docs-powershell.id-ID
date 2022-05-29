@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationCredential.md
-ms.openlocfilehash: 09f412411d765cb37a7c0033798211be1ae8b370
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c8e11ed611aac9d2049d46642116b1db667f813
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233037"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765830"
 ---
 # Get-AzAutomationCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

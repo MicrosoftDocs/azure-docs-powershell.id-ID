@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsJob.md
-ms.openlocfilehash: 837438b701b00f827c47184725eaa46b742ae5f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6cf961b8ca604388f8540b251cc89ac1e97a6e62
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203232"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752184"
 ---
 # Get-AzDataLakeAnalyticsJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -201,9 +204,9 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Kompilasi
 - Penjadwalan
 - Dalam antrean
-- Starting
+- Memulai
 - Berhenti
-- Menjalankan
+- Jalankan
 - Berakhir
 
 ```yaml
@@ -251,7 +254,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Submitter
+### -Pengirim
 Menentukan alamat email pengguna.
 Gunakan parameter ini untuk memfilter hasil daftar pekerjaan ke pekerjaan yang dikirimkan oleh pengguna tertentu.
 
@@ -293,13 +296,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.DataLakeAnalyticsEnums+ExtendedJobData
 
-### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTimeOffset, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobState[]
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobResult[]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 

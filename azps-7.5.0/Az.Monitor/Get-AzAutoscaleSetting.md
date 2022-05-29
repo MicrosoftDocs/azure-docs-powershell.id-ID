@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
-ms.openlocfilehash: b4eafc57261ecc64cf9a1c5170bb4b5b0c625270
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a3993b605ce4e0fddb4d1aca2ad9bf1c2c66ed9d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206366"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780012"
 ---
 # Get-AzAutoscaleSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan Skala Otomatis.
+Mendapatkan pengaturan Autoscale.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -120,9 +123,9 @@ Tags       : {[$type, Microsoft.WindowsAzure.Management.Common.Storage.CasePrese
              Resource]}
 ```
 
-Perintah ini mendapatkan pengaturan Autoscale yang ditetapkan ke grup sumber daya Default-Web-EastUS.
+Perintah ini mendapatkan pengaturan Skala Otomatis yang ditetapkan ke grup sumber daya Default-Web-EastUS.
 
-### Contoh 2: Mendapatkan pengaturan Skala Otomatis berdasarkan nama
+### Contoh 2: Mendapatkan pengaturan Autoscale berdasarkan nama
 ```powershell
 Get-AzAutoscaleSetting -ResourceGroupName "Default-Web-EastUS" -Name "DefaultServerFarm-Default-Web-EastUS" -DetailedOutput
 ```

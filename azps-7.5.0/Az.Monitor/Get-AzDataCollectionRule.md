@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRule.md
-ms.openlocfilehash: 70852e91a1c91fafab65d078936e44d6f56f4f88
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ece508702cc6b7bcbbe6682afad68e1b1b0739e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206363"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779994"
 ---
 # Get-AzDataCollectionRule
 
 ## SYNOPSIS
 Mendapatkan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
