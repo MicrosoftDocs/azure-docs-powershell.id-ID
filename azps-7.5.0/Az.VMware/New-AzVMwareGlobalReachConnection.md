@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
-ms.openlocfilehash: 436e400ef93ff68db2979adbe8f52d31ab80d582
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7985e4cb8d677db95db09b6dd2e275c58cd8d59
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211502"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701856"
 ---
 # New-AzVMwareGlobalReachConnection
 
 ## SYNOPSIS
 Membuat atau memperbarui koneksi jangkauan global di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareglobalreachconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerExpressRouteResourceId
-Pengidentifikasi Sirkuit ExpressRoute untuk melakukan peering dalam koneksi jangkauan global
+Pengidentifikasi Sirkuit ExpressRoute untuk peer dengan dalam koneksi jangkauan global
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

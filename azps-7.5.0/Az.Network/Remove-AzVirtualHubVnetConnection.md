@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: bbe6dc339a5afc55d2a4b4e19c771eee5fff2e8a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e079f5f3792730eb85bd45fe35143341b68b3c9b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199239"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668856"
 ---
 # Remove-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Cmdlet Remove-AzVirtualHubVnetConnection menghapus Koneksi azure Virtual Network yang mengintip VNET jarak jauh ke VNET hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 09a2f3b920235c9fabcaa229e1c76940932010c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7fa5fa3f3b85560b40fc55e3be58168d2ca7a42c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208943"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668154"
 ---
 # Remove-AzVpnGatewayNatRule
 
 ## SYNOPSIS
 Menghapus aturan NAT yang terkait dengan VpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 

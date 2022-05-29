@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/disable-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchAutoScale.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchAutoScale.md
-ms.openlocfilehash: 7dc2b2d645a5f27c2879eefe6c6891f04bd2b1e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dadae2429359a8a10f5fce5224cc2462494c5e62
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221066"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682878"
 ---
 # Disable-AzBatchAutoScale
 
 ## SYNOPSIS
 Menonaktifkan penskalaan otomatis kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/disable-azbatchautoscale) untuk informasi terbaru.
 
 ## SYNTAX
 

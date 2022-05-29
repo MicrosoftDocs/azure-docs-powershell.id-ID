@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/get-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheSku.md
-ms.openlocfilehash: 55f0b6a7f26ee13e2c13f98014c6b7f8417b3e32
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 34f51d3aee30415b5ae3fe3a76d84972767461dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224917"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696870"
 ---
 # Get-AzHpcCacheSku
 
 ## SYNOPSIS
 Mendapatkan semua SKU yang tersedia dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/get-azhpccachesku) untuk informasi terbaru.
 
 ## SYNTAX
 

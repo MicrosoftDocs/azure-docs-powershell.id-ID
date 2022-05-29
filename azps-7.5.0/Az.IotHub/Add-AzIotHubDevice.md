@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDevice.md
-ms.openlocfilehash: ea3c41d895534d34116d0af227e9cd5cb9001e2d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f3fa56949e302d82d1cdc26a10ba44bf8671ea0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231245"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695340"
 ---
 # Add-AzIotHubDevice
 
 ## SYNOPSIS
 Membuat perangkat dalam IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Add-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -
 
 Buat perangkat IoT dengan otorisasi OS root dengan status dan alasan yang dinonaktifkan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Add-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -AuthMethod "shared_private_key" -EdgeEnabled -Children device1,device2
 ```

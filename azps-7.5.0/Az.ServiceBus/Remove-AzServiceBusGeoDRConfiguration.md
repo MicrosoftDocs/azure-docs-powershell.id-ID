@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusGeoDRConfiguration.md
-ms.openlocfilehash: e4f01cf0874e62ce2f173264f77fcbba9cad915b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6f3877bb5455388f007d0a2e6d58f11891a715cb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214790"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632770"
 ---
 # Remove-AzServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
 Menghapus Alias (konfigurasi Pemulihan Bencana)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Objek Konfigurasi GeoDR
+Objek Konfigurasi GeoDR Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

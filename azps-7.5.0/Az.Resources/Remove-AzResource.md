@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
-ms.openlocfilehash: fe5e91b37bd81a3b0a7545779a200fa85cc8729d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23e4dabd2dec74c560213190f4ab08af70b0d89c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243862"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639808"
 ---
 # Remove-AzResource
 
 ## SYNOPSIS
 Menghapus sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzResource [-AsJob] -ResourceName <String> -ResourceType <String> [-Exten
  [<CommonParameters>]
 ```
 
-### OlehTenantLevel
+### ByTenantLevel
 ```
 Remove-AzResource [-AsJob] -ResourceName <String> -ResourceType <String> [-ExtensionResourceName <String>]
  [-ExtensionResourceType <String>] [-ODataQuery <String>] [-TenantLevel] [-Force] [-ApiVersion <String>] [-Pre]
@@ -53,8 +56,8 @@ Remove-AzResource -ResourceId "/subscriptions/00000000-0000-0000-0000-0000000000
 
 Perintah ini menghapus sumber daya situs web bernama ContosoSite.
 Contoh menggunakan nilai tempat penampung untuk ID langganan.
-Perintah menentukan parameter *Force* .
-Oleh karena itu, ini tidak meminta Anda untuk konfirmasi.
+Perintah menentukan parameter *Paksa* .
+Oleh karena itu, itu tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi sumber daya yang dihapus cmdlet ini.
-Misalnya, untuk menentukan database, gunakan format berikut: nama servernama`/` database
+Misalnya, untuk menentukan database, gunakan format berikut: nama database nama`/`server
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
+### -Pre
 Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml

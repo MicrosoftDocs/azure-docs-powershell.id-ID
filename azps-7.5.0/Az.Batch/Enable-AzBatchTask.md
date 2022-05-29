@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchTask.md
-ms.openlocfilehash: 98d6d2137bb58f7203fdb84bfa5648b1654eb8be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a44c7fa043d65a1521e43d71e65da79b421424dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214322"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682788"
 ---
 # Enable-AzBatchTask
 
 ## SYNOPSIS
 Mengaktifkan kembali tugas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/enable-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Enable-AzBatchTask [-Task] <PSCloudTask> -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Enable-AzBatchTask** mengaktifkan kembali tugas.
-Jika tugas telah habis jumlah coba lagi, cmdlet ini tetap memungkinkannya untuk berjalan.
+Jika tugas telah menghabiskan jumlah coba lagi, cmdlet ini tetap memungkinkannya untuk berjalan.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Jika tugas telah habis jumlah coba lagi, cmdlet ini tetap memungkinkannya untuk 
 Enable-AzBatchTask -JobId "Job7" -Id "Task2" -BatchContext $Context
 ```
 
-Perintah ini mengaktifkan kembali tugas Task2 di job Job7.
+Perintah ini mengaktifkan kembali tugas Task2 dalam pekerjaan Job7.
 
 ### Contoh 2: Mengaktifkan kembali tugas dengan menggunakan alur
 ```powershell
@@ -58,7 +61,7 @@ Perintah mengaktifkan kembali tugas tersebut.
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

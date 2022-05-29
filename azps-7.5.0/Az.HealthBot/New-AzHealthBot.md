@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/New-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/New-AzHealthBot.md
-ms.openlocfilehash: 493a31124a7ef17e8f7f4c407a34c38468404ab2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73cf6e094282d45260c6b5bcbe0b36e81cb5d6f4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224687"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696168"
 ---
 # New-AzHealthBot
 
 ## SYNOPSIS
 Buat HealthBot baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthbot/new-azhealthbot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat HealthBot baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat HealthBot baru
+### Contoh 1: Buat HealthBot baru
 ```powershell
 New-AzHealthBot -Name yourihealthbot1 -ResourceGroupName youriTest -Location eastus -Sku F0
 ```

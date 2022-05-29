@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
-ms.openlocfilehash: 182e5f800ae14cc23b0159d1a28f9ba95e61eb90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e1c29d8b1990a92e7dcb85a0fe33d534ba968e72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197447"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649794"
 ---
 # Get-AzRecoveryServicesBackupRetentionPolicyObject
 
 ## SYNOPSIS
 Mendapatkan objek kebijakan penyimpanan dasar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupretentionpolicyobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzRecoveryServicesBackupRetentionPolicyObject [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupRetentionPolicyObject** mendapatkan **azureRMRecoveryServicesRetentionPolicyObject** dasar.
+Cmdlet **Get-AzRecoveryServicesBackupRetentionPolicyObject** mendapatkan **AzureRMRecoveryServicesRetentionPolicyObject** dasar.
 Objek ini tidak bertahan dalam sistem.
 Ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan pencadangan baru.
 
@@ -41,12 +44,12 @@ $SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType AzureVM
 New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan objek kebijakan retensi, lalu menyimpannya dalam variabel $RetPol.
+Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya dalam variabel $RetPol.
 Perintah kedua menetapkan durasi untuk objek kebijakan penyimpanan menjadi 365 hari.
 Perintah ketiga mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam variabel $SchPol.
-Perintah terakhir membuat kebijakan perlindungan cadangan menggunakan kebijakan penyimpanan dan kebijakan jadwal yang dibuat dengan perintah sebelumnya.
+Perintah terakhir membuat kebijakan perlindungan cadangan menggunakan kebijakan penyimpanan dan menjadwalkan kebijakan yang dibuat dengan perintah sebelumnya.
 
-### Contoh 2: Mendapatkan objek retensi per jam dasar untuk kebijakan fileshare
+### Contoh 2: Dapatkan objek retensi per jam dasar untuk kebijakan fileshare
 ```powershell
 $retentionPolicy = Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType AzureFiles -BackupManagementType AzureStorage -ScheduleRunFrequency Hourly
 $retentionPolicy.DailySchedule.DurationCountInDays = 10

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: 7c49c66dcd9f4edbe12178c366ee63a54995b3e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54efcad56d4757f400202dadc87770b56040aa2d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208991"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668388"
 ---
 # Remove-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
 Menghapus kebijakan ipsec kustom Vpn yang ditetapkan pada sumber daya Gateway Virtual Network.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 

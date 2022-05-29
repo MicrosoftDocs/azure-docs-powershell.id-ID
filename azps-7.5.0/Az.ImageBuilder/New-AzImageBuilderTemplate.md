@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
-ms.openlocfilehash: 39a28293a73b7f8e29d49eec982cf9c7b6102797
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d46ee79ee9ca91cf98440099087a5db6f80a40e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217547"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695700"
 ---
 # New-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Membuat templat gambar komputer virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-wilayah HideParameter Info masuk, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+wilayah HideParameter Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 
 ### -Sumber
 Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
-Untuk membuat, lihat bagian CATATAN untuk properti SUMBER dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SUMBER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateSource
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMProfileVmSize
-Ukuran komputer virtual yang digunakan untuk membangun, menyesuaikan, dan menangkap gambar.
+Ukuran komputer virtual yang digunakan untuk membangun, menyesuaikan, dan mengambil gambar.
 Hilangkan atau tentukan string kosong untuk menggunakan default (Standard_D1_v2).
 
 ```yaml
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -VnetConfigSubnetId
-Id sumber daya subnet yang sudah ada sebelumnya.
+Id sumber daya dari subnet yang sudah ada sebelumnya.
 
 ```yaml
 Type: System.String

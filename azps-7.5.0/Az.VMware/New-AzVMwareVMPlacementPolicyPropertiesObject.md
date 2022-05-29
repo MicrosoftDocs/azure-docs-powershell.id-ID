@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVMPlacementPolicyPropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVMPlacementPolicyPropertiesObject.md
-ms.openlocfilehash: 0cb05819dd1aa00b4d8798404663c0892ac05006
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43285f6c7793181435daa0229f6cc113f1db99c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234552"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701514"
 ---
 # New-AzVMwareVMPlacementPolicyPropertiesObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk VMPlacementPolicyProperties.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarevmplacementpolicypropertiesobject) untuk informasi terbaru.
 
 ## SYNTAX
 

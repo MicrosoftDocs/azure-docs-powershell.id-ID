@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
-ms.openlocfilehash: e315f442a1285ebf9a309378f8742f39757c6ca9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9d15c12ea3623dd3eb7d9d7ff9486ae896f65d22
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649497"
 ---
 # Get-AzRecoveryServicesVaultSettingsFile
 
 ## SYNOPSIS
 Mendapatkan file pengaturan brankas Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultsettingsfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Perintah terakhir mendapatkan file kredensial vault untuk $Vault 01 menggunakan 
 $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah mendapatkan file kredensial vault untuk $Vault 01 jenis vault siteRecovery.
+Perintah mendapatkan file kredensial vault untuk $Vault 01 dari jenis vault siteRecovery.
 
 ### Contoh 3: Mendaftarkan komputer Windows Server atau DPM untuk Azure Backup
 ```powershell
@@ -71,7 +74,7 @@ Perintah mendapatkan file kredensial vault untuk $Vault 01.
 
 ## PARAMETERS
 
-### -Pencadangan
+### -Backup
 Menunjukkan file kredensial vault berlaku untuk Azure Backup.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke file pengaturan brankas Azure Site Recovery.
+Menentukan jalur ke file pengaturan azure Site Recovery vault.
 Anda dapat mengunduh file ini dari portal brankas Azure Site Recovery dan menyimpannya secara lokal.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteFriendlyName
-Menentukan nama situs yang mudah diingat.
+Menentukan nama yang mudah diingat situs.
 Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan objek brankas Azure Site Recovery.
+Menentukan objek vault Azure Site Recovery.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault

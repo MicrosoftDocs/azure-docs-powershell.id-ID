@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppTrafficRouting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppTrafficRouting.md
-ms.openlocfilehash: 95f995654ab1c7bf4f2afe129d6e43f1d076a56e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f86e381e131ced48b1a233039c3f85e1700dad57
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697086"
 ---
 # Update-AzWebAppTrafficRouting
 
 ## SYNOPSIS
 Perbarui Aturan perutean ke Slot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azwebapptrafficrouting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 
 ### -RoutingRule
 RoutingRule Aplikasi Web.
-Contoh: -RoutingRule @{ActionHostName=$slot. DefaultHostName ; ReroutePercentage=$ReroutePercentage ; Name=$slotName}
+Contoh: -RoutingRule @{ActionHostName=$slot. DefaultHostName ; ReroutePercentage=$ReroutePercentage ; Nama=$slotName}
 
 ```yaml
 Type: System.Collections.Hashtable

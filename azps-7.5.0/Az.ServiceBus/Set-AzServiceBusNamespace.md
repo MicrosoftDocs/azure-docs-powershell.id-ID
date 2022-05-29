@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
-ms.openlocfilehash: 4fc5fbbbdb504141bd4ca5c3024c95bf84046274
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 06e8b73e4694f0f9f48165a38398a1822b2f907f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215651"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632374"
 ---
 # Set-AzServiceBusNamespace
 
 ## SYNOPSIS
-Memperbarui deskripsi namespace Bus Layanan yang ada.
+Memperbarui deskripsi namespace Bus Layanan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ ServiceBusEndpoint :
 
 Memperbarui namespace Bus Layanan dengan deskripsi baru.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzServiceBusNamespace -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -IdentityType SystemAssigned
 ```
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace Bus Layanan
+mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace layanan Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

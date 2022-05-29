@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 4c08fc837da35d9f26bd847816f11233e1703c76
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6b6011e74bf17dfa401d6f77ce9fb3ef9ffd5903
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236803"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667218"
 ---
 # Set-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Memodifikasi Konfigurasi PrivateLink untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

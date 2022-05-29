@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Unregister-AzStaticWebAppBuildUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Unregister-AzStaticWebAppBuildUserProvidedFunctionApp.md
-ms.openlocfilehash: 130f88a9960b3c4708fba2923af07cfced65e51a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02558e020b398328a469742d21f77560463923bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214514"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697284"
 ---
 # Unregister-AzStaticWebAppBuildUserProvidedFunctionApp
 
 ## SYNOPSIS
 Deskripsi untuk Melepaskan aplikasi fungsi yang disediakan pengguna dari build situs statis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/unregister-azstaticwebappbuilduserprovidedfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAppName
-Nama aplikasi fungsi yang terdaftar dengan build situs statis.
+Nama aplikasi fungsi yang terdaftar di build situs statis.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

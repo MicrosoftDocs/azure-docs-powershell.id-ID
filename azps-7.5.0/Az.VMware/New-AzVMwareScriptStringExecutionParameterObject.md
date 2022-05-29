@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptStringExecutionParameterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptStringExecutionParameterObject.md
-ms.openlocfilehash: cf97c103bd813980a61ffa890f5de41ca3d8fac0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b7af3576b9f7ee940399c36452e43ea73de1def
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234563"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701604"
 ---
 # New-AzVMwareScriptStringExecutionParameterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ScriptStringExecutionParameter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarescriptstringexecutionparameterobject) untuk informasi terbaru.
 
 ## SYNTAX
 

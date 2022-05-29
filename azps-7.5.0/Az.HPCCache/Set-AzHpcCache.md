@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/set-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCache.md
-ms.openlocfilehash: 15fb1b7da4b27156c75b47a7656bd1e4a052993a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 207944f34abc1988b95726b17426699835927646
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224822"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696582"
 ---
 # Set-AzHpcCache
 
 ## SYNOPSIS
 Memperbarui tag pada HPC Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/set-azhpccache) untuk informasi terbaru.
 
 ## SYNTAX
 

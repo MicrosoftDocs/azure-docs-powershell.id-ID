@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
-ms.openlocfilehash: dee6c8193e6c78aec1ca2c9cc3ed8def5589f947
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cf40c0440fdc884992e4b6ad9da76bfb641ac276
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196481"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675156"
 ---
 # New-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
 Membuat kumpulan alamat backend pada loadbalancer. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 

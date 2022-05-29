@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/get-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwarePrivateCloudAdminCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwarePrivateCloudAdminCredential.md
-ms.openlocfilehash: 1470a0997e96f0a503c4ae4b92828ed204b4f98a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 836b0641bc2b7522d89e9f6fe2496c9b4b7e7b7b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221390"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702072"
 ---
 # Get-AzVMwarePrivateCloudAdminCredential
 
 ## SYNOPSIS
-Mencantumkan kredensial admin untuk cloud privat
+Mencantumkan info masuk admin untuk cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/get-azvmwareprivatecloudadmincredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzVMwarePrivateCloudAdminCredential -PrivateCloudName <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Mencantumkan kredensial admin untuk cloud privat
+Mencantumkan info masuk admin untuk cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kredensial admin untuk cloud privat
+### Contoh 1: Mendapatkan info masuk admin untuk cloud privat
 ```powershell
 Get-AzVMwarePrivateCloudAdminCredential -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 ```
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

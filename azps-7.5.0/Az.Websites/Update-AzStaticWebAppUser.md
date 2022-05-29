@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
-ms.openlocfilehash: 82ccbba050becf23ed5a00774ea0812425ac1ccc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5dfbfe47efccac63ddaf01d146ca918cc1174ab5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219902"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697194"
 ---
 # Update-AzStaticWebAppUser
 
 ## SYNOPSIS
 Deskripsi untuk Memperbarui entri pengguna dengan peran yang tercantum
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azstaticwebappuser) untuk informasi terbaru.
 
 ## SYNTAX
 

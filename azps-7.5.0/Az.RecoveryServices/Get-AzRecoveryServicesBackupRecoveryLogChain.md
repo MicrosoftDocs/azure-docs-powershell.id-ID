@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
-ms.openlocfilehash: faea62b3dbd7bdb1ee477955203e1375804cb627
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e37784fab8b450a99ccc490e8dd1bcc199a3e73a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222971"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649776"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
 ## SYNOPSIS
 Perintah ini mencantumkan titik awal dan akhir dari rantai log yang tidak terganggu dari item cadangan yang diberikan. Gunakan untuk menentukan apakah titik waktu, di mana pengguna ingin DB dipulihkan, valid atau tidak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain) untuk informasi terbaru.
 
 ## SYNTAX
 

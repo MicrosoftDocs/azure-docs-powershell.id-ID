@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnServerConfiguration.md
-ms.openlocfilehash: cadfeef13ee7354716105842cbd6c4cfd36aa195
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c7d8016a66b118b2dec1449afc6ab13d0c97ff6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185480"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668172"
 ---
 # Remove-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Menghapus VpnServerConfiguration yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

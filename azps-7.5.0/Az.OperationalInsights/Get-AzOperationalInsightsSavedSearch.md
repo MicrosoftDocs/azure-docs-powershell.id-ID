@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 3493c73af74fe5535ec9e52377a072aa0b764e60
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c98efd86f03e50946bb63224023f5221ddd3c2be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235585"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661890"
 ---
 # Get-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Mengembalikan semua pencarian tersimpan untuk ruang kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-WorkspaceNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian tersimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian tersimpan.
+Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian tersimpan.
 Jika Anda menentukan ID pencarian tersimpan, maka pencarian tersimpan yang sesuai dengan ID tersebut dikembalikan.
 
 ## EXAMPLES
@@ -38,7 +41,7 @@ Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -
 
 Perintah ini mendapatkan semua sumber daya tersimpan yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan pencarian tersimpan tertentu menurut ID
+### Contoh 2: Mendapatkan pencarian tersimpan tertentu berdasarkan ID
 ```powershell
 Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId"
 ```

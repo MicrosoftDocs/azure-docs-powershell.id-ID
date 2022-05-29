@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
-ms.openlocfilehash: 35320ce5e394624b6781bcf2774e043ddd66267d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a78a072408f7c6716958aa17d1f9254a76f30340
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112018"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690138"
 ---
 # Get-AzMigrateReplicationProtectionIntent
 
 ## SYNOPSIS
 Mendapatkan detail niat perlindungan replikasi ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectionintent) untuk informasi terbaru.
 
 ## SYNTAX
 

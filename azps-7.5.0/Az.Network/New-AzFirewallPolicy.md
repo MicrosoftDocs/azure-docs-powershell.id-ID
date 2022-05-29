@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicy.md
-ms.openlocfilehash: c05e7a6fc30a08a31a8ec1d29bc732d438c71b45
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85e66500033b80ce6e72a40def29971556c49372
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247572"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675894"
 ---
 # New-AzFirewallPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Contoh ini membuat kebijakan firewall azure dengan deteksi intrusi dalam pemberi
 New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg -PrivateRange @("99.99.99.0/24", "66.66.0.0/16")
 ```
 
-Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan menaikkan lalu lintas ke alamat tersebut
+Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan menyergap lalu lintas ke alamat tersebut
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePolicy
-Kebijakan dasar untuk mewarisi dari
+Kebijakan dasar yang akan diwarisi
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateRange
-Rentang IP privat tempat lalu lintas tidak akan diberi SNAT
+Rentang IP privat tempat lalu lintas tidak akan di-SNAT
 
 ```yaml
 Type: System.String[]

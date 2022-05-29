@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionArpTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionArpTable.md
-ms.openlocfilehash: bffb2d450998518c014ee2875a7a0d40b32daf63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4a82e765e57fb5f2d3dfd46906efb4c86c0d1816
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244786"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688752"
 ---
 # Get-AzExpressRouteCrossConnectionArpTable
 
 ## SYNOPSIS
 Mendapatkan tabel ARP dari koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionarptable) untuk informasi terbaru.
 
 ## SYNTAX
 

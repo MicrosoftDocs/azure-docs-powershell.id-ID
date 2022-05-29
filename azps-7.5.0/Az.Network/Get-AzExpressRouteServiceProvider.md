@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteServiceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteServiceProvider.md
-ms.openlocfilehash: 570c5a4da91387114dfb1ec7d52beb3c57d398ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 40fe5148f0b916f673d491e77f350a72faf414f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236932"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682356"
 ---
 # Get-AzExpressRouteServiceProvider
 
 ## SYNOPSIS
 Mendapatkan daftar penyedia layanan ExpressRoute dan atributnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteserviceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

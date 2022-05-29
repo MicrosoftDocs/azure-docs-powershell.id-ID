@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: 48415fda3834f9a152ef9aac9ae1f2bc4cab5af0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0784bb61d819a53e07dd5c9709170d7c1fdef6a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244086"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681510"
 ---
 # Get-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan keamanan jaringan untuk kelompok keamanan jaringan.
+Mendapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

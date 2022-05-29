@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 8dc0349d580cd42ad0bae9607edb094e069d73b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d558f3be5f33f8d80e11e825f4f757b2d75b0dfb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245595"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650640"
 ---
 # Get-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan replikasi ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteReco
 
 Mengembalikan kebijakan replikasi dengan nama.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRecoveryServicesAsrPolicy -FriendlyName abc
 ```
@@ -77,7 +80,7 @@ ReplicationProvider         : HyperVReplicaAzure
 ReplicationProviderSettings : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRHyperVReplicaAzurePolicyDetails
 ```
 
-Mengembalikan kebijakan replikasi dengan nama ramah yang ditentukan.
+Mengembalikan kebijakan replikasi dengan nama bersahabat yang ditentukan.
 
 ## PARAMETERS
 

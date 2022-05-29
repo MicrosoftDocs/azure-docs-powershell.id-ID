@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Stop-AzWebAppSlotContinuousWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Stop-AzWebAppSlotContinuousWebJob.md
-ms.openlocfilehash: bffa4fbf30158b64a266901cd8b6519b683c1588
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: beb97c155fdda568e28be0ed1a78b79673da2a5f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240502"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697410"
 ---
 # Stop-AzWebAppSlotContinuousWebJob
 
 ## SYNOPSIS
 Hentikan pekerjaan web berkelanjutan untuk slot penyebaran.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/stop-azwebappslotcontinuouswebjob) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Hentikan (Default)
+### Berhenti (Default)
 ```
 Stop-AzWebAppSlotContinuousWebJob -AppName <String> -Name <String> -ResourceGroupName <String>
  -SlotName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-WhatIf] [-Confirm]
@@ -49,7 +52,7 @@ Perintah ini menghentikan pekerjaan web berkelanjutan untuk aplikasi.
 PS C:\> Get-AzWebAppSlotContinuousWebJob -ResourceGroupName webjob-rg-test -AppName appService-test01 -SlotName slot01 -Name slotcontinuousjob-01 | Stop-AzWebAppSlotContinuousWebJob
 ```
 
-Perintah ini menghentikan pekerjaan web berkelanjutan untuk slot penyebaran berdasarkan alur.
+Perintah ini menghentikan pekerjaan web berkelanjutan untuk slot penyebaran menurut alur.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

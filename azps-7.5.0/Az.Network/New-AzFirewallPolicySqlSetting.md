@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
-ms.openlocfilehash: b285297109e596f0e8a02ae26f22dc19dbacc42b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d929bbb30afaea316f86a073b9e14272141bf752
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241216"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675516"
 ---
 # New-AzFirewallPolicySqlSetting
 
 ## SYNOPSIS
 Membuat Pengaturan SQL baru untuk Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicysqlsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

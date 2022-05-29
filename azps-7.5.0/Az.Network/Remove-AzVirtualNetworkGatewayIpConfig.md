@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayIpConfig.md
-ms.openlocfilehash: 8165a0d2d8df21a7126b6a60054abd9608d3d0e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3492716e31c901df84223259eb081bfd5adf7033
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668658"
 ---
 # Remove-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Menghapus Konfigurasi IP dari Gateway Virtual Network
+Menghapus Konfigurasi IP dari gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewayipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzVirtualNetworkGatewayIpConfig -VirtualNetworkGateway <PSVirtualNetworkG
 ```
 
 ## DESCRIPTION
-Menghapus Konfigurasi IP dari Gateway Virtual Network
+Menghapus Konfigurasi IP dari gateway Virtual Network
 
 ## EXAMPLES
 

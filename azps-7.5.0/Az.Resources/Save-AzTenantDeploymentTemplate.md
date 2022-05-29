@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/save-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzTenantDeploymentTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzTenantDeploymentTemplate.md
-ms.openlocfilehash: 60d4624ec5e37b6fc632a967651f03962cae02e5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9bb37c072a765779613a1dd1db658e066904cac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198528"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639232"
 ---
 # Save-AzTenantDeploymentTemplate
 
 ## SYNOPSIS
 Menyimpan templat penyebaran ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/save-aztenantdeploymenttemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini mendapatkan templat penyebaran dari TestDeployment dan menyimpannya
 Get-AzTenantDeploymentTemplate -Name "RolesDeployment" | Save-AzTenantDeploymentTemplate
 ```
 
-Perintah ini mendapatkan penyebaran "RolesDeployment" pada cakupan penyewa saat ini dan menyimpan templatnya.
+Perintah ini mendapatkan penyebaran "RolesDeployment" di cakupan penyewa saat ini dan menyimpan templatnya.
 
 ## PARAMETERS
 
@@ -127,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

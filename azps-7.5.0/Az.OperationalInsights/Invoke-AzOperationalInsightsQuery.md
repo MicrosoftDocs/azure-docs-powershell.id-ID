@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
-ms.openlocfilehash: 35ac1d94e1aa37a8583dee0d43ed80975be8f573
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7782bbd049b8d9efd398fa588c034d5378a3fc01
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235532"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661602"
 ---
 # Invoke-AzOperationalInsightsQuery
 
 ## SYNOPSIS
 Mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/invoke-azoperationalinsightsquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $resultsArray = [System.Linq.Enumerable]::ToArray($queryResults.Results)
 
 Beberapa kueri dapat mengakibatkan himpunan data yang sangat besar dikembalikan. Karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika Anda lebih suka memiliki array hasil, Anda dapat menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable ke array.
 
-### Contoh 3: Mendapatkan hasil pencarian menggunakan kueri selama jangka waktu tertentu
+### Contoh 3: Mendapatkan hasil pencarian menggunakan kueri melalui jangka waktu tertentu
 ```powershell
 $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -Timespan (New-TimeSpan -Hours 24)
 $queryResults.Results

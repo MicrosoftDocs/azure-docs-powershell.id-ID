@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayAutoscaleConfiguration.md
-ms.openlocfilehash: 7462af6b23f3c0e71f1f9e98fbe2f6637c4368ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78d2ecdf8ebcf9d5efe6c22f156dab7242eee867
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186947"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667722"
 ---
 # Set-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
 Memperbarui Konfigurasi Skala Otomatis gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

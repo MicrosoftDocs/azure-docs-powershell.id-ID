@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsCluster.md
-ms.openlocfilehash: 47df2dbd792f268cd3c3317d03cf7d833541e56a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db35a947062dd21495c1ee8a36d313f141c5ef72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183153"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662232"
 ---
 # Get-AzOperationalInsightsCluster
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan kluster
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzOperationalInsightsCluster -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan kluster, cantumkan kluster di bawah grup sumber daya saat "-ClusterName" tidak disediakan, cantumkan kluster di bawah langganan saat "-ClusterName" dan "ResourceGroupName" tidak disediakan.
+Mendapatkan atau mencantumkan kluster, mencantumkan kluster di bawah grup sumber daya saat "-ClusterName" tidak disediakan, mencantumkan kluster di bawah langganan saat "-ClusterName" dan "ResourceGroupName" tidak disediakan.
 
 ## EXAMPLES
 

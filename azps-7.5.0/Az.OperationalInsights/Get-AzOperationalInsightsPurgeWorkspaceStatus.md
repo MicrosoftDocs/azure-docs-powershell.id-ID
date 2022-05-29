@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
-ms.openlocfilehash: 4a6dcfb53d113f1c3e7df59be3e61967eeceed10
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e7cee41fd51e3be467e234fc1fca8770baee3d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235602"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661908"
 ---
 # Get-AzOperationalInsightsPurgeWorkspaceStatus
 
 ## SYNOPSIS
 Mendapatkan status operasi pembersihan yang sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightspurgeworkspacestatus) untuk informasi terbaru.
 
 ## SYNTAX
 

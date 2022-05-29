@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperation.md
-ms.openlocfilehash: b6fcc65c248a025d349f15e81181930a6979ff27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 296539e75329e598ee463c773c25f72981661524
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235627"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662088"
 ---
 # Get-AzOperationalInsightsOperation
 
 ## SYNOPSIS
 Mencantumkan semua operasi Rest API OperationalInsights yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Resource    : {resource_name1}
 Operation   : 
 Description : 
 ```
-Perintah ini mendapatkan semua operasi OperationalInsights Rest API yang tersedia oleh penyewa.
+Perintah ini mendapatkan semua operasi Rest API OperationalInsights yang tersedia oleh penyewa.
 
 ## PARAMETERS
 

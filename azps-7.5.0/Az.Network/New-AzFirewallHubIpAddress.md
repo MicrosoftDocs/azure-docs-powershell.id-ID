@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubIpAddress.md
-ms.openlocfilehash: 30336f9d92f76ec4e9ffa796ac629c1565c89527
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6cbc7f62d74a71b60e53c8ccd01a6273b41b1789
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228837"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676074"
 ---
 # New-AzFirewallHubIpAddress
 
 ## SYNOPSIS
-Alamat IP diasosiasikan ke firewall di hub virtual
+Alamat IP yang diasosiasikan ke firewall di hub virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallhubipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallHubIpAddress [-PrivateIPAddress <String>] [-PublicIPs <PSAzureFire
 ```
 
 ## DESCRIPTION
-Alamat IP diasoicated ke firewall di hub virtual. Ini bisa berupa alamat publik dan privat
+Alamat IP yang diasosiasikan ke firewall di hub virtual. Ini bisa berupa alamat publik dan privat
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PublicIPs
+### -PublicIP
 Alamat IP Firewall yang dilampirkan ke hub
 
 ```yaml

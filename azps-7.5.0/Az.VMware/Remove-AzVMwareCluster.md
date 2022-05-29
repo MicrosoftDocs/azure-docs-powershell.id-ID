@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCluster.md
-ms.openlocfilehash: 25284786ad35cd3b030ddb65445f9a25e3612a81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f273effa542ed6ffb0ca83f04faf722d13c1ba5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211451"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701406"
 ---
 # Remove-AzVMwareCluster
 
 ## SYNOPSIS
 Menghapus kluster di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwarecluster) untuk informasi terbaru.
 
 ## SYNTAX
 

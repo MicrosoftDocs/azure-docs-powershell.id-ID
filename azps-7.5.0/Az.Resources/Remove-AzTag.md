@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
-ms.openlocfilehash: 928d5a4ddca0db812e9c0125e7bcaa8db9b66288
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b5f241658164ff2c89f2b270fe388ecfc3a1af09
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111320"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639466"
 ---
 # Remove-AzTag
 
 ## SYNOPSIS
 Menghapus tag atau nilai Azure yang telah ditentukan sebelumnya | Menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Remove-AzTag [-PassThru] -ResourceId <String> [-DefaultProfile <IAzureContextCon
 
 **RemovePredefinedTagSet**: Cmdlet **Remove-AzTag** menghapus tag dan nilai Azure yang telah ditentukan sebelumnya dari langganan Anda.
 Untuk menghapus nilai tertentu dari tag yang telah ditentukan sebelumnya, gunakan parameter *Nilai* .
-Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya. Anda tidak dapat menghapus tag atau nilai yang saat ini diterapkan ke grup sumber daya atau sumber daya.
+Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya. Anda tidak dapat menghapus tag atau nilai yang saat ini diterapkan ke sumber daya atau grup sumber daya.
 Sebelum menggunakan **Remove-AzTag**, gunakan parameter *Tag* cmdlet Set-AzResourceGroup untuk menghapus tag atau nilai dari sumber daya atau grup sumber daya.
 Modul Tag Azure yang merupakan bagian dari **Remove-AzTag** dapat membantu Anda mengelola tag Azure yang telah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya Azure dan grup sumber daya Anda, seperti berdasarkan departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Tag Azure adalah pasangan nilai nama yang dapat Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda dapat menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang telah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag di langganan Anda.
 
-**RemoveByResourceIdParameterSet**: Cmdlet **Remove-AzTag** dengan **ResourceId** menghapus seluruh set tag pada sumber daya atau langganan.
+**RemoveByResourceIdParameterSet**: Cmdlet **Remove-AzTag** dengan **ResourceId** menghapus seluruh kumpulan tag pada sumber daya atau langganan.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Jika nilai telah diterapkan ke sumber daya atau grup sumber daya apa pun, perint
 Remove-AzTag -ResourceId /subscriptions/{subId}
 ```
 
-Perintah ini menghapus seluruh kumpulan tag pada langganan dengan {subId}. Ini tidak akan mengembalikan objek yang dihapus jika tidak melewati "-PassThru".
+Perintah ini menghapus seluruh set tag pada langganan dengan {subId}. Ini tidak akan mengembalikan objek yang dihapus jika tidak melewati "-PassThru".
 
 ### Contoh 4: Menghapus seluruh kumpulan tag pada sumber daya
 

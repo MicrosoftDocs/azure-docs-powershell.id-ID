@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 6150759905708a88c8f2cf4d1af5e3ba01346645
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a63c265715575f42a71020c69336b5cbb87ce72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228686"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657804"
 ---
 # Update-AzPostgreSqlFlexibleServer
 
@@ -18,6 +18,9 @@ ms.locfileid: "144228686"
 Memperbarui server yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzPostSqlFlexibleServerConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ postgresql-test     East US   Standard_D4s_v3 GeneralPurpose daeunyim           
 
 Cmdlet ini memperbarui server PostgreSql berdasarkan grup sumber daya dan nama server.
 
-### Contoh 2: Perbarui server PostgreSql menurut identitas.
+### Contoh 2: Memperbarui server PostgreSql menurut identitas.
 ```powershell
  Get-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test | Update-AzPostgreSqlFlexibleServer -BackupRetentionDay 23 -StorageMb 262144
 ```
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ### -MaintenanceWindow
 Periode waktu (UTC) yang ditunjuk untuk pemeliharaan.
 Contoh: "Min:23:30" untuk menjadwalkan pada hari Minggu, 23:30 UTC.
-Untuk mengatur kembali ke pass default di "Disabled"
+Untuk mengatur kembali ke pass default di "Dinonaktifkan"
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maksimum yang diizinkan untuk server.
+Penyimpanan maks yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -362,7 +365,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

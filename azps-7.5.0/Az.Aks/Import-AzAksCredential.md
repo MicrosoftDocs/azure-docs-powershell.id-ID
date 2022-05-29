@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/import-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Import-AzAksCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Import-AzAksCredential.md
-ms.openlocfilehash: 1525eff4818d439efb617340f265436ff9573cbe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fbf29934511cf89b52aa1863397e14084b8357a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227930"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689652"
 ---
 # Import-AzAksCredential
 
 ## SYNOPSIS
 Impor dan gabungkan konfigurasi Kubectl untuk Kluster Kubernetes terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/import-azakscredential) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareAuthorization.md
-ms.openlocfilehash: 43616c3bf2306454201a383d01bab589ac4abe0a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7bb08326d4202cea36e5bc366c6867b6767954d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211475"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701532"
 ---
 # Remove-AzVMwareAuthorization
 
 ## SYNOPSIS
 Menghapus Otorisasi Sirkuit ExpressRoute di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwareauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 

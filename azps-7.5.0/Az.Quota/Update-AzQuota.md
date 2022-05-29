@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/update-azq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
-ms.openlocfilehash: 0a88e67f4702fc5d50c7f084693d1515148118d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4bc206753c179d71ce183e05e0ba1027074a8e8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242585"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651144"
 ---
 # Update-AzQuota
 
@@ -20,6 +20,9 @@ Gunakan operasi Usages-GET dan Quota-GET untuk menentukan sisa kuota untuk sumbe
 Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
 Silakan periksa URI di header lokasi untuk status terperinci permintaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/update-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 URI sumber daya Azure target.
-Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
 Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
 `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
@@ -272,7 +275,7 @@ INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
   - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/` Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: bc3fdc7d995b1b0b3957e9df0fe1bf1feda6b433
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9be9b4700243b0fa211265e710314312f61b683c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241059"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675030"
 ---
 # New-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP ujung depan untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

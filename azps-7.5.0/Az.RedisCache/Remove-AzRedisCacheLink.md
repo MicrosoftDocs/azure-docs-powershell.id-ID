@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheLink.md
-ms.openlocfilehash: ff124432903bf4ff47cbdb01f5ec776c6b463338
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 41a64705b4a65b6953a1024cfc8d892f3000a297
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214859"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646302"
 ---
 # Remove-AzRedisCacheLink
 
 ## SYNOPSIS
-Hapus tautan replikasi geografis antara dua Redis Cache.
+Hapus tautan replikasi geografis antara dua Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzRedisCacheLink -PrimaryServerName <String> -SecondaryServerName <String
 ```
 
 ## DESCRIPTION
-Hapus tautan replikasi geografis antara dua Redis Cache.
+Hapus tautan replikasi geografis antara dua Cache Redis.
 
 ## EXAMPLES
 

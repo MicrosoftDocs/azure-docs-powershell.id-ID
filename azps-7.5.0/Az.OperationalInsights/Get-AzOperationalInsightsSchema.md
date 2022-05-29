@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSchema.md
-ms.openlocfilehash: f519b12f45a67247b25439a797f384cf193e8e87
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46d961155263453a4e8d580b385d82e38e4825ef
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661818"
 ---
 # Get-AzOperationalInsightsSchema
 
 ## SYNOPSIS
 Mengembalikan skema yang terkait dengan ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsschema) untuk informasi terbaru.
 
 ## SYNTAX
 
