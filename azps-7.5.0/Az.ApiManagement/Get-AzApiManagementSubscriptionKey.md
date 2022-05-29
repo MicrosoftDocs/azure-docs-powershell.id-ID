@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscriptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscriptionKey.md
-ms.openlocfilehash: d6d55968b834c80cd79a626838c6216e86d93b50
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5e5105d1feca7c97329ed2d534665e2ae6f08189
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198346"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767270"
 ---
 # Get-AzApiManagementSubscriptionKey
 
 ## SYNOPSIS
 Mendapatkan kunci langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementsubscriptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

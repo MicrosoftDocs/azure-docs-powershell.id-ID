@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 3ca558d25cfe4622bcb06d988fb70b14f8331d0b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe8a68a1e18061f7d47bb592254f58e70951ea01
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231276"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774218"
 ---
 # New-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Membuat aturan otorisasi Azure Event Hubs baru untuk namespace layanan atau eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 

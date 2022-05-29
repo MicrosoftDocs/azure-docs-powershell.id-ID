@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Connect-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Connect-AzConnectedMachine.md
-ms.openlocfilehash: a668a523eecea58daa52f5179b0792ffc721d6d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73852938f889a56e69eeaa50066acd023443e899
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220931"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781380"
 ---
 # Connect-AzConnectedMachine
 
 ## SYNOPSIS
 API untuk mendaftarkan komputer baru dan dengan demikian membuat sumber daya terlacak di ARM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/connect-azconnectedmachine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Name             Location OSName   Status     ProvisioningState
 linux_eastus1_1  eastus   linux    Connected  Succeeded
 ```
 
-Onboarding mesin yang Anda gunakan sebagai mesin yang terhubung.
+Onboard komputer tempat Anda berada sebagai mesin yang terhubung.
 
 ### Contoh 2: Onboarding komputer jarak jauh sebagai perangkat yang terhubung
 ```powershell
@@ -69,7 +72,7 @@ Name           Location OSName   Status     ProvisioningState
 win_eastus1_1  eastus   windows  Connected  Succeeded
 ```
 
-Onboarding komputer jarak jauh sebagai perangkat yang terhubung menggunakan jarak jauh PowerShell.
+Onboard komputer jarak jauh sebagai perangkat yang terhubung menggunakan PowerShell jarak jauh.
 Catatan: hanya Windows sebagai target yang didukung saat ini.
 
 ## PARAMETERS
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PSSession
-Ketika ditentukan, perintah yang melakukan onboarding komputer ke Azure akan dijalankan dalam setiap PSSession.
+Ketika ditentukan, perintah yang menyetorkan komputer ke Azure akan dijalankan dalam setiap PSSession.
 CATATAN: Ini hanya berfungsi pada Windows untuk saat ini.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang ingin Anda tambahkan mesinnya.
+Nama grup sumber daya yang ingin Anda tambahkan komputernya.
 
 ```yaml
 Type: System.String

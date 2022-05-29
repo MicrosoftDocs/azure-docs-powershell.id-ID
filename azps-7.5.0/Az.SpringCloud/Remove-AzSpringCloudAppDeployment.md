@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: bd33b9135ee093d1256d69e70bc9de835cc25b57
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5afb46c9d5e09f91f07d4614f76595b2122f7be2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109490"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793888"
 ---
 # Remove-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Operasi untuk menghapus Penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/remove-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorWafPolicy.md
-ms.openlocfilehash: 5de23337c8c69b0c746266b0127e4b6ad705a7dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 643979dc8f4905d1df84394445b49d9521408901
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225536"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774236"
 ---
 # Get-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorwafpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 {policyName} Prevention            Enabled                           403 https://www.bing.com/
 ```
 
-Mendapatkan kebijakan WAF yang disebut $policyName di $resourceGroupName
+Dapatkan kebijakan WAF yang disebut $policyName di $resourceGroupName
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 {policyName} Detection             Enabled                           404
 ```
 
-Mendapatkan semua kebijakan WAF di $resourceGroupName
+Dapatkan semua kebijakan WAF di $resourceGroupName
 
 ## PARAMETERS
 

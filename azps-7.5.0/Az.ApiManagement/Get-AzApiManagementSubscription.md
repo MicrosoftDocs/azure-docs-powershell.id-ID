@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscription.md
-ms.openlocfilehash: 620a10dcc43348304c10837c4019a6c6b22aab90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f5d6b4481e6d5caabd9890b2cad46b5bdad780d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225998"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793781"
 ---
 # Get-AzApiManagementSubscription
 
 ## SYNOPSIS
 Mendapatkan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Pengidentifikasi cakupan. Cakupan Langganan, baik itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /.
+Pengidentifikasi cakupan. Cakupan Langganan, apakah itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /.
 
 ```yaml
 Type: System.String

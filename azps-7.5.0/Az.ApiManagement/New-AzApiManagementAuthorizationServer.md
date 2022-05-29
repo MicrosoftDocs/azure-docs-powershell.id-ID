@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 9686bacd794a3298b879f45fcb1f987b026a71dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d69e068f92a15cf8abfb4cbb298a71832e4891be
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229400"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793709"
 ---
 # New-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Membuat server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Tubuh.
+psdx_paramvalues Dasar dan Isi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -198,7 +201,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DefaultScope
+### -Cakupan Default
 Menentukan cakupan default untuk server otorisasi.
 
 ```yaml

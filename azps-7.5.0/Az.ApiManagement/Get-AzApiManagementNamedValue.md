@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValue.md
-ms.openlocfilehash: dde639836fd118b86a9680233b428d6411afd9f5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eca0d90b5865dd73992933a59f6196abf62b1701
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241650"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793817"
 ---
 # Get-AzApiManagementNamedValue
 
 ## SYNOPSIS
 Mendapatkan daftar atau Nilai Bernama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 

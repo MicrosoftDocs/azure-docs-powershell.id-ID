@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayHostnameConfiguration.md
-ms.openlocfilehash: 24fb0924cc1285a8e9cb19c6b1ffd31428f8f45d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1ef30b9f8a9cb6a3c88187698ffa2b9b792956da
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211238"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793799"
 ---
 # Get-AzApiManagementGatewayHostnameConfiguration
 
 ## SYNOPSIS
-Mendapatkan semua atau konfigurasi nama host tertentu untuk Gateway yang sudah ada.
+Mendapatkan semua atau konfigurasi nama host tertentu untuk Gateway yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgatewayhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDevice.md
-ms.openlocfilehash: 032d168490032ffd7de49d523486b49cad7f2047
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b03d20c7b90ad8c718808ea8c86534f956797060
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232634"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781254"
 ---
 # Get-AzConnectedNetworkDevice
 
 ## SYNOPSIS
 Mendapatkan informasi tentang perangkat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Type                         : Microsoft.HybridNetwork/devices
 
 ```
 
-Mendapatkan informasi tentang perangkat NFM dalam grup sumber daya myResources dengan nama myMecDevice.
+Mendapatkan informasi tentang perangkat NFM di grup sumber daya myResources dengan nama myMecDevice.
 
 ### Contoh 2: Get-AzConnectedNetworkDevice melalui Identitas
 ```powershell
@@ -98,7 +101,7 @@ Type                         : microsoft.hybridnetwork/devices
 
 ```
 
-Membuat identitas dengan nama perangkat myMecDevice1, grup sumber daya myResources, dan langganan yang diberikan.
+Membuat identitas dengan nama perangkat myMecDevice1, grup sumber daya myResources, dan langganan tertentu.
 Mendapatkan informasi tentang perangkat menggunakan identitas ini.
 
 ## PARAMETERS
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.IConnectedNetworkIdentity
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -204,8 +207,8 @@ INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
-  - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[PreviewSubscription <String>]`: ID langganan pratinjau.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.

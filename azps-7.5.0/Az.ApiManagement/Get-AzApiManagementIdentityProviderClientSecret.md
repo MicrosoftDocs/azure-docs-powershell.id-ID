@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProviderClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProviderClientSecret.md
-ms.openlocfilehash: 130afb8f389ceaf83827f96c81c88d2acf03c1f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 073bf1f27ea086633b710fa893243ce8fbf46a22
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211199"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793835"
 ---
 # Get-AzApiManagementIdentityProviderClientSecret
 
 ## SYNOPSIS
 Dapatkan rahasia klien IdP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityproviderclientsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Dapatkan rahasia klien IdP.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan rahasia klien dari IdP Jenis AAD
+### Contoh 1: Dapatkan rahasia klien IdP Jenis AAD
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementIdentityProviderClientSecret -Context $apimContext -Type Aad

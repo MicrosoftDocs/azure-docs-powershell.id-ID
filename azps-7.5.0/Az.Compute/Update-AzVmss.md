@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmss.md
-ms.openlocfilehash: 26e500ba19e77ba9e809b0b4b4215b710b94ceed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 61b76b6431f819f61f5f18ded333ffc5e924a58c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196663"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781398"
 ---
 # Update-AzVmss
 
 ## SYNOPSIS
 Memperbarui status VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -715,7 +718,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleInPolicy
-Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala akan terlebih dahulu diseimbangkan di seluruh zona jika merupakan set skala zona.  Kemudian, itu akan seimbang di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terlama yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
+Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala pertama-tama akan seimbang di seluruh zona jika itu adalah set skala zona.  Kemudian, ini akan diseimbangkan di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual tertua yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak dilindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
 
 ```yaml
 Type: System.String[]
@@ -745,7 +748,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipExtensionsOnOverprovisionedVMs
-Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang terlalu provisi.
+Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang kelebihan provisi.
 
 ```yaml
 Type: System.Boolean
@@ -823,7 +826,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminateScheduledEventNotBeforeTimeoutInMinutes
-Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Peristiwa Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
+Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Acara Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
 
 ```yaml
 Type: System.Int32
@@ -1020,9 +1023,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Baru-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVmss](./Remove-AzVmss.md)
 
-[Mulai ulang-AzVmss](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
 [Set-AzVmss](./Set-AzVmss.md)
 

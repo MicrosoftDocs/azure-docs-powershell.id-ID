@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
-ms.openlocfilehash: 98a004a8dd722ff68fe53f41407d8c5e3ed72571
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e645d664ccde62a7087cb19b26b6276078cd9c1e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231248"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774254"
 ---
 # New-AzEventHubCluster
 
 ## SYNOPSIS
 Membuat kluster eventhub khusus baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Tags      : {[ClusterTag1, Tag1], [ClusterTag2, Tag2]}
 
 ```
 
-Membuat kluster khusus 'Eventhub-Cluster-5557' di grup sumber daya 'RSG-Cluster27651' dengan Lokasi southcentralus dan Kapasitas sebagai 1
+Membuat kluster khusus 'Eventhub-Cluster-5557' dalam grup sumber daya 'RSG-Cluster27651' dengan Lokasi southcentralus dan Kapasitas sebagai 1
 
 ## PARAMETERS
 
