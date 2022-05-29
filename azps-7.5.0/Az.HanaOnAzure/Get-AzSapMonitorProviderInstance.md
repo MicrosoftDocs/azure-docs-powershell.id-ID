@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: 8224dc979e4774a74990e5baf12361054cdaad77
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8ee7a6571f36f03da2c8045bc41dd9d2bdb328c1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224752"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696366"
 ---
 # Get-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
 Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/get-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, nama Sa
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua instans di bawah monitor SAP
+### Contoh 1: Dapatkan semua instans di bawah monitor SAP
 ```powershell
 Get-AzSapMonitorProviderInstance -ResourceGroupName nancyc-hn1 -SapMonitorName ps-spamonitor-t01
 ```
@@ -83,7 +86,7 @@ ps-sapmonitorins-t02 Microsoft.HanaOnAzure/sapMonitors/providerInstances
 
 Perintah ini mendapatkan instans monitor SAP berdasarkan objek.
 
-### Contoh 4: Mendapatkan instans monitor SAP menurut alur
+### Contoh 4: Mendapatkan instans monitor SAP berdasarkan alur
 ```powershell
 @{Id = "/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/nancyc-hn1/providers/Microsoft.HanaOnAzure/sapMonitors/ps-spamonitor-t01/providerInstances/ps-sapmonitorins-t02"} | Get-AzSapMonitorProviderInstance
 ```
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
-ms.openlocfilehash: fb1bc98056ecb001a462bde9a15f9024876912f3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fbd1acce530ab3ed86389a40ff60e8076f5f9a8a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682338"
 ---
 # Get-AzFirewallFqdnTag
 
 ## SYNOPSIS
-Mendapatkan Azure Firewall Fqdn Tag yang tersedia.
+Mendapatkan Azure Firewall Tag Fqdn yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallfqdntag) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Enable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Enable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 7e04b0d13487ac5268a14c4a94bd710f3af919cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c93866d21db7885d8e55ceb2ab2f0b213cab600
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688734"
 ---
 # Enable-AzAdvisorRecommendation
 
 ## SYNOPSIS
 Mengaktifkan rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/enable-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -196,11 +199,11 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.String
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
 
 ## NOTES
 

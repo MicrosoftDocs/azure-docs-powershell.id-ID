@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCustomLogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCustomLogDataSource.md
-ms.openlocfilehash: 90e0d9c8422f0793faf24b1ea77375f90e7192a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7676bf63d0f5c76c3fde62b3fc8a0fb848501675
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235487"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661458"
 ---
 # New-AzOperationalInsightsCustomLogDataSource
 
 ## SYNOPSIS
 Menentukan kebijakan pengumpulan log kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightscustomlogdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

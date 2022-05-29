@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnectionRouteTable.md
-ms.openlocfilehash: 6fc81cccea0d3a84afe52ba4933eac799e72eb66
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85048ba2966dbf677f7d573b43bfeafbb308b03f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217226"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682608"
 ---
 # Get-AzExpressRouteCrossConnectionRouteTable
 
 ## SYNOPSIS
 Mendapatkan tabel rute dari koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnectionroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 

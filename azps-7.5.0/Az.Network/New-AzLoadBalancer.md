@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancer.md
-ms.openlocfilehash: a2bc4eca12488b0d393d896b6fb95f3ae8f94060
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0b10f154c38bb608fcc71cee90a26fbfd0d9bc7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241115"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675174"
 ---
 # New-AzLoadBalancer
 
 ## SYNOPSIS
 Membuat load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $lb = New-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGr
 Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Menyebarkan penyeimbang beban global mengharuskan Anda terlebih dahulu membuat beberapa objek, dan lima perintah pertama menunjukkan cara membuat objek tersebut.
+Menyebarkan load balancer global mengharuskan Anda terlebih dahulu membuat beberapa objek, dan lima perintah pertama menunjukkan cara membuat objek tersebut.
 Perintah keenam membuat load balancer bernama MyLoadBalancer di grup sumber daya bernama MyResourceGroup.
 Perintah ketujuh dan terakhir mendapatkan load balancer baru untuk memastikannya berhasil dibuat.
 Perhatikan bahwa contoh ini hanya menunjukkan cara membuat penyeimbang beban global. Anda juga harus mengonfigurasinya menggunakan cmdlet New-AzLoadBalancerBackendAddressConfig untuk menetapkan id ipconfig frontend load balancer regional ke kumpulan alamat backend-nya
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Menunjukkan bahwa cmdlet ini membuat penyeimbang beban meskipun load balancer dengan nama yang sama sudah ada.
+Menunjukkan bahwa cmdlet ini membuat load balancer meskipun load balancer dengan nama yang sama sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

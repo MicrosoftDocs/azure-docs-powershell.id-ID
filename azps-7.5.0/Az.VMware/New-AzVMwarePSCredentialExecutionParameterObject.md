@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePSCredentialExecutionParameterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePSCredentialExecutionParameterObject.md
-ms.openlocfilehash: a27c7e19ad90e2a82d4625dccb1942e02729b7ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca3dabdeb1b3a47045cd2c9e81ff36aa2a5e60bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221330"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701802"
 ---
 # New-AzVMwarePSCredentialExecutionParameterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk PSCredentialExecutionParameter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarepscredentialexecutionparameterobject) untuk informasi terbaru.
 
 ## SYNTAX
 

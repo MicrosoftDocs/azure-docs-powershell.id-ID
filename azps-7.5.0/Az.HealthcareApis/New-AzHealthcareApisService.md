@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
-ms.openlocfilehash: 2583fac727c7e2e8a0306c1d83ca267dfdb1c0e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea81381767792e1792e57da4adca7d2abf746989
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217586"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696006"
 ---
 # New-AzHealthcareApisService
 
 ## SYNOPSIS
 Membuat metadata instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/new-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Otoritas
-Otoritas Layanan HealthcareApis Fhir.
+HealthcareApis Fhir Service Authority.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -CorsHeader
-HealthcareApis Fhir Daftar Layanan Header Cors.
+HealthcareApis Fhir Service List of Cors Header.
 Tentukan header HTTP yang dapat digunakan selama permintaan.
 Gunakan " * " untuk header apa pun.
 
@@ -217,8 +220,8 @@ Accept wildcard characters: False
 ```
 
 ### -CorsOrigin
-HealthcareApis Fhir Daftar Layanan Asal Cors.
-Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs mana pun.
+HealthcareApis Fhir Service List of Cors Origin.
+Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs apa pun.
 
 ```yaml
 Type: System.String[]
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportStorageAccountName
-HealthcareApis Fhir Service Export Storage Nama Akun.
+Nama Akun Storage Ekspor Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis Layanan HealthcareApis.
 Nilai defaultnya adalah Fhir
 
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-HealthcareApis Fhir Service Account Tags.
+Tag Akun Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.Collections.Hashtable

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdncus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnCustomDomain.md
-ms.openlocfilehash: 82ab7d49c3f01c4cabde4cd0b5332bfadc44d04c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 21565d6669e247ce60a310e98cd7d9a8b4106a35
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184934"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689364"
 ---
 # Get-AzCdnCustomDomain
 
 ## SYNOPSIS
 Mendapatkan domain kustom CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdncustomdomain) untuk informasi terbaru.
 
 ## SYNTAX
 

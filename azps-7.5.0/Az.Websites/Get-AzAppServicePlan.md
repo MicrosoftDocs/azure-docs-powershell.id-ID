@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServicePlan.md
-ms.openlocfilehash: 95b0dbc460d427b4b86fbb9f491ce6615ef0d1c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6b7caae0082c010fbc23375612e97081220f6da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226135"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700902"
 ---
 # Get-AzAppServicePlan
 
 ## SYNOPSIS
 Mendapatkan paket Azure App Service dalam grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzAppServicePlan [-Location] <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAppServicePlan** mendapatkan rencana Azure App Service dalam grup sumber daya yang ditentukan.
+Cmdlet **Get-AzAppServicePlan** mendapatkan paket Azure App Service dalam grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Perintah ini mendapatkan paket App Service bernama ContosoASP yang termasuk dala
 Get-AzAppServicePlan -Location "West US"
 ```
 
-Perintah ini mendapatkan semua paket App Service yang terletak di wilayah "US Barat".
+Perintah ini mendapatkan semua rencana App Service yang terletak di wilayah "US Barat".
 
 ## PARAMETERS
 

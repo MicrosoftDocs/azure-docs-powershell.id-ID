@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: e5369525be9e4dc90f6b2a4b21c98f57f778e7ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 09446b2be18ac8ef91d27c2f6c7ee9b44d28b11a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235305"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660792"
 ---
 # Remove-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Menghapus ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 

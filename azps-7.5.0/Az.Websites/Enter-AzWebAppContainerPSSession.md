@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/enter-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Enter-AzWebAppContainerPSSession.md
-ms.openlocfilehash: 623ca45187d86e2d1fa965074c8cbaa89096a56f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d58ccc649978a8b41198b1e573315350fc2b4c3b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226163"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700956"
 ---
 # Enter-AzWebAppContainerPSSession
 
 ## SYNOPSIS
-Membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
+Membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/enter-azwebappcontainerpssession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Enter-AzWebAppContainerPSSession [-PassThru] [-Force] [-WebApp] <PSSite>
 ```
 
 ## DESCRIPTION
-membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya yang diberikan
+membuka sesi PowerShell jarak jauh ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 ## EXAMPLES
 

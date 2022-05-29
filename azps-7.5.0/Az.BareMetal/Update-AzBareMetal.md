@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.baremetal/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Update-AzBareMetal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Update-AzBareMetal.md
-ms.openlocfilehash: 8b14b64afbb75b7af295d6207cd135964f49b2aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 79dfaedfeaf4fc538c995683047c7169eda6d4dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193303"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682986"
 ---
 # Update-AzBareMetal
 
 ## SYNOPSIS
 Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.baremetal/update-azbaremetal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BareMetal.Models.IBareMetalIdentity
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IBareMetalIdentity>: Parameter Identitas
   - `[AzureBareMetalInstanceName <String>]`: Nama Azure BareMetal pada instans Azure.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
-ms.openlocfilehash: f6f0d28923d2f0c8c4f1cc49d3116050cd94ea21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3fb5d33bd0c7223573a6066b2e2079bea59e384b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110921"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697698"
 ---
 # Set-AzWebAppSlotConfigName
 
 ## SYNOPSIS
 Mengatur nama Konfigurasi Slot Aplikasi Web
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebappslotconfigname) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
-ms.openlocfilehash: f5d09ba7a8fa7b9e160df7a1d4fb718032a88991
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48a2f2dc9f239272500bbc4fa990093e7a14ca47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235434"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661332"
 ---
 # New-AzOperationalInsightsLinuxSyslogDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data ke komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightslinuxsyslogdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

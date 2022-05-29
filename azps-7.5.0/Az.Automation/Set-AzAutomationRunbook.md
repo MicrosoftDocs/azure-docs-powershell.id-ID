@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
-ms.openlocfilehash: 89e1f219816dd32bfef40d1150d91443b456cf41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48cb7fcbbd06d8beb0ad743e18d54cdfd3aa3346
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191119"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683310"
 ---
 # Set-AzAutomationRunbook
 
 ## SYNOPSIS
 Memodifikasi runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

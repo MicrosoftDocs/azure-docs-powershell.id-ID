@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/set-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Set-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 2685147def13d77be3ea15ca4794048677f9feb8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 75c3d60c9e956a606712c1587426f957685317d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224808"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696564"
 ---
 # Set-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
 Memperbarui Target Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/set-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -CLFS
-Perbarui jenis Target Storage CLFS.
+Perbarui tipe Target Storage CLFS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

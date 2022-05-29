@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: d34f5cf27a64e19fcadd8c0a4e73615bedb5f545
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7038e1d860c9899c710f6eb5dce552c361dda858
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194594"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681816"
 ---
 # Dapatkan-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi probe ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan load balancer yang terkait dengan konfigurasi probe yang akan didapatkan.
+Menentukan load balancer yang terkait dengan konfigurasi pemeriksaan yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama konfigurasi probe yang akan didapatkan.
+Menentukan nama konfigurasi pemeriksaan yang akan didapatkan.
 
 ```yaml
 Type: System.String

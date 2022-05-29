@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: 51c168defaedb3ab1c74dfcc8de3317faa0eacd0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2536a5b20b35c1c7c173825cfe5772f893a10ac4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223862"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650910"
 ---
 # Edit-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
 Mengedit paket Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/edit-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Azure Site Reco
 $RP = Edit-AzRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP -AppendGroup
 ```
 
-Menambahkan grup ke paket Azure Site Recovery yang ada dan mengembalikan rencana pemulihan yang diperbarui dalam memori. 
+Menambahkan grup ke paket Azure Site Recovery yang sudah ada dan mengembalikan rencana pemulihan yang diperbarui dalam memori. 
 
 ### Contoh 2
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui rencana pemulihan yang dijalankan Update-AzASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
+Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui rencana pemulihan, jalankan Update-AzASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan

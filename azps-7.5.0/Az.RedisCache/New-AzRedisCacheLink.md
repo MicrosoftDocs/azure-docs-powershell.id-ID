@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheLink.md
-ms.openlocfilehash: c254762178310a9ffb90511107284134b312fbdf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51ccbfe7283c10e7158f4e36c0d640b662fa32ca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247513"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646571"
 ---
 # New-AzRedisCacheLink
 
 ## SYNOPSIS
 Buat tautan replikasi geografis antara dua Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscachelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Buat tautan replikasi geografis antara dua Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tautan antara dua cache
+### Contoh 1: Membuat tautan di antara dua cache
 ```powershell
 New-AzRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache2"
 ```

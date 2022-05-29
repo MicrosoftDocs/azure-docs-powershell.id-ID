@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzDeletedWebApp.md
-ms.openlocfilehash: c3fecaba7097043cdbef3ccd848ed76f2c72624a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ece0f3e936041e1568d0749c4b518a046fb0eea6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226124"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700812"
 ---
 # Get-AzDeletedWebApp
 
 ## SYNOPSIS
 Mendapatkan aplikasi web yang dihapus dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azdeletedwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 

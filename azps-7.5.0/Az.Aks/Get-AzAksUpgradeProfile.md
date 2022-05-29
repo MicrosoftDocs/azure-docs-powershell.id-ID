@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksupg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
-ms.openlocfilehash: cfd4e6dba84afec93762517ca84abcab6e276282
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91bec6e318774140e4d6f68cd24fb39b715bf0ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238973"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689688"
 ---
 # Get-AzAksUpgradeProfile
 
 ## SYNOPSIS
 Mendapatkan detail profil peningkatan untuk kluster terkelola dengan grup sumber daya dan nama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksupgradeprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

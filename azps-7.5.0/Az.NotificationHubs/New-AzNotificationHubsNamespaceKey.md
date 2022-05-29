@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceKey.md
-ms.openlocfilehash: f511725ba833b7047fa5490a77826f0fca846265
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: da55e93f0ccf592d2c97db6b351e1fec3c1a1e5b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662898"
 ---
 # New-AzNotificationHubsNamespaceKey
 
 ## SYNOPSIS
 Regenerasi Kunci Aturan Otorisasi untuk Namespace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespacekey) untuk informasi terbaru.
 
 ## SYNTAX
 

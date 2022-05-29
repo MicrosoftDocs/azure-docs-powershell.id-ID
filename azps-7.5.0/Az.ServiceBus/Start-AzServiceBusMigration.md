@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
-ms.openlocfilehash: 949a9bb89de5023eaad828cd15a3863b7c8b7743
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 157159fac2b244fbb0a8ddb4267cf8d71c7b3b11
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196050"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631960"
 ---
 # Start-AzServiceBusMigration
 
 ## SYNOPSIS
 Membuat konfigurasi Migrasi baru dan mulai memigrasikan entitas dari Namespace Standar ke Premium
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/start-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 

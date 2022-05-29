@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
-ms.openlocfilehash: c11dc948f980f97f9ab41b0ea4ade13d45fcfbfc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d63e947b04ab21e30ab3fccf7f3bc5751d1aea9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109949"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676002"
 ---
 # New-AzFirewallNatRule
 
 ## SYNOPSIS
 Membuat Aturan NAT Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallnatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional dari aturan ini.
+Menentukan deskripsi opsional aturan ini.
 
 ```yaml
 Type: System.String

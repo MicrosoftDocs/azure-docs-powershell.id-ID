@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
-ms.openlocfilehash: 3917e67eb069b3f079e473c7f58e47f7f8edef38
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 323700b4e68b03a28c17f1f4fa2284060a5be75e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183058"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661548"
 ---
 # New-AzOperationalInsightsApplicationInsightsDataSource
 
 ## SYNOPSIS
 Kumpulkan log dari aplikasi Application-Insights yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsapplicationinsightsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Properties        : {"linkedResourceId":"subscriptions/e791a474-ee54-46a2-bb06-5
 
 Perintah ini membuat sumber data application-insights dari aplikasi tertentu di ruang kerja analitik log tertentu. Ini memungkinkan pengumpulan log dari aplikasi tertentu ke ruang kerja analitik log.
 
-### Contoh 2: Mendapatkan objek ruang kerja dan membuat sumber data application-insights dengan id sumber daya aplikasi
+### Contoh 2: Dapatkan objek ruang kerja dan buat sumber data application-insights dengan id sumber daya aplikasi
 ```powershell
 Get-AzureRmOperationalInsightsWorkspace -Name "MyWorkspace" -ResourceGroupName "ContosoResourceGroup" | New-AzOperationalInsightsApplicationInsightsDataSource -ApplicationResourceId "/subscriptions/e791a474-ee54-46a2-bb06-5e058302d234/resourceGroups/ContosoResourceGroup/providers/microsoft.insights/components/MyAIApplication"
 ```
@@ -89,7 +92,7 @@ Kind              : ApplicationInsights
 Properties        : {"linkedResourceId":"subscriptions/e791a474-ee54-46a2-bb06-5e058302d234/resourceGroups/ContosoResourceGroup/providers/microsoft.insights/components/MyAIApplication","status":"Succeeded"}
 ```
 
-Perintah ini menunjukkan mendapatkan objek ruang kerja analitik log dan kemudian meneruskan output untuk membuat sumber data application-insights terkait oleh id sumber daya aplikasi. 
+Perintah ini menunjukkan mendapatkan objek ruang kerja analitik log dan kemudian meneruskan output untuk membuat sumber data application-insights terkait dengan id sumber daya aplikasi. 
 
 ## PARAMETERS
 

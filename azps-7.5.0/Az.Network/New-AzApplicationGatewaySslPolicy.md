@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslPolicy.md
-ms.openlocfilehash: d9af76ef1f6996584bd18682d17c814e426352c1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 182c4c276d87d15267b02f4025074ec1d1ba1d32
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213431"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676992"
 ---
 # New-AzApplicationGatewaySslPolicy
 
 ## SYNOPSIS
 Membuat kebijakan SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Perintah ini membuat kebijakan kustom.
 ## PARAMETERS
 
 ### -CipherSuite
-Suite sandi Ssl untuk diaktifkan dalam urutan yang ditentukan ke gateway aplikasi
+Rangkaian sandi Ssl yang akan diaktifkan dalam urutan yang ditentukan ke gateway aplikasi
 
 ```yaml
 Type: System.String[]

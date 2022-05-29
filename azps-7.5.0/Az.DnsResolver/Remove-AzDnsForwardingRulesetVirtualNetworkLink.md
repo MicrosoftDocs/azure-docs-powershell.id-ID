@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: bf35e959212e731ea2225ba4a4e85926fee7c021
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 57aa2f6a63eb48b881de9dc7b591002a5caad7bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232480"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688644"
 ---
 # Remove-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
 Menghapus tautan jaringan virtual ke set aturan penerusan DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/remove-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpGroup.md
-ms.openlocfilehash: 56ab103c5115544d82e961c52679216724055857
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bccfbbdc463021cfb4723e38d187f9e91a0be15
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247628"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682140"
 ---
 # Dapatkan-AzIpGroup
 
 ## SYNOPSIS
 Mendapatkan Azure IpGroup
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azipgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

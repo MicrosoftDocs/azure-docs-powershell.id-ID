@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: 6004cb921019aa7cbe56bb4f4ae982296b095d72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b25ed576c6d39a9123aa2efdc79fe5b9db4bd782
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214946"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649129"
 ---
 # New-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
 Membuat pemetaan jaringan ASR di antara dua jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrnetworkmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Menentukan kain ASR tempat pemetaan harus dibuat.
+Menentukan fabric ASR tempat pemetaan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryFabric
-Objek fabric Azure Site Recovery yang sesuai dengan wilayah Azure pemulihan.
+Objek Azure Site Recovery fabric yang sesuai dengan wilayah Azure pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric

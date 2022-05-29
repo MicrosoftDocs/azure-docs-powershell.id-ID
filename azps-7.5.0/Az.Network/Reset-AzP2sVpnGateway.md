@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzP2sVpnGateway.md
-ms.openlocfilehash: 19d964d8cf7f0044972e4b5872f9ae6cc06c0c0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d63b15f979a96a285d8f17becaae72ef68b733cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183310"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668046"
 ---
 # Reset-AzP2sVpnGateway
 
 ## SYNOPSIS
-Mengatur ulang gateway VPN P2S yang dapat diskalakan.
+Mereset gateway VPN P2S yang dapat diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Reset-- -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Mengatur ulang P2SVpnGateway
+Mereset P2SVpnGateway
 
 ## EXAMPLES
 

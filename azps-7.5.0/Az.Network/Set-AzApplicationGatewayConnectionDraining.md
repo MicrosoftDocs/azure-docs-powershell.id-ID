@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 8e97c06e6185ddd918c4e645b17e1730f9e9b567
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4c09bfaf9e88a09ac73cbc9cc932312364ee68e1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236806"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667560"
 ---
 # Set-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
 Memodifikasi konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzApplicationGatewayConnectionDraining -BackendHttpSettings $poolSetting02 -
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 Perintah kedua mendapatkan pengaturan HTTP back-end bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah terakhir memodifikasi konfigurasi pengurasan koneksi objek pengaturan HTTP back-end yang disimpan dalam $Pengaturan dengan mengatur Diaktifkan ke False dan DrainTimeoutInSec ke 3600.
+Perintah terakhir memodifikasi konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end yang disimpan dalam $Pengaturan dengan mengatur Diaktifkan ke False dan DrainTimeoutInSec ke 3600.
 
 ## PARAMETERS
 
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DrainTimeoutInsec
-Jumlah detik pengurasan koneksi aktif.
+### -DrainTimeoutInSec
+Jumlah pengurasan koneksi detik aktif.
 Nilai yang dapat diterima adalah dari 1 detik hingga 3600 detik.
 
 ```yaml

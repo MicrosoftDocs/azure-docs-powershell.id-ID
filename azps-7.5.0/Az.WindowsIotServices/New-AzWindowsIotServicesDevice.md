@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/New-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/New-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: a31ab8d29800276f60eada3d56fea3cb820654a9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bee9c955edbd55711f0fd159e01e88f95f3007e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697050"
 ---
 # New-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
 Membuat atau memperbarui metadata IoT Device Service Windows.
 Pola yang biasa untuk memodifikasi properti adalah mengambil metadata IoT Device Service dan metadata keamanan Windows, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui Windows IoT Device Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/new-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini membuat layanan IoT Windows baru.
 ## PARAMETERS
 
 ### -AdminDomainName
-Windows domain AAD OEM IoT Device Service
+Windows domain IoT Device Service OEM AAD
 
 ```yaml
 Type: System.String
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingDomainName
-Windows domain AAD IoT Device Service ODM
+Windows domain IoT Device Service ODM AAD
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Etag
 Bidang Etag *tidak* diperlukan.
-Jika disediakan dalam isi respons, itu juga harus disediakan sebagai header sesuai konvensi ETag normal.
+Jika disediakan dalam isi respons, itu juga harus disediakan sebagai header per konvensi ETag normal.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag Windows IoT Device Service.
-Jangan tentukan untuk membuat Windows IoT Device Service baru.
+Jangan tentukan untuk membuat IoT Device Service Windows baru.
 Diperlukan untuk memperbarui Windows IoT Device Service yang ada.
 
 ```yaml

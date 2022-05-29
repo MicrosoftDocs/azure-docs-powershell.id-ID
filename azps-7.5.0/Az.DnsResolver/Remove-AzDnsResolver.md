@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsResolver.md
-ms.openlocfilehash: 74af56cda6fb138ee7569c7886e5268a5e3001f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c590b3c8ceebad0d96e5903cd226a6fd37e7bf77
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232477"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688565"
 ---
 # Remove-AzDnsResolver
 
 ## SYNOPSIS
 Menghapus pemecah masalah DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/remove-azdnsresolver) untuk informasi terbaru.
 
 ## SYNTAX
 

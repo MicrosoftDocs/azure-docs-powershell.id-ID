@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 2fb459de89eafa6bd0b9bf99707b94aa82efed1e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c5eefff79c0b99b0bca7905d59e3aa01c328503f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235574"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661872"
 ---
 # Get-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Storage Insight.
+Mendapatkan informasi tentang wawasan Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,20 +36,20 @@ Get-AzOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [[-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsStorageInsight** mendapatkan informasi tentang wawasan Storage yang ada.
+Cmdlet **Get-AzOperationalInsightsStorageInsight** mendapatkan informasi tentang Wawasan Storage yang ada.
 Jika nama Storage Insight ditentukan, cmdlet ini mendapatkan informasi tentang Storage Insight tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua wawasan penyimpanan di ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan wawasan Storage berdasarkan nama
+### Contoh 1: Dapatkan Storage Insight berdasarkan nama
 ```powershell
 Get-AzOperationalInsightsStorageInsight -Name "MyStorageInsight" -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
 Perintah ini mendapatkan wawasan penyimpanan bernama MyStorageInsight dari ruang kerja bernama ContosoWorkspace.
 
-### Contoh 2: Mendapatkan wawasan Storage dengan menggunakan objek ruang kerja
+### Contoh 2: Mendapatkan Storage Insight dengan menggunakan objek ruang kerja
 ```powershell
 $Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 Get-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight"

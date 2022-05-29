@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceQueryPrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceQueryPrivateStoreOffer.md
-ms.openlocfilehash: 4f2357591dc8acaf20296a9c6a0c4deb15ee9dbf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: febb4d926258989f28bde0cd3b46e0a791da4452
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110261"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690606"
 ---
 # Get-AzMarketplaceQueryPrivateStoreOffer
 
 ## SYNOPSIS
 Daftar penawaran, terlepas dari koleksinya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacequeryprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 

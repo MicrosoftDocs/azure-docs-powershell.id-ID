@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrStorageClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrStorageClassification.md
-ms.openlocfilehash: d072d064566e0d4a967fbd499c53564b42b53d2d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb7fe622c4d913a2d6e8696ed7eb31ed459c169b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245497"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650262"
 ---
 # Get-AzRecoveryServicesAsrStorageClassification
 
 ## SYNOPSIS
 Mendapatkan klasifikasi penyimpanan ASR yang tersedia (ditemukan) di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrstorageclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzRecoveryServicesAsrStorageClassification** mendapatkan detail kla
 $StorageClassifications = Get-AzRecoveryServicesAsrStorageClassification -Fabric $Fabric
 ```
 
-Cantumkan klasifikasi penyimpanan yang ditemukan yang sesuai dengan fabrik ASR yang ditentukan. 
+Cantumkan klasifikasi penyimpanan yang ditemukan yang sesuai dengan fabric ASR yang ditentukan. 
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubCertificate.md
-ms.openlocfilehash: 1da449a4f3b98c81141ad87868227bca8a2278ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2640dd22817abbdbbe9fa257427fa8f679abbc6c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220787"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695448"
 ---
 # Add-AzIotHubCertificate
 
 ## SYNOPSIS
 Membuat/memperbarui sertifikat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzIotHubCertificate [-ResourceId] <String> [-Path] <String> [-Etag <String>]
 
 ## DESCRIPTION
 Mengunggah sertifikat baru atau untuk mengganti sertifikat yang ada dengan nama yang sama.
-Untuk penjelasan terperinci tentang sertifikat CA di Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
+Untuk penjelasan terperinci tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 

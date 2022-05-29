@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
-ms.openlocfilehash: 3470e215b6563e4276cd73532f1492035346f2d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 123bc94c7a1e74ddd421392268f31eefd39d439a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112239"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690336"
 ---
 # Get-AzMediaServiceKey
 
 ## SYNOPSIS
 Mendapatkan informasi utama untuk mengakses titik akhir REST yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 

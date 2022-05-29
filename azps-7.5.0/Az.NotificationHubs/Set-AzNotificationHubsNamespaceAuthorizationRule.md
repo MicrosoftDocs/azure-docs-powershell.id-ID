@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: 3de6f010c1c0c3804a972a3ec09fcf708f97100d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bc916fd161e92924bf6b65ce06fdfdd2c6a4ef79
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226835"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662592"
 ---
 # Set-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
 Mengatur aturan otorisasi untuk namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubsnamespaceauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ Set-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-Nam
 ## DESCRIPTION
 Cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** memodifikasi aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke namespace hub pemberitahuan.
 Aturan otorisasi mengelola hak pengguna ke namespace layanan dan ke hub pemberitahuan yang terkandung dalam namespace tersebut.
-Cmdlet ini menyediakan dua cara untuk memodifikasi aturan otorisasi yang ditetapkan ke namespace layanan.
-Untuk satu, Anda dapat membuat instans objek **SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang Anda inginkan untuk dimiliki aturan.
+Cmdlet ini menyediakan dua cara untuk mengubah aturan otorisasi yang ditetapkan ke namespace.
+Untuk satu, Anda dapat membuat **instans objek SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang Anda inginkan untuk dimiliki aturan.
 Anda dapat menggunakan .NET Framework untuk mencapai hal ini.
 Anda kemudian dapat menyalin nilai properti tersebut ke aturan melalui parameter *SASRule* .
 Atau, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut melalui parameter *InputFile* .
-File JSON adalah file teks yang menggunakan sintaksis yang mirip dengan ini: {  
+File JSON adalah file teks yang menggunakan sintaks yang mirip dengan ini: {  
     "Name": "ContosoAuthorizationRule",  
-    "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29KKUnnpUk01Y=",  
+    "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29KkUnnpUk01Y=",  
     "Hak": \[  
         "Dengarkan",  
         "Kirim"  
@@ -58,10 +61,10 @@ File JSON adalah file teks yang menggunakan sintaksis yang mirip dengan ini: {
 Set-AzNotificationHubsNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationGroup" -InputFile "C:\Configuration\AuthorizationRules.json"
 ```
 
-Perintah ini memodifikasi aturan otorisasi yang ditetapkan ke namespace bernama ContosoNamespace.
+Perintah ini memodifikasi aturan otorisasi yang ditetapkan ke namespace layanan bernama ContosoNamespace.
 Anda harus menentukan grup sumber daya tempat namespace ditetapkan.
 Informasi tentang aturan otorisasi tidak disertakan dalam perintah itu sendiri.
-Sebagai gantinya, informasi tersebut diperoleh dari file input C:\Configuration\AuthorizationRules.json.
+Sebaliknya, informasi tersebut diperoleh dari file input C:\Configuration\AuthorizationRules.json.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan namespace yang berisi aturan otorisasi yang diubah cmdlet ini.
+Menentukan namespace layanan yang berisi aturan otorisasi yang dimodifikasi cmdlet ini.
 Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat namespace ditetapkan.
+Menentukan grup sumber daya tempat namespace layanan ditetapkan.
 Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml

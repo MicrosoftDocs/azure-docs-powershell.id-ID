@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNatRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNatRuleCollection.md
-ms.openlocfilehash: e8ed66a2a2c1a8a0b1cce1b1d9b5ddc2a8620ed0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 14bd0b6f62065710723085317a7c3338bf77ee8e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220415"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675624"
 ---
 # New-AzFirewallPolicyNatRuleCollection
 
 ## SYNOPSIS
 Membuat Kumpulan Aturan Nat Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicynatrulecollection) untuk informasi terbaru.
 
 ## SYNTAX
 

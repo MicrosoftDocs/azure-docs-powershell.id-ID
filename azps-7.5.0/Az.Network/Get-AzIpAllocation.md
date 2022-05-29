@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpAllocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpAllocation.md
-ms.openlocfilehash: 05121a7e49083bb8073c9fc5507de29cc2820fff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9df006a31c83cf1cb5d00fb41e59e8ca97d4e358
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246928"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682176"
 ---
 # Get-AzIpAllocation
 
 ## SYNOPSIS
 Mendapatkan Azure IpAllocation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azipallocation) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/get-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareGlobalReachConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareGlobalReachConnection.md
-ms.openlocfilehash: 9fc30c19baf2570bcb7491c1e9fac223807c53cc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15edce17e6ed7d25ae7f338e8a0f6c265722b476
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211535"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702288"
 ---
 # Get-AzVMwareGlobalReachConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi jangkauan global berdasarkan nama di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/get-azvmwareglobalreachconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

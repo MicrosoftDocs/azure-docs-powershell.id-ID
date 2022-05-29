@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: 84029f84fe2f9f464c2e48a3f3099865503c7eb8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d46ef1f1aed47d3216ffdd6acb1287751c3bd17a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702666"
 ---
 # Remove-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
 Menghapus titik akhir dari objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerendpointconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah menyimpan profil lokal dalam variabel $TrafficManagerProfile.
 Perintah kedua menghapus titik akhir Azure bernama contoso dari profil yang disimpan di $TrafficManagerProfile.
 Perintah ini hanya mengubah objek lokal.
 
-Perintah akhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
+Perintah akhir memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal di $TrafficManagerProfile.
 
 ## PARAMETERS
 

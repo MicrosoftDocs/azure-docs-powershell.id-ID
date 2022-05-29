@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
-ms.openlocfilehash: 5c9d89b8f744cb3205834f10fc173c1575fcc36c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99501045cf622a2bb80bf9cdc4a2aad4a4c7670f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230811"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649542"
 ---
 # Get-AzRecoveryServicesVault
 
 ## SYNOPSIS
 
 Mendapatkan daftar vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup"
 
 Dapatkan daftar vault dalam grup sumber daya di langganan yang dipilih.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"

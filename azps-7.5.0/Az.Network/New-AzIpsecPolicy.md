@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
-ms.openlocfilehash: 0d9731da7a5706c202dcab77d3a0ef36f0865ba9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bff7b677c6c15ba8206fdef5e3a9d84df59054ba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241129"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675246"
 ---
 # New-AzIpsecPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan IPSec.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipsecpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIpsecPolicy [-SALifeTimeSeconds <Int32>] [-SADataSizeKilobytes <Int32>] -I
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzIpsecPolicy membuat proposal kebijakan IPSec untuk digunakan dalam koneksi gateway jaringan virtual.
+Cmdlet New-AzIpsecPolicy membuat proposal kebijakan IPSec yang akan digunakan dalam koneksi gateway jaringan virtual.
 
 ## EXAMPLES
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTimeSeconds
-Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam hitungan detik
+Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32

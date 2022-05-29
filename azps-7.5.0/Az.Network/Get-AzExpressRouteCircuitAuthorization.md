@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
-ms.openlocfilehash: fd9aca571f630a5ea69ec6b3bfbcb2e2970f2798
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9224e4e6da4e3c0ff5d8f5069c8fba70fb23e1fd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111665"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689886"
 ---
 # Get-AzExpressRouteCircuitAuthorization
 
 ## SYNOPSIS
 Mendapatkan informasi tentang otorisasi sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzExpressRouteCircuitAuthorization** mendapatkan informasi tentang 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua otorisasi ExpressRoute
+### Contoh 1: Mendapatkan semua otorisasi ExpressRoute
 ```powershell
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Get-AzExpressRouteCircuitAuthorization -Circuit $Circuit
@@ -44,7 +47,7 @@ $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "
  Get-AzExpressRouteCircuitAuthorization -Circuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
 ```
 
-Perintah ini mewakili variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam hal ini, informasi dikembalikan hanya untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan dalam perintah 2 dan disalurkan ke cmdlet **Where-Object** .
+Perintah ini mewakili variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam hal ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan dalam perintah 2 dan disalurkan ke cmdlet **Where-Object** .
 **Where-Object** kemudian hanya memilih otorisasi tersebut di mana properti *AuthorizationUseStatus* diatur ke Tersedia. Untuk mencantumkan otorisasi yang tidak tersedia saja, gunakan sintaks ini untuk klausa Where: `{$_.AuthorizationUseStatus -ne "Available"}`
 
 ## PARAMETERS
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama otorisasi sirkuit ExpressRoute yang didapatkan cmdlet ini.
+Menentukan nama otorisasi sirkuit ExpressRoute yang didapat cmdlet ini.
 -Name "ContosoCircuitAuthorization"
 
 ```yaml

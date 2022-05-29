@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuitPeeringConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuitPeeringConfig.md
-ms.openlocfilehash: db239328dfc82fb4cac9b16d929786a4e716f9a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a06a8c1621a58e4e449d553078719db461b0413a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233978"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676398"
 ---
 # New-AzExpressRouteCircuitPeeringConfig
 
 ## SYNOPSIS
 Membuat konfigurasi peering baru untuk ditambahkan ke sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azexpressroutecircuitpeeringconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigAdvertisedPublicPrefixes
-Untuk PeeringType microsoftPeering, Anda harus memberikan daftar semua prefiks yang Anda rencanakan untuk diiklankan selama sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda dapat mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan awalan. Awalan ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
+Untuk PeeringType microsoftPeering, Anda harus memberikan daftar semua awalan yang Anda rencanakan untuk diiklankan selama sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda dapat mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan awalan. Awalan ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
 
 ```yaml
 Type: System.String[]
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigRoutingRegistryName
-Nama Registri Perutean (RIR/IRR) tempat nomor dan awalan AS didaftarkan.
+Nama Registri Perutean (RIR/IRR) tempat nomor DAN awalan AS didaftarkan.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String

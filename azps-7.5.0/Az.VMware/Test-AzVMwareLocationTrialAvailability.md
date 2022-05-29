@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/test-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationTrialAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationTrialAvailability.md
-ms.openlocfilehash: 2c23a47ce8d846f19cdaf746722b7c5e290ffdc4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89e5c9217c52856a8769bca936bbbae80ab7f713
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205991"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701172"
 ---
 # Test-AzVMwareLocationTrialAvailability
 
 ## SYNOPSIS
 Mengembalikan status uji coba untuk langganan menurut wilayah
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/test-azvmwarelocationtrialavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

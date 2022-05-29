@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareGlobalReachConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareGlobalReachConnection.md
-ms.openlocfilehash: eacd7230f05dc55a173261395a65e27698831f9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a0e021e864905bc215e34f04304a2d07881257a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211430"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701370"
 ---
 # Remove-AzVMwareGlobalReachConnection
 
 ## SYNOPSIS
 Menghapus koneksi jangkauan global di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwareglobalreachconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

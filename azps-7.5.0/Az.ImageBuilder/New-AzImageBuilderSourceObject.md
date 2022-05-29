@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
-ms.openlocfilehash: efd98c69c07ee3dcd96b74e95caceebc31045459
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83129b2bc041c4fd2a5e1bc86f6ebe644faf6297
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244223"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695772"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
 Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Perintah ini membuat sumber gambar platfrom.
 ## PARAMETERS
 
 ### -ImageId
-Id sumber daya ARM dari gambar terkelola dalam langganan pelanggan.
+ID sumber daya ARM dari gambar terkelola dalam langganan pelanggan.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Gambar sku dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
+Sku gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusRule.md
-ms.openlocfilehash: 00df418714a1fed62889978bf550cb01e9d14d6a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5ced476314d45a2c525c1df45e219a5ce3aca9bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215627"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632392"
 ---
 # Set-AzServiceBusRule
 
 ## SYNOPSIS
 Memperbarui deskripsi aturan yang ditentukan untuk langganan yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusrule) untuk informasi terbaru.
 
 ## SYNTAX
 

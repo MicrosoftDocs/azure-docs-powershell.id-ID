@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 273f8e4bde9231f1df84fa5b57b2d00fdbdd79a7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 16f8a1211b74b63402a1476667b8dcfcfb7de969
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677028"
 ---
 # New-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Membuat sertifikat SSL untuk gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **New-AzApplicationGatewaySslCertificate** membuat sertifikat SSL untuk g
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sertifikat SSL untuk gateway aplikasi Azure.
+### Contoh 1: Buat sertifikat SSL untuk gateway aplikasi Azure.
 ```powershell
 $password = ConvertTo-SecureString $passwordPlainString -AsPlainText -Force
 $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -CertificateFile "D:\cert01.pfx" -Password $password
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultSecretId
-SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
+SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini ketika versi rahasia tertentu perlu digunakan.
 
 ```yaml
 Type: System.String

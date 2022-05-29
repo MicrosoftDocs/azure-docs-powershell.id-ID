@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 622a8ad156157815761b33a7316dec076728a58d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d62db28f4bb5c2e53f7da69d9ca0b3fdc90fab03
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212123"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646482"
 ---
 # Remove-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
 Menonaktifkan diagnostik pada Azure Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachediagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Remove-AzRedisCacheDiagnostic -ResourceGroupName "ContosoResourceGroup" -Name "P
 ```
 
 Perintah ini menonaktifkan diagnostik pada Azure Redis Cache tertentu.
-Ini menonaktifkan diagnostik untuk semua Azure Redis Cache di wilayah yang sama untuk langganan.
+Ini menonaktifkan diagnostik untuk semua Azure Redis Caches di wilayah yang sama untuk langganan.
 
 ## PARAMETERS
 

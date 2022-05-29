@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsLinuxPerformanceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsLinuxPerformanceCollection.md
-ms.openlocfilehash: 0b0dc823675451dc6d9f79f17b0c27d25053197d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a352b5db28dbb5f1bb702f69fd687467e68c6b51
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200180"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662340"
 ---
 # Enable-AzOperationalInsightsLinuxPerformanceCollection
 
 ## SYNOPSIS
 Memulai pengumpulan penghitung kinerja dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/enable-azoperationalinsightslinuxperformancecollection) untuk informasi terbaru.
 
 ## SYNTAX
 

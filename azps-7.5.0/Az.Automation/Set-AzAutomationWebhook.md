@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationWebhook.md
-ms.openlocfilehash: 79b80b372385b4e35d278edd5d636d7318cf6ffe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6613ba518699d613b59796c4c21cffa0af521d20
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186334"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683184"
 ---
 # Set-AzAutomationWebhook
 
 ## SYNOPSIS
 Memodifikasi webhook untuk runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroupName "ResourceGro
 
 Perintah ini mengatur nilai run on untuk webhook dan memaksa runbook dijalankan pada grup Hybrid Worker yang disebut Windows.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\>Set-AzAutomationWebhook -Name "Webhook01" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -RunOn $null
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMExtension.md
-ms.openlocfilehash: cb7ded1f73e30440d4b32db4bd3307796c80e3ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 259399cb0bc648beb3b3b5d506a47496409480d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236621"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631995"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMExtension
 
 ## SYNOPSIS
 Tambahkan ekstensi vm ke jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Add-AzServiceFabricManagedNodeTypeVMExtension -ResourceGroupName $rgName -Cluste
 
 Perintah ini menambahkan ekstensi dengan pengaturan dan pengaturan yang dilindungi ke jenis node.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRG"
 $clusterName = "testCluster"

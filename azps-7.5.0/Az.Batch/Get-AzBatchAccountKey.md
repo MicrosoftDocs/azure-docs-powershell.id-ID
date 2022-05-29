@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
-ms.openlocfilehash: e2536a8fecdd4cf161bac7d0ffa169e765a79955
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b288ac380b5c53615ce001c0337a67d108528895
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682698"
 ---
 # Get-AzBatchAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Perintah ini mendapatkan kunci akun dan mencetaknya ke konsol.
 ## PARAMETERS
 
 ### -AccountName
-Menentukan nama akun yang cmdlet ini mendapatkan kunci.
+Menentukan nama akun yang kuncinya didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun tempat cmdlet ini mendapatkan kunci.
+Menentukan nama grup sumber daya yang berisi akun yang kuncinya didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String

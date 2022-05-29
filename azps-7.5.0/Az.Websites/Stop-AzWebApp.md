@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Stop-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Stop-AzWebApp.md
-ms.openlocfilehash: d8910960faaed3bcddb2821cc323f5694be3c8b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 44ae7a8f4594797029b147ffa46666deee86ab05
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226093"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697536"
 ---
 # Stop-AzWebApp
 
 ## SYNOPSIS
 Menghentikan Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/stop-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 

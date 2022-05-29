@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
-ms.openlocfilehash: 40c465643d305f00fba57f21cd82d7dc12c28a1d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c22219ba03ea066b361c468ac7fcf9b284763667
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676740"
 ---
 # New-AzApplicationSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationsecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **New-AzApplicationSecurityGroup** membuat grup keamanan aplikasi.
 New-AzApplicationSecurityGroup -ResourceGroupName "MyResourceGroup" -Name "MyApplicationSecurityGroup" -Location "West US"
 ```
 
-Contoh ini membuat grup keamanan aplikasi tanpa asosiasi. Setelah dibuat, konfigurasi IP di antarmuka jaringan dapat disertakan dalam grup. Aturan keamanan juga dapat merujuk ke grup sebagai sumber atau tujuannya.
+Contoh ini membuat kelompok keamanan aplikasi tanpa asosiasi. Setelah dibuat, konfigurasi IP di antarmuka jaringan dapat disertakan dalam grup. Aturan keamanan juga dapat merujuk ke grup sebagai sumber atau tujuannya.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya grup keamanan aplikasi.
+Nama grup sumber daya dari grup keamanan aplikasi.
 
 ```yaml
 Type: System.String

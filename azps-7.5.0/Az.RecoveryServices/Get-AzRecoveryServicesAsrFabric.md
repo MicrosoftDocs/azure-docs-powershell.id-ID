@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrFabric.md
-ms.openlocfilehash: b5995b0eec17ea5b2cc750630c4a28e842bc4c9c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 252e38e16267e28c57a934c9cac34d2ca9dbfeb9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245637"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650784"
 ---
 # Get-AzRecoveryServicesAsrFabric
 
 ## SYNOPSIS
 Dapatkan detail Azure Site Recovery Fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzRecoveryServicesAsrFabric -FriendlyName <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti Azure Site Recovery Fabric tertentu atau semua Azure Site Recovery Fabrics dalam vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti dari Azure Site Recovery Fabric tertentu atau semua Azure Site Recovery Fabrics dalam vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti Azure Site Recov
 $fabrics = Get-AzRecoveryServicesAsrFabric
 ```
 
-Mengembalikan semua fabric Azure Site Recovery di vault.
+Mengembalikan semua kain Site Recovery Azure di vault.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ FabricSpecificDetails : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.A
 
 Mengembalikan fabric azure site recovery dengan nama xxxx.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $fabric = Get-AzRecoveryServicesAsrFabric -FriendlyName XXXXXXXXXX
 ```

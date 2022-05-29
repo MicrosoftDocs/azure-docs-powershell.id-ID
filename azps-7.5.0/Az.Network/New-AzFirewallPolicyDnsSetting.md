@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyDnsSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyDnsSetting.md
-ms.openlocfilehash: 57d2855c39f47add9256a7910d7c9f7e2e3d85fe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f0ae885bb5085b25b6b873f34828a85cb685d5e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242921"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675912"
 ---
 # New-AzFirewallPolicyDnsSetting
 
 ## SYNOPSIS
 Membuat Pengaturan DNS baru untuk Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicydnssetting) untuk informasi terbaru.
 
 ## SYNTAX
 

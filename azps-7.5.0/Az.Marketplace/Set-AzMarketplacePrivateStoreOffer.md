@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreOffer.md
-ms.openlocfilehash: 206c4835ed40fd729e551cc62691390ad36b6e32
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 802b2496d4597f2fb9fa96d35b0b0f1f57b4bd15
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112309"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690444"
 ---
 # Set-AzMarketplacePrivateStoreOffer
 
 ## SYNOPSIS
 Memperbarui atau membuat penawaran untuk penyimpanan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Type                      : Microsoft.Marketplace/privateStores/offers
 
 Membuat penawaran dengan paket privat hanya untuk penyimpanan privat yang dibuat di bawah cakupan langganan. 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzMarketplacePrivateStoreOffer -privateStoreId 7gh67884-1r56-44fb-a93d-030d4ae08b2d -offerId  publisherid.offerid -SpecificPlanIdsLimitation @("PublisherEnterpriseLinux72", "PublisherEnterpriseLinux72-ARM", "PublisherEnterpriseLinux73") -ETag 04009562-0000-0600-0000-5ecd2fb00000
 ```
@@ -94,7 +97,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Memperbarui penawaran dengan paket privat + publik untuk penyimpanan privat yang dibuat di bawah cakupan penyewa. Etag dibutuhkan.
+Pembaruan penawaran dengan paket privat + publik untuk penyimpanan privat yang dibuat di bawah cakupan penyewa. Etag diperlukan.
 
 ### Contoh 4
 ```powershell
@@ -116,7 +119,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Memperbarui penawaran untuk penyimpanan privat dengan paket privat yang hanya dibuat di bawah cakupan langganan. Etag dibutuhkan.
+Memperbarui penawaran untuk penyimpanan privat dengan paket privat saja yang dibuat di bawah cakupan langganan. Etag diperlukan.
 
 
 ## PARAMETERS
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-Penawaran privateStore Marketplace Azure yang diperlukan
+Diperlukan Marketplace Azure penawaran privateStore
 
 ```yaml
 Type: System.String

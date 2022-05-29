@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azna
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNatGateway.md
-ms.openlocfilehash: efadda1fb56665226b402dc08e9e08eb560971ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 171a7906bab6dc2f44cb4bba064700e148320da2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222215"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681726"
 ---
 # Get-AzNatGateway
 
 ## SYNOPSIS
 Mendapatkan sumber daya Nat Gateway dalam grup sumber daya menurut nama atau Id NatGateway atau semua sumber daya Nat Gateway dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

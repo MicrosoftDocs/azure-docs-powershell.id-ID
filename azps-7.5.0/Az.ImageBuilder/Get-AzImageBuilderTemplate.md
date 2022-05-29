@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
-ms.openlocfilehash: 5e3844298fbe95c12a39810038f82edfe9f768a8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5825cfb95d828747ebecf1838a33a42f382d3793
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244237"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695916"
 ---
 # Get-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Mendapatkan informasi tentang templat gambar komputer virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/get-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationEligibilityResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationEligibilityResult.md
-ms.openlocfilehash: 793ad3f4f7afc252885b559df3055dad8c1138c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb4e396eabd551da880e12187352dc81191b73fe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217343"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690246"
 ---
 # Get-AzMigrateReplicationEligibilityResult
 
 ## SYNOPSIS
 Memvalidasi apakah VM tertentu dapat dilindungi atau tidak dalam hal ini mengembalikan daftar kesalahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationeligibilityresult) untuk informasi terbaru.
 
 ## SYNTAX
 

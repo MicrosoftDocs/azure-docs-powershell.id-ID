@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
-ms.openlocfilehash: 13c625369dce9775903575cc8d2efca338ec1f76
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d418c19731beb49d07eda776e46e6ac0932ea156
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244254"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695934"
 ---
 # Remove-AzHealthcareApisService
 
 ## SYNOPSIS
 Menghapus instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/remove-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Remove-AzHealthcareApisService -ResourceId $ResourceId
 
 Menghapus layanan HealthcareApis yang ada dengan ResourceId yang disediakan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzHealthcareApisService -ResourceGroupName MyResourceGroup -Name MyService | Remove-AzHealthcareApisService
 ```
