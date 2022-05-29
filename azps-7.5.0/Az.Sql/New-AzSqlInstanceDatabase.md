@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
-ms.openlocfilehash: e3a7d245dc87caa1d5807d657550f1dc9475fdd1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6660ea85e81843f25f0f9eb7d734eb120e8b7492
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216671"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725886"
 ---
 # New-AzSqlInstanceDatabase
 
 ## SYNOPSIS
 Membuat database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kolabasi
-Kolae kolae Database Instans Azure SQL yang akan digunakan.
+### -Kolapasi
+Kolatasi kolatasi Database Instans Azure SQL yang akan digunakan.
 
 ```yaml
 Type: System.String

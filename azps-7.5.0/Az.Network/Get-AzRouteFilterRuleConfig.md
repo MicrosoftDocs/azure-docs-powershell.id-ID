@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilterRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteFilterRuleConfig.md
-ms.openlocfilehash: fb1057660f79bf2e6b22aa3b8679b3a1c2c23c7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 68a429162c986de32949b7c049b96dc6656a7b79
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238595"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680409"
 ---
 # Get-AzRouteFilterRuleConfig
 
 ## SYNOPSIS
 Mendapatkan aturan filter rute di filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutefilterruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

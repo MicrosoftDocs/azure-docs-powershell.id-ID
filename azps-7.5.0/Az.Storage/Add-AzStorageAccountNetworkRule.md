@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/add-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountNetworkRule.md
-ms.openlocfilehash: c50362e3ab6f9fbfaf3b5e640fb994b551f27105
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9fe35326cf4b9202b05df2c814c101af7832ca7e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193891"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718740"
 ---
 # Add-AzStorageAccountNetworkRule
 
 ## SYNOPSIS
  Menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari akun Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azstorageaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

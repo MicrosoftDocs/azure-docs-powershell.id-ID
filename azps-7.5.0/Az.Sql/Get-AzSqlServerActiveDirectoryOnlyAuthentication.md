@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 2f03235cc19f291a38c1cdc9206f63dd333f16ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f4d4bb3fb543f87bfb016fe9450aedf0148b2f4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195823"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727452"
 ---
 # Get-AzSqlServerActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Mendapatkan autentikasi hanya Azure AD untuk SQL Server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveractivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 

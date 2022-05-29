@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: c8f3b580dcc13aca27bd56fa5a80edd7c00a6846
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10d5e6fa6f41bcad73e3327d8efcac8f698b1d80
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726156"
 ---
 # New-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
 Membuat titik pemulihan baru tempat SQL Database dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaserestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 

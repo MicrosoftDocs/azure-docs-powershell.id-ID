@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlot.md
-ms.openlocfilehash: 4715406012220421629f4e5d878ca99d1121e7ae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f87b9ba6d5c481a6e04f4204c8b90712f7d16475
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236400"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699966"
 ---
 # Get-AzWebAppSlot
 
 ## SYNOPSIS
 Mendapatkan slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
+[Hidupkan ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
 [Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 

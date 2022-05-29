@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceLink.md
-ms.openlocfilehash: 7ace1ccc77ea7b1e14eeccf6da90fb52eb24277b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c9c330daf29008176eaf30b7a03b498a5bf5119
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223751"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725850"
 ---
 # New-AzSqlInstanceLink
 
 ## SYNOPSIS
 Membuat tautan instans baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 

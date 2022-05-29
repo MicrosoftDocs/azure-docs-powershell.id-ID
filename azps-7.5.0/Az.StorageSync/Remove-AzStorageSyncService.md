@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncService.md
-ms.openlocfilehash: 975ea08faec933a3b05ef31256674bf076a87b87
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eee34de623fe85ae164437a79704824c0feac541
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222770"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712656"
 ---
 # Remove-AzStorageSyncService
 
 ## SYNOPSIS
 Perintah ini akan menghapus layanan sinkronisasi penyimpanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-StorageSyncService Input Object, biasanya melewati alur.
+Objek Input StorageSyncService, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, maka cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

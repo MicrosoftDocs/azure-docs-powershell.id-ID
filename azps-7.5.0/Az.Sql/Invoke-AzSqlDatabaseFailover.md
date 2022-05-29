@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/invoke-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlDatabaseFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlDatabaseFailover.md
-ms.openlocfilehash: 3a23af996080e7399d101406b6770258ea014324
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 382612f96ffb513153e661cfbfc4619482aa8771
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221579"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726570"
 ---
 # Invoke-AzSqlDatabaseFailover
 
 ## SYNOPSIS
 Failover database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqldatabasefailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -209,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Invoke-AzSqlElasticPoolFailover](./Invoke-AzSqlElasticPoolFailover.md)
 

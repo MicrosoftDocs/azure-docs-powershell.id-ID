@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintAssignment.md
-ms.openlocfilehash: fb72bdeaa82fb5a32be5e3cad9f4de62fc6b000b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e0a8135358b7b33e26ce071769d88dba8b14753
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236274"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730530"
 ---
 # Get-AzBlueprintAssignment
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa penetapan cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/get-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Get-AzBlueprintAssignment -SubscriptionId "00000000-1111-0000-1111-000000000000"
 
 Dapatkan penetapan cetak biru dengan nama yang diberikan dalam langganan yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzBlueprintAssignment -ManagementGroupId "myManagementGroup"
 ```

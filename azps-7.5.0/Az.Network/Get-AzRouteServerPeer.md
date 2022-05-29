@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeer.md
-ms.openlocfilehash: 79b2acc96dec59a7638ca637e5491d6e4b2e298e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d559a28708dbfcfaedddd189268f71fddb9542e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238556"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680322"
 ---
 # Get-AzRouteServerPeer
 
 ## SYNOPSIS
 Mendapatkan peer RouteServer di Azure RouteServer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteserverpeer) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
-ms.openlocfilehash: 52143f34f05ad6a3dd173e029eaaf10c87b02f41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 86a662a2b7e2a0d333332e1ed63775de93d4f3dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195165"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731412"
 ---
 # Get-AzBatchSupportedImage
 
 ## SYNOPSIS
 Mendapatkan gambar yang didukung Batch untuk akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchsupportedimage) untuk informasi terbaru.
 
 ## SYNTAX
 

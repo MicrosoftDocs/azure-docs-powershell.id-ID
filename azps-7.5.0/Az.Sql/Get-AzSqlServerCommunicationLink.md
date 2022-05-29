@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerCommunicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerCommunicationLink.md
-ms.openlocfilehash: 173604c3ccfcc4ad4138ae522722495e45a45776
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85af0d9d74c92530edca0efd3c6c3186523a78b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195798"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727326"
 ---
 # Get-AzSqlServerCommunicationLink
 
 ## SYNOPSIS
 Mendapatkan tautan komunikasi untuk transaksi database elastis antar server database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservercommunicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 

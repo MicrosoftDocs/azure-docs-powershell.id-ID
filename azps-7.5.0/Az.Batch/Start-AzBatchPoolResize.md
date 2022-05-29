@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/start-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
-ms.openlocfilehash: f330077dc25ad006d208e04eef995232ba28abe9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1136268a1c73282704a41c9a13ff092d33bea29a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221051"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731016"
 ---
 # Start-AzBatchPoolResize
 
 ## SYNOPSIS
 Mulai mengubah ukuran kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/start-azbatchpoolresize) untuk informasi terbaru.
 
 ## SYNTAX
 

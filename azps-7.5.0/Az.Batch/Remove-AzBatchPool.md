@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
-ms.openlocfilehash: 12cac935efe285a23a35728e9d6627dda1c14f1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: be3fc0905f70c9855deef8a549f5865bfa875628
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214250"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731276"
 ---
 # Remove-AzBatchPool
 
 ## SYNOPSIS
 Menghapus kumpulan Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 

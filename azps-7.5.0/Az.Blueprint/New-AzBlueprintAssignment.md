@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintAssignment.md
-ms.openlocfilehash: 366130389de954a391624572f9f7c601410d9c9a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ee9c435213e5630892739eec10f087cd6a758ce8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237170"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730440"
 ---
 # New-AzBlueprintAssignment
 
 ## SYNOPSIS
 Tetapkan definisi cetak biru ke langganan atau grup manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/new-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,16 +63,16 @@ Parameters        : {applytaganditsdefaultvalue_tagName, applytaganditsdefaultva
 ResourceGroups    : ResourceGroup
 ```
 
-Buat penetapan cetak biru baru dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan menggunakan parameter yang ditentukan dan kamus grup sumber daya. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan wilayah untuk membuat identitas terkelola.
+Buat penetapan cetak biru baru dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan menggunakan parameter dan kamus grup sumber daya yang ditentukan. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan wilayah untuk membuat identitas terkelola.
 
 ### Contoh 2
 ```powershell
 New-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"} -Lock AllResourcesReadOnly
 ```
 
-Buat penetapan cetak biru baru dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan menggunakan parameter dan kamus grup sumber daya yang ditentukan dan mengonfigurasi penguncian sumber daya ke **AllResources**. Default untuk menggunakan identitas yang ditetapkan sistem.  Lokasi menentukan wilayah untuk membuat identitas terkelola.
+Buat penetapan cetak biru baru dari definisi `$blueprintObject` cetak biru dalam langganan yang ditentukan menggunakan kamus parameter dan grup sumber daya yang ditentukan dan mengonfigurasi penguncian sumber daya ke **AllResources**. Default menggunakan identitas yang ditetapkan sistem.  Lokasi menentukan wilayah untuk membuat identitas terkelola.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"} -UserAssignedIdentity "/subscriptions/00000000-1111-0000-1111-000000000000/resourceGroups/my-resource-group/providers/Microsoft.ManagedIdentity/userAssignedIdentities/my-user-defined-identity"
 ```
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Wilayah untuk identitas terkelola yang akan dibuat.
-Pelajari lebih lanjut di aka.ms/blueprintmsi
+Pelajari selengkapnya di aka.ms/blueprintmsi
 
 ```yaml
 Type: System.String
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecureStringParameter
-Parameter string aman untuk id, nama, dan versi sumber daya KeyVault.
+Parameter string aman untuk id sumber daya KeyVault, nama, dan versi.
 
 ```yaml
 Type: System.Collections.Hashtable

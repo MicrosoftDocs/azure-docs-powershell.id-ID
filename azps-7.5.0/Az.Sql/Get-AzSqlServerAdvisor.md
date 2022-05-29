@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
-ms.openlocfilehash: 0eecce3e026a17571cafa9970f1bcdb87894a938
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff93a63ffc526c6c66ec0fc08c1d1978b31789f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195809"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727380"
 ---
 # Get-AzSqlServerAdvisor
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa Advisor untuk Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveradvisor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -291,7 +294,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlServerAdvisorModel
+### Microsoft.Azure.Commands.Sql. Advisor. Model.AzureSqlServerAdvisorModel
 
 ## NOTES
 * Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor

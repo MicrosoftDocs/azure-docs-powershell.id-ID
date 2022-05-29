@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsInput.md
-ms.openlocfilehash: c84a2dc0ed793b70b10b5ff54fa25b36b34beed9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0ace8a8e9764b18f36499cb7d25f3e5d1cb4a7c8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195585"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711612"
 ---
 # Test-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Menguji apakah sumber data input dapat dijangkau dan dapat digunakan oleh layanan Azure Stream Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/test-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsQuota.md
-ms.openlocfilehash: 738719d51c7e2e3489297dc5dfd1a3c6215ea30a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cbaaddb5fe0e4f08f37ee59f77033e012ef64b51
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200625"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712260"
 ---
 # Get-AzStreamAnalyticsQuota
 
 ## SYNOPSIS
 Mengambil informasi kuota langganan saat ini di wilayah tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsquota) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobAgent.md
-ms.openlocfilehash: 34a9322e39a258e5f769b5d5d6d7085669325684
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b862887f93d1b9ca7d10e98f53bcd4b19e05fcb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213074"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724932"
 ---
 # Remove-AzSqlElasticJobAgent
 
 ## SYNOPSIS
 Menghapus agen pekerjaan elastis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjobagent) untuk informasi terbaru.
 
 ## SYNTAX
 

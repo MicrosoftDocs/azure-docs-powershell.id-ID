@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 58cbad74a31165cc365f0ae5dce22dd518454c16
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2bdf1df26cf960f4a214b08f94c0cb5a32b9c201
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222782"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712674"
 ---
 # Remove-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini akan menghapus titik akhir server yang ditentukan. Sinkronkan ke lokasi ini akan segera berhenti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

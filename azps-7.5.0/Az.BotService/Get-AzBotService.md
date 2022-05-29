@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
-ms.openlocfilehash: 57221c049e838ded62c0375e68d6ac4268db7c5e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb7358477f8a6bdb5a8b08b507010afbaf24bf0d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241563"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730332"
 ---
 # Get-AzBotService
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/get-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Etag                                   Kind Location Name             SkuName Sk
 
 Dapatkan semua BotServices
 
-### Contoh 2: Dapatkan BotService dengan ResourceGroupName dan Name
+### Contoh 2: Dapatkan BotService menurut ResourceGroupName dan Nama
 ```powershell
 Get-AzBotService -Name 'youri-bot1' -ResourceGroupName 'youriBotTest'
 ```
@@ -71,7 +74,7 @@ Etag                                   Kind Location Name       SkuName SkuTier 
 "060085fb-0000-1800-0000-5fd71d7c0000" bot  global   youri-bot F0              Microsoft.BotService/botServices
 ```
 
-Dapatkan BotService dengan ResourceGroupName dan Nama
+Dapatkan BotService menurut ResourceGroupName dan Nama
 
 ### Contoh 3: Dapatkan semua BotServices dengan ResourceGroupName
 ```powershell
@@ -86,7 +89,7 @@ Etag                                   Kind Location Name             SkuName Sk
 "0600ef2b-0000-0200-0000-5fd727a70000" sdk  global   youritest1314    S1              Microsoft.BotService/botServices
 ```
 
-Mendapatkan semua BotServices oleh ResourceGroupName
+Mendapatkan semua BotServices menurut ResourceGroupName
 
 ### Contoh 4: Dapatkan BotService dengan inputObject
 ```powershell
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.IBotServiceIdentity

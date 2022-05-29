@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIVMAttestation.md
-ms.openlocfilehash: 77d6d3820c129f512181195a67932b42b3097e94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e0316e909a017a1925831bb8b2c434585a50e19
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193964"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719064"
 ---
 # Get-AzStackHCIVMAttestation
 
 ## SYNOPSIS
-Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Pengesahan IMDS pada simpul.
+Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke IMDS Attestation pada node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/get-azstackhcivmattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzStackHCIVMAttestation [-Local] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke Pengesahan IMDS pada simpul.
+Get-AzStackHCIVMAttestation memperlihatkan daftar tamu yang ditambahkan ke IMDS Attestation pada node.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
-ms.openlocfilehash: 6017ec301464cb88e0ac68119653c170e630c76d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3d2c0257fc5a1feb34b905ada746be5a6557664
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231693"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699120"
 ---
 # New-AzWebAppAzureStoragePath
 
 ## SYNOPSIS
 Membuat objek yang mewakili jalur Azure Storage yang akan dipasang di Aplikasi Web. Ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp dan Set-AzWebAppSlot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappazurestoragepath) untuk informasi terbaru.
 
 ## SYNTAX
 

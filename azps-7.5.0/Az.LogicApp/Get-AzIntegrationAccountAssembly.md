@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAssembly.md
-ms.openlocfilehash: a29dd24ed8afbebd848d249f567b0840c8f4c79e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 323ef32b4f843ef1c254c10f11038b82112eeb5c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185914"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692262"
 ---
 # Get-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
 Mendapatkan rakitan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzIntegrationAccountAssembly -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountAssembly** mendapatkan assembly dari akun integrasi.
+Cmdlet **Get-AzIntegrationAccountAssembly** mendapatkan perakitan dari akun integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan rakitan berdasarkan parameter
+### Contoh 1: Mendapatkan rakitan menurut parameter
 ```powershell
 Get-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly"
 ```
@@ -56,7 +59,7 @@ Location   :
 Tags       :
 ```
 
-Dapatkan rakitan bernama "sampleAssembly" yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
+Dapatkan assembly bernama "sampleAssembly" yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
 
 ### Contoh 2: Mencantumkan semua rakitan dalam akun integrasi menurut parameter
 ```powershell

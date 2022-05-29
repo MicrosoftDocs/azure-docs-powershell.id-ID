@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
-ms.openlocfilehash: 11b6d286f436df11091e3bef140e0e29aecd7ba0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 41c29ae4afedb2c0b14234e61365e8c59fabdeae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221702"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726930"
 ---
 # Get-AzSqlServerTrustGroup
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Grup Kepercayaan Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservertrustgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Get-AzSqlServerTrustGroup -ResourceGroupName "ResourceGroup01" -Location "West E
 
 Mendapatkan informasi tentang semua Grup Kepercayaan Server di lokasi Eropa Barat dalam grup sumber daya ResourceGroup01.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSqlServerTrustGroup -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01"
 ```

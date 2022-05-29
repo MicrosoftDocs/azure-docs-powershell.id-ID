@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/invoke-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlInstanceFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlInstanceFailover.md
-ms.openlocfilehash: c8edeafa638155fbfd7566f655d629872e84cade
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17ff88bda28e81b3dd700226608fa55618469b80
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221555"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726462"
 ---
 # Invoke-AzSqlInstanceFailover
 
 ## SYNOPSIS
 Failover Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqlinstancefailover) untuk informasi terbaru.
 
 ## SYNTAX
 

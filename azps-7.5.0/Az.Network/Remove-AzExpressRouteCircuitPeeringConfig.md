@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitPeeringConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitPeeringConfig.md
-ms.openlocfilehash: 423e6c09cadd3fc5ca1f65826fd99a6fd3cd6533
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23b0d8fd263d751940e97e694ff60a9a211e6f1a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192743"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670764"
 ---
 # Remove-AzExpressRouteCircuitPeeringConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi peering sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitpeeringconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

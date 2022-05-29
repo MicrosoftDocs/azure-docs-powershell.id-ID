@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTriggerRun.md
-ms.openlocfilehash: 607b9d5193f9d78057cbd9c2416c005ea193193b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77e30885efc3dbbb26a74c126556672a0c5428de
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246354"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704646"
 ---
 # Stop-AzSynapseTriggerRun
 
 ## SYNOPSIS
 Menghentikan eksekusi pemicu di ruang kerja synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Stop-AzSynapseTriggerRun -Name ContosoTrigger -TriggerRunId 000111222333ab
 
 Menghentikan eksekusi pemicu dengan id '000111222333abc' di ruang kerja Synapse ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $triggerun = Get-AzSynapseTriggerRun -WorkspaceName ContosoWorkspace -Name ContosoTrigger -RunStartedAfter "2018-09-01T21:00" -RunStartedBefore "2019-09-01T21:00"
 $triggerun | Stop-AzSynapseTriggerRun

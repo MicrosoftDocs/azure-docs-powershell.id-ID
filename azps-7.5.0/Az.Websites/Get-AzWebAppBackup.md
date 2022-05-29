@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppBackup.md
-ms.openlocfilehash: 9a02b9f1fb1464466ed781bd60fd525088f34004
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 00784797d9ff24b01d25317e9c5efeffe8bd30c2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247247"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700290"
 ---
 # Get-AzWebAppBackup
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzWebAppBackup [-BackupId] <String> [-WebApp] <PSSite> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppBackup** mendapatkan cadangan Azure Web App yang ditentukan.
+Cmdlet **Get-AzWebAppBackup** mendapatkan cadangan azure Web App yang ditentukan.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Perintah ini mendapatkan cadangan dengan ID "12345" dari Aplikasi Web bernama We
 ## PARAMETERS
 
 ### -BackupId
-Id Pencadangan
+Id Cadangan
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebApp
-WebApp Yang Disalurkan
+Piped WebApp
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite

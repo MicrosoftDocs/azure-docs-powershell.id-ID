@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplicationPackage.md
-ms.openlocfilehash: 8ae2f3b7a224efcb30cf7a3ecf77c6ff94705774
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 72b89779998a76957b1b5c7743b03e58e9c945af
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687497"
 ---
 # New-AzBatchApplicationPackage
 
 ## SYNOPSIS
 Membuat paket aplikasi di akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
-ms.openlocfilehash: c0346dbfa4b39aa1dbaed20910eadd551d61fdd7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d80af92a75d6a0d1b1c6409f21bc5775f3389c13
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209603"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731628"
 ---
 # Export-AzApiManagementApi
 
 ## SYNOPSIS
 Mengekspor API ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/export-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 

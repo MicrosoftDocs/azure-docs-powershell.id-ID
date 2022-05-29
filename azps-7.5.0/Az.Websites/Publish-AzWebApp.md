@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/publish
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
-ms.openlocfilehash: c79da84031ec43635eec9391d2bbc8e7a784ff21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aaaa83786ea19e42c9e6d134d7347363fce42d8a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215510"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698822"
 ---
 # Publish-AzWebApp
 
 ## SYNOPSIS
 Menyebarkan Azure Web App dari file ZIP, JAR, atau WAR menggunakan zipdeploy. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/publish-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Publish-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp -Slot Staging -Ar
 
 Mengunggah konten javaproject.war ke slot Penahapan aplikasi web bernama ContosoApp milik grup sumber daya ContosoRG.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -AsJob

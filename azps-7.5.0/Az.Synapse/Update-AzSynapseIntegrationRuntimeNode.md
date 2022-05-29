@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: cdf6e38ce54319da18299262e245aeac0d73fc3f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6b3e08075ecf68bbfde6664ec832e0654f0bfbbd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227958"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704286"
 ---
 # Update-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
 Memperbarui simpul runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapseintegrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 

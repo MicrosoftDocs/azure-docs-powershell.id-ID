@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncCloudEndpoint.md
-ms.openlocfilehash: 5c9957b89451202de3e84ffcaa75a675d31e35df
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd2b0c4361db824a1eaa18ac37767318ade4a838
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222815"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712800"
 ---
 # Remove-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
 Perintah ini akan menghapus titik akhir cloud yang ditentukan dari grup sinkronisasi. Tanpa setidaknya satu titik akhir cloud, tidak ada titik akhir server lain dalam grup sinkronisasi ini yang dapat disinkronkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

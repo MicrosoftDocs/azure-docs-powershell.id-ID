@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkAvailableEndpointService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkAvailableEndpointService.md
-ms.openlocfilehash: 312949f86d48e181bd2be36f1047c1eca368ce61
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f85dad26202f51ebf9194228901151f197845592
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238374"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679854"
 ---
 # Get-AzVirtualNetworkAvailableEndpointService
 
 ## SYNOPSIS
 Mencantumkan layanan titik akhir yang tersedia untuk lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkavailableendpointservice) untuk informasi terbaru.
 
 ## SYNTAX
 
