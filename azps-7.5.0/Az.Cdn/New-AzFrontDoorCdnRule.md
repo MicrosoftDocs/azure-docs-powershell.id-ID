@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRule.md
-ms.openlocfilehash: 560052d45cdd40ec844df7d54aac7f40a0333728
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e56e7b6299f4f8e931fd7c70ade4eee99a7ee16
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214178"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765308"
 ---
 # New-AzFrontDoorCdnRule
 
 ## SYNOPSIS
 Membuat aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnrule) untuk informasi terbaru.
 
 ## SYNTAX
 

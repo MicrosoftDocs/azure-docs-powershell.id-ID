@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: ae111b86d08ff61818df7fae968481dedcc27be9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3048a380e4d526245c54fbb1e2bd413715aaea4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191388"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715986"
 ---
 # New-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
 Membuat kebijakan akses tersimpan untuk kontainer penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragecontainerstoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Perintah ini membuat kebijakan akses bernama Policy01 dalam kontainer penyimpana
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 

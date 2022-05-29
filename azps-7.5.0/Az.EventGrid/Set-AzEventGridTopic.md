@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Set-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Set-AzEventGridTopic.md
-ms.openlocfilehash: 3f50ef7c787d6bfc59a986a6e473616ba94b1061
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f407e69971fb77507a708fa40e884c2a665412f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231497"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784170"
 ---
 # Set-AzEventGridTopic
 
 ## SYNOPSIS
 Mengatur properti topik Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/set-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundIpRule
-Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan yang sesuai untuk dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Kemungkinan nilai Tindakan termasuk Izinkan saja
+Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan yang sesuai yang akan dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Kemungkinan nilai Tindakan termasuk Izinkan saja
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Ini menentukan apakah lalu lintas diizinkan melalui jaringan publik. Secara default diaktifkan. Anda selanjutnya dapat membatasi IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diizinkan dinonaktifkan dan diaktifkan.
+Ini menentukan apakah lalu lintas diizinkan melalui jaringan publik. Secara default diaktifkan. Anda dapat membatasi lebih lanjut ke IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diizinkan dinonaktifkan dan diaktifkan.
 
 ```yaml
 Type: System.String

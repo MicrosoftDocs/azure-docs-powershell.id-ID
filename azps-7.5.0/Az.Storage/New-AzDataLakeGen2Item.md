@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
-ms.openlocfilehash: 1a779391596a0b09c35d59abe6d78e4a0e19dc3a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d73ff1efa5e27c9a682e27d609942bf2dbfe1da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193516"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716616"
 ---
 # New-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Buat file atau direktori dalam sistem file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -Izin
 Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
-Setiap kelas dapat diberikan izin baca, tulis, atau eksekusi.
+Setiap kelas dapat diberikan izin baca, tulis, atau jalankan.
 Simbolis (rwxrw-rw-) didukung.
 
 ```yaml

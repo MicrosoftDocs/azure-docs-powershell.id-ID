@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCertificate.md
-ms.openlocfilehash: ccb349d2a39d9c634dc5e3210017e97f108127a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d728864b2e5a69f2c68c1344da647b90ab64edbf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245077"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765416"
 ---
 # Remove-AzAutomationCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Perintah ini menghapus sertifikat bernama Cert01 di akun Automation bernama Cont
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Automation tempat cmdlet ini menghapus sertifikat.
+Menentukan nama akun Automation yang cmdlet ini menghapus sertifikat.
 
 ```yaml
 Type: System.String

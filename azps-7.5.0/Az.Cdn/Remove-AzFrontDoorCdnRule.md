@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnRule.md
-ms.openlocfilehash: 0bddc2258b7a02d33ba093acf1a9ce48faa6e8c5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43d490e4e4257691ca67994fe5d2bf1bd46e19c4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186306"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739296"
 ---
 # Remove-AzFrontDoorCdnRule
 
 ## SYNOPSIS
 Menghapus aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdnrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: SwitchParameter

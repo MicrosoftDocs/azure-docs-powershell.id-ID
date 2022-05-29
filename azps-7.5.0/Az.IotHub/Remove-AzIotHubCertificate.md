@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubCertificate.md
-ms.openlocfilehash: ca3838cb851aaec454cc4b6a9079fa65452799d7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 605414f58c9a720c7076c5470ea84628bf4ea048
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213971"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772184"
 ---
 # Remove-AzIotHubCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzIotHubCertificate [-ResourceId] <String> [-Etag] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Untuk penjelasan terperinci tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
+Untuk penjelasan terperinci tentang sertifikat CA di Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 

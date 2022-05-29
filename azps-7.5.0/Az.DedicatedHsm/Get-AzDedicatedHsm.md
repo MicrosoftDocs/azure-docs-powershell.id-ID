@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
-ms.openlocfilehash: 21f14030bcfd7030ffc09cb16daa7a5f4380bb0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 32cfe5d02b8519c84a18462df2770bd52883370b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217898"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746172"
 ---
 # Get-AzDedicatedHsm
 
 ## SYNOPSIS
 Mendapatkan Azure dedicated HSM yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/get-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Mendapatkan Azure dedicated HSM yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua Dedicated HSM di bawah langganan
+### Contoh 1: Dapatkan semua Dedicated HSM di bawah langganan
 ```powershell
 Get-AzDedicatedHsm
 ```
@@ -59,7 +62,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 yeminghsm  Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan semua Dedicated HSM di bawah langganan
+Perintah ini mendapatkan semua Dedicated HSM berdasarkan langganan
 
 ### Contoh 2: Dapatkan semua Dedicated HSM di bawah grup sumber daya.
 ```powershell
@@ -74,7 +77,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 
 Perintah ini mendapatkan semua Dedicated HSM di bawah grup sumber daya.
 
-### Contoh 3: Mendapatkan Dedicated HSM berdasarkan nama
+### Contoh 3: Dapatkan Dedicated HSM berdasarkan nama
 ```powershell
 Get-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName dedicatedhsm-rg-n359cz
 ```
@@ -87,7 +90,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 
 Perintah ini mendapatkan Dedicated HSM berdasarkan nama.
 
-### Contoh 4: Mendapatkan Dedicated HSM menurut objek
+### Contoh 4: Dapatkan Dedicated HSM berdasarkan objek
 ```powershell
 $hsm = New-AzDedicatedHsm -Name hsm-n7wfxi -ResourceGroupName dedicatedhsm-rg-n359cz -Location eastus -Sku "SafeNet Luna Network HSM A790" -StampId stamp1 -SubnetId "/subscriptions/xxxx-xxxx-xxx-xxx/resourceGroups/dedicatedhsm-rg-n359cz/providers/Microsoft.Network/virtualNetworks/vnetq30la9/subnets/hsmsubnet" -NetworkInterface @{PrivateIPAddress = '10.2.1.120' }
 Get-AzDedicatedHsm -InputObject $hsm
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.IDedicatedHsmIdentity
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

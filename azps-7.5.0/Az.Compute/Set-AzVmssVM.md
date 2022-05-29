@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVM.md
-ms.openlocfilehash: a76efa20f99f3d279a4f87a13f0d588128917013
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e2ef1b00cfcc823a13334b30951894dbcaa111a5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215378"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777854"
 ---
 # Set-AzVmssVM
 
 ## SYNOPSIS
 Memodifikasi status instans VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssvm) untuk informasi terbaru.
 
 ## SYNTAX
 

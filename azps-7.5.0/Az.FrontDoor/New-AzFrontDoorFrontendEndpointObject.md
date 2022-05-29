@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorFrontendEndpointObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorFrontendEndpointObject.md
-ms.openlocfilehash: a6b850e2ff210e4fd6394b6d294c919351b1a67c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a2f8d414289c55b79b79ba038592b96e026e6955
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225452"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764372"
 ---
 # New-AzFrontDoorFrontendEndpointObject
 
 ## SYNOPSIS
 Membuat Objek PSFrontendEndpoint untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorfrontendendpointobject) untuk informasi terbaru.
 
 ## SYNTAX
 

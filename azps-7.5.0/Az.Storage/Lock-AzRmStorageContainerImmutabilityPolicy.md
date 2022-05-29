@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/lock-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 071bbedab06386b7803c038297b6c6532a853c77
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8dbb512ee0f9796c8e9c317e9e5b62321152dee1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193530"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716634"
 ---
 # Lock-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Mengunci ImmutabilityPolicy dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/lock-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,13 +52,13 @@ Cmdlet **Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPoli
 
 ## EXAMPLES
 
-### Contoh 1: Kunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
+### Contoh 1: Mengunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini Mengunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini Mengunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
 
 ### Contoh 2: Kunci ImmutabilityPolicy dari kontainer blob Storage, dengan objek akun Storage
 ```

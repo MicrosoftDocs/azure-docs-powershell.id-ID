@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: d0853d64754a723a280d2b9de2d3918210fa6b94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3104fcf02e6b20dd1a45dde33cb584f8b03d7c65
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240852"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722844"
 ---
 # Set-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Anda hanya dapat menyediakan satu administrator pada satu waktu.
 Anggota Azure AD berikut dapat disediakan sebagai administrator SQL Managed Instance:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Azure AD grup yang dibuat sebagai grup keamanan Anggota yang diimpor dari AD Azure lainnya tidak didukung sebagai administrator.
+- Azure AD grup yang dibuat sebagai grup keamanan Anggota yang diimpor dari Azure AD lain tidak didukung sebagai administrator.
 Akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
 Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Managed Instance nama.
+nama SQL Managed Instance.
 
 ```yaml
 Type: System.String

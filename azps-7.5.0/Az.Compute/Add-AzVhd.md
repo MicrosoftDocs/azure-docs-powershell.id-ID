@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVhd.md
-ms.openlocfilehash: 30948bc610cda894735cb3cba726b9f120a5a276
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3d5838ac57c89b47fd49a379e36f5423025d0a1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230055"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736452"
 ---
 # Add-AzVhd
 
 ## SYNOPSIS
 Mengunggah hard disk virtual dari komputer lokal ke Azure (disk terkelola atau blob).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvhd) untuk informasi terbaru.
 
 ## SYNTAX
 

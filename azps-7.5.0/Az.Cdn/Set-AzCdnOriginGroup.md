@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
-ms.openlocfilehash: 3e4e1cba3d6bdbf3dc3d6201dd0e328d62104232
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d292a46fd1bddd7163d9e207628435a27191cf05
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110612"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739080"
 ---
 # Set-AzCdnOriginGroup
 
 ## SYNOPSIS
 Memperbarui grup asal CDN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 

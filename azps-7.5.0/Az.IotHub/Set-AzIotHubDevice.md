@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
-ms.openlocfilehash: c82c5f30f29c21891841c5e66ad6cd83508319d9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c29c6fbdd176de5ec16217f12b7251ddeeff176
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239270"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772111"
 ---
 # Set-AzIotHubDevice
 
 ## SYNOPSIS
 Memperbarui perangkat IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Set-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -
 
 Nonaktifkan status perangkat.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzIotHubDevice -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -AuthMethod "x509_ca"
 ```
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryThumbprint
-Thumbprint sertifikat yang ditandatangani sendiri secara eksplisit untuk digunakan untuk kunci sekunder.
+Thumbprint sertifikat yang ditandatangani sendiri eksplisit untuk digunakan untuk kunci sekunder.
 
 ```yaml
 Type: System.String

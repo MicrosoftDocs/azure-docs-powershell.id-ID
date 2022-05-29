@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
-ms.openlocfilehash: 9f1d6b429d537406322e65461c6fcb7399393ffe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 52c5f89fefe68eef581e23e201305c2a307bf8f9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187720"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734886"
 ---
 # Invoke-AzVMRunCommand
 
 ## SYNOPSIS
 Jalankan perintah pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 

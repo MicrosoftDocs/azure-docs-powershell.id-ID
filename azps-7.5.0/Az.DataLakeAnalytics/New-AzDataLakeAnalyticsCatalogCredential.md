@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: f4295dc5cc8bc6dde06df8e0a957a264d4a86146
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ec4544338ff4997d8ece2737fc98ee246ca5d4dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203148"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752112"
 ---
 # New-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Membuat kredensial katalog Azure Data Lake Analytics baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

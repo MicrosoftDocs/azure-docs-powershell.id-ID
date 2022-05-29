@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
-ms.openlocfilehash: b785970030c38bd34f64de670f79effc7a5e635b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfcd7ca00180ea97a5550207b89325deea9218d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241524"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734400"
 ---
 # New-AzVM
 
 ## SYNOPSIS
 Membuat mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -147,7 +150,7 @@ $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name $OSDiskName -VhdUri $
 New-AzVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $VirtualMachine -Verbose
 ```
 
-Contoh ini mengambil gambar sistem operasi kustom yang disiapkan dan digeneralisasi yang ada dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menyebarkan VHD, dan menjalankannya.
+Contoh ini mengambil gambar sistem operasi kustom sys-prepped yang sudah ada dan digeneralisasi dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menyebarkan VHD, dan menjalankannya.
 Skrip ini dapat digunakan untuk provisi otomatis karena menggunakan kredensial admin komputer virtual lokal sebaris **alih-alih memanggil Get-Credential** yang memerlukan interaksi pengguna.
 Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure Anda.
 Anda dapat mengonfirmasi status masuk Anda dengan menggunakan cmdlet **Get-AzSubscription** .
@@ -428,7 +431,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassd
+### -EnableUltrassD
 Gunakan disk UltraSSD untuk vm.
 
 ```yaml
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk komputer virtual atau set skala komputer virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Resource/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
+Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk komputer virtual atau set skala komputer virtual. Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -534,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gambar
-Nama gambar yang ramah di mana VM akan dibangun.  Ini termasuk: Win2019Datacenter, Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
+Nama gambar yang mudah diingat di mana VM akan dibangun.  Ini termasuk: Win2019Datacenter, Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
 
 ```yaml
 Type: System.String
@@ -550,9 +553,9 @@ Accept wildcard characters: False
 
 ### -LicenseType
 Menentukan jenis lisensi, yang menunjukkan bahwa gambar atau disk untuk komputer virtual dilisensikan secara lokal.
-Nilai yang mungkin untuk Windows Server adalah:
+Nilai yang mungkin untuk server Windows adalah:
 - Windows_Client
-- Windows_Server Nilai yang mungkin untuk sistem operasi Linux Server adalah: 
+- Windows_Server Kemungkinan nilai untuk sistem operasi Linux Server adalah: 
 - RHEL_BYOS (untuk RHEL) 
 - SLES_BYOS (untuk SUSE) 
 
@@ -641,7 +644,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterfaceDeleteOption
-Menentukan tindakan apa yang harus dilakukan pada sumber daya NetworkInterface saat VM dihapus. Opsinya adalah: Lepaskan, Hapus.
+Menentukan tindakan apa yang akan dilakukan pada sumber daya NetworkInterface saat VM dihapus. Opsinya adalah: Lepaskan, Hapus.
 
 ```yaml
 Type: System.String

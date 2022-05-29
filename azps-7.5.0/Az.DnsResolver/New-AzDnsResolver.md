@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolver.md
-ms.openlocfilehash: c53565a963a2a1894d4f740a2278177822a09007
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6ad0298faee0ff13eead5ab50c2a5d9521c8000
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739926"
 ---
 # New-AzDnsResolver
 
 ## SYNOPSIS
 Membuat atau memperbarui pemecah masalah DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsresolver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Location Name           Type                           Etag
 westus2  sampleResolver Microsoft.Network/dnsResolvers "000027d5-0000-0800-0000-6040150e0000"
 ```
 
-Cmdlet ini membuat resolver DNS.
+Cmdlet ini membuat pemecah masalah DNS.
 
 ### Contoh 2: Membuat pemecah masalah DNS dengan tag 
 ```powershell
@@ -54,7 +57,7 @@ Location Name           Type                           Etag
 westus2  sampleResolver Microsoft.Network/dnsResolvers "00008cd5-0000-0800-0000-604016c90000"
 ```
 
-Cmdlet ini membuat resolver DNS dengan tag.
+Cmdlet ini membuat pemecah masalah DNS dengan tag.
 
 ## PARAMETERS
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

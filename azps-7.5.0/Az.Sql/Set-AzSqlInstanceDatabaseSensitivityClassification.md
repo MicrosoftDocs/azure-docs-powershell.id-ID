@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseSensitivityClassification.md
-ms.openlocfilehash: 0c2a0066c9751b78f17a681b71134c138aa56cc8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95c51dafd0eb71615f6811b9b04f52260d617c17
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240835"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722700"
 ---
 # Set-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Mengatur jenis informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet Set-AzSqlInstanceDatabaseSensitivityClassification mengatur jenis informa
 
 ## EXAMPLES
 
-### Contoh 1: Atur jenis informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+### Contoh 1: Mengatur jenis informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 ```powershell
 Set-AzSqlInstanceDatabaseSensitivityClassification -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationType
-Nama yang menjelaskan jenis informasi data yang disimpan di kolom .
+Nama yang menjelaskan jenis informasi data yang disimpan dalam kolom.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SensitivitasLabel
+### -SensitivityLabel
 Nama yang menjelaskan sensitivitas data yang disimpan di kolom.
 
 ```yaml
@@ -304,4 +307,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang penemuan dan klasifikasi data Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

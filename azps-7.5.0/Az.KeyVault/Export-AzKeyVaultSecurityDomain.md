@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/export-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
-ms.openlocfilehash: 26a218e1c451a2bc8e4a6bbb7cccdaa686ec48c4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fddb109b62b1511b79cfc22c40776a0dacbe53bd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213698"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772022"
 ---
 # Export-AzKeyVaultSecurityDomain
 
 ## SYNOPSIS
 Mengekspor data domain keamanan HSM terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/export-azkeyvaultsecuritydomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Export-AzKeyVaultSecurityDomain -Certificates <String[]> -OutputPath <String> [-
 ```
 
 ## DESCRIPTION
-Mengekspor data domain keamanan HSM terkelola untuk diimpor di HSM lain.
+Mengekspor data domain keamanan HSM terkelola untuk diimpor pada HSM lain.
 
 ## EXAMPLES
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

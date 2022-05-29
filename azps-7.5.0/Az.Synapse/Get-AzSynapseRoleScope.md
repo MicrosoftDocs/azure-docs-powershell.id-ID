@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleScope.md
-ms.openlocfilehash: e59eb39853b4814fbd8ecd34129044aeff85e163
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a98e9d687a92cf8ffc984d8d1296cd189dc39c7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240642"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709326"
 ---
 # Get-AzSynapseRoleScope
 
 ## SYNOPSIS
 Mendapatkan cakupan peran Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapserolescope) untuk informasi terbaru.
 
 ## SYNTAX
 

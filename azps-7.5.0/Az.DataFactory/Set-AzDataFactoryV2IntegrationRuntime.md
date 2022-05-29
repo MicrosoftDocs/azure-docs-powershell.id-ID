@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: eb0366a7371dcb3d3ad03bfa86ee12c828b2e3b0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6dc60b0a68bc27fd07d99dcef04c429a6b00d9ab
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203568"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752652"
 ---
 # Set-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2integrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -266,8 +269,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataFlowTimeTolive
-Pengaturan Time to live (dalam menit) dari kluster aliran data yang akan menjalankan pekerjaan aliran data.
+### -DataFlowTimeToLive
+Pengaturan time to live (dalam menit) dari kluster aliran data yang akan menjalankan pekerjaan aliran data.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -Edisi
-Edisi untuk runtime integrasi SSIS yang bisa berupa Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
+Edisi untuk runtime integrasi SSIS yang dapat berupa Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -494,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul target runtime integrasi.
+Jumlah simpul target dari runtime integrasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -523,7 +526,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PublicIPs
+### -PublicIP
 Alamat IP publik statis yang akan digunakan runtime integrasi.
 
 ```yaml
@@ -660,7 +663,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetInjectionMethod
-Edisi untuk runtime integrasi SSIS yang bisa berupa Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
+Edisi untuk runtime integrasi SSIS yang dapat berupa Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
 
 ```yaml
 Type: System.String

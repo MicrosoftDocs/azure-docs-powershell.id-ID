@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerRollout.md
-ms.openlocfilehash: a2441159d3953a52c71dcda543e0d2c2416fff8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f16acbba0cdb20793f3b3909686d5fea6c7a5a3f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206462"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745974"
 ---
 # Get-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Mendapatkan peluncuran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGro
 Get-AzDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout -Verbose
 ```
 
-Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup. Sakelar -Verbose menampilkan semua detail peluncuran secara hierarkis; memperlihatkan Layanan, ServiceUnits, dan langkah-langkah di bawah setiap ServiceUnit dan informasi kontekstual untuk setiap langkah untuk tampilan holistik peluncuran.
+Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup. Sakelar -Verbose menampilkan semua detail peluncuran secara hierarkis; menampilkan Layanan, ServiceUnits, dan langkah-langkah di bawah setiap ServiceUnit dan informasi kontekstual untuk setiap langkah untuk tampilan holistik peluncuran.
 
 ### Contoh 3: Mendapatkan peluncuran menggunakan pengidentifikasi sumber daya
 ```powershell

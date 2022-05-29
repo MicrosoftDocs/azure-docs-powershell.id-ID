@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnSecurityPolicy.md
-ms.openlocfilehash: 22d6fdeadc9d85141759957b95e8982e11dae82b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbe6424e8b2aec79698dda5fd8eefc02374b4d9a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215435"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739566"
 ---
 # Get-AzFrontDoorCdnSecurityPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan keamanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnsecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

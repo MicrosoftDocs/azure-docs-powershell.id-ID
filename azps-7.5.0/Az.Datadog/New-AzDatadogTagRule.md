@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogTagRule.md
-ms.openlocfilehash: 916e0325b4854ec9b72ec8c3c7d829cac8ae2d6e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b954936bcc5d43e4abd80e7456cde0da0092253d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746352"
 ---
 # New-AzDatadogTagRule
 
 ## SYNOPSIS
 Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogtagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Name    Type
 default microsoft.Datadog/monitors/tagrules
 ```
 
-Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu berdasarkan alur.
+Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -304,7 +307,7 @@ INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

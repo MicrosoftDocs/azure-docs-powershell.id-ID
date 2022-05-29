@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/switch-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: 800cff24d3f2767784ca206599ba2e4791d320c5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 022919c1ab3a91d154598ec376b20cd81728fc39
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207803"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721728"
 ---
 # Alihkan-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
 Menjalankan failover Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/switch-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 

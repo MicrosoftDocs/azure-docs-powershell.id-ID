@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageContainer.md
-ms.openlocfilehash: fdd745fe5fae94940717a3af6bd9156a9e7a0169
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea4d32f1514959850b0fb7b49f763d6ef1b74abd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226471"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720486"
 ---
 # Get-AzStackEdgeStorageContainer
 
 ## SYNOPSIS
 Mendapatkan kontainer untuk akun Edge Storage di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstance.md
-ms.openlocfilehash: eed44121f4d942b9e0bb66bd10c3167e22962f48
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e22f2d6354a8ff7ba44e6d068b9aa12d3d7c86d8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240863"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722898"
 ---
 # Set-AzSqlInstance
 
 ## SYNOPSIS
 Mengatur properti untuk Azure SQL Database Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

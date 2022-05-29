@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerDnsAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerDnsAlias.md
-ms.openlocfilehash: a4fd2c0e758837bd92053fdec0053efd5803f224
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4da890a029a9bb3173725ce26996aebb7b732bee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223742"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722394"
 ---
 # Set-AzSqlServerDnsAlias
 
 ## SYNOPSIS
 Memodifikasi server tempat Alias DNS Server Azure SQL menunjuk
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserverdnsalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzSqlServerDnsAlias -Name <String> -TargetServerName <String> [-ResourceGrou
 ```
 
 ## DESCRIPTION
-Perintah ini memperbarui server yang menunjuk alias. Perintah ini perlu dikeluarkan saat masuk ke langganan tempat server baru tempat alias akan menunjuk berada.
+Perintah ini memperbarui server yang menunjuk alias. Perintah ini perlu dikeluarkan saat masuk ke langganan di mana server baru tempat alias akan menunjuk berada.
 
 ## EXAMPLES
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceServerName
-Nama Azure Sql Server tempat alias saat ini menunjuk.
+Nama Azure Sql Server yang saat ini menunjuk alias.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetServerName
-Nama Azure Sql Server tempat alias harus menunjuk.
+Nama Azure Sql Server yang harus ditunjukkan oleh alias.
 
 ```yaml
 Type: System.String

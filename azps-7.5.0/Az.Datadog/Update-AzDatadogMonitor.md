@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
-ms.openlocfilehash: cdf6b651ef471611c404cd636bc58d6e8a2fa828
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1e735aba6e979b161e5509ec9ff31c3fc3e66950
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746262"
 ---
 # Update-AzDatadogMonitor
 
 ## SYNOPSIS
 Memperbarui sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/update-azdatadogmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 

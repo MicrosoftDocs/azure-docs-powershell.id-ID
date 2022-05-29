@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
-ms.openlocfilehash: 2dbb0fd86d063c605a850d9d6d9dd3b12750d9e6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d64109a888a9d8047cbe3c38afe84842a8a06713
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237167"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777908"
 ---
 # Set-AzVmssSecurityProfile
 
 ## SYNOPSIS
 Cmdlet ini memungkinkan pengguna untuk mengatur enum SecurityType untuk set skala Virtual Machines.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsssecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
-ms.openlocfilehash: 9721da2c05fa9362304220f0297e5bc9d7540a79
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 98353cd9bdabcbd0b576229d24dbdd8a8906a38a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239970"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764966"
 ---
 # Remove-AzConfluentOrganization
 
 ## SYNOPSIS
 Menghapus sumber daya Organisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/remove-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 

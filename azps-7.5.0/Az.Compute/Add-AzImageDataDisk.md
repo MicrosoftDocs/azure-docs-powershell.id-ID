@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzImageDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzImageDataDisk.md
-ms.openlocfilehash: a1046ff7f6ac9fab8a5f9c62234e072b49145d39
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8ca1f00a890593cdbed0f81d974fb8e7d4ff2972
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196722"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736542"
 ---
 # Add-AzImageDataDisk
 
 ## SYNOPSIS
 Menambahkan disk data ke objek gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azimagedatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzImage -Image $imageConfig -ImageName 'ImageName01' -ResourceGroupName 'Res
 Perintah pertama membuat objek gambar, lalu menyimpannya dalam variabel $imageConfig.
 Tiga perintah berikutnya menetapkan jalur disk sistem operasi dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 Pendekatan ini hanya untuk keterbacaan perintah berikut.
-Tiga perintah berikutnya masing-masing menambahkan disk sistem operasi dan dua disk data ke gambar yang disimpan dalam $imageConfig.
+Tiga perintah berikutnya masing-masing menambahkan disk sistem operasi dan dua disk data ke gambar yang disimpan di $imageConfig.
 URI setiap disk disimpan dalam $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 Perintah akhir membuat gambar bernama ImageName01 dalam grup sumber daya ResourceGroup01.
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan ID sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
+Menentukan ID sumber daya set enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Jenis akun Storage dari disk gambar data
+Jenis Akun Storage dari disk gambar data
 
 ```yaml
 Type: System.String

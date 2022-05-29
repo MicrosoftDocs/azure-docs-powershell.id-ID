@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubGeoDRConfiguration.md
-ms.openlocfilehash: ed30e5d18521e2529a24c4ec64c09835e1b849d2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cfc07c1aef35a71f38b02215cd2f3852f3038ac
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238777"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784080"
 ---
 # New-AzEventHubGeoDRConfiguration
 
 ## SYNOPSIS
 Membuat Alias baru (konfigurasi Pemulihan Bencana)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: 599365ada60979be79622971bab762e72ba9a300
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed7a6abe37aa21687312fe812d1326811ef806b3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234745"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729234"
 ---
 # Mendapatkan-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
 Mengambil titik pemulihan yang berbeda dari mana Gudang Data SQL dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaserestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 

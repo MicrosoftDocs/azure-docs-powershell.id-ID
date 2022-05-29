@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
-ms.openlocfilehash: 273fbed8d30d44cdbaaa4979fb06a6ae7fd9610c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e29092c6df381246f22b10677e0b6b643c02aae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218330"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747378"
 ---
 # Remove-AzDataShareSynchronizationSetting
 
 ## SYNOPSIS
 menghapus pengaturan sinkronisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatasharesynchronizationsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Are you sure you want to remove synchronization-setting "AdsShareSynchronization
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Perintah ini menghapus pengaturan sinkronisasi bernama AdsShareSynchronizationSetting dari share AdsShare. 
+Perintah ini menghapus pengaturan sinkronisasi bernama AdsShareSynchronizationSetting dari berbagi AdsShare. 
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Pengaturan Sinkronisasi Azure Data Share.
+Pengaturan Sinkronisasi azure Data Share.
 
 
 ```yaml

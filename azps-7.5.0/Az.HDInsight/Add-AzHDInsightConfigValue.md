@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightConfigValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightConfigValue.md
-ms.openlocfilehash: 7bfa34e8be20c16b724c45904a87c190675eb19e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9c90e314d52bf725f6b3304bf0f5feb99f560f1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217790"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764192"
 ---
 # Add-AzHDInsightConfigValue
 
 ## SYNOPSIS
 Menambahkan kustomisasi nilai konfigurasi Hadoop dan/atau kustomisasi pustaka bersama Apache Hive ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightconfigvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Perintah ini menambahkan nilai konfigurasi Hadoop ke kluster bernama your-hadoop
 
 ## PARAMETERS
 
-### -Konfigurasi
+### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
-ms.openlocfilehash: e23fec88a19c209ef7fad5eec6aed6a0efa211dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c7a53162a2ffade7b00c8a5b70919e8559a0b78
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110813"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729882"
 ---
 # Sync-AzAnalysisServicesInstance
 
 ## SYNOPSIS
 
 Menyinkronkan database tertentu pada instans server Analysis Services yang ditentukan ke semua instans penyempitan skala kueri di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/sync-azanalysisservicesinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
-ms.openlocfilehash: 3b073a4180978f01d31fb2a41d57ff9358253762
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b27357d0e9f750a6dbbfe455658949779c849a67
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208175"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784008"
 ---
 # Set-AzFrontDoor
 
 ## SYNOPSIS
 Memperbarui load balancer Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/set-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Set-AzFrontDoor -ResourceId <String> [-RoutingRule <PSRoutingRule[]>] [-BackendP
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzFrontDoor** memperbarui load balancer Front Door. Jika parameter input tidak disediakan, parameter lama dari Front Door yang ada akan digunakan.
+Cmdlet **Set-AzFrontDoor** memperbarui penyeimbang beban Front Door. Jika parameter input tidak disediakan, parameter lama dari Front Door yang ada akan digunakan.
 
 ## EXAMPLES
 
@@ -127,7 +130,7 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoors
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
 ### Contoh 2: perbarui Front Door yang ada dengan objek PSFrontDoor.
 ```powershell
@@ -153,7 +156,7 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
 ### Contoh 3: memperbarui Front Door yang ada dengan ResourceId
 ```powershell
@@ -179,9 +182,9 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
-### Contoh 4: perbarui properti BackendPoolSetting EnforceCertificateNameCheck dari Front Door yang ada dengan parameter sakelar -DisableCertificateNameCheck
+### Contoh 4: memperbarui properti BackendPoolSetting EnforceCertificateNameCheck dari Front Door yang ada dengan parameter switch -DisableCertificateNameCheck
 Front Door yang akan diperbarui dapat diidentifikasi menggunakan FrontoorName dan ResourceGroupName, objek PSFrontDoor, atau ResourceId. (Lihat di atas 3 contoh misalnya) Contoh di bawah ini menggunakan objek PSFrontDoor.
 
 ```powershell
@@ -207,7 +210,7 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoor1
 ```
 
-memperbarui FrontDoor yang sudah ada.
+memperbarui FrontDoor yang ada.
 
 ## PARAMETERS
 
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolsSetting
-Pengaturan untuk semua backendPool.
+Pengaturan untuk semua backendPools.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Front Door yang akan diperbarui.
+Objek Front Door untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor

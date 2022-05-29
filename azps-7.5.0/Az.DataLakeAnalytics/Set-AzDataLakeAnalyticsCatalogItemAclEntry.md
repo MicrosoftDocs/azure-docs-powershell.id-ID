@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
-ms.openlocfilehash: ebed5462fc9a2fb0ae0bfe3d610950afd7cc01f3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e1ea2fbc9f6833d923cc00bda6ba854d7c6523b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203005"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751950"
 ---
 # Set-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
 Memodifikasi entri di ACL katalog atau item katalog di Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Other 00000000-0000-0000-0000-000000000000        None
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini memodifikasi katalog ACE untuk Patti Fuller agar memiliki izin baca.
+Perintah ini memodifikasi katalog ACE agar Patti Fuller memiliki izin baca.
 
 ### Contoh 2: Mengubah Izin pengguna untuk database
 ```powershell
@@ -121,7 +124,7 @@ Other 00000000-0000-0000-0000-000000000000        None
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini memodifikasi database ACE untuk Patti Fuller agar memiliki izin baca.
+Perintah ini memodifikasi database ACE agar Patti Fuller memiliki izin baca.
 
 ### Contoh 3: Mengubah izin lain untuk katalog
 ```powershell
@@ -137,7 +140,7 @@ Other 00000000-0000-0000-0000-000000000000        Read
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini memodifikasi katalog ACE agar orang lain memiliki izin baca.
+Perintah ini memodifikasi katalog ACE agar yang lain memiliki izin baca.
 
 ### Contoh 4: Mengubah Izin lain untuk database
 ```powershell
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lainnya
-Atur entri ACL katalog untuk katalog lainnya.
+Atur entri katalog ACL untuk katalog lainnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

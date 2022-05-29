@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSecret.md
-ms.openlocfilehash: d6e46a2fe46002d12304f2f16f54aa6c2d3ffd82
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c23585db1fd16e7fb608712a7f81d88d8ef9021d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222650"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736524"
 ---
 # Add-AzVMSecret
 
 ## SYNOPSIS
 Menambahkan rahasia ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

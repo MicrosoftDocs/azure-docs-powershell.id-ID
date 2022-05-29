@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
-ms.openlocfilehash: 99ddea00a8e825c21becba9a9346deca1818d2aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 03203fc0aa0571796fc47654d7c228da23bf3594
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186205"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784188"
 ---
 # Get-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Mendapatkan detail topik domain Event Grid, atau mendapatkan daftar semua topik domain Event Grid di bawah domain Event Grid tertentu di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomaintopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzEventGridDomainTopic [-NextLink <String>] [-DefaultProfile <IAzureContextC
 ## DESCRIPTION
 Cmdlet Get-AzEventGridDomainTopic mendapatkan detail topik domain Event Grid tertentu, atau daftar semua topik domain Event Grid di bawah domain tertentu di langganan Azure saat ini.
 Jika nama topik domain disediakan, detail satu topik domain Event Grid dikembalikan.
-Jika nama topik domain tidak disediakan, daftar topik domain di bawah nama domain yang ditentukan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item topik domain. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
+Jika nama topik domain tidak disediakan, daftar topik domain di bawah nama domain yang ditentukan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Teratas. Jika Nilai teratas tidak ditentukan atau $null, daftar akan berisi semua item topik domain. Jika tidak, Top akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
 Jika lebih banyak topik domain masih tersedia, nilai di NextLink harus digunakan dalam panggilan berikutnya untuk mendapatkan halaman topik domain berikutnya.
 Terakhir, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil pencarian. Kueri pemfilteran mengikuti sintaks OData menggunakan properti Nama saja. Operasi yang didukung meliputi: CONTAINS, eq (untuk equal), ne (untuk not equal), AND, OR dan NOT.
 
@@ -64,7 +67,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 2
 
-Mendapatkan detail topik \`domain Event Grid DomainTopic1\` di bawah Domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\` menggunakan opsi ResourceId.
+Mendapatkan detail topik \`domain Event Grid DomainTopic1\` di bawah Domain \`Event Grid Domain1\` di grup \`sumber daya MyResourceGroupName\` menggunakan opsi ResourceId.
 
 ```powershell
 Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic1"
@@ -79,9 +82,9 @@ Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
 ```
 
-### Contoh 3
+### Contoh: 3
 
-Cantumkan semua topik domain Event Grid di domain Event Grid \`Domain1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa penomoran halaman (semua hasil dikembalikan dalam satu bidikan).
+Cantumkan semua topik domain Event Grid di bawah Domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa penomoran halaman (semua hasil dikembalikan dalam satu bidikan).
 
 ```powershell
 $result=Get-AzEventGridDomainTopic -ResourceGroup MyResourceGroupName -DomainName Domain1
@@ -115,7 +118,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 4
 
-Mencantumkan semua topik domain Event Grid di domain Event Grid \`Domain1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa penomoran halaman (semua hasil dikembalikan dalam satu bidikan) menggunakan opsi ResourceId
+Mencantumkan semua topik domain Event Grid di bawah Domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\` tanpa penomoran halaman (semua hasil dikembalikan dalam satu bidikan) menggunakan opsi ResourceId
 
 ```powershell
 $result=Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1"
@@ -149,7 +152,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 5
 
-Cantumkan topik domain Event Grid (jika ada) di bawah domain \`Domain1\` di grup \`sumber daya MyResourceGroupName\` yang memenuhi $odataFilter kueri 10 topik domain pada satu waktu. Jika lebih banyak hasil tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik domain berikutnya, pengguna diharapkan untuk memanggil kembali Get-AzEventGridDomainTopic dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
+Cantumkan topik domain Event Grid (jika ada) di bawah domain \`Domain1\` di grup \`sumber daya MyResourceGroupName\` yang memenuhi $odataFilter mengkueri 10 topik domain pada satu waktu. Jika lebih banyak hasil tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman topik domain berikutnya, pengguna diharapkan untuk memanggil kembali Get-AzEventGridDomainTopic dan menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti ketika hasil. NextLink menjadi $null.
 
 ```powershell
 $total = 0

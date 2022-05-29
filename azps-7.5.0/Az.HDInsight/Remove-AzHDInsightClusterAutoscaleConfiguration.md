@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: c5e4f7c9578272ce3d3956ef663c07867f273288
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 444b57d83a3f760f474d30c845f7367c54a3d17b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225088"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783828"
 ---
 # Remove-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi skala otomatis kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightclusterautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

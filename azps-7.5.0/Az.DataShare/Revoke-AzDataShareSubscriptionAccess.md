@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/revoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Revoke-AzDataShareSubscriptionAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Revoke-AzDataShareSubscriptionAccess.md
-ms.openlocfilehash: 14f26c8d8a12b08a053be531da76d243028880b0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe1297d6d41587af1d193259e3275cff4fe4fc7a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218303"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747342"
 ---
 # Revoke-AzDataShareSubscriptionAccess
 
 ## SYNOPSIS
 Mencabut akses langganan berbagi ke berbagi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/revoke-azdatasharesubscriptionaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Name                      : AdsShare
 Type                      : Microsoft.DataShare/ShareSubscriptions
 ```
 
-Mencabut akses langganan berbagi yang diidentifikasi dengan id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
+Mencabut akses langganan berbagi yang diidentifikasi oleh id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
 
 ## PARAMETERS
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareSubscriptionId
-Id langganan berbagi dari langganan berbagi penyedia
+Id langganan berbagi langganan penyedia
 
 ```yaml
 Type: System.String

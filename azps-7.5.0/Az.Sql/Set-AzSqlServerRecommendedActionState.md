@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerRecommendedActionState.md
-ms.openlocfilehash: 9d22de3952ecd398a5f3f04408ee0cc3f1f3456a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a77e1d9105337831e6f1d5a2f50ed4a4713c2c9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192228"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722304"
 ---
 # Set-AzSqlServerRecommendedActionState
 
 ## SYNOPSIS
 Memperbarui status tindakan yang direkomendasikan Azure SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserverrecommendedactionstate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Memperbarui status tindakan yang direkomendasikan server bernama "IR_\[test_sche
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama advisor yang berisi tindakan yang direkomendasikan.
+Menentukan nama penasihat yang berisi tindakan yang direkomendasikan.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlServerRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

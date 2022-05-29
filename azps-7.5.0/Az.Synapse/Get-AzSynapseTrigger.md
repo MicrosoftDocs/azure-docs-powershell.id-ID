@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTrigger.md
-ms.openlocfilehash: 658840b25b4033a65616ec67befd42a4ed32a18f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9f1f03c24f61db3a19149913dd1de377e7ff780
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109112"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708390"
 ---
 # Get-AzSynapseTrigger
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pemicu di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 
 Mendapatkan satu pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseTrigger -Name ContosoTrigger

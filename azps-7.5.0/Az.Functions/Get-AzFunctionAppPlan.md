@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppPlan.md
-ms.openlocfilehash: 8f161cf1e5942d9e07e7c53aa3e62c60bbc3dfa2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29cbc9a66d007e85c2b46af4a57892c6b4753000
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225225"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764282"
 ---
 # Get-AzFunctionAppPlan
 
 ## SYNOPSIS
 Mendapatkan paket aplikasi fungsi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Func99-Windows-Premium819994758    Windows    ElasticPremium EP1     West Europe
 
 Perintah ini mendapatkan semua paket aplikasi fungsi.
 
-### Contoh 2: Dapatkan paket aplikasi fungsi menurut nama grup sumber daya.
+### Contoh 2: Dapatkan paket aplikasi fungsi berdasarkan nama grup sumber daya.
 ```powershell
 Get-AzFunctionAppPlan -ResourceGroupName "West Europe"
 ```
@@ -81,7 +84,7 @@ Func99-Windows-Premium1680894595   Windows    ElasticPremium EP1     West Europe
 
 Perintah ini mendapatkan paket aplikasi fungsi berdasarkan nama grup sumber daya.
 
-### Contoh 3: Dapatkan paket aplikasi fungsi untuk langganan yang diberikan.
+### Contoh 3: Dapatkan paket aplikasi fungsi untuk langganan tertentu.
 ```powershell
 Get-AzFunctionAppPlan -SubscriptionId fe16564a-d943-4bf8-8c28-cf01708c3f8z
 ```

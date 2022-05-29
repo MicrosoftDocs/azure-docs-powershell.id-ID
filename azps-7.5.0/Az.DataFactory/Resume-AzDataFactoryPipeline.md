@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/resu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
-ms.openlocfilehash: ab3d941ade4218496c8ac78c3a4420e9ec0094bb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 571a2858cf52f73e562a8681eb77a5b01a3b9fed
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203694"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752778"
 ---
 # Resume-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Melanjutkan alur yang ditangguhkan di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/resume-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -198,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 
-[Suspensi-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
+[Suspend-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
 
 

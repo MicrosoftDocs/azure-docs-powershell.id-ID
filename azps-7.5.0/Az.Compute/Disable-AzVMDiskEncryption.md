@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
-ms.openlocfilehash: 8df8d91b8c22f3222a9c853c6a44a9ce275a8371
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b30e3853a6f6b3ee3c4c9f16f6eb338ed3914b4a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210962"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736200"
 ---
 # Disable-AzVMDiskEncryption
 
 ## SYNOPSIS
 Menonaktifkan enkripsi pada komputer virtual IaaS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/disable-azvmdiskencryption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Disable-AzVMDiskEncryption [-ResourceGroupName] <String> [-VMName] <String> [[-V
 Cmdlet **Disable-AzVMDiskEncryption** menonaktifkan enkripsi pada komputer virtual infrastruktur sebagai layanan (IaaS).
 Cmdlet ini hanya didukung pada komputer virtual Windows dan bukan komputer virtual Linux.
 Cmdlet ini menginstal ekstensi pada komputer virtual untuk menonaktifkan enkripsi.
-Jika parameter *Nama* tidak ditentukan, ekstensi dengan nama default "AzureDiskEncryption for Windows VM" dibuat.
+Jika parameter *Nama* tidak ditentukan, ekstensi dengan nama default "AzureDiskEncryption for Windows VMs" dibuat.
 Perhatian: Cmdlet ini me-reboot komputer virtual.
 
 ## EXAMPLES
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -Name
 Menentukan nama sumber daya Azure Resource Manager (ARM) yang mewakili ekstensi.
-Jika parameter ini tidak ditentukan, cmdlet ini default ke "AzureDiskEncryption for Windows VM".
+Jika parameter ini tidak ditentukan, cmdlet ini default ke "AzureDiskEncryption untuk Windows VM".
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Untuk komputer virtual Windows, nilai yang valid adalah:
 - OS
 - Data.
 Jika Anda tidak menentukan nilai untuk parameter ini, nilai defaultnya adalah Semua.
-Nonaktifkan enkripsi saat ini tidak didukung untuk Linux.
+Enkripsi nonaktifkan saat ini tidak didukung untuk Linux.
 
 ```yaml
 Type: System.String
