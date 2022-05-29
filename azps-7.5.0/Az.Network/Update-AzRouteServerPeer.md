@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzRouteServerPeer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzRouteServerPeer.md
-ms.openlocfilehash: 4ed3dc159749e52b500357f7c47165935246e947
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aaeb36d81df467e1929b36f86094709365bbfebe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210326"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663852"
 ---
 # Update-AzRouteServerPeer
 
 ## SYNOPSIS
-Memperbarui Serekan di Azure RouteServer
+Memperbarui Peer di Azure RouteServer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azrouteserverpeer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerAsn
-ASN dari peer server rute jarak jauh.
+ASN peer server rute jarak jauh.
 
 ```yaml
 Type: System.UInt32

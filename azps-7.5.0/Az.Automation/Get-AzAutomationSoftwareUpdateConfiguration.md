@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: 175b9825ad2c9ad7268f54a54ff0ecaa3e629d1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb00b32e02b63b66d374bdc22aaa334541dbe89c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193317"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684084"
 ---
 # Get-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
 Mendapatkan daftar konfigurasi pembaruan perangkat lunak azure automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsoftwareupdateconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Description           :
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun automasi.
+Nama akun otomatisasi.
 
 ```yaml
 Type: System.String

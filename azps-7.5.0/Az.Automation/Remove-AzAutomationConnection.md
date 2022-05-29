@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationConnection.md
-ms.openlocfilehash: 2854a40f5a98e33ca923ed1c8f08f4ad71fab8e6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dadd3847839a4e27632e44e4afe7262c9df0521e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244447"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683526"
 ---
 # Remove-AzAutomationConnection
 
 ## SYNOPSIS
 Menghapus koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

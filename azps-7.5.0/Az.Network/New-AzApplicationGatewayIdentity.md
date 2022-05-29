@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: c7550876d767d1d7f6b193273d8cd034952a4b6f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b554418ad1a3e02672846ce08235250a482d77d6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224339"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677514"
 ---
 # New-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Membuat objek identitas untuk gateway aplikasi. Ini akan menyimpan referensi ke identitas yang ditetapkan pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 

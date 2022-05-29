@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubPNSCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubPNSCredential.md
-ms.openlocfilehash: 8465afdbf413e4b88ce70abf93e3e54bb2f424b7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 414321bcd591315d020b6bfd21e70749e07492a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183254"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663258"
 ---
 # Get-AzNotificationHubPNSCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial PNS untuk hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubpnscredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Get-AzNotificationHubPNSCredential [-ResourceGroup] <String> [-Namespace] <Strin
 
 ## DESCRIPTION
 Cmdlet **Get-AzNotificationHubPNSCredential** mendapatkan kredensial layanan pemberitahuan platform (PNS) untuk hub pemberitahuan.
-Setiap hub pemberitahuan memiliki satu set info masuk PNS.
-Kredensial ini diterapkan ke layanan pemberitahuan push individual seperti, tetapi tidak terbatas pada; layanan pemberitahuan push iOS, layanan pemberitahuan push Android, dan Windows Phone 8.
+Setiap hub pemberitahuan memiliki satu set kredensial PNS.
+Kredensial ini diterapkan pada layanan pemberitahuan push individual seperti, tetapi tidak terbatas pada; layanan pemberitahuan push iOS, layanan pemberitahuan push Android, dan Windows Phone 8.
 
 ## EXAMPLES
 

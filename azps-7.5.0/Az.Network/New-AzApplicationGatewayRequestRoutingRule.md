@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: b249ee49f4746fbf8130791cad1eab8b0f6aa5a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 53fadff711a02472a30e256408792514cdebe5e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215198"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677316"
 ---
 # New-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Membuat aturan perutean permintaan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettingsId
-Menentukan ID pengaturan HTTP back-end dari aturan perutean permintaan yang akan dibuat.
+Menentukan ID pengaturan HTTP back-end dari aturan perutean permintaan untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListener
-Menentukan pendengar HTTP back-end untuk aturan perutean permintaan yang akan dibuat.
+Menentukan pendengar HTTP back-end untuk membuat aturan perutean permintaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListenerId
-Menentukan ID pendengar HTTP backend untuk aturan perutean permintaan yang akan dibuat.
+Menentukan ID pendengar HTTP backend untuk membuat aturan perutean permintaan.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID redirectConfiguration gateway aplikasi
+ID konfigurasi ulang gateway aplikasi
 
 ```yaml
 Type: System.String

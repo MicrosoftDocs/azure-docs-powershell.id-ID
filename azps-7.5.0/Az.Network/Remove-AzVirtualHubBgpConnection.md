@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: 05f4a9966c590e4144ede1f651dfad03dab860e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 37db501f09aa49e5cb16cd65951e201e81c887d2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236915"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668874"
 ---
 # Remove-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke Virtual WAN Hub.
+Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke hub Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,22 +56,22 @@ Cmdlet Remove-AzVirtualHubBgpConnection menghapus sumber daya HubBgpConnection y
 Remove-AzVirtualHubBgpConnection -ResourceGroupName "testRG" -VirtualHubName "testHub" -Name "testBgpConnection"
 ```
 
-Hal di atas akan menghapus Virtual WAN Hub BGP Connection menggunakan nama grup sumber dayanya, nama Virtual WAN Hub, dan Nama koneksi.
+Hal di atas akan menghapus Koneksi BGP Hub Virtual WAN menggunakan nama grup sumber dayanya, nama hub Virtual WAN dan nama Koneksi.
 
 ### Contoh 2
 ```powershell
 Get-AzVirtualHubBgpConnection -ResourceGroupName "testRG" -VirtualHubName "testHub" -Name "testBgpConnection" | Remove-AzVirtualHubBgpConnection
 ```
 
-Hal di atas akan menghapus Virtual WAN Hub BGP Connection menggunakan powershell piping pada output dari Get-AzVirtualHubbgpConnection.
+Hal di atas akan menghapus Koneksi BGP Hub Virtual WAN menggunakan piping powershell pada output dari Get-AzVirtualHubBgpConnection.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $bgpConnectionId = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualHubs/{virtualHubName}/bgpConnections/{bgpConnectionName}"
 Remove-AzVirtualHubBgpConnection -ResourceId $bgpConnectionId
 ```
 
-Hal di atas akan menghapus Koneksi BGP Virtual WAN Hub menggunakan id sumber daya Koneksi BGP.
+Hal di atas akan menghapus Koneksi BGP Hub Virtual WAN menggunakan id sumber daya Koneksi BGP.
 
 ## PARAMETERS
 

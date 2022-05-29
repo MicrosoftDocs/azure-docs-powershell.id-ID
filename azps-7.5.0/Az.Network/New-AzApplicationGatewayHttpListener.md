@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 14ec19d51224a080614c471fdebeede20dbabd7f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d244d1c9667b74d2593bb124121055764aa5b78e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217106"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677622"
 ---
 # New-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Membuat pendengar HTTP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,13 +56,13 @@ $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "H
 
 Perintah ini membuat listener HTTP bernama Listener01 dan menyimpan hasilnya dalam variabel bernama $Listener.
 
-### Contoh 2: Membuat pendengar HTTP dengan SSL
+### Contoh 2: Membuat listener HTTP dengan SSL
 ```powershell
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -SslCertificate $SSLCert01
 ```
 
-Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
-Perintah menyimpan hasilnya dalam variabel bernama $Listener.
+Perintah ini membuat listener HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
+Perintah menyimpan hasil dalam variabel bernama $Listener.
 
 ### Contoh 3: Membuat pendengar HTTP dengan kebijakan firewall
 ```powershell
@@ -73,8 +76,8 @@ Perintah ini membuat listener HTTP bernama Listener01, FirewallPolicy sebagai $f
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -SslCertificate $SSLCert01 -HostNames "*.contoso.com,www.microsoft.com"
 ```
 
-Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01 bersama dengan dua HostName.
-Perintah menyimpan hasilnya dalam variabel bernama $Listener.
+Perintah ini membuat listener HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01 bersama dengan dua HostName.
+Perintah menyimpan hasil dalam variabel bernama $Listener.
 
 ## PARAMETERS
 

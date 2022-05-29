@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restart
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
-ms.openlocfilehash: e171054401898f3880a871e3a49d285fbd840473
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4e804f4db2ae60fbbc3a99636cc01e3582314f6c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234510"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698004"
 ---
 # Restart-AzWebApp
 
 ## SYNOPSIS
 Memulai ulang Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restart-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Jika Aplikasi Web dalam status berhenti, gunakan cmdlet Start-AzWebApp.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai ulang Aplikasi Web
+### Contoh 1: Menghidupkan ulang Aplikasi Web
 ```powershell
 Restart-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```

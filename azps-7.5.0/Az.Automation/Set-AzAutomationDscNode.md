@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
-ms.openlocfilehash: 78bd3f7814e69f39a6f1a1cd23bc54c18ad068cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 28b1961947a49feea03df959545314717fbb1d72
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186401"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683364"
 ---
 # Set-AzAutomationDscNode
 
 ## SYNOPSIS
 Memodifikasi konfigurasi simpul tempat simpul DSC dipetakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Azure Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Ma
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi pemetaan konfigurasi simpul
+### Contoh 1: Mengubah pemetaan konfigurasi simpul
 ```
 PS C:\>Set-AzAutomationDscNode -NodeConfigurationName "Contoso.NodeConfiguration01" -ResourceGroupName "ResourceGroup01" -Id 064a8929-c98b-25e4-80hh-111c8a6067j8
 ```

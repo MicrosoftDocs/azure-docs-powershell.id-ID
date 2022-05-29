@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcher.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcher.md
-ms.openlocfilehash: c2878471e835b53d7e65831448d00177b50eacec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba1f3fd43741769629aa1e39595e188af73d6a37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221966"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669702"
 ---
 # Remove-AzNetworkWatcher
 
 ## SYNOPSIS
 Menghapus Network Watcher.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkwatcher) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Remove-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup Networ
 ```
 
 Contoh ini membuat Network Watcher dalam grup sumber daya lalu segera menghapusnya. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per wilayah per langganan.
-Untuk menekan perintah saat menghapus jaringan virtual, gunakan bendera -Force.
+Untuk menekan prompt saat menghapus jaringan virtual, gunakan bendera -Force.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, network watcher
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan
 
 ## RELATED LINKS
 

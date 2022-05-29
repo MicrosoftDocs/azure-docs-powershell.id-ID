@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
-ms.openlocfilehash: 383f0dc49ead2ebba340f369e5b8079ed4661dde
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e560e7aad1441a760b5f416964a55891110ca119
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221294"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698328"
 ---
 # Remove-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Menghapus pengikatan SSL dari sertifikat yang diunggah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 

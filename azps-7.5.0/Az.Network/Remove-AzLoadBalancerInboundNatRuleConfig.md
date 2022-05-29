@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: e540b01ed90ca2123457ec0cdaff81389a2015d3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0a68312f7d06e16eae19f521054683754134ade
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228809"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670206"
 ---
 # Remove-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi aturan NAT masuk dari load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

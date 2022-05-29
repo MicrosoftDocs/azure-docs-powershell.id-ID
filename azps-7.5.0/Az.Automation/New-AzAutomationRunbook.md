@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
-ms.openlocfilehash: 404a3205654261d86d4b79383a6c9f20a84ef4a9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 36cf4964a9c0f3c9fbc96c829c7c689675bc30a0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246323"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683760"
 ---
 # New-AzAutomationRunbook
 
 ## SYNOPSIS
 Membuat runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

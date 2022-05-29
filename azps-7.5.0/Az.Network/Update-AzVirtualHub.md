@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHub.md
-ms.openlocfilehash: ad903bf1f4a4ed23e387bb9f2abf12c745f5ab38
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2815f1cc9a7b58eacdc517e3e01b99a80fb7e9c2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189722"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663744"
 ---
 # Update-AzVirtualHub
 
 ## SYNOPSIS
 Memperbarui hub virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
 ### Contoh 2
 
@@ -99,10 +102,10 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 Contoh ini mirip dengan Contoh 1, tetapi juga melampirkan tabel rute ke hub virtual.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -127,7 +130,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan lebih memilih gateway perutean sebagai ExpressRoute pada awalnya dan kemudian akan diperbarui ke VpnGateway.
+Di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki gateway perutean yang lebih disukai sebagai ExpressRoute pada awalnya dan kemudian akan diperbarui ke VpnGateway.
 
 ## PARAMETERS
 

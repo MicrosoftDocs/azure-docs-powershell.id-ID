@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
-ms.openlocfilehash: 2c0868b52797735a3b681d6b828a505a16795c1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f3811bc58c563f6261b2c09add02f6c52980fc22
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697788"
 ---
 # Set-AzWebApp
 
 ## SYNOPSIS
 Memodifikasi Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Set-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Http
 
 Perintah ini mengatur HttpLoggingEnabled ke true untuk Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
-### Contoh 3
+### Contoh: 3
 
 Memodifikasi Azure Web App. (dibuat otomatis)
 

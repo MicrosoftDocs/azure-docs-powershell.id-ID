@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 8a7844c648392caac4c734462ff579c90b705f94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e69d2cc91edc00b0fbdf95163195987c3ee561a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663438"
 ---
 # Update-AzVpnGatewayNatRule
 
 ## SYNOPSIS
 Memperbarui aturan NAT yang terkait dengan VpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VpnGatewayNatRule yang akan diperbarui.
+Objek VpnGatewayNatRule untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGatewayNatRule
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VpnGatewayNatRule yang akan dihapus.
+Id sumber daya objek VpnGatewayNatRule untuk dihapus.
 
 ```yaml
 Type: System.String

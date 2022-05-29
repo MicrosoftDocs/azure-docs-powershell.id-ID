@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
-ms.openlocfilehash: 054763c3add3a28ee8f9cea5820633a64d82799c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd76dafab371ed8fdc0eb9ae244dc71e4e8a41b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183338"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677496"
 ---
 # New-AzApplicationGatewayPathRuleConfig
 
 ## SYNOPSIS
 Membuat aturan jalur gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaypathruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ### -BackendHttpSettingsId
 Menentukan ID kumpulan pengaturan HTTP backend yang sudah ada yang dapat ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
 ID pengaturan HTTP dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayBackendHttpSettings.
-Setelah Anda memiliki ID, Anda kemudian bisa menggunakan parameter *DefaultBackendHttpSettingsId alih-alih* parameter *DefaultBackendHttpSettings* .
+Setelah Anda memiliki ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId alih-alih* parameter *DefaultBackendHttpSettings* .
 Misalnya: -DefaultBackendSettings Id "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateways/appgwtest/backendHttpSettingsCollection/ContosoHttpSettings" Pengaturan HTTP backend mengonfigurasi properti seperti port, protokol, dan afinitas berbasis cookie untuk kumpulan backend.
 Jika Anda menggunakan parameter ini, Anda tidak dapat menggunakan parameter *DefaultBackendHttpSettings* dalam perintah yang sama.
 
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID redirectConfiguration gateway aplikasi
+ID konfigurasi ulang gateway aplikasi
 
 ```yaml
 Type: System.String

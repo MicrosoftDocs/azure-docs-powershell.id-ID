@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeHealthResponseMatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeHealthResponseMatch.md
-ms.openlocfilehash: 8832aecc5532df4f33b898897d0797ee30835d9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e4f91889854ed5e9a7784ee29b827fdb90b3a96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210683"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677387"
 ---
 # New-AzApplicationGatewayProbeHealthResponseMatch
 
 ## SYNOPSIS
 Membuat kecocokan respons pemeriksaan kesehatan yang digunakan oleh Pemeriksaan Kesehatan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprobehealthresponsematch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Perintah ini membuat kecocokan respons kesehatan yang dapat diteruskan ke ProbeC
 ## PARAMETERS
 
 ### -Isi
-Isi yang harus terkandung dalam respons kesehatan.
+Tubuh yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml

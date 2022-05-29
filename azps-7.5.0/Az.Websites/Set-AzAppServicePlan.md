@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
-ms.openlocfilehash: ee72826d538f1ebb8ae8b69baa6b9dc1e6bb9f2f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ce1b4a2557220551864529ecdfceadba3469651
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697896"
 ---
 # Set-AzAppServicePlan
 
 ## SYNOPSIS
 Mengatur paket Azure App Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -242,7 +245,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzWebApp](./Remove-AzWebApp.md)
 
-[Hidupkan ulang-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

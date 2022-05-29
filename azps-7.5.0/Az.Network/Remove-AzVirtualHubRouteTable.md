@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubRouteTable.md
-ms.openlocfilehash: 0ec29fe92bfd2c08d6a3fa9f0c3bbc8f015f7f10
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6e5ac2d0dd6d589384b8980873e880c6268a8e7f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236890"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668892"
 ---
 # Remove-AzVirtualHubRouteTable
 
 ## SYNOPSIS
-Menghapus sumber daya tabel rute hub virtual yang terkait dengan hub virtual.
+Hapus sumber daya tabel rute hub virtual yang terkait dengan hub virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya virtualhubroutetable untuk dihapus.
+Id sumber daya dari sumber daya virtualhubroutetable yang akan dihapus.
 
 ```yaml
 Type: String

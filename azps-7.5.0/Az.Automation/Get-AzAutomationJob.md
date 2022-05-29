@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
-ms.openlocfilehash: d2daa0724e38a56e1ba086b449d5d3e696860670
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f6ee58e78f27f26a485cdf77e3ae8f811b312db9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232942"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684210"
 ---
 # Get-AzAutomationJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Perintah ini mendapatkan semua pekerjaan yang berjalan di akun Automation bernam
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Automation yang cmdlet ini mendapatkan pekerjaan.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang didapat cmdlet ini.
+Menentukan ID pekerjaan yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang cmdlet ini mendapatkan pekerjaan.
+Menentukan nama runbook tempat cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -185,9 +188,9 @@ Nilai yang valid adalah:
 - Gagal
 - Dalam antrean
 - Melanjutkan
-- Menjalankan
-- Starting
-- Stopped
+- Jalankan
+- Memulai
+- Dihentikan
 - Menghentikan
 - Ditangguhkan
 - Menangguhkan

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 78ced54cc86d2821f7df0c3896576d46d74e9b4f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 20ccaee91fbc5d0d20db3f5b3d1b1fda24eb3fe1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245735"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677442"
 ---
 # New-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi tautan privat untuk gateway aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

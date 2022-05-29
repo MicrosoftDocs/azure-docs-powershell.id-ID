@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: 92be2ea85905fdfc74def5bc4a2cabf4eda14235
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d53160c08eacd5d7d49f334b415f2726d85cd64
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236848"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668730"
 ---
 # Remove-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Menghapus Koneksi Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzVirtualNetworkGatewayConnection -Name <String> -ResourceGroupName <Stri
 ```
 
 ## DESCRIPTION
-Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Situs-ke-Situs atau Vnet-ke-Vnet) yang tersambung ke gateway Virtual Network Anda di Azure.
+Koneksi gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Situs-ke-Situs atau Vnet-ke-Vnet) yang tersambung ke Gateway Virtual Network Anda di Azure.
 Cmdlet **Remove-AzVirtualNetworkGatewayConnection** menghapus objek koneksi Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

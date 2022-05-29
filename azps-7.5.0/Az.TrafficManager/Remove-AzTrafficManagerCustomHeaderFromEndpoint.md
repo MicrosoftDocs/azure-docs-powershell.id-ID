@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromEndpoint.md
-ms.openlocfilehash: 30dd4c4b02eec2d44a1a99d862a6dc4d08512725
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8bbbe2ad35fb628646f1d4387c984f50591a7a98
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234647"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702738"
 ---
 # Remove-AzTrafficManagerCustomHeaderFromEndpoint
 
 ## SYNOPSIS
 Menghapus informasi header kustom dari objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagercustomheaderfromendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleHeaderConfiguration.md
-ms.openlocfilehash: 16907e6dc1a427d233470b2c6be673d92192c5e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ec866f86641b8f6de1e5ddb42f9ff0daafdcfe5b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210674"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677136"
 ---
 # New-AzApplicationGatewayRewriteRuleHeaderConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi header aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleheaderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

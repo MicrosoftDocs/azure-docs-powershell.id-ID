@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
-ms.openlocfilehash: 74959ea7996080b2b807a2449c0568f3a4e152ee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0dd3c614c2e03a19e3d9a03f1a09ea63a9e9927f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210323"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663834"
 ---
 # Update-AzVHubRouteTable
 
 ## SYNOPSIS
 Menghapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 

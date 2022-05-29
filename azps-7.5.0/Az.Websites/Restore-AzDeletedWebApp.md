@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzDeletedWebApp.md
-ms.openlocfilehash: 747819ef26838b64d78db66e1b4792b1d156401f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9adb1e7d6c45ae26666af59b380104dd5d625f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241815"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697950"
 ---
 # Restore-AzDeletedWebApp
 
 ## SYNOPSIS
 Memulihkan aplikasi web yang dihapus ke aplikasi web baru atau yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azdeletedwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Restore-AzDeletedWebApp [-TargetResourceGroupName <String>] [-TargetName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter tersebut akan secara otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi tersebut akan secara otomatis dibuat dalam paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter switch RestoreContentOnly hanya dapat digunakan untuk memulihkan file aplikasi yang dihapus tanpa pengaturan aplikasi.
+Cmdlet **Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter tersebut akan secara otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi web tersebut akan secara otomatis dibuat dalam paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter switch RestoreContentOnly hanya dapat digunakan untuk memulihkan file aplikasi yang dihapus tanpa pengaturan aplikasi.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Cmdlet **Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikas
 Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -TargetAppServicePlanName ContosoPlan
 ```
 
-Memulihkan aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat di App Service Plan bernama ContosoPlan, dan file dan pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
+Memulihkan aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat di Paket App Service bernama ContosoPlan, dan file dan pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
 
 ### Contoh 2
 ```powershell
@@ -54,7 +57,7 @@ Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -
 
 Memulihkan slot Penahapan aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi web bernama ContosoRestore milik grup sumber daya Default-Web-EastUS akan ditimpa. Pengaturan aplikasi web yang dihapus tidak akan dipulihkan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -DeletedId /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Web/locations/location/deletedSites/1234 -TargetAppServicePlanName ContosoPlan
 ```

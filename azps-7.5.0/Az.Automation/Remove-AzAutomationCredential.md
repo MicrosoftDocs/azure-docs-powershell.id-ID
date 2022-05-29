@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCredential.md
-ms.openlocfilehash: c10cbe6c2d1e01f6c6c67522b6c06101a3d1b9bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 38d7d684c9f314653dbbd0b8e4af632fbc900f14
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196789"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683508"
 ---
 # Remove-AzAutomationCredential
 
 ## SYNOPSIS
 Menghapus kredensial Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

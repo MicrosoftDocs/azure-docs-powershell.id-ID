@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 35eb02896453f7bc90bc5622e8274aef5dda70af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b2dd61dd32f9ab4a4c50f8255bf4b3b1aa713ae9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186978"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677389"
 ---
 # New-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pengalihan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur di url yang dialihkan.
+Sertakan jalur dalam url yang dialihkan.
 Defaultnya adalah true.
 
 ```yaml

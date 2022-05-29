@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
-ms.openlocfilehash: 6d08e7b1337868f3d3e241af2d1665e03a68c06a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 69c6393d487edcb79451e5692159f081c865cf0d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246844"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677172"
 ---
 # New-AzApplicationGatewayRewriteRuleCondition
 
 ## SYNOPSIS
 Menambahkan kondisi ke RewriteRule untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriterulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 

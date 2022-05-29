@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespaceListKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespaceListKey.md
-ms.openlocfilehash: aeee2f91ca54b9494921ccd807cc8cf314478cf3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4cfc3aa4c4f02da61bb93b8a653b3fbf547d580d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226975"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663150"
 ---
 # Get-AzNotificationHubsNamespaceListKey
 
 ## SYNOPSIS
 Mendapatkan string koneksi primer dan sekunder yang terkait dengan aturan otorisasi namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubsnamespacelistkey) untuk informasi terbaru.
 
 ## SYNTAX
 

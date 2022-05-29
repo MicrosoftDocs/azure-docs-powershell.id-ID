@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerProfile.md
-ms.openlocfilehash: ce8297b50c76db4b4b9f32a43e595fcbbd70e865
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 35d8514511bcffa155397243d155143e00ee2201
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233222"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702864"
 ---
 # Get-AzTrafficManagerProfile
 
 ## SYNOPSIS
 Mendapatkan profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/get-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

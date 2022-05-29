@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnSite.md
-ms.openlocfilehash: 6fc0608804f73fe3d9c1d4ee429e681b61018ea2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c2e0e22e44ed761259e2ed5208e6568f44489a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212207"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663348"
 ---
 # Update-AzVpnSite
 
 ## SYNOPSIS
 Memperbarui situs VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpnsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN di US Barat dalam grup su
 
 Kemudian membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
-Setelah situs dibuat, situs akan memperbarui IpAddress situs menggunakan perintah Set-AzVpnSite.
+Setelah situs dibuat, situs memperbarui IpAddress situs menggunakan perintah Set-AzVpnSite.
 
 ## PARAMETERS
 
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceVendor
-Vendor perangkat perangkat vpn jarak jauh.
+Vendor perangkat perangkat dari perangkat vpn jarak jauh.
 
 ```yaml
 Type: System.String
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Kebijakan breakout lalu lintas Office 365 untuk VpnSite ini.
+Kebijakan breakout lalu lintas office 365 untuk VpnSite ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSO365PolicyProperties

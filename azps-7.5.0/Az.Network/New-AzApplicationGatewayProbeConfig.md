@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 2e9b592c78bba289394c0da1a2cee6f8f5588519
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51d25f5dc236481bc34bb588489341ce632212d0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183324"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677385"
 ---
 # New-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Membuat pemeriksaan kesehatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

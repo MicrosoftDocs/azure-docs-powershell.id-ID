@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 999ae33ffb2d8c44ad45c94dffae08efb7389821
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7361d81e85d52d402cfaa23a32216ea638353cb5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233289"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702918"
 ---
 # Enable-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Mengaktifkan titik akhir di profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/enable-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

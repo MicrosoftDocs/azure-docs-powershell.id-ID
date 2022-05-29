@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJob.md
-ms.openlocfilehash: c0776600a93162a01cb1f32198b6dcc2293d3b71
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f62cbe3f780b1a862970237b03c87da0b9f46ea7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195336"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684012"
 ---
 # Get-AzAutomationSourceControlSyncJob
 
 ## SYNOPSIS
-Mendapatkan Azure Automation pekerjaan sinkronisasi kontrol sumber.
+Mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsourcecontrolsyncjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,9 +62,9 @@ Status SyncType Exception
 Failed FullSync There were errors while syncing the user runbooks. Please see error streams for more information. (T...
 ```
 
-### Contoh 3
+### Contoh: 3
 
-Mendapatkan Azure Automation pekerjaan sinkronisasi kontrol sumber. (dibuat otomatis)
+Mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -71,7 +74,7 @@ Get-AzAutomationSourceControlSyncJob -AutomationAccountName 'devAccount' -JobId 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String

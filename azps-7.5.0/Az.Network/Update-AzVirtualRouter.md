@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
-ms.openlocfilehash: 461f5c7f2e6f057e8ff0be073519ed69b40b0331
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6ba98df21ebd21b47fff55f5ec5c2ec69d32fe9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228711"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663626"
 ---
 # Update-AzVirtualRouter
 
 ## SYNOPSIS
 Memperbarui Router Virtual. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualrouter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Memperbarui Router Virtual untuk mengaktifkan atau menonaktifkan lalu lintas cab
 Update-AzVirtualRouter -ResourceGroupName $rgname -RouterName $virtualRouterName -AllowBranchToBranchTraffic
 ```
 
-Memperbarui Router Virtual untuk memungkinkan lalu lintas cabang ke cabang
+Memperbarui Router Virtual untuk mengizinkan lalu lintas cabang ke cabang
 
 ### Contoh 2
 ```powershell
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId dari router virtual.
+ResourceId router virtual.
 
 ```yaml
 Type: String

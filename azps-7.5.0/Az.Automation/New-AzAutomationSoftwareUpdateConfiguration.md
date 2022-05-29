@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: 6c2f1e6b0d1e91a3f6a316a798df8d45cc604878
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3ebd82df948abc7a9ae40eb5085774002be4be5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199830"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683724"
 ---
 # New-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pembaruan perangkat lunak azure automation terjadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationsoftwareupdateconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Description           :
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Durasi
+### -Duration
 Durasi maksimum untuk pembaruan.
 
 ```yaml
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostTaskRunbookParameter
-Parameter pasca tugas.
+Pasca parameter tugas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootSetting
-Pengaturan Boot Ulang.
+Pengaturan Reboot.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.RebootSetting

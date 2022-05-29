@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
-ms.openlocfilehash: 5448923c15ff7eddfc007ed38315f05cf6e68044
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4a1eaa80d55c48be5715f652f9cccc9c75f8a08e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209807"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697986"
 ---
 # Restore-AzWebAppBackup
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azwebappbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Restore-AzWebAppBackup -BlobName 'myBlob' -Name 'ContosoWebApp' -Overwrite -Reso
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini digunakan.
+Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini akan digunakan.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreConflictingHostNames
-Abaikan Opsi HostNames yang Berkonflik
+Abaikan Opsi Nama Host yang Berkonflik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

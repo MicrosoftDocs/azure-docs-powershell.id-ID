@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/reset-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppSlotPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppSlotPublishingProfile.md
-ms.openlocfilehash: 9079963e6d346d6fcddc70dda6a17216338cff3b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e9fdf24113ef29ef90a0450a8fd32875f6189c49
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234521"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698076"
 ---
 # Reset-AzWebAppSlotPublishingProfile
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/reset-azwebappslotpublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
