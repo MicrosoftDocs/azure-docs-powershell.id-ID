@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: 4281071560a5a0dde7f338acdf7ccf05ce088e2f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f6c0e1f829a94a25b7a00917e75d9e51109e5717
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224726"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764066"
 ---
 # Remove-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
 Menghapus instans penyedia untuk langganan, grup sumber daya, nama SapMonitor, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/remove-azsapmonitorproviderinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateDiscoveredServer.md
-ms.openlocfilehash: cd5a40c8f792bd117d8b7a40f5a56a9f141af95b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f055c28869657c9822620d2c0fd8045c96bce9cd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112127"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791892"
 ---
 # Get-AzMigrateDiscoveredServer
 
 ## SYNOPSIS
-Dapatkan Semua server yang ditemukan dalam proyek migrasi.
+Mendapatkan Semua server yang ditemukan dalam proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratediscoveredserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ Get-AzMigrateDiscoveredServer -ApplianceName <String> -Name <String> -ProjectNam
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Situs ListInsite
+### ListInSite
 ```
 Get-AzMigrateDiscoveredServer -ApplianceName <String> -ProjectName <String> -ResourceGroupName <String>
  [-DisplayName <String>] [-SubscriptionId <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan commandlet server migrasi Azure mengambil semua server dalam proyek migrasi.
+Dapatkan commandlet server migrasi Azure mengambil semua server dalam proyek migrasi.
 
 ## EXAMPLES
 
@@ -84,7 +87,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 ```
 
 Dapatkan server dalam proyek migrasi berdasarkan nama.
-Nama adalah penerjun unik untuk server.
+Nama adalah paramenter unik untuk server.
 
 ### Contoh 3: Daftar dalam appliance
 ```powershell
@@ -109,7 +112,7 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029cc18-ef
 
 Mencantumkan semua server untuk appliance dalam proyek.
 
-### Contoh 4: Masuk ke appliance
+### Contoh 4: Dapatkan di appliance
 ```powershell
 Get-AzMigrateDiscoveredServer -Name idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31d2-a6c3-5316-aa39f47c49fc -ApplianceName BBVMwareAVS -SubscriptionId xxx-xxx-xxx -ResourceGroupName julytest -ProjectName julytest
 ```
@@ -121,8 +124,8 @@ idclab-a360-fareast-corp-micros-86617dcf-effe-59ad-8c3a-cdd3ea7300d3_5029e62c-31
 
 ```
 
-Mendapatkan server untuk appliance dalam proyek.
-Nama adalah penerjun unik untuk server.
+Dapatkan server untuk appliance dalam proyek.
+Nama adalah paramenter unik untuk server.
 
 ### Contoh 5: Mencantumkan dan memfilter menurut nama tampilan
 ```powershell

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
-ms.openlocfilehash: 3d4d38f61cc6113f7b422f8b2c554df0d4ac6331
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 98844f3972528e4a12d36cfe1a4c83ceefacfbff
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200513"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774902"
 ---
 # Remove-AzApiManagementSubscription
 
 ## SYNOPSIS
 Menghapus langganan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 

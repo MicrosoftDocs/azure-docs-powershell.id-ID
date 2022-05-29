@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccountKey.md
-ms.openlocfilehash: a50f931fb19d7e0f14c0f757780c3b281a1ce3a5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0028a5be7cc05890124a55afdea847362d97cdfd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217319"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791603"
 ---
 # Get-AzRemoteRenderingAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Dapatkan kunci pengembang Remote Rendering Akun "contoh" dari Langganan saat ini dan Grup Sumber Daya "rg1".
+Dapatkan kunci pengembang "contoh" Akun Remote Rendering dari Langganan saat ini dan Grup Sumber Daya "rg1".
 
 ### Contoh 2
 ```powershell
@@ -66,7 +69,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Dapatkan kunci pengembang Remote Rendering Akun "contoh" dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
+Dapatkan kunci pengembang "contoh" Akun Remote Rendering dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
 
 ## PARAMETERS
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Akun Remote Rendering.
+ID Sumber Daya Akun Remote Rendering.
 
 ```yaml
 Type: String

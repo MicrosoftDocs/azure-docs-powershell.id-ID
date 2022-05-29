@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateNicMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateNicMapping.md
-ms.openlocfilehash: 9816b3686f4797e231b738cd1d319ca710621089
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa5910d75d90de9ae7405b9083b38dc316b0aeab
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111847"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783234"
 ---
 # New-AzMigrateNicMapping
 
 ## SYNOPSIS
 Membuat objek untuk memperbarui properti NIC dari server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratenicmapping) untuk informasi terbaru.
 
 ## SYNTAX
 

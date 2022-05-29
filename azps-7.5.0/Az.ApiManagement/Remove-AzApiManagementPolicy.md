@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
-ms.openlocfilehash: f1f0b180d05769499439a1a9cbbf52e8c4708aa9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f2f7057c5135cb9908bf45f5b59bc02d11ce754
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238906"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774884"
 ---
 # Remove-AzApiManagementPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan API Management dari cakupan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: 63450b130fe26a832203f25814e2b607467e64e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e6a4d9d813f585abdd83965821eb2820322ecbd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204083"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145800962"
 ---
 # Invoke-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
  Memanggil instans lain dari eksekusi pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 

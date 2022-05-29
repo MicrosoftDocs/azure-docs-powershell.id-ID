@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightPersistedScriptAction.md
-ms.openlocfilehash: 2c80a2255490e55d0d9d1de841e019d30cfccd21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfaaf1fbbea1dd07a060756e5450b1e69f8fbdd8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225085"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764102"
 ---
 # Remove-AzHDInsightPersistedScriptAction
 
 ## SYNOPSIS
 Menghapus tindakan skrip yang bertahan dari kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightpersistedscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 

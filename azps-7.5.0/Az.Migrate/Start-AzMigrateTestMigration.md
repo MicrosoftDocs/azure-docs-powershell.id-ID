@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
-ms.openlocfilehash: 64a9f89aca5d0d713c8f2a2fb6aec6a3dd4cd6cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff87e731dad27eb5267c0de8a079e1c194c72ba0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241356"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791586"
 ---
 # Start-AzMigrateTestMigration
 
 ## SYNOPSIS
 Memulai migrasi pengujian untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/start-azmigratetestmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Berdasarkan id komputer.
 
-### Contoh 2: Berdasarkan objek input
+### Contoh 2: Menurut objek input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID $env.srsMachineId -SubscriptionId $env.srsSubscriptionId
 Start-AzMigrateTestMigration -InputObject $obj -TestNetworkId '/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG/providers/Microsoft.Network/virtualNetworks/AzMigrateTargetNetwork'
@@ -97,7 +100,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Dengan objek input.
+Berdasarkan objek input.
 
 ## PARAMETERS
 

@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
-ms.openlocfilehash: 2b870bfd20b45032fc37a5766a4f1154e02f00e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70baa592b994f75eaf6dd835c5285bc4b3abf3d3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241328"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791451"
 ---
 # New-AzSpatialAnchorsAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci Akun Spatial Anchors
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccountkey) untuk informasi terbaru.
+
 ## SYNTAX
 
-### RegenerasiPrimaryKeyParameterSet
+### RegeneratePrimaryKeyParameterSet
 ```
 New-AzSpatialAnchorsAccountKey -ResourceGroupName <String> -Name <String> [-Primary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -71,7 +74,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= mF8lsBeEbs51H/jLe4COW4zUiEyg9lDM1XHQ03jtxZU=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Spatial Anchors di Grup Sumber Daya "rg1". 
+Regenerasi kunci sekunder "contoh" Akun Spatial Anchors di Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -84,7 +87,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Spatial Anchors dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
+Regenerasi kunci sekunder "contoh" Akun Spatial Anchors dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
 
 ## PARAMETERS
 

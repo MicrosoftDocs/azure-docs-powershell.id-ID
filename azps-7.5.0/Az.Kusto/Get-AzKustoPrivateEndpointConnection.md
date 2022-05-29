@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoPrivateEndpointConnection.md
-ms.openlocfilehash: 23381fbe2367814beb7a8810305d527115bb6964
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ac692dc01f6f7ed2c11a894abb80164504679fac
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216119"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783504"
 ---
 # Get-AzKustoPrivateEndpointConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

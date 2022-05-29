@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubRoute.md
-ms.openlocfilehash: c250ba459cbfaa2bafd8ae8e3c6ba5d1ccdadaa1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 074394d6343f5e8603c05d8fd413e9157a530711
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239309"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783648"
 ---
 # Remove-AzIotHubRoute
 
 ## SYNOPSIS
 Menghapus rute di IoT Hub
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubroute) untuk informasi terbaru.
 
 ## SYNTAX
 

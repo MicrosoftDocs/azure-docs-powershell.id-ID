@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: 1412a60f7b09199de9847fbd8ccd14285a263f56
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6a0f9ebe81c30e6888112d235df615e7eafdb9a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206999"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807044"
 ---
 # New-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
 Membuat Penetapan Peran CosmosDB Sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

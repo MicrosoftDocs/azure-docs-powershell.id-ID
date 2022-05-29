@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPath.md
-ms.openlocfilehash: c7413bae8d6fe4e3a64b0c505dfc812c1d808d0d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f55d6bfbee3e37afa90f26f2aa040632e495394e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207203"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807404"
 ---
 # New-AzCosmosDBGremlinIncludedPath
 
 ## SYNOPSIS
 Membuat objek baru jenis PSIncludedPath. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinincludedpath) untuk informasi terbaru.
 
 ## SYNTAX
 

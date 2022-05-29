@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreItem.md
-ms.openlocfilehash: 9515731968868cb5ee1ff98e08e161eafd17289a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8f56854f4e7d7d9d66f6aeddf747b6403fe130f6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202784"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774596"
 ---
 # Export-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Mengunduh file dari Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/export-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -170,7 +173,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rekursi
+### -Recurse
 Menunjukkan bahwa unduhan folder rekursif.
 
 ```yaml

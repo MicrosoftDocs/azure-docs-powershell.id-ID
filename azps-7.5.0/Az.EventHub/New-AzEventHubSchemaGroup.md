@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubSchemaGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubSchemaGroup.md
-ms.openlocfilehash: f69f37a1f0e599473124c9130ee245d987a1b4fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b19ae8199bc4d667fb80a62244e3ca83c72d35ee
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246032"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784062"
 ---
 # New-AzEventHubSchemaGroup
 
 ## SYNOPSIS
 Membuat grup skema di namespace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubschemagroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ SchemaType          : Avro
 GroupProperties     : {key1:value1, key2:value2}
 ```
 
-Membuat grup \`skema myschemagroup\` di namespace \`mynamespace\` di grup \`sumber daya myresourcegroup\`
+Membuat grup \`skema myschemagroup\` di namespace \`mynamespace\` dalam grup \`sumber daya myresourcegroup\`
 
 ## PARAMETERS
 

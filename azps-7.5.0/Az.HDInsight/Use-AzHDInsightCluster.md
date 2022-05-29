@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/use-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Use-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Use-AzHDInsightCluster.md
-ms.openlocfilehash: d622495b359290d613218a8758f3fe28cfe3ae97
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ee475a1d75df7475be8f3f382277d8d19a44aa2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224973"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783774"
 ---
 # Use-AzHDInsightCluster
 
 ## SYNOPSIS
 Memilih kluster yang akan digunakan dengan cmdlet Invoke-RmAzureHDInsightHiveJob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/use-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 

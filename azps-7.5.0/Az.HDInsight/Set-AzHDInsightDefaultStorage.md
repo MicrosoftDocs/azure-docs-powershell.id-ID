@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
-ms.openlocfilehash: 41e57f0923a9c06a741144516bc8bddabb159275
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f4be15dad69a3b8ba232965de66cfd830c5a1610
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225032"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783756"
 ---
 # Set-AzHDInsightDefaultStorage
 
 ## SYNOPSIS
 Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightdefaultstorage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Perintah ini mengatur akun Storage default untuk objek konfigurasi kluster.
 
 ## PARAMETERS
 
-### -Konfigurasi
+### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 

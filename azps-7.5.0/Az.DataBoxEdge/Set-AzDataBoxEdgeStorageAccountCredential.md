@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: 9ba05c4b9768cdf11fc4ae93d2c8ddefe3353bb9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de030ba31a4bdebc01a70e5009a7499ea2109c23
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204531"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801016"
 ---
 # Set-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Mengatur kredensial akun penyimpanan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/set-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzDataBoxEdgeStorageAccountCredential -StorageAccountAccessKey <SecureString
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataBoxEdgeStorageAccountCredential** memperbarui kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat Data Box Edge.
+Cmdlet **Set-AzDataBoxEdgeStorageAccountCredential** memperbarui kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat Azure Data Box Edge.
 
 ## EXAMPLES
 

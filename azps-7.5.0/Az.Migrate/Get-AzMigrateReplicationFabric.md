@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
-ms.openlocfilehash: 46557426268a34f4f85a8d811eba3ee9b82a4b28
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f1166e057319d46c76fe7c06411595c17d420507
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112057"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791775"
 ---
 # Get-AzMigrateReplicationFabric
 
 ## SYNOPSIS
 Mendapatkan detail azure Site Recovery fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama Fabric.
+Nama fabric.
 
 ```yaml
 Type: System.String

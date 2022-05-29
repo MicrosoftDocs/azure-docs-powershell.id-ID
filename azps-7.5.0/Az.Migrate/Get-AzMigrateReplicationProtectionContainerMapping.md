@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainerMapping.md
-ms.openlocfilehash: 8ed7c86a09d29e0bee4e235ab04bfe7f74202b4e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f54679ff8abbe2177823a914db83e548c56445d9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112029"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783396"
 ---
 # Get-AzMigrateReplicationProtectionContainerMapping
 
 ## SYNOPSIS
 Mendapatkan detail pemetaan kontainer perlindungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 

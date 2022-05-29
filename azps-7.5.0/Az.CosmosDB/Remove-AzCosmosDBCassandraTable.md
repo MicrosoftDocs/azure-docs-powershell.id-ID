@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: 78d7e7cf60a5cd61b8c65936da659a900a90de2a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e55e691db397639b2b9c516bd51dcda713b6e2da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206807"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756630"
 ---
 # Remove-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
 Menghapus Tabel CosmosDB Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 2642c4f30da5f65f22d691dd5b05919c3e03d12c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef026a422d87d0bbbad9a33d991702930849fd81
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206783"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756504"
 ---
 # Remove-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
 Menghapus Graph CosmosDB Gremlin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzCosmosDBGremlinGraph -InputObject <PSGremlinGraphGetResults> [-PassThru
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCosmosDBGremlinGraph** menghapus Graph CosmosDB Gremlin.
+Cmdlet **Remove-AzCosmosDBGremlinGraph** menghapus Graph Gremlin CosmosDB.
 
 ## EXAMPLES
 

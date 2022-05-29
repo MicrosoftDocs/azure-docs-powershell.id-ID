@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateRunAsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateRunAsAccount.md
-ms.openlocfilehash: 6bafafaf2af7688b8ca34d7c838095a996f7f861
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23a73cdb3b736a9111281e64361942cd509e49e4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111945"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783378"
 ---
 # Get-AzMigrateRunAsAccount
 
 ## SYNOPSIS
 Metode untuk dijalankan sebagai akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigraterunasaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

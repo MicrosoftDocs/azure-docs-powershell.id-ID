@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
-ms.openlocfilehash: 95cc2392d9ec416d01186cbae649d1a4ad09fe44
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c44aca397b88a85b1353fea0877a861a60c1620a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189204"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774992"
 ---
 # New-AzApiManagementUserToken
 
 ## SYNOPSIS
 Menghasilkan Token Akses Bersama untuk Pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementusertoken) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
-ms.openlocfilehash: 9c44bd697807b2b1c9bdc63402e60e3c7fb7bedb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b413c38c89ae1b3f5ae8d80dd28260499d478a76
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186499"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774865"
 ---
 # Remove-AzAutomationSourceControl
 
 ## SYNOPSIS
 Menghapus kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 

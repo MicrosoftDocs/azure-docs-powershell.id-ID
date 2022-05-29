@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlTrigger.md
-ms.openlocfilehash: f78fd2fdf0bf6df4286fd382dca28d716ceb5112
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 102ac9d32ce6dffed592aef512e0e204b1e6c61b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206930"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806846"
 ---
 # New-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
 Membuat Pemicu Sql CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqltrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

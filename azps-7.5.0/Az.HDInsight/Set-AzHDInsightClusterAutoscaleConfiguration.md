@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: e6d2b4162a6016a82f9dd4f53010316d29e7425f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ab6193af3af7e81a4255d5786c2daa73149f8bda
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225060"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783792"
 ---
 # Set-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
 Mengatur konfigurasi skala otomatis kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclusterautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Cmdlet **Set-AzHDInsightClusterAutoscaleConfiguration** ini mengatur konfigurasi
 
 ## EXAMPLES
 
-### Contoh 1: Atur konfigurasi skala otomatis berbasis beban kluster HDInsight
+### Contoh 1: Mengatur konfigurasi skala otomatis berbasis beban kluster HDInsight
 ```powershell
 $clusterResourceGroup="group"
 $clusterName="MyCluster"
@@ -99,7 +102,7 @@ Set-AzHDInsightClusterAutoscaleConfiguration -ResourceGroupName $clusterResource
 
 Perintah ini mengatur konfigurasi skala otomatis berbasis beban dari kluster Azure HDInsight.
 
-### Contoh 2: Mengatur skala otomatis berbasis Jadwal dari kluster HDInsight
+### Contoh 2: Atur skala otomatis berbasis Jadwal dari kluster HDInsight
 ```powershell
 # Create autoscale conditions
 $condition1=New-AzHDInsightClusterAutoscaleScheduleCondition -Time 09:00 -WorkerNodeCount 5 -Day Monday,Wednesday
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWorkerNodeCount
-Mendapatkan atau mengatur jumlah simpul pekerja maksimal dari skala otomatis berbasis beban.
+Mendapatkan atau mengatur jumlah workernode maksimal dari skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32

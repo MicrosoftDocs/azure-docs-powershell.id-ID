@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportLocation.md
-ms.openlocfilehash: c05f95636830a6a98cc0b0a022a0efe61f88e318
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef198a6aac683650dbfb935b18195ea1035f5c08
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244142"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783810"
 ---
 # Get-AzImportExportLocation
 
 ## SYNOPSIS
 Mengembalikan detail tentang lokasi tempat Anda dapat mengirim disk yang terkait dengan pekerjaan impor atau ekspor.
 Lokasi adalah wilayah Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/get-azimportexportlocation) untuk informasi terbaru.
 
 ## SYNTAX
 

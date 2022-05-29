@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationRecoveryServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationRecoveryServicesProvider.md
-ms.openlocfilehash: af3439a59efc6cd7d2d863737458c26e7d7b5753
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db8ab079f86c27471b96b956ebb32670626910c7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112004"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783414"
 ---
 # Get-AzMigrateReplicationRecoveryServicesProvider
 
 ## SYNOPSIS
 Mendapatkan detail penyedia layanan pemulihan terdaftar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationrecoveryservicesprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama Fabric.
+Nama fabric.
 
 ```yaml
 Type: System.String

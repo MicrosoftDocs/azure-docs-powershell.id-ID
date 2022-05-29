@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Enable-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Enable-AzActivityLogAlert.md
-ms.openlocfilehash: e9addb498f665324f540dc1149b5c42eadafffc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e47db9bf39e48c687372a249bbef446480852b5a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184497"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791334"
 ---
 # Enable-AzActivityLogAlert
 
 ## SYNOPSIS
 Mengaktifkan pemberitahuan log aktivitas dan mengatur Tag-nya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/enable-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 

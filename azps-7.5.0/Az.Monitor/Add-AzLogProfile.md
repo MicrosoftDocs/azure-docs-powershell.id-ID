@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzLogProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzLogProfile.md
-ms.openlocfilehash: 72039317361f803bc554fab3d0c34debe7f6671f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 695623491cdd3e556cc95aa79c9551d6db095d34
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241314"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791388"
 ---
 # Add-AzLogProfile
 
 ## SYNOPSIS
 Membuat profil log aktivitas baru. Profil ini digunakan untuk mengarsipkan log aktivitas ke akun penyimpanan Azure atau mengalirkannya ke hub peristiwa Azure dalam langganan yang sama. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azlogprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +32,8 @@ Add-AzLogProfile -Name <String> [-StorageAccountId <String>] [-ServiceBusRuleId 
 
 ## DESCRIPTION
 Cmdlet **Add-AzLogProfile** membuat profil log.
-- **Akun Storage** - Hanya akun penyimpanan standar (akun penyimpanan premium yang tidak didukung) yang didukung. Ini bisa berjenis ARM atau Klasik. Jika dicatat ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih dengan tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan yang secara konsekuensinya hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
-- **Pusat Aktivitas** - Mungkin hanya ada satu profil log per langganan yang secara konsekuensinya hanya satu hub peristiwa per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas dialirkan ke pusat aktivitas, harga pusat aktivitas standar akan berlaku. Dalam log aktivitas, peristiwa dapat berkaitan dengan suatu wilayah atau dapat berupa "Global". Global pada dasarnya berarti peristiwa ini adalah agnostik wilayah dan independen dari wilayah, pada kenyataannya sebagian besar peristiwa termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil tersebut secara implisit menambahkan "Global" bersama dengan wilayah lain yang dipilih di antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus secara eksplisit disebutkan selain dari wilayah lain. 
+- **Akun Storage** - Hanya akun penyimpanan standar (akun penyimpanan premium yang tidak didukung) yang didukung. Ini bisa berjenis ARM atau Klasik. Jika dicatat ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih dengan tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan akibatnya hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
+- **Pusat Aktivitas** - Mungkin hanya ada satu profil log per langganan akibatnya hanya satu hub peristiwa per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas dialirkan ke pusat aktivitas, harga pusat aktivitas standar akan berlaku. Dalam log aktivitas, peristiwa dapat berkaitan dengan suatu wilayah atau dapat berupa "Global". Global pada dasarnya berarti peristiwa ini adalah agnostik wilayah dan independen dari wilayah, pada kenyataannya sebagian besar peristiwa termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil tersebut secara implisit menambahkan "Global" bersama dengan wilayah lain yang dipilih di antarmuka pengguna. Saat menggunakan cmdlet , lokasi sebagai "Global" harus secara eksplisit disebutkan selain dari wilayah lain. 
 **Catatan** :- **Gagal mengatur "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Menentukan kebijakan retensi, dalam hari. Ini adalah jumlah hari log dipertahankan di akun penyimpanan yang ditentukan. Untuk menyimpan data selamanya, atur ini ke **0**. Jika tidak ditentukan, defaultnya adalah **0**. Tarif penagihan penyimpanan standar atau hub peristiwa normal akan berlaku untuk retensi data.
+Menentukan kebijakan penyimpanan, dalam hari. Ini adalah jumlah hari log dipertahankan di akun penyimpanan yang ditentukan. Untuk menyimpan data selamanya, atur ini ke **0**. Jika tidak ditentukan, maka defaultnya adalah **0**. Tarif penagihan penyimpanan standar atau hub peristiwa normal akan berlaku untuk retensi data.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -194,9 +197,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

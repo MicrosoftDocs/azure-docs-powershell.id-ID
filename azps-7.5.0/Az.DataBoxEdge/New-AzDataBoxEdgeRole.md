@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeRole.md
-ms.openlocfilehash: 25bcb01ccc237dde605770621f4f2d08ffcad3cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ed1fb513c2a9ffbefc2885e1b15e8cc14a2883c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204791"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813338"
 ---
 # New-AzDataBoxEdgeRole
 
 ## SYNOPSIS
 Membuat Peran baru untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHostHub
-Alamat hosthub
+Alamat Hosthub
 
 ```yaml
 Type: System.String

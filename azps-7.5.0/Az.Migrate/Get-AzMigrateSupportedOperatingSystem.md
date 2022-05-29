@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSupportedOperatingSystem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSupportedOperatingSystem.md
-ms.openlocfilehash: 2fc396aa1dc499fb3c806cf72d63234deac73842
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6a9f7a57810af69638f5d712b27fb161bcb29e15
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111917"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783270"
 ---
 # Get-AzMigrateSupportedOperatingSystem
 
 ## SYNOPSIS
 Mendapatkan data sistem operasi yang didukung oleh SRS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratesupportedoperatingsystem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.IMigrateIdentity
@@ -186,7 +189,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[MigrationRecoveryPointName <String>]`: Nama titik pemulihan migrasi.
   - `[NetworkMappingName <String>]`: Nama pemetaan jaringan.
   - `[NetworkName <String>]`: Nama jaringan utama.
-  - `[OperationStatusName <String>]`: Status operasi nama ARM.
+  - `[OperationStatusName <String>]`: Nama ARM status operasi.
   - `[PolicyName <String>]`: Nama kebijakan replikasi.
   - `[ProtectableItemName <String>]`: Nama item yang dapat dilindungi.
   - `[ProtectionContainerName <String>]`: Nama kontainer perlindungan.
@@ -195,7 +198,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[RecoveryPointName <String>]`: Nama titik pemulihan.
   - `[ReplicatedProtectedItemName <String>]`: Nama item yang dilindungi replikasi.
   - `[ReplicationProtectedItemName <String>]`: Nama item yang dilindungi tempat agen akan diperbarui.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama vault layanan pemulihan.
   - `[SiteName <String>]`: Nama situs.
   - `[SolutionName <String>]`: Nama unik solusi migrasi dalam proyek migrasi.

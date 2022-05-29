@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: e57edf7752dab3b8939cb4782b5ca7f0d3273b0a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 745f69e299f586191353f766bbfd32ba7bd034ae
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216719"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145763931"
 ---
 # Enable-AzSqlServerActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Mengaktifkan autentikasi Azure AD hanya untuk SQL Server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlserveractivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Enable-AzSqlServerActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSqlServerActiveDirectoryOnlyAuthentication memungkinkan persyaratan autentikasi** Azure Active Directory (Azure AD) hanya untuk AzureSQL Server dalam langganan saat ini.
+Cmdlet **Enable-AzSqlServerActiveDirectoryOnlyAuthentication** memungkinkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk AzureSQL Server dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat autentikasi Azure Active Directory saja berada.
+Nama Server Azure SQL tempat autentikasi hanya Azure Active Directory berada.
 
 ```yaml
 Type: System.String

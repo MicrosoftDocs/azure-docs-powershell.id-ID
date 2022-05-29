@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: 2ce372fedfabaf80b0a8b2700aa2466dab553317
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f8f749c0281d5c7bbd2272adc0eaaf4ccfd95dc4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204815"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813392"
 ---
 # Invoke-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
 Memanggil tindakan tertentu pada kontainer penyimpanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Invoke-AzDataBoxEdgeStorageContainer [-RefreshData] [-AsJob] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzDataBoxEdgeStorageContainer memanggil tindakan untuk me-refresh** data pada kontainer penyimpanan pada perangkat Data Box Edge. 
+Cmdlet **Invoke-AzDataBoxEdgeStorageContainer** memanggil tindakan untuk merefresh data pada kontainer penyimpanan pada perangkat Data Box Edge. 
 
 ## EXAMPLES
 

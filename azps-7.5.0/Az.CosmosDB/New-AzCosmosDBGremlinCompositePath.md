@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinCompositePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinCompositePath.md
-ms.openlocfilehash: 31db675496a4ca9f88dc470080a2be62c7e24a69
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ad087a0e843630b38b86bceb55176363724a462
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207254"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807422"
 ---
 # New-AzCosmosDBGremlinCompositePath
 
 ## SYNOPSIS
 Membuat objek baru jenis PSCompositePath. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlincompositepath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pesanan
-Mendapatkan atau mengatur urutan pengurutan untuk jalur komposit.
+Mendapatkan atau mengatur urutan sortir untuk jalur komposit.
 Nilai yang mungkin termasuk: 'Naik', 'Turun'
 
 ```yaml
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -Jalur
 Jalur tempat perilaku pengindeksan berlaku.
-Jalur indeks biasanya dimulai dengan root dan diakhir dengan wildcard (/path/*)
+Jalur indeks biasanya dimulai dengan root dan diakhpuni dengan wildcard (/path/*)
 
 ```yaml
 Type: System.String

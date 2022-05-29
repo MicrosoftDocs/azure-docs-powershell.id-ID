@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateProject.md
-ms.openlocfilehash: 1d865e81525ac6e1a9b19c4dcdde393603ad48a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cc82cbec08dd0d61049be53a9b95fd149921522
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112060"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791838"
 ---
 # Get-AzMigrateProject
 
 ## SYNOPSIS
 Metode untuk mendapatkan proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigrateproject) untuk informasi terbaru.
 
 ## SYNTAX
 

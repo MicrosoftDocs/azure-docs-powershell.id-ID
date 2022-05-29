@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingPolicy.md
-ms.openlocfilehash: c006d0bcbeb3e83fc803f4c58c91580ff6cc334f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5254084e1df937c835ad38588c784bfd864e3c4f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234930"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145763930"
 ---
 # Get-AzSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan masking data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasedatamaskingpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

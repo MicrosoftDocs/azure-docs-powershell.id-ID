@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPathIndex.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPathIndex.md
-ms.openlocfilehash: 08ea85d09d7c56de8957f2320623a7fc2cc7e9f3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d6fc5078a3c5d70626d3a79feb879f44e54f9fc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207014"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807062"
 ---
 # Baru-AzCosmosDBSqlIncludedPathIndex
 
 ## SYNOPSIS
 Membuat objek baru jenis PSIndexes. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBSqlIncludedPath.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlincludedpathindex) untuk informasi terbaru.
 
 ## SYNTAX
 

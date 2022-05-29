@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
-ms.openlocfilehash: b392613bd04eefb3ba9f5b8df6e946f20bbfb597
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c36636a17302034f3289be71a5c9ca0f7001684e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184525"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791370"
 ---
 # Add-AzMetricAlertRuleV2
 
 ## SYNOPSIS
 Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik V2 (non-klasik).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azmetricalertrulev2) untuk informasi terbaru.
 
 ## SYNTAX
 

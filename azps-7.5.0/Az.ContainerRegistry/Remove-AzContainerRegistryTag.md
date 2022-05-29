@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryTag.md
-ms.openlocfilehash: d6974ace4955a91fc471f68ffac7d019180248f9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9479db9688eb0847ba413e9c0607ef5ad88099fe
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243285"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813689"
 ---
 # Remove-AzContainerRegistryTag
 
 ## SYNOPSIS
 Membatalkan tag ACR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistrytag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Remove-AzContainerRegistryTag -RegistryName registry -RepositoryName alpine -Nam
 True
 ```
 
-Batalkan tag alpine:tag di bawah registri.
+Untag alpine:tag di bawah registri.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Azure Container Registry.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String

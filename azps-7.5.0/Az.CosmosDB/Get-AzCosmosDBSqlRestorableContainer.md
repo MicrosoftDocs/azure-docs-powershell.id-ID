@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableContainer.md
-ms.openlocfilehash: be0c2e5e383abd01768ec6707d26df9f8fb608c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13a9c9080648a2460113a57e420694bf961d75bb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207614"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813662"
 ---
 # Get-AzCosmosDBSqlRestorableContainer
 
 ## SYNOPSIS
 Mencantumkan semua kontainer azure Cosmos DB SQL yang dapat dipulihkan yang tersedia untuk database tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorablecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

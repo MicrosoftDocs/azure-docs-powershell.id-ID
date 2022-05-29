@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
-ms.openlocfilehash: 88b4902a445588b4a24b5079929f094b174cd752
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50b9a05be41f21af8d69e96f3737db3aa846a96b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231483"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145800611"
 ---
 # Update-AzEventGridSubscription
 
 ## SYNOPSIS
 Perbarui properti langganan peristiwa Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/update-azeventgridsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -104,7 +107,7 @@ Get-AzEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -Resour
 
 Memperbarui titik akhir langganan \`peristiwa ES1\` untuk topik \`Topic1\` di grup \`sumber daya MyResourceGroupName\` menjadi \`https://requestb.in/1kxxoui1\`
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/1kxxoui1 -SubjectEndsWith "jpg"
 ```
@@ -122,7 +125,7 @@ Memperbarui properti langganan \`peristiwa ES1\` untuk grup \`sumber daya MyReso
 ## PARAMETERS
 
 ### -AdvancedFilter
-Filter tingkat lanjut yang menentukan array beberapa nilai Hashtable yang digunakan untuk pemfilteran berbasis atribut. Setiap nilai Hashtable memiliki info kunci-nilai berikut: Operasi, Kunci, dan Nilai atau Nilai. Operator dapat berupa salah satu nilai berikut: NumberIn, NumberNotIn, NumberLessThan, NumberGreaterThan, NumberLessThanOrEquals, NumberGreaterThanOrEquals, BoolEquals, StringIn, StringNotIn, StringBeginsWith, StringEndsWith atau StringContains. Kunci mewakili properti payload tempat kebijakan pemfilteran lanjutan diterapkan. Terakhir, Nilai atau Nilai mewakili nilai atau kumpulan nilai yang akan dicocokkan. Ini bisa menjadi nilai tunggal dari jenis yang sesuai atau array nilai. Sebagai contoh parameter filter tingkat lanjut: $AdvancedFilters=@($AdvFilter 1, $AdvFilter 2) di mana $AdvFilter 1=@{operator="NumberIn"; key="Data.Key1"; Values=@(1,2)} and $AdvFilter 2=@{operator="StringBeginsWith"; key="Subject"; Nilai=@("SubjectPrefix1","SubjectPrefix2")}
+Filter tingkat lanjut yang menentukan array beberapa nilai Hashtable yang digunakan untuk pemfilteran berbasis atribut. Setiap nilai Hashtable memiliki info kunci-nilai berikut: Operasi, Kunci, dan Nilai atau Nilai. Operator dapat menjadi salah satu nilai berikut: NumberIn, NumberNotIn, NumberLessThan, NumberGreaterThan, NumberLessThanOrEquals, NumberGreaterThanOrEquals, BoolEquals, StringIn, StringNotIn, StringBeginsWith, StringEndsWith atau StringContains. Kunci mewakili properti payload tempat kebijakan pemfilteran tingkat lanjut diterapkan. Terakhir, Nilai atau Nilai mewakili nilai atau kumpulan nilai yang akan dicocokkan. Ini bisa menjadi nilai tunggal dari jenis yang sesuai atau array nilai. Sebagai contoh parameter filter tingkat lanjut: $AdvancedFilters=@($AdvFilter 1, $AdvFilter 2) di mana $AdvFilter 1=@{operator="NumberIn"; key="Data.Key1"; Values=@(1,2)} dan $AdvFilter 2=@{operator="StringBeginsWith"; key="Subject"; Values=@("SubjectPrefix1","SubjectPrefix2")}
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetterEndpoint
-Titik akhir yang digunakan untuk menyimpan peristiwa yang tidak terkiror. Tentukan ID sumber daya Azure dari kontainer blob Storage. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
+Titik akhir yang digunakan untuk menyimpan peristiwa yang tidak terkirmankan. Tentukan ID sumber daya Azure dari kontainer blob Storage. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 Titik akhir tujuan langganan peristiwa.
-Ini bisa menjadi URL webhook, atau ID sumber daya Azure dari EventHub, antrean penyimpanan, hybridconnection, atau servicebusqueue. Misalnya, ID sumber daya untuk koneksi hibrid mengambil formulir berikut: /subscriptions/[Azure Subscription ID]/resourceGroups/[ResourceGroupName]/providers/Microsoft.Relay/namespaces/[NamespaceName]/hybridConnections/[HybridConnectionName]. Diharapkan bahwa titik akhir tujuan akan dibuat dan tersedia untuk digunakan sebelum menjalankan cmdlet Event Grid apa pun.
+Ini bisa menjadi URL webhook, atau ID sumber daya Azure dari EventHub, antrean penyimpanan, hybridconnection, atau servicebusqueue. Misalnya, ID sumber daya untuk koneksi hibrid mengambil formulir berikut: /subscriptions/[AZURE Subscription ID]/resourceGroups/[ResourceGroupName]/providers/Microsoft.Relay/namespaces/[NamespaceName]/hybridConnections/[HybridConnectionName]. Diharapkan bahwa titik akhir tujuan akan dibuat dan tersedia untuk digunakan sebelum mengeksekusi cmdlet Event Grid apa pun.
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDate
-Menentukan TanggalWaktu kedaluwarsa untuk langganan peristiwa setelah langganan peristiwa akan dihentikan.
+Menentukan DateTime kedaluwarsa untuk langganan peristiwa setelah langganan peristiwa dihentikan.
 
 ```yaml
 Type: System.DateTime

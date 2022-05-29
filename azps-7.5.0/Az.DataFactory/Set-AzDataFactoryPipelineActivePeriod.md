@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
-ms.openlocfilehash: 288199242735ef9e439fd1d131d3b0273338b849
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ca439a39b097fe6259339fdde2a387fd3bcabca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203663"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813311"
 ---
 # Set-AzDataFactoryPipelineActivePeriod
 
 ## SYNOPSIS
 Mengonfigurasi periode aktif untuk irisan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactorypipelineactiveperiod) untuk informasi terbaru.
 
 ## SYNTAX
 

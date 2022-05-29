@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
-ms.openlocfilehash: fc5f1470aff36f4136b9a2f798928f4ef2e64955
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 44c5256246a6295e8777e8f7882e1a4667b5a972
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204377"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801052"
 ---
 # Get-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang alur di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 

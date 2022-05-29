@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: 91c99931110d0c4ddb3f9e205e32a5aa7027f1cd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2a93ef118c2c22dbcc45e0d3a2d530f4f7af99a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206702"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756360"
 ---
 # Remove-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Menghapus Definisi Peran CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

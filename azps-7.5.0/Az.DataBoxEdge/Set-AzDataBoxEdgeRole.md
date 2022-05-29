@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeRole.md
-ms.openlocfilehash: 922bca3839817180d0cc9783bb1d3e2225ecfb90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1603eee4294a3b6bdd6f28e4496d54175d9136d0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204545"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813310"
 ---
 # Set-AzDataBoxEdgeRole
 
 ## SYNOPSIS
 Memperbarui Peran untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/set-azdataboxedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 

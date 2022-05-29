@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: 8a1b84f9195ad1750584e4a1532e867600fbb521
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a055c9ed253eb4169725c4215261b2829e77963d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201538"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145783180"
 ---
 # Remove-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
-hapus cakupan tautan privat
+menghapus cakupan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azinsightsprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzInsightsPrivateLinkScope -InputObject <PSMonitorPrivateLinkScope>
 ```
 
 ## DESCRIPTION
-hapus cakupan tautan privat
+menghapus cakupan tautan privat
 
 ## EXAMPLES
 
@@ -54,14 +57,14 @@ hapus cakupan tautan privat dengan nama "scope_name" di bawah grup sumber daya "
 Remove-AzInsightsPrivateLinkScope -ResourceId "/subscriptions/{subscriptionId}/resourceGroups/rg_name/providers/Microsoft.Insights/privateLinkScopes/scope_name"
 ```
 
-hapus cakupan tautan privat dengan Id sumber daya
+menghapus cakupan tautan privat dengan Id sumber daya
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzInsightsPrivateLinkScope -ResourceGroupName "rg_name" -Name "scope_name" | Remove-AzInsightsPrivateLinkScope
 ```
 
-hapus cakupan tautan privat dengan objek cakupan tautan privat input
+menghapus cakupan tautan privat dengan objek cakupan tautan privat input
 
 ## PARAMETERS
 

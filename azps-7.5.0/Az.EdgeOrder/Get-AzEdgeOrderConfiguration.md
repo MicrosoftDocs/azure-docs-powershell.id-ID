@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
-ms.openlocfilehash: 534e8c0f625172ad8a6e160a39a00c29e39358e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ac2403dd2895d00fe58d762a2b4cc541c6d65da5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232326"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774488"
 ---
 # Get-AzEdgeOrderConfiguration
 
 ## SYNOPSIS
 Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu di bawah langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

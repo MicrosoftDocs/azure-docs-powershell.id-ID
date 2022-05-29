@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlDatabase.md
-ms.openlocfilehash: 7062b114e431d89039977fc2aa767c8841108b85
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 25459d942b4ddf7b200a2627e35fe7d82ae1a9a4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207638"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813644"
 ---
 # Get-AzCosmosDBSqlDatabase
 
 ## SYNOPSIS
 Mendapatkan CosmosDB Sql Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlDatabase [-Name <String>] -ParentObject <PSDatabaseAccountGetRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlDatabase** mendapatkan daftar semua Database CosmosDB Sql yang ada untuk ResourceGroupName, AccountName, dan mendapatkan satu CosmosDB Sql Database untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
+Cmdlet **Get-AzCosmosDBSqlDatabase** mendapatkan daftar semua Database CosmosDB Sql yang ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Database Sql CosmosDB untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
 
 ## EXAMPLES
 

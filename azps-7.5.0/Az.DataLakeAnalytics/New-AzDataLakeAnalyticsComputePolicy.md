@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: a59cb333ba5177949e6fe1ca03ca0e91008878b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a6250615a64b048ddb8310a9ef3e1ff1dc0b25f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203134"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813248"
 ---
 # New-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
 Membuat aturan kebijakan komputasi Data Lake Analytics untuk entitas AAD tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account] <S
 New-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name "myPolicy" -ObjectId 83cb7ad2-3523-4b82-b909-d478b0d8aea3 -ObjectType User -MaxAnalyticsUnitsPerJob 5
 ```
 
-Perintah ini membuat kebijakan yang disebut "myPolicy" di akun "contosoadla" untuk pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik.
+Perintah ini membuat kebijakan yang disebut "myPolicy" dalam akun "contosoadla" untuk pengguna dengan id "83cb7ad2-3523-4b82-b909-d478b0d8aea3" yang memastikan mereka tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik.
 
 ### Contoh 2: Membuat kebijakan komputasi dengan kedua aturan yang ditetapkan
 ```powershell
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya tempat Akun Anda berada.
-Opsional dan akan mencoba menemukan jika tidak disediakan.
+Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

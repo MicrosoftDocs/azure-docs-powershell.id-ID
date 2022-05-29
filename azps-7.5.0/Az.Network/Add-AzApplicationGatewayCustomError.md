@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayCustomError.md
-ms.openlocfilehash: d688d6d1a4fa623093cf4a221122dc592753a126
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7f20e95d6b23ff03fc0cccfcb2788d8f693f389a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183702"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764048"
 ---
 # Add-AzApplicationGatewayCustomError
 
 ## SYNOPSIS
 Menambahkan kesalahan kustom ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaycustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 

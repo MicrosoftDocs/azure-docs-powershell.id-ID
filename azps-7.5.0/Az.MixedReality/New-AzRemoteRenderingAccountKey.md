@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
-ms.openlocfilehash: ecff5d303ae69dcf78c0da724ab1443a3e6088c1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c115df49bc74276ac8a4604ca2819b5af40b582
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217307"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791496"
 ---
 # New-AzRemoteRenderingAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci Akun Remote Rendering
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccountkey) untuk informasi terbaru.
+
 ## SYNTAX
 
-### RegenerasiPrimaryKeyParameterSet
+### RegeneratePrimaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -ResourceGroupName <String> -Name <String> [-Primary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -71,7 +74,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= mF8lsBeEbs51H/jLe4COW4zUiEyg9lDM1XHQ03jtxZU=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Remote Rendering di Grup Sumber Daya "rg1". 
+Regenerasi kunci sekunder "contoh" Akun Remote Rendering di Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -84,7 +87,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Remote Rendering dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
+Regenerasi kunci sekunder "contoh" Akun Remote Rendering dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
 
 ## PARAMETERS
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Regenerasi kunci primer Akun Remote Rendering.
+Regenerasi kunci utama Akun Remote Rendering.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Akun Remote Rendering.
+ID Sumber Daya Akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sekunder
-Regenerasi kunci primer Akun Remote Rendering.
+Regenerasi kunci utama Akun Remote Rendering.
 
 ```yaml
 Type: SwitchParameter

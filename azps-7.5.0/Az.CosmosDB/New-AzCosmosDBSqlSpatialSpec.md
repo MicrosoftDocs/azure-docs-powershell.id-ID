@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlSpatialSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlSpatialSpec.md
-ms.openlocfilehash: b50e0c0c47c967fd2c0fb72c57f74878187a3827
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9918a5448356776dc4e19c8894a56bb375a0227b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206966"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806990"
 ---
 # New-AzCosmosDBSqlSpatialSpec
 
 ## SYNOPSIS
 Membuat objek baru jenis PSSpatialSpec. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBSqlIndexingPolicy.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlspatialspec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,8 +76,8 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Array string dengan nilai yang dapat diterima: Point, LineString, Polygon, MultiPolygon.
-Jenis spasial jalur representasi.
+Array string dengan nilai yang dapat diterima: Titik, LineString, Poligon, MultiPolygon.
+Mewakili jenis spasial jalur.
 
 ```yaml
 Type: System.String[]

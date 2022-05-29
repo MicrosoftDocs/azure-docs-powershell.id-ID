@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: a1f09a5c6170fb9ac369c01f31f7a95b667f7980
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 96fb0a0019d07fb1d5ea5c32779d2cccbdcfa4c3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211802"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145763982"
 ---
 # Add-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Menambahkan kunci brankas kunci ke Instans Terkelola yang disediakan. 
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlinstancekeyvaultkey) untuk informasi terbaru.
+
 ## SYNTAX
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyDefaultParameterSet (Default)
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyDefaultParameterSet (Default)
 ```
 Add-AzSqlInstanceKeyVaultKey [-ResourceGroupName] <String> [-InstanceName] <String> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -31,7 +34,7 @@ Add-AzSqlInstanceKeyVaultKey [-Instance] <AzureSqlManagedInstanceModel> [-KeyId]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyResourceIdParameterSet
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyResourceIdParameterSet
 ```
 Add-AzSqlInstanceKeyVaultKey [-InstanceResourceId] <String> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]

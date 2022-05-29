@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: 7a2575b2043822dc3c595be0c0fad920bf135999
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c50dd84d7d5f951670d0242b49dbf989516d0b9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203425"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774614"
 ---
 # Stop-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
 Menghentikan eksekusi pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
