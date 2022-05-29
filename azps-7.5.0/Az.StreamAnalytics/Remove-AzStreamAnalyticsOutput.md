@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsOutput.md
-ms.openlocfilehash: 4a234e3a11d9ee38dc167c87f54b857de401f6aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 313b0033fcd69c0349e6ba3db3c9985a77d6741c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195655"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711882"
 ---
 # Remove-AzStreamAnalyticsOutput
 
 ## SYNOPSIS
 Menghapus output dari pekerjaan streaming.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/remove-azstreamanalyticsoutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzStreamAnalyticsOutput -ResourceGroupName azure-rg-test -JobName sajob-02-p
 
 ```
 
-Perintah ini menghapus output dari pekerjaan berdasarkan alur.
+Perintah ini menghapus output dari pekerjaan menurut alur.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[JobName <String>]`: Nama dari pekerjaan streaming.
   - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

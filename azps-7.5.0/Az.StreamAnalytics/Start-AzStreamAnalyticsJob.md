@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 1e74c19def6b049ce3d09940a3be589a2ea89ec5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 14005c4c0f420d47cf8915bcb0dfe7b9b2d68461
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195641"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711702"
 ---
 # Start-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Memulai pekerjaan streaming.
 Setelah pekerjaan dimulai, pekerjaan akan mulai memproses peristiwa input dan menghasilkan output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/start-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,13 +51,13 @@ Start-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-porta
 
 Perintah ini memulai pekerjaan StreamingJob.
 
-### Contoh 2: Memulai pekerjaan Azure Stream Analytics menurut alur
+### Contoh 2: Memulai pekerjaan Azure Stream Analytics berdasarkan alur
 ```powershell
 Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal | Start-AzStreamAnalyticsJob
 
 ```
 
-Perintah ini memulai pekerjaan StreamingJob menurut alur.
+Perintah ini memulai pekerjaan StreamingJob berdasarkan alur.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[JobName <String>]`: Nama dari pekerjaan streaming.
   - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

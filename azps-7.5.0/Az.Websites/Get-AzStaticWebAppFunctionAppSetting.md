@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppFunctionAppSetting.md
-ms.openlocfilehash: eead423b11ea436ed5759e3aa4b0400f99cc8bc5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 67958fe798727bfdae745a453ad3187d4aa123fc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247362"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700542"
 ---
 # Get-AzStaticWebAppFunctionAppSetting
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan pengaturan aplikasi situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azstaticwebappfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportProblemClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportProblemClassification.md
-ms.openlocfilehash: 6472b52541599bccfa28525a347259bbc1ade982
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 948e223c3d1f4d4b6f662f5742401a82ba382e96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111077"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711252"
 ---
 # Get-AzSupportProblemClassification
 
 ## SYNOPSIS
 Dapatkan klasifikasi masalah untuk layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportproblemclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

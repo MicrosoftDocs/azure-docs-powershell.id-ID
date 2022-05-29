@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountCertificate.md
-ms.openlocfilehash: 92b53a64299ada3f3955f5c36c988c952620583d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07b1702525eec3a37db4fa55b851875169933d6b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187090"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691920"
 ---
 # New-AzIntegrationAccountCertificate
 
 ## SYNOPSIS
 Membuat sertifikat akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

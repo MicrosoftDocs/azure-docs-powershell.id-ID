@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppContainerPSSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppContainerPSSession.md
-ms.openlocfilehash: 2c8e29c75ca38198554fe14c36f5202170177f8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a71490c239d98540fa1138ff1015bcef34a11b2d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231654"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699066"
 ---
 # New-AzWebAppContainerPSSession
 
 ## SYNOPSIS
-New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan di situs atau slot tertentu dan grup sumber daya yang diberikan
+New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappcontainerpssession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzWebAppContainerPSSession [-Force] [-WebApp] <PSSite> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan di situs atau slot tertentu dan grup sumber daya yang diberikan
+New-AzWebAppContainerPSSession akan membuat Sesi PowerShell jarak jauh baru ke dalam kontainer windows yang ditentukan dalam situs atau slot tertentu dan grup sumber daya tertentu
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ $s = New-AzWebAppContainerPSSession -ResourceGroupName "Default-Web-WestUS" -Nam
 Invoke-Command -Session $s -ScriptBlock{Get-Process}
 ```
 
-Ini akan membuat Sesi PowerShell jarak jauh baru ke aplikasi kontainer windows ContosoASP dan menunjukkan proses yang berjalan pada kontainer ContosoASP
+Ini akan membuat Sesi PowerShell jarak jauh baru ke dalam aplikasi kontainer windows ContosoASP dan menunjukkan proses yang berjalan pada kontainer ContosoASP
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseWorkspace.md
-ms.openlocfilehash: 28646b1a90ca1aee65af66d60b47483cd963b45b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51ea61809e5b329c5d151f87b1f3ccf4af556b60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209846"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704376"
 ---
 # Test-AzSynapseWorkspace
 
 ## SYNOPSIS
 Memeriksa keberadaan ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/test-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 

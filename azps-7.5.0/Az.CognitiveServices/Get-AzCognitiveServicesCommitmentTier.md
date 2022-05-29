@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesCommitmentTier.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesCommitmentTier.md
-ms.openlocfilehash: b113ee066bacda279a6ca532bf52e01e6711ccc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 569dbde1490a2d9a46081c18fed322ffe1d12bb2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240110"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737118"
 ---
 # Get-AzCognitiveServicesCommitmentTier
 
 ## SYNOPSIS
 Dapatkan CommitmentTier cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicescommitmenttier) untuk informasi terbaru.
 
 ## SYNTAX
 

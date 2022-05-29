@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
-ms.openlocfilehash: e61fbd55782ba389c22212bc0901578995cf71b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 14c695459407de46e41246fd1261d8dadeab9830
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220403"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673140"
 ---
 # New-AzVHubRoute
 
 ## SYNOPSIS
 Membuat objek VHubRoute yang dapat diteruskan sebagai parameter ke perintah New-AzVHubRouteTable.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvhubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ NextHop         : /subscriptions/testSub/resourceGroups/testRg/providers/Microso
 Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai hubVnetConnection yang ditentukan yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $hub = Get-AzVirtualHub -ResourceGroupName {rgname} -Name {virtual-hub-name}
 $hubVnetConn = Get-AzVirtualHubVnetConnection -ParentObject $hub -Name {connection-name}
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopType
-Jenis Lompatan Berikutnya.
+Jenis Hop Berikutnya.
 
 ```yaml
 Type: String

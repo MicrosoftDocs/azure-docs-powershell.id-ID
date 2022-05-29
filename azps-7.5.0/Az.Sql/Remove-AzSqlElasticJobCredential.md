@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobCredential.md
-ms.openlocfilehash: 1a82b35ff529102f76d30d1bbb36b67dcb1cbd9d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 80e850f17c4fabea70a0e96e5490c92b1dccf0a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109420"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724914"
 ---
 # Remove-AzSqlElasticJobCredential
 
 ## SYNOPSIS
 Menghapus kredensial pekerjaan elastis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjobcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTrigger.md
-ms.openlocfilehash: 28f998bead69957dd0bbee5f66df672cc3311470
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d77172b2c5500000e42b87f34d101cc9336263d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206051"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704736"
 ---
 # Stop-AzSynapseTrigger
 
 ## SYNOPSIS
 Menghentikan pemicu di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Stop-AzSynapseTrigger -Name ContosoTrigger
 
 Menghentikan pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 $trigger | Stop-AzSynapseTrigger

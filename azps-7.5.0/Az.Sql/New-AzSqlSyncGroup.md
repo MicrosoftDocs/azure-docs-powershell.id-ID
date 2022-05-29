@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncGroup.md
-ms.openlocfilehash: 8fa672201cc8d1d2c583e1df79a24d41325c1f04
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82656b2899a64c45ef6b573ff35080c31835f8b6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213251"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725364"
 ---
 # New-AzSqlSyncGroup
 
 ## SYNOPSIS
 Membuat Grup Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini membuat grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi payload skema dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
+Perintah ini membuat grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi payload skema dalam format json. Contoh skema json adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
 
 ## PARAMETERS
 

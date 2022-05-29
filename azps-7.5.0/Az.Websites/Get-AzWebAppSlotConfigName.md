@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
-ms.openlocfilehash: 949e8e5a60b1106a18572b86ae7a15723a91de6a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 21a33048e8823dbcb7913cd4d0cbefc4f9c909e2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247194"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699912"
 ---
 # Get-AzWebAppSlotConfigName
 
 ## SYNOPSIS
 Mendapatkan daftar nama Konfigurasi Slot Aplikasi Web
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotconfigname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzWebAppSlotConfigName [-WebApp] <PSSite> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi dan String Koneksi yang saat ini ditandai sebagai pengaturan slot
+Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar Nama Pengaturan Aplikasi dan String Koneksi yang saat ini ditandai sebagai pengaturan slot
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi 
 Get-AzWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini mendapatkan string App Pengaturan dan Connection yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mendapatkan string App Pengaturan dan Koneksi yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 

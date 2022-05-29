@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Get-AzSubscriptionAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Get-AzSubscriptionAlias.md
-ms.openlocfilehash: fb1f0d74a7d3540c91d3be73436c72f1197edcda
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54dd68658d4817149f05bcbd49300c8df95904c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111140"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711306"
 ---
 # Get-AzSubscriptionAlias
 
 ## SYNOPSIS
 Mendapatkan detail alias langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.subscription/get-azsubscriptionalias) untuk informasi terbaru.
 
 ## SYNTAX
 

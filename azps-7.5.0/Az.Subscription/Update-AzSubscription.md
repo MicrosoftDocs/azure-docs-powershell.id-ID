@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Update-AzSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Update-AzSubscription.md
-ms.openlocfilehash: 7a503c02d03d0e12d38349a2a521b0b69bf48b46
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4961e68b8389a3e2851a50cb3d9886e0a47900d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111104"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711234"
 ---
 # Update-AzSubscription
 
 ## SYNOPSIS
 Memperbarui Langganan Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.subscription/update-azsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ State       : Enabled
 
 Mengaktifkan langganan
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzSubscription -SubscriptionId "86869d42-1782-4337-98b0-c905fb937d46" -Action "Rename" -Name "Updated Subscription Name"
 ```
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan yang akan diperbarui
+ID Langganan yang akan diperbarui
 
 ```yaml
 Type: System.String

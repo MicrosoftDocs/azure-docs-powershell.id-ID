@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
-ms.openlocfilehash: 258dabf15b1e7ee1572352c0dcb8473b3509e05f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 912a5d5b0ded9352ae5b13d7bb2cb6d802b465cf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238612"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680484"
 ---
 # Get-AzRouteConfig
 
 ## SYNOPSIS
 Mendapatkan rute dari tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

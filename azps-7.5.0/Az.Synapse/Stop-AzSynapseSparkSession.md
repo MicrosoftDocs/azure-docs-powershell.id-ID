@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkSession.md
-ms.openlocfilehash: 38f90a8d5b28b0405fc8a0fcf1de5472f15c1419
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 470a39227f599f75b40f219a45884b5020fc3369
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206063"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704808"
 ---
 # Stop-AzSynapseSparkSession
 
 ## SYNOPSIS
 Menghentikan sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsesparksession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $pool | Stop-AzSynapseSparkSession -LivyId 324
 
 Perintah ini menghentikan sesi Synapse Analytics Spark melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $session = Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 324
 $session | Stop-AzSynapseSparkSession

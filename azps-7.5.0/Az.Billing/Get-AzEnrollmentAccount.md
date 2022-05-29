@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azen
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzEnrollmentAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzEnrollmentAccount.md
-ms.openlocfilehash: 7eebfb8bb203cc5981abb7d06727bd2bf607d374
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 843a55a8c1b1433504385887b0ed8138e73bd95e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199816"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730728"
 ---
 # Get-AzEnrollmentAccount
 
 ## SYNOPSIS
 Mendapatkan akun pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azenrollmentaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

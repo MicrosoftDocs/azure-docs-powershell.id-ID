@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
-ms.openlocfilehash: 5229cfd2641a37fda48c6cff5bdb1e5c557c152f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e240d0001b089f5990bb7eda91d301f39c2c4e34
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199956"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725904"
 ---
 # Baru-AzSqlElasticPool
 
 ## SYNOPSIS
 Membuat kumpulan database elastis untuk SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlelasticpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Tags                :
 
 Perintah ini membuat kumpulan elastis di tingkat layanan GengeralPurpose bernama ElasticPool01. Server bernama server01, yang ditetapkan ke grup sumber daya Azure bernama ResourceGroup01, menghosting kumpulan elastis. Perintah menentukan nilai properti vCore untuk kumpulan dan database di kumpulan.
 
-### Contoh 3
+### Contoh: 3
 
 Membuat kumpulan database elastis untuk SQL Database. (dibuat otomatis)
 

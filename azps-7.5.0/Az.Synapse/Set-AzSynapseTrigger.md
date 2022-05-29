@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseTrigger.md
-ms.openlocfilehash: b6e0df31ed2dc75fcaf9def81cbd5cbf002033dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e12c75547e09dc48af71caca86a8b6239e5b435b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186709"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705150"
 ---
 # Set-AzSynapseTrigger
 
 ## SYNOPSIS
 Membuat pemicu di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

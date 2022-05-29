@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
-ms.openlocfilehash: 502fd7544043b946aec4b8a66871ff53e91fa105
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dbd4de45bb9662303b9336c4ea4a1cc8be9bdaaf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223655"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704232"
 ---
 # Update-AzSynapseKustoPool
 
 ## SYNOPSIS
 Memperbarui Kumpulan Kusto Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag Kusto Pool.
+ETag dari kumpulan Kusto.
 Hilangkan nilai ini untuk selalu menimpa Kumpulan Kusto saat ini.
 Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -420,7 +423,7 @@ INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

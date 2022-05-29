@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Test-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: 820d4774260353f4a50ea9dd7ba8da838daffccb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6082a2365011a33dd40e74006daee26d7ba2238f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195602"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711684"
 ---
 # Test-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
 Menguji apakah informasi yang diberikan untuk fungsi valid.
 Ini dapat berkisar dari menguji koneksi ke layanan web yang mendasar di belakang fungsi atau memastikan kode fungsi yang disediakan secara sintaksis benar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/test-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 

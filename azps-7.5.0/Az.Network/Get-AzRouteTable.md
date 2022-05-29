@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
-ms.openlocfilehash: cfbf93a2e9e54cde13b346d0845d1679b1a299e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a68dad1022e71ff3c24e30389f39830b53f48d5a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238514"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680250"
 ---
 # New-AzRouteTable
 
 ## SYNOPSIS
 Mendapatkan tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -180,7 +183,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tabel rute yang didapat cmdlet ini.
+Menentukan nama grup sumber daya yang berisi tabel rute yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String

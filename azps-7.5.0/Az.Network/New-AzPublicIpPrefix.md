@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpPrefix.md
-ms.openlocfilehash: fbbd1111e284b9afe49725a517dc8355fb5bee74
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0bcb0153d70a1a076e825a5161bf643e492afb8f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673644"
 ---
 # New-AzPublicIpPrefix
 
 ## SYNOPSIS
 Membuat Awalan IP Publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azpublicipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,23 +34,23 @@ Cmdlet **New-AzPublicIpPrefix** membuat awalan IP publik.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat prefiks IP publik baru
+### Contoh 1: Membuat awalan IP publik baru
 ```powershell
 $publicIpPrefix = New-AzPublicIpPrefix -Name $prefixName -ResourceGroupName $rgName -PrefixLength 30
 ```
 
 Perintah ini membuat sumber daya awalan IP publik baru. 
 
-### Contoh 2: Membuat awalan Ip publik global baru
+### Contoh 2: Membuat awalan IP publik global baru
 ```powershell
 $publicIpPrefix = New-AzPublicIpPrefix -ResourceGroupName $rgname -name $rname -location $location -Tier Global -PrefixLength 30
 ```
 
 Perintah ini membuat sumber daya awalan IP publik global baru. 
 
-### Contoh 3
+### Contoh: 3
 
-Membuat Prefiks IP Publik. (dibuat otomatis)
+Membuat Awalan IP Publik. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Zona tepi prefiks IP publik
+Zona tepi awalan IP publik
 
 ```yaml
 Type: System.String

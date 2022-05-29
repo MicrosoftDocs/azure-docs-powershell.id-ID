@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeStorageAccount.md
-ms.openlocfilehash: 21034f878ac283ba7d3001a2d7f35407a1c1751e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa980e0c8b647db7b453ff23f85784bba99dbab3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226317"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720162"
 ---
 # New-AzStackEdgeStorageAccount
 
 ## SYNOPSIS
-Membuat akun Storage Edge baru di perangkat.
+Membuat akun Edge Storage baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzStackEdgeStorageAccount [-ResourceGroupName] <String> [-DeviceName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStackEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Stack Edge. Untuk perangkat, satu akun Storage Edge dapat dipetakan paling banyak ke hanya satu akun Cloud Storage.
+Cmdlet **New-AzStackEdgeStorageAccount** membuat akun Edge Storage baru di perangkat Stack Edge. Untuk perangkat, satu akun Storage Edge dapat dipetakan paling banyak ke hanya satu akun Cloud Storage.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Name                ContainerCount Status BlobEndpoint                          
 edgestoragegacount2 0              OK     https://edgestoragegacount2.blob.dbEdge.microsoftdatabox.com/ cloudstorageaccount2     dbEdge     resourceGroupName
 ```
 
-2 EdgeStorageAccounts di perangkat tidak dapat berbagi lebih dari 1 Akun Cloud Storage
+2 EdgeStorageAccounts di perangkat tidak dapat berbagi lebih dari 1 Akun Storage Cloud
 
 ## PARAMETERS
 

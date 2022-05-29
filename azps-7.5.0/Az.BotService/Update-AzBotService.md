@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Update-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Update-AzBotService.md
-ms.openlocfilehash: c27dfe5fe7cfe1d4e360c3fa72cac0db24a25a14
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbc1d18157ae75600389207b9ce5cd4bdda12006
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110729"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686640"
 ---
 # Update-AzBotService
 
 ## SYNOPSIS
 Memperbarui Bot Service
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/update-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
-ms.openlocfilehash: b08dc0a22e9bf925f908d2e297eb2f6c5b7ddb43
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e53475d04cd02585f0f2ba58038c0ea5e9a25e5d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187171"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692118"
 ---
 # Get-AzLogicAppTriggerHistory
 
 ## SYNOPSIS
 
 Mendapatkan riwayat pemicu dalam aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapptriggerhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -115,7 +118,7 @@ Perintah ini mendapatkan seluruh riwayat pemicu alur kerja untuk pemicu di aplik
 Get-AzLogicAppTriggerHistory -ResourceGroupName "ResourceGroup11" -Name "LogicApp08" -TriggerName "Trigger01" -FollowNextPageLink -MaximumFollowNextPageLink 1
 ```
 
-Perintah ini mendapatkan dua halaman pertama riwayat pemicu alur kerja untuk pemicu di aplikasi logika bernama LogicApp09 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
+Perintah ini mendapatkan dua halaman pertama riwayat pemicu alur kerja untuk pemicu di aplikasi logika bernama LogicApp09 dengan mengikuti NextPageLink dan membatasi ukuran hasil hingga dua halaman.
 Setiap halaman berisi tiga puluh hasil.
 
 ## PARAMETERS
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -Name
 
-Menentukan nama aplikasi logika yang cmdlet ini mendapatkan riwayat pemicu.
+Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan riwayat pemicu.
 
 ```yaml
 Type: System.String

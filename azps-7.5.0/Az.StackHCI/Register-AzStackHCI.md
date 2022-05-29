@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
-ms.openlocfilehash: c0eda87ae0b7f44ac1c163b15f2104b9912d70fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99ddfd3d01b84aad5e6eb5cec170fac719ae9778
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193961"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719082"
 ---
 # Register-AzStackHCI
 
 ## SYNOPSIS
 Register-AzStackHCI membuat sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan mendaftarkan kluster lokal dengan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/register-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsWAC
-Pendaftaran melalui Pusat Admin Windows menentukan parameter ini ke true.
+Pendaftaran melalui Windows Admin Center menentukan parameter ini ke true.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Hasil: Berhasil atau Gagal atau TertundaForAdminConsent atau Dibatalkan.
 ### ResourceId: ID sumber daya sumber daya yang dibuat di Azure.
 ### PortalResourceURL: URL Sumber Daya Portal Microsoft Azure.
-### PortalAADAppPermissionsURL: URL Portal Microsoft Azure untuk halaman izin aplikasi AAD.
+### PortalAADAppPermissionsURL: URL Portal Microsoft Azure untuk halaman izin Aplikasi AAD.
 ## NOTES
 
 ## RELATED LINKS

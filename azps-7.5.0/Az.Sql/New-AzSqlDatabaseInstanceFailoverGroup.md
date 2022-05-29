@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 4b44a1116b841ee63c529fafca6ba4f5e2d00aaf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c20556d59935e6e20e6a6bc2a3cefb9d6b66216
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221543"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726210"
 ---
 # Baru-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Perintah ini membuat Grup Failover Instans Azure SQL Database baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzSqlDatabaseInstanceFailoverGroup [-Name] <String> [-PartnerResourceGroupNa
 ## DESCRIPTION
 Membuat Grup Failover Instans Azure SQL Database baru antara wilayah yang ditentukan dengan pasangan Instans Terkelola yang disebutkan.
 
-Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk terhubung ke wilayah utama dan sekunder dari Grup Failover, masing-masing. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
+Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke wilayah utama dan sekunder dari Grup Failover. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
 
 Selama pratinjau fitur Grup Failover Instans, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -82,7 +85,7 @@ Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-x
 
 Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Manual' untuk pasangan Instans Terkelola.
 
-### Contoh 3
+### Contoh: 3
 
 Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (dibuat otomatis)
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Wilayah Lokal tempat untuk mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String

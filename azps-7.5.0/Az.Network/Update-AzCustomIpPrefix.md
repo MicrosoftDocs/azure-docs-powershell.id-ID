@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
-ms.openlocfilehash: 6c9e3677145fed298c237d16d91c3378f388af28
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d17cdeb0cbf63053783d978ab5ba5df50f48f92c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210362"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664014"
 ---
 # Update-AzCustomIpPrefix
 
 ## SYNOPSIS
 Memperbarui CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azcustomipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,16 +51,16 @@ Cmdlet **Update-AzCustomIpPrefix** memungkinkan pengguna untuk menyediakan, menu
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Commission
 ```
 
-Perintah di atas akan memulai proses commissioning CustomIpPrefix.
+Perintah di atas akan memulai proses komisi customIpPrefix.
 
 ### Contoh 2 : Menonaktifkan CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Decommission
 ```
 
-Perintah di atas akan memulai proses de-commissioning CustomIpPrefix.
+Perintah di atas akan memulai proses de-commissioning customIpPrefix.
 
-### Contoh 3 : Memprovisikan CustomIpPrefix
+### Contoh 3 : Provisikan CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Provision
 ```
@@ -78,7 +81,7 @@ Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Tag $tags
 
 Perintah di atas akan memperbarui tag untuk CustomIpPrefix.
 
-### Contoh 6 : Perbarui CIDR untuk CustomIpPrefix
+### Contoh 6 : Memperbarui CIDR untuk CustomIpPrefix
 ```powershell
 Update-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Cidr $cidr
 ```
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Provisi
+### -Provision
 Jalankan cmdlet di latar belakang
 
 ```yaml
@@ -147,7 +150,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Deprovisi
+### -Deprovision
 Jalankan cmdlet di latar belakang
 
 ```yaml

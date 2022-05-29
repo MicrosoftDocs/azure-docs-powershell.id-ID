@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabaseSensitivityClassification.md
-ms.openlocfilehash: 0d9fa712c05c66d14f26b6e973635ba09452d9a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e62da5b0055f901407e891167563278f6a28a378
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212978"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724540"
 ---
 # Remove-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Menghapus jenis informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancedatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

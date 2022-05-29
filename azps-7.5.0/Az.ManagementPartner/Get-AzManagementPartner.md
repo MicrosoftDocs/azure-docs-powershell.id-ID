@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Get-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Get-AzManagementPartner.md
-ms.openlocfilehash: 150d5e4784ee43a83abf1bd231633002c5fa6ac4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb46eb21891f04ef7ce73da7effc23c140b2658d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196596"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691262"
 ---
 # Get-AzManagementPartner
 
 ## SYNOPSIS
-Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan yang diautentikasi saat ini.
+Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/get-azmanagementpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzManagementPartner [[-PartnerId] <String>] [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan yang diautentikasi saat ini.
+Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, itu adalah angka 6 digit
+Id mitra manajemen, ini adalah angka 6 digit
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitorReport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherConnectionMonitorReport.md
-ms.openlocfilehash: d806ec68bb245989f1c92b16733cdde5a4f49bd4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 159072a8d189189f9fdd61c4faa50a8ef9046c6a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190058"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681276"
 ---
 # Get-AzNetworkWatcherConnectionMonitorReport
 
 ## SYNOPSIS
 Mengkueri rekam jepret dari status koneksi terbaru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherconnectionmonitorreport) untuk informasi terbaru.
 
 ## SYNTAX
 

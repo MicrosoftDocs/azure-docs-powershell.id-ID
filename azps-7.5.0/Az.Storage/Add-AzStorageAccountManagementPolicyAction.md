@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/add-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
-ms.openlocfilehash: 8ab76f0ca39965ae9ea52ef903f5bdd4531b159c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ac5e0b8d8ba0bc365110ba36bd6a47bb6d361bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191945"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718758"
 ---
 # Tambahkan-AzstorageAccountManagementPolicyaction
 
 ## SYNOPSIS
-Menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan tersebut. Objek dapat digunakan di New-AzStorageAccountManagementPolicyRule.
+Menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan. Objek dapat digunakan dalam New-AzStorageAccountManagementPolicyRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azstorageaccountmanagementpolicyaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,11 +57,11 @@ Add-AzStorageAccountManagementPolicyAction -BlobVersionAction <String> -DaysAfte
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzStorageAccountManagementPolicyAction** menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan tersebut.
+Cmdlet **Add-AzStorageAccountManagementPolicyAction** menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek Grup Tindakan ManagementPolicy dengan 4 tindakan, lalu menambahkannya ke aturan kebijakan manajemen dan mengaturnya ke akun Storage
+### Contoh 1: Membuat objek Grup Tindakan ManagementPolicy dengan 4 tindakan, lalu menambahkannya ke aturan kebijakan manajemen dan diatur ke akun Storage
 ```
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction Delete -daysAfterModificationGreaterThan 100
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction TierToArchive -daysAfterModificationGreaterThan 50  -DaysAfterLastTierChangeGreaterThan 40 -InputObject $action
@@ -88,9 +91,9 @@ PS C:\>$rule = New-AzStorageAccountManagementPolicyRule -Name Test -Action $acti
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 3 perintah berikut menambahkan 3 tindakan ke objek. Kemudian tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
+Perintah pertama membuat objek Grup Tindakan ManagementPolicy, 3 perintah berikut menambahkan 3 tindakan ke objek . Kemudian tambahkan ke aturan kebijakan manajemen dan atur ke akun Storage.
 
-### Contoh 2: Membuat objek Grup Tindakan ManagementPolicy dengan 6 tindakan pada rekam jepret dan versi blob, lalu menambahkannya ke aturan kebijakan manajemen dan mengaturnya ke akun Storage
+### Contoh 2: Membuat objek Grup Tindakan ManagementPolicy dengan 6 tindakan pada rekam jepret dan versi blob, lalu menambahkannya ke aturan kebijakan manajemen dan diatur ke akun Storage
 ```
 PS C:\> $action = Add-AzStorageAccountManagementPolicyAction  -SnapshotAction Delete -daysAfterCreationGreaterThan 40
 PS C:\> $action = Add-AzStorageAccountManagementPolicyAction -InputObject $action -SnapshotAction TierToArchive -daysAfterCreationGreaterThan 50
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterCreationGreaterThan
-Nilai bilangan bulat yang menunjukkan usia dalam beberapa hari setelah pembuatan.
+Nilai bilangan bulat menunjukkan usia dalam beberapa hari setelah pembuatan.
 
 ```yaml
 Type: System.Int32
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterLastAccessTimeGreaterThan
-Nilai bilangan bulat menunjukkan usia dalam hari setelah akses blob terakhir. Properti ini hanya dapat digunakan bersama dengan kebijakan pelacakan waktu akses terakhir.
+Nilai bilangan bulat yang menunjukkan usia dalam beberapa hari setelah akses blob terakhir. Properti ini hanya dapat digunakan bersama dengan kebijakan pelacakan waktu akses terakhir.
 
 ```yaml
 Type: System.Int32
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysAfterLastTierChangeGreaterThan
-Nilai bilangan bulat menunjukkan usia dalam hari setelah waktu perubahan tingkat blob terakhir. Properti ini hanya berlaku untuk tindakan tierToArchive. Ini mengharuskan daysAfterModificationGreaterThan diatur untuk tindakan berbasis baseBlobs, atau daysAfterModificationGreaterThan diatur untuk rekam jepret dan tindakan berbasis versi blob.
+Nilai bilangan bulat yang menunjukkan usia dalam beberapa hari setelah waktu perubahan tingkat blob terakhir. Properti ini hanya berlaku untuk tindakan tierToArchive. Ini mengharuskan daysAfterModificationGreaterThan diatur untuk tindakan berbasis baseBlobs, atau daysAfterModificationGreaterThan untuk diatur untuk rekam jepret dan tindakan berbasis versi blob.
 
 ```yaml
 Type: System.Int32
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Jika memasukkan objek Tindakan ManagementPolicy, akan mengatur tindakan ke objek tindakan input.
-Jika tidak dimasukkan, akan membuat objek tindakan baru.
+Jika tidak input, akan membuat objek tindakan baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSManagementPolicyActionGroup

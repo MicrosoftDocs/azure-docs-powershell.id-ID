@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneGroup.md
-ms.openlocfilehash: 344aa55776fc0796d36bdd870f3bd2232e51658e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23a96dddf94ef7e0e7b10af5ab3f9108de2650a5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215990"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673860"
 ---
 # New-AzPrivateDnsZoneGroup
 
 ## SYNOPSIS
 Membuat grup zona DNS privat di titik akhir privat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatednszonegroup) untuk informasi terbaru.
 
 ## SYNTAX
 

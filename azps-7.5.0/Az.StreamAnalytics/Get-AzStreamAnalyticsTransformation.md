@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: 9e30c47df282c7452e74a3f3db14e7b56c067f33
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbb673f2265ffde497475c8152caf4e0101a8687
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200614"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712188"
 ---
 # Get-AzStreamAnalyticsTransformation
 
 ## SYNOPSIS
 Mendapatkan detail tentang transformasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticstransformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ tranf-01 Microsoft.StreamAnalytics/streamingjobs/transformations ec0c7238-6bb2-4
 
 Perintah ini mengembalikan informasi tentang transformasi pada pekerjaan.
 
-### Contoh 2: Mendapatkan informasi tentang transformasi Azure Stream Analytics berdasarkan alur
+### Contoh 2: Mendapatkan informasi tentang transformasi Azure Stream Analytics menurut alur
 ```powershell
  New-AzStreamAnalyticsTransformation -ResourceGroupName azure-rg-test -JobName sajob-01-portal -Name tranf-01 -StreamingUnit 6 -Query "Select Id, Name from input-01" | Get-AzStreamAnalyticsTransformation
 ```
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[JobName <String>]`: Nama dari pekerjaan streaming.
   - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

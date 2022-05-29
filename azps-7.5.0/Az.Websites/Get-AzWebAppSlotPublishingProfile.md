@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
-ms.openlocfilehash: 6abc63cda8848adc213d7b45701e2a2dc341e196
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 062100f39d0cd2c40ae74cf5a8d6c752c3be561b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245094"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699930"
 ---
 # Get-AzWebAppSlotPublishingProfile
 
 ## SYNOPSIS
 Mendapatkan profil penerbitan slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotpublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-Output File
+Berkas Output
 
 ```yaml
 Type: System.String

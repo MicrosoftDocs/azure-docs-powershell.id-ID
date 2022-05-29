@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride.md
-ms.openlocfilehash: 71d4494af6506a970dd6565e13906543d482c97d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a534b28c33df64215fa1ecccb626676afb94642
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217166"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677838"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride
 
 ## SYNOPSIS
 Membuat entri RuleGroupOverride di ManagedRuleSets untuk kebijakan firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedrulegroupoverride) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride -RuleGroupName <S
 ```
 
 ## DESCRIPTION
-**New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride** membuat entri ruleGroupOverride dalam managedRuleSet untuk kebijakan firewall.
+**New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride** membuat entri ruleGroupOverride di managedRuleSet untuk kebijakan firewall.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/new-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/New-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/New-AzConsumptionBudget.md
-ms.openlocfilehash: 801dfc2eeeb78cd1b3bede688a788e40bebc0358
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c1572e2ec7f32946decf964e4c35c2c33bc9e2f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225956"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687036"
 ---
 # New-AzConsumptionBudget
 
 ## SYNOPSIS
-Buat anggaran dalam langganan atau grup sumber daya.
+Buat anggaran di langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/new-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationKey
-Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan pengalihan pemberitahuan diaktifkan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
+Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan sakelar yang diaktifkan pemberitahuan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
 
 ```yaml
 Type: System.String
@@ -247,9 +250,9 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationThreshold
-Nilai ambang batas yang terkait dengan pemberitahuan.
+Nilai ambang yang terkait dengan pemberitahuan.
 Pemberitahuan dikirim ketika biaya atau penggunaan melebihi ambang batas.
-Selalu persen dan harus antara 0 dan 1000.
+Itu selalu persen dan harus antara 0 dan 1000.
 
 ```yaml
 Type: System.Nullable`1[System.Decimal]
@@ -387,6 +390,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 - Saat ini, PowerShell SDK untuk Konsumsi hanya tersedia untuk Perjanjian Enterprise pelanggan.
-- PowerShell SDK for Consumption menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- PowerShell SDK untuk Konsumsi menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

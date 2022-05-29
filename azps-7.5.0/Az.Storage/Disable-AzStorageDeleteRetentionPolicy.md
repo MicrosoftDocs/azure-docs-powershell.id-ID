@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
-ms.openlocfilehash: 1062aa5ab060532acd2ada637d5c1f206646c01e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 47e30b24f988b997908aaefa32e31cf576dc9e32
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193835"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718470"
 ---
 # Disable-AzStorageDeleteRetentionPolicy
 
 ## SYNOPSIS
 Nonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragedeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzStorageDeleteRetentionPolicy [-PassThru] [-Context <IStorageContext>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk layanan blob Azure Storage.
+Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penyim
 C:\PS>Disable-AzStorageDeleteRetentionPolicy
 ```
 
-Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk blob service.
+Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk Blob service.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/set-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
-ms.openlocfilehash: ad585e5c515da0eb3b36ac39c51aeca59e2482f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3204c2c598d337a799d974df7fb1374120a930a4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236355"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687144"
 ---
 # Set-AzConsumptionBudget
 
 ## SYNOPSIS
 Perbarui anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/set-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: fff0ac78851af4b8fb3b525ad8a90133c4f99ab4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c5f8937c3b7af484cafd5ac11243dc2a1deb1e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245724"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672888"
 ---
 # New-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet New-AzVirtualHubBgpConnection membuat sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke hub Virtual WAN.
+Cmdlet New-AzVirtualHubBgpConnection membuat sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke Virtual WAN Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ New-AzVirtualHubBgpConnection -PeerIp <String> -PeerAsn <UInt32> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzVirtualHubBgpConnection membuat sumber daya HubBgpConnection yang mengintip Azure Virtual WAN Hub Router dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke Virtual WAN Hub.
+Cmdlet New-AzVirtualHubBgpConnection membuat sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke Virtual WAN Hub.
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.5
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di US Barat dan menyambungkan Virtual Network ke hub Virtual WAN di grup sumber daya tersebut di Azure. Koneksi BGP hub Virtual WAN akan dibuat setelahnya yang akan mengintip hub Virtual WAN dengan appliance jaringan yang disebarkan di Virtual Network.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di US Barat dan menyambungkan Virtual Network ke Virtual WAN Hub di grup sumber daya tersebut di Azure. Koneksi BGP Virtual WAN Hub akan dibuat setelahnya yang akan melakukan peering Virtual WAN Hub dengan appliance jaringan yang disebarkan di Virtual Network.
 
 ### Contoh 2
 ```powershell

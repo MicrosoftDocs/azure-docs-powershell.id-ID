@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: c4751640d770d08eb674fd5f965ff455020a333a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3c2c77e0d6faefd2964920d6d5f6b7f99203652
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199928"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712071"
 ---
 # New-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
 Membuat fungsi atau mengganti fungsi yang sudah ada di bawah pekerjaan streaming yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 7bbd6ccd-c7a4-4910
 
 Perintah ini membuat fungsi dari file Function_JavascriptUdf.json.
 
-(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properties": { "type": "Scalar", "properties": { "inputs": [ { "dataType": "any" }, { "dataType": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dua nilai.\nfungsi main(arg3, arg4) {\n return arg1 + arg2;\n}" } } } } }
+(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properties": { "type": "Scalar", "properties": { "inputs": [ { "dataType": "any" }, { "dataType": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dua nilai.\nfungsi main(arg3, arg4) {\n mengembalikan arg1 + arg2;\n}" } } } } }
 
 ### Contoh 2: Membuat fungsi Azure Stream Analytics
 ```powershell
@@ -57,7 +60,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 7bbd6ccd-c7a4-4910
 
 Perintah ini membuat fungsi dari file MachineLearningServices.json.
 
-(di bawah ini adalah contoh untuk "MachineLearningServices.json") { "properties": { "type": "Scalar", "properties": { "inputs": [ { "dataType": "record" } ], "output": { "dataType": "bigint" }, "binding": { "type": "Microsoft.MachineLearningServices", "properties": { "endpoint": "http://xxxxxxxxxxxxxxxxxxx.eastus.azurecontainer.io/score", "inputs": [ { "name": "data", "dataType": "object", "mapTo": 0 } ], "outputs": [ { "name": "output", "dataType": "int64", "mapTo": 0 } ], "batchSize": 10000, "numberOfParallelRequests": 1 } } } } }
+(di bawah ini adalah contoh untuk "MachineLearningServices.json") { "properties": { "type": "Scalar", "properties": { "inputs": [ { "dataType": "record" } ], "output": { "dataType": "bigint" }, "binding": { "type": "Microsoft.MachineLearningServices", "properties": { "endpoint": "http://xxxxxxxxxxxxxxxxxxx.eastus.azurecontainer.io/score", "inputs": [ { "name": "data", "dataType": "object", "mapTo": 0 } ], "outputs": [ { "name": "output", "dataType": "int64", "mapTo": 0 } ], "batchSize": 10000, "numberOfParallelRequests": 1 } } } } } }
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 
 ### -File
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

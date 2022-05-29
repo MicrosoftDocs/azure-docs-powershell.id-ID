@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceLink.md
-ms.openlocfilehash: eddeef848b51d9cd2860ecc2a83ff28c7b287cb4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 64dd4f5b333897c8774f08f2f4a597ef71e2a631
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109417"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724518"
 ---
 # Remove-AzSqlInstanceLink
 
 ## SYNOPSIS
 Menghapus tautan instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ Remove-AzSqlInstanceLink [-ResourceId] <String> [-Force] [-PassThru] [-DefaultPr
 ```
 
 ## DESCRIPTION
-**Cmdlet Remove-AzSqlInstanceLink** menghilangkan tautan instans. Perintah ini dapat menyebabkan kehilangan data jika tautan dihilangkan dan LSN replika tidak disinkronkan dengan primer, sehingga pengguna harus secara eksplisit mengonfirmasi perintah ketika diminta, atau menggunakan parameter -Force.
+**Cmdlet Remove-AzSqlInstanceLink** menghilangkan tautan instans. Perintah ini dapat menyebabkan kehilangan data jika tautan dihilangkan dan LSN replika tidak disinkronkan dengan primer, sehingga pengguna harus secara eksplisit mengonfirmasi perintah saat diminta, atau menggunakan parameter -Force.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tautan instans
+### Contoh 1: Hapus tautan instans
 ```powershell
 PS C:\> Remove-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01"
 This operation may cause data loss if replica's last hardened LSN is not in sync with the primary. Are you sure you want to proceed?
@@ -57,14 +60,14 @@ This operation may cause data loss if replica's last hardened LSN is not in sync
 
 Perintah ini menghapus tautan instans "Link01" dari instans terkelola "ManagedInstance01".
 
-### Contoh 2: Hapus tautan instans dengan bendera -Force eksplisit
+### Contoh 2: Menghapus tautan instans dengan bendera -Force eksplisit
 ```powershell
 PS C:\> Remove-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01" -Force
 ```
 
 Perintah ini secara paksa menghapus tautan instans "Link01" dari instans terkelola "ManagedInstance01", mengabaikan peringatan kehilangan data.
 
-### Contoh 3: Menghapus tautan instans berdasarkan pengidentifikasi sumber dayanya
+### Contoh 3: Menghapus tautan instans dengan pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Remove-AzSqlInstanceLink -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance01/distributedAvailabilityGroups/Link01"
 This operation may cause data loss if replica's last hardened LSN is not in sync with the primary. Are you sure you want to proceed?
@@ -73,7 +76,7 @@ This operation may cause data loss if replica's last hardened LSN is not in sync
 
 Perintah ini menghapus tautan instans dengan ID sumber daya yang ditentukan.
 
-### Contoh 4: Menghapus tautan instans berdasarkan objek PowerShell-nya
+### Contoh 4: Menghapus tautan instans dengan objek PowerShell-nya
 ```powershell
 PS C:\> $managedInstanceLink = Get-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01" 
 PS C:\> Remove-AzSqlInstanceLink -InputObject $managedInstanceLink
@@ -102,7 +105,7 @@ This operation may cause data loss if replica's last hardened LSN is not in sync
 
 Perintah ini menghapus tautan instans "Link01" dari instans terkelola "ManagedInstance01" menggunakan parameter posisi.
 
-### Contoh 7: Menghapus semua tautan instans dari instans induknya dengan menyalurkan objek tautan
+### Contoh 7: Menghapus semua tautan instans dari instans induknya dengan mempipa objek tautan
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01" 
 PS C:\> $instance | Get-AzSqlInstanceLink | Remove-AzSqlInstanceLink -Force

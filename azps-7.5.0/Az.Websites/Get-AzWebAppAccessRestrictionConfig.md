@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppAccessRestrictionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppAccessRestrictionConfig.md
-ms.openlocfilehash: 133e4781db316bc370fcf8755645be85fb996b62
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 243c959d63d8aaa0e14a5548e554143c70b1a891
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247250"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700254"
 ---
 # Get-AzWebAppAccessRestrictionConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi Restiction Akses untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappaccessrestrictionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Cmdlet **Get-AzWebAppAccessRestrictionConfig** mendapatkan konfigurasi Pembatasa
 Get-AzWebAppAccessRestrictionConfig -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini mendapatkan konfigurasi pembatasan akses Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan konfigurasi pembatasan akses dari Aplikasi Web bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 0519db463d2b482c8b84a2fc119ab3a40f83d639
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6e3b147aa4f702cf76a291f7ebd0055c57e5dce0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214427"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684354"
 ---
 # Get-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi DSC dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

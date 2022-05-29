@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 71e578d14d274fe1cd8a1afdfd51ea28064970bd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 58b6927cc175bee2b1931052d416c890c77231ee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182904"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657570"
 ---
 # Update-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Memodifikasi instans Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/update-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Kapasitas Tersemat PowerBI
+Nama Kapasitas PowerBI Embedded
 
 ```yaml
 Type: System.String

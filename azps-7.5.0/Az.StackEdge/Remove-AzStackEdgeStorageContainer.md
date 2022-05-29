@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeStorageContainer.md
-ms.openlocfilehash: 81f33a2c8a8b2221dec26bf7744da06661421478
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eac126dcc4e616c4c57f79d68103a195870c0409
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192141"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719604"
 ---
 # Remove-AzStackEdgeStorageContainer
 
 ## SYNOPSIS
 Menghapus kontainer penyimpanan untuk akun Azure Stack Edge Storage di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/remove-azstackedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

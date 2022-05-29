@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotTriggeredWebJobHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotTriggeredWebJobHistory.md
-ms.openlocfilehash: 9cc93be8199fc369eccb862d21b3901c0f72c50b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2025a1b035900016d918640878d3f4e28fb8c023
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205970"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699804"
 ---
 # Get-AzWebAppSlotTriggeredWebJobHistory
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan riwayat pekerjaan web yang dipicu untuk slot penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslottriggeredwebjobhistory) untuk informasi terbaru.
 
 ## SYNTAX
 

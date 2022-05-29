@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeOrder.md
-ms.openlocfilehash: 71695fad35f9291bc6302c340e9aed5641ec7677
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1524cb51a5eb069fda363ca7b334dabc35dad3a5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194101"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719802"
 ---
 # Remove-AzStackEdgeOrder
 
 ## SYNOPSIS
 Menghapus pesanan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/remove-azstackedgeorder) untuk informasi terbaru.
 
 ## SYNTAX
 

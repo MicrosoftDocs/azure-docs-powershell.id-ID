@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 330b562bfde859e19d8e924aefd61286e7c4626a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 450e81cfce99bf121ef45ed6fbe2757be2c9f325
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200292"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674436"
 ---
 # New-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
 Membuat sumber daya pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ New-AzNetworkWatcherConnectionMonitor [-ConnectionMonitor <PSNetworkWatcherConne
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitor membuat sumber daya pemantau koneksi untuk sumber dan tujuan tertentu (pemantau koneksi SingleSourcedestination) atau kumpulan grup pengujian (MultiEndpointConnectionMonitor).
+Cmdlet New-AzNetworkWatcherConnectionMonitor membuat sumber daya pemantau koneksi untuk sumber dan tujuan tertentu (pemantau koneksi SingleSourcedestination) atau serangkaian grup pengujian (MultiEndpointConnectionMonitor).
 
 ## EXAMPLES
 
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya network watcher.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama network watcher.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya network watcher.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String

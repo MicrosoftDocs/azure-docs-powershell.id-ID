@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstance.md
-ms.openlocfilehash: 41e4e7db0fc796407cfa47e66274eae2857c3a9e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dac0072b0e35648d1daed1381ff3b1d701e596d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213023"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724626"
 ---
 # Remove-AzSqlInstance
 
 ## SYNOPSIS
 Menghapus Instans Database Terkelola Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek AzureSqlManagedInstanceModel untuk dihapus
+Objek AzureSqlManagedInstanceModel yang akan dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel

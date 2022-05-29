@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: 29acdcb841cc0fbcb735f2fea4fb77e1d9261ba0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6585cd9a586f44b445733d81f29831833b4d059d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242907"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674832"
 ---
 # New-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Membuat aturan konfigurasi untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzLoadBalancerRuleConfig -Name <String> [-Protocol <String>] [-LoadDistribut
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerRuleConfig** membuat konfigurasi aturan untuk penyeimbang muatan Azure.
+Cmdlet **New-AzLoadBalancerRuleConfig** membuat konfigurasi aturan untuk load balancer Azure.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $sl
 $slb | Set-AzLoadBalancer
 ```
 
-Tiga perintah pertama menyiapkan IP publik, front end, dan probe untuk konfigurasi aturan dalam perintah forth. Perintah forth membuat aturan baru yang disebut MyLBrule dengan spesifikasi tertentu.
+Tiga perintah pertama menyiapkan IP publik, ujung depan, dan pemeriksaan untuk konfigurasi aturan dalam perintah forth. Perintah forth membuat aturan baru yang disebut MyLBrule dengan spesifikasi tertentu.
 
 ## PARAMETERS
 
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam penyeimbang muatan.
+Menentukan lamanya waktu, dalam menit, bahwa status percakapan dipertahankan dalam load balancer.
 
 ```yaml
 Type: System.Int32
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probe
-Menentukan pemeriksaan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan pemeriksaan untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSProbe
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeId
-Menentukan ID probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
+Menentukan ID probe yang akan dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang cocok dengan konfigurasi aturan penyeimbang muatan.
+Menentukan protokol yang cocok dengan konfigurasi aturan load balancer.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
 ```yaml

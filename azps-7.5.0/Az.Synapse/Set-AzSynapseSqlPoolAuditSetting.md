@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: f384e390c99a5c225268d00970005bb8d97fa7d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d6283ef5f581c7859f71b2f8c1ff2f2cbb7dc752
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208511"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705348"
 ---
 # Set-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
 Mengubah pengaturan audit untuk kumpulan SQL Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSq
 
 Nonaktifkan kebijakan audit penyimpanan blob dari kumpulan SQL Azure Synapse Analytics bernama ContosoSqlPool.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary -PredicateExpression "statement <> 'select 1'"
 ```
@@ -157,9 +160,9 @@ INSERT
 
 DELETE
 
-MENJALANKAN
+EXECUTE
 
-MENERIMA
+TERIMA
 
 REFERENCES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: f9dbde1a42b94ec5952a31bd7f77c2a9fde9fe4e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a3d3cfd84e53c15321e8e5c21370633e67180c00
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187930"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685272"
 ---
 # New-AzApplicationInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Membuat akun penyimpanan tertaut application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $account = Get-AzStorageAccount -ResourceGroupName "rgName" -Name "accountName"
 Get-AzApplicationInsights -ResourceGroupName "rgName" -Name "componentName" | New-AzApplicationInsightsLinkedStorageAccount -LinkedStorageAccountResourceId $account.Id
 ```
 
-Buat akun penyimpanan tertaut $account di bawah komponen "componentName"
+Membuat akun penyimpanan tertaut $account di bawah komponen "componentName"
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedStorageAccountResourceId
-Storage ResourceId Akun
+ResourceId Akun Storage
 
 ```yaml
 Type: System.String

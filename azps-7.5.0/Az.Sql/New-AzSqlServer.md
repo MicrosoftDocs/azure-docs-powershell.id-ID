@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
-ms.openlocfilehash: ab22c26ff7e343c27921957200a3dbab2c0068f9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cbf215f63d56017f7bfa3b6a2fada1f3d96c4105
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220079"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725706"
 ---
-# Baru-AzSqlServer
+# Baru-AzResourceGroup
 
 ## SYNOPSIS
 Membuat server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveDirectoryOnlyAuthentication
-Aktifkan Autentikasi Hanya Direktori Aktif pada server.
+Aktifkan Autentikasi Khusus Direktori Aktif pada server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal yang akan diterapkan untuk Sql Server
+Versi TLS minimal yang akan diberlakukan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -464,6 +467,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Atur-AzSqlServer](./Set-AzSqlServer.md)
 
-[New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
+[Baru-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

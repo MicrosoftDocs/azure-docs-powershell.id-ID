@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/Stop-AzV
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVpnGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVpnGatewayPacketCapture.md
-ms.openlocfilehash: a3db683b49a4fee6f9e9bf0d69fed1e981b21440
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cc17f04699b98d8cad49730eb009475debc881ac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210458"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664284"
 ---
 # Stop-AzVpnGatewayPacketCapture
 
 ## SYNOPSIS
 Menghentikan Operasi Penangkapan Paket di Vpn Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-azvpngatewaypacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 

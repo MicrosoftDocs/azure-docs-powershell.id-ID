@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppPublishingProfile.md
-ms.openlocfilehash: ef9c8baf82c5d39552bc3734574d2492eed30712
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46f1c27707f073702faa5c424d28fb9256e40dd0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236414"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700038"
 ---
 # Get-AzWebAppPublishingProfile
 
 ## SYNOPSIS
 Mendapatkan profil penerbitan Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebapppublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-Output File
+Berkas Output
 
 ```yaml
 Type: System.String

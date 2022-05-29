@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
-ms.openlocfilehash: 2585fd4fab9ba62bfe8019474fa77dd7f17d4603
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6457082c33849fae8fae5f5ab5527cdb0d8204a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208358"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736794"
 ---
 # Set-AzCognitiveServicesAccount
 
 ## SYNOPSIS
 Memodifikasi akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/set-azcognitiveservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiProperty
-ApiProperti Akun Cognitive Services. Diperlukan oleh jenis akun tertentu.
+ApiProperties dari Akun Cognitive Services. Diperlukan oleh jenis akun tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Management.CognitiveServices.Models.CognitiveServicesAccountApiProperties
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Akun Cognitive Services baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan Identitas Akun Cognitive Services baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-Benar jika menonaktifkan Metode autentikasi lokal.
+True jika menonaktifkan Metode autentikasi lokal.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultIdentityClientId
-Atur IdentityClientId untuk mengakses Azure KeyVault dari Enkripsi Akun Cognitive Services.
+Atur IdentityClientId untuk mengakses Azure KeyVault enkripsi akun Cognitive Services.
 
 ```yaml
 Type: System.String
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictOutboundNetworkAccess
-Benar jika membatasi akses jaringan keluar.
+True jika membatasi akses jaringan keluar.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]

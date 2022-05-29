@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/publis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Publish-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Publish-AzBlueprint.md
-ms.openlocfilehash: 4fdf967573b30e5be0c7cc843984148cf9cb6d5e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 996352d85e0f6d38ac3703b3f438695e2e2c8c39
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232883"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686856"
 ---
 # Publish-AzBlueprint
 
 ## SYNOPSIS
-Terbitkan versi baru cetak biru.
+Menerbitkan versi baru cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/publish-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Publish-AzBlueprint -Version <String> [-ChangeNote <String>] -Blueprint <PSBluep
 ```
 
 ## DESCRIPTION
-Terbitkan versi baru definisi cetak biru.
+Menerbitkan versi baru definisi cetak biru.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Parameters     : {[tagName, Microsoft.Azure.Commands.Blueprint.Models.PSParamete
 ResourceGroups : {storageRG}
 ```
 
-Terbitkan versi baru definisi cetak biru.
+Menerbitkan versi baru definisi cetak biru.
 
 ## PARAMETERS
 

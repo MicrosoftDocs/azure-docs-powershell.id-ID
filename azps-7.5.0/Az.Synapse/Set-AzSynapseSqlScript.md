@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
-ms.openlocfilehash: 2abd5d3226cfe27e94a1614dde458edaaaa894c5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a5dba9dca467fefe19c9a548d4d179635a2876bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208490"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705186"
 ---
 # Set-AzSynapseSqlScript
 
 ## SYNOPSIS
 Membuat atau memperbarui skrip SQL di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ $ws | Set-AzSynapseSqlScript -DefinitionFile "C:\\samples\\sqlscript.sql"
 
 Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sqlscript.sql"  -SqlPoolName Contososqlpool -SqlDatabaseName Contosodatabase
 ```

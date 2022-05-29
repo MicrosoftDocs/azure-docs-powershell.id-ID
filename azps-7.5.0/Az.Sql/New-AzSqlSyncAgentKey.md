@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgentKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgentKey.md
-ms.openlocfilehash: e84166d821e7c46a6a68c7369a4a89302b7690c5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f2439222d8d5556f98729b865ee45cc041691b7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213254"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725454"
 ---
 # New-AzSqlSyncAgentKey
 
 ## SYNOPSIS
 Membuat Kunci Agen Sinkronisasi Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncagentkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **New-AzSqlSyncAgentKey** membuat kunci Agen Sinkronisasi Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL.
+### Contoh 1: Buat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL.
 ```powershell
 New-AzSqlSyncAgentKey -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -SyncAgentName "SyncAgent01"
 ```
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL tempat agen sinkronisasi berada.
+Nama Azure SQL Server tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String

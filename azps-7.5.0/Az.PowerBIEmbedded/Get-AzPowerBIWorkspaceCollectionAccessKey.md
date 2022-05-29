@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: 0b8219b2265a92773fdd7ad301f21f6ca08527b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 496dc3d17d33a8dcd3dd1d71b3cfd0161b2f397d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228669"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657696"
 ---
 # Get-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses saat ini yang terkait dengan kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollectionaccesskey) untuk informasi terbaru.
 
 ## SYNTAX
 

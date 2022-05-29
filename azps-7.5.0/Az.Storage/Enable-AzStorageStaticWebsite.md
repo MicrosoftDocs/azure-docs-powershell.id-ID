@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageStaticWebsite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageStaticWebsite.md
-ms.openlocfilehash: 1b0700be7d55ea8773ec17ef32880ed5a726b9f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46487ca9b1f683a6fa405c1d5989d0041841579e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191850"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718146"
 ---
 # Enable-AzStorageStaticWebsite
 
 ## SYNOPSIS
 Aktifkan situs web statis untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstoragestaticwebsite) untuk informasi terbaru.
 
 ## SYNTAX
 

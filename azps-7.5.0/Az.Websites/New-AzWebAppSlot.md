@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
-ms.openlocfilehash: 85a98d4a232cbe12a969398a3fccef064b5ec88c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 66bbb3c9346364314708ec27dcae430b04f9be02
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215519"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698868"
 ---
 # New-AzWebAppSlot
 
 ## SYNOPSIS
 Membuat slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 

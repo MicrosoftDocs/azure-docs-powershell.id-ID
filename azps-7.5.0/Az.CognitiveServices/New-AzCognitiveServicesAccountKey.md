@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountKey.md
-ms.openlocfilehash: 778f97f6d8620d20ff848d7d5b927f43197f5dad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9423558fb43e84b4daafd36df366dff8341f611d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240026"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736956"
 ---
 # New-AzCognitiveServicesAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 

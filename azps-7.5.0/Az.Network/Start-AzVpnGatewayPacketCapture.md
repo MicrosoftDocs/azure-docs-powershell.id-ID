@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/Start-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVpnGatewayPacketCapture.md
-ms.openlocfilehash: c338ccb57433d35ffb3c4f62688158d38e40b5db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b240bd22c60b24625b35b9e9e5ceee9dfa9378d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210554"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664518"
 ---
 # Start-AzVpnGatewayPacketCapture
 
 ## SYNOPSIS
-Memulai Operasi Penangkapan Paket di Vpn Gateway.
+Memulai Operasi Pengambilan Paket di Vpn Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/start-azvpngatewaypacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzVpnGatewayPacketCapture -ResourceId <String> [-FilterData <String>] [-As
 ```
 
 ## DESCRIPTION
-Memulai Operasi Penangkapan Paket di Vpn Gateway.
+Memulai Operasi Pengambilan Paket di Vpn Gateway.
 
 ## EXAMPLES
 

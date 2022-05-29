@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Stop-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Stop-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 8038b980775325facb78f58b40a2407e41ebf621
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d0d675fadc378291ab2efa15e07c56454780388
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195627"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711666"
 ---
 # Stop-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan streaming yang sedang berjalan.
 Ini akan menyebabkan pekerjaan streaming yang sedang berjalan berhenti memproses peristiwa input dan menghasilkan output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/stop-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 

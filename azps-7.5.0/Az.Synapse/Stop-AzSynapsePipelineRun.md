@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
-ms.openlocfilehash: d1145f696788af4377dbfb184f282888a1d5cb11
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73d58c6ed694273434522b53bf3d8dd6ab377a70
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212747"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704826"
 ---
 # Stop-AzSynapsePipelineRun
 
 ## SYNOPSIS
 Menghentikan eksekusi alur di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsepipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Stop-AzSynapsePipelineRun -PipelineRunId b9730a13-aa12-4926-a8b3-8e3a974ab
 
 Perintah ini menghentikan eksekusi alur dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pipelineRun = Get-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace -PipelineRunId b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 $pipelineRun | Stop-AzSynapsePipelineRun

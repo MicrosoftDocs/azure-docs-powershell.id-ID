@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherSecurityGroupView.md
-ms.openlocfilehash: 376d46c9aa3a63393d22ab6d2271b2a33c9161ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f2e1704b8883aacf11065729ee8e4e20f125913f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223343"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681024"
 ---
 # Get-AzNetworkWatcherSecurityGroupView
 
 ## SYNOPSIS
 Melihat aturan kelompok keamanan jaringan yang dikonfigurasi dan efektif yang diterapkan pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchersecuritygroupview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $VM = Get-AzVM -ResourceGroupName ContosoResourceGroup -Name VM0
 Get-AzNetworkWatcherSecurityGroupView -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id
 ```
 
-Dalam contoh di atas, pertama-tama kita mendapatkan Network Watcher regional, lalu VM di wilayah tersebut. Kemudian kita melakukan panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
+Dalam contoh di atas, pertama-tama kita mendapatkan Network Watcher regional, lalu VM di wilayah tersebut. Kemudian kami melakukan panggilan Tampilan Grup Keamanan pada VM yang ditentukan.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya network watcher.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama network watcher.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya network watcher.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityGroupViewResult
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, alur, ip 
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, alur, ip 
 
 ## RELATED LINKS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServicePlan.md
-ms.openlocfilehash: ab19dcca468f25e754bcb8065ff8678fa7ef91a7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b7898fdfb9b1413972d294183530f5055e6baae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231808"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699444"
 ---
 # New-AzAppServicePlan
 
 ## SYNOPSIS
 Membuat rencana Azure App Service di lokasi Geo tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 

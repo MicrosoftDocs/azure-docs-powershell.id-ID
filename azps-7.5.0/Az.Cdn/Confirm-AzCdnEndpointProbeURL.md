@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/confirm-azcd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Confirm-AzCdnEndpointProbeURL.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Confirm-AzCdnEndpointProbeURL.md
-ms.openlocfilehash: 81e634db27d2bd673ab04f904855d9d52952542b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb247f1dc0da77c32f58f4de6facc3b845267097
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223619"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686604"
 ---
 # Confirm-AzCdnEndpointProbeURL
 
 ## SYNOPSIS
-Memvalidasi URL probe.
+Memvalidasi URL pemeriksaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/confirm-azcdnendpointprobeurl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Confirm-AzCdnEndpointProbeURL -ProbeUrl <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-**Cmdlet Confirm-AzCdnEndpointProbeURL** mengonfirmasi apakah URL pemeriksaan yang disediakan dapat digunakan untuk akselerasi situs dinamis.
+**Cmdlet Confirm-AzCdnEndpointProbeURL** mengonfirmasi apakah URL probe yang disediakan dapat digunakan untuk akselerasi situs dinamis.
 
 ## EXAMPLES
 
