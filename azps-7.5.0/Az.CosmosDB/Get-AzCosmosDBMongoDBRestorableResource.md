@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
-ms.openlocfilehash: ab1e142a440c5c6354fa0235b2c641c10238922b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f7c738d178311b90195a98f7f3053f6324522be1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234129"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785862"
 ---
 # Get-AzCosmosDBMongoDBRestorableResource
 
 ## SYNOPSIS
 Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorableresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzCosmosDBMongoDBRestorableResource -Location <String> -DatabaseAccountInsta
 
 ## DESCRIPTION
 Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
-Daftar ini berguna untuk mengetahui sumber daya apa yang ada di akun sumber pada waktu tertentu. Ini akan memberi pengguna indikasi apa yang diharapkan jika akun dipulihkan ke waktu tertentu.
+Daftar ini berguna untuk mengetahui sumber daya apa yang ada di akun sumber pada waktu tertentu. Ini akan memberi pengguna indikasi tentang apa yang diharapkan jika akun dipulihkan ke waktu tertentu.
 Pengguna juga dapat menggunakan daftar ini dan menyediakan subset sumber daya yang dapat dipulihkan jika pengguna hanya ingin memulihkan database/koleksi tertentu.
 
 ## EXAMPLES
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Akun Database CosmosDB yang Dapat Di-restorable
+Objek Akun Database yang Dapat Di memulihkan CosmosDB
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableDatabaseAccountGetResult

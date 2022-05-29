@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/New-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/New-AzConfidentialLedger.md
-ms.openlocfilehash: ecb64d559c3a4c69aaad49a350e1ee6fe2f1d48f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d7f9bc52ed0cecc753cc9c8b0930d84b604e6655
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188949"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786114"
 ---
 # New-AzConfidentialLedger
 
 ## SYNOPSIS
 Membuat Confidential Ledger dengan parameter ledger yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/new-azconfidentialledger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Membuat Azure Confidential Ledger baru menggunakan objek untuk `AadBasedSecurity
 ## PARAMETERS
 
 ### -AadBasedSecurityPrincipal
-Array semua Perwakilan Keamanan berbasis AAD.
+Array dari semua Perwakilan Keamanan berbasis AAD.
 Untuk membuat, lihat bagian CATATAN untuk properti AADBASEDSECURITYPRINCIPAL dan buat tabel hash.
 
 ```yaml
@@ -304,7 +307,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AADBASEDSECURITYPRINCIPAL <IAadBasedSecurityPrincipal[]>: Array semua Prinsip Keamanan berbasis AAD.
+AADBASEDSECURITYPRINCIPAL <IAadBasedSecurityPrincipal[]>: Array semua Perwakilan Keamanan berbasis AAD.
   - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Perwakilan Keamanan Ledger
   - `[PrincipalId <String>]`: Id Utama berbasis UUID/GUID dari Perwakilan Keamanan
   - `[TenantId <String>]`: Id Penyewa berbasis UUID/GUID dari Perwakilan Keamanan

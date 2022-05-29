@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhookEvent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhookEvent.md
-ms.openlocfilehash: c7642da5a2785a6d922e395cb42c2f2a72a11985
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f41d5a3e7b2a96b2158bd3aa1035532e0b2e7432
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227650"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785880"
 ---
 # Get-AzContainerRegistryWebhookEvent
 
 ## SYNOPSIS
 Mendapatkan kejadian webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhookevent) untuk informasi terbaru.
 
 ## SYNTAX
 

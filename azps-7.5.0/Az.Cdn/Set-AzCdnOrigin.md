@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOrigin.md
-ms.openlocfilehash: da0f381ccd69af3274c125c2567560f94128770c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 942836b7bdeeccb4e1a46f9a7ec10c7e49e3988c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110621"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739116"
 ---
 # Set-AzCdnOrigin
 
 ## SYNOPSIS
 Memperbarui server asal CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 

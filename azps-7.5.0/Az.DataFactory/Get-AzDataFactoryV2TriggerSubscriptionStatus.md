@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
-ms.openlocfilehash: 136a24c77a40c377f48ae35232d557c2dd36a8ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a717b061fd622df76f865f0b481d6c35d6be7a81
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204114"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792720"
 ---
 # Get-AzDataFactoryV2TriggerSubscriptionStatus
 
 ## SYNOPSIS
 Dapatkan status langganan untuk pemicu peristiwa ke peristiwa layanan eksternal yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggersubscriptionstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzDataFactoryV2TriggerSubscriptionStatus [-ResourceId] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Perintah ini mendapatkan status langganan untuk pemicu peristiwa ke peristiwa layanan eksternal yang ditentukan. Pemicu tidak dapat dimulai sampai status yang dikembalikan adalah "Diaktifkan".
+Perintah ini mendapatkan status langganan untuk pemicu peristiwa ke peristiwa layanan eksternal yang ditentukan. Pemicu tidak dapat dimulai sampai status yang dikembalikan "Diaktifkan".
 
 ## EXAMPLES
 

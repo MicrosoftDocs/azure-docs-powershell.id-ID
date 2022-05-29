@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: 793f828926f80a9970c26ed3b9211346d794c7c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 002a1cd0b76db7bbfee186c15f9e94834fc2eac6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110573"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738936"
 ---
 # Set-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
 Memperbarui grup asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 

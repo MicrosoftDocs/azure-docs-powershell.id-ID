@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyOperation.md
-ms.openlocfilehash: b16568f2cc13789b161e03ea1aa6c16584069aff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9b61fde7f87dd6b063878929a97a7100d930bfcb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186040"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792504"
 ---
 # Invoke-AzKeyVaultKeyOperation
 
 ## SYNOPSIS
 Melakukan operasi seperti "Encrypt", "Decrypt", "Wrap" atau "Unwrap" menggunakan kunci tertentu yang disimpan dalam brankas kunci atau hsm terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/invoke-azkeyvaultkeyoperation) untuk informasi terbaru.
 
 ## SYNTAX
 

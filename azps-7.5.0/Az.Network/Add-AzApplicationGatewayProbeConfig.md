@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 96af5256f2f60e74d41885c5c6c7fa7c0ad48817
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 31ba3639afc0ec0f4d950f36eeb542c279cde3d4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183590"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772904"
 ---
 # Add-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Menambahkan pemeriksaan kesehatan ke Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cocok
-Isi yang harus terkandung dalam respons kesehatan.
+Tubuh yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur relatif probe.
+Menentukan jalur relatif pemeriksaan.
 Jalur yang valid dimulai dengan karakter garis miring (/).
 Pemeriksaan dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu habis
-Menentukan batas waktu pemeriksaan dalam hitung detik.
+Menentukan batas waktu pemeriksaan dalam detik.
 Cmdlet ini menandai pemeriksaan sebagai gagal jika respons yang valid tidak diterima dengan periode batas waktu ini.
 Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
@@ -219,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah percobaan kembali probe.
-Server backend ditandai tidak berfungsi setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang batas yang tidak sehat.
+Menentukan jumlah coba lagi pemeriksaan.
+Server backend ditandai ke bawah setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang tidak sehat.
 Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml

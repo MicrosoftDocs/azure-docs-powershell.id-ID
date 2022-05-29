@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDbClientEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDbClientEncryptionKey.md
-ms.openlocfilehash: 7db738c85b23526bca9d4bde946cc02aadb853fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b85064137afac87b499a419ec135e508b642c73
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207503"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785790"
 ---
 # Get-AzCosmosDbClientEncryptionKey
 
 ## SYNOPSIS
 Mendapatkan Kunci Enkripsi Klien CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbclientencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

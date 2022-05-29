@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConfidentialLedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/New-AzConfidentialLedgerCertBasedSecurityPrincipalObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/New-AzConfidentialLedgerCertBasedSecurityPrincipalObject.md
-ms.openlocfilehash: d85825763ccf1ddbba17d857d0813a4d1a4e94a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43732f072d3eb965c5e8604387b67560de9e0fc8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244394"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786132"
 ---
 # New-AzConfidentialLedgerCertBasedSecurityPrincipalObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk CertBasedSecurityPrincipal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/new-azconfidentialledgercertbasedsecurityprincipalobject) untuk informasi terbaru.
 
 ## SYNTAX
 

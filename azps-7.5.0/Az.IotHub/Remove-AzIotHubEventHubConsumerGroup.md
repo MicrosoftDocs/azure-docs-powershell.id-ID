@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: f951775188ef9962911cb220d11d6f3118fe6210
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 915ef56efb1a2db291e84d7f08bbf48a7ffa3085
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239326"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792630"
 ---
 # Remove-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
 Menghapus grup konsumen eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Menghapus grup konsumen eventhub.
 
 ## EXAMPLES
 
-### Contoh 1 Menghapus grup konsumen eventhub dari eventhub telemetri
+### Contoh 1 Hapus grup konsumen eventhub dari eventhub telemetri
 ```powershell
 Remove-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubConsumerGroupName myconsumergroup
 ```

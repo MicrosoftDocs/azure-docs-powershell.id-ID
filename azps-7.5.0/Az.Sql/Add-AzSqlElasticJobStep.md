@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
-ms.openlocfilehash: cef2bea2ea8028222e99051777ba4ac7c4e97c33
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 35fe666beb01fc8af31a4b750438b7015643df12
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222902"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798874"
 ---
 # Add-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Menambahkan langkah pekerjaan ke pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzSqlElasticJobStep [-ResourceGroupName] <String> [-ServerName] <String> [-A
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DenganOutputDb
+### WithOutputDb
 ```
 Add-AzSqlElasticJobStep [-ResourceGroupName] <String> [-ServerName] <String> [-AgentName] <String>
  [-JobName] <String> -TargetGroupName <String> -CredentialName <String> -CommandText <String>
@@ -109,7 +112,7 @@ Add-AzSqlElasticJobStep [-ParentResourceId] <String> -TargetGroupName <String> -
 ```
 
 ## DESCRIPTION
-cmdlet Add-AzSqlElasticJobStep menambahkan langkah pekerjaan ke pekerjaan
+Cmdlet Add-AzSqlElasticJobStep menambahkan langkah pekerjaan ke pekerjaan
 
 ## EXAMPLES
 
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryIntervalBackoffMultiplier
-Interval coba lagi back off pengali
+Interval coba lagi mundur pengali
 
 ```yaml
 Type: System.Nullable`1[System.Double]

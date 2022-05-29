@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNetworkStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNetworkStatus.md
-ms.openlocfilehash: aabe4e5c0f18a178c123c0b5cf6d8c3e87f6d562
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 98b088afe4529acbdea31730c7bdbe5191932d78
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230097"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772814"
 ---
 # Get-AzApiManagementNetworkStatus
 
 ## SYNOPSIS
-Mendapatkan Status Konektivitas ke sumber daya eksternal tempat layanan Api Management bergantung dari dalam Layanan Cloud. Ini juga mengembalikan Server DNS seperti yang terlihat oleh CloudService.
+Mendapatkan Status Konektivitas ke sumber daya eksternal tempat layanan Api Management bergantung dari dalam Cloud Service. Ini juga mengembalikan Server DNS seperti yang terlihat oleh CloudService.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnetworkstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat API Management ada.
+Nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdWorkspace.md
-ms.openlocfilehash: 2f32a3232942cbf46b476345e50dc95717e92c30
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a4922fe7a591b294e20747068a47261a91ea9de
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247975"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744111"
 ---
 # Get-AzWvdWorkspace
 
 ## SYNOPSIS
 Dapatkan ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 

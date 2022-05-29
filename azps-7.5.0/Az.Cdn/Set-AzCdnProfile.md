@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnProfile.md
-ms.openlocfilehash: fc4739ff279f92d0978dcb6ff1d9a71f5c771659
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d5aac28c7ed77fbf15665d7050c5998acf4310a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110600"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739044"
 ---
 # Set-AzCdnProfile
 
 ## SYNOPSIS
 Memperbarui profil CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

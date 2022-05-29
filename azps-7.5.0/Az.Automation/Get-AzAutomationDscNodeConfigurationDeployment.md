@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeployment.md
-ms.openlocfilehash: 2cc32d2e453a0490e781be382d3f38c89b1f3797
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b67bb6f9d43f93de0545e0299f93e064688c5b29
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233012"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772688"
 ---
 # Get-AzAutomationDscNodeConfigurationDeployment
 
 ## SYNOPSIS
 Mendapatkan penyebaran konfigurasi Simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 

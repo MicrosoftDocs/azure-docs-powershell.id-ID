@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
-ms.openlocfilehash: 72f2a09962ada3698b41e245e121310a49a72a87
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d5ccdac1a0cd6d5b09624dbece1ce2c3056c0e4e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247905"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792468"
 ---
 # New-AzKeyVault
 
 ## SYNOPSIS
 Menghapus brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Tags                             :
 
 Perintah ini membuat brankas kunci, sama seperti contoh sebelumnya. Namun, ini menentukan nilai Premium untuk parameter *SKU* untuk membuat brankas kunci Premium.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "110.0.1.0/24" -ServiceEndpoint Microsoft.KeyVault
 $virtualNetwork = New-AzVirtualNetwork -Name myVNet -ResourceGroupName myRG -Location westus -AddressPrefix "110.0.0.0/16" -Subnet $frontendSubnet
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDiskEncryption
-Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan membongkar kunci dari brankas kunci ini.
+Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan membuka kunci dari brankas kunci ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari brankas kunci ini saat brankas kunci ini direferensikan dalam penyebaran templat.
+Memungkinkan Azure Resource Manager mendapatkan rahasia dari brankas kunci ini saat brankas kunci ini direferensikan dalam penyebaran templat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbacAuthorization
-Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data berdasarkan Access Control Berbasis Peran (RBAC), lalu kebijakan akses yang ditentukan dalam properti vault akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
+Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data berdasarkan Access Control Berbasis Peran (RBAC), dan kemudian kebijakan akses yang ditentukan dalam properti vault akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama brankas kunci yang akan dibuat. Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun. Nama harus dimulai dan diakhir dengan huruf atau digit. Nama harus unik secara universal.
+Menentukan nama brankas kunci yang akan dibuat. Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun. Nama harus dimulai dan diakhbungi dengan huruf atau digit. Nama harus unik secara universal.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-Menentukan sekumpulan aturan jaringan vault. Ini mengatur aksesibilitas brankas kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject`.
+Menentukan seperangkat aturan jaringan vault. Ini mengatur aksesibilitas brankas kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject`.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleSet
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Menentukan apakah vault akan menerima lalu lintas dari internet publik. Jika diatur ke 'dinonaktifkan' semua lalu lintas kecuali lalu lintas titik akhir privat dan yang berasal dari layanan tepercaya akan diblokir. Ini akan mengambil alih aturan firewall yang ditetapkan, yang berarti bahwa bahkan jika aturan firewall ada, kami tidak akan mematuhi aturan. Secara default, kami akan mengaktifkan akses jaringan publik.
+Menentukan apakah vault akan menerima lalu lintas dari internet publik. Jika diatur ke 'dinonaktifkan' semua lalu lintas kecuali lalu lintas titik akhir privat dan yang berasal dari layanan tepercaya akan diblokir. Ini akan mengesampingkan aturan firewall yang ditetapkan, yang berarti bahwa bahkan jika aturan firewall ada, kami tidak akan mematuhi aturan. Secara default, kami akan mengaktifkan akses jaringan publik.
 
 ```yaml
 Type: System.String
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

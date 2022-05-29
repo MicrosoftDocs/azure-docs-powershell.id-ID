@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
-ms.openlocfilehash: d7ea6706be4b78bb63bbe202e4d08b6eaf540076
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e2200f13cbad3e6e0b84b22d257d5ee849abbd8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243327"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786150"
 ---
 # Get-AzConfidentialLedger
 
 ## SYNOPSIS
 Mengambil properti Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/get-azconfidentialledger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ eastus   testledger1
 eastus   testledger2
 ```
 
-Mencantumkan semua Azure Confidential Ledgers di bawah langganan.
+Mencantumkan semua Confidential Ledgers di bawah langganan.
 
 ### Contoh 2: Mendapatkan Confidential Ledger
 ```powershell
@@ -71,7 +74,7 @@ Location Name
 eastus   test-ledger
 ```
 
-Mencantumkan semua Azure Confidential Ledgers di bawah grup sumber daya.
+Mencantumkan semua Confidential Ledgers di bawah grup sumber daya.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -192,7 +195,7 @@ INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControlSyncJobOutput.md
-ms.openlocfilehash: ec5c6fed2c0e84afaea51fca474189c69a650dbb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5aee6a9103a1c9f96621273bcf412b7458558573
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195333"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765615"
 ---
 # Get-AzAutomationSourceControlSyncJobOutput
 
 ## SYNOPSIS
 Mendapatkan output dari pekerjaan sinkronisasi kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsourcecontrolsyncjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Invalid runbook name:
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
-ms.openlocfilehash: 5ada9213fc107df131fe97058df59222644fb3d0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90158de32b57a4a96a649e2471c5af3646964635
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243092"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744110"
 ---
 # Get-AzWvdUserSession
 
 ## SYNOPSIS
 Mendapatkan userSession.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdusersession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Mendapatkan userSession.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan UserSession Windows Virtual Desktop berdasarkan nama
+### Contoh 1: Mendapatkan Windows UserSession Virtual Desktop berdasarkan nama
 ```powershell
 Get-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName -Id 2
 ```
@@ -75,7 +78,7 @@ HostPoolName/SessionHostName/3 Microsoft.DesktopVirtualization/hostpools/session
 
 Perintah ini mencantumkan Windows UserSessions Virtual Desktop dalam Host Sesi.
 
-### Contoh 3: Mencantumkan Windows UserSessions Virtual Desktop di kumpulan host
+### Contoh 3: Daftar Windows Pengguna Desktop VirtualSessions di kumpulan host
 ```powershell
 Get-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 ```
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -239,8 +242,8 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.

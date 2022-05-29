@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkInterfaceIPConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkInterfaceIPConfigurationObject.md
-ms.openlocfilehash: 60ae8744262aa0c12505f4333c0a3464971deef4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7d8a40f53ea236504278abffb620b3546a2b671
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219755"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785916"
 ---
 # New-AzConnectedNetworkInterfaceIPConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk NetworkInterfaceIPConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkinterfaceipconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 

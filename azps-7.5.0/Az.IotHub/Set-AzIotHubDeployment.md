@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeployment.md
-ms.openlocfilehash: 0f492d88d3ef5a10053fc266fbebeb71bb7d8148
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62c2abe6bfb1d1b9852d0024f9b76491091bb7ef
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213866"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792595"
 ---
 # Set-AzIotHubDeployment
 
 ## SYNOPSIS
 Perbarui bidang penyebaran IoT Edge yang dapat diubah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Berat penyebaran jika terjadi aturan bersaing (kemenangan tertinggi).
+Bobot penyebaran jika terjadi aturan yang bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target tempat penyebaran Azure Stack Edge berlaku.
+Kondisi target tempat penyebaran Edge berlaku.
 
 ```yaml
 Type: System.String

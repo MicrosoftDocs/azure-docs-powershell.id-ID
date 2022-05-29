@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssVM.md
-ms.openlocfilehash: 5a17c81ccda2cfbdc68e7cabd3cda4bc59e097e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 04088af3310bb35f3966d1bcea6af26a86e4f38c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216431"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786208"
 ---
 # Update-AzVmssVM
 
 ## SYNOPSIS
-Memperbarui status VM Vmss.
+Memperbarui status VM VMss.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmssvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Update-AzVmssVM [-DataDisk <PSVirtualMachineDataDisk[]>] [-ProtectFromScaleIn <B
 ```
 
 ## DESCRIPTION
-Memperbarui status VM Vmss.  Untuk saat ini, satu-satunya pembaruan yang diizinkan adalah menambahkan disk data terkelola.
+Memperbarui status VM VMss.  Untuk saat ini, satu-satunya pembaruan yang diizinkan adalah menambahkan disk data terkelola.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Update-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0
 Perintah pertama mendapatkan disk terkelola yang ada.
 Perintah berikutnya membuat objek disk data dengan disk terkelola.
 Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
-Perintah akhir memperbarui VM Vmss dengan menambahkan disk data baru.
+Perintah akhir memperbarui VM VM dengan menambahkan disk data baru.
 
 ### Contoh 2: Menambahkan disk data terkelola ke VM Vmss menggunakan Add-AzVMDataDisk
 ```powershell
@@ -70,11 +73,11 @@ Update-AzVmssVM -VirtualMachineScaleSetVM $VmssVM
 Perintah pertama mendapatkan disk terkelola yang ada.
 Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
 Perintah berikutnya menambahkan disk terkelola ke VM Vmss yang disimpan secara lokal di $VmssVM.
-Perintah akhir memperbarui VM Vmss dengan disk data tambahan.
+Perintah akhir memperbarui VM VM dengan disk data tambahan.
 
-### Contoh 3
+### Contoh: 3
 
-Memperbarui status VM Vmss. (dibuat otomatis)
+Memperbarui status VM VMss. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectFromScaleSetAction
-Menunjukkan bahwa pembaruan atau tindakan model (termasuk penyempurnaan) yang dimulai pada VMSS tidak boleh diterapkan ke VMSS VM.
+Menunjukkan bahwa pembaruan atau tindakan model (termasuk penyempurnaan skala) yang dimulai pada VMSS tidak boleh diterapkan ke VMSS VM.
 
 ```yaml
 Type: System.Boolean

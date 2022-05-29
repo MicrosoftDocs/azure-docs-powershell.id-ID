@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: de19617ea936f18439834cb1b20a879bec80ae06
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99ff4b6a3d6b46890e9fc1668c0c04e61a072c48
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191038"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739314"
 ---
 # Remove-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
 Menghapus rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdnroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Isi Deskripsi PassThru }}
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: SwitchParameter

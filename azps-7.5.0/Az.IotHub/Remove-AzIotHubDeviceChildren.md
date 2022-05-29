@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeviceChildren.md
-ms.openlocfilehash: aeed17601ee76d4e390ba4f713ac8f541fde98e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d6b25697b8f82f850fc84d799989aabbba426dc2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213926"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792611"
 ---
 # Remove-AzIotHubDeviceChildren
 
 ## SYNOPSIS
 Hapus perangkat non edge sebagai turunan dari perangkat edge tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 

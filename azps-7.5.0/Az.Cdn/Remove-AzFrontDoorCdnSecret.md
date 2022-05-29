@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnSecret.md
-ms.openlocfilehash: 02fd8c4ce05de1b66c072698747b466be1e78a6f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 16a5898c7601437e3cec3b6c5dc72dbf332ed66b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110681"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739222"
 ---
 # Remove-AzFrontDoorCdnSecret
 
 ## SYNOPSIS
 Menghapus rahasia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdnsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

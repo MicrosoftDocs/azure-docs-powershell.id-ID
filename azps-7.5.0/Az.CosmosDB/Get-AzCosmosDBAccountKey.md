@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccountKey.md
-ms.openlocfilehash: b33fd2933b0fa1890aa9699a0a0ba91e3af109e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d9e65ab7cdb9d66577e7c0dc8209e190cd8d0d2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243187"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785934"
 ---
 # Get-AzCosmosDBAccountKey
 
 ## SYNOPSIS
-Dapatkan Keys{"ConnectionKeys", "PrimaryReadOnly" atau "Keys"} untuk Akun CosmosDB yang diberikan. 
+Dapatkan Kunci{"ConnectionKeys", "PrimaryReadOnly" atau "Keys"} untuk Akun CosmosDB yang diberikan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
