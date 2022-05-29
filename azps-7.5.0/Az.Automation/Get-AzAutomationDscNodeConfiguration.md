@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: a7fc6d3e8a4cd7a216f58201af93a1f657193d52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3a8ba8fc694ef824b5158d2271f23fb5e44126cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214415"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684282"
 ---
 # Get-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
 Mendapatkan metadata untuk konfigurasi simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzAutomationDscNodeConfiguration -ConfigurationName <String> [-RollupStatus 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
+Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
 Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama konfigurasi simpul DSC tempat cmdlet ini mendapatkan metadata.
+Menentukan nama konfigurasi simpul DSC yang cmdlet ini mendapatkan metadata.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollupStatus
-Menentukan status rollup konfigurasi simpul DSC yang didapatkan cmdlet ini.
+Menentukan status rollup konfigurasi simpul DSC yang didapat cmdlet ini.
 Nilai yang valid adalah: 
 - Buruk 
 - Baik

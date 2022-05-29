@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualApplianceSite.md
-ms.openlocfilehash: 75bd0de3f917a1ec814a795321fd6c7e67843340
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62e9439db451a0b254ed62d70d9a6eabd55aee9d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210311"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663762"
 ---
 # Update-AzVirtualApplianceSite
 
 ## SYNOPSIS
 Ubah atau Ubah situs Virtual Appliance yang terhubung ke sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 

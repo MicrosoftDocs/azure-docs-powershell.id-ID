@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscNodeReportContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscNodeReportContent.md
-ms.openlocfilehash: 7be45d8fb9b931b4349024f7bda4431f496750ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 21c05e876c6a44850ff51dacfb6648d61442eb89
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233079"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684534"
 ---
 # Export-AzAutomationDscNodeReportContent
 
 ## SYNOPSIS
 Mengekspor konten mentah laporan DSC yang dikirim dari simpul DSC ke Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationdscnodereportcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Export-AzAutomationDscNodeReportContent -NodeId <Guid> -ReportId <Guid> [-Output
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzAutomationDscNodeReportContent** mengekspor konten mentah dari laporan APS Desired State Configuration (DSC).
-Simpul DSC mengirim laporan DSC ke Azure Automation.
+Cmdlet **Export-AzAutomationDscNodeReportContent** mengekspor konten mentah dari laporan Konfigurasi Status yang Diinginkan (DSC) APS.
+Simpul DSC mengirimkan laporan DSC ke Azure Automation.
 
 ## EXAMPLES
 

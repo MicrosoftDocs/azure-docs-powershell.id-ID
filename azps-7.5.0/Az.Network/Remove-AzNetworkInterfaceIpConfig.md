@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 14cf127a239f0c953f51c2743144e2960257e87d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7acf57b12e6c1842f43f903fc37c98d1c510767
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212270"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669954"
 ---
 # Remove-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi IP antarmuka jaringan dari antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzNetworkInterfaceIpConfig -Name IPConfig-1 -NetworkInterface $nic
 Set-AzNetworkInterface -NetworkInterface $nic
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang disebut mynic dan menyimpannya dalam variabel $nic. Perintah kedua menghapus konfigurasi IP yang disebut IPConfig-1 yang terkait dengan antarmuka jaringan ini. Perintah ketiga mengatur perubahan yang dilakukan pada antarmuka jaringan.
+Perintah pertama mendapatkan antarmuka jaringan yang disebut mynic dan menyimpannya dalam variabel $nic. Perintah kedua menghapus konfigurasi IP yang disebut IPConfig-1 yang terkait dengan antarmuka jaringan ini. Perintah ketiga menetapkan perubahan yang dilakukan pada antarmuka jaringan.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterface
 Menentukan objek **NetworkInterface** .
-Objek ini berisi konfigurasi IP antarmuka jaringan yang akan dihapus.
+Obyek ini memuat konfigurasi IP antarmuka jaringan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface

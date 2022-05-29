@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslProfile.md
-ms.openlocfilehash: e5f5ef4367ba7e0d04485da12059a562db9e8011
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba30d4f299a01186c6a173c60a10cb1109ae4099
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235725"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676956"
 ---
 # New-AzApplicationGatewaySslProfile
 
 ## SYNOPSIS
 Membuat profil SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

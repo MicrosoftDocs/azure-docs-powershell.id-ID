@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-AzLo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
-ms.openlocfilehash: a8b318177014fe772849be65f688644ceb0d181c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c432c50250877ec50f264f869f8e222dbdaa9f8b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196470"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675012"
 ---
 # New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig
 
 ## SYNOPSIS
 Membuat antarmuka terowongan di kumpulan alamat backend load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspooltunnelinterfaceconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ $tunnelInterface2 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -P
 ## Set backend address pool
 $pool = Set-AzLoadBalancerBackendAddressPool -Name "BackendAddressPool02" -TunnelInterface $tunnelInterface1, $tunnelInterface2
 ```
-Jika properti tidak disediakan maka properti akan diganti dengan nilai default.
+Jika properti tidak disediakan, properti akan diganti dengan nilai default.
 
 ## PARAMETERS
 

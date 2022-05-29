@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsCluster.md
-ms.openlocfilehash: 1f5f0b02c06bbf914f73532283f2f2e1c01e9055
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4c253936883fc2e06733c7f6572b289e7dff1db4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217043"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661026"
 ---
 # Remove-AzOperationalInsightsCluster
 
 ## SYNOPSIS
-Menghapus kluster
+Hapus Kluster
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Remove-AzOperationalInsightsCluster -ResourceGroupName {rg-name} -ClusterName {c
 true
 ```
 
-Menghapus kluster
+Hapus Kluster
 
 ## PARAMETERS
 

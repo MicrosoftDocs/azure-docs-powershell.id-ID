@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationAccount.md
-ms.openlocfilehash: ec9343c4c73bdd7b35055ffebdd7aaa03df9379d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 12b551c9ab1c39e9179f29c2b170c3721e5d3a55
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187916"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683832"
 ---
 # New-AzAutomationAccount
 
 ## SYNOPSIS
 Membuat akun Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzAutomationAccount [-ResourceGroupName] <String> [-Name] <String> [-Locatio
 
 ## DESCRIPTION
 Cmdlet **New-AzAutomationAccount** membuat akun Azure Automation dalam grup sumber daya.
-Akun Automation adalah kontainer untuk sumber daya Automation yang diisolasi dari sumber daya akun Automation lainnya. Sumber daya Automation mencakup runbook, konfigurasi Konfigurasi Status yang Diinginkan (DSC), pekerjaan, dan aset.
+Akun Automation adalah kontainer untuk sumber daya Automation yang terisolasi dari sumber daya akun Automation lainnya. Sumber daya Automation mencakup runbook, konfigurasi Desired State Configuration (DSC), pekerjaan, dan aset.
 
 ## EXAMPLES
 

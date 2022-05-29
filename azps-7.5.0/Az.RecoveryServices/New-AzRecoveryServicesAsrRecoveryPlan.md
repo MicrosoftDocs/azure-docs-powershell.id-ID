@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: 97eac22f0db6c4f73a31c85d8e3f7a8a4e0f82f9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 055602f75a9dc971a3a3387d7ca7b942d2f765a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236691"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649110"
 ---
 # New-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
 Membuat rencana pemulihan ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ New-AzRecoveryServicesAsrRecoveryPlan -Path <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrRecoveryPlan** membuat azure Site Recovery, rencana pemulihan di vault Layanan Pemulihan.
+Cmdlet **New-AzRecoveryServicesAsrRecoveryPlan** membuat rencana pemulihan Azure Site Recovery di vault Layanan Pemulihan.
 
 Rencana pemulihan mengumpulkan komputer virtual milik aplikasi ke dalam unit untuk memungkinkan mereka dipulihkan bersama-sama.
 
@@ -66,15 +69,15 @@ Memulai operasi pembuatan rencana pemulihan dengan parameter yang ditentukan dan
 $currentJob = New-AzRecoveryServicesAsrRecoveryPlan -Name $RPName -PrimaryFabric $PrimaryFabric -PrimaryZone $pZone-RecoveryZone $rZone -ReplicationProtectedItem $RPI
 ```
 
-Memulai operasi pembuatan rencana pemulihan untuk zona Azure ke item yang direplikasi zona dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi pembuatan rencana pemulihan untuk item yang direplikasi zona ke zona Azure dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $currentJob = New-AzRecoveryServicesAsrRecoveryPlan -Name $RPName -PrimaryFabric $PrimaryFabric -PrimaryEdgeZone $pEdgeZone 
 -RecoveryZone $rZone -ReplicationProtectedItem $RPI
 ```
 
-Memulai operasi pembuatan rencana pemulihan untuk Azure EdgeZone ke item yang direplikasi Zona Ketersediaan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi pembuatan rencana pemulihan untuk item yang direplikasi Azure EdgeZone ke Availability Zone dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke file json definisi rencana pemulihan. Definisi rencana pemulihan json dapat digunakan untuk membuat rencana pemulihan.
+Menentukan jalur ke file json definisi rencana pemulihan. Json definisi rencana pemulihan dapat digunakan untuk membuat rencana pemulihan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Menentukan objek fabric ASR untuk fabric ASR utama dari item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
+Menentukan objek fabric ASR untuk struktur ASR utama dari item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -185,7 +188,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zona Primer
+### -PrimaryZone
 Menentukan zona Availabilty utama dari item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
 
 ```yaml
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Daftar item yang dilindungi replikasi untuk ditambahkan ke grup pertama dari rencana pemulihan.
+Daftar item yang dilindungi replikasi untuk ditambahkan ke grup pertama rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]

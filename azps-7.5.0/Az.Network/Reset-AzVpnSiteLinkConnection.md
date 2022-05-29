@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnSiteLinkConnection.md
-ms.openlocfilehash: a4f62a880fd66a334487ee62e179b78e226fadc2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f872829173ef610d0d8ce92f7dd97a0aa00be1b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215867"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667884"
 ---
 # Reset-AzVpnSiteLinkConnection
 
 ## SYNOPSIS
 Mereset Koneksi Tautan Situs VPN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvpnsitelinkconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Reset-AzVpnSiteLinkConnection -ResourceId <String> [-AsJob] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzVpnSiteLinkConnection** mengatur ulang Koneksi Tautan VPN Anda berdasarkan Nama Koneksi Tautan Situs VPN, Nama Koneksi VPN, Nama VPN Gateway, dan Nama Grup Sumber Daya.
+Cmdlet **Reset-AzVpnSiteLinkConnection** mengatur ulang Koneksi Tautan VPN Anda berdasarkan Nama Koneksi Tautan Situs VPN, Nama Koneksi VPN, Nama VPN Gateway dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 

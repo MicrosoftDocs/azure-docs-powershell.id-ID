@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Import-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Import-AzRedisEnterpriseCache.md
-ms.openlocfilehash: f7663522b0ab556060f7e90b0b685cfeb6fe5c9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ae5904784a8c5ab5d02ee7dc53d941bc10abc190
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194370"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645924"
 ---
 # Import-AzRedisEnterpriseCache
 
 ## SYNOPSIS
 Mengimpor file database ke database target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/import-azredisenterprisecache) untuk informasi terbaru.
 
 ## SYNTAX
 

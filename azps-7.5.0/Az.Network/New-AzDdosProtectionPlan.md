@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azdd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
-ms.openlocfilehash: 2436177b1c2f34a5ae64ec4695d41b2862e2bd56
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1f83724981d46853a4642edc23f409309c1a68b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234006"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676632"
 ---
 # New-AzDdosProtectionPlan
 
 ## SYNOPSIS
 Membuat paket perlindungan DDoS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 

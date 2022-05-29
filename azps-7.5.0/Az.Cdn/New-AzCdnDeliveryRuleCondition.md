@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleCondition.md
-ms.openlocfilehash: eee5a1ec1b99d9e1fecc62a733e854fae7ad05b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb80cea469f02c836e07388135d08e900dcafb54
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200457"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688662"
 ---
 # New-AzCdnDeliveryRuleCondition
 
 ## SYNOPSIS
 Membuat kondisi aturan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryrulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchVariable
-Cocokkan variabel kondisi.
+Mencocokkan variabel kondisi.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan apakah hasil kondisi ini harus dinegasikan.
+Menjelaskan apakah hasil dari kondisi ini harus dinegasikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

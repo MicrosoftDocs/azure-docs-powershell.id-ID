@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
-ms.openlocfilehash: a3e10e8c135130fcc8d592c4664380aabafc4e0a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a1893ac4bcc705f7d3de3900b30d174f47d4182b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198584"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639358"
 ---
 # Remove-AzTenantDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran di cakupan penyewa dan operasi terkait apa pun
+Menghapus penyebaran di cakupan penyewa dan operasi terkait
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztenantdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure di cakupan penye
 Remove-AzTenantDeployment -Name "RolesDeployment"
 ```
 
-Perintah ini menghapus penyebaran "RolesDeployment" di cakupan penyewa saat ini.
+Perintah ini menghapus penyebaran "RolesDeployment" pada cakupan penyewa saat ini.
 
 ### Contoh 2: Mendapatkan penyebaran dan menghapusnya
 ```powershell
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pre
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pra
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

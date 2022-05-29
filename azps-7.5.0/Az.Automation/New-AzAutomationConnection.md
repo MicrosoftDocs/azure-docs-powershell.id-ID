@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationConnection.md
-ms.openlocfilehash: 6c83f50b372139501fd1aaa49cf5c24e6a104064
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b6d129dfcbc0a25836f10766cb42032388b60de2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187888"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683814"
 ---
 # New-AzAutomationConnection
 
 ## SYNOPSIS
 Membuat koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ PS C:\> New-AzAutomationConnection -Name "Connection13" -ConnectionTypeName Azur
 ```
 
 Perintah membuat koneksi Azure bernama Connection13 di akun Automation bernama AutomationAccount01 menggunakan $RunAsAccountConnectionFieldValues dan ConnectionTypeName=AzureServicePrincipal.
-ConnectionTypeName=AzureServicePrincipal ini terutama digunakan untuk Akun Azure Run As.
+ConnectionTypeName=AzureServicePrincipal ini terutama digunakan untuk Akun Jalankan Sebagai Azure.
 
 ### Contoh 3: Membuat koneksi untuk ConnectionTypeName=AzureClassicCertificate
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPoint.md
-ms.openlocfilehash: 9f5b0a0b585e1bc925962ed4d8645f5a8962deaa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6f41b551c97a17280e19a7855db31e4b40f971cd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245514"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650442"
 ---
 # Get-AzRecoveryServicesAsrRecoveryPoint
 
 ## SYNOPSIS
 Mendapatkan titik pemulihan yang tersedia untuk item yang dilindungi replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrrecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRecoveryServicesAsrRecoveryPoint -Name <String> -ReplicationProtectedItem 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrRecoveryPoint** mendapatkan daftar titik pemulihan yang tersedia untuk item yang dilindungi replikasi. Daftar ini berurutan dari Titik Pemulihan terbaru hingga terlama, yang pertama adalah Latest Processed (RTO terendah).
+Cmdlet **Get-AzRecoveryServicesAsrRecoveryPoint** mendapatkan daftar titik pemulihan yang tersedia untuk item yang dilindungi replikasi. Daftar ini berurutan dari Titik Pemulihan terbaru hingga terlama, yang pertama adalah Proses Terbaru (RTO terendah).
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek Item yang Dilindungi Replikasi Azure Site Recovery untuk mendapatkan daftar titik pemulihan yang tersedia.
+Menentukan objek Item Yang Dilindungi Replikasi Azure Site Recovery untuk mendapatkan daftar titik pemulihan yang tersedia.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem

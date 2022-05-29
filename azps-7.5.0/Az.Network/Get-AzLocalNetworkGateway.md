@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLocalNetworkGateway.md
-ms.openlocfilehash: 6ebc3d3a5f989eb17aa6f9b63da2ad6117da1e8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e7efdf80e11e550f96b6d7746ca543a8ce82210
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228935"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681744"
 ---
 # Get-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Mendapatkan Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

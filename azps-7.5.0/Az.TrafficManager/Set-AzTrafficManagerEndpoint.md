@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 5c8a62c6397f1d6193d951be18ab53855ea72c75
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 810ead1f12781f6cdd24f2fcf81a52f5749169f8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208454"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702504"
 ---
 # Set-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

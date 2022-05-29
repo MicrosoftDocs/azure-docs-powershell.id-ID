@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 48ad5e9865e9c424e16a9245324242b0eaf883fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b73e0b6096e2b9f519d4d0046c37db0c967b70b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215675"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632428"
 ---
 # Set-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Memperbarui deskripsi aturan otorisasi yang ditentukan untuk namespace layanan atau antrean atau topik Bus Layanan yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-Wes
 
 Menghapus **Kelola** dari hak akses aturan `AuthoRule1` otorisasi dalam antrean `SBQueue`.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $authRuleObj = Get-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 

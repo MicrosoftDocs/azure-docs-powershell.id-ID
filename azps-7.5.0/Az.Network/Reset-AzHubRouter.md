@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzHubRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzHubRouter.md
-ms.openlocfilehash: 846937f6702ef9d573b717415d414e3b54a671c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 882a7eb249a2ec397a1d023931dcc305176e00e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197576"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668064"
 ---
 # Reset-AzHubRouter
 
 ## SYNOPSIS
 Mereset RoutingState dari sumber daya VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azhubrouter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Reset-AzHubRouter -ResourceId "/subscriptions/testSub/resourceGroups/testRG/prov
 
 Reset status perutean hub virtual menggunakan ResourceId-nya.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 Reset-AzHubRouter -InputObject $virtualHub

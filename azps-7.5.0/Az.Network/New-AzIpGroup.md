@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpGroup.md
-ms.openlocfilehash: 44b61c98bb87dfe0b5218cfd9ebd652936e4e1b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e807d8994192d974f6d67687ac366344fb2269d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241132"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675264"
 ---
 # Baru-AzIpGroup
 
 ## SYNOPSIS
 Membuat Azure IpGroup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-IpAddresses yang ditentukan dalam IpGroup
+IpAddresses didefinisikan dalam IpGroup
 
 ```yaml
 Type: String[]

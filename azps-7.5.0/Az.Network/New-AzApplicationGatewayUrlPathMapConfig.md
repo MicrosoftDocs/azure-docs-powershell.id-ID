@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: 5ae0a272a88ebd2772b5f3244c1ad935aa0e0829
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 34456c7772604098dae68f4fd55461ea59f2574d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201045"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676812"
 ---
 # New-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Membuat array pemetaan jalur URL ke kumpulan server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayurlpathmapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfiguration
-Konfigurasi Ulang default gateway aplikasi
+Konfigurasi Pengalihan default gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRedirectConfigurationId
-ID Konfigurasi Ulang default gateway aplikasi
+ID konfigurasi ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRewriteRuleSetId
-ID kumpulan aturan penulisan ulang default gateway aplikasi
+ID seperangkat aturan penulisan ulang default gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 
 ### -PathRules
 Menentukan daftar aturan jalur.
-Perhatikan bahwa aturan jalur bersifat sensitif terhadap pesanan, aturan tersebut diterapkan agar ditentukan.
+Perhatikan bahwa aturan jalur sensitif terhadap pesanan, aturan tersebut diterapkan agar ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule[]

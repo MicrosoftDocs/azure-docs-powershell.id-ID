@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
-ms.openlocfilehash: aa45b4e2ed1170ddbbac185c3be5ae9d9085f20c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b9519b38c816f7a679ea15722f04bb47c11600c5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226264"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703062"
 ---
 # Add-AzTrafficManagerExpectedStatusCodeRange
 
 ## SYNOPSIS
 Menambahkan rentang kode status yang diharapkan ke objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerexpectedstatuscoderange) untuk informasi terbaru.
 
 ## SYNTAX
 

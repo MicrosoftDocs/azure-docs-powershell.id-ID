@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationConnection.md
-ms.openlocfilehash: 644a7fffb8f97f36523151c781fcacb9728542ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e9b234be692166e4d8403f723a0ef4334d56c45
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214442"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684426"
 ---
 # Get-AzAutomationConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Get-AzAutomationConnection [-ConnectionTypeName] <String> [-ResourceGroupName] <
 Cmdlet **Get-AzAutomationConnection** mendapatkan satu atau beberapa koneksi Azure Automation.
 Secara default, cmdlet ini mengambil semua koneksi.
 Tentukan nama koneksi untuk mendapatkan koneksi tertentu.
-Tentukan nama tipe koneksi untuk mendapatkan semua koneksi dari tipe tertentu.
+Tentukan nama tipe koneksi untuk mendapatkan semua koneksi dengan tipe tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua koneksi
+### Contoh 1: Dapatkan semua koneksi
 ```
 PS C:\>Get-AzAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 ```
@@ -71,7 +74,7 @@ Perintah ini mendapatkan metadata untuk koneksi bernama ContosoConnection.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Automation yang cmdlet ini mendapatkan koneksi.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionTypeName
-Menentukan nama tipe koneksi yang cmdlet ini mengambil koneksi.
+Menentukan nama jenis koneksi yang cmdlet ini mengambil koneksi.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang cmdlet ini mendapatkan koneksi.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String

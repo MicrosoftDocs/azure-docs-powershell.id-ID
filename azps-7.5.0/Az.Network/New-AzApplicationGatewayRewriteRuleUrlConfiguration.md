@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
-ms.openlocfilehash: 9100ddc710e19c88b4a575da33a5e84b54ab1a05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 104fc918859216ba6cf10b721e8a1cac93c06f97
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227129"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677064"
 ---
 # New-AzApplicationGatewayRewriteRuleUrlConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi url aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleurlconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

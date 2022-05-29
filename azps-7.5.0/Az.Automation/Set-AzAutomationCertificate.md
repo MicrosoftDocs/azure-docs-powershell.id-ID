@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
-ms.openlocfilehash: 10499f38d1ea191efd3f21ffbf8780b9095e038c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 05a544efbbca4d64e2dbc8235d393721ea292710
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186432"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683436"
 ---
 # Set-AzAutomationCertificate
 
 ## SYNOPSIS
 Memodifikasi konfigurasi sertifikat Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ PS C:\> Set-AzAutomationCertificate -AutomationAccountName "Contos17" -Name "Con
 Perintah pertama mengonversi kata sandi teks biasa menjadi string aman dengan menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah kedua memodifikasi sertifikat bernama ContosoCertificate.
-Perintah menggunakan kata sandi yang disimpan di $Password.
+Perintah menggunakan kata sandi yang disimpan dalam $Password.
 Perintah menentukan nama akun dan jalur file yang diunggahnya.
 
 ## PARAMETERS
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk sertifikat yang dimodifikasi cmdlet ini.
+Menentukan deskripsi untuk sertifikat yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke file skrip yang akan diunggah.
+Menentukan jalur ke file skrip untuk diunggah.
 File dapat berupa file .cer atau file .pfx.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang cmdlet ini memodifikasi sertifikat.
+Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi sertifikat.
 
 ```yaml
 Type: System.String

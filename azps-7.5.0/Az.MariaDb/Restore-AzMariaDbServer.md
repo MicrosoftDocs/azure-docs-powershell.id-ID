@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restore-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restore-AzMariaDbServer.md
-ms.openlocfilehash: eacbf3fdb36844f4c3a84d43998b8f1af1592442
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c6b439d1ab856243eb7db401f59430f3119435c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190198"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690858"
 ---
 # Restore-AzMariaDbServer
 
 ## SYNOPSIS
 Pulihkan MariaDB dari MariaDB yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/restore-azmariadbserver) untuk informasi terbaru.
 
 ## SYNTAX
 

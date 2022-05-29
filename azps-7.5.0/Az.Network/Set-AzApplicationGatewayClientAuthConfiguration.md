@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayClientAuthConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayClientAuthConfiguration.md
-ms.openlocfilehash: 3e553eeae8ce627069187d4b6a2a5364edd974dd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b9b9245e6cdbe8358d80b08e75ded5358bf64a79
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246704"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145667596"
 ---
 # Set-AzApplicationGatewayClientAuthConfiguration
 
 ## SYNOPSIS
 Memodifikasi konfigurasi autentikasi klien dari objek profil ssl.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzApplicationGatewayClientAuthConfiguration -SslProfile <PSApplicationGatewa
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayClientAuthConfiguration memodifikasi** konfigurasi autentikasi klien dari objek profil ssl.
+Cmdlet **Set-AzApplicationGatewayClientAuthConfiguration memodifikasi** konfigurasi autentikasi klien objek profil ssl.
 
 ## EXAMPLES
 

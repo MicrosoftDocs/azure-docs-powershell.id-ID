@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCachePatchSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCachePatchSchedule.md
-ms.openlocfilehash: b1bc57313f20714dbe6943759ea414b819a9f94e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 64e3d7b6c9e5403fca2d75ba68b6d8fb5c71f7dc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196103"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646266"
 ---
 # Remove-AzRedisCachePatchSchedule
 
 ## SYNOPSIS
 Menghapus jadwal patch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/remove-azrediscachepatchschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

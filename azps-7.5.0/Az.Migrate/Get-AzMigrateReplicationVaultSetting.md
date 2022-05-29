@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationVaultSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationVaultSetting.md
-ms.openlocfilehash: ac88e55be98af3586a00a93f8409f060e009f780
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 688e1b0c0adccb94c4a2f05cd1475ba643119fed
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111959"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690102"
 ---
 # Get-AzMigrateReplicationVaultSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan vault.
 Ini termasuk pengaturan koneksi Migration Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationvaultsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

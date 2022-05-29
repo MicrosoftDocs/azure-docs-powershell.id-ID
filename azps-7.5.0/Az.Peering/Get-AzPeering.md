@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
-ms.openlocfilehash: 5b6d29cf5906f9f44dc27ef0fc45c4ee80678d7c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ccc2b0fe8f6cd0fe4ade7218e26cc13b38c9bb1d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194493"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660216"
 ---
 # Get-AzPeering
 
 ## SYNOPSIS
 Mendapatkan Sumber Daya Peering untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Tags              : {}
 
 Mendapatkan peering Exchange bernama`myExchangePeering1`
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzPeering -ResourceId $resourceId
 ```
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Memperlihatkan semua sumber daya Peering berdasarkan Jenis.
 
 ```yaml

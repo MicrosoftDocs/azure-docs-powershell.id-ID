@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscOnboardingMetaconfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscOnboardingMetaconfig.md
-ms.openlocfilehash: e79eb332596bd587742a1270b706840d61ebba3b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a775f8899c6202dd5d5a06cb5080fe6bdd7a682d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232984"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684228"
 ---
 # Get-AzAutomationDscOnboardingMetaconfig
 
 ## SYNOPSIS
 Membuat file .mof meta-configuration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdsconboardingmetaconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzAutomationDscOnboardingMetaconfig [-OutputFolder <String>] [-ComputerName 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscOnboardingMetaconfig** membuat file Managed Object Format (MOF) konfigurasi status yang diinginkan (DSC) APS.
+Cmdlet **Get-AzAutomationDscOnboardingMetaconfig** membuat file Managed Object Format (MOF) konfigurasi status yang diinginkan APS (DSC).
 Cmdlet ini membuat file .mof untuk setiap nama komputer yang Anda tentukan.
 Cmdlet membuat folder untuk file .mof.
 Anda dapat menjalankan cmdlet Set-DscLocalConfigurationManager agar folder ini dapat melakukan onboarding komputer ini ke akun Azure Automation sebagai simpul DSC.
@@ -42,7 +45,7 @@ PS C:\> Set-DscLocalConfigurationManager -Path "C:\Users\PattiFuller\Desktop\Dsc
 
 Perintah pertama membuat file konfigurasi meta DSC untuk dua server untuk akun Automation bernama Contoso17.
 Perintah menyimpan file-file ini pada desktop.
-Perintah kedua menggunakan cmdlet **Set-DscLocalConfigurationManager** untuk menerapkan meta-configuration ke komputer yang ditentukan untuk onboarding sebagai simpul DSC.
+Perintah kedua menggunakan cmdlet **Set-DscLocalConfigurationManager** untuk menerapkan konfigurasi meta ke komputer yang ditentukan untuk onboarding sebagai simpul DSC.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyFilterRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyFilterRuleCollection.md
-ms.openlocfilehash: 52ab5a74b690cd98723f6ed8f336289661df12d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6529fe1d2fde279dfe57c8fffd7c5f863fbcf68b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227118"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675768"
 ---
 # New-AzFirewallPolicyFilterRuleCollection
 
 ## SYNOPSIS
 Membuat Kumpulan Aturan Filter Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyfilterrulecollection) untuk informasi terbaru.
 
 ## SYNTAX
 

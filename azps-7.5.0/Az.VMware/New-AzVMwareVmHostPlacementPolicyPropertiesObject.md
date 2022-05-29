@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVmHostPlacementPolicyPropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareVmHostPlacementPolicyPropertiesObject.md
-ms.openlocfilehash: baecf012513f669ce6f4d08cc644bf28b23f0b04
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f045ebf9ad5769e3868803f14af7a3ba46d68bdc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234538"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701496"
 ---
 # New-AzVMwareVmHostPlacementPolicyPropertiesObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk VmHostPlacementPolicyProperties.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarevmhostplacementpolicypropertiesobject) untuk informasi terbaru.
 
 ## SYNTAX
 

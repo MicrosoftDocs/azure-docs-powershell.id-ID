@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
-ms.openlocfilehash: 7e7c96f49a8fa9243e1102b4b1070a8dab3f4221
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 242625250235a8f296efb8bedfdd517620d74c87
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220391"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660198"
 ---
 # Get-AzPeeringCdnPeeringPrefix
 
 ## SYNOPSIS
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering yang ditentukan
+Mencantumkan semua awalan yang diiklankan untuk cdn di lokasi peering yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringcdnpeeringprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPeeringCdnPeeringPrefix [-PeeringLocation] <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering yang ditentukan
+Mencantumkan semua awalan yang diiklankan untuk cdn di lokasi peering yang ditentukan
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering yang dite
 Get-AzPeeringCdnPeeringPrefix -PeeringLocation "Seattle"
 ```
 
-Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering fisik yang ditentukan
+Mencantumkan semua awalan yang diiklankan untuk cdn di lokasi peering fisik yang ditentukan
 
 ## PARAMETERS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRegistrationInfo.md
-ms.openlocfilehash: 47dcfa27e1708d0375d2925f89a69c519092571b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 61e25254e12505acedb265f973a2c8517672fb97
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232914"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684174"
 ---
 # Get-AzAutomationRegistrationInfo
 
 ## SYNOPSIS
 Mendapatkan informasi pendaftaran untuk onboarding node DSC atau hybrid worker ke Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 

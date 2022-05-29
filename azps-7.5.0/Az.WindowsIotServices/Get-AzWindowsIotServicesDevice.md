@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: de5f7a3ff62b8b926af5154cda9a5a1d0f2a871f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ba9457c272bb61a91fd60ce2dfd49a5d03b27a2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221279"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697032"
 ---
 # Get-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
 Dapatkan metadata terkait non-keamanan dari IoT Device Service Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/get-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Dapatkan metadata terkait non-keamanan dari IoT Device Service Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua layanan IoT Windows di bawah langganan
+### Contoh 1: Mendapatkan semua layanan IoT Windows di bawah langganan
 ```powershell
 Get-AzWindowsIotServicesDevice
 ```
@@ -98,7 +101,7 @@ West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5f
 
 Perintah ini mendapatkan layanan IoT Windows berdasarkan objek.
 
-### Contoh 5: Mendapatkan layanan IoT Windows berdasarkan alur
+### Contoh 5: Mendapatkan layanan IoT Windows menurut alur
 ```powershell
 $wsi = New-AzWindowsIotServicesDevice -Name wsi-t01 -ResourceGroupName azure-rg-test -Location eastus -Quantity 10 -BillingDomainName 'microsoft.onmicrosoft.com' -AdminDomainName 'microsoft.onmicrosoft.com' | Get-AzWindowsIotServicesDevice
 ```
@@ -108,7 +111,7 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5faa37830000"
 ```
 
-Perintah ini mendapatkan layanan IoT Windows berdasarkan alur.
+Perintah ini mendapatkan layanan IoT Windows menurut alur.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -208,7 +211,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama Windows IoT Device Service.
+  - `[DeviceName <String>]`: Nama IoT Device Service Windows.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.

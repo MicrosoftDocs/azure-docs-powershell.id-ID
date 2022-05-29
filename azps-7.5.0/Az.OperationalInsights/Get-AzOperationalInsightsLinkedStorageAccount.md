@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 4d8f2758b8917638eec9ff6ac4e565f49c450e1f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff4a1eec340a7c1920783eb45ac383bdfd94d264
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662070"
 ---
 # Get-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan akun penyimpanan tertaut
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,12 +45,12 @@ DataSourceType    : CustomLogs
 StorageAccountIds : {/subscriptions/{subscription}/resourceGroups/{rg-name}/providers/Microsoft.Storage/storageAccounts/{account}}
 ```
 
-daftar accoount penyimpanan tertaut untuk ruang kerja {workspace-name}
+mencantumkan accoount penyimpanan tertaut untuk ruang kerja {workspace-name}
 
 ## PARAMETERS
 
 ### -DataSourceType
-Jenis Sumber Data harus salah satu dari 'CustomLogs', 'AzureWatson'.
+Jenis Sumber Data harus menjadi salah satu dari 'CustomLogs', 'AzureWatson'.
 
 ```yaml
 Type: System.String

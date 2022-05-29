@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
-ms.openlocfilehash: 77965bdb75044f22b093d51de3c9772e572a90b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c50ec712184ce4785551e6ac427c5d0a354297b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217655"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696243"
 ---
 # Update-AzSapMonitor
 
 ## SYNOPSIS
 Menambal bidang Tag dari monitor SAP untuk langganan, grup sumber daya, dan nama pemantauan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/update-azsapmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 

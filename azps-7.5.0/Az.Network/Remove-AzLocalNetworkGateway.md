@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
-ms.openlocfilehash: aa991b7799043ad74c21ab4564d09fc12f2d6cc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 74c3efab65c4e4f84d732e4f245d3fe36527bf27
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222038"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670044"
 ---
 # Remove-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Menghapus Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Remove-AzLocalNetworkGateway** menghapus objek yang mewakili gateway lo
 Remove-AzLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG
 ```
 
-Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya Catatan "myRG": Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Lokal menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
+Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" Catatan: Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Lokal menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

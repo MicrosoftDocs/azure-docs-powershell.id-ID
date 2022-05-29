@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: fd89f9a49a23cb43d2f9878553bf8fa71d0dce68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 940ae0d3808975e7d575eb6b5ede8fd09d9419d6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222446"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695178"
 ---
 # Add-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Membuat pengayaan pesan untuk titik akhir yang dipilih di IoT Hub Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: 3e4516bfe7e9ba9f8e1fd118ab91355efd0d246a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7a5f3c502807af5fce27c95977c4d04083eea47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226905"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662826"
 ---
 # Remove-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi dari hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -Notific
 ```
 
 Perintah ini menghapus aturan otorisasi bernama ListenRule dari hub pemberitahuan bernama ContosoExternalHub.
-Saat Anda menjalankan perintah ini, Anda harus menentukan namespace layanan dan grup sumber daya tempat hub ditetapkan.
+Saat menjalankan perintah ini, Anda harus menentukan namespace layanan dan grup sumber daya tempat hub ditetapkan.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -NotificationHub
 Menentukan hub pemberitahuan tempat aturan otorisasi ditetapkan.
-Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platformnya.
 
 ```yaml
 Type: System.String

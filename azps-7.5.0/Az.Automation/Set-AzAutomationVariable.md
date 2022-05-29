@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationVariable.md
-ms.openlocfilehash: 075a2e5427984e31d7906ec7324d8f4f33614111
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 182dc105a47febe1eb0ed52fd750f35781359729
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186362"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683238"
 ---
 # Set-AzAutomationVariable
 
 ## SYNOPSIS
 Memodifikasi variabel Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 

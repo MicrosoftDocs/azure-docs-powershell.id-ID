@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Update-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Update-AzImportExport.md
-ms.openlocfilehash: 91b5a2322ac6efbf58d855aa698d522b83437aa1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 11d10449f3f5fd28d42518a47fdfcc9e46b80406
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212426"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695538"
 ---
 # Update-AzImportExport
 
@@ -18,6 +18,9 @@ ms.locfileid: "144212426"
 Memperbarui properti tertentu dari pekerjaan.
 Anda dapat memanggil operasi ini untuk memberi tahu layanan Import/Export bahwa hard drive yang terdiri dari pekerjaan impor atau ekspor telah dikirim ke pusat data Microsoft.
 Ini juga dapat digunakan untuk membatalkan pekerjaan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/update-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ East US  test-job Microsoft.ImportExport/jobs
 
 Cmdlet ini memperbarui pekerjaan ImportExport menurut grup sumber daya dan nama server.
 
-### Contoh 2: Perbarui pekerjaan ImportExport berdasarkan identitas.
+### Contoh 2: Memperbarui pekerjaan ImportExport berdasarkan identitas.
 ```powershell
 Get-AzImportExport -Name test-job -ResourceGroupName ImportTestRG | Update-AzImportExport -CancelRequested
 ```
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 
 ### -DriveList
 Daftar drive yang terdiri dari pekerjaan.
-Untuk membuat, lihat bagian CATATAN untuk properti DRIVELIST dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DRIVELIST dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveStatus[]
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.IImportExportIdentity
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressPostalCode
-Kode pos yang akan digunakan saat mengembalikan drive.
+Kode pos yang digunakan saat mengembalikan drive.
 
 ```yaml
 Type: System.String
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 
 ### -State
 Jika ditentukan, nilainya harus Pengiriman, yang memberi tahu layanan Import/Export bahwa paket untuk pekerjaan telah dikirim.
-Properti ReturnAddress dan DeliveryPackage harus telah diatur baik dalam permintaan ini atau dalam permintaan sebelumnya, jika tidak, permintaan akan gagal.
+Properti ReturnAddress dan DeliveryPackage harus diatur baik dalam permintaan ini atau dalam permintaan sebelumnya, jika tidak, permintaan akan gagal.
 
 ```yaml
 Type: System.String
@@ -542,7 +545,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DRIVELIST <IDriveStatus[]>: Daftar drive yang terdiri dari pekerjaan.
+DRIVELIST <IDriveStatus[]>: Daftar drive yang terdiri dari pekerjaan tersebut.
   - `[BitLockerKey <String>]`: Kunci BitLocker yang digunakan untuk mengenkripsi drive.
   - `[BytesSucceeded <Int64?>]`: Byte berhasil ditransfer untuk drive.
   - `[CopyStatus <String>]`: Status terperinci tentang proses transfer data. Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Mentransfer.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplicationPackage.md
-ms.openlocfilehash: a10d0a49743a97cb528618fa1fac0fbbc24027be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b6c75625a5b07db296a00a7d016c3a814b2101e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214286"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682716"
 ---
 # Get-AzBatchApplicationPackage
 
 ## SYNOPSIS
 Mendapatkan informasi tentang paket aplikasi di akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 

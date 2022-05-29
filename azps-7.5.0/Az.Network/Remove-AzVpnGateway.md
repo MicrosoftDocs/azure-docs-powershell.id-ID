@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGateway.md
-ms.openlocfilehash: 43af1a15637c8aef63ec6548eb0336bcac720fd5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c28aa2e595f2e95b8a9f0ab64f06edb61afb7e70
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208946"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668244"
 ---
 # Remove-AzVpnGateway
 
 ## SYNOPSIS
 Cmdlet Remove-AzVpnGateway menghapus gateway VPN Azure. Ini adalah gateway khusus untuk konektivitas yang ditentukan perangkat lunak Azure Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,8 +55,8 @@ New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $vi
 Remove-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
-Ini akan menghapus VpnGateway dan semua VpnConnections yang terpasang padanya.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di US Tengah lalu segera menghapusnya. Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
+Ini akan menghapus VpnGateway dan semua VpnConnections yang melekat padanya.
 
 ### Contoh 2
 
@@ -65,9 +68,9 @@ New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $vi
 Get-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" | Remove-AzVpnGateway-Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di AS Tengah lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pipa powershell, yang menggunakan objek VpnGateway yang dikembalikan oleh perintah Get-AzVpnGateway.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway VPN yang dapat diskalakan di US Tengah lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pipa powershell, yang menggunakan objek VpnGateway yang dikembalikan oleh perintah Get-AzVpnGateway.
 Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
-Ini akan menghapus VpnGateway dan semua VpnConnections yang terpasang padanya.
+Ini akan menghapus VpnGateway dan semua VpnConnections yang melekat padanya.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
