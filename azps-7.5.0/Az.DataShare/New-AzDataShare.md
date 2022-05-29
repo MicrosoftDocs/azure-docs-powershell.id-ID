@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShare.md
-ms.openlocfilehash: a4255c7bf4ba8a3d1e4fe690d758a071cfceb4b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1fc81464bbbee80d651b563017325f2d7b5b6d57
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218498"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747846"
 ---
 # New-AzDataShare
 
 ## SYNOPSIS
 Membuat berbagi data azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ ProvisioningState   : Succeeded
 Terms               : This should not be shared
 ```
 
-Perintah ini membuat berbagi data bernama AdsShare jenis CopyBased di akun berbagi data WikiAdsAccount di bawah grup sumber daya ADS dengan deskripsi dan ketentuan penggunaan.
+Perintah ini membuat berbagi data bernama AdsShare dari jenis CopyBased di akun berbagi data WikiAdsAccount di bawah grup sumber daya ADS dengan deskripsi dan ketentuan penggunaan.
 
 ## PARAMETERS
 

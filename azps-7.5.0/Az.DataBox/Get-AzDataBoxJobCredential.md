@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJobCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJobCredential.md
-ms.openlocfilehash: d8217f8989e59ff1334ffbe29c2c697bf8c6bd27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 106aa751b84aed5454fd147ea66a524f14788c7d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205163"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754740"
 ---
 # Get-AzDataBoxJobCredential
 
 ## SYNOPSIS
 Metode ini mendapatkan rahasia yang tidak terenkripsi yang terkait dengan pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/get-azdataboxjobcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

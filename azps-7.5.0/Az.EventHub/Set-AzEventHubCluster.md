@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
-ms.openlocfilehash: 30e23b5f20418144fd221a675c00ceda830e7a66
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1725b23e86664d0a0f48caa3cdca154c1394353c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208262"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780858"
 ---
 # Set-AzEventHubCluster
 
 ## SYNOPSIS
 Memperbarui Tag untuk Kluster yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Sku       : Microsoft.Azure.Commands.EventHub.Models.PSEventHubsClusterSkuAttrib
 Tags      : {[ClusterTag3, Tag3], [ClusterTag4, Tag4]}
 ```
 
-Memperbarui tag dari kluster yang diberikan. 
+Memperbarui tag kluster yang diberikan. 
 
 ## PARAMETERS
 

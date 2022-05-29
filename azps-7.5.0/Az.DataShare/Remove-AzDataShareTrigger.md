@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareTrigger.md
-ms.openlocfilehash: dcffed7badcb3d45b0340568f5483d91da31896a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 58d29a81efcf2a9e7693fb24c773be90706aa983
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218306"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747360"
 ---
 # Remove-AzDataShareTrigger
 
 ## SYNOPSIS
 menghapus pemicu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatasharetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

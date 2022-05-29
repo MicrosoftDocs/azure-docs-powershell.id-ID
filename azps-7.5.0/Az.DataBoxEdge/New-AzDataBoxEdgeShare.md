@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
-ms.openlocfilehash: 45a116c12ae73908ad735799c5ebc9ff28a0f6c4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dafaacf7e6ba08b085dc20b0b0d0e173990f40e8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204782"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754218"
 ---
 # New-AzDataBoxEdgeShare
 
 ## SYNOPSIS
-Membuat berbagi baru di perangkat.
+Membuat berbagi baru pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientAccessRight
-Akses Baca/Tulis untuk clientIds, Untuk ex:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
+Akses Baca/Tulis untuk clientIds, Misalnya:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -NFS
-AccessProtocol dalam kasus membuat Berbagi
+AccessProtocol dalam kasus pembuatan Berbagi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -SMB
-AccessProtocol dalam kasus membuat Berbagi
+AccessProtocol dalam kasus pembuatan Berbagi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAccessRight
-menyediakan akses yang tepat bersama dengan nama pengguna yang ada untuk mengakses jenis Berbagi SMB, Misalnya: @(@{"Nama pengguna"="nama pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Kustom"})
+menyediakan akses langsung bersama dengan nama pengguna yang ada untuk mengakses jenis Berbagi SMB, Misalnya: @(@{"Nama Pengguna"="nama pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
 
 ```yaml
 Type: System.Collections.Hashtable[]

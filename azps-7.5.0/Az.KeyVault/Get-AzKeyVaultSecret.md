@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
-ms.openlocfilehash: c169d9f5f711aeb5c800315448131ec917d7e3d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 689428865ef29235893f949e097b29fd47688b27
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186065"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773750"
 ---
 # Get-AzKeyVaultSecret
 
 ## SYNOPSIS
-Mendapatkan rahasia dalam brankas kunci.
+Mendapatkan rahasia di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -254,9 +257,9 @@ Tags                 :
 ```
 
 Perintah ini mendapatkan rahasia 'secret1' yang sebelumnya telah dihapus, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari rahasia yang dihapus ini.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal dari rahasia yang dihapus ini.
 
-### Contoh 8: Dapatkan semua versi saat ini dari semua rahasia dalam brankas kunci menggunakan pemfilteran
+### Contoh 8: Mendapatkan semua versi saat ini dari semua rahasia dalam brankas kunci menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultSecret -VaultName 'Contoso' -Name "secret*"
 ```

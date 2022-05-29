@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationFailOver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationFailOver.md
-ms.openlocfilehash: 051b09fa40ed0215bd2dfab9ae1202b9179cba0f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd4016ec76b920cc843036c58fe03b22c4d98045
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212558"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774182"
 ---
 # Set-AzEventHubGeoDRConfigurationFailOver
 
 ## SYNOPSIS
 Memanggil failover GEO DR dan mengonfigurasi ulang alias untuk menunjuk ke namespace sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubgeodrconfigurationfailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi GeoDR Eventhub
+Objek konfigurasi GeoDR Eventhub
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

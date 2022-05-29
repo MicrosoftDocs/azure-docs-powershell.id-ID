@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/stop-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
-ms.openlocfilehash: 820925cc19d1472dba31022561a71ae12844b324
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a7a720217ef1e9bbf9123e056f9d47d15d814ed6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205031"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754542"
 ---
 # Stop-AzDataBoxJob
 
 ## SYNOPSIS
 CancelJob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/stop-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus memiliki panjang antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+panjang nama pekerjaan harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

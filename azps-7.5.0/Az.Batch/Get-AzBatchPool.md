@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
-ms.openlocfilehash: 87c3956cae023c762db64c09f7d393b4aab8b62f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ac21e0785577405c918fb61a6c6e9115c4c61f02
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195263"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766856"
 ---
 # Get-AzBatchPool
 
 ## SYNOPSIS
 Mendapatkan kumpulan Batch di bawah akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 

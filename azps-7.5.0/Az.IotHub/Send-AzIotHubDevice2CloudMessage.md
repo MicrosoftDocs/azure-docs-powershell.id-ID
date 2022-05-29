@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/send-azio
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
-ms.openlocfilehash: 521e3f3103c7d1d00710eb0bf3596aadc6b720c4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 828b01d3ea06d51df70967ae135d7a1223cf49c6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239298"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773858"
 ---
 # Send-AzIotHubDevice2CloudMessage
 
 ## SYNOPSIS
 Mengirim pesan perangkat ke cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/send-aziothubdevice2cloudmessage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Perintah ini mendukung pengiriman pesan dengan properti aplikasi dan sistem.
 Send-AzIotHubDevice2CloudMessage -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Message "Ping from PS"
 ```
 
-Mengirim pesan perangkat ke cloud menggunakan jenis transportasi default.
+Mengirim perangkat ke pesan cloud menggunakan jenis transportasi default.
 
 ### Contoh 2
 ```powershell

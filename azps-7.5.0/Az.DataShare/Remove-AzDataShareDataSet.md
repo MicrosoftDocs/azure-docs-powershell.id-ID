@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareDataSet.md
-ms.openlocfilehash: 3761b4bfc49e4db4a86274fbfb1d099e48b73f21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4594a71141fc62990f5834485ec73feceb61aa54
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218378"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747504"
 ---
 # Remove-AzDataShareDataSet
 
 ## SYNOPSIS
 Menghapus pemetaan himpunan data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatasharedataset) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
-ms.openlocfilehash: 639efaf3ab0452a5ca9533057919054936a3facf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba59b4f8445a330119f56ee84dc1ae8c918dc468
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186149"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774199"
 ---
 # New-AzEventGridDomainKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses bersama untuk Domain Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomainkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Meregenerasi kunci akses bersama untuk Domain Azure Event Grid.
 
 ### Contoh 1
 
-Regenerasi kunci yang sesuai dengan key1 \''\ domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Regenerasi kunci yang sesuai dengan key1 \''\ dari domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 New-AzEventGridDomainKey -ResourceGroupName MyResourceGroupName -DomainName Domain1 -Name key1
@@ -58,7 +61,7 @@ Key1                                         Key2
 
 ### Contoh 2
 
-Regenerasi kunci yang sesuai dengan key1 \''\ domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
+Regenerasi kunci yang sesuai dengan key1 \''\ dari domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 Get-AzEventGridDomain -ResourceGroupName MyResourceGroupName -Name Domain1 | New-AzEventGridTopicKey -KeyName "key1"
@@ -70,9 +73,9 @@ Key1                                         Key2
 <New Value for Key1>                        <Old Value for Key2>
 ```
 
-### Contoh 3
+### Contoh: 3
 
-Regenerasi kunci yang sesuai dengan key2 \''\ domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\` menggunakan Id sumber daya lengkapnya.
+Regenerasi kunci yang sesuai dengan key2 \''\ dari domain \`Event Grid Domain1\` dalam grup \`sumber daya MyResourceGroupName\` menggunakan Id sumber daya lengkapnya.
 
 ```powershell
 New-AzEventGridDomainKey -DomainResourceId /subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1 -KeyName Key2

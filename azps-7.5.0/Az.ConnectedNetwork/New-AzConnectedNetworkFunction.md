@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunction.md
-ms.openlocfilehash: 98a5f0e16ea679ad98e54f8a4235d6dc935d398b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8241045660327665894ca89954565ac729b0f8fb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229946"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793476"
 ---
 # New-AzConnectedNetworkFunction
 
@@ -18,6 +18,9 @@ ms.locfileid: "144229946"
 Membuat atau memperbarui sumber daya fungsi jaringan.
 Operasi ini dapat memakan waktu hingga 6 jam untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ eastus   vnf_Test1 "SampleEtagvalue"    myResources
 Membuat antarmuka jaringan dengan alokasi metode dinamis dan versi ip ke IPv4.
 Dan menggunakan ini untuk membuat dua objek konfigurasi jaringan dengan jenis sakelar vm.
 Kemudian menggunakannya untuk membuat objek konfigurasi pengguna dengan nama peran hpehss, data kustom, dan array antarmuka jaringan.
-Kemudian membuat NF menggunakan konfigurasi pengguna, nama vendor, nama sku, nama perangkat, dll.
+Kemudian membuat NF menggunakan userconfiguration, nama vendor, nama sku, nama perangkat, dll.
 
 ### Contoh 2: Penyebaran VNF 2 langkah
 ```powershell
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -363,7 +366,7 @@ USERCONFIGURATION <INetworkFunctionUserConfiguration[]>: Konfigurasi fungsi jari
     - `[MacAddress <String>]`: Alamat MAC antarmuka jaringan.
     - `[Name <String>]`: Nama antarmuka jaringan.
     - `[VMSwitchType <VMSwitchType?>]`: Jenis sakelar VM.
-  - `[OSProfileCustomData <String>]`: Menentukan string data kustom yang dikodekan base-64. String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai file pada komputer virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan meneruskan rahasia atau kata sandi apa pun di properti customData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData diteruskan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/)    Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+  - `[OSProfileCustomData <String>]`: Menentukan string data kustom yang dikodekan base-64. String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai file pada komputer virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan berikan rahasia atau kata sandi apa pun di properti customData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData diteruskan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/)    Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
   - `[RoleName <String>]`: Nama peran fungsi jaringan.
   - `[UserDataParameter <IAny>]`: Parameter data pengguna dari pelanggan.
 

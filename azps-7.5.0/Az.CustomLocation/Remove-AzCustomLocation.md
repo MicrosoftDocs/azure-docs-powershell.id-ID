@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Remove-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Remove-AzCustomLocation.md
-ms.openlocfilehash: 7f51483627579a6331ea41d1ede28759ab9e99db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe32544c52cff962752e0db22ab695983f5f1180
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205310"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754920"
 ---
 # Remove-AzCustomLocation
 
 ## SYNOPSIS
 Menghapus Lokasi Kustom dengan Nama Sumber Daya, Grup Sumber Daya, dan Id Langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/remove-azcustomlocation) untuk informasi terbaru.
 
 ## SYNTAX
 

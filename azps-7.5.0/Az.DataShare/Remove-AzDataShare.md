@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShare.md
-ms.openlocfilehash: f79b0564567e18a6d86771c08ee1e86096900743
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d4788e0ef259e3c14ac93f8514ac290ff408d11
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218399"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747540"
 ---
 # Remove-AzDataShare
 
 ## SYNOPSIS
 Menghapus berbagi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Are you sure you want to remove data share "AdsShare"?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Perintah ini menghapus berbagi data bernama AdsShare dari akun berbagi data azure WikiAds. 
+Perintah ini menghapus berbagi data bernama AdsShare dari akun berbagi data Azure WikiAds. 
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ### -InputObject
 Objek berbagi data Azure' ''yaml Type: PSDataShare Parameter Sets: ByObjectParameterSet Aliases: 
 
-Diperlukan: True Position: Nilai default bernama: None Accept pipeline input: True (ByValue) Accept wildcard characters: False
+Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: True (ByValue) Terima karakter wildcard: False
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare
@@ -123,7 +126,7 @@ Nama berbagi data Azure
 
 Jenis yaml: Set Parameter String: ByFieldsParameterSet Alias: 
 
-Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: Salah Terima karakter kartubebas: Salah
+Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: False Terima karakter kartubebas: False
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Mengembalikan objek (jika ditentukan).
 
 Jenis yaml: Set Parameter SwitchParameter: (Semua) Alias: 
 
-Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: Salah Terima karakter kartubebas: False
+Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: False Terima karakter kartubebas: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Nama grup sumber daya akun berbagi data azure
 
 Jenis yaml: Set Parameter String: ByFieldsParameterSet Alias: 
 
-Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: Salah Terima karakter kartubebas: Salah
+Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: False Terima karakter kartubebas: False
 
 ```yaml
 Type: System.String
@@ -178,9 +181,9 @@ Accept wildcard characters: False
 ### -ResourceId
 Id sumber daya berbagi data Azure
 
-Jenis yaml: Set Parameter String: ByResourceIdParameterSet Aliass: 
+Jenis yaml: Set Parameter String: ByResourceIdParameterSet Alias: 
 
-Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: True (ByPropertyName) Terima karakter wildcard: False
+Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: True (ByPropertyName) Terima karakter kartubebas: False
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 Jenis yaml: Set Parameter SwitchParameter: (Semua) Alias: cf
 
-Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: Salah Terima karakter kartubebas: False
+Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: False Terima karakter kartubebas: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,14 +222,14 @@ Cmdlet tidak dijalankan.
 
 Jenis yaml: Set Parameter SwitchParameter: (Semua) Alias: wi
 
-Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: Salah Terima karakter kartubebas: False
+Diperlukan: Posisi Salah: Nilai default bernama: Tidak Ada Terima input alur: False Terima karakter kartubebas: False
 
 
 
 
 Jenis yaml: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare Parameter Sets: ByObjectParameterSet Aliases:
 
-Diperlukan: True Position: Nilai default bernama: None Accept pipeline input: True (ByValue) Accept wildcard characters: False
+Diperlukan: Posisi Benar: Nilai default bernama: Tidak Ada Terima input alur: True (ByValue) Terima karakter wildcard: False
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabaseNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabaseNameAvailability.md
-ms.openlocfilehash: c2499c28387e74dfc48966bd28590084ed399eab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cdd8ba7357c2f4faea22726251136655456a53e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206411"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799936"
 ---
 # Test-AzKustoDatabaseNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama sumber daya database valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustodatabasenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

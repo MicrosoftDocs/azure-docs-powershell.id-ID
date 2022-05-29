@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Update-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Update-AzMaintenanceConfiguration.md
-ms.openlocfilehash: cd2742cbb0feaacab999209cd160483d2a460778
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7500c624dcb1832cfe2a0a5e22c4347dfdb7e015
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112477"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787354"
 ---
 # Update-AzMaintenanceConfiguration
 
 ## SYNOPSIS
 Rekaman konfigurasi patch
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/update-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

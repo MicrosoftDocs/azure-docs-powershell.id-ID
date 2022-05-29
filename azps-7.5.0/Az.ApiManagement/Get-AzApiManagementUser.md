@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUser.md
-ms.openlocfilehash: b8a81ca36ba9af6b06f2f40187702dac32a361ff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f668a5f7c524a5dbd7a339a705cc2966502693c5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209786"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767090"
 ---
 # Get-AzApiManagementUser
 
 ## SYNOPSIS
 Mendapatkan pengguna atau pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Jika parameter ini ditentukan, cmdlet ini menemukan pengguna berdasarkan nama depan.
+Jika parameter ini ditentukan, cmdlet ini menemukan pengguna dengan nama depan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -UserId
 Menentukan ID pengguna.
-Jika ditentukan, cmdlet ini menemukan pengguna dengan pengidentifikasi ini.
+Jika ditentukan, cmdlet ini menemukan pengguna oleh pengidentifikasi ini.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -228,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

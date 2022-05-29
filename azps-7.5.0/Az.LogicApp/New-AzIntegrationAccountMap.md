@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
-ms.openlocfilehash: 537a18bfd6c22724819ba0c2e51870f100e05164
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d1819ce6ae297adbc73b7ac8523597084272ec5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217391"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799918"
 ---
 # New-AzIntegrationAccountMap
 
 ## SYNOPSIS
 Membuat peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ ContentSize : 3056
 Metadata    :
 ```
 
-Perintah ini membuat peta akun integrasi di grup sumber daya yang ditentukan.
+Perintah ini membuat peta akun integrasi dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh perintah sebelumnya.
 
 ### Contoh 2

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHub.md
-ms.openlocfilehash: 7192c41ba8b89fa91d3b68a5153d00f36e408ce8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6666ffdc8fcb8e44faa603eece8fd4379a73b2c7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231388"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780984"
 ---
 # Get-AzEventHub
 
 ## SYNOPSIS
 Mendapatkan detail satu Pusat Aktivitas, atau mendapatkan daftar Azure Event Hubs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 

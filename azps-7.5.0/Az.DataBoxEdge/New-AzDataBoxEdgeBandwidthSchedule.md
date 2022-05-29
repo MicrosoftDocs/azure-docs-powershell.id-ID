@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeBandwidthSchedule.md
-ms.openlocfilehash: 37fedc91b107c990f9efde1cbe991c99b99d76d5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 94509a012d24db47e235ca3510a40a88146c5e29
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204806"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754254"
 ---
 # New-AzDataBoxEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Membuat jadwal Bandwidth baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

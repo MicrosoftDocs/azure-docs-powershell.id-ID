@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentPlan.md
-ms.openlocfilehash: be043f69e9aa79f9b3540bcc06e9e409b60e4be8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6c91ea7f0d580ab430e21815d71a1c2b9b81511e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224627"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787464"
 ---
 # Get-AzMlCommitmentPlan
 
 ## SYNOPSIS
 Mengambil informasi ringkasan untuk satu atau beberapa paket komitmen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 

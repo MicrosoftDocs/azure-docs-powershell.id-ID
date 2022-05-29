@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightGatewayCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightGatewayCredential.md
-ms.openlocfilehash: 7c0cd4563abc8047647e07050ef6da26a140d1e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 74a93d3f13c7cd8efe0e673e2ec66e5710b5edc8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217682"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773912"
 ---
 # Set-AzHDInsightGatewayCredential
 
 ## SYNOPSIS
 Mengatur kredensial HTTP gateway dari kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightgatewaycredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Set-AzHDInsightGatewayCredential `
 
 Perintah ini mengatur kredensial gateway kluster bernama your-hadoop-001 oleh set parameter ResourceId.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 # Cluster info
 $clusterName = "your-hadoop-001"

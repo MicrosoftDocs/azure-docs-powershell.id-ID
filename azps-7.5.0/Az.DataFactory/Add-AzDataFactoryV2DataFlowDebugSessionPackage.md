@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2DataFlowDebugSessionPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2DataFlowDebugSessionPackage.md
-ms.openlocfilehash: 422dbc77a8226e8bdbeca509e3668f40d85ce42e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3c725b1a0b88b66ca78ba07b431b022b0549fcd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204517"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806468"
 ---
 # Add-AzDataFactoryV2DataFlowDebugSessionPackage
 
 ## SYNOPSIS
 Tambahkan sumber daya aliran data dan dependensinya ke dalam sesi debug aliran data tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/add-azdatafactoryv2dataflowdebugsessionpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,9 +59,9 @@ Add-AzDataFactoryV2DataFlowDebugSessionPackage -ResourceGroupName adf -DataFacto
 Tambahkan paket aliran data ke sesi debug "550effe4-93a3-485c-8525-eaf25259efbd" dari pabrik data "WikiADF".
 File Pakcage berisi sumber daya debug aliran data, daftar sumber daya debug himpunan data, daftar sumber daya debug layanan tertaut, pengaturan debug, dan ID sesi. Contohnya:
 
-{ "dataFlow": { "name": "dataflow5", "properties": { "type": "MappingDataFlow", "typeProperties": { "sources": [ { "dataset": { "referenceName": "DelimitedTextInput", "type": "DatasetReference" }, "name": "source1", "typeProperties": {} } ], "sinks": [], "transformations": [], "script": "\n\nsource(output(\n\t\tResourceAgencyNum sebagai string,\n\t\tPublicName sebagai string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1" } } } , "datasets": [ { "name":  "DelimitedTextInput", "properties": { "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" }, "anotasi": [], "type": "DelimitedText", "typeProperties": { "location": { "type": "AzureBlobStorageLocation", "container": "20192019" }, "columnDelimiter": ",", "escapeChar": "", "\\firstRowAsHeader": true, "quoteChar": "\" " }, "schema": [ { "name": "ResourceAgencyNum", "type": "String" }, { "name": "PublicName", "type": "String" } ] } , "type": "Microsoft.DataFactory/factories/datasets" } ], "linkedServices": [ { "name": "AzureBlobStorage1", "type": "Microsoft.DataFactory/factories/linkedservices", "properties": { "annotations": [], "type": "AzureBlobStorage", "typeProperties": { "connectionString": "DefaultEndpointsProtocol=https; AccountName=name; AccountKey=kunci; EndpointSuffix=core.windows.net" } } ], "debugSettings": { "sourceSettings": [ { "sourceName": "source1", "rowLimit": 1000 } ] }, "sessionId": "4f988caf-e765-47d2-82cd-430334a6b135" }
+{ "dataFlow": { "name": "dataflow5", "properties": { "type": "MappingDataFlow", "typeProperties": { "sources": [ { "dataset": { "referenceName": "DelimitedTextInput", "type": "DatasetReference" }, "name": "source1", "typeProperties": {} } ], "sinks": [], "transformations": [], "script": "\n\nsource(output(\n\t\tResourceAgencyNum as string,\n\t\tPublicName sebagai string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1" } } } , "datasets": [ { "name":  "DelimitedTextInput", "properties": { "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" }, "anotasi": [], "type": "DelimitedText", "typeProperties": { "location": { "type": "AzureBlobStorageLocation", "container": "20192019" }, "columnDelimiter": ",", "escapeChar": "", "\\firstRowAsHeader": true, "quoteChar": "\" " }, "schema": [ { "name": "ResourceAgencyNum", "type": "String" }, { "name": "PublicName", "type": "String" } ] } , "type": "Microsoft.DataFactory/factories/datasets" } ], "linkedServices": [ { "name": "AzureBlobStorage1", "type": "Microsoft.DataFactory/factories/linkedservices", "properties": { "annotations": [], "type": "AzureBlobStorage", "typeProperties": { "connectionString": "DefaultEndpointsProtocol=https; AccountName=name; AccountKey=kunci; EndpointSuffix=core.windows.net" } } ], "debugSettings": { "sourceSettings": [ { "sourceName": "source1", "rowLimit": 1000 } ] }, "sessionId": "4f988caf-e765-47d2-82cd-430334a6b135" }
 
-Parameter SessionID digunakan untuk menggantikan properti sessionId yang ada dalam file paket.
+Parameter SessionID digunakan untuk mengganti properti sessionId yang ada dalam file paket.
 
 ## PARAMETERS
 

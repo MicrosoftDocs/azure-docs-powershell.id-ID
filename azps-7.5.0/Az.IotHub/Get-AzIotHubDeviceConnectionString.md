@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
-ms.openlocfilehash: 131bd9cfcbc5d26a78f12839126271ce45840547
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29140e205ad33414ad794cf3ca46026519ee50f6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239578"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805946"
 ---
 # Get-AzIotHubDeviceConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi perangkat IoT target di Iot Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeviceconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ device1   HostName=myiothub.azure-devices.net;DeviceId=device1;SharedAccessKey=/
 device2   HostName=myiothub.azure-devices.net;DeviceId=device2;x509=true
 ```
 
-Menampilkan semua string koneksi perangkat di Iot Hub.
+Tampilkan semua string koneksi perangkat di Iot Hub.
 
 ### Contoh 2
 ```powershell

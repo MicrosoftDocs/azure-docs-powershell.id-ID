@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
-ms.openlocfilehash: 996f841fde24a2cae9ff17df173b53c940df2d72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3d54d642db4c7862e2332186bfbdecceb9338932
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241773"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787266"
 ---
 # Get-AzEnvironment
 
 ## SYNOPSIS
 Dapatkan titik akhir dan metadata untuk instans layanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 

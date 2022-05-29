@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/add-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoDatabasePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoDatabasePrincipal.md
-ms.openlocfilehash: 5f3d2a2ec4653bcd909e231006b6ed55aba78345
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6814112c9bc911ea2e5df105925ea7ff9ed58410
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235784"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773642"
 ---
 # Add-AzKustoDatabasePrincipal
 
 ## SYNOPSIS
-Menambahkan izin Prinsipal database.
+Tambahkan izin Prinsipal database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/add-azkustodatabaseprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Add-AzKustoDatabasePrincipal -InputObject <IKustoIdentity> [-Value <IDatabasePri
 ```
 
 ## DESCRIPTION
-Menambahkan izin Prinsipal database.
+Tambahkan izin Prinsipal database.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -219,7 +222,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Guid ID operasi
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.
@@ -233,7 +236,7 @@ VALUE <IDatabasePrincipal[]>: Daftar prinsipal database Kusto.
   - `Type <DatabasePrincipalType>`: Jenis prinsipal database.
   - `[AppId <String>]`: Id aplikasi - hanya relevan untuk jenis perwakilan aplikasi.
   - `[Email <String>]`: Email utama database jika ada.
-  - `[Fqn <String>]`: Nama utama database yang sepenuhnya memenuhi syarat.
+  - `[Fqn <String>]`: Nama prinsipal database yang sepenuhnya memenuhi syarat.
 
 ## RELATED LINKS
 

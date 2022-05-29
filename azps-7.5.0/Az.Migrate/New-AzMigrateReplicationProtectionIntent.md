@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionIntent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionIntent.md
-ms.openlocfilehash: 6be27f2b2e368bb4bb76c9f06edde04d093b9e25
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c1f4a60a2b02ae7a7211b3f40e18ceb9ec25fd63
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111808"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787392"
 ---
 # New-AzMigrateReplicationProtectionIntent
 
 ## SYNOPSIS
 Operasi untuk membuat item niat perlindungan replikasi ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationprotectionintent) untuk informasi terbaru.
 
 ## SYNTAX
 

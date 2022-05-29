@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultSecret.md
-ms.openlocfilehash: cbcb60e57d89f692d5e75f129243051dd843af79
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 19d17a5cf795705982123adf2522b2bff27689e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213710"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773840"
 ---
 # Cadangan-RahasiaAzKeyVault
 
 ## SYNOPSIS
 Mencadangkan rahasia di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

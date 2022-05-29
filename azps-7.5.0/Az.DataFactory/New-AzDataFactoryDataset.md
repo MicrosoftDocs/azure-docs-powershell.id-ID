@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
-ms.openlocfilehash: 972f9894d0a7756b7cd0546c38918caa18210464
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3a703f14958937b948d58706c404ec9d150d762
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204013"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806348"
 ---
 # New-AzDataFactoryDataset
 
 ## SYNOPSIS
 Membuat himpunan data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactorydataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Structure         : {}
 ```
 
 Perintah ini membuat himpunan data bernama DA_WikipediaClickEvents di pabrik data bernama WikiADF.
-Perintah ini mendasarkan himpunan data pada informasi di file DAWikipediaClickEvents.json.
+Perintah mendasarkan himpunan data pada informasi dalam file DAWikipediaClickEvents.json.
 
 ### Contoh 2: Melihat ketersediaan untuk himpunan data baru
 ```powershell

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoorContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoorContent.md
-ms.openlocfilehash: 11be82ff3df5e67436f07520c54e72431f08e0fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 191bf3a5d2b16a9e10e60fed95da153c770b9b88
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225309"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145800278"
 ---
 # Remove-AzFrontDoorContent
 
 ## SYNOPSIS
 Menghapus konten di Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/remove-azfrontdoorcontent) untuk informasi terbaru.
 
 ## SYNTAX
 

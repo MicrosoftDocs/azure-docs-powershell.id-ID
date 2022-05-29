@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
-ms.openlocfilehash: c816bf94974ed1c9022703aac2eda0f65e5da1fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea30838bd673ca2ac6416924ff13a5af5e7547b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205271"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754884"
 ---
 # Get-AzCustomProviderAssociation
 
 ## SYNOPSIS
 Dapatkan asosiasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/get-azcustomproviderassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Location  Name             Type
 East US 2 MyAssoc   Microsoft.CustomProviders/associations
 ```
 
-Mencantumkan semua asosiasi penyedia kustom untuk cakupan tertentu.
+Cantumkan semua asosiasi penyedia kustom untuk cakupan tertentu.
 
 ### Contoh 2: Mendapatkan asosiasi
 ```powershell
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -155,7 +158,7 @@ INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
   - `[Scope <String>]`: Ruang lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

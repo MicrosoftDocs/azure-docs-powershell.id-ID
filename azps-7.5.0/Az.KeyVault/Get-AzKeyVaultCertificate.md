@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
-ms.openlocfilehash: 0f95957a39b24bb67e2fd4ddfc15dd75944dd75d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2410be572daf30eab9e8c72e4d1b2ef00b72ce57
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222326"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773804"
 ---
 # Get-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -201,7 +204,7 @@ Id                 : https://contoso.vault.azure.net:443/certificates/test1/7fe4
 ```
 
 Perintah ini mendapatkan sertifikat bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dihapus menyeluruh, di brankas kunci bernama Contoso.
-Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari sertifikat yang dihapus ini.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal penghapusan terjadwal dari sertifikat yang dihapus ini.
 
 ### Contoh 5: Mencantumkan sertifikat menggunakan pemfilteran
 ```powershell
@@ -231,7 +234,7 @@ Name      : test2
 Version   :
 Id        : https://ContosoKV01.vault.azure.net:443/certificates/test2
 ```
-Perintah ini mendapatkan semua sertifikat yang dimulai dengan "uji" dari brankas kunci bernama ContosoKV01.
+Perintah ini mendapatkan semua sertifikat yang dimulai dengan "pengujian" dari brankas kunci bernama ContosoKV01.
 
 
 ## PARAMETERS

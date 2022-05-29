@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
-ms.openlocfilehash: f2237c7a68b66afee0db27e11b062131c630a022
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c74035f2149308633ab14c6b2d22b0650dd1cc26
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225494"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145774128"
 ---
 # New-AzFrontDoorBackendPoolObject
 
 ## SYNOPSIS
 Membuat objek PSBackendPool untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Membuat objek PSBackendPool untuk pembuatan Front Door
 ## PARAMETERS
 
 ### -Backend
-Set backend untuk kumpulan ini.
+Kumpulan backend untuk kumpulan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackend[]

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContextAutosaveSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContextAutosaveSetting.md
-ms.openlocfilehash: 4e0a06f095ad4eb5edad8a278921c0058cbb1613
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c673c6412451d3fd13c8a33e1edff90a796f8e2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193443"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787248"
 ---
 # Get-AzContextAutosaveSetting
 
 ## SYNOPSIS
-Tampilkan metadata tentang fitur penyimpanan otomatis konteks, termasuk apakah konteks disimpan secara otomatis, dan di mana konteks dan informasi kredensial yang disimpan dapat ditemukan.
+Tampilkan metadata tentang fitur simpan otomatis konteks, termasuk apakah konteks disimpan secara otomatis, dan tempat informasi konteks dan kredensial yang disimpan dapat ditemukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azcontextautosavesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzContextAutosaveSetting [-Scope <ContextModificationScope>] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Tampilkan metadata tentang fitur penyimpanan otomatis konteks, termasuk apakah konteks disimpan secara otomatis, dan di mana konteks dan informasi kredensial yang disimpan dapat ditemukan.
+Tampilkan metadata tentang fitur simpan otomatis konteks, termasuk apakah konteks disimpan secara otomatis, dan tempat informasi konteks dan kredensial yang disimpan dapat ditemukan.
 
 ## EXAMPLES
 

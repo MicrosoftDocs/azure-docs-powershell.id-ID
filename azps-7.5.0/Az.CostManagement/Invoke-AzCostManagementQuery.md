@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
-ms.openlocfilehash: d8db8bb75ec43d324ba12e85460071c77ebba6ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 791c94512937925d8babd8c7ebf61ef7f4e52784
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205439"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754992"
 ---
 # Invoke-AzCostManagementQuery
 
 ## SYNOPSIS
 Kueri data penggunaan untuk cakupan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/invoke-azcostmanagementquery) untuk informasi terbaru.
 
 ## SYNTAX
 

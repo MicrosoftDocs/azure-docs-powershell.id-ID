@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/regis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 36c405d0dc0cf79d951fb06d787a5048362c2241
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d1bba98739eab93626937e9d5ae949dd6f55b2a0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225981"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766892"
 ---
 # Register-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
 Mengaitkan runbook ke jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/register-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

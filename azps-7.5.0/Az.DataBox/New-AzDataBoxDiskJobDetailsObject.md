@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxDiskJobDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxDiskJobDetailsObject.md
-ms.openlocfilehash: 4878b0c8b716e78525638bf84157d504d73c1657
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d63df79c0a4e73ccaf468c4297d209f276de653
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205151"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754668"
 ---
 # New-AzDataBoxDiskJobDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk DataBoxDiskJobDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxdiskjobdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -268,7 +271,7 @@ PREFERENSI <IPreferences>: Preferensi untuk pesanan.
   - `[PreferredDataCenterRegion <String[]>]`: Wilayah pusat data pilihan.
   - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
-PREFERREDDISK <IDataBoxDiskJobDetailsPreferredDisks>: Preferensi pengguna pada disk ukuran apa yang diperlukan untuk pekerjaan tersebut. Peta berasal dari ukuran disk dalam TB hingga hitungan. Mis. {2,5} berarti 5 disk berukuran 2 TB. Kunci adalah string tetapi akan diperiksa terhadap int.
+PREFERREDDISK <IDataBoxDiskJobDetailsPreferredDisks>: Preferensi pengguna pada ukuran disk apa yang diperlukan untuk pekerjaan tersebut. Peta berasal dari ukuran disk dalam TB hingga hitungan. Mis. {2,5} berarti 5 disk berukuran 2 TB. Kunci adalah string tetapi akan diperiksa terhadap int.
   - `[(Any) <Int32>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 SHIPPINGADDRESS <IShippingAddress>: Alamat pengiriman pelanggan.

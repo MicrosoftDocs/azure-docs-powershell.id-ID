@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
-ms.openlocfilehash: 66e6e6a54d2d6bfb93352832785b1e6c7bcf778c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa3fcae7de34eff2960aa1d10d233d28f66eae35
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213755"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773768"
 ---
 # Add-AzKeyVaultNetworkRule
 
 ## SYNOPSIS
 Menambahkan aturan yang dimaksudkan untuk membatasi akses ke brankas kunci berdasarkan alamat internet klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Add-AzKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzKeyVaultNetworkRule** memberikan atau membatasi akses ke brankas kunci ke sekumpulan pemanggil yang ditunjuk oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses untuk pengguna, aplikasi, atau grup keamanan lain yang telah diberikan izin melalui kebijakan akses.
+Cmdlet **Add-AzKeyVaultNetworkRule** memberikan atau membatasi akses ke brankas kunci ke sekumpulan penelepon yang ditunjuk oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses untuk pengguna, aplikasi, atau grup keamanan lain yang telah diberikan izin melalui kebijakan akses.
 
 Harap dicatat bahwa rentang IP apa pun di dalam `10.0.0.0-10.255.255.255` (alamat IP privat) tidak dapat digunakan untuk menambahkan aturan jaringan.
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual aturan jaringan yang diizinkan.
+Menentukan pengidentifikasi sumber daya jaringan virtual yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]

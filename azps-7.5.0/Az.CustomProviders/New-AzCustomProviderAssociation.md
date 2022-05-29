@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProviderAssociation.md
-ms.openlocfilehash: 16162b993bd56eeef7b362ca6ded302fd8983adb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 742e2827da6b7feb85e091b1eb089340eb0d8c09
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754848"
 ---
 # New-AzCustomProviderAssociation
 
 ## SYNOPSIS
 Membuat atau memperbarui asosiasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/new-azcustomproviderassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 Ruang lingkup asosiasi.
-Cakupan dapat berupa instans sumber daya REST yang valid.
+Cakupannya dapat berupa instans sumber daya REST yang valid.
 Misalnya, gunakan '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Compute/virtualMachines/{vm-name}' untuk sumber daya komputer virtual.
 
 ```yaml

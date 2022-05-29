@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
-ms.openlocfilehash: be0fa1af1d598a88fe2a113180111e8956f764f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6e62423369e1b7b29ab6aa40e5ae20ba8c7f82f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755010"
 ---
 # New-AzCostManagementQueryComparisonExpressionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk QueryComparisonExpression
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementquerycomparisonexpressionobject) untuk informasi terbaru.
 
 ## SYNTAX
 

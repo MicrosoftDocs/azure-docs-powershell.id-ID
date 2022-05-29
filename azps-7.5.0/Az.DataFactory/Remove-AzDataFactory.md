@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactory.md
-ms.openlocfilehash: 5ca0c4c220b53d6c5efb113f6b848a0a3d0220ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5259ef969fe3b630f7553e0a2bd6088417175334
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203918"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806366"
 ---
 # Remove-AzDataFactory
 
 ## SYNOPSIS
 Menghapus pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Perintah ini mengembalikan nilai $True.
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory** untuk dihapus.
+Menentukan objek **PSDataFactory** yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory

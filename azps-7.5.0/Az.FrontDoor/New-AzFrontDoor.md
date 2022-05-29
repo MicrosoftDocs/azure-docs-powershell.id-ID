@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoor.md
-ms.openlocfilehash: 6b9ca975116b5af4ee528619dc58465fd7e7cb35
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 41d15fd3d5ac3c9df1fcddca83a506ea186ddd42
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225505"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780786"
 ---
 # New-AzFrontDoor
 
 ## SYNOPSIS
 Membuat load balancer Azure Front Door baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 

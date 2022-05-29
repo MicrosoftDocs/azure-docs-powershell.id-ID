@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
-ms.openlocfilehash: 29aa325f103fb9e910109f127243536146431b7d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 346d37a05f2942b29ad64033a5d4abc61b9f97d7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205727"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787334"
 ---
 # Get-AzAccessToken
 
 ## SYNOPSIS
-Dapatkan token akses mentah. Saat menggunakan -ResourceUrl, pastikan nilainya cocok dengan lingkungan Azure saat ini. Anda dapat merujuk ke nilai `(Get-AzContext).Environment`.
+Mendapatkan token akses mentah. Saat menggunakan -ResourceUrl, pastikan nilainya cocok dengan lingkungan Azure saat ini. Anda dapat merujuk ke nilai `(Get-AzContext).Environment`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azaccesstoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceTypeName
-Nama jenis sumber daya opsional, nilai yang didukung: AadGraph, AnalysisServices, Arm, Attestation, Batch, DataLake, KeyVault, MSGraph, OperationalInsights, ResourceManager, Storage, Synapse. Nilai default adalah Arm jika tidak ditentukan.
+Nama jenis sumber daya opsional, nilai yang didukung: AadGraph, AnalysisServices, Arm, Attestation, Batch, DataLake, KeyVault, MSGraph, OperationalInsights, ResourceManager, Storage, Synapse. Nilai defaultnya adalah Arm jika tidak ditentukan.
 
 ```yaml
 Type: System.String

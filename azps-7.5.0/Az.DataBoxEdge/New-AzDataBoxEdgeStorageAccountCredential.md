@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: ae9d50f05aa800dec60f693768aab1709d011c6c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de3b7a5d01844ef0b6b70acb97c0adfaeff964d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204770"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754200"
 ---
 # New-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Membuat kredensial baru untuk akun penyimpanan edge di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

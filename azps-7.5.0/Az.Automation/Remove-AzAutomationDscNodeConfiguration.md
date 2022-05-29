@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: 09f1c37ec1b5929f81b08e5c6d63c8e0fb3af736
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a8ac0d0dd7435c209fd90ce9e759a0538997a012
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186583"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793512"
 ---
 # Remove-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
 Menghapus metadata dari konfigurasi simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationdscnodeconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

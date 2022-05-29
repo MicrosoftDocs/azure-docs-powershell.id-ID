@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint.md
-ms.openlocfilehash: 31f6adcce1f3d62e2bc211c74b183f9b11974450
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 718005d75302030458805a07c2db13ddc57afbd1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204223"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806390"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint
 
 ## SYNOPSIS
 Mendapatkan daftar dependensi jaringan keluar untuk runtime integrasi Azure-SSIS tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimeoutboundnetworkdependenciesendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
-ms.openlocfilehash: 3cea1f9ebbb724ad52292e9b96185d6d73d2e9d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29e5fb7355dd55506283e61fcd2e91034a631758
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222335"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773786"
 ---
 # Get-AzKeyVault
 
 ## SYNOPSIS
 Mendapatkan brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua brankas kunci di langganan Anda saat ini
+### Contoh 1: Mendapatkan semua brankas kunci di langganan Anda saat ini
 ```powershell
 Get-AzKeyVault
 ```
@@ -143,7 +146,7 @@ Tags                :
 
 Perintah ini mendapatkan semua brankas kunci dalam grup sumber daya bernama ContosoPayRollResourceGroup.
 
-### Contoh 4: Dapatkan semua brankas kunci yang dihapus di langganan Anda saat ini
+### Contoh 4: Mendapatkan semua brankas kunci yang dihapus di langganan Anda saat ini
 ```powershell
 Get-AzKeyVault -InRemovedState
 ```
@@ -269,7 +272,7 @@ Accept wildcard characters: True
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

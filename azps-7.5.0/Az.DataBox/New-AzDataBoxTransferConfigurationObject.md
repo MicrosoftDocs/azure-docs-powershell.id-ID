@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
-ms.openlocfilehash: aee475f70a60d03298d38190910fdd7c5f81bb39
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e2dcb011e4ea0fbc91ba5fddf282351c913154f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205043"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754560"
 ---
 # New-AzDataBoxTransferConfigurationObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk TransferConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxtransferconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 

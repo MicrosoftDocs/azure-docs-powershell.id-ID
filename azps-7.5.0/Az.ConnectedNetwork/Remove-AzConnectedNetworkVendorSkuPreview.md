@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Remove-AzConnectedNetworkVendorSkuPreview.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Remove-AzConnectedNetworkVendorSkuPreview.md
-ms.openlocfilehash: cfabc6e6855fc3773cbf88c85a6bbbab559e00bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97e30b9b802edfaeda5b586be7e964b6974093f6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219626"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793440"
 ---
 # Remove-AzConnectedNetworkVendorSkuPreview
 
 ## SYNOPSIS
 Menghapus informasi pratinjau sku vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/remove-azconnectednetworkvendorskupreview) untuk informasi terbaru.
 
 ## SYNTAX
 

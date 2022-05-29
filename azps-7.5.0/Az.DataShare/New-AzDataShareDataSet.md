@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSet.md
-ms.openlocfilehash: 5e6a9f8ab3be680014fb3738060639852912b49a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a06cd5341e041a925b6dfe89cbafed44570b3bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218474"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747792"
 ---
 # New-AzDataShareDataSet
 
 ## SYNOPSIS
 Menambahkan himpunan data ke berbagi data azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzDataShareDataSet -ResourceGroupName <String> -AccountName <String> -ShareN
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareDataSet** menambahkan himpunan data di azure data share akun berbagi data. Anda dapat menambahkan himpunan data jenis Blob, ADLS Gen2, dan ADLS Gen1.
+Cmdlet **New-AzDataShareDataSet** menambahkan himpunan data di berbagi data azure dari akun berbagi data. Anda dapat menambahkan himpunan data jenis Blob, ADLS Gen2, dan ADLS Gen1.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ Name           : AdsDataSet
 Type           : Microsoft.DataShare/DataSets
 ```
 
-Perintah ini menambahkan himpunan data bernama AdsDataSet dari jenis kontainer blob ke berbagi data azure AdsShare.
+Perintah ini menambahkan himpunan data bernama AdsDataSet dari jenis kontainer blob ke berbagi data Azure AdsShare.
 
 ## PARAMETERS
 

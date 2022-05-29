@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorFunction.md
-ms.openlocfilehash: adbc7bb3223b635cd9e9e8c2978f600fe2d720f6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ac3105bb8c3a5b0ba413a2e8b25e408a5e36b55d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212606"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766730"
 ---
 # Get-AzConnectedNetworkVendorFunction
 
 ## SYNOPSIS
 Mendapatkan informasi tentang fungsi jaringan vendor yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkvendorfunction) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzSubscription.md
-ms.openlocfilehash: 4173435975408764c5df94d8f3a4b1a3d6f21cf6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 18c2c1d512dd834a8013dcc476d8fd5a044e4d44
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230111"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787176"
 ---
 # Get-AzSubscription
 
 ## SYNOPSIS
 Dapatkan langganan yang dapat diakses akun saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 

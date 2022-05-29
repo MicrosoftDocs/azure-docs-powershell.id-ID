@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: 5164f801345ae77de06ceff52862c6f5f822d688
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b83471a8ee54e12df819eb31aa90ae5172adf0f5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239547"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806054"
 ---
 # Get-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
 Mendapatkan semua grup konsumen eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Mendapatkan semua grup konsumen eventhub untuk Berbagai EventHubs yang digunakan
 Get-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri untuk iothub bernama myiothub
+Mendapatkan semua grup konsumen eventhub untuk telemetri eventhub untuk iothub bernama myiothub
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeDevice.md
-ms.openlocfilehash: 8bf45f42b1ef337b76fc847a8da3b7e5572b27cc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ab08a1e1b6d6ab461aa2e6373fe8a2f860eb0341
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204683"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806450"
 ---
 # Remove-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
 Menghapus perangkat Data Box Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 

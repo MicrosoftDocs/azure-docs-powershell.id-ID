@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/invoke-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDetachClusterFollowerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDetachClusterFollowerDatabase.md
-ms.openlocfilehash: 966bccfd1b528cb5a55326487e78e1db93324404
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e0f1c61366f51694fd39e2a5f9b0937d8243ed4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110288"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773714"
 ---
 # Invoke-AzKustoDetachClusterFollowerDatabase
 
 ## SYNOPSIS
 Mencopot semua pengikut database yang dimiliki oleh kluster ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/invoke-azkustodetachclusterfollowerdatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

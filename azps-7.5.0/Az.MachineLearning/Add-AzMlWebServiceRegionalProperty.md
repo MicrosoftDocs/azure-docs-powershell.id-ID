@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Add-AzMlWebServiceRegionalProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Add-AzMlWebServiceRegionalProperty.md
-ms.openlocfilehash: 459c69ae2c894ced6e4d22e494e6b242334aefb3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c3ca019ab37d8386d5f0bbe7a9ed318d8b4aa18
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192925"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787554"
 ---
 # Add-AzMlWebServiceRegionalProperty
 
 ## SYNOPSIS
 Membuat properti layanan web regional.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/add-azmlwebserviceregionalproperty) untuk informasi terbaru.
 
 ## SYNTAX
 

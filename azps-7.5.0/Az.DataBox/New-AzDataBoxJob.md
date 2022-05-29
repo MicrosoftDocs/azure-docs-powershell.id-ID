@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
-ms.openlocfilehash: 0b7b09b65a1178d91bcbab75a4f08903182a6415
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c83c580d47ef8f25cf08a27f4b3787da3f64932
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205139"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754596"
 ---
 # New-AzDataBoxJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru dengan parameter yang ditentukan.
 Pekerjaan yang ada tidak dapat diperbarui dengan API ini dan sebaliknya harus diperbarui dengan API pekerjaan Pembaruan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
