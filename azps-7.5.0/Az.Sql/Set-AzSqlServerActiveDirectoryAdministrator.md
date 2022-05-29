@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
-ms.openlocfilehash: ee4ecada93336bfbb723f1d936ef824f941eeb3d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b9d02c9f7517bf7d610bdbff943f73c705c4891d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240754"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722538"
 ---
 # Set-AzSqlServerActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserveractivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Anda hanya dapat menyediakan satu administrator pada satu waktu.
 Anggota Azure AD berikut dapat disediakan sebagai administrator SQL Server:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Anggota yang diimpor dari AZURE AD lain yang merupakan anggota asli atau federasi 
+- Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau federasi 
 - Azure AD grup yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
 Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
@@ -66,7 +69,7 @@ resourcegroup01   server01   David Chew  11E95548-B179-4FE1-9AF4-ACA49D13ABB9 Fa
 
 Perintah ini menyediakan pengguna Azure AD sebagai administrator untuk server bernama Server01.
 
-### Contoh 3: Menyediakan grup administrator dengan menentukan ID-nya
+### Contoh 3: Memprovisikan grup administrator dengan menentukan ID-nya
 ```powershell
 Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DisplayName "DBAs" -ObjectId "40b79501-b343-44ed-9ce7-da4c8cc7353b"
 ```

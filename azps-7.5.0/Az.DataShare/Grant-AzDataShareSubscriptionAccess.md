@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/grant-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
-ms.openlocfilehash: 4f2829c30fc0ff273e698610166bdd130d2ae0db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f603c6162962c1f9f1edc5970f610ecd90535bdf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218507"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747828"
 ---
 # Grant-AzDataShareSubscriptionAccess
 
 ## SYNOPSIS
 Memberikan akses langganan berbagi yang dicabut ke berbagi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/grant-azdatasharesubscriptionaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Name                      : AdsShare
 Type                      : Microsoft.DataShare/ShareSubscriptions
 ```
 
-Memberikan akses ke langganan berbagi yang diidentifikasi oleh id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
+Memberikan akses ke langganan berbagi yang diidentifikasi dengan id 8ee6e6fd-b4a1-49a4-bb66-f187f38e0e12
 
 ## PARAMETERS
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareSubscriptionId
-Id langganan berbagi langganan penyedia
+Id langganan berbagi dari langganan berbagi penyedia
 
 ```yaml
 Type: System.String

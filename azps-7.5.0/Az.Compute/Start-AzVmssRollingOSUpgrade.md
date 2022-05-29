@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
-ms.openlocfilehash: 412b569d9932ba5fc7273ee81c04a701d9d1a817
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ceb728830b14009b83bd2d1038a76a9f58514db
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237128"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777818"
 ---
 # Start-AzVmssRollingOSUpgrade
 
 ## SYNOPSIS
 Memulai peningkatan bergulir untuk memindahkan semua instans set skala komputer virtual ke versi OS Gambar Platform terbaru yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmssrollingosupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 

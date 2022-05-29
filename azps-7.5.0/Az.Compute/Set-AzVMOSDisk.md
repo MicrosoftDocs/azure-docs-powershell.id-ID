@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
-ms.openlocfilehash: f055820e5f4380457d6ab1eba10b20f92e1ffbde
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d71c51f71761cda3a0d72ab99fd351df9385e3b8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232774"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778214"
 ---
 # Set-AzVMOSDisk
 
 ## SYNOPSIS
 Mengatur properti disk sistem operasi pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmosdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,10 +86,10 @@ $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" -VhdUri 
 New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet13 di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
 Perintah kedua membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Komputer virtual milik set ketersediaan yang disimpan di $AvailabilitySet.
 Perintah akhir mengatur properti pada komputer virtual di $VirtualMachine.
 
 ### Contoh 2: Mengatur properti pada komputer virtual dari gambar pengguna umum
@@ -101,7 +104,7 @@ New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet13 di grup sumber daya bernama ResourceGroup11 dan menyimpan objek tersebut dalam variabel $AvailabilitySet.
 Perintah kedua membuat objek komputer virtual dan menyimpannya dalam variabel $VirtualMachine.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Komputer virtual milik set ketersediaan yang disimpan di $AvailabilitySet.
 Perintah akhir mengatur properti pada komputer virtual di $VirtualMachine.
 
 ### Contoh 3: Mengatur properti pada komputer virtual dari gambar pengguna khusus
@@ -115,7 +118,7 @@ New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet13 di grup sumber daya bernama ResourceGroup11 dan menyimpan objek tersebut dalam variabel $AvailabilitySet.
 Perintah kedua membuat objek komputer virtual dan menyimpannya dalam variabel $VirtualMachine.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
+Komputer virtual milik set ketersediaan yang disimpan di $AvailabilitySet.
 Perintah akhir mengatur properti pada komputer virtual di $VirtualMachine.
 
 ### Contoh 4: Mengatur pengaturan enkripsi disk pada disk sistem operasi komputer virtual
@@ -158,8 +161,8 @@ Tentukan opsi ini untuk membuat komputer virtual dari disk khusus.
 Saat Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
 Sebagai gantinya, gunakan cmdlet Set-AzVMSourceImage.
 Anda juga harus menggunakan parameter *Windows* atau *Linux* untuk memberi tahu platform azure jenis sistem operasi pada VHD.
-Parameter *VhdUri* cukup untuk memberi tahu platform azure lokasi disk yang akan dilampirkan. 
-- Dari Gambar.
+Parameter *VhdUri* sudah cukup untuk memberi tahu platform azure lokasi disk yang akan dilampirkan. 
+- FromImage.
 Tentukan opsi ini untuk membuat komputer virtual dari gambar platform atau gambar pengguna umum.
 Dalam kasus gambar pengguna umum, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu platform Azure lokasi dan jenis disk sistem operasi VHD alih-alih menggunakan cmdlet **Set-AzVMSourceImage**.
 Dalam kasus gambar platform, parameter *VhdUri* sudah cukup. 
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffDiskPlacement
-Menentukan penempatan disk ephemeral untuk disk sistem operasi. Properti ini dapat digunakan oleh pengguna dalam permintaan untuk memilih lokasi yaitu cache disk atau ruang disk sumber daya untuk provisi disk OS Ephemeral. Untuk informasi selengkapnya tentang persyaratan ukuran disk OS Ephemeral, silakan lihat persyaratan ukuran disk OS Ephemeral untuk Windows VM di https://docs.microsoft.com/azure/virtual-machines/windows/ephemeral-os-disks#size-requirements dan Linux VM di https://docs.microsoft.com/azure/virtual-machines/linux/ephemeral-os-disks#size-requirements. Parameter ini hanya dapat digunakan jika parameter DiffDiskSetting diatur ke 'Lokal'.
+Menentukan penempatan disk ephemeral untuk disk sistem operasi. Properti ini dapat digunakan oleh pengguna dalam permintaan untuk memilih lokasi yaitu disk cache atau ruang disk sumber daya untuk provisi disk OS Ephemeral. Untuk informasi selengkapnya tentang persyaratan ukuran disk OS Ephemeral, silakan lihat persyaratan ukuran disk OS Ephemeral untuk VM Windows di https://docs.microsoft.com/azure/virtual-machines/windows/ephemeral-os-disks#size-requirements dan Linux VM di https://docs.microsoft.com/azure/virtual-machines/linux/ephemeral-os-disks#size-requirements. Parameter ini hanya dapat digunakan jika parameter DiffDiskSetting diatur ke 'Lokal'.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-Menentukan ID sumber daya Key Vault yang berisi kunci enkripsi disk.
+Menentukan ID sumber daya dari Key Vault yang berisi kunci enkripsi disk.
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan ID sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
+Menentukan ID sumber daya set enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
 
 ```yaml
 Type: System.String
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-Menentukan ID sumber daya Key Vault yang berisi kunci enkripsi kunci.
+Menentukan ID sumber daya dari Key Vault yang berisi kunci enkripsi kunci.
 
 ```yaml
 Type: System.String
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 
 ### -VhdUri
 Menentukan Pengidentifikasi Sumber Daya Seragam (URI) dari hard disk virtual (VHD).
-Untuk komputer virtual berbasis gambar, parameter ini menentukan file VHD untuk dibuat saat gambar platform atau gambar pengguna ditentukan.
+Untuk komputer virtual berbasis gambar, parameter ini menentukan file VHD yang akan dibuat saat gambar platform atau gambar pengguna ditentukan.
 Ini adalah lokasi tempat objek besar biner gambar (BLOB) disalin untuk memulai komputer virtual.
 Untuk skenario boot komputer virtual berbasis disk, parameter ini menentukan file VHD yang digunakan komputer virtual secara langsung untuk memulai.
 

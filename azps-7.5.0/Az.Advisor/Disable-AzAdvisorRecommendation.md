@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 03971a72c7097aa79163203d35daea4d7f167bc1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 456069808d88eb3c2d97759fb7e8c0a2292b9e09
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229120"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790686"
 ---
 # Disable-AzAdvisorRecommendation
 
 ## SYNOPSIS
 Nonaktifkan rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/disable-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Type          : Microsoft.Advisor/suppressions
 
 Supresi dibuat untuk recommendation_id yang diberikan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzAdvisorRecommendation -ResourceId "/subscriptions/user_subscription/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/xyz" | Disable-AzAdvisorRecommendation
 ```
@@ -206,11 +209,11 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.String
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorSuppressionContract
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorSuppressionContract
 
 ## NOTES
 

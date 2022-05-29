@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
-ms.openlocfilehash: dd1dd7aca9682842c77be025cc0208021c02beca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 704a513a7a8fdd940f45e2060f3ff9843ad0caac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228448"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716562"
 ---
 # New-AzRmStorageContainer
 
 ## SYNOPSIS
 Membuat kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,9 +62,9 @@ Cmdlet **New-AzRmStorageContainer membuat kontainer** blob Storage
 PS C:\>New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah ini membuat kontainer blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata.
+Perintah ini membuat kontainer blob Storage dengan nama akun Storage dan nama kontainer, dengan metadata.
 
-### Contoh 2: Membuat kontainer blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
+### Contoh 2: Buat kontainer blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>New-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreventEncryptionScopeOverride
-Penimpaan blok cakupan enkripsi dari default kontainer.
+Blokir penimpaan cakupan enkripsi dari default kontainer.
 
 ```yaml
 Type: System.Boolean

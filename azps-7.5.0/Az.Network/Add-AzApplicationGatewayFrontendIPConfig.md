@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 7598aa7cbcc7bc35628660b510f651ed69b068a9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef2f475149a5deac33523035c8a2d1c6eb64a42a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183699"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778806"
 ---
 # Add-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP front-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway <PSApplicationGatew
 ## DESCRIPTION
 Cmdlet **Add-AzApplicationGatewayFrontendIPConfig** menambahkan konfigurasi IP front-end ke gateway aplikasi.
 Gateway aplikasi mendukung dua jenis konfigurasi IP front-end: 
-- Alamat IP publik
+- Alamat IP Publik
 - Alamat IP privat menggunakan penyeimbangan beban internal (ILB) Gateway aplikasi dapat memiliki paling banyak satu IP publik dan satu IP privat.
 Tambahkan alamat IP publik dan alamat IP privat sebagai IP front-end terpisah.
 
@@ -52,7 +55,7 @@ $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Na
 ```
 
 Perintah pertama membuat objek alamat IP publik dan menyimpannya dalam variabel $PublicIp.
-Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
 Perintah ketiga menambahkan konfigurasi IP front-end bernama FrontEndIp01, untuk gateway di $AppGw, menggunakan alamat yang disimpan di $PublicIp.
 
 ### Contoh 2: Menambahkan IP privat statis sebagai alamat IP front-end
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Menentukan alamat IP privat yang akan ditambahkan sebagai IP front-end untuk gateway aplikasi.
+Menentukan alamat IP privat untuk ditambahkan sebagai IP front-end untuk gateway aplikasi.
 Jika ditentukan, IP ini dialokasikan secara statis dari subnet.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: 3c23ed08804875cc267ddd553a17d13195c165ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f6cf08938b211cc61489b875ec9cd9d162da5d0f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201314"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779652"
 ---
 # Remove-AzMonitorLogAnalyticsSolution
 
 ## SYNOPSIS
 Menghapus solusi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitoringsolutions/remove-azmonitorloganalyticssolution) untuk informasi terbaru.
 
 ## SYNTAX
 

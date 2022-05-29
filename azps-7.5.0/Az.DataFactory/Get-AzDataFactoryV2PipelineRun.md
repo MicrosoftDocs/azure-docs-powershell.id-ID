@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
-ms.openlocfilehash: 582be03c4b4ded460dc7589f7d6407d52711af05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd299e8aef4f1b4af8e63564245906a4319e59a2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204139"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753372"
 ---
 # Get-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
 Mendapatkan informasi tentang eksekusi alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 

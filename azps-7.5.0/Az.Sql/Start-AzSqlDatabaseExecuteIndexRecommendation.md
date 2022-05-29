@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/start-azsqld
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlDatabaseExecuteIndexRecommendation.md
-ms.openlocfilehash: e4d920ca0a7d4cc5a6ec79cfc4c97a62fa743ec7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 514f625c1c23985a2d12e46e724a4cfb1c39dbf9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244573"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722177"
 ---
 # Start-AzSqlDatabaseExecuteIndexRecommendation
 
 ## SYNOPSIS
 Memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqldatabaseexecuteindexrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Start-AzSqlDatabaseExecuteIndexRecommendation -ServerName <String> -DatabaseName
 ```
 
 ## DESCRIPTION
-**Cmdlet Start-AzSqlDatabaseExecuteIndexRecommendation** memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan untuk Azure SQL Database.
+Cmdlet **Start-AzSqlDatabaseExecuteIndexRecommendation** memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan untuk Azure SQL Database.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
-ms.openlocfilehash: 48bc2c90760530515c3825ba27f21c40013ed547
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b0ccf07e72e39c23fcad54cea6c9b52512cff2c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202151"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784386"
 ---
 # Get-AzDataMigrationTask
 
 ## SYNOPSIS
 Mengambil objek PSProjectTask yang terkait dengan tugas migrasi Azure Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Cmdlet Get-AzDataMigrationTask mengambil properti yang terkait dengan tugas migr
 Get-AzDataMigrationTask -TaskName myTestTask -ServiceName myTestService -ProjectName MyTestProject -ResourceGroupName MyResourceGroup -Expand
 ```
 
-Contoh di atas menggambarkan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil properti yang terkait dengan tugas migrasi Azure Database Migration Service berdasarkan nama tugas yang diteruskan sebagai parameter input
+Contoh di atas mengilustrasikan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil properti yang terkait dengan tugas migrasi Azure Database Migration Service berdasarkan nama tugas yang diteruskan sebagai parameter input
 
 ### Contoh 2
 ```powershell
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-nama Database Migration Service.
+Nama Database Migration Service.
 
 ```yaml
 Type: System.String

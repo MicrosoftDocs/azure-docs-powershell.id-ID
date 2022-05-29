@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
-ms.openlocfilehash: 9866b7b23f754df4dda6e8a14ce260fa5cc23986
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83df2e6b90809e86ff9fea6b7eb284470183aae9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244800"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771428"
 ---
 # Save-AzLabServicesLabPlanImage
 
 ## SYNOPSIS
 Menyimpan gambar dari VM lab ke galeri gambar bersama yang dilampirkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/save-azlabserviceslabplanimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlanName
-Nama paket lab yang secara unik mengidentifikasinya dalam berisi grup sumber daya.
+Nama paket lab yang secara unik mengidentifikasinya dalam grup sumber daya.
 Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabVirtualMachineId
-ID komputer virtual lab yang ingin Anda simpan gambarnya.
+ID komputer virtual lab tempat Anda ingin menyimpan gambar.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/save-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVhd.md
-ms.openlocfilehash: c3b7cce83903cea15358e263b4330786f77532d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97719c1251e2f2f7cae134968602bb8e74c2fc6c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199550"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778465"
 ---
 # Save-AzVhd
 
 ## SYNOPSIS
 Menyimpan gambar .vhd yang diunduh secara lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/save-azvhd) untuk informasi terbaru.
 
 ## SYNTAX
 

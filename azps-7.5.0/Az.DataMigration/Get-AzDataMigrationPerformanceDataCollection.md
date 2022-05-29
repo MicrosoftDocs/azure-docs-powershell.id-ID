@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationPerformanceDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationPerformanceDataCollection.md
-ms.openlocfilehash: 6fee7ec3ca85be41fee875dbaa44edbcdab326f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8cc5b015cb747c2170e920d156f3e158a8bc0932
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202266"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784422"
 ---
 # Get-AzDataMigrationPerformanceDataCollection
 
 ## SYNOPSIS
 Mengumpulkan data performa untuk instans SQL Server yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationperformancedatacollection) untuk informasi terbaru.
 
 ## SYNTAX
 

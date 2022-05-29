@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/start-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Start-AzHDInsightJob.md
-ms.openlocfilehash: 29b8de41be243a69175c13454132497ac6e0ad1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 44619577fcaa89b26b7b2fa62020da76d7410923
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225029"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772256"
 ---
 # Start-AzHDInsightJob
 
 ## SYNOPSIS
 Memulai pekerjaan Azure HDInsight yang ditentukan pada kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/start-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 

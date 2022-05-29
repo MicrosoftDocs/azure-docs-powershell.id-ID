@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
-ms.openlocfilehash: a9c65bdf78ec6272fb089cb2497b2dff3a5de925
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 75a4cd5dc771794495a4aa8e5f6f07f8c5c11ca9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205538"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778232"
 ---
 # Set-AzVMCustomScriptExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi skrip kustom ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Set-AzVMCustomScriptExtension -InputObject <VirtualMachineCustomScriptExtensionC
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMCustomScriptExtension** menambahkan skrip kustom Ekstensi Komputer Virtual ke komputer virtual.
+Cmdlet **Set-AzVMCustomScriptExtension** menambahkan Ekstensi Komputer Virtual skrip kustom ke komputer virtual.
 Ekstensi ini memungkinkan Anda menjalankan skrip Anda sendiri di komputer virtual.
 
 ## EXAMPLES
@@ -237,9 +240,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
-Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
+Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Ekstensi VM ResourceID.
+ResourceID ekstensi VM.
 
 ```yaml
 Type: System.String

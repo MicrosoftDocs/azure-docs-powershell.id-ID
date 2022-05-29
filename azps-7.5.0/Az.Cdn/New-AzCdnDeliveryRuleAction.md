@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
-ms.openlocfilehash: 210d2c47824000a6826ce249039f151f3a7f526a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 824bd55fba0af140e086b8e657ee3741e0e13a70
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200460"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739458"
 ---
 # New-AzCdnDeliveryRuleAction
 
 ## SYNOPSIS
 Membuat tindakan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 
 ### -CacheDuration
 Durasi konten perlu di-cache.
-Format yang diperbolehkan adalah \[d.\] hh:mm:ss
+Format yang diizinkan adalah \[d.\] hh:mm:ss
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
-ms.openlocfilehash: 13e6e0ec48b0a3f1d184473614fa07a6dfabe706
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78323c2c92a3a8230fccc0cc3588275ac02a911a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245315"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723312"
 ---
 # Set-AzSqlDatabaseRecommendedActionState
 
 ## SYNOPSIS
 Memperbarui status tindakan yang direkomendasikan Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaserecommendedactionstate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Set-AzSqlDatabaseRecommendedActionState -RecommendedActionName <String> -State <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseRecommendedActionState** memperbarui status Tindakan yang Direkomendasikan Azure SQL Database.
+**Cmdlet Set-AzSqlDatabaseRecommendedActionState** memperbarui status Tindakan yang Direkomendasikan Azure SQL Database.
 Ini memungkinkan tindakan yang direkomendasikan untuk diterapkan, dikembalikan, atau dibuang berdasarkan status baru.
 
 ## EXAMPLES
 
-### Contoh 1: Menerapkan status tindakan yang direkomendasikan ke tertunda
+### Contoh 1: Terapkan status tindakan yang direkomendasikan ke tertunda
 ```powershell
 Set-AzSqlDatabaseRecommendedActionState -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893" -State Pending
 ```
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini menetapkan status tindakan yang direkomendasikan.
+Menentukan nama database yang cmdletnya menetapkan status tindakan yang direkomendasikan.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
-ms.openlocfilehash: 6030e50ed14b97d0b87180da8a09165835128b66
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b8fddda8dee4538ba13180dc49ce6c3e51df5fa
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209426"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778483"
 ---
 # New-AzVmss
 
 ## SYNOPSIS
 Membuat VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzVmss [[-ResourceGroupName] <String>] [-VMScaleSetName] <String> [-AsJob] [
 
 ## DESCRIPTION
 Cmdlet **New-AzVmss** membuat Virtual Machine Scale Set (VMSS) di Azure.
-Gunakan set parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan dan sumber daya terkait dengan cepat. Gunakan set parameter default (`DefaultParameter`) untuk skenario yang lebih canggih saat Anda perlu mengonfigurasi setiap komponen VMSS dengan tepat dan setiap sumber daya terkait sebelum pembuatan.
+Gunakan set parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan sebelumnya dan sumber daya terkait dengan cepat. Gunakan set parameter default (`DefaultParameter`) untuk skenario yang lebih canggih saat Anda perlu mengonfigurasi setiap komponen VMSS dan setiap sumber daya terkait sebelum pembuatan.
 
 ## EXAMPLES
 
@@ -176,7 +179,7 @@ $vmss = Get-AzVmss -ResourceGroupName $ResourceGroupName -VMScaleSetName $vmssNa
 Contoh kompleks di atas membuat VMSS, berikut adalah penjelasan tentang apa yang terjadi:
 * Perintah pertama membuat grup sumber daya dengan nama dan lokasi yang ditentukan.
 * Perintah kedua menggunakan cmdlet **New-AzStorageAccount** untuk membuat akun penyimpanan.
-* Perintah ketiga kemudian menggunakan cmdlet **Get-AzStorageAccount** untuk mendapatkan akun penyimpanan yang dibuat di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
+* Perintah ketiga kemudian menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
 * Perintah kelima menggunakan cmdlet **New-AzVirtualNetworkSubnetConfig** untuk membuat subnet dan menyimpan hasilnya dalam variabel bernama $SubNet.
 * Perintah keenam menggunakan cmdlet **New-AzVirtualNetwork** untuk membuat jaringan virtual dan menyimpan hasilnya dalam variabel bernama $VNet.
 * Perintah ketujuh menggunakan **Get-AzVirtualNetwork** untuk mendapatkan informasi tentang jaringan virtual yang dibuat dalam perintah keenam dan menyimpan informasi dalam variabel bernama $VNet.
@@ -184,8 +187,8 @@ Contoh kompleks di atas membuat VMSS, berikut adalah penjelasan tentang apa yang
 * Perintah menyimpan informasi dalam variabel bernama $PubIP.
 * Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat penyeimbang beban frontend dan menyimpan hasilnya dalam variabel bernama $Frontend.
 * Perintah kesebelas menggunakan **New-AzLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi kumpulan alamat backend dan menyimpan hasilnya dalam variabel bernama $BackendAddressPool.
-* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat pemeriksaan dan menyimpan informasi pemeriksaan dalam variabel bernama $Probe.
-* Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan.
+* Perintah **ke-12 menggunakan New-AzLoadBalancerProbeConfig** untuk membuat pemeriksaan dan menyimpan informasi pemeriksaan dalam variabel bernama $Probe.
+* Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang beban.
 * Perintah keempat belas menggunakan **New-AzLoadBalancerRuleConfig** untuk membuat konfigurasi aturan load balancer dan menyimpan hasilnya dalam variabel bernama $LBRule.
 * Perintah kelima belas menggunakan cmdlet **New-AzLoadBalancer** untuk membuat load balancer dan menyimpan hasilnya dalam variabel bernama $ActualLb.
 * Perintah keenam belas menggunakan **Get-AzLoadBalancer** untuk mendapatkan informasi tentang load balancer yang dibuat dalam perintah kelima belas dan menyimpan informasi dalam variabel bernama $ExpectedLb.
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Nomor port backend yang digunakan oleh load balancer Set Skala untuk berkomunikasi dengan VM di Set Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk Windows VMS, dan port 22 akan digunakan untuk VM Linux.
+Nomor port backend yang digunakan oleh penyeimbang beban Set Skala untuk berkomunikasi dengan VM di Set Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk VMS Windows, dan port 22 akan digunakan untuk VM Linux.
 
 ```yaml
 Type: System.Int32[]
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Set Skala ini. Ini adalah komponen pertama dari nama domain yang secara otomatis ditetapkan ke Set Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (<DomainNameLabel>.<Location>. cloudapp.azure.com). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi perangkaian <ScaleSetName> dan <ResourceGroupName>.
+Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Set Skala ini. Ini adalah komponen pertama dari nama domain yang secara otomatis ditetapkan ke Set Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (<DomainNameLabel>.<Location>. . cloudapp.azure.com). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi perangkaian <ScaleSetName> dan <ResourceGroupName>.
 
 ```yaml
 Type: System.String
@@ -346,7 +349,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassD
+### -EnableUltrassd
 Gunakan disk UltraSSD untuk VM dalam set skala.
 
 ```yaml
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan pengeluaran untuk set skala komputer virtual prioritas rendah.  Hanya nilai yang didukung yang 'Batalkan alokasi' dan 'Hapus'.
+Kebijakan pengeluaran untuk set skala komputer virtual prioritas rendah.  Hanya nilai yang didukung adalah 'Batalkan alokasi' dan 'Hapus'.
 
 ```yaml
 Type: System.String
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPoolName
-Nama kumpulan alamat frontend yang akan digunakan dalam load balancer Set Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama dengan set skala.
+Nama kumpulan alamat frontend yang akan digunakan dalam penyeimbang beban Set Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama dengan set skala.
 
 ```yaml
 Type: System.String
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure tempat Set Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang dirujuk dalam parameter.
+Lokasi Azure tempat Set Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang direferensikan dalam parameter.
 
 ```yaml
 Type: System.String
@@ -482,7 +485,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Harga maksimum penagihan set skala komputer virtual berprioritas rendah.
+Harga maksimum penagihan set skala komputer virtual prioritas rendah.
 
 ```yaml
 Type: System.Double

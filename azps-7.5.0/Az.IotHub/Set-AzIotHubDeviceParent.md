@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeviceParent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDeviceParent.md
-ms.openlocfilehash: e8a419a26e6ed8b436815bdf298f3dfd04d90f86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02e5e0c76c1290569fb1545a6ecd05603f08da52
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213875"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771987"
 ---
 # Set-AzIotHubDeviceParent
 
 ## SYNOPSIS
 Atur perangkat induk dari perangkat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubdeviceparent) untuk informasi terbaru.
 
 ## SYNTAX
 
