@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyRetentionRuleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyRetentionRuleClientObject.md
-ms.openlocfilehash: cd48c464bb0c965bc1d64dc1820ce9edc11058f8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb6d8f2d13dab0b6076a9d788a87c9d55e9f0875
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219035"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749502"
 ---
 # Edit-AzDataProtectionPolicyRetentionRuleClientObject
 
 ## SYNOPSIS
-Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang ada
+Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicyretentionruleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Edit-AzDataProtectionPolicyRetentionRuleClientObject -IsDefault <Boolean> -LifeC
 ```
 
 ## DESCRIPTION
-Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang ada
+Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang sudah ada
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Perintah pertama mendapatkan templat kebijakan default.
 Perintah kedua membuat objek siklus hidup mingguan.
 Perintah ketiga menambahkan aturan retensi mingguan ke kebijakan default.
 
-### Contoh 2: Menghapus Aturan Retensi Mingguan
+### Contoh 2: Menghapus aturan retensi mingguan
 ```powershell
 Edit-AzDataProtectionPolicyRetentionRuleClientObject -Policy $pol -Name Weekly -RemoveRule
 ```
@@ -64,7 +67,7 @@ DatasourceType            ObjectType
 {Microsoft.Compute/disks} BackupPolicy
 ```
 
-Perintah ini menghapus aturan retensi mingguan jika ada dalam kebijakan pencadangan yang diberikan.
+Perintah ini menghapus aturan retensi mingguan jika ada dalam kebijakan pencadangan tertentu.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek Kebijakan Pencadangan Untuk membangun, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
+Objek Kebijakan Pencadangan Untuk membangun, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -175,7 +178,7 @@ LIFECYCLES <ISourceLifeCycle[]>: Siklus hidup yang terkait dengan aturan retensi
 KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

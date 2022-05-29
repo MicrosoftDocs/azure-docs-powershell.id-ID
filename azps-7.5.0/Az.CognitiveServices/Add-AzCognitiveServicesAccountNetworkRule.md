@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Add-AzCognitiveServicesAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Add-AzCognitiveServicesAccountNetworkRule.md
-ms.openlocfilehash: 0601dbe5c55240fbda93b1f985f197e945cfc7fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 880b2bb9f8f33b453fad5ff08ad3200885690c90
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240208"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737460"
 ---
 # Add-AzCognitiveServicesAccountNetworkRule
 
 ## SYNOPSIS
 Menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/add-azcognitiveservicesaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -
 
 Perintah ini menambahkan VirtualNetworkRule dengan VirtualNetworkResourceID.
 
-### Contoh 3: Menambahkan VirtualNetworkRules dengan VirtualNetworkRule Objects dari akun lain
+### Contoh 3: Menambahkan VirtualNetworkRules dengan Objek VirtualNetworkRule dari akun lain
 ```powershell
 $networkrule = Get-AzCognitiveServicesAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -Name "myaccount1"
 Add-AzCognitiveServicesAccountNetworkRule -ResourceGroupName "myResourceGroup" -Name "myaccount2" -VirtualNetworkRule $networkrule.VirtualNetworkRules

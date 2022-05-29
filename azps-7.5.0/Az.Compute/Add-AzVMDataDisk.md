@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMDataDisk.md
-ms.openlocfilehash: dcb0e7fd259a532770103fc19b53eb9e29f70815
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eee16c4d7624120cc1071bbb0f590fc6c405cbcb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222683"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736578"
 ---
 # Add-AzVMDataDisk
 
 ## SYNOPSIS
 Menambahkan disk data ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 

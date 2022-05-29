@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 76f58d62cb8db6c8a4d4c695adcdc4288479d035
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 11b6cf25ab59ff5c384a183e7f8603425d0ce8a2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218879"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748908"
 ---
 # New-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Mengonfigurasi Pencadangan untuk sumber daya azure yang didukung
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,9 +51,9 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166 Microsoft.DataProtect
 
 Perintah ketiga mendapatkan kebijakan dengan disk mana yang akan dicadangkan.
 Perintah keempat menginisialisasi permintaan instans cadangan.
-Perintah terakhir mengonfigurasi pencadangan disk azure yang diberikan di brankas cadangan.
+Perintah terakhir mengonfigurasi cadangan disk azure yang diberikan di brankas cadangan.
 
-### Contoh 2: Mengonfigurasi perlindungan untuk database AzureDatabaseForPostgreSQL di brankas cadangan (menggunakan autentikasi penyimpanan rahasia).
+### Contoh 2: Mengonfigurasi perlindungan untuk database AzureDatabaseForPostgreSQL dalam brankas cadangan (menggunakan autentikasi penyimpanan rahasia).
 ```powershell
 $sub = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 $dataSourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.DBforPostgreSQL/servers/OssServerName/databases/DBName"
@@ -70,9 +73,9 @@ xyz-postgresql-wus-empdb10-xxxxxxxx-xxxx-xxxx-a3ba-be75108d8b21 Microsoft.DataPr
 
 Perintah ketiga menginisialisasi secretURI untuk autentikasi penyimpanan rahasia.
 
-Perintah kelima mendapatkan kebijakan dengan database mana yang akan dilindungi.
+Perintah kelima mendapatkan kebijakan tempat database akan dilindungi.
 Perintah keenam menginisialisasi objek permintaan instans cadangan.
-Perintah terakhir mengonfigurasi pencadangan $dataSourceId yang diberikan di brankas cadangan.
+Perintah terakhir mengonfigurasi cadangan $dataSourceId yang diberikan di brankas cadangan.
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan vault
+ID Langganan vault
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ BACKUPINSTANCE <IBackupInstanceResource>: Objek permintaan instans cadangan yang
       - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Data.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
       - `[ResourceUri <String>]`: Uri sumber daya.
       - `[Type <String>]`: DatasourceType sumber daya.
     - `ObjectType <String>`: 
@@ -251,7 +254,7 @@ BACKUPINSTANCE <IBackupInstanceResource>: Objek permintaan instans cadangan yang
       - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Data.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
       - `[ResourceUri <String>]`: Uri sumber daya.
     - `[DatasourceAuthCredentials <IAuthCredentials>]`: Kredensial yang digunakan untuk mengautentikasi dengan penyedia sumber data.
       - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkSession.md
-ms.openlocfilehash: bde2bfd2b4e338751275cf57d6f71438e73bbd05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6869145e11b37b5291156e332347333fb7cb6d68
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245119"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709056"
 ---
 # Get-AzSynapseSparkSession
 
 ## SYNOPSIS
 Mendapatkan sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparksession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName Contoso
 
 Perintah ini mendapatkan sesi Spark dengan ID livy yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool
 $pool | Get-AzSynapseSparkSession

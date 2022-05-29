@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlActiveDirectoryAdministrator.md
-ms.openlocfilehash: 8909ef786eb21b82fc5137449e6145f57dfdb18f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48d6aae9a50c071b245aa28883c468a5b0d811d6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222734"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709092"
 ---
 # Get-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Mendapatkan informasi tentang administrator Azure AD untuk Ruang Kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlActiveDirectoryAdministrator -ResourceId <String> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlActiveDirectoryAdministrator** mendapatkan informasi tentang administrator Azure Active Directory (Azure AD) untuk ruang kerja analitik Azure Synapse di langganan saat ini.
+Cmdlet **Get-AzSynapseSqlActiveDirectoryAdministrator** mendapatkan informasi tentang administrator Azure Active Directory (Azure AD) untuk Ruang Kerja analitik Azure Synapse di langganan saat ini.
 
 ## EXAMPLES
 

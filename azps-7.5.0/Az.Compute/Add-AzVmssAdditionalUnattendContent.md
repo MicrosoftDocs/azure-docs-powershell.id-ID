@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
-ms.openlocfilehash: 7c2c7e3207c9c532c78bad8145cd3aafcf0d42a7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8abb711a8831c30294a82bbd1dba0afd7dcba65b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230002"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736398"
 ---
 # Add-AzVmssAdditionalUnattendContent
 
 ## SYNOPSIS
-Menambahkan informasi ke file jawaban Penyetelan Windows yang tidak dijaga.
+Menambahkan informasi ke file jawaban Penyetelan Windows tak terjaga.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssadditionalunattendcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,18 +34,18 @@ Add-AzVmssAdditionalUnattendContent [-VirtualMachineScaleSet] <PSVirtualMachineS
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan informasi ke file jawaban penyiapan Windows yang tidak dijaga
+### Contoh 1: Menambahkan informasi ke file jawaban penyiapan Windows tanpa pengawas
 ```powershell
 Add-AzVmssAdditionalUnattendContent -VirtualMachineScaleSet $VMSS -ComponentName  $AUCComponentName -Content  $AUCContent -PassName $AUCPassName -SettingName  $AUCSetting
 ```
 
-Perintah ini menambahkan informasi ke file jawaban penyetelan Windows yang tidak dijaga.
+Perintah ini menambahkan informasi ke file jawaban Penyetelan Windows yang tidak dijaga.
 
 ## PARAMETERS
 
 ### -ComponentName
-Menentukan nama komponen yang akan dikonfigurasi dengan konten yang ditambahkan.
-Satu-satunya nilai yang diizinkan adalah Microsoft-Windows-Shell-Setup.
+Menentukan nama komponen untuk dikonfigurasi dengan konten yang ditambahkan.
+Satu-satunya nilai yang diperbolehkan adalah Microsoft-Windows-Shell-Setup.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ComponentNames]
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassName
-Menentukan nama pass yang berlaku untuk konten.
+Menentukan nama pass tempat konten diterapkan.
 Satu-satunya nilai yang diperbolehkan adalah oobeSystem.
 
 ```yaml
@@ -176,11 +179,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.PassNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.PassNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ComponentNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String
 

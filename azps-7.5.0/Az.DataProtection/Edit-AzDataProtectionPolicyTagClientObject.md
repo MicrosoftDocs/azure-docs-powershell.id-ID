@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
-ms.openlocfilehash: 9e65c2dba36f9dec18fb017430a6800b80e19ac3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e5e34bbcda3c36c7f01de666facb0d4a27325999
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219023"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749430"
 ---
 # Edit-AzDataProtectionPolicyTagClientObject
 
 ## SYNOPSIS
 Menambahkan atau menghapus tag jadwal dalam kebijakan pencadangan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytagclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Perintah ini menghapus tag Mingguan dari kebijakan pencadangan.
 
 ### -Kriteria
 Kriteria yang akan dikaitkan dengan tag jadwal.
-Untuk membuat, lihat bagian CATATAN untuk properti CRITERIA dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti CRITERIA dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IScheduleBasedBackupCriteria[]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Objek Kebijakan Pencadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -148,18 +151,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 KRITERIA <IScheduleBasedBackupCriteria[]>: Kriteria yang akan dikaitkan dengan tag jadwal.
   - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
   - `[AbsoluteCriterion <AbsoluteMarker[]>]`: berisi nilai absolut seperti "AllBackup" / "FirstOfDay" / "FirstOfWeek" / "FirstOfMonth" dan harus menjadi bagian dari enum AbsoluteMarker
-  - `[DaysOfMonth <IDay[]>]`: Ini adalah hari dalam sebulan dari 1 hingga 28 bijaksana lainnya bulan lalu
+  - `[DaysOfMonth <IDay[]>]`: Ini adalah hari dalam sebulan dari 1 hingga 28 bulan terakhir yang bijaksana lainnya
     - `[Date <Int32?>]`: Tanggal bulan
     - `[IsLast <Boolean?>]`: Apakah Tanggal adalah tanggal terakhir bulan
   - `[DaysOfTheWeek <DayOfWeek[]>]`: Seharusnya Hari Minggu/Senin/T..../Sabtu
-  - `[MonthsOfYear <Month[]>]`: Seharusnya Januari/Februari/....../Desember
+  - `[MonthsOfYear <Month[]>]`: Seharusnya Januari/Februari/.../Desember
   - `[ScheduleTime <DateTime[]>]`: Daftar waktu jadwal untuk pencadangan
   - `[WeeksOfTheMonth <WeekNumber[]>]`: Seharusnya Pertama/Detik/Ketiga/Keempat/Terakhir
 
 KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

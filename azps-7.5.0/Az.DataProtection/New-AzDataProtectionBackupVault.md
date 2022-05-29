@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
-ms.openlocfilehash: 10d211480fdb9ecc6926868f370d22b4e2d83838
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 32f8d612387f2aeb59a615e92f292ae858965926
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218858"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748890"
 ---
 # New-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya dari vault cadangan
+Nama Grup Sumber Daya dari brankas cadangan
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ### -StorageSetting
 Storage Pengaturan brankas.
 Gunakan cmdlet New-AzDataProtectionBackupVaultStorageSetting untuk Membuat.
-Untuk membuat, lihat bagian CATATAN untuk STORAGESETTING properti dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti STORAGESETTING dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IStorageSetting[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan vault
+ID Langganan vault
 
 ```yaml
 Type: System.String

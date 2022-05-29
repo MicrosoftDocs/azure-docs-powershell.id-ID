@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupPolicy.md
-ms.openlocfilehash: 5653799e3c5e9c548b426197719bed981c1cbf72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c05edc16c9516f9ce4c19317ad953d6c1c790ad6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218870"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748926"
 ---
 # New-AzDataProtectionBackupPolicy
 
 ## SYNOPSIS
 Membuat kebijakan pencadangan baru dalam vault cadangan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,8 +84,8 @@ Perintah keempat memperbarui objek kebijakan dengan siklus hidup yang dibuat.
 Perintah kelima keenam membuat objek jadwal kustom untuk kebijakan pencadangan, dua kali setiap minggu mulai dari $schDates.
 Perintah ketujuh memperbarui objek kebijakan dengan jadwal kustom.
 Perintah kedelapan, kesembilan, kesepuluh memperbarui aturan retensi Bulanan dengan siklus hidup kustom.
-Perintah ke-112 membuat kriteria tag untuk kebijakan Bulanan.
-Kriteria tag perlu ditambahkan untuk setiap aturan retensi kustom (ditambahkan secara otomatis untuk aturan retensi default).
+Perintah ke sebelas, kedua belas membuat kriteria tag untuk kebijakan Bulanan.
+Kriteria tag perlu ditambahkan untuk setiap aturan retensi kustom (secara otomatis ditambahkan untuk aturan retensi default).
 Perintah terakhir membuat kebijakan.
 
 ## PARAMETERS
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek Permintaan Kebijakan Untuk dibuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
+Objek Permintaan Kebijakan Untuk membangun, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -229,7 +232,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 KEBIJAKAN <IBackupPolicy>: Objek Permintaan Kebijakan
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

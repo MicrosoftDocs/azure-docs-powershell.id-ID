@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
-ms.openlocfilehash: 2ce076bf278b8510983a873e1dd5853ded01ab61
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca567a543e8ac56f0174396eeadfd898981e6cce
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749322"
 ---
 # Edit-AzDataProtectionPolicyTriggerClientObject
 
 ## SYNOPSIS
 Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytriggerclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +44,13 @@ DatasourceType            ObjectType
 {Microsoft.Compute/disks} BackupPolicy
 ```
 
-Perintah ini memperbarui jadwal pencadangan kebijakan yang diberikan ke pencadangan harian.
+Perintah ini memperbarui jadwal pencadangan dari kebijakan yang diberikan ke pencadangan harian.
 
 ## PARAMETERS
 
 ### -Kebijakan
 Objek Kebijakan Pencadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -97,7 +100,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
