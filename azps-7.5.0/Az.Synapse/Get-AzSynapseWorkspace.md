@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspace.md
-ms.openlocfilehash: 8e005e284de276b70c2741144995aecf6698f681
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ec415476945ddf05cd8184836601ffb4fad09e51
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109137"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708318"
 ---
 # Get-AzSynapseWorkspace
 
 ## SYNOPSIS
 Mendapatkan ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Get-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup
 
 Perintah ini mendapatkan semua ruang kerja Azure Synapse Analytics di bawah langganan saat ini dalam Grup Sumber Daya ContosoResourceGroup.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSynapseWorkspace -Name ContosoWorkspace
 ```

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/resume-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Resume-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Resume-AzSqlDatabase.md
-ms.openlocfilehash: e4cf2f94be96a8ae1add6443fe6cc7f2622584ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d5dc9ff3eb880d72703ba2a6c429c6750a54844
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212819"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723780"
 ---
 # Melanjutkan-AzSqlDatabase
 
 ## SYNOPSIS
 Melanjutkan database Gudang Data SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/resume-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,11 +160,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## NOTES
-* Cmdlet **Resume-AzSqlDatabase** hanya berfungsi pada database Gudang Data Azure SQL. Operasi ini tidak didukung pada edisi dasar, standar, dan Premium Azure SQL Database.
+* Cmdlet **Resume-AzSqlDatabase** hanya berfungsi pada database Gudang Data Azure SQL. Operasi ini tidak didukung pada edisi Dasar, Standar, dan Premium Azure SQL Database.
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Baru-AzSqlDatabase](./New-AzSqlDatabase.md)
 

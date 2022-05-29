@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
-ms.openlocfilehash: cff8a38ec026b672ea062b185c65b5d3d002283c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c1811aaa149c1ecd6ac6733bcdfe1af01dcb6e37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240345"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744642"
 ---
 # Get-AzBatchJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan Batch untuk akun Batch atau jadwal pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchjob) untuk informasi terbaru.
 
 ## SYNTAX
 

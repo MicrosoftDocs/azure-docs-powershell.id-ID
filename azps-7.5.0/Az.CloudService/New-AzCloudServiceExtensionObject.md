@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
-ms.openlocfilehash: 5b6baef6828a1a02da8b5c6690fc6d788b8c95b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82118ff29b74e0e5537d709169a11fb5a56647d4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207743"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737982"
 ---
 # New-AzCloudServiceExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceextensionobject) untuk informasi terbaru.
 
 ## SYNTAX
 

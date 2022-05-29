@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseActivity.md
-ms.openlocfilehash: 9300b6f545c58a5430023d20c836e7d29556d199
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02c783a125edb5c0d5d47703dcde79a932a8f03b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237545"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721944"
 ---
 # Stop-AzSqlDatabaseActivity
 
 ## SYNOPSIS
 Membatalkan operasi pembaruan asinkron pada database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqldatabaseactivity) untuk informasi terbaru.
 
 ## SYNTAX
 

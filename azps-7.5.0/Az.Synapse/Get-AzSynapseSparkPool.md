@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkPool.md
-ms.openlocfilehash: 27bdfed1a54e34d0ba86b00ac67554c15c84b26c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ef14db71b70bc008a4ca793f5c4f8c9d821f819
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212774"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709128"
 ---
 # Get-AzSynapseSparkPool
 
 ## SYNOPSIS
 Mendapatkan kumpulan Apache Spark di Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool
 
 Perintah ini mendapatkan kumpulan Spark di bawah ruang kerja ContosoWorkspace dengan nama ContosoSparkPool.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSparkPool

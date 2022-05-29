@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
-ms.openlocfilehash: 4dc325d39b08ce7b107e1d45ad3332e95f078131
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8437f37fb4be91e9884ef843713913150d57bbda
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236078"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735678"
 ---
 # Get-AzHostGroup
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azhostgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ myrg01                     myhostgroup02   eastus {[key1, val1]}       2
 
 Perintah ini mengembalikan semua grup host dalam grup sumber daya yang diberikan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzHostGroup
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
-ms.openlocfilehash: 487549eee26097a143ca3dacec9f3f7198fbd2b0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c4fae128bdd0c69582b7d5a5f3336fb134bf525
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227843"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730800"
 ---
 # Get-AzConsumptionPriceSheet
 
 ## SYNOPSIS
 Dapatkan lembar harga langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionpricesheet) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
               UnitPrice:  1.33
 ```
 
-### Contoh 3: Mendapatkan lembar harga BillingPeriodName
+### Contoh 3: Dapatkan lembar harga BillingPeriodName
 ```powershell
 Get-AzConsumptionPriceSheet -BillingPeriodName 201712
 ```

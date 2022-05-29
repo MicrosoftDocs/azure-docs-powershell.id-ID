@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementApiToGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementApiToGateway.md
-ms.openlocfilehash: 8fd107fda00bebccccd6e3d67dd99593bb1b875d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0787db2dd9e2b6f4a8a5d72df5d55ee9703919b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240485"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730170"
 ---
 # Add-AzApiManagementApiToGateway
 
 ## SYNOPSIS
 Melampirkan API ke gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementapitogateway) untuk informasi terbaru.
 
 ## SYNTAX
 

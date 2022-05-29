@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: 104db8072ee7deebe860e96fed3dfebd4f88e960
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3155f20c14f865e7cfe2cdc44be00dcd994ecd88
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209903"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708701"
 ---
 # Get-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
 Mengambil titik pemulihan yang berbeda dari mana kumpulan SQL Synapse Analytics dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan berbeda te
 Get-AzSynapseSqlPoolRestorePoint -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini mengembalikan semua titik pemulihan yang tersedia untuk kumpulan Azure Synapse Analytics SQL bernama ContosoSqlPool.
+Perintah ini mengembalikan semua titik pemulihan yang tersedia untuk kumpulan SQL Azure Synapse Analytics bernama ContosoSqlPool.
 
 ## PARAMETERS
 

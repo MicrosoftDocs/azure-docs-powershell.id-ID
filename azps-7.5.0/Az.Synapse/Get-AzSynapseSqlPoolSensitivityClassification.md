@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: 009e38723d3d2f9a7a03a36cc9db61dff69330a3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e5ec04f905d415db467c2527dfbf03a8586f16d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209894"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708706"
 ---
 # Get-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
 Mendapatkan jenis informasi saat ini dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

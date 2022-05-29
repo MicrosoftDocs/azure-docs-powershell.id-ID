@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 156d6a955a6cb3615d47847b9e0c430e5f0eaba3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d0fb7f138acdc41b00e9d325da2966216e77114
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710460"
 ---
 # Export-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Mengekspor konfigurasi spark Synapse ke folder output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Export-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContoSp
 
 Mengekspor konfigurasi spark tunggal bernama ContoSparkConfiguration di ruang kerja ContosoWorkspace ke folder "C:\SparkConfiguration".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Export-AzSynapseSparkConfiguration -Name ContoSparkConfiguration -OutputFolder "C:\SparkConfiguration"

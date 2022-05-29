@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
-ms.openlocfilehash: 07a271bff2009d7e3496b3edf1e4edcef6a22a63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 398f530dac5b8543914e7fb5b987d333795c276a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228389"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716022"
 ---
 # New-AzStorageEncryptionScope
 
 ## SYNOPSIS
 Membuat cakupan enkripsi untuk akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini membuat cakupan enkripsi dengan Storage Encryption.
+Perintah ini membuat cakupan enkripsi dengan enkripsi Storage.
 
 ### Contoh 2: Membuat cakupan enkripsi dengan Enkripsi Keyvault, dan RequireInfrastructureEncryption
 ```
@@ -79,7 +82,7 @@ testscope Enabled  Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/k
 ```
 
 Perintah ini membuat cakupan enkripsi dengan Enkripsi Keyvault dan RequireInfrastructureEncryption.
-Identitas akun Storage perlu mendapatkan, wrapkey, izin unwrapkey ke kunci keyvault.
+Akun Storage yang dibutuhkan identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
 
 ## PARAMETERS
 

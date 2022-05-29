@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/sto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Stop-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Stop-AzCloudService.md
-ms.openlocfilehash: 83236c148ecbab9e1d210d4462c2ca2447c9c698
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24de7c565999f57636cd9910ed53a4dbf5654a31
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212654"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737568"
 ---
 # Stop-AzCloudService
 
 ## SYNOPSIS
 Matikan layanan awan.
-Perhatikan bahwa sumber daya masih terlampir dan Anda dikenakan biaya untuk sumber daya.
+Perhatikan bahwa sumber daya masih terlampir dan Anda dikenakan biaya untuk sumber daya tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/stop-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Stop-AzCloudService -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObj
 
 ## DESCRIPTION
 Matikan layanan awan.
-Perhatikan bahwa sumber daya masih terlampir dan Anda dikenakan biaya untuk sumber daya.
+Perhatikan bahwa sumber daya masih terlampir dan Anda dikenakan biaya untuk sumber daya tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan layanan cloud
+### Contoh 1: Hentikan layanan cloud
 ```powershell
 Stop-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 ```
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

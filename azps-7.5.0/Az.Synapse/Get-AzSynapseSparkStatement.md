@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkStatement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkStatement.md
-ms.openlocfilehash: c5fa3ad34c2d47e89c317d9ae96485ad1eba6736
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0daa9fbab6d62fdee26bbbd9e7035bbebf65c82b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239004"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709110"
 ---
 # Get-AzSynapseSparkStatement
 
 ## SYNOPSIS
 Mendapatkan pernyataan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkstatement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseSparkStatement -WorkspaceName ContosoWorkspace -SparkPoolName Conto
 
 Perintah ini mendapatkan pernyataan Spark dengan ID livy yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $session = Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 107
 $session | Get-AzSynapseSparkStatement

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
-ms.openlocfilehash: 9e42422e5ef22b96c9cdd2ff13d65dc7a77dc0de
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba97e93f07a99c898209a3fc4e16b0d5c1c925d6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245371"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726084"
 ---
 # New-AzSqlElasticJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 

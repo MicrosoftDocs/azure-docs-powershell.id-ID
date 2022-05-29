@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzProximityPlacementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzProximityPlacementGroup.md
-ms.openlocfilehash: 447c19d774e2d1b6f7aef885bcb7355a1bf907a0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fab53d4eee489c2407a49a4eb051eb38e5631dc1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236033"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735624"
 ---
 # Get-AzProximityPlacementGroup
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan sumber daya Grup Penempatan Kedekatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azproximityplacementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ rg0                          ppg1 westcentralus Standard
 
 Perintah ini mencantumkan semua grup penempatan kedekatan di bawah grup sumber daya tertentu.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzProximityPlacementGroup
 ```

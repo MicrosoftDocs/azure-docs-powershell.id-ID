@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
-ms.openlocfilehash: 2eaf03940e3c32b4646efc88f8cf219c65d68d74
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60ebb21258a05f8d6ed8d232bc1c7b8b92a5645b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193544"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716778"
 ---
 # Get-AzStorageUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan sumber daya Storage dari langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ CurrentValue  : 18
 Limit         : 250
 ```
 
-Perintah ini mendapatkan Storage penggunaan sumber daya dari lokasi yang ditentukan di bawah langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya dari lokasi tertentu di bawah langganan saat ini.
 
 ## PARAMETERS
 
@@ -90,6 +93,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Manajer Azure Storage](./Az.Storage.md)
+[Cmdlet Azure Storage Manager](./Az.Storage.md)
 
 

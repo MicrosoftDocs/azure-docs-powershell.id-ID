@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
-ms.openlocfilehash: 6c884b600f0e22ea0ea6fa36f2e0bc46fafe7f02
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 675e0a068f267c8cb98b51e8e5eba4e2893ed9e6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232788"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732744"
 ---
 # Set-AzVMExtension
 
 ## SYNOPSIS
 Memperbarui properti ekstensi atau menambahkan ekstensi ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmextension) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
-ms.openlocfilehash: f8a85cd8be6f6ddb2d54bd145f3978fc1a7c41ab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: da20ff37a8097167c3a5224c298c4d3fc5ce4fcb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246312"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744876"
 ---
 # Update-AzAutomationSourceControl
 
 ## SYNOPSIS
 Memperbarui kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/update-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 

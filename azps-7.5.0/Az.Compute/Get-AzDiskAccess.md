@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskAccess.md
-ms.openlocfilehash: d4b3b77e854592b64a7cf56f98e846b8072cc68c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95efd09b017a466507f8c1ec3b0c2b621d4bbddd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190912"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735840"
 ---
 # Get-AzDiskAccess
 
 ## SYNOPSIS
 Mendapatkan properti Akses Disk
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdiskaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -116,7 +119,7 @@ Tags                       : {}
 
 Perintah ini mendapatkan properti semua akses disk di bawah langganan.
 
-### Contoh 4: Dapatkan semua Akses Disk menggunakan Karakter KartuBebas
+### Contoh 4: Mendapatkan semua Akses Disk menggunakan Karakter Wildcard
 ```powershell
 Get-AzDiskAccess -Name DiskAccessMicrosoft*
 ```
@@ -141,7 +144,7 @@ Type                       : Microsoft.Compute/diskAccesses
 Tags                       : {}
 ```
 
-Perintah ini mendapatkan properti semua akses disk di bawah nama langganan yang dimulai dengan 'DiskAccessMicrosoft'.
+Perintah ini mendapatkan properti semua akses disk dengan nama langganan yang dimulai dengan 'DiskAccessMicrosoft'.
 
 ### Contoh 5: Dapatkan Akses Disk menggunakan ResourceId.
 ```powershell

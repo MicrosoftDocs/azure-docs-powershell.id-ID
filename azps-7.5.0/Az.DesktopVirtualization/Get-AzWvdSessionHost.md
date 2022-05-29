@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdSessionHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdSessionHost.md
-ms.openlocfilehash: 2b46413ed72f6dde0f71052ff1990a48c4ed4f35
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d5dbe13c65806f50dc5bfe01de75e6288dc4771a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225732"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744156"
 ---
 # Get-AzWvdSessionHost
 
 ## SYNOPSIS
 Mendapatkan host sesi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdsessionhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.

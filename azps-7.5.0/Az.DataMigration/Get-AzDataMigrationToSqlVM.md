@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
-ms.openlocfilehash: 863613b9def8d61545c9ec746ea9efa21aed731a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15cf53dcd4f97f39df0ff5bf8f988d0644f58019
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202095"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750708"
 ---
 # Get-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
 Ambil migrasi database yang ditentukan untuk VM SQL tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 

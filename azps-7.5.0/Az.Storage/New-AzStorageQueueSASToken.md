@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueSASToken.md
-ms.openlocfilehash: 2d29ee55fe1c77cba7e077ca89db359ec8cf892f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 61e55518f6939df0b587920e43ba2b1bd4761207
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228364"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715878"
 ---
 # New-AzStorageQueueSASToken
 
 ## SYNOPSIS
 Menghasilkan token tanda tangan akses bersama untuk antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragequeuesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Contoh ini menghasilkan token SAS antrean dengan izin penuh.
 
 ### -Context
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya dengan cmdlet New-AzStorageContext.
+Anda dapat membuatnya dengan New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext

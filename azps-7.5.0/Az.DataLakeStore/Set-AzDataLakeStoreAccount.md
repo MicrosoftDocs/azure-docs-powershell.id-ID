@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 01d9c6f6ec330d11dbf59e3e20c99b636726e504
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 145ec33754d91b4115e04f89c77fbac7ea9f3c0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202434"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751140"
 ---
 # Set-AzDataLakeStoreAccount
 
 ## SYNOPSIS
 Memodifikasi akun Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIdProviderState
-Secara opsional mengaktifkan atau menonaktifkan penyedia ID tepercaya yang ada.
+Aktifkan atau nonaktifkan penyedia ID tepercaya yang ada secara opsional.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState]
@@ -214,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TrustedIdProviderState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.FirewallState, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 

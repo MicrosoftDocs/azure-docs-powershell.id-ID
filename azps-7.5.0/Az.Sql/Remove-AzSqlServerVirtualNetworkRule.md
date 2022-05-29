@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: 64addff2c68129c8ca1fb9a65768d96b5b126567
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 72651e79f074c0a9aa225b0085a182d1accb81f2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109308"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724014"
 ---
 # Remove-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
 Menghapus Aturan Virtual Network Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlservervirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

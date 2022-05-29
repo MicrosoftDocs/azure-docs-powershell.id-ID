@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuild.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuild.md
-ms.openlocfilehash: f1a4e18563daa1ca58e629b54a015d5b2d1acd1e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a476d21dd790efb9e163a13c29a4c53fe15dbd43
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236498"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700722"
 ---
 # Get-AzStaticWebAppBuild
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan detail build situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azstaticwebappbuild) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Kind Name    Type
 ```
 
 Perintah ini mencantumkan semua build di bawah aplikasi web statis.
-Automaticall membuat build baru di aplikasi web statis Saat membuat permintaan pull baru untuk cabang.
+Otomatissemua membuat build baru di aplikasi web statis Saat membuat permintaan pull baru untuk cabang.
 
 ### Contoh 2: Mendapatkan detail build situs statis
 ```powershell
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String[]
@@ -206,7 +209,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

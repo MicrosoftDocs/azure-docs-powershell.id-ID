@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesUser.md
-ms.openlocfilehash: 6473784256c7d3618d408dd10fe982a07f9de93e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f499d1aa897bcb055f85178f1d3f9933dcfe932c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184595"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692712"
 ---
 # New-AzLabServicesUser
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui pengguna lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabservicesuser) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVM.md
-ms.openlocfilehash: 87b5b2c0159b75c470c720b9abd9d70f03383b12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c5927cea6980d0115c79594f180de3b69e91ec7b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223739"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721206"
 ---
 # Get-AzSqlVM
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azsqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ vm   ResourceGroup01    PAYG        Developer SQL2017-WS2016 Full
 vm2  ResourceGroup02    PAYG        Developer SQL2017-WS2016 Full
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL komputer virtual dalam langganan saat ini.
+Perintah ini mendapatkan informasi tentang semua komputer virtual Azure SQL dalam langganan saat ini.
 
 ### Contoh 2
 ```powershell
@@ -65,9 +68,9 @@ Name ResourceGroupName  LicenseType Sku       Offer          SqlManagementType
 vm   ResourceGroup01    PAYG        Developer SQL2017-WS2016 Full
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL komputer virtual dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua komputer virtual Azure SQL dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSqlVM -ResourceGroupName "ResourceGroup01" -Name "vm"
 ```
@@ -78,7 +81,7 @@ Name ResourceGroupName  LicenseType Sku       Offer          SqlManagementType
 vm   ResourceGroup01    PAYG        Developer SQL2017-WS2016 Full
 ```
 
-Perintah ini mendapatkan informasi tentang SQL komputer virtual "vm" yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang komputer virtual SQL "vm" yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 

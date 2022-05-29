@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncSchema.md
-ms.openlocfilehash: 4c16d8a0dce0a47c74c218a474de5e7668d51823
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c2526216a1481bd87ca9155aad83848a68fd9bf7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240698"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721260"
 ---
 # Update-AzSqlSyncSchema
 
 ## SYNOPSIS
 Perbarui skema sinkronisasi untuk database anggota sinkronisasi atau database hub sinkronisasi.
-Ini akan mendapatkan skema database terbaru dari database nyata dan kemudian menggunakannya untuk menyegarkan skema yang di-cache oleh database metadata Sinkronisasi.
-Jika "SyncMemberName" ditentukan, itu akan merefresh skema database anggota; jika tidak, itu akan merefresh skema database hub.
+Ini akan mendapatkan skema database terbaru dari database nyata dan kemudian menggunakannya merefresh skema yang di-cache oleh database metadata Sinkronisasi.
+Jika "SyncMemberName" ditentukan, itu akan menyegarkan skema database anggota; jika tidak, itu akan me-refresh skema database hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlsyncschema) untuk informasi terbaru.
 
 ## SYNTAX
 

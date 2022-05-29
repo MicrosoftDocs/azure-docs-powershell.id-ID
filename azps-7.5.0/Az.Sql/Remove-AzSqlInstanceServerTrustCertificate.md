@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceServerTrustCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceServerTrustCertificate.md
-ms.openlocfilehash: 4bbadffb1221c1037b78010f1eb27237359b8f47
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9d13e34d4dde250e8781873d8b2c85e9ad6c067
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724338"
 ---
 # Remove-AzSqlInstanceServerTrustCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat kepercayaan server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstanceservertrustcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzSqlInstanceServerTrustCertificate [-ResourceId] <String> [-AsJob] [-Pas
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlInstanceServerTrustCertificate** menghapus sertifikat kepercayaan server dari Azure SQL Managed Instanc
+**Cmdlet Remove-AzSqlInstanceServerTrustCertificate** menghapus sertifikat kepercayaan server dari Azure SQL Managed Instanc
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ PS C:\> Remove-AzSqlInstanceServerTrustCertificate -InputObject $serverTrustCert
 
 Perintah ini menghapus sertifikat kepercayaan server yang ditentukan oleh objek sertifikat.
 
-### Contoh 4: Menghapus sertifikat kepercayaan server oleh objek instans induknya
+### Contoh 4: Menghapus sertifikat kepercayaan server dengan objek instans induknya
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01" 
 PS C:\> Remove-AzSqlInstanceServerTrustCertificate -InstanceObject $instance -Name "Certificate01"

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 4af8207f72e1ab17a665ec0ecb248d218d5b7fa9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10fb6e62b48d3702d0683fab6ffc7bf07028047e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109266"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723546"
 ---
 # Set-AzSqlDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Menetapkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ resourcegroup01   server01   database01   5             12
 
 Perintah ini menetapkan kebijakan penyimpanan jangka pendek untuk database01 hingga 5 hari retensi dan 12 jam interval cadangan diferensial melalui piping dalam objek database.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSqlDatabaseBackupShortTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 -RetentionDays 7
 ```

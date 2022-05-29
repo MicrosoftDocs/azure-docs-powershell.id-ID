@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
-ms.openlocfilehash: f6c79eed686c56ad668e4d5758cc3925b27cd262
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca326f49003a579fa7c6c7e75b754d84d2b9e215
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209987"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708984"
 ---
 # Get-AzSynapseSqlDatabase
 
 ## SYNOPSIS
 Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu. Mendapatkan database SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Get-AzSynapseSqlDatabase -WorkspaceName ContosoWorkspace -Name ContosoSqlDatabas
 
 Perintah ini mendapatkan database SQL di bawah ruang kerja ContosoWorkspace dengan nama ContosoSqlDatabase.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSqlDatabase

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 185f75b9416accb3f512f84b9881f57e46ba4ebf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7b8dd562695bdfccff0e5365fa171c03396a9bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202571"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751374"
 ---
 # New-AzDataLakeStoreAccount
 
 ## SYNOPSIS
 Membuat akun Data Lake Store baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/new-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ### -Lokasi
 Menentukan lokasi yang akan digunakan untuk akun tersebut.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- US Timur 2
+- AS Timur 2
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Management.Automation.SwitchParameter
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticPoolActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticPoolActivity.md
-ms.openlocfilehash: 4cccd4f74452dfe3ba46d489a7a366af144f5e79
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07d07150bfae0ebe2dff2e8697bf5c0508d0af37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233303"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721890"
 ---
 # Stop-AzSqlElasticPoolActivity
 
 ## SYNOPSIS
 Membatalkan operasi pembaruan asinkron pada kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlelasticpoolactivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL tempat Kumpulan Elastis berada.
+Nama Server Azure SQL tempat Kumpulan Elastis berada.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdSessionHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdSessionHost.md
-ms.openlocfilehash: d3f7a22ac0c3f2404dba9dabcc8f49667d95f46e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fdfcf7f726a04f17260cec83338de8d6d8cc9809
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187381"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743472"
 ---
 # Remove-AzWvdSessionHost
 
 ## SYNOPSIS
-Hapus SessionHost.
+Menghapus SessionHost.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdsessionhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzWvdSessionHost -InputObject <IDesktopVirtualizationIdentity> [-Force] [
 ```
 
 ## DESCRIPTION
-Hapus SessionHost.
+Menghapus SessionHost.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -224,8 +227,8 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.

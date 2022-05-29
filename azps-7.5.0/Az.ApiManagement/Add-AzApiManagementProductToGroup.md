@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementProductToGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementProductToGroup.md
-ms.openlocfilehash: cd8fca02a31b31bd70f6840681d112f2e92987ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95e6d84a60951a08615d56ba5ba8e0057da30aa6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240446"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731808"
 ---
 # Add-AzApiManagementProductToGroup
 
 ## SYNOPSIS
 Menambahkan produk ke grup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementproducttogroup) untuk informasi terbaru.
 
 ## SYNTAX
 

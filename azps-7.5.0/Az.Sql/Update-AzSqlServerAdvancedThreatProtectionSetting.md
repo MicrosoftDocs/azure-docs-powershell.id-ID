@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Update-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: a8a54b31954d70a5df31390d736a3c9e38615a05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ab0670d80ef75e467b839df1919eb82c76aab4d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189330"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721458"
 ---
 # Update-AzSqlServerAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mengatur pengaturan perlindungan ancaman tingkat lanjut pada server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlserveradvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

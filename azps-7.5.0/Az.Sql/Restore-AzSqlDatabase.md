@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/restore-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlDatabase.md
-ms.openlocfilehash: ba4df7426138bed8b5732c1bef03f1d5163aab65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 929982019f7f3871ceaaec9c4caa79f8f6a38b48
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212846"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723834"
 ---
 # Restore-AzSqlDatabase
 
 ## SYNOPSIS
 Memulihkan database SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/restore-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -104,7 +107,7 @@ Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceG
 ```
 
 Perintah pertama mendapatkan database SQL bernama Database01, lalu menyimpannya dalam variabel $Database.
-Perintah kedua memulihkan database dalam $Database dari cadangan point-in-time yang ditentukan ke database bernama RestoredDatabase.
+Perintah kedua memulihkan database dalam $Database dari cadangan titik waktu yang ditentukan ke database bernama RestoredDatabase.
 
 ### Contoh 2: Memulihkan database dari titik waktu ke kumpulan elastis
 ```powershell
@@ -535,7 +538,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Memulihkan Azure SQL Database dari kesalahan pengguna](http://go.microsoft.com/fwlink/?LinkId=746944)
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Get-AzSqlDatabaseGeoBackup](./Get-AzSqlDatabaseGeoBackup.md)
 

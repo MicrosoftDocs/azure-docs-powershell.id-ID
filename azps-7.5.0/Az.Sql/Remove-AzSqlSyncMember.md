@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncMember.md
-ms.openlocfilehash: dbdcc332b2f53ba455082362b520e60948999220
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f330cb05489082b4c9b54c01abb57424a196560
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212867"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723852"
 ---
 # Remove-AzSqlSyncMember
 
 ## SYNOPSIS
 Menghapus Anggota Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlsyncmember) untuk informasi terbaru.
 
 ## SYNTAX
 

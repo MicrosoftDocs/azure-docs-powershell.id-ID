@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
-ms.openlocfilehash: 26177f73cc509838f3a2ade1cdc3391e9302cc0c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1f34dbf3b516f251424b4881de7c629199342b08
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209975"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708858"
 ---
 # Get-AzSynapseSqlPool
 
 ## SYNOPSIS
 Mendapatkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang kumpulan SQL Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang kumpulan SQL Azure Synapse Analytics.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 
 Perintah ini mendapatkan kumpulan SQL di bawah ruang kerja ContosoWorkspace dengan nama ContosoSqlPool.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSqlPool
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-[Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu.] Versi kumpulan SQL Synapse. Misalnya, 2 atau 3.
+[Fitur ini dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu.] Versi kumpulan SQL Synapse. Misalnya, 2 atau 3.
 
 ```yaml
 Type: System.Int32

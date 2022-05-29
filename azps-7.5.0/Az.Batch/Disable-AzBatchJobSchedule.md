@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/disable-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchJobSchedule.md
-ms.openlocfilehash: eea5017ed0831d4d689233f584665a9be80763c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9fc13ad9b1238034511833c5cb4ce1a6df2aea0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234398"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744804"
 ---
 # Disable-AzBatchJobSchedule
 
 ## SYNOPSIS
 Menonaktifkan jadwal pekerjaan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/disable-azbatchjobschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

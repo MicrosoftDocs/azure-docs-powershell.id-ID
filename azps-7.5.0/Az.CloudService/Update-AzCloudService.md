@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Update-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Update-AzCloudService.md
-ms.openlocfilehash: 0ee8fbcb2bc48a898e2ccbb6c3e1a983b1291599
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a05d725ea790033cca33f4ccea5d6b2257818556
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240236"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737496"
 ---
 # Update-AzCloudService
 
 ## SYNOPSIS
 Membuat atau memperbarui layanan awan.
 Harap dicatat bahwa beberapa properti hanya dapat diatur selama pembuatan layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/update-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -238,7 +241,7 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
 
 PARAMETER <ICloudService>: Menjelaskan layanan cloud.
   - `Location <String>`: Lokasi sumber daya.
-  - `[AllowModelOverride <Boolean?>]`: (Opsional) Menunjukkan apakah properti sku peran (roleProfile.roles.sku) yang ditentukan dalam model/templat harus mengganti jumlah instans peran dan ukuran vm yang ditentukan dalam .cscfg dan .csdef masing-masing.         Nilai default-nya adalah `false`.
+  - `[AllowModelOverride <Boolean?>]`: (Opsional) Menunjukkan apakah properti sku peran (roleProfile.roles.sku) yang ditentukan dalam model/templat harus mengganti jumlah instans peran dan ukuran vm yang ditentukan dalam .cscfg dan .csdef masing-masing.         Nilai defaultnya adalah `false`.
   - `[Configuration <String>]`: Menentukan konfigurasi layanan XML (.cscfg) untuk layanan cloud.
   - `[ConfigurationUrl <String>]`: Menentukan URL yang mengacu pada lokasi konfigurasi layanan di Blob service. URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (SAS) dari akun penyimpanan apa pun.         Ini adalah properti hanya-tulis dan tidak dikembalikan dalam panggilan GET.
   - `[ExtensionProfile <ICloudServiceExtensionProfile>]`: Menjelaskan profil ekstensi layanan cloud.
@@ -265,19 +268,19 @@ PARAMETER <ICloudService>: Menjelaskan layanan cloud.
       - `[Id <String>]`: Id Sumber Daya
     - `[SwappableCloudService <ISubResource>]`: Referensi id dari layanan awan yang berisi IP target tempat layanan cloud subjek dapat melakukan pertukaran. Properti ini tidak dapat diperbarui setelah disetel. Layanan cloud yang dapat ditukar yang dirujuk oleh id ini harus ada jika tidak, kesalahan akan muncul.
       - `[Id <String>]`: Id Sumber Daya
-  - `[OSProfile <ICloudServiceOSProfile>]`: Menjelaskan profil OS untuk layanan awan.
+  - `[OSProfile <ICloudServiceOSProfile>]`: Menjelaskan profil OS untuk layanan cloud.
     - `[Secret <ICloudServiceVaultSecretGroup[]>]`: Menentukan sekumpulan sertifikat yang harus diinstal ke instans peran.
       - `[SourceVaultId <String>]`: Id Sumber Daya
       - `[VaultCertificate <ICloudServiceVaultCertificate[]>]`: Daftar referensi brankas kunci di SourceVault yang berisi sertifikat.
         - `[CertificateUrl <String>]`: Ini adalah URL sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
-  - `[PackageUrl <String>]`: Menentukan URL yang mengacu pada lokasi paket layanan di Blob service. URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (SAS) dari akun penyimpanan apa pun.         Ini adalah properti tulis-saja dan tidak dikembalikan dalam panggilan GET.
+  - `[PackageUrl <String>]`: Menentukan URL yang mengacu pada lokasi paket layanan di Blob service. URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (SAS) dari akun penyimpanan apa pun.         Ini adalah properti hanya-tulis dan tidak dikembalikan dalam panggilan GET.
   - `[RoleProfile <ICloudServiceRoleProfile>]`: Menjelaskan profil peran untuk layanan awan.
     - `[Role <ICloudServiceRoleProfileProperties[]>]`: Daftar peran untuk layanan awan.
       - `[Name <String>]`: Nama sumber daya.
       - `[SkuCapacity <Int64?>]`: Menentukan jumlah instans peran di layanan cloud.
-      - `[SkuName <String>]`: Nama sku. CATATAN: Jika SKU baru tidak didukung pada perangkat keras tempat layanan cloud saat ini aktif, Anda perlu menghapus dan membuat ulang layanan cloud atau kembali ke sku lama.
+      - `[SkuName <String>]`: Nama sku. CATATAN: Jika SKU baru tidak didukung pada perangkat keras tempat layanan cloud saat ini aktif, Anda perlu menghapus dan membuat ulang layanan cloud atau pindah kembali ke sku lama.
       - `[SkuTier <String>]`: Menentukan tingkat layanan cloud. Nilai yang Mungkin adalah <br /><br /> **Standard** <br /><br /> **Dasar**
-  - `[StartCloudService <Boolean?>]`: (Opsional) Menunjukkan apakah akan segera memulai layanan cloud setelah dibuat. Nilai default-nya adalah `true`.         Jika false, model layanan masih disebarkan, tetapi kode tidak segera dijalankan. Sebagai gantinya, layanan ini Adalah PoweredOff sampai Anda memanggil Mulai, pada saat layanan akan dimulai. Layanan yang disebarkan masih dikenakan biaya, bahkan jika itu dimatikan.
+  - `[StartCloudService <Boolean?>]`: (Opsional) Menunjukkan apakah akan memulai layanan cloud segera setelah dibuat. Nilai defaultnya adalah `true`.         Jika false, model layanan masih disebarkan, tetapi kode tidak segera dijalankan. Sebagai gantinya, layanan ini adalah PoweredOff sampai Anda memanggil Mulai, pada saat itu layanan akan dimulai. Layanan yang disebarkan masih dikenakan biaya, bahkan jika diberdayakan.
   - `[Tag <ICloudServiceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[UpgradeMode <CloudServiceUpgradeMode?>]`: Perbarui mode untuk layanan awan. Instans peran dialokasikan untuk memperbarui domain saat layanan disebarkan. Pembaruan dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan.         Nilai yang Mungkin adalah <br /><br />**Auto**<br /><br />**Manual** <br /><br />**Simultan**<br /><br />         Jika tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan. Jika diatur ke Otomatis, pembaruan secara otomatis diterapkan ke setiap domain pembaruan secara berurutan.

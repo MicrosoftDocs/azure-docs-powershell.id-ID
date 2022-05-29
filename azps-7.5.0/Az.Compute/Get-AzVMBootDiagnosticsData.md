@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMBootDiagnosticsData.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMBootDiagnosticsData.md
-ms.openlocfilehash: 9100cda2d2d7dbcb1854cb7b1bda51d11852a82c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d43b32b78229e727300c7992a9fe1cc7e7d255b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110369"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735498"
 ---
 # Get-AzVMBootDiagnosticsData
 
 ## SYNOPSIS
 Mendapatkan data diagnostik boot untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmbootdiagnosticsdata) untuk informasi terbaru.
 
 ## SYNTAX
 

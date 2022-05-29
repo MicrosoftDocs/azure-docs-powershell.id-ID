@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerFirewallRule.md
-ms.openlocfilehash: 28cec25126559c71cc400b07591b915f4e0abf9d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0403c5d5a952c5e593aa315cc34ff6422b33b4d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212906"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724158"
 ---
 # Hapus-AzSqlServerFirewallRule
 
 ## SYNOPSIS
 Menghapus aturan firewall dari server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -163,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Dapatkan-AzSqlServerFirewallRule](./Get-AzSqlServerFirewallRule.md)
 
-[New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
+[Baru-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 
 [Atus-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
 

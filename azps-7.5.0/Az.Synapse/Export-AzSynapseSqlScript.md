@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseSqlScript.md
-ms.openlocfilehash: 73302e2f07899cd54c9682cba050b2b7098216db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fcd502dca76d8cbca539751b84dc0a69affb212b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223706"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710424"
 ---
 # Export-AzSynapseSqlScript
 
 ## SYNOPSIS
 Mengekspor skrip sql dari ruang kerja Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Export-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -OutputFolder "C:\sqls
 
 Mengekspor skrip sql tunggal bernama ContosoSqlScript di ruang kerja ContosoWorkspace ke folder "C:\sqlscript".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Export-AzSynapseSqlScript -Name ContosoSqlScript -OutputFolder "C:\sqlscript"

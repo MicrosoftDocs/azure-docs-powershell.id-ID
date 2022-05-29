@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Wait-AzDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Wait-AzDataLakeAnalyticsJob.md
-ms.openlocfilehash: 2ad35d12047d17535c45e93c3955dd42d51719a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a82a1d645fca2e4ba737faf2c32df0d9f05242d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202896"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751788"
 ---
 # Wait-AzDataLakeAnalyticsJob
 
 ## SYNOPSIS
 Menunggu pekerjaan selesai.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/wait-azdatalakeanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Wait-AzDataLakeAnalyticsJob** menunggu pekerjaan Azure Data Lake Analyt
 
 ## EXAMPLES
 
-### Contoh 1: Tunggu pekerjaan selesai
+### Contoh 1: Tunggu hingga pekerjaan selesai
 ```powershell
 Wait-AzDataLakeAnalyticsJob -Account "ContosoAdlAccount" -JobId "a0a78d72-3fa8-4564-9b18-6becb3fda48a"
 ```

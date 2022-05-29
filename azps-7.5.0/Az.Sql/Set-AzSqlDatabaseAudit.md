@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Set-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
-ms.openlocfilehash: 360a2944ca31bb2896c1022f10e2982ab276fc01
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca5dc1b1af39c0b3930f047ecd88d8b9db2c507f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109277"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723564"
 ---
 # Set-AzSqlDatabaseAudit
 
 ## SYNOPSIS
 Mengubah pengaturan audit untuk Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaseaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzSqlDatabaseAudit [-AuditActionGroup <AuditActionGroups[]>] [-AuditAction <
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzSqlDatabaseAudit** mengubah pengaturan audit Azure SQL Database.
+Cmdlet **Set-AzSqlDatabaseAudit** mengubah pengaturan audit Azure SQL Database.
 Untuk menggunakan cmdlet , gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
 Saat penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga dapat menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
@@ -57,7 +60,7 @@ Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server0
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -BlobStorageTargetState Disabled
 ```
 
-### Contoh 3: Aktifkan kebijakan audit penyimpanan blob dari Azure SQL Database dengan pemfilteran menggunakan predikat T-SQL
+### Contoh 3: Aktifkan kebijakan audit penyimpanan blob Azure SQL Database dengan pemfilteran menggunakan predikat T-SQL
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -PredicateExpression "schema_name <> 'sys''" -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage"
 ```
@@ -87,12 +90,12 @@ Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server0
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 9: Nonaktifkan, melalui alur, kebijakan audit analitik log dari Azure SQL Database
+### Contoh 9: Menonaktifkan, melalui alur, kebijakan audit analitik log dari Azure SQL Database
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Set-AzSqlDatabaseAudit -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 10: Nonaktifkan pengiriman catatan audit Azure SQL Database ke penyimpanan blob, dan aktifkan pengiriman ke analitik log.
+### Contoh 10: Nonaktifkan pengiriman catatan audit Azure SQL Database ke penyimpanan blob, dan aktifkan pengirimannya ke analitik log.
 ```powershell
 Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2" -BlobStorageTargetState Disabled
 ```
@@ -105,14 +108,14 @@ Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server0
 ## PARAMETERS
 
 ### -AuditAction
-Set tindakan audit.  
+Serangkaian tindakan audit.  
 Tindakan yang didukung untuk mengaudit adalah:  
 SELECT  
 UPDATE  
 INSERT  
 DELETE  
-MENJALANKAN  
-MENERIMA  
+EXECUTE  
+TERIMA  
 REFERENCES  
 Bentuk umum untuk menentukan tindakan yang akan diaudit adalah: [tindakan] ON [object] BY [principal] Perhatikan bahwa [objek] dalam format di atas dapat merujuk ke objek seperti tabel, tampilan, atau prosedur tersimpan, atau seluruh database atau skema. Untuk kasus terakhir, formulir DATABASE::[dbname] dan SCHEMA::[schemaname] masing-masing digunakan.
 Contohnya:  
@@ -139,7 +142,7 @@ Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi be
 "BATCH_COMPLETED_GROUP",  
 "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP",  
 "FAILED_DATABASE_AUTHENTICATION_GROUP"  
-Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default. Grup-grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default. Grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml
@@ -444,7 +447,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseAuditModel
 

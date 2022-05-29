@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
-ms.openlocfilehash: c5ac0c929757b10932aff3bf73db1c58d13d86ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 647b1d7705de7178e61d55cc48d76b932e684979
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109280"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723672"
 ---
 # Atur-AzSqlDatabase
 
 ## SYNOPSIS
 Mengatur properti untuk database, atau memindahkan database yang ada ke dalam kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeModel
-Model komputasi database Azure Sql. Tanpa Server atau Disediakan
+Model komputasi database Azure Sql. Tanpa server atau Disediakan
 
 ```yaml
 Type: System.String
@@ -298,7 +301,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Gratis
 - Stretch
 - GeneralPurpose
-- Hyperscale
+- Hiperscale
 - BusinessCritical
 
 ```yaml
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadScale
-Jika diaktifkan, koneksi yang memiliki niat aplikasi yang diatur ke baca-saja dalam string koneksinya dapat dirutekan ke replika sekunder baca-saja. Properti ini hanya dapat diatur untuk database Premium dan Business Critical.
+Jika diaktifkan, koneksi yang memiliki niat aplikasi diatur ke readonly dalam string koneksinya dapat dirutekan ke replika sekunder baca-saja. Properti ini hanya dapat diatur untuk database Premium dan Business Critical.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.DatabaseReadScale
@@ -589,7 +592,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Baru-AzSqlDatabase](./New-AzSqlDatabase.md)
 

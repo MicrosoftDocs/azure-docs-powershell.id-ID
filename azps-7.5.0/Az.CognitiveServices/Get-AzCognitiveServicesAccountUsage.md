@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountUsage.md
-ms.openlocfilehash: c0e93fa535ca640d72b558f1b82d34a212b23f23
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 59d7089b0b65a5bb1700a7e506a1225db8e08c74
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240093"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737190"
 ---
 # Get-AzCognitiveServicesAccountUsage
 
 ## SYNOPSIS
 Dapatkan penggunaan saat ini untuk akun Cognitive Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountusage) untuk informasi terbaru.
 
 ## SYNTAX
 

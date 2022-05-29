@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
-ms.openlocfilehash: e0510f83d6c4af848404aa539e004970fc88a89e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83485a1bf8cdac49b23333f055f498921b909497
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234269"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732600"
 ---
 # Set-AzVmssOrchestrationServiceState
 
 ## SYNOPSIS
 Mengatur status layanan orkestrasi untuk VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssorchestrationservicestate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek lokal dari set skala komputer virtual.
+Objek lokal set skala komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet

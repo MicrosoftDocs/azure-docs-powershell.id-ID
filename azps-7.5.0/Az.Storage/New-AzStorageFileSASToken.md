@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
-ms.openlocfilehash: 4a856ec99c4365686f6c1a69f8e1d387a1011413
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7dd0c3b4756883a479d93cfee49452b0e443dd5e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191360"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716058"
 ---
 # New-AzStorageFileSASToken
 
 ## SYNOPSIS
 Menghasilkan token tanda tangan akses bersama untuk file Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragefilesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Perintah kedua menambahkan dua jam ke objek di $StartTime, lalu menyimpan hasiln
 Objek ini adalah waktu dua jam di masa mendatang.
 Perintah ketiga menghasilkan token tanda tangan akses bersama yang memiliki izin yang ditentukan.
 Token ini menjadi valid pada saat ini.
-Token tetap berlaku hingga waktu disimpan di $EndTime.
+Token tetap berlaku hingga waktu disimpan dalam $EndTime.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu saat tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu tanda tangan akses bersama menjadi valid.
+Menentukan waktu di mana tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

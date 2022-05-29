@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: 67771b8b990e845ce63720bff49d4181a10ebd4f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85cf02d58cf27a16dd7b3d5f70e910d9defd7d1c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112662"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744570"
 ---
 # Set-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Memperbarui unit layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerserviceunit) untuk informasi terbaru.
 
 ## SYNTAX
 

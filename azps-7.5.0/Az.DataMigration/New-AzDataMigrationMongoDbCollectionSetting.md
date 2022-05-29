@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
-ms.openlocfilehash: a84135131dc9d2759b492e3197b53af251bd4ba2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6713162c275214139f54301d4020cdcfa128ad6d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202000"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750402"
 ---
 # New-AzDataMigrationMongoDbCollectionSetting
 
 ## SYNOPSIS
 Membuat pengaturan pengumpulan untuk migrasi sesuai dengan migrasi mongoDb
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbcollectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

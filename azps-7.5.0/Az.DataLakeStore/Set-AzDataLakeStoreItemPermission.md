@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemPermission.md
-ms.openlocfilehash: 61e382bf6d12cc58087bd64ab05942e66950f220
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fcedae8d8d6ad3cb2cfcb73ad483ffbeb65c4e67
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202333"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751086"
 ---
 # Set-AzDataLakeStoreItemPermission
 
 ## SYNOPSIS
 Memodifikasi oktal izin file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitempermission) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
-ms.openlocfilehash: fd645686f757d7b6c08e84399511880e68588b82
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c3ee81effca9c618c6639209ddba0646e3c27e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731682"
 ---
 # Backup-AzApiManagement
 
 ## SYNOPSIS
 Mencadangkan layanan API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/backup-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 

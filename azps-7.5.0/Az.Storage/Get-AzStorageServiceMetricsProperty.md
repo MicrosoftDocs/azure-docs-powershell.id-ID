@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
-ms.openlocfilehash: 00fc466a15755d6771e6c407650373da1cdd3057
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c277b28e3955e2f27342766e30bd8c4c7169904d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191584"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717012"
 ---
 # Get-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
 Mendapatkan properti metrik untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageservicemetricsproperty) untuk informasi terbaru.
 
 ## SYNTAX
 

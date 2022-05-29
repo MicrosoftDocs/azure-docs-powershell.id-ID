@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSet.md
-ms.openlocfilehash: 5f72bc1fc4ce3fb473761cafd2bf340b00e756a5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f5a608cafb1575eee5ec1bb9a9a70b33378aaf2f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190898"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735822"
 ---
 # Get-AzDiskEncryptionSet
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan set enkripsi disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdiskencryptionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Location          : westcentralus
 Tags              : {}
 ```
 
-Dapatkan set enkripsi disk 'enc1'
+Mendapatkan set enkripsi disk 'enc1'
 
 ### Contoh 2
 ```powershell
@@ -80,7 +83,7 @@ Tags              : {}
 
 Dapatkan semua set enkripsi disk dalam grup sumber daya 'rg1'.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzDiskEncryptionSet -ResourceGroupName rg1
 ```

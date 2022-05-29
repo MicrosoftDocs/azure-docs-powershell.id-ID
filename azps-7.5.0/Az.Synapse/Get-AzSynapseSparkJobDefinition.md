@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: e7d6dbf5130db0a033d6b5ab23538306b2b3e838
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82af3fba68e17ba862c52f7e323f95a43998a19f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212783"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709146"
 ---
 # Get-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi kerja Spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseSparkJobDefinition -WorkspaceObject <PSSynapseWorkspace> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi kerja Spark di ruang kerja. Jika Anda menentukan nama definisi kerja Spark, cmdlet ini mendapatkan informasi tentang definisi kerja Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi pekerjaan Spark di ruang kerja.
+Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi kerja Spark di ruang kerja. Jika Anda menentukan nama definisi kerja Spark, cmdlet ini mendapatkan informasi tentang definisi kerja Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi kerja Spark di ruang kerja.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Get-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoJob
 
 Perintah ini mendapatkan informasi tentang definisi kerja Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSparkJobDefinition -Name ContosoSparkJobDefinition

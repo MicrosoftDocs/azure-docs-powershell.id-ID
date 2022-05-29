@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileContent.md
-ms.openlocfilehash: 917e8e67c28e9b2ba4206f87482a47c6451f76bb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3bcff3c4222ecc14d968f980963f0e20881397f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193583"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717336"
 ---
 # Get-AzStorageFileContent
 
 ## SYNOPSIS
 Mengunduh konten file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragefilecontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,19 +68,19 @@ PS C:\>Get-AzStorageFileContent -ShareName "ContosoShare06" -Path "ContosoWorkin
 
 Perintah ini mengunduh file bernama CurrentDataFile di folder ContosoWorkingFolder dari berbagi file ContosoShare06 ke folder saat ini.
 
-### Contoh 2: Mengunduh file di bawah contoh berbagi file
+### Contoh 2: Mengunduh file di bawah berbagi file sampel
 ```
 PS C:\>Get-AzStorageFile -ShareName sample | ? {$_.GetType().Name -eq "CloudFile"} | Get-AzStorageFileContent
 ```
 
 Contoh ini mengunduh file di bawah berbagi file sampel
 
-### Contoh 3: Unduh file Azure ke file lokal, dan perserve properti Azure File SMB (File Attributtes, Waktu Pembuatan File, Waktu Penulisan Terakhir File) dalam file lokal.
+### Contoh 3: Unduh file Azure ke file lokal, dan persert properti Azure File SMB (Attributte File, Waktu Pembuatan File, Waktu Tulis Terakhir File) di file lokal.
 ```
 PS C:\>Get-AzStorageFileContent -ShareName sample -Path "dir1/file1" -Destination $localFilePath -PreserveSMBAttribute
 ```
 
-Contoh ini mengunduh file Azure ke file lokal, dan mempertahankan properti Azure File SMB (File Attributtes, Waktu Pembuatan File, Waktu Penulisan Terakhir File) dalam file lokal.
+Contoh ini mengunduh file Azure ke file lokal, dan mempertahankan properti Azure File SMB (Attributte File, Waktu Pembuatan File, Waktu Tulis Terakhir File) di file lokal.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan. Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan. Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan. Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan. Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 Menentukan jalur tujuan.
 Cmdlet ini mengunduh konten file ke lokasi yang ditentukan parameter ini.
 Jika Anda menentukan jalur file yang tidak ada, cmdlet ini membuat file tersebut, dan menyimpan konten dalam file baru.
-Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Paksa* , cmdlet akan menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet akan menimpa file.
 Jika Anda menentukan jalur file yang ada dan Anda tidak menentukan *Paksa*, cmdlet akan meminta Anda sebelum berlanjut.
 Jika Anda menentukan jalur folder, cmdlet ini mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -Force
 Jika Anda menentukan jalur file yang tidak ada, cmdlet ini membuat file tersebut, dan menyimpan konten dalam file baru.
-Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Paksa* , cmdlet akan menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet akan menimpa file.
 Jika Anda menentukan jalur file yang ada dan Anda tidak menentukan *Paksa*, cmdlet akan meminta Anda sebelum berlanjut.
 Jika Anda menentukan jalur folder, cmdlet ini mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreserveSMBAttribute
-Pertahankan properti File SMB sumber (Attributte File, Waktu Pembuatan File, Waktu Penulisan Terakhir File) di File tujuan. Parameter ini hanya tersedia di Windows.
+Pertahankan properti SMB File sumber (Attributte File, Waktu Pembuatan File, Waktu Penulisan Terakhir File) di File tujuan. Parameter ini hanya tersedia pada Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
-Cmdlet ini mengunduh konten file dalam berbagi parameter ini yang ditentukan.
+Cmdlet ini mengunduh konten file dalam berbagi yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 
 ### -ShareName
 Menentukan nama berbagi file.
-Cmdlet ini mengunduh konten file dalam berbagi parameter ini yang ditentukan.
+Cmdlet ini mengunduh konten file dalam berbagi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String

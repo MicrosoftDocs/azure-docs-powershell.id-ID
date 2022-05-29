@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
-ms.openlocfilehash: 375baff9b74b8e26761ad560e5e265bb83224a92
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0f3c4e5ffc7a1f24d2ef761ac4cb09d0bbee48e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190923"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735876"
 ---
 # Get-AzDisk
 
 ## SYNOPSIS
 Mendapatkan properti disk Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -104,7 +107,7 @@ Tags               : {}
 
 Perintah ini mendapatkan properti semua disk dalam grup sumber daya 'ResourceGroup01'.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzDisk
 ```

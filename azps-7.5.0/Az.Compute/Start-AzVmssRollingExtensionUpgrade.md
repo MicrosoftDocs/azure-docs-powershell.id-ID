@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingExtensionUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingExtensionUpgrade.md
-ms.openlocfilehash: dedcebcd3796d2b5d9780634cc3365cd6275abd9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e66ea25041758293d31a093e6ba5c9a5bc8f3cf5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222551"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732492"
 ---
 # Start-AzVmssRollingExtensionUpgrade
 
 ## SYNOPSIS
 Cmdlet ini memulai peningkatan bergulir untuk semua ekstensi pada Virtual Machine Scale Set yang diberikan ke versi terbaru yang tersedia. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmssrollingextensionupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 

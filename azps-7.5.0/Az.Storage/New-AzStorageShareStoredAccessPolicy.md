@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: 9100a9a94fa6ffeaa3f98c90f5f658c8ddd8b105
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4f555d9dea3afdbaa38a8b39e2f9fe243c92647d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228336"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715662"
 ---
 # New-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
 Membuat kebijakan akses tersimpan pada berbagi Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragesharestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Perintah ini membuat kebijakan akses tersimpan yang memiliki izin penuh dalam be
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin dalam kebijakan akses tersimpan untuk mengakses berbagi Storage atau file di bawahnya.
+Menentukan izin dalam kebijakan akses tersimpan untuk mengakses Storage berbagi atau file di bawahnya.
 Penting untuk dicatat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml

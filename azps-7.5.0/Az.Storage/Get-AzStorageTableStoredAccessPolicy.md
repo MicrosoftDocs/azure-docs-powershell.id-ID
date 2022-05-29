@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: 5e1414abda322094fdc86e99bf0725814dbc3d52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eae93c853139afb9ef218204c8acba478bb6bb58
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191539"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716850"
 ---
 # Get-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan atau kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

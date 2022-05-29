@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVM.md
-ms.openlocfilehash: 08dd683a70c7c871a7617a5b5cc51b649ec7332f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 907e6ca55d464f20120220fe0450c67ca837842f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215363"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732546"
 ---
 # Start-AzVM
 
 ## SYNOPSIS
 Memulai komputer virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -187,9 +190,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVM](./New-AzVM.md)
 
-[Hapus-AzVM](./Remove-AzVM.md)
+[Remove-AzVM](./Remove-AzVM.md)
 
-[Hidupkan ulang-AzVM](./Restart-AzVM.md)
+[Mulai ulang-AzVM](./Restart-AzVM.md)
 
 [Stop-AzVM](./Stop-AzVM.md)
 

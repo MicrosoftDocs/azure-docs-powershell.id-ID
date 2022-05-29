@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Update-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: a5c7b2cc304eccc0d742b43be61e923146f0211b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b867b42c515b4fd08a4be2ff72346c69bb6a08b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216638"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721620"
 ---
 # Update-AzSqlDatabaseAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mengatur pengaturan perlindungan ancaman tingkat lanjut pada database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqldatabaseadvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Update-AzSqlDatabaseAdvancedThreatProtectionSetting [-PassThru] [-NotificationRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlDatabaseAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada database Azure SQL.
+**Cmdlet Update-AzSqlDatabaseAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada database Azure SQL.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName*, *ServerName* , dan *DatabaseName* untuk mengidentifikasi database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAdmins
-Menentukan apakah pengaturan perlindungan ancaman tingkat lanjut menghubungi administrator dengan menggunakan email. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
+Menentukan apakah pengaturan perlindungan ancaman tingkat lanjut menghubungi administrator dengan menggunakan email. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Menentukan array jenis deteksi yang akan dikecualikan dari pengaturan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan array jenis deteksi untuk dikecualikan dari pengaturan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql_Injection
 - Sql_Injection_Vulnerability
 - Access_Anomaly
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationRecipientsEmails
-Menentukan daftar alamat email yang dipisahkan titik koma tempat pengaturan mengirim pemberitahuan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
+Menentukan daftar alamat email yang dipisahkan titik koma tempat pengaturan mengirim pemberitahuan. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Jumlah hari retensi untuk log audit. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
+Jumlah hari retensi untuk log audit. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan yang akan digunakan. Kartubebas tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang didefinisikan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut dari database. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang ditingkatkan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
+Menentukan nama akun penyimpanan yang akan digunakan. Kartubebas tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang didefinisikan sebelumnya sebagai bagian dari pengaturan perlindungan ancaman tingkat lanjut dari database. Biarkan kosong untuk menggunakan pengalaman Azure Security Center yang disempurnakan untuk mengonsumsi pemberitahuan, mengonfigurasi pemberitahuan, dan menangani supresi.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.DetectionType[]
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
