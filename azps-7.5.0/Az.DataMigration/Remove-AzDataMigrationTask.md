@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationTask.md
-ms.openlocfilehash: 49eb38ee6d251ef4ae972a9801929683e6112461
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46e5fab2dcb6937d70da64d4c07142fe431b3577
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201745"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749862"
 ---
 # Remove-AzDataMigrationTask
 
 ## SYNOPSIS
 Menghapus tugas Azure Database Migration Service dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-nama Database Migration Service.
+Nama Database Migration Service.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlCommitmentPlan.md
-ms.openlocfilehash: bd4523d00fdaaa2b46133a1b77a8c9d4b8112220
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a9a70d41137779fde3d940568392af9f14ab5c28
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224534"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776612"
 ---
 # Remove-AzMlCommitmentPlan
 
 ## SYNOPSIS
-Menghapus paket komitmen.
+Menghapus rencana komitmen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/remove-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzMlCommitmentPlan -MlCommitmentPlan <CommitmentPlan> [-Force]
 ```
 
 ## DESCRIPTION
-Menghapus paket komitmen Azure Machine Learning. Perhatikan bahwa rencana komitmen yang memiliki asosiasi komitmen tidak dapat dihapus. Asosiasi komitmen hanya dapat dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus layanan web Azure Machine Learning, asosiasi komitmen yang mengaitkan layanan web ke paket komitmen juga akan dihapus.
+Menghapus rencana komitmen Azure Machine Learning. Perhatikan bahwa rencana komitmen yang memiliki asosiasi komitmen tidak dapat dihapus. Asosiasi komitmen hanya dapat dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus layanan web Azure Machine Learning, asosiasi komitmen yang mengaitkan layanan web ke paket komitmen juga akan dihapus.
 
 ## EXAMPLES
 
@@ -160,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

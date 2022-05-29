@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
-ms.openlocfilehash: 3da64985050a29a9692ff85313559bf4673c6fba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e8d3eae6181acd6103cc71bc59a03705a73211b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201829"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750006"
 ---
 # Register-AzDataMigrationIntegrationRuntime
 
 ## SYNOPSIS
 Mendaftarkan Sql Migration Service di Integration Runtime
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/register-azdatamigrationintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Start to register IR with key: IR@abcd1-efgh2-jklmn3-opqr4@mysqlms@eastus@stuv5/
 Integration Runtime registration is successful!
 ```
 
-Perintah ini mendaftarkan Sql Migration Service pada Integration Runtime yang Dihost sendiri.
+Perintah ini mendaftarkan Sql Migration Service di Integration Runtime yang Dihost sendiri.
 
-### Contoh 2: Menginstal Integration Runtime dan mendaftarkan Sql Migration Service di dalamnya
+### Contoh 2: Instal Integration Runtime dan daftarkan Sql Migration Service di dalamnya
 ```powershell
 $authKeys = Get-AzDataMigrationSqlMigrationServiceAuthKey -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 Register-AzDataMigrationIntegrationRuntime -AuthKey $authKeys.AuthKey1 -IntegrationRuntimePath "C:\Users\user\Downloads\IntegrationRuntime.msi"

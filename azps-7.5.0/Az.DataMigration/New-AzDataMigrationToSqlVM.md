@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlVM.md
-ms.openlocfilehash: a97120346e997d221e48ba5018f7db651c48b1ae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 001a2e4d2046f434da73c1fd0e85b39e038d9615
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201843"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749978"
 ---
 # New-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
 Buat migrasi database baru ke VM SQL tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Contoh ini untuk migrasi online.
 Untuk membuatnya offline, tambahkan -Offline ke parameter.
 
 Catatan : Buat migrasi database baru ke VM SQL tertentu.
-Catatan - Untuk parameter Cakupan, gunakan Cakupan VM SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.SqlVirtualMachine/SqlVirtualMachines/xyz-SqlVM) dan bukan VM Compute SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.Compute/virtualMachines/xyz-SqlVM)
+Catatan - Untuk parameter Cakupan, gunakan Cakupan VM SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.SqlVirtualMachine/SqlVirtualMachines/xyz-SqlVM) dan bukan VM SQL Komputasi (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.Compute/virtualMachines/xyz-SqlVM)
 
 ## PARAMETERS
 
@@ -180,7 +183,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 .
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationService
-Id Sumber Daya Layanan Migrasi.
+ID Sumber Daya dari Layanan Migrasi.
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,8 +292,8 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Id sumber daya sumber daya target (SQL VM).
-Untuk parameter Cakupan, gunakan Cakupan VM SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.SqlVirtualMachine/SqlVirtualMachines/xyz-SqlVM) dan bukan VM Compute SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.Compute/virtualMachines/xyz-SqlVM)
+Id sumber daya dari sumber daya target (SQL VM).
+Untuk parameter Cakupan, gunakan Cakupan VM SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.SqlVirtualMachine/SqlVirtualMachines/xyz-SqlVM) dan bukan VM compute SQL (/subscriptions/111-222/resourceGroups/myRG/providers/Microsoft.Compute/virtualMachines/xyz-SqlVM)
 
 ```yaml
 Type: System.String
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Id Sumber Daya dari akun penyimpanan yang menyalin cadangan.
+ID Sumber Daya dari akun penyimpanan yang menyalin cadangan.
 
 ```yaml
 Type: System.String
