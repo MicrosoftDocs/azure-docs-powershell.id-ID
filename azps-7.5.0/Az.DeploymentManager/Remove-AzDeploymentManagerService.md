@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
-ms.openlocfilehash: 30e3182bd4d3ae8f5b39222f04f43357c32c9c0d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4238b2e53a08a3927aacce78be3cb6a2b1c2e130
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227367"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745578"
 ---
 # Remove-AzDeploymentManagerService
 
 ## SYNOPSIS
 Menghapus layanan.. Semua unit layanan yang dibuat di bawah layanan perlu dihapus sebelum menghapus layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 

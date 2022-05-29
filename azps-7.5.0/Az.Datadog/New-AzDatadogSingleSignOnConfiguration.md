@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: df22e1fee8a5acd81dc3f9d86aac4e95bc81c8d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 09b58791c8b21c6859db51a67da5fce361af51a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217991"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746406"
 ---
 # New-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
 Mengonfigurasi akses menyeluruh untuk sumber daya ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogsinglesignonconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

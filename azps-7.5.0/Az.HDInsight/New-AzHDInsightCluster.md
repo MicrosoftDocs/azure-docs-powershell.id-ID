@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightCluster.md
-ms.openlocfilehash: 467060c40dbb4addf8e0910cfb80b0df672661ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a9cd043ac33f1d3eaae5d67ba4db48cae6ab8674
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217778"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780498"
 ---
 # New-AzHDInsightCluster
 
 ## SYNOPSIS
 Membuat kluster Azure HDInsight di grup sumber daya yang ditentukan untuk langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -147,7 +150,7 @@ Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter inpu
             -SshCredential $clusterCreds `
 ```
 
-Perintah ini membuat kluster di langganan saat ini.
+Perintah ini membuat kluster dalam langganan saat ini.
 
 ### Contoh 2: Membuat kluster dengan enkripsi disk kunci yang dikelola pelanggan
 ```powershell
@@ -384,7 +387,7 @@ Perintah ini membuat kluster di langganan saat ini.
             -KafkaManagementNodeSize $kafkaManagementNodeSize -DisksPerWorkerNode $disksPerWorkerNode
 ```
 
-### Contoh 8: Buat kluster Azure HDInsight dengan penyimpanan Azure Data Lake Gen2.
+### Contoh 8: Membuat kluster Azure HDInsight dengan penyimpanan Azure Data Lake Gen2.
 ```powershell
         # Primary storage account info
         $storageAccountResourceGroupName = "Group"
@@ -417,7 +420,7 @@ Perintah ini membuat kluster di langganan saat ini.
             -SshCredential $clusterCreds
 ```
 
-### Contoh 9: Buat kluster Azure HDInsight dengan Enterprise Security Package (ESP) dan Aktifkan HDInsight ID Broker.
+### Contoh 9: Buat kluster Azure HDInsight dengan Paket Keamanan Perusahaan (ESP) dan Aktifkan HDInsight ID Broker.
 ```powershell
         # Primary storage account info
         $storageAccountResourceGroupName = "Group"
@@ -469,7 +472,7 @@ Perintah ini membuat kluster di langganan saat ini.
             -SecurityProfile $config.SecurityProfile -EnableIDBroker
 ```
 
-### Contoh 10: Buat kluster Azure HDInsight yang memungkinkan isolasi komputasi.
+### Contoh 10: Membuat kluster Azure HDInsight yang memungkinkan isolasi komputasi.
 ```powershell
         # Primary storage account info
         $storageAccountResourceGroupName = "Group"
@@ -862,7 +865,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Config
+### -Konfigurasi
 Menentukan objek kluster yang akan digunakan untuk membuat kluster.
 Objek ini dapat dibuat dengan menggunakan cmdlet New-AzHDInsightClusterConfig.
 
@@ -1061,7 +1064,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeadNodeSize
-Menentukan ukuran komputer virtual untuk simpul Head.
+Menentukan ukuran komputer virtual untuk simpul Kepala.
 Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml

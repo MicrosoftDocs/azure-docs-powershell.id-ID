@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoManagedPrivateEndpointNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoManagedPrivateEndpointNameAvailability.md
-ms.openlocfilehash: 371cbc96a01f813ef7c780516505d189e7afb542
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c26bdcbe9a0aa597dc6e12ccb0ce7a79fcff015c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209315"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799900"
 ---
 # Test-AzKustoManagedPrivateEndpointNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama sumber daya titik akhir privat terkelola valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustomanagedprivateendpointnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

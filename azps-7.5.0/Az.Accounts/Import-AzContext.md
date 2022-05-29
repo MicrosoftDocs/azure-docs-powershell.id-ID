@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
-ms.openlocfilehash: 73a4189cc34337d822338667997a167e36536f8c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87304b05169ca960377f0587fede7c5e5349051d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241745"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787050"
 ---
 # Import-AzContext
 
 ## SYNOPSIS
 Memuat informasi autentikasi Azure dari file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/import-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Import-AzContext [-AzureContext] <AzureRmProfile> [-Scope <ContextModificationSc
 
 ## DESCRIPTION
 Cmdlet Import-AzContext memuat informasi autentikasi dari file untuk mengatur lingkungan dan konteks Azure.
-Cmdlet yang Anda jalankan dalam sesi saat ini menggunakan informasi ini untuk mengautentikasi permintaan ke Azure Resource Manager.
+Cmdlet yang Anda jalankan di sesi saat ini menggunakan informasi ini untuk mengautentikasi permintaan ke Azure Resource Manager.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini mengimpor konteks dari PSAzureProfile yang diteruskan ke cmdlet.
+Contoh ini mengimpor konteks dari PSAzureProfile yang diteruskan ke cmdlet .
 
 ### Contoh 2: Mengimpor konteks dari file JSON
 ```powershell
@@ -61,7 +64,7 @@ Account                SubscriptionName TenantId                Environment
 azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-Contoh ini memilih konteks dari file JSON yang diteruskan ke cmdlet. File JSON ini dapat dibuat dari Save-AzContext.
+Contoh ini memilih konteks dari file JSON yang diteruskan ke cmdlet . File JSON ini dapat dibuat dari Save-AzContext.
 
 ## PARAMETERS
 

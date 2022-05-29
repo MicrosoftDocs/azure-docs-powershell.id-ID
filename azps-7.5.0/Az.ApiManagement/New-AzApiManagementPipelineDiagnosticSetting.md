@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementPipelineDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementPipelineDiagnosticSetting.md
-ms.openlocfilehash: 7d30e85ef08437557fd039aca77baa318b0ae515
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f1ac2fd1a820c57a3e1e29354f4f45ccb43cabe2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212702"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786762"
 ---
 # New-AzApiManagementPipelineDiagnosticSetting
 
 ## SYNOPSIS
 Buat pengaturan Diagnostik untuk pesan HTTP masuk/keluar ke Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementpipelinediagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

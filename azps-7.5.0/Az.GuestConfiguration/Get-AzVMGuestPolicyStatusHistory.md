@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
-ms.openlocfilehash: 205ce9b5c6cbc35a15b1e94494dcd43c6188f186
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f316b2cccf41bbf47586298d476611051e51f7a9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112589"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780516"
 ---
 # Get-AzVMGuestPolicyStatusHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu untuk inisiatif jenis "Konfigurasi Tamu" yang ditetapkan ke VM.
 Inisiatif adalah kebijakan jenis definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatushistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Gunakan cmdlet Get-AzVMGuestPolicyStatus untuk mendapatkan detail status kepatuh
 Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af" -ShowOnlyChange
 ```
 
-Mendapatkan riwayat status kepatuhan menurut Id inisiatif. Sakelar ShowOnlyChange hanya menunjukkan perubahan status historis.
+Mendapatkan riwayat status kepatuhan menurut Id inisiatif. Sakelar ShowOnlyChange hanya memperlihatkan perubahan status historis.
 Melompati status yang tidak berubah di antara dua pemeriksaan kepatuhan.
 
 ### Contoh 2
@@ -56,7 +59,7 @@ Mendapatkan riwayat status kepatuhan berdasarkan nama inisiatif.
 Sakelar ShowOnlyChange hanya memperlihatkan perubahan status historis.
 Melompati status yang tidak berubah di antara dua pemeriksaan kepatuhan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -ShowOnlyChange
 ```
@@ -70,7 +73,7 @@ Melompati status yang tidak berubah di antara dua pemeriksaan kepatuhan.
 Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af"
 ```
 
-Mendapatkan riwayat status kepatuhan menurut Id inisiatif.
+Mendapatkan riwayat status kepatuhan berdasarkan Id inisiatif.
 
 ### Contoh 5
 ```powershell
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowOnlyChange
-Memperlihatkan perubahan status historis hanya untuk kebijakan konfigurasi tamu.
+Menampilkan perubahan status historis hanya untuk kebijakan konfigurasi tamu.
 Melompati status yang tidak berubah di antara dua eksekusi audit status kepatuhan.
 
 ```yaml

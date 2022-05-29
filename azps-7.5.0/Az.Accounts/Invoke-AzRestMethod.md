@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
-ms.openlocfilehash: ed649d76bb9d3157503af6f584c07cdc4fdaf8b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e9bdf7724022072f922c586a44b1385d00dd4610
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241731"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787032"
 ---
 # Invoke-AzRestMethod
 
 ## SYNOPSIS
-Membuat dan melakukan permintaan HTTP ke titik akhir manajemen sumber daya Azure saja
+Membuat dan melakukan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/invoke-azrestmethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Invoke-AzRestMethod -Path <String> [-Method <String>] [-Payload <String>] [-AsJo
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByParameters
+### OlehParameters
 ```
 Invoke-AzRestMethod [-SubscriptionId <String>] [-ResourceGroupName <String>] [-ResourceProviderName <String>]
  [-ResourceType <String[]>] [-Name <String[]>] -ApiVersion <String> [-Method <String>] [-Payload <String>]
@@ -39,7 +42,7 @@ Invoke-AzRestMethod [-Uri] <Uri> [-ResourceId <Uri>] [-Method <String>] [-Payloa
 ```
 
 ## DESCRIPTION
-Membuat dan melakukan permintaan HTTP ke titik akhir manajemen sumber daya Azure saja
+Membuat dan melakukan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Content    : {
              }
 ```
 
-Mendapatkan ruang kerja analitik log berdasarkan jalur. Ini hanya mendukung API sarana manajemen dan Nama host Azure Resource Manager ditambahkan sesuai dengan pengaturan lingkungan Azure.  
+Mendapatkan ruang kerja analitik log menurut jalur. Ini hanya mendukung API bidang manajemen dan Nama host Azure Resource Manager ditambahkan sesuai dengan pengaturan lingkungan Azure.  
 
 ### Contoh 2
 ```powershell
@@ -103,7 +106,7 @@ Method     : GET
 Content    : {"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users/$entity","businessPhones":["......}
 ```
 
-Dapatkan pengguna yang masuk saat ini melalui MicrosoftGraph API. Contoh ini setara dengan `Get-AzADUser -SignedIn`.
+Dapatkan pengguna masuk saat ini melalui MicrosoftGraph API. Contoh ini setara dengan `Get-AzADUser -SignedIn`.
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Method
+### -Metode
 Metode Http
 
 ```yaml

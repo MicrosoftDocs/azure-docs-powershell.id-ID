@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
-ms.openlocfilehash: 800e352214b20fea49bf980dc1bd4a5e39489d0c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9d0c78ef8e47ff3abbd181b5e17ef0e9f0a9bb0b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227286"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780588"
 ---
 # Remove-AzFunctionApp
 
 ## SYNOPSIS
 Menghapus aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/remove-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -256,12 +259,12 @@ INPUTOBJECT <ISite>:
       - `[ActionHostName <String>]`: Nama host slot tempat lalu lintas akan dialihkan jika diputuskan. Mis. myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Algoritma keputusan kustom dapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan. Lihat Ekstensi situs TiPCallback untuk perancah dan kontrak.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan .\nKustom dapat disediakan di ekstensi situs TiPCallback yang URLnya dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
-      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah reroutePercentage yang akan tetap ada.
-      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas reroutePercentage mana yang akan tetap ada.
+      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan kustom .\ndapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
+      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah tempat ReroutePercentage akan tetap ada.
+      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas mana ReroutePercentage akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang direkomendasikan adalah menunjuk ke slot yang akan menerima lalu lintas dalam eksperimen.
       - `[ReroutePercentage <Double?>]`: Persentase lalu lintas yang akan dialihkan ke <code>ActionHostName</code>.
-    - `[FtpsState <FtpsState?>]`: Status layanan FTP / FTPS
+    - `[FtpsState <FtpsState?>]`: Status layanan FTP/FTPS
     - `[HandlerMapping <IHandlerMapping[]>]`: Pemetaan handler.
       - `[Argument <String>]`: Argumen baris perintah yang akan diteruskan ke prosesor skrip.
       - `[Extension <String>]`: Permintaan dengan ekstensi ini akan ditangani menggunakan aplikasi FastCGI yang ditentukan.
@@ -272,15 +275,15 @@ INPUTOBJECT <ISite>:
     - `[IPSecurityRestriction <IIPSecurityRestriction[]>]`: Pembatasan keamanan IP untuk utama.
       - `[Action <String>]`: Izinkan atau Tolak akses untuk rentang IP ini.
       - `[Description <String>]`: Deskripsi aturan pembatasan IP.
-      - `[IPAddress <String>]`: Alamat IP yang berlaku untuk pembatasan keamanan.         Ini bisa dalam bentuk alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit terkemuka). Untuk CIDR, properti SubnetMask tidak boleh ditentukan.
+      - `[IPAddress <String>]`: Alamat IP yang berlaku untuk pembatasan keamanan.         Ini bisa dalam bentuk alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit terdepan). Untuk CIDR, properti SubnetMask tidak boleh ditentukan.
       - `[Name <String>]`: Nama aturan pembatasan IP.
       - `[Priority <Int32?>]`: Prioritas aturan pembatasan IP.
       - `[SubnetMask <String>]`: Subnet mask untuk rentang alamat IP yang berlaku untuk pembatasan.
       - `[SubnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas subnet
       - `[Tag <IPFilterTag?>]`: Menentukan untuk apa filter IP ini akan digunakan. Ini untuk mendukung pemfilteran IP pada proksi.
       - `[VnetSubnetResourceId <String>]`: Id sumber daya jaringan virtual
-      - `[VnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas Vnet
-    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau menetapkan bendera yang menunjukkan apakah titik akhir Push diaktifkan.
+      - `[VnetTrafficTag <Int32?>]`: (internal) tag lalu lintas Vnet
+    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau mengatur bendera yang menunjukkan apakah titik akhir Push diaktifkan.
     - `[JavaContainer <String>]`: Kontainer Java.
     - `[JavaContainerVersion <String>]`: Versi kontainer Java.
     - `[JavaVersion <String>]`: Versi Java.
@@ -319,8 +322,8 @@ INPUTOBJECT <ISite>:
     - `[SlowRequestCount <Int32?>]`: Jumlah Permintaan.
     - `[SlowRequestTimeInterval <String>]`: Interval waktu.
     - `[SlowRequestTimeTaken <String>]`: Waktu yang dibutuhkan.
-    - `[TagWhitelistJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran pendorongan.
-    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang mengharuskan autentikasi pengguna digunakan dalam titik akhir pendaftaran pendorongan.         Tag dapat terdiri dari karakter alfanumerik dan berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
+    - `[TagWhitelistJson <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran push.
+    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang mengharuskan autentikasi pengguna digunakan di titik akhir pendaftaran push.         Tag dapat terdiri dari karakter alfanumerik dan berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
     - `[TracingOption <String>]`: Opsi pelacakan.
     - `[TriggerPrivateBytesInKb <Int32?>]`: Aturan berdasarkan byte privat.
     - `[TriggerStatusCode <IStatusCodesBasedTrigger[]>]`: Aturan berdasarkan kode status.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Import-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Import-AzMlWebService.md
-ms.openlocfilehash: 50b71c9a8819793d7e0083bbe73b0eb8b3c2da5b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ad89e7c4113cc2da7bd3613d129187abbcf29177
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224579"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799576"
 ---
 # Import-AzMlWebService
 
 ## SYNOPSIS
 Mengimpor objek JSON ke dalam definisi layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/import-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 

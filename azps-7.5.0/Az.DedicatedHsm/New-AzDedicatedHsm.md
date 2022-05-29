@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
-ms.openlocfilehash: 525177dd2bdd17a514ebe6946e511167e9c896b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e0a34d9459e68bb504084524e43bf87decf59ae4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217883"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746082"
 ---
 # New-AzDedicatedHsm
 
 ## SYNOPSIS
 Membuat atau Memperbarui HSM khusus dalam langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/new-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 Perintah ini membuat Dedicated HSM ke dalam jaringan virtual yang ada.
 
 **CATATAN:** Saat ini `New-AzDedicatedHsm` memiliki batasan bahwa ia kembali sebelum HSM sepenuhnya disediakan di Azure.
-Oleh karena itu setelah membuat HSM baru, silakan kueri statusnya `Provisioning State` `Succeeded` oleh `Get-AzDedicatedHsm` dan pastikan sebelum menggunakannya.
+Oleh karena itu setelah membuat HSM baru, silakan kueri statusnya dengan `Get-AzDedicatedHsm` dan pastikan `Provisioning State` sebelum `Succeeded` menggunakannya.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 
 ### -ManagementNetworkInterface
 Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTNETWORKINTERFACE dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTNETWORKINTERFACE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.Api20211130.INetworkInterface[]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterface
 Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-Untuk membuat, lihat bagian NOTES untuk properti NETWORKINTERFACE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.Api20211130.INetworkInterface[]
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

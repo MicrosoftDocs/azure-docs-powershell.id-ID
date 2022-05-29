@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: 30086c60b423fa7b4cd89f0a2feb7cf9920b46c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d8babebae7a77405e002d1bd5c4bd4a36bbd1700
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247754"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799810"
 ---
 # Set-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Memodifikasi perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Content                : {"AS2":null,"X12":{"ReceiveAgreement":{"SenderBusinessI
                          . . .
 ```
 
-Perintah ini memperbarui perjanjian akun integrasi di grup sumber daya Azure yang ditentukan.
+Perintah ini memperbarui perjanjian akun integrasi dalam grup sumber daya Azure yang ditentukan.
 
 ### Contoh 2
 

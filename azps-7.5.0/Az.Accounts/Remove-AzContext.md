@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzContext.md
-ms.openlocfilehash: 0f934f6293cf7116af54a3bb1213773e146eba12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a8c660b71d87f4470bf359389a9ea8c84ea1d156
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241675"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786978"
 ---
 # Remove-AzContext
 
 ## SYNOPSIS
 Menghapus konteks dari kumpulan konteks yang tersedia
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/remove-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 

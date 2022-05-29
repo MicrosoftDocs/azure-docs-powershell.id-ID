@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/set-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
-ms.openlocfilehash: 4d97fc48251dc8ac2463b066d7670b6ceceba1cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b63ec612803f605df4ef32b1ad232f944fb5f518
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205859"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786937"
 ---
 # Set-AzAksCluster
 
 ## SYNOPSIS
 Memperbarui atau membuat kluster Kubernetes terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/set-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Atur jumlah simpul di kluster Kubernetes ke 5.
 ## PARAMETERS
 
 ### -AcrNameToAttach
-Berikan peran 'acrpull' dari ACR yang ditentukan ke Perwakilan Layanan AKS, misalnya myacr
+Berikan peran 'acrpull' dari ACR yang ditentukan kepada Perwakilan Layanan AKS, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableNodeAutoScaling
+### -EnableNodeAutoscaling
 Apakah akan mengaktifkan auto-scaler
 
 ```yaml
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerIdleTimeoutInMinute
-Batas waktu menganggur alur keluar yang diinginkan dalam hitung menit.
+Batas waktu menganggur alur keluar yang diinginkan dalam menit.
 
 ```yaml
 Type: System.Int32
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerOutboundIpPrefix
-Sumber daya Awalan IP keluar yang diinginkan untuk load balancer kluster.
+Sumber daya Awalan IP keluar yang diinginkan untuk penyeimbang beban kluster.
 
 ```yaml
 Type: System.String[]
@@ -564,7 +567,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIdAndSecret
-Id klien dan rahasia klien yang terkait dengan aplikasi/perwakilan layanan AAD.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD/perwakilan layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -597,7 +600,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

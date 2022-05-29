@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/rename-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Rename-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Rename-AzContext.md
-ms.openlocfilehash: 5fde3f2b672ea7e2e88f8986849788db796dd7ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6647c6c971481751a2911d9939fa032d964168e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229159"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786960"
 ---
 # Rename-AzContext
 
 ## SYNOPSIS
 Mengganti nama konteks Azure.  Secara default konteks dinamai oleh akun pengguna dan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/rename-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 

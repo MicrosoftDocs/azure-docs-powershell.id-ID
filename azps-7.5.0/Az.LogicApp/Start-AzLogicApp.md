@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Start-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Start-AzLogicApp.md
-ms.openlocfilehash: 79083e13dfa6b59c12dc58c34f0bec61874ec40d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95d6acd0ce5f16acdb038e205b1a7769a5426394
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247667"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799756"
 ---
 # Start-AzLogicApp
 
 ## SYNOPSIS
 Menjalankan aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/start-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 

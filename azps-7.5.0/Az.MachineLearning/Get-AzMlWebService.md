@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebService.md
-ms.openlocfilehash: 160990de61c8d2ab42ed9f860f7cdbe2b4f7e83b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4df2e313c1f035f26c25af5eeeaa482506ac63de
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224606"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799558"
 ---
 # Get-AzMlWebService
 
 ## SYNOPSIS
 Mengambil informasi ringkasan untuk satu atau beberapa layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzMlWebService [-ResourceGroupName <String>] [-Name <String>] [-Region <Stri
 
 ## DESCRIPTION
 Mengambil informasi definisi layanan web.
-Bergantung pada parameter yang diteruskan, cmdlet mengembalikan definisi untuk layanan web tertentu, kumpulan definisi untuk layanan web untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan definisi untuk layanan web dalam langganan saat ini.
+Bergantung pada parameter yang dilewatkan, cmdlet mengembalikan definisi untuk layanan web tertentu, kumpulan definisi untuk layanan web untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan definisi untuk layanan web dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -119,6 +122,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

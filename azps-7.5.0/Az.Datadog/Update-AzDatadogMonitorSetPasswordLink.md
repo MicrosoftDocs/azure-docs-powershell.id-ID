@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
-ms.openlocfilehash: 201e704727c24ae579df2b89a2d9aecb166f5012
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23c76732182f52be2e675e057bb75d6baa68363a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217910"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746226"
 ---
 # Update-AzDatadogMonitorSetPasswordLink
 
 ## SYNOPSIS
 Refresh tautan atur kata sandi dan kembalikan yang terbaru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/update-azdatadogmonitorsetpasswordlink) untuk informasi terbaru.
 
 ## SYNTAX
 

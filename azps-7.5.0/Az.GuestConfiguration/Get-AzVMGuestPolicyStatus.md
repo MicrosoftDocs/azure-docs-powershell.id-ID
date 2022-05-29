@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatus.md
-ms.openlocfilehash: f9f0f9b1f68b6b8b976d4a256bcd588b50ba2da9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 01e48f51a84d3152031881b600051be13510c914
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225200"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780534"
 ---
 # Get-AzVMGuestPolicyStatus
 
 ## SYNOPSIS
 Mendapatkan status kebijakan konfigurasi tamu (terperinci) untuk inisiatif jenis "Konfigurasi Tamu" yang ditetapkan ke VM.
 Inisiatif adalah kebijakan jenis definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVM
 ```
 
 Dapatkan semua status kebijakan konfigurasi tamu terbaru untuk VM.
-Status ini mencakup status kepatuhan VM untuk setiap kebijakan di semua inisiatif jenis "Konfigurasi Tamu", alasan kepatuhan, waktu pemeriksaan kepatuhan, informasi sumber daya yang diperiksa kepatuhannya.
+Status ini mencakup status kepatuhan VM untuk setiap kebijakan dalam semua inisiatif jenis "Konfigurasi Tamu", alasan kepatuhan, waktu pemeriksaan kepatuhan, informasi sumber daya yang diperiksa kepatuhannya.
 Hasilnya mencakup status terbaru, tidak termasuk status historis sebelumnya.
 
 ### Contoh 2
@@ -64,17 +67,17 @@ Hasilnya mencakup status terbaru, tidak termasuk status historis sebelumnya.
 Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af"
 ```
 
-Dapatkan status kebijakan konfigurasi tamu terbaru dengan Id inisiatif. Status ini mencakup status kepatuhan VM untuk setiap kebijakan dalam inisiatif, alasan kepatuhan, waktu pemeriksaan kepatuhan, informasi sumber daya yang diperiksa kepatuhannya.
-Hasilnya tidak termasuk status sebelumnya yang dihasilkan, hanya mencakup status terbaru untuk setiap kebijakan dalam inisiatif.
+Dapatkan status kebijakan konfigurasi tamu terbaru berdasarkan Id inisiatif. Status ini mencakup status kepatuhan VM untuk setiap kebijakan dalam inisiatif, alasan kepatuhan, waktu pemeriksaan kepatuhan, informasi sumber daya yang diperiksa kepatuhannya.
+Hasilnya tidak termasuk status sebelumnya yang dihasilkan, itu hanya mencakup status terbaru untuk setiap kebijakan dalam inisiatif.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17"
 ```
 
 Dapatkan status kebijakan konfigurasi tamu terbaru berdasarkan nama inisiatif.
 Status ini mencakup status kepatuhan VM untuk setiap kebijakan dalam inisiatif, alasan kepatuhan, waktu pemeriksaan kepatuhan, informasi sumber daya yang diperiksa kepatuhannya.
-Hasilnya tidak termasuk status sebelumnya yang dihasilkan, hanya mencakup status terbaru untuk setiap kebijakan dalam inisiatif.
+Hasilnya tidak termasuk status sebelumnya yang dihasilkan, itu hanya mencakup status terbaru untuk setiap kebijakan dalam inisiatif.
 
 ### Contoh 4
 ```powershell
@@ -82,7 +85,7 @@ Get-AzVMGuestPolicyStatus -ReportId "/subscriptions/4e6c6ed2-0bf6-41d7-9d21-a452
 ```
 
 Dapatkan status kebijakan konfigurasi tamu menurut ReportId.
-ReportId adalah properti ReportId yang dapat ditemukan dalam hasil Get-AzVMGuestPolicyStatus berdasarkan inisiatifId atau Nama inisiatif (silakan lihat contoh lain)
+ReportId adalah properti ReportId yang dapat ditemukan dalam hasil Get-AzVMGuestPolicyStatus dengan nama inisiatifId atau Inisiatif (silakan lihat contoh lain)
 
 ## PARAMETERS
 

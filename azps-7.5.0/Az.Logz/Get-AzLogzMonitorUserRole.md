@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorUserRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorUserRole.md
-ms.openlocfilehash: e24d2e4823cc66b5d619db1780301a150a555291
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83bd7d99ad82c658f2a769158fed9baec1684de5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220691"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799630"
 ---
 # Get-AzLogzMonitorUserRole
 
 ## SYNOPSIS
 Cantumkan peran pengguna yang dikonfigurasi di sisi Logz.io untuk akun yang sesuai dengan sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitoruserrole) untuk informasi terbaru.
 
 ## SYNTAX
 

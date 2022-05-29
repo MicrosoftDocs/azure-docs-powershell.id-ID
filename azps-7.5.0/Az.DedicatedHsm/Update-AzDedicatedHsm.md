@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Update-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Update-AzDedicatedHsm.md
-ms.openlocfilehash: 3b2289a3524c8388b4098dd94c8675e34522573d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3032d509d68fd57e6650553dfc72f1a7d2e356d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217862"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746028"
 ---
 # Update-AzDedicatedHsm
 
 ## SYNOPSIS
 Perbarui HSM khusus dalam langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/update-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 

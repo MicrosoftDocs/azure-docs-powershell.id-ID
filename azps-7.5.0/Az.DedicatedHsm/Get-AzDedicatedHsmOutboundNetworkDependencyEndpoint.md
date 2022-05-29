@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsmOutboundNetworkDependencyEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsmOutboundNetworkDependencyEndpoint.md
-ms.openlocfilehash: 90d45f6fa85a06b52958fb0368445bd6ae391877
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a324913fe0d8f00a98e687b74b7282999d8010c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217895"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746118"
 ---
 # Get-AzDedicatedHsmOutboundNetworkDependencyEndpoint
 
 ## SYNOPSIS
 Mendapatkan daftar titik akhir keluar (titik akhir jaringan dari semua dependensi keluar) di sumber daya hsm khusus yang ditentukan.
 Operasi mengembalikan properti dari setiap titik akhir keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/get-azdedicatedhsmoutboundnetworkdependencyendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
