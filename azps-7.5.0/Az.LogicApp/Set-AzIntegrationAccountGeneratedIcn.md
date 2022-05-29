@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountGeneratedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountGeneratedIcn.md
-ms.openlocfilehash: bc8b2ce34e741d461d877063dfbeae4ed8ffc304
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43f9ebac3f1d7d01b89bb60ec77a42077719724b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247695"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787697"
 ---
 # Set-AzIntegrationAccountGeneratedIcn
 
 ## SYNOPSIS
 Memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran (ICN) di grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountgeneratedicn) untuk informasi terbaru.
 
 ## SYNTAX
 

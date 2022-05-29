@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzCapacityReservation.md
-ms.openlocfilehash: 9c49efbd8a880665337f6493ac36344bbe7308c1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1cd749dccf70d1d2a22e6426bd8aed26eff84bee
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219794"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781434"
 ---
 # Update-AzCapacityReservation
 
 ## SYNOPSIS
 Perbarui Reservasi Kapasitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservation
-Objek PSCapacityReservation untuk diperbarui.
+Objek PSCapacityReservation yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSCapacityReservation

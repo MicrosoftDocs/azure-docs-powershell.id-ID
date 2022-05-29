@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccount.md
-ms.openlocfilehash: b90d0d5e8175d7cf6597bd411db3f1e7323fbe4c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aed7a854043afe468202f0b61408e630641d6ac4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213602"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787680"
 ---
 # Set-AzIntegrationAccount
 
 ## SYNOPSIS
 Memodifikasi akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

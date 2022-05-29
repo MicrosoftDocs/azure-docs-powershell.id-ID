@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
-ms.openlocfilehash: 4784cb313454d7e554bb9c1735a4e7b275a5fd91
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7636c3ff89ac4b38c8d239c7842b36ece3582b5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187048"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787752"
 ---
 # Invoke-AzLogzHostMonitor
 
 ## SYNOPSIS
 Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/invoke-azlogzhostmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur.
+Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM berdasarkan alur.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountSchema.md
-ms.openlocfilehash: d7594e63ba6d73b44998a8a6cfd73e0126893e7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f79f5d31eb23f28bdb4ada065c33646ba05a165b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213614"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787734"
 ---
 # Remove-AzIntegrationAccountSchema
 
 ## SYNOPSIS
 Menghapus skema akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountschema) untuk informasi terbaru.
 
 ## SYNTAX
 
