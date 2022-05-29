@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
-ms.openlocfilehash: 30944a2c167c02331abe5934f1e61799d83ca3b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2265c2194a957144769d6a98269305c6b20b4a04
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207998"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672996"
 ---
 # New-AzVirtualApplianceSkuProperty
 
 ## SYNOPSIS
 Tentukan sku Network Virtual Appliance untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualapplianceskuproperty) untuk informasi terbaru.
 
 ## SYNTAX
 

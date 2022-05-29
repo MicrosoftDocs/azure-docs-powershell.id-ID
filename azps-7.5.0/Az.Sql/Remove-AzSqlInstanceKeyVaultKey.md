@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: ce5d4762333356bedd4093194d3a0c4030b5232d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d2bccda7d36f20f08c22c6e5145e5e843fea29d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212954"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724482"
 ---
 # Remove-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Menghapus kunci Key Vault dari instans terkelola SQL
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancekeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 

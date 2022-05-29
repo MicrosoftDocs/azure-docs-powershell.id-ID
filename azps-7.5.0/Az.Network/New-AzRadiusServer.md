@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azra
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRadiusServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRadiusServer.md
-ms.openlocfilehash: 31a0db28ed50350bac7d35dc755ae8419749ef82
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cbd1739de73bf75147c77f47643d4137cb285938
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673554"
 ---
 # New-AzRadiusServer
 
 ## SYNOPSIS
 Membuat konfigurasi server radius eksternal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azradiusserver) untuk informasi terbaru.
 
 ## SYNTAX
 

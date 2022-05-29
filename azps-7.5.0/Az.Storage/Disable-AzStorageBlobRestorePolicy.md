@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobRestorePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobRestorePolicy.md
-ms.openlocfilehash: c5eb50aaf24711e2cf37e0036ce057c2e80d202d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 84e6d83d285de187c64c06538923fcd8a9033865
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193838"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718542"
 ---
 # Disable-AzStorageBlobRestorePolicy
 
 ## SYNOPSIS
 Menonaktifkan Kebijakan Pemulihan Blob pada akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstorageblobrestorepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

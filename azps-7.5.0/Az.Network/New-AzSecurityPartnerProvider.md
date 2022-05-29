@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzSecurityPartnerProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzSecurityPartnerProvider.md
-ms.openlocfilehash: d40ff612763209cf01aa5c16bab1d456cef30c7a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0adfaa0582a93d62852cf331be6f895a63c49bc7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197604"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673266"
 ---
 # New-AzSecurityPartnerProvider
 
 ## SYNOPSIS
 Membuat Azure SecurityPartnerProvider.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azsecuritypartnerprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

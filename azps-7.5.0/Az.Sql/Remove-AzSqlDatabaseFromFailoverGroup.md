@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
-ms.openlocfilehash: 1cf8455d4b6da604cbbf20ccbb07b6aa7f2b4c3e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f456014fa6a3e5ae5011071c3617178cbf0b2351
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725166"
 ---
 # Remove-AzSqlDatabaseFromFailoverGroup
 
 ## SYNOPSIS
 Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabasefromfailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ $failoverGroup = $primaryServer | Remove-AzSqlDatabaseFromFailoverGroup -Failove
 
 Perintah ini menghapus semua database dari Grup Failover.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg
 $databases = Get-AzSqlElasticPoolDatabase -ResourceGroupName rg -ServerName primaryserver -ElasticPoolName pool1

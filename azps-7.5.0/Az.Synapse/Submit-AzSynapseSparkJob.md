@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/submit-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
-ms.openlocfilehash: 1779e7a467ae98056c235b0f8ca100b79d8366e6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6bbddf1fd2fdbcf2e6d9a26bac3c13e7afc80700
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236512"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704628"
 ---
 # Submit-AzSynapseSparkJob
 
 ## SYNOPSIS
 Mengirimkan pekerjaan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/submit-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Submit-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoS
 
 Perintah ini mengirimkan pekerjaan Synapse Analytics Spark .NET.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Submit-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -Language PySpark -Name WordCount_Python -MainDefinitionFile abfss://ContosoFileSystem@ContosoGen2Storage.blob.core.windows.net/samples/python/wordcount/wordcount.py -CommandLineArguments abfss://ContosoFileSystem@ContosoGen2Storage.blob.core.windows.net/samples/python/wordcount/shakespeare.txt,abfss://ContosoFileSystem@ContosoGen2Storage.blob.core.windows.net/samples/python/wordcount/result/ -ExecutorCount 2 -ExecutorSize Small
 ```
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExecutorSize
-Jumlah inti dan memori yang akan digunakan untuk eksekutor yang dialokasikan dalam kumpulan Spark yang ditentukan untuk pekerjaan tersebut.
+Jumlah inti dan memori yang akan digunakan untuk pelaksana yang dialokasikan dalam kumpulan Spark yang ditentukan untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ### -MainClassName
 Pengidentifikasi yang sepenuhnya memenuhi syarat atau kelas utama yang ada dalam file definisi utama.
 Diperlukan untuk pekerjaan Spark dan .NET Spark.
-misalnya " org.apache.spark.examples.SparkPi"
+misalnya "org.apache.spark.examples.SparkPi"
 
 ```yaml
 Type: System.String

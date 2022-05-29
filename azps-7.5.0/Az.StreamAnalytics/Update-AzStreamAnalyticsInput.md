@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsInput.md
-ms.openlocfilehash: cfc370c5af4c5d5e1ae8d16d89577e7ac4772f22
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d66226adf2251813b532886a296725372f0b8393
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195529"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711540"
 ---
 # Update-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Memperbarui input yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) input tanpa memengaruhi sisa pekerjaan atau definisi input.
+memperbarui satu atau dua properti) input tanpa memengaruhi sisa definisi pekerjaan atau input.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Update-AzStreamAnalyticsInput -File <String> -InputObject <IStreamAnalyticsIdent
 ## DESCRIPTION
 Memperbarui input yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) input tanpa memengaruhi sisa pekerjaan atau definisi input.
+memperbarui satu atau dua properti) input tanpa memengaruhi sisa definisi pekerjaan atau input.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ Name     Type                                           ETag
 input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 29787d67-5274-4f31-a190-30182ebcecda
 ```
 
-Perintah ini memperbarui input dari file IotHub.json berdasarkan alur.
+Perintah ini memperbarui input dari file IotHub.json menurut alur.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -251,7 +254,7 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[JobName <String>]`: Nama dari pekerjaan streaming.
   - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

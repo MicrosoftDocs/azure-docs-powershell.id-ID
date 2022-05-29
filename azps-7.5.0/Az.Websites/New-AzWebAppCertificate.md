@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-AzW
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
-ms.openlocfilehash: 0018ebf774b40e94fb140f14827ee6f26beea574
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6a2fd91ee0d8599bdbc546b6151ee8839299d6da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231665"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145699048"
 ---
 # New-AzWebAppCertificate
 
 ## SYNOPSIS
 Membuat sertifikat terkelola layanan Aplikasi untuk Azure Web App. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "Conto
 
 Perintah ini membuat App Service Sertifikat Terkelola dan mengikat ke Slot WebApp yang diberikan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net" -AddBinding
 ```

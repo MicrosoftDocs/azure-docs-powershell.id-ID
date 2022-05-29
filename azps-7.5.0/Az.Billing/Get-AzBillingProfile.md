@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingProfile.md
-ms.openlocfilehash: 82eceb0d524b0ffdc7e77e49930880ae150d8331
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ad82c43b1a6def20f28f3d0778caf689a082cbff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205619"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145687234"
 ---
 # Get-AzBillingProfile
 
 ## SYNOPSIS
 Mendapatkan profil penagihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000 -N
 
 Dapatkan profil penagihan dengan nama yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000 -ExpandInvoiceSection
 ```

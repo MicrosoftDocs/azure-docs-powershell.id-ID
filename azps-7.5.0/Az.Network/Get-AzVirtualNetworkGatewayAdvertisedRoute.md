@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayAdvertisedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayAdvertisedRoute.md
-ms.openlocfilehash: 843687843353e660526fffb09ffc05a47a010c07
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 903391863d10f8d1feb1fe4b0a647fccf55a44b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238357"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679800"
 ---
 # Get-AzVirtualNetworkGatewayAdvertisedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang diiklankan oleh gateway jaringan virtual Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayadvertisedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ $bgpPeerStatus = Get-AzVirtualNetworkGatewayBGPPeerStatus -VirtualNetworkGateway
 Get-AzVirtualNetworkGatewayAdvertisedRoute -VirtualNetworkGatewayName gatewayName -ResourceGroupName resourceGroupName -Peer $bgpPeerStatus[0].Neighbor
 ```
 
-Untuk gateway Azure bernama gatewayName dalam grup sumber daya resourceGroupName, mengambil rute yang diiklankan ke serekan BGP pertama pada daftar rekan BGP gateway.
+Untuk gateway Azure bernama gatewayName dalam grup sumber daya resourceGroupName, mengambil rute yang diiklankan ke peer BGP pertama pada daftar rekan BGP gateway.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peer
-Alamat IP serekan BGP. Ini harus menjadi IP dalam ruang alamat yang dapat diakses dari dalam jaringan virtual Azure tempat gateway disebarkan. 
+Alamat IP rekan BGP. Ini harus berupa IP dalam ruang alamat yang dapat diakses dari dalam jaringan virtual Azure tempat gateway disebarkan. 
 
 ```yaml
 Type: System.String

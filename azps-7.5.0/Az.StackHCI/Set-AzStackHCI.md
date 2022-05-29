@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/set-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
-ms.openlocfilehash: 7ad8cc442b5ddfed209f3aade0cfdd5b492be96c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a70517fbac5f2b7389c7208d123624d7f7f8194
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191987"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718848"
 ---
 # Set-AzStackHCI
 
 ## SYNOPSIS
 Set-AzStackHCI memodifikasi properti sumber daya sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/set-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 

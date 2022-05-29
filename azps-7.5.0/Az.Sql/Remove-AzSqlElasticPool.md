@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticPool.md
-ms.openlocfilehash: 42f3f3487f4b351b3233306907c5567807d614e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9a95e0d703087ad61e5d3f2e0007f6e7872eabdf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213038"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724752"
 ---
 # Remove-AzSqlElasticPool
 
 ## SYNOPSIS
 Menghapus kumpulan database elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticpool) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: c8b14c83fbd7d3a1fd2f7d70c2114042fd96a4c3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b455749c77669b7768d9a1cc9bfd446be90130f7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238427"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679926"
 ---
 # Get-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Mendapatkan Koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -123,7 +126,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Vir
 
 Setelah koneksi jaringan virtual hub dibuat, koneksi jaringan virtual hub mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hubnya.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 Get-AzVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name test*
@@ -173,7 +176,7 @@ RoutingConfiguration : {
                         }
 ```
 
-Cmdlet ini mencantumkan semua koneksi jaringan virtual hub yang dimulai dengan "uji" menggunakan nama grup sumber daya dan nama hubnya.
+Cmdlet ini mencantumkan semua koneksi jaringan virtual hub yang dimulai dengan "pengujian" menggunakan nama grup sumber daya dan nama hubnya.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
-ms.openlocfilehash: eaa671feab41a9a58066c44c48d9856055fc03ad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf71840dcaed754b03d5412c422ffe4782cfd2ad
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191889"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718416"
 ---
 # Disable-AzStorageStaticWebsite
 
 ## SYNOPSIS
 Nonaktifkan situs web statis untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragestaticwebsite) untuk informasi terbaru.
 
 ## SYNTAX
 

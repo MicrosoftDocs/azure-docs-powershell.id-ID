@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobRestorePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobRestorePolicy.md
-ms.openlocfilehash: 260cafaeda463abf84a86239db46c3d7737778c1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6c553aced5d58140bfa7d0be1148fc5e05e7059f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193810"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718344"
 ---
 # Enable-AzStorageBlobRestorePolicy
 
 ## SYNOPSIS
 Mengaktifkan Kebijakan Pemulihan Blob pada akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstorageblobrestorepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

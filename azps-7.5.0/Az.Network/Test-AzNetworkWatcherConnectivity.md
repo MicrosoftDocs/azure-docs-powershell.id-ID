@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/test-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
-ms.openlocfilehash: e8e6b4a51d9a41db0b9c3b2f0707b89b55ffb5e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3ccfa5c7427a06e91e8b90dc0fdddcb4971aa92
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210431"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664158"
 ---
 # Test-AzNetworkWatcherConnectivity
 
 ## SYNOPSIS
 Mengembalikan informasi konektivitas untuk VM sumber tertentu dan tujuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/test-aznetworkwatcherconnectivity) untuk informasi terbaru.
 
 ## SYNTAX
 

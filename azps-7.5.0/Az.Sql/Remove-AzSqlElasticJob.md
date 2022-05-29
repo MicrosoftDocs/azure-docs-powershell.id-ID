@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJob.md
-ms.openlocfilehash: b329872252d6ed08890f0d31d3be4b635a864107
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f7eeeef9b0644b309bf00b57734973b75a68dfbc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213095"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724896"
 ---
 # Remove-AzSqlElasticJob
 
 ## SYNOPSIS
 Menghapus pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 

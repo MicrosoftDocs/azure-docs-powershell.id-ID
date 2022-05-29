@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsClusterStreamingJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsClusterStreamingJob.md
-ms.openlocfilehash: 6b344a60bdd8b2adf839777d87157c1b3e77aa18
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 227859ca4fc63dbe4d6976a78071a2f4db63480e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200723"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712422"
 ---
 # Get-AzStreamAnalyticsClusterStreamingJob
 
 ## SYNOPSIS
 Mencantumkan semua pekerjaan streaming di kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsclusterstreamingjob) untuk informasi terbaru.
 
 ## SYNTAX
 

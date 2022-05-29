@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintArtifact.md
-ms.openlocfilehash: 207d2eede80c55e296e36c62044c509b6bacba2e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3cfa4daa5c77630ffbffd3f4607e0a7d66979a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231623"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686910"
 ---
 # New-AzBlueprintArtifact
 
 ## SYNOPSIS
 Buat artefak baru dan simpan dalam definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/new-azblueprintartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Name               : ApplyTag-RG
 
 Buat artefak baru melalui parameter sebaris.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $bp = Get-AzBlueprint -Name SimpleBlueprint
 New-AzBlueprintArtifact -Type TemplateArtifact -Name storage-account -Blueprint $bp -TemplateFile C:\StorageAccountArmTemplate.json -ResourceGroupName "storageRG" -TemplateParameterFile C:\Workspace\BlueprintTemplates\RestTemplatesSomeInline\StorageAccountParameters.json

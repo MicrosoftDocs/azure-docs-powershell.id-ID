@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
-ms.openlocfilehash: 3c50ff2b459544203c8f80437134630f2822864d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 145dc03177062cc520aaf4cb8a589b4da44f1ed2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208082"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680340"
 ---
 # Get-AzRouteServerPeerAdvertisedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang diiklankan oleh peer server rute tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteserverpeeradvertisedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRouteServerPeerAdvertisedRoute -InputObject <PSRouteServerPeer> [-AsJob]
 ```
 
 ## DESCRIPTION
-Mengingat peer server rute baik berdasarkan nama atau objek , hitung rute yang diiklankan ke peer tersebut oleh server rute tertentu.
+Mengingat peer server rute baik berdasarkan nama atau objek, hitung rute yang diiklankan ke peer tersebut oleh server rute tertentu.
 
 ## EXAMPLES
 

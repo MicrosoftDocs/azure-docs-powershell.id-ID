@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzServiceEndpointPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzServiceEndpointPolicy.md
-ms.openlocfilehash: d7a063ae4b50bf24d4e9d915a9aa80237870923d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6743b8e6758c72c6c01949a06b123a1d85ba0194
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238500"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680214"
 ---
 # Get-AzServiceEndpointPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azserviceendpointpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $policyList = Get-AzServiceEndpointPolicy -ResourceGroupName "ResourceGroup01"
 
 Perintah ini mendapatkan daftar semua kebijakan titik akhir layanan dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $policyList.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $policyList = Get-AzServiceEndpointPolicy -ResourceGroupName "ServiceEndpointPolicy*"
 ```

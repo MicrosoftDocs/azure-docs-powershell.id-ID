@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSparkPool.md
-ms.openlocfilehash: 5e8b5e051006c59c8173c37687bebd62fb6fa455
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3da031bbe2e0a64605dfe7f4aa3e369f7193f363
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704430"
 ---
 # Test-AzSynapseSparkPool
 
 ## SYNOPSIS
 Memeriksa keberadaan kumpulan Spark Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/test-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Test-AzSynapseSparkPool -Name <String> -WorkspaceObject <PSSynapseWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzSynapseSparkPool** memeriksa keberadaan kumpulan Spark Synapse Analytics.
+Cmdlet **Test-AzSynapseSparkPool** memeriksa keberadaan kumpulan Synapse Analytics Spark.
 
 ## EXAMPLES
 

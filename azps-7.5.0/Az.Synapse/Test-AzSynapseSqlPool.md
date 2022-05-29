@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
-ms.openlocfilehash: 342ae28bc1a0712d90b2ef5c1886b8bc0cb9e447
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3bfdb7f4ed92649d34d37e813bc727a1edb118aa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214547"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704401"
 ---
 # Test-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memeriksa keberadaan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/test-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 

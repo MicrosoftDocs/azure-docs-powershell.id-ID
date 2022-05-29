@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpTag.md
-ms.openlocfilehash: 3e81d6e769aef489d0e721bcf00dbb71e7ea0a83
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f7c7d738fcba34dce25102d56e76a18ad6914cef
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210659"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673572"
 ---
 # New-AzPublicIpTag
 
 ## SYNOPSIS
 Membuat Tag IP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azpubliciptag) untuk informasi terbaru.
 
 ## SYNTAX
 

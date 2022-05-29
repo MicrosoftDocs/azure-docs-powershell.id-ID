@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
-ms.openlocfilehash: 81dc608d5785130c8d6f6d3de05cd7a6037f107b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c85c0cb1168fe47e9922b06bb28129ad91fc63bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212939"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724464"
 ---
 # Remove-AzSqlInstancePool
 
 ## SYNOPSIS
 Menghapus kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzSqlInstancePool** menghapus kumpulan Instans Azure SQL.
 Remove-AzSqlInstancePool -ResourceGroup resourcegroup01 -Name instancePool0
 ```
 
-### Contoh 2: Menghapus kumpulan instans dengan pengidentifikasi sumber dayanya
+### Contoh 2: Menghapus kumpulan instans berdasarkan pengidentifikasi sumber dayanya
 ```powershell
 Remove-AzSqlInstancePool -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 ```

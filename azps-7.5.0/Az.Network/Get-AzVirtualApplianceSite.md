@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
-ms.openlocfilehash: a1369816d55fe8bc0a72fd1a77eee804a0da0642
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ffea8d9b772d7e7665b1b88e47a7e37e995f77f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238472"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145680052"
 ---
 # Get-AzVirtualApplianceSite
 
 ## SYNOPSIS
 Dapatkan atau Daftar situs yang tersambung ke sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Etag              : 00000000-0000-0000-0000-000000000000
 Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Network/networkVirtualAppliances/nva/virtualApplianceSites/testsite
 ```
 
-Mendapatkan sumber daya situs Appliance Virtual.
+Dapatkan sumber daya situs Appliance Virtual.
 
 ### Contoh 2
 ```powershell

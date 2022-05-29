@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
-ms.openlocfilehash: 1156abd5edfdd1c1e68d34de361ef2e757e8cf4b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba690c10da86615acec02c500e8f8973a8a1e724
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191976"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718830"
 ---
 # Unregister-AzStackHCI
 
 ## SYNOPSIS
 Unregister-AzStackHCI menghapus sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
 Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang diteruskan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOnlyAzureArcServer
-Menentukan parameter ini ke $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran Azure Stack HCI tidak akan diubah.
+Menentukan parameter ini untuk $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran Azure Stack HCI tidak akan diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 4ba4016daff64fd0eba9b79e416b4bc6f3c652c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b91930b3262a27cf5c032df4569ac121cb3f66b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112967"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712026"
 ---
 # New-AzStreamAnalyticsJob
 
 ## SYNOPSIS
-Membuat pekerjaan streaming atau mengganti pekerjaan streaming yang sudah ada.
+Membuat pekerjaan streaming atau menggantikan pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzStreamAnalyticsJob -Name <String> -ResourceGroupName <String> -Location <S
 ```
 
 ## DESCRIPTION
-Membuat pekerjaan streaming atau mengganti pekerjaan streaming yang sudah ada.
+Membuat pekerjaan streaming atau menggantikan pekerjaan streaming yang sudah ada.
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 
 ### -DataLocale
 Lokal data dari pekerjaan analitik stream.
-Nilai harus menjadi nama .NET Culture yang didukung dari set https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx.
+Nilai harus menjadi nama Budaya .NET yang didukung dari set https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx.
 Tentukan default ke 'en-US' jika tidak ditentukan.
 
 ```yaml
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

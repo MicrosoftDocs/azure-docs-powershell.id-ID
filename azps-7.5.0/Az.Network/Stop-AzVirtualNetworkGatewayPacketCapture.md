@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
-ms.openlocfilehash: 349a5a06760898d25de6050f91c8aa8d2408047c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ccceadab905a7f1571998d31495bf068c0a61bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210470"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664338"
 ---
 # Stop-AzVirtualNetworkGatewayPacketCapture
 
 ## SYNOPSIS
 Menghentikan Operasi Pengambilan Paket pada Gateway Virtual Network.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-azvirtualnetworkgatewaypacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzVirtualNetworkGatewayPacketCapture -ResourceId <String> -SasUrl <String> 
 ```
 
 ## DESCRIPTION
-Menghentikan Operasi Penangkapan Paket pada gateway Virtual Network dan akan mengunggah hasilnya pada SasUrl kontainer penyimpanan tertentu.
+Menghentikan Operasi Penangkapan Paket di Gateway Virtual Network dan akan mengunggah hasilnya pada SasUrl kontainer penyimpanan tertentu.
 
 ## EXAMPLES
 

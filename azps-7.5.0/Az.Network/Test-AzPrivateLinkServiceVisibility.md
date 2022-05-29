@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/test-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzPrivateLinkServiceVisibility.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzPrivateLinkServiceVisibility.md
-ms.openlocfilehash: b0ceaa9c37b51fe9619bc9f36a602cfbdf3c2b30
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa712804d04d2481faf4245fffbed6816688afb2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210383"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664068"
 ---
 # Test-AzPrivateLinkServiceVisibility
 
 ## SYNOPSIS
 **Test-AzPrivateLinkServiceVisibility** memeriksa apakah layanan tautan privat terlihat untuk penggunaan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/test-azprivatelinkservicevisibility) untuk informasi terbaru.
 
 ## SYNTAX
 

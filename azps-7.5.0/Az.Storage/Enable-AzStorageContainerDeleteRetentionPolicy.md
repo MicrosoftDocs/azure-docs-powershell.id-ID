@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageContainerDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageContainerDeleteRetentionPolicy.md
-ms.openlocfilehash: 15b523015fe931a561fb3cb59957531640258b4b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 088b19348e2fd5d69ed55f4419eb0f758b0a39ab
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191861"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718326"
 ---
 # Enable-AzStorageContainerDeleteRetentionPolicy
 
 ## SYNOPSIS
 Aktifkan kebijakan penyimpanan penghapusan untuk kontainer blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstoragecontainerdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

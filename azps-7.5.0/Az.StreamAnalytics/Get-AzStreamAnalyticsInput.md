@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsInput.md
-ms.openlocfilehash: d5c1535a88ece0bf0a3ce1b2e570ee3ea19f99b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ce40c343c8bbec1236fd6b68f8b3da58ad989f9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200642"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712314"
 ---
 # Get-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Mendapatkan detail tentang input yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 

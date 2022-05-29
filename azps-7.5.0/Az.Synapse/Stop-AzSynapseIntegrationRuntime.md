@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: be33c3dce91b86b912f9c9796e0cd3f77c6050d2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b5866e9afc66d06dc8493c7933901af0489177f7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208487"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704862"
 ---
 # Stop-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Menghentikan runtime integrasi khusus terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapseintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $ws | Stop-AzSynapseIntegrationRuntime -Name 'test-dedicated-ir'
 
 Cmdlet ini menghentikan runtime integrasi khusus terkelola bernama 'test-dedicated-ir' di ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Stop-AzSynapseIntegrationRuntime -ResourceId '/subscriptions/0000abcd-1a1b-12ab-1234-0000abcd00aa/resourceGroups/Contosorg/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/integrationruntimes/test-dedicated-ir'
 ```

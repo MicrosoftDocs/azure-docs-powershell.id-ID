@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: 7b9ce5f9241543e274a50f9063dd0590c88bd7e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17580bb8fb62adb7fc90eab74fff3507b6b86643
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705078"
 ---
 # Start-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Memulai runtime integrasi khusus terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapseintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $ws | Start-AzSynapseIntegrationRuntime -Name 'test-dedicated-ir'
 
 Cmdlet ini memulai runtime integrasi khusus terkelola bernama 'test-dedicated-ir' di ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Start-AzSynapseIntegrationRuntime -ResourceId '/subscriptions/0000abcd-1a1b-12ab-1234-0000abcd00aa/resourceGroups/Contosorg/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/integrationruntimes/test-dedicated-ir'
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRouteTable.md
-ms.openlocfilehash: 02a51223aceb203e92a5a9654c04b586b20f0ff8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6efddc69768b1fe83c72d745f4ce8d62e91aafba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190016"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673122"
 ---
 # New-AzVHubRouteTable
 
 ## SYNOPSIS
 Membuat sumber daya tabel rute hub yang terkait dengan VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 6f44f33b3210bbfbba267a913b3f9103231c5a57
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8aba42be62d32f83de962a6e3be56ae42b2a70d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186597"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686442"
 ---
 # Set-AzApiManagementDiagnostic
 
 ## SYNOPSIS
 Memodifikasi diagnostik API Management di cakupan Global atau Api.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 

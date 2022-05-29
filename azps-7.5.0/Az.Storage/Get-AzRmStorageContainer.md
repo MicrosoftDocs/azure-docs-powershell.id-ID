@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
-ms.openlocfilehash: b38f046655fbc0f2714ac25ca0dc94c87cf09a6a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6625511ad1ed64b709ffba6239de61fe5402e832
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191805"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718056"
 ---
 # Get-AzRmStorageContainer
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage kontainer blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

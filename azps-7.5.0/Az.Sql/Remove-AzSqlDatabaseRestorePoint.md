@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: 41d4be550176c7832f2c84fbf0bee4643c1bccba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8cedb4a2c831a4bbed93de83cf3bdca7d69d9558
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213143"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725058"
 ---
 # Remove-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
 Menghapus titik pemulihan yang diberikan dari SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabaserestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Remove-AzSqlDatabaseRestorePoint -RestorePointCreationDate <DateTime> [-PassThru
 
 ## DESCRIPTION
 Cmdlet **Remove-AzSqlDatabaseRestorePoint** menghapus titik pemulihan yang diberikan dari Azure SQL Database.
-Cmdlet ini saat ini didukung oleh layanan SQL Server Datawarehouse pada Azure SQL Database.
+Cmdlet ini saat ini didukung oleh layanan SQL Server Datawarehouse di Azure SQL Database.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprint.md
-ms.openlocfilehash: 5101c3d9343570ddf40c9bacde84ce49f5bf31fb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9dda72bd78d4fec46f0214c7d3cce0b4e5d11520
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241619"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686784"
 ---
 # Set-AzBlueprint
 
 ## SYNOPSIS
 Memperbarui definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 

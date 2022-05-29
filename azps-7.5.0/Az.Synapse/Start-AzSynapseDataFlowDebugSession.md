@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseDataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Start-AzSynapseDataFlowDebugSession.md
-ms.openlocfilehash: 970054ad6d8b549f5a9418a89f08eefcce4b557b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a5935b30592d927c2ab7fe8e8070ec4d4610b96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227986"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705132"
 ---
 # Start-AzSynapseDataFlowDebugSession
 
 ## SYNOPSIS
 Memulai sesi debug aliran data Synapse Analytics di Ruang Kerja Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapsedataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 

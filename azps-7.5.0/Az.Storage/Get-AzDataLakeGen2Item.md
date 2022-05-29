@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
-ms.openlocfilehash: e5c1d1e1858f24ffddf4fddf82f672cd1039f500
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1adb91b8d000dc3a8bee78aa351efc4d69b40cc4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191808"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718110"
 ---
 # Get-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Mendapatkan detail file atau direktori dalam sistem file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDataLakeGen2Item [-FileSystem] <String> [-Path <String>] [-Context <IStora
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeGen2Item** mendapatkan detail file atau direktori di Filesystem di akun penyimpanan Azure.
+Cmdlet **Get-AzDataLakeGen2Item** mendapatkan detail file atau direktori dalam Filesystem di akun penyimpanan Azure.
 Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ### -Jalur
 Jalur dalam Filesystem yang ditentukan yang harus diambil.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
-Tidak menentukan parameter ini untuk mendapatkan direktori akar Filesystem.
+Tidak menentukan parameter ini untuk mendapatkan direktori akar filesystem.
 
 ```yaml
 Type: System.String

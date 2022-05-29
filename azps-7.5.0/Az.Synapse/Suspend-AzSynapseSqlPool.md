@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/suspend-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Suspend-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Suspend-AzSynapseSqlPool.md
-ms.openlocfilehash: c61fb4419e79b5430e0356dbb38f358d3d5da906
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97feaa156e5214af9168304e60f3efb5231d7f8e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198444"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704610"
 ---
 # Suspend-AzSynapseSqlPool
 
 ## SYNOPSIS
 Menangguhkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/suspend-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 

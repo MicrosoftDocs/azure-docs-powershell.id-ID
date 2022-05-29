@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: ee200fd3e6f63bbdc46706d5136d15041f18827a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c5c49b6c6093a329d3e723120947a156c6dac608
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109938"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145672906"
 ---
 # New-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang mengintip Virtual Network ke Azure Virtual Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -120,7 +123,7 @@ New-AzVirtualHubVnetConnection -EnableInternetSecurity -Name 'testvnetconnection
 ```
 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rgName = "testRg"
 $virtualHubName = "testHub"
@@ -157,7 +160,7 @@ VnetRoutes            : {
                         }
 New-AzVirtualHubVnetConnection -ResourceGroupName $rgName -VirtualHubName $virtualHubName -Name "testvnetconnection" -RemoteVirtualNetwork $remoteVirtualNetwork -RoutingConfiguration $routingconfig
 ```
-Hal di atas akan membuat konfigurasi perutean baru dan membuat rute statis dalam konfigurasi perutean dengan hop berikutnya sebagai alamat IP tertentu. Konfigurasi perutean ini kemudian dapat diteruskan ke perintah New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
+Hal di atas akan membuat konfigurasi perutean baru dan membuat rute statis dalam konfigurasi perutean dengan hop berikutnya sebagai alamat IP yang ditentukan. Konfigurasi perutean ini kemudian dapat diteruskan ke perintah New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
 
 ## PARAMETERS
 

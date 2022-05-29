@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageBlobDeleteRetentionPolicy.md
-ms.openlocfilehash: 11309116f9a0a7f7a0eaf1594b7adfcbc3581433
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c325ecca716fc8a25d91104dbfd8d54cdf42dc01
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193824"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718398"
 ---
 # Enable-AzStorageBlobDeleteRetentionPolicy
 
 ## SYNOPSIS
 Aktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstorageblobdeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Enable-AzStorageBlobDeleteRetentionPolicy [-ResourceId] <String> -RetentionDays 
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzStorageBlobDeleteRetentionPolicy** memungkinkan kebijakan penyimpanan penghapusan untuk layanan Azure Storage Blob.
+Cmdlet **Enable-AzStorageBlobDeleteRetentionPolicy** memungkinkan kebijakan penyimpanan penghapusan untuk layanan blob Azure Storage.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Enabled Days AllowPermanentDelete
    True    4                 True
 ```
 
-Perintah ini memungkinkan kebijakan penyimpanan penghapusan untuk Blob service, dan mengatur hari retensi blob yang dihapus ke 4.
+Perintah ini memungkinkan kebijakan penyimpanan penghapusan untuk layanan Blob, dan mengatur hari retensi blob yang dihapus ke 4.
 
 ## PARAMETERS
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServerConfiguration.md
-ms.openlocfilehash: 591e069e89d56c5e14ec3f2f602d14ba891014bb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d9b1a7c006db77abcda336b6f2b9b82d06468e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243943"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657786"
 ---
 # Update-AzPostgreSqlFlexibleServerConfiguration
 
 ## SYNOPSIS
 Memperbarui konfigurasi server.
 Gunakan Update-AzPostgreSqlFlexibleServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlflexibleserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Gunakan Update-AzPostgreSqlFlexibleServer sebagai gantinya jika Anda ingin mempe
 
 ## EXAMPLES
 
-### Contoh 1: Konfigurasi PostgreSql yang ditentukan Updatae berdasarkan nama
+### Contoh 1: Updatae konfigurasi PostgreSql yang ditentukan berdasarkan nama
 ```powershell
  Update-AzPostgreSqlFlexibleServerConfiguration -Name work_mem -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test -Value 8192
 ```
@@ -53,7 +56,7 @@ work_mem 8192  4096-2097151 system-default 4096
 
 Cmdlet ini memperbarui konfigurasi PostgreSql yang ditentukan berdasarkan nama.
 
-### Contoh 2: Updatae yang ditentukan konfigurasi PostgreSql berdasarkan identitas
+### Contoh 2: Updatae konfigurasi PostgreSql yang ditentukan berdasarkan identitas
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgresql-test/configurations/work_mem"
  Get-AzPostgreSqlFlexibleServerConfiguration -Name work_mem -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test -Value 8192
@@ -65,7 +68,7 @@ Name     Value AllowedValue Source         DefaultValue
 work_mem 8192  4096-2097151 system-default 4096
 ```
 
-Cmdlet ini memperbarui konfigurasi PostgreSql yang ditentukan oleh identitas.
+Cmdlet ini memperbarui konfigurasi PostgreSql yang ditentukan berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -277,7 +280,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

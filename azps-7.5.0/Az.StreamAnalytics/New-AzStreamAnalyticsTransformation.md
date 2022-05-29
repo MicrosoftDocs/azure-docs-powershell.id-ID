@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: 7f2d42facee66c54a45d6ca4abdf4631cca83e5b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48f410e05cfd029a1b1c3d411ae678ab1335b33a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112925"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711972"
 ---
 # New-AzStreamAnalyticsTransformation
 
 ## SYNOPSIS
 Membuat transformasi atau mengganti transformasi yang sudah ada di bawah pekerjaan streaming yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticstransformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -Kueri
 Menentukan kueri yang akan dijalankan dalam pekerjaan streaming.
-Anda dapat mempelajari selengkapnya tentang Bahasa Kueri Analisis Aliran (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
+Anda dapat mempelajari selengkapnya tentang Bahasa Kueri Azure Stream Analytics (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
 Diperlukan pada permintaan PUT (CreateOrReplace).
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

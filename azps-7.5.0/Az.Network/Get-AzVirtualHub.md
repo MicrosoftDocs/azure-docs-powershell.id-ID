@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualHub.md
-ms.openlocfilehash: 2b4c33061847e7bd7d8ac3ce8432d495afc44ff0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d32a35ce74c701a39b3d09ed412a8576adfaa94d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238469"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679998"
 ---
 # Get-AzVirtualHub
 
 ## SYNOPSIS
-Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual berdasarkan ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVirtualHub [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual berdasarkan ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub berdasarkan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
 
 ## EXAMPLES
 
@@ -57,9 +60,9 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
-Kemudian mendapatkan hub virtual menggunakan ResourceGroupName dan ResourceName-nya.
+Kemudian mendapatkan hub virtual menggunakan ResourceGroupName dan ResourceName.
 
 ### Contoh 2
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/add-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: 90c4fd378c959d1e4a5e77f6c4d371458a2df96e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd96a2db2b576d790e1203944113fd3c02bf3eae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193919"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718776"
 ---
 # Add-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
 Menambahkan tag penahanan legal ke kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
-ms.openlocfilehash: 5e80dbdfdc44a52347cb3dd2ac7a05c6d3940ca1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f25326e119c484550aac7dc2e94d600f6092fc58
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112956"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712070"
 ---
 # New-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Membuat input atau mengganti input yang sudah ada di bawah pekerjaan streaming yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsinput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 6c9f5122-44b9-45bf-81c9-
 
 Perintah ini membuat input dari file EventHub.json.
 
-(di bawah ini adalah contoh untuk "EventHub.json") { "properties": { "type": "Stream", "serialisasi": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "datasource": { "type": "Microsoft.EventHub/EventHub", "properties": { "serviceBusNamespace": "xxxxx", "sharedAccessPolicyName": "xxxxxxxxx", "sharedAccessPolicyKey": "xxxxx", "xxxxx", "authenticationMode": "ConnectionString", "eventHubName": "xxxxxxxx", "consumerGroupName": "xxxxxx" } } } } }
+(di bawah ini adalah contoh untuk "EventHub.json") { "properties": { "type": "Stream", "serialisasi": { "type": "Json", "properties": { "encoding": "UTF8" } }, "compression": { "type": "None" }, "datasource": { "type": "Microsoft.EventHub/EventHub", "properties": { "serviceBusNamespace": "xxxxx", "sharedAccessPolicyName": "xxxxxxxx", "sharedAccessPolicyKey": "xxxx", "sharedAccessPolicyKey": "xxxxx", "xxxx", "xxxx", "xxx", "xxxx", "xxxx", "xxx authenticationMode": "ConnectionString", "eventHubName": "xxxxx", "consumerGroupName": "xxxxx" } } } }
 
 ### Contoh 2: Membuat input pekerjaan dengan definisi dari file
 ```powershell
@@ -56,7 +59,7 @@ input-01 Microsoft.StreamAnalytics/streamingjobs/inputs 6c9f5122-44b9-45bf-81c9-
 
 Perintah ini membuat input dari file IotHub.json.
 
-(di bawah ini adalah contoh untuk "IotHub.json") { "properties": { "type": "Stream", "serialization": { "type": "Json", "properties": { "encoding": "UTF8" } } } , "compression": { "type": "None" }, "partitionKey": "", "datasource": { "type": "Microsoft.Devices/IotHubs", "properties": { "iotHubNamespace": "xxxxxxxxxxxx", "sharedAccessPolicyName": "xxxxxxxxxxx", "sharedAccessPolicyKey": "xxxxxxxxxxxx", "consumerGroupName": "$Default", "endpoint": "messages/events" } } } }
+(di bawah ini adalah contoh untuk "IotHub.json") { "properties": { "type": "Stream", "serialization": { "type": "Json", "properties": { "encoding": "UTF8" } } } , "compression": { "type": "None" }, "partitionKey": "", "datasource": { "type": "Microsoft.Devices/IotHubs", "properties": { "iotHubNamespace": "xxxxxxxxxx", "sharedAccessPolicyName": "xxxxxxxxxx", "sharedAccessPolicyKey": "xxxxxxxxxx", "consumerGroupName": "$Default", "endpoint": "messages/events" } } } }
 
 ## PARAMETERS
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

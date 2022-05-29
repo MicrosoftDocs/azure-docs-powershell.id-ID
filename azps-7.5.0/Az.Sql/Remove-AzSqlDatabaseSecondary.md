@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: 3e410388d53827e83157f6e3ec4fb8314ac3f7e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3cebf8fb649c25cd409639c7a5bc43d28c3ce09a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213134"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724950"
 ---
 # Remove-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
 Mengakhiri replikasi data antara SQL Database dan database sekunder yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabasesecondary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzSqlDatabaseSecondary [-DatabaseName] <String> -PartnerResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlDatabaseSecondary** memaksa penghentian tautan replikasi geografis.
+Cmdlet **Remove-AzSqlDatabaseSecondary** memaksa penghentian tautan geo-replikasi.
 Cmdlet ini menggantikan cmdlet Stop-AzSqlDatabaseCopy.
 Tidak ada sinkronisasi replikasi sebelum penghentian.
 

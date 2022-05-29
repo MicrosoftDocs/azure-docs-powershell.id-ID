@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/import
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Import-AzBlueprintWithArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Import-AzBlueprintWithArtifact.md
-ms.openlocfilehash: 5cc2e8f4b9153a57fdd0dff02cf12bb2c244c0ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b8b4f7b64403ef0ac887688dfac003ac01f125e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236260"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686964"
 ---
 # Import-AzBlueprintWithArtifact
 
 ## SYNOPSIS
-Impor file cetak biru dalam format JSON ke objek cetak biru dan simpan dalam langganan atau grup manajemen yang ditentukan.
+Impor file cetak biru dalam format JSON ke objek cetak biru dan simpan dalam grup langganan atau manajemen yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/import-azblueprintwithartifact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputPath
-Jalur ke file Blueprint JSON pada disk.
+Jalur ke file JSON Cetak Biru pada disk.
 
 ```yaml
 Type: System.String

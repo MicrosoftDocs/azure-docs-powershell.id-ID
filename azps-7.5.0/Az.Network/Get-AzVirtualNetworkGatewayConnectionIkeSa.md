@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionIkeSa.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionIkeSa.md
-ms.openlocfilehash: a935cae96b57dd895dfe0cace17e26c7c6c2ab1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 515dc8d3b6bd5a99744d7f28109b704127b1449a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238329"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679638"
 ---
 # Get-AzVirtualNetworkGatewayConnectionIkeSa
 
 ## SYNOPSIS
 Mendapatkan Asosiasi Keamanan IKE dari Koneksi Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionikesa) untuk informasi terbaru.
 
 ## SYNTAX
 

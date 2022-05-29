@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
-ms.openlocfilehash: 7c1074342dce67bcbb5f1c80412039ddadb5c389
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e129fcaedfaabd8fc0aac791cbd5c0d5842eb2e9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193779"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718074"
 ---
 # Get-AzDataLakeGen2ItemContent
 
 ## SYNOPSIS
 Unduh file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2itemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 

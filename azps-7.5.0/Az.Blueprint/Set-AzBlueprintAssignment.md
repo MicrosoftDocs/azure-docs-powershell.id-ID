@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
-ms.openlocfilehash: 9170f172cacb494862d693c253eafe4fe5277c58
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6531a992d15d5eeb9ab27fb44b5156d965d21d85
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193275"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686748"
 ---
 # Set-AzBlueprintAssignment
 
 ## SYNOPSIS
 Perbarui penetapan cetak biru yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/set-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ ResourceGroups    : ResourceGroup
 
 Perbarui penetapan cetak biru yang ada melalui file penugasan. Format file penugasan dapat ditemukan dalam sampel permintaan/respons di: https://github.com/Azure/azure-rest-api-specs/tree/master/specification/blueprint/resource-manager/Microsoft.Blueprint/preview/2018-11-01-preview/examples
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $blueprintObject =  Get-AzBlueprint -ManagementGroupId "myManagementGroup" -Name "myBlueprintName"
 Set-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -ManagementGroupId "myManagementGroup" -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"}
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Wilayah untuk identitas terkelola yang akan dibuat.
-Pelajari selengkapnya di aka.ms/blueprintmsi
+Pelajari lebih lanjut di aka.ms/blueprintmsi
 
 ```yaml
 Type: System.String
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecureStringParameter
-Parameter string aman untuk id sumber daya KeyVault, nama, dan versi.
+Parameter string aman untuk id, nama, dan versi sumber daya KeyVault.
 
 ```yaml
 Type: System.Collections.Hashtable

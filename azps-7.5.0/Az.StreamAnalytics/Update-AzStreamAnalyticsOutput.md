@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsOutput.md
-ms.openlocfilehash: 253949cc8bbc2280a495f2568c8e20a970c06e0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fef550b1a5d3eba2c7b0960d9200fd8ccb33dd41
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195515"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711522"
 ---
 # Update-AzStreamAnalyticsOutput
 
@@ -18,6 +18,9 @@ ms.locfileid: "144195515"
 Memperbarui output yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) output tanpa memengaruhi sisa definisi pekerjaan atau output.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsoutput) untuk informasi terbaru.
 
 ## SYNTAX
 

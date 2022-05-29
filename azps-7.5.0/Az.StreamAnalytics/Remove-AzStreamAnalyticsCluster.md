@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: 3ed79c725ead5fd33a8efdf7488d3c86541cf8fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 38c5b45b6de7103eabde0782fe9b59d1ecb8ed50
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112942"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711936"
 ---
 # Remove-AzStreamAnalyticsCluster
 
 ## SYNOPSIS
 Menghapus kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/remove-azstreamanalyticscluster) untuk informasi terbaru.
 
 ## SYNTAX
 

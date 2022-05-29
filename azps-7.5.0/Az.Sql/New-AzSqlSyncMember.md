@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
-ms.openlocfilehash: b3579fcbd9ab72c0f151731cfcd4d6b573022c9a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24f33fae0c5e4f56840e3244f9f0927cf35f2811
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213242"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145725274"
 ---
 # New-AzSqlSyncMember
 
 ## SYNOPSIS
 Membuat Anggota Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberDatabaseCredential
-Kredensial (nama pengguna dan kata sandi) dari Azure SQL Database.
+Info masuk (nama pengguna dan kata sandi) dari Azure SQL Database.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberServerName
-Nama Server Azure SQL database anggota.
+Nama server Azure SQL database anggota.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncAgentServerName
-Nama Server Azure SQL tempat agen sinkronisasi berada.
+Nama server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
-ms.openlocfilehash: 949f92c1262ba6968707a019631a03c6d4442d5d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 20d930aa0828d812583a21b7d239082922ca11b6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210359"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663978"
 ---
 # Update-AzNetworkVirtualAppliance
 
 ## SYNOPSIS
 Memperbarui atau Mengubah sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-aznetworkvirtualappliance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualApplianceAsn
-Nomor ASN dari Appliance Virtual.
+Nomor ASN Appliance Virtual.
 
 ```yaml
 Type: System.Int32

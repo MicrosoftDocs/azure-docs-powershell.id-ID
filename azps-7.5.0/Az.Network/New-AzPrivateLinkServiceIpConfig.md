@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceIpConfig.md
-ms.openlocfilehash: 1dc177fecb850b4d9e882530c4b179ff781c6782
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 605dfdf7915166c7386ca119bc98eb0189dcf776
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212294"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145673616"
 ---
 # New-AzPrivateLinkServiceIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi ip layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatelinkserviceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

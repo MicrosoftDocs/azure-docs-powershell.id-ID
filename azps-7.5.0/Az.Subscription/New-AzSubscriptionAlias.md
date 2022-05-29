@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/New-AzSubscriptionAlias.md
-ms.openlocfilehash: c8a318583868c0f2db4b8f813f1d2b63c75736df
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0370c949d00360e24a55332b0d62630032356858
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111125"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711342"
 ---
 # New-AzSubscriptionAlias
 
 ## SYNOPSIS
 Membuat alias dan langganan baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.subscription/new-azsubscriptionalias) untuk informasi terbaru.
 
 ## SYNTAX
 

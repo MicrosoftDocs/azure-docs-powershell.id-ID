@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/Remove-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCrossConnectionPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCrossConnectionPeering.md
-ms.openlocfilehash: 8ffa3574c064eb01a2d40bc9a86ed0186ee1c7b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3da344cd769f87aefa5db159e1ed609d5ae278e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185519"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670746"
 ---
 # Remove-AzExpressRouteCrossConnectionPeering
 
 ## SYNOPSIS
 Menghapus konfigurasi peering koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutecrossconnectionpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

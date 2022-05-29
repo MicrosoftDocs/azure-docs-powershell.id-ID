@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayBGPPeerStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayBGPPeerStatus.md
-ms.openlocfilehash: 0311b46b1b296870fbc879277ab5b5ce1d12dfb6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3cdbf17b1b7061e030bf14032277c593c25f7565
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238343"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679728"
 ---
 # Get-AzVirtualNetworkGatewayBGPPeerStatus
 
 ## SYNOPSIS
 Mencantumkan rekan BGP gateway jaringan virtual Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaybgppeerstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzVirtualNetworkGatewayBGPPeerStatus -VirtualNetworkGatewayName <String> -Re
 ```
 
 ## DESCRIPTION
-Perintah ini menghitung rekan BGP gateway jaringan virtual Azure dikonfigurasi untuk peering. Status setiap rekan juga diberikan.
+Perintah ini menghitung rekan-rekan BGP gateway jaringan virtual Azure dikonfigurasi untuk peer dengan. Status setiap serekan juga diberikan.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ RoutesReceived    : 1
 State             : Connected
 ```
 
-Mengambil rekan BGP untuk gateway jaringan virtual Azure bernama gatewayName dalam resource group resourceGroup.
+Mengambil rekan BGP untuk gateway jaringan virtual Azure bernama gatewayName dalam grup sumber daya resourceGroup.
 Contoh output ini menunjukkan satu peer BGP yang terhubung, dengan IP 10.0.0.254.
 
 ## PARAMETERS

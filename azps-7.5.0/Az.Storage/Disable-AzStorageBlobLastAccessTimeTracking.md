@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobLastAccessTimeTracking.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobLastAccessTimeTracking.md
-ms.openlocfilehash: 985ef58e6c34053054fab2a6b7c4773b9e324289
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bfbbc069c927032e63c6bde6ba6523c56d13479f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191903"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718506"
 ---
 # Disable-AzStorageBlobLastAccessTimeTracking
 
 ## SYNOPSIS
 Nonaktifkan pelacakan waktu akses terakhir untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragebloblastaccesstimetracking) untuk informasi terbaru.
 
 ## SYNTAX
 

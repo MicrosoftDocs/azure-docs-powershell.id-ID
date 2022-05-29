@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
-ms.openlocfilehash: a50665fbf29b6836f5ec24f9f6439549abbe71e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9d41cf3954af6302a5015cee5a3e02bc70f3c95b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226012"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686568"
 ---
 # Get-AzADDomainService
 
 ## SYNOPSIS
 Operasi Dapatkan Layanan Domain mengambil representasi json dari Layanan Domain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/get-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 

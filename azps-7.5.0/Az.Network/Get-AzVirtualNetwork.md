@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetwork.md
-ms.openlocfilehash: 798162257f009b92cbfcbb87d1ffdbbe811aaf27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 285db016040a5fc9df2733d7e25882be8429a917
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238388"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679908"
 ---
 # Pulihkan-AzSqlDatabase
 
 ## SYNOPSIS
 Mendapatkan jaringan virtual dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 

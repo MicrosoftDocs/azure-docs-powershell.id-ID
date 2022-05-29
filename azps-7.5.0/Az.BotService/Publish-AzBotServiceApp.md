@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/publi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Publish-AzBotServiceApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Publish-AzBotServiceApp.md
-ms.openlocfilehash: bda4fc4ce91e77924a4c8feb2e440b36f59ad604
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f67b279bef942cebf687d8f538222b8c76b97cc9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207755"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686658"
 ---
 # Publish-AzBotServiceApp
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/publish-azbotserviceapp) untuk informasi terbaru.
 
 ## SYNTAX
 

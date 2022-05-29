@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportService.md
-ms.openlocfilehash: 8196f80b7bdeb3a7b1ec3fa2af13b09761a16543
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5fde6edb46fb45fd847b8e9428be7989d9d8dcef
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111065"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145711198"
 ---
 # Get-AzSupportService
 
 ## SYNOPSIS
 Dapatkan layanan yang dukungannya tersedia. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportservice) untuk informasi terbaru.
 
 ## SYNTAX
 
