@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/remove-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
-ms.openlocfilehash: 025901c490585714a06e75da679e78efa9059213
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 94ee5c03e1cc8e67bf724d54aba0e7078bc3fcec
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220583"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773203"
 ---
 # Remove-AzLogzSubAccount
 
 ## SYNOPSIS
 Menghapus sumber daya sub akun.
 Operasi penghapusan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/remove-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

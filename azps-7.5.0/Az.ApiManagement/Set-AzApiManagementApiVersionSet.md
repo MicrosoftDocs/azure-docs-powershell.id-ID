@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiVersionSet.md
-ms.openlocfilehash: 28a7ea08b296de75d9ea4faf8eb1a18f5f315cc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9da7922cfe0f01eea012b85dcb46000221d666e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200488"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765938"
 ---
 # Set-AzApiManagementApiVersionSet
 
 ## SYNOPSIS
 Memperbarui Set Versi API dalam Konteks API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 

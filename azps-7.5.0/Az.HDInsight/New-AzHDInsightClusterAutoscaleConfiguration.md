@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: a506c8a1840bb5c6e50fd0282e0224a92b9d72eb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e987aa4ce07230188a4d85856eb907d36107e809
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216314"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780426"
 ---
 # New-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
 Membuat objek yang tidak bertahan yang menjelaskan konfigurasi skala otomatis kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ New-AzHDInsightClusterAutoscaleConfiguration -MinWorkerNodeCount 3 -MaxWorkerNod
 
 Perintah ini membuat objek yang menjelaskan konfigurasi skala otomatis berbasis beban.
 
-### Contoh 2: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis jadwal
+### Contoh 2: Membuat objek yang menjelaskan konfigurasi skala otomatis berbasis Jadwal
 ```powershell
 # Create an autoscale condition firstly
 $condition=New-AzHDInsightClusterAutoscaleScheduleCondition -Day Monday -Time 09:00 -WorkerNodeCount 5
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWorkerNodeCount
-Mendapatkan atau mengatur jumlah workernode maksimal dari skala otomatis berbasis beban.
+Mendapatkan atau mengatur jumlah simpul pekerja maksimal dari skala otomatis berbasis beban.
 
 ```yaml
 Type: System.Int32

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 56a86fd2ceba1563acbc0e7aa04708791558d375
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d87a9c3bfccafef9f8a01e1a7710d50beef6ad92
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204086"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753246"
 ---
 # Invoke-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
   Memanggil alur untuk memulai eksekusi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 

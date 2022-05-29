@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 6c884357f054dc5d68ac51dbbbdb312f240481be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9f722661000d82404fff164aaf3d8d82084273f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203932"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753138"
 ---
 # New-AzDataFactoryV2LinkedServiceEncryptedCredential
 
 ## SYNOPSIS
 Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactoryv2linkedserviceencryptedcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
-ms.openlocfilehash: 7d19a7254efab3c2a3f53eebefc4bf52214ad161
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 428c97a8e98607b0e5e541716975c03346c6fdaf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187941"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765992"
 ---
 # Set-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Memodifikasi Revisi API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzApiManagementApiRevision -InputObject <PsApiManagementApi> [-Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiRevision** memodifikasi Azure API Management API Revisi.
+Cmdlet **Set-AzApiManagementApiRevision memodifikasi** Azure API Management API Revisi.
 
 ## EXAMPLES
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId tempat token akses diteruskan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4. Parameter ini bersifat opsional. Nilai defaultnya adalah $null.
+Mekanisme server otorisasi OpenId di mana token akses diteruskan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4. Parameter ini bersifat opsional. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, maka instans jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
+Jika ditentukan, contoh jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 
 ### -ServiceUrl
 URL layanan web yang mengekspos API.
-URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan dibuat publik.
+URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan di publikasikan.
 Panjangnya harus 1 hingga 2000 karakter.
 Parameter ini diperlukan.
 

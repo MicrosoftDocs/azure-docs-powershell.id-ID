@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
-ms.openlocfilehash: da60ea53e39e21759a53674f9236d61fefbf2045
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60dcdb0f556bdd4c40a27f3a9792dfcd63e123fe
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234899"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766028"
 ---
 # Get-AzSqlDatabaseExpanded
 
 ## SYNOPSIS
 Mendapatkan database dan nilai properti yang diperluas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseexpanded) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 Get-AzSqlDatabaseExpanded -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi penasihat tingkat layanan.
+Perintah ini mengembalikan database yang memiliki properti yang diperluas yang berisi informasi advisor tingkat layanan.
 
 ### Contoh 2: Mencantumkan objek database menggunakan pemfilteran
 ```powershell

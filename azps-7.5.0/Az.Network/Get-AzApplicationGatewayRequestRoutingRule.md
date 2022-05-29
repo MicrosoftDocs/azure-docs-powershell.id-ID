@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: fd31b5a2a9d852c0e4f3087a799bd8250d0b5f7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d5b698f2b019b25bd2f010ee8a30298b97845780
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216062"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799108"
 ---
 # Get-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Mendapatkan aturan perutean permintaan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 

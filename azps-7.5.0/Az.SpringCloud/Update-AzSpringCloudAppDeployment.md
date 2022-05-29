@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.SpringCloud/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: b95bdfd1032a2e239c9f645b5e65827e1381417a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 75f860a06243461cdfb3b66869434840e274eb98
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211835"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766280"
 ---
 # Update-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Operasi untuk memperbarui Penyebaran yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/update-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity

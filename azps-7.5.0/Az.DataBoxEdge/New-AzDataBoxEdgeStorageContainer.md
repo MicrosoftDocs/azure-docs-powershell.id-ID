@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: 778919a0868f1584085eee979bf12ce1fcae5c34
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5a10a33c11090a5fc62a5ef0b4ae671a500ea766
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204767"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793008"
 ---
 # New-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
 Membuat kontainer penyimpanan baru di akun Azure Stack Edge Storage pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

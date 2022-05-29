@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryPipeline.md
-ms.openlocfilehash: a5bb60284f82946e0e3bc7df8eb009a928e37785
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c8971cc5ef359c90e8b57e671018a2679fae9d78
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203957"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753156"
 ---
 # New-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Membuat alur di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzDataFactoryPipeline [[-Name] <String>] [-DataFactory] <PSDataFactory> [-Fi
 
 ## DESCRIPTION
 Cmdlet **New-AzDataFactoryPipeline** membuat alur di Azure Data Factory.
-Jika Anda menentukan nama untuk alur yang sudah ada, cmdlet akan meminta konfirmasi sebelum menggantikan alur.
+Jika Anda menentukan nama untuk alur yang sudah ada, cmdlet akan meminta konfirmasi sebelum mengganti alur.
 Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan alur yang ada tanpa konfirmasi.
 Lakukan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
@@ -61,7 +64,7 @@ Properties        : Microsoft.DataFactories.PipelineProperties
 
 Perintah ini membuat alur bernama DPWikisample di pabrik data bernama ADF.
 Perintah mendasarkan alur pada informasi dalam file DPWikisample.json.
-File ini mencakup informasi tentang aktivitas seperti Aktivitas Salin dan Aktivitas HDInsight dalam alur.
+File ini mencakup informasi tentang aktivitas seperti Aktivitas Salin dan Aktivitas HDInsight di alur.
 
 ## PARAMETERS
 
@@ -230,6 +233,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 
-[Suspend-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
+[Suspensi-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: 3a7532cb24ab401d381e24121cd63430f6d67444
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 92b80710d51d7a19b1a654fb7bb96e4553472b6f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204643"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792846"
 ---
 # Remove-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
 Menghapus kontainer penyimpanan untuk akun Azure Stack Edge Storage di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

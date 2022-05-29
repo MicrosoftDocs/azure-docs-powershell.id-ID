@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
-ms.openlocfilehash: 93a08ba82f20583197bdc69be21d6401a2aa176e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 80f0d5e307f6746d338105f9e5aedc85d862b351
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229369"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766046"
 ---
 # New-AzApiManagementBackendServiceFabric
 
 ## SYNOPSIS
 Membuat objek dari `PsApiManagementServiceFabric`
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendservicefabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzApiManagementBackendServiceFabric -ManagementEndpoint <String[]> [-ClientC
 
 ## DESCRIPTION
 
-Cmdlet **New-AzApiManagementBackendServiceFabric** membuat objek yang `PsApiManagementServiceFabric` akan digunakan dalam cmdlet **New-AzApiManagementBackend** dan **Set-AzApiManagementBackend**.
+Cmdlet **New-AzApiManagementBackendServiceFabric** membuat objek `PsApiManagementServiceFabric` yang akan digunakan dalam cmdlet **New-AzApiManagementBackend** dan **Set-AzApiManagementBackend**.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementEndpoint
-Service Fabric Titik Akhir manajemen kluster.
+Service Fabric Titik Akhir manajemen Kluster.
 Parameter ini diperlukan.
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -MaxPartitionResolutionRetry
 Jumlah maksimum percobaan ulang saat menyelesaikan partisi Service Fabric.
-Parameter ini bersifat opsional dan nilai default adalah 5.
+Parameter ini bersifat opsional dan nilai defaultnya adalah 5.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerCertificateThumbprint
-Thumbprint layanan manajemen kluster sertifikat digunakan untuk komunikasi tls. Parameter ini bersifat opsional.
+Thumbprint layanan manajemen kluster sertifikat menggunakan untuk komunikasi tls. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String[]

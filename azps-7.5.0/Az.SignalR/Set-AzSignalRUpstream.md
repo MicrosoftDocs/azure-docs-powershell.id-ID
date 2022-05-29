@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/set-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
-ms.openlocfilehash: e92bb1cecd809c5b9ff5426379f49b88c48f7553
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 47651838d90b82bb81fd49355f371c7c95099882
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242196"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766352"
 ---
 # Set-AzSignalRUpstream
 
 ## SYNOPSIS
 Atur pengaturan upstram layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/set-azsignalrupstream) untuk informasi terbaru.
 
 ## SYNTAX
 

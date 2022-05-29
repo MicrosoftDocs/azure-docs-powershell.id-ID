@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActivityLogAlertCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActivityLogAlertCondition.md
-ms.openlocfilehash: 0ef47d11be07d4669f4ce99c2fa9c3e5070655f9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dfa7f179c4dfc213cac323257140765f86924be8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209303"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773102"
 ---
 # New-AzActivityLogAlertCondition
 
 ## SYNOPSIS
 Membuat objek kondisi pemberitahuan log aktivitas baru dalam memori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azactivitylogalertcondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzActivityLogAlertCondition -Field <String> -Equal <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzActivityLogAlertCondition** membuat objek kondisi pemberitahuan log aktivitas baru dalam memori.
+Cmdlet **New-AzActivityLogAlertCondition** membuat objek kondisi pemberitahuan log aktivitas baru dalam memori.
 
 ## EXAMPLES
 

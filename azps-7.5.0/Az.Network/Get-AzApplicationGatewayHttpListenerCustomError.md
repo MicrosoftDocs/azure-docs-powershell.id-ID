@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListenerCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListenerCustomError.md
-ms.openlocfilehash: 3a945e3959c2517ef3d023ec6f205900ce632f6b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a65a4946193fccb204a38ad405e9f0c8b8cc61df
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194692"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799216"
 ---
 # Get-AzApplicationGatewayHttpListenerCustomError
 
 ## SYNOPSIS
 Mendapatkan kesalahan kustom dari pendengar http gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayhttplistenercustomerror) untuk informasi terbaru.
 
 ## SYNTAX
 

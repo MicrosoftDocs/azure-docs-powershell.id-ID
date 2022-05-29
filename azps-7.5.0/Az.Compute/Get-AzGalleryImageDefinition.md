@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryImageDefinition.md
-ms.openlocfilehash: aef977113a2db845686057642665146b8b4e9719
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07272c2fa69f9cdc22f6564b10a07f4767106e9a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236089"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786528"
 ---
 # Get-AzGalleryImageDefinition
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan definisi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgalleryimagedefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -156,7 +159,7 @@ Tags                : {}
 
 Dapatkan definisi gambar galeri yang dimulai dengan "gambar".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzGalleryImageDefinition -ResourceGroupName rg1 -GalleryName gallery1
 ```

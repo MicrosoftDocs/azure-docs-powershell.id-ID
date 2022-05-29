@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Update-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Update-AzContainerGroup.md
-ms.openlocfilehash: 1abd782bec764c5d361f90260f165eeed9bc5c4d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 40a94664b9c7714aa47c5eb9733d4af919570d25
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219287"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793152"
 ---
 # Update-AzContainerGroup
 
 ## SYNOPSIS
 Memperbarui tag grup kontainer dengan nilai yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/update-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

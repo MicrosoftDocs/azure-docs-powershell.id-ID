@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2DataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2DataFlow.md
-ms.openlocfilehash: 462a8b026b615a0321118756cb2299b6f5e20f3b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b2a27f75ddddb798e191e0798df41c0f4374b74f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203582"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752670"
 ---
 # Set-AzDataFactoryV2DataFlow
 
 ## SYNOPSIS
 Membuat aliran data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2dataflow) untuk informasi terbaru.
 
 ## SYNTAX
 

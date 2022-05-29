@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 1347a90c60e633d151ca2ac0c91914420cfc31a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 46475a76a2921e91b474c4656f0ba1bb8a47e3b1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194717"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799234"
 ---
 # Get-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Mendapatkan pendengar HTTP gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ $Listener = Get-AzApplicationGatewayHttpListener -Name "Listener01" -Application
 
 Perintah ini mendapatkan listener HTTP bernama Listener01.
 
-### Contoh 2: Mendapatkan daftar pendengar HTTP
+### Contoh 2: Mendapatkan daftar listener HTTP
 ```powershell
 $Appgw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Listeners = Get-AzApplicationGatewayHttpListener -ApplicationGateway $Appgw
 ```
 
-Perintah ini mendapatkan daftar listener HTTP.
+Perintah ini mendapatkan daftar pendengar HTTP.
 
 ## PARAMETERS
 

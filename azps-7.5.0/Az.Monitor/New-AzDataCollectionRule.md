@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRule.md
-ms.openlocfilehash: 4d15319dae72b8351e44d53e6a7181678f8f09b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8296ec1bb8724f1f6b5100018964a57f854da312
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220526"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766388"
 ---
 # New-AzDataCollectionRule
 
 ## SYNOPSIS
 Membuat aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Cmdlet **New-AzDataCollectionRule** membuat aturan pengumpulan data.
 
 Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan lokasi data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview) lengkap.
 
-Untuk menggunakan parameter -RuleFile, buat file json yang berisi tiga properti: dataSources, destinations, dataFlows (lihat Contoh #1)
+Untuk menggunakan parameter -RuleFile, buat file json yang berisi tiga properti: dataSources, tujuan, aliran data (lihat Contoh #1)
 
 Anda mungkin menemukan di sini [detail skema](https://docs.microsoft.com/rest/api/monitor/datacollectionrules/create).
 

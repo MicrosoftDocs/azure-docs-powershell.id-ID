@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
-ms.openlocfilehash: 7bf1c0b0fab6840e337e499f82234e6f179ce321
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a373d8bef45ff03337036d6b16ee7519a6f2e14
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204366"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753624"
 ---
 # Get-AzDataFactoryRun
 
 ## SYNOPSIS
 Mendapatkan eksekusi untuk iringan data himpunan data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryrun) untuk informasi terbaru.
 
 ## SYNTAX
 

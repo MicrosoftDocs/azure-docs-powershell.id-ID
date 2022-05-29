@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: f95849fdd3c5d9d62650581b046b892ab2042ea6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 094c85724231aaa381baec20fe9a8c721e14d55c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753282"
 ---
 # Get-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
 Mengembalikan informasi tentang eksekusi pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 

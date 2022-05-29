@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageOffer.md
-ms.openlocfilehash: 26c286816310cfec94bd0c54b4eb56784a862277
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cd950b0ea06fcbbc019c40aa5769adedc1a6ecf5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199785"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786330"
 ---
 # Get-AzVMImageOffer
 
 ## SYNOPSIS
 Mendapatkan jenis penawaran VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimageoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -121,6 +124,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Save-AzVMImage](./Save-AzVMImage.md)
+[Simpan-AzVMImage](./Save-AzVMImage.md)
 
 

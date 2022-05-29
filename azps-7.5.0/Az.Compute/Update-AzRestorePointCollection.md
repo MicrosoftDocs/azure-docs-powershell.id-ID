@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzRestorePointCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzRestorePointCollection.md
-ms.openlocfilehash: 6c63277a7cda67ec7a69bbb6feccd8e1531aee96
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 015f755697e29788abe10db522297f4fc6a6c8ab
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205526"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786217"
 ---
 # Update-AzRestorePointCollection
 
 ## SYNOPSIS
 Perbarui Kumpulan Titik Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azrestorepointcollection) untuk informasi terbaru.
 
 ## SYNTAX
 

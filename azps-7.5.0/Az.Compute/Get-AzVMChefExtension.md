@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
-ms.openlocfilehash: 3af9ab7b35e4158535f403a57c227017976c1997
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: daa64b83ac96ad2f2db9e65116069fc4c87e6316
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216527"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786510"
 ---
 # Get-AzVMChefExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi Chef.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmchefextension) untuk informasi terbaru.
 
 ## SYNTAX
 

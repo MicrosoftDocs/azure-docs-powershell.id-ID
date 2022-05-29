@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAlertRule.md
-ms.openlocfilehash: de1e31c4f6dffc731dfcbde808f62dee5426d1b0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bc4aed97aed9e839391ad9651a7d21298b03de0e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222218"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780084"
 ---
 # Get-AzAlertRule
 
 ## SYNOPSIS
 Mendapatkan aturan pemberitahuan klasik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 

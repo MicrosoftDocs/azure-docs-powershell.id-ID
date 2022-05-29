@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: e9f8665ef6bdf6377b3bee275361cc1759bf1f87
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa2e8deec86b2273638a50072a10a3638b99e6d1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194664"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799180"
 ---
 # Get-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Dapatkan identitas yang ditetapkan ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 

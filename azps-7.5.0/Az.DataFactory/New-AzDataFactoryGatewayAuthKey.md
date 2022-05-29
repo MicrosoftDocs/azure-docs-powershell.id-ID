@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryGatewayAuthKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryGatewayAuthKey.md
-ms.openlocfilehash: ee3f9f80e700129fb1f0dfc5657d7f28c6dc8e41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6a3125637af8bba8210548b2aa579654f1c52f4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203974"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753174"
 ---
 # New-AzDataFactoryGatewayAuthKey
 
 ## SYNOPSIS
-Membuat kunci autentikasi untuk gateway Azure Data Factory.
+Membuat kunci autentikasi untuk Gateway Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactorygatewayauthkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzDataFactoryGatewayAuthKey [-InputObject] <PSDataFactory> [-GatewayName] <S
 
 ## DESCRIPTION
 Cmdlet **New-AzDataFactoryGatewayAuthKey** membuat kunci autentikasi gateway untuk gateway Azure Data Factory tertentu.
-Anda mendaftarkan gateway dengan layanan awan dengan menggunakan kunci ini.
+Anda mendaftarkan gateway dengan layanan cloud dengan menggunakan kunci ini.
 
 ## EXAMPLES
 

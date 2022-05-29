@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitor.md
-ms.openlocfilehash: a0c7316e282f131a3974032aeb20835465e125eb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7daa93504a3fc016d34a28561dd2837e72bf4e14
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220655"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773174"
 ---
 # New-AzLogzMonitor
 
 ## SYNOPSIS
 Membuat sumber daya monitor.
 Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 

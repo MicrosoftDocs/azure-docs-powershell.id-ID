@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
-ms.openlocfilehash: a9e6c5702246d27e3799e234dbf3c777e773137f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fdc97d6225af37406ab8f0ba9bd9c17178661fde
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241776"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766136"
 ---
 # Get-AzDefault
 
 ## SYNOPSIS
 Dapatkan default yang ditetapkan oleh pengguna dalam konteks saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azdefault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ ManagedBy  :
 Tags       :
 ```
 
-Perintah ini mengembalikan default saat ini jika ada set default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
+Perintah ini mengembalikan default saat ini jika ada kumpulan default, atau tidak mengembalikan apa pun jika tidak ada default yang diatur.
 
 ### Contoh 2
 ```powershell

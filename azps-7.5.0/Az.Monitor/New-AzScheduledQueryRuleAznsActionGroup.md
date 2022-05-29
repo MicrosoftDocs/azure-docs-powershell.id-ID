@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
-ms.openlocfilehash: aca188a53537b01c33858af8ca19301e72d5698f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 03bae5fe191f9be5de6a15ec05721719c13a1ec9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197716"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773030"
 ---
 # New-AzScheduledQueryRuleAznsActionGroup
 
 ## SYNOPSIS
 Membuat objek jenis Azns Action Group
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleaznsactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailSubject
-Subjek email pemberitahuan pemberitahuan
+Subjek email pemberitahuan
 
 ```yaml
 Type: System.String

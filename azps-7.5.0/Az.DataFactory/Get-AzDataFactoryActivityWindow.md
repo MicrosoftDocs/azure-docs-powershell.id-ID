@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryActivityWindow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryActivityWindow.md
-ms.openlocfilehash: eb1702cb71296d2211ceb8056ff847626600a33b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 37a51b38f7100ae4d96517e14c3e2481250c98fa
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204419"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792828"
 ---
 # Get-AzDataFactoryActivityWindow
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jendela aktivitas yang terkait dengan pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryactivitywindow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 
 ### -WindowEnd
 Menentukan waktu akhir jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *Waktu WindowStart* dan *WindowEnd* .
+Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *waktu WindowStart* dan *WindowEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 
 ### -WindowStart
 Menentukan waktu mulai jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *Waktu WindowStart* dan *WindowEnd* .
+Cmdlet ini mendapatkan jendela aktivitas yang waktunya jatuh antara *waktu WindowStart* dan *WindowEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -344,7 +347,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - SedangBerlangsung
 - Siap
 - Gagal
-- Dilewati Cmdlet ini mendapatkan jendela aktivitas yang dalam keadaan yang ditentukan parameter ini.
+- Dilewati Cmdlet ini mendapatkan jendela aktivitas yang dalam status yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -388,7 +391,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

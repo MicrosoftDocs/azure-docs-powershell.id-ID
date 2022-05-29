@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 4def16ca71e48d08c8ad51279f126c9e8e782821
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99eb875443ea1e0aaece7c8f2e77b7f6de85186b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247684"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773390"
 ---
 # Set-AzIntegrationAccountPartner
 
 ## SYNOPSIS
 Memodifikasi mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ BusinessIdentities : [{"Qualifier":"ZZ","Value":"AA"},{"Qualifier":"XX","Value":
 Metadata
 ```
 
-Perintah ini mengubah mitra akun integrasi bernama IntegrationAccountPartner22 di grup sumber daya yang ditentukan.
+Perintah ini mengubah mitra akun integrasi bernama IntegrationAccountPartner22 dalam grup sumber daya yang ditentukan.
 
 ### Contoh 2
 

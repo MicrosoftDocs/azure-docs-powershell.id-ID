@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
-ms.openlocfilehash: e75d1386872a0510682ef95d311386cb434ee869
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02c6f9caef16b68d2983604bffe44bc9b2cd91cd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239183"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780156"
 ---
 # Tambahkan-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat ke brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

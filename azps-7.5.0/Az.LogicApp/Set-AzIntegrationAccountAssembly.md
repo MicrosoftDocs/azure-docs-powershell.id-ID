@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountAssembly.md
-ms.openlocfilehash: 4053ed064e084238aa1707891baa78ba6e31dc52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d25c6c22dd45e7b7e604c51422325941bea9a17
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213599"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773462"
 ---
 # Set-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
 Memodifikasi perakitan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Memodifikasi rakitan bernama "sampleAssembly" menggunakan data byte yang terleta
 ## PARAMETERS
 
 ### -AssemblyData
-Data byte rakitan akun integrasi.
+Data byte perakitan akun integrasi.
 
 ```yaml
 Type: System.Byte[]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLink
-Tautan yang dapat diakses publik ke data perakitan akun integrasi.
+Tautan yang dapat diakses publik ke data rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Rakitan akun integrasi.
+Perakitan akun integrasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.LogicApp.Models.PSIntegrationAccountAssembly
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata perakitan akun integrasi.
+Metadata rakitan akun integrasi.
 
 ```yaml
 Type: System.Collections.Hashtable

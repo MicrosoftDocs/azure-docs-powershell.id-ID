@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryDataset.md
-ms.openlocfilehash: cd0eaf2b0bd14daa366e95456227a472fd7ca44c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea6d411ea380a9d3f323f8d35a1dee63af3c0b0d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203876"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753084"
 ---
 # Remove-AzDataFactoryDataset
 
 ## SYNOPSIS
 Menghapus himpunan data dari Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactorydataset) untuk informasi terbaru.
 
 ## SYNTAX
 

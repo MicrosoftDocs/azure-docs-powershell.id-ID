@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDscExtension.md
-ms.openlocfilehash: ab5b91d59398858150f4b9365ecd8b33325a6dc5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3ed6035755850343d4b5f676dd4753ca5f6d931
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208355"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786276"
 ---
 # Set-AzVMDscExtension
 
 ## SYNOPSIS
 Mengonfigurasi ekstensi DSC pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmdscextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Set-AzVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDscExtension mengonfigurasi** ekstensi Windows PowerShell Desired State Configuration (DSC) pada komputer virtual dalam grup sumber daya.
+Cmdlet **Set-AzVMDscExtension** mengonfigurasi ekstensi Windows PowerShell Desired State Configuration (DSC) pada komputer virtual dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -ArchiveResourceGroupName
 Menentukan nama grup sumber daya yang berisi akun penyimpanan yang berisi arsip konfigurasi.
-Parameter ini bersifat opsional jika akun penyimpanan dan komputer virtual berada dalam grup sumber daya yang sama.
+Parameter ini bersifat opsional jika akun penyimpanan dan komputer virtual keduanya berada dalam grup sumber daya yang sama.
 
 ```yaml
 Type: System.String
@@ -140,10 +143,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -AutoUpdate
+### -Pembaruan Otomatis
 Menentukan versi handler ekstensi yang ditentukan oleh parameter *Versi* .
 Secara default handler ekstensi tidak diupdasi otomatis.
-Gunakan parameter *AutoUpdate* untuk mengaktifkan pembaruan otomatis handler ekstensi ke versi terbaru saat dan saat tersedia.
+Gunakan parameter *AutoUpdate* untuk mengaktifkan pembaruan otomatis handler ekstensi ke versi terbaru sebagai dan kapan tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

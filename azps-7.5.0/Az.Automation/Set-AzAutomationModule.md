@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
-ms.openlocfilehash: 765389f6f9ba0ad72577f781a36aae14094633a8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba8a71582aca4ff82c7c53dd7ed11350ebf49192
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234412"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744912"
 ---
 # Set-AzAutomationModule
 
 ## SYNOPSIS
 Memperbarui modul di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 

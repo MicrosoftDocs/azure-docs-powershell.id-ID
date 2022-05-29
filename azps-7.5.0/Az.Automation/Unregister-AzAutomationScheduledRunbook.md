@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/unreg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Unregister-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Unregister-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: f95180a1a60bc980f437dbb42bedd7a1cc1f9ba4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a4807ee458fe248572b373a12fc1637d2d85a02b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234409"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744858"
 ---
 # Unregister-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
 Menghapus hubungan antara runbook dan jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/unregister-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

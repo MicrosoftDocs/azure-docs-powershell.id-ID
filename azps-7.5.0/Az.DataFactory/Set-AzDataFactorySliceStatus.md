@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactorySliceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactorySliceStatus.md
-ms.openlocfilehash: c0f8150022c84d3fe7feb498769532340351b29b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8dde1d450850803f793008061e9c5347f0f8882c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203652"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752796"
 ---
 # Set-AzDataFactorySliceStatus
 
 ## SYNOPSIS
 Mengatur status irisan untuk himpunan data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryslicestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,8 +51,8 @@ Set-AzDataFactorySliceStatus -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 True
 ```
 
-Perintah ini menetapkan status semua irisan untuk himpunan data bernama DAWikiAggregatedData ke Menunggu di pabrik data bernama WikiADF.
-Parameter *UpdateType* memiliki nilai UpstreamInPipeline, sehingga perintah mengatur status setiap iringan untuk himpunan data dan semua himpunan data dependen.
+Perintah ini mengatur status semua irisan untuk himpunan data bernama DAWikiAggregatedData ke Menunggu di pabrik data bernama WikiADF.
+Parameter *UpdateType* memiliki nilai UpstreamInPipeline, sehingga perintah mengatur status setiap ikatan untuk himpunan data dan semua himpunan data dependen.
 Himpunan data dependen digunakan sebagai himpunan data input untuk aktivitas dalam alur.
 Perintah ini mengembalikan nilai $True.
 
@@ -57,7 +60,7 @@ Perintah ini mengembalikan nilai $True.
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini memodifikasi status irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini memodifikasi status irisan milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini memodifikasi status irisan yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini memodifikasi status irisan milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 Menentukan akhir periode waktu sebagai objek **DateTime** .
 Kali ini adalah akhir dari iringan data.
 Untuk informasi selengkapnya tentang objek **DateTime** , ketik `Get-Help Get-Date`.
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-0101T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01-201501T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Pendesain zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -168,18 +171,18 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status yang akan ditetapkan ke ilis data.
+Menentukan status untuk ditetapkan ke iringan data.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Menunggu.
-Iringan data menunggu validasi terhadap kebijakan validasi sebelum diproses. 
+Iringan data sedang menunggu validasi terhadap kebijakan validasi sebelum diproses. 
 - Siap.
-Pemrosesan data telah selesai dan iringan data siap.
+Pemrosesan data telah selesai dan ikatan data siap.
 - InProgress.
 Pemrosesan data sedang berlangsung. 
 - Gagal.
 Pemrosesan data gagal.
 - Dilewati.
-Dilewati pemrosesan ipotong data.
+Dilewati memproses ipotong data.
 
 ```yaml
 Type: System.String
@@ -195,12 +198,12 @@ Accept wildcard characters: False
 ```
 
 ### -UpdateType
-Menentukan jenis pembaruan ke ilis.
+Menentukan jenis pembaruan ke iringan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Individu.
-Mengatur status setiap ilis untuk himpunan data dalam rentang waktu yang ditentukan. 
+Mengatur status setiap ikatan untuk himpunan data dalam rentang waktu yang ditentukan. 
 - UpstreamInPipeline.
-Mengatur status setiap ilis untuk himpunan data dan semua himpunan data dependen, yang digunakan sebagai himpunan data input untuk aktivitas dalam alur.
+Mengatur status setiap ikatan untuk himpunan data dan semua himpunan data dependen, yang digunakan sebagai himpunan data input untuk aktivitas dalam alur.
 
 ```yaml
 Type: System.String

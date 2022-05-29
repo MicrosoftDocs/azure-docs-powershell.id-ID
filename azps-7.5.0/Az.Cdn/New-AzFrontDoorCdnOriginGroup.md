@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: 915c4defc23d92966e2b9682a0faa9421e286f1d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9513fdfb3a1c607b654b59c98e2fc8f281fc452d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214211"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786546"
 ---
 # New-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
 Membuat grup asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficRestorationTimeToHealedOrNewEndpointsInMinutes
-Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat sehat atau titik akhir baru ditambahkan.
+Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
 
 ```yaml
 Type: Int32

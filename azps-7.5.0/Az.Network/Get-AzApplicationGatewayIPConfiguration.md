@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: 9128856c333ee7256556943a95892669dc91c13c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 848260201f691ae1128c65691246db58682d296d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194689"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145799198"
 ---
 # Get-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi IP gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama konfigurasi IP yang didapat cmdlet ini.
+Menentukan nama konfigurasi IP yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String

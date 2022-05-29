@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: 5cd5b950efe9131f3ea7f20adff89381d509f41b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 440f9a50766d6a1dbe51ea34fcd5e5d7879a7dbe
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183419"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766370"
 ---
 # Get-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Mendapatkan array pemetaan jalur URL ke kumpulan server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayurlpathmapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

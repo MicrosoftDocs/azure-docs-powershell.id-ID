@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHub.md
-ms.openlocfilehash: 5975031c3c43e0e16d8df944597385c328a6f9d7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f6a51de8a00c754401572ed40d27145ed5c03bf2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213890"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766532"
 ---
 # Set-AzIotHub
 
 ## SYNOPSIS
 Memperbarui properti IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadContainerName
-Nama kontainer untuk mengunggah file.
+Nama kontainer tempat mengunggah file.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadNotificationTtl
-Nilai time to live untuk pesan dalam antrean pemberitahuan unggahan file. 
+Nilai waktu hidup untuk pesan dalam antrean pemberitahuan unggahan file. 
 
 ```yaml
 Type: System.TimeSpan

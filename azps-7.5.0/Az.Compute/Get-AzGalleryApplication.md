@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplication.md
-ms.openlocfilehash: c7565dc10ebe880bf5fc79ce659c50a8f0ac8292
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 12b9ebade565cef7b9d0ecf0b826a51280972190
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190867"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786582"
 ---
 # Get-AzGalleryApplication
 
 ## SYNOPSIS
 Mengambil informasi tentang Definisi Aplikasi galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

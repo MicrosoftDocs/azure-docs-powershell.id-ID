@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: cfc2f238ecd5679c23f4ab3a3b6bc632460de2c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f11c8d8dafc5459f717a6a7fe2d8db3d26ebbdd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203442"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752508"
 ---
 # Stop-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Menghentikan runtime integrasi khusus terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2integrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 

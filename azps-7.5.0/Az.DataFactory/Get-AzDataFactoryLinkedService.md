@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 54c484436b99432479098a94bf12ef454efa2b0f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b87e0fecd82793afb2f51cd1b3bc49b937c144ae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204380"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753589"
 ---
 # Get-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan tertaut di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorylinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Get-AzDataFactoryLinkedService -DataFactory $DataFactory | Format-Table -Propert
 
 Perintah pertama menggunakan cmdlet Get-AzDataFactory untuk mendapatkan pabrik data bernama ContosoFactory, lalu menyimpannya dalam variabel $DataFactory.
 Perintah kedua mendapatkan informasi tentang layanan tertaut untuk pabrik data yang disimpan di $DataFactory, lalu meneruskan informasi tersebut ke cmdlet Format-Table dengan menggunakan operator alur.
-**Format-Tabel** memformat output sebagai himpunan data dengan properti yang ditentukan sebagai kolom himpunan data.
+**Format Tabel** memformat output sebagai himpunan data dengan properti yang ditentukan sebagai kolom himpunan data.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMRunCommandDocument.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMRunCommandDocument.md
-ms.openlocfilehash: df0036cbf3966dfa947dddf05dab6c97a232f808
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5421f3b1de11269f736c358ec3112902f9d0ab55
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188952"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786294"
 ---
 # Get-AzVMRunCommandDocument
 
 ## SYNOPSIS
 Dapatkan dokumen perintah jalankan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmruncommanddocument) untuk informasi terbaru.
 
 ## SYNTAX
 

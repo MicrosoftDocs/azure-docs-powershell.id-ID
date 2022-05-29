@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 0e567af43f7f701276482ce0d17257fde643c5ff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 04a90da26d4ed1f947459d70b914e563a5a5625b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233544"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766172"
 ---
 # Enable-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Mengaktifkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqldatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 

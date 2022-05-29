@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2LinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2LinkedService.md
-ms.openlocfilehash: b6fa397d97cc0c6e9a7ee36029406e178b633d4d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7416fda99f44706a40bc41a0a9a408bb071fdefe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204209"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753462"
 ---
 # Get-AzDataFactoryV2LinkedService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan tertaut di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2linkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 

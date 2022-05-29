@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryEncryptValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryEncryptValue.md
-ms.openlocfilehash: 3512802e5fa3629147ebd0ff0a8e747660c6da6f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ec9676937970c86fcd6c944e8f24de203bccfb54
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753192"
 ---
 # New-AzDataFactoryEncryptValue
 
 ## SYNOPSIS
 Mengenkripsi data sensitif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactoryencryptvalue) untuk informasi terbaru.
 
 ## SYNTAX
 

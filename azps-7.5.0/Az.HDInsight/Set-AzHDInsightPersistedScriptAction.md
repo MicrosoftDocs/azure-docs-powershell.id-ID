@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightPersistedScriptAction.md
-ms.openlocfilehash: 97f0330ac308311539cda0733a53e1fb7893e165
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f99d2dda1603492b5215eb348b27d0bdaecc8dfe
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217670"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780354"
 ---
 # Set-AzHDInsightPersistedScriptAction
 
 ## SYNOPSIS
-Mengatur tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip yang dipertahankan.
+Mengatur tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip yang bertahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightpersistedscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptExecutionId
-Menentukan ID eksekusi tindakan skrip untuk dipromosikan ke bertahan.
-Tindakan skrip ini harus berhasil untuk dipromosikan.
+Menentukan ID eksekusi tindakan skrip yang akan dipromosikan ke bertahan.
+Tindakan skrip ini harus berhasil agar dapat dipromosikan.
 Anda dapat menemukan ID eksekusi tindakan skrip menggunakan Get-AzHDInsightScriptActionHistory.
 
 ```yaml

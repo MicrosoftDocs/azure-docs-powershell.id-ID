@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
-ms.openlocfilehash: 22fa7c4666036dcefebd62fdc54e5a9946bca6cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02a2d783bd7b6b3e0c271d0ae285d4ec70cf6509
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197660"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145766406"
 ---
 # New-AzScheduledQueryRuleTriggerCondition
 
 ## SYNOPSIS
 Membuat objek jenis Kondisi Pemicu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruletriggercondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ambang batas
-Ambang batas di atas pemberitahuan mana yang akan dilepaskan
+Ambang batas di atas yang pemberitahuannya akan diaktifkan
 
 ```yaml
 Type: System.Double

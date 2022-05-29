@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
-ms.openlocfilehash: 2408501a80ef908adf8ae85f3bbd91da877ba046
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5a2d472cf27b1060e5d16ec560b274a634bdc66f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240306"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744984"
 ---
 # Get-AzBatchJobPreparationAndReleaseTaskStatus
 
 ## SYNOPSIS
 Mendapatkan persiapan pekerjaan Batch dan status tugas rilis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchjobpreparationandreleasetaskstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Anda harus menyediakan parameter *Id* atau **instans PSCloudJob** ke cmdlet ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status persiapan dan rilis pekerjaan
+### Contoh 1: Dapatkan status persiapan dan rilis pekerjaan
 ```powershell
 Get-AzBatchJobPreparationAndReleaseTaskStatus -BatchContext $Context -Id Test
 ```
@@ -52,7 +55,7 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 : test
 ```
 
-Perintah ini mendapatkan persiapan pekerjaan dan status tugas rilis untuk pekerjaan "Uji".
+Perintah ini mendapatkan persiapan pekerjaan dan melepaskan status tugas untuk pekerjaan "Uji".
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
 ### Contoh 2: Dapatkan status persiapan dan rilis pekerjaan dengan Filter dan Pilih yang ditentukan
@@ -68,7 +71,7 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 :
 ```
 
-Perintah ini mendapatkan status tugas persiapan dan pelepasan pekerjaan untuk pekerjaan "Uji" pada node "tvm-2316545714_1-20170613t201733z" dan menggunakan klausa Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
+Perintah ini mendapatkan status tugas persiapan dan pelepasan pekerjaan untuk pekerjaan "Uji" pada simpul "tvm-2316545714_1-20170613t201733z" dan menggunakan klausa Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausa perluasan Open Data Protocol (OData).
+Menentukan klausa perluas Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang tugas persiapan dan pelepasannya harus diambil.
+Menentukan ID pekerjaan yang tugas persiapan dan rilisnya harus diambil.
 Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausa pilih OData.
+Menentukan klausa pemilihan OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeMetric.md
-ms.openlocfilehash: a09134024011e571580b21e708b7e3c03c33d2c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a29a87f2b8b53426168bc30de8169df31eb310c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204237"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792810"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeMetric
 
 ## SYNOPSIS
 Mendapatkan data metrik untuk runtime integrasi. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimemetric) untuk informasi terbaru.
 
 ## SYNTAX
 

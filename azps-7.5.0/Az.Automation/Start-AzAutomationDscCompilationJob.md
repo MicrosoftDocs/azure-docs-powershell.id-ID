@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscCompilationJob.md
-ms.openlocfilehash: acde21c1d709af39883a328ae3ec479771cf617b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83ea673f427ab45bc934678c8cfe70e1460e7f8d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211058"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745254"
 ---
 # Start-AzAutomationDscCompilationJob
 
 ## SYNOPSIS
 Mengompilasi konfigurasi DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/start-azautomationdsccompilationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Param
 Perintah kedua mengkompilasi konfigurasi DSC bernama Config01.
 Perintah ini menyertakan nilai dalam $Params untuk parameter konfigurasi DSC.
 
-### Contoh 2: Mengompilasi konfigurasi Azure DSC di Automation dengan versi build Konfigurasi Simpul baru.
+### Contoh 2: Kompilasi konfigurasi Azure DSC di Automation dengan versi build Konfigurasi Simpul baru.
 ```
 PS C:\>$Params = @{"StringParam"="Hello World";"IntegerParam"=32}
 PS C:\> Start-AzAutomationDscCompilationJob -ConfigurationName "Config01" -Parameters $Params -ResourceGroupName "ResourceGroup01" -IncrementNodeConfigurationBuild

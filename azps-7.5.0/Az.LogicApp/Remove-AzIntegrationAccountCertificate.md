@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountCertificate.md
-ms.openlocfilehash: b7059ce1944303a0fb63dcf2ceae2437b1398837
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb11212b98e6f7bc954646d11bca6dfe45ee9557
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247793"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145773434"
 ---
 # Remove-AzIntegrationAccountCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat akun integrasi dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

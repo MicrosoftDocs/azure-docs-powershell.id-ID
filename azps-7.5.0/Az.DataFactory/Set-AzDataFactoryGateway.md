@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
-ms.openlocfilehash: 8df587c57eb9a5666ee3b730974f5f149346c9d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5b8281677d9ff19f1fac36b0055231450c47df94
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203677"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752832"
 ---
 # Set-AzDataFactoryGateway
 
 ## SYNOPSIS
 Mengatur deskripsi untuk gateway di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactorygateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mengatur deskripsi untuk gateway milik grup yang ditentukan parameter ini.
+Cmdlet ini mengatur deskripsi untuk gateway yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String

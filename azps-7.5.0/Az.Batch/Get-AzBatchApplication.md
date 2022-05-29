@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplication.md
-ms.openlocfilehash: 478caafe77b57f8c96425bd27faad9ffaef9bbee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b5c3090d10a14ad639bef8ca264f56b6ba0205f7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214298"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745199"
 ---
 # Get-AzBatchApplication
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aplikasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

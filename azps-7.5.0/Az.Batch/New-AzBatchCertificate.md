@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchCertificate.md
-ms.openlocfilehash: 41747f6ace2b3760524fa2a9a1e1c03fbd4f37b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 058afd276a0ec0140b5c810f01ce5d7c7a8e9c47
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195095"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145786672"
 ---
 # New-AzBatchCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat ke akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
