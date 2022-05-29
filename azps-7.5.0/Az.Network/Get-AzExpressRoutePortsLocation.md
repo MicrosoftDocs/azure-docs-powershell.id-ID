@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePortsLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRoutePortsLocation.md
-ms.openlocfilehash: 1383a677ce430a4e51f37847f2e97f46bda0cd0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ecfa380aa4337f7cc6e2fa3844edce05d3b1534
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247639"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682428"
 ---
 # Get-AzExpressRoutePortsLocation
 
 ## SYNOPSIS
 Mendapatkan lokasi tempat sumber daya ExpressRoutePort tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteportslocation) untuk informasi terbaru.
 
 ## SYNTAX
 

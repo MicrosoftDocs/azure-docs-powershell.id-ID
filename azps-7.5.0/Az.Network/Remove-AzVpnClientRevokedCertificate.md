@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: 7bd7947bc3a0aa57a499cc61d07c464b58a957d9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7334d1447f92f085d4fb639df323658364f161f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208967"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668280"
 ---
 # Remove-AzVpnClientRevokedCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat pencabutan klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnclientrevokedcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Remove-AzVpnClientRevokedCertificate -VpnClientRevokedCertificateName <String>
 ## DESCRIPTION
 Cmdlet **Remove-AzVpnClientRevokedCertificate** menghapus sertifikat pencabutan klien dari gateway jaringan virtual.
 Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
-Jika Anda menghapus komputer klien klien sertifikat pencabutan klien kemudian dapat menggunakan sertifikat yang dilarang sebelumnya untuk membuat koneksi jaringan privat maya (VPN).
+Jika Anda menghapus komputer klien klien sertifikat pencabutan, maka dapat menggunakan sertifikat yang dilarang sebelumnya untuk membuat koneksi jaringan privat maya (VPN).
 
 ## EXAMPLES
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRevokedCertificateName
-Menentukan nama sertifikat klien VPN yang sedang dihapus.
+Menentukan nama sertifikat klien VPN yang dihapus.
 
 ```yaml
 Type: System.String

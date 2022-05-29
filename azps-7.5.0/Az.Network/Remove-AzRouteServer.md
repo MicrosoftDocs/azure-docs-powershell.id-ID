@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteServer.md
-ms.openlocfilehash: 450c598823ae7f2f152e54473557b4df59066f72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a83bd24520093a1fc39b6085be6e0c26baf5e3b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186961"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669234"
 ---
 # Remove-AzRouteServer
 
 ## SYNOPSIS
 Menghapus Azure RouteServer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azrouteserver) untuk informasi terbaru.
 
 ## SYNTAX
 

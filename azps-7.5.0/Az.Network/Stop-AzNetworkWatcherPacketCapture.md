@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 87262bc00ea20ba6c7a02299fe0b6bb513af972d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 52c64f85511be6a2e6d699375b2eb6738410bffa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210491"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664410"
 ---
 # Stop-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Menghentikan sesi pengambilan paket yang sedang berjalan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-aznetworkwatcherpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 

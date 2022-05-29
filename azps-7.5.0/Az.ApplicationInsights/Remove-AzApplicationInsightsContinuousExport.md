@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsContinuousExport.md
-ms.openlocfilehash: 3511af8cc72423cdc2d6f518b4c54e47485a6440
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3eef81a135e4420bf4677598892b02e279293385
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236369"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685128"
 ---
 # Remove-AzApplicationInsightsContinuousExport
 
 ## SYNOPSIS
 Menghapus konfigurasi ekspor berkelanjutan dalam sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 

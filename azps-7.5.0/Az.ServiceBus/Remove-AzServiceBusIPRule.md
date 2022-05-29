@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusIPRule.md
-ms.openlocfilehash: 20e4fb1753fa00526e408369a6770f150bff6e50
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4a230aa256cefda3da06781bd24e63b280c71983
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215786"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632747"
 ---
 # Remove-AzServiceBusIPRule
 
 ## SYNOPSIS
 Menghapus satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusiprule) untuk informasi terbaru.
 
 ## SYNTAX
 

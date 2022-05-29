@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScanResultScanHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScanResultScanHistory.md
-ms.openlocfilehash: 1557b84f6dce60d8e3c98345ac3acd0138f3c549
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2a98d5e9e1ecb45fc87a54af9711096ea4250053
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230965"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656455"
 ---
 # Get-AzPurviewScanResultScanHistory
 
 ## SYNOPSIS
 Mencantumkan riwayat pemindaian pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewscanresultscanhistory) untuk informasi terbaru.
 
 ## SYNTAX
 

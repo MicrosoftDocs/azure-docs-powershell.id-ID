@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunAction.md
-ms.openlocfilehash: 5cf666c12d87908efcb6f6f0753810488c87a3f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 40285727fd8ae49c47c8ad1816bcd1a4964f5a47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187202"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692028"
 ---
 # Get-AzLogicAppRunAction
 
 ## SYNOPSIS
 
 Mendapatkan tindakan dari eksekusi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapprunaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Type        :
 
 Perintah ini mendapatkan tindakan Aplikasi Logika tertentu dari aplikasi logika bernama LogicApp05 untuk dijalankan dengan pengidentifikasi 08585925184423369718380498702CU26.
 
-### Contoh 2: Mendapatkan semua tindakan dari eksekusi Aplikasi Logika
+### Contoh 2: Dapatkan semua tindakan dari Aplikasi Logika yang dijalankan
 
 ```powershell
 Get-AzLogicAppRunAction -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -RunName "08585925184423369718380498702CU26" -FollowNextPageLink
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -Name
 
-Menentukan nama aplikasi logika yang cmdlet ini mendapatkan tindakan.
+Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan tindakan.
 
 ```yaml
 Type: System.String

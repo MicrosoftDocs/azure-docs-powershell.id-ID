@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
-ms.openlocfilehash: f0db2e1d8b59a45e486bfaa798c4378a10d29fdf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1cbf25a6efa51a2168a6514d833d396731f0fa7e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216554"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684894"
 ---
 # Update-AzApplicationInsights
 
 ## SYNOPSIS
 memperbarui sumber daya application insights yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsights) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ memperbarui sumber daya application insights yang ada
 Update-AzApplicationInsights -ResourceGroupName "rgName" -Name "aiName" -PublicNetworkAccessForIngestion "Disabled" -PublicNetworkAccessForQuery "Disabled"
 ```
 
-perbarui komponen application insights "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Dinonaktifkan"
+memperbarui komponen application insights "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Dinonaktifkan"
 
 ## PARAMETERS
 

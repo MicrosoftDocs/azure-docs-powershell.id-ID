@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
-ms.openlocfilehash: 7552d7e55fe4bd6c6182c64d3fe3c9aadd563b15
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 228b64295708f003021643b7aff9e464de8ca7ea
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244478"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684660"
 ---
 # Get-AzAttestationPolicySigners
 
 ## SYNOPSIS
 Mendapatkan penanda tangan kebijakan tepercaya dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestationpolicysigners) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ JKU              : https://pshtest.us.attest.azure.net/certs
 Certificates     : {}
 ```
 
-Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest Penyedia Pengesahan* di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Pengesahan ini.
+Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest* Penyedia Pengesahan di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
 ### Contoh 2
 ```powershell
@@ -76,7 +79,7 @@ Certificates     : {{
 
 Mendapatkan penanda tangan kebijakan tepercaya untuk Penyedia Pengesahan *pshtest2* di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa ada satu penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzAttestationPolicySigners -DefaultProvider -Location "Central US"
 ```

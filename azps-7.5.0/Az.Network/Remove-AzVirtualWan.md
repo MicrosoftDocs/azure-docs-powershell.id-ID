@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualWan.md
-ms.openlocfilehash: 23ba3d311e97cba2a95048ff83ffe05309c38eb7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9f29151b8090a8acdb7dfcb6f6cd6c64a0b3b8fe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208994"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668406"
 ---
 # Remove-AzVirtualWan
 
 ## SYNOPSIS
 Menghapus Virtual WAN Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualwan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,10 +63,10 @@ $virtualWan = New-AzVirtualWan -Name "MyVirtualWan" -ResourceGroupName "TestReso
 Remove-AzVirtualWan -InputObject $virtualWan -Passthru
 ```
 
-Contoh ini membuat Virtual WAN dalam grup sumber daya lalu segera menghapusnya. Penghapusan ini terjadi menggunakan objek wan virtual yang dikembalikan oleh New-AzVirtualWan.
+Contoh ini membuat Virtual WAN dalam grup sumber daya lalu segera menghapusnya. Penghapusan ini terjadi menggunakan objek virtual wan yang dikembalikan oleh New-AzVirtualWan.
 Untuk menekan prompt saat menghapus Virtual WAN, gunakan bendera -Force.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 New-AzResourceGroup -Name "TestResourceGroup" -Location "Central US"
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek wan virtual yang akan dihapus.
+Objek virtual wan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualWan
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

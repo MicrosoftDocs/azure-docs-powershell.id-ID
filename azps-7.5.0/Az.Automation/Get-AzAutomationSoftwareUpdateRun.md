@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
-ms.openlocfilehash: fad38a94440f6c8598d5321af332f11af7cc7d15
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fce8c8bbcca328e071154db1fdd3b4df72452dcd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195375"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684030"
 ---
 # Get-AzAutomationSoftwareUpdateRun
 
 ## SYNOPSIS
 Mendapatkan daftar eksekusi pembaruan perangkat lunak azure automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsoftwareupdaterun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Get-AzAutomationSoftwareUpdateRun [-SoftwareUpdateConfiguration <SoftwareUpdateC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAutomationSoftwareUpdateRun mengembalikan daftar eksekusi pembaruan perangkat lunak. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, konfigurasi tersebut dapat dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan eksekusi pembaruan yang dibuat. Eksekusi pembaruan adalah agregat dari hasil semua eksekusi mesin. Anda bisa mendapatkan eksekusi untuk konfigurasi pembaruan perangkat lunak tertentu dengan meneruskan parameter SoftwareUpdateConfigurationName. Untuk mendapatkan eksekusi tertentu, Anda perlu meneruskan parameter nama. Anda juga dapat mencantumkan eksekusi dengan status tertentu, menjalankan penargetan sistem operasi tertentu, atau berjalan dimulai setelah waktu tertentu dengan melewati parameter yang sesuai.
+Cmdlet Get-AzAutomationSoftwareUpdateRun mengembalikan daftar eksekusi pembaruan perangkat lunak. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, konfigurasi tersebut dapat dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan eksekusi pembaruan yang dibuat. Eksekusi pembaruan adalah agregat dari hasil semua eksekusi komputer. Anda bisa mendapatkan eksekusi untuk konfigurasi pembaruan perangkat lunak tertentu dengan melewati parameter SoftwareUpdateConfigurationName. Untuk mendapatkan eksekusi tertentu, Anda perlu meneruskan parameter nama. Anda juga dapat mencantumkan eksekusi dengan status tertentu, menjalankan penargetan sistem operasi tertentu, atau berjalan dimulai setelah waktu tertentu dengan melewati parameter yang sesuai.
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ LastModifiedTime                : 5/22/2018 10:02:58 PM +00:00
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id eksekusi konfigurasi pembaruan perangkat lunak.
+Id konfigurasi pembaruan perangkat lunak yang dijalankan.
 
 ```yaml
 Type: System.Guid

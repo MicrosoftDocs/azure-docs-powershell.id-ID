@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsResolverOutboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsResolverOutboundEndpoint.md
-ms.openlocfilehash: 54a4e33b5a631feb76325f12ef4b8fe79112faf1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6fe8849383dce2560a93fe4d7be4f56cae7b3d52
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232463"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688536"
 ---
 # Remove-AzDnsResolverOutboundEndpoint
 
 ## SYNOPSIS
 Menghapus titik akhir keluar untuk pemecah masalah DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/remove-azdnsresolveroutboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

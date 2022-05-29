@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/invoke-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Invoke-AzAksRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Invoke-AzAksRunCommand.md
-ms.openlocfilehash: 80528c4fe2c9fa762cd1ff0b51a98d037ccc5111
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 76afb07c99802ca5d2bd27ec40b280d914ff129f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205886"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689760"
 ---
 # Invoke-AzAksRunCommand
 
 ## SYNOPSIS
 Jalankan perintah shell (dengan kubectl, helm) pada kluster aks Anda, dukung juga melampirkan file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/invoke-azaksruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 

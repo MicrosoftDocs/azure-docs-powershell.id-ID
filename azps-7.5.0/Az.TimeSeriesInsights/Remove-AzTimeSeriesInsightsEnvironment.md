@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsEnvironment.md
-ms.openlocfilehash: 5eb7b991270e4c17bcc863e8fd500e1883816875
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7741ba9ba8a3f289da8d867122efffbed0a42388
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703404"
 ---
 # Remove-AzTimeSeriesInsightsEnvironment
 
 ## SYNOPSIS
 Menghapus lingkungan dengan nama yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/remove-aztimeseriesinsightsenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 

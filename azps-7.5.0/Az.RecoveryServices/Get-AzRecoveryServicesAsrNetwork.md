@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetwork.md
-ms.openlocfilehash: 373cfadea6d5f0bfbfe975d8880e25dfa0ad1ec9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9b7138d5c001e99e5fa016345907cd44d49e4db
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245623"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650586"
 ---
 # Get-AzRecoveryServicesAsrNetwork
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jaringan yang dikelola oleh Site Recovery untuk vault saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 

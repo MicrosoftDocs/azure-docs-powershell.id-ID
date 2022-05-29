@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
-ms.openlocfilehash: 43dcbfbf8887f16b43d0c8b1094d77c8812f25d0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8df3bf63d526d451ea546ba87353841cd88d6fe7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244531"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702522"
 ---
 # Remove-AzTrafficManagerIpAddressRange
 
 ## SYNOPSIS
 Menghapus rentang alamat atau subnet dari objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanageripaddressrange) untuk informasi terbaru.
 
 ## SYNTAX
 

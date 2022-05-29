@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Quota/New-AzQuot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuotaLimitObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuotaLimitObject.md
-ms.openlocfilehash: f60fb72cb6532e4bb0faeec8ffd0b4baaf398fd1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f8a53078a4bb3c958676f62a9eb0e30909adfd90
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109700"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651180"
 ---
 # New-AzQuotaLimitObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk LimitObject.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/new-azquotalimitobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ LimitObjectType LimitType Value
 LimitValue                1003
 ```
 
-Perintah ini membuat objek dalam memori untuk LimitValue sebagai nilai batas parameter dalam cmdlet New/Update-AzQuota.
+Perintah ini membuat objek dalam memori untuk LimitValue sebagai nilai Batas parameter dalam cmdlet New/Update-AzQuota.
 
 ## PARAMETERS
 

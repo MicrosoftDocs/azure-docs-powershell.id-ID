@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: 4cce413c4e251a1af45d73cfed3564969e0b7c2d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5ff8e6d21e040c3eb2e3dd6df83694dcd5520ea0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199858"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683886"
 ---
 # Import-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
 Mengimpor dokumen MOF sebagai konfigurasi simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationdscnodeconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ PS C:\>Import-AzAutomationDscNodeConfiguration -AutomationAccountName "Contoso17
 ```
 
 Perintah ini mengimpor konfigurasi simpul DSC dari file bernama webserver.mof ke akun Automation bernama Contoso17, di bawah konfigurasi DSC ContosoConfiguration.
-Perintah menentukan parameter *Paksa* .
-Jika ada konfigurasi simpul DSC yang sudah ada bernama ContosoConfiguration.webserver, perintah ini menggantikannya.
+Perintah menentukan parameter *Force* .
+Jika ada konfigurasi simpul DSC yang ada bernama ContosoConfiguration.webserver, perintah ini menggantikannya.
 
 ### Contoh 2: Impor konfigurasi simpul DSC ke Automation dan buat versi build baru dan tidak timpa NodeConfiguration yang ada.
 ```
@@ -47,7 +50,7 @@ PS C:\>Import-AzAutomationDscNodeConfiguration -AutomationAccountName "Contoso17
 ```
 
 Perintah ini mengimpor konfigurasi simpul DSC dari file bernama webserver.mof ke akun Automation bernama Contoso17, di bawah konfigurasi DSC ContosoConfiguration.
-Perintah menentukan parameter *Paksa* .
+Perintah menentukan parameter *Force* .
 Jika ada konfigurasi simpul DSC yang sudah ada bernama ContosoConfiguration.webserver, perintah ini menambahkan versi build baru dengan nama ContosoConfiguration[2].webserver.
 
 ## PARAMETERS
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi DSC di Automation untuk digunakan sebagai namespace layanan dan kontainer untuk diimpor oleh konfigurasi simpul.
+Menentukan nama konfigurasi DSC di Automation untuk digunakan sebagai namespace layanan dan kontainer untuk diimpor konfigurasi simpul.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini mengimpor konfigurasi simpul DSC.
+Menentukan nama grup sumber daya yang cmdlet ini mengimpor konfigurasi simpul DSC.
 
 ```yaml
 Type: System.String

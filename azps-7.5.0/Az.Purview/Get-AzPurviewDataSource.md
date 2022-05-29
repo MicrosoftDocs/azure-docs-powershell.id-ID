@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewDataSource.md
-ms.openlocfilehash: db0b25896c6e999a1c2893e11d801090e8834af0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d802f94a35518bb51095313db11f68ce95fe3d0a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231066"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656508"
 ---
 # Get-AzPurviewDataSource
 
 ## SYNOPSIS
 Mendapatkan sumber data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 

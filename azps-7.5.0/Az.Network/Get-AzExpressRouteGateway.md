@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
-ms.openlocfilehash: 790d74143c4dd7203c82d1696eadf5d7aa18187a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fddd6a4996a159e109758b7e0e3e26e5f5fdbbf7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234034"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682527"
 ---
 # Get-AzExpressRouteGateway
 
 ## SYNOPSIS
 Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 

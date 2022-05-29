@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitor.md
-ms.openlocfilehash: 238fa1266ae522add7d23aaa8b1aa538240a1bfa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb0f3b567bac83b8f4bd8dde178765ef09c3687e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217667"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696348"
 ---
 # New-AzSapMonitor
 
 ## SYNOPSIS
 Membuat monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/new-azsapmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogAnalyticsWorkspaceResourceId
-ID ARM ruang kerja Analitik Log yang digunakan untuk pemantauan
+ID ARM dari Ruang Kerja Analitik Log yang digunakan untuk pemantauan
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

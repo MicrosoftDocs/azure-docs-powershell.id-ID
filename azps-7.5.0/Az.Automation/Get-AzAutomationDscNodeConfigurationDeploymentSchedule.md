@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeploymentSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfigurationDeploymentSchedule.md
-ms.openlocfilehash: 7239d46401b19cdacbf04eb15356049624af2e8b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 368d71aa26f5412cfd2fe030b7faac3bc3a14687
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232998"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684264"
 ---
 # Get-AzAutomationDscNodeConfigurationDeploymentSchedule
 
 ## SYNOPSIS
-Mendapatkan jadwal pekerjaan penyebaran konfigurasi DSC Node di Automation.
+Mendapatkan jadwal pekerjaan penyebaran konfigurasi Simpul DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnodeconfigurationdeploymentschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

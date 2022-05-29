@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubListKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubListKey.md
-ms.openlocfilehash: 6e4c90a4f5ec20a5d0574ce8729545b0f58a4440
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0682309a9ce7fd4be9d6d028c1fd33f1e45447d4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245654"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663222"
 ---
 # Get-AzNotificationHubListKey
 
 ## SYNOPSIS
 Mendapatkan string koneksi primer dan sekunder yang terkait dengan aturan otorisasi hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhublistkey) untuk informasi terbaru.
 
 ## SYNTAX
 

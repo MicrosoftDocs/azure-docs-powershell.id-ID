@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRuleCollection.md
-ms.openlocfilehash: 1954e59f64d8681eb6b8747f669a1e1b20646004
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b02ca8a8239bdfe3acbe664ee33ad9a806a25b95
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111584"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675984"
 ---
 # New-AzFirewallNatRuleCollection
 
 ## SYNOPSIS
-Membuat kumpulan aturan FIREWALL NAT.
+Membuat kumpulan aturan Firewall NAT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallnatrulecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $rule1 = New-AzFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*
 New-AzFirewallNatRuleCollection -Name "MyNatRuleCollection" -Priority 1000 -Rule $rule1
 ```
 
-Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang cocok dengan kondisi yang diidentifikasi di $rule 1 akan diterjemahkan DNAT ke alamat dan port yang diterjemahkan.
+Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang cocok dengan kondisi yang diidentifikasi di $rule 1 akan menjadi DNAT'ed ke alamat dan port yang diterjemahkan.
 
 ### Contoh 2: Menambahkan aturan ke kumpulan aturan
 ```powershell

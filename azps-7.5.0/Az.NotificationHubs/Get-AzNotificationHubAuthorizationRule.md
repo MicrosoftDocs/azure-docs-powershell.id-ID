@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: dade85cdcc23851495435818f86badaaad12d977
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d2332819b892026d92f1f691957ed08d2ebbbcd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245679"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663276"
 ---
 # Get-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan otorisasi yang terkait dengan hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Untuk mendapatkan informasi tentang hub itu sendiri, gunakan Get-AzNotificationH
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan
+### Contoh 1: Mendapatkan informasi untuk semua aturan otorisasi yang ditetapkan ke hub pemberitahuan
 ```powershell
 Get-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -NotificationHub "ContosoInternalHub"
 ```

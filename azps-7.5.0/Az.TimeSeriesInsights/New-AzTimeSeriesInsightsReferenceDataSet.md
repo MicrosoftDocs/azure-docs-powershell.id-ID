@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 9417c40732d910aeceb1d95df23dec0647017756
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7377ed502b775889cd0d1937c2b782a0ac031a2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237338"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703548"
 ---
 # New-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Membuat atau memperbarui himpunan data referensi di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Perintah ini membuat himpunan data referensi untuk lingkungan tertentu.
 ### -DataStringComparisonBehavior
 Perilaku perbandingan kunci himpunan data referensi dapat diatur menggunakan properti ini.
 Secara default, nilainya adalah 'Ordinal' - yang berarti perbandingan kunci sensitif huruf besar/kecil akan dilakukan saat menggabungkan data referensi dengan peristiwa atau saat menambahkan data referensi baru.
-Ketika 'OrdinalIgnoreCase' diatur, perbandingan tidak sensitif huruf besar/kecil akan digunakan.
+Ketika 'OrdinalIgnoreCase' diatur, perbandingan tidak peka huruf besar/kecil akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Support.DataStringComparisonBehavior

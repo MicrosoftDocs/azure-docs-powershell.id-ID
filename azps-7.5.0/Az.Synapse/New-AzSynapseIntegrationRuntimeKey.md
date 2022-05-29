@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseIntegrationRuntimeKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseIntegrationRuntimeKey.md
-ms.openlocfilehash: 3fc4598aed7fb36bd5f723841c33de83ea399f22
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c08fb3b0d5fe13651184fcc720e92a9a19a5f0bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219959"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707904"
 ---
 # New-AzSynapseIntegrationRuntimeKey
 
 ## SYNOPSIS
 Regenerasi kunci runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseintegrationruntimekey) untuk informasi terbaru.
 
 ## SYNTAX
 

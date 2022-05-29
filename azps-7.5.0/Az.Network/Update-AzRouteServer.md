@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzRouteServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzRouteServer.md
-ms.openlocfilehash: 43eb64e0512d994dcb62db1cc5da9f751980f59c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 22d227d7d0139f84a9f95e4f574b560c4d7218b4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210338"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663924"
 ---
 # Update-AzRouteServer
 
 ## SYNOPSIS
 Memperbarui Azure RouteServer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azrouteserver) untuk informasi terbaru.
 
 ## SYNTAX
 

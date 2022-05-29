@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/test-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzPrivateIPAddressAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzPrivateIPAddressAvailability.md
-ms.openlocfilehash: 228e5ac181aeb272bc898509d3b944f56aec014d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: af7f671aeab51d693d8ce96bb38bc1b4af10bee3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210398"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145664086"
 ---
 # Test-AzPrivateIPAddressAvailability
 
 ## SYNOPSIS
 Menguji ketersediaan alamat IP privat di jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/test-azprivateipaddressavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

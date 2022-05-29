@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: d8556e286a932b07bd77746ced54955915735ec3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c1c4b567e904cfb8bc090c68e1e8dca96834807
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182750"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657192"
 ---
 # Remove-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Menghapus tautan jaringan virtual dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tautan yang akan dihapus.
+Menentukan nama grup sumber daya yang berisi tautan untuk dihapus.
 Anda juga harus menentukan parameter *ZoneName* dan *Name* .
 Atau, Anda dapat menentukan zona DNS menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang diteruskan melalui alur atau parameter *Tautan* .
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona DNS privat yang dikaitkan dengan tautan.
+Menentukan nama zona DNS privat yang terkait dengan tautan.
 Anda juga harus menentukan parameter *ResourceGroupName* dan *Name* .
 Atau, Anda dapat menentukan tautan menggunakan parameter *Tautan* .
 

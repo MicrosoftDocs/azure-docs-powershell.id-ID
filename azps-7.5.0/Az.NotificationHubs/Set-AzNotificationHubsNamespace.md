@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespace.md
-ms.openlocfilehash: b041fd7a570f02399a6b236449de785a60480748
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 84396ad8351dd365892814659fa6419500529eb5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226838"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662664"
 ---
 # Set-AzNotificationHubsNamespace
 
 ## SYNOPSIS
 Mengatur nilai properti untuk namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Anda harus memiliki setidaknya satu namespace hub pemberitahuan.
 Selain itu, semua hub pemberitahuan harus memiliki namespace yang ditetapkan.
 Cmdlet ini terutama digunakan untuk mengaktifkan dan menonaktifkan namespace.
 Saat namespace dinonaktifkan, pengguna tidak dapat tersambung ke salah satu hub pemberitahuan di namespace layanan, administrator juga tidak dapat menggunakan hub tersebut untuk mengirim pemberitahuan push.
-Untuk mengaktifkan kembali namespace yang dinonaktifkan, gunakan cmdlet ini untuk mengatur properti **Status** namespace layanan ke Aktif.
+Untuk mengaktifkan kembali namespace yang dinonaktifkan, gunakan cmdlet ini untuk mengatur properti **Status** namespace ke Aktif.
 Anda juga dapat menggunakan cmdlet ini untuk menandai namespace sebagai penting.
 Ini mencegah namespace dihapus.
 Untuk menghapus namespace penting, Anda harus terlebih dahulu menghapus tag Kritis.
@@ -52,7 +55,7 @@ Perintah ini menonaktifkan namespace tingkat Standar bernama ContosoPartners yan
 Set-AzNotificationHubsNamespace -Namespace "ContosoPartners" -Location "West US" -ResourceGroup "ContosoNotificationsGroup" -State "Active" -SkuTier "Standard"
 ```
 
-Perintah ini memungkinkan namespace layanan tingkat Standar bernama ContosoPartners yang terletak di pusat data US Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini memungkinkan namespace tingkat Standar bernama ContosoPartners yang terletak di pusat data US Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ## PARAMETERS
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat namespace layanan ditetapkan.
+Menentukan grup sumber daya tempat namespace ditetapkan.
 Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkat Sku namespace layanan
+Tingkat Sku namespace
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan pasangan nama-nilai yang dapat digunakan untuk mengategorikan dan menata item Azure.
+Menentukan pasangan nama-nilai yang dapat digunakan untuk mengategorikan dan mengatur item Azure.
 Tag berfungsi mirip dengan kata kunci, dan beroperasi di seluruh penyebaran.
 Misalnya, jika Anda mencari semua item dengan tag Departemen:IT, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti jenis item, lokasi, atau grup sumber daya.
 Tag individual terdiri dari dua bagian: *Nama* dan (opsional) *Nilai*.

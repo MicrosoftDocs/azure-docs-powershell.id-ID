@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/new-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaService.md
-ms.openlocfilehash: 3a40e0c9a1e327e357bb0a4f664ea00a2c369aec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c39068ad3d72bd4bc1446068fa24c300c747f144
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112183"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690228"
 ---
 # New-AzMediaService
 
 ## SYNOPSIS
 Membuat layanan media jika layanan media sudah ada, semua propertinya diperbarui dengan input yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/new-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 

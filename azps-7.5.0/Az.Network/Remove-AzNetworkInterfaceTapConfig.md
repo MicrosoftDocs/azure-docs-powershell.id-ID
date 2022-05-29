@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/Remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: 3e969f6f3d2c230e449907963f06bcc37534bb08
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 447b26f0de7db5b381ed6c261ee8e0dd60b5148b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222014"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669936"
 ---
 # Remove-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi ketukan dari antarmuka jaringan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkinterfacetapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Remove-AzNetworkInterfaceTapConfig -Name "TapConfiguration" -NetworkInterfaceNam
 ```
 
 Perintah ini menghapus TapConfiguration dari NetworkInterface1 dalam grup sumber daya ResourceGroup1.
-Karena parameter *Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
+Karena parameter *Force* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
 
 ### Contoh 2: Menghapus antarmuka jaringan
 ```powershell
@@ -56,7 +59,7 @@ Get-AzNetworkInterfaceTapConfig -Name "TapConfiguration" -NetworkInterfaceName "
 ```
 
 Perintah ini menghapus TapConfiguration dari NetworkInterface1 dalam grup sumber daya ResourceGroup1.
-Karena parameter *Paksa* digunakan, pengguna tidak diminta untuk konfirmasi.
+Karena parameter *Force* digunakan, pengguna tidak diminta untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

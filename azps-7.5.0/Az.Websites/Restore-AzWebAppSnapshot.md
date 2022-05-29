@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppSnapshot.md
-ms.openlocfilehash: 878de00404194af5d07edd05e460b6ccf91f4d65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6056acc99cfdd2cfd89311d561dd1235eaa3b611
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198402"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145697968"
 ---
 # Restore-AzWebAppSnapshot
 
 ## SYNOPSIS
 Memulihkan rekam jepret aplikasi web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azwebappsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Restore-AzWebAppSnapshot [-RecoverConfiguration] [-UseDisasterRecovery] [-Force]
 ```
 
 ## DESCRIPTION
-Memulihkan rekam jepret aplikasi web ke aplikasi web. Memulihkan rekam jepret menimpa semua file di aplikasi web dengan file yang terkandung dalam rekam jepret. Untuk memulihkan pengaturan juga, gunakan parameter sakelar RecoverConfiguration. Rekam jepret dari satu aplikasi web dapat dipulihkan ke aplikasi web lain dalam langganan yang sama.
+Memulihkan rekam jepret aplikasi web ke aplikasi web. Memulihkan rekam jepret menimpa semua file di aplikasi web dengan file yang terkandung dalam rekam jepret. Untuk memulihkan pengaturan juga, gunakan parameter pengalih RecoverConfiguration. Rekam jepret dari satu aplikasi web dapat dipulihkan ke aplikasi web lain dalam langganan yang sama.
 
 ## EXAMPLES
 

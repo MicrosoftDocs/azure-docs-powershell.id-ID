@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
-ms.openlocfilehash: fa4697c39613e28d312d5f9e3d9e0177359a6ffc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 59be1e459d8f16b4bb1bbafb39380e5b7dcf680b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222158"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681618"
 ---
 # Get-AzNetworkProfile
 
 ## SYNOPSIS
 Mendapatkan sumber daya tingkat atas profil jaringan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

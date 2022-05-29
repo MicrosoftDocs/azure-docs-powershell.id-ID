@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewScan.md
-ms.openlocfilehash: 880f7949c5afb7cc4d20b630dc6c40165b784b32
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 169659c56fcbbcd5535fdbacb67bf1994a5541a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230968"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656471"
 ---
 # Get-AzPurviewScan
 
 ## SYNOPSIS
 Mendapatkan informasi pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewscan) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
-ms.openlocfilehash: bf3b0d295d37ec8decc7b780317f72473b9e530c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e12cfbaf4ba22e7c8ceb08748063732a894c5ae0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676578"
 ---
 # New-AzDelegation
 
 ## SYNOPSIS
 Membuat delegasi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 

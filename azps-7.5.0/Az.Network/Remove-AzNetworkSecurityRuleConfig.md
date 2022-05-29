@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: 7c1ac22814905711ff046fd1302a0b15a7d0c5ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b76b3e1b4c9ec4edadc85323cb2817938a4de74
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221978"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669792"
 ---
 # Remove-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
 Menghapus aturan keamanan jaringan dari grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

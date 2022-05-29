@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 53a8de9c0632982a254b3276d70a37873efed5d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6753844070731773a4a33b8e48e71134dec577e2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188014"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703260"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Memperbarui sumber peristiwa dengan nama yang ditentukan di langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui sumber peristiwa dengan nama yang ditentukan di langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
+Nama Time Series Insights sumber peristiwa yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String

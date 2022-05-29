@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
-ms.openlocfilehash: e135ea1046da86022d8f1cc8de7b7df328a864ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f1e861964ef7d6dfa4dbd95757810eeea898ec46
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194787"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690498"
 ---
 # Set-AzMarketplaceBulkPrivateStoreCollectionAction
 
 ## SYNOPSIS
 Melakukan tindakan pada koleksi massal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplacebulkprivatestorecollectionaction) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsPricingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsPricingPlan.md
-ms.openlocfilehash: 69645b4f4e3171595799807f6fd4300a2e58de21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e7a755f253c6fc3b01477c9ef31afe76567d5f6a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212675"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684930"
 ---
 # Set-AzApplicationInsightsPricingPlan
 
 ## SYNOPSIS
 Mengatur paket harga dan informasi volume data harian untuk sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightspricingplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Paket harga wawasan aplikasi yang dibuat setelah April 2018 tidak dapat ditetapk
 
 ## EXAMPLES
 
-### Contoh 1 Mengatur paket harga dan informasi volume data harian untuk sumber daya application insights
+### Contoh 1 Mengatur paket harga dan informasi volume data harian untuk sumber daya wawasan aplikasi
 ```powershell
 Set-AzApplicationInsightsPricingPlan -ResourceGroupName "testgroup" -Name "test" -PricingPlan "Basic" -DailyCapGB 400
 ```

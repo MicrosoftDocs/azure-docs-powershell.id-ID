@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
-ms.openlocfilehash: 77bc606b1ee022aeac83cb74c139e68a968b2966
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54597be4a0f493792e336363ae33e01f86318dd8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182778"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657264"
 ---
 # New-AzPrivateDnsZone
 
 ## SYNOPSIS
 Membuat zona DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Tags                          : {}
 NumberOfRecordSets            : 1
 MaxNumberOfRecordSets         : 5000
 ```
-Perintah ini membuat zona DNS privat baru bernama myzone.com dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone. $Zone objek terlihat seperti ini,
+Perintah ini membuat zona DNS privat baru bernama myzone.com di grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone. $Zone terlihat seperti ini,
 ## PARAMETERS
 
 ### -DefaultProfile

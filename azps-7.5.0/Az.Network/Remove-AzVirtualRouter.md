@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualRouter.md
-ms.openlocfilehash: b50ea119c37d10369ef3f186db0d932638b3bc6b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d1228f8b5964fbff57e21ae6ddd56484b418683
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209039"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668514"
 ---
 # Remove-AzVirtualRouter
 
 ## SYNOPSIS
 Menghapus Azure VirtualRouter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualrouter) untuk informasi terbaru.
 
 ## SYNTAX
 

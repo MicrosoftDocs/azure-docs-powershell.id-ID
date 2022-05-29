@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 76f7ac2e555a99b5d9962defd4875a11aed5faff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c379866f75e5da347e5fc3c1a5efe1ab2206fb59
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185802"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692100"
 ---
 # Get-AzIntegrationAccountPartner
 
 ## SYNOPSIS
 Mendapatkan mitra akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountpartner) untuk informasi terbaru.
 
 ## SYNTAX
 

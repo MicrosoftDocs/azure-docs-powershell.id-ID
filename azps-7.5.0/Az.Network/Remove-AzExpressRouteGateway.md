@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
-ms.openlocfilehash: 1b2af0e5f89d93182b7a15cd60e6eaf03917c890
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ebb1133accaf5028aa0be3e5b929d7edf028186c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235711"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670692"
 ---
 # Remove-AzExpressRouteGateway
 
 ## SYNOPSIS
 Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk konektivitas yang ditentukan perangkat lunak Azure Virtual WAN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ New-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpressRoutegw"
 Get-AzExpressRouteGateway -ResourceGroupName "testRG" -Name "testExpressRoutegw" | Remove-AzExpressRouteGateway-Passthru
 ```
 
-Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway ExpressRoute yang dapat diskalakan di US Tengah Barat, lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pipa powershell, yang menggunakan objek ExpressRouteGateway yang dikembalikan oleh perintah Get-AzExpressRouteGateway.
+Contoh ini membuat grup Sumber Daya, Virtual WAN, Hub Virtual, gateway ExpressRoute yang dapat diskalakan di US Tengah Barat lalu segera menghapusnya. Penghapusan ini terjadi menggunakan pipa powershell, yang menggunakan objek ExpressRouteGateway yang dikembalikan oleh perintah Get-AzExpressRouteGateway.
 Untuk menekan perintah saat menghapus Gateway Virtual, gunakan bendera -Force.
 Ini akan menghapus ExpressRouteGateway dan semua ExpressRouteConnections yang melekat padanya.
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

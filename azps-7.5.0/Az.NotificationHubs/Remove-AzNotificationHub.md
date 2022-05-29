@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHub.md
-ms.openlocfilehash: 33ec65bdd2c67d3cacb755642240858d97bdc643
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48b32d01bf87655574af5c14c0f220c601a24a80
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183195"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662880"
 ---
 # Remove-AzNotificationHub
 
 ## SYNOPSIS
 Menghapus hub pemberitahuan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 

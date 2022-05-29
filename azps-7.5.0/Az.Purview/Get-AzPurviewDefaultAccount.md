@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 9030f3b39524be75b0ff8ebce4d5416933387e45
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e07e826b043444997cb011604c658ac1b01ace07
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231052"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656544"
 ---
 # Get-AzPurviewDefaultAccount
 
 ## SYNOPSIS
 Dapatkan akun default untuk cakupan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Dapatkan akun default untuk cakupan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan akun default untuk lingkup Penyewa.
+### Contoh 1: Dapatkan akun default untuk penyewa cakupan.
 ```powershell
 Get-AzPurviewDefaultAccount -ScopeTenantId xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a -ScopeType Tenant
 ```

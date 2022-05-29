@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualNetworkGatewayNatRule.md
-ms.openlocfilehash: 770318dd01cce4e4fab8f0190c8754ace0a1b72f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e6980862b0ff652ac7978e823705ada85968f74
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189663"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663627"
 ---
 # Update-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
 Memperbarui Virtual Network Gateway NatRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VirtualNetworkGatewayNatRule yang akan diperbarui.
+Objek VirtualNetworkGatewayNatRule untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayNatRule
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VirtualNetworkGatewayNatRule yang akan diperbarui.
+Id sumber daya objek VirtualNetworkGatewayNatRule untuk diperbarui.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
-ms.openlocfilehash: fd5045d9260284c11ec70046fda0a1c6f6e5c9db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5fc8a096ad3a3d1dbda8119c3e2674262285155d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247149"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145698976"
 ---
 # New-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Membuat pengikatan sertifikat SSL untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ New-AzWebAppSSLBinding -Name 'www.contoso.com' -ResourceGroupName 'ContosoResour
 
 powershell
 
-### Contoh 3
+### Contoh: 3
 
 Membuat pengikatan sertifikat SSL untuk Azure Web App. (dibuat otomatis)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsZone.md
-ms.openlocfilehash: c3033adc11231fa4d2cf3da732665c45db94df51
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: da320a6884d2532e99e6a66b4c42757e910a1d96
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182747"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657156"
 ---
 # Remove-AzPrivateDnsZone
 
 ## SYNOPSIS
 Menghapus zona DNS privat dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednszone) untuk informasi terbaru.
 
 ## SYNTAX
 

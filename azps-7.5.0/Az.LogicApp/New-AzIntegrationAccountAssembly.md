@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
-ms.openlocfilehash: e4022133c6f71b57224f2eea5f8e7963b78f5358
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2cd0650e197b48b79d43b5d839ec0eae154a3534
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187104"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691938"
 ---
 # New-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
 Membuat rakitan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ Cmdlet **Get-AzIntegrationAccountAssembly** membuat rakitan baru di akun integra
 
 ## EXAMPLES
 
-### Contoh 1: Membuat rakitan baru menggunakan file lokal
+### Contoh 1: Membuat assembly baru menggunakan file lokal
 ```powershell
 New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -AssemblyFilePath $localAssemblyFilePath
 ```
@@ -97,7 +100,7 @@ Tags       :
 
 Membuat rakitan baru menggunakan file lokal yang terletak di jalur file yang terkandung dalam "$localAssemblyFilePath".
 
-### Contoh 2: Membuat rakitan baru menggunakan data byte
+### Contoh 2: Membuat perakitan baru menggunakan data byte
 ```powershell
 New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -AssemblyData $assemblyContent
 ```
@@ -113,7 +116,7 @@ Tags       :
 
 Membuat rakitan baru menggunakan array byte yang terkandung dalam "$assemblyContent".
 
-### Contoh 3: Membuat rakitan baru menggunakan tautan konten
+### Contoh 3: Membuat assembly baru menggunakan tautan konten
 ```powershell
 New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -ContentLink $assemblyUrl
 ```
@@ -132,7 +135,7 @@ Membuat rakitan baru menggunakan data byte yang terletak di URL "$assemblyUrl". 
 ## PARAMETERS
 
 ### -AssemblyData
-Data byte rakitan akun integrasi.
+Data byte perakitan akun integrasi.
 
 ```yaml
 Type: System.Byte[]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLink
-Tautan yang dapat diakses publik ke data perakitan akun integrasi.
+Tautan yang dapat diakses publik ke data rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata perakitan akun integrasi.
+Metadata rakitan akun integrasi.
 
 ```yaml
 Type: System.Collections.Hashtable

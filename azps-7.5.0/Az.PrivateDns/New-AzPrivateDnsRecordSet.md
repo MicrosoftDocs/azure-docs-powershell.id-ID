@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 34b66f86f2ae9e61d08ffeb39c900b08481f16fb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 32f8ddce70eea9274ea645446bf1f8a85198588d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182792"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657300"
 ---
 # New-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Membuat kumpulan catatan di zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzPrivateDnsRecordSet -ParentResourceId <String> -Name <String> -RecordType 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Sistem Nama Domain Privat (DNS) baru dengan nama dan jenis yang ditentukan di zona privat yang ditentukan. Objek RecordSet adalah sekumpulan catatan DNS Privat dengan nama dan jenis yang sama. Perhatikan bahwa namanya relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan rekaman dalam kumpulan catatan. Parameter ini mengambil array rekaman DNS Privat, dibangun menggunakan New-AzPrivateDnsRecordConfig. Anda dapat menggunakan operator alur untuk meneruskan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat meneruskan objek PSPrivateDnsZone sebagai parameter Zona, atau Anda dapat menentukan zona dengan ResourceId-nya, atau Anda dapat menentukan zona berdasarkan nama. Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Jika RecordSet yang cocok sudah ada (nama dan jenis rekaman yang sama), Anda harus menentukan parameter Timpa, jika tidak cmdlet tidak akan membuat RecordSet baru.
+Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Sistem Nama Domain Privat (DNS) baru dengan nama dan jenis yang ditentukan di zona privat yang ditentukan. Objek RecordSet adalah sekumpulan catatan DNS Privat dengan nama dan jenis yang sama. Perhatikan bahwa namanya relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan rekaman dalam kumpulan catatan. Parameter ini mengambil array rekaman DNS Privat, yang dibangun menggunakan New-AzPrivateDnsRecordConfig. Anda dapat menggunakan operator alur untuk meneruskan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat meneruskan objek PSPrivateDnsZone sebagai parameter Zona, atau Anda dapat menentukan zona dengan ResourceId-nya, atau Anda dapat menentukan zona berdasarkan nama. Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Jika RecordSet yang cocok sudah ada (nama dan jenis rekaman yang sama), Anda harus menentukan parameter Timpa, jika tidak, cmdlet tidak akan membuat RecordSet baru.
 
 ## EXAMPLES
 
@@ -229,7 +232,7 @@ IsAutoRegistered  :
 
 Perintah ini membuat teks bernama RecordSet di zona privat myzone.com. Kumpulan catatan berjenis TXT dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 8: Membuat RecordSet di apex zona
+### Contoh 8: Membuat RecordSet di puncak zona
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Ipv4Address 1.2.3.4
@@ -298,7 +301,7 @@ IsAutoRegistered  :
 
 Perintah ini membuat RecordSet bernama * di zona privat myzone.com. Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik). Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung tempat Anda nantinya bisa menambahkan rekaman.
 
-### Contoh 11: Membuat kumpulan catatan dan menekan semua konfirmasi
+### Contoh 11: Membuat kumpulan catatan dan menyembunyikan semua konfirmasi
 
 ```powershell
 $RecordSet = New-AzPrivateDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -PrivateDnsRecords (New-AzDnsRecordConfig -Ipv4Address 1.2.3.4) -Confirm:$False -Overwrite
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik penghentian).
+Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik yang mengakhiri).
 
 ```yaml
 Type: System.String

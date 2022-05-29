@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
-ms.openlocfilehash: df1722228fe1a73d2f8324529f3f7ebf2c1736ad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 35d850687e19f1bc538111093941f1bd68ff27d0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226922"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662952"
 ---
 # New-AzNotificationHubsNamespace
 
 ## SYNOPSIS
 Membuat namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +33,11 @@ New-AzNotificationHubsNamespace [-ResourceGroup] <String> [-Namespace] <String> 
 Cmdlet **New-AzNotificationHubsNamespace** membuat namespace hub pemberitahuan.
 Namespace adalah kontainer logis yang membantu Anda mengatur dan mengelola hub pemberitahuan Anda.
 Anda harus memiliki setidaknya satu namespace hub pemberitahuan.
-Satu namespace dapat menampung beberapa hub.
-Anda dapat memiliki beberapa namespace untuk mengatur hub Anda, atau untuk memberikan izin kepada individu tertentu untuk mengelola subset hub yang dipilih.
-Untuk membuat namespace, pastikan Anda menentukan nama unik untuk namespace layanan; tentukan pusat data tempat namespace akan berada; dan, tentukan grup sumber daya tempat namespace akan ditetapkan.
+Satu namespace layanan dapat menampung beberapa hub.
+Anda dapat memiliki beberapa namespace untuk mengatur hub Anda, atau untuk memberikan izin individu tertentu untuk mengelola subset hub yang dipilih.
+Untuk membuat namespace layanan, pastikan Anda menentukan nama unik untuk namespace layanan; tentukan pusat data tempat namespace akan berada; dan, tentukan grup sumber daya tempat namespace akan ditetapkan.
 Setelah namespace layanan dibuat, Anda dapat menggunakan cmdlet New-AzNotificationHubsNamespaceAuthorizationRules untuk menetapkan aturan otorisasi ke namespace tersebut.
-Aturan otorisasi digunakan untuk mengelola izin ke namespace.
+Aturan otorisasi digunakan untuk mengelola izin ke namespace layanan.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ New-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup" -Loca
 Perintah ini membuat hub pemberitahuan bernama ContosoPartners.
 Namespace akan terletak di pusat data US Barat dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 Selain itu, perintah ini membuat tag dengan nama Audiens dan nilai PartnerOrganizations dan ditetapkan ke namespace.
-Ini memastikan bahwa namespace layanan akan ditampilkan setiap kali Anda memfilter item tempat tag Audiens diatur ke PartnerOrganizations.
+Ini memastikan bahwa namespace akan ditampilkan setiap kali Anda memfilter item tempat tag Audiens diatur ke PartnerOrganizations.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan nama namespace layanan baru.
+Menentukan nama namespace baru.
 Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat namespace layanan akan ditetapkan.
+Menentukan grup sumber daya tempat namespace akan ditetapkan.
 Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkat Sku namespace layanan
+Tingkat Sku namespace
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan pasangan nama-nilai yang dapat digunakan untuk mengategorikan dan menata item Azure.
+Menentukan pasangan nama-nilai yang dapat digunakan untuk mengategorikan dan mengatur item Azure.
 Tag berfungsi mirip dengan kata kunci, dan beroperasi di seluruh penyebaran.
 Misalnya, jika Anda mencari semua item dengan tag Departemen:IT, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti jenis item, lokasi, atau grup sumber daya.
 Tag individual terdiri dari dua bagian: *Nama* dan, secara opsional, *Nilai*.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
-ms.openlocfilehash: a61b923a51412278da84cc105f2fa5c9d8deb465
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4addcfb307d971f4ef9bf685f1cf3f7744cbad36
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238640"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690012"
 ---
 # Get-AzExpressRouteCircuit
 
 ## SYNOPSIS
 Mendapatkan sirkuit Azure ExpressRoute dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuit) untuk informasi terbaru.
 
 ## SYNTAX
 

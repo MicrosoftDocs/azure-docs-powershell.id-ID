@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzSecurityPartnerProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzSecurityPartnerProvider.md
-ms.openlocfilehash: aa6e3c086ef29bb47a034a9932d0308571840047
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 495dca6b56416548afe3467bcf1858ff6571b0f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215942"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669144"
 ---
 # Remove-AzSecurityPartnerProvider
 
 ## SYNOPSIS
 Menghapus Azure SecurityPartnerProvider.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azsecuritypartnerprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
