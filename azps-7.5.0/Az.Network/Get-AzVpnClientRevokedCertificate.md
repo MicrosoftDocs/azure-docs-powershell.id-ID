@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: 5f0a8e4919aacd16e094774df225e1e9e82bb5bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e7ead10211a5e6499b580488c6ad2e560e52999
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246925"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678864"
 ---
 # Get-AzVpnClientRevokedCertificate
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sertifikat pencabutan klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientrevokedcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

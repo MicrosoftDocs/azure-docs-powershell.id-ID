@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancer.md
-ms.openlocfilehash: ceccdc4df22ff8ffd6d4bf288cf35363da45e06d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fca0dd367810aae250078a8601fca9b3c675baf8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223211"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666192"
 ---
 # Atur-AzLoadBalancer
 
 ## SYNOPSIS
 Memperbarui load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 

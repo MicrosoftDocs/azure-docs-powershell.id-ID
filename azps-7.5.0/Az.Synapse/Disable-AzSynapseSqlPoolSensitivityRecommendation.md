@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: 87778653ef295718a57352b2e3faf915c3e0c3bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5dba42dacfcfde9e26dfe1d3b271488febd43ca8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228095"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710658"
 ---
 # Disable-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Menonaktifkan (mematikan) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+Menonaktifkan (menutup) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/disable-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Disable-AzSynapseSqlPoolSensitivityRecommendation -SqlPoolObject <PSSynapseSqlPo
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (mematikan) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (menutup) rekomendasi sensitivitas pada kolom di kumpulan SQL.
 
 ## EXAMPLES
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewall.md
-ms.openlocfilehash: def865cfea59381f490b38eb9fb4b405094b7e81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a589c2e0f7c94ef40d38349280f3b19bf3d24ab
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235686"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670584"
 ---
 # Remove-AzFirewall
 
 ## SYNOPSIS
 Hapus Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 

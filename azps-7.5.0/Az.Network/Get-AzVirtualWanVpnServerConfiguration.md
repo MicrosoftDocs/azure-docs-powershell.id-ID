@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfiguration.md
-ms.openlocfilehash: 1731dbc4375d61771f0c700a4f384ecf1e39aca0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2bf9c96f144020c5ffe0ad158c4511152b568674
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222086"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679080"
 ---
 # Get-AzVirtualWanVpnServerConfiguration
 
 ## SYNOPSIS
 Mendapatkan daftar semua VpnServerConfigurations yang terkait dengan VirtualWan ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

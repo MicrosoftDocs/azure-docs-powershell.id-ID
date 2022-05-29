@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRuleset.md
-ms.openlocfilehash: e06d9e933f4e53430bdc39fbfd072ecc908c545f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6e94791e42594ac43e2227993f6b2471927b219
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212195"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656418"
 ---
 # Get-AzPurviewSystemScanRuleset
 
 ## SYNOPSIS
 Mendapatkan aturan pemindaian sistem untuk sumber data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewsystemscanruleset) untuk informasi terbaru.
 
 ## SYNTAX
 

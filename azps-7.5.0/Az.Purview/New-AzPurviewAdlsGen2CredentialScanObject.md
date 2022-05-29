@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2CredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2CredentialScanObject.md
-ms.openlocfilehash: b005388f508c73160153b77d3bc46af4eec2c119
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c053861dd0aceee68eab07b0230a41522e9937f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197492"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656058"
 ---
 # New-AzPurviewAdlsGen2CredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AdlsGen2CredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewadlsgen2credentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

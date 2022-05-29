@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
-ms.openlocfilehash: d73fa4e0e9968d1137e5a45d7e7f28eb952e1769
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9982e2d104bda1252b078d87f96eb53048329036
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195462"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685992"
 ---
 # Update-AzApiManagementCache
 
 ## SYNOPSIS
 memperbarui cache di layanan Api Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, maka instans jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache yang mewakili cache yang dimodifikasi akan ditulis ke output.
+Jika ditentukan, instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache yang mewakili cache yang dimodifikasi akan ditulis ke output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 3ce5a878d237405793c17e7b85c931f9abe23a88
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 81bbcb4ee445027a912c9346f8703536ea36cf03
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197909"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694728"
 ---
 # Pemulihan-AkunPenyimpanaDikelolaAzKeyVault
 
 ## SYNOPSIS
 Memulihkan akun penyimpanan terkelola dalam brankas kunci dari file cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

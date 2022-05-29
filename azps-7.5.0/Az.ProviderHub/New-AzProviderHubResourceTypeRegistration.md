@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubResourceTypeRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubResourceTypeRegistration.md
-ms.openlocfilehash: 3ddc60740cc3c65ac1b65a7ea7d6b557c9b6f76d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 766bfe6ee31582002f49b9308858de8cb8eaf41f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242767"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656868"
 ---
 # New-AzProviderHubResourceTypeRegistration
 
 ## SYNOPSIS
 Membuat atau memperbarui jenis sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubresourcetyperegistration) untuk informasi terbaru.
 
 ## SYNTAX
 

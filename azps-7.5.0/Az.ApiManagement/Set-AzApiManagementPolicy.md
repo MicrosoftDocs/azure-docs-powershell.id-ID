@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
-ms.openlocfilehash: 93175f485a720926c68b9909f706761d0dbc34df
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 09ca63c0c6aacd243c75e9e89d86528034e80c93
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240390"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686190"
 ---
 # Set-AzApiManagementPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan cakupan yang ditentukan untuk API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -Format
 Menentukan format kebijakan. Saat menggunakan `application/vnd.ms-azure-apim.policy+xml`, ekspresi yang terkandung dalam kebijakan harus dilewati XML. Saat menggunakannya `application/vnd.ms-azure-apim.policy.raw+xml` **, kebijakan tidak** perlu diloloskan XML.
-Nilai default-nya adalah `application/vnd.ms-azure-apim.policy+xml`.
+Nilai defaultnya adalah `application/vnd.ms-azure-apim.policy+xml`.
 Parameter ini bersifat opsional.
 
 ```yaml

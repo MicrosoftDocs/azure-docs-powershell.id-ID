@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsAccessPolicy.md
-ms.openlocfilehash: e38bb824dde6437cab160755619aad1122594961
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50c24d83b31848434e44b590740cac588aa47ff5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237310"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703530"
 ---
 # Remove-AzTimeSeriesInsightsAccessPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan akses dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/remove-aztimeseriesinsightsaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Remove-AzTimeSeriesInsightsAccessPolicy -EnvironmentName tsitest001 -Name policy
 
 ```
 
-Perintah ini menghapus kebijakan akses tertentu.
+Perintah ini menghapus kebijakan akses yang ditentukan.
 
 ### Contoh 2: Menghapus kebijakan akses tertentu menurut objek
 ```powershell
@@ -51,7 +54,7 @@ Remove-AzTimeSeriesInsightsAccessPolicy -InputObject $policy
 
 ```
 
-Perintah ini menghapus kebijakan akses tertentu.
+Perintah ini menghapus kebijakan akses yang ditentukan.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

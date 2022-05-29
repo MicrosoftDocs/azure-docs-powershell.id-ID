@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
-ms.openlocfilehash: 79d865fd6d9529f3adc7e26fb7ce4b3e4bc8262d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3df9c11179eb054527d9e57076604d0bbe7c6967
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223622"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686028"
 ---
 # Set-AzApiManagementUser
 
 ## SYNOPSIS
 Mengatur detail pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementuser) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
-ms.openlocfilehash: a3c30b0842a0cfc4da827bf64aa710c7b6702ff4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54ac2fd2de153fb587901203f89e7e49a4ab66ad
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110960"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710874"
 ---
 # Add-AzSynapseTriggerSubscription
 
 ## SYNOPSIS
 Berlangganan pemicu peristiwa ke peristiwa layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/add-azsynapsetriggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Add-AzSynapseTriggerSubscription -Name ContosoTrigger
 
 Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke peristiwa yang ditentukan dari penentuan pemicu melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 $trigger | Add-AzSynapseTriggerSubscription

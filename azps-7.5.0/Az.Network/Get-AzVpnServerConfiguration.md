@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnServerConfiguration.md
-ms.openlocfilehash: f8da872bcc057e2c4a3acffe6f8f58d75fc5340a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78f465c14d064262d297c3510a6a41c2a32f6f0e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111598"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678720"
 ---
 # Get-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Mendapatkan VpnServerConfiguration yang ada untuk konektivitas titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVpnServerConfiguration [-ResourceGroupName <String>] [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVpnServerConfiguration** mengembalikan konektivitas VpnServerConfiguration untuk Titik ke situs yang ada.
+Cmdlet **Get-AzVpnServerConfiguration** mengembalikan VpnServerConfiguration yang ada untuk konektivitas Titik ke situs.
 
 ## EXAMPLES
 

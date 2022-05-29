@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewKeyVaultConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewKeyVaultConnection.md
-ms.openlocfilehash: 60ce14d9419e7d21476efd62ef72af37d1782d7c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 18073ec94405b30b2375e8b6b2b46b426c6c53c5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230993"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656562"
 ---
 # Get-AzPurviewKeyVaultConnection
 
 ## SYNOPSIS
 Mendapatkan informasi brankas kunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewkeyvaultconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Mendapatkan informasi brankas kunci
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan koneksi brankas kunci berdasarkan nama
+### Contoh 1: Dapatkan koneksi brankas kunci berdasarkan nama
 ```powershell
 PS C:\> Get-AzPurviewKeyVaultConnection -Endpoint 'https://parv-brs-2.purview.azure.com/' -KeyVaultName 'KeyVaultConnection1'
 

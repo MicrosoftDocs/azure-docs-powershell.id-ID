@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
-ms.openlocfilehash: 4a1a246971b4aa1c38407b133fb234bf66b35397
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0ee05184242fe02261fc3ebca1bbd51ad5cab59
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237478"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703872"
 ---
 # Update-AzSynapseWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $ws | Update-AzSynapseWorkspace -Tag @{'key'='value1'}
 
 Perintah ini memperbarui tag untuk ruang kerja Azure Synapse Analytics yang ditentukan melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace -Tag @{'key'='value2'}
 ```
@@ -76,7 +79,7 @@ $config = New-AzSynapseGitRepositoryConfig -RepositoryType GitHub -AccountName C
 Update-AzSynapseWorkspace -Name ContosoWorkspace -GitRepository $config
 ```
 
-Perintah ini memperbarui repositori Git tempat ruang kerja digabungkan untuk ruang kerja Azure Synapse Analytics yang ditentukan.
+Perintah ini memperbarui repositori Git yang diperlukan ruang kerja untuk ruang kerja Azure Synapse Analytics yang ditentukan.
 
 ## PARAMETERS
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepository
-Pengaturan Repositori Git. Koneksi ruang kerja ke repositori untuk kontrol sumber dan kolaborasi untuk bekerja pada alur ruang kerja Anda
+Repositori Git Pengaturan. Koneksi ruang kerja ke repositori untuk kontrol sumber dan kolaborasi untuk bekerja pada alur ruang kerja Anda
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSWorkspaceRepositoryConfiguration

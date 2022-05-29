@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageSasDefinitionRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageSasDefinitionRemoval.md
-ms.openlocfilehash: 8e15e1a1e9235e2546608cdbf63f872731e1e0b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 63bfcc03d3bf2b6ee7b5dd93b0b3792f6b256089
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220775"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694458"
 ---
 # Undo-AzKeyVaultManagedStorageSasDefinitionRemoval
 
 ## SYNOPSIS
 Memulihkan definisi SAS penyimpanan yang dikelola KeyVault yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultmanagedstoragesasdefinitionremoval) untuk informasi terbaru.
 
 ## SYNTAX
 

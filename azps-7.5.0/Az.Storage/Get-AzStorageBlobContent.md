@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
-ms.openlocfilehash: c96ae4964d926a17c762f735002826f9ac1fe384
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4c9398dfb8ec4407b8bb4ddfd95d0923972207b7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191763"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717696"
 ---
 # Get-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunduh blob penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Contoh ini pertama-tama mendapatkan objek blob dan menyimpannya dalam variabel, 
 PS C:\>Get-AzStorageBlobContent -Uri $blobUri -Destination "C:\test" -Force
 ```
 
-Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat menjadi Uri dengan token Sas. Jika blob berada di akun disk terkelola, dan server memerlukan token pembawa selain Sas Uri untuk diunduh, cmdlet akan mencoba menghasilkan token pembawa dengan audiens yang dikembalikan server dan info masuk AAD kredensial pengguna, lalu mengunduh blob dengan Sas Uri dan token pembawa.
+Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat menjadi Uri dengan token Sas. Jika blob berada di akun disk terkelola, dan server memerlukan token pembawa selain Sas Uri untuk diunduh, cmdlet akan mencoba menghasilkan token pembawa dengan audiens yang dikembalikan server dan info masuk pengguna AAD, lalu mengunduh blob dengan Sas Uri dan token pembawa.
 
 ## PARAMETERS
 
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -396,7 +399,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## NOTES
-* Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan menyelesaikannya secara otomatis, jika memungkinkan.
+* Jika nama blob tidak valid untuk komputer lokal, cmdlet ini menyelesaikannya secara otomatis, jika memungkinkan.
 
 ## RELATED LINKS
 

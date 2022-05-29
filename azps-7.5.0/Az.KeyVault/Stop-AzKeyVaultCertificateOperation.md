@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Stop-AzKeyVaultCertificateOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Stop-AzKeyVaultCertificateOperation.md
-ms.openlocfilehash: 9dd06b7033c95425cd965caaa4165aa23e23ee63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 309ead9cfafa80093cc2a2f097048466aff6abd0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201633"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694476"
 ---
 # Stop-AzKeyVaultCertificateOperation
 
 ## SYNOPSIS
 Membatalkan operasi sertifikat di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/stop-azkeyvaultcertificateoperation) untuk informasi terbaru.
 
 ## SYNTAX
 

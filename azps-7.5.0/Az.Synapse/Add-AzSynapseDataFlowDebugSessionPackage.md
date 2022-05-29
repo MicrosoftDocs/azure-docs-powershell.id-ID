@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseDataFlowDebugSessionPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseDataFlowDebugSessionPackage.md
-ms.openlocfilehash: 7d59dd8d9a21bfc18b0755b071007dd822a8436d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4657ce07911ca73c55f7c21bc6dc13e1fee0c6c8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110996"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710891"
 ---
 # Add-AzSynapseDataFlowDebugSessionPackage
 
 ## SYNOPSIS
 Tambahkan sumber daya aliran data dan dependensinya ke dalam sesi debug aliran data tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/add-azsynapsedataflowdebugsessionpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Stop-AzSynapseDataFlowDebugSession
 Add-AzSynapseDataFlowDebugSessionPackage -WorkspaceName ContosoWorkspace -PackageFile "D:\dataflowps\addpackage.json" -SessionId 3afb278e-ac5f-469f-a0b6-2f04c3ab59bc
 ```
 
-Tambahkan paket aliran data ke sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" di bawah ruang kerja Synapse "ContosoWorkspace". File Pakcage berisi sumber daya debug aliran data, daftar sumber daya debug himpunan data, daftar sumber daya debug layanan tertaut, pengaturan debug, dan ID sesi. Parameter [-SessionId] bersifat opsional, jika ditentukan, parameter akan menggantikan properti sessionId yang ada dalam file paket.  
+Tambahkan paket aliran data ke sesi debug "3afb278e-ac5f-469f-a0b6-2f04c3ab59bc" di bawah ruang kerja Synapse "ContosoWorkspace". File Pakcage berisi sumber daya debug aliran data, daftar sumber daya debug himpunan data, daftar sumber daya debug layanan tertaut, pengaturan debug, dan ID sesi. Parameter [-SessionId] bersifat opsional, jika ditentukan, parameter tersebut akan menggantikan properti sessionId yang ada dalam file paket.  
 
 ### Contoh 2
 ```powershell

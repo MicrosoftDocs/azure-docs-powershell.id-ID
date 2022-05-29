@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubNotificationRegistration.md
-ms.openlocfilehash: c699c175c9383c9a9830d5f53848418993192b40
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf7686e2114328a5bf0c09bae91aff364175ec92
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182649"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657048"
 ---
 # Get-AzProviderHubNotificationRegistration
 
 ## SYNOPSIS
 Mendapatkan detail pendaftaran pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubnotificationregistration) untuk informasi terbaru.
 
 ## SYNTAX
 

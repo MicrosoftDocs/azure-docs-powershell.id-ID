@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
-ms.openlocfilehash: c7d3085d46737bf9baa9d212e5bc4777c9599a2a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db66bd0b46a5261dc8faa62f8b044f1fb0777a37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182624"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656958"
 ---
 # Get-AzProviderHubSku
 
 ## SYNOPSIS
 Mendapatkan detail sku untuk jenis sumber daya dan nama sku yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU- nya.
+The SKU.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
-ms.openlocfilehash: a661100a5a07721e82453c762c1a1c54a5f18d1c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f5a50f192f9b1c40b09893b3d420e9d396a9baa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224414"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678846"
 ---
 # Get-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sertifikat akar VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perintah ini mendapatkan informasi tentang semua sertifikat akar yang ditetapkan
 Get-AzVpnClientRootCertificate -VirtualNetworkGatewayName "ContosoVirtualNetwork" -ResourceGroupName "ContosoResourceGroup" -VpnClientRootCertificateName "ContosoRootClientCertificate"
 ```
 
-Perintah ini adalah variasi perintah yang ditunjukkan dalam Contoh 1.
+Perintah ini adalah variasi dari perintah yang ditunjukkan dalam Contoh 1.
 Namun, dalam hal ini, parameter *VpnClientRootCertificateName* disertakan untuk membatasi data yang dikembalikan ke sertifikat akar tertentu: ContosoRootClientCertificate.
 
 ## PARAMETERS

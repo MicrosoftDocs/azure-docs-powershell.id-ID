@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
-ms.openlocfilehash: e4ec53de3f86cb8446584d64e91d14c304eb8dde
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 45decb177488ed458f9ce16773cea41ce91c09e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195403"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685848"
 ---
 # Get-AzAppConfigurationStore
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan penyimpanan konfigurasi aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 

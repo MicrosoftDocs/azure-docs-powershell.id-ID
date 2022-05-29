@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 99cb3b4831e2e137ab270b310f672ff0c5e29a2f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ffd02dbe431312fe062518c010030b9e7b99788a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237349"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703638"
 ---
 # New-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
 Buat sumber peristiwa di bawah lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci SAS yang memberikan Time Series Insights akses layanan ke hub peristiwa/iot.
+Nama kunci SAS yang memberikan Time Series Insights akses layanan ke event/iot hub.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber peristiwa.
 
 ```yaml
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedAccessKey
-Nilai kunci akses bersama yang memberi layanan Time Series Insights akses baca ke event/iot hub.
+Nilai kunci akses bersama yang memberikan akses baca layanan Insights Time Series ke event/iot hub.
 
 ```yaml
 Type: System.Security.SecureString

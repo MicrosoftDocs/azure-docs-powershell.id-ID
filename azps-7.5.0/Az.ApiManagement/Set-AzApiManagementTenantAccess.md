@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementTenantAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementTenantAccess.md
-ms.openlocfilehash: 470a3f064ab05ed27e457e4381a23ad88371287e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ead106a169a4d8a84674d0669d6e78bdb9093caa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112757"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686082"
 ---
 # Set-AzApiManagementTenantAccess
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan akses penyewa.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementtenantaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 
 ### -Diaktifkan
 Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan akses penyewa.
-Tentukan nilai $True yang akan diaktifkan atau $False untuk dinonaktifkan.
+Tentukan nilai $True untuk diaktifkan atau $False untuk dinonaktifkan.
 
 ```yaml
 Type: System.Boolean

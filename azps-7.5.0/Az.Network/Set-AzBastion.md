@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzBastion.md
-ms.openlocfilehash: db9bae45950f5923eb6fc0871e862dbf143a3f01
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3e447f99401a60304e9635381bca4010b842e21
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215171"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666786"
 ---
 # Set-AzBastion
 
 ## SYNOPSIS
 Memperbarui Sumber Daya Bastion.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecret.md
-ms.openlocfilehash: d97a02f3a6d924f0530d9fda78b9e1004c12e58e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d6cf0d443e6dd41af4e7aae2c1905c2f3a232217
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201636"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694530"
 ---
 # Atur-AzKeyVaultSecret
 
 ## SYNOPSIS
 Membuat atau memperbarui rahasia di brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 

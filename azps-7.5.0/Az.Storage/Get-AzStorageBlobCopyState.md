@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
-ms.openlocfilehash: f5399749ff0f7b0c64b010ac773ffc35f54cf11d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f5d99500d786b5c704f2684e971e23c6c639cbcf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191752"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717678"
 ---
 # Get-AzStorageBlobCopyState
 
 ## SYNOPSIS
 Mendapatkan status salinan blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobcopystate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Ini harus berjalan pada blob tujuan salin.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status salinan blob
+### Contoh 1: Mendapatkan status penyalinan blob
 ```
 C:\PS>Get-AzStorageBlobCopyState -Blob "ContosoPlanning2015" -Container "ContosoUploads"
 ```
@@ -70,7 +73,7 @@ C:\PS>Get-AzStorageContainer -Name "ContosoUploads" | Get-AzStorageBlobCopyState
 Perintah ini mendapatkan kontainer bernama dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini.
 Cmdlet **Get-AzStorageContainer** mendapatkan status salin untuk blob bernama ContosoPlanning2015 dalam kontainer tersebut.
 
-### Contoh 4: Mulai Salin dan alur untuk mendapatkan status penyalinan
+### Contoh 4: Mulai Salin dan alur untuk mendapatkan status salin
 ```
 C:\PS> $destBlob = Start-AzStorageBlobCopy -SrcContainer "contosouploads" -SrcBlob "ContosoPlanning2015" -DestContainer "contosouploads2" -DestBlob "ContosoPlanning2015_copy"
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
+Menentukan objek **CloudBlobContainer** dari pustaka Klien Azure Storage.
 Cmdlet ini mendapatkan status salinan blob dalam kontainer yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer.
 

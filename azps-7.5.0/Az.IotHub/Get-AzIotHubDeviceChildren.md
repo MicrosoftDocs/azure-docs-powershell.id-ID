@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 8effa74f4a904a3db7b4abe78b365f5ef4e4f90b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 632d72bdc6dd4d81e3d23c1ea2b459c6855923ba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239603"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694854"
 ---
 # Get-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Cetak daftar perangkat anak yang dipisahkan koma.
+Cetak daftar perangkat turunan yang dipisahkan koma.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 

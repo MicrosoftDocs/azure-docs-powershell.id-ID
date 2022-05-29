@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
-ms.openlocfilehash: 86d8e031b2f933a9dbab923f3475b4bf1e3b7657
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e7c914a2983c3b5824dd234dcfb4377a1b595689
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228042"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710496"
 ---
 # Export-AzSynapseKqlScript
 
 ## SYNOPSIS
 Mengekspor skrip KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsekqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Export-AzSynapseKqlScript -WorkspaceName ContosoWorkspace -Name ContosoKqlScript
 
 Mengekspor satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Export-AzSynapseKqlScript -Name ContosoKqlScript -OutputFolder "C:\KqlScript"

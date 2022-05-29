@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonAccountCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonAccountCredentialScanObject.md
-ms.openlocfilehash: 42dcee27ca1619dbc32d330aedd3e8fd9267168c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e273118f67d1f5690bf0a7ca6830930f1cc16a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230954"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656022"
 ---
 # New-AzPurviewAmazonAccountCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AmazonAccountCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewamazonaccountcredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

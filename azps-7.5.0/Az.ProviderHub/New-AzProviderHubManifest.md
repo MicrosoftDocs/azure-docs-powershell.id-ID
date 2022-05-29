@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubManifest.md
-ms.openlocfilehash: 5790642adcc9ee31c78de6dd331e0aa3a6b7df18
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 429ede90a1d340b40794c70d2b1262033a6386d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144113107"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656906"
 ---
 # New-AzProviderHubManifest
 
 ## SYNOPSIS
 Menghasilkan manifes untuk penyedia yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubmanifest) untuk informasi terbaru.
 
 ## SYNTAX
 

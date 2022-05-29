@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
-ms.openlocfilehash: 6fc3560b270d689522a8b709ccb54d9f301eb11d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7017b7fece2ef7682a194c5f59887cc3f1770dac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191780"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718020"
 ---
 # Get-AzRmStorageShare
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage berbagi file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 

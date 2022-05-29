@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonS3CredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAmazonS3CredentialScanObject.md
-ms.openlocfilehash: 0b700b7a9b955a633071774adcfc0767bcabf00c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17148caa0128785dee348432c697a1b515e3fff5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192354"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656040"
 ---
 # New-AzPurviewAmazonS3CredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AmazonS3CredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewamazons3credentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

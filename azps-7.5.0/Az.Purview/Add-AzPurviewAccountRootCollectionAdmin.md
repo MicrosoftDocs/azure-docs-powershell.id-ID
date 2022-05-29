@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/add-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
-ms.openlocfilehash: ec565362305aa1d9ad6d39f19b1c388c1859e432
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b05b4fea60f5b667633580751dca606a960a7cf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236778"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656707"
 ---
 # Add-AzPurviewAccountRootCollectionAdmin
 
 ## SYNOPSIS
 Tambahkan administrator untuk koleksi akar yang terkait dengan akun ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/add-azpurviewaccountrootcollectionadmin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Add-AzPurviewAccountRootCollectionAdmin -AccountName test-pa -ResourceGroupName 
 
 Tambahkan administrator untuk koleksi akar yang terkait dengan akun bernama 'test-pa'.
 
-### Contoh 2: Menambahkan administrator untuk pengumpulan akar oleh InputObject
+### Contoh 2: Menambahkan administrator untuk koleksi akar oleh InputObject
 ```powershell
 $got = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 Add-AzPurviewAccountRootCollectionAdmin -InputObject $got -ObjectId xxxxxxxx-5be9-4f43-abd2-04561777c8b0
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlAdvancedDataSecurity.md
-ms.openlocfilehash: 12253b4701cf29c0ab489f489f816f31edbbc551
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3fadc26d1177ff0433831b5270e6d63629eb4460
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228098"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710748"
 ---
 # Disable-AzSynapseSqlAdvancedDataSecurity
 
 ## SYNOPSIS
 Menonaktifkan Advanced Data Security pada ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/disable-azsynapsesqladvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 

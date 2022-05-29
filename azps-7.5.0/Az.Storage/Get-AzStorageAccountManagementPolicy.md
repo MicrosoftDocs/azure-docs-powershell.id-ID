@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/get-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: 2b5b9b20b13e7288e0985741af5c90539f5ca652
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 14ead654fe0ee123b1b0484f09153ccbd2c8383c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191766"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717840"
 ---
 # Get-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan manajemen akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountmanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Storage Id Sumber Daya Akun.
+id Sumber Daya Akun Storage.
 
 ```yaml
 Type: System.String

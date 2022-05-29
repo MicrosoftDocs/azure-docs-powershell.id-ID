@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
-ms.openlocfilehash: fe255ce280d1e6ff817cca9f9fac3a7a47849e0f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b95527d44d1633dcb4791f08ce514fc107c2b85e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222071"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679044"
 ---
 # Get-AzVirtualWanVpnServerConfigurationVpnProfile
 
 ## SYNOPSIS
 Menghasilkan dan mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfigurationvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/aa3
              qsEAbWAcYiKfUHFxZzh2hwvtb49dfVtUDA%3D&st=2019-10-25T19%3A52%3A36Z&se=2019-10-25T20%3A52%3A36Z&sp=r&fileExtension=.zip
 ```
 
-Perintah di atas akan menghasilkan dan mengembalikan Url SAS bagi pelanggan untuk mengunduh profil Vpn di tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
+Perintah di atas akan menghasilkan dan mengembalikan Url SAS bagi pelanggan untuk mengunduh profil Vpn pada tingkat VirtualWan-VpnServerConfiguration untuk penyiapan klien Point to site.
 
 ## PARAMETERS
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWanObject
-Objek wan virtual.
+Objek virtual wan.
 
 ```yaml
 Type: PSVirtualWan

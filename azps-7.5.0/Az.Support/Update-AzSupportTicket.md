@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
-ms.openlocfilehash: 90f7fcff1154a41ac6b1150cc701a358cfaf4eca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 11dafaa4dc180aeb2ae07b8b228b1be4fc792080
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246421"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710946"
 ---
 # Update-AzSupportTicket
 
 ## SYNOPSIS
 Memperbarui tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/update-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Closed   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 3: Perbarui detail kontak tiket dukungan dengan menentukan objek kontak.
+### Contoh 3: Memperbarui detail kontak tiket dukungan dengan menentukan objek kontak.
 ```powershell
 $contactDetail = new-object Microsoft.Azure.Commands.Support.Models.PSContactProfile
 $contactDetail.FirstName = "first name updated"
@@ -88,7 +91,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Perbarui tingkat keparahan tiket dukungan dengan mempipa objek tiket dukungan.
+### Contoh 4: Perbarui tingkat keparahan tiket dukungan dengan menyalurkan objek tiket dukungan.
 ```powershell
 Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Severity "moderate"
 ```
@@ -108,7 +111,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Moderate Virtual Machine running Linux Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 6: Memperbarui status tiket dukungan dengan piping objek tiket dukungan.
+### Contoh 6: Memperbarui status tiket dukungan dengan mempipa objek tiket dukungan.
 ```powershell
 Get-AzSupportTicket -Name "test1" | Update-AzSupportTicket -Status "Closed"
 ```
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -CustomerPreferredSupportLanguage
 Bahasa dukungan pilihan pelanggan.
-Ini harus berupa kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
+Ini harus berupa kode language-contry yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
 
 ```yaml
 Type: System.String
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredContactMethod
-Metode kontak yang disukai.
+Metode kontak pilihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.ContactMethod

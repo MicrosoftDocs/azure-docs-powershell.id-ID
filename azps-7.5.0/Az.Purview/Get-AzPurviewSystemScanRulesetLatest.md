@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRulesetLatest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewSystemScanRulesetLatest.md
-ms.openlocfilehash: c9f2aecc4ba4f73af76debd55b42255bc446dd38
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7c67870864e2f306dc10d48209f6e855a72b130
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215159"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656346"
 ---
 # Get-AzPurviewSystemScanRulesetLatest
 
 ## SYNOPSIS
 Mendapatkan versi terbaru dari set aturan pemindaian sistem
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewsystemscanrulesetlatest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Mendapatkan versi terbaru dari set aturan pemindaian sistem
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan set aturan pemindaian sistem terbaru yang tersedia untuk sumber data
+### Contoh 1: Dapatkan set aturan pemindaian sistem terbaru yang tersedia untuk sumber data
 ```powershell
 PS C:\> Get-AzPurviewSystemScanRulesetLatest -Endpoint https://parv-brs-2.purview.azure.com/ -DataSourceType 'AzureStorage'
 
@@ -42,7 +45,7 @@ Type              : System
 Version           : 4
 ```
 
-Mendapatkan set aturan pemindaian sistem terbaru yang tersedia untuk sumber data
+Mendapatkan aturan pemindaian sistem terbaru yang tersedia untuk sumber data
 
 ## PARAMETERS
 

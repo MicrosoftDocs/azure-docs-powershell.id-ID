@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 8cef5fb741ca10aed1bfb6e6abcd90a86549cc76
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 152954a5cb1f5373fa3fccd415e069bb43d1288f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228924"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678414"
 ---
 # New-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Membuat pengaturan HTTP back-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

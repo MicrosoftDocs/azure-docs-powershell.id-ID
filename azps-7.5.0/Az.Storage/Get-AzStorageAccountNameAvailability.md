@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountNameAvailability.md
-ms.openlocfilehash: 2b370586365ae3e866b17331e77608c84cdb57aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4783f8ef33026e0b802cd8b769507848b9777b52
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193723"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717804"
 ---
 # Get-AzStorageAccountNameAvailability
 
 ## SYNOPSIS
 Memeriksa ketersediaan nama akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

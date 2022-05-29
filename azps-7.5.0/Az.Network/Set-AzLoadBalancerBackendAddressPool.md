@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerBackendAddressPool.md
-ms.openlocfilehash: 68f3a6dd95bb1e28377f29f650cbeac0c260253d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 65b1a7de0f7b8da8111476c7b86db6cf1c78a603
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223199"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666228"
 ---
 # Set-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
 Memperbarui kumpulan backend pada loadbalancer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 

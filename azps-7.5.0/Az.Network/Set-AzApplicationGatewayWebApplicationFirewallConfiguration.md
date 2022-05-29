@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayWebApplicationFirewallConfiguration.md
-ms.openlocfilehash: ddfed27c18b476fdaf100978271d9b6b63b46f10
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a381982e400ccb804c410b4cdaad23fd56583d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186936"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145666822"
 ---
 # Set-AzApplicationGatewayWebApplicationFirewallConfiguration
 
 ## SYNOPSIS
 Memodifikasi konfigurasi WAF gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaywebapplicationfirewallconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

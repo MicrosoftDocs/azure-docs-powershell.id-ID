@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2ScanRulesetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2ScanRulesetObject.md
-ms.openlocfilehash: ee2d339fbf2601e66154a85e6bc158925492ecca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 75082b68b463d62296c3968b1ad9cccc181e9a4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224234"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656094"
 ---
 # New-AzPurviewAdlsGen2ScanRulesetObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AdlsGen2ScanRuleset.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewadlsgen2scanrulesetobject) untuk informasi terbaru.
 
 ## SYNTAX
 

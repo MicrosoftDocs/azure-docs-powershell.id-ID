@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubProviderRegistration.md
-ms.openlocfilehash: df37b2ae818fb444ecf3023582ce2f1e927bc4f4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b1379399d69a163f993394ba9f239839fb236a4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182635"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657012"
 ---
 # Get-AzProviderHubProviderRegistration
 
 ## SYNOPSIS
 Mendapatkan detail pendaftaran penyedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubproviderregistration) untuk informasi terbaru.
 
 ## SYNTAX
 

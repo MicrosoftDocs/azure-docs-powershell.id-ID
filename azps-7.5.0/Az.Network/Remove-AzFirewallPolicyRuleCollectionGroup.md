@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: 2bc3446ab2b5b8b264de00800fad42c74c6f8124
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 58382f7515c2f33ef7b94737eed040861603736c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185505"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670476"
 ---
 # Remove-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 Menghapus Grup Kumpulan Aturan Kebijakan Azure Firewall dalam kebijakan firewall Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 

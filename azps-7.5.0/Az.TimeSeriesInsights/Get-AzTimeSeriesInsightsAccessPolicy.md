@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsAccessPolicy.md
-ms.openlocfilehash: 58ebd164fae76c253ac545daec16b42f8f1c8157
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb5fa7422a356aba458bff5cfe9a247400564d8e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237408"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703710"
 ---
 # Get-AzTimeSeriesInsightsAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan akses dengan nama yang ditentukan di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightsaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

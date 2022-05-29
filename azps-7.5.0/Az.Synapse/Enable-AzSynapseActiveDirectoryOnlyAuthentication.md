@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 49cc01974535df2639cfde4d2d77ed146c719a1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 84854ec3119a10e9c361cfeab10875d0176d19ee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228084"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710604"
 ---
 # Enable-AzSynapseActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Mengaktifkan autentikasi Azure Active Directory (Azure AD) saja untuk ruang kerja Synapse tertentu.
+Mengaktifkan autentikasi Azure Active Directory (Azure AD) hanya untuk ruang kerja Synapse tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/enable-azsynapseactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ WorkspaceName AzureADOnlyAuthenticationProperty State CreationDate
 -------------     --------------------------------- -----      ------------
 ContosoWorkspace True Consistent 3/23/2022 8:27:47 AM
 
-Perintah ini memungkinkan Azure AD hanya autentikasi untuk ruang kerja ContosoWorkspace.
+Perintah ini memungkinkan autentikasi Azure AD hanya untuk ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -65,7 +68,7 @@ ContosoWorkspace True Consistent 3/23/2022 8:27:47 AM
 
 Perintah ini memungkinkan Azure AD hanya autentikasi untuk ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\> Enable-AzSynapseActiveDirectoryOnlyAuthentication -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```
@@ -74,7 +77,7 @@ WorkspaceName AzureADOnlyAuthenticationProperty State CreationDate
 -------------     --------------------------------- -----      ------------
 ContosoWorkspace True Consistent 3/23/2022 8:27:47 AM
 
-Perintah ini memungkinkan Azure AD hanya autentikasi untuk ruang kerja ContosoWorkspace oleh ResourceId.
+Perintah ini memungkinkan autentikasi Azure AD hanya untuk ruang kerja ContosoWorkspace oleh ResourceId.
 
 ## PARAMETERS
 

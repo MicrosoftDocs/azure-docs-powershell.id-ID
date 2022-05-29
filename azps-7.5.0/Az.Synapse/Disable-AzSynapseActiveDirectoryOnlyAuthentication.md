@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 5a7c44caed4b82fa6bc1c8f5e27bd9dea03e5f90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3dd757aefbb49f9061f1843e1cf2bc5386a5dd99
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228112"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710784"
 ---
 # Disable-AzSynapseActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Menonaktifkan autentikasi Azure Active Directory (Azure AD) saja untuk ruang kerja Synapse tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/disable-azsynapseactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ ContosoWorkspace False Consistent 3/23/2022 8:27:47 AM
 
 Perintah ini menonaktifkan Azure AD hanya autentikasi untuk ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\> Disable-AzSynapseActiveDirectoryOnlyAuthentication -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```

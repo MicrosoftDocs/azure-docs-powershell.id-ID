@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
-ms.openlocfilehash: 1dbf5a7a05411229712d06c970715bac844e04bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9acb6b26465bd23da71a073089fdf11e89345b8a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191724"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717624"
 ---
 # Get-AzStorageBlobQueryResult
 
 ## SYNOPSIS
 Menerapkan pernyataan Bahasa Permintaan Terstruktur sederhana (SQL) pada konten blob dan hanya menyimpan subset data yang dikueri ke file lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobqueryresult) untuk informasi terbaru.
 
 ## SYNTAX
 

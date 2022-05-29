@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
-ms.openlocfilehash: eb61d3ae0e56887e6e04bc16fe003226d0f2ed94
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db510fc0b343bc4a0b78aa460baddf2838654e1c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191777"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145718002"
 ---
 # Get-AzStorageAccountKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 
 ### -ListKerbKey
 Mencantumkan kunci Kerberos (jika direktori aktif diaktifkan) untuk akun penyimpanan yang ditentukan.
-Kunci Kerberos dihasilkan per akun penyimpanan untuk autentikasi berbasis identitas Azure Files baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Kunci Kerberos tidak menyediakan izin akses untuk melakukan operasi baca atau tulis sarana data atau kontrol apa pun terhadap akun penyimpanan.
+Kunci Kerberos dihasilkan per akun penyimpanan untuk autentikasi berbasis identitas Azure Files baik dengan Azure Active Directory Domain Service (Azure AD DS) atau Active Directory Domain Service (AD DS). Ini digunakan sebagai kata sandi identitas yang terdaftar di layanan domain yang mewakili akun penyimpanan. Kunci Kerberos tidak menyediakan izin akses untuk melakukan kontrol atau operasi baca atau tulis sarana data terhadap akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama akun Storage yang cmdlet ini mendapatkan kunci.
+Menentukan nama akun Storage tempat cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String

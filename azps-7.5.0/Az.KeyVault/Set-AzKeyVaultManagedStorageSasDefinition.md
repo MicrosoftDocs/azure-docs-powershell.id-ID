@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: 101e991b1bf802c975cd034301922fe31797e40e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dc5a75abbb940dd6623667976536b0f8003054a6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245934"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694548"
 ---
 # Set-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
 Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault untuk Akun Azure Storage terkelola Key Vault tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlob.md
-ms.openlocfilehash: 36ac3040ba82bb5d504c3cd327846de77dbf8667
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91a8297f106baa2f8def10514cae36758d5eb13f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193695"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717768"
 ---
 # Dapatkan-BlobPenyimpananAz
 
 ## SYNOPSIS
 Mencantumkan blob dalam kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,14 +61,14 @@ Cmdlet **Get-AzStorageBlob** mencantumkan blob dalam kontainer yang ditentukan d
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan blob menurut nama blob
+### Contoh 1: Mendapatkan blob menurut nama blob
 ```
 PS C:\>Get-AzStorageBlob -Container "ContainerName" -Blob blob*
 ```
 
 Perintah ini menggunakan nama blob dan kartubebas untuk mendapatkan blob.
 
-### Contoh 2: Dapatkan blob dalam kontainer dengan menggunakan alur
+### Contoh 2: Mendapatkan blob dalam kontainer dengan menggunakan alur
 ```
 PS C:\>Get-AzStorageContainer -Name container* | Get-AzStorageBlob -IncludeDeleted
 
@@ -78,9 +81,9 @@ test1                BlockBlob 403116          application/octet-stream       20
 test2                BlockBlob 403116          application/octet-stream       2017-11-08 07:53:00Z                                 False
 ```
 
-Perintah ini menggunakan alur untuk mendapatkan semua blob (menyertakan blob dalam status Dihapus) dalam kontainer.
+Perintah ini menggunakan alur untuk mendapatkan semua blob (termasuk blob dalam status Dihapus) dalam kontainer.
 
-### Contoh 3: Mendapatkan blob berdasarkan awalan nama
+### Contoh 3: Mendapatkan blob menurut awalan nama
 ```
 PS C:\>Get-AzStorageBlob -Container "ContainerName" -Prefix "blob"
 ```
@@ -105,14 +108,14 @@ PS C:\> Echo "Total $Total blobs in container $ContainerName"
 ```
 
 Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencantumkan Azure Storage blob dalam beberapa batch.
-Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
+Empat perintah pertama menetapkan nilai ke variabel yang akan digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While** yang menggunakan cmdlet **Get-AzStorageBlob** untuk mendapatkan blob.
 Pernyataan ini mencakup token kelanjutan yang disimpan dalam variabel $Token.
 $Token mengubah nilai saat perulangan berjalan.
 Untuk informasi selengkapnya, ketik `Get-Help About_Do`.
 Perintah akhir menggunakan perintah **Echo** untuk menampilkan total.
 
-### Contoh 5: Mendapatkan semua blob dalam kontainer menyertakan versi blob
+### Contoh 5: Mendapatkan semua blob dalam kontainer termasuk versi blob
 ```
 PS C:\>Get-AzStorageBlob -Container "containername"  -IncludeVersion 
 
@@ -153,7 +156,7 @@ Name                 BlobType  Length          ContentType                    La
 blob1                BlockBlob 2097152         application/octet-stream       2020-07-06 06:56:06Z Hot        2020-07-06T06:56:06.8588431Z False
 ```
 
-Perintah ini mendapatkan satu rekam jepret blob dengan SnapshotTime.
+Perintah ini mendapatkan rekam jepret blob tunggal dengan SnapshotTime.
 
 ### Contoh 8: Dapatkan blob menyertakan tag blob
 ```
@@ -178,7 +181,7 @@ tag2          value2
 
 Perintah ini mencantumkan blob dari kontainer dengan tag blob, dan menampilkan tag blob pertama.
 
-### Contoh 9: Dapatkan satu blob dengan kondisi tag blob
+### Contoh 9: Mendapatkan satu blob dengan kondisi tag blob
 ```
 PS C:\> Get-AzStorageBlob -Container "containername" -Blob testblob -TagCondition """tag1""='value1'"
 
@@ -223,7 +226,7 @@ Accept wildcard characters: True
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeVersion
-Versi blob akan dicantumkan hanya jika parameter ini ada, secara default mendapatkan blob tidak akan menyertakan versi blob.
+Versi blob hanya akan dicantumkan jika parameter ini ada, secara default mendapatkan blob tidak akan menyertakan versi blob.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 
 ### -Awalan
 Menentukan awalan untuk nama blob yang ingin Anda dapatkan.
-Parameter ini tidak mendukung penggunaan ekspresi reguler atau karakter kartubebas untuk mencari.
+Parameter ini tidak mendukung penggunaan ekspresi reguler atau karakter kartubebas untuk dicari.
 Ini berarti bahwa jika kontainer hanya memiliki blob bernama "My", "MyBlob1", dan "MyBlob2" dan Anda menentukan "-Prefix My*", cmdlet tidak mengembalikan blob.
 Namun, jika Anda menentukan "-Prefix My", cmdlet mengembalikan "My", "MyBlob1", dan "MyBlob2".
 
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
-Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String

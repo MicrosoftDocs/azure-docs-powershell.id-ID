@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
-ms.openlocfilehash: 3576209a56d353088bd9147d4a9510098fab418d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9f171627544c4df5ef869066c5939ae604e2ec9e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111609"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145678774"
 ---
 # Get-AzVpnGateway
 
 ## SYNOPSIS
 Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 

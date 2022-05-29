@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: e832cd16c6d393aba3b5c3854b6b9fa868570de8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4a2c4603679b86853fa9c6f0c6bdb2cddb1e2fff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193639"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717408"
 ---
 # Get-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan atau kebijakan akses tersimpan untuk kontainer penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragecontainerstoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini mendapatkan semua kebijakan akses dalam kontainer penyimpanan berna
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 

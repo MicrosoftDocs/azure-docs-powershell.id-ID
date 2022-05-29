@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/new-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportTicket.md
-ms.openlocfilehash: 56e8663697a5cf5d8c84c4f9eb54d5c6f1b41fad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6da7a4b105c4ddc3ff1c8ce355586362289314e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111029"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710982"
 ---
 # New-AzSupportTicket
 
 ## SYNOPSIS
 Membuat tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/new-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Untuk dokumentasi terperinci tentang cara membuat Payload untuk berbagai jenis k
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tiket dukungan Manajemen Penagihan atau Langganan. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Penagihan atau Manajemen Langganan yang ingin Anda minta dukungannya 
+### Contoh 1: Buat tiket dukungan Manajemen Tagihan atau Langganan. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Manajemen Penagihan atau Langganan yang ingin Anda minta dukungannya 
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{billing_service_guid}/problemClassifications/{problemClassification_guid}" -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -152,7 +155,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Buat tiket dukungan kuota untuk menambah kuota untuk Core berprioritas rendah untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota Batch.
+### Contoh 4: Buat tiket dukungan kuota untuk menambah kuota untuk Core berprioritas rendah untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Batch Kuota.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{batch_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Account" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"AccountName`":`"test`",`"NewLimit`":200,`"Type`":`"LowPriority`"}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -162,7 +165,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 5: Buat tiket dukungan kuota untuk menambah kuota inti VM untuk Keluarga VM tertentu untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota Batch.
+### Contoh 5: Buat tiket dukungan kuota untuk menambah kuota inti VM untuk Keluarga VM tertentu untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Batch Kuota.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{batch_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Account" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"AccountName`":`"test`",`"VMFamily`":`"standardA0_A7Family`",`"NewLimit`":200,`"Type`":`"Dedicated`"}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -172,7 +175,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 6: Buat tiket dukungan kuota untuk menambah kuota Kumpulan untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota Batch.
+### Contoh 6: Buat tiket dukungan kuota untuk menambah kuota Kumpulan untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Batch Kuota.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{batch_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Account" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"AccountName`":`"test`",`"NewLimit`":120,`"Type`":`"Pools`"}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -182,7 +185,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 7: Buat tiket dukungan kuota untuk meningkatkan kuota Pekerjaan aktif dan jadwal pekerjaan untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota Batch.
+### Contoh 7: Buat tiket dukungan kuota untuk meningkatkan kuota Pekerjaan aktif dan jadwal pekerjaan untuk akun Batch. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Batch Kuota.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{batch_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Account" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"AccountName`":`"test`",`"NewLimit`":120,`"Type`":`"Jobs`"}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -192,7 +195,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 8: Buat tiket dukungan kuota untuk menambah jumlah akun Batch untuk langganan. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota Batch.
+### Contoh 8: Buat tiket dukungan kuota untuk menambah jumlah akun Batch untuk langganan. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Batch Kuota.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{batch_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Subscription" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"NewLimit`":120,`"Type`":`"Account`"}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -202,7 +205,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 9: Buat tiket dukungan kuota untuk menambah kuota DTU untuk SQL Database. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota SQL Database.
+### Contoh 9: Buat tiket dukungan kuota untuk menambah kuota DTU untuk SQL Database. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk kuota SQL Database klasifikasi masalah.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{sql_database_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "DTUs" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"ServerName`":`"testserver`",`"NewLimit`":54000}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -212,7 +215,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 10: Buat tiket dukungan kuota untuk menambah kuota server untuk SQL Database. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota SQL Database.
+### Contoh 10: Buat tiket dukungan kuota untuk menambah kuota server untuk SQL Database. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk kuota SQL Database klasifikasi masalah.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{sql_database_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Servers" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"NewLimit`":200}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -222,7 +225,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 11: Buat tiket dukungan kuota untuk menambah kuota DTU untuk SQL Data Warehouse. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota SQL Gudang Tanggal.
+### Contoh 11: Buat tiket dukungan kuota untuk menambah kuota DTU untuk SQL Gudang Data. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota SQL Gudang Tanggal.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{sql_datawarehouse_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "DTUs" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"ServerName`":`"testserver`",`"NewLimit`":54000}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -232,7 +235,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 12: Buat tiket dukungan kuota untuk menambah kuota server untuk Gudang Data SQL. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota SQL Gudang Data.
+### Contoh 12: Buat tiket dukungan kuota untuk menambah kuota server untuk SQL Gudang Data. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah Kuota SQL Gudang Data.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{sql_datawarehouse_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "Servers" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"NewLimit`":200}"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -242,7 +245,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 13: Buat tiket dukungan kuota untuk menambah kuota untuk Core berprioritas rendah untuk layanan Pembelajaran Mesin. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota Pembelajaran Mesin layanan.
+### Contoh 13: Buat tiket dukungan kuota untuk menambah kuota inti berprioritas rendah untuk layanan Pembelajaran Mesin. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota Pembelajaran Mesin layanan.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{machine_learning_service_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "BatchAml" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"NewLimit`":200,`"Type`":`"LowPriority`" }"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -262,7 +265,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName                       St
 test1 Test  150010521000317 Minimal  Service and subscription limits (quotas) Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 15: Buat tiket dukungan kuota untuk menambah kuota Azure SQL Managed Instance. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota SQL Managed Instance layanan.
+### Contoh 15: Buat tiket dukungan kuota untuk menambah kuota untuk Azure SQL Managed Instance. Gunakan Get-AzSupportService dan Get-AzSupportProblemClassification untuk mengambil GUID yang benar untuk klasifikasi masalah kuota SQL Managed Instance layanan.
 ```powershell
 New-AzSupportTicket -Name "test1" -Title "Test" -Description "Test" -Severity "minimal" -ProblemClassificationId "/providers/Microsoft.Support/services/{quota_service_guid}/problemClassifications/{sql_managed_instance_problemClassification_guid}" -QuotaTicketDetail @{QuotaChangeRequestVersion = "1.0" ; QuotaChangeRequestSubType = "SQLMI" ; QuotaChangeRequests = (@{Region = "westus"; Payload = "{`"NewLimit`":200,`"Type`":`"vCore`" }"}, @{Region = "westus"; Payload = "{`"NewLimit`":200,`"Type`":`"Subnet`" }"})} -CustomerContactDetail @{FirstName = "first" ; LastName = "last" ; PreferredTimeZone = "pacific standard time" ; PreferredSupportLanguage = "en-us" ; Country = "USA" ; PreferredContactMethod = "Email" ; PrimaryEmailAddress = "user@contoso.com"}
 ```
@@ -292,7 +295,7 @@ Name  Title SupportTicketId Severity ServiceDisplayName Status CreatedDate
 test1 Test  150010521000317 Critical  Billing            Open   2/5/2020 1:33:53 AM
 ```
 
-### Contoh 18: Buat tiket dukungan atas nama pelanggan Anda jika Anda adalah Penyedia Solusi Cloud (CSP). CSP harus terlebih dahulu masuk ke penyewa mereka, lalu masuk ke penyewa pelanggan seperti yang ditunjukkan pada contoh di bawah ini. Mereka kemudian harus menggunakan parameter -CSPHomeTenantId untuk menentukan id penyewa rumah mereka pada saat membuat tiket dukungan.  
+### Contoh 18: Buat tiket dukungan atas nama pelanggan Anda jika Anda adalah Penyedia Solusi Cloud (Penyedia Solusi Cloud). Penyedia Solusi Cloud harus terlebih dahulu masuk ke penyewa mereka, lalu masuk ke penyewa pelanggan seperti yang ditunjukkan pada contoh di bawah ini. Mereka kemudian harus menggunakan parameter -CSPHomeTenantId untuk menentukan id penyewa rumah mereka pada saat membuat tiket dukungan.  
 ```powershell
 
 Login-AzAccount
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 
 ### -CustomerPreferredSupportLanguage
 Bahasa yang disimpulkan dari kustom.
-Ini harus berupa kode kontry bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/en-us/support/faq/.
+Ini harus berupa kode language-contry yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/en-us/support/faq/.
 
 ```yaml
 Type: System.String
@@ -525,7 +528,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredContactMethod
-Metode kontak yang disukai.
+Metode kontak pilihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Support.Models.ContactMethod

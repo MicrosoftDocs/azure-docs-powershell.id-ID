@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlAdvancedDataSecurity.md
-ms.openlocfilehash: e4181a3e863c205d2922372ba6afc0b2ba4a96d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 26c028fa4908641016ca6751b91ed0ce0e75a22d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228070"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710568"
 ---
 # Enable-AzSynapseSqlAdvancedDataSecurity
 
 ## SYNOPSIS
 Mengaktifkan Advanced Data Security pada ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/enable-azsynapsesqladvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Get-AzSynapseWorkspace -Name ContosoWorkspace | Enable-AzSynapseSqlAdvancedDataS
 
 Perintah ini memungkinkan Advanced Data Security ruang kerja melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Enable-AzSynapseSqlAdvancedDataSecurity -WorkspaceName ContosoWorkspace -DoNotConfigureVulnerabilityAssessment
 ```

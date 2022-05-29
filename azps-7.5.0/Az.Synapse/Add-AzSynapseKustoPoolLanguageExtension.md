@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseKustoPoolLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseKustoPoolLanguageExtension.md
-ms.openlocfilehash: d05750e46d89bd2fc99ced867b098a6614e9deaf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 98838701faaeccab5a59722a4d0d6af0f36d55e3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110981"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710928"
 ---
 # Add-AzSynapseKustoPoolLanguageExtension
 
 ## SYNOPSIS
 Tambahkan daftar ekstensi bahasa yang bisa berjalan dalam kueri KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/add-azsynapsekustopoollanguageextension) untuk informasi terbaru.
 
 ## SYNTAX
 

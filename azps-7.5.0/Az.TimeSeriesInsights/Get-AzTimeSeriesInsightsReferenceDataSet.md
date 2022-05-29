@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: bb4b831854dfb991e0522a2086112d160280444c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e88d0232528256702cf94168f957c0a1ce7cbd22
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237366"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703620"
 ---
 # Get-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Mendapatkan himpunan data referensi dengan nama yang ditentukan di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
