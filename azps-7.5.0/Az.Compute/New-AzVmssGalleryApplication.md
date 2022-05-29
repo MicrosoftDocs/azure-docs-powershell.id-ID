@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssGalleryApplication.md
-ms.openlocfilehash: a7d74e7012f5938ecc2c0be0b726c7c8ba40d241
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1542cfc47acd4e203ea721cc741d9e1663dc54bb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229971"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789894"
 ---
 # New-AzVmssGalleryApplication
 
 ## SYNOPSIS
 Buat objek PSVMGalleryApplication lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

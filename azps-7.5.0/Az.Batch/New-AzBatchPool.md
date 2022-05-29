@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchPool.md
-ms.openlocfilehash: 5f30d293be7fd927d95703f0a3ab5afbd1e93d12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 173ac861c58140e25216f824b1f29c3edb9ee53d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195067"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790236"
 ---
 # New-AzBatchPool
 
 ## SYNOPSIS
 Membuat kumpulan di layanan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Cmdlet **New-AzBatchPool** membuat kumpulan di layanan Azure Batch di bawah akun
 
 ## EXAMPLES
 
-### Contoh 1: Buat kumpulan baru menggunakan kumpulan parameter TargetDedicated menggunakan CloudServiceConfiguration
+### Contoh 1: Membuat kumpulan baru menggunakan kumpulan parameter TargetDedicated menggunakan CloudServiceConfiguration
 ```powershell
 $configuration = New-Object -TypeName "Microsoft.Azure.Commands.Batch.Models.PSCloudServiceConfiguration" -ArgumentList @(4,"*")
 New-AzBatchPool -Id "MyPool" -VirtualMachineSize "STANDARD_D1_V2" -CloudServiceConfiguration $configuration  -TargetDedicatedComputeNodes 3 -BatchContext $Context
@@ -93,14 +96,14 @@ New-AzBatchPool -Id "MyPool" -VirtualMachineSize "STANDARD_D1_V2" -CloudServiceC
 
 Kumpulan dikonfigurasi untuk menggunakan STANDARD_D1_V2 komputer virtual dengan versi sistem operasi keluarga empat.
 
-### Contoh 2: Buat kumpulan baru menggunakan kumpulan parameter TargetDedicated menggunakan VirtualMachineConfiguration
+### Contoh 2: Membuat kumpulan baru menggunakan kumpulan parameter TargetDedicated menggunakan VirtualMachineConfiguration
 ```powershell
 $imageReference = New-Object -TypeName "Microsoft.Azure.Commands.Batch.Models.PSImageReference" -ArgumentList @("WindowsServer", "MicrosoftWindowsServer", "2016-Datacenter", "*")
 $configuration = New-Object -TypeName "Microsoft.Azure.Commands.Batch.Models.PSVirtualMachineConfiguration" -ArgumentList @($imageReference, "batch.node.windows amd64")
 New-AzBatchPool -Id "MyPool" -VirtualMachineSize "STANDARD_D1_V2" -VirtualMachineConfiguration $configuration -TargetDedicatedComputeNodes 3 -BatchContext $Context
 ```
 
-Perintah ini membuat kumpulan baru dengan ID MyPool menggunakan set parameter TargetDedicated.
+Perintah ini membuat kumpulan baru dengan ID MyPool menggunakan kumpulan parameter TargetDedicated.
 Alokasi target adalah tiga simpul komputasi.
 Kumpulan dikonfigurasi untuk menggunakan STANDARD_D1_V2 komputer virtual dengan gambar sistem operasi Windows-2016-Datacenter.
 
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 
 ### -StartTask
 Menentukan spesifikasi tugas mulai untuk kumpulan.
-Tugas mulai dijalankan ketika simpul komputasi bergabung dengan kumpulan, atau ketika simpul komputasi di-boot ulang atau digambatkan ulang.
+Tugas mulai dijalankan saat simpul komputasi bergabung dengan kumpulan, atau ketika simpul komputasi di-boot ulang atau digambut ulang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSStartTask

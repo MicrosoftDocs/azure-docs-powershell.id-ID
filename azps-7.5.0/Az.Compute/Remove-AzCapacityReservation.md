@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzCapacityReservation.md
-ms.openlocfilehash: fc4ec20ae09f9b03ca23a0bdaf3f86ba52c6b883
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 115a4a984432881e6fe9afcca19632fd46a18dfe
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199729"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789876"
 ---
 # Remove-AzCapacityReservation
 
 ## SYNOPSIS
 Menghapus sumber daya Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 

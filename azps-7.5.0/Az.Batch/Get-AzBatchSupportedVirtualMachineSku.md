@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedVirtualMachineSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedVirtualMachineSku.md
-ms.openlocfilehash: b56e757effa2b6a2ad005f415c2ae66f5aea91a3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5e879b1ed9c6c283766290e4e0fe392907a54118
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195140"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790200"
 ---
 # Get-AzBatchSupportedVirtualMachineSku
 
 ## SYNOPSIS
 Mendapatkan daftar ukuran VM Komputer Virtual yang didukung Batch yang tersedia di lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchsupportedvirtualmachinesku) untuk informasi terbaru.
 
 ## SYNTAX
 

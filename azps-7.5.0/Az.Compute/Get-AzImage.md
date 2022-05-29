@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
-ms.openlocfilehash: 5652b045746050437dc18310e18454a6fd6a0a27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07abbb39d52739683c73941fb524f034011ccc84
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236050"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790164"
 ---
 # Get-AzImage
 
 ## SYNOPSIS
 Mendapatkan properti gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Tags                 : {}
 
 Perintah ini mendapatkan properti semua gambar di grup sumber daya 'ResourceGroup01'.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzImage
 ```

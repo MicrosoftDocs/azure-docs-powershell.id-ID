@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
-ms.openlocfilehash: bdb45a0788ee8d97f2c24b668d688db3a95bb876
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e9507c26bf6726d9a7670efd3228cb5930537cd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195277"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790254"
 ---
 # Get-AzBatchNodeFileContent
 
 ## SYNOPSIS
 Mendapatkan file simpul Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchnodefilecontent) untuk informasi terbaru.
 
 ## SYNTAX
 

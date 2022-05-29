@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/grant-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Grant-AzDiskAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Grant-AzDiskAccess.md
-ms.openlocfilehash: 957ead425b9494ef3af95727934fcf182e89d043
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d81a0da203024459c22712187b5b829a987874b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229089"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790146"
 ---
 # Grant-AzDiskAccess
 
 ## SYNOPSIS
 Memberikan akses ke disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/grant-azdiskaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
