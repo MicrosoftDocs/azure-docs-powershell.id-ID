@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvisor.md
-ms.openlocfilehash: 92958153bbd50e2bf028caf8b118d17f65fbaa0d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef3c6ebbe2edc95c2eed690ce7a82f44da4845d6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246438"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814670"
 ---
 # Get-AzSqlDatabaseAdvisor
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa Advisor untuk Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseadvisor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -164,7 +167,7 @@ RecommendedActions             : {}
 Perintah ini mendapatkan semua penasihat untuk database bernama 'WIRunner' dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan dengan respons.
 
-### Contoh 4: Mendapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```powershell
 Get-AzSqlDatabaseAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 ```
@@ -222,7 +225,7 @@ Perintah ini mendapatkan daftar semua penasihat untuk database bernama WIRunner 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama advisor yang didapat cmdlet ini.
+Menentukan nama penasihat yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -322,7 +325,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlDatabaseAdvisorModel
+### Microsoft.Azure.Commands.Sql. Advisor. Model.AzureSqlDatabaseAdvisorModel
 
 ## NOTES
 * Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql, advisor

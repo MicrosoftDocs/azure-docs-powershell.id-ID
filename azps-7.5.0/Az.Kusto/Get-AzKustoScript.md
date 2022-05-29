@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoScript.md
-ms.openlocfilehash: f9050740fdd48c44fdebdc4f5873b5357d421c6e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d032262701c902e5db57ab727c442a808c987c2f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216107"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777206"
 ---
 # Get-AzKustoScript
 
 ## SYNOPSIS
 Mendapatkan skrip database kluster Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Name                                               Type
 testnewkustocluster/mykustodatabase/newkustoscript Microsoft.Kusto/Clusters/Databases/Scripts
 ```
 
-Perintah di atas mengembalikan semua skrip database kluster Kusto dalam kluster "testnewkustocluster" yang ditemukan di grup sumber daya "testrg".
+Perintah di atas mengembalikan semua Kusto skrip database kluster di kluster "testnewkustocluster" yang ditemukan di grup sumber daya "testrg".
 
 ### Contoh 2: Mendapatkan skrip database Kusto tertentu berdasarkan nama
 ```powershell
@@ -65,7 +68,7 @@ Name                                               Type
 testnewkustocluster/mykustodatabase/newkustoscript Microsoft.Kusto/Clusters/Databases/Scripts
 ```
 
-Perintah di atas mengembalikan skrip database Kusto bernama "newkustoscript" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas mengembalikan skrip database Kusto bernama "newkustoscript" di kluster "testnewkustocluster" yang ditemukan di grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -203,7 +206,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Panduan ID operasi
+  - `[OperationId <String>]`: Guid ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.

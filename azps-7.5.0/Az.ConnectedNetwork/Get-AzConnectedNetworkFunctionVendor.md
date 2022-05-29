@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkFunctionVendor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkFunctionVendor.md
-ms.openlocfilehash: f55f45ef129c91ea0896d1d306539249a6b51208
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 874919fac0611c564f9038d4e486de15bfffe12f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144248045"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777566"
 ---
 # Get-AzConnectedNetworkFunctionVendor
 
 ## SYNOPSIS
 Mencantumkan semua informasi vendor dan sku yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkfunctionvendor) untuk informasi terbaru.
 
 ## SYNTAX
 

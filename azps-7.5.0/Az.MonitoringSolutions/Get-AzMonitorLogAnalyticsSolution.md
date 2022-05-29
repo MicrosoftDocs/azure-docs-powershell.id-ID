@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: b2adb6512546dfa2c1490138844a19fdc69d7eb1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c547eb81ef5c6c5c666fcf14c99fe2db3995037b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201339"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810810"
 ---
 # Get-AzMonitorLogAnalyticsSolution
 
 ## SYNOPSIS
 Mengambil solusi pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Containers(azureps-monitor) Microsoft.OperationsManagement/solutions West US 2
 
 Perintah ini mendapatkan solusi analitik log monitor berdasarkan nama.
 
-### Contoh 2: Mendapatkan solusi analitik log monitor menurut id sumber daya
+### Contoh 2: Mendapatkan solusi analitik log monitor berdasarkan id sumber daya
 ```powershell
 @{Id = "/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourcegroups/azureps-manual-test/providers/Microsoft.OperationsManagement/solutions/Containers(monitoringworkspace-t01)"} | Get-AzMonitorLogAnalyticsSolution
 ```
@@ -113,7 +116,7 @@ Containers(monitoringworkspace-t01) Microsoft.OperationsManagement/solutions Eas
 Containers(azureps-monitor)           Microsoft.OperationsManagement/solutions West US 2
 ```
 
-Perintah ini mendapatkan semua solusi analitik log monitor di bawah langganan.
+Perintah ini mendapatkan semua solusi analitik log pemantauan di bawah langganan.
 
 ## PARAMETERS
 
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MonitoringSolutions.Models.IMonitoringSolutionsIdentity
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -216,10 +219,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ManagementAssociationName <String>]`: Nama Manajemen PenggunaAssosiasi.
+  - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya induk.
   - `[ResourceType <String>]`: Jenis sumber daya untuk sumber daya induk
   - `[SolutionName <String>]`: Nama Solusi Pengguna.

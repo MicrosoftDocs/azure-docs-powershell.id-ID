@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
-ms.openlocfilehash: 6b3491093ab34ff5d14ef232ddf5e8b5340f2415
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b87c6e3059aee463c6849e77005dfd9e998d12d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189232"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802401"
 ---
 # New-AzApiManagementProduct
 
 ## SYNOPSIS
 Membuat produk API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Langganan dan persetujuan diperlukan.
 ## PARAMETERS
 
 ### -ApprovalRequired
-Menunjukkan apakah langganan ke produk memerlukan persetujuan atau tidak.
+Menunjukkan apakah langganan produk memerlukan persetujuan atau tidak.
 Secara default, parameter ini **$False**.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionRequired
 Menunjukkan apakah produk memerlukan langganan.
-Nilai defaultnya **adalah $True**.
+Nilai defaultnya adalah **$True**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -221,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 

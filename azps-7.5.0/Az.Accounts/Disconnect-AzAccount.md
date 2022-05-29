@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disconn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
-ms.openlocfilehash: b785eee386bd03623912eb82efa865588d4d7de4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7451aed6c54fd0348ed3e00fbf9daa013df92edf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205739"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814580"
 ---
 # Disconnect-AzAccount
 
 ## SYNOPSIS
 Memutuskan sambungan akun Azure yang tersambung dan menghapus semua kredensial dan konteks yang terkait dengan akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disconnect-azaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

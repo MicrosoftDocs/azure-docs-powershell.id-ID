@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/disconne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
-ms.openlocfilehash: d059d05151c468c4890c9a8c9954cd5aad5e0586
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0dddb3f7abfaf8e406c5a4da1f5329b73d8fa9b7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111668"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809888"
 ---
 # Disconnect-AzP2sVpnGatewayVpnConnection
 
 ## SYNOPSIS
-Putuskan sambungan koneksi klien vpn tersambung yang diberikan dengan gateway vpn p2s tertentu
+Putuskan sambungan koneksi klien vpn tersambung dengan gateway vpn p2s tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/disconnect-azp2svpngatewayvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Disconnect-AzP2sVpnGatewayVpnConnection -ResourceId <String> -VpnConnectionId <V
 ```
 
 ## DESCRIPTION
-Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda untuk memutuskan koneksi titik saat ini ke koneksi situs dari P2SVpnGateway.
+Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda memutuskan sambungan titik saat ini ke koneksi situs dari P2SVpnGateway.
 
 ## EXAMPLES
 

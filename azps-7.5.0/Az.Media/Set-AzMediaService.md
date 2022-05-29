@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
-ms.openlocfilehash: 7923c4ef2dbb0570600841f622babc73d169393f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f780f26440a484b198ed3a8b07d0e98559ae2e74
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112155"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791964"
 ---
 # Set-AzMediaService
 
 ## SYNOPSIS
 Memodifikasi properti tertentu dari layanan media yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/set-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/start-azaksc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
-ms.openlocfilehash: 8d33e76ee86155d803335639a235601239cdcc79
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 36b69dc1a8b93bbbc00bb67dc4b3f92152d6ad56
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236397"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782766"
 ---
 # Start-AzAksCluster
 
 ## SYNOPSIS
 Memulai Kluster Terkelola yang Dihentikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/start-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/copy-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Copy-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Copy-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 81ece166d581388417ab09c7ce0b83736dc462ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f9afc4d4399c184cee1bfdb37de56dc1d9f634e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216830"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775582"
 ---
 # Copy-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Menyalin cadangan retensi jangka panjang ke database target.  
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/copy-azsqldatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat cadangan berada.
+Nama server Azure SQL cadangan berada di bawah.
 
 ```yaml
 Type: System.String

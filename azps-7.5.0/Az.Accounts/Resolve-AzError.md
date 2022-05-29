@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/resolve
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Resolve-AzError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Resolve-AzError.md
-ms.openlocfilehash: 134ec8fc872aa52cbb1e7af6c8c13120d5117aba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 654803ee06976f12b6e1424ed5b16b024c5aecf0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207779"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809309"
 ---
 # Resolve-AzError
 
 ## SYNOPSIS
 Tampilkan informasi terperinci tentang kesalahan PowerShell, dengan detail yang diperluas untuk kesalahan Azure PowerShell.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/resolve-azerror) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Resolve-AzError [-Last] [-DefaultProfile <IAzureContextContainer>] [<CommonParam
 ```
 
 ## DESCRIPTION
-Mengatasi dan menampilkan informasi terperinci tentang kesalahan dalam sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, pelacakan tumpukan, dan semua pengecualian dalam dan agregat. Untuk kesalahan Azure PowerShell memberikan detail tambahan dalam masalah layanan penelusuran kesalahan, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
+Mengatasi dan menampilkan informasi terperinci tentang kesalahan dalam sesi PowerShell saat ini, termasuk di mana kesalahan terjadi dalam skrip, jejak tumpukan, dan semua pengecualian dalam dan agregat. Untuk kesalahan Azure PowerShell memberikan detail tambahan dalam masalah layanan penelusuran kesalahan, termasuk detail lengkap tentang permintaan dan respons server yang menyebabkan kesalahan.
 
 ## EXAMPLES
 
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kesalahan
-Satu atau beberapa catatan kesalahan untuk diatasi.  Jika tidak ada parameter yang ditentukan, semua kesalahan dalam sesi akan diselesaikan.
+Satu atau beberapa rekaman kesalahan untuk diatasi.  Jika tidak ada parameter yang ditentukan, semua kesalahan dalam sesi akan diselesaikan.
 
 ```yaml
 Type: System.Management.Automation.ErrorRecord[]

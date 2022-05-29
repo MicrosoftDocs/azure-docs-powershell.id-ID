@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzAlertProcessingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzAlertProcessingRule.md
-ms.openlocfilehash: 4e469a570915550c8d7409e11ecea24e3630b8ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d28f1f2318c6d32847d928b201d0c7ad115089e0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209654"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775532"
 ---
 # Set-AzAlertProcessingRule
 
 ## SYNOPSIS
 Membuat atau memperbarui aturan pemrosesan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/set-azalertprocessingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -549,7 +552,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2StartTime
-Waktu Mulai Keakuratan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan, atau Bulanan.
+Waktu Mulai Ketepatan Ulang di zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String
@@ -564,7 +567,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleReccurence2EndTime
-Waktu Mulai Keakuratan dalam zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan, atau Bulanan.
+Waktu Mulai Ketepatan Ulang di zona waktu parameter ScheduleTimeZone. Format 06:00:00 Harus disebutkan dalam kasus Jadwal Berulang - Harian, Mingguan atau Bulanan.
 
 ```yaml
 Type: System.String

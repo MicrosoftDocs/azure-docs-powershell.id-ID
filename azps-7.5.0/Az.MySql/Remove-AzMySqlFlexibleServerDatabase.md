@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 100ccccb0dd6c854b8b0a166091521354dd18e8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 000d83b10f52a45407856ed03f37d5e051e0d51d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210746"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814922"
 ---
 # Remove-AzMySqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Menghapus database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/remove-azmysqlflexibleserverdatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: b54537c94b40b40ff11cc5f3b59202c998d4535f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e73c1b66f6e4198047c21bbad92467827a8e297a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238878"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808628"
 ---
 # Set-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Memodifikasi server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Isi.
+psdx_paramvalues Dasar dan Tubuh.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -198,7 +201,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cakupan Default
+### -DefaultScope
 Menentukan cakupan default untuk server otorisasi.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan untuk menyajikan pemberian otorisasi atau token refresh.
+Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan menyajikan pemberian otorisasi atau token refresh.
 
 ```yaml
 Type: System.String

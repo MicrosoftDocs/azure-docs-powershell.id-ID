@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineActionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineActionObject.md
-ms.openlocfilehash: 88f041d3498cd3a0b45f0a4f24e3aaac730f5ef3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e01943d6a57029bdcd4b65fa1d03d7286fcce0e5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225396"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788121"
 ---
 # New-AzFrontDoorRulesEngineActionObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineAction untuk membuat aturan mesin aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineactionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ RequestHeaderActions ResponseHeaderActions    RouteConfigurationOverride
 
 ```
 
-Buat tindakan mesin aturan yang menambahkan nilai header respons dan tunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
+Buat tindakan mesin aturan yang menambahkan nilai header respons dan menunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
 ### Contoh 2
 ```powershell
@@ -105,7 +108,7 @@ EnableCaching                : True
 
 Buat tindakan mesin aturan yang meneruskan permintaan ke kumpulan backend speicific dan tunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $rulesEngineAction = New-AzFrontDoorRulesEngineActionObject -RedirectType Moved -RedirectProtocol MatchRequest -CustomHost www.contoso.com
 $rulesEngineAction
@@ -125,13 +128,13 @@ CustomQueryString :
 
 ```
 
-Buat tindakan mesin aturan yang mengalihkan permintaan ke host lain dan menunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
+Buat tindakan mesin aturan yang mengalihkan permintaan ke host lain dan tunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
 
 ## PARAMETERS
 
 ### -BackendPoolName
-Nama BackendPool yang dirutekan aturan ini
+Nama BackendPool tempat aturan ini dirutekan
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
 Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
 Yang pertama?
-dan & akan ditambahkan secara otomatis, jadi jangan sertakan di depan, tetapi pisahkan beberapa string kueri dengan &.
+dan & akan ditambahkan secara otomatis sehingga jangan sertakan di depan, tetapi lakukan beberapa string kueri terpisah dengan &.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 
 ### -DynamicCompression
 Apakah akan mengaktifkan pemadatan dinamis untuk konten yang di-cache.
-Nilai default Diaktifkan
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState

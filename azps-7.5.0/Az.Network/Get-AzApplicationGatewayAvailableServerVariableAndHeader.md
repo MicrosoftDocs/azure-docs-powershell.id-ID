@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableServerVariableAndHeader.md
-ms.openlocfilehash: 33e1fed449a0184b8d3e3b7c1c4a3dd9c3ee3ef7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5460b92ac06cc79bf6c8d662317ffd8a2e6eddc6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239169"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775926"
 ---
 # Get-AzApplicationGatewayAvailableServerVariableAndHeader
 
 ## SYNOPSIS
 Dapatkan variabel server yang didukung dan header permintaan dan respons yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailableservervariableandheader) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzApplicationGatewayAvailableServerVariableAndHeader -RequestHeader
 
 Perintah ini mengembalikan semua header permintaan yang tersedia.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzApplicationGatewayAvailableServerVariableAndHeader -ResponseHeader
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAutoApprovedPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAutoApprovedPrivateLinkService.md
-ms.openlocfilehash: fcb67ae9991a12311158af82d89ad560a156a099
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90c12f7e73e9cab69eb7fc4e5842218628071fa6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194608"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802796"
 ---
 # Get-AzAutoApprovedPrivateLinkService
 
 ## SYNOPSIS
 Mendapatkan array id layanan tautan privat yang dapat ditautkan ke titik akhir privat dengan disetujui secara otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azautoapprovedprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 

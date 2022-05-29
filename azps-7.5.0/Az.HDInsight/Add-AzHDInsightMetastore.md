@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
-ms.openlocfilehash: 915eefc28db0e2777bd51ea8f1b7b262f60a5af6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb9816c67561e63a029dd4a021b8d17f2d8305fc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235854"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795976"
 ---
 # Add-AzHDInsightMetastore
 
 ## SYNOPSIS
 Menambahkan SQL Database untuk berfungsi sebagai metastore Apache Hive atau Oozie ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightmetastore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -138,7 +141,7 @@ Perintah ini menambahkan database Ambari kustom ke kluster bernama your-hadoop-0
 
 ## PARAMETERS
 
-### -Config
+### -Konfigurasi
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 

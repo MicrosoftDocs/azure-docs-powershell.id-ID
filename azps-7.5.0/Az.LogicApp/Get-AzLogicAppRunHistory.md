@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppRunHistory.md
-ms.openlocfilehash: 89e325eef9c51ea0c0eed12830ee69cc6a629e92
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9c80ef3961b63d4379583f6680bd877feba4008
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187199"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777008"
 ---
 # Get-AzLogicAppRunHistory
 
 ## SYNOPSIS
 
 Mendapatkan riwayat eksekusi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapprunhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ LogicAppVersion  : 08587489107859952120
 
 Perintah ini mendapatkan aplikasi logika tertentu yang dijalankan untuk aplikasi logika bernama LogicApp03.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 Get-AzLogicAppRunHistory -Name 'LogicApp03' -ResourceGroupName MyResourceGroup -FollowNextPageLink

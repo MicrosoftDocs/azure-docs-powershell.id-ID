@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryWebhook.md
-ms.openlocfilehash: 9a7d05ac0e704fd4e67be027845bf52e34741a12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f733e2fa0816ef9d788d73f529270fab438f34ba
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243218"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801286"
 ---
 # Update-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Memperbarui webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Cmdlet Update-AzContainerRegistryWebhook memperbarui webhook registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui webhook registri kontainer yang ada.
+### Contoh 1: Memperbarui webhook registri kontainer yang ada.
 ```powershell
 Update-AzContainerRegistryWebhook -ResourceGroupName "MyResourceGroup" -RegistryName "MyRegistry" -Name "webhook001" -Uri http://www.bing.com -Action Delete,Push -Header @{SpecialHeader='headerVal'} -Tag @{Key='val'} -Status Enabled -Scope 'foo:*'
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/set-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
-ms.openlocfilehash: 5a4a6f232934cc10522a265edc056a77bfe08248
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d7e6a246a08508f38e79f542b126e1035d4aba9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196946"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790578"
 ---
 # Set-AzAdvisorConfiguration
 
 ## SYNOPSIS
-Memperbarui atau membuat Konfigurasi Azure Advisor.
+Memperbarui atau membuat Konfigurasi Advisor Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/set-azadvisorconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Set-AzAdvisorConfiguration [-Exclude] [-LowCpuThreshold] <Int32>
 ```
 
 ## DESCRIPTION
-Digunakan untuk memperbarui konfigurasi Azure Advisor. Ada dua jenis Konfigurasi: Konfigurasi tingkat langganan dan konfigurasi tingkat ResourceGroup. 
+Digunakan untuk memperbarui konfigurasi Advisor Azure. Ada dua jenis Konfigurasi: Konfigurasi tingkat langganan dan konfigurasi tingkat ResourceGroup. 
 
 Konfigurasi tingkat langganan: Hanya ada satu Konfigurasi untuk jenis ini untuk langganan. Properti LowCpuThreshold dan Exclude dapat diperbarui menggunakan cmdlet ini.
 Konfigurasi tingkat ResourceGroup: Hanya ada satu konfigurasi untuk setiap ResourceGroup. Hanya properti Kecualikan yang dapat diperbarui menggunakan cmdlet ini.
@@ -73,9 +76,9 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Memperbarui konfigurasi (lowCpuThreshold, kecualikan) untuk Konfigurasi tingkat langganan dan dikecualikan dari pembuatan rekomendasi.
+Memperbarui konfigurasi (lowCpuThreshold, kecualikan) untuk Konfigurasi tingkat langganan dan mengecualikan dari pembuatan rekomendasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzAdvisorConfiguration -ResourceGroupName resourceGroupName1 -Exclude
 ```
@@ -90,7 +93,7 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Memperbarui konfigurasi (kecualikan) untuk resourceGroupName1 yang akan dikecualikan dalam pembuatan rekomendasi.
+Memperbarui konfigurasi (kecualikan) agar resourceGroupName1 dikecualikan dalam pembuatan rekomendasi.
 
 ### Contoh 4
 ```powershell
@@ -224,11 +227,11 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationData
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorConfigurationData
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationData
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorConfigurationData
 
 ## NOTES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
-ms.openlocfilehash: 449f4b04130766a900be15228f6dabe5bb993350
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c29390decedb385e81d20d6c9f6ab1fc40c7990d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201678"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788076"
 ---
 # New-AzFunctionAppPlan
 
 ## SYNOPSIS
 Membuat paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/new-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 

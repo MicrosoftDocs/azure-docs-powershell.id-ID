@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineRuleObject.md
-ms.openlocfilehash: f4b8a1aa8eb7ec6f37ec1f431467834d1cebd86f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b28e3da4fb9f5a2f21a03a77fb35eb815c6133c2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225365"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788145"
 ---
 # New-AzFrontDoorRulesEngineRuleObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzFrontDoorRulesEngineRuleObject -Name <String> -Priority <Int32> -Action <P
 ## DESCRIPTION
 Buat objek PSRulesEngineRule untuk pembuatan Mesin Aturan.
 
-Gunakan cmdlet "New-AzFrontDoorRulesEngineActionObject" untuk membuat objek PSRulesEngineAction untuk masuk ke parameter "-Action".
+Gunakan cmdlet "New-AzFrontDoorRulesEngineActionObject" untuk membuat objek PSRulesEngineAction untuk meneruskan ke parameter "-Action".
 Gunakan cmdlet "New-AzFrontDoorRulesEngineMatchConditionObject" untuk membuat objek PSRulesEngineMatchCondition untuk diteruskan ke parameter "-MatchCondition".
 
 ## EXAMPLES

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolsSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolsSettingObject.md
-ms.openlocfilehash: 64363fea5121ebef0f7c039bb71cebc9483d86ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9b0c851276440131d85532399aac8053dd8ef097
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225463"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788219"
 ---
 # New-AzFrontDoorBackendPoolsSettingObject
 
 ## SYNOPSIS
 Buat objek PSBackendPoolsSetting untuk pembuatan Front Door.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolssettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnforceCertificateNameCheck
-Apakah akan menerapkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend.
+Apakah akan memberlakukan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend.
 Tidak berpengaruh pada permintaan non-HTTPS.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendRecvTimeoutInSeconds
-Kirim dan terima batas waktu pada permintaan penerusan ke backend. Ketika batas waktu tercapai, permintaan gagal dan kembali.
+Kirim dan terima batas waktu pada permintaan penerusan ke backend. Ketika waktu habis tercapai, permintaan gagal dan kembali.
 
 ```yaml
 Type: System.Int32

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
-ms.openlocfilehash: 0b92af5bc71d49af88e60ceddbd7491a5d152563
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b2374ab01191f3ab1cef905c8c9cec6db5a0f1c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212438"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795526"
 ---
 # New-AzImportExport
 
 ## SYNOPSIS
 Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada dalam langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/new-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ### -DriveList
 Daftar hingga sepuluh drive yang terdiri dari pekerjaan.
 Daftar drive adalah elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
-Untuk membuat, lihat bagian CATATAN untuk properti DRIVELIST dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DRIVELIST dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveStatus[]
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportBlobListblobPath
-URI relatif ke blob blok yang berisi daftar jalur blob atau awalan jalur blob seperti yang didefinisikan di atas, dimulai dengan nama kontainer.
+URI relatif ke blob blok yang berisi daftar jalur blob atau awalan jalur blob seperti yang ditentukan di atas, dimulai dengan nama kontainer.
 Jika blob berada dalam kontainer akar, URI harus dimulai dengan $root.
 
 ```yaml
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressPostalCode
-Kode pos yang akan digunakan saat mengembalikan drive.
+Kode pos yang digunakan saat mengembalikan drive.
 
 ```yaml
 Type: System.String
@@ -669,7 +672,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShippingInformationPostalCode
-Kode pos yang akan digunakan saat mengembalikan drive.
+Kode pos yang digunakan saat mengembalikan drive.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2PipelineRun.md
-ms.openlocfilehash: dcece7aa21797bac3b870913a1ecd1dbe6ad4087
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aff80ca806e2e8b06a8db8fc93fbd1bf3c9baa88
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203439"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785250"
 ---
 # Stop-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
 Menghentikan eksekusi alur di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 

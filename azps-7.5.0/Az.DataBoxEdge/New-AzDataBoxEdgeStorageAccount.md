@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: 1ef0605d3a48eb6a099379061c571908d4a162a9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d5c2b854feb3944249e69e22652d37c3c584ad3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204779"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796030"
 ---
 # New-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
-Membuat akun Storage Edge baru di perangkat.
+Membuat akun Edge Storage baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Name                ContainerCount Status BlobEndpoint                          
 edgestoragegacount2 0              OK     https://edgestoragegacount2.blob.dbEdge.microsoftdatabox.com/ cloudstorageaccount2     dbEdge     resourceGroupName
 ```
 
-2 EdgeStorageAccounts di perangkat tidak dapat berbagi lebih dari 1 Akun Cloud Storage
+2 EdgeStorageAccounts di perangkat tidak dapat berbagi lebih dari 1 Akun Storage Cloud
 
 ## PARAMETERS
 

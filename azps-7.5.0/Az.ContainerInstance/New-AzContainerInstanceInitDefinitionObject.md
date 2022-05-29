@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
-ms.openlocfilehash: fb22c88d680cea9c59ec15577ecdb1431ed6c954
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1bf30f5cc75266958c455cce921ca90fde42cbb2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219362"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801412"
 ---
 # New-AzContainerInstanceInitDefinitionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk InitContainerDefinition
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceinitdefinitionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perintah ini menyiapkan definisi kontainer init dengan perintah `/bin/sh -c mysc
 
 ## PARAMETERS
 
-### -Command
+### -Perintah
 Perintah untuk menjalankan dalam kontainer init dalam bentuk eksekusi.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -VolumeMount
 Mount volume yang tersedia untuk kontainer init.
-Untuk membuat, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IVolumeMount[]

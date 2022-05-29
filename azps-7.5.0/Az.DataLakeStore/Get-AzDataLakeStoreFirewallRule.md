@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreFirewallRule.md
-ms.openlocfilehash: 870d21db2fb4290227b18a8a4e55d0f743d18932
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07363cbc9253bfe403e0c47a43407e90e66af15b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202728"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785052"
 ---
 # Get-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
 Mendapatkan aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada aturan firewall yang ditentukan, maka daftar semua aturan firewall untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskUpdateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskUpdateConfig.md
-ms.openlocfilehash: 515e0474a9bae2f3010acdda47f24991de76051d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 66d612a9cacf7613e84d4308344a4b2ece9172ba
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184777"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798208"
 ---
 # New-AzDiskUpdateConfig
 
 ## SYNOPSIS
 Membuat objek pembaruan disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskupdateconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Perintah ini memperbarui disk yang ada dengan nama 'Disk01' dalam grup sumber da
 ## PARAMETERS
 
 ### -AcceleratedNetwork
-Benar jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
+True jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskAccessId
-{{ Fill DiskAccessId Description }}
+{{ Isi Deskripsi DiskAccessId }}
 
 ```yaml
 Type: System.String
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchasePlan
-{{ Fill PurchasePlan Description }}
+{{ Isi Deskripsi Pesawat Pembelian }}
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSPurchasePlan
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama Sku akun penyimpanan.  Nilai yang tersedia adalah Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS.  UltraSSD_LRS hanya dapat digunakan dengan nilai Kosong untuk parameter CreateOption.
+Menentukan nama Sku akun penyimpanan.  Nilai yang tersedia Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS.  UltraSSD_LRS hanya dapat digunakan dengan nilai Kosong untuk parameter CreateOption.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
-ms.openlocfilehash: d83c24be25661fc9df133b1d3dbe703c87db4458
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6423e14c47e9091318b697d6c3a8aa370c3e6511
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216359"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795652"
 ---
 # Get-AzHDInsightMonitoring
 
 ## SYNOPSIS
 Mendapatkan status integrasi log Azure Monitor Klasik pada kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightmonitoring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Get-AzHDInsightMonitoring -Name testcluster -ResourceGroupName testrg
 
 Pemantauan diaktifkan pada kluster karena properti ClusterMonitoringEnabled benar. Id ruang kerja pemantauan tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzHDInsightMonitoring -Name testcluster
 ```

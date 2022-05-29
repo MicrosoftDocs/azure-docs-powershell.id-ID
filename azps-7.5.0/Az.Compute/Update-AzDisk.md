@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzDisk.md
-ms.openlocfilehash: 1d4763d73e16bc3e4bc6daa5046d25bc6125cdd5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cc1402c4dabf4e3b1084408e917e3d00f982d8c9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186292"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801772"
 ---
 # Update-AzDisk
 
 ## SYNOPSIS
 Memperbarui disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ New-AzDiskUpdateConfig -DiskSizeGB 10 | Update-AzDisk -ResourceGroupName 'Resour
 
 Perintah ini memperbarui disk yang ada dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01' hingga ukuran disk 10 GB.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $disk = Get-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01';
 $disk.DiskSizeGB = 10;

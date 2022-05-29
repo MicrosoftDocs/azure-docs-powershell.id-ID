@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateProject.md
-ms.openlocfilehash: a0beab12a6fa028787c3ecad9bbe75a788a78477
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cc2cea528f0d4d45d5f5e5a99b2d0f9262c58a3b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111833"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814976"
 ---
 # New-AzMigrateProject
 
 ## SYNOPSIS
 Membuat proyek Migrasi baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigrateproject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -184,8 +187,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PROPERTI <IMigrateProjectProperties>: Menentukan properti proyek.
-  - `[ProvisioningState <ProvisioningState?>]`: Status provisi proyek migrasi.
-  - `[RegisteredTool <String[]>]`: Mendapatkan atau mengatur daftar alat yang terdaftar dengan proyek migrasi.
+  - `[ProvisioningState <ProvisioningState?>]`: Status penyediaan proyek migrasi.
+  - `[RegisteredTool <String[]>]`: Mendapatkan atau menetapkan daftar alat yang terdaftar dengan proyek migrasi.
 
 ## RELATED LINKS
 

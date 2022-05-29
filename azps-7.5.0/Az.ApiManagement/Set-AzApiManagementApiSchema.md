@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
-ms.openlocfilehash: dd0da8fb867dd014819056f21326e7f6e72485cd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 852d6a750620eb8f6eac5142b306eb57b7f84399
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200499"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808689"
 ---
 # Set-AzApiManagementApiSchema
 
 ## SYNOPSIS
 Memodifikasi Skema API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapischema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, contoh jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
+Jika ditentukan, maka instans jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

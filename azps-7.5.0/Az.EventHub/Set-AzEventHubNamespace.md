@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 3465418a9c722b02f2f55747d81bab9cc95d6375
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9f6987823df433b63272959f50fe3c56a4a6a3c0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186096"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788400"
 ---
 # Set-AzEventHubNamespace
 
 ## SYNOPSIS
 Memperbarui namespace layanan Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ MaximumThroughputUnits : 10
 
 Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = diaktifkan dan MaximumThroughputUnits = 10
 
-### Contoh 3
+### Contoh: 3
 
 Memperbarui namespace layanan Azure Event Hubs yang ditentukan. (dibuat otomatis)
 
@@ -166,7 +169,7 @@ EncryptionConfig              : {{ KeyName: key1,
 
 Buat namespace layanan dengan Identitas yang Ditetapkan Sistem diaktifkan lalu gunakan Perintah Set untuk menambahkan konfigurasi enkripsi.
 
-### Contoh 5: Menambahkan konfigurasi enkripsi lain ke namespace layanan di Contoh 4
+### Contoh 5: Menambahkan konfigurasi enkripsi lain ke namespace di Contoh 4
 
 ```powershell
 $namespace = Get-AzEventHubNamespace -ResourceGroupName myresourcegroup -Name MyNamespaceName
@@ -223,7 +226,7 @@ EncryptionConfig              : {{ KeyName: key1,
                                  }}
 ```
 
-Jika Anda harus menambahkan konfigurasi enkripsi ke namespace. Lakukan Dapatkan di namespace layanan dan kueri hasilnya untuk menyertakan konfigurasi enkripsi baru.
+Jika Anda harus menambahkan konfigurasi enkripsi ke namespace layanan. Lakukan Dapatkan di namespace layanan dan kueri hasilnya untuk menyertakan konfigurasi enkripsi baru.
 
 
 ## PARAMETERS
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityUserDefined
-Identitas yang Ditentukan Pengguna atau Tidak Ada
+Identitas yang ditentukan pengguna atau Tidak Ada
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Namespace EventHub.
+Lokasi Namespace Layanan EventHub.
 
 ```yaml
 Type: System.String
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -449,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Namespace EventHub.
+Nama Namespace Layanan EventHub.
 
 ```yaml
 Type: System.String
@@ -580,7 +583,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.9.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Collections.Hashtable
 

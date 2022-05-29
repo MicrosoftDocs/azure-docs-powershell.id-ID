@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryRepository.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryRepository.md
-ms.openlocfilehash: 788f1cbde31feba07bf8e6e7c0272fad918fcb1d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77bb2d119a53892b71194245300d3a10722e63de
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243313"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801322"
 ---
 # Get-AzContainerRegistryRepository
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan repositori ACR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistryrepository) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ test/busybox1
 test/busybox10
 ```
 
-Cantumkan semua repositori dalam registri.
+Mencantumkan semua repositori dalam registri.
 
 ### Contoh 2
 ```powershell
@@ -62,9 +65,9 @@ test/busybox0
 test/busybox1
 ```
 
-Daftar 3 repositori pertama dalam registri.
+Mencantumkan 3 repositori pertama dalam registri.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzContainerRegistryRepository -RegistryName registry -Name alpine
 ```
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Azure Container Registry.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String

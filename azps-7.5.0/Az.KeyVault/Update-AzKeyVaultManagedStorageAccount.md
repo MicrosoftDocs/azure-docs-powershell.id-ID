@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: adab7d7bb3e3f6cd8aa7cf7a9df352b89dba653f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 057b1ab2fff861ac1c7ebb9bf98932192fbf8dc4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197811"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795364"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui kunci aktif ke 'key2' pada Akun Azure Storage yang dikelola Key Vault.
+### Contoh 1: Perbarui kunci aktif ke 'key2' pada Akun Azure Storage terkelola Key Vault.
 ```powershell
 Update-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -ActiveKeyName 'key2'
 ```
@@ -59,7 +62,7 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Memperbarui kunci aktif Akun Azure Storage terkelola Key Vault ke 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
+Memperbarui kunci aktif Akun Azure Storage terkelola Key Vault menjadi 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
 
 ### Contoh 2
 
@@ -73,7 +76,7 @@ Update-AzKeyVaultManagedStorageAccount -AccountName 'mystorageaccount' -AutoRege
 ## PARAMETERS
 
 ### -AccountName
-Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
+Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama brankas, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ActiveKeyName
 Nama kunci aktif.
-Jika tidak ditentukan, nilai yang ada dari nama kunci aktif akun penyimpanan terkelola tetap tidak berubah
+Jika tidak ditentukan, nilai nama kunci aktif akun penyimpanan terkelola yang ada tetap tidak berubah
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerationPeriod
-Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu setelah kunci tidak aktif akun penyimpanan terkelola diregenerasi secara otomatis dan menjadi kunci aktif. Jika tidak ditentukan, nilai periode regenerasi kunci akun penyimpanan terkelola yang ada tetap tidak berubah
+Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu setelah keygets tidak aktif akun penyimpanan terkelola diregenerasi secara otomatis dan menjadi kunci aktif. Jika tidak ditentukan, nilai periode regenerasi kunci akun penyimpanan terkelola yang ada tetap tidak berubah
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]

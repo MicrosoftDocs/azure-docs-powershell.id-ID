@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/save-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Save-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Save-AzContext.md
-ms.openlocfilehash: b5e9f716241e34d16a9610bb5daa2256b2407350
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99d4a9c9641985a2b0cef94ca732b82b287c4569
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193432"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809381"
 ---
 # Save-AzContext
 
 ## SYNOPSIS
 Menyimpan informasi autentikasi saat ini untuk digunakan dalam sesi PowerShell lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/save-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -Profil
 Menentukan konteks Azure dari mana cmdlet ini dibaca.
-Jika Anda tidak menentukan konteks, cmdlet ini akan membaca dari konteks default lokal.
+Jika Anda tidak menentukan konteks, cmdlet ini membaca dari konteks default lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Models.AzureRmProfile

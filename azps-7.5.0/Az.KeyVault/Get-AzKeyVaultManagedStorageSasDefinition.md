@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: a76beb9dadef15b30945ff3bcd3439430942b72e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b875da67f04c727e202a961ede15c21ba725479b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213683"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777476"
 ---
 # Get-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
 Mendapatkan Definisi SAS Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Mendapatkan Definisi SAS Storage terkelola Key Vault jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan akun Storage terkelola Key Vault yang ditentukan di vault akan dicantumkan.
+Mendapatkan Key Vault dikelola Storage Definisi SAS jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan akun Storage terkelola Key Vault yang ditentukan di vault akan dicantumkan.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Tags        :
 
 Mencantumkan semua definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault'
 
-### Contoh 2: Mendapatkan Akun Storage terkelola Key Vault
+### Contoh 2: Dapatkan Akun Storage terkelola Key Vault
 ```powershell
 Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'accountsas'
 ```
@@ -72,7 +75,7 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mendapatkan detail 'akun' Definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault'.
+Mendapatkan detail 'accountsas' Definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault'.
 
 ### Contoh 3: Mencantumkan semua Definisi SAS Storage terkelola Key Vault menggunakan pemfilteran
 ```powershell
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -Name
 Storage nama definisi sas.
-Cmdlet membangun FQDN definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan, dan nama definisi sas.
+Cmdlet membangun FQDN dari definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan, dan nama definisi sas.
 
 ```yaml
 Type: System.String

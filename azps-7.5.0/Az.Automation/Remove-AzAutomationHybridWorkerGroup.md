@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationHybridWorkerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationHybridWorkerGroup.md
-ms.openlocfilehash: d9a530aad300f6bf9d94595db144c12d295f4636
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10765433ea7db4094d9c0b23b3f464289eff306e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186572"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808448"
 ---
 # Remove-AzAutomationHybridWorkerGroup
 
 ## SYNOPSIS
 Menghapus grup hybrid worker dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationhybridworkergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> Remove-AzAutomationHybridWorkerGroup -ResourceGroupName "rg1" `
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String

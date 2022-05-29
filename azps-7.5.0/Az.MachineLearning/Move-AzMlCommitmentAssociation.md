@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Move-AzMlCommitmentAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Move-AzMlCommitmentAssociation.md
-ms.openlocfilehash: a57230ae81704c2337aa7563f2ba1cbceb1280bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f91f782ed0340e297e7208a17f8d2b493f7e6763
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224570"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794914"
 ---
 # Move-AzMlCommitmentAssociation
 
 ## SYNOPSIS
 Memindahkan asosiasi komitmen dari satu rencana komitmen ke rencana komitmen lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/move-azmlcommitmentassociation) untuk informasi terbaru.
 
 ## SYNTAX
 

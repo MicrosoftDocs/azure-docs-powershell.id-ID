@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
-ms.openlocfilehash: d2536b575ac4209e1cfc3286007ed342bb00912a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 59f712434c65999037a485e2dad098d9c993e1c1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211367"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802366"
 ---
 # New-AzApiManagementSslSetting
 
 ## SYNOPSIS
 Membuat instans PsApiManagementSslSetting
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsslsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ FrontendProtocols BackendProtocols CipherSuites ServerProtocols
 {Tls10}           {Tls10}
 ```
 
-Buat instans baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) ApiManagement Gateway.
+Buat instans baru PsApiManagementSslSetting untuk Mengaktifkan TLSv 1.0 di Frontend (antara klien dan APIM) dan Backend (antara APIM dan Backend) apiManagement Gateway.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 
 ### -CipherSuite
 Pengaturan suite sandi Ssl dalam urutan yang ditentukan. Parameter ini bersifat opsional.
-Pengaturan yang valid adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
+Pengaturan yang valid adalah `TripleDes168` - Aktifkan/ Nonaktifkan Tripe Des 168
 
 ```yaml
 Type: System.Collections.Hashtable

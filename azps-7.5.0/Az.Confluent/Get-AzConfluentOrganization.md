@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
-ms.openlocfilehash: 01590d2050a6679b39ffde153bfef101075163c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24a42378931b73918691209c91682dc771b80d4f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199491"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777620"
 ---
 # Get-AzConfluentOrganization
 
 ## SYNOPSIS
 Mendapatkan properti sumber daya Organisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/get-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,9 +71,9 @@ westus2       dri-02-02                Microsoft.Confluent/organizations
 westcentralus RohitWCUS88              Microsoft.Confluent/organizations
 ```
 
-Perintah ini mencantumkan semua organisasi konfluen di bawah langganan.
+Perintah ini mencantumkan semua organisasi confluent di bawah langganan.
 
-### Contoh 2: Mencantumkan semua organisasi confluent di bawah grup sumber daya
+### Contoh 2: Mencantumkan semua organisasi konfluen di bawah grup sumber daya
 ```powershell
 Get-AzConfluentOrganization -ResourceGroupName azure-rg-test
 ```
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Confluent.Models.IConfluentIdentity

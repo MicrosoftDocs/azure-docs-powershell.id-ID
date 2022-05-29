@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightMonitoring.md
-ms.openlocfilehash: ab315f2a436c7985533ba51356a7adc3484c121e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed55bef250c3d7aca46772faf3be27324cacf536
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212531"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795706"
 ---
 # Disable-AzHDInsightMonitoring
 
 ## SYNOPSIS
 Menonaktifkan integrasi log Azure Monitor Klasik pada kluster HDInsight dan log yang relevan akan berhenti mengalir ke ruang kerja pemantauan yang ditentukan selama pengaktifan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/disable-azhdinsightmonitoring) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentMarketplaceAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentMarketplaceAgreement.md
-ms.openlocfilehash: 8a8380c16b2e02cb2d91156b13c03150bc3519a8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23d15034be85e11f2973ebac0419a4f8acfc11b1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196649"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777638"
 ---
 # Get-AzConfluentMarketplaceAgreement
 
 ## SYNOPSIS
 Mencantumkan perjanjian marketplace Confluent dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/get-azconfluentmarketplaceagreement) untuk informasi terbaru.
 
 ## SYNTAX
 

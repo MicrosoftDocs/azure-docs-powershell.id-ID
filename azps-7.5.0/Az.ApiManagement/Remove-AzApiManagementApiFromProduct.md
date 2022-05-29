@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromProduct.md
-ms.openlocfilehash: ee9486b0b47a920f0a4d62689c9824e09e28b676
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5fb1c53c99f881040853cffe2b7bc18cde807d59
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189187"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802204"
 ---
 # Remove-AzApiManagementApiFromProduct
 
 ## SYNOPSIS
 Menghapus API dari produk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapifromproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzApiManagementApiFromProduct -Context <PsApiManagementContext> -ProductI
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementApiFromProduct** menghapus AZURE API Management API dari produk.
+Cmdlet **Remove-AzApiManagementApiFromProduct** menghapus Azure API Management API dari produk.
 
 ## EXAMPLES
 
