@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
-ms.openlocfilehash: 6f5c761018d660132c111da93c97aec40d924336
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6decc3e17c6e15d627780abc92445721946842a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218831"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748818"
 ---
 # New-AzDataProtectionPolicyTriggerScheduleClientObject
 
 ## SYNOPSIS
 Membuat objek Jadwal baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytriggerscheduleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ New-AzDataProtectionPolicyTriggerScheduleClientObject -ScheduleDays $date -Inter
 R/2021-03-03T12:49:55+05:30/PT4H
 ```
 
-Perintah ini membuat skeudle per jam untuk Aturan Azure Backup.
+Perintah ini membuat scheudle per jam untuk Aturan Azure Backup.
 
 ## PARAMETERS
 

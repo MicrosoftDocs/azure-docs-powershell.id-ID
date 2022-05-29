@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVaultStorageSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVaultStorageSettingObject.md
-ms.openlocfilehash: 33f30a3b0aa1d42b633c7782ef33d64ff26f446a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9694d1fee5e6a2c0f7fe14a29ae3661e35ea9ad5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218855"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748854"
 ---
 # New-AzDataProtectionBackupVaultStorageSettingObject
 
 ## SYNOPSIS
-Mendapatkan objek pengaturan penyimpanan Brankas Cadangan
+Mendapatkan objek pengaturan penyimpanan Backup Vault
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvaultstoragesettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataProtectionBackupVaultStorageSettingObject -DataStoreType <DataStoreTyp
 ```
 
 ## DESCRIPTION
-Mendapatkan objek pengaturan penyimpanan Brankas Cadangan
+Mendapatkan objek pengaturan penyimpanan Backup Vault
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ DatastoreType Type
 VaultStore    GeoRedundant
 ```
 
-Perintah ini membuat objek pengaturan penyimpanan vault baru yang digunakan untuk membuat brankas cadangan.
+Perintah ini membuat objek pengaturan penyimpanan vault baru yang digunakan untuk membuat vault cadangan.
 
 ## PARAMETERS
 
