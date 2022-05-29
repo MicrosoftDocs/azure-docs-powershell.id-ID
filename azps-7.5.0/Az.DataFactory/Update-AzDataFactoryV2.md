@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2.md
-ms.openlocfilehash: 1fb24f7f9d8122c8e435841a747d8e4e7606467a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a1e1ffe2e3da8d3c9989d1853e4642e8d2b59ebc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203400"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752418"
 ---
 # Update-AzDataFactoryV2
 
 ## SYNOPSIS
 Memperbarui properti pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/update-azdatafactoryv2) untuk informasi terbaru.
 
 ## SYNTAX
 

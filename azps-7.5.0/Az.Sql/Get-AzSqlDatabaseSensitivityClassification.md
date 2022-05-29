@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: cfd8841970f67bd2be11ae11e1ddfe3b65b336ab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b62f12180d08c6ad05376fe6c9d947744cd281a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234731"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729216"
 ---
 # Get-AzSqlDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Mendapatkan jenis informasi saat ini dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

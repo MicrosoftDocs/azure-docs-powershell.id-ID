@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerRun.md
-ms.openlocfilehash: c03ebe0c235eaaa3dfc935497ef836706dbbcbe7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ecec102a1365722f606f754879f17e2f1bace6aa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109126"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708372"
 ---
 # Get-AzSynapseTriggerRun
 
 ## SYNOPSIS
 Mengembalikan informasi tentang eksekusi pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 

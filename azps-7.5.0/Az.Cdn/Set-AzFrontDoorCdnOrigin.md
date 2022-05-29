@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: 4220551c55ee0576d53c460e984a60f6020df947
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d76cd07fe8f3f746cb6d109b63b182e41eda590
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110585"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738918"
 ---
 # Set-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
 Memperbarui asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -263,7 +266,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Berat asal dalam grup asal yang diberikan untuk penyeimbangan beban.
 
 ```yaml

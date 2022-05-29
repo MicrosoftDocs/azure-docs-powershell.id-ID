@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImage.md
-ms.openlocfilehash: 9cfc8c93a28acc21381205705a98ffae04ff8176
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85268ed4f27ec1b170117a9e27bad014e8339176
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243330"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735246"
 ---
 # Get-AzVMImage
 
 ## SYNOPSIS
 Mendapatkan semua versi VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -264,6 +267,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[Simpan-AzVMImage](./Save-AzVMImage.md)
+[Save-AzVMImage](./Save-AzVMImage.md)
 
 

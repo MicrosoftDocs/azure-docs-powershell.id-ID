@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJob.md
-ms.openlocfilehash: d7951aa8799dc4e01c3cde6fd0fe4034d6009d77
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6b093bc1ae43e3d4e46b7d684a7f021ca18bf54
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109252"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709218"
 ---
 # Get-AzSynapseSparkJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Get-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSpar
 
 Perintah ini mendapatkan pekerjaan dengan ID yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -ApplicationId application_1585023543211_0004
 ```

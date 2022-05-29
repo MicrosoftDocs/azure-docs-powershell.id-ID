@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlInstanceLink.md
-ms.openlocfilehash: d757dc82770f7d4d855f59e8adf0896da4ea005c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0bf6b42834c5d1409ef93ad26e6bc9665420c878
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228473"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721476"
 ---
 # Update-AzSqlInstanceLink
 
 ## SYNOPSIS
 Memperbarui properti tautan instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ LastHardenedLsn                :
 
 Perintah ini mengatur mode replikasi tautan instans ke "Asinkron" menggunakan objek input.
 
-### Contoh 5: Atur mode replikasi tautan instans dengan membidik objeknya
+### Contoh 5: Mengatur mode replikasi tautan instans dengan bermutasi objeknya
 ```powershell
 PS C:\> $managedInstanceLink = Get-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01" 
 PS C:\> $managedInstanceLink.ReplicationMode = "Async"

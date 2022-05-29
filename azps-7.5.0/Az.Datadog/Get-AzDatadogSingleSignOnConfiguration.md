@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: 3fed63d4bb8026291e55bfa7a52930584d018116
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b875477a7a41483388de2fd36e6c87bf8206a2c0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218030"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746622"
 ---
 # Get-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
 Mendapatkan sumber daya akses menyeluruh datadog untuk Monitor yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogsinglesignonconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

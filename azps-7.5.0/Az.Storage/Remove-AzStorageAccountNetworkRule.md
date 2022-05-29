@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountNetworkRule.md
-ms.openlocfilehash: 0d552134c6508e60525bcb2bd36d4cad6b9b3e57
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b3ccfd514853694f8af99395207e51062b6cb4cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242028"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715212"
 ---
 # Remove-AzStorageAccountNetworkRule
 
 ## SYNOPSIS
 Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,14 +67,14 @@ Cmdlet **Remove-AzStorageAccountNetworkRule** menghapus IpRules atau VirtualNetw
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus beberapa IpRules dengan IPAddressOrRange
+### Contoh 1: Hapus beberapa IpRules dengan IPAddressOrRange
 ```
 PS C:\>Remove-AzStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -IPAddressOrRange "10.0.0.0/7,28.1.0.0/16"
 ```
 
 Perintah ini menghapus beberapa IpRules dengan IPAddressOrRange.
 
-### Contoh 2: Menghapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON
+### Contoh 2: Hapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON
 ```
 PS C:\>Remove-AzStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -VirtualNetworkRules (@{VirtualNetworkResourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1";Action="allow"})
 ```
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Array objek VirtualNetworkRule untuk dihapus dari Properti NetWorkRule.
+Array objek VirtualNetworkRule yang akan dihapus dari Properti NetWorkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]

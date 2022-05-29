@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedDataSecurityPolicy.md
-ms.openlocfilehash: 89b76b56b3f230ce101ce3da98d7a7259e11a506
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: af13346acc32a7aeebb2001225da4aca7cbd9b06
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234661"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709020"
 ---
 # Get-AzSynapseSqlAdvancedDataSecurityPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan Advanced Data Security dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqladvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

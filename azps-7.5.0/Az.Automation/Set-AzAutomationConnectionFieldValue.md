@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
-ms.openlocfilehash: a403228a594828bc1a6b0c9e9fb39b4d9a025165
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3a3700e3016206a845cfe74a30d25f0b2912f45c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186415"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729558"
 ---
 # Set-AzAutomationConnectionFieldValue
 
 ## SYNOPSIS
 Memodifikasi nilai bidang dalam koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationconnectionfieldvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Perintah ini mengubah ID langganan untuk koneksi Azure bernama ContosoConnection
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Automation tempat cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama akun Automation yang cmdlet ini memodifikasi bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionFieldName
-Menentukan nama untuk bidang yang diubah cmdlet ini.
+Menentukan nama untuk bidang yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama grup sumber daya yang cmdlet ini memodifikasi bidang dalam koneksi.
 
 ```yaml
 Type: System.String

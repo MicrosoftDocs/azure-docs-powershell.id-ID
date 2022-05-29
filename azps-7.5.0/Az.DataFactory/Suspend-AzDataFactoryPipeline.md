@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/susp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Suspend-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Suspend-AzDataFactoryPipeline.md
-ms.openlocfilehash: 61672e40b282e814ffedbd680c034035b996fb23
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 26fba2e7705773aeef45bbab36ef59b646d8f1ed
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203414"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752437"
 ---
 # Suspend-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Menangguhkan alur di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/suspend-azdatafactorypipeline) untuk informasi terbaru.
 
 ## SYNTAX
 

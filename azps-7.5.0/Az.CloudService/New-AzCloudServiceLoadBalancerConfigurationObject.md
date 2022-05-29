@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerConfigurationObject.md
-ms.openlocfilehash: cbcc19e08fdd484aa5146b727b055387ed69acfa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8be02767b9f1bc751519d2d5ed535917c0d571e2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205607"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737964"
 ---
 # New-AzCloudServiceLoadBalancerConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk LoadBalancerConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject -Name 'C
 ```
 
 Perintah ini membuat objek konfigurasi load balancer yang digunakan untuk membuat atau memperbarui layanan cloud.
-Untuk detail selengkapnya lihat New-AzCloudService.
+Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 

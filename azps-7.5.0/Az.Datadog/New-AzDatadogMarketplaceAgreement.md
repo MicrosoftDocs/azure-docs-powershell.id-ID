@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMarketplaceAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMarketplaceAgreement.md
-ms.openlocfilehash: d0365dd04f1b615d1ff23e0bc212063617392c22
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe34e2d5a1ad3617ae5dc2c7b3c6beb7f08e965a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218018"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746441"
 ---
 # New-AzDatadogMarketplaceAgreement
 
 ## SYNOPSIS
 Buat perjanjian marketplace Datadog dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogmarketplaceagreement) untuk informasi terbaru.
 
 ## SYNTAX
 

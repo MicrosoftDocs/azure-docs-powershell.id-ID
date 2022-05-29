@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVM.md
-ms.openlocfilehash: f8028f29719403f006f4c52b805aa1346e01484e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 905cd2d61f743027e6966b00f8c67759f8dcf3f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232858"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735516"
 ---
 # Get-AzVM
 
 ## SYNOPSIS
 Mendapatkan properti komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -228,7 +231,7 @@ TEST2               test4         westus Standard_DS1_v2 Windows          test4
 
 Perintah ini mendapatkan semua komputer virtual di wilayah US Barat.
 
-### Contoh 6: Dapatkan semua komputer virtual menggunakan pemfilteran
+### Contoh 6: Mendapatkan semua komputer virtual menggunakan pemfilteran
 ```powershell
 Get-AzVM -Name test*
 ```
@@ -457,9 +460,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVM](./New-AzVM.md)
 
-[Hapus-AzVM](./Remove-AzVM.md)
+[Remove-AzVM](./Remove-AzVM.md)
 
-[Hidupkan ulang-AzVM](./Restart-AzVM.md)
+[Mulai ulang-AzVM](./Restart-AzVM.md)
 
 [Start-AzVM](./Start-AzVM.md)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSshPublicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSshPublicKey.md
-ms.openlocfilehash: 262df91ed8be7f64f4a35bff6ce84661b87f507a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0605f240d1ca3a2576347b79beced4b221b7cf2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222614"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736236"
 ---
 # Add-AzVmssSshPublicKey
 
 ## SYNOPSIS
 Menambahkan kunci publik SSH ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsssshpublickey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Add-AzVmssSshPublicKey [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssSshPublicKey** menambahkan kunci publik yang dapat Anda gunakan untuk terhubung ke komputer virtual Virtual Machine Scale Set (VMSS) melalui Secure Shell (SSH).
+Cmdlet **Add-AzVmssSshPublicKey** menambahkan kunci umum yang dapat Anda gunakan untuk menyambungkan ke komputer virtual Virtual Machine Scale Set (VMSS) melalui Secure Shell (SSH).
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kunci umum SSH ke VMSS
+### Contoh 1: Menambahkan kunci publik SSH ke VMSS
 ```powershell
 $VMSS = New-AzVmssConfig
 Add-AzVmssSshPublicKey -VirtualMachineScaleSet $VMSS -KeyData "MIIDszCCApugAwIBAgIJALBV9YJCF/tAMA0GCSq12Ib3DQEB21QUAMEUxCzAJBgNV" -Path "/home/admin/.ssh/authorized_keys"
@@ -38,7 +41,7 @@ Add-AzVmssSshPublicKey -VirtualMachineScaleSet $VMSS -KeyData "MIIDszCCApugAwIBA
 
 Contoh ini menambahkan kunci umum SSH ke VMSS.
 Perintah pertama menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
-Perintah kedua menambahkan kunci SSH dengan data kunci yang ditentukan dan menyimpan kunci pada jalur yang ditentukan pada komputer virtual.
+Perintah kedua menambahkan kunci SSH dengan data kunci yang ditentukan dan menyimpan kunci di jalur yang ditentukan pada komputer virtual.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur lengkap file, pada komputer virtual, tempat cmdlet ini menyimpan kunci publik SSH.
+Menentukan jalur lengkap file, pada komputer virtual, tempat cmdlet ini menyimpan kunci umum SSH.
 Jika file sudah ada, cmdlet ini menambahkan kunci ke file.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Test-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Test-AzAnalysisServicesServer.md
-ms.openlocfilehash: 41fdd146fb9c97a615bf490b175499a2a95bd01e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6c385df68ba15230047069482827019810dc2a28
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110792"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731898"
 ---
 # Test-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Menguji keberadaan instans server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/test-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 

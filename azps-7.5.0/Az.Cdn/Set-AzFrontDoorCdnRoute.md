@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: c63bffc2353e478703116b4a2c12df564f4c5fec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 204375ad00823effc991a485703c24af260e47a6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110528"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738846"
 ---
 # Set-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
 Memperbarui rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpsRedirect
-Apakah akan mengalihkan lalu lintas HTTP ke lalu lintas HTTPS secara otomatis.
+Apakah akan mengalihkan lalu lintas HTTP secara otomatis ke lalu lintas HTTPS.
 
 ```yaml
 Type: String

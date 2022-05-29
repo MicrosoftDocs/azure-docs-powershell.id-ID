@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
-ms.openlocfilehash: be9ce45b0b1b7ecfa09a04b0d597237c4d9a44ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f11b66d05daca0002dfc92b07ff99342df7a6f3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191430"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716310"
 ---
 # New-AzStorageAccountSASToken
 
 ## SYNOPSIS
 Membuat token SAS tingkat akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountsastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu saat tanda tangan akses bersama menjadi tidak valid.
+Menentukan waktu tanda tangan akses bersama menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

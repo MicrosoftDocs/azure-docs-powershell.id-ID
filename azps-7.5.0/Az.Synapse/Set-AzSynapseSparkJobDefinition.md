@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: a35d92094c7605ce6ade50861331cdab0f5460bd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5ddd32f4572b7e15b66bb23f5115032c86618493
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208574"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705456"
 ---
 # Set-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
 Membuat definisi kerja Spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Set-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSpa
 Perintah ini membuat definisi kerja Spark bernama ContosoSparkJobDefinition dan menentukan jalur folder ContosoFolder tempat definisi kerja spark akan ditempatkan di ruang kerja bernama ContosoWorkspace.
 Perintah mendasarkan definisi kerja Spark pada informasi dalam file sparkJobDefinition.json.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition -DefinitionFile "C:\sparkJobDefinition.json" -FolderPath ContosoFolder/SubFolder
 ```
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -FolderPath
-Folder tempat definisi kerja Spark ini berada. Jika menentukan jalur multi-tingkat seperti [rootFolder/subFolder], definisi kerja Spark akan muncul di tingkat bawah. Jika tidak ditentukan, definisi kerja Spark ini akan muncul di tingkat akar.
+Folder tempat definisi kerja Spark ini berada. Jika menentukan jalur multi-level seperti [rootFolder/subFolder], definisi kerja Spark akan muncul di tingkat bawah. Jika tidak ditentukan, definisi kerja Spark ini akan muncul di tingkat akar.
 
 ```yaml
 Type: System.String

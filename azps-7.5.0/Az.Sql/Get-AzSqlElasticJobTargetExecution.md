@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
-ms.openlocfilehash: b7ffffa39881da248b23abcebe24738b93855476
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef5977062eadf70116fe3b240db586cb2553e6eb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210191"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728730"
 ---
 # Get-AzSqlElasticJobTargetExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Memfilter menurut waktu pembuatan min
+Filter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Filter menurut maks waktu akhir.
+Filter menurut waktu akhir maks.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

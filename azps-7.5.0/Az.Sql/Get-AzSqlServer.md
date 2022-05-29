@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
-ms.openlocfilehash: 37b23d38d737632b0fe8fef5c4d6cd068d369838
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2216b993a2f9ddb5ad50389416ba1647407dd507
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222875"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727578"
 ---
 # Dapatkan-AzSqlServer
 
 ## SYNOPSIS
 Mengembalikan informasi tentang server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -324,7 +327,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Baru-AzSqlServer](./New-AzSqlServer.md)
+[Baru-AzResourceGroup](./New-AzSqlServer.md)
 
 [Hapus-AzSqlServer](./Remove-AzSqlServer.md)
 

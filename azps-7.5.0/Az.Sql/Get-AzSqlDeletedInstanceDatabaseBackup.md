@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
-ms.openlocfilehash: 71f08d99848a347129bd88915c7dfc5f08969874
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 676627cbd5be7f7194518ae212886406de5da5d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233429"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728892"
 ---
 # Get-AzSqlDeletedInstanceDatabaseBackup
 
 ## SYNOPSIS
 Mendapatkan database terhapus yang bisa Anda pulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldeletedinstancedatabasebackup) untuk informasi terbaru.
 
 ## SYNTAX
 

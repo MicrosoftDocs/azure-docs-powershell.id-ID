@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlScript.md
-ms.openlocfilehash: 71276cba82a074e2667811aef9d357bd10a30aa8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bece51655cc414e51b3465664aaff0c3b2d2fe76
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109154"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708426"
 ---
 # Get-AzSynapseSqlScript
 
 ## SYNOPSIS
 Mendapatkan informasi tentang skrip sql di ruang kerja Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseSqlScript -workspaceName ContosoWorkspace -Name "ContosoSqlScript"
 
 Mendapatkan satu skrip sql yang disebut ContosoSqlScript di ruang kerja ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSqlScript -Name ContosoSqlScript

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
-ms.openlocfilehash: 5401e1f769ccf04ee9da36de4e5df770d565772a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d0a44bd41102babcc14ef69adc7c947765d34dcf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191021"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736142"
 ---
 # Export-AzLogAnalyticRequestRateByInterval
 
 ## SYNOPSIS
 Ekspor log yang menampilkan permintaan Api yang dibuat oleh langganan ini di jendela waktu tertentu untuk menampilkan aktivitas pembatasan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/export-azloganalyticrequestratebyinterval) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseFirewallRule.md
-ms.openlocfilehash: ea862cad37ecb154c924fc1bb70519b705e7a2ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e787bf07ed1dafd9d7cc3eabbe51a1b32b31a0df
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237531"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707976"
 ---
 # New-AzSynapseFirewallRule
 
 ## SYNOPSIS
 Membuat Aturan Firewall Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ $ws | New-AzSynapseFirewallRule -Name ContosoFirewallRule -StartIpAddress "0.0.0
 
 Perintah ini membuat aturan firewall bernama ContosoFirewallRule di bawah ruang kerja melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzSynapseFirewallRule -WorkspaceName ContosoWorkspace -AllowAllAzureIP
 ```

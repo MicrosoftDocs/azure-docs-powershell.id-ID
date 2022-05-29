@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
-ms.openlocfilehash: c50dc190ec144c6fc425c0eb07c5722deac7afdf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 71801942de66e6bef9a8de756666ac06cedf7ab0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190993"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736020"
 ---
 # Get-AzAvailabilitySet
 
 ## SYNOPSIS
 Mendapatkan set ketersediaan Azure dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Statuses                  : []
 VirtualMachinesReferences : []
 ```
 
-Perintah ini mendapatkan set ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11.
+Perintah ini mendapatkan set ketersediaan bernama AvailabilitySet03 di grup sumber daya bernama ResourceGroup11.
 
 ### Contoh 2: Mendapatkan semua set ketersediaan
 ```powershell
@@ -156,7 +159,7 @@ VirtualMachinesReferences : []
 
 Perintah ini mendapatkan semua set ketersediaan dalam grup sumber daya bernama ResourceGroup11 yang dimulai dengan "AvailabilitySet0".
 
-### Contoh 4: Mendapatkan semua set ketersediaan dengan nama yang dimulai dengan AvailabilitySet0
+### Contoh 4: Dapatkan semua set ketersediaan dengan nama yang dimulai dengan AvailabilitySet0
 ```powershell
 Get-AzAvailabilitySet -Name AvailabilitySet0*
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDetachKustoPoolFollowerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDetachKustoPoolFollowerDatabase.md
-ms.openlocfilehash: 2e93b44f6dcf1eb5ddfe87dd424eb3eda5c12e35
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43483256374c6ed019694d6a9c1642a7888c5e39
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243649"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708138"
 ---
 # Invoke-AzSynapseDetachKustoPoolFollowerDatabase
 
 ## SYNOPSIS
 Mencopot semua pengikut database yang dimiliki oleh kumpulan Kusto ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsedetachkustopoolfollowerdatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

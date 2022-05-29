@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2Trigger.md
-ms.openlocfilehash: d6e83fa1be000b9e24dc4a6ed96e6a8e23b57c8c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dae1151956cde8dea542c2bc480de5a609d32bba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203523"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752529"
 ---
 # Start-AzDataFactoryV2Trigger
 
 ## SYNOPSIS
 Memulai pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2trigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil alur berdasarkan definisinya. Jika pemicu sudah dalam status 'Dimulai', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum memulai pemicu.
+Cmdlet **Start-AzDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil alur berdasarkan definisinya. Jika pemicu sudah dalam status 'Dimulai', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum memulai pemicu.
 
 ## EXAMPLES
 

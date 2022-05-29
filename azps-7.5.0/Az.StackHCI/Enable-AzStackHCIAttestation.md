@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIAttestation.md
-ms.openlocfilehash: 9f8bad84711e6841619e799681af8765224b0b9b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9314db862aae95a4815d319b007311eccf819106
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193978"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719262"
 ---
 # Enable-AzStackHCIAttestation
 
 ## SYNOPSIS
 Enable-AzStackHCIAttestation mengonfigurasi host dan mengaktifkan tamu tertentu untuk pengesahan IMDS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/enable-azstackhciattestation) untuk informasi terbaru.
 
 ## SYNTAX
 

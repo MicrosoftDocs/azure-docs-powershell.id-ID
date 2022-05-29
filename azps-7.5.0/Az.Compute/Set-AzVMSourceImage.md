@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSourceImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSourceImage.md
-ms.openlocfilehash: b104d3171ea87341edbb97d19d1f269db4e53879
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f334a772a7b813ba20f345868ae450b35fc09fa4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246158"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732672"
 ---
 # Set-AzVMSourceImage
 
 ## SYNOPSIS
 Menentukan gambar untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsourceimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Set-AzVMSourceImage -VM $VirtualMachine -PublisherName "MicrosoftWindowsServer" 
 Perintah pertama mendapatkan set ketersediaan bernama AvailabilitySet03 di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
 Perintah kedua membuat objek komputer virtual, lalu menyimpannya dalam variabel $VirtualMachine.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Komputer virtual milik set ketersediaan yang disimpan di $AvailabilitySet.
+Komputer virtual milik set ketersediaan yang disimpan dalam $AvailabilitySet.
 Perintah akhir menetapkan nilai untuk nama penerbit, penawaran, SKU, dan versi.
 Cmdlet **Get-AzVMImagePublisher**, **Get-AzVMImageOffer**, **Get-AzVMImageSku**, dan **Get-AzVMImage** dapat menemukan pengaturan ini.
 

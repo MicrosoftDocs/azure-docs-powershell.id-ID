@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncCloudEndpoint.md
-ms.openlocfilehash: 19fae1c444e7efe997d92b043965bcef01ac9f89
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ebe835cdd4d23163c385bead78c86218dc4fa019
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222863"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712980"
 ---
 # New-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
 Perintah ini membuat titik akhir cloud Azure File Sync dalam grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ New-AzStorageSyncCloudEndpoint [-ParentResourceId] <String> -Name <String> -Stor
 ```
 
 ## DESCRIPTION
-Perintah ini membuat titik akhir cloud Azure File Sync. Titik akhir cloud adalah referensi ke berbagi file Azure yang sudah ada. Ini mewakili berbagi file dan menentukan partisipasinya dalam menyinkronkan semua bagian file dari grup sinkronisasi tempat titik akhir cloud dibuat.
+Perintah ini membuat titik akhir cloud Azure File Sync. Titik akhir cloud adalah referensi ke berbagi file Azure yang sudah ada. Ini mewakili berbagi file dan mendefinisikannya partisipasi dalam menyinkronkan semua bagian file dari grup sinkronisasi tempat titik akhir cloud telah dibuat.
 
 ## EXAMPLES
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountTenantId
-Id Penyewa Akun Storage (Id Direktori Perusahaan)
+id Penyewa Akun Storage (Id Direktori Perusahaan)
 
 ```yaml
 Type: System.String

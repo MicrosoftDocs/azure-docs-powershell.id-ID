@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
-ms.openlocfilehash: 53fb1b8116d24a4950bb08713b35ae8a56206738
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a3ae506ea3a338d052f4835644a3472c284e0d3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202935"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751860"
 ---
 # Test-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
 Memeriksa keberadaan item katalog.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/test-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Tampilan
 - Prosedur
 - Rahasia
-- Informasi masuk
+- Kredensial
 - Jenis
 
 ```yaml

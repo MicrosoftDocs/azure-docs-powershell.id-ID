@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
-ms.openlocfilehash: 72b6ddba9a11840e2cbc812bb074d079585e3769
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89b15231ce030d571153e968ab8d712ec97bc123
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203537"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145752540"
 ---
 # Start-AzDataFactoryV2DataFlowDebugSession
 
 ## SYNOPSIS
 Memulai sesi debug aliran data di Azure Data Factory
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2dataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 

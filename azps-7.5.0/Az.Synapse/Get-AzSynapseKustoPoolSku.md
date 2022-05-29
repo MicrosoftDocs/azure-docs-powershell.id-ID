@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolSku.md
-ms.openlocfilehash: de6d67860f1a14537c1a33a1acd23bd35facf670
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: edf9c0def297f1867934f641ae31e6f61c5a3fca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223694"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709686"
 ---
 # Get-AzSynapseKustoPoolSku
 
 ## SYNOPSIS
 Mencantumkan SKU yang memenuhi syarat untuk sumber daya Kumpulan Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoolsku) untuk informasi terbaru.
 
 ## SYNTAX
 

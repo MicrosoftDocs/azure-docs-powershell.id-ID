@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDiagnosticsExtension.md
-ms.openlocfilehash: a807c9198e1527bfad92a4b7245627edb6a4fa90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6cda78c20da63d93da1e041903d7889f0bd49b57
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229974"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736380"
 ---
 # Add-AzVmssDiagnosticsExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi diagnostik ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 

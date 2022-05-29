@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: ae7373c38a0ec4f43dc3efb6f944695e8d3afa83
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91c80c7d601403b41b054923c19cd047d38f0daa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219971"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710406"
 ---
 # Get-AzSynapseActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Mendapatkan autentikasi hanya Azure Active Directory (Azure AD) untuk ruang kerja Synapse tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ ContosoWorkspace True Consistent 3/23/2022 8:27:47 AM
 
 Perintah ini hanya mendapatkan status autentikasi Azure AD untuk ruang kerja Synapse ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\> Get-AzSynapseActiveDirectoryOnlyAuthentication -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```

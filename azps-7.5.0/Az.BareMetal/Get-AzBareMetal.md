@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.baremetal/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Get-AzBareMetal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Get-AzBareMetal.md
-ms.openlocfilehash: 91755b756fda20e843301aceaac62d2f7730c18c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca70b1bea12a1d263554b27ff5e59309738733c2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225970"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744840"
 ---
 # Get-AzBareMetal
 
 ## SYNOPSIS
 Mendapatkan instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.baremetal/get-azbaremetal) untuk informasi terbaru.
 
 ## SYNTAX
 

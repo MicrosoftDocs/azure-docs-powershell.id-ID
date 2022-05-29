@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerSASToken.md
-ms.openlocfilehash: aac93255529d57e21f1a55ae0a5dc534586b6294
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed39b8848800f22f777b8c246d5dbd7d8275ab56
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228406"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716148"
 ---
 # New-AzStorageContainerSASToken
 
 ## SYNOPSIS
 Membuat token SAS untuk kontainer penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragecontainersastoken) untuk informasi terbaru.
 
 ## SYNTAX
 

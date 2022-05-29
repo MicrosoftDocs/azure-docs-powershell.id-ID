@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzRestorePoint.md
-ms.openlocfilehash: 934a78a83a0005a389c7e71ee5344fe612ab2c86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bc974e60d71580fc1a4b1523544988307e300265
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239984"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733860"
 ---
 # Remove-AzRestorePoint
 
 ## SYNOPSIS
 Cmdlet ini dapat menghapus Titik Pemulihan 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 

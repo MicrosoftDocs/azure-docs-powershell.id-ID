@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
-ms.openlocfilehash: 59724c8f0dfa4cd0e36258f987397ae11b0398c9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 020899c19ed375bcf4c41f3fbc74537432528efd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196705"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736290"
 ---
 # Add-AzVmssRunCommand
 
 ## SYNOPSIS
-Menambahkan Jalankan Perintah ke instans VMSS
+Menambahkan Perintah Jalankan ke instans VMSS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzVmssRunCommand [-CommandId <String>] -Name <String> [-ScriptPath <String>]
 ```
 
 ## DESCRIPTION
-Menambahkan Jalankan Perintah ke Semua Instans VMSS
+Menambahkan Perintah Jalankan ke Semua Instans VMSS
 
 ## EXAMPLES
 
@@ -248,7 +251,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skrip
+### -Script
 Sumber skrip perintah eksekusi.
 
 ```yaml

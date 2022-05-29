@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
-ms.openlocfilehash: e7261f307aeb31a183f713f72b6f7c1d3a49ee8c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13e944843a1943ba39b7453aa2db999b86113f4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202028"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750564"
 ---
 # New-AzDataMigrationConnectionInfo
 
 ## SYNOPSIS
-Membuat objek Info Koneksi baru yang menentukan jenis server dan nama untuk koneksi.
+Membuat objek Info Koneksi baru yang menentukan tipe server dan nama untuk koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationconnectioninfo) untuk informasi terbaru.
 
 ## SYNTAX
 

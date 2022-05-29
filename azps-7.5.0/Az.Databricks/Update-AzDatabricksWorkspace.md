@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
-ms.openlocfilehash: 8d84a5cdcd345703c318900217c65e9f114e126f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 390c7776df42e91ec5173000c89aea6d898004fe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218147"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746838"
 ---
 # Update-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/update-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,11 +71,11 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Mengaktifkan enkripsi di ruang kerja Databricks membutuhkan tiga langkah:
+Mengaktifkan enkripsi pada ruang kerja Databricks mengambil tiga langkah:
 1.
 Perbarui ruang kerja dengan `-PrepareEncryption` (jika tidak dibuat).
 1.
-Temukan `StorageAccountIdentityPrincipalId` dalam output langkah terakhir.
+Temukan `StorageAccountIdentityPrincipalId` dalam output dari langkah terakhir.
 Berikan izin kunci kepada prinsipal.
 1.
 Perbarui ruang kerja lagi untuk mengisi informasi tentang kunci enkripsi:
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeySource
-KeySource enkripsi (penyedia).
+Sumber kunci enkripsi (penyedia).
 Nilai yang mungkin (tidak peka huruf besar/kecil): Default, Microsoft.Keyvault
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyVaultUri
-URI (nama DNS) dari Key Vault.
+URI (nama DNS) Key Vault.
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-The Uri of KeyVault.
+Uri Dari KeyVault.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -420,7 +423,7 @@ INPUTOBJECT <IDatabricksIdentity>: Parameter identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

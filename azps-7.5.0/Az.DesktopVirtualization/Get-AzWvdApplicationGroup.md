@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplicationGroup.md
-ms.openlocfilehash: 823ae877edd5226275e2abf33cb6b3c26415c879
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8f8af2637fc95b7b0ea098bc06e20da65e0fc9fa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239928"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744444"
 ---
 # Get-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Mendapatkan grup aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

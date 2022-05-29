@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: b916c88e656d3370a6b08e898e35eca56bd7edfb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23cb19a6618bceb921f0094fa2f1f85df35aa051
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228319"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715464"
 ---
 # Remove-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
 Menghapus tag penahanan legal dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,16 +42,16 @@ Remove-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-**Cmdlet Remove-AzRmStorageContainerLegalHold** menghapus tag penahanan legal dari kontainer blob Storage
+Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag penahanan legal dari kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Remove-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1
 ```
 
-Perintah ini menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini menghapus tag penahanan legal dari kontainer blob Storage dengan nama akun dan nama kontainer Storage.
 
 ### Contoh 2: Menghapus tag penahanan legal dari kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```

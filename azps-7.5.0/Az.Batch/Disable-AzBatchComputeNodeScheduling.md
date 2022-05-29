@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/disable-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchComputeNodeScheduling.md
-ms.openlocfilehash: a9acbe569d18195c55167ea35fd307180e03da6f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb276475e34d0ab0c54fcc7ab29d113e7b1edad5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185018"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744822"
 ---
 # Disable-AzBatchComputeNodeScheduling
 
 ## SYNOPSIS
 Menonaktifkan penjadwalan tugas pada simpul komputasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/disable-azbatchcomputenodescheduling) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Perintah ini menonaktifkan jadwal tugas pada simpul komputasi tvm-1783593343_34-
 Untuk melakukan ini, perintah pertama dalam contoh membuat referensi objek ke kunci akun untuk akun batch contosobatchaccount.
 Referensi objek ini disimpan dalam variabel bernama $context.
 Perintah kedua kemudian menggunakan referensi objek ini dan cmdlet **Disable-AzBatchComputeNodeScheduling** untuk terhubung ke kumpulan myPool dan menonaktifkan penjadwalan tugas pada simpul tvm-1783593343_34-20151117t222514z.
-Karena parameter *DisableComputeNodeSchedulingOptions* tidak menyertakan tugas apa pun yang saat ini berjalan pada simpul komputasi akan diantrekan kembali.
+Karena parameter *DisableComputeNodeSchedulingOptions* tidak disertakan tugas apa pun yang saat ini berjalan pada simpul komputasi akan diantrekan ulang.
 
 ### Contoh 2: Menonaktifkan penjadwalan tugas pada semua simpul komputasi dalam kumpulan
 ```powershell
@@ -71,13 +74,13 @@ Untuk melakukan tugas ini, perintah pertama dalam contoh membuat referensi objek
 Referensi objek ini disimpan dalam variabel bernama $context.
 Perintah kedua dalam contoh kemudian menggunakan referensi objek ini dan **Get-AzBatchComputeNode** untuk mengembalikan koleksi semua simpul komputasi yang ditemukan di Pool06.
 Koleksi tersebut kemudian disalurkan ke cmdlet **Disable-AzBatchComputeNodeScheduling** untuk menonaktifkan penjadwalan tugas pada setiap simpul komputasi dalam koleksi.
-Karena parameter *DisableComputeNodeSchedulingOptions* tidak menyertakan tugas apa pun yang saat ini berjalan pada simpul komputasi akan diantrekan kembali.
+Karena parameter *DisableComputeNodeSchedulingOptions* tidak menyertakan tugas apa pun yang saat ini berjalan pada simpul komputasi akan diantrekan ulang.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -132,11 +135,11 @@ Ini adalah nilai default.
 - Mengakhiri.
 Tugas segera dihentikan dan dihapus dari antrean pekerjaan.
 Tugas-tugas ini tidak akan dijadwalkan ulang. 
-- TaskCompletion.
+- Penyelesaian Tugas.
 Tugas yang sedang berjalan akan dapat diselesaikan sebelum penjadwalan tugas dinonaktifkan pada simpul komputasi.
 Tidak ada tugas baru yang akan dijadwalkan pada simpul ini. 
 - RetainedData.
-Tugas yang sedang berjalan saat ini akan dapat diselesaikan dan periode retensi data akan dapat kedaluwarsa sebelum penjadwalan tugas dinonaktifkan pada simpul komputasi.
+Tugas yang sedang berjalan akan dapat diselesaikan dan periode retensi data akan dapat kedaluwarsa sebelum penjadwalan tugas dinonaktifkan pada simpul komputasi.
 Tidak ada tugas baru yang akan dijadwalkan pada simpul ini.
 
 ```yaml

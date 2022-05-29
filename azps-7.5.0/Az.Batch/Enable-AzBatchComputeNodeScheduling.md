@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchComputeNodeScheduling.md
-ms.openlocfilehash: 3b96b59f7ac9dd594397ab1092833460fc15402d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 967ac002ed9bc95ac5995136cfdb190305e8cae7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205643"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744624"
 ---
 # Enable-AzBatchComputeNodeScheduling
 
 ## SYNOPSIS
 Mengaktifkan penjadwalan tugas pada simpul komputasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/enable-azbatchcomputenodescheduling) untuk informasi terbaru.
 
 ## SYNTAX
 

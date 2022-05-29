@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseNotebook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseNotebook.md
-ms.openlocfilehash: 6af48af4043b76cddc07a5ec6b55df9f530f9cde
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6f95d438f699bbd6091bca7d78c5956887f53966
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208586"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705510"
 ---
 # Set-AzSynapseNotebook
 
 ## SYNOPSIS
 Membuat atau memperbarui buku catatan di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsenotebook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Set-AzSynapseNotebook -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\sampl
 
 Perintah ini membuat atau memperbarui buku catatan dari notebook file notebook.ipynb dan menentukan jalur folder ContosoFolder tempat buku catatan akan ditempatkan di ruang kerja bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSynapseNotebook -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\notebook.ipynb" -FolderPath ContosoFolder/SubFolder
 ```

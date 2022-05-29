@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/set-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Set-AzDatadogMonitorDefaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Set-AzDatadogMonitorDefaultKey.md
-ms.openlocfilehash: 2a4ea243b30461eff5f63a49412b5a99e5c66d68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c2af4211e09e61f6a796ad6622211f348fc9b67
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217934"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746298"
 ---
 # Set-AzDatadogMonitorDefaultKey
 
 ## SYNOPSIS
 Atur kunci api default.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/set-azdatadogmonitordefaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

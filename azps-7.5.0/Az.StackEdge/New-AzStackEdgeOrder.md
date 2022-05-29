@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeOrder.md
-ms.openlocfilehash: adceba1990f5a2230aa6ef9cf37e3e4d86ef71bb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c64438c033eae689dbac7f68ac491bce5fbe835f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226362"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720144"
 ---
 # New-AzStackEdgeOrder
 
 ## SYNOPSIS
-Membuat pesanan baru untuk perangkat.
+Membuat urutan baru untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgeorder) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzStackEdgeOrder [-ResourceGroupName] <String> [-DeviceName] <String> -Conta
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStackEdgeOrder** membuat pesanan baru untuk perangkat Stack Edge. Sumber daya perangkat Stack Edge perlu dibuat terlebih dahulu sebelum membuat pesanan. Anda dapat menentukan detail seperti kontak orang, nama perusahaan, email, alamat, dll. sebagai parameter untuk membuat pesanan.
+Cmdlet **New-AzStackEdgeOrder** membuat pesanan baru untuk perangkat Stack Edge. Sumber daya perangkat Stack Edge perlu dibuat terlebih dahulu sebelum membuat pesanan. Anda dapat menentukan detail seperti contact person, nama perusahaan, email, alamat, dll. sebagai parameter untuk membuat pesanan.
 
 ## EXAMPLES
 

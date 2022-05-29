@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipelineRun.md
-ms.openlocfilehash: b1b9e5936304304aec3f140a74ff72fb954e51fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54ec1c3cd03a6fe06317818bb215fc1b13512b2b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191234"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709416"
 ---
 # Get-AzSynapsePipelineRun
 
 ## SYNOPSIS
 Mendapatkan informasi tentang eksekusi alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsepipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Get-AzSynapsePipelineRun -WorkspaceObject <PSSynapseWorkspace> -RunStartedAfter 
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzSynapsePipelineRun** mengembalikan informasi tentang eksekusi untuk alur yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId akan menampilkan detail untuk eksekusi dengan ID tersebut. Jika PipelineRunId tidak ditentukan, maka pipelineRunId menunjukkan informasi tentang semua eksekusi untuk alur yang terjadi antara nilai RunStartedAfter dan RunStartedBefore.
+Perintah **Get-AzSynapsePipelineRun** mengembalikan informasi tentang eksekusi untuk alur yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId akan menampilkan detail untuk eksekusi dengan ID tersebut. Jika PipelineRunId tidak ditentukan, maka pipelineRunId menampilkan informasi tentang semua eksekusi untuk alur yang terjadi antara nilai RunStartedAfter dan RunStartedBefore.
 
 ## EXAMPLES
 
@@ -63,9 +66,9 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapsePipelineRun -RunStartedAfter "4/2/2007 7:23:57 PM" -RunStartedBefore "4/2/2027 7:23:57 PM"
 ```
 
-Perintah ini mendapatkan detail tentang eksekusi semua alur di ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 19:23:57 PM"
+Perintah ini mendapatkan detail tentang eksekusi semua alur di ruang kerja ContosoWorkspace yang dimulai antara "4/2/2007 7:23:57 PM" dan "4/2/2027 7:23:57 PM"
 
-### Contoh 3: Mendapatkan eksekusi alur tunggal di antara tanggal
+### Contoh 3: Mendapatkan satu alur yang berjalan di antara tanggal
 ```powershell
 Get-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace -Name ContosoPipeline -RunStartedAfter "4/2/2007 7:23:57 PM" -RunStartedBefore "4/2/2027 7:23:57 PM"
 ```

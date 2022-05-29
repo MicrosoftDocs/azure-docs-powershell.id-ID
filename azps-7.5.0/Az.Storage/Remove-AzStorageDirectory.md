@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageDirectory.md
-ms.openlocfilehash: 0c3d4de0ec1ab600ab3ef3151d6e97e05d140076
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3195487b0fb95a919d91213817b3344782239647
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228235"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714978"
 ---
 # Remove-AzStorageDirectory
 
 ## SYNOPSIS
 Menghapus direktori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 

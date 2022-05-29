@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdApplicationGroup.md
-ms.openlocfilehash: 49d5f6f6ccfa810937b08170b5b6393db9722bf8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3a98a52ae402dd17cfce35014779460b1673f6c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241465"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743904"
 ---
 # New-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui applicationGroup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
