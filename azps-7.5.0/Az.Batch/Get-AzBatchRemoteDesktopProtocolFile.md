@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
-ms.openlocfilehash: c301642f7572c0c0fe095a1fd4ca7d2bc8653f84
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 582ecb868ac4c173d08a7324df320ec89403e15c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195224"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782156"
 ---
 # Get-AzBatchRemoteDesktopProtocolFile
 
 ## SYNOPSIS
 Mendapatkan file RDP dari simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchremotedesktopprotocolfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Cmdlet **Get-AzBatchRemoteDesktopProtocolFile** mendapatkan file Protokol Deskto
 Get-AzBatchRemoteDesktopProtocolFile -PoolId "Pool06" -ComputeNodeId "ComputeNode01" -DestinationPath "C:\PowerShell\ComputeNode01.rdp" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file RDP dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool06.
+Perintah ini mendapatkan file RDP dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki KUMPULAN ID06.
 Perintah menyimpan file .rdp sebagai C:\PowerShell\MyComputeNode.rdp.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
@@ -81,7 +84,7 @@ Perintah mengarahkan konten file ke aliran di $Stream.
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableResource.md
-ms.openlocfilehash: 9d5f322ecaacfef2b77710013b652e6a5a221306
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7370ae17f1e8b8cd2c2b59328e389c71c18bd9b3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207599"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807584"
 ---
 # Get-AzCosmosDBSqlRestorableResource
 
 ## SYNOPSIS
 Mencantumkan semua sumber daya SQL Azure Cosmos DB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorableresource) untuk informasi terbaru.
 
 ## SYNTAX
 

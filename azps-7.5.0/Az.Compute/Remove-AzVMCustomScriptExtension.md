@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 49f629716beac15357ed15044f620d2d4158e594
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f3e6ca6efb1f68997947c6e3d7239d8c41d94b9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246211"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798046"
 ---
 # Remove-AzVMCustomScriptExtension
 
 ## SYNOPSIS
 Menghapus ekstensi skrip kustom dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 

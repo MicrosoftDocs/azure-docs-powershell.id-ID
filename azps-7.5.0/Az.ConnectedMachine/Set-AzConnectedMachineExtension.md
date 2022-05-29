@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedMachineExtension.md
-ms.openlocfilehash: 3f181306e8c19cf3072df4341dd68f7aea28546d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 016c9540fe3c0849ae15aacc1b9b751bc2e414e8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229064"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789858"
 ---
 # Set-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui ekstensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/set-azconnectedmachineextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -540,9 +543,9 @@ EXTENSIONPARAMETER <IMachineExtension>: Menjelaskan Ekstensi Mesin.
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
-  - `[TypeHandlerVersion <String>]`: Menentukan versi penangan skrip.
+  - `[TypeHandlerVersion <String>]`: Menentukan versi handler skrip.
 
 ## RELATED LINKS
 

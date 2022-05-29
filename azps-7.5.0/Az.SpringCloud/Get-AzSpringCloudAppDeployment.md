@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: 98345401c3bdc69be58eab3cb371d0b9080f4390
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c2e4d60ac758ba92b6e6278e031874cc7be57a4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216842"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770726"
 ---
 # Get-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Mendapatkan Penyebaran dan propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/get-azspringcloudappdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Property                             : Microsoft.Azure.PowerShell.Cmdlets.Spring
 Source                               : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.UserSourceInfo
 ```
 
-Dapatkan Deploymeng Aplikasi Spring Cloud berdasarkan nama.
+Dapatkan Spring Cloud App Deploymeng berdasarkan nama.
 
 ### Contoh 2: Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 ```powershell
@@ -92,7 +95,7 @@ default Microsoft.AppPlatform/Spring/apps/deployments
 prod    Microsoft.AppPlatform/Spring/apps/deployments
 ```
 
-Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
+Cantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity

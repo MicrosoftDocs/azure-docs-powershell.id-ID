@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRule.md
-ms.openlocfilehash: 84b1c4b7457f7a6c0800055fb7446ee0bbd15d00
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b855bb2ecc2441092e420f65d8b5d68317827323
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245808"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791136"
 ---
 # Remove-AzDataCollectionRule
 
 ## SYNOPSIS
 Menghapus aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 

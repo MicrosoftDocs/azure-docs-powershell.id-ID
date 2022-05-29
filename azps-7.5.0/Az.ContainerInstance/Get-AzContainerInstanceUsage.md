@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
-ms.openlocfilehash: 5ad84f11578fdc6e16e092e732f6eb003a5f6d43
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: da2dc63e131bda9a8e3c1bd88637e39928101e89
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219470"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789768"
 ---
 # Get-AzContainerInstanceUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstanceusage) untuk informasi terbaru.
 
 ## SYNTAX
 

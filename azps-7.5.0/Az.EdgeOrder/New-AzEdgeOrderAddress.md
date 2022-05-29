@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderAddress.md
-ms.openlocfilehash: b84577e8ae8b616a0d8e1b9ee8d3f8f2464aec38
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd39bdf1a2087fe3588dae6f7dc416a793dd8be0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215270"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784314"
 ---
 # New-AzEdgeOrderAddress
 
 ## SYNOPSIS
 Membuat alamat baru dengan parameter yang ditentukan.
 Alamat yang ada dapat diperbarui dengan API ini
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderaddress) untuk informasi terbaru.
 
 ## SYNTAX
 

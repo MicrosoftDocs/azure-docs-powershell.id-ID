@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
-ms.openlocfilehash: e2eaded0ac93e1fddf9944fca98dab260d79ff6e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9fd626e18afbe7d36d14d8711ac4c35a383c9589
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239981"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778160"
 ---
 # Set-AzVMSqlServerExtension
 
 ## SYNOPSIS
 Mengatur ekstensi Azure SQL Server pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Perintah meneruskan komputer virtual ke cmdlet Update-AzVM.
 ## PARAMETERS
 
 ### -AutoBackupSettings
-Menentukan pengaturan pencadangan SQL Server otomatis.
+Menentukan setelan pencadangan SQL Server otomatis.
 Untuk membuat objek **AutoBackupSettings** , gunakan cmdlet New-AzVMSqlServerAutoBackupConfig.
 
 ```yaml

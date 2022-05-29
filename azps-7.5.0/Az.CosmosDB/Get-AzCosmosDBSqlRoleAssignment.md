@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: 8befa29fd12d700aaa2599a7d6c1e2e865160e75
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf6f1d42ebf99c97cb7080f8edd52a38f646fecb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207578"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796966"
 ---
 # Get-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
 Mendapatkan Penetapan Peran CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

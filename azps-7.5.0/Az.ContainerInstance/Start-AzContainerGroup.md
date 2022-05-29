@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Start-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Start-AzContainerGroup.md
-ms.openlocfilehash: 60a23b12701b9ec93ffe54f8f8c8a91b25dd729d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9c95a6dc832f7ceb2755865e9539eb8e629a079
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219323"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789678"
 ---
 # Start-AzContainerGroup
 
 ## SYNOPSIS
 Memulai semua kontainer dalam grup kontainer.
 Sumber daya komputasi akan dialokasikan dan penagihan akan dimulai.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/start-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,12 +48,12 @@ Start-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
 
 Perintah ini memulai semua kontainer dalam grup kontainer.
 
-### Contoh 2: Memulai semua kontainer dalam grup kontainer dengan menyalurkan
+### Contoh 2: Memulai semua kontainer dalam grup kontainer menurut pipa
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName test-rg | Start-AzContainerGroup
 ```
 
-Perintah ini memulai semua kontainer dalam grup kontainer dengan menyalurkan.
+Perintah ini memulai semua kontainer dalam grup kontainer dengan pipa.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

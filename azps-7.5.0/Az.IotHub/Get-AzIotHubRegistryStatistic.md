@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
-ms.openlocfilehash: abd2616a818e247bfad7ea75328a0d8f8fb0dd62
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dc671dc78754d01173d2e31969d93875e5480b6d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239463"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805600"
 ---
 # Get-AzIotHubRegistryStatistic
 
 ## SYNOPSIS
 Mendapatkan RegistryStatistics untuk IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubregistrystatistic) untuk informasi terbaru.
 
 ## SYNTAX
 

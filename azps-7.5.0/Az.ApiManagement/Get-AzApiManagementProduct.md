@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementProduct.md
-ms.openlocfilehash: 1585c7753f03a4b92437b6de15d4dd3f50d6f8b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e9d16935e9db7a9be73d38a12c6f3de6746cc775
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211163"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767450"
 ---
 # Get-AzApiManagementProduct
 
 ## SYNOPSIS
 Mendapatkan daftar atau produk tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Get-AzApiManagementProduct -Context $apimContext -ProductId "0123456789"
 
 Perintah ini mendapatkan produk API Management berdasarkan ID.
 
-### Contoh 2: Mendapatkan produk berdasarkan Judul
+### Contoh 2: Dapatkan produk berdasarkan Judul
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $product = Get-AzApiManagementProduct -Context $apimContext -Title 'Starter'
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -Judul
 Menentukan judul produk yang akan dicari.
-Jika ditentukan, cmdlet mencoba untuk mendapatkan produk berdasarkan judul.
+Jika ditentukan, cmdlet mencoba mendapatkan produk berdasarkan judul.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
-ms.openlocfilehash: b00d416feef1fcc3f8ae7d844ed0e048fc9326ac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa4b6e4200bfac2c86957df2bfbbf506f6345492
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222398"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805658"
 ---
 # Get-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
 Mendapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E2
 
 Dapatkan semua titik akhir jenis EventHub dari IoT Hub "myiothub". 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Name "myiothub" -EndpointType EventHub
 ```

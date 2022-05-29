@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
-ms.openlocfilehash: c9b2d79f77a177f9cb07393ff2010fe725121951
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 541628c94d0f3443b5c45db8c156f17157141a4e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225298"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764300"
 ---
 # New-AzFrontDoorWafRuleGroupOverrideObject
 
 ## SYNOPSIS
 Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafrulegroupoverrideobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedRuleOverride
-Daftar penimpaan aturan
+Daftar penggantian aturan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSAzureManagedRuleOverride[]

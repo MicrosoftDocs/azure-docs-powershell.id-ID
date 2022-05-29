@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: f49da2994ccda1b726b0962561e9df3f57cc74a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 931552b3315cad0d7042caaf15313edd97ae01c0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183685"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767666"
 ---
 # Add-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Menambahkan pendengar HTTP ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ $AppGw = Add-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menambahkan listener, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan HostNames, ke gateway aplikasi.
+Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan HostNames, ke gateway aplikasi.
 
 ## PARAMETERS
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan objek port front-end gateway aplikasi.
+Menentukan objek port ujung depan gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/start-azaksd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksDashboard.md
-ms.openlocfilehash: c9ea16c28f57862e3d2c4c4e80c0ce19baafc2f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f890115a7efe6be6e9aa1b21c484f0421ba34506
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243523"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782730"
 ---
 # Start-AzAksDashboard
 
 ## SYNOPSIS
 Buat terowongan Kubectl SSH ke dasbor kluster terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/start-azaksdashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzAksDashboard [-Id] <String> [-DisableBrowser] [-ListenPort <Int32>] [-Pa
 ```
 
 ## DESCRIPTION
-Buat terowongan Kubectl SSH ke dasbor kluster terkelola. Terowongan SSH diatur dalam pekerjaan PowerShell yang disebut Kubectl-Tunnel dan dapat ditemukan dengan menjalankan `Get-Job`. Terowongan harus dapat diakses melalui [http://127.0.0.1:8001](http://127.0.0.1:8001).
+Buat terowongan Kubectl SSH ke dasbor kluster terkelola. Terowongan SSH disiapkan dalam pekerjaan PowerShell yang disebut Kubectl-Tunnel dan dapat ditemukan dengan menjalankan `Get-Job`. Terowongan harus dapat diakses melalui [http://127.0.0.1:8001](http://127.0.0.1:8001).
 
 ## EXAMPLES
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

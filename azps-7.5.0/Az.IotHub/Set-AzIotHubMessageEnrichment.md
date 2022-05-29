@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: bbb6b945ea6707b577df97b6428f2518262bc01e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8f15b39989c1386b2dc38c0b8e53c5ffdb298f8d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239253"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812348"
 ---
 # Set-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Perbarui pengayaan pesan di hub IoT Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Value       : value1
 Endpoint(s) : {endpoint1, endpoint2, endpoint3}
 ```
 
-Memperbarui titik akhir pengayaan ke "endpoint1, endpoint2, endpoint3" untuk kunci "newKey".
+Memperbarui titik akhir pengayaan ke "titik akhir1, titik akhir2, titik akhir3" untuk kunci "newKey".
 Untuk penjelasan terperinci tentang pengayaan pesan dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview
 
 ## PARAMETERS

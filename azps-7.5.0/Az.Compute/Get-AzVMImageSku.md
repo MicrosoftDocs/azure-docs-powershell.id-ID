@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMImageSku.md
-ms.openlocfilehash: e649483cea8ca57f45a22da6a70747f7e217ffee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e372317858d4d337f07d493d4ead4adfcfe94263
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236008"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798388"
 ---
 # Get-AzVMImageSku
 
 ## SYNOPSIS
 Mendapatkan SKU VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmimagesku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzVMImageSku mendapatkan SKU** VMImage.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan SKU VMImage
+### Contoh 1: Mendapatkan SKU VMImage
 ```powershell
 Get-AzVMImageSku -Location "Central US" -PublisherName "Fabrikam" -Offer "LinuxServer"
 ```
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, Sku Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, itu akan dikueri dari lokasi yang diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, sku Gambar VM akan dikueri dari wilayah utama Azure. Jika tidak, itu akan dikueri dari lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -135,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Simpan-AzVMImage](./Save-AzVMImage.md)
+[Save-AzVMImage](./Save-AzVMImage.md)
 
 

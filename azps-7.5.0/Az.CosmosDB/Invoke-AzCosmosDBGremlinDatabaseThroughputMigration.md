@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBGremlinDatabaseThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBGremlinDatabaseThroughputMigration.md
-ms.openlocfilehash: 7d6b64dfb676182891ce0018f9ed00956c1332e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2911fbeab6656f4d955b2b1894e24807e94a8bd0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207422"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789210"
 ---
 # Invoke-AzCosmosDBGremlinDatabaseThroughputMigration
 
 ## SYNOPSIS
 Gunakan ini untuk memigrasikan throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbgremlindatabasethroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 

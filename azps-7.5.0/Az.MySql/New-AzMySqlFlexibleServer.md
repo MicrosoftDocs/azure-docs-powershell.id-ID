@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
-ms.openlocfilehash: e0d336185ad87101ac2b4cc3950c537c8262595b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 318d0e8a918debd460e32ee29b3f5a005c6881a4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210851"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794410"
 ---
 # New-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Membuat server fleksibel MySQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 

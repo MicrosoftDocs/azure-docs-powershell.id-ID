@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
-ms.openlocfilehash: d0cc2734dc073357128a37ae92e6486d09b001ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 38875e04e3880e1c0df6df0d75bc01ebf533aa2a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208139"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794590"
 ---
 # Get-AzMapsAccount
 
 ## SYNOPSIS
 Mendapatkan Akun Azure Maps.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

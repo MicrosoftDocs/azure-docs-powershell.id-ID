@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
-ms.openlocfilehash: 0f87b5052a3004af092f37d963eefe91f958f987
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 752b30b6bcac79eb5c2956eb63a21263d73eea42
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197702"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794518"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
 ## SYNOPSIS
 Membuat objek jenis Pemicu Metrik Log.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulelogmetrictrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

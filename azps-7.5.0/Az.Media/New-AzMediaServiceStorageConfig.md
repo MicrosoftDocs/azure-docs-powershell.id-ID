@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/new-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
-ms.openlocfilehash: f77c2762efb590e3e204703fc226df5ab89fb1b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f1c34a23ab1786d91cf79b5e30df4c4d6977cc7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112169"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791946"
 ---
 # New-AzMediaServiceStorageConfig
 
 ## SYNOPSIS
 Buat konfigurasi akun penyimpanan untuk cmdlet layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/new-azmediaservicestorageconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

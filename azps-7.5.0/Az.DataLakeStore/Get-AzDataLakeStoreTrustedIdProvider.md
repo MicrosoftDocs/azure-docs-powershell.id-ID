@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: 37e2df2d9633b5d0716a69bf090aaa2a3343acfb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07aa05947b5947ee8f768595b9938ee0bea22326
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202627"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784836"
 ---
 # Get-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
 Mendapatkan IdP tepercaya yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada penyedia yang ditentukan, maka daftar semua penyedia untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Mencantumkan semua penyedia di bawah akun "ContosoADL"
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Store untuk mengambil idP tepercaya dari
+Akun Data Lake Store untuk mengambil penyedia identitas tepercaya dari
 
 ```yaml
 Type: System.String

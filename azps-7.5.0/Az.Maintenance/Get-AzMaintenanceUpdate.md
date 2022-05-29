@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceUpdate.md
-ms.openlocfilehash: 10ea9ae6fa17f6883aeee67a6f7a71b38c1bcb46
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c13e8a11e4bc27c5b222be467104d8807f1b8461
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236988"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794842"
 ---
 # Get-AzMaintenanceUpdate
 
 ## SYNOPSIS
 Dapatkan pembaruan pemeliharaan yang tertunda ke sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceupdate) untuk informasi terbaru.
 
 ## SYNTAX
 

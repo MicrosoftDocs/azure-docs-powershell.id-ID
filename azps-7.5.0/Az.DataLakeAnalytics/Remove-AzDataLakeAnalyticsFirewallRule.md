@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsFirewallRule.md
-ms.openlocfilehash: 75275607ae4bf7ada2b44ade075a34e3c09ffb01
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e57ad6150397f63581d44694f35d4f3af31a3a8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203036"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813050"
 ---
 # Remove-AzDataLakeAnalyticsFirewallRule
 
 ## SYNOPSIS
 Menghapus aturan firewall dari akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticsfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzDataLakeAnalyticsFirewallRule** menghapus aturan firewall dari
 Remove-AzDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule"
 ```
 
-Perintah ini menghapus aturan firewall bernama "my firewall rule" dari akun "ContosoAdlAcct"
+Perintah ini menghapus aturan firewall bernama "aturan firewall saya" dari akun "ContosoAdlAcct"
 
 ## PARAMETERS
 

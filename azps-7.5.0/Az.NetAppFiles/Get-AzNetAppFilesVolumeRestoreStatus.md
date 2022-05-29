@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolumeRestoreStatus.md
-ms.openlocfilehash: f8814b34a3bcb9d5dfe551cc5dc1962af676f34d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bffc5683baf14981c156735a845f423c8d122ee0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184231"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145791028"
 ---
 # Get-AzNetAppFilesVolumeRestoreStatus
 
 ## SYNOPSIS
 Mendapatkan status pemulihan volume
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumerestorestatus) untuk informasi terbaru.
 
 ## SYNTAX
 

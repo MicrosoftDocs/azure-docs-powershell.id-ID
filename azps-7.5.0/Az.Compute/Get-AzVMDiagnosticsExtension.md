@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: c397d3780465b598e2010eaaa0bb7d45b216a17c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e74d27c6e6d0d83cb9e36872c6a4035f9e94efd0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239995"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781920"
 ---
 # Get-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
 Mendapatkan pengaturan ekstensi Diagnostik pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 

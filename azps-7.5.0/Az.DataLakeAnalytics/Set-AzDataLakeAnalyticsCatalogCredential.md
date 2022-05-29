@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 75e5d23261a740c2a9913c2e65963b02c40f3de7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b952baf29da7735f6f6b6d78e5b19a0592ba92a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203008"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813068"
 ---
 # Set-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Memodifikasi kata sandi kredensial katalog Azure Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Set-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -DatabaseHost "example.contoso.com" -Port 8080
 ```
 
-Perintah ini mengatur kata sandi kredensial ke kata sandi yang ditentukan dalam NewPassword.
+Perintah ini mengatur kata sandi kredensial ke kata sandi yang ditentukan di NewPassword.
 
 ## PARAMETERS
 

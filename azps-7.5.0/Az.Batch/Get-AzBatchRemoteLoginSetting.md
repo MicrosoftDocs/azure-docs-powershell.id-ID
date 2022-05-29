@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
-ms.openlocfilehash: c91222f5e1dede1658a9817baaa50daf536d979e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 535d65bfeaa01c0c992ecdcc8370b377a12b1bee
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195196"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770509"
 ---
 # Get-AzBatchRemoteLoginSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchremoteloginsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan simpul komputasi, sebagai objek **PSComputeNode** , yang cmdlet ini mendapatkan pengaturan masuk jarak jauh.
+Menentukan simpul komputasi, sebagai objek **PSComputeNode** , di mana cmdlet ini mendapatkan pengaturan masuk jarak jauh.
 Untuk mendapatkan objek simpul komputasi, gunakan cmdlet Get-AzBatchComputeNode.
 
 ```yaml

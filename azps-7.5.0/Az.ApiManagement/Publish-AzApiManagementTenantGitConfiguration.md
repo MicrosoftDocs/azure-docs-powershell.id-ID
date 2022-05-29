@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/pu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Publish-AzApiManagementTenantGitConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Publish-AzApiManagementTenantGitConfiguration.md
-ms.openlocfilehash: d5870819cead227d426581c7172a9d7d44363cd5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 012eacf4c7031f1217860753e194648330b8d467
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189201"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790452"
 ---
 # Publish-AzApiManagementTenantGitConfiguration
 
 ## SYNOPSIS
 Menerbitkan perubahan dari cabang Git ke database konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/publish-azapimanagementtenantgitconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

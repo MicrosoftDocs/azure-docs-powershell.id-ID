@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSettingCategory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSettingCategory.md
-ms.openlocfilehash: 2fb24d344bf8c6d45fe9928f0a224e669738796a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 74f463d587a25b032c8c61d14d136c9153736e06
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206339"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767900"
 ---
 # Get-AzDiagnosticSettingCategory
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan kategori pengaturan diagnostik yang didukung untuk sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdiagnosticsettingcategory) untuk informasi terbaru.
 
 ## SYNTAX
 

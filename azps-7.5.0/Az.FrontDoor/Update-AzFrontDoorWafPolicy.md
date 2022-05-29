@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Update-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Update-AzFrontDoorWafPolicy.md
-ms.openlocfilehash: 185b532cd2c38da9568ec5f25ea55912c03bc111
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1fe28ad72e8ce203e3244f2d4e48e43648e86cf0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208163"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812366"
 ---
 # Update-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/update-azfrontdoorwafpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 
 Perbarui mode kebijakan WAF yang ada.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName -Mode Detection -EnabledState Disabled
 ```
@@ -92,7 +95,7 @@ Perbarui status dan mode yang diaktifkan kebijakan WAF yang ada.
 Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Update-AzFrontDoorWafPolicy -Mode Detection -EnabledState Disabled
 ```
 
-Memperbarui semua kebijakan WAF di $resourceGroupName
+Memperbarui semua kebijakan WAF dalam $resourceGroupName
 
 ## PARAMETERS
 
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek FireWallPolicy untuk diperbarui.
+Objek FireWallPolicy yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSPolicy

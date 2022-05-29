@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlert.md
-ms.openlocfilehash: ecb6bc135542744418858b50897421569a5aa050
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78397996082eea9b4756aa6d5d3b2bcfa55ab18b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205718"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782550"
 ---
 # Get-AzAlert
 
 ## SYNOPSIS
 Dapatkan Informasi Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Get-AzAlert -AlertId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529" | Format-List
 
 Dapatkan detail Pemberitahuan berdasarkan Id (GUID) atau Id Sumber Daya (Id ARM Lengkap)
 
-### Contoh 3
+### Contoh: 3
 
 Mendapatkan Informasi Pemberitahuan. (dibuat otomatis)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 428c7ad311943b6e08cd78310a0ff540d8145f73
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b87253f74492c57b57a1fd010821d5f08b46ff3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203131"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813194"
 ---
 # Remove-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Menghapus kredensial Azure Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Menunjukkan bahwa cmdlet ini tidak menunggu operasi selesai.
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
+### -Rekursi
 Menunjukkan bahwa operasi penghapusan ini harus melalui dan juga menghapus dan menghilangkan semua sumber daya tergantung pada kredensial ini.
 
 ```yaml

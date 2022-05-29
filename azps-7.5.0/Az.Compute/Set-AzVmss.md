@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
-ms.openlocfilehash: b5fab1d249e137b349802c0a9e1622f11683d845
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c4172e50dc3d028e451dccb6f374eccd34a04cf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208334"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778106"
 ---
 # Set-AzVmss
 
 ## SYNOPSIS
 Mengatur tindakan tertentu pada VMSS tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 

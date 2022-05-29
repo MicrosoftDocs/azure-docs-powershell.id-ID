@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
-ms.openlocfilehash: 0b9e07be245b7c2e4e19bfb9b27dacccc38569f8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbeec1bf4b70de10457a301ddd301a730a1a375c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187717"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798154"
 ---
 # Invoke-AzVmssVMRunCommand
 
 ## SYNOPSIS
 Jalankan perintah pada Komputer Virtual Machine Scale Set VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmssvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 

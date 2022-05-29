@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Restore-AzApiManagement.md
-ms.openlocfilehash: ad60c0ae669b4818ebfd756697931b277927c007
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 044757ad926bf552fcd0b958ea2c8730c4ebfd49
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186670"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818676"
 ---
 # Restore-AzApiManagement
 
 ## SYNOPSIS
 Memulihkan Layanan API Management dari blob Azure Storage yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/restore-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Restore-AzApiManagement -ResourceGroupName <String> -Name <String> [-StorageCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzApiManagement** memulihkan Layanan API Management dari cadangan yang ditentukan yang berada di blob Azure Storage.
+Cmdlet **Restore-AzApiManagement** memulihkan Layanan API Management dari cadangan yang ditentukan yang berada dalam blob Azure Storage.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana API Management ada.
+Menentukan nama grup sumber daya tempat API Management ada.
 
 ```yaml
 Type: System.String

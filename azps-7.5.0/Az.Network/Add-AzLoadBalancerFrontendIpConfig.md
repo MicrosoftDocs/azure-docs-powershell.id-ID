@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: d3985a6389bbffb1efc2a6d74305c81edd8756aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a3e3b353ff5239c3b29130365ce2c546c366ecb8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209207"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767594"
 ---
 # Add-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP front-end ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefix
-Menentukan objek prefiks alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
+Menentukan objek awalan alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefixId
-Menentukan ID objek prefiks alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
+Menentukan ID objek awalan alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String

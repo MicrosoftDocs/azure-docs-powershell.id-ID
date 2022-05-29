@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceLog.md
-ms.openlocfilehash: 6946ddbccf33aa4821b813d36c26141227968465
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91ed992c698d29bf2807824b26f87ff3ecf295e5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219479"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797362"
 ---
 # Get-AzContainerInstanceLog
 
 ## SYNOPSIS
 Dapatkan log untuk instans kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancelog) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Restore-AzDataLakeStoreDeletedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Restore-AzDataLakeStoreDeletedItem.md
-ms.openlocfilehash: b7a469612cc237210ffd71ea28cf4a53baf7bba5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 616c468bf89a3b9371199491974e2dfeaf3f8e8c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202448"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784710"
 ---
 # Restore-AzDataLakeStoreDeletedItem
 
 ## SYNOPSIS
 Memulihkan file atau folder yang dihapus di Azure Data Lake.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/restore-azdatalakestoredeleteditem) untuk informasi terbaru.
 
 ## SYNTAX
 

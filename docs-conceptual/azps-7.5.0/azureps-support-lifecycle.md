@@ -1,17 +1,17 @@
 ---
 description: Detail tentang siklus hidup dukungan modul Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Siklus hidup dukungan Azure PowerShell
-ms.openlocfilehash: 4c5a48bfa11ae71f508ceae80f401643e4776bc4
-ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
+ms.openlocfilehash: 9270c00d6f7ae211d1e9c2e20120b127f79f0fb7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144657162"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818999"
 ---
 # <a name="azure-powershell-support-lifecycle"></a>Siklus Hidup Dukungan Azure PowerShell
 
@@ -33,8 +33,9 @@ Tabel berikut mengidentifikasi platform yang didukung untuk modul Az, AzureRM, d
 
 |        Az        | PowerShell <br/> 7.1.3 | PowerShell <br/> >= 7.0.6 | PowerShell <br/> <= 7.0.5 | Windows PowerShell <br/> 5.1 |
 | :--------------: | :--------------------: | :-----------------------: | :-----------------------: | :--------------------------: |
+|      Az 8.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
 |      Az 7.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
-|      Az 6.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
+|      Az 6.x      |     Tidak didukung      |       Tidak didukung       |       Tidak didukung       |        Tidak didukung         |
 | AzureRM (6.13.2) |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 |  Azure (5.3.1)   |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 
@@ -45,4 +46,4 @@ Tabel berikut mengidentifikasi platform yang didukung untuk modul Az, AzureRM, d
 
 Modul Az PowerShell menggunakan komponen yang dipengaruhi oleh penasihat keamanan [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701) yang telah diperbaiki di PowerShell 7.0.6 dan 7.1.3. Untuk informasi selengkapnya, lihat [Microsoft Security Advisory CVE-2021-26701: .NET Core Remote Code Execution Vulnerability](https://github.com/PowerShell/Announcements/issues/23).
 
-Dimulai dengan Az 6.0.0, PowerShell 7.0.6 atau 7.1.3 atau yang lebih baru diperlukan. Saat modul Az.Accounts diimpor, pesan non-pemblokiran berikut akan ditampilkan jika versi PowerShell yang tidak didukung sedang digunakan: _"Versi Az.Accounts ini hanya didukung di Windows PowerShell 5.1 dan PowerShell 7.0.6 atau lebih tinggi, buka [https://aka.ms/install-powershell](https://aka.ms/install-powershell) untuk mempelajari cara meningkatkan. Untuk informasi lebih lanjut, kunjungi [https://aka.ms/azpslifecyle](https://aka.ms/azpslifecycle)."_
+Dimulai dengan Az 6.0.0, PowerShell 7.0.6 atau 7.1.3 atau yang lebih baru diperlukan. Saat modul Az.Accounts diimpor, pesan non-pemblokiran berikut ditampilkan jika versi PowerShell yang tidak didukung sedang digunakan: _"Versi Az.Accounts ini hanya didukung pada Windows PowerShell 5.1 dan PowerShell 7.0.6 atau yang lebih baru, buka [https://aka.ms/install-powershell](https://aka.ms/install-powershell) untuk mempelajari cara meningkatkan. Untuk informasi lebih lanjut, buka [https://aka.ms/azpslifecyle](https://aka.ms/azpslifecycle)."_

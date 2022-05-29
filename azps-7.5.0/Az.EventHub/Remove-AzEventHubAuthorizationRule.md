@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 743200f8615ac5af46bf9cf4ece0cd47f222cda7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b5c0af3f5784794631f2da86744573b98d378ec7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187258"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812600"
 ---
 # Remove-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi Pusat Aktivitas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 

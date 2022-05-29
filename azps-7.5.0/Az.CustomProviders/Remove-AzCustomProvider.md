@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProvider.md
-ms.openlocfilehash: 46a4fb907473f60074c8d7e6f13d70fbbaa58a76
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e129023857b4fc5e59d687b3cf9f855959b18dc6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205250"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789048"
 ---
 # Remove-AzCustomProvider
 
 ## SYNOPSIS
 Menghapus penyedia sumber daya kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/remove-azcustomprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

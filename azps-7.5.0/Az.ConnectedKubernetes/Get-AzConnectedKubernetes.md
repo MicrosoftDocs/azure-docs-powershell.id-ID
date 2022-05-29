@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetes.md
-ms.openlocfilehash: 05e35b16c3b6569a32c217a2bf42d65696d1fba6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c8f3a6b3771a2c61c2a2d5256a1077da3ed7111f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232746"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797686"
 ---
 # Get-AzConnectedKubernetes
 
 ## SYNOPSIS
 Mengembalikan properti kluster terhubung yang ditentukan, termasuk nama, identitas, properti, dan detail kluster tambahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/get-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 

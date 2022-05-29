@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaService.md
-ms.openlocfilehash: 10143bf4906a1950dbbed8f1339136cc973d7c21
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 01db151a1b6960ab9ea206e5b3d76f390e7bdd52
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112253"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792000"
 ---
 # Get-AzMediaService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 

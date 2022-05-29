@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoClusterPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoClusterPrincipalAssignment.md
-ms.openlocfilehash: 6af0f99dfdd36bda4f20a53e419eb6c2c04ee014
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1042b0e8df555b4244c8ed1d32bfa299e56a9a7f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190517"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771590"
 ---
 # New-AzKustoClusterPrincipalAssignment
 
 ## SYNOPSIS
 Buat Kusto cluster principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustoclusterprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-ID utama yang ditetapkan ke prinsipal kluster.
+ID utama yang ditetapkan ke perwakilan kluster.
 Ini bisa berupa email pengguna, ID aplikasi, atau nama grup keamanan.
 
 ```yaml

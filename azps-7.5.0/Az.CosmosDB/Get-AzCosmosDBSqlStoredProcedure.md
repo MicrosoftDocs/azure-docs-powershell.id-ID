@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: 86173ff2163b7e8111f95f2995d4f6c07285bc71
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8aa2e7bfbfc26dbc23e3f96f29a9695bdb45431b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207542"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789264"
 ---
 # Get-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
 Mendapatkan CosmosDB Sql StoredProcedure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlstoredprocedure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Prcodecure Tersimpan.
+Nama Prcodecure tersimpan.
 
 ```yaml
 Type: System.String

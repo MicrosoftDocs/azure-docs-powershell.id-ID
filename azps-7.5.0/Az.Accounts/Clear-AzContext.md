@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/clear-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzContext.md
-ms.openlocfilehash: 19d9af81f7a420c0f3637c64742b987a14da9b6d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89d662990ad0e69b28655922de0cc815f2b23989
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205766"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770708"
 ---
 # Clear-AzContext
 
 ## SYNOPSIS
 Hapus semua informasi masuk, akun, dan langganan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/clear-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Hapus semua informasi masuk, akun, dan langganan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konteks global
+### Contoh 1: Hapus konteks global
 ```powershell
 Clear-AzContext -Scope CurrentUser
 ```
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Menghapus semua pengguna dan grup dari cakupan global tanpa meminta
+Menghapus semua pengguna dan grup dari lingkup global tanpa meminta
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

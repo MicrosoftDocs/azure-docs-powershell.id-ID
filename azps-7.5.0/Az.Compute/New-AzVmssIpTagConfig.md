@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpTagConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpTagConfig.md
-ms.openlocfilehash: a171f7e65bc0308fb2bf69beef3b91b3b1577cba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 86d7900459c89e9213fa8f4f8010f781273773b7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229957"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798136"
 ---
 # New-AzVmssIpTagConfig
 
 ## SYNOPSIS
 Membuat objek Tag IP untuk antarmuka jaringan VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssiptagconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzVmssIpTagConfig [-IpTagType] <String> [-Tag <String>] [-DefaultProfile <IA
 
 ## DESCRIPTION
 Cmdlet **New-AzVmssIpTagConfig** membuat objek konfigurasi Tag IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* dari cmdlet New-AzVmssIpConfig.
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* cmdlet New-AzVmssIpConfig.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzApplyUpdate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzApplyUpdate.md
-ms.openlocfilehash: e0c4d191fc11d16ca3f54eca03542e64e742dbfa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6664bbb7d7fef95e2123b196a818817eff3ecca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247656"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794824"
 ---
 # New-AzApplyUpdate
 
 ## SYNOPSIS
 Menerapkan pembaruan pemeliharaan ke sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azapplyupdate) untuk informasi terbaru.
 
 ## SYNTAX
 

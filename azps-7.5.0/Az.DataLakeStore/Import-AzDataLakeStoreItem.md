@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
-ms.openlocfilehash: d73007bf88f42479448d5ddb194e29d937fa7a68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 65f595a87697eeafcc4334e1eacfe10b1c70d805
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202602"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784818"
 ---
 # Import-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Mengunggah file atau direktori lokal ke Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/import-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
