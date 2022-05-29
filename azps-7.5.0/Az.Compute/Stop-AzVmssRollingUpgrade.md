@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmssRollingUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmssRollingUpgrade.md
-ms.openlocfilehash: 4aa3613b2c7cfb2f9f058afba95250fc97f68124
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c2871037fb5a81e7db787b8c58e86626c41f37f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238791"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732402"
 ---
 # Stop-AzVmssRollingUpgrade
 
 ## SYNOPSIS
 Membatalkan peningkatan bergulir set skala komputer virtual saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/stop-azvmssrollingupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 

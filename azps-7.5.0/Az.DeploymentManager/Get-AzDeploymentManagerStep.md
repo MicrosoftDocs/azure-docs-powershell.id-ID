@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
-ms.openlocfilehash: f6bc018e280776ee11d25d459f1f17396850ee18
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 34643aae5078934b10c7127098c5b07a15c98959
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225774"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745830"
 ---
 # Get-AzDeploymentManagerStep
 
 ## SYNOPSIS
 Mendapatkan langkah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzDeploymentManagerStep [-InputObject] <PSStepResource> [-DefaultProfile <IA
 
 ## DESCRIPTION
 Cmdlet **Get-AzDeploymentManagerStep** mendapatkan langkah, dan mengembalikan objek yang mewakili langkah tersebut.
-Tentukan langkah menurut nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat memberikan objek Langkah atau ResourceId.
+Tentukan langkah berdasarkan nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat menyediakan objek Langkah atau ResourceId.
 
 Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artefak dengan menggunakan cmdlet Set-AzDeploymentManagerStep.
 

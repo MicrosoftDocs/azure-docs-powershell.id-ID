@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeShare.md
-ms.openlocfilehash: 27e07edaa52479c4d97608355285cdfcbc492e6e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e276b98e91477d747975033d7f0b5cad4244877e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226432"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720342"
 ---
 # Invoke-AzStackEdgeShare
 
 ## SYNOPSIS
 Memanggil tindakan tertentu pada berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/invoke-azstackedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 

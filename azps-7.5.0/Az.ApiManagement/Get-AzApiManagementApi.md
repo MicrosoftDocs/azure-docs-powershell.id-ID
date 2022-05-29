@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApi.md
-ms.openlocfilehash: 0f0bbd77050c288d9d50c7c6439547ed27db6da8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 455476219a84e5da08ff25eb978bf03d162b29fc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209546"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731592"
 ---
 # Get-AzApiManagementApi
 
 ## SYNOPSIS
 Mendapatkan API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Get-AzApiManagementApi -Context <PsApiManagementContext> -GatewayId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementApi** mendapatkan satu atau beberapa AZURE API Management API.
+Cmdlet **Get-AzApiManagementApi** mendapatkan satu atau beberapa API Azure API Management.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ Get-AzApiManagementApi -Context $ApiMgmtContext -ApiId $ApiId
 
 Perintah ini mendapatkan API dengan ID yang ditentukan.
 
-### Contoh 3: Dapatkan API manajemen berdasarkan nama
+### Contoh 3: Mendapatkan API manajemen berdasarkan nama
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi"
@@ -79,7 +82,7 @@ Get-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi"
 
 Perintah ini mendapatkan API dengan nama yang ditentukan.
 
-### Contoh 4: Mendapatkan API manajemen dengan GatewayId
+### Contoh 4: Mendapatkan API manajemen oleh GatewayId
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementApi -Context $ApiMgmtContext -GatewayId "g01"

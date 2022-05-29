@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceAuthKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceAuthKey.md
-ms.openlocfilehash: c4d5d377b30ca17fd7613f611fa29910d9655701
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b20d57083e75050bf8844fb503c472e1d6076d1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202179"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750852"
 ---
 # Get-AzDataMigrationSqlServiceAuthKey
 
 ## SYNOPSIS
 Ambil Daftar Kunci Autentikasi untuk Integration Runtime yang Dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationsqlserviceauthkey) untuk informasi terbaru.
 
 ## SYNTAX
 

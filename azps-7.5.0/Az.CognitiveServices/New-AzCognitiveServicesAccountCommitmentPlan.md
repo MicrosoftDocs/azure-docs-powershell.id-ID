@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountCommitmentPlan.md
-ms.openlocfilehash: d0840b34f1687cdc54e9feee2aff11d329218d26
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c41a629bc4b198574a2a2690687a122061bf889d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240040"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737064"
 ---
 # New-AzCognitiveServicesAccountCommitmentPlan
 
 ## SYNOPSIS
 Membuat CommitmentPlan untuk akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 

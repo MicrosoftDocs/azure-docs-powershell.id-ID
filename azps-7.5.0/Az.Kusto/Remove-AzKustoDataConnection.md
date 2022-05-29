@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDataConnection.md
-ms.openlocfilehash: f80b3b3f27c12978d72728ba5899904aec768f62
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e8b917346e7eba89df6c4b3401d110f4eb8a6c5f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220754"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693450"
 ---
 # Remove-AzKustoDataConnection
 
 ## SYNOPSIS
 Menghapus koneksi data dengan nama yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/remove-azkustodataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

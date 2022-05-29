@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
-ms.openlocfilehash: 650733e4b0f14a47f73947444f95dbe03cddb9af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f565a047640dc2f750c2d45d7b17365d9c3e6eb2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195714"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726282"
 ---
 # New-AzSqlDatabaseExport
 
 ## SYNOPSIS
 Mengekspor Azure SQL Database sebagai file .bacpac ke akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseexport) untuk informasi terbaru.
 
 ## SYNTAX
 

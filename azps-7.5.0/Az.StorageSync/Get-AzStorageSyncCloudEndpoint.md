@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncCloudEndpoint.md
-ms.openlocfilehash: fa3ee49c6a1db8b2fd640fabd47808f275a24b41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2981b4d67c7fc222b74fac8b0c397b1c77fea0f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211658"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713196"
 ---
 # Get-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua titik akhir cloud dalam grup sinkronisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Perintah ini mencantumkan semua titik akhir cloud dalam grup sinkronisasi terten
 Get-AzStorageSyncCloudEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName"
 ```
 
-Perintah ini mendapatkan semua titik akhir cloud yang terkandung dalam grup sinkronisasi yang ditentukan. Tentukan -CloudEndpointName untuk mengembalikan yang spesifik.
+Perintah ini mendapatkan semua titik akhir cloud yang terkandung dalam grup sinkronisasi yang ditentukan. Tentukan -CloudEndpointName untuk mengembalikan yang tertentu.
 
 ## PARAMETERS
 

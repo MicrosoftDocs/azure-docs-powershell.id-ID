@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncAgent.md
-ms.openlocfilehash: 79297783b7cc859c4d713bef3e8b3968a658e598
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: acfdef5d4bed4ecc9c02eb05fed38c6221ed42f2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212882"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723897"
 ---
 # Remove-AzSqlSyncAgent
 
 ## SYNOPSIS
 Menghapus Agen Sinkronisasi Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlsyncagent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzSqlSyncAgent** menghapus Agen Sinkronisasi Azure SQL.
 Remove-AzSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -Name "syncAgent01"
 ```
 
-Perintah ini menghapus Agen Sinkronisasi Azure SQL bernama syncAgent01.
+Perintah ini menghapus agen sinkronisasi Azure SQL bernama syncAgent01.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server tempat agen sinkronisasi berada.
+Nama server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String

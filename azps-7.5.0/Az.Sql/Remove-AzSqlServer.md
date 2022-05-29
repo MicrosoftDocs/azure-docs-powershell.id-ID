@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServer.md
-ms.openlocfilehash: 062e84f46a87f09feacc20b99bf0d50f01acd494
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9725d1b94f67d8257709c13dcacb754c53abfd4b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212930"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724374"
 ---
 # Hapus-AzSqlServer
 
 ## SYNOPSIS
 Menghapus server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzSqlServer [-ServerName] <String> [-Force] [-ResourceGroupName] <String>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzSqlServer** menghapus server Azure SQL Database.
-Operasi penghapusan tidak sinkron dan mungkin memakan waktu, jadi verifikasi operasi selesai sebelum melakukan operasi tambahan yang bergantung pada server yang dihapus sepenuhnya.
+Operasi penghapusan tidak sinkron dan mungkin memakan waktu, jadi pastikan operasi selesai sebelum melakukan operasi tambahan yang bergantung pada server yang dihapus sepenuhnya.
 Misalnya, Anda perlu membuat server baru yang menggunakan nama yang sama.
 
 ## EXAMPLES
@@ -149,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Dapatkan-AzSqlServer](./Get-AzSqlServer.md)
 
-[Baru-AzSqlServer](./New-AzSqlServer.md)
+[Baru-AzResourceGroup](./New-AzSqlServer.md)
 
 [Atur-AzSqlServer](./Set-AzSqlServer.md)
 

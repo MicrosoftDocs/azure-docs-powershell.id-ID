@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
-ms.openlocfilehash: 114146298c4ee820ea84b00375ea65401f82bb69
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 214a40aed3662b60dc7b50deeb39aedb1f2a0841
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209351"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743850"
 ---
 # New-AzWvdMsixPackage
 
 ## SYNOPSIS
 Membuat atau memperbarui paket MSIX.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdmsixpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullName
-Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool tertentu
+Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsActive
-Jadikan versi paket ini aktif di seluruh hostpool.
+Jadikan versi paket ini sebagai yang aktif di seluruh hostpool.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRegularRegistration
-Menentukan cara mendaftarkan Paket di umpan.
+Menentukan cara mendaftarkan Paket dalam umpan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageAlias
-Alias paket dari ekstrak Gambar MSIX
+Alias Paket dari ekstrak Gambar MSIX
 
 ```yaml
 Type: System.String
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

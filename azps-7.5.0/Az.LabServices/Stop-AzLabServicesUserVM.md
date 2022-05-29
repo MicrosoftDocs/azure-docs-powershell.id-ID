@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Stop-AzLabServicesUserVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Stop-AzLabServicesUserVM.md
-ms.openlocfilehash: 1960a6a878c2c3106a05c61cdb3f7c94daec5f9c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 665acdc0115a39107f744670925114affcb1eb29
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241409"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692568"
 ---
 # Stop-AzLabServicesUserVM
 
 ## SYNOPSIS
 API untuk menghentikan vm yang ditetapkan untuk pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/stop-azlabservicesuservm) untuk informasi terbaru.
 
 ## SYNTAX
 

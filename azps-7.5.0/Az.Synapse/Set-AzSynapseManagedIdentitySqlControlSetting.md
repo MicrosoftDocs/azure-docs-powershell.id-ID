@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
-ms.openlocfilehash: 0e2e4277d602057267f773025390c758edd8ed9f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea40cd313facf3ce4ea3bef27979004c227d3a64
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208598"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705546"
 ---
 # Set-AzSynapseManagedIdentitySqlControlSetting
 
 ## SYNOPSIS
 Memperbarui identitas terkelola SQL pengaturan kontrol ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsemanagedidentitysqlcontrolsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Set-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace -E
 
 Perintah ini menonaktifkan identitas terkelola SQL pengaturan kontrol ke ruang kerja untuk ContosoWorkspace ruang kerja.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Set-AzSynapseManagedIdentitySqlControlSetting -Enabled $true

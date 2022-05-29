@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeTrigger.md
-ms.openlocfilehash: 4764a342ff755c825c740e2184228365c856c41c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4679c38c37399f72bd65dee46fb912142d5dafed
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194062"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719568"
 ---
 # Remove-AzStackEdgeTrigger
 
 ## SYNOPSIS
 Menghapus pemicu yang ada pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/remove-azstackedgetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

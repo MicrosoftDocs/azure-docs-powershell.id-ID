@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdScalingPlan.md
-ms.openlocfilehash: 93f0669613ceb20edf64da120067f83dba4c49ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 712c5821766f6570563d6fcc81fe1cd68a4b6a3d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222491"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145744174"
 ---
 # Get-AzWvdScalingPlan
 
 ## SYNOPSIS
 Dapatkan rencana penskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdscalingplan) untuk informasi terbaru.
 
 ## SYNTAX
 

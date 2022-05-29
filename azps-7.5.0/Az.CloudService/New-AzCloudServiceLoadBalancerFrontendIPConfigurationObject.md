@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
-ms.openlocfilehash: 4d9d02d5388f7689835410bb150a52e4be5239e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a2dfa6661f26f971b416770d96b2734c262c99e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199788"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737892"
 ---
 # New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk LoadBalancerFrontendIPConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerfrontendipconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject -Name 'C
 ```
 
 Perintah ini membuat objek konfigurasi IP frontend load balancer yang digunakan untuk membuat atau memperbarui layanan cloud.
-Untuk detail selengkapnya lihat New-AzCloudService.
+Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ### Contoh 2: Membuat objek konfigurasi IP frontend load balancer dengan alamat ID Privat
 ```powershell

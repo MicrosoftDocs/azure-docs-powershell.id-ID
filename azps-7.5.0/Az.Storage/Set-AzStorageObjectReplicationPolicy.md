@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageObjectReplicationPolicy.md
-ms.openlocfilehash: 2224c73b7b2446a676002b5148c3003e1afb106b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62e01e5e58d3f2830cc4516d43d81cb6505417d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210047"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713970"
 ---
 # Set-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan replikasi objek yang ditentukan di akun Storage.
+Membuat atau memperbarui kebijakan replikasi objek yang ditentukan dalam akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageobjectreplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Set-AzStorageObjectReplicationPolicy -StorageAccount <PSStorageAccount> [-Policy
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageObjectReplicationPolicy** membuat atau memperbarui kebijakan replikasi objek yang ditentukan di akun Storage.
+Cmdlet **Set-AzStorageObjectReplicationPolicy** membuat atau memperbarui kebijakan replikasi objek yang ditentukan dalam akun Storage.
 
 ## EXAMPLES
 
@@ -69,8 +72,8 @@ ResourceGroupName StorageAccountName PolicyId                             Enable
 myresourcegroup   mysourceaccount    56bfa11c-81ef-4f8d-b307-5e5386e16fba             mysourceaccount mydestaccount      [5fa8b1d6-4985-4abd-a0b3-ec4d07295a43,...]
 ```
 
-Perintah ini menetapkan kebijakan replikasi objek ke akun tujuan dan sumber.
-Pertama-tama buat 2 aturan kebijakan replikasi objek, dan tetapkan kebijakan ke akun tujuan dengan 2 aturan dan ID sumber daya akun sumber. Kemudian dapatkan kebijakan replikasi objek dari akun tujuan dan atur ke akun sumber.
+Perintah ini menetapkan kebijakan replikasi objek ke tujuan dan akun sumber.
+Pertama buat 2 aturan kebijakan replikasi objek, dan tetapkan kebijakan ke akun tujuan dengan 2 aturan dan ID sumber daya akun sumber. Kemudian dapatkan kebijakan replikasi objek dari akun tujuan dan atur ke akun sumber.
 Harap dicatat, ketika akun penyimpanan memiliki AllowCrossTenantReplication sebagai false, SourceAccount dan DestinationAccount harus menjadi Id sumber daya akun.
 
 ## PARAMETERS
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAccount
-Tujuan Kebijakan Replikasi ObjekAkun, jika SourceAccount adalah nama akun, itu harus nama akun, jika tidak harus id sumber daya akun. Nilai default adalah input StorageAccountName, atau resouceID akun.
+Tujuan Kebijakan Replikasi ObjekAkun, jika SourceAccount adalah nama akun, itu harus berupa nama akun, jika tidak harus id sumber daya akun. Nilai defaultnya adalah input StorageAccountName, atau resouceID akun.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceAccount
-SourceAccount Kebijakan Replikasi Objek. Ini harus menjadi id sumber daya jika allowCrossTenantReplication adalah false..
+Sumber Kebijakan Replikasi ObjekAkun. Ini harus menjadi id sumber daya jika allowCrossTenantReplication adalah false..
 
 ```yaml
 Type: System.String

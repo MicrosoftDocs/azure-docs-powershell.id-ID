@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedPrivateEndpoint.md
-ms.openlocfilehash: 68e53157d86d525c90bd5ef6e0594c75394ffd27
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bd77547af606126c20459c58c8a7bde50bc7af17
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240586"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707580"
 ---
 # New-AzSynapseManagedPrivateEndpoint
 
 ## SYNOPSIS
 Membuat atau memperbarui titik akhir privat terkelola di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsemanagedprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

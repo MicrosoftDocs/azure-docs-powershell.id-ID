@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsDailyCap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsDailyCap.md
-ms.openlocfilehash: 730fd1afc05ba873d7c31546089d968401f280c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 475cc9e04225dd31bcd684ce495260ff2102e505
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234440"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684948"
 ---
 # Set-AzApplicationInsightsDailyCap
 
 ## SYNOPSIS
 Mengatur batas volume data harian untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightsdailycap) untuk informasi terbaru.
 
 ## SYNTAX
 

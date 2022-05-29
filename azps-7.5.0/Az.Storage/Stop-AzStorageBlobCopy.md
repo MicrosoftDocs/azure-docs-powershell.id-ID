@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageBlobCopy.md
-ms.openlocfilehash: 10516d49a907c72d0f005b508841736583befcd3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aeae18d31c02b71bbd2f2734f83a87fab28967e9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211775"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713592"
 ---
 # Stop-AzStorageBlobCopy
 
 ## SYNOPSIS
 Menghentikan operasi penyalinan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/stop-azstorageblobcopy) untuk informasi terbaru.
 
 ## SYNTAX
 

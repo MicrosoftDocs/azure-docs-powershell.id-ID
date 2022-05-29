@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdRegistrationInfo.md
-ms.openlocfilehash: d03e27ae133c11e7b9e31063d65598cb6dddaeac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e37b94f6849a668c43b6ad1574015efaeed22fb0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743832"
 ---
 # New-AzWvdRegistrationInfo
 
 ## SYNOPSIS
 Buat Windows info pendaftaran desktop virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 

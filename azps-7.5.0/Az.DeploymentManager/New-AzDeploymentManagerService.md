@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerService.md
-ms.openlocfilehash: 62ad163c6ff135d13760faf3010e9cdb3a2d4bc9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dfc3225abbc5c18ed7d5f8bf0fa9611fb3ab327f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229033"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745722"
 ---
 # New-AzDeploymentManagerService
 
 ## SYNOPSIS
 Membuat layanan di bawah topologi layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 

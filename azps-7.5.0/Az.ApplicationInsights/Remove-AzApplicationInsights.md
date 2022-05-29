@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsights.md
-ms.openlocfilehash: 7b653056b1bf9e684a869ef5ef3b2f08317f587a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 379863e68053430e8e6fc3a25908c0c0a447f80c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221114"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685254"
 ---
 # Remove-AzApplicationInsights
 
 ## SYNOPSIS
 Menghapus sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsights) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Menghapus sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Menghapus sumber daya application insights
+### Contoh 1 Menghapus sumber daya wawasan aplikasi
 ```powershell
 Remove-AzApplicationInsights -ResourceGroupName "testgroup" -Name "test" -PassThru
 ```

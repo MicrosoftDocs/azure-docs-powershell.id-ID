@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeRole.md
-ms.openlocfilehash: dda27cd958201f26a39d07113352f8e27b3af246
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b8716e5a2aebb1022b9dc7dc6e7a1ec3a1ce60da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226345"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720126"
 ---
 # New-AzStackEdgeRole
 
 ## SYNOPSIS
 Membuat Peran baru untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHostHub
-Alamat hosthub
+Alamat Hosthub
 
 ```yaml
 Type: System.String

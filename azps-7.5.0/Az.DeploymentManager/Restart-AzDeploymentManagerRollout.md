@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
-ms.openlocfilehash: efbe7acda22033d4df869f066060d4e045000f5e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0d3fbdab91ff6ff5b0e0e3629c472d15b3dc612
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187549"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145745345"
 ---
 # Restart-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Memulai ulang peluncuran yang gagal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/restart-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Restart-AzDeploymentManagerRollout [-InputObject] <PSRollout> [-SkipSucceeded]
 ## DESCRIPTION
 Cmdlet **Restart-AzDeploymentManagerRollout** memulai ulang peluncuran yang gagal, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi terperinci tentang kemajuan peluncuran.
 Tentukan peluncuran berdasarkan nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat menyediakan objek Peluncuran atau ResourceId.
-Parameter opsional SkipSucceeded memungkinkan Anda melewati semua langkah yang berhasil dalam eksekusi peluncuran sebelumnya.
+Parameter opsional SkipSucceeded memungkinkan Anda untuk melewati semua langkah yang berhasil dalam eksekusi peluncuran sebelumnya.
 
 ## EXAMPLES
 

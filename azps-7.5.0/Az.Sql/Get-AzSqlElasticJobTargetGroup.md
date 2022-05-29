@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
-ms.openlocfilehash: 37c30cea2e27f666dca74b69836a4999dfeb49ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6426422ad3427e63ebce045ed561f0b0533afb34
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194255"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728694"
 ---
 # Get-AzSqlElasticJobTargetGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

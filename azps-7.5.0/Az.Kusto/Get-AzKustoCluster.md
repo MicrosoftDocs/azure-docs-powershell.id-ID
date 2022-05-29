@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoCluster.md
-ms.openlocfilehash: b23d06f5a95928dbd7951fbd6050d434857694c3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89f0c8a4395fcdbbee052a7d6170e5b22f469dd3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216263"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694062"
 ---
 # Get-AzKustoCluster
 
 ## SYNOPSIS
 Mendapatkan kluster Kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustocluster) untuk informasi terbaru.
 
 ## SYNTAX
 

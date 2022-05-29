@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlPool.md
-ms.openlocfilehash: 6d92885b0b18c8018db73868a0ab4b1184add863
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9483f4a48d58c0d21cdf3db8460831a84c4ab1b9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240541"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707310"
 ---
 # New-AzSynapseSqlPool
 
 ## SYNOPSIS
 Membuat kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: 479fcb45f52ab3afe5985ae16b563657add515a5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48badf606f06c2e920ec5d11fc10d49f04d4f2cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208502"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705294"
 ---
 # Set-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
 Mengatur jenis informasi dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 

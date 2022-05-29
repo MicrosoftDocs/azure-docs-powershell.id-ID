@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeUser.md
-ms.openlocfilehash: eec079e5883743f047588f13321b32c86f3d8d5c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 41c0b9b659faca96531724e0e4d5f85a5e3625fd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194160"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719892"
 ---
 # New-AzStackEdgeUser
 
 ## SYNOPSIS
 Membuat pengguna baru untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgeuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama pengguna
+Nama Pengguna
 
 ```yaml
 Type: System.String

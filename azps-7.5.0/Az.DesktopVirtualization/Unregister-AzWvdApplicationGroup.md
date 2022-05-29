@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Unregister-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Unregister-AzWvdApplicationGroup.md
-ms.openlocfilehash: 47e28eda1a9994ee63e269a5155c255268184622
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0c9b747f247c3b2364d2b9497095344dc40a0b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187328"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743400"
 ---
 # Unregister-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Batalkan pendaftaran grup aplikasi desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/unregister-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Batalkan pendaftaran grup aplikasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan pendaftaran Grup Aplikasi Windows Virtual Desktop
+### Contoh 1: Membatalkan pendaftaran grup aplikasi Windows Virtual Desktop
 ```powershell
 Unregister-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                                     -WorkspaceName WorkspaceName `

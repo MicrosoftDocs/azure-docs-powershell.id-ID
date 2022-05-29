@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesSchedule.md
-ms.openlocfilehash: fa713664f7ea2c728e20463df98ac0a9ebfa3b79
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b14cb5b9a2b67a5cf743cc9ff051603a87d6c76d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110285"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692316"
 ---
 # Update-AzLabServicesSchedule
 
 ## SYNOPSIS
 Operasi untuk memperbarui jadwal lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/update-azlabservicesschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

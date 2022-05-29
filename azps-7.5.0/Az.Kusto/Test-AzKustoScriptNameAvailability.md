@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoScriptNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoScriptNameAvailability.md
-ms.openlocfilehash: 91782d127c7c7656cf5ba3f9aa337a3ee3d500e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 590e6b1309f37e989eb19756c0ffd8f96eceb4d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222254"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693090"
 ---
 # Test-AzKustoScriptNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama skrip valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustoscriptnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
