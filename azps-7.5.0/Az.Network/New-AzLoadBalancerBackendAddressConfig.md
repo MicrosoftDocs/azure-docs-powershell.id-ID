@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressConfig.md
-ms.openlocfilehash: a00a86ef552f2b9a82a7fcc610fa424ce0ad3053
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48380bbc15dbb5e989a0b92bfc96e89b85f1f740
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241090"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145675210"
 ---
 # New-AzLoadBalancerBackendAddressConfig
 
 ## SYNOPSIS
 Mengembalikan konfigurasi alamat backend load balancer. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddressconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

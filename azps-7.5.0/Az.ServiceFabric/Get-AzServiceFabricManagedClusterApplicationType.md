@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: ed596ee5fd1fe892a5649f7ebab2e5b937572504
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24b80267dd87ffef5183535f9c522c91ff0c90be
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243747"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145631582"
 ---
 # Get-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
 Dapatkan detail jenis aplikasi terkelola Service Fabric. Hanya mendukung jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ $appTypeName = "testAppType"
 Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan parameter yang ditentukan, jika tidak menemukan sumber daya, itu akan memberikan pengecualian.
+Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan parameter yang ditentukan, jika tidak menemukan sumber daya, itu akan melemparkan pengecualian.
 
 ### Contoh 2
 ```powershell
@@ -61,13 +64,13 @@ Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGro
 
 Contoh ini akan mendapatkan daftar jenis aplikasi terkelola yang ditentukan di bawah kluster yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroups/testRG/providers/Microsoft.ServiceFabric/managedClusters/testCluster/applicationTypes/testAppType"
 Get-AzServiceFabricManagedClusterApplicationType -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dilemparkan pengecualian.
+Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan melemparkan pengecualian.
 
 ## PARAMETERS
 

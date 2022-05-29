@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
-ms.openlocfilehash: afa4b733a839a17dedd7fb24b9af481777f12b95
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f54d9581a17a3cc0efa8f846b4038efd992812b7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235252"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649902"
 ---
 # Get-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
 Perintah ini akan mengambil semua item yang dapat dilindungi dalam kontainer tertentu atau di semua kontainer terdaftar. Ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atasnya seperti Instans, AvailabilityGroup, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzRecoveryServicesBackupProtectableItem [-ParentID] <String> [[-ItemType] <P
 
 ## DESCRIPTION
 Cmdlet **Get-AzRecoveryServicesBackupProtectableItem** mendapatkan daftar item yang dapat dilindungi dalam kontainer dan status perlindungan item.
-Kontainer yang terdaftar ke vault Azure Recovery Services dapat memiliki satu atau beberapa item yang dapat dilindungi.
+Kontainer yang didaftarkan ke vault Azure Recovery Services dapat memiliki satu atau beberapa item yang dapat dilindungi.
 
 ## EXAMPLES
 

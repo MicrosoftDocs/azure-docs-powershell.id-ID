@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAuthorization.md
-ms.openlocfilehash: 30ab99d39c78b31a7e4133ae3a8aeb40e1e1b304
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9295f8050797bcae109a88943759ff0fe16dc2d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221363"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145701946"
 ---
 # New-AzVMwareAuthorization
 
 ## SYNOPSIS
 Membuat atau memperbarui Otorisasi Sirkuit ExpressRoute di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

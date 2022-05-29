@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 4a1c386233abfed11e943a7175c8aa16aaf9083e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b01be66293876bd567dc50388aa9398ed29cbdeb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208958"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668262"
 ---
 # Remove-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat akar klien VPN yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

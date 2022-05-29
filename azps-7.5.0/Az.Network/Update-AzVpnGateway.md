@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
-ms.openlocfilehash: 8180b9c2d869449de20a1b6c1d8b9a82b66df7b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54e7d0fd22c5cb79b051be0fb9e262e6c2f9daf1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232085"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663474"
 ---
 # Update-AzVpnGateway
 
 ## SYNOPSIS
 Memperbarui gateway VPN yang dapat diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Vir
 
 Setelah gateway dibuat, gateway menggunakan Set-AzVpnGateway untuk memperbarui BgpPeeringAddress.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 $gw = Get-AzVpnGateway -ResourceGroupName "testRg" -Name "testgw"

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 9fdb85234df7ac1e5089dacdeab2eb18fb428ba8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 68ab3c3045b050ce1041259ca2c8d07b1de2e128
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216962"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660594"
 ---
 # Set-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Mengatur akun penyimpanan tertaut untuk ruang kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

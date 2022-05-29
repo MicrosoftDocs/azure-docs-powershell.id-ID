@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
-ms.openlocfilehash: e1e29a50cf87513bb097776932e9cc550962cdfa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c5c9d367ff9fb173087b722e56725b240f4ac161
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217571"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695988"
 ---
 # Set-AzHealthcareApisService
 
 ## SYNOPSIS
 Memperbarui layanan kesehatanApis fhir yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/set-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 
 ### -CorsOrigin
 HealthcareApis FhirService Daftar Asal Cors.
-Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs apa pun.
+Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs mana pun.
 
 ```yaml
 Type: System.String[]
@@ -375,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportStorageAccountName
-Nama Akun Storage Ekspor Layanan HealthcareApis Fhir.
+HealthcareApis Fhir Service Export Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -466,7 +469,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Akun Layanan HealthcareApis Fhir.
+HealthcareApis Fhir Service Account Tags.
 
 ```yaml
 Type: System.Collections.Hashtable

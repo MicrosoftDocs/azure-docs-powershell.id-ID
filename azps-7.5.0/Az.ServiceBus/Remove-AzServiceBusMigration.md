@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusMigration.md
-ms.openlocfilehash: 35ba6f984523f0d205da073e0564b97226ff2dc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c916eed32ad184c6ccc3c78385ea7cf9e1a8d45
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215783"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145632738"
 ---
 # Remove-AzServiceBusMigration
 
 ## SYNOPSIS
-Cmdlet menghapus konfigurasi Migrasi untuk namespace standar ke Premium
+Cmdlet menghapus konfigurasi Migrasi untuk namespace Standar ke Premium
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Migration Standard Namespace Object
+Objek Namespace Standar Migrasi Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes

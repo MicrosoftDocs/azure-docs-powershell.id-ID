@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 368bd30aae2455aab7fd3d46d8c16d70ba6eaff2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73bed947a411eb22ecfb7ddc1c0c746e6d879e4c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194409"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145646050"
 ---
 # Get-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
 Mendapatkan informasi tentang database di kluster Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/get-azredisenterprisecachedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxCustomLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxCustomLogCollection.md
-ms.openlocfilehash: 1d0282c1ad3e5dd0208d461d9337e3cb2f10c01c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 241441aeb7f9d772ea57ccceb3ae97ff1df93f12
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226807"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662538"
 ---
 # Disable-AzOperationalInsightsLinuxCustomLogCollection
 
 ## SYNOPSIS
 Menghentikan pengumpulan log kustom dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightslinuxcustomlogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 

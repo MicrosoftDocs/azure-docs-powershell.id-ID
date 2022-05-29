@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrEvent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrEvent.md
-ms.openlocfilehash: cd9682bc970f64efc296577699b35a1379b0ccff
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f47ac92093f30f73dc54f56833a189b9b59bfb07
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223823"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650766"
 ---
 # Get-AzRecoveryServicesAsrEvent
 
 ## SYNOPSIS
 Mendapatkan detail peristiwa Azure Site Recovery di vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrevent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ TimeOfOccurence              : 8/17/2017 12:31:43 PM
 
 Dapatkan peristiwa berdasarkan nama.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzRecoveryServicesAsrEvent -AffectedObjectName xxxxxxxxxxxxx
 ```
@@ -89,7 +92,7 @@ Daftar peristiwa untuk Objek yang terpengaruh.
 Get-AzRecoveryServicesAsrEvent -AffectedObjectName xxxxxxxxxxxx -StartTime "8/17/2017 12:31:40 PM" -EndTime "8/17/2017 12:31:44 PM" -Severity Critical -EventType VmHealth
 ```
 
-Daftar peristiwa antara waktu mulai waktu dan waktu akhir, tingkat keparahan kritis dan jenis kesehatan VmHealth.
+Daftar peristiwa antara waktu mulai waktu dan waktu akhir, tingkat keparahan penting dan jenis kesehatan VmHealth.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Menentukan waktu akhir jendela pencarian. Gunakan parameter ini untuk hanya mendapatkan peristiwa yang telah terjadi sebelum waktu yang ditentukan.
+Menentukan waktu akhir jendela pencarian. Gunakan parameter ini untuk mendapatkan hanya peristiwa yang telah terjadi sebelum waktu yang ditentukan.
 
 ```yaml
 Type: System.DateTime
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai jendela pencarian. Gunakan parameter ini untuk hanya mendapatkan peristiwa yang telah terjadi setelah waktu yang ditentukan.
+Menentukan waktu mulai jendela pencarian. Gunakan parameter ini untuk mendapatkan hanya peristiwa yang telah terjadi setelah waktu yang ditentukan.
 
 ```yaml
 Type: System.DateTime

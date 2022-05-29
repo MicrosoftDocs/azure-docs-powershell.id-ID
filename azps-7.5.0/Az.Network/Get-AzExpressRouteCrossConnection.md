@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCrossConnection.md
-ms.openlocfilehash: 0706c3f8c43253925e1a7c6ae98a4246bf4883a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73e35844e7db7bd3fdacb09541e4f8f14cea3317
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208103"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145688714"
 ---
 # Get-AzExpressRouteCrossConnection
 
 ## SYNOPSIS
 Mendapatkan koneksi silang Azure ExpressRoute dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecrossconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

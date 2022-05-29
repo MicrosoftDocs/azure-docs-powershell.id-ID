@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsIISLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsIISLogCollection.md
-ms.openlocfilehash: b0b1838b42cb6769ba8007582c2ed8d381781e52
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b79d82494c23d919946754c030c3ce4285d16463
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226740"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662430"
 ---
 # Enable-AzOperationalInsightsIISLogCollection
 
 ## SYNOPSIS
 Memulai pengumpulan log IIS dari komputer di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/enable-azoperationalinsightsiislogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 

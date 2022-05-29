@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
-ms.openlocfilehash: 067ec7d8a41e926f30a9b72dab4a316266e226e4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e9e0a114468de94ca5149c0a37b4fe6f159d7505
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198525"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145639250"
 ---
 # Set-AzManagedApplication
 
 ## SYNOPSIS
 Memperbarui aplikasi terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azmanagedapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis aplikasi terkelola.
 Salah satu marketplace atau servicecatalog
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Tabel hash yang mewakili properti paket aplikasi terkelola.
+Tabel hash yang mewakili properti rencana aplikasi terkelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

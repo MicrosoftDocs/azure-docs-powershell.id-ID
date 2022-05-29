@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileResourceUsage.md
-ms.openlocfilehash: ffb0197f82741ea631101b55f34e2cdc39968678
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82a027f3fea28bb57c4399a90acc1f8b14be2558
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110708"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689148"
 ---
 # Get-AzCdnProfileResourceUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan sumber daya profil CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofileresourceusage) untuk informasi terbaru.
 
 ## SYNTAX
 

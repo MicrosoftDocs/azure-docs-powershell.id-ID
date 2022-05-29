@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: 04c935ec6f3c3b14f89b6459faca252323dd0db1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: beb246f4ef421f30f5e654d57cabac14ee8d0e6b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235375"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661134"
 ---
 # New-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja, atau memulihkan ruang kerja yang dihapus sementara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzOperationalInsightsWorkspace [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsWorkspace** membuat ruang kerja di grup sumber daya dan lokasi yang ditentukan. Atau pulihkan ruang kerja yang dihapus sementara.
+Cmdlet **New-AzOperationalInsightsWorkspace** membuat ruang kerja di grup dan lokasi sumber daya yang ditentukan. Atau pulihkan ruang kerja yang dihapus sementara.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceCmkForQuery
-Mendapatkan atau mengatur menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
+Dapatkan atau set menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -297,7 +300,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 
-Model harga baru telah dirilis. Jika Anda adalah CSP yang berarti Bahwa Anda harus menggunakan "mandiri" untuk sku. Di balik layar, sku akan diubah menjadi pergb2018. Untuk informasi selengkapnya, silakan lihat yang berikut ini: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model
+Model harga baru telah dirilis. Jika Anda adalah Penyedia Solusi Cloud yang berarti Anda harus menggunakan "mandiri" untuk sku. Di balik layar, sku akan diubah menjadi pergb2018. Untuk informasi selengkapnya, silakan lihat yang berikut ini: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model
 
 ## RELATED LINKS
 

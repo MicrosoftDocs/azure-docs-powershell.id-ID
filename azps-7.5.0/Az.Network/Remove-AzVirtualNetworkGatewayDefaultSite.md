@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayDefaultSite.md
-ms.openlocfilehash: 61b68dacd059687b9c32ec8eda53c992e4c2ec64
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 705913116b3ab0366be195c36498c1d475657f42
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236834"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668640"
 ---
 # Remove-AzVirtualNetworkGatewayDefaultSite
 
 ## SYNOPSIS
 Menghapus situs default dari gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewaydefaultsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Remove-AzVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway <PSVirtualNetwo
 
 ## DESCRIPTION
 Cmdlet **Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default penerowongan paksa dari gateway jaringan virtual.
-Penerowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas yang terikat Internet dari komputer virtual Azure ke jaringan lokal Anda; ini memungkinkan Anda untuk memeriksa dan mengaudit lalu lintas sebelum merilisnya.
-Penerowongan paksa dilakukan dengan menggunakan terowongan jaringan privat maya (VPN) ; terowongan ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Azure Internet dialihkan.
+Penerowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas yang terikat Internet dari komputer virtual Azure ke jaringan lokal Anda; ini memungkinkan Anda memeriksa dan mengaudit lalu lintas sebelum merilisnya.
+Penerowongan paksa dilakukan dengan menggunakan terowongan jaringan privat maya (VPN) ; terowongan ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Internet Azure dialihkan.
 **Remove-AzVirtualNetworkGatewayDefaultSite** menghapus situs default yang ditetapkan ke gateway.
 Jika Anda melakukan ini, Anda harus menggunakan Set-AzVirtualNetworkGatewayDefaultSite untuk menetapkan situs default baru sebelum gateway dapat digunakan untuk penerowongan paksa.
 

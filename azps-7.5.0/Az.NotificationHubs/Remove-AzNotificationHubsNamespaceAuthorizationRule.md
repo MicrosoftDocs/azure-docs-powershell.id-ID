@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: 00e656278ae61e15fc9921a3570a110a9e0170c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7ecf09f4e7a2a98f7e1f3bc7037568e9bca6d7d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662772"
 ---
 # Remove-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi dari namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubsnamespaceauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Remove-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-
 Cmdlet **Remove-AzNotificationHubsNamespaceAuthorizationRule** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari namespace hub pemberitahuan.
 Aturan otorisasi mengelola akses ke namespace.
 Ini dilakukan dengan melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
-Tingkat izin bisa dari berikut ini: 
+Tingkat izin bisa dari yang berikut ini: 
 - Dengar
 - Kirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
@@ -44,8 +47,8 @@ Menghapus aturan otorisasi juga menghapus izin pengguna yang sesuai.
 Remove-AzNotificationHubNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini menghapus aturan otorisasi bernama ListenRule dari namespace bernama ContosoNamespace.
-Saat Anda menjalankan perintah ini, Anda harus menentukan grup sumber daya tempat namespace ditetapkan.
+Perintah ini menghapus aturan otorisasi bernama ListenRule dari namespace layanan bernama ContosoNamespace.
+Saat menjalankan perintah ini, Anda harus menentukan grup sumber daya tempat namespace ditetapkan.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat namespace ditetapkan.
+Menentukan grup sumber daya tempat namespace layanan ditetapkan.
 Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml

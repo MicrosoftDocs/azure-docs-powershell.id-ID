@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: d8e33b3c59e4940217aa2b41ca5f4943afb98c6f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7633878f067a45fd3c25dd61f42bdc7832a3a2d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189313"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702828"
 ---
 # New-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir di profil Microsoft Azure Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/new-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -113,7 +116,7 @@ Nilai yang valid adalah:
 - Aktif 
 - Nonaktif 
 
-Jika status Diaktifkan, titik akhir diselimuti untuk kesehatan titik akhir dan disertakan dalam metode perutean lalu lintas.
+Jika status Diaktifkan, titik akhir diperiksa untuk kesehatan titik akhir dan disertakan dalam metode perutean lalu lintas.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoMapping
-Daftar wilayah yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Silakan lihat dokumentasi Traffic Manager untuk daftar lengkap nilai yang diterima.
+Daftar wilayah yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Silakan konsultasikan dokumentasi Traffic Manager untuk daftar lengkap nilai yang diterima.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -152,7 +155,7 @@ Jumlah minimum titik akhir IPv4 (catatan DNS tipe A) yang harus tersedia di prof
 Hanya berlaku untuk titik akhir jenis 'NestedEndpoints'.
 
 ### -MinChildEndpointsIPv6
-Jumlah minimum titik akhir IPv6 (tipe catatan DNS AAAA) yang harus tersedia di profil anak agar Titik Akhir Berlapis di profil induk dianggap tersedia.
+Jumlah minimum titik akhir IPv6 (jenis catatan DNS AAAA) yang harus tersedia di profil anak agar Titik Akhir Berlapis di profil induk dianggap tersedia.
 Hanya berlaku untuk titik akhir jenis 'NestedEndpoints'.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Berat
+### -Bobot
 Menentukan bobot yang Traffic Manager tetapkan ke titik akhir.
 Nilai yang valid adalah bilangan bulat dari 1 hingga 1000.
 Nilai defaultnya adalah satu (1).

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsLinuxCustomLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Enable-AzOperationalInsightsLinuxCustomLogCollection.md
-ms.openlocfilehash: 3f200a49a2e57ed699290a7e7872931cea0639e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b41a494d979617ae27129cde302bcf724b17aaef
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183156"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145662394"
 ---
 # Enable-AzOperationalInsightsLinuxCustomLogCollection
 
 ## SYNOPSIS
 Memulai pengumpulan log kustom dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/enable-azoperationalinsightslinuxcustomlogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 

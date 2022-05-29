@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
-ms.openlocfilehash: 8364a7bdf6bb0283cdda1461e81d50a9a9169889
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cf372734ecc580141feca696a3d231ad42654cfc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239704"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694980"
 ---
 # Get-AzIotHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang IotHubs dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzIotHub -ResourceGroupName "myresourcegroup"
 
 Mendapatkan semua IotHubs dalam langganan milik grup sumber daya bernama "myresourcegroup".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```

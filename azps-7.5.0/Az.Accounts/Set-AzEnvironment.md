@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzEnvironment.md
-ms.openlocfilehash: d47de9862b9caf0609d927d14338318d2bd5f2ae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2bb03ef57e6a151a9597773308d74f1659977f2e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197016"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689778"
 ---
 # Set-AzEnvironment
 
 ## SYNOPSIS
 Mengatur properti untuk lingkungan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/set-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 

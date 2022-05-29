@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
-ms.openlocfilehash: 415cbcd764920cf243da076c5a8a94d2191ca2db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4d88c6df17f571f5f0f0fffa9692c488ef431fb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112074"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690192"
 ---
 # Get-AzMigrateJob
 
 ## SYNOPSIS
 Mengambil status pekerjaan Azure Migrate.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratejob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -320,11 +323,11 @@ INPUTOBJECT <IJob>: Menentukan objek pekerjaan server replikasi.
   - `[AllowedAction <String[]>]`: Tindakan yang diizinkan untuk pekerjaan.
   - `[CustomDetailAffectedObjectDetail <IJobDetailsAffectedObjectDetails>]`: Properti objek yang terpengaruh seperti server sumber, cloud sumber, server target, cloud target, dll. berdasarkan detail objek alur kerja.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[EndTime <DateTime?>]`: Waktu akhir.
+  - `[EndTime <DateTime?>]`: Waktu selesai.
   - `[Error <IJobErrorDetails[]>]`: Kesalahan.
     - `[CreationTime <DateTime?>]`: Waktu pembuatan kesalahan pekerjaan.
-    - `[ErrorLevel <String>]`: Tingkat kesalahan kesalahan.
-    - `[ProviderErrorDetailErrorCode <Int32?>]`: Kode Kesalahan.
+    - `[ErrorLevel <String>]`: Tingkat kesalahan.
+    - `[ProviderErrorDetailErrorCode <Int32?>]`: Kode kesalahan.
     - `[ProviderErrorDetailErrorId <String>]`: Id kesalahan Penyedia.
     - `[ProviderErrorDetailErrorMessage <String>]`: Pesan Kesalahan.
     - `[ProviderErrorDetailPossibleCaus <String>]`: Kemungkinan penyebab kesalahan.
@@ -338,7 +341,7 @@ INPUTOBJECT <IJob>: Menentukan objek pekerjaan server replikasi.
   - `[FriendlyName <String>]`: DisplayName.
   - `[ScenarioName <String>]`: ScenarioName.
   - `[StartTime <DateTime?>]`: Waktu mulai.
-  - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended, atau Lainnya.
+  - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
   - `[StateDescription <String>]`: Deskripsi status Pekerjaan. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceeded, CompletedWithInformation atau Skipped.
   - `[TargetInstanceType <String>]`: Jenis objek yang terpengaruh yang merupakan kelas Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType.
   - `[TargetObjectId <String>]`: Id Objek yang terpengaruh.
@@ -346,14 +349,14 @@ INPUTOBJECT <IJob>: Menentukan objek pekerjaan server replikasi.
   - `[Task <IAsrTask[]>]`: Tugas.
     - `[AllowedAction <String[]>]`: Status/tindakan yang berlaku pada tugas ini.
     - `[CustomDetailInstanceType <String>]`: Jenis detail tugas.
-    - `[EndTime <DateTime?>]`: Waktu akhir.
+    - `[EndTime <DateTime?>]`: Waktu selesai.
     - `[Error <IJobErrorDetails[]>]`: Detail kesalahan tugas.
     - `[FriendlyName <String>]`: Nama.
     - `[GroupTaskCustomDetailChildTask <IAsrTask[]>]`: Tugas anak.
     - `[GroupTaskCustomDetailInstanceType <String>]`: Jenis detail tugas.
     - `[Name <String>]`: Nama Tugas yang unik.
     - `[StartTime <DateTime?>]`: Waktu mulai.
-    - `[State <String>]`: Negara Bagian. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended, atau Lainnya.
+    - `[State <String>]`: Negara Bagian. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
     - `[StateDescription <String>]`: Deskripsi status tugas. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceeded, CompletedWithInformation atau Skipped.
     - `[TaskId <String>]`: Id.
     - `[TaskType <String>]`: Jenis tugas. Detail dalam properti CustomDetails bergantung pada jenis ini.

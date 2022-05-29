@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: c5d49ea5c9a5b1bd759bc10f76825c19c3f3aaf5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f772d2d7ebbf86200f8d110af9105bba038204c3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208043"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674904"
 ---
 # New-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Membuat konfigurasi aturan NAT yang masuk untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzLoadBalancerInboundNatRuleConfig -Name <String> [-Protocol <String>] [-Fro
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerInboundNatRuleConfig** membuat konfigurasi aturan terjemahan alamat jaringan (NAT) masuk untuk load balancer Azure.
+Cmdlet **New-AzLoadBalancerInboundNatRuleConfig** membuat konfigurasi aturan terjemahan alamat jaringan masuk (NAT) untuk load balancer Azure.
 
 ## EXAMPLES
 
@@ -50,10 +53,10 @@ $frontend = New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -Publi
 New-AzLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule" -FrontendIPConfiguration $frontend -Protocol "Tcp" -FrontendPort 3389 -BackendPort 3389
 ```
 
-Perintah pertama membuat alamat IP publik bernama MyPublicIP di grup sumber daya bernama MyResourceGroup, lalu menyimpannya di variabel $publicip.
-Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya di variabel $frontend.
+Perintah pertama membuat alamat IP publik bernama MyPublicIP di grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $publicip.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik di $publicip, lalu menyimpannya dalam variabel $frontend.
 Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek front-end di $frontend.
-Protokol TCP ditentukan dan port front-end adalah 3389, sama dengan port backend dalam hal ini.
+Protokol TCP ditentukan dan port front-end adalah 3389, sama dengan port backend dalam kasus ini.
 Parameter *FrontendIpConfiguration*, *Protocol*, *FrontendPort*, dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk.
 
 ### Contoh 2: Membuat konfigurasi aturan NAT masuk V2 untuk load balancer

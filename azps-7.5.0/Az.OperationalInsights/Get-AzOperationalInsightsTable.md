@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
-ms.openlocfilehash: 1252c711fd0d18acefaf01dc0b7f33ac40a5ac77
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8538026ee6e9ad1ce3d9949901ffa3042203cacb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183083"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661800"
 ---
 # Get-AzOperationalInsightsTable
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan tabel untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightstable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzOperationalInsightsTable -ResourceGroupName "ContosoResourceGroup" -Worksp
 
 Perintah ini mendapatkan semua tabel yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan tabel tertentu berdasarkan nama
+### Contoh 2: Mendapatkan tabel tertentu menurut nama
 ```powershell
 Get-AzOperationalInsightsTable -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -tableName "ContosoSavedTableName"
 ```

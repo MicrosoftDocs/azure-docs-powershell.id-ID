@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 7c0d7eb63c3525174248937eca3614550eab0113
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f57e4113c704b8a780629705631627ec2631b9a2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235462"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145661296"
 ---
 # New-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Membuat akun penyimpanan tertaut untuk ruang kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Menambahkan penyimpanan tertaut untuk ruang kerja
 ## PARAMETERS
 
 ### -DataSourceType
-Jenis Sumber Data harus salah satu dari 'CustomLogs', 'AzureWatson'.
+Jenis Sumber Data harus menjadi salah satu dari 'CustomLogs', 'AzureWatson'.
 
 ```yaml
 Type: System.String

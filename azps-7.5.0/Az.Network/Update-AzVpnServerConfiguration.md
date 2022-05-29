@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
-ms.openlocfilehash: 80a47d3f3943589bc2737bbb46ef1620f70b6237
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8332b948678e7d4aacfb81ab4e2ca53c7fee8439
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201006"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663366"
 ---
 # Update-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Memperbarui VpnServerConfiguration yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Perintah di atas akan memperbarui VpnServerConfiguration yang ada dengan VpnProt
 ## PARAMETERS
 
 ### -AadAudience
-AAD audiens untuk autentikasi AAD P2S.
+Audiens AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadIssuer
-AAD pengeluar sertifikat untuk autentikasi AAD P2S.
+Penerbit AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadTenant
-AAD penyewa untuk autentikasi AAD P2S.
+Penyewa AAD untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkTap.md
-ms.openlocfilehash: ed98f5a90ab5709dcf227ec819886e5b080de180
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4f767ce3576ff7b34d9b8a96b041f5b00ab1ec0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209042"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668496"
 ---
 # Remove-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Menghapus ketukan jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Remove-AzNetworkInterface -Name "VirtualNetworkTap1" -ResourceGroup "ResourceGro
 ```
 
 Perintah ini menghapus VirtualNetworkTap1 dalam grup sumber daya ResourceGroup1.
-Karena parameter *Force* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
+Karena parameter *Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

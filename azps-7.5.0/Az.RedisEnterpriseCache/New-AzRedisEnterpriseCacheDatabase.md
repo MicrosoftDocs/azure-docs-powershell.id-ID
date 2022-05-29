@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 3ca71c8a58222a7d39507e018c9df29bad9707fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c26ff0ecabfa7517116f8cbd68d630b7b839a282
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194353"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145645941"
 ---
 # New-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
 Membuat database untuk cache Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecachedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 
 ### -AofPersistenceFrequency
 [Pratinjau] Mengatur frekuensi di mana data ditulis ke disk jika persistensi AOF diaktifkan.
-Nilai yang diizinkan: 1dt, selalu
+Nilai yang diizinkan: 1d, selalu
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.AofFrequency
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientProtocol
-Menentukan apakah klien redis dapat terhubung menggunakan protokol redis terenkripsi TLS atau teks biasa - defaultnya adalah Nilai yang Diizinkan Terenkripsi: Terenkripsi, Teks Biasa
+Menentukan apakah klien redis dapat terhubung menggunakan protokol redis yang dienkripsi TLS atau teks biasa - defaultnya adalah Nilai yang Diizinkan Terenkripsi: Terenkripsi, Teks Biasa
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.Protocol
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan pengeluaran Redis - defaultnya adalah Nilai yang diizinkan VolatileLRU: AllKeysLFU, AllKeysLRU, AllKeysRandom, VolatileLRU, VolatileLFU, VolatileTTL, VolatileRandom, NoEviction
+Kebijakan pengeluaran Redis - defaultnya adalah Nilai yang Diizinkan VolatileLRU: AllKeysLFU, AllKeysLRU, AllKeysRandom, VolatileLRU, VolatileLFU, VolatileTTL, VolatileRandom, NoEviction
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.EvictionPolicy
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP titik akhir database - default ke port yang tersedia Ditentukan pada waktu pembuatan.
+Port TCP dari titik akhir database - default ke port yang tersedia Ditentukan pada waktu pembuatan.
 
 ```yaml
 Type: System.Int32
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

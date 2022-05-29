@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnConnection.md
-ms.openlocfilehash: f98f5957f497e74ad0e6f1e40da54627e445adee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4509a84509c7b7fafec22db1f87a97562a6f2133
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212210"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663510"
 ---
 # Update-AzVpnConnection
 
 ## SYNOPSIS
 Memperbarui koneksi VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrFabric.md
-ms.openlocfilehash: b6679558fd2c486a5af5268e567f6641ac855dfc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87acf6c190e739a540b5f872425a649c3c9bea67
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244702"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145649326"
 ---
 # New-AzRecoveryServicesAsrFabric
 
 ## SYNOPSIS
 Membuat Azure Site Recovery Fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan wilayah Azure yang sesuai dengan objek Fabric yang sedang dibuat. Objek Fabric Azure Site Recovery mewakili suatu wilayah. Untuk komputer virtual yang direplikasi antara dua wilayah Azure, fabric utama mewakili wilayah Azure utama dan kain pemulihan .
+Menentukan wilayah Azure yang sesuai dengan objek Fabric yang sedang dibuat. Objek Fabric Azure Site Recovery mewakili suatu wilayah. Untuk komputer virtual yang direplikasi antara dua wilayah Azure, fabric primer mewakili wilayah Azure utama dan fabric pemulihan .
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringLocation.md
-ms.openlocfilehash: db5f8e811a34654223fc18759fd6ec126eea7c12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 55659b5f80954618711ff0efa4942b215f35205d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232074"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145660144"
 ---
 # Get-AzPeeringLocation
 
 ## SYNOPSIS
 Mendapatkan lokasi Peering yang ditawarkan oleh Microsoft
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ FacilityIPv6Prefix    : 2606:7c80:3375:50::/64
 
 Mendapatkan lokasi pertukaran peering untuk Honolulu. 
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzPeeringLocation -Kind Exchange -PeeringDbFacilityId 71 
 ```

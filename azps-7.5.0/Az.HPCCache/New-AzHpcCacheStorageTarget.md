@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/new-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 6985b036a2595e5f874231e9555fdbf55cda983b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c1a37955a11cc2807bc3cfa4644bb7550de9f7f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224892"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696726"
 ---
 # New-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
 Membuat Target Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/new-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 

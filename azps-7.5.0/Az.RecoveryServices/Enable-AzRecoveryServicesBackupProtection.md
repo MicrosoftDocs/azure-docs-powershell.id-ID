@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 9daa4e27ee9008f4799f58b504dc0e4bcfb777a4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 439514a43f2c95cf1da606f1c8082f7844e96473
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223826"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650869"
 ---
 # Enable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
 Aktifkan pencadangan untuk suatu item dengan kebijakan perlindungan Pencadangan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Protectable
  [-VaultId <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ModifyProtection
+### Ubah Proteksi
 ```
 Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <ItemBase>
  [-InclusionDisksList <String[]>] [-ExclusionDisksList <String[]>] [-ResetExclusionSettings]
@@ -78,7 +81,7 @@ co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-A
 
 Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam variabel $Pol.
 Cmdlet kedua menentukan LUN disk yang akan dicadangkan dan menyimpannya dalam variabel $inclusionDiskLUNS.
-Cmdlet ketiga menetapkan kebijakan Perlindungan cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
+Cmdlet ketiga menetapkan kebijakan perlindungan Cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
 
 ### Contoh 2
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang cmdlet ini mengaktifkan perlindungan.
+Menentukan item Cadangan yang cmdletnya mengaktifkan perlindungan.
 Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml

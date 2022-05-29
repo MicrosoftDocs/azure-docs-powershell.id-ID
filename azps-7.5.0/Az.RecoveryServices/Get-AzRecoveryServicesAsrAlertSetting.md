@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: 655a41176e4214fea5df36959916e15cc7180adf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02e7caf5a1a27a97e804f234e3c61e42b2bb740d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223835"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145650802"
 ---
 # Get-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasralertsetting) untuk informasi terbaru.
 
 ## SYNTAX
 

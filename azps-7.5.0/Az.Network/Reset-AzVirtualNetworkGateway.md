@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 19b6da86f7789ae7bd2309f7b069dc39d8c484bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e02d6707c35881184964571316ba271093ac0ba0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233905"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145668010"
 ---
 # Reset-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Mereset Gateway Virtual Network
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
