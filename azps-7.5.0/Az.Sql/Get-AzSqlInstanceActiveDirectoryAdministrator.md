@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: c858413e66e3f2515713028362589692a9dc6394
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 282f4826fe7fdc350637138c9396704b006343ca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210110"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728370"
 ---
 # Remove-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Mendapatkan informasi tentang administrator Azure AD untuk SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ ResourceGroup01   ManagedInstance01 DBAs        40b79501-b343-44ed-9ce7-da4c8cc7
 
 Perintah ini mendapatkan informasi tentang administrator Azure AD dari objek instans terkelola.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSqlInstance -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance1" | Get-AzSqlInstanceActiveDirectoryAdministrator
 ```
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-nama SQL Managed Instance.
+SQL Managed Instance nama.
 
 ```yaml
 Type: System.String

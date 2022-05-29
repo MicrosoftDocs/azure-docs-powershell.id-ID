@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: 8dbcfb209471f27cf763ba4377d06deba54fd923
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c9bb5749f6acebaf8f26c657803e775b4200e2f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187969"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703188"
 ---
 # Add-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
 Menambahkan titik akhir ke objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerendpointconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

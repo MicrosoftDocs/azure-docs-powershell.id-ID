@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspaceKey.md
-ms.openlocfilehash: 893c476e0646738cdae6ba5dfb9a6259802ac34e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a4315c4e694c9c4e74558d0349d56d2ca74413e9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227997"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706140"
 ---
 # Remove-AzSynapseWorkspaceKey
 
 ## SYNOPSIS
 Menghapus kunci ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapseworkspacekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $ws | Remove-AzSynapseWorkspaceKey -Name ContosoKeyName
 
 Perintah ini menghapus kunci ruang kerja di bawah ruang kerja Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzSynapseWorkspaceKey -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/keys/ContosoKeyName
 ```

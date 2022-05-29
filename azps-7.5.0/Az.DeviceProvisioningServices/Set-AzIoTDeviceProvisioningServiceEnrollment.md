@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollment.md
-ms.openlocfilehash: 81072d0558b8785badf08a832aa13f15c42faae7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 677092f7286c0ade10bdad823d28af84766676f4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244853"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741708"
 ---
 # Set-AzIoTDeviceProvisioningServiceEnrollment
 
 ## SYNOPSIS
 Memperbarui catatan pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/set-aziotdeviceprovisioningserviceenrollment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Set-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup
 
 Memperbarui status kembar awal pendaftaran.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup" -DpsName "mydps" -RegistrationId "enroll1" -PrimaryCertificate ".\primaryCertificate.cer" -SecondaryCertificate ".\secondaryCertificate.cer"
 ```

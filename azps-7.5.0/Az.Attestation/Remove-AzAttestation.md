@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
-ms.openlocfilehash: 1986e0a95ae7945a2198b3623de69b777564dc59
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cad4dd6fc332d4886e81202ace4076d974dc1505
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233166"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684570"
 ---
 # Remove-AzAttestation
 
 ## SYNOPSIS
 Menghapus pengesahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/remove-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 

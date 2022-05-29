@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 4a9f1e27eebe0b9a65f0f74676f1aead4083780e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d35ed9ac30ebf9555a48ae76b504172c1385111d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234815"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729450"
 ---
 # Get-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
 Mendapatkan pengaturan unggahan hash ledger dari database Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 

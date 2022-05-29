@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: a73f7ccb1a5a6da90c6ae7b9f9c84391ebd6f774
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 88316a574b9a5c1b24a90103b3120c6f0ea4ee56
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237254"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703350"
 ---
 # Remove-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Menghapus himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/remove-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 

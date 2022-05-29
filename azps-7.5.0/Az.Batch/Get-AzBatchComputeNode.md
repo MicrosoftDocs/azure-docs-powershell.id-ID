@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
-ms.openlocfilehash: 60dca4cc16bee2a6f72501de5e0eaf4a9ba6e8ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3ba2aa9d345f04a50baed324295748f0cc46d1d8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240373"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729540"
 ---
 # Get-AzBatchComputeNode
 
 ## SYNOPSIS
 Mendapatkan simpul komputasi Batch dari kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Errors                :
 Perintah ini mendapatkan simpul komputasi yang memiliki ID tvm-2316545714_1-20150725t213220z dari kumpulan yang memiliki ID Pool06.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Mendapatkan semua simpul komputasi diam dari kumpulan
+### Contoh 2: Mendapatkan semua simpul komputasi menganggur dari kumpulan
 ```powershell
 Get-AzBatchComputeNode -PoolId "Pool06" -Filter "state eq 'idle'" -BatchContext $Context
 ```
@@ -111,7 +114,7 @@ CertificateReferences :
 Errors                :
 ```
 
-Perintah ini mendapatkan semua simpul komputasi diam yang terkandung dalam kumpulan yang memiliki ID Pool06.
+Perintah ini mendapatkan semua simpul komputasi menganggur yang terkandung dalam kumpulan yang memiliki ID Pool06.
 Perintah menentukan status menganggur dengan menggunakan parameter *Filter* .
 
 ### Contoh 3: Mendapatkan semua simpul komputasi dalam kumpulan tertentu
@@ -155,7 +158,7 @@ CertificateReferences :
 Errors                :
 ```
 
-Perintah ini mendapatkan kumpulan yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzBatchPool.
+Perintah ini mendapatkan kumpulan yang memiliki KUMPULAN ID07 dengan menggunakan cmdlet Get-AzBatchPool.
 Perintah meneruskan kumpulan tersebut ke cmdlet saat ini dengan menggunakan operator alur.
 Cmdlet itu mendapatkan semua simpul komputasi dari kumpulan itu.
 
@@ -163,7 +166,7 @@ Cmdlet itu mendapatkan semua simpul komputasi dari kumpulan itu.
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausa pilih OData.
+Menentukan klausa pemilihan OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml

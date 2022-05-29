@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVMGroup.md
-ms.openlocfilehash: f63c73843e41db3181788f4144ac80db20721568
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c59d8ee1a7604c1a5aa8cd0a700096e7bfedb2d4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720756"
 ---
 # Update-AzSqlVMGroup
 
 ## SYNOPSIS
 Memperbarui grup komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

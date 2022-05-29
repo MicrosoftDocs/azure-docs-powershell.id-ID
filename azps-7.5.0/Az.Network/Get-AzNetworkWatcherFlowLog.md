@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: 08b5bb2b78aa527a130a14316229729b303fbbaa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dea88d0cf6de0f6b0ac5dcead2a0c90bf5356bea
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244030"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681222"
 ---
 # Get-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
 Mendapatkan sumber daya log alur atau daftar sumber daya log alur di langganan dan wilayah yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 

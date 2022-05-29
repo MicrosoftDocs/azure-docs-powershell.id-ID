@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
-ms.openlocfilehash: d0608a4103e62ab188387c30236639f345820a91
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 330be4785f259522b62d8a0dc96591ddd35bcf8a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224378"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677874"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet
 
 ## SYNOPSIS
 Membuat ExclusionManagedRuleSet untuk pengecualian firewallPolicy
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusionmanagedruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroup
-Grup Aturan Mengambil alih.
+Penimpaan Grup Aturan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyExclusionManagedRuleGroup[]

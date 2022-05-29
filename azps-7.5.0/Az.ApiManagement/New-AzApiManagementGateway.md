@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGateway.md
-ms.openlocfilehash: 6eeb917e5e6561776557174c9b74a0e74dadc94a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f8924a4b3cf1b13b3728ac7b892ddfd7b36650d5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229274"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729792"
 ---
 # New-AzApiManagementGateway
 
 ## SYNOPSIS
 Membuat entitas Gateway baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

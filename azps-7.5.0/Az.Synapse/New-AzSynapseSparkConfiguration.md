@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 008aecdc61437780d4d402196fe7f71241c012fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6f9eec47f328e7506f502fae1dc8735a6c4b21b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240569"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707472"
 ---
 # New-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Membuat atau memperbarui konfigurasi spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ New-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSpa
 
 Perintah ini membuat atau memperbarui konfigurasi spark bernama ContosoSparkConfiguration dari file sparkconfiguration.json di ruang kerja bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | New-AzSynapseSparkConfiguration -DefinitionFile "C:\\samples\\sparkconfiguration.json"

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseRoleAssignment.md
-ms.openlocfilehash: 8133bc9b4fbb8d74ad503b0a97a6354562e4262a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 64a2803df424d7353e81eca02cc964c73b086080
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236526"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707544"
 ---
 # New-AzSynapseRoleAssignment
 
 ## SYNOPSIS
 Membuat penetapan peran Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -97,14 +100,14 @@ Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah Co
 New-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan jenis itemnya adalah ContosoItemType, item adalah ContosoItem.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan jenis item adalah ContosoItemType, item adalah ContosoItem.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan jenis itemnya adalah ContosoItemType, item adalah ContosoItem.
+Perintah ini menetapkan ContosoRole kepada pengguna yang nama utamanya adalah ContosoName dan jenis item adalah ContosoItemType, item adalah ContosoItem.
 
 ### Contoh 4
 ```powershell

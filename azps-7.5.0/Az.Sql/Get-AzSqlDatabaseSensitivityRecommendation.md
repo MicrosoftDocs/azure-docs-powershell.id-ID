@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 6f5e5a96b9a1ade36def64b5fc4f7c54f5155555
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 83ced19f6e65f3ecd58abcd2d0736da37de2c88c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234706"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729162"
 ---
 # Get-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Mendapatkan jenis informasi yang direkomendasikan dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -204,4 +207,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang penemuan dan klasifikasi data Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

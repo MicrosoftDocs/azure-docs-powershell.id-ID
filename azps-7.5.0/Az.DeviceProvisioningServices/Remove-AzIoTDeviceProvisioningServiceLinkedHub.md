@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 1a757b47c185197f21eb89047bc41fc4b35f621a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd1bf63956e63274447da57826d2e4beea473e42
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225729"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741834"
 ---
 # Remove-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
 Menghapus hub IoT tertaut di layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningservicelinkedhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,14 +55,14 @@ Remove-AzIoTDeviceProvisioningServiceLinkedHub -ResourceGroupName "myresourcegro
 True
 ```
 
-Hapus hub IoT tertaut "myiothub" di layanan provisi perangkat Azure IoT Hub.
+Hapus hub IoT tertaut "myiothub" dalam layanan provisi perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningServiceLinkedHub -ResourceGroupName "myresourcegroup" -Name "myiotdps" -LinkedHubName "myiothub" | Remove-AzIoTDeviceProvisioningServiceLinkedHub
 ```
 
-Hapus hub IoT tertaut "myiothub" di layanan provisi perangkat Azure IoT Hub menggunakan alur.
+Hapus hub IoT tertaut "myiothub" dalam layanan provisi perangkat Azure IoT Hub menggunakan alur.
 
 ## PARAMETERS
 

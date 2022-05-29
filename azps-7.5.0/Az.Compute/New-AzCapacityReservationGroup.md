@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservationGroup.md
-ms.openlocfilehash: ad542eb7504165e583bcd6f75f0fd95573d785ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 590f0f3b8feffef66395ed48029de3a15f639851
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187692"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734832"
 ---
 # New-AzCapacityReservationGroup
 
 ## SYNOPSIS
 Membuat Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azcapacityreservationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
+Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable

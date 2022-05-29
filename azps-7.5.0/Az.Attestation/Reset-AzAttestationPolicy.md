@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
-ms.openlocfilehash: 84c08e436c24def13f6660a8719e5948dfeb41d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 677228214da268b4102c25a67fdb59fa1d69cdf2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233152"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684552"
 ---
 # Reset-AzAttestationPolicy
 
 ## SYNOPSIS
 Mereset kebijakan dari penyewa di Azure Attestationn.}
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/reset-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet Reset-AzAttestationPolicy mengatur ulang kebijakan pengesahan yang ditent
 Reset-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave
 ```
 
-Reset kebijakan ke default untuk *pshtest Penyedia Pengesahan* untuk jenis Tee *SgxEnclave*.
+Reset kebijakan ke default untuk *pshtest* Penyedia Pengesahan untuk jenis Tee *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan JSON Web Token yang menjelaskan dokumen kebijakan untuk direset.
+Menentukan JSON Web Token yang menjelaskan dokumen kebijakan yang akan direset.
 
 ```yaml
 Type: System.String

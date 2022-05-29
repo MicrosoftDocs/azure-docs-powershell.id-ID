@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
-ms.openlocfilehash: 2db91281192a23377f29f090058694c09422638d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 57d9728090beb694915d14e9af37349a083622af
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240544"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707508"
 ---
 # New-AzSynapseSparkPool
 
 ## SYNOPSIS
 Membuat kumpulan Spark Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ New-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -A
 
 Perintah ini membuat kumpulan Azure Synapse Analytics Spark dengan skala otomatis diaktifkan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -NodeCount 3 -SparkVersion 2.4 -NodeSize Small -SparkConfigFilePath "c:\sparkproperties.txt"
 ```

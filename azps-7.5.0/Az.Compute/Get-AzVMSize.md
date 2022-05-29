@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSize.md
-ms.openlocfilehash: 84f76830daa6ea08fc5c7ba1ad7d45da9578a7e5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 85b6e23bd5f202cc7a63f63084159e9dae7b65b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144248076"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735156"
 ---
 # Get-AzVMSize
 
 ## SYNOPSIS
 Mendapatkan ukuran komputer virtual yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmsize) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,12 +65,12 @@ Get-AzVMSize -ResourceGroupName "ResourceGroup03" -VMName "VirtualMachine12"
 ```
 
 Perintah ini mendapatkan ukuran yang tersedia untuk komputer virtual yang ada bernama VirtualMachine12.
-Anda dapat mengubah ukuran komputer virtual ini ke ukuran yang didapatkan perintah ini.
+Anda dapat mengubah ukuran komputer virtual ini ke ukuran yang didapat perintah ini.
 
 ## PARAMETERS
 
 ### -AvailabilitySetName
-Menentukan nama Set Ketersediaan yang cmdlet ini mendapatkan ukuran komputer virtual yang tersedia.
+Menentukan nama Set Ketersediaan yang cmdletnya mendapatkan ukuran komputer virtual yang tersedia.
 
 ```yaml
 Type: System.String

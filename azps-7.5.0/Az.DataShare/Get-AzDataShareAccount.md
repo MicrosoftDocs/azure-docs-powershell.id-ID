@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareAccount.md
-ms.openlocfilehash: 0fe4432aaa35e41c323149ad669e924edf1f9dc0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de11ef92511b2f48d246b15dd3c9033621cd2dae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218675"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748440"
 ---
 # Get-AzDataShareAccount
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Akun DataShare
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatashareaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Type                    : Microsoft.DataShare/accounts
 Id                      : /subscriptions/4834da9b-787a-44f6-ae81-60707ab8c957/resourceGroups/ADS/providers/Microsoft.DataShare/accounts/WikiADS
 ```
 
-Perintah ini menampilkan informasi tentang semua akun datashare di langganan Azure.
+Perintah ini menampilkan informasi tentang semua akun datashare dalam langganan Azure.
 
 ## PARAMETERS
 

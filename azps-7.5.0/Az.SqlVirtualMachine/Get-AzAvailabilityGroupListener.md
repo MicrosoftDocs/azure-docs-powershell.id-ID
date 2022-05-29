@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
-ms.openlocfilehash: 2976f9e30094637390968ac9d850fdd3e371ef0a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 68c9052872c1ea3039574ac103fe3fa3d995d218
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246424"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721224"
 ---
 # Get-AzAvailabilityGroupListener
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa Listener Grup Ketersediaan di Grup Komputer Virtual SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ AgListener02 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 ```
 Perintah ini mendapatkan informasi tentang semua Listener Grup Ketersediaan di Grup Komputer Virtual SQL SqlVmGroup01 dan Resource Group ResourceGroup01.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $SqlVmGroupObject = Get-AzSqlVMGroup -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01
 Get-AzAvailabilityGroupListener -Name AgListener01 -SqlVMGroupObject $SqlVmGroupObject

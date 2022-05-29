@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
-ms.openlocfilehash: 06c264bca523c4bc6da421346dc45a9f1c55b9f0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f35946fc4db2b3b45532cdeabe95cc889e0af067
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193023"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742176"
 ---
 # Get-AzIoTDeviceProvisioningServiceEnrollmentGroup
 
 ## SYNOPSIS
 Mendapatkan grup pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceenrollmentgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Dapatkan detail grup pendaftaran atau cantumkan semua grup pendaftaran dalam Azu
 Get-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1"
 ```
 
-Mendapatkan grup pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
+Dapatkan grup pendaftaran perangkat di Azure IoT Hub Device Provisioning Service.
 
 ### Contoh 2
 ```powershell

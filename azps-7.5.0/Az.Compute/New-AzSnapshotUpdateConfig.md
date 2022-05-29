@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
-ms.openlocfilehash: 43982d5de5b95c3e4d7ca85f1f9a4085c170c7f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9353ebf98521f9f37974487317780ca7941bf042
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247096"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734436"
 ---
 # New-AzSnapshotUpdateConfig
 
 ## SYNOPSIS
 Membuat objek pembaruan rekam jepret yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azsnapshotupdateconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollmentGroup.md
-ms.openlocfilehash: cdfa2c8b51834cfaf6d92c15a06d534837be127e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7a946a89587c0d5b0a1af7d1bba55d5e896312a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741690"
 ---
 # Set-AzIoTDeviceProvisioningServiceEnrollmentGroup
 
 ## SYNOPSIS
 Memperbarui grup pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/set-aziotdeviceprovisioningserviceenrollmentgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Memperbarui grup pendaftaran di Azure IoT Hub Device Provisioning Service.
 Set-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1" -AllocationPolicy Hashed -IotHub "hub1","hub2"
 ```
 
-Memperbarui kebijakan alokasi dan hub untuk grup pendaftaran.
+Perbarui kebijakan alokasi dan hub untuk grup pendaftaran.
 
 ### Contoh 2
 ```powershell
@@ -73,14 +76,14 @@ $desired.add("version_dps", "updateddps")
 Set-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1" -tag $tag -Desired $desired
 ```
 
-Memperbarui status kembar awal grup pendaftaran.
+Perbarui status kembar awal grup pendaftaran.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzIoTDeviceProvisioningServiceEnrollmentGroup -ResourceGroupName "myresourcegroup" -DpsName "mydps" -Name "enroll1" -PrimaryKey "newPrimaryKey" -SecondaryKey "newSecondaryKey"
 ```
 
-Memperbarui kunci primer dan sekunder grup pendaftaran kunci konten
+Memperbarui kunci utama dan sekunder grup pendaftaran kunci konten
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Desired
+### -Dikehendaki
 Properti kembar awal yang diinginkan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 
 ### -IotHub
 Nama host IoT Hub target.
-Gunakan daftar yang dipisahkan ruang untuk beberapa IoT Hub.
+Gunakan daftar yang dipisahkan spasi untuk beberapa IoT Hub.
 
 ```yaml
 Type: System.String[]

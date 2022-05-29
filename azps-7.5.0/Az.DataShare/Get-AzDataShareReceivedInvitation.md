@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareReceivedInvitation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareReceivedInvitation.md
-ms.openlocfilehash: e1b7578fd38c7747f6b9fb653e2321e4a30e6082
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5434ef3d35a1a548bdfa445e07241f39be7e55aa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218618"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748170"
 ---
 # Get-AzDataShareReceivedInvitation
 
 ## SYNOPSIS
 Mendapatkan informasi tentang undangan konsumen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharereceivedinvitation) untuk informasi terbaru.
 
 ## SYNTAX
 

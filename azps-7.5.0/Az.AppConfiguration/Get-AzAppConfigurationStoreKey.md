@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStoreKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStoreKey.md
-ms.openlocfilehash: aae867100f6b7ea0382aa83e08dc69ff70aec546
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 288dc030875e62091c8002e39fb35795e21ba89a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195389"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685758"
 ---
 # Get-AzAppConfigurationStoreKey
 
 ## SYNOPSIS
 Mencantumkan kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstorekey) untuk informasi terbaru.
 
 ## SYNTAX
 

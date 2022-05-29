@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: 1ec8561016125feb986b8515c78348c734fd61d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 454c2f1e27e7261b4826feb2c270dbc6dd03df45
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214583"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709829"
 ---
 # Get-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
 Mengembalikan koneksi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopooldataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

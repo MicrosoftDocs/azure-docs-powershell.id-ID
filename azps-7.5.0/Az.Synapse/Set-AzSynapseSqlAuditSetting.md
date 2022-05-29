@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: b350c4a7885524ded8ccef2aedeae898ea6de1e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70059e777a2e65819b89c35183fe84be8839f679
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208559"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705402"
 ---
 # Set-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
 Mengubah pengaturan audit Azure Synapse Analytics Workspace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-Predica
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlAuditSetting** mengubah pengaturan audit Azure Synapse Analytics Workspace.
+**Cmdlet Set-AzSynapseSqlAuditSetting** mengubah pengaturan audit Azure Synapse Analytics Workspace.
 Saat penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga dapat menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
 ## EXAMPLES
@@ -67,9 +70,9 @@ Aktifkan kebijakan audit penyimpanan blob Azure Synapse Analytics Workspace bern
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Disabled
 ```
 
-Nonaktifkan kebijakan audit penyimpanan blob ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
+Nonaktifkan kebijakan audit penyimpanan blob Azure Synapse Analytics Workspace bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary -PredicateExpression "statement <> 'select 1'"
 ```
@@ -81,21 +84,21 @@ Aktifkan kebijakan audit penyimpanan blob Azure Synapse Analytics Workspace bern
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -PredicateExpression ""
 ```
 
-Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan audit Azure Synapse Analytics Workspace bernama ContosoWorkspace.
+Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan audit ruang kerja Azure Synapse Analytics bernama ContosoWorkspace.
 
 ### Contoh 5
 ```powershell
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId"
 ```
 
-Aktifkan kebijakan audit hub peristiwa ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
+Aktifkan kebijakan audit hub peristiwa dari ruang kerja Azure Synapse Analytics bernama ContosoWorkspace.
 
 ### Contoh 6
 ```powershell
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -EventHubTargetState Disabled
 ```
 
-Nonaktifkan kebijakan audit hub peristiwa Azure Synapse Analytics Workspace bernama ContosoWorkspace.
+Nonaktifkan kebijakan audit hub peristiwa ruang kerja Azure Synapse Analytics bernama ContosoWorkspace.
 
 ### Contoh 7
 ```powershell
@@ -130,7 +133,7 @@ Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -LogAnalyticsTarget
 Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-Aktifkan pengiriman catatan audit Azure Synapse Analytics Workspace ke penyimpanan blob, pusat aktivitas, dan analitik log.
+Aktifkan pengiriman catatan audit Azure Synapse Analytics Workspace ke penyimpanan blob, hub peristiwa, dan analitik log.
 
 ## PARAMETERS
 
@@ -161,7 +164,7 @@ Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi be
 "FAILED_DATABASE_AUTHENTICATION_GROUP"
 
 Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default.
-Grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Grup-grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 

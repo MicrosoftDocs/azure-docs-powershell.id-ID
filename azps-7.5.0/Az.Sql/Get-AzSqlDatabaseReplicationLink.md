@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
-ms.openlocfilehash: 7ea667c31e51add4e7ba63afde6c8b44803c067a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f4b1dcede0ff450fe5dcee6005c5879e62dfb5a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234762"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729414"
 ---
 # Get-AzSqlDatabaseReplicationLink
 
 ## SYNOPSIS
 Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasereplicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Menentukan nama Server Azure SQL untuk mitra.
+Menentukan nama server Azure SQL untuk mitra.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server untuk database yang akan diambil tautannya.
+Menentukan nama SQL Server database untuk mengambil tautan.
 
 ```yaml
 Type: System.String

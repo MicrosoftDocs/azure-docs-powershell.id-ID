@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DigitalTwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsDigitalTwinsIdentityObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsDigitalTwinsIdentityObject.md
-ms.openlocfilehash: 678afed3a3c99e5b2475636f6788da77ff377b4f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 01545182084c21a6728d4ea95c7f2ed0fffba03c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206447"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741474"
 ---
 # New-AzDigitalTwinsDigitalTwinsIdentityObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk DigitalTwinsIdentity
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsdigitaltwinsidentityobject) untuk informasi terbaru.
 
 ## SYNTAX
 

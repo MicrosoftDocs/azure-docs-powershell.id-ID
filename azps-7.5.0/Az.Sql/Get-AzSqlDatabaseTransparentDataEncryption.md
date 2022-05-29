@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryption.md
-ms.openlocfilehash: b8041609d89dc1f0d4392d89379a5e50818f4610
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97f40b9a00d52d4a814d88f49684c70824ca1209
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234703"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729144"
 ---
 # Get-AzSqlDatabaseTransparentDataEncryption
 
 ## SYNOPSIS
 Mendapatkan status TDE untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasetransparentdataencryption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Get-AzSqlDatabaseTransparentDataEncryption [-ServerName] <String> [-DatabaseName
 ## DESCRIPTION
 Cmdlet **Get-AzSqlDatabaseTransparentDataEncryption** mendapatkan status Enkripsi Data Transparan (TDE) untuk database Azure SQL.
 Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Databasehttps://msdn.microsoft.com/library/dn948096 (https://msdn.microsoft.com/library/dn948096) di Pustaka Jaringan Pengembang Microsoft.
-Cmdlet ini mendapatkan status TDE saat ini, tetapi enkripsi dan dekripsi dapat menjadi operasi yang berjalan lama.
+Cmdlet ini mendapatkan status TDE saat ini, tetapi enkripsi dan dekripsi bisa menjadi operasi jangka panjang.
 Untuk melihat kemajuan pemindaian enkripsi, jalankan cmdlet Get-AzSqlDatabaseTransparentDataEncryptionActivity.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 

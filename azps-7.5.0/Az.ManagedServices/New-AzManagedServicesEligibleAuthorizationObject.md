@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ManagedServices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleAuthorizationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesEligibleAuthorizationObject.md
-ms.openlocfilehash: 63d00bc2600f06d57c159c58d9a56416e62b2b6d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed183d6273c36844cced96261546480788de2efb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194885"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691362"
 ---
 # New-AzManagedServicesEligibleAuthorizationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk EligibleAuthorization
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedserviceseligibleauthorizationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Pengidentifikasi prinsipal Azure Active Directory.
+Pengidentifikasi perwakilan Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 JUSTINTIMEACCESSPOLICYMANAGEDBYTENANTAPPROVER <IEligibleApprover[]>: Daftar pemberi izin managedByTenant untuk otorisasi yang memenuhi syarat.
-  - `PrincipalId <String>`: Pengidentifikasi prinsipal Azure Active Directory.
+  - `PrincipalId <String>`: Pengidentifikasi perwakilan Azure Active Directory.
   - `[PrincipalIdDisplayName <String>]`: Nama tampilan prinsipal Azure Active Directory.
 
 ## RELATED LINKS

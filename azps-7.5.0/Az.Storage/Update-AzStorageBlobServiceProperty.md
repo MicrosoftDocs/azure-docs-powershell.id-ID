@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
-ms.openlocfilehash: 811211e0cb70729fa59a2221128e15f6200ed18a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d6b99caedebfc59c7027a284eaa356a465f3ee4e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211715"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713322"
 ---
 # Update-AzStorageBlobServiceProperty
 
 ## SYNOPSIS
 Memodifikasi properti layanan untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageblobserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Update-AzStorageBlobServiceProperty [-ResourceId] <String> [-DefaultServiceVersi
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageBlobServiceProperty** memodifikasi properti layanan untuk layanan blob Azure Storage.
+Cmdlet **Update-AzStorageBlobServiceProperty** memodifikasi properti layanan untuk Azure Storage Blob service.
 
 ## EXAMPLES
 
@@ -80,9 +83,9 @@ ChangeFeed.RetentionInDays    : 5
 IsVersioningEnabled           :
 ```
 
-Perintah ini memungkinkan Changefeed pada layanan Blob dari akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari.
+Perintah ini memungkinkan Changefeed pada layanan Blob akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari.
 Ubah dukungan umpan di Azure Blob Storage berfungsi dengan mendengarkan akun penyimpanan GPv2 atau Blob untuk setiap peristiwa pembuatan, modifikasi, atau penghapusan tingkat blob. Kemudian menghasilkan log peristiwa yang diurutkan untuk blob yang disimpan dalam kontainer $blobchangefeed dalam akun penyimpanan. Perubahan berseri dipertahankan sebagai file Apache Avro dan dapat diproses secara asinkron dan bertahap.
-Jika tidak menentukan ChangeFeedRetentionInDays, akan mendapatkan nilai null di properti layanan, menunjukkan retensi umpan perubahan yang tak terbatas.
+Jika tidak menentukan ChangeFeedRetentionInDays, akan mendapatkan nilai null di properti layanan, menunjukkan retensi tak terbatas dari umpan perubahan.
 
 ### Contoh 3: Aktifkan Penerapan Versi pada layanan Blob dari akun Storage
 ```
@@ -100,12 +103,12 @@ ChangeFeed.RetentionInDays    :
 IsVersioningEnabled           : True
 ```
 
-Perintah ini mengaktifkan Penerapan Versi pada layanan Blob dari akun Storage
+Perintah ini memungkinkan Penerapan Versi pada layanan Blob dari akun Storage
 
 ## PARAMETERS
 
 ### -ChangeFeedRetentionInDays
-Menunjukkan durasi retensi changeFeed dalam hari. Nilai minimum adalah 1 hari dan nilai maksimum adalah 146000 hari (400 tahun). Jangan pernah menentukannya ketika diaktifkan changeFeed akan mendapatkan nilai null dalam properti layanan, menunjukkan retensi tak terbatas dari umpan perubahan.
+Menunjukkan durasi retensi changeFeed dalam hari. Nilai minimum adalah 1 hari dan nilai maksimum adalah 146000 hari (400 tahun). Jangan pernah menentukannya ketika changeFeed yang diaktifkan akan mendapatkan nilai null di properti layanan, menunjukkan retensi tak terbatas dari umpan perubahan.
 
 ```yaml
 Type: System.Int32
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableChangeFeed
-Aktifkan pengelogan Umpan Perubahan untuk akun penyimpanan dengan diatur ke $true, nonaktifkan pengelogan Umpan Perubahan dengan diatur ke $false.
+Aktifkan pengelogan Umpan Perubahan untuk akun penyimpanan dengan diatur ke $true, nonaktifkan Pengelogan Umpan Perubahan dengan diatur ke $false.
 
 ```yaml
 Type: System.Boolean

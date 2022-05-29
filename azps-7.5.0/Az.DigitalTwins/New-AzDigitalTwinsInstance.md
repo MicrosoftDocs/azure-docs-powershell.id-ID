@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 5f868d38e1705a76d150c9902dc98618320349f3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ecd8e187da904efe36ebcee29e306c04edd2c9a7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247051"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741348"
 ---
 # New-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Membuat atau memperbarui metadata DigitalTwinsInstance.
-Pola yang biasa untuk memodifikasi properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui DigitalTwinsInstance.
+Pola yang biasa untuk memodifikasi properti adalah mengambil DigitalTwinsInstance dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
 
 ## DESCRIPTION
 Membuat atau memperbarui metadata DigitalTwinsInstance.
-Pola yang biasa untuk memodifikasi properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui DigitalTwinsInstance.
+Pola yang biasa untuk memodifikasi properti adalah mengambil DigitalTwinsInstance dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui DigitalTwinsInstance.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Location Name                    Type
 eastus   youriDigitalTwinsTest01 Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Membuat AzDigitalTwinsInstance oleh Objek AzDigitalTwins
+Membuat Objek AzDigitalTwinsInstance oleh AzDigitalTwins
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DigitalTwinsBuat
-Deskripsi layanan DigitalTwins.
+Penjabaran dari layanan DigitalTwins.
 Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSCREATE dan buat tabel hash.
 
 ```yaml

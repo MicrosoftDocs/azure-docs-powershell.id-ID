@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseFirewallRule.md
-ms.openlocfilehash: 9fa9b0d69426b1e1effc36ed5948457dc37bf62c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 911ed766ca0f8914bb2c0d86abfdb035ad59e32b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214682"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710208"
 ---
 # Get-AzSynapseFirewallRule
 
 ## SYNOPSIS
 Mendapatkan Aturan Firewall Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseFirewallRule -WorkSpaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseFirewallRule** mendapatkan Aturan Firewall Azure Synapse Analytics.
+Cmdlet **Get-AzSynapseFirewallRule** mendapatkan Aturan Firewall Analitik Azure Synapse.
 Jika Anda tidak menentukan nama aturan, cmdlet ini mendapatkan semua aturan.
 
 ## EXAMPLES
@@ -51,7 +54,7 @@ Get-AzSynapseFirewallRule -ResourceGroupName ContosoResourceGroup -WorkspaceName
 
 Perintah ini mendapatkan aturan firewall di bawah ruang kerja ContosoWorkspace dengan nama ContosoFirewallRule.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseFirewallRule

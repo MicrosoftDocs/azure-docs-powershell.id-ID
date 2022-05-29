@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
-ms.openlocfilehash: 398efb46a74db3afe1f49b149a46ffc5645702ba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17da7ed277d1f014576d611503b92176c5ec1b47
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735534"
 ---
 # Get-AzSnapshot
 
 ## SYNOPSIS
 Mendapatkan properti rekam jepret
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua rekam jepret langganan.
+Perintah ini mendapatkan properti dari semua rekam jepret langganan.
 
 ### Contoh 2
 ```powershell
@@ -127,7 +130,7 @@ Tags               : {}
 
 Perintah ini mendapatkan properti semua rekam jepret dalam grup sumber daya bernama "ResourceGroupName1"
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSnapshot -ResourceGroupName "ResourceGroupName1" -SnapshotName "SnapshotName1"
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapsePipeline.md
-ms.openlocfilehash: c0dec2fb4efef364ac81faa8ba7eb64fd3a757d5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 535d6ea8f49410efdbfb09306a4d8a21cc8a41f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197153"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706572"
 ---
 # Remove-AzSynapsePipeline
 
 ## SYNOPSIS
 Menghapus alur dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsepipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Remove-AzSynapsePipeline -Name ContosoPipeline
 
 Cmdlet ini menghapus alur bernama ContosoPipeline dari ruang kerja bernama ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pipeline = Get-AzSynapsePipeline -WorkspaceName ContosoWorkspace -Name ContosoPipeline
 $pipeline | Remove-AzSynapsePipeline

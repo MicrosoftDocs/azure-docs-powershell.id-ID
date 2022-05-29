@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendation.md
-ms.openlocfilehash: f7074f8245a36fca000e90a559635aa01879890f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f590893e87b63418096082dedc556762c1e4d8ad
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210131"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728460"
 ---
 # Get-AzSqlElasticPoolRecommendation
 
 ## SYNOPSIS
 Mendapatkan rekomendasi kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Get-AzSqlElasticPoolRecommendation [-ServerName] <String> [-ResourceGroupName] <
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlElasticPoolRecommendation** mendapatkan rekomendasi kumpulan elastis untuk server.
-Rekomendasi ini mencakup nilai berikut:
-- DatabaseCollection. Kumpulan nama database yang termasuk dalam kumpulan. 
+Rekomendasi ini mencakup nilai-nilai berikut:
+- DatabaseCollection. Kumpulan nama database milik kumpulan. 
 - DatabaseDtuMin. Jaminan Unit Transmisi Data (DTU) untuk database di kumpulan elastis. 
  -- DatabaseDtuMax. Batas DTU untuk database di kumpulan elastis. 
 - Dtu. Jaminan DTU untuk kumpulan elastis. 

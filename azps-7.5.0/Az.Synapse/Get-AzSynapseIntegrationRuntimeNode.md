@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: 80cac67214716846b654011c4af6b8c336fe5aef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 61120a48e9a4da5f90dc13f4458954620f6d2739
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145710046"
 ---
 # Get-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
 Mendapatkan informasi simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,14 +57,14 @@ Cmdlet **Get-AzSynapseIntegrationRuntimeNode** mendapatkan informasi detail dari
 Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1'
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -IpAddress
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 

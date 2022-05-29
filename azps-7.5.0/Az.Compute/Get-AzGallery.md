@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGallery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGallery.md
-ms.openlocfilehash: e20d07749b31fc8cd5409b1395ae2d01c4d3104e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 043c2487840807454af90d206e4f2f653fc9e361
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190881"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735858"
 ---
 # Get-AzGallery
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azgallery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Tags              : {}
 
 Dapatkan semua galeri di rg1.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzGallery
 ```

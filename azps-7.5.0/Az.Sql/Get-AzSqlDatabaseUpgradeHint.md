@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
-ms.openlocfilehash: f0da838ede970ce6fc468744056dddc4cd100fa2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 892dfb0cf263b88036667f76faf58ce176e4bb7c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234678"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729108"
 ---
 # Get-AzSqlDatabaseUpgradeHint
 
 ## SYNOPSIS
 Mendapatkan petunjuk tingkat harga untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseupgradehint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "S
 
 Perintah ini mengembalikan petunjuk peningkatan untuk database tertentu.
 
-### Contoh 3: Dapatkan rekomendasi untuk semua database yang tidak ada dalam kumpulan database elastis
+### Contoh 3: Dapatkan rekomendasi untuk semua database yang tidak berada dalam kumpulan database elastis
 ```powershell
 Get-AzSqlDatabaseUpgradeHint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ExcludeElasticPoolCandidates $True
 ```

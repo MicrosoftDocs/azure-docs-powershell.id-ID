@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: 01dd488ae22a97426e8278aa4afec8675a1c2c88
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa782c134b4ef93a73fc4fa3a403fa8606b4f2d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187297"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741546"
 ---
 # Get-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
 Dapatkan Titik Akhir DigitalTwinsInstances.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 
 Dapatkan AzDigitalTwinsEndpoint by EndpointName di ResourceGroup
 
-### Contoh 3: Dapatkan AzDigitalTwinsEndpoint oleh Objek 'AzDigitalTwinsEndpoint'
+### Contoh 3: Dapatkan Objek AzDigitalTwinsEndpoint oleh 'AzDigitalTwinsEndpoint'
 ```powershell
 $GetAzDigitalTwinsEndpoint = Get-AzDigitalTwinsEndpoint -EndpointName youriDigitalTwinEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 Get-AzDigitalTwinsEndpoint -InputObject $GetAzDigitalTwinsEndpoint
@@ -80,7 +83,7 @@ Name                     Type
 youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Dapatkan Objek AzDigitalTwinsEndpoint oleh 'AzDigitalTwinsEndpoint'
+Dapatkan Objek AzDigitalTwinsEndpoint by 'AzDigitalTwinsEndpoint'
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity

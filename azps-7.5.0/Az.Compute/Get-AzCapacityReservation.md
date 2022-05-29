@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservation.md
-ms.openlocfilehash: bd29d5e517a66b291f80dc250ad93a6a7f43a608
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 613f228a6665c43b65dab54704529394130711f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145736002"
 ---
 # Get-AzCapacityReservation
 
 ## SYNOPSIS
 Mendapatkan properti sumber daya Reservasi Kapasitas dari Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 

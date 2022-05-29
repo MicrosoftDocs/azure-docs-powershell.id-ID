@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVMDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVMDiskEncryption.md
-ms.openlocfilehash: f4b44150f2c71aa64e736143eed13c6534b14f20
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ffe35575a11ecb59ae05da6d482d667484bceb39
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110357"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735012"
 ---
 # Get-AzVmssVMDiskEncryption
 
 ## SYNOPSIS
-Memperlihatkan status enkripsi disk VM dalam set skala VM.
+Menampilkan status enkripsi disk VM dalam set skala VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmssvmdiskencryption) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: 54c7ce38dca9383d1aada85de9e19d59b6fd719b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 36e9a38a2000e5af80851f5f4078f76503437a2d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199477"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741330"
 ---
 # Remove-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
 Menghapus titik akhir DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/remove-azdigitaltwinsendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ Menghapus titik akhir DigitalTwinsInstance.
 Remove-AzDigitalTwinsEndpoint -ResourceGroupName youritemp -EndpointName youriEHEndpoint -ResourceName youriDigitalTwinsTest
 ```
 
-Menghapus azDigitalTwinsEndPoint by EndPointName ResourceGroupName dan ResourceName
+Hapus azDigitalTwinsEndPoint by EndPointName ResourceGroupName dan ResourceName
 
-### Contoh 2: Hapus azDigitalTwinsEndPoint menurut Objek
+### Contoh 2: Hapus azDigitalTwinsEndPoint by Object
 ```powershell
 $GetAzdigitalTwinsEndpoint = Get-AzDigitalTwinsEndpoint -EndpointName youriEHEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 Remove-AzDigitalTwinsEndpoint -InputObject $GetAzdigitalTwinsEndpoint
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

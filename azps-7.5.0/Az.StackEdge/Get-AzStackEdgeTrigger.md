@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeTrigger.md
-ms.openlocfilehash: eab8a1371027a8f73018b1dd35192cac4cf3fe42
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a416deb0f4c0dd808b3bf60efb7642630279135c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226457"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720432"
 ---
 # Get-AzStackEdgeTrigger
 
 ## SYNOPSIS
 Mengonfigurasi Pemicu di perangkat
  
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

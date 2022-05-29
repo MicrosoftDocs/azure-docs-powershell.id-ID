@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
-ms.openlocfilehash: 5a87da819d3a331c506e8fc280bacb42e5c8a453
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 725cd27b238be45df9965a3d415c600c5fc66fd5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214703"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720828"
 ---
 # Update-AzAvailabilityGroupListener
 
 ## SYNOPSIS
 Memperbarui Listener Grup Ketersediaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 

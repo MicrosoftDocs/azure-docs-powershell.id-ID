@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMConfig.md
-ms.openlocfilehash: c95423c3c9ebc6931a2880c91c64f524be508dc4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1651b03900161e79656c44ea951ea8410df08953
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226569"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721044"
 ---
 # New-AzSqlVMConfig
 
 ## SYNOPSIS
 Membuat konfigurasi baru untuk komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupVault.md
-ms.openlocfilehash: b51adc423a68990f6797df6e6017ef660fee0d59
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 853b54be2cbc58ad91c1f61d43902bc2e6eaeaa0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218714"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145748494"
 ---
 # Update-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Memperbarui sumber daya BackupVault milik grup sumber daya.
 Misalnya, memperbarui tag untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 

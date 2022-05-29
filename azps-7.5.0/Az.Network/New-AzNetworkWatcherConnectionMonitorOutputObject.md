@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorOutputObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorOutputObject.md
-ms.openlocfilehash: b84a07ba9586ef19b427cb96ef3be2a1842a36cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9acfe0f529d99d026b1c3318186132c6a7832ce1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246799"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674310"
 ---
 # New-AzNetworkWatcherConnectionMonitorOutputObject
 
 ## SYNOPSIS
 Buat objek tujuan output monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitoroutputobject) untuk informasi terbaru.
 
 ## SYNTAX
 

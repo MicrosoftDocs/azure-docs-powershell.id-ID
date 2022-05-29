@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseLinkedService.md
-ms.openlocfilehash: c2494eb23ac82b1c1a8c59c5a48a243e2bdac6e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c75239c37415a5656a9aae237a0b098600c48441
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197184"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706788"
 ---
 # Remove-AzSynapseLinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapselinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Remove-AzSynapseLinkedService -Name ContosoLinkedService
 
 Perintah ini menghapus layanan tertaut bernama ContosoLinkedService dari ruang kerja bernama ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $linkedService = Get-AzSynapseLinkedService -WorkspaceName ContosoWorkspace -Name ContosoLinkedService
 $linkedService | Remove-AzSynapseLinkedService

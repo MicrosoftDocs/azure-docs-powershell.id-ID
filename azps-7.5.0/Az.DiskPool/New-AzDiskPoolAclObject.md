@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DiskPool/new-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolAclObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolAclObject.md
-ms.openlocfilehash: 63df88fa298cf0f5eec0d4a87786357ecc4ad922
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17a3f99eb2a2105a640f3ccdc79b4fcf84b12345
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214055"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740952"
 ---
 # New-AzDiskPoolAclObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Acl
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/new-azdiskpoolaclobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Perintah ini membuat objek acl.
 ## PARAMETERS
 
 ### -InisiatorIqn
-inisiator iSCSI IQN (Nama Yang Memenuhi Syarat iSCSI); contoh: "iqn.2005-03.org.iscsi:client".
+Inisiator iSCSI IQN (Nama Yang Memenuhi Syarat iSCSI); contoh: "iqn.2005-03.org.iscsi:client".
 
 ```yaml
 Type: System.String

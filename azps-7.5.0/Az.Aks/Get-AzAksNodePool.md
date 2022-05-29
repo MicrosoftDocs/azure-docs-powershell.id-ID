@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksnod
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
-ms.openlocfilehash: 39d8a27f9584363471f7dfd2f6a04f02610c3a7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 08c91f6e9d365203c58dd2e04b4770d052b1e0fc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196901"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729756"
 ---
 # Get-AzAksNodePool
 
 ## SYNOPSIS
 Mencantumkan kumpulan simpul dalam kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mencantumkan kumpulan simpul dalam kluster tertentu.
 
 ## EXAMPLES
 
-### Mendapatkan semua kumpulan simpul dalam kluster yang ditentukan
+### Mendapatkan semua kumpulan simpul dalam kluster tertentu
 ```powershell
 Get-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster
 ```
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/remove-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsAccount.md
-ms.openlocfilehash: 36e00c2e31b0df9ab462c13ccc53de1fa30e9cf1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 48916eee6511e83087aabfa579d58a9ccc7f77d8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190461"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691164"
 ---
 # Remove-AzMapsAccount
 
 ## SYNOPSIS
 Menghapus Akun Azure Maps.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

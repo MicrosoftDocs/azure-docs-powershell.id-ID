@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup.md
-ms.openlocfilehash: af8a92ad26985c98080e84f8b05b3e95df83d28c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7fa4b8f15f1cfe149a0882d6f844341bf2afb137
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217187"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677946"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup
 
 ## SYNOPSIS
 Membuat entri ExclusionManagedRuleGroup di ExclusionManagedRuleSets untuk pengecualian kebijakan firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusionmanagedrulegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,14 +38,14 @@ New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName <
 $ruleGroupEntry = New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName $ruleName -Rules $rule1,$rule2
 ```
 
-Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName dan Aturan sebagai $rule 1, $rule 2. Menetapkan hal yang sama untuk $ruleGroupEntry
+Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName dan Aturan sebagai $rule 1, $rule 2. Menetapkan hal yang sama ke $ruleGroupEntry
 
 ### Contoh 2
 ```powershell
 $ruleGroupEntry = New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName $ruleName
 ```
 
-Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName. Menetapkan hal yang sama untuk $ruleGroupEntry
+Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName. Menetapkan hal yang sama ke $ruleGroupEntry
 
 ## PARAMETERS
 

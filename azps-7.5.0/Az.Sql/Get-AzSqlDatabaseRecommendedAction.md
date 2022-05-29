@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRecommendedAction.md
-ms.openlocfilehash: 1d4a2924ac03430cda2150ac50d3590832aa4707
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a96f6c3fb2b8338701f16adae205620ffb0a0e98
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234787"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729396"
 ---
 # Get-AzSqlDatabaseRecommendedAction
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Database Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaserecommendedaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -272,7 +275,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

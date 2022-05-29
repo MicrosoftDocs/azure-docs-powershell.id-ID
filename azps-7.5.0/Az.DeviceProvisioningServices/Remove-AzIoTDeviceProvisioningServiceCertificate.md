@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: da8bfa2075108048fb07b88330addcb5783dc4a5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c714270f6fec883de8d72ce9bbe6be34f9ffd88
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232589"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741960"
 ---
 # Remove-AzIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat Azure IoT Hub Device Provisioning Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningservicecertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Remove-AzIoTDeviceProvisioningServiceCertificate -ResourceGroupName "myresourceg
 True
 ```
 
-Hapus "mycertificate" dalam layanan provisi perangkat Azure IoT Hub.
+Hapus "mycertificate" di layanan provisi perangkat Azure IoT Hub.
 
 ## PARAMETERS
 

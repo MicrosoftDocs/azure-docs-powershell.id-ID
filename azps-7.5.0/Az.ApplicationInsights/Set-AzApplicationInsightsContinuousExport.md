@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsContinuousExport.md
-ms.openlocfilehash: 01289f975c5c70157d37d7f4ace56bae28cc52af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 054eee4d5f6ee85135f828863a6da997ddecff7e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221078"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684984"
 ---
 # Set-AzApplicationInsightsContinuousExport
 
 ## SYNOPSIS
 Memperbarui konfigurasi ekspor berkelanjutan dalam sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightscontinuousexport) untuk informasi terbaru.
 
 ## SYNTAX
 

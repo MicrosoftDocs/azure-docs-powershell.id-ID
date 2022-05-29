@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
-ms.openlocfilehash: c1570510e78fb415e4ed60a04fe9594895d9d757
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4195b7ccb980251487d219e8b56be12cb805815
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183321"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145674661"
 ---
 # New-AzNetworkInterface
 
 ## SYNOPSIS
 Membuat antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Perintah pertama mengambil jaringan virtual yang ditentukan yang ada yang diguna
 Perintah kedua membuat konfigurasi IP antarmuka jaringan bernama IPConfig1 dan menyimpan konfigurasi dalam variabel bernama $IPconfig.
 Perintah ketiga membuat antarmuka jaringan bernama NetworkInterface1 yang menggunakan konfigurasi IP antarmuka jaringan yang disimpan dalam variabel bernama $IPconfig.
 
-### Contoh 3
+### Contoh: 3
 
 Membuat antarmuka jaringan. (dibuat otomatis)
 
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAcceleratedNetworking
-Mengaktifkan jaringan yang dipercepat.
+Mengaktifkan jaringan terakselerasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Memaksa pembuatan antarmuka jaringan bahkan jika antarmuka jaringan dengan nama yang sama sudah ada.
+Memaksa pembuatan antarmuka jaringan meskipun antarmuka jaringan dengan nama yang sama sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

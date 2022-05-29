@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/resume-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Resume-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Resume-AzSynapseSqlPool.md
-ms.openlocfilehash: 803366330655dab83b8e38891feb249d6e169f3d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 51c81f3b049aec18b15e00bc394201d1720cc4a0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212771"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705816"
 ---
 # Resume-AzSynapseSqlPool
 
 ## SYNOPSIS
 Melanjutkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/resume-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 

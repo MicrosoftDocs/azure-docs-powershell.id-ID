@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningServiceCertificateVerificationCode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/New-AzIoTDeviceProvisioningServiceCertificateVerificationCode.md
-ms.openlocfilehash: 48a62ddc0e3badf14d7673395144a44e918464b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6115a8d60c246ff57da43a1e8c3f69cc5847658
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243089"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742050"
 ---
 # New-AzIoTDeviceProvisioningServiceCertificateVerificationCode
 
 ## SYNOPSIS
 Membuat kode verifikasi untuk sertifikat Azure IoT Hub Device Provisioning Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/new-aziotdeviceprovisioningservicecertificateverificationcode) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: f50fd693349db104aa33d1abdea14c8c5254e0cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 749605d00cdcf63a930e15a9525845fbd5c646bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197111"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706536"
 ---
 # Remove-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi spark dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Remove-AzSynapseSparkConfiguration -Name ContosoSparkConfiguration
 
 Hapus konfigurasi spark yang disebut ContosoSparkConfiguration dari ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $sparkConfiguration = Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSparkConfiguration
 $sparkConfiguration | Remove-AzSynapseSparkConfiguration
