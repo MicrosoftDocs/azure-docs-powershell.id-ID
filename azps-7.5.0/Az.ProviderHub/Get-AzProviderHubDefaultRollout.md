@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: 185e84717931cccf6711fa1ce3ac1bb5992b7f42
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7a1c8fa1e1d484192a417d0ef518ec2524e2988
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182638"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657066"
 ---
 # Get-AzProviderHubDefaultRollout
 
 ## SYNOPSIS
 Mendapatkan detail peluncuran default.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mendapatkan detail peluncuran default.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua peluncuran default di bawah penyedia sumber daya.
+### Contoh 1: Cantumkan semua peluncuran default di bawah penyedia sumber daya.
 ```powershell
 Get-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso"
 ```
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity

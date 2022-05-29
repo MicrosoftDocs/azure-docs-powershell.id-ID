@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 0c82bd4afa5a637c402560cf3e8e361c45805fda
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50f7bae3e051cb8e1914f630cbcfbb4a28f00384
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110933"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704034"
 ---
 # Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mengatur pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL Analitik Azure Synapse.
+**Cmdlet Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL Analitik Azure Synapse.
 Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada kumpulan SQL, pengaturan audit harus diaktifkan pada kumpulan SQL tersebut.
 
 ## EXAMPLES
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Jenis deteksi yang akan dikecualikan.
+Jenis deteksi untuk dikecualikan.
 
 ```yaml
 Type: System.String[]

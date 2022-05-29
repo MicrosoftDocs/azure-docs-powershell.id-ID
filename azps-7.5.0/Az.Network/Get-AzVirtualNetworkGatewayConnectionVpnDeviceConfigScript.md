@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md
-ms.openlocfilehash: 6ba9ee8aa78c800fca6c39ea3282628ea500a856
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13b9fd038755a8f7fc9db0049a5b456ac366a8f3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238304"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679584"
 ---
 # Dapatkan-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript
 
 ## SYNOPSIS
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, awalan alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionvpndeviceconfigscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript -Name <String> -Resou
 ```
 
 ## DESCRIPTION
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, awalan alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeer.md
-ms.openlocfilehash: 315c7cdc2e527d201f76ea217357b61551c6d1ac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ab4212a76e66a153d72211aea7785446ad1bd674
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185631"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679224"
 ---
 # Get-AzVirtualRouterPeer
 
 ## SYNOPSIS
-Mendapatkan peer VirtualRouter di Azure VirtualRouter
+Mendapatkan rekan VirtualRouter di Azure VirtualRouter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualrouterpeer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId dari router virtual.
+ResourceId router virtual.
 
 ```yaml
 Type: System.String

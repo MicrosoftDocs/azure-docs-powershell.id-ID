@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: 257e0e69f746926f9c2d1aed838e0fbf07c033d6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8802b6f8f58e71282ffc088791a37b11adf4435b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221246"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686370"
 ---
 # Set-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Memperbarui Konfigurasi Penyedia Identitas yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ClientSecret
 Rahasia klien Aplikasi di Penyedia Identitas eksternal, digunakan untuk mengautentikasi permintaan masuk.
-Misalnya, itu adalah Rahasia Aplikasi untuk login Facebook, Kunci API untuk login Google, Kunci Umum untuk Microsoft.
+Misalnya, ini adalah Rahasia Aplikasi untuk login Facebook, Kunci API untuk login Google, Kunci Umum untuk Microsoft.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordResetPolicyName
-Nama Kebijakan Reset Kata Sandi. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Reset Kata Sandi. Hanya berlaku untuk Penyedia Identitas AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileEditingPolicyName
-Nama Kebijakan Pengeditan Profil. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Pengeditan Profil. Hanya berlaku untuk Penyedia Identitas AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigninPolicyName
-Nama Kebijakan Masuk. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Masuk. Hanya berlaku untuk Penyedia Identitas AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -SignupPolicyName
-Nama Kebijakan Pendaftaran. Hanya berlaku untuk AAD IdP B2C. Parameter ini bersifat opsional.
+Nama Kebijakan Pendaftaran. Hanya berlaku untuk Penyedia Identitas AAD B2C. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String

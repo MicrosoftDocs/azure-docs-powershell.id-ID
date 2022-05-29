@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
-ms.openlocfilehash: c205c6baeca08c371a6385803f075b2535508cb4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 021086eda4ab1a4ae9ea3364d8cfc5053c9f800c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182666"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657102"
 ---
 # Set-AzPrivateDnsZone
 
 ## SYNOPSIS
 Memperbarui zona DNS Privat dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrivateZone
+### -Zona Privat
 Objek zona yang akan diatur.
 
 ```yaml

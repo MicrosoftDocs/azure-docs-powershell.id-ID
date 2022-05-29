@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 2065ac7bf2f77431aa1ab5446130d2ff7df6add9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3809fea9bc4ffe3f9a528aa60f1c47750097c695
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182705"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657138"
 ---
 # Set-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Memperbarui/Mengatur kumpulan catatan di zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua dan ketiga adalah operasi off-line untuk menambahkan dua rekaman A ke kumpulan catatan. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk melakukan pembaruan.
+Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua dan ketiga adalah operasi off-line untuk menambahkan dua rekaman A ke kumpulan catatan. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menerapkan pembaruan.
 
 ### Contoh 2: Memperbarui catatan SOA
 ```powershell
@@ -78,7 +81,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua memperbarui rekaman SOA yang ditentukan di $RecordSet. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menyebarluaskan pembaruan di $RecordSet.
+Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet untuk mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua memperbarui rekaman SOA yang ditentukan di $RecordSet. Perintah akhir menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menyebarluaskan pembaruan dalam $RecordSet.
 
 ## PARAMETERS
 

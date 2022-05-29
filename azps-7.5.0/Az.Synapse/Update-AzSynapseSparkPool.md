@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
-ms.openlocfilehash: 15640ef367dbb87aace2b0952795de371bfa11ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97b7cdd24b4356e0518b3820885be37a4cf3668f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191122"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704070"
 ---
 # Update-AzSynapseSparkPool
 
 ## SYNOPSIS
 Memperbarui kumpulan Apache Spark di Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ $pool | Update-AzSynapseSparkPool -Tag @{"key" = "value1"}
 
 Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Update-AzSynapseSparkPool -Name ContosoSparkPool -Tag @{"key" = "value2"}

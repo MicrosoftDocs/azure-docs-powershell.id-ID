@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementNamedValue.md
-ms.openlocfilehash: 9355dd40e89b219f646e170c73bc10adf6b3f6b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a5e350ac727c3d5110986d0444499aeda15eb657
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221219"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686298"
 ---
 # Set-AzApiManagementNamedValue
 
 ## SYNOPSIS
-Memodifikasi Nilai Bernama API Management.
+Memodifikasi nilai bernama API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApiManagementNamedValue -Context <PsApiManagementContext> -NamedValueId <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementNamedValue** memodifikasi Nilai Bernama Azure API Management.
+Cmdlet **Set-AzApiManagementNamedValue** memodifikasi Nilai Bernama API Management Azure.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Perintah pertama menetapkan dua nilai ke variabel $Tags.
 Perintah kedua memodifikasi nilai bernama yang memiliki ID Property11.
 Perintah menetapkan string dalam $Tags sebagai tag pada nilai bernama.
 
-### Contoh 2: Ubah nilai bernama untuk memiliki nilai rahasia
+### Contoh 2: Ubah nilai bernama agar memiliki nilai rahasia
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property12" -Secret $True -PassThru
@@ -49,9 +52,9 @@ Set-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property12" -
 
 Perintah ini mengubah nilai bernama menjadi Terenkripsi.
 
-### Contoh 3
+### Contoh: 3
 
-Memodifikasi Nilai Bernama API Management. (dibuat otomatis)
+Memodifikasi nilai bernama API Management. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 Nilai nilai bernama.
 Dapat berisi ekspresi kebijakan.
 Panjang maksimum adalah 1000 karakter.
-Mungkin tidak kosong atau hanya terdiri dari spasi kosong.
+Ini mungkin tidak kosong atau hanya terdiri dari spasi kosong.
 Parameter ini bersifat opsional.
 
 ```yaml

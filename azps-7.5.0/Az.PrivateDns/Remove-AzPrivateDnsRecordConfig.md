@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: e03e4f9e5d3b0dc55aca894b9e328063c5a47e63
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77c7dac19050c9b6b2e96b2d30f3f16a979bf605
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182775"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657246"
 ---
 # Remove-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
 Menghapus catatan DNS Privat dari objek kumpulan catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -145,7 +148,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini menghapus data CNAME dari kumpulan catatan yang sudah ada. Karena kumpulan data CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
+Contoh ini menghapus data CNAME dari kumpulan catatan yang sudah ada. Karena kumpulan catatan CNAME bisa berisi paling banyak satu rekaman, hasilnya adalah kumpulan catatan kosong.
 
 ### Contoh 4: Menghapus catatan MX dari kumpulan catatan
 ```powershell
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Host pertukaran email dari catatan MX yang akan dihapus.
+Host pertukaran email dari catatan MX untuk dihapus.
 Tidak boleh relatif terhadap nama zona.
 Tidak boleh memiliki titik yang mengakhiri
 
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv4Address
-Alamat IPv4 rekaman A yang akan dihapus.
+Alamat IPv4 dari rekaman A yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Alamat IPv6 dari catatan AAAA yang akan dihapus.
+Alamat IPv6 dari catatan AAAA untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Nilai prioritas catatan SRV yang akan dihapus.
+Nilai prioritas rekaman SRV yang akan dihapus.
 
 ```yaml
 Type: System.UInt16
@@ -445,8 +448,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Nilai bobot rekaman SRV yang akan dihapus.
+### -Berat
+Nilai berat catatan SRV yang akan dihapus.
 
 ```yaml
 Type: System.UInt16

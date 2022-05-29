@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseManagedVirtualNetworkConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseManagedVirtualNetworkConfig.md
-ms.openlocfilehash: c910e9ae7fd449dd9258e4728458628d6318e927
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 57f9d92236e8a82960594243df387cb22845e6ff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195504"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145704088"
 ---
 # Update-AzSynapseManagedVirtualNetworkConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi jaringan virtual terkelola ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsemanagedvirtualnetworkconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

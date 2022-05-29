@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
-ms.openlocfilehash: 389e874941fe0fc13ca1024e258e4bdf115e7d5e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 69fae55192d39004615540b4c78bdeb6b5f8b718
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110936"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703944"
 ---
 # Update-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memperbarui kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ $ws | Update-AzSynapseSqlPool -Name ContosoSqlPool -Tag @{'key'='value1'}
 
 Perintah ini memperbarui kumpulan SQL Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 $pool | Update-AzSynapseSqlPool -Tag @{'key'='value2'}

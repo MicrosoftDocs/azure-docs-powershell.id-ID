@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 5af854559130fd9550a13462b8a940ae60db2a30
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4409d880eb9a2c405666bd0d154034b3d80e1bbe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240404"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145686280"
 ---
 # Set-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
 Memodifikasi penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectProviderId
-Menentukan ID untuk penyedia yang diubah cmdlet ini.
+Menentukan ID untuk penyedia yang dimodifikasi cmdlet ini.
 Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: caae974d064a80001560be6d55ae0f79a8fd37aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fc0b99dc5363af398149883d514b6ba829717267
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182677"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657120"
 ---
 # Set-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Memperbarui/Mengatur tautan jaringan virtual yang terkait dengan zona privat dan grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/set-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 

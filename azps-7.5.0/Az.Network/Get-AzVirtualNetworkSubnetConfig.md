@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 7b3499b18bcebc59edc3e9abb1c59b91787d2d12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1f73cbeb098536015c28e10873d815f3fc8cdc83
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185659"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679404"
 ---
 # Get-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Membuat subjaringan di jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama konfigurasi subnet yang didapatkan cmdlet ini.
+Menentukan nama konfigurasi subnet yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan id sumber daya subnet yang didapatkan cmdlet ini.
+Menentukan id sumber daya subnet yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang didapatkan cmdlet ini.
+Menentukan objek **VirtualNetwork** yang berisi konfigurasi subnet yang didapat cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork

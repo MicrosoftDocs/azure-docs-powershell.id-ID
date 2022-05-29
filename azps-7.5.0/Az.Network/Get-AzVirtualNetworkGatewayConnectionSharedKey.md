@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayConnectionSharedKey.md
-ms.openlocfilehash: 2f09b03fb678739755a51a291e0c82a5931b1f81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3dabf5a43104e48b9c8db29d12108ab30d7532ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238315"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679602"
 ---
 # Get-AzVirtualNetworkGatewayConnectionSharedKey
 
 ## SYNOPSIS
 Menampilkan kunci bersama yang digunakan untuk sambungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayconnectionsharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 

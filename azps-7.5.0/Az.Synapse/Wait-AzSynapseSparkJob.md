@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/wait-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Wait-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Wait-AzSynapseSparkJob.md
-ms.openlocfilehash: 835db27c1eb21b629d48030060e00e6ef0d295dc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7ddb248bb9f755bc624c4f41b52a42014049cd5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237450"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703908"
 ---
 # Wait-AzSynapseSparkJob
 
 ## SYNOPSIS
 Menunggu pekerjaan Spark Synapse Analytics selesai.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/wait-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 

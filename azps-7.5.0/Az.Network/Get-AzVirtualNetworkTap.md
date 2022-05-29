@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkTap.md
-ms.openlocfilehash: ebb3cc391e5c25ad70f299d0578f389b5b291ee3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a961c0151bbe6002ecb03d11f6d952e385f3ae60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185648"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145679332"
 ---
 # Get-AzVirtualNetworkTap
 
 ## SYNOPSIS
 Mendapatkan ketukan jaringan virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzVirtualNetworkTap -ResourceGroupName "ResourceGroup1" -Name "VirtualTap1"
 
 Perintah ini mendapatkan referensi ketuk VirtualNetwork untuk "VirtualTap1" yang diberikan di "ResourceGroup1".
 
-### Contoh 2: Mendapatkan semua ketukan jaringan virtual menggunakan pemfilteran
+### Contoh 2: Dapatkan semua ketukan jaringan virtual menggunakan pemfilteran
 ```powershell
 Get-AzVirtualNetworkTap -Name "VirtualTap*"
 ```

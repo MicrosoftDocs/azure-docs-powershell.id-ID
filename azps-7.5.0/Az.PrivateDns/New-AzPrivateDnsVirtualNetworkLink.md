@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/New-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 17cf934a399204cbe3c6e07a950a8f4ea6dc9b49
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9d55cbfba84f976e5b1284dba7f4a255b3be37c4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144182789"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145657282"
 ---
 # New-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Membuat link jaringan virtual DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Perintah ini membuat tautan jaringan virtual baru yang terkait dengan zona DNS privat bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang telah dibuat dalam grup sumber daya) di grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Link.
+Perintah ini membuat tautan jaringan virtual baru yang terkait dengan zona DNS privat bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang telah dibuat dalam grup sumber daya) dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Link.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRegistration
-Parameter sakelar yang menunjukkan apakah tautan diaktifkan atau tidak.
+Beralih parameter yang mewakili apakah tautan diaktifkan atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
